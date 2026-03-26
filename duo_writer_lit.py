@@ -3,8 +3,8 @@ import re
 from datetime import datetime
 from pathlib import Path
 
+import anthropic
 from dotenv import load_dotenv
-from openai import OpenAI
 
 
 def require_env(name: str) -> str:
@@ -24,32 +24,29 @@ def write_text(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8")
 
 
-def chat(client: OpenAI, model: str, system: str, user: str, temperature: float) -> str:
-    resp = client.chat.completions.create(
+def chat(client: anthropic.Anthropic, model: str, system: str, user: str, temperature: float) -> str:
+    resp = client.messages.create(
         model=model,
+        max_tokens=4096,
         temperature=temperature,
-        messages=[
-            {"role": "system", "content": system},
-            {"role": "user", "content": user},
-        ],
+        system=system,
+        messages=[{"role": "user", "content": user}],
     )
-    return (resp.choices[0].message.content or "").strip()
+    return (resp.content[0].text or "").strip()
 
 
 def main() -> None:
     load_dotenv()
 
-    openai_key = require_env("OPENAI_API_KEY")
-    deepseek_key = require_env("DEEPSEEK_API_KEY")
+    api_key = require_env("ANTHROPIC_API_KEY")
+    claude = anthropic.Anthropic(api_key=api_key)
 
-    oai = OpenAI(api_key=openai_key)
-
-    # DeepSeek is OpenAI-compatible. If your DeepSeek dashboard specifies a different base URL, change it here.
-    deepseek = OpenAI(api_key=deepseek_key, base_url="https://api.deepseek.com")
-
-    # Set model names to ones you have access to.
-    openai_model = os.environ.get("OPENAI_MODEL", "gpt-4o-mini").strip()
-    deepseek_model = os.environ.get("DEEPSEEK_MODEL", "deepseek-chat").strip()
+    # Both voices use Claude with different system prompts for personality.
+    # WOUND voice (formerly OpenAI) and IDEAL voice (formerly DeepSeek) each
+    # get their personality from their system prompt, not the model provider.
+    wound_model = os.environ.get("WOUND_MODEL", "claude-sonnet-4-6").strip()
+    ideal_model = os.environ.get("IDEAL_MODEL", "claude-sonnet-4-6").strip()
+    merge_model = os.environ.get("MERGE_MODEL", "claude-sonnet-4-6").strip()
 
     project_title = "Bushido Hypocrisy: A Street Samurai"
     now = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -221,21 +218,21 @@ Output format:
     user_prompt = story_bible + "\n\n" + scene_goal
 
     # Drafts
-    draft_wound = chat(oai, openai_model, system_wound, user_prompt, temperature=0.9)
-    draft_ideal = chat(deepseek, deepseek_model, system_ideal, user_prompt, temperature=0.9)
+    draft_wound = chat(claude, wound_model, system_wound, user_prompt, temperature=0.9)
+    draft_ideal = chat(claude, ideal_model, system_ideal, user_prompt, temperature=0.9)
 
     # Cross critiques
     critique_by_wound = chat(
-        oai,
-        openai_model,
+        claude,
+        wound_model,
         system_critique_wound,
         "OTHER DRAFT (IDEAL):\n\n" + draft_ideal,
         temperature=0.3,
     )
 
     critique_by_ideal = chat(
-        deepseek,
-        deepseek_model,
+        claude,
+        ideal_model,
         system_critique_ideal,
         "OTHER DRAFT (WOUND):\n\n" + draft_wound,
         temperature=0.3,
@@ -245,14 +242,14 @@ Output format:
     merge_input = (
         "STORY BIBLE:\n" + story_bible + "\n\n"
         "SCENE GOAL:\n" + scene_goal + "\n\n"
-        "DRAFT A [WOUND] (OPENAI):\n" + draft_wound + "\n\n"
-        "DRAFT B [IDEAL] (DEEPSEEK):\n" + draft_ideal + "\n\n"
+        "DRAFT A [WOUND]:\n" + draft_wound + "\n\n"
+        "DRAFT B [IDEAL]:\n" + draft_ideal + "\n\n"
         "CRITIQUE OF B BY [WOUND]:\n" + critique_by_wound + "\n\n"
         "CRITIQUE OF A BY [IDEAL]:\n" + critique_by_ideal + "\n\n"
         "Now produce the merged scene per the rules."
     )
 
-    final_scene = chat(oai, openai_model, system_merge, merge_input, temperature=0.5)
+    final_scene = chat(claude, merge_model, system_merge, merge_input, temperature=0.5)
 
     # Save run artifacts
     write_text(run_dir / "story_bible.txt", story_bible)

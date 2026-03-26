@@ -1,31 +1,22 @@
 import os
-from openai import OpenAI
+import anthropic
 
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
-DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
 
-if not OPENAI_API_KEY:
-    raise RuntimeError("Missing OPENAI_API_KEY env var")
-if not DEEPSEEK_API_KEY:
-    raise RuntimeError("Missing DEEPSEEK_API_KEY env var")
+if not ANTHROPIC_API_KEY:
+    raise RuntimeError("Missing ANTHROPIC_API_KEY env var")
 
-# OpenAI client
-oai = OpenAI(api_key=OPENAI_API_KEY)
+client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
-# DeepSeek is OpenAI-compatible. Use their base_url.
-# If your DeepSeek docs specify a different base URL, replace it here.
-deepseek = OpenAI(api_key=DEEPSEEK_API_KEY, base_url="https://api.deepseek.com")
-
-def chat(client: OpenAI, model: str, system: str, user: str, temperature: float = 0.9) -> str:
-    resp = client.chat.completions.create(
-        model=model,
+def chat(system: str, user: str, temperature: float = 0.9, model: str | None = None) -> str:
+    resp = client.messages.create(
+        model=model or os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6"),
+        max_tokens=4096,
         temperature=temperature,
-        messages=[
-            {"role": "system", "content": system},
-            {"role": "user", "content": user},
-        ],
+        system=system,
+        messages=[{"role": "user", "content": user}],
     )
-    return resp.choices[0].message.content
+    return resp.content[0].text
 
 STORY_BIBLE = """
 Title: Bushido Hypocrisy: A Street Samurai
@@ -104,17 +95,12 @@ Output format:
 def main():
     user_prompt = STORY_BIBLE.strip() + "\n\n" + SCENE_GOAL.strip()
 
-    # Pick models you have access to.
-    # OpenAI examples: "gpt-4o-mini", "gpt-4.1-mini", etc.
-    # DeepSeek examples (per their docs): "deepseek-chat" or "deepseek-reasoner"
-    openai_model = "gpt-4o-mini"
-    deepseek_model = "deepseek-chat"
+    # Both voices use Claude with different system prompts.
+    draft_realist = chat(SYSTEM_REALIST, user_prompt, temperature=0.9)
+    draft_disciple = chat(SYSTEM_DISCIPLE, user_prompt, temperature=0.9)
 
-    draft_realist = chat(oai, openai_model, SYSTEM_REALIST, user_prompt, temperature=0.9)
-    draft_disciple = chat(deepseek, deepseek_model, SYSTEM_DISCIPLE, user_prompt, temperature=0.9)
-
-    critique_by_realist = chat(oai, openai_model, SYSTEM_CRITIQUE_REALIST, "OTHER DRAFT:\n\n" + draft_disciple, temperature=0.3)
-    critique_by_disciple = chat(deepseek, deepseek_model, SYSTEM_CRITIQUE_DISCIPLE, "OTHER DRAFT:\n\n" + draft_realist, temperature=0.3)
+    critique_by_realist = chat(SYSTEM_CRITIQUE_REALIST, "OTHER DRAFT:\n\n" + draft_disciple, temperature=0.3)
+    critique_by_disciple = chat(SYSTEM_CRITIQUE_DISCIPLE, "OTHER DRAFT:\n\n" + draft_realist, temperature=0.3)
 
     merge_input = (
         "STORY BIBLE:\n" + STORY_BIBLE.strip() + "\n\n"
@@ -125,7 +111,7 @@ def main():
         "CRITIQUE OF A BY DISCIPLE:\n" + critique_by_disciple
     )
 
-    final_scene = chat(oai, openai_model, SYSTEM_MERGE, merge_input, temperature=0.7)
+    final_scene = chat(SYSTEM_MERGE, merge_input, temperature=0.7)
 
     print("\n================ FINAL MERGED OUTPUT ================\n")
     print(final_scene)
