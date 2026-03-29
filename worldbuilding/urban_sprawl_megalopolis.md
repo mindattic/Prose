@@ -37,10 +37,9 @@ Urban networks increasingly resemble biological systems, with transportation net
 
 The critical question: whether governments adapt their political boundaries to match, or whether physical megalopolises and political maps just keep drifting further apart. Given the corponation framework, this creates direct tension — **who actually governs a city that spans six states?** Corponations with infrastructure control (transit, broadband, energy, retail) may hold more functional authority over daily life in a megalopolis than any single state government.
 
-## Sci-Fi Precedents
+## Historical Precedents
 
-- **William Gibson's Sprawl trilogy** — entire East Coast from Boston to Atlanta as a single merged urban mass ("The Sprawl" / BAMA — the Boston-Atlanta Metropolitan Axis)
-- **Judge Dredd's Mega-City One** — Eastern United States as one continuous city-state, originally conceived as a future New York that kept growing
+Urban planners identified the Northeast megalopolis as early as the 1960s. By 2030, the concept of discrete cities connected by highways had already given way to continuous urban bands connected by infrastructure. The Boston-Atlanta corridor was the first to be formally recognized as a single economic zone — 800 kilometers of unbroken development housing 70 million people. The Great Lakes band followed within a decade.
 
 ## Relevance to StreetSamurai
 

@@ -8,13 +8,13 @@
 
 ### Phase I: The Medical Window (2025-2038)
 
-In 2025, Neuralink's N1 implant had 1,024 electrodes across 64 threads. Synchron's Stentrode reached patients through the jugular vein without craniotomy. Paradromics' Connexus achieved first-in-human recording with its 421-electrode array. These were medical devices for paralysis, ALS, locked-in syndrome. The FDA still existed. IRBs reviewed every protocol. Informed consent was a legal requirement.
+In 2025, Cortex Dynamics' N1 implant had 1,024 electrodes across 64 threads. VascuLink's Stentrode reached patients through the jugular vein without craniotomy. ParaNeural's Connexus achieved first-in-human recording with its 421-electrode array. These were medical devices for paralysis, ALS, locked-in syndrome. The FDA still existed. IRBs reviewed every protocol. Informed consent was a legal requirement.
 
 This is the last era in which any of those things mattered.
 
 By 2029, the U.S. regulatory apparatus was in advanced decay. The FDA had been defunded twice in three years through continuing resolution failures. The 2031 Detroit Reclamation Zone Economic Partnership Agreement -- the same instrument that granted Ringo CorpoNation sovereign jurisdiction over its operational territory -- established the template: corporate entities could self-certify medical devices used within their proprietary zones. No external review required. No adverse event reporting mandated. The logic was economic emergency: cities that couldn't fund police departments weren't going to fund medical device oversight.
 
-Neuralink -- by then operating as NeuraLink Systems, a subsidiary of the entity that would become Tessera CorpoNation -- completed its first fully automated surgical procedure in 2030. Insertion time: 94 seconds per 64-thread array. Outpatient. Local anesthetic. The patient walked out the same day. The procedure was performed in a Tessera-chartered facility in Austin, Texas, under Tessera's internal medical authority. No external regulator observed.
+Cortex Dynamics -- by then operating as NeuraLink Systems, a subsidiary of the entity that would become Tessera CorpoNation -- completed its first fully automated surgical procedure in 2030. Insertion time: 94 seconds per 64-thread array. Outpatient. Local anesthetic. The patient walked out the same day. The procedure was performed in a Tessera-chartered facility in Austin, Texas, under Tessera's internal medical authority. No external regulator observed.
 
 ### Phase II: The Consumer Pivot (2038-2055)
 
@@ -248,7 +248,7 @@ Neural data is processed into several commercial products:
 
 **Behavioral Prediction Models.** Aggregated neural data from millions of users allows corponations to predict individual behavior with extraordinary accuracy. Not demographic-level prediction (people aged 25-34 tend to buy X) but individual-level prediction (this specific person will want X in approximately 11 minutes). These models are sold on **behavioral futures markets** -- exchanges where advertisers, employers, insurers, political operations, and security agencies bid on predictive access to specific populations or individuals.
 
-Shoshana Zuboff identified the architecture of this system in 2019 when she described surveillance capitalism's trajectory from monitoring behavior to predicting behavior to actuating behavior. By 2095, the system has reached its terminal form: the corponation does not just predict what you will want. It shapes what you will want, through direct modulation of your neural activity, and then sells you the thing it made you want.
+Harvard economists identified the architecture of this system in 2019 when they described surveillance capitalism's trajectory from monitoring behavior to predicting behavior to actuating behavior. By 2095, the system has reached its terminal form: the corponation does not just predict what you will want. It shapes what you will want, through direct modulation of your neural activity, and then sells you the thing it made you want.
 
 **Cognitive Advertising (CogAd).** Direct-to-neural advertising is the most profitable application of BCI data harvesting. CogAd does not present advertisements as external stimuli (images, sounds, text). It integrates brand associations, product desire, and purchasing impulse directly into the user's cognitive stream.
 
@@ -347,7 +347,7 @@ This, too, is the design working as intended. A deadhead is not a lost customer.
 
 | Entity | Type | Primary BCI Product Line | Notes |
 |---|---|---|---|
-| Tessera CorpoNation | Corponation | NovaMind (consumer), NovaMind Enterprise (professional), Apex Division (elite) | Evolved from Neuralink/Tesla corporate lineage. Largest BCI market share. |
+| Tessera CorpoNation | Corponation | NovaMind (consumer), NovaMind Enterprise (professional), Apex Division (elite) | Evolved from Cortex Dynamics/Tesla corporate lineage. Largest BCI market share. |
 | Zheng-Dao Bioelectric | Corponation | CortexLink (consumer/professional), DeepMind Analytics (data products) | Chinese-origin. Pioneered persistent cloud neural connectivity. Largest neural data harvesting operation. |
 | Arcturus Defense Solutions | Corponation | Meridian (consumer), Sovereign Systems (elite), classified military programs | Defense-industrial origin. Primary supplier of military-grade BCIs. Operates the Cognitive Rehabilitation Initiative. |
 | Halo Neurosystems | Corporation (sub-corponation scale) | Synaptic (consumer) | Third-tier manufacturer. Budget consumer market. |

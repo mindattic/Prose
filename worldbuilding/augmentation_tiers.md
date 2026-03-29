@@ -352,7 +352,7 @@ Estimated global value of the combined augmentation/organ black market: $890 bil
 
 Every augmentation technology described in this document extrapolates from real research:
 
-- **Brain-computer interfaces:** Neuralink's N1 implant (1,024 electrodes, 64 threads) has enabled paralyzed patients to control computers through thought. Synchron's Stentrode achieves neural recording without open brain surgery. Paradromics' Connexus has completed first-in-human trials. The trajectory from medical device to consumer product to mandatory infrastructure follows the same path as every previous transformative technology — eyeglasses, hearing aids, smartphones.
+- **Brain-computer interfaces:** Cortex Dynamics' N1 implant (1,024 electrodes, 64 threads) has enabled paralyzed patients to control computers through thought. VascuLink's Stentrode achieves neural recording without open brain surgery. ParaNeural's Connexus has completed first-in-human trials. The trajectory from medical device to consumer product to mandatory infrastructure follows the same path as every previous transformative technology — eyeglasses, hearing aids, smartphones.
 
 - **CRISPR genetic engineering:** Base editing and prime editing allow precise single-nucleotide changes to DNA. In 2025, CRISPR therapies were approved for sickle cell disease and beta-thalassemia. Embryo selection for polygenic traits (intelligence, height) is already commercially available through Genomic Prediction. The path from therapeutic to enhancement to heritable modification is technologically clear and ethically uncontained.
 
