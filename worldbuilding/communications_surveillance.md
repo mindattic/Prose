@@ -18,7 +18,7 @@ This is the standard ad tier. It ships with every consumer BCI sold after 2084.
 
 TeslaLink's SleepStream protocol was the first commercially deployed dream-targeted advertising system. Approved under TeslaLink's internal product safety board -- no external regulatory body had jurisdiction -- SleepStream monitors REM-phase neural activity and identifies emotional receptivity windows: moments of vulnerability, longing, or unresolved desire within the dream state.
 
-During these windows, SleepStream introduces what TeslaLink's marketing division calls "branded dream elements." A Tesla vehicle in the background of a dream about freedom. The SynthBurger logo on the counter of a dream about a childhood kitchen. A RingoPharma pill bottle on the nightstand during a dream about illness or death.
+During these windows, SleepStream introduces what TeslaLink's marketing division calls "branded dream elements." A TeslaLink vehicle in the background of a dream about freedom. The SynthBurger logo on the counter of a dream about a childhood kitchen. A RingoPharma pill bottle on the nightstand during a dream about illness or death.
 
 The dreamer does not experience these as intrusions. The brain integrates them seamlessly into the dream narrative. Upon waking, the subject retains a vague but persistent positive association with the product -- an association they believe is organic. Internal TeslaLink studies show a 340% increase in next-day purchase intent for dream-placed products versus traditional CortexCast injection.
 
