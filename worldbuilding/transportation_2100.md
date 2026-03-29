@@ -1,0 +1,98 @@
+# Transportation in 2100
+
+## Layered by Distance
+
+Transportation in 2100 is stratified by scale. The way you travel two miles, two hundred miles, and two thousand miles are completely different systems.
+
+---
+
+## Local / Urban Travel (0-20 miles)
+
+The personal car is dead. Not the vehicle — the concept of personally owned, human-driven cars in cities. Transportation-as-a-Service dominates. Personal ownership is niche, nostalgic, or rural.
+
+**Autonomous Ground Pods** — Evolution of Waymo/robotaxis. Fully driverless, shared, electric, summonable in seconds. No parking lots needed, freeing enormous urban land. This alone reshapes city architecture more than any vehicle.
+
+**eVTOL Air Taxis** — Electric vertical takeoff and landing passenger drones. Urban air corridors are a normalized layer of city infrastructure, like subway lines but three-dimensional. Quieter and electric. Shared autonomous air transit — more like an aerial bus network than personal vehicles.
+
+**Cargo Drones** — Humans stop moving packages entirely. Everything delivered by autonomous drone swarms. Last-mile logistics solved from the air.
+
+**Walking & Cycling** — Paradoxically improved because removing private cars creates enormous space for pedestrian and bike networks. Cities that do this well become wildly livable.
+
+**What Didn't Survive:** The personal flying car (Jetsons style). Physics of individual flight are energy-expensive and airspace management is nightmarish. Shared autonomous air transit works; personal flight vehicles don't scale.
+
+---
+
+## Regional Travel (20-500 miles)
+
+The biggest disruption tier. Where the Chicago-Milwaukee megalopolis becomes one city.
+
+**Hyperloop** — Pods in pressurized tubes at 700+ mph, more than double current maglev. Chicago to Milwaukee: 8 minutes. Chicago to Detroit: 20 minutes. The entire Midwest megalopolis collapses to subway-scale travel times. Nearly silent, extremely energy efficient.
+
+**High-Speed Rail** — Climate-controlled networks linking cities. Complementary to hyperloop for routes where tube infrastructure hasn't been built yet.
+
+**The Corporate Angle:** Hyperloop requires right-of-way across hundreds of miles, navigating dozens of jurisdictions, and massive capital. The entity that funds and builds a hyperloop corridor between two megalopolises effectively owns the economic artery between them. That's not a side effect — that's the game. Corponation transit networks (RingoTransit, TeslaLoop) are sovereign territory. Crossing from one corponation's hyperloop to another's requires jurisdictional handoff.
+
+**Short-Haul Aviation:** Largely dead for trips under 500 miles in the developed world. Nobody flies Chicago to St. Louis when hyperloop does it in 25 minutes.
+
+---
+
+## Continental Travel (500-5,000 miles)
+
+**Supersonic/Hypersonic Aviation** — Successors to Boom Supersonic but mature and cheap. Coast-to-coast in 2-3 hours. New York to Los Angeles in less than a long movie. Mainline passenger aircraft cruise at Mach 3-5 at the edge of the atmosphere.
+
+**Subsonic Aviation:** What prop planes are today — niche, nostalgic, or cargo-only.
+
+---
+
+## Intercontinental Travel (5,000+ miles)
+
+**Suborbital Point-to-Point** — New York to Tokyo in 45 minutes by briefly going through space. Treating Earth's atmosphere as the obstacle to route around. By 2100 this is plausible as premium service at minimum, mainstream at best.
+
+**Space Commuting** — If orbital infrastructure matures alongside the space elevator, people living on orbital stations or lunar settlements commute to Earth. Not common, but not impossible.
+
+---
+
+## Underground Networks
+
+The underrated revolution. Multi-level underground arterials in major megalopolises:
+- **Deepest level:** Freight
+- **Middle level:** Autonomous pods
+- **Deep corridors:** Hyperloop long-distance
+
+The surface gets reclaimed for humans. You don't need flying cars if you build vertically downward as aggressively as you build upward.
+
+---
+
+## The Decline of Physical Travel
+
+The question nobody asks: with neural interfaces, photorealistic immersive environments, and persistent digital presence — does travel matter less?
+
+- The commute may be replaced not by hyperloop but by the question becoming irrelevant
+- Work is a shared neural-digital space entered from anywhere
+- Business travel collapses if presence is indistinguishable from remote
+- Tourism and leisure survive — people will always want to physically be somewhere real
+- Daily grind movement that accounts for most transportation volume may cease to exist as a problem
+
+---
+
+## The 2100 Transportation Stack
+
+Autonomous pods locally → hyperloop regionally → hypersonic continentally → suborbital globally — all seamlessly managed by AI that optimizes your entire day without being asked.
+
+---
+
+## Relevance to StreetSamurai
+
+Transportation is sovereign territory. Every transit system is owned by a corponation. Moving through the city means moving through corporate jurisdictions:
+
+- **RingoTransit** hyperloop and ground pods in the Great Lakes corridor
+- **Meridian Logistics** controls freight movement (underground and surface)
+- **Kessler-Dyne** built the physical infrastructure
+- **Voss-Kleiner** manages the stations integrated into their arcologies
+
+For street operators like Kael:
+- **Transit requires neural authentication.** Blanks and the excluded walk or use legacy surface roads no corponation maintains.
+- **Every transit trip is tracked.** Movement data is sold. Going dark means going on foot.
+- **The gaps between transit networks** — jurisdictional dead zones where one corponation's hyperloop ends and another's begins — are where the ungoverned zones persist. These corridors are where operators move unseen.
+- **EMP dead zones** disable autonomous vehicles. In those spaces, physical movement on foot with analog weapons is the only option. This is where the katana matters.
+- **Underground freight tunnels** are the operators' highway — Meridian's autonomous cargo network has blind spots that street runners exploit.
