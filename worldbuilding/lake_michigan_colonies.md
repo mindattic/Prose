@@ -1,0 +1,90 @@
+# Lake Michigan: The Freshwater Heart
+
+## Why the Lake Is the Center of Everything
+
+It's not Chicago anymore. Chicago is a name on old maps. What exists now is the southern anchor of the Great Lakes Megalopolis — a continuous urban band stretching from Gary to Milwaukee, 17 billion gallons of fresh water lapping at its foundation.
+
+Lake Michigan is the largest body of untainted fresh water accessible from a major population center on Earth.
+
+In a world where 65% of humanity lacks reliable water access, where the Colorado River is a legal abstraction, where the Ganges is a sewage canal, where desalination is controlled by Tidewater and priced at survival-tier subscription rates — Lake Michigan is liquid gold. It is the reason the Great Lakes corridor became the most desirable real estate on the continent. It is the reason 340 million people live within 200 kilometers of its shore. It is the reason every major corponation maintains a presence here.
+
+The lake is not empty. It hasn't been empty for decades.
+
+---
+
+## The Colonies
+
+Built out from the shoreline and across the lake surface, the colonies are a patchwork of floating, anchored, and semi-submerged structures. Some are massive — corporate embassy states the size of small cities. Some are a single platform with a shack and a water purifier. The lake is simultaneously the most surveilled and most ungovernable body of water in North America, because jurisdiction on water is the one legal question that neither the corponations nor the remnant municipal authorities have fully resolved.
+
+### Corporate Embassy States
+
+The major corponations maintain floating compounds on the lake — sovereign territory anchored to the lakebed, operating under their proprietary jurisdiction. These are not offices. They are embassies in the original diplomatic sense: territory of one sovereign entity physically located within the operational zone of others.
+
+**Vossen Aqua Platform (VAP-1 "The Reservoir")**
+The largest structure on the lake. A 2.4-square-kilometer floating industrial complex anchored 8 kilometers off the former North Side. Vossen's primary Great Lakes water treatment facility — processing 900 million liters per day for distribution through their pipeline network. The platform is sovereign Vossen territory. RingoTransit ferries don't dock here. Vossen's own fleet handles all transport. The water that feeds the megalopolis flows through this platform. That makes VAP-1 the most strategically important structure in the corridor. Its security is handled by Vossen Watchtower's dedicated marine division: 800 personnel, 40 armed patrol vessels, underwater sensor arrays, and a no-approach perimeter enforced by autonomous surface drones.
+
+If you control the water, you control the city. VAP-1 is the proof.
+
+**Tessera NeuroLake Research Campus**
+A cluster of six interconnected floating modules 12 kilometers offshore, visually striking — white composite structures with the clean Tessera aesthetic, like origami resting on the water. Officially a neural technology research facility. The lake location provides natural cooling for their computational infrastructure and physical isolation for classified research programs. What happens inside the modules is compartmentalized even by Tessera standards. The campus runs its own power (compact fusion, licensed from Petrovka), its own water (drawn directly from the lake, filtered onsite), and its own communications (hardline to a lakebed fiber trunk, no wireless emissions). This is the one Tessera facility that doesn't broadcast on the neural mesh. Whatever they're researching, they don't want it on any network. Staff rotate on 90-day cycles and undergo cognitive screening on departure.
+
+Speculation within the operator community: NeuroLake is where Tessera's most advanced BCI research happens, including projects that the NeoCortex subsidiary wouldn't touch because the failure modes are too visible. Unconfirmed. The lake keeps secrets well.
+
+**Ringo LakePort**
+Ringo's Great Lakes logistics hub. A commercial port facility — fuel storage, cargo processing, transit interchange — built on a reinforced platform off the former Indiana shoreline. Less glamorous than Tessera's campus or Vossen's treatment plant, but arguably more important to daily life. Every RingoFuel shipment, every RingoMart supply delivery, every RingoPharma pharmaceutical distribution in the southern corridor routes through LakePort. The platform is sovereign Ringo territory, REDLINE-enforced. A Tier 4 excluded individual within 500 meters of LakePort will trigger an automated interdiction response from RingoGuard marine units.
+
+LakePort is also the primary entry point for goods arriving from the northern lake (Milwaukee corridor) and from the Michigan side of the lake. Meridian Logistics operates a bonded cargo zone on the platform under a jurisdictional sharing agreement with Ringo — one of the few places where two corponations voluntarily share sovereign space. The agreement works because both profit. It is also a perpetual source of espionage, as both corps attempt to monitor the other's cargo flows without being caught.
+
+**Kessler-Dyne Construction Dock**
+An industrial shipyard and heavy construction staging area on the lake's western shore, south of the former Milwaukee waterfront. This is where Kessler-Dyne assembles the modular components for arcologies, orbital station sections, and space elevator structural elements before shipping them inland or to the Makassar Terminus via Meridian's oceanic fleet. The dock is loud, hot, and dangerous — heavy manufacturing at the interface of water and industry. The workers are Kessler-Dyne indenture, housed on floating dormitory barges adjacent to the dock. The barges are technically sovereign Kessler-Dyne territory, which means the workers live, sleep, eat, and occasionally die under Kessler-Dyne jurisdiction without setting foot on anyone else's land.
+
+### The Independent Platforms
+
+Not every structure on the lake belongs to a corponation. The legal ambiguity of lake jurisdiction — is it municipal? State? Federal remnant? Corpo? — has created a patchwork of independent settlements that exist in the cracks.
+
+**The Freeholds**
+Independent platforms — some anchored, some mobile — that claim sovereign status through legal loopholes, grandfather clauses, or simple defiance. Most are small: a platform, a desalination unit, a solar array, a handful of residents. A few are substantial. The largest freehold, **Lakewall**, is a connected chain of 40+ platforms off the former Waukegan shoreline, home to approximately 3,000 residents. Lakewall has no corporate affiliation, no exclusion registry, no neural authentication requirements, and no surveillance infrastructure. It is, by the standards of 2100, practically medieval. It is also one of the only places in the Great Lakes corridor where you can exist without being in anyone's system.
+
+Freeholds survive because they're not worth the political cost of eviction. Vossen could absorb Lakewall in an afternoon. The public relations fallout — and the precedent it would set for other freeholds — isn't worth 40 platforms and 3,000 Blanks. So the freeholds persist, tolerated the way a city tolerates pigeons: not welcome, not worth exterminating, and more numerous than anyone wants to admit.
+
+**The Hermitages**
+Solo platforms. One person, one raft, one purifier. The lake's hermits are a recognizable subculture — people who withdrew from both corpo society and the ungoverned zones to live alone on the water. Some are voluntary refusers (Tier 0 Blanks who want distance as well as independence). Some are operators in retirement — people with too much history to live safely on land. Some are religious contemplatives. Some are simply broken.
+
+The hermits maintain an informal mutual aid network — sharing weather information, parts, and medical supplies through short-range radio communication. They do not gather. They do not organize. They help each other survive and leave each other alone. There is a protocol: if a hermit's platform goes dark for more than 72 hours, the nearest neighbor checks on them. If they find a body, they burn the platform per the hermit's standing wishes (most specify cremation-at-sea). If they find an empty platform, they take what's useful and let the lake have the rest.
+
+**The Cults**
+
+The lake has attracted religious and quasi-religious communities since the climate migration began. Something about the water — the last clean water, the ancient water, the water that predates the corruption — speaks to people who need to believe that something pure still exists.
+
+**The Immersionists** — A neo-baptismal movement that practices ritual submersion in unpurified lake water as a sacrament of biological authenticity. They reject all augmentation, all gene modification, all synthetic medicine. They drink the lake water unfiltered. They say it makes them clean. The medical reality: Lake Michigan's water quality is orders of magnitude better than most surface water on Earth, but it's not sterile. The Immersionists have a higher rate of waterborne illness than surrounding populations. They view this as purification.
+
+**The Resonance Collective** — A community of approximately 200 people on a cluster of platforms north of the former Evanston shoreline. They believe the lake is a consciousness — a slow, vast, non-biological intelligence that has been thinking since the glaciers carved it. Their practices involve extended periods of floating in the water with sensory deprivation equipment, attempting to "listen" to the lake's cognition. Most outsiders dismiss them as delusional. A Zheng-Dao data science team that studied the Collective's reported experiences noted that the patterns they described bore structural similarities to the signal patterns detected in Leviathan-class rogue AI activity. Zheng-Dao published nothing. The Collective doesn't know about the comparison. The lake keeps its own counsel.
+
+**The Children of Salt** — Apocalyptic. They believe the freshwater lakes are the last reservoirs of the pre-industrial world and that when the lakes are finally contaminated, humanity's biological era ends. Their doctrine: everything after contamination is machine. They stockpile pre-contamination water in sealed containers, treating each liter as a relic. Their platform, anchored in deep water off the former Michigan City shoreline, is part temple, part vault. They are not violent. They are not political. They are waiting for the end with the patience of people who believe they already know how the story finishes.
+
+---
+
+## The Lake as Character
+
+Lake Michigan is not background. It is a presence in the narrative — the sound of water against platform hulls at night, the smell of clean water in a world where clean water is a luxury product, the way light moves across the surface in the morning before the air pollution drifts down from the Stack layer and turns the sky amber.
+
+The lake is the one thing in the Great Lakes Megalopolis that the corponations cannot fully control. They can build on it. They can draw from it. They can patrol its surface. But the lake is 22,400 square kilometers of water, 281 meters deep at its deepest, and it has been here for 10,000 years. The corponations have been here for 60. The lake is patient.
+
+For Kael — who grew up in the Grind, within earshot of the waves but never able to reach the shore because the waterfront is sovereign territory — the lake is an ID anchor. The sound of it is a memory from before the facility. The taste of it (he drank lake water once, at age ten, from a cracked pipe in the Undertow, and the memory of that taste — cold, mineral, alive — is one of the few pre-facility memories that hasn't degraded) is the taste of who he was.
+
+GHOST asks: am I alone in here?
+The lake doesn't answer. But it's listening.
+
+---
+
+## Relevance to the Narrative
+
+The lake colonies are a jurisdictional maze — corpo embassies, independent freeholds, hermitages, cults, and open water where nobody's law applies. This makes the lake the natural setting for:
+
+- Meetings that can't happen on land (different corpo jurisdictions make in-person contact impossible, but the lake's disputed jurisdiction creates neutral ground)
+- Smuggling and transport (cargo that can't pass through corpo checkpoints moves across the water)
+- Hiding (the hermitages and freeholds are where people go to disappear)
+- Confrontations (the lake's jurisdictional ambiguity means that violence here falls into a legal gray zone — no clear tribunal has authority)
+- The water itself as prize (every storyline in the Great Lakes corridor eventually touches water rights, water access, or water control — because every storyline eventually touches survival)
+
+Every statement about the lake must contend with previous statements about the lake — because the lake was here before the corponations and will be here after them, and the narrative must respect that continuity or retract its claims.
