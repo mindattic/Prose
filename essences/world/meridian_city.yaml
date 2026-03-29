@@ -1,0 +1,115 @@
+type: setting
+name: "Meridian"
+official_name: "Meridian Metropolitan Administrative Zone"
+tagline: "Where Tomorrow Lives"
+subtitle: "A Axiom Industries Community"
+
+description: |
+  Meridian is a monument to the idea that if you rebuild a drowned city with enough
+  corporate money, you can pretend the drowning never happened. Built on the bones of
+  what used to be a major Pacific coast port — nobody uses the old name anymore, and
+  Axiom's PR team would prefer you didn't look it up — Meridian is the flagship
+  "reclaimed urban zone" that proved megacorps could replace governments entirely.
+  The marketing materials call it "humanity's greatest comeback story." The eight
+  million people who live here call it other things.
+
+  The city is structured vertically, both literally and socially. Corporate tiers
+  determine where you can go, what air you breathe, and whether the police protect
+  you or police you. At the top, the Spire punctures the cloud layer. At the bottom,
+  Old Harbor still floods at high tide. In between, people live their lives in the
+  usual human way — badly, hopefully, and with a stubborn refusal to be optimized.
+
+  Meridian's great lie is that the tiers are permeable. "Vertical mobility" is the
+  phrase the orientation videos use. The elevators between districts technically work.
+  You technically can apply for a Tier 3 residential permit. The application is only
+  forty-seven pages. The waitlist is only nine years. The system technically functions.
+  It's just that "technically functions" is doing a lot of heavy lifting.
+
+history:
+  before: |
+    A major coastal city, population 4 million. Name redacted from most public records
+    by Axiom's Historical Clarity Initiative ("We don't erase history — we optimize
+    the narrative"). Climate collapse hit it hard: sea level rise, superstorms, the
+    usual apocalypse package. The federal government tried to help. The federal
+    government ran out of money. The federal government stopped existing in any
+    meaningful sense shortly after.
+  the_rebuild: |
+    Axiom Industries led a consortium of megacorps in "Project Meridian" — a
+    public-private partnership where the "public" part was mostly decorative. They
+    rebuilt the city from the waterline up, using the displaced population as cheap
+    labor and then graciously allowing them to live in the lower tiers of the thing
+    they'd built. This was marketed as "participatory urban development." The workers
+    called it "building your own cage, but with dental."
+  current_era: |
+    Thirty years post-rebuild. The city works, in the way that a machine works when
+    half its parts are aftermarket replacements and it makes a worrying sound every
+    third Tuesday. The upper tiers are genuinely impressive — clean energy, vertical
+    gardens, AI-managed traffic. The lower tiers are where the impressive parts dump
+    their waste heat, literal and metaphorical.
+
+geography:
+  location: "Pacific coast, former United States"
+  elevation_range: "-12m (Old Harbor, submerged) to 847m (Spire apex)"
+  footprint: "~90 square kilometers, including reclaimed and partially submerged zones"
+  climate:
+    official: "Controlled Mediterranean via the Axiom WeatherWorks Atmospheric Management System"
+    actual: |
+      The WeatherWorks system was built for a city of 3 million and now serves 8 million.
+      It rains when it shouldn't. Sometimes it's summer in one district and autumn two
+      blocks away. The UV index is "aspirational" according to official readings, meaning
+      they report what it should be rather than what it is. Fog rolls in from Old Harbor
+      carrying the faint smell of bioluminescent algae and regret. On good days, you can
+      see actual blue sky from the upper tiers. On bad days, the atmospheric processors
+      glitch and it snows indoors.
+
+population:
+  total: "~8 million registered, estimated 1-2 million unregistered"
+  augmentation_rate: "~78% have at least one augmentation (ranges from corporate full-suite to back-alley eye jobs)"
+  languages: "Corporate Standard English (official), plus dozens of street pidgins, code-switching dialects, and AI creoles"
+  demographics_note: |
+    Axiom doesn't track demographics by ethnicity or national origin — they track by
+    "Consumer Tier" and "Productivity Index." This is presented as progressive. It is
+    not progressive. It just means they found a more efficient way to sort people.
+
+governance:
+  official: "Meridian Municipal Authority (a wholly owned subsidiary of Axiom Industries)"
+  actual: |
+    Axiom runs everything above Tier 2. The Iron Lotus runs the Shelf. Old Harbor
+    runs itself, badly. The Circuit is governed by whatever consensus emerges from
+    an argument between three hackers, a rogue AI, and a noodle shop owner who has
+    strong opinions about zoning.
+  law_enforcement: "Axiom Security Solutions (privatized police, branded 'Guardians')"
+  courts: "Axiom Dispute Resolution Services (mandatory arbitration, $200 filing fee)"
+
+infrastructure:
+  transit:
+    - "MeridianRail: Maglev system connecting all districts. Fast, clean, fully surveilled. Every trip logged."
+    - "Vertical Lifts: Elevators between tiers. Require access cards. Wait times increase dramatically below Tier 3."
+    - "Harbor Ferries: Informal boat network in Old Harbor. Unregulated. Occasionally sinks."
+    - "Walking: The only truly private way to move. No logs, no scans. This is why Kael walks."
+  communications:
+    - "AxiomNet: Official network. Fast, reliable, monitored."
+    - "The Undertow: Street mesh network. Slow, unreliable, mostly unmonitored."
+    - "Dead drops: Physical data exchange. Analog is the new encryption."
+  utilities:
+    - "Power: Axiom Energy Grid. Rolling brownouts below Tier 3 are 'scheduled maintenance.'"
+    - "Water: Desalination plants. Upper tiers get filtered. Lower tiers get 'adequately processed.'"
+    - "Air: Atmospheric processors. Quality degrades significantly by tier."
+
+districts:
+  - the_spire
+  - the_meridian_core
+  - the_circuit
+  - the_shelf
+  - old_harbor
+  - note: "Several minor districts exist but are not narratively significant yet."
+
+tone: |
+  Meridian should feel like a city that works just well enough that you can't quite
+  justify burning it down. The trains run on time — they just track everywhere you go.
+  The hospitals are good — if you can afford them. The police keep order — and order
+  means keeping the lower tiers quiet. It's a city optimized for profit that has
+  accidentally produced a civilization, and the civilization keeps doing inconvenient
+  things like developing culture, falling in love, and demanding dignity. The satire
+  is in the gap between the brochure and the street. The brochure is always clean.
+  The street is always interesting.
