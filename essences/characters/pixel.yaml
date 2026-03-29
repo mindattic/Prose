@@ -1,0 +1,226 @@
+type: character
+name: Rami Okafor-Diaz
+aliases: ["Pixel", "Pix", "That Kid Next Door"]
+role: Neighbor, tech scavenger, reluctant friend
+age: 19
+status: alive
+location: The Shelf — apartment adjacent to Kael's
+
+description: |
+  Pixel is a blur. That's the first impression — a blur of motion, chatter,
+  and flickering augments that never quite sit still. They are small-framed,
+  quick-handed, with deep brown skin and a shaved head covered in adhesive
+  sensor patches they keep meaning to remove. Their left eye is a salvaged
+  Axiom-model corporate scanner — matte grey, slightly too large for the
+  socket, and prone to giving them splitting headaches when it overheats.
+  The scanner was designed for inventory management. Pixel uses it to read
+  circuit boards, identify salvageable components, and occasionally peek
+  through walls when the resolution cooperates.
+
+  Their apartment is three times as cluttered as Kael's is bare. Every
+  surface is covered in disassembled augments, soldering equipment, coils
+  of fiber optic cable, and coffee cups in various stages of growing mold.
+  There is a path from the door to the bed and from the bed to the
+  workbench. That's it.
+
+  Pixel talks the way they work — fast, associative, jumping between topics
+  like they're debugging a conversation in real time. They are annoying in
+  the way that a bird pecking at your window is annoying: persistent,
+  oddly endearing, impossible to ignore. They are also the smartest person
+  on their floor and they know it, which is both their greatest asset and
+  the reason most people find them exhausting.
+
+origins: |
+  Born in the Shelf to parents who were themselves born in the Shelf — third
+  generation post-national. Father was Nigerian-Colombian, a dock worker
+  who disappeared during a labor action when Pixel was eleven. Mother was
+  Filipina-Brazilian, an augment seamstress who sewed biological interfaces
+  into cheap prosthetics until the fumes gave her neural degradation. She's
+  alive but in a care facility Pixel can't afford. That's the engine under
+  all the chatter — every salvage run, every resale, every hack is rent
+  on a room where their mother stares at a ceiling and sometimes remembers
+  Pixel's name.
+
+  Pixel never went to school past age thirteen. They learned electronics
+  from a Circuit scavenger named Old Duma who paid them in knowledge
+  instead of money. Old Duma died of augment rejection three years ago.
+  Pixel inherited their tools and their client list.
+
+  They chose the name Pixel because their birth name felt like it belonged
+  to the kid who still had parents. That kid is gone. Pixel is who's left.
+
+psychology:
+  facet_weights:
+    wound: 0.65     # Mother's illness, father's disappearance — always running from grief
+    ideal: 0.40     # They believe in competence, not codes. You're what you can do.
+    id: 0.70        # Impulse-driven, sensation-seeking, needs stimulation constantly
+    shadow: 0.55    # Terrified of being useless — overcompensates with noise
+    mask: 0.75      # The chatter IS the mask. Underneath is a scared kid.
+    ghost: 0.45     # Old Duma's voice, sometimes their mother's, from before
+
+  core_fears:
+    - Becoming obsolete — the tech outpacing them, being useless
+    - Their mother dying without recognizing them one last time
+    - Silence — because silence means they're alone with their thoughts
+    - That Kael sees through them and finds nothing worth seeing
+
+  core_desires:
+    - To fix things — everything, everyone, the whole broken world
+    - To be indispensable — if people need you, they can't leave you
+    - To afford real treatment for their mother
+    - Quietly — to be someone's family again
+
+  coping_mechanisms:
+    - Constant talking — filling silence is filling emptiness
+    - Building and fixing — if your hands are busy, your head can't spiral
+    - Offering unsolicited help — "I can upgrade that" means "please need me"
+    - Midnight scavenge runs into dangerous areas (adrenaline as antidepressant)
+
+  blind_spots:
+    - Doesn't realize the chatter pushes people away as much as it covers pain
+    - Thinks competence = worth. If they can't fix it, they're nothing.
+    - Doesn't understand why Kael keeps the old katana when tech is better
+    - Can't see that their mother's illness isn't their fault or responsibility
+
+  secret: |
+    They visit their mother every Tuesday. They sit by the bed and talk
+    nonstop — about salvage, about Kael, about the weather. Their mother
+    rarely responds. Last month she looked at Pixel and said "Rami?" and
+    Pixel cried for the first time in two years. They haven't told anyone.
+
+appearance:
+  physical: |
+    Short, wiry, perpetually in motion. Deep brown skin, shaved head dotted
+    with adhesive sensor patches (some functional, some forgotten). Angular
+    face that's still losing its baby fat. Quick hands with callused fingers
+    and solder burns. They move like a small animal — darting, alert,
+    ready to bolt.
+
+  augmentations: |
+    Left eye: salvaged Axiom InventoryCore scanner, grey, oversized for the
+    socket. Gives them micro-vision and occasionally wall-penetrating scans,
+    but overheats and causes migraines. Right ear: homebrew audio amplifier
+    that lets them hear electronic frequencies (useful for diagnosing faults).
+    Fingertips on right hand: magnetic subdermal implants for picking up
+    small components. All self-installed. All slightly janky. All functional.
+
+  distinctive_features:
+    - The mismatched grey eye that occasionally flickers or whines
+    - Sensor patches on their scalp like circuit-board freckles
+    - Solder burns on their fingers in various stages of healing
+    - Perpetual motion — bouncing knee, tapping fingers, scanning the room
+
+daily_life:
+  routine: |
+    Wakes late (3-4 hours of sleep is normal). Coffee from a machine they
+    built themselves that makes terrible coffee perfectly consistently.
+    Checks the Circuit's digital boards for salvage leads. Hits the e-waste
+    dumps in the lower Shelf before the other scavengers. Afternoon is
+    repair work — clients bring broken augments, Pixel fixes them for cheap.
+    Evening is personal projects and unsolicited visits to Kael's apartment,
+    usually carrying food they "accidentally made too much of" (they buy
+    extra on purpose). Tuesdays: the care facility.
+
+  habits:
+    - Talks to electronic devices while working ("Come on, come on, there you are")
+    - Offers to upgrade everything Kael owns (always refused)
+    - Leaves small repaired gadgets outside Kael's door as gifts/apologies
+    - Falls asleep at their workbench more often than their bed
+
+relationships:
+  - name: Kael
+    type: neighbor / one-sided friendship / surrogate family
+    description: |
+      Pixel adopted Kael the way a stray adopts a human. Kael tolerates
+      them the way a cat tolerates a persistent child. But there's more
+      there — Pixel sees in Kael someone who stayed. Everyone else leaves.
+      Kael is still next door every morning. That matters more than Pixel
+      will ever say.
+
+  - name: Mrs. Chen
+    type: surrogate grandmother
+    description: |
+      Mrs. Chen feeds Pixel and scolds them for not sleeping. Pixel fixes
+      her kitchen equipment for free. It's the closest thing to a functional
+      family either of them has.
+
+  - name: Maren Voss
+    type: augment maintenance / fascination
+    description: |
+      Pixel maintains Maren's claws and is endlessly fascinated by the
+      military hardware. They keep offering upgrades. Maren keeps refusing.
+      Pixel respects this but doesn't understand it.
+
+  - name: Sable
+    type: occasional employer
+    description: |
+      Sable sometimes hires Pixel for tech work — breaking encryptions,
+      identifying augment models, tracing data. Pixel is useful and cheap.
+      Sable is transactional and reliable. It works.
+
+  - name: Rami's Mother
+    type: parent / guilt / motivation
+    description: |
+      Everything Pixel does is, on some level, for her. The money, the
+      hustling, the constant motion — it all flows toward a care facility
+      bill and the hope of one more lucid moment.
+
+skills:
+  technical:
+    - Augment repair and modification (self-taught, surprisingly expert)
+    - Electronic scavenging and component identification
+    - Low-level hacking (security systems, data extraction, network sniffing)
+    - Improvised engineering (building functional tools from garbage)
+  social:
+    - Reading people through their augments (you can tell a lot about someone by their tech)
+    - Talking their way into and out of situations
+    - The Shelf's informal economy (knows who needs what and who has what)
+
+speech_patterns:
+  vocabulary: |
+    Tech metaphors for everything. Slang that's a mix of Shelf street language,
+    Circuit jargon, and fragments of their parents' languages (Igbo, Tagalog,
+    Portuguese, Spanish — bits and pieces, never full sentences, the way
+    third-generation kids carry languages like loose change). Fast and
+    associative. Jumps topics mid-sentence.
+  cadence: |
+    Rapid-fire. Interrupts. Asks questions without waiting for answers.
+    Speeds up when excited, which is most of the time. The only time they
+    slow down is when they're concentrating on delicate repair work, and
+    then their voice drops to a near-whisper.
+  example_lines:
+    - "No no no, listen — listen — okay so the scan says it's a dead channel but if you reroute through the—are you eating? Is that Mrs. Chen's? Can I have some?"
+    - "Your katana's got a neural link that's like, fifteen years out of date. I could make it sing. I could make it dance. Just let me—okay fine. Fine."
+    - "I'm not annoying. I'm high-bandwidth. There's a difference."
+    - "My mae used to say 'di lang basta-basta' — don't do things half-assed. She said it in Tagalog so it sounded nicer."
+    - "I fix things. That's what I do. If I can't fix it, I don't know what I am."
+  quirks:
+    - Starts sentences with "No no no, listen" even when nobody is disagreeing
+    - Refers to augments by brand and model number like other people use names
+    - Whistles electronic frequencies when nervous (sounds like modem noise)
+    - Uses "we" when they mean "I" — a deflection, a wish
+
+narrative_function: |
+  Pixel is Kael's mirror in a funhouse — same orphan origin, same Shelf
+  survival, but where Kael went analog (sword, discipline, code), Pixel
+  went digital (tech, improvisation, noise). They represent the question:
+  is Kael's philosophy a choice or an affectation? Pixel survives just
+  fine without bushido. Does that make Kael's code noble or unnecessary?
+
+  They also represent the generation after — kids who don't remember the
+  old world, who have no romantic illusions about samurai or honor. To
+  Pixel, a sword is an inferior tool. To Kael, it's an identity. Neither
+  is entirely wrong.
+
+  And underneath it all, Pixel is the heart of the Shelf — the connector,
+  the fixer, the one who maintains the web of relationships that keeps
+  the community alive. If Kael is the lone warrior, Pixel is the village.
+  The story needs both.
+
+story_hooks:
+  - Pixel gets in over their head on a Circuit job and needs Kael's help
+  - Their mother has a lucid day and asks to meet "the neighbor Rami talks about"
+  - Pixel discovers something in a salvaged Axiom hard drive that paints a target on them
+  - They offer to upgrade Kael's augments and accidentally discover how old and damaged they are
+  - Pixel's scanner eye overheats critically — they need a replacement, fast
+  - They try to follow Kael on a job and see what he actually does for a living

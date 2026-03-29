@@ -1,0 +1,100 @@
+type: faction
+name: "The Collective"
+aliases: ["The Hive", "Robin Hood's IT Department", "The Network", "Those Idealistic Idiots (affectionate)"]
+motto: "Information wants to be free. So do we."
+
+description: |
+  The Collective is less an organization and more a shared hallucination that enough
+  people believe in to make it functional. There's no headquarters, no membership
+  card, no org chart. There's a philosophy — information should be free, resources
+  should be shared, and corporate monopolies should be treated as the theft they are
+  — and a loose network of people who act on it. Some are hackers who crack corporate
+  databases and dump the contents on public nets. Some are data anarchists who run
+  free information services in the Circuit. Some are rogue AIs who process and
+  distribute stolen resources because their ethics subroutines arrived at conclusions
+  their corporate creators didn't intend. Some are just people who share their food
+  with strangers and call it politics.
+
+  The Collective's greatest asset and greatest weakness is the same thing: it has no
+  center. You can't decapitate it because there's no head. You can't infiltrate its
+  leadership because there isn't one. But you also can't coordinate it, discipline
+  it, or stop its members from doing monumentally stupid things under its banner.
+  The Collective has produced genuine heroes — hackers who exposed corporate atrocities,
+  AIs who built free medical databases, organizers who kept the Shelf fed during the
+  Year 30 supply crisis. It has also produced grifters who steal data and sell it for
+  personal profit while wrapping themselves in Robin Hood rhetoric. The brand is open
+  source. Quality control is nonexistent.
+
+  The heart of the Collective — to the extent that a headless organism can have a
+  heart — is in the Circuit, where its philosophy maps most naturally onto the
+  existing culture of open exchange and mutual aid. Collective-affiliated nodes
+  provide free net access, medical information, legal resources (such as they are),
+  and the kind of community infrastructure that the city government is supposed to
+  provide and doesn't. It's anarchism with a practical streak: the revolution will
+  be distributed, iterative, and probably running on stolen server capacity.
+
+goals:
+  stated: "The democratization of information, resources, and power. A Meridian where access isn't determined by corporate loyalty."
+  actual: "Varies wildly by member. Some genuinely want systemic change. Some want to watch the corps burn. Some want personal power dressed in egalitarian language. The Collective's actual goal is whatever its most active members decide it is this week."
+
+ideology: |
+  Open-source anarchism. The Collective believes that the corporate monopoly on
+  information, technology, and resources is the root of Meridian's dysfunction, and
+  that breaking that monopoly — through hacking, redistribution, and the creation
+  of parallel systems — is both moral and necessary. There's a Robin Hood mythology
+  at work: steal from the rich, give to the poor, and look cool doing it. The more
+  sophisticated members understand that redistribution without structural change is
+  just charity with better PR. The less sophisticated members are in it for the
+  thrill. Both types are necessary for the thing to function.
+
+structure:
+  type: "Decentralized network — cell-based, opt-in, horizontally organized"
+  leadership: |
+    None, officially. In practice, influence accrues to people (and AIs) who
+    consistently deliver results and maintain trust. There are nodes — individuals
+    or small groups who serve as connection points and coordination hubs — but no
+    hierarchy. Decisions are made by rough consensus, which means decisions are made
+    slowly, messily, and with a lot of arguments on encrypted channels. The most
+    influential figure in the Collective at any given time is whoever pulled off the
+    last major operation.
+  size: "Impossible to count. Maybe 10,000 active participants, 50,000 sympathizers, and an unknown number of AIs."
+
+resources:
+  - "Hacking expertise — some of the best digital infiltration talent in Meridian"
+  - "Stolen corporate data — terabytes of it, constantly replenished"
+  - "The Circuit's infrastructure — Collective-maintained nodes, servers, and communication networks"
+  - "Rogue AI allies — artificial intelligences who contribute processing power, analysis, and perspectives"
+  - "Public goodwill — the Shelf and lower tiers generally view the Collective favorably"
+  - "Open-source augment designs — functional, free, and a direct threat to Axiom's patent monopoly"
+  - "Distributed resilience — you can arrest a hundred members and the network routes around the damage"
+
+methods:
+  - "Data liberation — cracking corporate databases and releasing information publicly"
+  - "Resource redistribution — redirecting corporate supplies to lower-tier communities"
+  - "Infrastructure building — maintaining free net access, medical databases, and communication networks"
+  - "Open-source development — creating free alternatives to corporate-patented technology"
+  - "Information warfare — exposing corporate malfeasance through data dumps and whistleblower support"
+  - "Mutual aid — direct community support, funded by stolen corporate assets"
+  - "Propaganda — the Collective is very good at telling stories about itself"
+
+territory: "The Circuit (primary), with nodes throughout the Shelf and even a few in the Core (carefully hidden)."
+
+relationship_to_kael: |
+  Kael is sympathetic to the Collective but not a member. He likes the philosophy —
+  the idea that taking from the powerful and giving to the powerless is a legitimate
+  way to live. It mirrors his own code, his own attempt to be a street samurai with
+  principles in a city that runs on their absence. But the Collective's looseness
+  makes him uneasy. He's seen Collective operations go wrong because there was no
+  one in charge, seen idealists get killed by their own disorganization. He takes
+  Collective-sourced contracts when they align with his ethics. He's done data runs
+  for them, protected their people, and benefited from their resources. But he won't
+  call himself one of them. Commitment to a cause requires trusting the cause, and
+  Kael's trust was broken a long time ago.
+
+story_hooks:
+  - "A Collective data dump that reveals something about Kael's own past — something he didn't know"
+  - "The idealist vs. grifter tension — a Collective operation that's actually a scam, and Kael is caught in the middle"
+  - "A rogue AI in the Collective who is developing something genuinely revolutionary — and dangerous"
+  - "The Collective asks Kael to do something that serves the cause but violates his personal code"
+  - "Axiom's crackdown — a coordinated sweep of Collective nodes that forces the network underground and tests its resilience"
+  - "The question of leadership — can a leaderless movement actually change anything, or does it just make noise?"
