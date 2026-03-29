@@ -1,0 +1,47 @@
+# Recurring motifs tracked across the story
+# Each motif has appearances with shifting meaning
+
+motifs:
+  the_hum:
+    description: The persistent hum of machinery — life support, city infrastructure, augments
+    appearances:
+      - scene: 1
+        meaning: Life support in the clinic — fragile life tethered to machines
+      - scene: 1
+        meaning: The hum stutters under threat — innocents in the balance
+      - scene: 1
+        meaning: City hum replaces clinic hum — indifferent machinery Kael serves
+
+  the_katana:
+    description: The blade as symbol — precision, discipline, burden, moral problem
+    appearances:
+      - scene: 1
+        meaning: Weapon whispering at his hip — potential violence
+      - scene: 1
+        meaning: The precise cut — discipline as cruelty
+      - scene: 1
+        meaning: Weight on the hilt leaving the clinic — not weapon but consequence
+
+  fluorescent_light:
+    description: Harsh artificial illumination — clinical truth, no shadows to hide in
+    appearances:
+      - scene: 1
+        meaning: The clinic's stark reality, nowhere to hide
+
+  youth:
+    description: Children and teenagers — innocence spent as currency
+    appearances:
+      - scene: 1
+        meaning: The desperate teen, the sister with tubes — innocence as collateral
+
+  sterile_environment:
+    description: Clinical spaces contrasting with emotional turmoil
+    appearances:
+      - scene: 1
+        meaning: Antiseptic smell against the violence of choice
+
+  desperation:
+    description: The pervasive environmental pressure that drives everyone's choices
+    appearances:
+      - scene: 1
+        meaning: The teen's desperation mirroring Kael's own survival calculus

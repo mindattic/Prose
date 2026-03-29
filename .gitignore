@@ -1,3 +1,5 @@
 .env
 __pycache__/
 *.pyc
+sessions/*/facet_responses/
+*.egg-info/
