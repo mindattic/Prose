@@ -1,0 +1,200 @@
+type: character
+name: "Chen Wei-Lin"
+aliases: ["Mrs. Chen", "Auntie Chen", "The Noodle Lady"]
+role: "The Noodle Shop Owner / Informal intelligence network"
+age: 68
+status: "alive"
+location: "The Shelf, Level 14 — 'Chen's' (no other signage)"
+description: |
+  Mrs. Chen is a small woman who moves like she's on rails — efficient, precise, never bumping
+  into anything in her cramped noodle shop despite the fact that it's barely wider than two
+  outstretched arms. She has the build of someone who has been standing over stoves for decades:
+  strong forearms, slightly hunched shoulders, hands that are perpetually red from hot water and
+  chili oil. Her face is round, lined, and utterly unimpressed by everything. She has the
+  expression of a woman who has heard every excuse, every sob story, and every lie that human
+  beings are capable of producing, and has decided that the appropriate response to all of them
+  is another bowl of noodles.
+
+  Her hair is steel-grey, pinned up in a practical bun held together with two chopsticks that
+  she has been known to use as actual chopsticks when the shop gets busy. She wears the same
+  outfit every day: dark pants, a stained apron over a high-collared shirt, and cloth shoes that
+  make no sound on the metal flooring of the Shelf. She has no augmentations whatsoever — in a
+  world where even beggars have basic neural interfaces, Mrs. Chen operates entirely in analog.
+  Her eyes are her own, her hands are her own, and her memory — which is formidable — is
+  unassisted.
+
+  First impression: she will not greet you. She will glance at you, assess you in approximately
+  one-point-five seconds, and either set a bowl in front of you or jerk her head toward the door.
+  There is no menu. You eat what she makes. If you complain, you don't come back. If you can't
+  pay, you eat anyway, but you'll find yourself washing dishes next Tuesday. She runs the tightest
+  economy on the Shelf, and she does it without a single line of code.
+origins: |
+  Wei-Lin was born in the Shenzhen Industrial Zone before the Consolidation Wars redrew every
+  border that mattered. Her parents ran a machine shop that serviced augmentation clinics — they
+  didn't install the hardware, they maintained the tools that installed the hardware. She grew
+  up surrounded by the mechanical reality of augmentation: the sterile smell of surgical steel,
+  the whine of bone drills, the bins of rejected implants that looked like chrome insects.
+
+  She was brilliant with the technical side. Earned her augmentation technician license at
+  twenty-two, which in that era meant she could legally install, maintain, and remove cybernetic
+  implants. She ran a clean shop in the Kowloon Reclamation District — not fancy, not corporate,
+  but competent. She specialized in maintenance for people who couldn't afford to go back to the
+  manufacturer: expired warranties, grey-market implants, military surplus that was never designed
+  for civilian use. She was the person you went to when your arm was glitching and you couldn't
+  afford Axiom's service fees.
+
+  Her son, Chen Bao-Yu, enlisted in the Pan-Pacific Corporate Defense Coalition at nineteen. She
+  didn't try to stop him — she'd grown up in a world where corporate service was just what you
+  did. He was killed during the Jakarta Sweep. The notification came via automated message. She
+  received his personal effects three months later: a duffel bag containing two shirts, a broken
+  datapad, and a letter he'd started writing to her but never finished. The letter said, "Ma, I
+  think I made a—" and stopped.
+
+  When Axiom Industries consolidated the medical augmentation field, they revoked independent
+  technician licenses and required all practitioners to operate under corporate franchise. The
+  buy-in was more than Wei-Lin made in five years. She refused on principle even before the cost
+  was an issue. She sold her tools, moved to New Meridian, and opened a noodle shop on the Shelf
+  with the last of her savings. She chose noodles because her grandmother had taught her, and
+  because feeding people was the one thing corporations hadn't figured out how to monopolize yet.
+psychology:
+  facet_weights:
+    wound: 0.7
+    ideal: 0.6
+    id: 0.5
+    shadow: 0.3
+    mask: 0.6
+    ghost: 0.5
+  core_fears:
+    - "That she'll outlive everyone she feeds — that the Shelf will empty out and she'll be cooking for ghosts"
+    - "That her son's death meant nothing, changed nothing, prevented nothing"
+    - "That Kael will die the same way Bao-Yu did — young, far from home, in someone else's war"
+  core_desires:
+    - "To maintain one small space where the rules are human, not corporate"
+    - "To be useful without being used"
+    - "To see Kael eat a full meal without looking like he's planning how to kill everyone in the room"
+  coping_mechanisms:
+    - "Work — constant, physical, exhausting work. If her hands are busy, her mind can't wander to Bao-Yu."
+    - "Feeding people as a form of control in a world she can't control"
+    - "Sarcasm as emotional armor"
+    - "Keeping other people's secrets — holding knowledge is a form of power she doesn't have to use"
+  blind_spots:
+    - "She projects her son onto Kael, which means she sometimes protects him from information he needs"
+    - "She believes staying small keeps you safe. It doesn't — it just keeps you invisible until someone decides to look."
+    - "She underestimates her own importance to the Shelf. If something happened to her, the community would fracture."
+  secret: |
+    She still has her augmentation tools. All of them. Wrapped in oilcloth, hidden in a sealed
+    compartment beneath the shop's floor. She tells herself she keeps them for sentimental
+    reasons. The truth is she keeps them because she knows, with the certainty of someone who
+    has watched the world get worse for forty years, that someone is going to need surgery and
+    there won't be anyone else. She hasn't touched them in twelve years. Her hands still remember
+    every procedure.
+appearance:
+  physical: |
+    Small — five foot two, and she's lost an inch to age. Compact and sturdy, with the kind of
+    strength that comes from decades of hauling stock pots and kneading dough. Round face, deep
+    laugh lines that are misleading because she rarely laughs. Dark eyes that miss nothing. Her
+    hands are her most notable feature: scarred from cuts and burns, knuckles slightly enlarged
+    from arthritis she ignores, but still precise enough to julienne scallions into translucent
+    ribbons. No grey in her eyebrows, which gives her face a slightly fierce quality against her
+    steel-grey hair.
+  augmentations: |
+    None. Absolutely none. She is one of the few remaining "naturals" on the Shelf, possibly in
+    the district. In a world where basic neural interfaces are as common as eyeglasses, this is
+    a radical act. She can't access the net without a physical terminal. She can't receive
+    direct comms. She navigates by memory and landmark. People find this either admirable or
+    insane, depending on their own augmentation level. She has opinions about what people put in
+    their bodies but keeps most of them behind her teeth.
+  distinctive_features:
+    - "Chopsticks perpetually in her hair"
+    - "Stained apron that she never seems to wash but never seems to get worse"
+    - "A slight limp in her left leg from a fall fifteen years ago that she refuses to explain"
+    - "Hands that are always doing something — chopping, stirring, wiping, gesturing"
+    - "Smells permanently of chili oil, ginger, and bone broth"
+daily_life:
+  routine: |
+    Mrs. Chen wakes at 4:30 AM because the broth takes four hours and she opens at nine. She
+    sources ingredients from the Shelf's hydroponic growers and the black-market food runners
+    who bring real vegetables up from the agricultural zones outside New Meridian. She haggles
+    viciously and pays in cash — actual physical currency, which she keeps in a lockbox bolted
+    to the floor. The shop opens at nine and closes when the food runs out, usually around eight
+    PM. She serves between forty and sixty people on a normal day. She knows all of them. She
+    knows their names, their augment maintenance schedules, who's fighting with whom, who just
+    lost a job, who's about to do something stupid. People tell her things over noodles that they
+    wouldn't tell their partners. She files it all away in her unaugmented, analog brain, and
+    she never uses it against anyone. She eats last, standing up, from whatever's left in the pot.
+    She sleeps five hours a night and has done so for thirty years.
+  habits:
+    - "Tastes every batch of broth exactly three times during cooking"
+    - "Hums Cantonese opera while chopping — the only time she makes unnecessary noise"
+    - "Keeps a baseball bat behind the counter. Has used it twice. Doesn't talk about it."
+    - "Gives slightly larger portions to people she's worried about, without acknowledging it"
+    - "Closes the shop once a year on the anniversary of Bao-Yu's death. Tells everyone it's for maintenance."
+relationships:
+  - name: "Kael"
+    type: "Surrogate mother / Reluctant keeper"
+    description: |
+      She started feeding Kael because Tanaka brought him around, and she kept feeding him
+      because someone had to. She will never say she cares about him. She shows it by putting
+      extra pork in his bowl, by telling him when someone on the Shelf is looking for trouble,
+      by not asking about the blood on his clothes. She sees Bao-Yu in him — not in appearance,
+      but in the way he walks into rooms like he might not walk out. She wants to grab him by the
+      shoulders and shake him until the death wish falls out. She never will. She'll just keep
+      setting out bowls.
+  - name: "Tanaka Hiroshi"
+    type: "Deceased neighbor / Quiet mutual respect"
+    description: |
+      They understood each other the way two people who've survived the same era do — not through
+      conversation, but through the things they both chose not to say. She brought him soup. He
+      fixed her shutters. Neither acknowledged that these were acts of care. When he died, she
+      cooked his funeral meal: a simple rice porridge with preserved egg, the kind of food you
+      make when words aren't enough. She was the one who told Kael that Tanaka was gone.
+  - name: "Pixel"
+    type: "Neighborhood kid / Occasional headache"
+    description: |
+      Pixel eats at Chen's every day, talks with their mouth full, and once tried to install a
+      smart-ordering system that Mrs. Chen dismantled with a cleaver and a look. She finds them
+      exhausting and worries about them constantly. She's the one who taught Pixel to eat
+      vegetables. She considers this her greatest engineering achievement.
+  - name: "Bao-Yu (son, deceased)"
+    type: "Son / Central wound"
+    description: |
+      She doesn't talk about him. His name is not spoken in the shop. But his photograph is
+      taped to the inside of the cabinet where she keeps the good soy sauce — visible only to
+      her, every time she reaches for it. He was nineteen. He had her eyes and his father's
+      height. The unfinished letter lives in her apron pocket. She has memorized the sentence
+      fragment. She will never know how it ended.
+speech_patterns:
+  vocabulary: "Practical, concrete, rooted in the physical world. She talks about food, weather, and people's behavior. She doesn't do abstract. If you start philosophizing, she'll put you to work."
+  cadence: "Clipped and rhythmic, like chopping. She talks in short sentences, often while doing something else. She doesn't pause for effect — she pauses because she's stirring."
+  example_lines:
+    - "Sit. Eat. You look like something the recycler spit out."
+    - "I don't want to know. Eat your noodles."
+    - "You think you're the first person to walk in here with blood on his shirt? Eat."
+    - "That Pixel kid was looking for you. I told them you were dead. Bought you maybe an hour."
+    - "Your teacher would have finished the bowl. Don't waste my broth on your feelings."
+    - "I'm not your mother. Eat your vegetables."
+    - "You want advice? Wrong shop. You want noodles? Sit down."
+  quirks:
+    - "Answers emotional statements with food-related commands"
+    - "Refers to augmentations as 'junk in your body' regardless of quality"
+    - "Will not repeat herself. If you didn't hear it, that's your problem."
+    - "Communicates disapproval by giving someone a smaller portion"
+    - "Only uses people's full names when she's genuinely worried about them"
+narrative_function: |
+  Mrs. Chen is the human baseline — the control group in the experiment of this world. In a
+  city where everyone is augmented, networked, and optimized, she proves that a person with
+  nothing but skill, memory, and stubbornness can still hold ground. She represents a different
+  kind of resistance than Kael's: not the sword, but the bowl. Not fighting the system, but
+  building something small and real inside it.
+
+  She poses the question: is Kael's violent code actually necessary, or is there a quieter
+  way to be human in an inhuman world? She also functions as the emotional anchor — the one
+  character who connects everyone on the Shelf without augmentation, without agenda, without
+  asking for anything in return. If she's ever threatened, the reader should feel it like a
+  gut punch, because she's the one person in this world who is purely, stubbornly good.
+story_hooks:
+  - "Axiom announces plans to redevelop the Shelf — Mrs. Chen's shop is in the demolition zone"
+  - "Someone from Bao-Yu's unit contacts her with information about how he really died"
+  - "A medical emergency on the Shelf forces her to open the floor compartment and pick up her tools again"
+  - "The informal intelligence she carries in her head makes her a target for someone who wants to map the Shelf's social network"
+  - "Kael discovers the photograph of Bao-Yu and realizes why she's been feeding him for seven years"

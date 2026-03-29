@@ -5,6 +5,7 @@ import yaml
 
 from .character import Character, load_character
 from .conductor import run_beat
+from .essence import EssenceNetwork, load_essence_network
 from .utils import write_text, read_text
 
 
@@ -33,10 +34,21 @@ def _load_story_context() -> str:
 
 
 class Session:
-    def __init__(self, session_dir: Path, character: Character, scene_goal: str):
+    def __init__(
+        self,
+        session_dir: Path,
+        character: Character,
+        scene_goal: str,
+        essence_network: EssenceNetwork | None = None,
+        location: str | None = None,
+        npcs: list[str] | None = None,
+    ):
         self.session_dir = session_dir
         self.character = character
         self.scene_goal = scene_goal
+        self.essence_network = essence_network
+        self.location = location
+        self.npcs = npcs or []
         self.beats: list[dict] = []
         self.scene_text = ""
         self.story_context = _load_story_context()
@@ -61,12 +73,15 @@ class Session:
             "scene_goal": self.scene_goal,
             "beat_count": len(self.beats),
             "character_dir": str(PROJECT_ROOT / "character"),
+            "location": self.location,
+            "npcs": self.npcs,
             "beats": [
                 {
                     "index": b["index"],
                     "lead_facet": b["lead_facet"],
                     "supporting_facets": b["supporting_facets"],
                     "beat_goal": b["beat_goal"],
+                    "npcs": b.get("npcs", []),
                 }
                 for b in self.beats
             ],
@@ -98,8 +113,20 @@ class Session:
         existing = read_text(log_path) if log_path.exists() else "# Conductor Log\n"
         write_text(log_path, existing + entry)
 
-    def add_beat(self, beat_goal: str, force_lead: str | None = None) -> dict:
+    def add_beat(
+        self,
+        beat_goal: str,
+        force_lead: str | None = None,
+        npcs: list[str] | None = None,
+    ) -> dict:
         scene_so_far = "\n\n".join(b["text"] for b in self.beats) if self.beats else ""
+
+        # Combine session-level NPCs with beat-level NPCs
+        beat_npcs = list(self.npcs)
+        if npcs:
+            for npc in npcs:
+                if npc not in beat_npcs:
+                    beat_npcs.append(npc)
 
         beat_text, lead, supporting, analysis = run_beat(
             character=self.character,
@@ -107,6 +134,9 @@ class Session:
             scene_so_far=scene_so_far,
             beat_goal=beat_goal,
             force_lead=force_lead,
+            essence_network=self.essence_network,
+            location=self.location,
+            npcs=beat_npcs if beat_npcs else None,
         )
 
         beat_index = len(self.beats) + 1
@@ -117,6 +147,7 @@ class Session:
             "supporting_facets": [f.name for f in supporting],
             "beat_goal": beat_goal,
             "analysis": analysis,
+            "npcs": beat_npcs,
         }
         self.beats.append(beat_record)
 
@@ -138,17 +169,37 @@ class Session:
         return "\n\n".join(b["text"] for b in self.beats)
 
 
-def create_session(scene_goal: str) -> Session:
+def create_session(
+    scene_goal: str,
+    location: str | None = None,
+    npcs: list[str] | None = None,
+) -> Session:
     character = load_character(PROJECT_ROOT / "character")
+    essence_network = load_essence_network(PROJECT_ROOT / "essences")
     now = datetime.now().strftime("%Y%m%d_%H%M%S")
     session_dir = PROJECT_ROOT / "sessions" / f"session_{now}"
-    return Session(session_dir, character, scene_goal)
+    return Session(
+        session_dir,
+        character,
+        scene_goal,
+        essence_network=essence_network,
+        location=location,
+        npcs=npcs,
+    )
 
 
 def load_session(session_dir: Path) -> Session:
     state = yaml.safe_load(session_dir.joinpath("session.yaml").read_text(encoding="utf-8"))
     character = load_character(Path(state["character_dir"]))
-    session = Session(session_dir, character, state["scene_goal"])
+    essence_network = load_essence_network(PROJECT_ROOT / "essences")
+    session = Session(
+        session_dir,
+        character,
+        state["scene_goal"],
+        essence_network=essence_network,
+        location=state.get("location"),
+        npcs=state.get("npcs", []),
+    )
 
     # Reload beats from saved facet responses
     draft_path = session_dir / "scene_draft.md"
@@ -163,6 +214,7 @@ def load_session(session_dir: Path) -> Session:
                 "supporting_facets": beat_info["supporting_facets"],
                 "beat_goal": beat_info["beat_goal"],
                 "analysis": {},
+                "npcs": beat_info.get("npcs", []),
             })
 
     return session
