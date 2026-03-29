@@ -23,7 +23,7 @@ Both of these things are true. Neither one cancels the other.
 
 ### Founding Story
 
-Tessera did not begin as Tessera. It began as NeuraLink Systems, Inc., a 2033 reorganization of the original Cortex Dynamics Corp after Elon Musk's departure from the company in 2031 amid the broader collapse of his business empire. The SEC enforcement actions against Tesla, the X platform's insolvency proceedings, and the SpaceX nationalization crisis left Cortex Dynamics orphaned -- a genuinely promising neural interface company suddenly without its patron billionaire's funding pipeline or media amplification.
+Tessera did not begin as Tessera. It began as NeuraLink Systems, Inc., a 2033 reorganization of the original Cortex Dynamics Corp after Aldric Vance's departure from the company in 2031 amid the broader collapse of his business empire. The regulatory enforcement actions against Vance Automotive, the social platform's insolvency proceedings, and the Frontier Launch nationalization crisis left Cortex Dynamics orphaned -- a genuinely promising neural interface company suddenly without its patron billionaire's funding pipeline or media amplification.
 
 What Cortex Dynamics had was talent. The engineering team that had achieved the first fully automated BCI surgical procedure in 2030 -- 94-second insertion, outpatient, local anesthetic -- was the most capable neural interface development group on Earth. They also had 1,400 patients with functioning N1 implants, a dataset of unprecedented depth in human neural signal processing, and a patent portfolio that would take any competitor fifteen years to work around.
 

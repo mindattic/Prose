@@ -347,7 +347,7 @@ This, too, is the design working as intended. A deadhead is not a lost customer.
 
 | Entity | Type | Primary BCI Product Line | Notes |
 |---|---|---|---|
-| Tessera CorpoNation | Corponation | NovaMind (consumer), NovaMind Enterprise (professional), Apex Division (elite) | Evolved from Cortex Dynamics/Tesla corporate lineage. Largest BCI market share. |
+| Tessera CorpoNation | Corponation | NovaMind (consumer), NovaMind Enterprise (professional), Apex Division (elite) | Evolved from Cortex Dynamics/Vance Automotive corporate lineage. Largest BCI market share. |
 | Zheng-Dao Bioelectric | Corponation | CortexLink (consumer/professional), DeepMind Analytics (data products) | Chinese-origin. Pioneered persistent cloud neural connectivity. Largest neural data harvesting operation. |
 | Arcturus Defense Solutions | Corponation | Meridian (consumer), Sovereign Systems (elite), classified military programs | Defense-industrial origin. Primary supplier of military-grade BCIs. Operates the Cognitive Rehabilitation Initiative. |
 | Halo Neurosystems | Corporation (sub-corponation scale) | Synaptic (consumer) | Third-tier manufacturer. Budget consumer market. |
