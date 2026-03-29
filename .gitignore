@@ -3,3 +3,13 @@ __pycache__/
 *.pyc
 sessions/*/facet_responses/
 *.egg-info/
+
+# Engine data (rebuilt from canon, not tracked)
+engine_data/
+
+# Generated stories (not canon, review before committing)
+stories/
+
+# Canon queue working directories
+canon_queue/pending/
+canon_queue/rejected/
