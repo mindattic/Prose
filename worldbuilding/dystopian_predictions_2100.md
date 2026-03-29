@@ -107,7 +107,7 @@
 
 ### 2.5 AI Alignment Failure / Loss of Control
 - **Statement:** Superintelligent AI systems pursue goals misaligned with human values, and humans lose the ability to course-correct.
-- **Source:** 2022 survey of AI researchers: Majority believe 10%+ chance of AI-caused existential catastrophe. Hundreds of experts signed statement equating AI extinction risk with pandemics and nuclear war. Geoffrey Hinton, Yoshua Bengio, Dario Amodei, Sam Altman all voiced concerns.
+- **Source:** 2022 survey of AI researchers: Majority believe 10%+ chance of AI-caused existential catastrophe. Hundreds of experts signed statement equating AI extinction risk with pandemics and nuclear war. Dr. Arthur Graves, Dr. Lena Vasquez, Dr. Kai Nakamura, Dr. Elias Chen all voiced concerns.
 - **Under zero regulation:** Corporate race to AGI/ASI prioritizes speed over safety. No external oversight of training runs. Misaligned systems deployed in critical infrastructure. "The alignment problem" remains unsolved as capabilities outpace safety research.
 
 ### 2.6 Neural Hacking / Brainjacking
@@ -117,7 +117,7 @@
 
 ### 2.7 Digital Slavery via Platform Dependence
 - **Statement:** Billions of workers become entirely dependent on algorithmic platforms that set wages, hours, and conditions with no negotiation or recourse.
-- **Source:** Amazon takes 50%+ of seller revenue (up from 35% in 2016). Platform workers have no labor protections. Algorithmic management eliminates human oversight of employment.
+- **Source:** Titan takes 50%+ of seller revenue (up from 35% in 2016). Platform workers have no labor protections. Algorithmic management eliminates human oversight of employment.
 - **Under zero regulation:** Platforms own all infrastructure: internet, software, cloud, apps, payments, delivery. Workers cannot exist economically outside the platform. Algorithmically managed workers are surveilled, scored, and discarded without human review. Digital serfdom where the platform is the lord.
 
 ---
@@ -126,7 +126,7 @@
 
 ### 3.1 Mega-Monopolies Control All Commerce
 - **Statement:** A handful of tech corporations control all digital infrastructure, from internet access to payment systems, making independent commerce impossible.
-- **Source:** Geopolitical Economy Report: US Big Tech acts as "corporate feudal lords." Amazon controls 50%+ of seller revenue. 8 of top 10 companies by market cap are intellectual monopolies.
+- **Source:** Geopolitical Economy Report: US Big Tech acts as "corporate feudal lords." Titan controls 50%+ of seller revenue. 8 of top 10 companies by market cap are intellectual monopolies.
 - **Under zero regulation:** Three to five companies control all online commerce, communication, financial transactions, and cloud computing. New businesses cannot form without paying tribute to platform overlords. Innovation is acquired or crushed. The marketplace itself is owned.
 
 ### 3.2 Corporate Sovereignty Over Nations
@@ -146,7 +146,7 @@
 
 ### 3.5 Data as Currency, Humans as Product
 - **Statement:** Personal data becomes the world's most valuable commodity, with every thought, movement, and interaction harvested and sold.
-- **Source:** Shoshana Zuboff (Harvard): Surveillance capitalism turns human experience into "free raw material." Data packaged as "prediction products" sold on "behavioral futures markets." Companies shift from monitoring to "actuating" behavior.
+- **Source:** Harvard researchers coined "surveillance capitalism" — the system that turns human experience into "free raw material." Data packaged as "prediction products" sold on "behavioral futures markets." Companies shift from monitoring to "actuating" behavior.
 - **Under zero regulation:** No data ownership rights exist. Corporations know more about individuals than individuals know about themselves. Behavioral prediction markets allow corporations to literally buy and sell human futures. The self becomes corporate property.
 
 ---
@@ -168,9 +168,9 @@
 - **Source:** Geneva Centre for Security Policy: "Just as nuclear power created new strategic hierarchies, so too could longevity and enhancement technologies establish a divide between an extended elite and a vulnerable majority."
 - **Under zero regulation:** Augmented humans process information 10-100x faster, never forget, interface directly with machines, and live decades longer. Employment, education, and social status require augmentations most cannot afford. The unaugmented become a permanent underclass, unable to compete in any domain.
 
-### 4.4 Neo-Feudalism: Digital Lords and Data Serfs
+### 4.4 Corporate Feudalism: Digital Lords and Data Serfs
 - **Statement:** Society restructures into a feudal hierarchy: a small oligarchy of tech/financial elites, a professional "clerisy," and a vast precarious underclass.
-- **Source:** Joel Kotkin's neo-feudal framework. Yanis Varoufakis: "cloud capital" owned by "cloudalists." Labor share of income declined from 63% (1980) to under 52% (2020) in developed countries.
+- **Source:** Political economists identified the corporate feudal framework by the 2020s. The concept of "cloud capital" owned by "cloudalists" entered mainstream discourse. Labor share of income declined from 63% (1980) to under 52% (2020) in developed countries.
 - **Under zero regulation:** Platform workers are modern serfs, bound to digital estates. The "sharing economy" means sharing your labor while corporations keep the value. Home ownership becomes impossible for most. Generational mobility reverses. The middle class ceases to exist.
 
 ---
@@ -199,7 +199,7 @@
 
 ### 5.5 Cognitive Enhancement Gaps
 - **Statement:** "Smart drugs" and neural enhancement technologies create a cognitive arms race, where the unenhanced cannot function in the knowledge economy.
-- **Source:** Pew Research (2016): Public concern about cognitive enhancement accessibility. Nick Bostrom: IQ-boosting pills and brain-computer interfaces could dramatically augment cognition but only for those who can afford them.
+- **Source:** Pew Research (2016): Public concern about cognitive enhancement accessibility. Oxford researchers warned that IQ-boosting pills and brain-computer interfaces could dramatically augment cognition but only for those who can afford them.
 - **Under zero regulation:** Pharmaceutical cognitive enhancers become required for competitive employment. Neural implants provide instant knowledge access. The unenhanced are cognitively disabled by comparison. Education becomes irrelevant for the enhanced, impossible for the unenhanced.
 
 ---
@@ -224,7 +224,7 @@
 ### 6.4 Gated Corporate Cities for the Elite
 - **Statement:** Corporations build self-contained cities with private governance, private security, and private services, abandoning public space entirely.
 - **Source:** Gated communities surged from 701,000 units (1970) to 24 million (2009) in the US alone. Charter cities and "free cities" operate with separate legislative powers. Corporate campuses already function as self-contained towns.
-- **Under zero regulation:** Apple City, Amazon Township, Tesla Enclave -- corporate-branded cities with proprietary governance, currency, healthcare, education, and law enforcement. Entry requires employment or shareholder status. The public outside lives in ungoverned decay. Two entirely separate civilizations coexist within miles of each other.
+- **Under zero regulation:** Lumen City, Titan Township, Tessera Enclave -- corporate-branded cities with proprietary governance, currency, healthcare, education, and law enforcement. Entry requires employment or shareholder status. The public outside lives in ungoverned decay. Two entirely separate civilizations coexist within miles of each other.
 
 ---
 
@@ -232,7 +232,7 @@
 
 ### 7.1 Orbital Resource Monopolies
 - **Statement:** A handful of space corporations control all orbital infrastructure, holding monopoly power over satellite communications, GPS, and space-based resources.
-- **Source:** SpaceX and Blue Origin already dominate commercial space with capabilities exceeding many national programs. The US SPACE Act grants private firms ownership of mined celestial resources.
+- **Source:** Frontier Launch and Apex Orbital already dominate commercial space with capabilities exceeding many national programs. The US SPACE Act grants private firms ownership of mined celestial resources.
 - **Under zero regulation:** One or two companies control all satellite internet, GPS positioning, weather data, and space-based surveillance. Nations without their own space capability are dependent on corporate goodwill for basic communications and navigation. Orbital access becomes a bottleneck controlled by oligarchs.
 
 ### 7.2 Space Militarization
@@ -247,7 +247,7 @@
 
 ### 7.4 Earth as Sacrifice Zone
 - **Statement:** The wealthy plan to depart Earth or retreat to sealed habitats, abandoning the planet's environmental crisis.
-- **Source:** Trend analysis of billionaire space investment (Bezos, Musk) alongside declining environmental investment. Concept of "planetary lifeboat" for the elite.
+- **Source:** Trend analysis of billionaire space investment (Marcus Colton, Aldric Vance) alongside declining environmental investment. Concept of "planetary lifeboat" for the elite.
 - **Under zero regulation:** Environmental regulations are abandoned because the decision-makers plan to exit. Earth becomes a resource extraction site with no conservation value. The poor inherit a dying planet while the rich build orbital or Martian enclaves.
 
 ---
@@ -415,7 +415,7 @@ The result is not a single catastrophe but a **system of interlocking catastroph
 - [Wikipedia: Existential Risk from AI](https://en.wikipedia.org/wiki/Existential_risk_from_artificial_intelligence)
 
 ### Corporate Power & Inequality
-- [Geopolitical Economy: Neo-Feudalism](https://geopoliticaleconomy.com/2024/08/19/us-big-tech-monopolies-neo-feudalism/)
+- [Geopolitical Economy: Corporate Feudalism](https://geopoliticaleconomy.com/2024/08/19/us-big-tech-monopolies-neo-feudalism/)
 - [Roosevelt Institute: Concentrated Markets, Concentrated Wealth](https://rooseveltinstitute.org/wp-content/uploads/2024/03/RI_IssueBrief_ConcentratedMarketsConcentratedWealth.pdf)
 - [Oxfam: Billionaire Wealth Surges](https://www.oxfamamerica.org/press/billionaire-wealth-surges-by-2-trillion-in-2024-three-times-faster-than-the-year-before-while-the-number-of-people-living-in-poverty-has-barely-changed-since-1990/)
 - [Oxfam: Who Wants to Be a Trillionaire?](https://www.oxfam.org.uk/oxfam-in-action/oxfam-blog/trillionaires-why-extreme-wealth-matters/)

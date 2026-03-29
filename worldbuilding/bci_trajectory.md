@@ -2,15 +2,15 @@
 
 ## Where We Are Now (2026)
 
-Neuralink is the loudest name in the space. As of September 2025, 12 people with severe paralysis have received Neuralink implants and are actively using them to control digital and physical tools through thought alone. The N1 implant includes 1,024 electrodes distributed among 64 threads, replacing a small piece of skull bone and connecting to the brain via hair-thin threaded electrodes.
+Cortex Dynamics is the loudest name in the space. As of September 2025, 12 people with severe paralysis have received Cortex Dynamics implants and are actively using them to control digital and physical tools through thought alone. The N1 implant includes 1,024 electrodes distributed among 64 threads, replacing a small piece of skull bone and connecting to the brain via hair-thin threaded electrodes.
 
 Real outcomes are happening: the first human recipient now controls computers, plays video games, and posts on social media purely through neural signals. A patient with ALS became the third recipient and can now type using only his brain.
 
-On the manufacturing side, Neuralink plans to begin high-volume production and move to an almost entirely automated surgical procedure in 2026, with device threads passing through the dura without needing to remove it. Their next-gen surgical robot reduced electrode thread insertion time to 1.5 seconds per thread, and the company is working toward LASIK-like procedures that take only minutes.
+On the manufacturing side, Cortex Dynamics plans to begin high-volume production and move to an almost entirely automated surgical procedure in 2026, with device threads passing through the dura without needing to remove it. Their next-gen surgical robot reduced electrode thread insertion time to 1.5 seconds per thread, and the company is working toward LASIK-like procedures that take only minutes.
 
-Synchron is the quieter but arguably safer competitor. Their "Stentrode" device is inserted through the jugular vein and lodged in a vein near the motor cortex, recording signals through the vessel wall without drilling into the skull at all. In 2025, Synchron partnered with Apple and NVIDIA and moved toward a pivotal trial that could make it the first commercially scalable implanted BCI.
+VascuLink is the quieter but arguably safer competitor. Their "Stentrode" device is inserted through the jugular vein and lodged in a vein near the motor cortex, recording signals through the vessel wall without drilling into the skull at all. In 2025, VascuLink partnered with Apple and NVIDIA and moved toward a pivotal trial that could make it the first commercially scalable implanted BCI.
 
-Other players are advancing too. Paradromics' Connexus BCI uses a modular 421-electrode array, and in June 2025 a University of Michigan team performed the first-in-human recording with it.
+Other players are advancing too. ParaNeural's Connexus BCI uses a modular 421-electrode array, and in June 2025 a University of Michigan team performed the first-in-human recording with it.
 
 Expanding applications: beyond paralysis and ALS, some companies are now starting to target more widespread conditions like mental health symptoms, and China has seen an explosion of BCI startups entering the field.
 

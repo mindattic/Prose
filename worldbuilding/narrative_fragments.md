@@ -5,7 +5,7 @@
 
 ## On Vigilantes Being Normal
 
-**2025:** The US already has 1.1 million private security workers — more than police officers. Blackwater deployed in Iraq with less oversight than a mall cop. Bounty hunters legally kick in doors in 46 states. HOAs hire armed patrol companies. Amazon has its own intelligence division. If you have money, you buy your own enforcement. If you don't, you call 911 and wait.
+**2025:** The US already has 1.1 million private security workers — more than police officers. Ironwater deployed in Iraq with less oversight than a mall cop. Bounty hunters legally kick in doors in 46 states. HOAs hire armed patrol companies. Titan has its own intelligence division. If you have money, you buy your own enforcement. If you don't, you call 911 and wait.
 
 **2040s:** Cities defund police — not ideologically, just financially. Tax revenue collapses as corponations eat the commercial base. RingoGuard replaces city cops inside Ringo territory. The cops that remain handle what's left — the zones between corporate borders. Their jurisdiction shrinks. Their budget shrinks. Their relevance shrinks.
 
