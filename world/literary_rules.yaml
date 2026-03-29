@@ -1,0 +1,37 @@
+sentence_max_words: 25
+
+paragraph_requirements:
+  - Every paragraph must contain an action, a sensory detail, or a lie
+  - At least one paragraph per page must contain all three
+
+sensory_motif:
+  count: 3
+  rule: Repeat one sensory motif 3 times per scene, with shifting meaning each time
+  examples:
+    - "The hum (life support → machinery → indifference)"
+    - "Fluorescent light (clinical → harsh reality → false dawn)"
+    - "The weight of the katana (weapon → burden → identity)"
+
+prohibitions:
+  - Generic noir narration
+  - Trailer lines or slogans
+  - Katana as power fantasy (always a moral problem)
+  - Action-movie pacing
+  - Samurai cliches or anime dialogue
+  - Monologuing about honor (show through cost, not speeches)
+  - Characters explaining their own psychology
+  - Clean moral victories
+
+structural:
+  pov: One POV only (Kael)
+  location: One primary location per scene
+  choice: One irreversible choice per scene
+  consequence: Someone innocent suffers directly from the protagonist's decision
+  ending: Moral aftertaste, not cliffhanger
+  pace: Beat-by-beat character revelation, not plot racing to synopsis
+
+facet_rules:
+  interjections: Short interior lines labeled with facet tags (e.g., [WOUND], [IDEAL])
+  disagreement: Facet interjections must disagree and be emotionally personal, not abstract
+  lead_voice: The lead facet shapes the prose style of the beat; supporting facets interject
+  rotation: No single facet should dominate for more than 3 consecutive beats
