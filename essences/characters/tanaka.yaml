@@ -1,175 +1,158 @@
 type: character
 name: "Tanaka Hiroshi"
-aliases: ["Sensei", "The Old Man", "Ghost"]
+aliases: ["Tanaka-sensei", "The Old Man", "the ghost"]
 role: "Mentor (deceased)"
 age: 65
 status: "deceased"
-location: "Old Harbor (buried there); haunts Kael's memory everywhere"
+location: "Old Harbor — buried in the flooded cemetery on Pier 9, marked by a single rusted katana driven into the mud"
 description: |
-  Tanaka was the kind of man you noticed by what he didn't do. He didn't fidget. He didn't raise
-  his voice. He didn't waste a single motion pouring tea or drawing a blade. In a world of
-  twitching augment-junkies and overcaffeinated hustlers, Tanaka moved like still water. He was
-  lean, weather-beaten, his face a topographic map of old violence — a scar bisecting his left
-  eyebrow where shrapnel had kissed him during the Kanto Corridor Offensive, a jaw that had been
-  broken and reset slightly crooked. He wore plain clothes, always clean, always mended. His hands
-  were the hands of a killer: scarred, steady, and unexpectedly gentle when correcting a boy's
-  grip on a sword.
+  Tanaka was built like a stripped cable — no excess, no softness, every tendon visible beneath weathered skin
+  the color of teak left in salt air. His hands were the most telling feature: heavy knuckles, precise fingers,
+  the left hand missing its ring finger from a field amputation during the Busan Corridor campaign. He kept his
+  grey hair cropped to stubble, and his face held two expressions — calm and calmer. A scar ran from his right
+  temple to his jaw, a memento from a monofilament trap in the Jakarta Consolidation, and it pulled his mouth
+  into what looked like a permanent half-smile that was not a smile at all.
 
-  When he spoke, you listened, because he spoke so rarely that each sentence felt earned. His eyes
-  were dark brown, almost black, and they carried the particular exhaustion of a man who had seen
-  exactly what human beings were capable of and had decided to keep living anyway. He smelled like
-  green tea and old steel. Children in Old Harbor weren't afraid of him. Dogs followed him. Both
-  of these things said more about him than any war record.
+  He moved like water finding a drain — unhurried, inevitable. Even in his last years, when the old military
+  augments were misfiring and his left knee locked without warning, he could cross a room and have a blade at
+  your throat before you processed that he'd stood up. He wore the same faded military jacket every day, patches
+  removed, insignia cut away, as if he could amputate his history with a seam ripper.
 
-  His military augments were visible if you knew where to look — a slight metallic sheen under the
-  skin of his left forearm where a reflex booster had been installed, a faint clicking in his right
-  knee when the weather changed. By the end, these were more liability than asset. The reflex
-  booster would fire randomly, making his hand twitch. The knee locked up in the cold. He refused
-  to have them serviced. Whether that was principle or penance, Kael never asked.
+  First impression: a quiet old man who cooked rice and stared at the drowned skyline. Second impression,
+  if you were unlucky enough to earn one: the most dangerous person you had ever met, and the saddest.
 origins: |
-  Tanaka Hiroshi was born in the Osaka Protectorate, back when it was still nominally Japanese
-  sovereign territory. His father was a factory supervisor for Mitsuhama Industrial; his mother
-  taught calligraphy at a school that Axiom Industries would later acquire and convert into a
-  data processing center. He enlisted in the Corporate Defense Forces at eighteen — not out of
-  patriotism, but because the enlistment bonus would pay for his sister's medical augments.
+  Born in Osaka-3 (the corporate rebuild) to a family of mid-tier Kenshin Group engineers. Enlisted at 18
+  into Kenshin's private military division during the first phase of the Consolidation Wars. Rose to the rank
+  of field commander by 27. His unit, the 14th Rapid Pacification Group, was responsible for "stabilizing"
+  three Southeast Asian economic zones — a euphemism that meant burning out local resistance so corporate
+  infrastructure could move in.
 
-  He rose through the ranks during the Consolidation Wars with a reputation for tactical
-  brilliance and an unsettling calm under fire. He commanded a company during the Kanto Corridor
-  Offensive, the Jakarta Sweep, and the Seoul Partition. His unit had one of the highest kill
-  ratios and one of the lowest casualty rates in the theater. He was considered a model officer.
+  He was good at it. That was the problem.
 
-  The thing that broke him wasn't dramatic. It was a Tuesday. His unit was ordered to clear a
-  residential block in Manila that had been designated as harboring insurgents. The "insurgents"
-  were families who'd refused a relocation order because they couldn't afford transit passes. He
-  followed the order. Forty-three civilians died. The operation was classified as a success.
+  The breaking point was the Dhaka Corridor incident — his unit was ordered to clear a residential block
+  flagged as a guerrilla staging area. It wasn't. He knew it wasn't. He followed orders. Two hundred and
+  twelve civilians. He could still count them twenty years later, in his sleep, by their faces.
 
-  He deserted eleven days later. Walked out of a forward operating base with nothing but his
-  sword — an anachronism he'd carried since his first deployment, half joke, half talisman. He
-  drifted for years. Mercenary work, mostly, then less and less of it. He washed up in Old Harbor
-  because it was the one place nobody looked. He found a drowned warehouse, cleaned it out, and
-  began practicing katas alone in the dark.
+  He deserted six months after, during a transit through Neo-Shanghai. Walked off a transport with nothing
+  but his sidearm and his grandfather's katana. Spent three years drifting through the margins — the
+  unincorporated zones, the drowned cities, the places where corporate jurisdiction frayed. Ended up in
+  Old Harbor because it was the one place nobody came looking.
 
-  He found Kael seven years later — a feral twelve-year-old trying to steal his rice. Instead of
-  chasing the boy off, Tanaka set out a second bowl. He never formally offered to teach Kael.
-  He simply began doing katas where the boy could see, and waited. Kael picked up a stick three
-  days later. The lesson lasted seven years.
+  He found Kael stealing dried fish from a market stall. The boy was twelve, feral, fast, and had the
+  particular dead-eyed focus of a child who had already decided the world was an enemy. Tanaka recognized
+  that look. He'd worn it himself, at the end.
+
+  He didn't save Kael out of kindness. He saved Kael because he needed to believe that what he knew — the
+  discipline, the blade, the code — could be given to someone who might use it better than he had.
 psychology:
   facet_weights:
     wound: 0.9
-    ideal: 0.8
+    ideal: 0.85
     id: 0.3
     shadow: 0.7
-    mask: 0.4
+    mask: 0.6
     ghost: 0.95
   core_fears:
-    - "That his teaching perpetuated the cycle of violence he tried to escape"
-    - "That Kael would become what he was — efficient, obedient, and empty"
-    - "That peace was something he performed rather than something he achieved"
+    - "That his teaching was just another form of violence — shaping a child into a weapon"
+    - "That discipline is a lie he told himself to survive his own memories"
+    - "That Kael will face the same impossible choice he faced in Dhaka, and there is no right answer"
   core_desires:
-    - "Atonement through transmission — passing on wisdom as a form of repair"
-    - "To die having left something in the world that wasn't a body count"
-    - "To see Kael choose, freely, a path Tanaka himself was never brave enough to take"
+    - "To transmit something uncorrupted — a code that might outlast the world that broke him"
+    - "To die having done one thing that was unambiguously good"
+    - "To be forgotten as a soldier and remembered as a teacher"
   coping_mechanisms:
-    - "Ritual and discipline as containment for guilt"
-    - "Teaching as sublimated confession"
-    - "Silence — if he doesn't speak about Manila, it exists only in his own skull"
-    - "Physical exhaustion through training, well past what his aging body could handle"
+    - "Ritual — tea ceremony, blade maintenance, meditation. Structure as antidote to chaos."
+    - "Silence — he believed that most suffering came from unnecessary speech"
+    - "Teaching — pouring himself into Kael was the only thing that quieted the dead"
   blind_spots:
-    - "He romanticized the samurai code as a solution to moral chaos, ignoring that historical samurai served lords just as soldiers serve corporations"
-    - "He never told Kael about Manila. The lesson he most needed to teach was the one he couldn't bear to speak."
-    - "He confused Kael's obedience with understanding"
+    - "He never told Kael the full truth of what he did in the wars. He taught a code he himself had broken."
+    - "He confused discipline with healing. Kael learned to fight but not to grieve."
+    - "He could not see that his calm was also a kind of numbness"
   secret: |
-    He kept a list. A physical, handwritten list on rice paper, folded into a square and kept
-    inside the handle of his sword. Forty-three names — every civilian killed in the Manila
-    operation. He added to it over the years: names of people he'd killed as a mercenary, people
-    who died because of his orders, people he failed to save. By the time he died, the paper was
-    full on both sides, the handwriting shrinking to fit. Kael found it when he inherited the
-    sword. He has never unfolded it.
+    He kept a handwritten list of every person he could remember killing. Two hundred and sixty-one names,
+    or descriptions when he didn't know names. He added to it from memory until the day he died. The list
+    is hidden inside the hilt of the katana he left to Kael. Kael has never found it.
 appearance:
   physical: |
-    Lean and angular, with the ropy musculature of a man who trained daily into his sixties. Skin
-    weathered to the color of old wood. Close-cropped grey hair, almost white at the temples.
-    Deep-set eyes with permanent dark circles. The scar through his left eyebrow gave him a
-    perpetually skeptical expression. His hands were disproportionately large for his frame,
-    knuckles swollen from decades of impact training. He moved with an economy that made other
-    people look like they were flailing.
+    Lean, weathered, 5'10". Skin darkened and lined from decades of exposure. Prominent cheekbones,
+    deep-set eyes that were almost black. The scar from temple to jaw. Missing ring finger on the left hand.
+    Posture always upright, even sleeping — a military habit that never left. In his last year, he walked
+    with a slight drag in his left leg where the knee augment had seized.
   augmentations: |
-    Minimal, all military-grade from the Consolidation Wars era, all failing:
-    - Left forearm reflex booster (Mitsuhama MkII): designed to accelerate draw speed by 40%.
-      By the end, it fired involuntarily, causing hand tremors.
-    - Right knee stabilizer (generic CDF issue): originally compensated for a combat injury.
-      Locked up in cold or damp weather, which in Old Harbor meant most days.
-    - Subdermal armor mesh across the torso (partial): installed after the Jakarta Sweep.
-      Had begun to calcify, causing chronic pain he never mentioned.
-    He refused all maintenance. "The body should remember what it's done."
+    Minimal, old Kenshin Group military-standard. A reinforced skeletal frame (titanium-laced radius and
+    ulna, both arms) that was state-of-the-art thirty years ago and now triggered metal detectors and
+    ached in the cold. A neural reaction enhancer at the base of his skull, mostly burned out, that
+    occasionally fired ghost-signals — phantom movements, a twitch in his sword hand at 3 AM. A
+    replacement left knee that locked unpredictably. He refused all maintenance on principle.
   distinctive_features:
-    - "Scar bisecting left eyebrow"
-    - "Slightly crooked jaw from an old break"
-    - "Hands that never trembled when holding a blade, even when they trembled everywhere else"
-    - "A stillness that made rooms feel quieter"
+    - "Temple-to-jaw monofilament scar"
+    - "Missing left ring finger"
+    - "Faded military jacket with all insignia removed"
+    - "The half-smile that was not a smile"
+    - "Hands that were never still — always adjusting, gripping, testing surfaces"
 daily_life:
   routine: |
-    Tanaka rose before dawn every day without exception. He meditated for one hour facing the
-    water — Old Harbor's flooded streets served as his garden. Then katas, alone first, then with
-    Kael once the boy was old enough. He prepared rice and tea with the same precision he applied
-    to swordwork. Afternoons were spent maintaining the warehouse, repairing fishing nets for the
-    Old Harbor community (his sole income), and reading — he had a small collection of paper books,
-    water-damaged but legible. Evenings were for teaching Kael: philosophy, history, strategy,
-    meditation. He went to sleep early and slept poorly. He never complained about either.
+    Rose before dawn. Meditated facing the drowned harbor for exactly one hour. Prepared rice and dried fish.
+    Trained Kael for four hours — blade work, hand-to-hand, meditation, and the philosophy he called "the
+    geometry of intention." Afternoons: he repaired fishing nets for Old Harbor residents in exchange for
+    supplies. He read — actual paper books, salvaged, warped with damp. Evenings: he sat on the roof of
+    their shelter and watched the bioluminescent algae bloom in the flooded streets below. He never drank.
+    He never raised his voice. He went to sleep sitting upright, blade across his knees.
   habits:
-    - "Cleaned his sword every evening, regardless of whether it had been used"
-    - "Drank exactly three cups of green tea per day"
-    - "Paused before answering any question, even simple ones"
-    - "Sat facing the door in any room"
-    - "Never turned his back on open water"
+    - "Sharpened his blade every evening, exactly forty strokes per side"
+    - "Brewed tea with mechanical precision — temperature, timing, never varying"
+    - "Counted exits in every room, even rooms he'd been in a thousand times"
+    - "Spoke to the dead in whispers when he thought Kael was asleep"
 relationships:
   - name: "Kael"
-    type: "Mentor / Surrogate father"
+    type: "student / surrogate son"
     description: |
-      The central relationship of both their lives. Tanaka saw in Kael a chance to raise a warrior
-      who might be better than he was — someone who could carry the discipline without the
-      complicity. He was demanding, patient, occasionally harsh, and never once told Kael he was
-      proud of him. He showed it in other ways: the quality of the sword he made for Kael, the
-      extra portion of rice, the fact that he trusted the boy with silence. The great failure of
-      the relationship is that Tanaka taught Kael how to live by a code, but never taught him
-      what to do when the code isn't enough.
+      The most important relationship of his final years. He saw in Kael the chance to transmit his code
+      to someone uncorrupted by the corporate machine. But he also saw a feral, angry child, and he knew
+      that discipline without understanding could produce a more efficient monster. He tried to teach both
+      the blade and the reason to sheathe it. Whether he succeeded is the central question of Kael's life.
   - name: "Chen Wei-Lin"
-    type: "Neighbor / Quiet ally"
+    type: "neighbor / quiet alliance"
     description: |
-      Mrs. Chen and Tanaka had a respectful, minimal relationship. She brought him soup when his
-      augments were acting up. He repaired her shop's shutters when storms hit. They never discussed
-      the wars, though both had been shaped by them. She was one of the few people who saw him
-      smile. After his death, she transferred the care — the soup, the quiet attention — to Kael
-      without comment.
+      Mrs. Chen arrived on the Shelf three years before Tanaka died. They recognized each other instantly —
+      not personally, but categorically. Two people who had seen the machine from the inside and walked away.
+      They never discussed their pasts. She brought him soup when his augments flared. He repaired her
+      shop's generator. It was the closest thing to friendship either of them had.
+  - name: "The 14th Rapid Pacification Group"
+    type: "former comrades / ghosts"
+    description: |
+      He never spoke of them by name. But sometimes Kael would catch him staring at nothing, lips moving,
+      and understood that the old man was somewhere else entirely — a place with different weather and
+      different screams.
 speech_patterns:
-  vocabulary: "Sparse, classical, precise. He used simple words but arranged them with weight. Occasional Japanese phrases, never translated — if you didn't understand, that was the lesson."
-  cadence: "Slow, measured, with long pauses. He spoke the way he moved: nothing wasted. His silences were as deliberate as his words."
+  vocabulary: "Sparse, precise, drawn from military terminology and classical Japanese philosophy. He never used two words when one would do. Occasionally quoted texts Kael couldn't identify — Musashi, Hagakure, but also Camus and Marcus Aurelius."
+  cadence: "Slow, deliberate, with long pauses that were not hesitation but emphasis. His silences were louder than most people's speeches. When he gave an order during training, it came once, quietly, and was not repeated."
   example_lines:
-    - "The sword does not decide who it cuts. That burden is yours."
-    - "You are angry. Good. Now put it somewhere useful."
-    - "A man who kills without thought is a weapon. A man who kills with thought is a murderer. You must be both and neither."
+    - "The blade does not decide. You decide. The blade agrees."
+    - "You are angry. Good. Now put it somewhere useful or put it down."
+    - "I am not teaching you to kill. Any animal can kill. I am teaching you to choose."
     - "Eat first. Philosophy is for the fed."
-    - "I did not teach you to win. I taught you to choose."
-    - "..."
+    - "You ask why I came here. I stopped asking why. That is how I came here."
+    - "The corporate world is a machine. You cannot fight a machine. You can only refuse to be a gear."
   quirks:
-    - "Would answer questions with silence if he felt the student should work out the answer alone"
-    - "Used cooking metaphors when discussing combat — 'you're overcooking the strike, let it rest'"
-    - "Never used anyone's name more than necessary"
-    - "Ended most conversations by standing up and walking away — the lesson was over when he decided it was over"
+    - "Never answered a question directly if a proverb or parable could serve instead"
+    - "Corrected Kael's posture mid-sentence, even during emotional conversations"
+    - "Referred to death as 'the appointment' — never euphemized but never dramatized"
+    - "Would go completely silent for hours, not as punishment, but as weather — it simply happened"
 narrative_function: |
-  Tanaka is the ghost in the machine — literally absent but thematically omnipresent. He
-  represents the seductive promise of a moral code: the idea that if you just follow the right
-  rules, you can be a good person even in a corrupt world. His death left Kael with the code
-  but not the context. Tanaka's unspoken hypocrisy — that he taught violence as a path to peace,
-  that he hid his worst sins behind discipline — is the question Kael must eventually confront.
-  Was Tanaka wise, or was he just a killer who found a prettier frame for it? And if the frame
-  was a lie, does the beauty of it still matter?
+  Tanaka is the ghost in the machine of Kael's psyche. Every moral decision Kael makes is a conversation
+  with a dead man. Tanaka represents the possibility that a code of honor can exist in a dishonorable
+  world — but also the danger that such a code is just another story we tell ourselves to justify violence.
 
-  He also poses the structural question of the narrative: can a code survive contact with reality?
-  Tanaka died before his was truly tested in the new world. Kael doesn't have that luxury.
+  He poses the central question to Kael: Can you live by a code that the man who taught it to you could
+  not? And if you can — does that redeem him, or just prove you haven't been tested enough yet?
+
+  Tanaka is also the story's critique of the mentor archetype. He was not wise — he was traumatized.
+  He was not at peace — he was exhausted. His calm was not enlightenment but the stillness of a man
+  who had simply stopped running. Whether that distinction matters is up to Kael to decide.
 story_hooks:
-  - "Kael discovers the list of names hidden in the sword handle and must decide whether to unfold it"
-  - "A survivor of the Manila operation surfaces in New Meridian, seeking the officer who gave the order"
-  - "Tanaka's former military unit is reformed by Axiom Industries as a private security force — his legacy weaponized"
-  - "Kael encounters a situation identical to Manila and must choose differently than his teacher did"
-  - "Someone claims to have been Tanaka's student before Kael — and they learned very different lessons"
+  - "The hidden list inside the katana hilt — if Kael discovers it, every lesson reshapes"
+  - "Survivors of the 14th RPG who might recognize the katana or know Tanaka's real history"
+  - "The Dhaka Corridor incident resurfacing — war crimes tribunals, corporate liability, someone digging up old records"
+  - "Another student — did Tanaka try to teach someone before Kael? What happened to them?"
+  - "Kael encountering a situation identical to Dhaka and having to choose differently, or not"
