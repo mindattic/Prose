@@ -195,10 +195,162 @@ function Invoke-CanonQueue {
     Run-Python "-m engine.pipeline queue" -Pause
 }
 
+# -- Lore Browser ------------------------------------------------------------------
+
+function Invoke-LoreBrowser {
+    while ($true) {
+        Write-Header -Breadcrumbs "Lore Browser"
+
+        Write-Host "  Browse" -ForegroundColor DarkCyan
+        Write-Host "  $('-' * 60)" -ForegroundColor DarkGray
+        Write-Host "    [1]  Corponations          (all 120)" -ForegroundColor White
+        Write-Host "    [2]  Characters" -ForegroundColor White
+        Write-Host "    [3]  Documents             (worldbuilding files)" -ForegroundColor White
+        Write-Host "    [4]  Essences              (YAML entities)" -ForegroundColor White
+        Write-Host "    [5]  Facets" -ForegroundColor White
+        Write-Host ""
+
+        Write-Host "  Search" -ForegroundColor DarkCyan
+        Write-Host "  $('-' * 60)" -ForegroundColor DarkGray
+        Write-Host "    [6]  Search by Text        (grep across canon)" -ForegroundColor White
+        Write-Host "    [7]  Search by Topic       (semantic / RAG)" -ForegroundColor White
+        Write-Host "    [8]  Entity Lookup         (knowledge graph)" -ForegroundColor White
+        Write-Host ""
+
+        Write-Host "   [ESC] Go Back" -ForegroundColor DarkGray
+        Write-Host ""
+
+        $choice = Read-MenuKey
+
+        switch ($choice) {
+            "Z" { return }
+            "1" { Invoke-CorpBrowser }
+            "2" { Invoke-CharBrowser }
+            "3" { Invoke-DocBrowser }
+            "4" { Invoke-ListEssences }
+            "5" { Invoke-ListFacets }
+            "6" { Invoke-TextSearch }
+            "7" { Invoke-TopicSearch }
+            "8" { Invoke-EntityLookup }
+        }
+    }
+}
+
+function Invoke-CorpBrowser {
+    while ($true) {
+        Write-Header -Breadcrumbs "Lore Browser", "Corponations"
+
+        Write-Host "    [1]  List ALL corponations" -ForegroundColor White
+        Write-Host "    [2]  Look up by number" -ForegroundColor White
+        Write-Host "    [3]  Search by name" -ForegroundColor White
+        Write-Host "    [4]  Filter by sector" -ForegroundColor White
+        Write-Host ""
+        Write-Host "   [ESC] Go Back" -ForegroundColor DarkGray
+        Write-Host ""
+
+        $choice = Read-MenuKey
+
+        switch ($choice) {
+            "Z" { return }
+            "1" {
+                Write-Header -Breadcrumbs "Lore Browser", "Corponations", "All"
+                Run-Python "-m engine.lore corps" -Pause
+            }
+            "2" {
+                Write-Header -Breadcrumbs "Lore Browser", "Corponations", "By Number"
+                $num = Read-Input "Corp number (1-120):"
+                if ($num) { Run-Python "-m engine.lore corp `"$num`"" -Pause }
+            }
+            "3" {
+                Write-Header -Breadcrumbs "Lore Browser", "Corponations", "By Name"
+                $name = Read-Input "Corp name (partial match):"
+                if ($name) { Run-Python "-m engine.lore corp `"$name`"" -Pause }
+            }
+            "4" {
+                Write-Header -Breadcrumbs "Lore Browser", "Corponations", "By Sector"
+                $sector = Read-Input "Sector keyword (e.g. energy, defense, food):"
+                if ($sector) { Run-Python "-m engine.lore corps `"$sector`"" -Pause }
+            }
+        }
+    }
+}
+
+function Invoke-CharBrowser {
+    while ($true) {
+        Write-Header -Breadcrumbs "Lore Browser", "Characters"
+
+        Write-Host "    [1]  List all characters" -ForegroundColor White
+        Write-Host "    [2]  Look up by name" -ForegroundColor White
+        Write-Host ""
+        Write-Host "   [ESC] Go Back" -ForegroundColor DarkGray
+        Write-Host ""
+
+        $choice = Read-MenuKey
+
+        switch ($choice) {
+            "Z" { return }
+            "1" {
+                Write-Header -Breadcrumbs "Lore Browser", "Characters", "All"
+                Run-Python "-m engine.lore characters" -Pause
+            }
+            "2" {
+                Write-Header -Breadcrumbs "Lore Browser", "Characters", "Detail"
+                $name = Read-Input "Character name:"
+                if ($name) { Run-Python "-m engine.lore character `"$name`"" -Pause }
+            }
+        }
+    }
+}
+
+function Invoke-DocBrowser {
+    while ($true) {
+        Write-Header -Breadcrumbs "Lore Browser", "Documents"
+
+        Write-Host "    [1]  List all documents" -ForegroundColor White
+        Write-Host "    [2]  Read a document" -ForegroundColor White
+        Write-Host ""
+        Write-Host "   [ESC] Go Back" -ForegroundColor DarkGray
+        Write-Host ""
+
+        $choice = Read-MenuKey
+
+        switch ($choice) {
+            "Z" { return }
+            "1" {
+                Write-Header -Breadcrumbs "Lore Browser", "Documents", "Index"
+                Run-Python "-m engine.lore docs" -Pause
+            }
+            "2" {
+                Write-Header -Breadcrumbs "Lore Browser", "Documents", "Read"
+                $name = Read-Input "Document name (partial match):"
+                if ($name) { Run-Python "-m engine.lore read `"$name`"" -Pause }
+            }
+        }
+    }
+}
+
+function Invoke-TextSearch {
+    Write-Header -Breadcrumbs "Lore Browser", "Text Search"
+    $query = Read-Input "Search term:"
+    if ($query) { Run-Python "-m engine.lore search `"$query`"" -Pause }
+}
+
+function Invoke-TopicSearch {
+    Write-Header -Breadcrumbs "Lore Browser", "Topic Search (RAG)"
+    $query = Read-Input "Topic (semantic search):"
+    if ($query) { Run-Python "-m engine.lore topic `"$query`"" -Pause }
+}
+
+function Invoke-EntityLookup {
+    Write-Header -Breadcrumbs "Lore Browser", "Entity Lookup"
+    $name = Read-Input "Entity name:"
+    if ($name) { Run-Python "-m engine.lore entity `"$name`"" -Pause }
+}
+
 # -- Quick Commands ----------------------------------------------------------------
 
 function Invoke-ListEssences {
-    Write-Header -Breadcrumbs "Essences"
+    Write-Header -Breadcrumbs "Lore Browser", "Essences"
     Run-Python "-m src.main list-essences" -Pause
 }
 
@@ -208,7 +360,7 @@ function Invoke-ShowCharacter {
 }
 
 function Invoke-ListFacets {
-    Write-Header -Breadcrumbs "Facets"
+    Write-Header -Breadcrumbs "Lore Browser", "Facets"
     Run-Python "-m src.main list-facets" -Pause
 }
 
@@ -310,16 +462,15 @@ while ($true) {
     Write-Host "    [4]  Canon Queue              (review pending)" -ForegroundColor White
     Write-Host ""
 
-    Write-Host "  Beat Writer (src/)" -ForegroundColor DarkCyan
+    Write-Host "  Lore & World" -ForegroundColor DarkCyan
     Write-Host "  $('-' * 60)" -ForegroundColor DarkGray
-    Write-Host "    [5]  New Session              (facet-driven beats)" -ForegroundColor White
+    Write-Host "    [5]  Lore Browser             (corps, chars, search)" -ForegroundColor White
+    Write-Host "    [6]  Show Character" -ForegroundColor White
     Write-Host ""
 
-    Write-Host "  World Info" -ForegroundColor DarkCyan
+    Write-Host "  Beat Writer (src/)" -ForegroundColor DarkCyan
     Write-Host "  $('-' * 60)" -ForegroundColor DarkGray
-    Write-Host "    [6]  Show Character" -ForegroundColor White
-    Write-Host "    [7]  List Facets" -ForegroundColor White
-    Write-Host "    [8]  List Essences" -ForegroundColor White
+    Write-Host "    [7]  New Session              (facet-driven beats)" -ForegroundColor White
     Write-Host ""
 
     Write-Host "  Git" -ForegroundColor DarkCyan
@@ -339,10 +490,9 @@ while ($true) {
         "2" { Invoke-GenerateScene }
         "3" { Invoke-ValidateText }
         "4" { Invoke-CanonQueue }
-        "5" { Invoke-NewSession }
+        "5" { Invoke-LoreBrowser }
         "6" { Invoke-ShowCharacter }
-        "7" { Invoke-ListFacets }
-        "8" { Invoke-ListEssences }
+        "7" { Invoke-NewSession }
         "9" { Invoke-CommitSync }
         "Q" { Clear-Host; exit 0 }
     }
