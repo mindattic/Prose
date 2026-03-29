@@ -1,0 +1,337 @@
+# Point 6: Medical & Biotech Without Ethics
+
+## The Premise
+
+By 2100, the separation between medicine and commerce has fully dissolved. Healthcare is not a right, a privilege, or even a service. It is a vertical. Every corponation with a biotech division treats the human body as a platform -- upgradeable, monetizable, and, when necessary, disposable. The regulatory bodies that once governed medical ethics were either defunded, captured, or rendered irrelevant by corponation sovereign override. The FDA ceased independent operation in 2061 when its remaining budget was folded into the Department of Commerce under the Economic Resilience Consolidation Act. The WHO lost its last binding enforcement authority in 2054. What remains is a patchwork of corponation-internal review boards whose primary mandate is liability management, not patient safety.
+
+The result: a world where a corpo executive can order a replacement heart grown from her own stem cells and have it installed in a sterile orbital surgical suite, while six blocks from the nearest RingoPharma dispensary, a street doctor installs a stolen neural shunt in a woman's brainstem using a veterinary anesthetic and a prayer.
+
+Both of these things happen every day. Neither one is illegal, because the concept of medical illegality requires a regulatory authority with jurisdiction, and no such authority exists.
+
+---
+
+## 1. The Black Clinic Economy
+
+### What They Are
+
+Black clinics are unlicensed medical facilities operating outside corponation jurisdiction. They range from converted shipping containers in the sub-levels of megalopolis infrastructure to penthouse surgical suites hidden behind the facades of legitimate businesses. The unifying characteristic is simple: nothing that happens inside is reported to any corponation medical database, any insurance registry, or any identity verification system.
+
+This is why they exist. Not because corpo medicine is unavailable -- RingoPharma, Zheng-Morita BioSystems, and Keeler-Brandt LifeSciences all operate retail clinics in most major megalopolis zones. But every corpo clinic visit generates a data event. Your biometrics are scanned. Your genetic profile is updated. Your implant firmware is logged. Every procedure, every prescription, every anomaly in your bloodwork feeds into a corponation health record that is cross-referenced with your employment file, your insurance profile, your social credit score, and your behavioral prediction model.
+
+If you are augmented with unlicensed hardware, the corpo clinic flags it. If your bloodwork shows street-grade gene mods, the corpo clinic flags it. If you have a criminal genetic marker -- a sequence associated with a person on an Exclusion Registry -- the corpo clinic flags it and, under most corponation security charters, detains you on the premises until security arrives.
+
+Black clinics are where you go when the alternative is being seen.
+
+### The Quality Spectrum
+
+**Tier 1 -- Butcher Shops.** The lowest rung. A back room, a dirty table, a practitioner who may have had some medical training or may simply have watched enough procedure feeds to fake competence. Butcher shops handle the simplest and most desperate work: pulling tracker implants, closing wounds that would draw questions at a corpo clinic, injecting black-market antibiotics, installing the cheapest neural shunts and subdermal communication chips. Infection rates run between 30-60%. A significant percentage of butcher shop patients develop sepsis, implant rejection syndrome, or chronic inflammatory conditions. The practitioners charge in barter, street currency, or corpo scrip. Many are addicts themselves. Some are failed medical students who washed out of corponation residency programs. Others are simply predators who learned that desperate people will lie still while you cut them open.
+
+Names circulate in the sub-levels: *Dr. Nine-Fingers* in the Detroit Reclamation Zone. *Auntie Vein* in the Pacific Coast Corridor. *The Butcher of K-Street* in the Bos-Wash megalopolis, who reportedly lost a patient to a cerebral hemorrhage during a routine tracker extraction and continued operating on two other patients in the same room while the body cooled.
+
+**Tier 2 -- Street Clinics.** The middle ground. These are operated by practitioners with genuine medical training -- former corpo surgeons who lost their licenses, military combat medics mustered out of private security forces, bioengineers who left corponation labs with enough knowledge to be dangerous. Street clinics maintain basic sterile environments, stock pharmaceutical-grade anesthetics (diverted from corpo supply chains), and can perform moderately complex procedures: implant installation, minor gene therapy, organ transplant from pre-matched donors, cosmetic reconstruction, identity alteration through facial bone restructuring and dermal pigment modification.
+
+The best-known street clinic networks are franchised operations. **The Suturehaus** network operates in twelve megalopolis zones across North America, using a standardized equipment kit and a training protocol that takes six months to complete. A Suturehaus clinic will install a neural interface, graft a subdermal armor mesh, or perform a facial reconstruction for prices ranging from 800 to 15,000 corpo-equivalent credits. Their infection rate hovers around 8-12% -- higher than corpo medicine, but low enough that repeat customers trust them.
+
+**Tier 3 -- The Invisible Surgeons.** The elite. These are practitioners whose skill rivals or exceeds anything available in corponation hospitals, operating in hidden facilities with equipment that would be considered state-of-the-art in any context. They serve the wealthy who need procedures that corpo medicine cannot provide without creating a data trail: identity erasure, black-market organ installation, experimental gene therapy, augmentation packages that would violate corponation employment contracts, consciousness-bridge procedures that are still classified as experimental even in corpo labs.
+
+The invisible surgeons do not advertise. Access comes through referral networks that are themselves tiered and vetted. A common pathway runs through fixers -- intermediaries who broker connections between clients and surgeons for a percentage fee. The most respected invisible surgeon in the North American megalopolis zones is known only as **Dr. Loom** -- rumored to operate from a mobile surgical suite built into a modified freight container that moves between cities on automated cargo rail. Dr. Loom's waiting list is reportedly eighteen months. His fee for a full identity reconstruction -- skeletal modification, dermal repigmentation, retinal pattern alteration, genetic watermark scrubbing, and neural signature randomization -- is quoted at 2.4 million corpo-equivalent credits. He has never lost a patient. He has never been found.
+
+### What They Offer
+
+The full menu of black clinic services, across all tiers:
+
+- **Implant Installation** -- Neural interfaces, subdermal communication arrays, optical augmentation, cochlear enhancement, reflex accelerators, adrenal regulators, subdermal armor mesh, skeletal reinforcement grafts
+- **Gene Modification** -- CRISPR-derived edits for physical enhancement, disease resistance, metabolic optimization, cosmetic alteration, genetic watermark scrubbing (erasing identifiable genetic markers from corponation databases)
+- **Organ Replacement** -- Transplant of bioprinted, harvested, or xenogeneic organs; installation of synthetic organ analogues
+- **Identity Alteration** -- Facial bone restructuring, dermal pigment modification, retinal pattern scrambling, voiceprint alteration, fingerprint acid-burn and regraft, genetic profile obfuscation
+- **Tracker Removal** -- Extraction of corponation-implanted location trackers, biometric monitors, and behavioral logging devices, many of which are installed as conditions of employment, parole, or residency in corpo-controlled zones
+- **Addiction Management** -- Counteracting engineered chemical dependencies, installing neural dampeners to block corpo-designed craving loops, or conversely, installing craving amplifiers for clients who want to weaponize addiction in others
+- **Combat Modification** -- Procedures designed to make the body more effective in violence: pain suppression implants, adrenaline overproduction grafts, bone-density enhancement, fast-twitch muscle fiber multiplication, hemostatic nanite infusion (clotting acceleration to survive wounds that would otherwise be fatal)
+
+---
+
+## 2. Organ Printing & Harvesting
+
+### The Two Pipelines
+
+There are two organ economies in 2100, and they do not overlap.
+
+**Pipeline One: Bioprinted Organs for the Rich.** Corponation biotech divisions -- principally Zheng-Morita BioSystems, Keeler-Brandt LifeSciences, and the Helix Consortium -- operate industrial-scale organ fabrication facilities. The technology descends from 2020s-era 3D bioprinting, but by 2100 it has matured into a precision manufacturing process. A patient's own stem cells are harvested, expanded in bioreactor cultures, and used to print a replacement organ layer by layer on a decellularized scaffold. The organ is matured in a perfusion chamber for 4-12 weeks depending on complexity, then transplanted with near-zero rejection risk because it is genetically identical to the patient.
+
+A bioprinted heart costs approximately 1.2 million corpo credits. A liver, 800,000. A kidney, 450,000. A full set of lungs, 1.8 million. These prices reflect not the manufacturing cost -- which is a fraction of the final price -- but the proprietary licensing fees on the bioprinting technology, the patented scaffold matrices, and the corponation-exclusive stem cell expansion protocols. Organ printing is technically simple enough that a competent bioengineering lab could do it for 5% of the retail price. The corponations maintain their margins through patent enforcement, supply chain control over scaffold biomaterials, and aggressive legal action against anyone who attempts independent fabrication.
+
+Organ printing is available to corponation executives, senior employees with platinum-tier health coverage, and the independently wealthy. For everyone else, there is Pipeline Two.
+
+**Pipeline Two: Harvested Organs for Everyone Else.** The black market organ trade in 2100 is not a shadowy criminal enterprise. It is a logistics industry. It has supply chains, quality grades, cold-chain transport networks, and regional pricing indexes.
+
+The supply comes from four primary sources:
+
+**Source 1 -- Street Harvesting.** The most brutal and most common. Organ brokers employ acquisition teams -- typically armed, typically operating in the sub-levels of megalopolis zones or in the ungoverned gaps between corpo jurisdictions. Targets are selected for health indicators: young, relatively fit, no visible signs of disease or heavy augmentation. The acquisition is fast. Chemical sedation, transport to a processing site, surgical extraction of viable organs, disposal of the remainder. A healthy young adult yields two kidneys, a liver, a heart, two lungs, a pancreas, corneas, bone marrow, and harvestable skin -- a total street value of approximately 180,000-250,000 corpo-equivalent credits.
+
+The victims are overwhelmingly drawn from populations that will not be missed: Exclusion Registry members, undocumented climate refugees, the unhoused, street-level drug users, and residents of ungoverned zones where no corponation tracks population counts. The acquisition teams call them **"donors"** -- the euphemism is universal and unironic.
+
+**Source 2 -- Organ Farms.** Fixed facilities where living humans are maintained in medically induced comas as organ production units. The "inventory" -- another industry euphemism -- is kept alive on life support, fed intravenously, and harvested organ by organ over a period of weeks or months. A single unit of inventory can produce multiple harvests: one kidney, then the second kidney weeks later, then liver segments, then corneas, then bone marrow, then a terminal harvest of heart and lungs.
+
+The largest known organ farm in the North American megalopolis zones is called **The Garden** -- a converted warehouse in the sub-level infrastructure of the Great Lakes megalopolis, reportedly maintaining between 40 and 80 units of inventory at any given time. The Garden is rumored to be operated by a syndicate with connections to at least one corponation logistics company, which provides the cold-chain transport and medical supply diversion that keeps the operation running. No law enforcement body has jurisdiction in the sub-levels. No investigation has been opened.
+
+**Source 3 -- Corponation Prison "Donation" Programs.** Multiple corponations operate detention facilities for employees and residents who violate internal codes of conduct. Within these facilities, organ donation is technically voluntary. In practice, donation is the only mechanism by which a detainee can reduce their sentence, pay down debt obligations, or qualify for release review. The programs go by names like **"Renewal Through Contribution"** (Ringo CorpoNation), **"The Vitality Initiative"** (Keeler-Brandt), and **"Biological Restitution Program"** (Zheng-Morita). A detainee who donates a kidney receives a 24-month sentence reduction. A partial liver donation earns 18 months. Bone marrow, 6 months. The organs harvested through these programs enter the corponation's legitimate medical supply chain and are sold at full retail price.
+
+The programs are not classified as organ trafficking because they occur within corponation sovereign jurisdiction, under corponation internal law, with signed consent forms. The fact that the consent is coerced by indefinite detention is not recognized as a legal deficiency by any body with authority to adjudicate it.
+
+**Source 4 -- Xenotransplant Breeding Operations.** Genetically modified pigs, engineered to produce human-compatible organs, are bred in industrial facilities and harvested at maturity. This technology was pioneered in the 2020s and has matured significantly, but the organs are considered inferior to bioprinted or human-harvested equivalents. Xenotransplant organs carry a higher rejection risk, require lifelong immunosuppression regimens, and have a functional lifespan roughly 60% that of a matched human organ. They are the economy option -- the organ you get when you cannot afford bioprinted and cannot stomach (or access) the human black market. A xenotransplant kidney runs approximately 35,000-50,000 corpo credits, including the immunosuppression subscription.
+
+### The Economics
+
+The organ economy generates an estimated 90-120 billion corpo-equivalent credits annually across all pipelines. It is the third-largest black market sector after weapons trafficking and data brokerage. The price differential between bioprinted and harvested organs creates a permanent arbitrage opportunity that ensures the harvesting pipeline will never be disrupted by technological progress alone -- as long as bioprinted organs remain priced for the elite, there will be a market for cheaper alternatives extracted from the poor.
+
+---
+
+## 3. Gene Editing Without Guardrails
+
+### The Technology
+
+CRISPR-Cas9 was the beginning. By 2100, its descendants -- **CRISPR-Tau**, **Prime-7 Editing**, and **Zheng-Morita's proprietary OmniScribe platform** -- can rewrite the human genome with a precision that the original technology's inventors would have considered impossible. Single-nucleotide edits with 99.97% accuracy. Multi-gene cassette insertions that rewrite entire metabolic pathways. Epigenetic reprogramming that alters gene expression patterns without touching the underlying sequence. Germline modifications that propagate to all future descendants.
+
+The technology is not the bottleneck. The bottleneck is understanding. The human genome contains approximately 20,000 protein-coding genes, but those genes interact in regulatory networks of staggering complexity. Editing one gene can cascade through dozens of pathways. Inserting a cassette for enhanced muscle density can inadvertently upregulate inflammatory markers, suppress immune function, or trigger oncogenic pathways that produce tumors years or decades later. The corpo biotech labs have mapped many of these interactions, but "many" is not "all," and the difference between the two is measured in human suffering.
+
+### Designer Children for the Elite
+
+Corponation executives and the independently wealthy have access to **comprehensive germline design packages** -- services offered by Zheng-Morita, Keeler-Brandt, and a handful of boutique firms operating under their licensing agreements. The process begins with in vitro fertilization, followed by genetic screening and editing of the embryos before implantation.
+
+Standard packages include:
+
+- **The Meridian Suite** (Zheng-Morita, ~2.8 million credits) -- Intelligence optimization (multi-locus edits targeting synaptic density, myelination efficiency, and prefrontal cortex development), disease resistance (elimination of all known monogenic disease alleles, enhanced immune response), metabolic optimization (efficient caloric processing, resistance to obesity), and longevity markers (telomere maintenance upregulation, senescent cell clearance enhancement).
+
+- **The Apex Package** (Keeler-Brandt, ~3.5 million credits) -- Everything in the Meridian Suite plus physical optimization: height, musculoskeletal density, cardiovascular efficiency, visual acuity, and cosmetic trait selection (skin tone, eye color, facial structure, hair characteristics). Keeler-Brandt also offers an "executive temperament" modification targeting serotonin and dopamine receptor density to produce what they describe as "emotional resilience with high drive" -- in practice, a reduced capacity for empathy paired with elevated ambition and stress tolerance.
+
+- **The Sovereign Genome** (boutique firms, 8-15 million credits) -- Fully custom. Every editable parameter is specified by the parents in consultation with a genetic architect. This is where the most aggressive modifications occur: cognitive enhancements beyond the standard packages, sensory augmentation (expanded color vision, enhanced auditory range), accelerated healing, and proprietary genetic watermarks that identify the child as a product of a specific design house -- a biological brand stamp.
+
+These modifications are heritable. A child designed under the Apex Package will pass many of those traits to their own children, even without further editing. After three to four generations of cumulative editing, the genetic distance between designed and undesigned humans is significant enough that some geneticists have begun using the term **Homo economicus** -- not as a joke, but as a taxonomic observation.
+
+### What Goes Wrong
+
+At the corpo level, failure rates are low -- reportedly under 2% for standard packages, though these figures are self-reported by the companies performing the procedures and are not subject to independent audit. When failures do occur in corpo labs, they are handled quietly: the embryo is terminated, the parents are compensated, and the data is folded into the next iteration of the editing protocol.
+
+At the street level, the failure rate is catastrophic.
+
+Street-level gene editing is performed by practitioners with access to black-market editing kits -- stripped-down versions of corpo platforms, often several generations out of date, running pirated guide RNA libraries that may contain errors, truncations, or deliberate sabotage by the corponation security teams that seeded them into the black market as a deterrent. The practitioners range from genuinely skilled biohackers to opportunistic frauds selling saline injections labeled as gene therapy.
+
+The procedures are sought by people who cannot afford corpo services but desperately want what they offer: disease resistance for a child born into a world where a minor infection can kill, physical enhancement for a body that needs to work manual labor for sixteen hours a day, cognitive boosts for someone competing against designed humans for the few remaining jobs that have not been automated.
+
+When street-level gene editing goes wrong, it produces conditions that corpo medicine has catalogued but does not treat:
+
+- **Mosaic Collapse** -- Incomplete editing that produces a body whose cells carry two or more conflicting genetic programs. Symptoms vary wildly depending on which tissues received the edit and which did not. A patient with mosaic collapse in their liver may process some toxins normally and fail catastrophically on others. Mosaic collapse in neural tissue produces seizure disorders, personality fragmentation, and progressive cognitive decline.
+
+- **Cassette Drift** -- Inserted gene cassettes that migrate from their intended chromosomal location over successive cell divisions, disrupting whatever genes they land in. Cassette drift produces slow-onset, unpredictable pathologies: cancers, autoimmune conditions, organ failures that appear years after the original procedure. A patient experiencing cassette drift is, in a sense, being edited continuously by their own body in random, uncontrolled ways.
+
+- **Chimeric Rejection Syndrome (CRS)** -- The immune system recognizes edited cells as foreign and attacks them. In mild cases, this produces chronic inflammation. In severe cases, the body mounts a full immune response against its own tissues -- essentially an autoimmune disorder triggered by the patient's own modified DNA. CRS is the most common cause of death following street-level gene modification, typically occurring 3-18 months after the procedure.
+
+- **Oncogenic Cascade** -- Edits that inadvertently activate tumor suppressor gene knockouts or proto-oncogene upregulation. The patient develops aggressive, fast-growing cancers, often in multiple organ systems simultaneously. Corpo oncology treatments can address these, but they cost more than the original gene therapy the patient was trying to afford.
+
+- **Epigenetic Scarring** -- Failed epigenetic reprogramming that permanently alters gene expression across the entire genome. Symptoms are diffuse and systemic: chronic fatigue, hormonal dysregulation, accelerated aging, cognitive fog, immune suppression. Epigenetic scarring is effectively irreversible with current technology.
+
+The genetically damaged underclass created by botched street-level gene mods is a growing demographic in the sub-levels of every major megalopolis. They call themselves -- and are called by others -- **the Spliced**. Many are visibly affected: asymmetric musculature from mosaic collapse, discolored skin patches from chimeric rejection, premature aging from epigenetic scarring. They are denied employment, denied corpo medical care (their modified genomes void all standard insurance coverage), and denied access to many corpo-controlled zones where genetic screening at entry points flags them as biohazard risks. They are, in the most literal sense, a biological underclass created by the intersection of corporate gatekeeping and desperate self-modification.
+
+---
+
+## 4. Forced Augmentation Trials
+
+### The Logic
+
+Corponation biotech development requires human testing. Animal models and computational simulations provide baseline data, but the interaction between a new neural implant, gene therapy, or pharmacological agent and a living human nervous system cannot be fully predicted without putting it into a living human nervous system.
+
+Corpo-internal clinical trials exist, conducted on volunteer employees who receive compensation and medical monitoring. These trials are slow, expensive, heavily documented, and constrained by the corponation's own liability calculations -- a dead volunteer employee generates a data event, an insurance payout, and a morale problem. The corponations need faster iteration cycles, higher risk tolerance, and test subjects whose death or disability generates no data event at all.
+
+They need people who do not exist.
+
+### Who Gets Taken
+
+The selection criteria are straightforward: the ideal test subject is a person whose disappearance will not trigger a search, a missing persons report, an insurance claim, or a corponation database alert. In practice, this means:
+
+- **Exclusion Registry members** -- People who have been blacklisted from one or more corponation systems. They are already invisible to corpo databases. Their biometric data has been flagged and removed from service access. If they disappear, no corpo system notices because no corpo system was tracking them.
+
+- **Undocumented climate refugees** -- The 2-billion-strong population of people displaced by sea level rise, wet-bulb death zones, agricultural collapse, and state failure. They move through the gaps between corponation jurisdictions. They have no legal identity in any corpo system. Many have never been registered in any database at all.
+
+- **The unhoused** -- Residents of the sub-level infrastructure, the ungoverned zones, the camps and shanties that exist in the spaces corponation security does not patrol. Their populations are estimated, not counted. A disappearance is not a data point.
+
+- **Dissidents and organizers** -- People who have been flagged by corponation security as threats but whose public detention would create unwanted attention. Disappearance into a testing program serves a dual purpose: it removes the threat and generates useful data.
+
+- **Debt-bonded workers** -- In corponation jurisdictions where debt can be transferred to a third party, biotech divisions purchase the debt obligations of workers who cannot repay, then compel "participation in corporate development programs" as a condition of debt resolution. The paperwork is immaculate. The consent forms are signed. The person disappears into a lab.
+
+### The Euphemisms
+
+No corponation uses the phrase "forced human experimentation" in any internal document. The language is precise and deliberate:
+
+- **"Neural development candidate"** -- A human test subject for BCI implant trials
+- **"Voluntary contribution program participant"** -- An organ or tissue donor in a corponation prison system
+- **"Phase Zero enrollee"** -- A test subject in a pre-clinical trial that has not been registered with any regulatory body (because no regulatory body with jurisdiction exists)
+- **"Biological systems integration volunteer"** -- A test subject for experimental augmentation hardware
+- **"Accelerated outcomes pathway"** -- A testing protocol with a high expected mortality rate
+- **"Compassionate transition"** -- Euthanasia of a test subject who has been rendered non-viable by a failed procedure
+- **"Material recycling"** -- Organ and tissue harvesting from a deceased or brain-dead test subject
+
+### What Is Done to Them
+
+The testing programs cover the full range of biotech development:
+
+**Neural implant trials.** New BCI architectures, neural mesh configurations, synaptic bridge designs, and cognitive augmentation packages are tested on live subjects. The implant is installed, calibrated, stress-tested, and monitored. If it works, the data is recorded and the subject may receive additional implants for multi-system integration testing. If it fails -- seizures, hemorrhaging, personality dissolution, cortical death -- the data is recorded and the subject is processed for material recycling.
+
+**Gene therapy protocols.** Experimental editing sequences are administered to test subjects to observe real-time effects on living human physiology. Unlike the controlled single-gene edits of established CRISPR-Tau therapy, these are often aggressive multi-gene rewrites targeting entire biological systems. Test subjects may receive dozens of sequential edits over weeks or months, with each round building on -- or conflicting with -- the previous modifications. The goal is to map the interaction space between edits, and the only way to map it is to watch what happens in a living body.
+
+**Pharmacological trials.** New compounds -- cognitive enhancers, metabolic accelerants, immunological agents, neurochemical regulators -- are administered at dosages and in combinations that would never be approved for compensated volunteer trials. Toxicity thresholds are established empirically, which means they are established by killing people until the dose that kills them is identified.
+
+**Augmentation stress testing.** Experimental physical augmentations -- skeletal reinforcement, muscular enhancement, organ replacement with synthetic or xenogeneic systems -- are installed and then tested to failure. A subject with experimental bone-density grafts may be subjected to escalating impact forces until the grafts fracture. A subject with synthetic adrenal glands may be chemically stressed until the system overloads. The point is not to see the augmentation succeed. The point is to find where it breaks.
+
+### Success Rates and Disposal
+
+Success rates vary by program. Neural implant trials run approximately 15-30% success, depending on the maturity of the technology being tested. Gene therapy protocols run 5-20%. Pharmacological trials produce useful toxicity data in virtually all subjects, so from the corponation's perspective, every trial is a "success" -- even the ones that kill the subject.
+
+Subjects who survive testing and retain functional cognition are sometimes retained for further trials. Subjects who survive but are rendered non-functional -- cognitive impairment, organ failure, neurological damage -- are processed through the disposal pipeline.
+
+The disposal pipeline has three stages:
+
+1. **Material recycling** -- Viable organs and tissues are harvested. A brain-dead test subject with intact organs is more valuable as parts than as a continued test platform.
+2. **Biological waste processing** -- The remainder is processed through industrial bioremediation -- enzymatic dissolution, thermal decomposition, or chemical digestion. The output is biologically inert material that is indistinguishable from standard medical waste.
+3. **Data archiving** -- All experimental observations, biometric recordings, and outcome data are archived in corponation research databases under coded identifiers. The subject's identity -- if it was ever known -- is not recorded. The data exists. The person does not.
+
+No corponation has ever been prosecuted for a forced augmentation trial because no jurisdiction exists to prosecute them. The subjects are drawn from populations that do not exist in corpo databases. The facilities operate within corponation sovereign territory. The evidence is dissolved. The data is proprietary.
+
+---
+
+## 5. Addiction-as-Service
+
+### The Business Model
+
+An addicted population is a predictable population. Predictable populations are profitable populations. This is not a conspiracy theory or an extrapolation -- it is a business model articulated in internal corponation strategy documents that have been leaked, read, discussed, and changed nothing.
+
+The mechanics are straightforward: if a corponation can create a chemical or neurological dependency on a product or service it controls, it converts a customer into a subscriber. A subscriber who will experience physical agony, cognitive collapse, or death if they stop paying is a subscriber who will never stop paying. Churn rate: zero. Price elasticity: zero. The ideal market.
+
+### Chemical Addiction Engineering
+
+Corponation pharmaceutical divisions design drugs with dependency profiles calibrated to specific business objectives:
+
+**Subscription Pharmaceuticals.** Drugs designed with built-in withdrawal timelines that require regular re-dosing. The medication for a chronic condition -- pain management, cognitive maintenance, metabolic regulation -- is formulated so that missing a dose produces withdrawal symptoms more severe than the original condition. The patient must maintain their pharmaceutical subscription or suffer consequences worse than the disease. RingoPharma's **Equilin** (a serotonin-dopamine stabilizer marketed for chronic anxiety) produces debilitating withdrawal seizures if dosing is interrupted for more than 72 hours. The seizures are not a side effect. They are a design feature. Equilin has a 99.2% subscription renewal rate.
+
+**Recreational Dependency Packages.** Street-level drugs engineered by corponation labs and distributed through deniable channels into the recreational market. These are not crude stimulants or opioids -- they are precision-designed neurochemical experiences with dependency curves optimized for rapid onset and long taper. **Glint** (a dopamine-serotonin flooding agent that produces 4-6 hours of euphoria, hyperconfidence, and social disinhibition) creates measurable physical dependency after three uses. Withdrawal from Glint produces anhedonia so severe that users report an inability to feel any positive emotion -- not reduced pleasure, but the total absence of it -- for 6-8 weeks. Most users re-dose before the first week is out. Glint is manufactured by a subsidiary of Keeler-Brandt LifeSciences, distributed through three layers of shell intermediaries, and sold at street level for 40-60 credits per dose.
+
+**Productivity Drugs.** Cognitive enhancers distributed through corponation employee wellness programs that boost focus, reduce sleep requirements, and increase work output. The dependency is presented as a feature: "consistent dosing maintains optimal performance." In practice, an employee who stops taking **Clarion** (Zheng-Morita's workplace nootropic) experiences a cognitive crash -- memory impairment, executive function degradation, and a pervasive mental fog that makes basic tasks impossible. The crash lasts 2-4 weeks. No corponation employer will tolerate 2-4 weeks of impaired performance. The employee continues taking Clarion. Zheng-Morita continues charging their employer's health plan 280 credits per month per employee.
+
+### Neural Addiction Through BCI
+
+For the augmented population, chemical dependency is primitive. The more elegant approach operates directly on the brain's reward circuitry through brain-computer interfaces.
+
+A BCI-equipped individual's dopamine system can be modulated remotely. A corponation that controls the firmware on a neural implant can:
+
+- **Reward desired behavior in real time** -- A surge of dopamine when the user completes a work task, makes a purchase, or engages with corpo content. The user experiences this as satisfaction, motivation, and pleasure. They do not experience it as manipulation because the sensation is indistinguishable from genuine emotion.
+
+- **Punish undesired behavior in real time** -- Dopamine suppression, cortisol elevation, or direct discomfort stimulation when the user engages in activity the corponation wants to discourage: visiting a competitor's retail space, reading unauthorized content, associating with flagged individuals, or attempting to modify the implant's firmware.
+
+- **Create dependency on the interface itself** -- Baseline dopamine levels are gradually suppressed over time, so that the user's natural neurochemistry produces a persistent low-grade depression unless the implant is actively compensating. Removing the implant does not restore normal function -- the neurochemical adaptation is organic, not digital. A user who has had their BCI for more than 18-24 months cannot experience normal emotional function without it.
+
+This is the endgame of addiction-as-service: not a drug you have to keep buying, but a piece of yourself that has been quietly rewritten to need permission from a corporation to feel anything at all.
+
+### Why Corponations Want Addicted Populations
+
+The strategic value extends beyond direct revenue:
+
+- **Labor control.** An addicted workforce does not strike, does not organize, does not resist. The withdrawal consequences are too severe. A corponation facing worker unrest simply delays the next shipment of Clarion to the affected facility and waits.
+- **Political control.** An addicted population does not protest, does not vote (where voting still exists as a formality), and does not engage in collective action. The cognitive bandwidth consumed by dependency management leaves no room for political consciousness.
+- **Debt generation.** Addiction creates ongoing expenses that generate ongoing debt, which generates ongoing labor obligation, which generates ongoing productivity. The cycle is self-sustaining.
+- **Data generation.** Addicted users interact with corpo systems more frequently, generating more behavioral data, enabling more precise prediction and manipulation models. The addiction optimizes the surveillance.
+
+---
+
+## 6. The Post-Antibiotic Reality
+
+### The Trajectory
+
+In 2025, antimicrobial resistance (AMR) killed approximately 1.27 million people annually. By 2050, the Lancet projected 1.91 million annual deaths. By 2100, the number has exceeded 8 million -- and that figure counts only deaths where AMR was the primary cause, not the contributing factor. The true toll, including surgical complications, untreatable secondary infections in cancer patients, and wound sepsis in populations without access to effective antibiotics, is estimated at 15-25 million annually.
+
+The pipeline collapsed. New antibiotic development was never profitable -- the drugs are taken for short courses, resistance develops quickly, and the market incentive favors chronic-use medications (like the subscription pharmaceuticals described above) over acute treatments. The last novel class of antibiotic to reach the general market was approved in 2041. Since then, the only new antimicrobial agents have been developed by corponation biotech divisions for internal use and sold at prices that restrict them to the highest economic tiers.
+
+### What a Scratch Can Kill
+
+In the sub-levels and ungoverned zones, a wound that breaks the skin is a potential death sentence. The bacterial ecology of 2100's urban environments is dominated by multi-drug-resistant organisms that the 20th century would have classified as biological weapons:
+
+- **MRSA-7** -- Methicillin-resistant *Staphylococcus aureus*, seventh-generation resistance profile. Resistant to all beta-lactams, vancomycin, linezolid, daptomycin, and the last three experimental glycopeptides. Colonizes skin and mucosal surfaces. A paper cut, a blister, a scrape on concrete can introduce MRSA-7 into the bloodstream. Untreated mortality: 60-70% within 14 days.
+
+- **Pan-R Klebsiella** -- Pan-resistant *Klebsiella pneumoniae*. Resistant to every commercially available antibiotic. Causes pneumonia, urinary tract infections, bloodstream infections, and wound infections. Common in the water systems of sub-level infrastructure. Untreated mortality from bloodstream infection: 80%+.
+
+- **CRE-X Enterobacteriaceae** -- Carbapenem-resistant Enterobacteriaceae with extended-spectrum resistance. Colonizes the gut and spreads through contaminated water and food. Causes abdominal infections that are essentially untreatable without next-generation agents. Endemic in the informal settlements of every megalopolis.
+
+- **XDR-TB** -- Extensively drug-resistant tuberculosis. Airborne transmission. Six-month minimum treatment with toxic second-line agents that are themselves in short supply. Cure rates below 30% even with access to treatment. XDR-TB is the leading infectious cause of death in the Great Lakes megalopolis sub-levels.
+
+### Corporate Antibiotics as Luxury Goods
+
+The corponations that developed next-generation antimicrobial agents treat them as premium products, not public health necessities. Keeler-Brandt's **Decimycin** (effective against MRSA-7 and most CRE strains) costs 12,000 credits for a 10-day course. Zheng-Morita's **PanClear** (a broad-spectrum agent effective against pan-resistant gram-negatives) costs 28,000 credits per treatment. These prices are not set by manufacturing cost -- they are set by the value of the patient's life to the patient.
+
+For corponation employees with platinum-tier health coverage, effective antibiotics are available within hours. For everyone else, infection is managed through hope, immune system lottery, and the occasional black-market diversion of corpo pharmaceutical stock that may or may not be genuine, may or may not be expired, and may or may not be a counterfeit formulation that contains nothing but saline and chalk dust.
+
+### The Infection Economy
+
+The post-antibiotic reality has generated its own economy:
+
+- **Black-market antibiotics** -- Diverted, stolen, counterfeit, or expired corpo medications sold at street-level prices. Counterfeit rates are estimated at 40-60%, contributing to further resistance development as sub-therapeutic doses of genuine antibiotics accelerate bacterial evolution.
+- **Phage therapy** -- Bacteriophage treatment, using viruses that target specific bacteria. Effective but difficult to scale: each phage targets a narrow range of bacterial strains, requiring custom matching for each patient. Phage therapists operate in the black clinic economy, charging 2,000-8,000 credits per course.
+- **Prophylactic surgery** -- In communities where wound infection mortality is high, minor injuries are treated with immediate surgical debridement and wound cauterization -- burning the wound closed to prevent bacterial entry. It is 2100 and people are cauterizing wounds with heated metal because the alternative is death by infection.
+- **Isolation markets** -- Clean rooms, sterile living pods, and filtered-air habitation units sold or rented to those who can afford them. Living in a sealed environment to avoid bacterial exposure has become a growth market. The poorest people live in the most contaminated environments and die from the infections that the richest people never encounter.
+
+---
+
+## 7. Life Extension for the Elite
+
+### The Technology Stack
+
+By 2100, aging is not a solved problem, but for those who can afford the full intervention stack, it is a managed one. No single technology confers radical life extension. The effect is cumulative: a layered regimen of therapies that each address one mechanism of aging, and which together produce a compound effect that has extended the healthy lifespan of the wealthiest humans to 150-200+ years.
+
+The stack includes:
+
+**Telomere Maintenance Therapy.** Telomeres -- the protective caps on chromosome ends that shorten with each cell division -- are periodically rebuilt using engineered telomerase activators. First-generation telomere therapies in the 2040s were crude and carried cancer risks (telomerase activation can make cells immortal in the wrong sense). By 2100, **targeted telomere reconstitution** (TTR) uses cell-type-specific delivery vectors to extend telomeres only in somatic stem cell populations, avoiding the oncogenic risks. TTR is administered quarterly. Cost: 180,000 credits per year.
+
+**Senolytic Purging.** Senescent cells -- damaged cells that stop dividing but refuse to die, accumulating with age and secreting inflammatory compounds -- are cleared from the body using engineered senolytic agents. Zheng-Morita's **ClearPhase** protocol involves a three-day inpatient treatment every six months, during which a cocktail of senolytic compounds and targeted immune activators destroys senescent cell populations throughout the body. The patient feels 10-15 years younger after each treatment -- not metaphorically, but measurably, in biomarker terms. Cost: 320,000 credits per cycle, 640,000 annually.
+
+**Organ Replacement Cycles.** Rather than waiting for organs to fail, life-extension clients undergo prophylactic organ replacement on a scheduled cycle. A bioprinted heart every 25-30 years. Kidneys every 20 years. Liver every 30 years. Lungs every 20-25 years. Each replacement is grown from the patient's own stem cells, genetically optimized for the patient's current (edited) genome, and installed in a procedure that has become as routine as a dental cleaning for the surgeons who perform it. A full replacement cycle costs approximately 4-6 million credits per organ set.
+
+**NAD+ Restoration and Mitochondrial Renewal.** Nicotinamide adenine dinucleotide (NAD+) levels decline with age, degrading cellular energy production. Engineered NAD+ precursor compounds and mitochondrial replacement therapy restore cellular energy metabolism to youthful levels. Administered monthly via infusion. Cost: 95,000 credits per year.
+
+**Neuroregeneration.** The brain ages differently from the body, and cognitive decline has been the hardest problem to address. By 2100, a combination of neural stem cell infusions, synaptic density restoration, and BCI-assisted cognitive offloading can maintain cognitive function well beyond the brain's natural lifespan. The procedure is invasive -- new neural stem cells are introduced directly into the brain via guided injection -- and carries non-trivial risks of personality alteration, memory discontinuity, and the philosophical question of whether a brain that has had 40% of its neurons replaced over the course of a century is still the same brain. The patients do not ask this question. They are too busy running their corponations. Cost: 1.2 million credits per session, recommended every 5-7 years.
+
+**Consciousness Transfer Research.** The frontier. Not yet achieved, but aggressively funded. The premise: if the complete connectome -- the map of every neural connection in a brain -- can be read, digitized, and instantiated in a new substrate (a cloned brain, a synthetic neural matrix, or a computational system), then biological death becomes an inconvenience rather than an endpoint. Zheng-Morita's **Project Chrysalis** and Keeler-Brandt's **Continuity Initiative** are the two largest research programs. Both are classified at the highest levels of corponation secrecy. Neither has produced a verified successful transfer. Both have consumed thousands of test subjects in the attempt (see Section 4).
+
+The combined annual cost of the full life-extension stack -- TTR, senolytic purging, organ replacement, NAD+ restoration, neuroregeneration, and ongoing monitoring -- is approximately 8-12 million corpo credits per year. This is affordable for corponation C-suite executives, board members, and the independently ultra-wealthy. It is not affordable for anyone else.
+
+### The 200-Year-Old Executive
+
+The consequence of functional life extension for the elite is a power structure that never turns over.
+
+In a world without life extension, even the most entrenched oligarch eventually dies. Their heirs may be competent or incompetent, may maintain the dynasty or squander it. Death is the one mechanism of power redistribution that cannot be bought off.
+
+By 2100, that mechanism is broken.
+
+The CEO of Zheng-Morita BioSystems, **Kaien Zheng**, is 187 years old. He has held his position for 94 years. He has overseen the company's growth from a major pharmaceutical corporation to a corponation with sovereign jurisdiction in eleven megalopolis zones. He has personally approved the gene-editing protocols, the forced trial programs, the organ harvesting pipelines, and the life-extension research that keeps him alive to continue approving them. His cognitive function, maintained by neuroregeneration therapy and BCI augmentation, is by all measurable standards sharper than it was when he took the position at age 93.
+
+He will not retire. He will not die of natural causes. He will not be voted out, because corponation governance does not operate by democratic vote. The only mechanisms that could remove him are assassination, hostile corporate takeover, or the failure of the technologies that sustain him -- and he controls the companies that produce those technologies.
+
+This pattern repeats across the corponation landscape. The boards of directors, the executive councils, the family patriarchs and matriarchs who control the dynastic wealth structures -- they are the same people who were in power 80, 100, 150 years ago. They have had a century to consolidate, to eliminate rivals, to entrench their control. The idea that power might change hands through generational transition -- the one constant of human political history -- has been abolished by medical technology available exclusively to those who already hold power.
+
+### What This Means
+
+The designed children of Section 3 will inherit nothing, because their parents will never die. The social mobility that theoretically existed in previous centuries -- the possibility, however slim, that talent or luck might elevate a person from poverty to influence -- is foreclosed. The ladder has not been pulled up. The ladder has been welded in place with every rung occupied by someone who will stand on it forever.
+
+The post-antibiotic poor die from scratches. The engineered elite live for centuries. The gap between these two realities is not a policy failure or an unintended consequence. It is the system working exactly as designed.
+
+---
+
+## Relevance to StreetSamurai
+
+The biotech-without-ethics landscape maps directly onto character and narrative:
+
+- **WOUND** -- What was done to the body without consent. The implant installed by a butcher shop surgeon. The gene mod that went wrong. The organ taken. The addiction engineered. The scar from a cauterized wound in a world where antibiotics are a luxury. Every character in this world carries the marks of a medical system that treats humans as material.
+
+- **IDEAL** -- The code a character holds about the body's sanctity, or the abandonment of that code. A black clinic surgeon who refuses to perform forced augmentations. A street samurai who will not take a corpo longevity treatment because accepting it means accepting the system that produces it. Or: a character who has fully internalized the body-as-platform model and sees no ethical boundary to self-modification.
+
+- **SHADOW** -- What the body reveals that the mind denies. The gene scan that shows you are Spliced. The blood test that reveals corpo-engineered addiction chemistry. The neural diagnostic that proves your emotions are firmware, not feeling. The body as evidence of truths the character cannot face.
+
+- **GHOST** -- The question of continuity. After the organ replacements, the neural stem cell infusions, the gene edits, the BCI integration -- are you still you? At what percentage of replacement does the original person cease to exist? The 200-year-old executive is a ghost inhabiting a body that has been rebuilt seventeen times. The street kid with a botched gene mod is a ghost in a body that is rejecting itself. Both are haunted by the same question.
+
+The black clinics are where the story lives. They are the intersection point -- where corpo biotech meets street desperation, where the surgeon's skill meets the patient's need, where the technology that extends one life is extracted from the body of another. Every clinic scene is a crucible for every facet.

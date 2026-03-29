@@ -1,0 +1,263 @@
+# Point 4: Megalopolis Infrastructure
+
+## The Built World of the Great Lakes Corridor, circa 2100
+
+---
+
+## 1. The Great Lakes Megalopolis
+
+### Geography
+
+The Great Lakes Megalopolis runs approximately 550 miles along the southern rim of Lakes Michigan, Huron, and Erie, from Milwaukee through Chicago, around the bottom of Lake Michigan through Gary and Hammond, northeast through the former Indiana-Michigan border country to Detroit, then east along the Erie shore through Toledo and Cleveland, terminating in the rusted ridgelines above Pittsburgh. One continuous urban band. No gaps. No countryside. No horizon line that isn't interrupted by structure.
+
+The merger happened in stages. Chicago-Milwaukee sealed shut first, sometime in the 2050s, the last fifteen miles of semi-rural land between Kenosha and Waukegan filling in with modular refugee housing, logistics depots, and water processing plants that nobody planned and nobody zoned. Gary and Hammond had been absorbed into Chicago's industrial southern fringe decades before that. The Michigan lakeshore corridor followed, driven by climate migration pressure that made every acre within fifty miles of freshwater the most contested real estate on the continent. Detroit's western suburbs hit Ann Arbor's eastern sprawl around 2062. Toledo filled the gap between Detroit and Cleveland by 2070. Cleveland-Pittsburgh connected last, the old Rust Belt towns between them — Youngstown, Akron, Canton — swelling with refugees from the Carolina coasts, the drowned Gulf parishes, the Sun Belt heat zones where wet-bulb temperatures made outdoor existence lethal for four months a year.
+
+The result is not a city in any historical sense. It is a band of continuous habitation 550 miles long and 20 to 60 miles wide, containing roughly 45 million people, governed by no single authority, threaded through by the overlapping proprietary jurisdictions of a dozen corponations, and growing denser every year.
+
+### What It Looks Like
+
+From above — if you could get above it, which most people cannot — the Megalopolis reads as a dark mass hugging the lakeshores, broken by the silver-gray planes of the lakes themselves and the pale geometric blocks of arcology towers rising at irregular intervals like teeth from a broken jaw. At night, the light distribution tells you everything about the power structure: the corpo towers and arcology caps blaze white-blue, the mid-rise residential bands glow amber and sodium-orange, and street level is a patchwork of darkness punctuated by the cold blue flicker of ad-screens and the orange pulse of burn barrels.
+
+From street level, you see concrete. Concrete and cladding and conduit. The older sections — former Chicago core, former Milwaukee downtown, the Detroit Reclamation Zone — retain fragments of twentieth-century architecture, brownstone facades and art deco lobbies now buried under decades of vertical addition, their original rooflines serving as the second or third floor of whatever was built on top. The newer sections are pure function: prefab modular towers, stacked like shipping containers with windows, climate-hardened polymer walls, rooftop water catchment arrays. Everything is close. The streets in the dense sections feel like corridors. The sky is a strip.
+
+### The Layers
+
+**Subsurface (The Undertow).** Freight tunnels, utility conduits, abandoned transit lines from the old municipal era, storm drainage systems expanded and repurposed as informal habitation. The Undertow is not governed. It is not surveilled in any systematic way. It floods during heavy rain events. It smells of standing water, electrical ozone, and human waste. Tens of thousands of people live down there — the blacklisted, the undocumented, the blanks who have been excluded from every corponation registry and therefore do not legally exist in any jurisdiction that matters. The Undertow runs under the entire Megalopolis, a shadow city beneath the real one, connected by maintenance hatches, storm grates, and the occasional freight elevator that someone forgot to lock.
+
+**Street Level (The Grind).** The first five to eight stories. This is where most people live. The light is filtered, indirect, cut by the buildings above into shifting parallelograms that move across the pavement over the course of a day and disappear entirely in the dense sections where the upper stories cantilever out over the streets. Street level smells like cooking oil, ozone, wet concrete, and the sharp chemical tang of air that has been breathed through six filtration tiers before it reaches ground floor. The noise is constant: foot traffic, cargo drones at low altitude, the hiss of steam vents, the thrum of power conduit, music from storefronts and food stalls that operate in the cracks between corponation retail zones. Most street-level commerce is informal. Licensed corpo retail exists down here, but it clusters around transit hubs and major intersections. Between those nodes, the economy is barter, gray-market credit, unlicensed fabrication, and cash — the old U.S. currency that still circulates as a medium of exchange in the spaces where CreditScript doesn't reach.
+
+**Mid-Rise (The Stack).** Floors eight through forty, roughly. This is where the corponation middle class lives — the workers who hold active employment contracts, maintain a positive credit standing with at least one major corpo, and can afford subscription-tier utilities. The Stack is cleaner, better lit, better ventilated. Its corridors are monitored. Its residents carry active identification in at least one corponation registry. The air is filtered. The water is treated. The broadband works. In exchange, every square foot is jurisdictional territory — you live in a RingoStack or a Vossen Residential Block or a NovaChem LiveSpace, and the terms of your lease are the terms of your existence. Leave the building, you are in the street. Enter the building, you are in the corpo.
+
+**Arcology Level (The Cap).** The upper floors, the rooftop complexes, the enclosed vertical ecosystems that the major corponations build for their senior personnel and high-value contractors. Arcology caps rise above the general skyline, catching unobstructed sunlight, housing hydroponic gardens and recreational green space and air that smells like actual air. Some are sealed environments — climate-controlled biomes with artificial sky projections and curated ambient sound. The people who live in the Cap rarely descend to street level. They transit between arcology towers via sky-bridges, private VTOL shuttles, or dedicated express elevators that bypass every floor between penthouse and parking garage. From the Cap, the city below is an abstraction. A map. A logistics problem.
+
+### Climate Migration
+
+They come from everywhere south. That is the defining demographic fact of the Megalopolis, and it has been for thirty years.
+
+The Carolina coasts went first — not all at once, but in a series of hurricane seasons between 2055 and 2070 that made rebuilding pointless. The Gulf parishes followed. Houston's western suburbs flooded permanently in 2068. Phoenix hit 130 degrees Fahrenheit for the first time in 2071 and kept hitting it. The Sun Belt evacuations were not organized. There was no federal program. People moved because staying meant dying, and they moved toward water.
+
+The Great Lakes had water. More freshwater than any other region on Earth. And the climate models — the ones that showed the Sun Belt becoming uninhabitable — showed the Great Lakes region gaining temperate growing seasons, increased rainfall, milder winters. It was the last good place.
+
+So they came. Millions of them, over decades, in waves that overwhelmed every housing plan, every infrastructure projection, every municipal budget. The Megalopolis grew not because anyone designed it to grow but because human beings need water and shelter and the Great Lakes had both. The corponations that already controlled regional infrastructure — Ringo, Vossen, NovaChem, TeslaLoop — absorbed the ones who could pay. The rest settled where they could. The gaps between. The edges. The Undertow.
+
+---
+
+## 2. Corponation Transit Networks
+
+### The Principle
+
+There is no public transit in the Great Lakes Megalopolis. There has not been for decades. The last municipal transit authority — the Chicago Transit Authority, already a ghost of its twentieth-century self — was dissolved in 2058 when Illinois defaulted on its pension obligations for the third time and sold its remaining transit infrastructure to Ringo CorpoNation under the Illinois Public Asset Recovery Act. Milwaukee's transit followed in 2061. Detroit's had been private since the Reclamation Zone charter of 2031. Cleveland's in 2064. Pittsburgh held out until 2069, the last city in the corridor to surrender its buses and rail.
+
+Now there is RingoTransit. TeslaLoop. Vossen MoveLink. NovaChem FreightRail, which technically carries only cargo but which everyone knows also carries passengers in its modified container cars for a fee that does not appear on any official schedule. There is the Kessler Intercity Maglev, which runs the full Milwaukee-to-Pittsburgh corridor in three hours and costs more per mile than a first-class airline ticket did in 2025.
+
+Each system is sovereign territory. The moment you step onto a RingoTransit platform, you are on Ringo soil. Their cameras. Their security personnel. Their rules. Your biometric scan at the turnstile is a border crossing. Your fare is not a purchase — it is an entry visa.
+
+### How It Works
+
+**RingoTransit** is the largest network, covering most of the former Chicago metro area and extending through Gary, Hammond, and the southern lakeshore corridor to the Michigan border. It runs buses, light rail, and a fleet of autonomous micro-shuttles that serve the dense residential corridors of the Stack. RingoTransit stations are clean, well-lit, heavily surveilled, and branded floor to ceiling in Ringo's corporate livery — slate gray and burnt orange. If you are on the Ringo Exclusion Registry, the turnstile will not open. The system knows your face before you reach the platform.
+
+**TeslaLoop** controls the high-speed intercity connections and most of the Detroit metro transit grid. Its signature is the vacuum-tube passenger pod — sleek, silent, fast, and expensive. TeslaLoop does not serve street level. Its stations are located in the mid-rise and arcology tiers, accessible by elevator from corpo lobbies. To ride TeslaLoop, you need a TeslaLoop account, which requires a credit score equivalent, a biometric profile, and a minimum monthly subscription. There is no single-ride fare. You are a member or you do not exist.
+
+**Vossen MoveLink** operates in the Cleveland-Pittsburgh corridor and parts of the Ohio Triangle. It is the cheapest option — Vossen's strategy has always been volume over margin — and its trains are accordingly older, louder, and more crowded. Vossen stations smell like machine oil and recycled air. The seats are hard polymer. The surveillance is less sophisticated but more aggressive — Vossen security officers patrol the cars in body armor, and the terms of carriage include consent to random search of person and belongings. Vossen's exclusion list is shorter than Ringo's, but its enforcement is more physical.
+
+**Kessler Intercity Maglev** is the spine. One line, Milwaukee to Pittsburgh, with stops in Chicago, Gary, Detroit, Toledo, Cleveland. The train floats on magnetic rails in a partial vacuum tube, reaching speeds above 600 miles per hour in the open stretches between cities. A full-corridor ticket costs 1,200 CreditScript — roughly a month's rent in the Stack. Kessler caters to corpo executives, high-value contractors, and the rare individual whose corponation affiliation includes transit benefits at that tier. The Kessler cars are silent inside. The seats are leather. The windows display curated landscape projections because the actual view at 600 mph through a tube is nothing.
+
+### The Gaps
+
+Between RingoTransit's coverage area and TeslaLoop's coverage area, there are streets that no transit system serves. Between the Vossen MoveLink grid and the Ringo grid, there are neighborhoods that exist in a jurisdictional seam — not claimed by any corponation, not served by any network.
+
+In these gaps, people walk. They ride bicycles held together with zip ties and salvaged polymer. They ride in unlicensed vehicles — gasoline-burning relics from the 2040s, patched and re-patched, running on black-market fuel cut with ethanol and hope. They ride in the backs of freight trucks driven by independent operators who charge by the mile and do not ask questions. They wait at the edges of corponation zones for someone they know who has a valid transit pass and a willingness to claim them as a guest.
+
+Transit in the Megalopolis is not a service. It is a citizenship test you take every morning. Pass it, and you move through the city at speed, in climate-controlled comfort, under the protection of whichever corpo flag you ride beneath. Fail it, and you walk, in the heat or the cold, through streets that belong to no one, exposed to whatever finds you there.
+
+---
+
+## 3. Proprietary Utilities
+
+### Water
+
+Lake Michigan alone holds 1,180 cubic miles of fresh water. Lake Erie, Lake Huron, and the tributaries feeding the Megalopolis corridor add billions more gallons. There is no water scarcity in the Great Lakes region. There is only water access scarcity.
+
+Ringo controls the largest share of the municipal water treatment and distribution infrastructure, inherited from the old Chicago and Milwaukee systems and expanded through acquisition. RingoAqua serves approximately 18 million people across the western half of the Megalopolis. Vossen HydroWorks serves another 10 million in the Cleveland-Pittsburgh corridor. NovaChem WaterPure handles Detroit and Toledo.
+
+Each operates on a subscription tier model:
+
+- **Basic** — Cold water, municipal-grade filtration (removes particulate and most biological contaminants, does not address microplastics, pharmaceutical residue, or heavy metals). Available at street level and lower Stack. Metered. Overage charges apply.
+- **Standard** — Hot and cold water, enhanced filtration, priority pressure during peak hours. Available in the Stack. Bundled with residential lease agreements.
+- **Premium** — Full reverse-osmosis purification, mineral rebalancing, guaranteed pressure, unmetered. Available in upper Stack and arcology tiers. The water at Premium tier tastes different. It tastes like water used to taste, before the pipes aged and the treatment plants were sold. People who grew up on Basic can taste the difference instantly.
+
+What happens if you cannot afford Basic? You carry jugs to public access points — the handful of legacy municipal fountains that still operate under court order, usually broken, usually with a line. You collect rainwater from rooftop catchments, which is technically legal in most jurisdictions but which the corponations have challenged repeatedly on the grounds that rainwater falling on their buildings is their property. You buy water from informal vendors who fill containers from fire hydrants and sell them at intersections, a practice that is illegal under every corponation charter and which happens on every block in the Grind.
+
+In the Undertow, water comes from the storm drainage system. It is not treated. People drink it anyway.
+
+### Power
+
+The grid is fragmented. Ringo runs fusion-supplemented natural gas plants and a network of rooftop solar arrays across its territory. TeslaLoop operates the largest battery storage network in the corridor and sells surplus to residential blocks in its coverage area. Vossen burns waste — actual garbage, fed into plasma gasification plants that convert the Megalopolis's refuse into syngas and slag and kilowatt-hours. NovaChem runs three small modular nuclear reactors in the former rural zones between Cleveland and Pittsburgh, fenced and guarded like military installations.
+
+There is no unified grid. Each corponation's power network is proprietary. Interconnection agreements exist, but they are commercial contracts, not public mandates — if Ringo and Vossen are in a pricing dispute, the neighborhoods at the boundary of their service areas experience brownouts until the lawyers settle.
+
+The subscription tiers mirror water:
+
+- **Basic** — Enough power for lighting, a single appliance circuit, and device charging. Rolling blackouts during peak demand. The lights flicker at street level. Everyone knows the flicker.
+- **Standard** — Reliable power, climate control, full appliance load. No blackouts except during grid disputes or extreme weather events.
+- **Premium** — Uninterruptible supply, backup battery, priority restoration. The arcology towers never go dark. Their lights are the ones you see from street level, steady and white, when everything else is flickering.
+
+The dead zones between corponation territories have no grid connection at all. Power there comes from scavenged solar panels, hand-crank generators, and illegal taps into the nearest corpo conduit — a practice that carries, under Ringo's internal code, the same penalty classification as theft of physical property. RingoGuard has shot people over illegal power taps. It is in the enforcement record. Nobody was charged.
+
+### Broadband
+
+RingoNet is the dominant internet service provider across the western Megalopolis. TeslaLink covers the Detroit corridor. Vossen DataStream serves the east. Each operates as a walled garden — your RingoNet subscription gives you access to the RingoNet ecosystem, which includes Ringo-licensed content, Ringo-approved communication platforms, and Ringo-filtered search. Accessing content outside your provider's ecosystem requires cross-network routing fees that double or triple the cost.
+
+The practical consequence: information itself is balkanized. A RingoNet user and a Vossen DataStream user do not see the same internet. They do not read the same news feeds. They do not have access to the same archives. The fragmentation is not censorship in the traditional sense — no single authority is deciding what to suppress. It is simply that each network prioritizes its own content, throttles competitors, and charges exit fees that most users cannot afford. The result is the same: what you know depends on who you pay.
+
+At street level, connectivity is sporadic. The signal degrades below the fifth floor in dense sections, blocked by the mass of concrete and conduit above. Mesh networks — informal, jury-rigged, maintained by volunteers and activists — fill some of the gaps, but they are slow, unreliable, and periodically shut down by corpo security teams who classify them as unauthorized network intrusion.
+
+In the dead zones, there is no signal. No connectivity. No access to any digital service. People in the dead zones communicate face to face, by written message carried by hand, or through short-range radio equipment that operates on frequencies the corponations do not bother to monitor because the people using them have nothing worth surveilling.
+
+### Air Filtration
+
+The outdoor air in the Megalopolis is breathable. Barely. The concentration of particulate matter, ground-level ozone, and volatile organic compounds in the street-level atmosphere exceeds WHO guidelines on roughly 200 days per year. The lake effect helps — onshore winds push cleaner air into the lakeshore neighborhoods — but in the dense interior sections, between the towers, where the air stagnates in the urban canyons, the pollution index regularly hits levels that would have triggered emergency alerts in 2025.
+
+The corponations sell filtered air. Every Stack residential unit includes a filtration system rated to the tenant's subscription tier. Basic gets HEPA equivalent. Standard gets activated carbon and UV treatment. Premium gets medical-grade purification — the air in the arcology caps is cleaner than any outdoor air on Earth.
+
+At street level, you breathe what is there. The vendors who sell filter masks from carts at major intersections do steady business. The masks range from simple particulate filters — cloth and polymer, good for a few days — to full-face respirators with replaceable carbon cartridges. The expensive ones have digital readouts that display the air quality index in real time, a number that most street-level residents have learned to ignore because the alternative to breathing bad air is not breathing.
+
+---
+
+## 4. The Vertical City
+
+### Why Up
+
+The Megalopolis cannot grow outward. To the north, the lakes. To the south, the agricultural zones that the corponations need for food production and that climate change has made more productive than they have been in a century — nobody is paving over functioning farmland when the global calorie supply is 24% below where it should be. To the east and west, the corridor is already built to its practical limit, the infrastructure costs of extending further rising exponentially.
+
+So the city grows up. Every year, new floors are added to existing structures. Every decade, another generation of towers rises above the previous skyline. The Megalopolis is not a planned vertical city in the way that utopian architects imagined — it is an ad hoc vertical city, built by accretion, each layer reflecting the economics and desperation of the era that built it.
+
+### The Strata
+
+The stratification of the Megalopolis is architectural, economic, and moral, and it maps almost perfectly to altitude.
+
+**Floors 1-5: The Grind.** Perpetual shadow in the dense sections. Foot traffic, street vendors, informal markets, unlicensed clinics, body shops that install gray-market augments, bars that serve synthetic alcohol and do not check identification. The walls are layered with decades of ad-screen residue, peeling smart-paint, and graffiti in languages that reflect the last three waves of migration. The Grind is loud. It is crowded. It smells like humanity compressed — food, sweat, exhaust, rain on hot concrete. Natural light reaches the Grind only at midday in the widest streets and not at all in the alleys. Artificial lighting is a mix of ad-screens (which never stop), sodium vapor fixtures (legacy municipal infrastructure, half of them broken), and whatever the residents have rigged — LED strips, bioluminescent panels, fire.
+
+**Floors 6-15: Lower Stack.** The transition zone. Corponation jurisdiction begins here in most buildings — the lobby is street level, but the residential floors above are corpo territory. Lower Stack is where the service workers live: the people who clean the arcology towers, maintain the transit systems, staff the retail nodes. Their apartments are small — 200 to 400 square feet for a single occupant, 500 to 600 for a family unit. The walls are thin. The ceilings are low. But the water runs, the power stays on most of the time, and the air is filtered. Lower Stack residents have active corponation IDs. They are in the system. They exist. That distinction — between existing in a corponation database and not existing — is the most important social divide in the Megalopolis, more important than income, more important than augmentation status, more important than anything.
+
+**Floors 16-40: Upper Stack.** The corponation middle class. Engineers, analysts, medical technicians, security supervisors, mid-level managers. Their apartments have windows that face outward, catching light for at least part of the day. Their floors have corridors wide enough for two people to pass without turning sideways. Some Upper Stack levels have shared amenity spaces — a gym, a hydroponic garden box, a lounge with actual furniture rather than molded polymer seating. Upper Stack is quiet. The soundproofing is real. The neighbors are vetted. Living here means you have earned, through labor and compliance and the maintenance of a clean behavioral record, the right to exist in comfort. The corpo expects gratitude. The corpo receives compliance, which is close enough.
+
+**Floors 41+: The Cap.** Variable height — some arcology towers reach 120 stories, some top out at 60. The Cap is where the corponation's investment-class personnel live: senior executives, lead researchers, military-grade security commanders, and the rare independent contractor whose skills are valuable enough to warrant corpo housing at altitude. The Cap has everything the Grind does not. Light. Air. Space. Silence. Green things growing in actual soil under full-spectrum lighting. Water that tastes like mountain runoff. Food that was grown rather than synthesized. The people in the Cap do not think about the people in the Grind. This is not cruelty. It is architecture. The building is designed so that the Cap and the Grind never intersect. Different elevators. Different entrances. Different worlds, stacked.
+
+### The View Down
+
+From the fiftieth floor of a RingoStack residential tower, on a clear day, you can see the curve of Lake Michigan to the north and the haze of the corridor stretching east toward Detroit. Below you, the rooftops of the lower buildings form a gray-brown plain broken by HVAC units, water tanks, solar panel arrays, and the occasional rooftop garden maintained by someone who still believes in growing tomatoes. Below that, you cannot see street level. It is down there, somewhere, in the shadows between the buildings, but from this height it is an abstraction — a place you know exists because you used to live there, or because the people who clean your floors go back to it every night, or because you have simply been told. The vertical city does not hide its poor. It buries them in plain sight, under itself, in its own shadow.
+
+---
+
+## 5. The Ungoverned Zones
+
+### Where They Are
+
+Every corponation's territory has a boundary. On one side, jurisdiction — laws, surveillance, services, identity. On the other side, another corponation's jurisdiction, or nothing.
+
+The nothing is where the ungoverned zones are.
+
+They exist in the seams between corponation territories: the six-block stretch between a RingoStack development and a Vossen residential complex where neither entity bothered to extend its perimeter. The former industrial corridor between the Detroit Reclamation Zone and the NovaChem enclave at the old Ford River Rouge site, a mile-wide strip of derelict factories and crumbling warehouses that no corponation wanted badly enough to claim. The entire southern edge of the Megalopolis in several sections, where the urban band meets agricultural zone and the corponation jurisdictions simply stop, their boundary walls and sensor arrays facing inward, toward the city, not outward.
+
+The largest ungoverned zone in the Megalopolis is the Gary Interstitial — a roughly twelve-square-mile area in what was once Gary, Indiana, a city that was already half-abandoned in 2025 and that, when the corponation jurisdictions carved up the corridor, was claimed by nobody. Gary sits between Ringo's southern Chicago territory and TeslaLoop's northwestern Indiana logistics zone. Neither entity wanted it. The buildings were too degraded, the infrastructure too far gone, the population too poor to generate subscription revenue. So the jurisdictional maps simply route around it, the way a river routes around a rock, and what remains inside is ungoverned territory.
+
+### What They Look Like
+
+The ungoverned zones look like what happens when no one maintains anything for forty years.
+
+In the Gary Interstitial, the streets are broken. Not potholed — broken, the asphalt heaved and cracked by freeze-thaw cycles and root systems pushing through from below. Former commercial buildings stand with their facades intact and their interiors gutted, converted into communal housing by the people who live there: blanks, blacklisted, refugees who could not afford even Basic-tier corponation registration, and the deliberately excluded — political dissidents, labor organizers, hackers, anyone who made an enemy of a corpo powerful enough to scrub them from every registry.
+
+There is no grid power. There is no piped water. There is no broadband. There are scavenged solar panels on every rooftop that will hold them, wired into battery banks made from salvaged vehicle cells. There are rain barrels and cisterns and, in the Gary Interstitial specifically, a network of hand-dug wells that tap into the shallow groundwater table — water that is not clean, exactly, but that can be boiled and filtered through sand and charcoal into something that will not kill you immediately.
+
+The buildings are lit from within by LED strips, candles, and the glow of handheld devices charging off solar batteries. From outside, at night, an ungoverned zone looks like a field of dim, flickering orange and blue light scattered among dark structures. It looks like a city that is slowly going out.
+
+### Who Lives There
+
+The blanks. That is the common term for people who do not exist in any corponation registry — no RingoID, no Vossen CitizenFile, no NovaChem WorkerProfile, no TeslaLoop MemberAccount. A blank cannot ride transit. Cannot buy filtered water. Cannot access broadband. Cannot fill a prescription at a corpo pharmacy. Cannot enter any building operating under proprietary jurisdiction without triggering an unauthorized presence alert.
+
+Some blanks were born in the zones. Second and third generation now, children of refugees who never registered, who never had the documentation or the credit standing or the clean behavioral record required to establish a corponation identity. These children have never been inside a corpo building. They have never ridden a train. They have never used a broadband connection that was not pirated. They are citizens of nowhere, residents of the gaps.
+
+Others became blank. The Tallow precedent — *Ringo v. Tallow* — demonstrated what happens when a corponation places someone on its Exclusion Registry: the designation cascades through data-sharing agreements until the individual is locked out of hundreds of thousands of locations worldwide. People on multiple exclusion lists, cross-referenced and compounded, find that the number of places they can legally exist shrinks to nearly zero. The ungoverned zones are where those people wash up.
+
+### Governance
+
+The ungoverned zones are not lawless. That is a corponation narrative. What the zones lack is *corpo* law.
+
+In its place, the zones have evolved ad hoc governance structures — neighborhood councils, mutual aid networks, dispute resolution by community mediation, and, where those fail, enforcement by armed groups whose authority derives from local reputation and the willingness to use force. Some of these groups are functional. Some are predatory. Most are both, depending on the day and who is asking.
+
+The Gary Interstitial has a council of twelve — elected, roughly annually, by a process that involves a lot of shouting in a former high school gymnasium. The council manages water distribution, allocates rooftop solar access, mediates housing disputes, and maintains a militia of approximately 300 armed volunteers who patrol the zone's borders. The militia's primary function is not internal policing but perimeter defense — keeping corpo security forces from entering the zone for raid operations, which happen with enough regularity that the militia maintains rotating watch shifts around the clock.
+
+The corponations do not recognize any of this. On their maps, the ungoverned zones are blank space. Gray areas. Terra nullius. The people inside them are not citizens, not customers, not employees, not residents. They are, in the corpo legal framework, trespassers on unincorporated land — a legal fiction that allows corpo security teams to enter the zones at will, for purposes including fugitive recovery, infrastructure protection (any corpo conduit that runs through or near a zone), and what the Ringo internal code terms "prophylactic threat suppression," a phrase whose operational meaning varies by situation and is never defined in public filings.
+
+---
+
+## 6. Climate Infrastructure
+
+### The Threat Profile
+
+The Great Lakes Megalopolis exists because climate change made the Sun Belt uninhabitable and the Great Lakes region survivable. But survivable is not safe.
+
+The threats: increased precipitation intensity (rainfall events 40% heavier than the twentieth-century average), accelerated freeze-thaw cycling that destroys concrete and asphalt, lake-effect storms of unprecedented violence in the lakeshore corridors, periodic heat events that push wet-bulb temperatures to dangerous levels even in the temperate north, and rising lake levels driven by increased precipitation and glacial meltwater from the remaining Canadian ice sheets.
+
+Lake Michigan's surface level has risen approximately four feet since 2025. Four feet does not sound like much until you consider the thousands of miles of lakeshore infrastructure — roads, tunnels, utility conduits, building foundations, transit lines — that were built to twentieth-century water levels. The lakeshore neighborhoods of the former Chicago core are in a permanent state of managed flooding. Managed being the operative word, and the definition of "managed" depending entirely on who is paying for the management.
+
+### Who Pays
+
+The corponations protect their own territory. Ringo has constructed a continuous seawall along the Lake Michigan shoreline within its Chicago jurisdictional zone — seven miles of reinforced concrete and steel sheet piling, twelve feet above current lake level, topped with sensor arrays and drainage infrastructure that can handle a Category 3 storm surge. The wall cost 4.2 billion CreditScript. It protects RingoStack towers, RingoTransit lakefront stations, and the Ringo corporate campus in what was once Lincoln Park. It does not extend one inch beyond Ringo's jurisdictional boundary.
+
+TeslaLoop has armored its Detroit riverfront infrastructure with similar engineering. NovaChem has raised the foundations of its Cleveland and Pittsburgh facilities. Vossen, characteristically, has done less — Vossen's approach to climate infrastructure is reactive rather than preventive, deploying emergency pumps and sandbag crews when flooding hits and writing off the damage as an operating cost.
+
+Between the corponation seawalls, in the jurisdictional seams, the lakeshore is unprotected. The old municipal infrastructure — the breakwaters, the beach nourishment programs, the storm sewer systems that the City of Chicago maintained for a century — has degraded to the point of uselessness since the city's functions were partitioned among the corpos. Nobody owns it. Nobody maintains it. During major storm events, the water comes through the gaps in the seawall network and floods the unprotected neighborhoods behind them — the Lower Stack buildings in the seams, the street-level markets, the Undertow passages that fill to the ceiling.
+
+The flooding is not random. It is architectural. The corponation seawalls do not just protect corpo territory — they redirect water. The hydrodynamics are simple: block the water in one place, and it goes somewhere else. Ringo's seven-mile seawall pushes storm surge south, into the unprotected shoreline between Ringo territory and TeslaLoop's logistic zone. The neighborhood there — a dense Lower Stack community of roughly 60,000 people, mostly climate refugees from the Gulf states who arrived in the 2060s and settled in the cheapest housing available — floods four to six times per year now. Before Ringo built the wall, it flooded once or twice.
+
+The residents call the neighborhood the Spillway. The name has become a noun and a verb and a metaphor. To be spilled is to live where the water goes because someone richer decided it would not go where they are.
+
+### Heat
+
+The Megalopolis is warmer than the surrounding region — urban heat island effect, compounded by the density of the vertical city. Street-level temperatures in the dense sections run 8 to 12 degrees Fahrenheit above the regional average. During summer heat events, the Grind becomes dangerous. The concrete absorbs heat during the day and radiates it at night. The air does not cool. The buildings above block the wind.
+
+The corponations climate-control their own territory. Every Stack floor from Lower to Cap has active cooling. The arcology towers are sealed environments with independent climate systems. The corpo-controlled streets — the major thoroughfares that connect transit hubs and retail nodes — have reflective surface coatings and misting systems that activate above 95 degrees.
+
+Between the corpo streets, in the informal alleys and residential blocks that are not anyone's jurisdiction, there is nothing. The heat sits in the Grind like a physical weight. People die during the bad weeks — the elderly, the sick, children. The bodies are found in apartments with no cooling and windows that do not open because the building was designed for sealed filtration-system ventilation and nobody is paying for the system to run. The corponations do not report these deaths. They occur outside corpo territory. They are not corpo statistics.
+
+---
+
+## 7. "Public" Space
+
+### The Death of the Commons
+
+There is no public space in the Great Lakes Megalopolis. The concept persists — people still say "public" to describe streets and parks and plazas — but the word has become a ghost, a linguistic fossil from the era when governments maintained shared spaces with tax revenue and the legal framework of common access.
+
+What exists now is a gradient of private spaces with varying levels of access restriction.
+
+**Corpo Throughways.** The major streets connecting corponation transit hubs, retail centers, and residential blocks are maintained by the corponation that claims the adjacent territory. Ringo's throughways in the Chicago core are clean, well-lit, surveilled by overhead camera arrays and ground-level biometric sensors, patrolled by RingoGuard security in slate-gray uniforms. The pavement is intact. The drainage works. The air filtration vents embedded in the building facades at street level push treated air into the corridor. Walking a Ringo throughway feels almost comfortable, almost safe, if you do not think too hard about the fact that your face was scanned fourteen times in the last block and that your behavioral profile is being updated in real time. Access is nominally open — you do not need a RingoID to walk a throughway — but loitering, solicitation, informal vending, assembly of more than six persons, and "behavioral anomaly" (undefined) are all prohibited under Ringo's public corridor code. Enforcement is at the discretion of RingoGuard. Discretion, in practice, means that people who look like they belong are left alone and people who do not are moved along.
+
+**Corporate Parks.** The green spaces in the Megalopolis are corporate amenities, built and maintained by corponations for the benefit of their personnel and customers. Ringo's Lincoln Park Preserve occupies roughly half the footprint of the original Lincoln Park — the other half was built over during the vertical expansion of the 2060s — and is open to the public in the sense that anyone with a RingoID or guest pass can enter during operating hours (0600 to 2100, with extended hours for Premium-tier residents). The grass is real. The trees are maintained by a horticultural staff of forty. The air smells like cut grass and lake water and the faint ozone tang of the perimeter air curtain that keeps unfiltered street-level atmosphere from drifting in. There is a fee — not for entry, which is technically free to RingoID holders, but built into the subscription cost of the residential tier. If you live in the Stack, you are paying for the park whether you use it or not. If you do not live in the Stack, you are not welcome. The park has a boundary. The boundary is enforced.
+
+TeslaLoop maintains a series of rooftop gardens atop its Detroit arcology complex — "Sky Gardens," open to TeslaLoop members only, featuring curated biomes that replicate ecosystems that no longer exist at ground level: temperate forest, prairie grassland, a marsh environment with actual frogs. The gardens are beautiful. They are meant to be beautiful. They are a selling point, listed in TeslaLoop's membership materials alongside transit access and broadband speed. Nature as amenity. Ecology as brand.
+
+**Uncontrolled Streets.** The streets between corponation throughways — the alleys, the side roads, the residential blocks in the seams — are not maintained by anyone. Their condition varies from passable to impassable. Potholes become sinkholes become permanent puddles of standing water. The lighting is whatever the adjacent buildings provide — spillover from ad-screens, the glow from a food stall, the headlights of an unlicensed vehicle picking its way through. These streets are the closest thing to public space that exists in the Megalopolis: no one owns them, no one surveils them systematically, no one controls who walks through them. They are public by default, by neglect, by the absence of anyone who cares enough to claim them.
+
+This is where the Megalopolis actually lives. The throughways are for transit. The corpo parks are for display. The uncontrolled streets are where people gather, argue, trade, fight, eat, sit on overturned crates and talk. Where children play in the gaps between parked cargo containers. Where someone has dragged a couch into the street and three people are sitting on it watching a cracked screen propped against a wall. Where an old woman sells rice and beans from a pot balanced on a heat element wired to a scavenged battery. Where the air is bad and the light is dim and nobody is watching, or everyone is watching, and it does not matter either way because this is the only space that is yours — the space that nobody wanted.
+
+### What Was Lost
+
+The Megalopolis contains, buried within its structure, the physical remnants of a different idea. In the Lower Stack of the former Milwaukee core, there is a corridor on the seventh floor that was once the Milwaukee Public Library's central branch — the shelves are gone, the space converted to residential units in the 2050s, but the brass lettering above the door is still there: FREE TO ALL. In the Undertow beneath what was once Grant Park in Chicago, the foundation walls of the old Buckingham Fountain are still visible, a circle of crumbling stonework in a flooded passage that the Undertow residents use as a landmark. In the Gary Interstitial, a former public school gymnasium serves as the zone council's meeting hall, its basketball hoops still bolted to the walls above the rows of folding chairs.
+
+These remnants are not preserved intentionally. They are simply too embedded in the structure to remove. They persist the way fossils persist — as evidence of an organism that no longer exists, legible only to those who know what they are looking at. The concept they represent — that a society might maintain shared spaces, funded collectively, open to all, owned by none — is not remembered as a political position. It is remembered as a weather pattern. Something that used to happen. Something that stopped.
+
+---
+
+## Relevance to StreetSamurai
+
+The Megalopolis is not a backdrop. It is a machine that sorts human beings.
+
+Every element of the infrastructure — transit, water, power, air, space — functions as a filter, separating people into those who are served and those who are not, those who exist in the system and those who have been erased from it. The vertical city is a literal manifestation of social hierarchy: the higher you live, the more human your conditions, the cleaner your air, the better your water, the more complete your invisibility from the suffering below.
+
+A character's position in this infrastructure — which floor they sleep on, which transit system they can ride, which utility tier they can afford, whether they appear in any corponation's database at all — defines their world more completely than any ideological commitment or personal history. The street samurai moves through these layers. That movement — up and down, in and out of jurisdictions, across the boundaries between the served and the unserved — is the physical expression of the story's moral landscape.
+
+The Grind is where the story lives. The Cap is where the power lives. The Undertow is where the erased live. The ungoverned zones are where the free live, if you can call it freedom, and if you can survive it.
+
+The hum of the city is the hum of this machine. Running. Sorting. Indifferent.
