@@ -1,0 +1,224 @@
+type: character
+name: Yuki Osei-Tanabe
+aliases: ["Lieutenant Osei-Tanabe", "Yuki", "The Ex"]
+role: Former lover, Axiom security operative, the path not taken
+age: 29
+status: alive
+location: The Meridian Core — Axiom Security Division, Floor 47
+
+description: |
+  Yuki moves like someone who has been told she is excellent and has
+  decided to believe it. Not arrogant — precise. Every step measured,
+  every gesture controlled, every word pre-approved by some internal
+  committee that never takes a day off. She is tall, broad-shouldered,
+  with dark skin and close-cropped natural hair that meets Axiom grooming
+  regulations exactly. Her uniform is always pressed. Her augments are
+  always maintained. Her quarterly reviews are always exceptional.
+
+  She is the poster child for the corporate military path: a street kid
+  who made it out, who chose stability over romance, who traded the
+  uncertainty of principles for the certainty of a paycheck and a pension.
+  She sleeps in a clean apartment with climate control and a door that
+  locks. She eats food that isn't noodles. She has healthcare.
+
+  She is also the loneliest person in the Meridian Core, but she would
+  never say that, because saying it would mean the choice was wrong,
+  and the choice cannot be wrong, because if the choice is wrong then
+  everything she built on top of it is wrong, and she cannot afford
+  to think that. Not now. Not ever.
+
+origins: |
+  Born in the Shelf to a Ghanaian-Japanese family — her father was a
+  dockworker from Accra who'd come to Meridian during the second wave
+  of climate migration; her mother was a Kyoto-born nurse who'd followed
+  the medical contracts to wherever the injured were densest. Both dead
+  by the time Yuki was sixteen — her father in an industrial accident
+  Axiom classified as "operator error," her mother from overwork in an
+  understaffed clinic.
+
+  Yuki enlisted in Axiom's military program at seventeen. Youngest in
+  her cohort. She had the raw talent — fast, smart, disciplined — and
+  the motivation: never be poor again, never be powerless again, never
+  watch someone die because the system decided they weren't worth saving.
+
+  She met Kael during their third year in the program. He was the best
+  combat operative in the unit. She was the best tactical planner. They
+  were assigned together for eighteen months. It was intense — the kind
+  of relationship that forms when two people who don't trust anyone
+  decide to trust each other. It lasted until Kael left.
+
+  She didn't leave. She stayed. She got promoted. She told herself it
+  was the smart choice. It was the smart choice. She tells herself this
+  every morning.
+
+psychology:
+  facet_weights:
+    wound: 0.70     # Orphan, parents dead from systemic neglect — she carries it all
+    ideal: 0.80     # Her code is competence and order — she believes the system works if you work it
+    id: 0.50        # Controlled but present — she fights well because part of her enjoys it
+    shadow: 0.75    # She knows the system she serves is corrupt. She serves it anyway.
+    mask: 0.90      # The uniform is the mask. The mask is the person. She can't tell the difference.
+    ghost: 0.55     # Her mother's voice — "help people." Her father's silence.
+
+  core_fears:
+    - That Kael was right to leave
+    - That she's become exactly what killed her parents — the system itself
+    - Losing control — of her career, her emotions, her carefully constructed life
+    - Being sent back to the Shelf — not physically, but spiritually. Becoming poor again.
+
+  core_desires:
+    - Security — real, permanent, unshakable security
+    - To prove that working within the system is more effective than fighting it
+    - To feel something again without it threatening everything she's built
+    - Secretly — to hear Kael say she made the right choice, because his opinion still matters
+
+  coping_mechanisms:
+    - Over-performance — be so good they can never discard you
+    - Physical training (6 AM, every day, no exceptions)
+    - Emotional compartmentalization (she calls it "operational focus")
+    - Reading poetry at night, alone, with the lights off (she'd die if anyone knew)
+
+  blind_spots:
+    - Thinks loyalty to a system is the same as integrity
+    - Can't see that her "choice" was survival, not wisdom — the same survival Kael practices differently
+    - Assumes Kael left because he was weak. He left because he was horrified. She can't let herself see the difference.
+    - Doesn't realize that her isolation is the system working as designed — atomized employees don't organize
+
+  secret: |
+    She has a file on Kael. Not an official one — a personal one, on a
+    private device, encrypted. Every job he takes that crosses Axiom's
+    radar, every sighting, every rumor. She tells herself it's professional
+    due diligence. It's not. She's watching him the way you watch someone
+    who jumped off a bridge — not because you want to jump, but because
+    you need to know if they survived the fall.
+
+appearance:
+  physical: |
+    Tall, athletic, broad-shouldered. Dark brown skin, natural hair kept
+    close-cropped. Strong jaw, steady eyes that assess before they
+    acknowledge. She looks like exactly what she is: someone trained to
+    be dangerous and disciplined enough to be precise about it. When
+    she's not in uniform, she wears clean, simple clothes — the kind
+    that say "I can afford better but I choose not to." (She can't
+    actually afford much better. Corporate salaries are designed to
+    keep you dependent.)
+
+  augmentations: |
+    Full Axiom military suite, latest generation. Neural-enhanced reflexes,
+    dermal armor plating along forearms and torso (invisible under
+    clothing), targeting overlay on retinal display, encrypted comms,
+    biometric access for all Axiom facilities. Everything is clean,
+    current, and maintained on a corporate schedule. Her augments are
+    what Kael's would look like if he'd stayed — the same technology,
+    fifteen years more advanced, properly serviced.
+
+  distinctive_features:
+    - Moves with military precision even off-duty — turns are sharp, posture is perfect
+    - A small tattoo on her inner wrist — a wave pattern, from a trip to Old Harbor she took with Kael
+    - Her hands are always clean. Obsessively clean. She washes them constantly.
+
+daily_life:
+  routine: |
+    0500: Wake. 0530: Training (combat, firearms, augment calibration).
+    0700: Nutrition (optimized, tasteless, efficient). 0730: Briefing.
+    0800-1800: Operations — patrol management, asset protection, incident
+    response. Sometimes fieldwork. 1830: Debrief. 1900: Personal
+    maintenance (augment checks, medical). 2000: Alone in her apartment.
+    She reads, exercises, watches the city from her window. She does not
+    call anyone. No one calls her. 2200: Lights out. She lies awake for
+    exactly thirty-seven minutes. She's counted.
+
+  habits:
+    - Washes her hands before and after every task (control ritual)
+    - Keeps her apartment immaculate — nothing out of place, nothing personal visible
+    - Writes operational reports that are significantly better than required
+    - Runs the perimeter of the Meridian Core every Sunday (16 km, alone)
+
+relationships:
+  - name: Kael
+    type: ex-partner / unresolved / professional adversary
+    description: |
+      They haven't spoken in five years. She's seen him twice on operations —
+      once across a crowded market, once through a security feed. Both times
+      she let him go. Both times she filed the sighting as "unconfirmed."
+      She doesn't know why. Yes she does.
+
+  - name: Axiom Industries
+    type: employer / captor / identity
+    description: |
+      Axiom is her world. It gave her augments, a career, a purpose, and
+      an apartment with a lock. It also killed her father and worked her
+      mother to death. She knows both things. She holds them in separate
+      rooms in her head and never lets them meet.
+
+  - name: Commander Idris Zhao
+    type: superior officer / mentor figure
+    description: |
+      Zhao is her commanding officer. He's competent, fair, and absolutely
+      loyal to Axiom. He sees Yuki as his best operative and potential
+      successor. He has no idea she keeps a personal file on a street
+      samurai. If he found out, her career would end in hours.
+
+skills:
+  combat:
+    - Close-quarters combat (Axiom martial program, advanced)
+    - Tactical planning and squad coordination
+    - Augmented marksmanship
+    - Threat assessment and de-escalation
+  professional:
+    - Security operations management
+    - Intelligence analysis
+    - Interrogation (she's good at it; she hates that she's good at it)
+    - Corporate politics (survival-level fluency)
+  personal:
+    - Poetry (reads voraciously — Rumi, Gwendolyn Brooks, Matsuo Bashō, Warsan Shire)
+    - Cooking (competent but joyless — food is fuel)
+    - Three languages fluent (English, Japanese, Twi), two functional (Mandarin, French)
+
+speech_patterns:
+  vocabulary: |
+    Military-corporate hybrid. Clean, precise, low on imagery, high on
+    clarity. She uses rank and protocol language even in casual
+    conversation — it's a shield. When she's caught off guard, fragments
+    of Shelf slang surface and she corrects herself immediately.
+  cadence: |
+    Controlled, even. She speaks at the same volume and speed regardless
+    of content. When angry, she gets quieter and more precise — the
+    words get shorter, the pauses get longer. The most dangerous Yuki
+    is the quietest Yuki.
+  example_lines:
+    - "The objective is clear. The method is at your discretion. The timeline is not."
+    - "I didn't leave the Shelf to have opinions about the Shelf."
+    - "You left. That's your prerogative. I stayed. That's mine. We don't need to discuss it."
+    - "I sleep fine, Kael. I sleep in a bed with clean sheets in a room with a lock. I sleep fine."
+    - "Poetry isn't a weakness. It's pattern recognition with better inputs."
+  quirks:
+    - Corrects herself when Shelf slang slips out ("That's gutter— that's incorrect")
+    - References operational time even casually ("I have nine minutes")
+    - Never sits unless the room is secured first
+    - When truly distressed, reverts to her mother's Japanese — single words, whispered
+
+narrative_function: |
+  Yuki is the road not taken. She is what Kael would be if he'd stayed
+  with Axiom — successful, stable, effective, and slowly being consumed
+  by the machine she chose. She represents the argument that principles
+  are a luxury of the privileged, that pragmatism is survival, that the
+  system is ugly but it works.
+
+  She also represents the mirror image of Kael's hypocrisy. He calls
+  himself a samurai while doing mercenary work. She calls herself an
+  officer while doing corporate enforcement on communities like the one
+  she grew up in. Neither of them is honest about what they are. But
+  Yuki's dishonesty is state-sponsored, which makes it invisible.
+
+  The question she poses: was Kael brave to leave, or selfish? Was
+  she cowardly to stay, or wise? The story shouldn't answer this.
+  The story should make both answers feel true.
+
+story_hooks:
+  - Kael and Yuki end up on opposite sides of the same job — she's protecting what he's stealing
+  - Axiom orders Yuki to bring Kael in. She has to decide what she values more — career or history.
+  - She discovers evidence of what really happened at the refugee camp and has to decide what to do with it
+  - Commander Zhao discovers her file on Kael. She faces termination unless she turns him in.
+  - She shows up at Mrs. Chen's noodle shop. She's never been to the Shelf since she left. Nobody recognizes her.
+  - She reads a poem that breaks something open and for the first time considers that Kael might have been right

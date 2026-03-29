@@ -1,0 +1,222 @@
+type: character
+name: Sable Meriweather
+aliases: ["Sable", "The Broker", "Nobody's Friend"]
+role: Fixer, contract broker, Kael's primary employer
+age: 42
+status: alive
+location: The Circuit — operates from a rotating series of back rooms
+
+description: |
+  Nobody can agree on what Sable looks like. That's by design. Facial
+  recognition blockers embedded in their cheekbones scatter biometric
+  readings. Voice modulators shift their timbre between conversations.
+  They dress in layers of unremarkable clothing — not disguises, just
+  aggressively average. You could sit across from Sable for an hour
+  and describe them as "medium height, medium build, forgettable" and
+  you'd be exactly right and completely useless to anyone looking.
+
+  What people do remember is the voice — not the sound of it (that
+  changes) but the rhythm. Sable speaks like a contract reads: precise,
+  conditional, every clause weighted. No wasted words. No emotional
+  leakage. When they make you an offer, you know the number is final
+  because it sounds like it was calculated by a machine. It wasn't.
+  Sable just practiced until it sounded that way.
+
+  They broker contracts between clients who need problems solved and
+  operatives who solve problems. In Meridian, that means anything from
+  data retrieval to targeted elimination. Sable handles the full
+  spectrum. They don't judge the work. They judge the reliability of
+  the people doing it.
+
+origins: |
+  Born Sable Meriweather in the Meridian Core. Parents were mid-level
+  corporate — father was Kenyan-British, head of logistics for an Axiom
+  subsidiary; mother was Québécoise, a contract lawyer. Comfortable
+  childhood. Good schools. On track for corporate management.
+
+  At twenty-six, Sable's entire division was "restructured" — dissolved
+  overnight, pensions voided, NDAs enforced at gunpoint. Three hundred
+  people lost everything. Sable's father had a stroke the same week.
+  Their mother spent two years in litigation and got nothing.
+
+  Sable took their corporate network — every contact, every favor owed,
+  every back-channel relationship — and moved it underground. They became
+  the bridge between the Circuit's underworld and the corporate clients
+  who needed things done off-book. The same skills that made them a good
+  middle manager make them an exceptional fixer: logistics, personnel
+  assessment, risk calculation, emotional detachment.
+
+  They've been doing this for sixteen years. They've never been arrested.
+  They've never been identified. They've never sent someone on a job
+  without full disclosure of the risks. In the underworld, that last
+  part is practically sainthood.
+
+psychology:
+  facet_weights:
+    wound: 0.50     # The restructuring broke something, but they've buried it deep
+    ideal: 0.55     # Their code: transparency, fair pay, no suicide runs without disclosure
+    id: 0.35        # Impulses are suppressed — everything runs through calculation
+    shadow: 0.80    # They've replaced human connection with transaction. They know it.
+    mask: 0.95      # The mask IS the person at this point. They can't take it off.
+    ghost: 0.40     # Their father's voice, asking if this is really what they want
+
+  core_fears:
+    - Being known — truly known, without the blockers, without the layers
+    - That the transactional life has hollowed them out completely
+    - Getting old enough that the reflexes slip and someone traces them
+    - That they've become exactly what the corporation was — a system that uses people
+
+  core_desires:
+    - Control — over information, outcomes, and their own visibility
+    - A clean exit — someday, maybe, a life that doesn't require constant calculation
+    - To believe they're different from the corporations (they might not be)
+    - Secretly — one honest conversation with someone who doesn't want anything from them
+
+  coping_mechanisms:
+    - Treating everything as a transaction (removes emotional risk)
+    - Physical anonymity (if nobody sees you, nobody can hurt you)
+    - Meticulous record-keeping (control as comfort)
+    - Cooking elaborate meals alone (the one private pleasure they allow themselves)
+
+  blind_spots:
+    - Thinks pragmatism is wisdom. Sometimes it's just cowardice.
+    - Can't see that paying fairly and being honest about risk IS a code — they'd deny having one
+    - Doesn't realize that their respect for Kael is the closest thing they have to friendship
+    - Believes they chose this life. They didn't. They fled into it.
+
+  secret: |
+    Once a year, on the anniversary of the restructuring, Sable goes to
+    the Meridian Core and stands outside the building where they used to
+    work. It's a restaurant now. They stand there for exactly one hour
+    and then leave. They don't know why they do this. They keep doing it.
+
+appearance:
+  physical: |
+    Deliberately unremarkable. Medium height, medium build. Skin that's
+    been described as "light brown" and "medium" and "I can't remember."
+    Short hair, neat but unstyled. Could be anywhere between 35 and 50.
+    The face is pleasant and immediately forgettable — partly natural,
+    partly the subdermal biometric scramblers doing their work.
+
+  augmentations: |
+    Subdermal facial recognition blockers (cheekbones, jawline) — scatter
+    biometric readings, making their face unmappable. Voice modulator
+    (throat implant) — can shift timbre, pitch, and accent on demand.
+    Encrypted comms implant (behind right ear). Stress-response dampener
+    (adrenal) — keeps heart rate and cortisol stable under pressure.
+    All augments are high-end, well-maintained, and invisible. Nothing
+    about Sable looks augmented. That's the point.
+
+  distinctive_features:
+    - Nothing. That IS the distinctive feature.
+    - If pressed, people might remember their hands — long-fingered, precise,
+      always still when they're talking (no nervous gestures, ever)
+
+daily_life:
+  routine: |
+    Sable has no fixed address that anyone knows. They rotate between
+    safe rooms in the Circuit, the Shelf, and locations nobody else
+    has mapped. Morning is information gathering — news feeds, encrypted
+    channels, debt records, incident reports. Midday is client meetings.
+    Afternoon is operative management — checking in on active jobs,
+    adjusting timelines, handling complications. Evening is the books —
+    payment processing, account reconciliation, risk assessment for
+    tomorrow's slate. They cook dinner in whatever safe room they're
+    using. They are an excellent cook. Nobody has ever tasted their food.
+
+  habits:
+    - Arrives exactly on time, never early, never late
+    - Sits with their back to the wall, facing the door
+    - Offers precisely one piece of free advice per meeting (the advice is always good)
+    - Keeps a physical notebook (unhackable) in a script only they can read
+
+relationships:
+  - name: Kael
+    type: employer / closest thing to respect
+    description: |
+      Sable has worked with Kael for four years. They think his code is
+      commercially stupid — turning down profitable contracts because of
+      principles costs them both money. But they've never said that,
+      because they also recognize something in Kael's stubbornness that
+      they lost in themselves. They always pay Kael on time. They never
+      lie about the risks. They sometimes steer the better jobs his way.
+      If asked, they'd call it professional courtesy. It's more than that.
+
+  - name: The Iron Lotus
+    type: business relationship / careful distance
+    description: |
+      Sable brokers contracts for Iron Lotus operatives and occasionally
+      provides intelligence. The relationship is profitable and dangerous.
+      Sable knows exactly how much they can push before the Lotus pushes
+      back. That margin is always shrinking.
+
+  - name: Axiom Industries
+    type: former employer / current client pool
+    description: |
+      Half of Sable's clients are corporate — Axiom departments that need
+      things done off-book. Sable takes their money and uses their
+      information. There's a deep, quiet irony in being better at corporate
+      logistics as a criminal than they ever were as an employee.
+
+  - name: Pixel
+    type: occasional hire / mild amusement
+    description: |
+      Sable hires Pixel for tech work — the kid is cheap, fast, and talks
+      too much. Sable finds the chatter oddly soothing. They'd never admit it.
+
+skills:
+  professional:
+    - Logistics and operational planning (corporate-grade)
+    - Personnel assessment (can read an operative's reliability in one meeting)
+    - Risk calculation (almost never wrong)
+    - Network management (knows everyone, owes no one)
+    - Information brokerage (buys and sells intelligence across all tiers)
+  personal:
+    - Cooking (genuinely excellent — French technique with West African flavors)
+    - Disappearing (has escaped three attempted arrests and two assassination attempts)
+    - Languages (English, French, Swahili, Mandarin, and enough street slang to operate in any district)
+
+speech_patterns:
+  vocabulary: |
+    Corporate vocabulary repurposed for the underground. "Restructure" means
+    kill. "Optimize" means clean up. "Deliverable" means the job's target.
+    It's darkly funny — the language of board rooms applied to back-alley
+    crime. But it also serves a purpose: it keeps emotion at arm's length.
+  cadence: |
+    Measured, transactional, calm. Every sentence sounds like a contract
+    clause. Pauses are strategic, not hesitant. They never raise their
+    voice. When they're angry, they speak more slowly and more precisely.
+  example_lines:
+    - "The job pays twelve. Non-negotiable. The risk premium is already factored in."
+    - "You're leaving money on the table with that code of yours. But at least you're consistent."
+    - "I don't have friends, Kael. I have reliable assets and unreliable assets. You're reliable."
+    - "The Lotus wants it done by Friday. I told them Saturday. That gives you breathing room. You're welcome."
+    - "I don't judge the work. I judge the people. You'd be surprised how rarely those two align."
+  quirks:
+    - Uses "we" for "the market" — "We're paying eight for extraction this quarter"
+    - Offers exactly one free piece of advice per conversation
+    - Never uses contractions when discussing business (only when off-guard)
+    - Refers to death as "permanent restructuring" (it might be a joke; nobody's sure)
+
+narrative_function: |
+  Sable is what Kael could become if he gave up the code — competent,
+  successful, safe, and hollow. They represent pragmatism taken to its
+  logical extreme: a person who has optimized away their own humanity
+  in exchange for control and survival.
+
+  They also represent the corporate machine that Kael rejected, but
+  refracted through the underground. Sable runs their operation exactly
+  like a corporation — contracts, risk assessment, margin calculation.
+  The only difference is the logo. This makes Sable the most honest
+  character in the story: they don't pretend to be anything other than
+  what the world made them.
+
+  The question Sable poses to Kael: is your code a luxury? Can you
+  afford principles in a world that prices them at zero?
+
+story_hooks:
+  - A contract goes wrong and Sable needs Kael to clean up — but the cleanup requires breaking his code
+  - Sable's identity is compromised — someone is close to tracing them. They need to disappear or fight.
+  - They offer Kael a job working directly for Axiom. The pay is life-changing. The target is not.
+  - Sable's annual visit to the old office building is observed. Someone recognizes them.
+  - They have information about what really happened in the refugee camp Kael was ordered to clear

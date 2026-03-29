@@ -1,0 +1,108 @@
+type: faction
+name: "The Iron Lotus"
+aliases: ["The Lotus", "The Family", "Those Bastards", "The Shelf Government"]
+motto: "We take care of our own."
+
+description: |
+  The Iron Lotus is organized crime, and it would like you to know that it's
+  providing a service. In the vacuum left by Meridian's absent public sector — no
+  real police below the Core, no social services worth the name, no courts that a
+  Shelf resident can access — the Iron Lotus stepped in and built a parallel
+  governance structure made of protection rackets, patronage networks, and a very
+  firm understanding of who owns what. They run the Shelf's economy with the
+  efficiency of a corporation and the personal touch of a neighborhood association
+  that will break your legs if you miss a payment.
+
+  The thing that makes the Iron Lotus complicated — and the thing that makes Kael's
+  relationship with them complicated — is that they're not wrong about being
+  necessary. The free clinics they fund are the only healthcare most Shelf residents
+  will ever see. Their protection, while expensive, is protection — without it,
+  the Shelf would be pure chaos instead of managed chaos. They arbitrate disputes,
+  maintain a rough order, and ensure that the markets function. They are, in the
+  most cynical and literal sense, the social safety net of the lower tiers. The
+  fact that the net is woven from extortion, smuggling, and occasional murder is
+  a moral problem that every Shelf resident has learned to file under "the way
+  things are."
+
+  The Lotus is hierarchical, traditionalist, and ruthless. Its leadership — a
+  council of senior members called the Stems — maintains control through a
+  combination of loyalty, fear, and the simple economic reality that opposing them
+  means losing access to everything they provide. They traffic in augments (some
+  stolen, some counterfeit, some salvaged from the dead), run smuggling operations
+  through Old Harbor, broker contract killing (Kael's occasional employer), and
+  manage a loan-sharking operation that keeps half the Shelf in permanent debt.
+  They are parasites. They are also the immune system. The Shelf can't live with
+  them and would die without them, and that is exactly how they like it.
+
+goals:
+  stated: "To protect and serve the communities of the lower tiers."
+  actual: "Total economic control of the Shelf and expansion into the Circuit. The Stems want to be indispensable — a shadow government so deeply integrated into the lower tiers that removing them would collapse the social order."
+
+ideology: |
+  Pragmatic feudalism. The Iron Lotus believes in hierarchy, loyalty, and the
+  transactional nature of power. They don't pretend the world is fair — they
+  believe it's a jungle and they're the apex predator of their particular stretch
+  of it. There's a code of honor, or at least a code of conduct: don't harm
+  civilians who pay their dues, don't kill children, keep your word when dealing
+  with Lotus business. Whether this code reflects genuine ethics or just good
+  business practice is a question the Stems would find irrelevant. Honor and
+  profit are the same thing when you're the one defining honor.
+
+structure:
+  type: "Hierarchical syndicate with rigid internal ranking"
+  leadership: |
+    The Stems — a council of seven senior members who control the Lotus's major
+    operations. Led by a figure known as the Root, whose identity is known to the
+    Stems and virtually no one else. Below the Stems are the Thorns (enforcers and
+    operational commanders), the Petals (skilled specialists — fixers, smugglers,
+    augment techs), and the Soil (street-level operators, runners, lookouts). The
+    hierarchy is strict. Advancement is earned through a combination of results,
+    loyalty, and not dying.
+  size: "~5,000 core members, 20,000+ associates and dependents"
+
+resources:
+  - "Control of the Shelf's informal economy — markets, lending, protection"
+  - "The free clinics — healthcare as leverage and genuine community service simultaneously"
+  - "Smuggling networks through Old Harbor's waterways"
+  - "A stable of contract operators, including freelancers like Kael"
+  - "Augment inventory — stolen, salvaged, and counterfeit tech for resale"
+  - "Intelligence network — the Lotus knows what happens on the Shelf before anyone else"
+  - "Muscle — the Thorns are well-armed, well-augmented, and well-motivated"
+  - "Community dependence — the most powerful resource of all"
+
+methods:
+  - "Protection rackets — pay your dues or lose access to Lotus services (and possibly your kneecaps)"
+  - "Loan sharking — credit for people who can't get it anywhere else, at rates that ensure permanent debt"
+  - "Smuggling — goods, augments, data, and people through Old Harbor's waterways"
+  - "Contract brokering — matching clients with operators for jobs of varying legality"
+  - "Community investment — the clinics, the market infrastructure, the arbitration services"
+  - "Violence — targeted, professional, and calibrated to send a message without destabilizing the order they depend on"
+  - "Corruption — Lotus money reaches into Axiom Security's lower ranks, buying blind eyes and advance warning of raids"
+
+territory: "The Shelf (primary), Old Harbor smuggling routes, and a growing footprint in the Circuit."
+
+relationship_to_kael: |
+  It's complicated. The Iron Lotus is simultaneously Kael's employer, his enemy, and
+  the closest thing his community has to a functional government. He has taken
+  contracts from them — the kind of work that pays well and costs something internal.
+  He has also refused contracts that crossed his code, which the Lotus tolerated
+  because he's useful enough to be worth the inconvenience. They respect his skill
+  and distrust his independence. He represents a problem for the Lotus: an operator
+  good enough to be valuable but principled enough to be unpredictable.
+
+  The free clinic in Scene 1 is Lotus-funded. The doctor who treats Shelf residents
+  is paid with Lotus money. Kael knows this. He brings people there anyway, because
+  the alternative is letting them die, and his code doesn't include letting people
+  die to make a political point. This is the trap the Lotus has built: complicity
+  through necessity. Every time Kael uses their services or takes their contracts,
+  he feeds the machine he'd like to dismantle. He hasn't figured out how to square
+  that circle. Neither has anyone else on the Shelf.
+
+story_hooks:
+  - "A Lotus contract that requires Kael to do something that violates his code — and the consequences of refusing"
+  - "The free clinic under threat — Axiom wants to shut it down, and the Lotus wants Kael to stop them"
+  - "Internal Lotus politics — a faction within the Stems wants to expand into more violent territory"
+  - "The Root's identity — who actually runs the Iron Lotus, and what do they want?"
+  - "A Lotus defector who knows too much and needs Kael's protection — from the Lotus"
+  - "The debt ledger — the Lotus's records of who owes what, a document that could liberate or destroy half the Shelf"
+  - "The uncomfortable question: if you removed the Iron Lotus, what would replace them? The answer might be worse."
