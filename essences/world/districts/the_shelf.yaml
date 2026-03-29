@@ -1,0 +1,138 @@
+type: place
+name: "The Shelf"
+aliases: ["The Stack", "Shelftown", "The Vertical", "Home"]
+
+description: |
+  The Shelf is what happens when you let desperation do the urban planning. Built
+  into and onto the decommissioned sea wall that was supposed to protect the original
+  city (it didn't), the Shelf is a vertical slum that defies structural engineering,
+  building codes, and gravity itself. Housing units are stacked on top of housing
+  units, bolted to the concrete face of the wall, cantilevered out over nothing on
+  improvised scaffolding. The whole thing sways in a strong wind. Residents call the
+  swaying "the Shelf breathing." Real estate agents — yes, they exist here, because
+  capitalism is a cockroach — call it "character."
+
+  From a distance, the Shelf looks like a cliff face colonized by barnacles. Up close,
+  it's a dense, thrumming ecosystem of narrow walkways, ladder streets, rope bridges,
+  and cargo-elevator shafts repurposed as vertical transit. Every horizontal surface
+  is claimed: markets bloom on landings, noodle shops occupy converted shipping
+  containers, augment clinics operate out of what used to be electrical closets.
+  Laundry lines cross between buildings like prayer flags. Hand-painted signs in six
+  languages advertise things that are technically illegal in the upper tiers and
+  completely normal here. The Shelf has temples — Buddhist, Hindu, Catholic, Syncretic
+  AI-worship — wedged between apartments, their incense mixing with the smell of
+  frying oil and solder flux.
+
+  This is where Kael lives. This is where the story begins. The Shelf is not a nice
+  place, but it is a real one. People are born here, grow old here, die here. Some
+  never leave — not because they can't, but because everything they know is within
+  these stacked walls. The community is tight in the way that communities forged by
+  shared adversity always are: suspicious of outsiders, fiercely protective of their
+  own, and capable of a generosity that would embarrass the philanthropic initiatives
+  of the upper tiers. The Shelf takes care of its people. It just wishes it had more
+  to take care of them with.
+
+atmosphere:
+  sights:
+    - "Vertical maze of walkways, ladders, and rope bridges connecting stacked housing units"
+    - "Neon signage in six languages, half of it flickering, advertising augment repairs and noodle specials"
+    - "Laundry lines strung between buildings like colored veins"
+    - "The constant visual noise of ten thousand lives crammed into too little space"
+    - "Makeshift temples with LED halos and holographic saints"
+    - "Children running along railings that would give a safety inspector a heart attack"
+    - "The sea wall itself — massive, cracked concrete, the bones the Shelf is built on"
+    - "Steam rising from food stalls, mixing with fog leaking in from the harbor side"
+    - "Augmented limbs catching light — cheap chrome, mismatched parts, occasionally beautiful"
+  sounds:
+    - "The constant low hum of generators and jury-rigged power lines"
+    - "Vendors shouting over each other in Shelf Cant and Old Harbor Creole"
+    - "Music leaking from a dozen sources — synth-pop, devotional chants, someone practicing violin badly"
+    - "The creak and groan of the structure itself, especially on windy days"
+    - "Shelf Lifts clanking through their shafts, hydraulics wheezing"
+    - "Domestic life at full volume — arguments, laughter, crying babies, sizzling woks"
+    - "The distant, ever-present sound of the sea below"
+  smells:
+    - "Frying garlic and chili oil from the noodle stalls"
+    - "Solder flux and ozone from augment clinics"
+    - "Incense from the temples — sandalwood, synthetic jasmine"
+    - "Salt air from the harbor, stronger on lower levels"
+    - "The particular smell of too many people in too little space — sweat, soap, humanity"
+    - "Cheap stimulant coffee from the 24-hour kiosks"
+    - "Rust. Always rust."
+  feel: |
+    Claustrophobic but alive. The Shelf presses in on you from every direction — it's
+    loud, crowded, and never fully dark or fully quiet. But there's a warmth to it
+    that the upper tiers can't buy. People know each other here. The auntie who runs
+    the tea stall knows your name. The mechanic who fixes your arm also fixed your
+    mother's arm. It feels like being inside a living organism — you're a cell in
+    something larger, and that something is stubborn and loud and refuses to die.
+
+demographics:
+  population: "~2.5 million (estimated — census data is a corporate joke)"
+  class: "Working poor. Laborers, gig workers, street vendors, freelance contractors, and the unemployable."
+  augmentation_level: |
+    High frequency, low quality. Most Shelf residents have basic neural interfaces
+    (required for gig work) and at least one functional augment — a reinforced arm
+    for construction work, enhanced eyes for detail labor, a reflex booster that's
+    three firmware updates behind. Quality ranges from 'functional' to 'please don't
+    sneeze or your arm might detach.' The free clinics run by the Iron Lotus handle
+    most augment maintenance. Corporate-grade chrome is rare here and marks you as
+    either a successful criminal or lost.
+
+function:
+  primary: "Residential district for Meridian's working class and underclass"
+  secondary: "Self-sustaining informal economy — markets, services, food, community"
+  underground: |
+    Everything. The Shelf is where the informal economy of Meridian lives. Unlicensed
+    augment surgery, grey-market pharmaceuticals, data fencing, contract work of
+    dubious legality, underground fighting rings, unlicensed bars, and the kind of
+    community mutual aid that the city government refuses to provide. The Iron Lotus
+    runs the organized crime; everyone else runs the disorganized kind.
+
+frequented_by:
+  - "Laborers heading to and from gig shifts in the upper tiers"
+  - "Street vendors and market traders"
+  - "Augment technicians (licensed and very much not)"
+  - "Iron Lotus enforcers and associates"
+  - "Temple-goers and community elders"
+  - "Kids — so many kids, running in packs, feral and free"
+  - "People like Kael — freelancers who do the work the corps won't and the law can't"
+
+dangers:
+  - "Structural collapse — the Shelf is not up to code because there is no code"
+  - "Iron Lotus shakedowns — protection fees are the unofficial tax"
+  - "Augment rejection syndrome from back-alley implants"
+  - "Crime — petty theft, muggings, disputes that escalate"
+  - "Axiom Security raids — infrequent but brutal when they happen"
+  - "Falling. The railings are suggestions at best."
+  - "Electrical fires from overloaded jury-rigged power grids"
+  - "Bad water on the lowest levels — the municipal supply gets creative down there"
+
+opportunities:
+  - "Cheap augment work — not good, but available"
+  - "Community — the Shelf takes care of its own"
+  - "Anonymity — surveillance is patchy here, and people mind their own business"
+  - "The market economy — you can buy or sell almost anything"
+  - "Contract work through Iron Lotus or independent fixers"
+  - "Disappearing — if you need to stop existing on paper, the Shelf is where you do it"
+  - "Real food, cooked by real people, for prices a human being can afford"
+
+story_hooks:
+  - "The free clinic where Kael's story begins — Iron Lotus funded, staffed by idealists, always overwhelmed"
+  - "The vertical market known as the Long Drop — seven stories of stalls connected by spiral ramps"
+  - "Kael's apartment — small, high up, with a view of the sea that almost makes it worth the climb"
+  - "The temple district — a two-block stretch where every faith has staked a claim"
+  - "Shelf politics — the Iron Lotus isn't the only power here, just the biggest"
+  - "The Shelf Breathing — structural instability events that might someday bring the whole thing down"
+  - "The kids who run messages between levels, faster than any network — the Shelf's analog internet"
+
+connections:
+  adjacent_to: ["Old Harbor (below)", "The Circuit (lateral, connected by the Underpass)", "The Meridian Core (above, accessible by MeriRail — if you have the credentials)"]
+  relationship: |
+    The Shelf is Meridian's foundation in every sense — the labor force that builds
+    and maintains the upper tiers lives here, commuting upward every day to clean,
+    construct, and serve, then descending back to a home the city pretends doesn't
+    exist. Corporate maps of Meridian don't include the Shelf. It's listed as
+    "transitional housing infrastructure" in municipal records, a designation that
+    hasn't been updated in twenty years. The Shelf doesn't need the city's
+    acknowledgment. It just needs the city to stop pretending it isn't load-bearing.

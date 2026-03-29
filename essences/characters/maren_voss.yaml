@@ -1,0 +1,260 @@
+type: character
+name: Maren Voss
+aliases: ["The Painter", "Claw", "Red Maren"]
+role: Local artist, cautionary tale, unlikely ally
+age: 34
+status: alive
+location: The Shelf — three floors below Kael
+
+description: |
+  Maren Voss used to paint murals. Enormous ones — entire sides of buildings
+  on the Shelf transformed into color and fury and grief. She painted the
+  drowned temples of Old Harbor from memory. She painted the Spire as a
+  needle injecting poison into the sky. She painted faces of people who
+  disappeared during the Consolidation Wars. Axiom Industries noticed.
+
+  They didn't arrest her. That would've made her a martyr. Instead, a crew
+  caught her in an alley after a commissioned piece for the Collective.
+  They held her down and took her hands. Not her arms — her hands. Surgical.
+  Corporate-clean. Left the stumps cauterized and a note: "Axiom appreciates
+  your talent. We hope you'll redirect it."
+
+  She redirected it.
+
+  She went to a back-alley augment shop in the Circuit and had both arms
+  replaced from the elbow down with military-surplus combat prosthetics —
+  not hands, not delicate artist's fingers. Claws. Three curved titanium
+  digits per arm, each one as long as a chef's knife, with hydraulic grip
+  strength that can crush rebar. They are ugly, oversized, and terrifying.
+  They were designed for breaching armored doors, not holding brushes.
+
+  She paints with them anyway.
+
+  She scores the claws across surfaces — walls, metal, skin — and uses
+  blood (her own, donated, sometimes not donated) mixed with industrial
+  pigment as paint. The murals are rougher now. Savage. Claw-marks instead
+  of brushstrokes. But somehow more honest. The Shelf loves them more than
+  the old work. Axiom pretends not to notice, which means they're afraid.
+
+  She is thin, sharp-featured, with cropped dark hair that she cuts herself
+  (badly, with the claws). Her eyes are the flat calm of someone who has
+  already lost the worst thing they could lose and discovered they're still
+  alive. She wears sleeveless shirts so the augments are always visible —
+  not out of pride but out of refusal to hide what was done to her.
+
+origins: |
+  Born on the Shelf to a factory worker and a schoolteacher. The teacher
+  taught her to draw. The factory worker taught her that beauty is a form
+  of resistance. She was painting by age six, selling work by sixteen,
+  gaining a reputation by twenty.
+
+  At twenty-two she was commissioned by the Collective to paint a mural
+  depicting Axiom's labor camps. It was three stories tall and visible from
+  the Meridian Core. It lasted eleven hours before a cleanup crew painted
+  over it. But everyone had seen it. Everyone had photographs.
+
+  Axiom took her hands at twenty-six. She got the claws at twenty-seven.
+  She hasn't stopped painting since.
+
+  She has never sought revenge directly. The claws are not weapons to her —
+  they're tools. But everyone who sees them thinks "weapon" first, and she
+  lets them. Fear is its own kind of paint.
+
+psychology:
+  facet_weights:
+    wound: 0.90     # The loss of her hands is present in every moment
+    ideal: 0.80     # Art IS her code — she will not stop creating, ever
+    id: 0.45        # Her rage is controlled, channeled into work
+    shadow: 0.60    # She won't admit she enjoys the fear the claws create
+    mask: 0.35      # She barely performs — what you see is what you get
+    ghost: 0.50     # Her mother's voice, teaching her to draw with crayons
+
+  core_fears:
+    - Losing the ability to create entirely (the claws breaking, the pigment running out)
+    - Being forgotten — the murals painted over, the message lost
+    - That the claws have become more her than the hands ever were
+    - Becoming the weapon Axiom accidentally made her into
+
+  core_desires:
+    - To paint something so true it cannot be erased
+    - To be seen as an artist, not a victim or a monster
+    - To find beauty in what she's become, not despite it
+    - Quietly — to touch something gently again
+
+  coping_mechanisms:
+    - Painting constantly — walls, floors, scraps of metal, anything
+    - Physical exhaustion — she works until she drops
+    - Dark humor about the claws ("You should see me try to eat noodles")
+    - Feeding stray cats (she is very gentle and very careful and very slow)
+
+  blind_spots:
+    - She thinks she's made peace with the loss. She hasn't.
+    - She doesn't realize how much she frightens people who care about her
+    - She conflates being needed with being loved
+    - She believes art redeems everything. It might not.
+
+  secret: |
+    She can still feel her hands. Phantom sensation. Every night she feels
+    herself holding a brush, the soft resistance of oil paint, the texture
+    of canvas. She wakes up and sees the claws and has to remember all over
+    again. Every single morning.
+
+appearance:
+  physical: |
+    Thin, angular, mid-height. Sharp jaw, cropped dark hair cut unevenly.
+    Brown skin weathered from hours painting on exposed rooftops. Eyes are
+    dark and steady — the kind that make people look away first. She moves
+    with a contained energy, always slightly coiled, as if the next mural
+    is already forming in her muscles.
+
+  augmentations: |
+    Both arms replaced from the elbow down with Kovalev-pattern military
+    breaching claws. Matte black titanium alloy, three articulated digits
+    per hand, each digit 20cm long with a curved cutting edge. Hydraulic
+    actuators visible at the forearm. The joints click softly when she
+    moves them. Industrial — not elegant, not designed for human interaction.
+    Designed for tearing through bulkheads.
+
+    She had the pain receptors in the stumps left active. She says she needs
+    to feel where the metal meets the flesh. The real reason: the pain
+    reminds her why.
+
+  distinctive_features:
+    - The claws — impossible to miss, impossible to forget
+    - Paint stains on her clothes, face, and the claws themselves — always
+    - A thin scar across her left cheekbone from a claw-slip early on
+    - She holds her arms slightly away from her body when walking, like wings
+
+  clothing: |
+    Sleeveless work shirts, heavy canvas pants, steel-toed boots. Everything
+    is paint-stained. She owns three outfits. The claws tear anything
+    delicate, so she doesn't bother with delicate.
+
+daily_life:
+  routine: |
+    Wakes before dawn. Flexes the claws — a maintenance ritual, checking
+    hydraulic response in each digit. Eats whatever she can manage (eating
+    with claws is a production; she's developed techniques but it's never
+    graceful). Spends the morning scouting surfaces — new walls, abandoned
+    structures, anything Axiom hasn't surveilled yet. Paints through the
+    afternoon and into the evening. Mixes pigment in industrial drums
+    using the claws as stirring rods. The blood she uses comes from a
+    contact at a Circuit clinic — expired transfusion stock, mostly, but
+    sometimes her own when the piece demands it.
+
+    Evenings she sits on her balcony and listens to the Shelf. The claws
+    rest in her lap. Sometimes Kael is training on the roof above her
+    and the sound of his kata is the closest thing she has to music.
+
+  habits:
+    - Taps the claw-tips together when thinking (a soft metallic clicking)
+    - Tilts her head when studying a surface, like a bird examining prey
+    - Speaks to her murals while painting, quiet monologues nobody overhears
+    - Leaves one claw-mark in the corner of every piece — her signature
+
+  possessions:
+    - The claws (permanently attached)
+    - Industrial pigment drums (red, black, white — she mixes everything else)
+    - A single photograph of her old work, pre-claws, taped to her wall
+    - A jar of brushes she can no longer hold, kept on a shelf she can see from bed
+
+relationships:
+  - name: Kael
+    type: neighbor / mutual respect
+    description: |
+      They live in the same building on the Shelf. They don't talk much.
+      But there's a recognition — two people who lost something essential
+      and rebuilt themselves around the absence. Kael sees the claws and
+      understands discipline. Maren sees the katana and understands tools
+      that are also wounds. She once painted his silhouette on a wall
+      without asking. He never mentioned it. They both know.
+
+  - name: Mrs. Chen
+    type: regular customer / quiet friendship
+    description: |
+      Mrs. Chen makes Maren special noodles — cut into pieces she can
+      manage with the claws. Neither of them has ever acknowledged this
+      accommodation. Mrs. Chen just serves them that way. Maren just
+      eats them that way.
+
+  - name: Pixel
+    type: augment maintenance / unlikely bond
+    description: |
+      Pixel maintains Maren's claws. They're fascinated by the military
+      hardware and keep offering to add features (retractable blades,
+      built-in welding torch). Maren always refuses. The claws are what
+      they are. But she lets Pixel talk while they work, and sometimes
+      she listens.
+
+  - name: Axiom Industries
+    type: enemy / subject matter
+    description: |
+      They took her hands. She took their walls. The war is ongoing,
+      fought in pigment and blood and claw-marks. Every mural is an act
+      of defiance. Every cleanup crew Axiom sends is an admission that
+      the defiance works.
+
+skills:
+  art:
+    - Mural painting (claw-technique — unique, cannot be replicated)
+    - Color theory and pigment chemistry
+    - Blood preservation and mixing (self-taught)
+    - Structural assessment (knows which walls will hold paint longest)
+  combat:
+    - The claws ARE weapons whether she uses them that way or not
+    - Hydraulic grip can crush bone, puncture armor, tear through sheet metal
+    - She has never used them on a person. Everyone assumes she has. She lets them.
+  other:
+    - Street knowledge — the Shelf's informal information network
+    - Basic augment maintenance (learned from necessity)
+
+speech_patterns:
+  vocabulary: |
+    Art vocabulary mixed with street practicality. She describes the world
+    in terms of color, composition, and texture. Violence is discussed in
+    the same tone as a brushstroke — clinically, with attention to form.
+  cadence: |
+    Measured, unhurried. She pauses before important words as if choosing
+    pigment. Sentences tend to be short and declarative. She doesn't
+    waste words, but when she does speak at length, it's about art,
+    and her voice changes — warmer, faster, almost excited.
+  example_lines:
+    - "You should see me try to eat noodles. It's a whole performance."
+    - "They took my hands. I grew claws. That's not a metaphor."
+    - "Red is the only honest color. Everything else is pretending."
+    - "I don't paint what I see. I paint what they don't want you to see."
+    - "The scar? Claw slipped. First month. You learn fast when the lesson draws blood."
+    - "I keep the brushes. Don't ask me why. I know why. I just can't say it out loud."
+  quirks:
+    - Taps claws together when thinking (click-click-click)
+    - Describes people in terms of color ("You're all grey today, Kael")
+    - Uses "composition" to describe situations ("The composition is wrong — too many bodies, not enough exits")
+    - Never says "hands" — always "claws" or "these" with a gesture
+
+narrative_function: |
+  Maren is the mirror to Kael's central contradiction, but inverted.
+  Kael chose the sword. Maren had the claws forced on her. Kael clings
+  to a romantic philosophy about his weapon. Maren has no romance about
+  hers — they are the evidence of what was taken from her.
+
+  She asks the question: what do you do when the thing that defines you
+  is also the thing that was done TO you? Kael's katana is his identity
+  by choice. Maren's claws are her identity by violence. But both of them
+  have rebuilt themselves around a tool that is also a wound.
+
+  She also represents art as resistance — the idea that creating something
+  beautiful (or at least true) in an ugly world is its own form of bushido.
+  She would never use that word. But Kael might recognize it.
+
+  And there's the unspoken question: if Axiom took Kael's arms instead of
+  Maren's hands, would he have rebuilt himself? Or would he have broken?
+  He doesn't know. That's why he respects her.
+
+story_hooks:
+  - Axiom escalates against her — sends a crew to take more than her hands this time
+  - She asks Kael to protect her while she paints a piece that will be seen from the Spire
+  - Her blood supply from the Circuit clinic gets cut off — she needs an alternative
+  - She paints something that reveals a corporate secret hidden in Old Harbor
+  - She and Yuki cross paths — two women on opposite sides of the same machine
+  - The claws malfunction. Pixel can fix them, but the parts are only available from Axiom.
+  - She paints Kael's story on a wall. He has to decide if he wants the world to see it.

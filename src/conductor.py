@@ -2,6 +2,7 @@ import json
 
 from .facet import Facet
 from .character import Character
+from .essence import EssenceNetwork
 from . import llm
 
 
@@ -29,7 +30,7 @@ BEAT_WRITER_TEMPLATE = """You are writing a single narrative beat for a cyberpun
 STORY CONTEXT:
 {story_context}
 
-SCENE SO FAR:
+{essence_context}SCENE SO FAR:
 {scene_so_far}
 
 CURRENT BEAT GOAL:
@@ -61,6 +62,20 @@ Write the beat now. Include labeled interjections from supporting facets like:
 [GHOST] *interior line here*
 
 The prose style should reflect {lead_facet_label}'s voice: {lead_facet_tone}"""
+
+
+def build_essence_context(
+    essence_network: EssenceNetwork | None,
+    location: str | None = None,
+    npcs: list[str] | None = None,
+) -> str:
+    """Assemble all relevant essence data into a rich prompt context block."""
+    if not essence_network:
+        return ""
+    scene_ctx = essence_network.context_for_scene(location, npcs)
+    if not scene_ctx.strip():
+        return ""
+    return f"WORLD CONTEXT:\n{scene_ctx}\n\n"
 
 
 def analyze_context(scene_context: str) -> dict:
@@ -110,6 +125,9 @@ def generate_beat(
     beat_goal: str,
     lead_facet: Facet,
     supporting_facets: list[Facet],
+    essence_network: EssenceNetwork | None = None,
+    location: str | None = None,
+    npcs: list[str] | None = None,
 ) -> str:
     supporting_desc = "\n".join(
         f"- {f.label}: {f.domain} (tone: {f.voice_tone})"
@@ -117,8 +135,11 @@ def generate_beat(
     )
     core_memories = "\n".join(f"- {m}" for m in lead_facet.core_memories)
 
+    essence_ctx = build_essence_context(essence_network, location, npcs)
+
     prompt = BEAT_WRITER_TEMPLATE.format(
         story_context=story_context,
+        essence_context=essence_ctx,
         scene_so_far=scene_so_far if scene_so_far else "(Scene beginning — this is the first beat)",
         beat_goal=beat_goal,
         character_summary=character.summary(),
@@ -143,6 +164,9 @@ def run_beat(
     scene_so_far: str,
     beat_goal: str,
     force_lead: str | None = None,
+    essence_network: EssenceNetwork | None = None,
+    location: str | None = None,
+    npcs: list[str] | None = None,
 ) -> tuple[str, Facet, list[Facet], dict]:
     analysis = analyze_context(
         f"Story context: {story_context}\n\nScene so far: {scene_so_far}\n\nCurrent beat: {beat_goal}"
@@ -167,6 +191,9 @@ def run_beat(
         beat_goal=beat_goal,
         lead_facet=lead,
         supporting_facets=supporting,
+        essence_network=essence_network,
+        location=location,
+        npcs=npcs,
     )
 
     return beat_text, lead, supporting, analysis
