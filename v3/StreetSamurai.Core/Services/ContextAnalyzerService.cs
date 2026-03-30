@@ -1,0 +1,57 @@
+using System.Text.Json;
+using StreetSamurai.Core.Interfaces;
+
+namespace StreetSamurai.Core.Services;
+
+public class ContextAnalyzerService
+{
+    private readonly ILlmService _llm;
+    private readonly WorldGraphService _graph;
+
+    public ContextAnalyzerService(ILlmService llm, WorldGraphService graph)
+    {
+        _llm = llm;
+        _graph = graph;
+    }
+
+    public async Task<ContextAnalysis> AnalyzeAsync(string sceneContext, List<string> characterIds, CancellationToken ct = default)
+    {
+        var relationshipContext = string.Join("\n", characterIds
+            .Select(id => _graph.GetContextForNode(id))
+            .Where(c => !string.IsNullOrEmpty(c)));
+
+        var system = """
+            You are a psychological context analyzer for a cyberpunk narrative engine.
+            Given a scene description and character relationships, extract:
+            1. psychological_triggers: tags that activate character facets (e.g., "violence", "betrayal", "moral_choice")
+            2. dominant_emotion: the primary emotional tone
+            3. stakes: what's at risk in this scene
+            4. tension_source: where the conflict comes from
+
+            Respond in JSON format ONLY:
+            {"psychological_triggers": ["tag1", "tag2"], "dominant_emotion": "string", "stakes": "string", "tension_source": "string"}
+            """;
+
+        var user = $"SCENE:\n{sceneContext}\n\nRELATIONSHIPS:\n{relationshipContext}";
+
+        var response = await _llm.GenerateAsync(system, user, 0.3, 1024, ct: ct);
+
+        try
+        {
+            return JsonSerializer.Deserialize<ContextAnalysis>(response,
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new();
+        }
+        catch
+        {
+            return new ContextAnalysis { PsychologicalTriggers = ["unknown"] };
+        }
+    }
+}
+
+public record ContextAnalysis
+{
+    public List<string> PsychologicalTriggers { get; init; } = [];
+    public string DominantEmotion { get; init; } = "";
+    public string Stakes { get; init; } = "";
+    public string TensionSource { get; init; } = "";
+}

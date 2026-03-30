@@ -1,10 +1,13 @@
 using StreetSamurai.Blazor.Components;
+using StreetSamurai.Core.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddStreetSamuraiServices();
 
 var app = builder.Build();
 

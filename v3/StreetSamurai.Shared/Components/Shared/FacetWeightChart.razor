@@ -1,0 +1,42 @@
+@* Horizontal bar chart for 6 facet weights *@
+<div class="facet-chart">
+    @foreach (var (name, weight) in GetWeights())
+    {
+        <div class="d-flex align-items-center mb-1">
+            <span class="text-muted small" style="width: 60px;">@name</span>
+            <div class="flex-grow-1 bg-dark rounded" style="height: 14px; position: relative;">
+                <div class="rounded" style="width: @((int)(weight * 100))%; height: 100%; background-color: @GetColor(name); opacity: 0.85;"></div>
+            </div>
+            <span class="text-muted small ms-2" style="width: 35px;">@weight.ToString("F2")</span>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter] public FacetState? Weights { get; set; }
+
+    private List<(string name, double weight)> GetWeights()
+    {
+        if (Weights == null) return [];
+        return
+        [
+            ("WOUND", Weights.Wound),
+            ("IDEAL", Weights.Ideal),
+            ("ID", Weights.Id),
+            ("SHADOW", Weights.Shadow),
+            ("MASK", Weights.Mask),
+            ("GHOST", Weights.Ghost),
+        ];
+    }
+
+    private static string GetColor(string facet) => facet switch
+    {
+        "WOUND" => "#dc3545",
+        "IDEAL" => "#198754",
+        "ID" => "#ffc107",
+        "SHADOW" => "#6f42c1",
+        "MASK" => "#0dcaf0",
+        "GHOST" => "#6c757d",
+        _ => "#adb5bd",
+    };
+}

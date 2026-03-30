@@ -1,10 +1,12 @@
 @page "/"
 @inject CanonService Canon
+@inject WorldGraphService Graph
+@inject StoryService Stories
 
 <h3 class="text-danger mb-4">Street Samurai — Canon Engine</h3>
 
 <div class="row g-3">
-    <div class="col-md-4">
+    <div class="col-md-3">
         <div class="card bg-dark text-light border-secondary">
             <div class="card-body">
                 <h6 class="card-title text-muted">Canon Vault</h6>
@@ -13,7 +15,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
         <div class="card bg-dark text-light border-secondary">
             <div class="card-body">
                 <h6 class="card-title text-muted">Corponations</h6>
@@ -22,7 +24,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
         <div class="card bg-dark text-light border-secondary">
             <div class="card-body">
                 <h6 class="card-title text-muted">Characters</h6>
@@ -31,10 +33,40 @@
             </div>
         </div>
     </div>
+    <div class="col-md-3">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-body">
+                <h6 class="card-title text-muted">World Graph</h6>
+                <p class="display-6">@_nodeCount</p>
+                <small class="text-muted">@_edgeCount relationships</small>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="row g-3 mt-2">
-    <div class="col-md-6">
+    <div class="col-md-4">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted">Stories</div>
+            <div class="card-body">
+                @if (_stories.Any())
+                {
+                    @foreach (var s in _stories.Take(5))
+                    {
+                        <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                            <a href="editor/@s.Id" class="text-light text-decoration-none small">@s.Title</a>
+                            <CanonStatusBadge Status="@s.CanonStatus" />
+                        </div>
+                    }
+                }
+                else
+                {
+                    <small class="text-muted">No stories yet. <a href="editor" class="text-info">Create one.</a></small>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
         <div class="card bg-dark text-light border-secondary">
             <div class="card-header text-muted">Quick Search</div>
             <div class="card-body">
@@ -63,14 +95,14 @@
             </div>
         </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4">
         <div class="card bg-dark text-light border-secondary">
             <div class="card-header text-muted">Recent Documents</div>
             <div class="card-body">
                 @foreach (var doc in _recentDocs)
                 {
                     <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                        <a href="documents/@doc.FileName" class="text-light text-decoration-none">@doc.FileName</a>
+                        <a href="documents/@doc.FileName" class="text-light text-decoration-none small">@doc.FileName</a>
                         <small class="text-muted">@doc.LineCount lines</small>
                     </div>
                 }
@@ -80,12 +112,11 @@
 </div>
 
 @code {
-    private int _docCount;
-    private int _corpCount;
-    private int _charCount;
+    private int _docCount, _corpCount, _charCount, _nodeCount, _edgeCount;
     private string _searchQuery = "";
     private List<SearchResult> _searchResults = [];
     private List<CanonDocument> _recentDocs = [];
+    private List<Story> _stories = [];
 
     protected override void OnInitialized()
     {
@@ -94,6 +125,12 @@
         _corpCount = Canon.ListCorponations().Count;
         _charCount = Canon.ListCharacters().Count;
         _recentDocs = docs.OrderByDescending(d => d.LineCount).Take(8).ToList();
+
+        Graph.EnsureLoaded();
+        _nodeCount = Graph.NodeCount;
+        _edgeCount = Graph.EdgeCount;
+
+        _stories = Stories.ListStories();
     }
 
     private void DoSearch()

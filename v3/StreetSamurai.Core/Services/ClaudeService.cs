@@ -28,6 +28,7 @@ public class ClaudeService : ILlmService
         string user,
         double temperature = 0.8,
         int maxTokens = 4096,
+        string? model = null,
         CancellationToken ct = default)
     {
         if (string.IsNullOrWhiteSpace(_settings.ApiKey))
@@ -35,7 +36,7 @@ public class ClaudeService : ILlmService
 
         var request = new ClaudeRequest
         {
-            Model = _settings.Model,
+            Model = model ?? _settings.Model,
             MaxTokens = maxTokens,
             Temperature = temperature,
             System = system,

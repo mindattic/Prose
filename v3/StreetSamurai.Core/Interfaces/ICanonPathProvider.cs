@@ -13,4 +13,7 @@ public interface ICanonPathProvider
     string CanonQueueDir { get; }
     string EngineDataDir { get; }
     string NarrativeBiblePath { get; }
+    string WorldDir { get; }
+    string FacetsDir { get; }
+    string GraphDir { get; }
 }
