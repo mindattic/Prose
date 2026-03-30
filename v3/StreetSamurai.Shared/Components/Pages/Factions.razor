@@ -4,9 +4,10 @@
 
 @if (_selectedYaml != null)
 {
-    <div class="d-flex align-items-center mb-3">
-        <button class="btn btn-sm btn-outline-secondary me-3" @onclick="ClearSelection">Back</button>
+    <div class="d-flex align-items-center gap-2 mb-3">
+        <button class="btn btn-sm btn-outline-secondary" @onclick="ClearSelection">Back</button>
         <h4 class="text-danger mb-0">@_selectedFaction?.Name</h4>
+        <a href="graph" class="btn btn-sm btn-outline-info ms-auto" title="View relationships in World Graph"><i class="bi bi-diagram-3"></i> Graph</a>
     </div>
 
     <div class="row g-3">
@@ -67,7 +68,8 @@
 }
 else
 {
-    <h4 class="text-danger mb-3">Factions (@_factions.Count)</h4>
+    <h4 class="text-danger mb-1">Factions (@_factions.Count)</h4>
+    <p class="text-muted mb-3">Underground movements, resistance cells, and political machines operating outside corporate sovereignty.</p>
 
     <div class="row g-3">
         @foreach (var f in _factions)

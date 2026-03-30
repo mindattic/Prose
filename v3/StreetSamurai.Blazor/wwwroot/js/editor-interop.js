@@ -47,5 +47,25 @@ window.editorInterop = {
     focusElement: function (elementId) {
         const el = document.getElementById(elementId);
         if (el) el.focus();
+    },
+
+    initKeyboardShortcuts: function (dotNetRef) {
+        document.addEventListener('keydown', function (e) {
+            // Ctrl+S / Cmd+S: Save
+            if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+                e.preventDefault();
+                dotNetRef.invokeMethodAsync('SaveFromJs');
+            }
+        });
+    },
+
+    playAudio: function (audioId) {
+        const el = document.getElementById(audioId);
+        if (el) el.play();
+    },
+
+    pauseAudio: function (audioId) {
+        const el = document.getElementById(audioId);
+        if (el) el.pause();
     }
 };

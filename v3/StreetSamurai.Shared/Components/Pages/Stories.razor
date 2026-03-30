@@ -2,10 +2,11 @@
 @inject StoryService StorySvc
 @inject NavigationManager Nav
 
-<div class="d-flex justify-content-between align-items-center mb-3">
+<div class="d-flex justify-content-between align-items-center mb-1">
     <h4 class="text-danger mb-0">Stories (@_stories.Count)</h4>
-    <button class="btn btn-sm btn-outline-danger" @onclick="CreateNew">+ New Story</button>
+    <button class="btn btn-sm btn-outline-danger" @onclick="CreateNew" title="Create a blank story and open the editor">+ New Story</button>
 </div>
+<p class="text-muted mb-3">Written fiction — drafts, canon entries, and non-canon experiments. Click a title to open it in the editor.</p>
 
 <div class="mb-3">
     <div class="btn-group btn-group-sm">

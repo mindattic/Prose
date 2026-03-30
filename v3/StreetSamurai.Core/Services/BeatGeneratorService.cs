@@ -27,19 +27,12 @@ public class BeatGeneratorService
 
         var coreMemories = string.Join("\n", leadFacet.CoreMemories.Select(m => $"  - {m}"));
 
+        // Story bible already includes literary rules and motifs from SceneGenerationService
         var system = $"""
             {leadFacet.SystemPrompt}
 
-            STORY BIBLE:
+            STORY BIBLE AND LITERARY RULES:
             {context.StoryBibleContext}
-
-            LITERARY RULES:
-            - Sentence max: 25 words
-            - Every paragraph: action, sensory detail, or a lie
-            - Repeat one sensory motif 3 times with shifting meaning
-            - No generic noir, no slogans, no samurai cliches, no anime dialogue
-            - No clean moral victories
-            - Beat-by-beat character revelation, not plot racing
 
             SUPPORTING FACETS (may interject as labeled interior lines):
             {supportingVoices}
@@ -47,7 +40,7 @@ public class BeatGeneratorService
             CORE MEMORIES TO DRAW FROM:
             {coreMemories}
 
-            RELATIONSHIP CONTEXT:
+            CHARACTER CONTEXT:
             {context.RelationshipContext}
 
             LOCATION:

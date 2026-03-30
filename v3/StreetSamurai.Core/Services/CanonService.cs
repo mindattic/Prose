@@ -4,18 +4,17 @@ using StreetSamurai.Core.Models;
 
 namespace StreetSamurai.Core.Services;
 
-/// <summary>
-/// Provides read-only access to the canon vault (worldbuilding docs, characters, essences).
-/// This is the primary lore browser service — text search, document listing, and corp index.
-/// </summary>
 public class CanonService
 {
     private readonly ICanonPathProvider _paths;
+    private readonly YamlService _yaml;
     private List<Corponation>? _corpCache;
+    private List<Character>? _charCache;
 
-    public CanonService(ICanonPathProvider paths)
+    public CanonService(ICanonPathProvider paths, YamlService yaml)
     {
         _paths = paths;
+        _yaml = yaml;
     }
 
     // ── Documents ────────────────────────────────────────────
@@ -43,11 +42,9 @@ public class CanonService
     {
         var dir = _paths.WorldbuildingDir;
         if (!Directory.Exists(dir)) return null;
-
         var match = Directory.GetFiles(dir, "*.md")
             .FirstOrDefault(f => Path.GetFileNameWithoutExtension(f)
                 .Contains(nameOrPartial, StringComparison.OrdinalIgnoreCase));
-
         return match != null ? File.ReadAllText(match) : null;
     }
 
@@ -62,7 +59,6 @@ public class CanonService
         foreach (var file in Directory.GetFiles(dir, "*.md").OrderBy(f => f))
         {
             if (Path.GetFileName(file).StartsWith("ARCHIVED_")) continue;
-
             var lines = File.ReadAllLines(file);
             var currentHeading = "";
 
@@ -70,9 +66,7 @@ public class CanonService
             {
                 if (lines[i].StartsWith('#'))
                     currentHeading = lines[i].TrimStart('#').Trim();
-
-                if (!lines[i].Contains(query, StringComparison.OrdinalIgnoreCase))
-                    continue;
+                if (!lines[i].Contains(query, StringComparison.OrdinalIgnoreCase)) continue;
 
                 var start = Math.Max(0, i - 1);
                 var end = Math.Min(lines.Length, i + 2);
@@ -85,11 +79,9 @@ public class CanonService
                     LineNumber = i + 1,
                     Context = context.Length > 500 ? context[..500] + "..." : context,
                 });
-
                 if (results.Count >= maxResults) return results;
             }
         }
-
         return results;
     }
 
@@ -98,10 +90,7 @@ public class CanonService
     public List<Corponation> ListCorponations(string? filter = null)
     {
         _corpCache ??= BuildCorpIndex();
-
-        if (string.IsNullOrWhiteSpace(filter))
-            return _corpCache;
-
+        if (string.IsNullOrWhiteSpace(filter)) return _corpCache;
         var ft = filter.ToLowerInvariant();
         return _corpCache
             .Where(c => c.Name.Contains(ft, StringComparison.OrdinalIgnoreCase)
@@ -113,16 +102,14 @@ public class CanonService
     public Corponation? GetCorponation(string identifier)
     {
         _corpCache ??= BuildCorpIndex();
-
         if (int.TryParse(identifier, out var num))
             return _corpCache.FirstOrDefault(c => c.Number == num);
-
         var ft = identifier.ToLowerInvariant();
         return _corpCache.FirstOrDefault(c =>
             c.Name.Contains(ft, StringComparison.OrdinalIgnoreCase));
     }
 
-    public void InvalidateCache() => _corpCache = null;
+    public void InvalidateCache() { _corpCache = null; _charCache = null; }
 
     // ── Factions ─────────────────────────────────────────────
 
@@ -130,7 +117,6 @@ public class CanonService
     {
         var dir = Path.Combine(_paths.EssencesDir, "world", "factions");
         if (!Directory.Exists(dir)) return [];
-
         return Directory.GetFiles(dir, "*.yaml")
             .Select(f =>
             {
@@ -171,7 +157,6 @@ public class CanonService
     {
         var dir = Path.Combine(_paths.EssencesDir, "world", "districts");
         if (!Directory.Exists(dir)) return [];
-
         return Directory.GetFiles(dir, "*.yaml")
             .Select(f =>
             {
@@ -216,8 +201,7 @@ public class CanonService
     public string? ReadWorldFile(string fileName)
     {
         var path = Path.Combine(_paths.WorldDir, fileName);
-        if (File.Exists(path)) return File.ReadAllText(path);
-        return null;
+        return File.Exists(path) ? File.ReadAllText(path) : null;
     }
 
     public List<(string Name, string Content)> ListWorldRuleFiles()
@@ -230,7 +214,7 @@ public class CanonService
             .ToList();
     }
 
-    // ── Character YAML ──────────────────────────────────────
+    // ── Character YAML (raw) ────────────────────────────────
 
     public string? ReadCharacterYaml(string nameOrPartial)
     {
@@ -245,42 +229,176 @@ public class CanonService
         return null;
     }
 
-    // ── Characters ──────────────────────────────────────────
+    // ── Characters (fully parsed) ───────────────────────────
 
     public List<Character> ListCharacters()
     {
-        var characters = new List<Character>();
+        if (_charCache != null) return _charCache;
 
-        foreach (var dir in new[] { _paths.CharactersDir, _paths.EssencesDir })
+        var characters = new List<Character>();
+        foreach (var dir in new[] { _paths.CharactersDir, Path.Combine(_paths.EssencesDir, "characters") })
         {
             if (!Directory.Exists(dir)) continue;
             foreach (var file in Directory.GetFiles(dir, "*.yaml", SearchOption.AllDirectories))
             {
                 try
                 {
-                    var yaml = File.ReadAllText(file);
-                    // Basic YAML extraction — enough for listing
-                    var name = ExtractYamlField(yaml, "name") ?? Path.GetFileNameWithoutExtension(file);
-                    var type = ExtractYamlField(yaml, "type") ?? "character";
-
+                    var data = _yaml.LoadDynamic(file);
+                    var type = GetStr(data, "type") ?? "character";
                     if (!type.Contains("character", StringComparison.OrdinalIgnoreCase)
                         && !type.Contains("npc", StringComparison.OrdinalIgnoreCase)
                         && !type.Contains("protagonist", StringComparison.OrdinalIgnoreCase))
                         continue;
 
-                    characters.Add(new Character
-                    {
-                        Name = name,
-                        Status = ExtractYamlField(yaml, "status") ?? "",
-                        Affiliation = ExtractYamlField(yaml, "affiliation") ?? "",
-                        SourceFile = Path.GetRelativePath(_paths.WorldbuildingDir + "/..", file),
-                    });
+                    var c = ParseCharacter(data, file);
+                    characters.Add(c);
                 }
                 catch { /* skip malformed files */ }
             }
         }
 
-        return characters.OrderBy(c => c.Name).ToList();
+        // Also scan essences root for character-typed files
+        if (Directory.Exists(_paths.EssencesDir))
+        {
+            foreach (var file in Directory.GetFiles(_paths.EssencesDir, "*.yaml"))
+            {
+                try
+                {
+                    var data = _yaml.LoadDynamic(file);
+                    var type = GetStr(data, "type") ?? "";
+                    if (!type.Contains("character", StringComparison.OrdinalIgnoreCase)) continue;
+                    if (characters.Any(c => c.SourceFile == file)) continue;
+                    characters.Add(ParseCharacter(data, file));
+                }
+                catch { }
+            }
+        }
+
+        _charCache = characters.OrderBy(c => c.Name).ToList();
+        return _charCache;
+    }
+
+    private Character ParseCharacter(Dictionary<string, object> data, string file)
+    {
+        var name = GetStr(data, "name") ?? Path.GetFileNameWithoutExtension(file);
+
+        // Parse psychology.facet_weights
+        var facets = new FacetState();
+        if (data.TryGetValue("psychology", out var psych) && psych is Dictionary<object, object> psychDict)
+        {
+            if (psychDict.TryGetValue("facet_weights", out var fw) && fw is Dictionary<object, object> fwDict)
+            {
+                facets = new FacetState
+                {
+                    Wound = ParseDouble(fwDict, "wound"),
+                    Ideal = ParseDouble(fwDict, "ideal"),
+                    Id = ParseDouble(fwDict, "id"),
+                    Shadow = ParseDouble(fwDict, "shadow"),
+                    Mask = ParseDouble(fwDict, "mask"),
+                    Ghost = ParseDouble(fwDict, "ghost"),
+                };
+            }
+        }
+
+        // Parse relationships
+        var relationships = new List<Relationship>();
+        if (data.TryGetValue("relationships", out var rels) && rels is List<object> relList)
+        {
+            foreach (var rel in relList)
+            {
+                if (rel is not Dictionary<object, object> rd) continue;
+                relationships.Add(new Relationship
+                {
+                    Name = rd.GetValueOrDefault("name")?.ToString() ?? "",
+                    Status = rd.GetValueOrDefault("type")?.ToString() ?? "",
+                    FacetConnection = "",
+                    Notes = rd.GetValueOrDefault("description")?.ToString() ?? "",
+                });
+            }
+        }
+
+        // Parse aliases
+        var aliases = new List<string>();
+        if (data.TryGetValue("aliases", out var al) && al is List<object> alList)
+            aliases = alList.Select(a => a.ToString() ?? "").Where(a => a.Length > 0).ToList();
+
+        // Parse history beats from story_hooks
+        var history = new List<HistoryBeat>();
+        if (data.TryGetValue("story_hooks", out var sh) && sh is List<object> shList)
+            history = shList.Select((h, i) => new HistoryBeat { Event = h.ToString() ?? "", Age = i }).ToList();
+
+        return new Character
+        {
+            Name = name,
+            Aliases = aliases,
+            Tier = int.TryParse(GetStr(data, "tier"), out var t) ? t : 0,
+            Status = GetStr(data, "status") ?? "",
+            Origin = GetStr(data, "origin") ?? GetBlock(data, "origins"),
+            Age = int.TryParse(GetStr(data, "age"), out var a) ? a : 0,
+            Augmentation = GetBlock(data, "augmentations") != "" ? GetBlock(data, "augmentations") : "",
+            Occupation = GetStr(data, "role") ?? GetStr(data, "occupation") ?? "",
+            Affiliation = GetStr(data, "affiliation") ?? "",
+            Facets = facets,
+            Relationships = relationships,
+            VoiceNotes = GetBlock(data, "speech_patterns"),
+            SourceFile = Path.GetRelativePath(_paths.WorldbuildingDir + "/..", file),
+            History = history,
+        };
+    }
+
+    /// <summary>
+    /// Returns the full character psychology context for LLM prompts —
+    /// fears, desires, coping mechanisms, blind spots, speech patterns.
+    /// This is what makes each character distinct in generation.
+    /// </summary>
+    public string GetCharacterPsychologyContext(string nameOrAlias)
+    {
+        var yaml = ReadCharacterYaml(nameOrAlias);
+        if (yaml == null) return "";
+
+        var sections = new List<string>();
+
+        // Extract key psychological sections directly from YAML text
+        var name = ExtractYamlField(yaml, "name") ?? nameOrAlias;
+        sections.Add($"CHARACTER: {name}");
+
+        var desc = ExtractYamlBlock(yaml, "description");
+        if (desc.Length > 0) sections.Add($"DESCRIPTION:\n{Truncate(desc, 600)}");
+
+        var role = ExtractYamlField(yaml, "role");
+        if (role != null) sections.Add($"ROLE: {role}");
+
+        // Psychology — the behavioral baseline
+        var coreFears = ExtractYamlList(yaml, "core_fears");
+        if (coreFears.Any()) sections.Add($"CORE FEARS:\n{string.Join("\n", coreFears.Select(f => $"  - {f}"))}");
+
+        var coreDesires = ExtractYamlList(yaml, "core_desires");
+        if (coreDesires.Any()) sections.Add($"CORE DESIRES:\n{string.Join("\n", coreDesires.Select(d => $"  - {d}"))}");
+
+        var coping = ExtractYamlList(yaml, "coping_mechanisms");
+        if (coping.Any()) sections.Add($"COPING MECHANISMS:\n{string.Join("\n", coping.Select(c => $"  - {c}"))}");
+
+        var blindSpots = ExtractYamlList(yaml, "blind_spots");
+        if (blindSpots.Any()) sections.Add($"BLIND SPOTS:\n{string.Join("\n", blindSpots.Select(b => $"  - {b}"))}");
+
+        var secret = ExtractYamlBlock(yaml, "secret");
+        if (secret.Length > 0) sections.Add($"SECRET:\n{secret}");
+
+        // Speech patterns — how they talk
+        var vocab = ExtractYamlField(yaml, "vocabulary");
+        if (vocab != null) sections.Add($"VOCABULARY: {vocab}");
+
+        var cadence = ExtractYamlField(yaml, "cadence");
+        if (cadence != null) sections.Add($"CADENCE: {cadence}");
+
+        var exampleLines = ExtractYamlList(yaml, "example_lines");
+        if (exampleLines.Any()) sections.Add($"EXAMPLE DIALOGUE:\n{string.Join("\n", exampleLines.Select(l => $"  \"{l}\""))}");
+
+        // Narrative function
+        var narrativeFunc = ExtractYamlBlock(yaml, "narrative_function");
+        if (narrativeFunc.Length > 0) sections.Add($"NARRATIVE FUNCTION:\n{narrativeFunc}");
+
+        return string.Join("\n\n", sections);
     }
 
     // ── Helpers ──────────────────────────────────────────────
@@ -317,7 +435,6 @@ public class CanonService
                 });
             }
         }
-
         return corps.OrderBy(c => c.Number).ToList();
     }
 
@@ -329,7 +446,9 @@ public class CanonService
 
     private static string? ExtractYamlField(string yaml, string field)
     {
-        var m = Regex.Match(yaml, $@"^{Regex.Escape(field)}:\s*""?(.+?)""?\s*$", RegexOptions.Multiline);
+        var m = Regex.Match(yaml, $@"^  {Regex.Escape(field)}:\s*""?(.+?)""?\s*$", RegexOptions.Multiline);
+        if (m.Success) return m.Groups[1].Value.Trim().Trim('"');
+        m = Regex.Match(yaml, $@"^{Regex.Escape(field)}:\s*""?(.+?)""?\s*$", RegexOptions.Multiline);
         return m.Success ? m.Groups[1].Value.Trim().Trim('"') : null;
     }
 
@@ -341,6 +460,32 @@ public class CanonService
             .Split('\n')
             .Select(l => l.TrimStart())
             .Where(l => !string.IsNullOrWhiteSpace(l)));
+    }
+
+    private static List<string> ExtractYamlList(string yaml, string field)
+    {
+        var m = Regex.Match(yaml, $@"^  {Regex.Escape(field)}:\s*\n((?:\s+- .+\n?)+)", RegexOptions.Multiline);
+        if (!m.Success) return [];
+        return m.Groups[1].Value
+            .Split('\n')
+            .Select(l => l.Trim().TrimStart('-').Trim().Trim('"'))
+            .Where(l => l.Length > 0)
+            .ToList();
+    }
+
+    private static string? GetStr(Dictionary<string, object> d, string key) =>
+        d.TryGetValue(key, out var v) ? v?.ToString()?.Trim().Trim('"') : null;
+
+    private static string GetBlock(Dictionary<string, object> d, string key)
+    {
+        if (!d.TryGetValue(key, out var v)) return "";
+        return v?.ToString()?.Trim() ?? "";
+    }
+
+    private static double ParseDouble(Dictionary<object, object> d, string key)
+    {
+        if (!d.TryGetValue(key, out var v)) return 0;
+        return double.TryParse(v?.ToString(), out var r) ? r : 0;
     }
 
     private static string ExtractTitle(string path)

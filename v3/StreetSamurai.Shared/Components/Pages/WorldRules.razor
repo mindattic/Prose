@@ -1,7 +1,8 @@
 @page "/rules"
 @inject CanonService Canon
 
-<h4 class="text-danger mb-3">World Rules</h4>
+<h4 class="text-danger mb-1">World Rules</h4>
+<p class="text-muted mb-3">Literary rules, story bible, and motifs that constrain the AI. These are non-negotiable — the engine enforces them during generation.</p>
 
 @foreach (var (name, content) in _ruleFiles)
 {

@@ -10,9 +10,11 @@ public static class ServiceCollectionExtensions
     {
         // Settings auto-detects canon root path on first run
         services.AddSingleton<SettingsService>();
+        services.AddSingleton<ISecurePreferences, FileSecurePreferences>();
         services.AddSingleton<ICanonPathProvider, FileSystemCanonPathProvider>();
-        services.AddSingleton<CanonService>();
         services.AddSingleton<YamlService>();
+        services.AddSingleton<CanonService>();
+        services.AddSingleton<CanonDatabaseService>();
         services.AddSingleton<MarkdownService>();
         services.AddSingleton<StoryService>();
         services.AddSingleton<FacetService>();
@@ -28,13 +30,25 @@ public static class ServiceCollectionExtensions
             return graph;
         });
 
-        // LLM services
+        // LLM services — multi-provider with router
         services.AddHttpClient<ClaudeService>();
-        services.AddSingleton<ILlmService>(sp => sp.GetRequiredService<ClaudeService>());
+        services.AddHttpClient<OpenAiService>();
+        services.AddSingleton<LlmRouter>(sp => new LlmRouter(
+            sp.GetRequiredService<ClaudeService>(),
+            sp.GetRequiredService<OpenAiService>(),
+            sp.GetRequiredService<SettingsService>()));
+        services.AddSingleton<ILlmService>(sp => sp.GetRequiredService<LlmRouter>());
+
+        // TTS service
+        services.AddHttpClient<ElevenLabsTtsService>();
+        services.AddSingleton<ITtsService>(sp => sp.GetRequiredService<ElevenLabsTtsService>());
+
+        // Scene generation pipeline
         services.AddSingleton<TextAnalysisService>();
         services.AddSingleton<ContextAnalyzerService>();
         services.AddSingleton<BeatGeneratorService>();
         services.AddSingleton<SceneGenerationService>();
+        services.AddSingleton<StoryStarterService>();
 
         return services;
     }

@@ -67,6 +67,13 @@ public class SettingsService
     public int MaxTokens { get => _data.MaxTokens; set { _data.MaxTokens = value; Save(); } }
     public string ElevenLabsApiKey { get => _data.ElevenLabsApiKey; set { _data.ElevenLabsApiKey = value; Save(); } }
     public string ElevenLabsVoiceId { get => _data.ElevenLabsVoiceId; set { _data.ElevenLabsVoiceId = value; Save(); } }
+    public string TtsModel { get => _data.TtsModel; set { _data.TtsModel = value; Save(); } }
+    public double TtsStability { get => _data.TtsStability; set { _data.TtsStability = value; Save(); } }
+    public double TtsSimilarityBoost { get => _data.TtsSimilarityBoost; set { _data.TtsSimilarityBoost = value; Save(); } }
+    public double TtsStyle { get => _data.TtsStyle; set { _data.TtsStyle = value; Save(); } }
+    public string OpenAiApiKey { get => _data.OpenAiApiKey; set { _data.OpenAiApiKey = value; Save(); } }
+    public string OpenAiModel { get => _data.OpenAiModel; set { _data.OpenAiModel = value; Save(); } }
+    public string ActiveLlmProvider { get => _data.ActiveLlmProvider; set { _data.ActiveLlmProvider = value; Save(); } }
     public int EditorFontSize { get => _data.EditorFontSize; set { _data.EditorFontSize = value; Save(); } }
     public int AutoSaveIntervalMs { get => _data.AutoSaveIntervalMs; set { _data.AutoSaveIntervalMs = value; Save(); } }
 
@@ -94,6 +101,13 @@ public class SettingsService
         public int MaxTokens { get; set; } = 4096;
         public string ElevenLabsApiKey { get; set; } = "";
         public string ElevenLabsVoiceId { get; set; } = "";
+        public string TtsModel { get; set; } = "eleven_multilingual_v2";
+        public double TtsStability { get; set; } = 0.5;
+        public double TtsSimilarityBoost { get; set; } = 0.75;
+        public double TtsStyle { get; set; } = 0.0;
+        public string OpenAiApiKey { get; set; } = "";
+        public string OpenAiModel { get; set; } = "gpt-4.1-mini";
+        public string ActiveLlmProvider { get; set; } = "claude";
         public int EditorFontSize { get; set; } = 14;
         public int AutoSaveIntervalMs { get; set; } = 2000;
     }
