@@ -241,6 +241,25 @@ public class WorldGraphService
                     props["description"] = desc?.ToString()?.Trim() ?? "";
                 if (data.TryGetValue("aliases", out var aliases) && aliases is List<object> aliasList)
                     props["aliases"] = string.Join(", ", aliasList);
+                if (data.TryGetValue("role", out var role))
+                    props["role"] = role?.ToString() ?? "";
+                if (data.TryGetValue("motto", out var motto))
+                    props["motto"] = motto?.ToString() ?? "";
+                if (data.TryGetValue("narrative_function", out var nf))
+                    props["narrative_function"] = nf?.ToString()?.Trim() ?? "";
+
+                // Store psychology summary for characters
+                if (data.TryGetValue("psychology", out var psych) && psych is Dictionary<object, object> psychDict)
+                {
+                    if (psychDict.TryGetValue("core_fears", out var fears) && fears is List<object> fearList)
+                        props["core_fears"] = string.Join("; ", fearList.Take(3));
+                    if (psychDict.TryGetValue("core_desires", out var desires) && desires is List<object> desireList)
+                        props["core_desires"] = string.Join("; ", desireList.Take(3));
+                }
+
+                // Store story hooks
+                if (data.TryGetValue("story_hooks", out var hooks) && hooks is List<object> hookList)
+                    props["story_hooks"] = string.Join("; ", hookList.Take(3));
 
                 AddNode(new WorldNode
                 {
@@ -264,7 +283,6 @@ public class WorldGraphService
                         var relType = relDict.GetValueOrDefault("type")?.ToString() ?? "associated";
                         var relDesc = relDict.GetValueOrDefault("description")?.ToString() ?? "";
 
-                        // Ensure target node exists (placeholder if needed)
                         if (!_nodes.ContainsKey(targetId))
                             AddNode(new WorldNode { Id = targetId, Name = targetName, NodeType = "unknown" });
 
@@ -274,6 +292,7 @@ public class WorldGraphService
                             Target = targetId,
                             RelationType = relType,
                             Description = relDesc,
+                            Sentiment = InferSentiment(relType, relDesc),
                         });
                     }
                 }
@@ -285,9 +304,55 @@ public class WorldGraphService
                     if (_nodes.ContainsKey(terrId))
                         AddEdge(new WorldEdge { Source = id, Target = terrId, RelationType = "operates_in" });
                 }
+
+                // District connections (adjacent_to)
+                if (data.TryGetValue("connections", out var conn) && conn is Dictionary<object, object> connDict)
+                {
+                    if (connDict.TryGetValue("adjacent_to", out var adj) && adj is List<object> adjList)
+                    {
+                        foreach (var a in adjList)
+                        {
+                            var adjStr = a.ToString() ?? "";
+                            // Parse "Name (description)" format
+                            var parenIdx = adjStr.IndexOf('(');
+                            var adjName = parenIdx > 0 ? adjStr[..parenIdx].Trim() : adjStr.Trim();
+                            var adjDesc = parenIdx > 0 ? adjStr[(parenIdx + 1)..].TrimEnd(')').Trim() : "";
+                            var adjId = Slugify(adjName);
+
+                            if (!_nodes.ContainsKey(adjId))
+                                AddNode(new WorldNode { Id = adjId, Name = adjName, NodeType = "place" });
+
+                            AddEdge(new WorldEdge
+                            {
+                                Source = id,
+                                Target = adjId,
+                                RelationType = "adjacent_to",
+                                Description = adjDesc,
+                            });
+                        }
+                    }
+                }
+
+                // Frequented_by connections
+                if (data.TryGetValue("frequented_by", out var freq) && freq is List<object> freqList)
+                {
+                    props["frequented_by"] = string.Join("; ", freqList.Take(5));
+                }
             }
             catch { /* skip malformed files */ }
         }
+    }
+
+    private static string InferSentiment(string relType, string desc)
+    {
+        var combined = (relType + " " + desc).ToLowerInvariant();
+        if (combined.Contains("rival") || combined.Contains("enemy") || combined.Contains("nemesis") || combined.Contains("fear") || combined.Contains("terrif"))
+            return "negative";
+        if (combined.Contains("friend") || combined.Contains("love") || combined.Contains("respect") || combined.Contains("trust") || combined.Contains("loyalty"))
+            return "positive";
+        if (combined.Contains("employer") || combined.Contains("client") || combined.Contains("professional"))
+            return "neutral";
+        return "mixed";
     }
 
     private void ScanCharacterFiles()

@@ -1,0 +1,126 @@
+@inject IJSRuntime JS
+
+@if (Visible)
+{
+    <div class="audio-player bg-dark border border-secondary rounded p-2 d-flex align-items-center gap-2 @CssClass">
+        @if (_loading)
+        {
+            <div class="spinner-border spinner-border-sm text-danger" role="status"></div>
+            <small class="text-muted">Synthesizing...</small>
+        }
+        else if (_errorMessage != null)
+        {
+            <i class="bi bi-exclamation-triangle text-warning"></i>
+            <small class="text-warning">@_errorMessage</small>
+            <button class="btn btn-sm btn-outline-secondary ms-auto" @onclick="Dismiss">
+                <i class="bi bi-x"></i>
+            </button>
+        }
+        else if (_audioUrl != null)
+        {
+            <button class="btn btn-sm @(_playing ? "btn-danger" : "btn-outline-danger")" @onclick="TogglePlayback">
+                <i class="bi @(_playing ? "bi-pause-fill" : "bi-play-fill")"></i>
+            </button>
+            <div class="flex-grow-1">
+                <audio id="@_audioId" src="@_audioUrl" @onended="OnEnded" preload="auto"></audio>
+                <small class="text-muted">@(_playing ? "Playing..." : "Ready")</small>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="Dismiss">
+                <i class="bi bi-x"></i>
+            </button>
+        }
+    </div>
+}
+
+@code {
+    [Parameter] public bool Visible { get; set; }
+    [Parameter] public string CssClass { get; set; } = "";
+    [Parameter] public EventCallback OnDismissed { get; set; }
+
+    private string _audioId = $"audio-{Guid.NewGuid():N}";
+    private string? _audioUrl;
+    private bool _loading;
+    private bool _playing;
+    private string? _errorMessage;
+
+    public async Task LoadAudioAsync(byte[] audioData)
+    {
+        _loading = true;
+        _playing = false;
+        _errorMessage = null;
+        _audioUrl = null;
+        StateHasChanged();
+
+        try
+        {
+            // Convert to base64 data URL
+            var base64 = Convert.ToBase64String(audioData);
+            _audioUrl = $"data:audio/mpeg;base64,{base64}";
+            _loading = false;
+            StateHasChanged();
+
+            // Auto-play
+            await Task.Delay(100);
+            await PlayAsync();
+        }
+        catch (Exception ex)
+        {
+            _loading = false;
+            _errorMessage = ex.Message;
+            StateHasChanged();
+        }
+    }
+
+    public void SetLoading(bool loading)
+    {
+        _loading = loading;
+        StateHasChanged();
+    }
+
+    public void SetError(string message)
+    {
+        _loading = false;
+        _errorMessage = message;
+        StateHasChanged();
+    }
+
+    private async Task PlayAsync()
+    {
+        try
+        {
+            await JS.InvokeVoidAsync("document.getElementById", _audioId);
+            await JS.InvokeVoidAsync("eval", $"document.getElementById('{_audioId}')?.play()");
+            _playing = true;
+        }
+        catch { }
+    }
+
+    private async Task TogglePlayback()
+    {
+        if (_playing)
+        {
+            await JS.InvokeVoidAsync("eval", $"document.getElementById('{_audioId}')?.pause()");
+            _playing = false;
+        }
+        else
+        {
+            await PlayAsync();
+        }
+    }
+
+    private void OnEnded()
+    {
+        _playing = false;
+        StateHasChanged();
+    }
+
+    private async Task Dismiss()
+    {
+        _audioUrl = null;
+        _playing = false;
+        _loading = false;
+        _errorMessage = null;
+        Visible = false;
+        await OnDismissed.InvokeAsync();
+    }
+}

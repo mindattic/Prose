@@ -5,9 +5,11 @@
 @inject WorldGraphService Graph
 @inject StoryService StorySvc
 @inject NavigationManager Nav
+@inject ElevenLabsTtsService TtsSvc
 @implements IDisposable
 
-<h4 class="text-danger mb-3">Generate Scene</h4>
+<h4 class="text-danger mb-1">Generate Scene</h4>
+<p class="text-muted mb-3">Multi-beat scene generator. Each beat selects a lead facet, pulls world context, and writes prose. Facets rotate to prevent repetition.</p>
 
 @if (!_generating && _generatedScene == null)
 {
@@ -20,13 +22,15 @@
                     <div class="mb-3">
                         <label class="form-label text-muted">Scene Goal</label>
                         <textarea class="form-control bg-dark text-light border-secondary" rows="3"
-                                  placeholder="Describe what should happen in this scene..."
+                                  placeholder="e.g. Kael confronts the street doc about the neural implant that's been broadcasting to a dead corp's servers..."
+                                  title="What should happen — the engine generates beats toward this goal"
                                   @bind="_goal"></textarea>
+                        <small class="text-muted">Describe the dramatic arc. The engine generates beats toward this goal.</small>
                     </div>
                     <div class="row g-3">
                         <div class="col-md-6">
                             <label class="form-label text-muted">Location</label>
-                            <select class="form-select bg-dark text-light border-secondary" @bind="_location">
+                            <select class="form-select bg-dark text-light border-secondary" @bind="_location" title="District from canon — provides atmosphere and sensory context to the AI">
                                 <option value="">-- Select District --</option>
                                 @foreach (var d in _districts)
                                 {
@@ -36,21 +40,25 @@
                         </div>
                         <div class="col-md-6">
                             <label class="form-label text-muted">Beats</label>
-                            <input type="range" class="form-range" min="3" max="8" @bind="_numBeats" />
-                            <small class="text-muted">@_numBeats beats</small>
+                            <input type="range" class="form-range" min="3" max="8" @bind="_numBeats" title="Number of narrative beats — each gets a lead facet and 2-4 paragraphs" />
+                            <small class="text-muted">@_numBeats beats — each is 2-4 paragraphs with its own lead facet</small>
                         </div>
                     </div>
                     <div class="mb-3 mt-3">
-                        <label class="form-label text-muted">Characters (comma-separated)</label>
+                        <label class="form-label text-muted">Characters</label>
                         <input type="text" class="form-control bg-dark text-light border-secondary"
                                placeholder="Kael, Sable, Pixel..."
+                               title="Comma-separated names — must match character YAML files. Facet weights are blended from their profiles."
                                @bind="_characterInput" />
+                        <small class="text-muted">Comma-separated. Their facet weights drive which psychological voice leads each beat.</small>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label text-muted">Themes / Beat Goals (one per line, optional)</label>
+                        <label class="form-label text-muted">Themes / Beat Goals (optional)</label>
                         <textarea class="form-control bg-dark text-light border-secondary" rows="3"
-                                  placeholder="One theme per line — each maps to a beat goal..."
+                                  placeholder="e.g.&#10;tension builds through small talk&#10;the betrayal is revealed&#10;violent confrontation"
+                                  title="One per line — each maps to a specific beat. Leave empty and the engine decides."
                                   @bind="_themesInput"></textarea>
+                        <small class="text-muted">One per line. Each maps to a beat. Leave empty and the engine chooses its own arc.</small>
                     </div>
                     <button class="btn btn-danger" @onclick="StartGeneration" disabled="@string.IsNullOrWhiteSpace(_goal)">
                         Generate Scene
@@ -120,8 +128,17 @@ else if (_generatedScene != null)
     @* ── Completed Scene ────────────────────────────────── *@
     <div class="d-flex gap-2 mb-3">
         <button class="btn btn-sm btn-outline-success" @onclick="SaveAsStory">Save as Story</button>
+        @if (_ttsAvailable)
+        {
+            <button class="btn btn-sm btn-outline-danger" @onclick="NarrateScene" disabled="@_narrating">
+                @if (_narrating) { <span class="spinner-border spinner-border-sm"></span> <span>Narrating...</span> }
+                else { <i class="bi bi-volume-up"></i> <span>Narrate</span> }
+            </button>
+        }
         <button class="btn btn-sm btn-outline-secondary" @onclick="Reset">New Scene</button>
     </div>
+
+    <AudioPlayer @ref="_audioPlayer" Visible="_showAudioPlayer" OnDismissed="() => _showAudioPlayer = false" CssClass="mb-3" />
 
     <div class="d-flex gap-1 mb-3">
         @foreach (var beat in _generatedScene.Beats)
@@ -159,12 +176,17 @@ else if (_generatedScene != null)
 
     private List<District> _districts = [];
     private Dictionary<string, FacetDefinition> _facets = [];
+    private bool _ttsAvailable;
+    private bool _narrating;
+    private bool _showAudioPlayer;
+    private AudioPlayer? _audioPlayer;
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
         _districts = Canon.ListDistricts();
         _facets = FacetSvc.LoadAllFacets();
         Graph.EnsureLoaded();
+        _ttsAvailable = await TtsSvc.IsConfiguredAsync();
 
         SceneGen.OnBeatProgress += OnProgress;
         SceneGen.OnBeatCompleted += OnBeatDone;
@@ -189,11 +211,8 @@ else if (_generatedScene != null)
             NumBeats = _numBeats,
         };
 
-        // Default character weights (Kael's)
-        var weights = new FacetState
-        {
-            Wound = 0.75, Ideal = 0.65, Id = 0.40, Shadow = 0.60, Mask = 0.50, Ghost = 0.55,
-        };
+        // Load real character weights from canon, blend if multiple characters
+        var weights = LoadBlendedWeights(characters);
 
         try
         {
@@ -249,6 +268,58 @@ else if (_generatedScene != null)
         _generatedScene = null;
         _completedBeats = [];
         _generating = false;
+        _showAudioPlayer = false;
+    }
+
+    private async Task NarrateScene()
+    {
+        if (_generatedScene == null || _narrating) return;
+        _narrating = true;
+        _showAudioPlayer = true;
+        _audioPlayer?.SetLoading(true);
+
+        try
+        {
+            var audio = await TtsSvc.SynthesizeAsync(_generatedScene.FullText);
+            if (_audioPlayer != null)
+                await _audioPlayer.LoadAudioAsync(audio);
+        }
+        catch (Exception ex)
+        {
+            _audioPlayer?.SetError(ex.Message);
+        }
+        finally
+        {
+            _narrating = false;
+        }
+    }
+
+    private FacetState LoadBlendedWeights(List<string> characters)
+    {
+        var allWeights = new List<FacetState>();
+        var allChars = Canon.ListCharacters();
+
+        foreach (var name in characters)
+        {
+            var match = allChars.FirstOrDefault(c =>
+                c.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+            if (match?.Facets != null && (match.Facets.Wound > 0 || match.Facets.Ideal > 0))
+                allWeights.Add(match.Facets);
+        }
+
+        if (allWeights.Count == 0)
+            return new FacetState { Wound = 0.5, Ideal = 0.5, Id = 0.5, Shadow = 0.5, Mask = 0.5, Ghost = 0.5 };
+
+        // Blend by averaging all character weights — ensemble cast
+        return new FacetState
+        {
+            Wound = allWeights.Average(w => w.Wound),
+            Ideal = allWeights.Average(w => w.Ideal),
+            Id = allWeights.Average(w => w.Id),
+            Shadow = allWeights.Average(w => w.Shadow),
+            Mask = allWeights.Average(w => w.Mask),
+            Ghost = allWeights.Average(w => w.Ghost),
+        };
     }
 
     private static string GetFacetColor(string facet) => facet.ToLowerInvariant() switch

@@ -1,7 +1,10 @@
 @page "/queue"
 @inject CanonQueueService QueueSvc
+@inject TextAnalysisService Analysis
+@inject ILlmService Llm
 
-<h4 class="text-danger mb-3">Canon Queue</h4>
+<h4 class="text-danger mb-1">Canon Queue</h4>
+<p class="text-muted mb-3">Review pipeline for new canon entries. Validate against worldbuilding with the LLM, then approve or reject.</p>
 
 <div class="btn-group btn-group-sm mb-3">
     <button class="btn @(_tab == "pending" ? "btn-danger" : "btn-outline-secondary")" @onclick='() => _tab = "pending"'>
@@ -49,16 +52,39 @@
 
                 @if (_tab == "pending")
                 {
-                    <div class="mt-2 d-flex gap-2">
+                    <div class="mt-2 d-flex gap-2 flex-wrap">
                         <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
                                placeholder="Notes..." @bind="_notes" style="max-width: 300px;" />
                         <button class="btn btn-sm btn-outline-success" @onclick="() => Promote(entry)">Approve</button>
                         <button class="btn btn-sm btn-outline-danger" @onclick="() => Reject(entry)">Reject</button>
+                        @if (_llmReady)
+                        {
+                            <button class="btn btn-sm btn-outline-info" @onclick="() => ValidateWithLlm(entry)"
+                                    disabled="@(_validating == entry.FilePath)"
+                                    title="Run an LLM lore-check against the worldbuilding canon to detect contradictions">
+                                @if (_validating == entry.FilePath)
+                                {
+                                    <span class="spinner-border spinner-border-sm"></span>
+                                }
+                                else
+                                {
+                                    <i class="bi bi-robot"></i>
+                                }
+                                Validate with AI
+                            </button>
+                        }
                     </div>
                 }
                 @if (!string.IsNullOrEmpty(entry.Notes))
                 {
                     <div class="small text-muted mt-1"><em>@entry.Notes</em></div>
+                }
+                @if (_validationResults.TryGetValue(entry.FilePath, out var result))
+                {
+                    <div class="mt-2 p-2 border rounded @(result.StartsWith("PASS") ? "border-success" : "border-warning")"
+                         style="white-space: pre-wrap; font-size: 0.8rem;">
+                        @result
+                    </div>
                 }
             </div>
         </div>
@@ -75,8 +101,15 @@ else
     private List<CanonQueueEntry> _pending = [];
     private List<CanonQueueEntry> _promoted = [];
     private List<CanonQueueEntry> _rejected = [];
+    private bool _llmReady;
+    private string? _validating;
+    private Dictionary<string, string> _validationResults = new();
 
-    protected override void OnInitialized() => Refresh();
+    protected override async Task OnInitializedAsync()
+    {
+        Refresh();
+        _llmReady = await Llm.IsConfiguredAsync();
+    }
 
     private void Refresh()
     {
@@ -97,6 +130,25 @@ else
         QueueSvc.Reject(entry.FilePath, _notes);
         _notes = "";
         Refresh();
+    }
+
+    private async Task ValidateWithLlm(CanonQueueEntry entry)
+    {
+        _validating = entry.FilePath;
+        try
+        {
+            var text = entry.Context ?? entry.Name;
+            var result = await Analysis.LoreCheckAsync(text, text);
+            _validationResults[entry.FilePath] = result;
+        }
+        catch (Exception ex)
+        {
+            _validationResults[entry.FilePath] = $"Error: {ex.Message}";
+        }
+        finally
+        {
+            _validating = null;
+        }
     }
 
     private static string Truncate(string s, int max) =>

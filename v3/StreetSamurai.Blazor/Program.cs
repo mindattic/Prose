@@ -24,6 +24,10 @@ app.UseHttpsRedirection();
 app.UseAntiforgery();
 
 app.MapStaticAssets();
+// Eagerly load the typed canon database (auto-converts YAML/MD → JSON on first run)
+var canonDb = app.Services.GetRequiredService<StreetSamurai.Core.Services.CanonDatabaseService>();
+canonDb.EnsureLoaded();
+
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 

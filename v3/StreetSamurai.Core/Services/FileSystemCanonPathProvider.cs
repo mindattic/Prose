@@ -13,6 +13,7 @@ public class FileSystemCanonPathProvider : ICanonPathProvider
 
     private string Root => _settings.CanonRootPath;
 
+    public string CanonRoot => Root;
     public string WorldbuildingDir => Path.Combine(Root, "worldbuilding");
     public string CharactersDir => Path.Combine(Root, "characters");
     public string EssencesDir => Path.Combine(Root, "essences");

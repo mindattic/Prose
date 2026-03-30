@@ -17,7 +17,8 @@
 }
 else
 {
-    <h4 class="text-danger mb-3">Worldbuilding Documents (@_docs.Count)</h4>
+    <h4 class="text-danger mb-1">Worldbuilding Documents (@_docs.Count)</h4>
+    <p class="text-muted mb-3">Raw canon files — markdown documents that define the world. Click to read the full text.</p>
 
     <div class="row g-2">
         @foreach (var category in _docs.GroupBy(d => d.Category).OrderBy(g => g.Key))

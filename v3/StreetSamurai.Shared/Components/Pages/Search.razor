@@ -1,11 +1,14 @@
 @page "/search"
 @inject CanonService Canon
 
-<h4 class="text-danger mb-3">Search Canon</h4>
+<h4 class="text-danger mb-1">Search Canon</h4>
+<p class="text-muted mb-3">Full-text search across all worldbuilding documents — markdown, YAML, everything in the canon vault.</p>
 
 <div class="input-group mb-4" style="max-width: 600px;">
     <input type="text" class="form-control bg-dark text-light border-secondary"
-           placeholder="Search across all worldbuilding..." @bind="_query" @bind:event="oninput"
+           placeholder="Search across all worldbuilding files..."
+           title="Searches all markdown and YAML files in the worldbuilding directory. Press Enter to search."
+           @bind="_query" @bind:event="oninput"
            @onkeydown="HandleKey" />
     <button class="btn btn-outline-danger" @onclick="DoSearch">Search</button>
 </div>

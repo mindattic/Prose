@@ -1,17 +1,46 @@
 @page "/settings"
 @inject SettingsService SettingsSvc
+@inject LlmRouter LlmRouter
+@inject ElevenLabsTtsService TtsSvc
 
-<h4 class="text-danger mb-3">Settings</h4>
+<h4 class="text-danger mb-1">Settings</h4>
+<p class="text-muted mb-3">Configure API keys, LLM providers, TTS narration, canon paths, and editor preferences.</p>
 
 <div class="row g-3">
     <div class="col-md-6">
-        <div class="card bg-dark text-light border-secondary">
+        @* ── LLM Provider Selection ─────────────────────── *@
+        <div class="card bg-dark text-light border-secondary mb-3">
+            <div class="card-header text-muted d-flex justify-content-between align-items-center">
+                LLM Provider
+                @if (_providerStatus.Any())
+                {
+                    <span class="badge @(_activeProvider?.IsConfigured == true ? "bg-success" : "bg-warning text-dark")">
+                        @(_activeProvider?.IsConfigured == true ? "Connected" : "Not Configured")
+                    </span>
+                }
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <label class="form-label text-muted">Active Provider</label>
+                    <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.ActiveLlmProvider">
+                        <option value="claude">Claude (Anthropic)</option>
+                        <option value="openai">OpenAI</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        @* ── Anthropic API ──────────────────────────────── *@
+        <div class="card bg-dark text-light border-secondary mb-3 @(SettingsSvc.ActiveLlmProvider == "claude" ? "border-danger" : "")">
             <div class="card-header text-muted">Anthropic API</div>
             <div class="card-body">
                 <div class="mb-3">
                     <label class="form-label text-muted">API Key</label>
                     <input type="password" class="form-control bg-dark text-light border-secondary"
+                           placeholder="sk-ant-..."
+                           title="Your Anthropic API key — get one at console.anthropic.com"
                            @bind="SettingsSvc.ApiKey" @bind:event="onchange" />
+                    <small class="text-muted">From console.anthropic.com. Required for Claude text generation.</small>
                 </div>
                 <div class="mb-3">
                     <label class="form-label text-muted">Model</label>
@@ -25,6 +54,30 @@
                     <label class="form-label text-muted">Max Tokens</label>
                     <input type="number" class="form-control bg-dark text-light border-secondary"
                            @bind="SettingsSvc.MaxTokens" @bind:event="onchange" />
+                </div>
+            </div>
+        </div>
+
+        @* ── OpenAI API ─────────────────────────────────── *@
+        <div class="card bg-dark text-light border-secondary mb-3 @(SettingsSvc.ActiveLlmProvider == "openai" ? "border-danger" : "")">
+            <div class="card-header text-muted">OpenAI API</div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <label class="form-label text-muted">API Key</label>
+                    <input type="password" class="form-control bg-dark text-light border-secondary"
+                           placeholder="sk-..."
+                           title="Your OpenAI API key — get one at platform.openai.com"
+                           @bind="SettingsSvc.OpenAiApiKey" @bind:event="onchange" />
+                    <small class="text-muted">From platform.openai.com. Alternative to Claude for text generation.</small>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label text-muted">Model</label>
+                    <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.OpenAiModel">
+                        <option value="gpt-4.1-mini">GPT-4.1 Mini</option>
+                        <option value="gpt-4.1">GPT-4.1</option>
+                        <option value="gpt-4o">GPT-4o</option>
+                        <option value="o3-mini">o3-mini</option>
+                    </select>
                 </div>
             </div>
         </div>
@@ -62,22 +115,142 @@
             </div>
         </div>
 
+        @* ── ElevenLabs TTS ─────────────────────────────── *@
         <div class="card bg-dark text-light border-secondary mt-3">
-            <div class="card-header text-muted">ElevenLabs TTS <span class="badge bg-secondary ms-2">Coming Soon</span></div>
+            <div class="card-header text-muted d-flex justify-content-between align-items-center">
+                ElevenLabs TTS
+                @if (_ttsConfigured)
+                {
+                    <span class="badge bg-success">Connected</span>
+                }
+            </div>
             <div class="card-body">
                 <div class="mb-3">
                     <label class="form-label text-muted">API Key</label>
                     <input type="password" class="form-control bg-dark text-light border-secondary"
                            placeholder="sk_..."
+                           title="Your ElevenLabs API key — get one at elevenlabs.io"
                            @bind="SettingsSvc.ElevenLabsApiKey" @bind:event="onchange" />
+                    <small class="text-muted">From elevenlabs.io. Enables text-to-speech narration in the editor and scene generator.</small>
                 </div>
                 <div class="mb-3">
                     <label class="form-label text-muted">Voice ID</label>
-                    <input type="text" class="form-control bg-dark text-light border-secondary"
-                           placeholder="JBFqnCBsd6RMkjVDRZzb"
-                           @bind="SettingsSvc.ElevenLabsVoiceId" @bind:event="onchange" />
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-dark text-light border-secondary"
+                               placeholder="JBFqnCBsd6RMkjVDRZzb"
+                               @bind="SettingsSvc.ElevenLabsVoiceId" @bind:event="onchange" />
+                        @if (_ttsConfigured)
+                        {
+                            <button class="btn btn-outline-info btn-sm" @onclick="LoadVoices" title="Load available voices from ElevenLabs">
+                                <i class="bi bi-arrow-repeat"></i> Voices
+                            </button>
+                        }
+                    </div>
+                    @if (_voices.Any())
+                    {
+                        <select class="form-select form-select-sm bg-dark text-light border-secondary mt-1"
+                                @onchange="OnVoiceSelected">
+                            <option value="">-- Select a voice --</option>
+                            @foreach (var v in _voices)
+                            {
+                                <option value="@v.VoiceId">@v.Name (@v.Category)</option>
+                            }
+                        </select>
+                    }
                 </div>
+                <div class="mb-3">
+                    <label class="form-label text-muted">Model</label>
+                    <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.TtsModel">
+                        <option value="eleven_multilingual_v2">Multilingual v2</option>
+                        <option value="eleven_turbo_v2_5">Turbo v2.5</option>
+                        <option value="eleven_monolingual_v1">Monolingual v1</option>
+                    </select>
+                </div>
+                <div class="row g-2">
+                    <div class="col-4">
+                        <label class="form-label text-muted small">Stability</label>
+                        <input type="range" class="form-range" min="0" max="1" step="0.05"
+                               @bind="SettingsSvc.TtsStability" />
+                        <small class="text-muted">@SettingsSvc.TtsStability.ToString("F2")</small>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-muted small">Similarity</label>
+                        <input type="range" class="form-range" min="0" max="1" step="0.05"
+                               @bind="SettingsSvc.TtsSimilarityBoost" />
+                        <small class="text-muted">@SettingsSvc.TtsSimilarityBoost.ToString("F2")</small>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-muted small">Style</label>
+                        <input type="range" class="form-range" min="0" max="1" step="0.05"
+                               @bind="SettingsSvc.TtsStyle" />
+                        <small class="text-muted">@SettingsSvc.TtsStyle.ToString("F2")</small>
+                    </div>
+                </div>
+                @if (_ttsConfigured)
+                {
+                    <div class="mt-3">
+                        <button class="btn btn-sm btn-outline-danger" @onclick="TestTts" disabled="@_testingTts">
+                            @if (_testingTts) { <span class="spinner-border spinner-border-sm"></span> }
+                            else { <i class="bi bi-volume-up"></i> }
+                            Test Voice
+                        </button>
+                        @if (_ttsTestResult != null)
+                        {
+                            <small class="ms-2 @(_ttsTestSuccess ? "text-success" : "text-warning")">@_ttsTestResult</small>
+                        }
+                    </div>
+                }
             </div>
         </div>
     </div>
 </div>
+
+@code {
+    private List<LlmProviderStatus> _providerStatus = [];
+    private LlmProviderStatus? _activeProvider;
+    private bool _ttsConfigured;
+    private List<TtsVoice> _voices = [];
+    private bool _testingTts;
+    private string? _ttsTestResult;
+    private bool _ttsTestSuccess;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _providerStatus = await LlmRouter.GetProvidersAsync();
+        _activeProvider = _providerStatus.FirstOrDefault(p => p.IsActive);
+        _ttsConfigured = await TtsSvc.IsConfiguredAsync();
+    }
+
+    private async Task LoadVoices()
+    {
+        _voices = await TtsSvc.ListVoicesAsync();
+    }
+
+    private void OnVoiceSelected(ChangeEventArgs e)
+    {
+        var voiceId = e.Value?.ToString();
+        if (!string.IsNullOrEmpty(voiceId))
+            SettingsSvc.ElevenLabsVoiceId = voiceId;
+    }
+
+    private async Task TestTts()
+    {
+        _testingTts = true;
+        _ttsTestResult = null;
+        try
+        {
+            var audio = await TtsSvc.SynthesizeAsync("The neon bleeds through cracked concrete. Welcome to the machine.");
+            _ttsTestSuccess = audio.Length > 0;
+            _ttsTestResult = _ttsTestSuccess ? $"Success ({audio.Length / 1024}KB)" : "Empty response";
+        }
+        catch (Exception ex)
+        {
+            _ttsTestSuccess = false;
+            _ttsTestResult = ex.Message;
+        }
+        finally
+        {
+            _testingTts = false;
+        }
+    }
+}

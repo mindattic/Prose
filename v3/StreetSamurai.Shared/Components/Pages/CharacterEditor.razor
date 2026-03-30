@@ -1,0 +1,227 @@
+@page "/character-editor"
+@page "/character-editor/{CharName}"
+@inject CanonService Canon
+@inject YamlService Yaml
+@inject ICanonPathProvider Paths
+@inject NavigationManager Nav
+
+<div class="d-flex align-items-center gap-2 mb-1">
+    <a href="characters" class="btn btn-sm btn-outline-secondary" title="Return to character list">Back</a>
+    <h4 class="text-danger mb-0">@(_isNew ? "New Character" : $"Edit: {_name}")</h4>
+    <button class="btn btn-sm btn-outline-success ms-auto" @onclick="SaveCharacter" disabled="@string.IsNullOrWhiteSpace(_name)" title="Save character YAML to the essences/characters/ directory">
+        <i class="bi bi-check-lg"></i> Save
+    </button>
+    @if (_saved)
+    {
+        <span class="badge bg-success">Saved</span>
+    }
+</div>
+<p class="text-muted mb-3">Define a character's identity, psychological facet weights, and voice. Saved as YAML to the canon directory. Facet weights (0.0-1.0) determine which psychological voice leads during story generation.</p>
+
+<div class="row g-3">
+    <div class="col-md-6">
+        <div class="card bg-dark text-light border-secondary mb-3">
+            <div class="card-header text-muted">Identity</div>
+            <div class="card-body">
+                <div class="mb-2">
+                    <label class="form-label text-muted small">Name</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                           @bind="_name" @bind:event="oninput" />
+                </div>
+                <div class="row g-2">
+                    <div class="col-6">
+                        <label class="form-label text-muted small">Status</label>
+                        <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="_status">
+                            <option value="active">Active</option>
+                            <option value="deceased">Deceased</option>
+                            <option value="missing">Missing</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label text-muted small">Tier</label>
+                        <input type="number" class="form-control form-control-sm bg-dark text-light border-secondary"
+                               min="1" max="5" @bind="_tier" />
+                    </div>
+                </div>
+                <div class="row g-2 mt-1">
+                    <div class="col-6">
+                        <label class="form-label text-muted small">Origin</label>
+                        <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_origin" />
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label text-muted small">Age</label>
+                        <input type="number" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_age" />
+                    </div>
+                </div>
+                <div class="mb-2 mt-2">
+                    <label class="form-label text-muted small">Occupation</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_occupation" />
+                </div>
+                <div class="mb-2">
+                    <label class="form-label text-muted small">Affiliation</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_affiliation" />
+                </div>
+                <div class="mb-2">
+                    <label class="form-label text-muted small">Augmentation</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_augmentation" />
+                </div>
+            </div>
+        </div>
+
+        @* ── Facet Weights ────────────────────────────── *@
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted">Facet Weights</div>
+            <div class="card-body">
+                @foreach (var (facetName, color) in _facetColors)
+                {
+                    var val = GetFacetValue(facetName);
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="badge" style="background: @color; width: 70px;">@facetName</span>
+                        <input type="range" class="form-range flex-grow-1" min="0" max="1" step="0.05"
+                               value="@val" @oninput="e => SetFacetValue(facetName, e)" />
+                        <small class="text-muted" style="width: 35px;">@val.ToString("F2")</small>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        @* ── Voice Notes ──────────────────────────────── *@
+        <div class="card bg-dark text-light border-secondary mb-3">
+            <div class="card-header text-muted">Voice & Personality</div>
+            <div class="card-body">
+                <div class="mb-2">
+                    <label class="form-label text-muted small">Voice Notes</label>
+                    <textarea class="form-control bg-dark text-light border-secondary" rows="3"
+                              placeholder="How this character speaks, thinks, moves..."
+                              @bind="_voiceNotes"></textarea>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label text-muted small">Aliases (comma-separated)</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                           placeholder="Nickname, CodeName, StreetHandle..."
+                           @bind="_aliases" />
+                </div>
+            </div>
+        </div>
+
+        @* ── YAML Preview ─────────────────────────────── *@
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted">YAML Preview</div>
+            <div class="card-body" style="max-height: 50vh; overflow-y: auto;">
+                <pre style="white-space: pre-wrap; font-size: 0.8rem; color: #ddd;">@BuildYamlPreview()</pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public string? CharName { get; set; }
+
+    private bool _isNew = true;
+    private bool _saved;
+    private string _name = "";
+    private string _status = "active";
+    private int _tier = 1;
+    private string _origin = "";
+    private int _age = 25;
+    private string _occupation = "";
+    private string _affiliation = "";
+    private string _augmentation = "";
+    private string _voiceNotes = "";
+    private string _aliases = "";
+
+    // Facet weights
+    private double _wound = 0.5, _ideal = 0.5, _id = 0.5, _shadow = 0.5, _mask = 0.5, _ghost = 0.5;
+
+    private static readonly (string name, string color)[] _facetColors =
+    [
+        ("wound", "#dc3545"), ("ideal", "#198754"), ("id", "#ffc107"),
+        ("shadow", "#6f42c1"), ("mask", "#0dcaf0"), ("ghost", "#6c757d"),
+    ];
+
+    protected override void OnInitialized()
+    {
+        if (!string.IsNullOrEmpty(CharName))
+        {
+            var chars = Canon.ListCharacters();
+            var match = chars.FirstOrDefault(c =>
+                c.Name.Equals(CharName, StringComparison.OrdinalIgnoreCase));
+            if (match != null)
+            {
+                _isNew = false;
+                _name = match.Name;
+                _status = match.Status;
+                _tier = match.Tier;
+                _origin = match.Origin;
+                _age = match.Age;
+                _occupation = match.Occupation;
+                _affiliation = match.Affiliation;
+                _augmentation = match.Augmentation;
+                _voiceNotes = match.VoiceNotes;
+                _aliases = string.Join(", ", match.Aliases);
+                if (match.Facets != null)
+                {
+                    _wound = match.Facets.Wound;
+                    _ideal = match.Facets.Ideal;
+                    _id = match.Facets.Id;
+                    _shadow = match.Facets.Shadow;
+                    _mask = match.Facets.Mask;
+                    _ghost = match.Facets.Ghost;
+                }
+            }
+        }
+    }
+
+    private double GetFacetValue(string name) => name switch
+    {
+        "wound" => _wound, "ideal" => _ideal, "id" => _id,
+        "shadow" => _shadow, "mask" => _mask, "ghost" => _ghost,
+        _ => 0.5,
+    };
+
+    private void SetFacetValue(string name, ChangeEventArgs e)
+    {
+        if (!double.TryParse(e.Value?.ToString(), out var val)) return;
+        switch (name)
+        {
+            case "wound": _wound = val; break;
+            case "ideal": _ideal = val; break;
+            case "id": _id = val; break;
+            case "shadow": _shadow = val; break;
+            case "mask": _mask = val; break;
+            case "ghost": _ghost = val; break;
+        }
+    }
+
+    private string BuildYamlPreview() => $"""
+        name: {_name}
+        aliases: [{_aliases}]
+        tier: {_tier}
+        status: {_status}
+        origin: {_origin}
+        age: {_age}
+        occupation: {_occupation}
+        affiliation: {_affiliation}
+        augmentation: {_augmentation}
+        voice_notes: "{_voiceNotes}"
+        facets:
+          wound: {_wound:F2}
+          ideal: {_ideal:F2}
+          id: {_id:F2}
+          shadow: {_shadow:F2}
+          mask: {_mask:F2}
+          ghost: {_ghost:F2}
+        """;
+
+    private void SaveCharacter()
+    {
+        var yaml = BuildYamlPreview();
+        var filename = _name.ToLowerInvariant().Replace(" ", "_") + ".yaml";
+        var path = Path.Combine(Paths.CharactersDir, filename);
+        File.WriteAllText(path, yaml);
+        _saved = true;
+    }
+}

@@ -6,6 +6,7 @@ namespace StreetSamurai.Core.Interfaces;
 /// </summary>
 public interface ICanonPathProvider
 {
+    string CanonRoot { get; }
     string WorldbuildingDir { get; }
     string CharactersDir { get; }
     string EssencesDir { get; }

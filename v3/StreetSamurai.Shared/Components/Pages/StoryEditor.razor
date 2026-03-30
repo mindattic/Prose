@@ -6,6 +6,7 @@
 @inject TextAnalysisService Analysis
 @inject NavigationManager Nav
 @inject IJSRuntime JS
+@inject ElevenLabsTtsService TtsSvc
 @implements IDisposable
 
 <div class="editor-container d-flex flex-column" style="height: calc(100vh - 40px);">
@@ -13,9 +14,11 @@
     <div class="editor-toolbar bg-dark border-bottom border-secondary p-2 d-flex align-items-center gap-2 flex-wrap">
         <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
                style="max-width: 300px;" placeholder="Story title..."
+               title="Title — displayed in the story list and used for export filenames"
                @bind="_title" @bind:event="oninput" />
 
         <select class="form-select form-select-sm bg-dark text-light border-secondary" style="width: 120px;"
+                title="Canon status: Draft (work in progress), Canon (official), Non-Canon (experimental)"
                 @bind="_canonStatus">
             <option value="draft">Draft</option>
             <option value="canon">Canon</option>
@@ -23,11 +26,16 @@
         </select>
 
         <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
-               style="max-width: 200px;" placeholder="Location..."
+               style="max-width: 200px;" placeholder="Location (district)..."
+               title="District or location name — used as context for AI analysis"
                @bind="_location" @bind:event="oninput" />
 
         <button class="btn btn-sm btn-outline-danger" @onclick="SaveStory" title="Save (Ctrl+S)">
             Save
+        </button>
+
+        <button class="btn btn-sm btn-outline-secondary" @onclick="ExportMarkdown" title="Download story as a clean Markdown file">
+            <i class="bi bi-download"></i> Export
         </button>
 
         <div class="vr text-secondary mx-1"></div>
@@ -35,21 +43,33 @@
         @* Analysis tools — active when text is selected *@
         <div class="dropdown">
             <button class="btn btn-sm btn-outline-info dropdown-toggle" type="button"
-                    data-bs-toggle="dropdown" disabled="@(!_hasSelection)">
+                    data-bs-toggle="dropdown" disabled="@(!_hasSelection)"
+                    title="Select text in the editor first, then choose an analysis tool">
                 Analyze
             </button>
             <ul class="dropdown-menu dropdown-menu-dark">
-                <li><button class="dropdown-item" @onclick="RunLoreCheck">Lore Check</button></li>
-                <li><button class="dropdown-item" @onclick="RunClicheCheck">Cliche Check</button></li>
-                <li><button class="dropdown-item" @onclick="RunExpand">Expand</button></li>
-                <li><button class="dropdown-item" @onclick="RunRephrase">Rephrase</button></li>
+                <li><button class="dropdown-item" @onclick="RunLoreCheck" title="Check selected text against worldbuilding canon for contradictions">Lore Check</button></li>
+                <li><button class="dropdown-item" @onclick="RunClicheCheck" title="Detect generic noir, cliches, slogans, and writing violations">Cliche Check</button></li>
+                <li><button class="dropdown-item" @onclick="RunExpand" title="Continue/expand the selected text while maintaining voice and tone">Expand</button></li>
+                <li><button class="dropdown-item" @onclick="RunRephrase" title="Rephrase the selected text while preserving meaning">Rephrase</button></li>
             </ul>
         </div>
 
         <button class="btn btn-sm @(_showPreview ? "btn-info" : "btn-outline-secondary")"
-                @onclick="() => _showPreview = !_showPreview">
+                @onclick="() => _showPreview = !_showPreview"
+                title="Toggle live HTML preview of your Markdown in a split pane">
             Preview
         </button>
+
+        @if (_ttsAvailable)
+        {
+            <div class="vr text-secondary mx-1"></div>
+            <button class="btn btn-sm btn-outline-danger" @onclick="NarrateSelection"
+                    disabled="@(!_hasSelection || _narrating)" title="Narrate selected text">
+                @if (_narrating) { <span class="spinner-border spinner-border-sm"></span> }
+                else { <i class="bi bi-volume-up"></i> }
+            </button>
+        }
 
         <span class="ms-auto text-muted small">
             @if (_saving) { <span>Saving...</span> }
@@ -85,6 +105,9 @@
             </div>
         }
     </div>
+
+    @* ── Audio Player ──────────────────────────────────────── *@
+    <AudioPlayer @ref="_audioPlayer" Visible="_showAudioPlayer" OnDismissed="() => _showAudioPlayer = false" CssClass="mx-2 mb-1" />
 
     @* ── Analysis Panel (slides up from bottom) ──────────── *@
     @if (_analysisResult != null)
@@ -135,13 +158,28 @@
     private string _analysisType = "";
     private bool _analysisLoading;
 
+    // TTS state
+    private bool _ttsAvailable;
+    private bool _narrating;
+    private bool _showAudioPlayer;
+    private AudioPlayer? _audioPlayer;
+
     // Auto-save timer
     private Timer? _autoSaveTimer;
     private Timer? _previewTimer;
     private bool _dirty;
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
+        _ttsAvailable = await TtsSvc.IsConfiguredAsync();
+
+        // Register keyboard shortcuts
+        try
+        {
+            var dotNetRef = DotNetObjectReference.Create(this);
+            await JS.InvokeVoidAsync("editorInterop.initKeyboardShortcuts", dotNetRef);
+        }
+        catch { /* JS not ready yet */ }
         if (!string.IsNullOrEmpty(StoryId))
         {
             var story = StorySvc.LoadStory(StoryId);
@@ -293,6 +331,53 @@
         return lines.Length > 10
             ? string.Join("\n", lines.TakeLast(20))
             : _markdownContent;
+    }
+
+    private async Task ExportMarkdown()
+    {
+        var filename = $"{_title.Replace(" ", "_").ToLowerInvariant()}.md";
+        var content = $"# {_title}\n\n{_markdownContent}";
+        var bytes = System.Text.Encoding.UTF8.GetBytes(content);
+        var base64 = Convert.ToBase64String(bytes);
+        try
+        {
+            await JS.InvokeVoidAsync("eval",
+                $"(() => {{ const a = document.createElement('a'); a.href = 'data:text/markdown;base64,{base64}'; a.download = '{filename}'; a.click(); }})()");
+        }
+        catch { /* JS not ready */ }
+    }
+
+    [JSInvokable]
+    public async Task SaveFromJs()
+    {
+        await InvokeAsync(async () =>
+        {
+            await SaveStoryInternal();
+            StateHasChanged();
+        });
+    }
+
+    private async Task NarrateSelection()
+    {
+        if (string.IsNullOrWhiteSpace(_selectedText) || _narrating) return;
+        _narrating = true;
+        _showAudioPlayer = true;
+        _audioPlayer?.SetLoading(true);
+
+        try
+        {
+            var audio = await TtsSvc.SynthesizeAsync(_selectedText);
+            if (_audioPlayer != null)
+                await _audioPlayer.LoadAudioAsync(audio);
+        }
+        catch (Exception ex)
+        {
+            _audioPlayer?.SetError(ex.Message);
+        }
+        finally
+        {
+            _narrating = false;
+        }
     }
 
     public void Dispose()

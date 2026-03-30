@@ -1,0 +1,314 @@
+@page "/write"
+@inject StoryStarterService Starter
+@inject CanonService Canon
+@inject FacetService FacetSvc
+@inject StoryService StorySvc
+@inject NavigationManager Nav
+@inject ElevenLabsTtsService TtsSvc
+
+<h4 class="text-danger mb-1">Write Me a Story</h4>
+<p class="text-muted mb-3">Give the engine a premise and it writes an opening using the full canon — world graph, facet psychology, literary rules. Then you continue, or hand it off.</p>
+
+@if (_opening == null && !_generating)
+{
+    @* ── Premise Input ─────────────────────────────────── *@
+    <div class="row g-3">
+        <div class="col-md-8">
+            <div class="card bg-dark text-light border-secondary">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label text-danger">What's the story about?</label>
+                        <textarea class="form-control bg-dark text-light border-secondary" rows="3"
+                                  placeholder="A street doc discovers her patient's neural implant is broadcasting to a dead corponation's servers..."
+                                  @bind="_premise"
+                                  style="font-family: Georgia, serif; font-size: 15px; line-height: 1.6;"></textarea>
+                        <small class="text-muted mt-1 d-block">One sentence or a whole paragraph — give it whatever you've got. The engine does the rest.</small>
+                    </div>
+
+                    <div class="row g-2">
+                        <div class="col-md-4">
+                            <label class="form-label text-muted small">Mood (optional)</label>
+                            <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="_mood">
+                                <option value="">-- Let the engine decide --</option>
+                                <option value="desperate and claustrophobic">Desperate</option>
+                                <option value="slow burn dread">Slow burn dread</option>
+                                <option value="electric and kinetic">Electric</option>
+                                <option value="melancholic and beautiful">Melancholic</option>
+                                <option value="paranoid and fractured">Paranoid</option>
+                                <option value="tender amid violence">Tender amid violence</option>
+                                <option value="dark humor and irony">Dark humor</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label text-muted small">Location (optional)</label>
+                            <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="_location">
+                                <option value="">-- Anywhere --</option>
+                                @foreach (var d in _districts)
+                                {
+                                    <option value="@d.Name">@d.Name</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label text-muted small">Characters (optional)</label>
+                            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                                   placeholder="Kael, Sable..."
+                                   @bind="_characters" />
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-2 mt-3">
+                        <button class="btn btn-danger" @onclick="Generate"
+                                disabled="@string.IsNullOrWhiteSpace(_premise)"
+                                title="Generate an opening from your premise using the full canon engine">
+                            <i class="bi bi-pen"></i> Write It
+                        </button>
+                        <button class="btn btn-outline-danger" @onclick="SurpriseMe"
+                                title="Pick random characters, location, and premise from the canon — zero input needed">
+                            <i class="bi bi-shuffle"></i> Surprise Me
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card bg-dark text-light border-secondary">
+                <div class="card-header text-muted">How it works</div>
+                <div class="card-body small text-muted">
+                    <p>The engine will:</p>
+                    <ol>
+                        <li>Pull context from the <strong>world graph</strong> — locations, relationships, corporations</li>
+                        <li>Select a <strong>lead facet</strong> based on your premise — wound, ideal, shadow, mask, id, or ghost</li>
+                        <li>Apply the <strong>literary rules</strong> — no cliches, no slogans, sentences under 25 words</li>
+                        <li>Write a 3-5 paragraph opening that <strong>ends on unresolved tension</strong></li>
+                        <li>Generate a title that reads like graffiti on a wall</li>
+                    </ol>
+                    <p class="mb-0">Then you continue. Or another AI does. Or nobody does and it just <em>exists</em>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else if (_generating)
+{
+    @* ── Generation Progress ────────────────────────────── *@
+    <div class="card bg-dark text-light border-secondary">
+        <div class="card-body text-center py-5">
+            <div class="spinner-border text-danger mb-3" style="width: 3rem; height: 3rem;" role="status"></div>
+            <p class="text-muted">The engine is writing...</p>
+            <p class="small text-muted fst-italic">@_statusMessage</p>
+        </div>
+    </div>
+}
+else if (_opening != null)
+{
+    @* ── The Opening ───────────────────────────────────── *@
+    <div class="d-flex align-items-center gap-2 mb-3">
+        <h3 class="text-danger mb-0 fst-italic">@_opening.Title</h3>
+        <div class="d-flex gap-1 ms-3">
+            <FacetBadge Name="@_opening.LeadFacet" />
+            @foreach (var f in _opening.SupportingFacets)
+            {
+                <small class="text-muted">+@f</small>
+            }
+        </div>
+    </div>
+
+    <div class="card bg-dark text-light border-secondary mb-3">
+        <div class="card-body" style="padding: 2rem 3rem;">
+            <div style="font-family: Georgia, 'Times New Roman', serif; font-size: 16px; line-height: 1.9; color: #ddd; white-space: pre-wrap;">@_opening.Text</div>
+        </div>
+    </div>
+
+    <div class="d-flex gap-2 flex-wrap">
+        <button class="btn btn-outline-success" @onclick="ContinueInEditor">
+            <i class="bi bi-pencil-square"></i> Continue Writing
+        </button>
+        @if (_ttsAvailable)
+        {
+            <button class="btn btn-outline-danger" @onclick="Narrate" disabled="@_narrating">
+                @if (_narrating) { <span class="spinner-border spinner-border-sm"></span> }
+                else { <i class="bi bi-volume-up"></i> }
+                Narrate
+            </button>
+        }
+        <button class="btn btn-outline-info" @onclick="SaveAndNew">
+            <i class="bi bi-save"></i> Save & Write Another
+        </button>
+        <button class="btn btn-outline-secondary" @onclick="StartOver">
+            <i class="bi bi-arrow-counterclockwise"></i> Discard & Start Over
+        </button>
+    </div>
+
+    <AudioPlayer @ref="_audioPlayer" Visible="_showAudioPlayer" OnDismissed="() => _showAudioPlayer = false" CssClass="mt-3" />
+
+    @if (_error != null)
+    {
+        <div class="alert alert-warning mt-3">@_error</div>
+    }
+}
+
+@code {
+    private string _premise = "";
+    private string _mood = "";
+    private string _location = "";
+    private string _characters = "";
+    private bool _generating;
+    private string _statusMessage = "";
+    private GeneratedOpening? _opening;
+    private string? _error;
+    private List<District> _districts = [];
+    private bool _ttsAvailable;
+    private bool _narrating;
+    private bool _showAudioPlayer;
+    private AudioPlayer? _audioPlayer;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _districts = Canon.ListDistricts();
+        _ttsAvailable = await TtsSvc.IsConfiguredAsync();
+    }
+
+    private async Task Generate()
+    {
+        _generating = true;
+        _opening = null;
+        _error = null;
+        _statusMessage = "Pulling world context from the graph...";
+        StateHasChanged();
+
+        try
+        {
+            var chars = _characters.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
+
+            await Task.Delay(100);
+            _statusMessage = "Loading character psychology, fears, desires, speech patterns...";
+            StateHasChanged();
+
+            var request = new StoryStarterRequest
+            {
+                Premise = _premise,
+                Mood = string.IsNullOrEmpty(_mood) ? null : _mood,
+                Location = string.IsNullOrEmpty(_location) ? null : _location,
+                Characters = chars,
+            };
+
+            await Task.Delay(100);
+            _statusMessage = "Selecting lead facet from behavioral baselines...";
+            StateHasChanged();
+
+            await Task.Delay(100);
+            _statusMessage = "Writing the opening — every word must bleed...";
+            StateHasChanged();
+
+            _opening = await Starter.GenerateOpeningAsync(request);
+        }
+        catch (Exception ex)
+        {
+            _error = ex.Message;
+        }
+        finally
+        {
+            _generating = false;
+        }
+    }
+
+    private async Task SurpriseMe()
+    {
+        _generating = true;
+        _opening = null;
+        _error = null;
+        _statusMessage = "Rolling dice against the canon...";
+        StateHasChanged();
+
+        try
+        {
+            await Task.Delay(100);
+            _statusMessage = "Picking characters, location, and a seed premise...";
+            StateHasChanged();
+
+            await Task.Delay(100);
+            _statusMessage = "Building world context and selecting facets...";
+            StateHasChanged();
+
+            await Task.Delay(100);
+            _statusMessage = "Writing — the engine has the wheel now...";
+            StateHasChanged();
+
+            _opening = await Starter.GenerateRandomAsync();
+        }
+        catch (Exception ex)
+        {
+            _error = ex.Message;
+        }
+        finally
+        {
+            _generating = false;
+        }
+    }
+
+    private void ContinueInEditor()
+    {
+        if (_opening == null) return;
+        var story = new Story
+        {
+            Title = _opening.Title,
+            CanonStatus = "draft",
+            Location = _opening.Location,
+            Characters = _opening.Characters,
+            MarkdownContent = _opening.Text,
+        };
+        StorySvc.SaveStory(story);
+        Nav.NavigateTo($"/editor/{story.Id}");
+    }
+
+    private async Task SaveAndNew()
+    {
+        if (_opening == null) return;
+        var story = new Story
+        {
+            Title = _opening.Title,
+            CanonStatus = "draft",
+            Location = _opening.Location,
+            Characters = _opening.Characters,
+            MarkdownContent = _opening.Text,
+        };
+        StorySvc.SaveStory(story);
+        _opening = null;
+        _premise = "";
+        _mood = "";
+        _location = "";
+        _characters = "";
+        await Task.CompletedTask;
+    }
+
+    private void StartOver()
+    {
+        _opening = null;
+        _error = null;
+    }
+
+    private async Task Narrate()
+    {
+        if (_opening == null || _narrating) return;
+        _narrating = true;
+        _showAudioPlayer = true;
+        _audioPlayer?.SetLoading(true);
+
+        try
+        {
+            var audio = await TtsSvc.SynthesizeAsync(_opening.Text);
+            if (_audioPlayer != null)
+                await _audioPlayer.LoadAudioAsync(audio);
+        }
+        catch (Exception ex)
+        {
+            _audioPlayer?.SetError(ex.Message);
+        }
+        finally
+        {
+            _narrating = false;
+        }
+    }
+}

@@ -2,56 +2,94 @@
 @inject CanonService Canon
 @inject WorldGraphService Graph
 @inject StoryService Stories
+@inject FacetService FacetSvc
+@inject ILlmService Llm
+@inject ITtsService Tts
 
-<h3 class="text-danger mb-4">Street Samurai — Canon Engine</h3>
+<h3 class="text-danger mb-1">Street Samurai — Canon Engine</h3>
+<p class="text-muted mb-3">Story authoring platform for the StreetSamurai cyberpunk universe. Browse worldbuilding, generate AI-driven scenes, and write canon fiction.</p>
 
+@* ── Stat Cards ─────────────────────────────────────── *@
 <div class="row g-3">
-    <div class="col-md-3">
-        <div class="card bg-dark text-light border-secondary">
-            <div class="card-body">
-                <h6 class="card-title text-muted">Canon Vault</h6>
-                <p class="display-6">@_docCount</p>
-                <small class="text-muted">worldbuilding documents</small>
+    <div class="col-md-2">
+        <div class="card bg-dark text-light border-secondary" title="Markdown and YAML files in the worldbuilding directory">
+            <div class="card-body text-center">
+                <h6 class="card-title text-muted small">Canon Vault</h6>
+                <p class="display-6 mb-0">@_docCount</p>
+                <small class="text-muted">documents</small>
             </div>
         </div>
     </div>
-    <div class="col-md-3">
-        <div class="card bg-dark text-light border-secondary">
-            <div class="card-body">
-                <h6 class="card-title text-muted">Corponations</h6>
-                <p class="display-6">@_corpCount</p>
-                <small class="text-muted">indexed entities</small>
+    <div class="col-md-2">
+        <div class="card bg-dark text-light border-secondary" title="Sovereign corporate entities parsed from worldbuilding">
+            <div class="card-body text-center">
+                <h6 class="card-title text-muted small">Corponations</h6>
+                <p class="display-6 mb-0">@_corpCount</p>
+                <small class="text-muted">entities</small>
             </div>
         </div>
     </div>
-    <div class="col-md-3">
-        <div class="card bg-dark text-light border-secondary">
-            <div class="card-body">
-                <h6 class="card-title text-muted">Characters</h6>
-                <p class="display-6">@_charCount</p>
-                <small class="text-muted">active files</small>
+    <div class="col-md-2">
+        <div class="card bg-dark text-light border-secondary" title="Character YAML profiles with facet weights and relationships">
+            <div class="card-body text-center">
+                <h6 class="card-title text-muted small">Characters</h6>
+                <p class="display-6 mb-0">@_charCount</p>
+                <small class="text-muted">profiles</small>
             </div>
         </div>
     </div>
-    <div class="col-md-3">
-        <div class="card bg-dark text-light border-secondary">
-            <div class="card-body">
-                <h6 class="card-title text-muted">World Graph</h6>
-                <p class="display-6">@_nodeCount</p>
-                <small class="text-muted">@_edgeCount relationships</small>
+    <div class="col-md-2">
+        <div class="card bg-dark text-light border-secondary" title="QuikGraph relationship network — entities and their connections">
+            <div class="card-body text-center">
+                <h6 class="card-title text-muted small">World Graph</h6>
+                <p class="display-6 mb-0">@_nodeCount</p>
+                <small class="text-muted">@_edgeCount edges</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card bg-dark text-light border-secondary" title="Character psychology engine — wound, ideal, id, shadow, mask, ghost">
+            <div class="card-body text-center">
+                <h6 class="card-title text-muted small">Facets</h6>
+                <p class="display-6 mb-0">@_facetCount</p>
+                <small class="text-muted">loaded</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card bg-dark text-light border-secondary" title="External services — green means configured and ready">
+            <div class="card-body text-center">
+                <h6 class="card-title text-muted small">Systems</h6>
+                <div class="d-flex justify-content-center gap-1 mt-1">
+                    <span class="badge @(_llmReady ? "bg-success" : "bg-secondary")" title="LLM: AI text generation (Claude/OpenAI)">LLM</span>
+                    <span class="badge @(_ttsReady ? "bg-success" : "bg-secondary")" title="TTS: Text-to-speech narration (ElevenLabs)">TTS</span>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="row g-3 mt-2">
+@* ── Quick Actions ──────────────────────────────────── *@
+<div class="d-flex gap-2 mt-3 mb-3">
+    <a href="write" class="btn btn-sm btn-danger"><i class="bi bi-pen"></i> Write Me a Story</a>
+    <a href="editor" class="btn btn-sm btn-outline-danger"><i class="bi bi-pencil-square"></i> New Story</a>
+    <a href="generate" class="btn btn-sm btn-outline-danger"><i class="bi bi-lightning"></i> Generate Scene</a>
+    <a href="graph" class="btn btn-sm btn-outline-info"><i class="bi bi-diagram-3"></i> World Graph</a>
+    <a href="search" class="btn btn-sm btn-outline-secondary"><i class="bi bi-search"></i> Search Canon</a>
+</div>
+
+<div class="row g-3">
+    @* ── Stories ────────────────────────────────────────── *@
     <div class="col-md-4">
         <div class="card bg-dark text-light border-secondary">
-            <div class="card-header text-muted">Stories</div>
+            <div class="card-header text-muted d-flex justify-content-between align-items-center">
+                Stories
+                <a href="stories" class="text-info small text-decoration-none">View all</a>
+            </div>
             <div class="card-body">
                 @if (_stories.Any())
                 {
-                    @foreach (var s in _stories.Take(5))
+                    @foreach (var s in _stories.Take(6))
                     {
                         <div class="d-flex justify-content-between border-bottom border-secondary py-1">
                             <a href="editor/@s.Id" class="text-light text-decoration-none small">@s.Title</a>
@@ -66,6 +104,8 @@
             </div>
         </div>
     </div>
+
+    @* ── Quick Search ──────────────────────────────────── *@
     <div class="col-md-4">
         <div class="card bg-dark text-light border-secondary">
             <div class="card-header text-muted">Quick Search</div>
@@ -95,9 +135,27 @@
             </div>
         </div>
     </div>
+
+    @* ── Most Connected / Canon Docs ──────────────────── *@
     <div class="col-md-4">
+        <div class="card bg-dark text-light border-secondary mb-3">
+            <div class="card-header text-muted">Most Connected Entities</div>
+            <div class="card-body">
+                @foreach (var (node, count) in _topConnected)
+                {
+                    <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                        <a href="graph" class="text-light text-decoration-none small">@node.Name</a>
+                        <span class="badge bg-danger rounded-pill">@count</span>
+                    </div>
+                }
+            </div>
+        </div>
+
         <div class="card bg-dark text-light border-secondary">
-            <div class="card-header text-muted">Recent Documents</div>
+            <div class="card-header text-muted d-flex justify-content-between align-items-center">
+                Recent Documents
+                <a href="documents" class="text-info small text-decoration-none">Browse</a>
+            </div>
             <div class="card-body">
                 @foreach (var doc in _recentDocs)
                 {
@@ -112,25 +170,40 @@
 </div>
 
 @code {
-    private int _docCount, _corpCount, _charCount, _nodeCount, _edgeCount;
+    private int _docCount, _corpCount, _charCount, _nodeCount, _edgeCount, _facetCount;
+    private bool _llmReady, _ttsReady;
     private string _searchQuery = "";
     private List<SearchResult> _searchResults = [];
     private List<CanonDocument> _recentDocs = [];
     private List<Story> _stories = [];
+    private List<(WorldNode node, int count)> _topConnected = [];
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
         var docs = Canon.ListDocuments();
         _docCount = docs.Count;
         _corpCount = Canon.ListCorponations().Count;
         _charCount = Canon.ListCharacters().Count;
-        _recentDocs = docs.OrderByDescending(d => d.LineCount).Take(8).ToList();
+        _recentDocs = docs.OrderByDescending(d => d.LineCount).Take(6).ToList();
 
         Graph.EnsureLoaded();
         _nodeCount = Graph.NodeCount;
         _edgeCount = Graph.EdgeCount;
 
+        _facetCount = FacetSvc.LoadAllFacets().Count;
         _stories = Stories.ListStories();
+
+        _llmReady = await Llm.IsConfiguredAsync();
+        _ttsReady = await Tts.IsConfiguredAsync();
+
+        // Top connected entities
+        var allNodes = Graph.AllNodes();
+        _topConnected = allNodes
+            .Select(n => (node: n, count: Graph.GetAllEdges(n.Id).Count))
+            .Where(x => x.count > 0)
+            .OrderByDescending(x => x.count)
+            .Take(6)
+            .ToList();
     }
 
     private void DoSearch()
