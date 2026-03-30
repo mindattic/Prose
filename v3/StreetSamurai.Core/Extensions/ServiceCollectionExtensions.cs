@@ -8,21 +8,34 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddStreetSamuraiServices(this IServiceCollection services)
     {
+        // Settings auto-detects canon root path on first run
         services.AddSingleton<SettingsService>();
         services.AddSingleton<ICanonPathProvider, FileSystemCanonPathProvider>();
         services.AddSingleton<CanonService>();
         services.AddSingleton<YamlService>();
         services.AddSingleton<MarkdownService>();
         services.AddSingleton<StoryService>();
-        services.AddSingleton<WorldGraphService>();
         services.AddSingleton<FacetService>();
-        services.AddSingleton<TextAnalysisService>();
         services.AddSingleton<CanonQueueService>();
-        services.AddSingleton<SceneGenerationService>();
-        services.AddSingleton<ContextAnalyzerService>();
-        services.AddSingleton<BeatGeneratorService>();
+
+        // Graph builds from YAML on first access
+        services.AddSingleton<WorldGraphService>(sp =>
+        {
+            var graph = new WorldGraphService(
+                sp.GetRequiredService<ICanonPathProvider>(),
+                sp.GetRequiredService<YamlService>());
+            graph.EnsureLoaded();
+            return graph;
+        });
+
+        // LLM services
         services.AddHttpClient<ClaudeService>();
         services.AddSingleton<ILlmService>(sp => sp.GetRequiredService<ClaudeService>());
+        services.AddSingleton<TextAnalysisService>();
+        services.AddSingleton<ContextAnalyzerService>();
+        services.AddSingleton<BeatGeneratorService>();
+        services.AddSingleton<SceneGenerationService>();
+
         return services;
     }
 }

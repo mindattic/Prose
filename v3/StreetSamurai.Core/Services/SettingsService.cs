@@ -16,6 +16,48 @@ public class SettingsService
         Directory.CreateDirectory(appData);
         _settingsPath = Path.Combine(appData, "Settings.json");
         Load();
+
+        // Auto-detect canon root if not set
+        if (string.IsNullOrWhiteSpace(_data.CanonRootPath))
+        {
+            var detected = AutoDetectCanonRoot();
+            if (detected != null)
+            {
+                _data.CanonRootPath = detected;
+                Save();
+            }
+        }
+    }
+
+    private static string? AutoDetectCanonRoot()
+    {
+        // Walk up from the executing assembly to find the repo root
+        var candidates = new[]
+        {
+            @"D:\Projects\MindAttic\StreetSamurai",
+            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Projects", "MindAttic", "StreetSamurai"),
+        };
+
+        foreach (var path in candidates)
+        {
+            if (Directory.Exists(Path.Combine(path, "worldbuilding")) &&
+                Directory.Exists(Path.Combine(path, "essences")))
+                return path;
+        }
+
+        // Try walking up from current directory
+        var dir = AppContext.BaseDirectory;
+        for (int i = 0; i < 8; i++)
+        {
+            if (Directory.Exists(Path.Combine(dir, "worldbuilding")) &&
+                Directory.Exists(Path.Combine(dir, "essences")))
+                return dir;
+            var parent = Directory.GetParent(dir);
+            if (parent == null) break;
+            dir = parent.FullName;
+        }
+
+        return null;
     }
 
     public string ApiKey { get => _data.ApiKey; set { _data.ApiKey = value; Save(); } }

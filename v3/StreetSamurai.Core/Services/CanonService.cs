@@ -215,15 +215,14 @@ public class CanonService
 
     public string? ReadWorldFile(string fileName)
     {
-        var path = Path.Combine(_paths.WorldbuildingDir, "..", "world", fileName);
+        var path = Path.Combine(_paths.WorldDir, fileName);
         if (File.Exists(path)) return File.ReadAllText(path);
-        // Also check the _paths.WorldDir if different
         return null;
     }
 
     public List<(string Name, string Content)> ListWorldRuleFiles()
     {
-        var worldDir = Path.Combine(_paths.WorldbuildingDir, "..", "world");
+        var worldDir = _paths.WorldDir;
         if (!Directory.Exists(worldDir)) return [];
         return Directory.GetFiles(worldDir, "*.yaml")
             .Select(f => (Path.GetFileNameWithoutExtension(f), File.ReadAllText(f)))
