@@ -30,6 +30,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Shared/Components/Pages/CanonQueue.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYW5vblF1ZXVlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Shared/Components/Pages/Characters.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaGFyYWN0ZXJzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,8 +42,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3Jwcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Shared/Components/Pages/Districts.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEaXN0cmljdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Shared/Components/Pages/Documents.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEb2N1bWVudHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Shared/Components/Pages/Factions.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGYWN0aW9ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Shared/Components/Pages/GenerateScene.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHZW5lcmF0ZVNjZW5lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Shared/Components/Pages/Home.razor]
@@ -52,6 +68,42 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Shared/Components/Pages/Settings.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTZXR0aW5ncy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Shared/Components/Pages/Stories.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTdG9yaWVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Shared/Components/Pages/StoryEditor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTdG9yeUVkaXRvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Shared/Components/Pages/Technology.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUZWNobm9sb2d5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Shared/Components/Pages/WorldRules.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXb3JsZFJ1bGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Shared/Components/Shared/CanonStatusBadge.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcQ2Fub25TdGF0dXNCYWRnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Shared/Components/Shared/FacetBadge.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcRmFjZXRCYWRnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Shared/Components/Shared/FacetWeightChart.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcRmFjZXRXZWlnaHRDaGFydC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Shared/Components/Shared/LoadingSpinner.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcTG9hZGluZ1NwaW5uZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Shared/Components/Shared/MarkdownPreview.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcTWFya2Rvd25QcmV2aWV3LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Shared/Components/Shared/Placeholder.razor]
