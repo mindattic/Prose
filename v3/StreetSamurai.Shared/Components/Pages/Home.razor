@@ -1,0 +1,109 @@
+@page "/"
+@inject CanonService Canon
+
+<h3 class="text-danger mb-4">Street Samurai — Canon Engine</h3>
+
+<div class="row g-3">
+    <div class="col-md-4">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-body">
+                <h6 class="card-title text-muted">Canon Vault</h6>
+                <p class="display-6">@_docCount</p>
+                <small class="text-muted">worldbuilding documents</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-body">
+                <h6 class="card-title text-muted">Corponations</h6>
+                <p class="display-6">@_corpCount</p>
+                <small class="text-muted">indexed entities</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-body">
+                <h6 class="card-title text-muted">Characters</h6>
+                <p class="display-6">@_charCount</p>
+                <small class="text-muted">active files</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-3 mt-2">
+    <div class="col-md-6">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted">Quick Search</div>
+            <div class="card-body">
+                <div class="input-group">
+                    <input type="text" class="form-control bg-dark text-light border-secondary"
+                           placeholder="Search canon..." @bind="_searchQuery" @bind:event="oninput"
+                           @onkeydown="HandleSearchKey" />
+                    <button class="btn btn-outline-danger" @onclick="DoSearch">Search</button>
+                </div>
+                @if (_searchResults.Any())
+                {
+                    <div class="mt-3">
+                        @foreach (var r in _searchResults.Take(5))
+                        {
+                            <div class="border-bottom border-secondary py-2">
+                                <small class="text-muted">@r.FileName:@r.LineNumber</small>
+                                @if (!string.IsNullOrEmpty(r.Heading))
+                                {
+                                    <small class="text-info"> > @r.Heading</small>
+                                }
+                                <div class="small mt-1" style="white-space: pre-wrap;">@r.Context</div>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted">Recent Documents</div>
+            <div class="card-body">
+                @foreach (var doc in _recentDocs)
+                {
+                    <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                        <a href="documents/@doc.FileName" class="text-light text-decoration-none">@doc.FileName</a>
+                        <small class="text-muted">@doc.LineCount lines</small>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private int _docCount;
+    private int _corpCount;
+    private int _charCount;
+    private string _searchQuery = "";
+    private List<SearchResult> _searchResults = [];
+    private List<CanonDocument> _recentDocs = [];
+
+    protected override void OnInitialized()
+    {
+        var docs = Canon.ListDocuments();
+        _docCount = docs.Count;
+        _corpCount = Canon.ListCorponations().Count;
+        _charCount = Canon.ListCharacters().Count;
+        _recentDocs = docs.OrderByDescending(d => d.LineCount).Take(8).ToList();
+    }
+
+    private void DoSearch()
+    {
+        if (!string.IsNullOrWhiteSpace(_searchQuery))
+            _searchResults = Canon.Search(_searchQuery, 5);
+    }
+
+    private void HandleSearchKey(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter") DoSearch();
+    }
+}

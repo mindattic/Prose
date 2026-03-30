@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "StreetSamurai.Blazor/1.0.0": {
+        "dependencies": {
+          "StreetSamurai.Core": "1.0.0",
+          "StreetSamurai.Shared": "1.0.0"
+        },
+        "runtime": {
+          "StreetSamurai.Blazor.dll": {}
+        }
+      },
+      "StreetSamurai.Core/1.0.0": {
+        "runtime": {
+          "StreetSamurai.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StreetSamurai.Shared/1.0.0": {
+        "dependencies": {
+          "StreetSamurai.Core": "1.0.0"
+        },
+        "runtime": {
+          "StreetSamurai.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StreetSamurai.Blazor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StreetSamurai.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StreetSamurai.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

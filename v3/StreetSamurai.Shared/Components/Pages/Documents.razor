@@ -1,0 +1,71 @@
+@page "/documents"
+@page "/documents/{DocName}"
+@inject CanonService Canon
+
+@if (_docContent != null)
+{
+    <div class="d-flex align-items-center mb-3">
+        <button class="btn btn-sm btn-outline-secondary me-3" @onclick="ClearDoc">Back</button>
+        <h4 class="text-danger mb-0">@_selectedDoc</h4>
+    </div>
+
+    <div class="card bg-dark text-light border-secondary">
+        <div class="card-body" style="max-height: 80vh; overflow-y: auto;">
+            <pre style="white-space: pre-wrap; font-size: 0.85rem; color: #ddd;">@_docContent</pre>
+        </div>
+    </div>
+}
+else
+{
+    <h4 class="text-danger mb-3">Worldbuilding Documents (@_docs.Count)</h4>
+
+    <div class="row g-2">
+        @foreach (var category in _docs.GroupBy(d => d.Category).OrderBy(g => g.Key))
+        {
+            <div class="col-12 mt-3">
+                <h6 class="text-muted text-uppercase">@category.Key</h6>
+            </div>
+            @foreach (var doc in category.OrderBy(d => d.FileName))
+            {
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-dark text-light border-secondary h-100" style="cursor: pointer;"
+                         @onclick="() => OpenDoc(doc.FileName)">
+                        <div class="card-body py-2 px-3">
+                            <div class="d-flex justify-content-between">
+                                <span class="small">@doc.FileName</span>
+                                <span class="text-muted small">@doc.LineCount lines</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+}
+
+@code {
+    [Parameter] public string? DocName { get; set; }
+
+    private List<CanonDocument> _docs = [];
+    private string? _docContent;
+    private string? _selectedDoc;
+
+    protected override void OnInitialized()
+    {
+        _docs = Canon.ListDocuments();
+        if (!string.IsNullOrEmpty(DocName))
+            OpenDoc(DocName);
+    }
+
+    private void OpenDoc(string name)
+    {
+        _docContent = Canon.ReadDocument(name);
+        _selectedDoc = name;
+    }
+
+    private void ClearDoc()
+    {
+        _docContent = null;
+        _selectedDoc = null;
+    }
+}

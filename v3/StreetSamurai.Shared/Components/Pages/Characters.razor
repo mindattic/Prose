@@ -1,0 +1,40 @@
+@page "/characters"
+@inject CanonService Canon
+
+<h4 class="text-danger mb-3">Characters</h4>
+
+<div class="table-responsive">
+    <table class="table table-dark table-hover table-sm">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Affiliation</th>
+                <th>Source</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var c in _characters)
+            {
+                <tr>
+                    <td class="fw-bold">@c.Name</td>
+                    <td class="text-muted small">@c.Status</td>
+                    <td class="text-muted small">@Truncate(c.Affiliation, 40)</td>
+                    <td class="text-muted small">@c.SourceFile</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    private List<Character> _characters = [];
+
+    protected override void OnInitialized()
+    {
+        _characters = Canon.ListCharacters();
+    }
+
+    private static string Truncate(string s, int max) =>
+        s.Length > max ? s[..(max - 3)] + "..." : s;
+}
