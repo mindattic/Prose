@@ -1,0 +1,34 @@
+@page "/settings"
+@inject SettingsService SettingsSvc
+
+<h4 class="text-danger mb-3">Settings</h4>
+
+<div class="card bg-dark text-light border-secondary" style="max-width: 600px;">
+    <div class="card-body">
+        <div class="mb-3">
+            <label class="form-label text-muted">Anthropic API Key</label>
+            <input type="password" class="form-control bg-dark text-light border-secondary"
+                   @bind="SettingsSvc.ApiKey" @bind:event="onchange" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label text-muted">Model</label>
+            <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.Model">
+                <option value="claude-sonnet-4-6">Claude Sonnet 4.6</option>
+                <option value="claude-opus-4-6">Claude Opus 4.6</option>
+                <option value="claude-haiku-4-5-20251001">Claude Haiku 4.5</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label text-muted">Canon Root Path</label>
+            <input type="text" class="form-control bg-dark text-light border-secondary"
+                   placeholder="D:\Projects\MindAttic\StreetSamurai"
+                   @bind="SettingsSvc.CanonRootPath" @bind:event="onchange" />
+            <small class="text-muted">Path to the StreetSamurai repo containing worldbuilding/</small>
+        </div>
+        <div class="mb-3">
+            <label class="form-label text-muted">Max Tokens</label>
+            <input type="number" class="form-control bg-dark text-light border-secondary"
+                   @bind="SettingsSvc.MaxTokens" @bind:event="onchange" />
+        </div>
+    </div>
+</div>

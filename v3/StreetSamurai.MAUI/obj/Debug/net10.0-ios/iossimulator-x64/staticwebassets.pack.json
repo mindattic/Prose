@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ryand\\.nuget\\packages\\microsoft.aspnetcore.components.webview\\10.0.0\\staticwebassets\\blazor.modules.json",
+      "PackagePath": "staticwebassets\\_framework\\blazor.modules.json"
+    },
+    {
+      "Id": "C:\\Users\\ryand\\.nuget\\packages\\microsoft.aspnetcore.components.webview\\10.0.0\\staticwebassets\\blazor.webview.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webview.js"
+    },
+    {
+      "Id": "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.MAUI\\obj\\Debug\\net10.0-ios\\iossimulator-x64\\scopedcss\\bundle\\StreetSamurai.MAUI.styles.css",
+      "PackagePath": "staticwebassets\\StreetSamurai.MAUI.styles.css"
+    },
+    {
+      "Id": "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.MAUI\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.MAUI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.MAUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.MAUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.StreetSamurai.MAUI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.StreetSamurai.MAUI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.build.StreetSamurai.MAUI.props",
+      "PackagePath": "build\\StreetSamurai.MAUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.buildMultiTargeting.StreetSamurai.MAUI.props",
+      "PackagePath": "buildMultiTargeting\\StreetSamurai.MAUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net10.0-ios\\iossimulator-x64\\staticwebassets\\msbuild.buildTransitive.StreetSamurai.MAUI.props",
+      "PackagePath": "buildTransitive\\StreetSamurai.MAUI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

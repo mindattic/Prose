@@ -1,0 +1,56 @@
+@page "/search"
+@inject CanonService Canon
+
+<h4 class="text-danger mb-3">Search Canon</h4>
+
+<div class="input-group mb-4" style="max-width: 600px;">
+    <input type="text" class="form-control bg-dark text-light border-secondary"
+           placeholder="Search across all worldbuilding..." @bind="_query" @bind:event="oninput"
+           @onkeydown="HandleKey" />
+    <button class="btn btn-outline-danger" @onclick="DoSearch">Search</button>
+</div>
+
+@if (_results.Any())
+{
+    <p class="text-muted small">@_results.Count results for "@_query"</p>
+
+    @foreach (var r in _results)
+    {
+        <div class="card bg-dark text-light border-secondary mb-2">
+            <div class="card-body py-2">
+                <div class="d-flex justify-content-between">
+                    <span class="text-info small">@r.FileName:@r.LineNumber</span>
+                    @if (!string.IsNullOrEmpty(r.Heading))
+                    {
+                        <span class="text-muted small">@r.Heading</span>
+                    }
+                </div>
+                <pre class="mb-0 mt-1 small" style="white-space: pre-wrap; color: #ccc;">@r.Context</pre>
+            </div>
+        </div>
+    }
+}
+else if (_searched)
+{
+    <p class="text-muted">No results found.</p>
+}
+
+@code {
+    private string _query = "";
+    private List<SearchResult> _results = [];
+    private bool _searched;
+
+    private void DoSearch()
+    {
+        if (!string.IsNullOrWhiteSpace(_query))
+        {
+            _results = Canon.Search(_query, 20);
+            _searched = true;
+        }
+    }
+
+    private void HandleKey(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter") DoSearch();
+    }
+}
