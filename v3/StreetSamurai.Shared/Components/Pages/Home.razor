@@ -1,7 +1,9 @@
 @page "/"
 @inject CanonService Canon
 @inject WorldGraphService Graph
-@inject StoryService Stories
+@using StreetSamurai.Core.Models
+@using StreetSamurai.Core.Interfaces
+@inject IStoryBlockRepository StoryRepo
 @inject FacetService FacetSvc
 @inject ILlmService Llm
 @inject ITtsService Tts
@@ -72,8 +74,6 @@
 @* ── Quick Actions ──────────────────────────────────── *@
 <div class="d-flex gap-2 mt-3 mb-3">
     <a href="write" class="btn btn-sm btn-danger"><i class="bi bi-pen"></i> Write Me a Story</a>
-    <a href="editor" class="btn btn-sm btn-outline-danger"><i class="bi bi-pencil-square"></i> New Story</a>
-    <a href="generate" class="btn btn-sm btn-outline-danger"><i class="bi bi-lightning"></i> Generate Scene</a>
     <a href="graph" class="btn btn-sm btn-outline-info"><i class="bi bi-diagram-3"></i> World Graph</a>
     <a href="search" class="btn btn-sm btn-outline-secondary"><i class="bi bi-search"></i> Search Canon</a>
 </div>
@@ -92,14 +92,14 @@
                     @foreach (var s in _stories.Take(6))
                     {
                         <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                            <a href="editor/@s.Id" class="text-light text-decoration-none small">@s.Title</a>
-                            <CanonStatusBadge Status="@s.CanonStatus" />
+                            <a href="write/@s.Id" class="text-light text-decoration-none small fst-italic">@s.Title</a>
+                            <span class="badge bg-secondary" style="font-size: 0.6rem;">@s.Status</span>
                         </div>
                     }
                 }
                 else
                 {
-                    <small class="text-muted">No stories yet. <a href="editor" class="text-info">Create one.</a></small>
+                    <small class="text-muted">No stories yet. <a href="write" class="text-info">Write one.</a></small>
                 }
             </div>
         </div>
@@ -175,7 +175,7 @@
     private string _searchQuery = "";
     private List<SearchResult> _searchResults = [];
     private List<CanonDocument> _recentDocs = [];
-    private List<Story> _stories = [];
+    private List<StoryProject> _stories = [];
     private List<(WorldNode node, int count)> _topConnected = [];
 
     protected override async Task OnInitializedAsync()
@@ -191,7 +191,7 @@
         _edgeCount = Graph.EdgeCount;
 
         _facetCount = FacetSvc.LoadAllFacets().Count;
-        _stories = Stories.ListStories();
+        _stories = StoryRepo.ListProjects();
 
         _llmReady = await Llm.IsConfiguredAsync();
         _ttsReady = await Tts.IsConfiguredAsync();

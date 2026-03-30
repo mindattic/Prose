@@ -97,23 +97,6 @@
             </div>
         </div>
 
-        <div class="card bg-dark text-light border-secondary mt-3">
-            <div class="card-header text-muted">Editor</div>
-            <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label text-muted">Font Size</label>
-                    <input type="number" class="form-control bg-dark text-light border-secondary"
-                           min="10" max="24"
-                           @bind="SettingsSvc.EditorFontSize" @bind:event="onchange" />
-                </div>
-                <div class="mb-3">
-                    <label class="form-label text-muted">Auto-Save Interval (ms)</label>
-                    <input type="number" class="form-control bg-dark text-light border-secondary"
-                           min="500" max="10000" step="500"
-                           @bind="SettingsSvc.AutoSaveIntervalMs" @bind:event="onchange" />
-                </div>
-            </div>
-        </div>
 
         @* ── ElevenLabs TTS ─────────────────────────────── *@
         <div class="card bg-dark text-light border-secondary mt-3">

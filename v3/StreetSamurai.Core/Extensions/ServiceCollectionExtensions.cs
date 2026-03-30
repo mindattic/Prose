@@ -46,6 +46,12 @@ public static class ServiceCollectionExtensions
         // Audio file service
         services.AddSingleton<IAudioFileService, AudioFileService>();
 
+        // TTS enhancement — adds ElevenLabs audio tags before synthesis
+        services.AddSingleton<TtsEnhancementService>();
+
+        // Entity extraction — LLM-powered story-to-graph pipeline
+        services.AddSingleton<EntityExtractionService>();
+
         // Scene generation pipeline
         services.AddSingleton<TextAnalysisService>();
         services.AddSingleton<ContextAnalyzerService>();

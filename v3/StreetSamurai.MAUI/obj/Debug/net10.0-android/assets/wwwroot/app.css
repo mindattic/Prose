@@ -1,6 +1,56 @@
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #0d1117;
+    color: #e6edf3;
 }
+
+/* Dark theme overrides */
+.app-container { background-color: #0d1117; min-height: 100vh; }
+.sidebar { background-color: #161b22 !important; border-right: 1px solid #30363d; }
+.sidebar .nav-link:hover { background-color: #21262d; border-radius: 4px; }
+.sidebar .nav-link.active { color: #dc3545 !important; background-color: #21262d; border-radius: 4px; }
+
+/* Fix label visibility — Bootstrap text-muted is invisible on dark backgrounds */
+.form-label { color: #9ca3af !important; font-weight: 500; }
+.form-label.text-muted { color: #9ca3af !important; }
+.form-label.text-danger { color: #dc3545 !important; }
+.text-muted { color: #8b949e !important; }
+.card-header.text-muted { color: #9ca3af !important; font-weight: 600; }
+.nav-header { color: #8b949e !important; }
+small.text-muted { color: #8b949e !important; }
+
+/* Form controls on dark backgrounds */
+.form-control::placeholder { color: #484f58 !important; }
+.form-select { color: #e6edf3 !important; }
+
+/* Story preview styling */
+.story-preview h1, .story-preview h2, .story-preview h3 { color: #dc3545; margin-top: 1.5rem; }
+.story-preview p { margin-bottom: 1rem; }
+.story-preview .facet-tag { padding: 1px 6px; border-radius: 3px; font-size: 0.75rem; }
+.story-preview blockquote { border-left: 3px solid #6c757d; padding-left: 1rem; color: #8b949e; font-style: italic; }
+.story-preview code { color: #e06c75; background: #21262d; padding: 2px 6px; border-radius: 3px; }
+
+/* Analysis panel */
+.analysis-panel { border-color: #0dcaf0 !important; }
+
+/* Table hover */
+.table-dark.table-hover tbody tr:hover { background-color: #21262d; }
+
+/* Custom badge for factions */
+.bg-purple { background-color: #6f42c1 !important; }
+
+/* Graph page */
+.list-group-item.active { background-color: #21262d !important; border-color: #dc3545 !important; }
+
+/* Audio player */
+.audio-player { animation: fadeIn 0.2s ease-in; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Scrollbar dark styling */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0d1117; }
+::-webkit-scrollbar-thumb { background: #30363d; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #484f58; }
 
 a, .btn-link {
     color: #006bb7;

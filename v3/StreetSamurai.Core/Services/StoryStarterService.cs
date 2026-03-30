@@ -403,6 +403,48 @@ public class StoryStarterService
         return polished;
     }
 
+    /// <summary>
+    /// Rewrite a selected passage with an optional direction from the user.
+    /// </summary>
+    public async Task<string> RewriteAsync(
+        string selectedText, string? direction, string? mood, string? location,
+        List<string> characters, CancellationToken ct = default)
+    {
+        var literaryRules = _canonDb.GetLiteraryRulesPrompt();
+        var characterContext = BuildCharacterContext(characters);
+
+        var directionLine = string.IsNullOrWhiteSpace(direction)
+            ? "Polish and refine — tighten prose, sharpen imagery, fix awkward phrasing. Keep the same events and meaning."
+            : direction;
+
+        var moodLine = string.IsNullOrWhiteSpace(mood) ? "" : $"\nMOOD/TONE: {mood}";
+
+        var system = $"""
+            You are a literary editor rewriting cyberpunk fiction set in Meridian City.
+            You rewrite passages according to the author's direction while maintaining
+            consistency with the world, characters, and story.
+
+            LITERARY RULES — THESE ARE NON-NEGOTIABLE:
+            {literaryRules}
+
+            {(characterContext.Length > 0 ? $"CHARACTERS:\n{characterContext}" : "")}
+            """;
+
+        var user = $"""
+            Rewrite the following passage.{moodLine}
+
+            DIRECTION: {directionLine}
+
+            PASSAGE TO REWRITE:
+            {selectedText}
+
+            Return ONLY the rewritten text. No labels, no headers, no commentary.
+            Maintain the same approximate length unless the direction says otherwise.
+            """;
+
+        return await _llm.GenerateAsync(system, user, 0.5, 4096, ct: ct);
+    }
+
     private static List<string> InferTriggers(StoryStarterRequest request)
     {
         var triggers = new List<string>();
