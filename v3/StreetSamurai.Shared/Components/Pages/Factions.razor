@@ -106,7 +106,7 @@ else
     private void Select(Faction f)
     {
         _selectedFaction = f;
-        _selectedYaml = Canon.ReadFactionYaml(Path.GetFileNameWithoutExtension(f.SourceFile));
+        _selectedYaml = Canon.ReadFactionJson(f.Name);
         _nodeId = WorldGraphService.Slugify(f.Name);
         _relationships = Graph.GetAllEdges(_nodeId);
     }

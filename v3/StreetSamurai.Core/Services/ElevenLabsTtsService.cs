@@ -30,7 +30,7 @@ public class ElevenLabsTtsService : ITtsService
 
         var voice = voiceId ?? _settings.ElevenLabsVoiceId;
         if (string.IsNullOrWhiteSpace(voice))
-            voice = "JBFqnCBsd6RMkjVDRZzb"; // Default: Harry (narrative voice)
+            voice = "L0Dsvb3SLTyegXwtm47J"; // Default: Oliver Silk
 
         var url = $"https://api.elevenlabs.io/v1/text-to-speech/{voice}";
 

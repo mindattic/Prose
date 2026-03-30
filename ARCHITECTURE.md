@@ -71,16 +71,16 @@ This is **RAG (Retrieval Augmented Generation)** — the single most important t
 A structured graph database where every named entity is a node and every relationship is an edge:
 
 ```
-[Kael] --worked_for--> [Eastside Vago Kings]
-[Kael] --tested_by--> [NeoCortex Industries]
+[Kyle] --worked_for--> [Eastside Vago Kings]
+[Kyle] --tested_by--> [NeoCortex Industries]
 [NeoCortex] --subsidiary_of--> [Tessera]
 [Tessera] --rival_of--> [Zheng-Dao]
-[Kael] --carries--> [Piezoelectric Katana]
+[Kyle] --carries--> [Piezoelectric Katana]
 [Piezoelectric Katana] --made_from--> [ACNT Composite]
 [ACNT Composite] --manufactured_by--> [NovaChem]
 ```
 
-The graph enforces consistency. If a generated story says Kael works for Ringo, the graph says "Kael has no employment relationship with Ringo" and flags the contradiction.
+The graph enforces consistency. If a generated story says Kyle works for Ringo, the graph says "Kyle has no employment relationship with Ringo" and flags the contradiction.
 
 **Tech:** Neo4j (industry standard graph DB) or NetworkX (Python library, simpler, good enough for this scale). Start with NetworkX, migrate to Neo4j if it gets complex.
 
@@ -137,7 +137,7 @@ scene_brief:
     - "Gary-Hammond is ungoverned zone, no corpo jurisdiction"
     - "Dead-man switch targets life support, not protagonist"
   facet_tensions:
-    - "Kael: WOUND vs IDEAL (the facility memory vs the code)"
+    - "Kyle: WOUND vs IDEAL (the facility memory vs the code)"
     - "Teen: WOUND overwhelming all other facets (desperation)"
 ```
 
@@ -177,7 +177,7 @@ Option B is better because 6 full drafts is expensive (6 LLM calls per scene) an
 **Process:**
 - Extracts all factual claims from the scene (entity names, relationships, locations, technologies, events)
 - Checks each claim against the entity registry and knowledge graph
-- Flags contradictions: "Scene says Kael's blade is titanium. Canon says ACNT composite with piezoelectric layer."
+- Flags contradictions: "Scene says Kyle's blade is titanium. Canon says ACNT composite with piezoelectric layer."
 - Flags inventions: "Scene introduces a character named 'Dex' not in any canon file. New entity or hallucination?"
 - Flags tone violations: "Scene contains a sentence longer than 25 words" (if style rules are enforced)
 

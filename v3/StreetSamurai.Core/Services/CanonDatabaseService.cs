@@ -6,8 +6,7 @@ using StreetSamurai.Core.Models.Canon;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Typed canon database. Reads from canon.json — no YAML parsing, no regex, no guessing.
-/// Auto-rebuilds from source files when they change.
+/// Typed canon database. Reads from canon.json — the single source of truth.
 /// </summary>
 public class CanonDatabaseService
 {
@@ -22,7 +21,7 @@ public class CanonDatabaseService
     }
 
     /// <summary>
-    /// Get the loaded database. Builds/rebuilds if needed.
+    /// Get the loaded database. Loads on first access.
     /// </summary>
     public CanonDatabase Db
     {
@@ -40,13 +39,9 @@ public class CanonDatabaseService
 
     public void EnsureLoaded()
     {
-        var root = _paths.CanonRoot;
         var jsonPath = CanonJsonPath;
-
-        if (CanonConverter.NeedsRebuild(root, jsonPath))
-        {
-            CanonConverter.BuildAndSave(root, jsonPath);
-        }
+        if (!File.Exists(jsonPath))
+            throw new FileNotFoundException($"Canon database not found at {jsonPath}. Ensure canon.json exists in engine_data/.");
 
         var json = File.ReadAllText(jsonPath);
         _db = JsonSerializer.Deserialize<CanonDatabase>(json, new JsonSerializerOptions
@@ -55,9 +50,8 @@ public class CanonDatabaseService
         }) ?? new();
     }
 
-    public void ForceRebuild()
+    public void Reload()
     {
-        CanonConverter.BuildAndSave(_paths.CanonRoot, CanonJsonPath);
         _db = null;
         EnsureLoaded();
     }

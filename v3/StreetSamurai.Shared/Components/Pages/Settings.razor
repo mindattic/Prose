@@ -134,28 +134,43 @@
                     <small class="text-muted">From elevenlabs.io. Enables text-to-speech narration in the editor and scene generator.</small>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label text-muted">Voice ID</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-dark text-light border-secondary"
-                               placeholder="JBFqnCBsd6RMkjVDRZzb"
-                               @bind="SettingsSvc.ElevenLabsVoiceId" @bind:event="onchange" />
-                        @if (_ttsConfigured)
-                        {
-                            <button class="btn btn-outline-info btn-sm" @onclick="LoadVoices" title="Load available voices from ElevenLabs">
-                                <i class="bi bi-arrow-repeat"></i> Voices
-                            </button>
-                        }
-                    </div>
-                    @if (_voices.Any())
+                    <label class="form-label text-muted">Narrator Voice</label>
+                    @if (_loadingVoices)
                     {
-                        <select class="form-select form-select-sm bg-dark text-light border-secondary mt-1"
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <div class="spinner-border spinner-border-sm text-danger"></div>
+                            <small class="text-muted">Loading voices...</small>
+                        </div>
+                    }
+                    else if (_voices.Any())
+                    {
+                        <select class="form-select bg-dark text-light border-secondary"
+                                value="@SettingsSvc.ElevenLabsVoiceId"
                                 @onchange="OnVoiceSelected">
-                            <option value="">-- Select a voice --</option>
                             @foreach (var v in _voices)
                             {
                                 <option value="@v.VoiceId">@v.Name (@v.Category)</option>
                             }
                         </select>
+                        <small class="text-muted">@(_voices.Count) voices available</small>
+                    }
+                    else
+                    {
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-dark text-light border-secondary"
+                                   placeholder="Enter voice ID or add API key to load voices"
+                                   @bind="SettingsSvc.ElevenLabsVoiceId" @bind:event="onchange" />
+                            @if (_ttsConfigured)
+                            {
+                                <button class="btn btn-outline-info btn-sm" @onclick="LoadVoices">
+                                    <i class="bi bi-arrow-repeat"></i>
+                                </button>
+                            }
+                        </div>
+                        @if (!string.IsNullOrEmpty(SettingsSvc.NarratorVoiceName))
+                        {
+                            <small class="text-muted">Current: @SettingsSvc.NarratorVoiceName</small>
+                        }
                     }
                 </div>
                 <div class="mb-3">
@@ -210,6 +225,7 @@
     private LlmProviderStatus? _activeProvider;
     private bool _ttsConfigured;
     private List<TtsVoice> _voices = [];
+    private bool _loadingVoices;
     private bool _testingTts;
     private string? _ttsTestResult;
     private bool _ttsTestSuccess;
@@ -219,18 +235,44 @@
         _providerStatus = await LlmRouter.GetProvidersAsync();
         _activeProvider = _providerStatus.FirstOrDefault(p => p.IsActive);
         _ttsConfigured = await TtsSvc.IsConfiguredAsync();
+
+        if (_ttsConfigured)
+            await LoadVoices();
     }
 
     private async Task LoadVoices()
     {
-        _voices = await TtsSvc.ListVoicesAsync();
+        _loadingVoices = true;
+        StateHasChanged();
+        try
+        {
+            _voices = await TtsSvc.ListVoicesAsync();
+
+            // Auto-select Oliver Silk if no voice is set yet
+            if (string.IsNullOrWhiteSpace(SettingsSvc.ElevenLabsVoiceId) && _voices.Any())
+            {
+                var defaultVoice = _voices.FirstOrDefault(v =>
+                    v.Name.Equals("Oliver Silk", StringComparison.OrdinalIgnoreCase))
+                    ?? _voices.First();
+                SettingsSvc.ElevenLabsVoiceId = defaultVoice.VoiceId;
+                SettingsSvc.NarratorVoiceName = defaultVoice.Name;
+            }
+        }
+        finally
+        {
+            _loadingVoices = false;
+        }
     }
 
     private void OnVoiceSelected(ChangeEventArgs e)
     {
         var voiceId = e.Value?.ToString();
         if (!string.IsNullOrEmpty(voiceId))
+        {
             SettingsSvc.ElevenLabsVoiceId = voiceId;
+            var voice = _voices.FirstOrDefault(v => v.VoiceId == voiceId);
+            SettingsSvc.NarratorVoiceName = voice?.Name ?? "";
+        }
     }
 
     private async Task TestTts()

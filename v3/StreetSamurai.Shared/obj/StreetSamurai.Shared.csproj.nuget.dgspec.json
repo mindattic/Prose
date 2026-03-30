@@ -70,10 +70,6 @@
             "QuikGraph.Serialization": {
               "target": "Package",
               "version": "[2.5.0, )"
-            },
-            "YamlDotNet": {
-              "target": "Package",
-              "version": "[16.3.0, )"
             }
           },
           "imports": [

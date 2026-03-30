@@ -1,7 +1,6 @@
 @page "/character-editor"
 @page "/character-editor/{CharName}"
 @inject CanonService Canon
-@inject YamlService Yaml
 @inject ICanonPathProvider Paths
 @inject NavigationManager Nav
 
@@ -111,7 +110,7 @@
         <div class="card bg-dark text-light border-secondary">
             <div class="card-header text-muted">YAML Preview</div>
             <div class="card-body" style="max-height: 50vh; overflow-y: auto;">
-                <pre style="white-space: pre-wrap; font-size: 0.8rem; color: #ddd;">@BuildYamlPreview()</pre>
+                <pre style="white-space: pre-wrap; font-size: 0.8rem; color: #ddd;">@BuildJsonPreview()</pre>
             </div>
         </div>
     </div>
@@ -196,32 +195,35 @@
         }
     }
 
-    private string BuildYamlPreview() => $"""
-        name: {_name}
-        aliases: [{_aliases}]
-        tier: {_tier}
-        status: {_status}
-        origin: {_origin}
-        age: {_age}
-        occupation: {_occupation}
-        affiliation: {_affiliation}
-        augmentation: {_augmentation}
-        voice_notes: "{_voiceNotes}"
-        facets:
-          wound: {_wound:F2}
-          ideal: {_ideal:F2}
-          id: {_id:F2}
-          shadow: {_shadow:F2}
-          mask: {_mask:F2}
-          ghost: {_ghost:F2}
-        """;
+    private string BuildJsonPreview()
+    {
+        var obj = new
+        {
+            name = _name,
+            aliases = _aliases.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(),
+            tier = _tier,
+            status = _status,
+            origin = _origin,
+            age = _age,
+            occupation = _occupation,
+            affiliation = _affiliation,
+            augmentation = _augmentation,
+            voice_notes = _voiceNotes,
+            facets = new { wound = _wound, ideal = _ideal, id = _id, shadow = _shadow, mask = _mask, ghost = _ghost },
+        };
+        return System.Text.Json.JsonSerializer.Serialize(obj, new System.Text.Json.JsonSerializerOptions
+        {
+            WriteIndented = true,
+            PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.SnakeCaseLower,
+        });
+    }
 
     private void SaveCharacter()
     {
-        var yaml = BuildYamlPreview();
-        var filename = _name.ToLowerInvariant().Replace(" ", "_") + ".yaml";
+        var json = BuildJsonPreview();
+        var filename = _name.ToLowerInvariant().Replace(" ", "_") + ".json";
         var path = Path.Combine(Paths.CharactersDir, filename);
-        File.WriteAllText(path, yaml);
+        File.WriteAllText(path, json);
         _saved = true;
     }
 }

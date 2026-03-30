@@ -133,7 +133,7 @@ else
     private void Select(Character c)
     {
         _selectedChar = c;
-        _selectedYaml = Canon.ReadCharacterYaml(c.Name);
+        _selectedYaml = Canon.ReadCharacterJson(c.Name);
         _nodeId = WorldGraphService.Slugify(c.Name);
         _relationships = Graph.GetAllEdges(_nodeId);
     }

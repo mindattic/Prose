@@ -777,22 +777,13 @@
           }
         }
       },
-      "YamlDotNet/16.3.0": {
-        "runtime": {
-          "lib/net8.0/YamlDotNet.dll": {
-            "assemblyVersion": "16.0.0.0",
-            "fileVersion": "16.3.0.0"
-          }
-        }
-      },
       "StreetSamurai.Core/1.0.0": {
         "dependencies": {
           "Markdig": "1.1.2",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0",
-          "YamlDotNet": "16.3.0"
+          "QuikGraph.Serialization": "2.5.0"
         },
         "runtime": {
           "StreetSamurai.Core.dll": {
@@ -1149,13 +1140,6 @@
       "sha512": "sha512-tirr+2APeantzmGvF8Ms2O+0IeSSR4JCL8h7krq/jbo5P22UtjAAUKBLXSx342b2wPgdi3869v/cLBMp7kfxjg==",
       "path": "quikgraph.serialization/2.5.0",
       "hashPath": "quikgraph.serialization.2.5.0.nupkg.sha512"
-    },
-    "YamlDotNet/16.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-SgMOdxbz8X65z8hraIs6hOEdnkH6hESTAIUa7viEngHOYaH+6q5XJmwr1+yb9vJpNQ19hCQY69xbFsLtXpobQA==",
-      "path": "yamldotnet/16.3.0",
-      "hashPath": "yamldotnet.16.3.0.nupkg.sha512"
     },
     "StreetSamurai.Core/1.0.0": {
       "type": "project",
