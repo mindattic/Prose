@@ -22,7 +22,7 @@
                     <div class="mb-3">
                         <label class="form-label text-muted">Scene Goal</label>
                         <textarea class="form-control bg-dark text-light border-secondary" rows="3"
-                                  placeholder="e.g. Kael confronts the street doc about the neural implant that's been broadcasting to a dead corp's servers..."
+                                  placeholder="e.g. Kyle confronts the street doc about the neural implant that's been broadcasting to a dead corp's servers..."
                                   title="What should happen — the engine generates beats toward this goal"
                                   @bind="_goal"></textarea>
                         <small class="text-muted">Describe the dramatic arc. The engine generates beats toward this goal.</small>
@@ -47,7 +47,7 @@
                     <div class="mb-3 mt-3">
                         <label class="form-label text-muted">Characters</label>
                         <input type="text" class="form-control bg-dark text-light border-secondary"
-                               placeholder="Kael, Sable, Pixel..."
+                               placeholder="Kyle, Sable, Pixel..."
                                title="Comma-separated names — must match character YAML files. Facet weights are blended from their profiles."
                                @bind="_characterInput" />
                         <small class="text-muted">Comma-separated. Their facet weights drive which psychological voice leads each beat.</small>
@@ -165,7 +165,7 @@ else if (_generatedScene != null)
 @code {
     private string _goal = "";
     private string _location = "";
-    private string _characterInput = "Kael";
+    private string _characterInput = "Kyle";
     private string _themesInput = "";
     private int _numBeats = 5;
     private bool _generating;

@@ -9,15 +9,15 @@ namespace StreetSamurai.Core.Services;
 public class WorldGraphService
 {
     private readonly ICanonPathProvider _paths;
-    private readonly YamlService _yaml;
+    private readonly CanonDatabaseService _db;
     private readonly AdjacencyGraph<string, WorldEdge> _graph = new();
     private readonly Dictionary<string, WorldNode> _nodes = new();
     private bool _loaded;
 
-    public WorldGraphService(ICanonPathProvider paths, YamlService yaml)
+    public WorldGraphService(ICanonPathProvider paths, CanonDatabaseService db)
     {
         _paths = paths;
-        _yaml = yaml;
+        _db = db;
     }
 
     public int NodeCount => _nodes.Count;
@@ -214,132 +214,108 @@ public class WorldGraphService
         _graph.Clear();
         _nodes.Clear();
 
-        ScanEssenceFiles();
-        ScanCharacterFiles();
+        BuildFromCanonDatabase();
         InferCorpRelationships();
         Save();
     }
 
-    // ── Graph Builders ──────────────────────────────────────
+    // ── Graph Builders (from canon.json) ────────────────────
 
-    private void ScanEssenceFiles()
+    private void BuildFromCanonDatabase()
     {
-        var essencesDir = _paths.EssencesDir;
-        if (!Directory.Exists(essencesDir)) return;
-
-        foreach (var file in Directory.GetFiles(essencesDir, "*.yaml", SearchOption.AllDirectories))
+        // Characters
+        foreach (var c in _db.Characters)
         {
-            try
+            var id = Slugify(c.Name);
+            var props = new Dictionary<string, string>();
+            if (c.Description.Length > 0) props["description"] = c.Description;
+            if (c.Aliases.Any()) props["aliases"] = string.Join(", ", c.Aliases);
+            if (c.Role.Length > 0) props["role"] = c.Role;
+            if (c.NarrativeFunction.Length > 0) props["narrative_function"] = c.NarrativeFunction;
+            if (c.Psychology.CoreFears.Any()) props["core_fears"] = string.Join("; ", c.Psychology.CoreFears.Take(3));
+            if (c.Psychology.CoreDesires.Any()) props["core_desires"] = string.Join("; ", c.Psychology.CoreDesires.Take(3));
+            if (c.StoryHooks.Any()) props["story_hooks"] = string.Join("; ", c.StoryHooks.Take(3));
+            if (c.Affiliation.Length > 0) props["affiliation"] = c.Affiliation;
+
+            AddNode(new WorldNode { Id = id, Name = c.Name, NodeType = c.Type, Properties = props });
+
+            foreach (var r in c.Relationships)
             {
-                var data = _yaml.LoadDynamic(file);
-                var name = GetString(data, "name") ?? Path.GetFileNameWithoutExtension(file);
-                var type = GetString(data, "type") ?? InferType(file);
-                var id = Slugify(name);
-
-                var props = new Dictionary<string, string>();
-                if (data.TryGetValue("description", out var desc))
-                    props["description"] = desc?.ToString()?.Trim() ?? "";
-                if (data.TryGetValue("aliases", out var aliases) && aliases is List<object> aliasList)
-                    props["aliases"] = string.Join(", ", aliasList);
-                if (data.TryGetValue("role", out var role))
-                    props["role"] = role?.ToString() ?? "";
-                if (data.TryGetValue("motto", out var motto))
-                    props["motto"] = motto?.ToString() ?? "";
-                if (data.TryGetValue("narrative_function", out var nf))
-                    props["narrative_function"] = nf?.ToString()?.Trim() ?? "";
-
-                // Store psychology summary for characters
-                if (data.TryGetValue("psychology", out var psych) && psych is Dictionary<object, object> psychDict)
+                var targetId = Slugify(r.Name);
+                if (!_nodes.ContainsKey(targetId))
+                    AddNode(new WorldNode { Id = targetId, Name = r.Name, NodeType = "unknown" });
+                AddEdge(new WorldEdge
                 {
-                    if (psychDict.TryGetValue("core_fears", out var fears) && fears is List<object> fearList)
-                        props["core_fears"] = string.Join("; ", fearList.Take(3));
-                    if (psychDict.TryGetValue("core_desires", out var desires) && desires is List<object> desireList)
-                        props["core_desires"] = string.Join("; ", desireList.Take(3));
-                }
-
-                // Store story hooks
-                if (data.TryGetValue("story_hooks", out var hooks) && hooks is List<object> hookList)
-                    props["story_hooks"] = string.Join("; ", hookList.Take(3));
-
-                AddNode(new WorldNode
-                {
-                    Id = id,
-                    Name = name,
-                    NodeType = type,
-                    Properties = props,
-                    SourceFile = file,
+                    Source = id, Target = targetId,
+                    RelationType = r.Type, Description = r.Description,
+                    Sentiment = InferSentiment(r.Type, r.Description),
                 });
-
-                // Extract relationships
-                if (data.TryGetValue("relationships", out var rels) && rels is List<object> relList)
-                {
-                    foreach (var rel in relList)
-                    {
-                        if (rel is not Dictionary<object, object> relDict) continue;
-                        var targetName = relDict.GetValueOrDefault("name")?.ToString();
-                        if (targetName == null) continue;
-
-                        var targetId = Slugify(targetName);
-                        var relType = relDict.GetValueOrDefault("type")?.ToString() ?? "associated";
-                        var relDesc = relDict.GetValueOrDefault("description")?.ToString() ?? "";
-
-                        if (!_nodes.ContainsKey(targetId))
-                            AddNode(new WorldNode { Id = targetId, Name = targetName, NodeType = "unknown" });
-
-                        AddEdge(new WorldEdge
-                        {
-                            Source = id,
-                            Target = targetId,
-                            RelationType = relType,
-                            Description = relDesc,
-                            Sentiment = InferSentiment(relType, relDesc),
-                        });
-                    }
-                }
-
-                // Territory/location edges for factions
-                if (data.TryGetValue("territory", out var territory) && territory is string terrStr && !string.IsNullOrEmpty(terrStr))
-                {
-                    var terrId = Slugify(terrStr);
-                    if (_nodes.ContainsKey(terrId))
-                        AddEdge(new WorldEdge { Source = id, Target = terrId, RelationType = "operates_in" });
-                }
-
-                // District connections (adjacent_to)
-                if (data.TryGetValue("connections", out var conn) && conn is Dictionary<object, object> connDict)
-                {
-                    if (connDict.TryGetValue("adjacent_to", out var adj) && adj is List<object> adjList)
-                    {
-                        foreach (var a in adjList)
-                        {
-                            var adjStr = a.ToString() ?? "";
-                            // Parse "Name (description)" format
-                            var parenIdx = adjStr.IndexOf('(');
-                            var adjName = parenIdx > 0 ? adjStr[..parenIdx].Trim() : adjStr.Trim();
-                            var adjDesc = parenIdx > 0 ? adjStr[(parenIdx + 1)..].TrimEnd(')').Trim() : "";
-                            var adjId = Slugify(adjName);
-
-                            if (!_nodes.ContainsKey(adjId))
-                                AddNode(new WorldNode { Id = adjId, Name = adjName, NodeType = "place" });
-
-                            AddEdge(new WorldEdge
-                            {
-                                Source = id,
-                                Target = adjId,
-                                RelationType = "adjacent_to",
-                                Description = adjDesc,
-                            });
-                        }
-                    }
-                }
-
-                // Frequented_by connections
-                if (data.TryGetValue("frequented_by", out var freq) && freq is List<object> freqList)
-                {
-                    props["frequented_by"] = string.Join("; ", freqList.Take(5));
-                }
             }
-            catch { /* skip malformed files */ }
+
+            if (c.Affiliation.Length > 0)
+            {
+                var affId = Slugify(c.Affiliation);
+                AddEdge(new WorldEdge { Source = id, Target = affId, RelationType = "affiliated_with",
+                    Description = $"{c.Name} is affiliated with {c.Affiliation}" });
+            }
+        }
+
+        // Districts
+        foreach (var d in _db.Districts)
+        {
+            var id = Slugify(d.Name);
+            var props = new Dictionary<string, string>();
+            if (d.Description.Length > 0) props["description"] = d.Description;
+            if (d.Aliases.Any()) props["aliases"] = string.Join(", ", d.Aliases);
+            if (d.FrequentedBy.Any()) props["frequented_by"] = string.Join("; ", d.FrequentedBy.Take(5));
+
+            AddNode(new WorldNode { Id = id, Name = d.Name, NodeType = d.Type, Properties = props });
+
+            foreach (var adj in d.Connections.AdjacentTo)
+            {
+                var parenIdx = adj.IndexOf('(');
+                var adjName = parenIdx > 0 ? adj[..parenIdx].Trim() : adj.Trim();
+                var adjDesc = parenIdx > 0 ? adj[(parenIdx + 1)..].TrimEnd(')').Trim() : "";
+                var adjId = Slugify(adjName);
+
+                if (!_nodes.ContainsKey(adjId))
+                    AddNode(new WorldNode { Id = adjId, Name = adjName, NodeType = "place" });
+                AddEdge(new WorldEdge { Source = id, Target = adjId, RelationType = "adjacent_to", Description = adjDesc });
+            }
+        }
+
+        // Factions
+        foreach (var f in _db.Factions)
+        {
+            var id = Slugify(f.Name);
+            var props = new Dictionary<string, string>();
+            if (f.Description.Length > 0) props["description"] = f.Description;
+            if (f.Aliases.Any()) props["aliases"] = string.Join(", ", f.Aliases);
+            if (f.Motto.Length > 0) props["motto"] = f.Motto;
+            if (f.NarrativeFunction.Length > 0) props["narrative_function"] = f.NarrativeFunction;
+            if (f.StoryHooks.Any()) props["story_hooks"] = string.Join("; ", f.StoryHooks.Take(3));
+
+            AddNode(new WorldNode { Id = id, Name = f.Name, NodeType = f.Type, Properties = props });
+
+            foreach (var r in f.Relationships)
+            {
+                var targetId = Slugify(r.Name);
+                if (!_nodes.ContainsKey(targetId))
+                    AddNode(new WorldNode { Id = targetId, Name = r.Name, NodeType = "unknown" });
+                AddEdge(new WorldEdge
+                {
+                    Source = id, Target = targetId,
+                    RelationType = r.Type, Description = r.Description,
+                    Sentiment = InferSentiment(r.Type, r.Description),
+                });
+            }
+
+            if (f.Territory.Length > 0)
+            {
+                var terrId = Slugify(f.Territory);
+                if (_nodes.ContainsKey(terrId))
+                    AddEdge(new WorldEdge { Source = id, Target = terrId, RelationType = "operates_in" });
+            }
         }
     }
 
@@ -355,61 +331,8 @@ public class WorldGraphService
         return "mixed";
     }
 
-    private void ScanCharacterFiles()
-    {
-        foreach (var dir in new[] { _paths.CharactersDir, Path.Combine(_paths.EssencesDir, "characters") })
-        {
-            if (!Directory.Exists(dir)) continue;
-            foreach (var file in Directory.GetFiles(dir, "*.yaml", SearchOption.AllDirectories))
-            {
-                try
-                {
-                    var data = _yaml.LoadDynamic(file);
-                    var name = GetString(data, "name") ?? Path.GetFileNameWithoutExtension(file);
-                    var id = Slugify(name);
-
-                    if (_nodes.ContainsKey(id)) continue; // already scanned
-
-                    var props = new Dictionary<string, string>();
-                    if (data.TryGetValue("description", out var desc))
-                        props["description"] = desc?.ToString()?.Trim() ?? "";
-                    if (data.TryGetValue("affiliation", out var aff))
-                        props["affiliation"] = aff?.ToString() ?? "";
-
-                    AddNode(new WorldNode
-                    {
-                        Id = id,
-                        Name = name,
-                        NodeType = "character",
-                        Properties = props,
-                        SourceFile = file,
-                    });
-
-                    // Affiliation edge
-                    if (props.TryGetValue("affiliation", out var affiliation) && !string.IsNullOrEmpty(affiliation))
-                    {
-                        var affId = Slugify(affiliation);
-                        AddEdge(new WorldEdge
-                        {
-                            Source = id,
-                            Target = affId,
-                            RelationType = "affiliated_with",
-                            Description = $"{name} is affiliated with {affiliation}",
-                        });
-                    }
-                }
-                catch { /* skip malformed files */ }
-            }
-        }
-    }
-
     private void InferCorpRelationships()
     {
-        // Factions that operate in districts get edges
-        var factions = GetNodesByType("faction");
-        var districts = GetNodesByType("place");
-
-        // Characters get edges to their factions
         foreach (var character in GetNodesByType("character"))
         {
             if (character.Properties.TryGetValue("affiliation", out var aff) && !string.IsNullOrEmpty(aff))
@@ -429,17 +352,6 @@ public class WorldGraphService
     }
 
     // ── Helpers ──────────────────────────────────────────────
-
-    private static string? GetString(Dictionary<string, object> dict, string key) =>
-        dict.TryGetValue(key, out var val) ? val?.ToString()?.Trim().Trim('"') : null;
-
-    private static string InferType(string filePath)
-    {
-        if (filePath.Contains("characters", StringComparison.OrdinalIgnoreCase)) return "character";
-        if (filePath.Contains("factions", StringComparison.OrdinalIgnoreCase)) return "faction";
-        if (filePath.Contains("districts", StringComparison.OrdinalIgnoreCase)) return "place";
-        return "entity";
-    }
 
     public static string Slugify(string name) =>
         Regex.Replace(name.ToLowerInvariant().Trim(), @"[^a-z0-9]+", "_").Trim('_');

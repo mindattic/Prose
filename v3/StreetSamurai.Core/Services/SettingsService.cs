@@ -40,8 +40,8 @@ public class SettingsService
 
         foreach (var path in candidates)
         {
-            if (Directory.Exists(Path.Combine(path, "worldbuilding")) &&
-                Directory.Exists(Path.Combine(path, "essences")))
+            if (Directory.Exists(Path.Combine(path, "engine_data")) &&
+                File.Exists(Path.Combine(path, "engine_data", "canon.json")))
                 return path;
         }
 
@@ -67,6 +67,7 @@ public class SettingsService
     public int MaxTokens { get => _data.MaxTokens; set { _data.MaxTokens = value; Save(); } }
     public string ElevenLabsApiKey { get => _data.ElevenLabsApiKey; set { _data.ElevenLabsApiKey = value; Save(); } }
     public string ElevenLabsVoiceId { get => _data.ElevenLabsVoiceId; set { _data.ElevenLabsVoiceId = value; Save(); } }
+    public string NarratorVoiceName { get => _data.NarratorVoiceName; set { _data.NarratorVoiceName = value; Save(); } }
     public string TtsModel { get => _data.TtsModel; set { _data.TtsModel = value; Save(); } }
     public double TtsStability { get => _data.TtsStability; set { _data.TtsStability = value; Save(); } }
     public double TtsSimilarityBoost { get => _data.TtsSimilarityBoost; set { _data.TtsSimilarityBoost = value; Save(); } }
@@ -101,6 +102,7 @@ public class SettingsService
         public int MaxTokens { get; set; } = 4096;
         public string ElevenLabsApiKey { get; set; } = "";
         public string ElevenLabsVoiceId { get; set; } = "";
+        public string NarratorVoiceName { get; set; } = "Oliver Silk";
         public string TtsModel { get; set; } = "eleven_multilingual_v2";
         public double TtsStability { get; set; } = 0.5;
         public double TtsSimilarityBoost { get; set; } = 0.75;

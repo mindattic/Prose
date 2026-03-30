@@ -90,7 +90,7 @@ else
     private void Select(District d)
     {
         _selectedDistrict = d;
-        _selectedYaml = Canon.ReadDistrictYaml(Path.GetFileNameWithoutExtension(d.SourceFile));
+        _selectedYaml = Canon.ReadDistrictJson(d.Name);
         _nodeId = WorldGraphService.Slugify(d.Name);
         _relationships = Graph.GetAllEdges(_nodeId);
     }

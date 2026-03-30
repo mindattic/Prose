@@ -1,4 +1,6 @@
+@using StreetSamurai.Core.Interfaces
 @inject IJSRuntime JS
+@inject IAudioFileService AudioFiles
 
 @if (Visible)
 {
@@ -25,6 +27,15 @@
                 <audio id="@_audioId" src="@_audioUrl" @onended="OnEnded" preload="auto"></audio>
                 <small class="text-muted">@(_playing ? "Playing..." : "Ready")</small>
             </div>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="SaveAudio" disabled="@(_saving)">
+                <i class="bi @(_saving ? "bi-hourglass-split" : "bi-download")"></i>
+            </button>
+            @if (_savedPath != null)
+            {
+                <button class="btn btn-sm btn-outline-secondary" @onclick="OpenInExplorer" title="View in Explorer">
+                    <i class="bi bi-folder2-open"></i>
+                </button>
+            }
             <button class="btn btn-sm btn-outline-secondary" @onclick="Dismiss">
                 <i class="bi bi-x"></i>
             </button>
@@ -39,8 +50,11 @@
 
     private string _audioId = $"audio-{Guid.NewGuid():N}";
     private string? _audioUrl;
+    private byte[]? _audioData;
     private bool _loading;
     private bool _playing;
+    private bool _saving;
+    private string? _savedPath;
     private string? _errorMessage;
 
     public async Task LoadAudioAsync(byte[] audioData)
@@ -49,6 +63,8 @@
         _playing = false;
         _errorMessage = null;
         _audioUrl = null;
+        _audioData = audioData;
+        _savedPath = null;
         StateHasChanged();
 
         try
@@ -114,11 +130,41 @@
         StateHasChanged();
     }
 
+    private async Task SaveAudio()
+    {
+        if (_audioData == null || _saving) return;
+        _saving = true;
+        StateHasChanged();
+
+        try
+        {
+            _savedPath = await AudioFiles.SaveAudioAsync(_audioData);
+        }
+        catch (Exception ex)
+        {
+            _errorMessage = $"Save failed: {ex.Message}";
+        }
+        finally
+        {
+            _saving = false;
+            StateHasChanged();
+        }
+    }
+
+    private void OpenInExplorer()
+    {
+        if (_savedPath != null)
+            AudioFiles.RevealInExplorer(_savedPath);
+    }
+
     private async Task Dismiss()
     {
         _audioUrl = null;
+        _audioData = null;
         _playing = false;
         _loading = false;
+        _saving = false;
+        _savedPath = null;
         _errorMessage = null;
         Visible = false;
         await OnDismissed.InvokeAsync();

@@ -11,29 +11,28 @@ public class StoryStarterService
     private readonly CanonDatabaseService _canonDb;
     private readonly FacetService _facets;
     private readonly ICanonPathProvider _paths;
-    private readonly YamlService _yaml;
 
     // Seed premises for zero-input generation — drawn from the world's actual tensions
     private static readonly string[] SeedPremises =
     [
-        "A routine contract goes wrong when the target turns out to be someone Kael owes a debt to.",
+        "A routine contract goes wrong when the target turns out to be someone Kyle owes a debt to.",
         "Pixel's salvaged scanner eye starts showing data from a corporate network that was supposed to be dead.",
         "Sable offers a job that pays triple the normal rate. The catch: the client is Axiom Industries.",
         "Someone is leaving Ghost Ronin symbols in the Shelf — carved into walls, painted on doors. Real or provocation?",
-        "A rogue AI in the Circuit starts asking about Kael by name.",
+        "A rogue AI in the Circuit starts asking about Kyle by name.",
         "Mrs. Chen's shop is targeted for demolition. The corporate order has Sable's cipher on it.",
         "A child from the Grey Stacks shows up with military-grade augments and no memory of how they got them.",
         "The Collective intercepts a data shipment that contains employee records from a facility in the Mindanao Economic Zone.",
-        "Tanaka's sword — the one Kael carries — is identified by a Corporate Wars veteran who says it was stolen from a dead ronin.",
+        "Tanaka's sword — the one Kyle carries — is identified by a Corporate Wars veteran who says it was stolen from a dead ronin.",
         "A blackout hits the Shelf. When power returns, three people are missing and a door that was always locked is open.",
         "Sable cooks dinner for two. The second plate is a negotiation tactic.",
         "Pixel builds something that works too well. Corporate scouts arrive within hours.",
-        "An old augment in Kael's body — one he forgot about — activates and starts transmitting.",
+        "An old augment in Kyle's body — one he forgot about — activates and starts transmitting.",
     ];
 
     public StoryStarterService(
         ILlmService llm, WorldGraphService graph, CanonService canon,
-        CanonDatabaseService canonDb, FacetService facets, ICanonPathProvider paths, YamlService yaml)
+        CanonDatabaseService canonDb, FacetService facets, ICanonPathProvider paths)
     {
         _llm = llm;
         _graph = graph;
@@ -41,7 +40,6 @@ public class StoryStarterService
         _canonDb = canonDb;
         _facets = facets;
         _paths = paths;
-        _yaml = yaml;
     }
 
     /// <summary>
@@ -182,84 +180,22 @@ public class StoryStarterService
         return string.Join("\n", lines);
     }
 
-    private string LoadLiteraryRules()
-    {
-        var lines = new List<string>();
-
-        // Load literary_rules.yaml
-        var rulesPath = Path.Combine(_paths.WorldDir, "literary_rules.yaml");
-        if (File.Exists(rulesPath))
-        {
-            var content = File.ReadAllText(rulesPath);
-            lines.Add(content);
-        }
-
-        // Load motifs.yaml
-        var motifsPath = Path.Combine(_paths.WorldDir, "motifs.yaml");
-        if (File.Exists(motifsPath))
-        {
-            lines.Add("\nMOTIFS:");
-            lines.Add(File.ReadAllText(motifsPath));
-        }
-
-        if (!lines.Any())
-        {
-            // Fallback hardcoded rules
-            lines.Add("""
-                - Sentence max: 25 words
-                - Every paragraph: action, sensory detail, or a lie
-                - No generic noir, no slogans, no samurai cliches, no anime dialogue
-                - No clean moral victories
-                - Characters reveal themselves through action, not introspection
-                """);
-        }
-
-        return string.Join("\n", lines);
-    }
-
-    private string LoadStoryBible()
-    {
-        var path = Path.Combine(_paths.WorldDir, "story_bible.yaml");
-        if (!File.Exists(path)) return "";
-        return File.ReadAllText(path);
-    }
-
     private string BuildLocationContext(string? location)
     {
         if (string.IsNullOrEmpty(location)) return "Location not specified — choose one that fits.";
 
-        // First get graph context (relationships)
+        // Get rich context from typed JSON database
+        var districtContext = _canonDb.GetDistrictContext(location);
+
+        // Supplement with graph relationships
         var id = WorldGraphService.Slugify(location);
         var graphContext = _graph.GetContextForNode(id);
 
-        // Then get the full YAML for rich sensory detail
-        var dir = Path.Combine(_paths.EssencesDir, "world", "districts");
-        if (Directory.Exists(dir))
+        if (districtContext.Length > 0)
         {
-            var match = Directory.GetFiles(dir, "*.yaml")
-                .FirstOrDefault(f => Path.GetFileNameWithoutExtension(f)
-                    .Contains(location.Replace(" ", "_").ToLowerInvariant(), StringComparison.OrdinalIgnoreCase));
-            if (match != null)
-            {
-                var yaml = File.ReadAllText(match);
-                var desc = ExtractBlock(yaml, "description");
-                var sights = ExtractList(yaml, "sights");
-                var sounds = ExtractList(yaml, "sounds");
-                var smells = ExtractList(yaml, "smells");
-                var feel = ExtractBlock(yaml, "feel");
-                var dangers = ExtractList(yaml, "dangers");
-
-                var parts = new List<string> { $"LOCATION: {location}" };
-                if (desc.Length > 0) parts.Add(desc);
-                if (sights.Any()) parts.Add("SIGHTS: " + string.Join("; ", sights.Take(4)));
-                if (sounds.Any()) parts.Add("SOUNDS: " + string.Join("; ", sounds.Take(4)));
-                if (smells.Any()) parts.Add("SMELLS: " + string.Join("; ", smells.Take(3)));
-                if (feel.Length > 0) parts.Add("FEEL: " + feel);
-                if (dangers.Any()) parts.Add("DANGERS: " + string.Join("; ", dangers.Take(3)));
-                if (graphContext.Length > 0) parts.Add("\nRELATIONSHIPS:\n" + graphContext);
-
-                return string.Join("\n", parts);
-            }
+            if (graphContext.Length > 0)
+                districtContext += $"\n\nRELATIONSHIPS:\n{graphContext}";
+            return districtContext;
         }
 
         return graphContext.Length > 0 ? graphContext : $"Location: {location}";
@@ -353,6 +289,120 @@ public class StoryStarterService
         };
     }
 
+    /// <summary>
+    /// Continue a story from existing blocks + a user prompt.
+    /// </summary>
+    public async Task<string> ContinueAsync(
+        List<string> existingParagraphs, string prompt, string? mood, string? location,
+        List<string> characters, CancellationToken ct = default)
+    {
+        _graph.EnsureLoaded();
+
+        var literaryRules = _canonDb.GetLiteraryRulesPrompt();
+        var storyBible = JsonStoryBible();
+        var locationContext = location != null ? _canonDb.GetDistrictContext(location) : "";
+        var characterContext = BuildCharacterContext(characters);
+
+        var storySoFar = string.Join("\n\n", existingParagraphs);
+
+        var blended = _canonDb.GetBlendedWeights(characters);
+        var weights = new FacetState
+        {
+            Wound = blended.Wound, Ideal = blended.Ideal, Id = blended.Id,
+            Shadow = blended.Shadow, Mask = blended.Mask, Ghost = blended.Ghost,
+        };
+        var seedTriggers = InferTriggers(new StoryStarterRequest { Premise = prompt, Mood = mood });
+        var (lead, _) = _facets.SelectFacets(weights, seedTriggers, []);
+
+        var system = $"""
+            You are a literary fiction author continuing a cyberpunk story
+            set in Meridian City.
+
+            Your voice is {lead.Label} — {lead.VoiceTone}.
+            {lead.SystemPrompt}
+
+            STORY BIBLE:
+            {storyBible}
+
+            LITERARY RULES — THESE ARE NON-NEGOTIABLE:
+            {literaryRules}
+
+            {(locationContext.Length > 0 ? $"LOCATION:\n{locationContext}" : "")}
+
+            {(characterContext.Length > 0 ? $"CHARACTERS:\n{characterContext}" : "")}
+            """;
+
+        var moodLine = string.IsNullOrWhiteSpace(mood) ? "" : $"\nMOOD/TONE: {mood}";
+
+        var user = $"""
+            THE STORY SO FAR:
+            {storySoFar}
+
+            CONTINUE THE STORY.{moodLine}
+            Direction: {prompt}
+
+            Write 2-4 paragraphs continuing from where the story left off.
+            Maintain voice, tension, and momentum. Leave threads hanging.
+            Write ONLY the story text. No titles, no headers, no metadata.
+            """;
+
+        return await _llm.GenerateAsync(system, user, lead.Temperature, 2048, lead.Model, ct);
+    }
+
+    /// <summary>
+    /// Polish/clean up unlocked paragraphs while preserving locked ones.
+    /// </summary>
+    public async Task<List<string>> PolishAsync(
+        List<(string text, bool locked)> blocks, string? mood, string? location,
+        List<string> characters, CancellationToken ct = default)
+    {
+        var literaryRules = _canonDb.GetLiteraryRulesPrompt();
+
+        // Build the text with markers so the LLM knows what to touch
+        var sb = new System.Text.StringBuilder();
+        for (int i = 0; i < blocks.Count; i++)
+        {
+            var (text, locked) = blocks[i];
+            if (locked)
+                sb.AppendLine($"[LOCKED PARAGRAPH {i + 1} — DO NOT MODIFY]");
+            else
+                sb.AppendLine($"[PARAGRAPH {i + 1} — POLISH THIS]");
+            sb.AppendLine(text);
+            sb.AppendLine();
+        }
+
+        var system = $"""
+            You are a literary editor polishing cyberpunk fiction set in Meridian City.
+            You refine prose — tighten sentences, sharpen imagery, fix awkward phrasing,
+            remove cliches — without changing the story, characters, or events.
+
+            LITERARY RULES — THESE ARE NON-NEGOTIABLE:
+            {literaryRules}
+            """;
+
+        var user = $"""
+            Polish the following story paragraphs. Paragraphs marked LOCKED must be returned
+            EXACTLY as they are — do not change a single word. Paragraphs marked POLISH should
+            be refined for clarity, voice, and literary quality.
+
+            Return ONLY the paragraphs separated by blank lines. Same number of paragraphs,
+            same order. No labels, no headers, no commentary.
+
+            {sb}
+            """;
+
+        var result = await _llm.GenerateAsync(system, user, 0.4, 4096, ct: ct);
+
+        // Split back into paragraphs
+        var polished = result
+            .Split(["\n\n", "\r\n\r\n"], StringSplitOptions.RemoveEmptyEntries)
+            .Select(p => p.Trim())
+            .Where(p => p.Length > 0)
+            .ToList();
+
+        return polished;
+    }
+
     private static List<string> InferTriggers(StoryStarterRequest request)
     {
         var triggers = new List<string>();
@@ -375,30 +425,6 @@ public class StoryStarterService
         return triggers;
     }
 
-    // YAML extraction helpers (work on raw text, not parsed dictionaries)
-    private static string ExtractBlock(string yaml, string field)
-    {
-        var m = System.Text.RegularExpressions.Regex.Match(yaml,
-            $@"^  {System.Text.RegularExpressions.Regex.Escape(field)}:\s*\|?\s*\n((?:\s{{4,}}.+\n?)+)",
-            System.Text.RegularExpressions.RegexOptions.Multiline);
-        if (!m.Success) return "";
-        return string.Join("\n", m.Groups[1].Value.Split('\n')
-            .Select(l => l.TrimStart()).Where(l => l.Length > 0));
-    }
-
-    private static List<string> ExtractList(string yaml, string field)
-    {
-        var m = System.Text.RegularExpressions.Regex.Match(yaml,
-            $@"^  {System.Text.RegularExpressions.Regex.Escape(field)}:\s*\n((?:\s+- .+\n?)+)",
-            System.Text.RegularExpressions.RegexOptions.Multiline);
-        if (!m.Success) return [];
-        return m.Groups[1].Value.Split('\n')
-            .Select(l => l.Trim().TrimStart('-').Trim().Trim('"'))
-            .Where(l => l.Length > 0).ToList();
-    }
-
-    private static string Truncate(string s, int max) =>
-        s.Length > max ? s[..(max - 3)] + "..." : s;
 }
 
 public record StoryStarterRequest

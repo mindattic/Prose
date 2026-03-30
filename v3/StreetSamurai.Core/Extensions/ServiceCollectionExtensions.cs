@@ -12,20 +12,20 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<SettingsService>();
         services.AddSingleton<ISecurePreferences, FileSecurePreferences>();
         services.AddSingleton<ICanonPathProvider, FileSystemCanonPathProvider>();
-        services.AddSingleton<YamlService>();
-        services.AddSingleton<CanonService>();
         services.AddSingleton<CanonDatabaseService>();
+        services.AddSingleton<CanonService>();
         services.AddSingleton<MarkdownService>();
         services.AddSingleton<StoryService>();
+        services.AddSingleton<IStoryBlockRepository, JsonStoryBlockRepository>();
         services.AddSingleton<FacetService>();
         services.AddSingleton<CanonQueueService>();
 
-        // Graph builds from YAML on first access
+        // Graph builds from canon.json on first access
         services.AddSingleton<WorldGraphService>(sp =>
         {
             var graph = new WorldGraphService(
                 sp.GetRequiredService<ICanonPathProvider>(),
-                sp.GetRequiredService<YamlService>());
+                sp.GetRequiredService<CanonDatabaseService>());
             graph.EnsureLoaded();
             return graph;
         });
@@ -42,6 +42,9 @@ public static class ServiceCollectionExtensions
         // TTS service
         services.AddHttpClient<ElevenLabsTtsService>();
         services.AddSingleton<ITtsService>(sp => sp.GetRequiredService<ElevenLabsTtsService>());
+
+        // Audio file service
+        services.AddSingleton<IAudioFileService, AudioFileService>();
 
         // Scene generation pipeline
         services.AddSingleton<TextAnalysisService>();

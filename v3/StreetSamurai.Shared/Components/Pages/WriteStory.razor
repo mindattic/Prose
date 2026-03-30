@@ -1,164 +1,323 @@
 @page "/write"
+@page "/write/{ProjectId}"
+@using StreetSamurai.Core.Models
+@using StreetSamurai.Core.Interfaces
 @inject StoryStarterService Starter
 @inject CanonService Canon
-@inject FacetService FacetSvc
-@inject StoryService StorySvc
+@inject IStoryBlockRepository Repo
 @inject NavigationManager Nav
 @inject ElevenLabsTtsService TtsSvc
 
 <h4 class="text-danger mb-1">Write Me a Story</h4>
-<p class="text-muted mb-3">Give the engine a premise and it writes an opening using the full canon — world graph, facet psychology, literary rules. Then you continue, or hand it off.</p>
+<p class="text-muted mb-3">Every paragraph is a block. Lock what you like. Polish the rest. Narrate the whole thing.</p>
 
-@if (_opening == null && !_generating)
-{
-    @* ── Premise Input ─────────────────────────────────── *@
-    <div class="row g-3">
-        <div class="col-md-8">
-            <div class="card bg-dark text-light border-secondary">
-                <div class="card-body">
-                    <div class="mb-3">
-                        <label class="form-label text-danger">What's the story about?</label>
-                        <textarea class="form-control bg-dark text-light border-secondary" rows="3"
-                                  placeholder="A street doc discovers her patient's neural implant is broadcasting to a dead corponation's servers..."
-                                  @bind="_premise"
-                                  style="font-family: Georgia, serif; font-size: 15px; line-height: 1.6;"></textarea>
-                        <small class="text-muted mt-1 d-block">One sentence or a whole paragraph — give it whatever you've got. The engine does the rest.</small>
-                    </div>
-
-                    <div class="row g-2">
-                        <div class="col-md-4">
-                            <label class="form-label text-muted small">Mood (optional)</label>
-                            <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="_mood">
-                                <option value="">-- Let the engine decide --</option>
-                                <option value="desperate and claustrophobic">Desperate</option>
-                                <option value="slow burn dread">Slow burn dread</option>
-                                <option value="electric and kinetic">Electric</option>
-                                <option value="melancholic and beautiful">Melancholic</option>
-                                <option value="paranoid and fractured">Paranoid</option>
-                                <option value="tender amid violence">Tender amid violence</option>
-                                <option value="dark humor and irony">Dark humor</option>
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-                            <label class="form-label text-muted small">Location (optional)</label>
-                            <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="_location">
-                                <option value="">-- Anywhere --</option>
-                                @foreach (var d in _districts)
-                                {
-                                    <option value="@d.Name">@d.Name</option>
-                                }
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-                            <label class="form-label text-muted small">Characters (optional)</label>
-                            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
-                                   placeholder="Kael, Sable..."
-                                   @bind="_characters" />
-                        </div>
-                    </div>
-
-                    <div class="d-flex gap-2 mt-3">
-                        <button class="btn btn-danger" @onclick="Generate"
-                                disabled="@string.IsNullOrWhiteSpace(_premise)"
-                                title="Generate an opening from your premise using the full canon engine">
-                            <i class="bi bi-pen"></i> Write It
-                        </button>
-                        <button class="btn btn-outline-danger" @onclick="SurpriseMe"
-                                title="Pick random characters, location, and premise from the canon — zero input needed">
-                            <i class="bi bi-shuffle"></i> Surprise Me
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card bg-dark text-light border-secondary">
-                <div class="card-header text-muted">How it works</div>
-                <div class="card-body small text-muted">
-                    <p>The engine will:</p>
-                    <ol>
-                        <li>Pull context from the <strong>world graph</strong> — locations, relationships, corporations</li>
-                        <li>Select a <strong>lead facet</strong> based on your premise — wound, ideal, shadow, mask, id, or ghost</li>
-                        <li>Apply the <strong>literary rules</strong> — no cliches, no slogans, sentences under 25 words</li>
-                        <li>Write a 3-5 paragraph opening that <strong>ends on unresolved tension</strong></li>
-                        <li>Generate a title that reads like graffiti on a wall</li>
-                    </ol>
-                    <p class="mb-0">Then you continue. Or another AI does. Or nobody does and it just <em>exists</em>.</p>
-                </div>
-            </div>
-        </div>
+@* ── Title + Prefix ────────────────────────────────── *@
+<div class="d-flex align-items-center gap-2 mb-3">
+    <div class="input-group" style="max-width: 160px;">
+        <span class="input-group-text bg-dark text-muted border-secondary" style="font-size: 0.75rem;">PREFIX</span>
+        <input type="text" class="form-control form-control-sm bg-dark text-warning border-secondary fw-bold text-uppercase"
+               style="max-width: 80px; font-family: monospace;"
+               maxlength="6"
+               value="@_project.Prefix"
+               @onchange="OnPrefixChanged" />
     </div>
-}
-else if (_generating)
+    <input type="text" class="form-control form-control-lg bg-dark text-danger border-0 fw-bold fst-italic"
+           style="font-family: Georgia, serif; font-size: 1.5rem;"
+           placeholder="Untitled"
+           @bind="_project.Title"
+           @bind:after="AutoSave" />
+    @if (_project.Blocks.Count > 0)
+    {
+        <span class="badge bg-secondary">@_project.Blocks.Count blocks</span>
+        <span class="badge bg-success">@_project.Blocks.Count(b => b.Locked) locked</span>
+    }
+    @if (_prefixError != null)
+    {
+        <span class="badge bg-danger">@_prefixError</span>
+    }
+    @if (_saved)
+    {
+        <span class="badge bg-dark text-muted" style="font-size: 0.65rem;">saved</span>
+    }
+</div>
+
+@* ── Load Existing ─────────────────────────────────── *@
+@if (_showProjectList)
 {
-    @* ── Generation Progress ────────────────────────────── *@
-    <div class="card bg-dark text-light border-secondary">
-        <div class="card-body text-center py-5">
-            <div class="spinner-border text-danger mb-3" style="width: 3rem; height: 3rem;" role="status"></div>
-            <p class="text-muted">The engine is writing...</p>
-            <p class="small text-muted fst-italic">@_statusMessage</p>
+    <div class="card bg-dark border-secondary mb-3">
+        <div class="card-header text-muted d-flex justify-content-between">
+            <span>Your Stories</span>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="() => _showProjectList = false">
+                <i class="bi bi-x"></i>
+            </button>
         </div>
-    </div>
-}
-else if (_opening != null)
-{
-    @* ── The Opening ───────────────────────────────────── *@
-    <div class="d-flex align-items-center gap-2 mb-3">
-        <h3 class="text-danger mb-0 fst-italic">@_opening.Title</h3>
-        <div class="d-flex gap-1 ms-3">
-            <FacetBadge Name="@_opening.LeadFacet" />
-            @foreach (var f in _opening.SupportingFacets)
+        <div class="card-body p-0">
+            @if (_projects.Count == 0)
             {
-                <small class="text-muted">+@f</small>
+                <p class="text-muted p-3 mb-0">No stories yet.</p>
+            }
+            else
+            {
+                <div class="list-group list-group-flush">
+                    @foreach (var p in _projects)
+                    {
+                        <button class="list-group-item list-group-item-action bg-dark text-light border-secondary d-flex justify-content-between"
+                                @onclick="() => LoadProject(p.Id)">
+                            <div>
+                                <code class="text-warning me-2">@p.Prefix</code>
+                                <span class="fst-italic">@p.Title</span>
+                            </div>
+                            <div class="text-muted small">
+                                @p.Blocks.Count blocks &middot; @p.Modified.ToString("MMM dd HH:mm")
+                            </div>
+                        </button>
+                    }
+                </div>
             }
         </div>
     </div>
+}
 
+@* ── Story Blocks ──────────────────────────────────── *@
+@if (_project.Blocks.Count > 0)
+{
+    <div class="mb-3">
+        @foreach (var block in _project.Blocks.OrderBy(b => b.Sequence))
+        {
+            <div class="card bg-dark border-secondary mb-2 @(block.Locked ? "border-success" : "")"
+                 style="border-left: 3px solid @(block.Locked ? "#198754" : "#6c757d") !important;">
+                <div class="card-body py-2 px-3">
+                    <div class="d-flex align-items-start gap-2">
+                        <div class="flex-grow-1">
+                            <div class="d-flex align-items-center gap-2 mb-1">
+                                <code class="text-warning" style="font-size: 0.7rem;">@block.Id</code>
+                                @if (block.Locked)
+                                {
+                                    <span class="badge bg-success" style="font-size: 0.65rem;">LOCKED</span>
+                                }
+                            </div>
+                            @if (_editingBlockId == block.Id)
+                            {
+                                <textarea class="form-control bg-dark text-light border-secondary"
+                                          rows="4"
+                                          style="font-family: Georgia, serif; font-size: 15px; line-height: 1.8;"
+                                          @bind="_editText"></textarea>
+                                <div class="d-flex gap-1 mt-1">
+                                    <button class="btn btn-sm btn-outline-success" @onclick="() => SaveEdit(block)">
+                                        <i class="bi bi-check"></i> Save
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit">
+                                        <i class="bi bi-x"></i> Cancel
+                                    </button>
+                                </div>
+                            }
+                            else
+                            {
+                                <div style="font-family: Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.8; color: #ddd; cursor: pointer;"
+                                     @onclick="() => StartEdit(block)"
+                                     title="Click to edit">
+                                    @block.Text
+                                </div>
+                            }
+                        </div>
+                        <div class="d-flex flex-column gap-1" style="min-width: 30px;">
+                            <button class="btn btn-sm @(block.Locked ? "btn-success" : "btn-outline-secondary")"
+                                    @onclick="() => ToggleLock(block)"
+                                    title="@(block.Locked ? "Unlock — allow polish/regeneration" : "Lock — protect from changes")">
+                                <i class="bi @(block.Locked ? "bi-lock-fill" : "bi-unlock")"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-danger"
+                                    @onclick="() => DeleteBlock(block)"
+                                    title="Delete this block">
+                                <i class="bi bi-trash3"></i>
+                            </button>
+                            @if (block != _project.Blocks.OrderBy(b => b.Sequence).First())
+                            {
+                                <button class="btn btn-sm btn-outline-secondary"
+                                        @onclick="() => MoveUp(block)"
+                                        title="Move up">
+                                    <i class="bi bi-arrow-up"></i>
+                                </button>
+                            }
+                            @if (block != _project.Blocks.OrderBy(b => b.Sequence).Last())
+                            {
+                                <button class="btn btn-sm btn-outline-secondary"
+                                        @onclick="() => MoveDown(block)"
+                                        title="Move down">
+                                    <i class="bi bi-arrow-down"></i>
+                                </button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@* ── Generating Spinner ────────────────────────────── *@
+@if (_generating)
+{
     <div class="card bg-dark text-light border-secondary mb-3">
-        <div class="card-body" style="padding: 2rem 3rem;">
-            <div style="font-family: Georgia, 'Times New Roman', serif; font-size: 16px; line-height: 1.9; color: #ddd; white-space: pre-wrap;">@_opening.Text</div>
+        <div class="card-body text-center py-4">
+            <div class="spinner-border text-danger mb-2" style="width: 2.5rem; height: 2.5rem;" role="status"></div>
+            <p class="text-muted mb-0">@_statusMessage</p>
         </div>
     </div>
+}
 
-    <div class="d-flex gap-2 flex-wrap">
-        <button class="btn btn-outline-success" @onclick="ContinueInEditor">
-            <i class="bi bi-pencil-square"></i> Continue Writing
-        </button>
-        @if (_ttsAvailable)
+@* ── Prompt Input (Always Visible) ─────────────────── *@
+<div class="card bg-dark text-light border-secondary mb-3">
+    <div class="card-body">
+        <div class="mb-2">
+            <textarea class="form-control bg-dark text-light border-secondary"
+                      rows="@(_pasteMode ? 8 : 3)"
+                      placeholder="@(_pasteMode
+                          ? "Paste your text here — each paragraph (separated by blank lines) becomes its own block..."
+                          : _project.Blocks.Count == 0
+                              ? "A premise for the engine, or paste in existing text..."
+                              : "What happens next? Give the engine a direction — or just say 'continue'...")"
+                      @bind="_prompt"
+                      @onkeydown="HandleKeyDown"
+                      style="font-family: Georgia, serif; font-size: 15px; line-height: 1.6;"></textarea>
+        </div>
+
+        @* ── Options (collapsible) ── *@
+        <div class="mb-2">
+            <a href="javascript:void(0)" class="text-muted small text-decoration-none" @onclick="() => _showOptions = !_showOptions">
+                <i class="bi @(_showOptions ? "bi-chevron-up" : "bi-chevron-down")"></i> Options
+            </a>
+        </div>
+        @if (_showOptions)
         {
-            <button class="btn btn-outline-danger" @onclick="Narrate" disabled="@_narrating">
-                @if (_narrating) { <span class="spinner-border spinner-border-sm"></span> }
-                else { <i class="bi bi-volume-up"></i> }
-                Narrate
-            </button>
+            <div class="row g-2 mb-2">
+                <div class="col-md-4">
+                    <label class="form-label text-muted small">Mood</label>
+                    <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="_project.Mood">
+                        <option value="">-- Engine decides --</option>
+                        <option value="desperate and claustrophobic">Desperate</option>
+                        <option value="slow burn dread">Slow burn dread</option>
+                        <option value="electric and kinetic">Electric</option>
+                        <option value="melancholic and beautiful">Melancholic</option>
+                        <option value="paranoid and fractured">Paranoid</option>
+                        <option value="tender amid violence">Tender amid violence</option>
+                        <option value="dark humor and irony">Dark humor</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label text-muted small">Location</label>
+                    <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="_project.Location">
+                        <option value="">-- Anywhere --</option>
+                        @foreach (var d in _districts)
+                        {
+                            <option value="@d.Name">@d.Name</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label text-muted small">Characters</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                           placeholder="Kyle, Sable..."
+                           @bind="_charactersInput" />
+                </div>
+            </div>
         }
-        <button class="btn btn-outline-info" @onclick="SaveAndNew">
-            <i class="bi bi-save"></i> Save & Write Another
-        </button>
-        <button class="btn btn-outline-secondary" @onclick="StartOver">
-            <i class="bi bi-arrow-counterclockwise"></i> Discard & Start Over
-        </button>
+
+        @* ── Action Buttons ── *@
+        <div class="d-flex gap-2 flex-wrap">
+            @if (_pasteMode)
+            {
+                <button class="btn btn-success" @onclick="ImportText"
+                        disabled="@string.IsNullOrWhiteSpace(_prompt)">
+                    <i class="bi bi-box-arrow-in-down"></i> Import as Blocks
+                </button>
+                <button class="btn btn-outline-secondary" @onclick="() => _pasteMode = false">
+                    Cancel
+                </button>
+            }
+            else
+            {
+                <button class="btn btn-danger" @onclick="Generate"
+                        disabled="@(string.IsNullOrWhiteSpace(_prompt) || _generating)">
+                    <i class="bi bi-pen"></i>
+                    @(_project.Blocks.Count == 0 ? "Write It" : "Continue")
+                </button>
+                <button class="btn btn-outline-secondary" @onclick="() => _pasteMode = true"
+                        title="Paste in existing text — each paragraph becomes a block">
+                    <i class="bi bi-clipboard-plus"></i> Paste Text
+                </button>
+                @if (_project.Blocks.Count == 0)
+                {
+                    <button class="btn btn-outline-danger" @onclick="SurpriseMe" disabled="@_generating">
+                        <i class="bi bi-shuffle"></i> Surprise Me
+                    </button>
+                }
+            }
+            @if (_project.Blocks.Count > 0 && _project.Blocks.Any(b => !b.Locked))
+            {
+                <button class="btn btn-outline-warning" @onclick="Polish" disabled="@_generating"
+                        title="Send unlocked blocks through the engine for cleanup">
+                    <i class="bi bi-stars"></i> Polish Unlocked
+                </button>
+            }
+            @if (_project.Blocks.Count > 0 && _ttsAvailable)
+            {
+                <button class="btn btn-outline-danger" @onclick="Narrate" disabled="@(_generating || _narrating)">
+                    @if (_narrating) { <span class="spinner-border spinner-border-sm"></span> }
+                    else { <i class="bi bi-volume-up"></i> }
+                    Narrate All
+                </button>
+            }
+            @if (_project.Blocks.Count > 0)
+            {
+                <button class="btn btn-outline-secondary" @onclick="LockAll">
+                    <i class="bi bi-lock-fill"></i> Lock All
+                </button>
+            }
+            <button class="btn btn-outline-secondary" @onclick="() => _showProjectList = !_showProjectList">
+                <i class="bi bi-folder2-open"></i> Stories
+            </button>
+            @if (_project.Blocks.Count > 0)
+            {
+                <button class="btn btn-outline-secondary" @onclick="NewStory">
+                    <i class="bi bi-plus-lg"></i> New
+                </button>
+            }
+        </div>
     </div>
+</div>
 
-    <AudioPlayer @ref="_audioPlayer" Visible="_showAudioPlayer" OnDismissed="() => _showAudioPlayer = false" CssClass="mt-3" />
+@* ── Audio Player ──────────────────────────────────── *@
+<AudioPlayer @ref="_audioPlayer" Visible="_showAudioPlayer" OnDismissed="() => _showAudioPlayer = false" CssClass="mb-3" />
 
-    @if (_error != null)
-    {
-        <div class="alert alert-warning mt-3">@_error</div>
-    }
+@if (_error != null)
+{
+    <div class="alert alert-warning">@_error</div>
 }
 
 @code {
-    private string _premise = "";
-    private string _mood = "";
-    private string _location = "";
-    private string _characters = "";
+    [Parameter] public string? ProjectId { get; set; }
+
+    // ── State ──
+    private StoryProject _project = new();
+    private string _prompt = "";
+    private string _charactersInput = "";
+    private bool _showOptions;
+    private bool _showProjectList;
+    private bool _pasteMode;
     private bool _generating;
     private string _statusMessage = "";
-    private GeneratedOpening? _opening;
     private string? _error;
+    private string? _prefixError;
+    private bool _saved;
     private List<District> _districts = [];
+    private List<StoryProject> _projects = [];
+
+    // Edit state
+    private string? _editingBlockId;
+    private string _editText = "";
+
+    // Audio
     private bool _ttsAvailable;
     private bool _narrating;
     private bool _showAudioPlayer;
@@ -168,41 +327,106 @@ else if (_opening != null)
     {
         _districts = Canon.ListDistricts();
         _ttsAvailable = await TtsSvc.IsConfiguredAsync();
+        _projects = Repo.ListProjects();
+
+        if (!string.IsNullOrEmpty(ProjectId))
+        {
+            var loaded = Repo.LoadProject(ProjectId);
+            if (loaded != null)
+            {
+                _project = loaded;
+                _charactersInput = string.Join(", ", _project.Characters);
+            }
+        }
     }
+
+    // ── Prefix ──
+
+    private void OnPrefixChanged(ChangeEventArgs e)
+    {
+        var raw = e.Value?.ToString() ?? "";
+        var newPrefix = StoryProject.SanitizePrefix(raw);
+        _prefixError = null;
+
+        if (string.IsNullOrEmpty(newPrefix))
+        {
+            _prefixError = "Prefix required";
+            return;
+        }
+
+        if (newPrefix == _project.Prefix) return;
+
+        if (Repo.PrefixExists(newPrefix, _project.Id))
+        {
+            _prefixError = $"{newPrefix} already in use";
+            return;
+        }
+
+        // If already saved, rename via repo (handles file rename)
+        if (Repo.LoadProject(_project.Id) != null)
+        {
+            _project = Repo.RenamePrefix(_project.Id, newPrefix);
+        }
+        else
+        {
+            _project.RenamePrefix(newPrefix);
+        }
+
+        _saved = false;
+        RefreshProjectList();
+    }
+
+    // ── Generation ──
 
     private async Task Generate()
     {
+        if (string.IsNullOrWhiteSpace(_prompt)) return;
         _generating = true;
-        _opening = null;
         _error = null;
-        _statusMessage = "Pulling world context from the graph...";
+        SyncCharacters();
         StateHasChanged();
 
         try
         {
-            var chars = _characters.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
-
-            await Task.Delay(100);
-            _statusMessage = "Loading character psychology, fears, desires, speech patterns...";
-            StateHasChanged();
-
-            var request = new StoryStarterRequest
+            if (_project.Blocks.Count == 0)
             {
-                Premise = _premise,
-                Mood = string.IsNullOrEmpty(_mood) ? null : _mood,
-                Location = string.IsNullOrEmpty(_location) ? null : _location,
-                Characters = chars,
-            };
+                _statusMessage = "Pulling world context and selecting facets...";
+                StateHasChanged();
 
-            await Task.Delay(100);
-            _statusMessage = "Selecting lead facet from behavioral baselines...";
-            StateHasChanged();
+                var request = new StoryStarterRequest
+                {
+                    Premise = _prompt,
+                    Mood = string.IsNullOrEmpty(_project.Mood) ? null : _project.Mood,
+                    Location = string.IsNullOrEmpty(_project.Location) ? null : _project.Location,
+                    Characters = _project.Characters,
+                };
 
-            await Task.Delay(100);
-            _statusMessage = "Writing the opening — every word must bleed...";
-            StateHasChanged();
+                _statusMessage = "Writing — every word must bleed...";
+                StateHasChanged();
 
-            _opening = await Starter.GenerateOpeningAsync(request);
+                var opening = await Starter.GenerateOpeningAsync(request);
+                if (_project.Title is "Untitled" or "")
+                    _project.Title = opening.Title;
+
+                _project.AddBlocksFromText(opening.Text);
+            }
+            else
+            {
+                _statusMessage = "Continuing the story...";
+                StateHasChanged();
+
+                var existingText = _project.Blocks.OrderBy(b => b.Sequence).Select(b => b.Text).ToList();
+                var text = await Starter.ContinueAsync(
+                    existingText, _prompt,
+                    string.IsNullOrEmpty(_project.Mood) ? null : _project.Mood,
+                    string.IsNullOrEmpty(_project.Location) ? null : _project.Location,
+                    _project.Characters);
+
+                _project.AddBlocksFromText(text);
+            }
+
+            _prompt = "";
+            AutoSave();
         }
         catch (Exception ex)
         {
@@ -217,26 +441,21 @@ else if (_opening != null)
     private async Task SurpriseMe()
     {
         _generating = true;
-        _opening = null;
         _error = null;
         _statusMessage = "Rolling dice against the canon...";
         StateHasChanged();
 
         try
         {
-            await Task.Delay(100);
-            _statusMessage = "Picking characters, location, and a seed premise...";
-            StateHasChanged();
-
-            await Task.Delay(100);
-            _statusMessage = "Building world context and selecting facets...";
-            StateHasChanged();
-
-            await Task.Delay(100);
             _statusMessage = "Writing — the engine has the wheel now...";
             StateHasChanged();
 
-            _opening = await Starter.GenerateRandomAsync();
+            var opening = await Starter.GenerateRandomAsync();
+            _project.Title = opening.Title;
+            _project.Blocks.Clear();
+            _project.AddBlocksFromText(opening.Text);
+            _prompt = "";
+            AutoSave();
         }
         catch (Exception ex)
         {
@@ -248,57 +467,186 @@ else if (_opening != null)
         }
     }
 
-    private void ContinueInEditor()
+    private void ImportText()
     {
-        if (_opening == null) return;
-        var story = new Story
-        {
-            Title = _opening.Title,
-            CanonStatus = "draft",
-            Location = _opening.Location,
-            Characters = _opening.Characters,
-            MarkdownContent = _opening.Text,
-        };
-        StorySvc.SaveStory(story);
-        Nav.NavigateTo($"/editor/{story.Id}");
+        if (string.IsNullOrWhiteSpace(_prompt)) return;
+        _project.AddBlocksFromText(_prompt);
+        _prompt = "";
+        _pasteMode = false;
+        AutoSave();
     }
 
-    private async Task SaveAndNew()
+    private async Task Polish()
     {
-        if (_opening == null) return;
-        var story = new Story
-        {
-            Title = _opening.Title,
-            CanonStatus = "draft",
-            Location = _opening.Location,
-            Characters = _opening.Characters,
-            MarkdownContent = _opening.Text,
-        };
-        StorySvc.SaveStory(story);
-        _opening = null;
-        _premise = "";
-        _mood = "";
-        _location = "";
-        _characters = "";
-        await Task.CompletedTask;
-    }
-
-    private void StartOver()
-    {
-        _opening = null;
+        if (!_project.Blocks.Any(b => !b.Locked)) return;
+        _generating = true;
         _error = null;
+        _statusMessage = "Polishing unlocked blocks...";
+        SyncCharacters();
+        StateHasChanged();
+
+        try
+        {
+            var ordered = _project.Blocks.OrderBy(b => b.Sequence).ToList();
+            var input = ordered.Select(b => (b.Text, b.Locked)).ToList();
+
+            var polished = await Starter.PolishAsync(
+                input,
+                string.IsNullOrEmpty(_project.Mood) ? null : _project.Mood,
+                string.IsNullOrEmpty(_project.Location) ? null : _project.Location,
+                _project.Characters);
+
+            for (int i = 0; i < Math.Min(polished.Count, ordered.Count); i++)
+            {
+                if (!ordered[i].Locked)
+                {
+                    ordered[i].Text = polished[i];
+                    ordered[i].Modified = DateTime.UtcNow;
+                }
+            }
+
+            AutoSave();
+        }
+        catch (Exception ex)
+        {
+            _error = ex.Message;
+        }
+        finally
+        {
+            _generating = false;
+        }
     }
+
+    // ── Block Actions ──
+
+    private void ToggleLock(StoryBlock block)
+    {
+        block.Locked = !block.Locked;
+        block.Modified = DateTime.UtcNow;
+        AutoSave();
+    }
+
+    private void DeleteBlock(StoryBlock block)
+    {
+        _project.Blocks.Remove(block);
+        _project.Modified = DateTime.UtcNow;
+        AutoSave();
+    }
+
+    private void MoveUp(StoryBlock block)
+    {
+        var ordered = _project.Blocks.OrderBy(b => b.Sequence).ToList();
+        var idx = ordered.IndexOf(block);
+        if (idx <= 0) return;
+
+        // Swap sequences
+        (ordered[idx].Sequence, ordered[idx - 1].Sequence) = (ordered[idx - 1].Sequence, ordered[idx].Sequence);
+        // Update IDs to match new sequences
+        ordered[idx].Id = $"{_project.Prefix}_{ordered[idx].Sequence:D5}";
+        ordered[idx - 1].Id = $"{_project.Prefix}_{ordered[idx - 1].Sequence:D5}";
+        AutoSave();
+    }
+
+    private void MoveDown(StoryBlock block)
+    {
+        var ordered = _project.Blocks.OrderBy(b => b.Sequence).ToList();
+        var idx = ordered.IndexOf(block);
+        if (idx < 0 || idx >= ordered.Count - 1) return;
+
+        (ordered[idx].Sequence, ordered[idx + 1].Sequence) = (ordered[idx + 1].Sequence, ordered[idx].Sequence);
+        ordered[idx].Id = $"{_project.Prefix}_{ordered[idx].Sequence:D5}";
+        ordered[idx + 1].Id = $"{_project.Prefix}_{ordered[idx + 1].Sequence:D5}";
+        AutoSave();
+    }
+
+    private void LockAll()
+    {
+        foreach (var b in _project.Blocks)
+            b.Locked = true;
+        AutoSave();
+    }
+
+    // ── Inline Edit ──
+
+    private void StartEdit(StoryBlock block)
+    {
+        _editingBlockId = block.Id;
+        _editText = block.Text;
+    }
+
+    private void SaveEdit(StoryBlock block)
+    {
+        block.Text = _editText;
+        block.Modified = DateTime.UtcNow;
+        _editingBlockId = null;
+        AutoSave();
+    }
+
+    private void CancelEdit() => _editingBlockId = null;
+
+    // ── Project Management ──
+
+    private void LoadProject(string id)
+    {
+        var loaded = Repo.LoadProject(id);
+        if (loaded == null) return;
+
+        _project = loaded;
+        _charactersInput = string.Join(", ", _project.Characters);
+        _prompt = "";
+        _error = null;
+        _prefixError = null;
+        _editingBlockId = null;
+        _showProjectList = false;
+        Nav.NavigateTo($"/write/{id}", replace: true);
+    }
+
+    private void NewStory()
+    {
+        _project = new StoryProject();
+        _prompt = "";
+        _charactersInput = "";
+        _error = null;
+        _prefixError = null;
+        _editingBlockId = null;
+        _saved = false;
+        Nav.NavigateTo("/write", replace: true);
+    }
+
+    // ── Persistence ──
+
+    private void AutoSave()
+    {
+        SyncCharacters();
+        Repo.SaveProject(_project);
+        _saved = true;
+        RefreshProjectList();
+    }
+
+    private void SyncCharacters()
+    {
+        _project.Characters = _charactersInput
+            .Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries)
+            .ToList();
+    }
+
+    private void RefreshProjectList()
+    {
+        _projects = Repo.ListProjects();
+    }
+
+    // ── Audio ──
 
     private async Task Narrate()
     {
-        if (_opening == null || _narrating) return;
+        if (!_project.Blocks.Any() || _narrating) return;
         _narrating = true;
         _showAudioPlayer = true;
         _audioPlayer?.SetLoading(true);
 
         try
         {
-            var audio = await TtsSvc.SynthesizeAsync(_opening.Text);
+            var audio = await TtsSvc.SynthesizeAsync(_project.FullText);
             if (_audioPlayer != null)
                 await _audioPlayer.LoadAudioAsync(audio);
         }
@@ -310,5 +658,13 @@ else if (_opening != null)
         {
             _narrating = false;
         }
+    }
+
+    // ── Keyboard ──
+
+    private async Task HandleKeyDown(KeyboardEventArgs e)
+    {
+        if (e is { Key: "Enter", CtrlKey: true })
+            await Generate();
     }
 }

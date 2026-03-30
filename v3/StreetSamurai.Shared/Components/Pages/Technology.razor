@@ -2,12 +2,12 @@
 @inject CanonService Canon
 
 <h4 class="text-danger mb-1">Technology</h4>
-<p class="text-muted mb-3">Neural interfaces, augmentation tiers, and the tech that reshapes what it means to be human. Loaded from canon YAML.</p>
+<p class="text-muted mb-3">Neural interfaces, augmentation tiers, and the tech that reshapes what it means to be human. Loaded from canon.json.</p>
 
 @if (_content != null)
 {
     <div class="card bg-dark text-light border-secondary">
-        <div class="card-header text-muted">essences/world/technology.yaml</div>
+        <div class="card-header text-muted">canon.json / technology</div>
         <div class="card-body" style="max-height: 80vh; overflow-y: auto;">
             <pre style="white-space: pre-wrap; font-size: 0.85rem; color: #ddd;">@_content</pre>
         </div>

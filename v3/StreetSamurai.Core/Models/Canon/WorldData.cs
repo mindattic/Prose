@@ -59,7 +59,7 @@ public record MotifAppearanceData
 }
 
 /// <summary>
-/// Character profile (Kael's core identity).
+/// Character profile (Kyle's core identity).
 /// </summary>
 public record CharacterProfileData
 {
