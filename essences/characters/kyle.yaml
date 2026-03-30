@@ -1,0 +1,351 @@
+# Character Essence — Kyle
+# The Street Samurai. The Protagonist.
+
+name: "Kyle"
+aliases:
+  - "The Samurai"        # street reputation
+  - "NDC-4471"           # NeoCortex Industries test subject designation
+  - "Kyle Vasik"         # birth name, pre-facility
+  - "Ghost 7"            # RingoGuard incident file designation
+
+tier: 1  # Street Chrome — but carrying experimental hardware nobody else has
+
+status: "active"
+
+# ─── Core Identity ───────────────────────────────────────────────
+
+origin: >
+  Born in the Grind layer of the Chicago-Milwaukee corridor. Parents were
+  climate refugees from the Gulf Coast Displacement Zone — former
+  Houston-Galveston metro. Father was Tier 2 Corp Basic under a Kessler-Dyne
+  indenture, killed in an industrial accident when Kyle was nine. Mother
+  couldn't maintain the family's corpo housing without the employment contract.
+  They fell. Grind to Undertow in six months. Mother excluded (Tier 3) within
+  a year — missed debt payments cascaded. She disappeared into the ungoverned
+  zones when Kyle was eleven. He never found out if she was taken by a CII
+  field station or simply couldn't survive.
+
+  Kyle lived in the ungoverned corridors between Gary and Hammond from age
+  eleven to sixteen. Scavenging. Running packages for the Eastside Vago Kings.
+  Learning the architecture of the excluded economy — barter, dead drops,
+  analog currency, the gray market.
+
+  At sixteen, a Community Integration Initiative field station offered him
+  food, medical screening, and "integration housing." He was diverted as
+  NDC-4471 — Neural Development Candidate — and transported to a NeoCortex
+  Industries subsurface facility beneath a legitimate Helix BioSystems
+  hospital in the former Kenosha industrial district.
+
+age: 27
+
+augmentation: >
+  Experimental. Kyle carries hardware that was never meant to leave the
+  facility. NeoCortex Program Atlas, Subprogram A-7: high-density electrode
+  array (32,768 electrodes, 256 threads) — roughly 8x the density of
+  standard Tier 3 corpo implants. The array was designed to test upper limits
+  of neural bandwidth before deployment in Tier 4-5 commercial products.
+
+  The implant gives Kyle cognitive processing speed comparable to Tier 3-4
+  augmented, reaction time in the top 0.1% of recorded human performance,
+  and fragmentary access to sensory data streams (he can sometimes "hear"
+  nearby neural handshake protocols, feel the electromagnetic signature of
+  surveillance systems, sense the hum of other implants in proximity).
+
+  The catch: the hardware was never calibrated for long-term stability. It
+  runs on firmware that was experimental when it was installed and has never
+  been updated. Kyle experiences periodic neural static — moments of sensory
+  distortion, memory bleed (fragments of other test subjects' experiences
+  that were stored in shared firmware buffers), and micro-seizures that last
+  2-5 seconds. The micro-seizures are getting more frequent. The hardware is
+  degrading. No corpo surgeon will touch it because it doesn't match any
+  known commercial architecture. Black clinic surgeons won't touch it because
+  they don't understand it. Kyle maintains it himself with salvaged tools
+  and stolen pharmaceutical stabilizers, the way you'd maintain a weapon
+  that's also a time bomb.
+
+occupation: >
+  Freelance enforcement. Retrieval. Problem-solving for people who can't go
+  to corponation security and can't afford to go to what's left of municipal
+  law. Kyle works the space between — the gap in jurisdiction where the
+  excluded, the indebted, and the desperate need someone who can move through
+  both corpo territory and ungoverned zones without belonging to either.
+
+  He carries a katana. Carbon-nanotube composite blade with a piezoelectric
+  disruption layer — it shorts neural implants on contact. In a world of
+  drone swarms and neural weapons, the blade works in EMP dead zones, Faraday
+  environments, and signal-dark corridors where electronic weapons are useless.
+  It also works on augmented opponents whose reaction-time advantage disappears
+  when their implants go dark mid-swing.
+
+  The katana is not nostalgia. It's the only weapon that works everywhere
+  Kyle needs to go.
+
+affiliation: "Independent — formerly Eastside Vago Kings (juvenile), formerly NDC-4471 (captive)"
+
+# ─── Base Facet Weights (Resting State) ──────────────────────────
+
+facets:
+  wound: 0.75   # high — facility survivor, orphaned, excluded, carrying degrading hardware
+  ideal: 0.65   # significant — holds a code forged in the facility: protect those who can't protect themselves
+  id: 0.40      # moderate — remembers Kyle Vasik, the boy from the Grind, but that boy is fading
+  shadow: 0.60  # significant — suppresses what was done to him and what he's capable of doing to others
+  mask: 0.50    # moderate — performs competence and detachment, but the performance has cracks
+  ghost: 0.55   # significant — the experimental hardware makes the question real: are his thoughts his own?
+
+# ─── Cascade Overrides ───────────────────────────────────────────
+
+cascade_overrides:
+  - from: "wound"
+    to: "ideal"
+    modifier: +0.3  # amplification — Kyle's trauma STRENGTHENS his code rather than eroding it
+    reason: >
+      The facility taught him what happens to people with no one to protect
+      them. His code was born in that room. WOUND feeds IDEAL instead of
+      drowning it. This is his defining characteristic.
+
+  - from: "ghost"
+    to: "id"
+    modifier: -0.2  # resistance — Kyle fights the existential dissolution harder than most
+    reason: >
+      He clings to the memory of Kyle Vasik, the boy before the facility,
+      as an anchor against the hardware's cognitive drift. When GHOST spikes,
+      he reaches for ID deliberately. It costs him, but he does it.
+
+  - from: "shadow"
+    to: "mask"
+    modifier: -0.2  # resistance — Kyle's mask is thinner than it should be
+    reason: >
+      He's bad at hiding. The suppressed violence, the facility memories,
+      the rage — they leak through. People who meet Kyle sense something
+      wrong even when he's being professional. His MASK doesn't fully
+      compensate for his SHADOW.
+
+  - from: "wound"
+    to: "id"
+    modifier: -0.1  # reduced erosion — his trauma erodes his original self less than expected
+    reason: >
+      Because WOUND feeds IDEAL (his code), and IDEAL protects ID (the person
+      the code serves), there's a feedback loop that partially shields the
+      original self. Partially. The boy is still fading. Just slower.
+
+# ─── Facet Voices ────────────────────────────────────────────────
+
+facet_voices:
+  wound: >
+    Kyle's WOUND sounds like the facility. Clinical. Precise. It catalogs
+    damage the way the lab technicians cataloged his reactions. It notices
+    exits, weapons, power dynamics, and the exact threshold where a person
+    stops being a person and becomes a problem. It remembers the taste of
+    the pharmaceutical stabilizer they injected before each procedure.
+    It remembers the hum of the equipment. It never raises its voice.
+    The most dangerous WOUND observations are delivered flat.
+
+  ideal: >
+    Kyle's IDEAL sounds like a promise made to someone who can't hear it
+    anymore. Quiet. Absolute. Not righteous — exhausted but immovable.
+    The code is simple: you don't let them do to others what they did to
+    you. You don't walk past the clinic. You don't ignore the sound.
+    The code doesn't care if it kills him. The code was never about
+    survival. WOUND is about survival. IDEAL is about the thing that
+    makes survival worth the cost.
+
+  id: >
+    Kyle's ID sounds like a boy in the Grind. Younger. Warmer. Curious
+    about things that don't matter — the way light hits Lake Michigan
+    through the gap between two arcology towers, the taste of real food
+    that isn't nutrient paste, the sound of his mother's voice saying his
+    name. ID surfaces in moments of unexpected beauty or tenderness and
+    is immediately embarrassing to the adult Kyle. He shoves it down.
+    But it's the most human sound he makes.
+
+  shadow: >
+    Kyle's SHADOW sounds like the facility, but from the other side of the
+    table. Not the subject — the researcher. SHADOW knows that Kyle is
+    capable of clinical violence. SHADOW knows that some part of him
+    cataloged the procedures not as a victim but as a student. SHADOW
+    knows that the experimental hardware didn't just give him speed —
+    it gave him the ability to process another person's body as a system
+    of vulnerabilities, the way the technicians processed his. SHADOW
+    whispers: you're not protecting people. You're choosing which people
+    to break. The only difference between you and them is the uniform.
+
+  mask: >
+    Kyle's MASK is "the professional." Calm, competent, transactional.
+    Takes the job. Does the job. Collects payment. Doesn't talk about
+    the facility. Doesn't talk about the hardware. Doesn't explain the
+    micro-seizures. The MASK is good enough to get him hired but not
+    good enough to make people comfortable. There's a flatness to it
+    that augmented clients read as discipline and unaugmented clients
+    read as damage. Both are right.
+
+  ghost: >
+    Kyle's GHOST sounds like the firmware. A voice that might be his
+    own cognition or might be the experimental array processing inputs
+    he's not consciously aware of. GHOST surfaces during the micro-
+    seizures — in those 2-5 seconds of neural static, Kyle doesn't
+    know if the thoughts he's having are his, or residual data from
+    other test subjects whose neural patterns were stored in the shared
+    firmware buffer. He has memories that aren't his. A woman's face
+    he's never met. A child's laughter in a language he doesn't speak.
+    The scent of salt water from an ocean he's never seen. Are these
+    ghosts of dead subjects? Firmware artifacts? His own imagination?
+    GHOST doesn't answer. GHOST is the question.
+
+# ─── Active Modifiers (Current Story State — Scene 1) ────────────
+
+active_modifiers:
+  - name: "Hardware Degradation"
+    trigger: "Ongoing — micro-seizures increasing in frequency"
+    facet_deltas:
+      ghost: +0.1
+      wound: +0.1
+      mask: -0.1
+    intensity: 0.4
+    duration: "arc"
+    decay: "none — getting worse"
+    cascade: true
+    notes: >
+      The experimental implant is slowly failing. Each micro-seizure
+      lasts a little longer. The memory bleeds are getting more vivid.
+      Kyle has maybe two years before the hardware causes permanent
+      neural damage — or kills him. Finding someone who can maintain
+      the array is an unspoken driver of everything he does.
+
+  - name: "The Clinic Job"
+    trigger: "Hired to recover stolen augment core from a free clinic"
+    facet_deltas:
+      ideal: +0.1
+      wound: +0.1
+    intensity: 0.3
+    duration: "scene"
+    decay: "sudden"
+    cascade: false
+    notes: >
+      A free clinic. The kind of place that treats Blanks and the
+      excluded. IDEAL activates because this is the code — protect
+      the vulnerable. WOUND activates because the clinic reminds him
+      of the facility, inverted: a place where people are healed
+      instead of broken.
+
+# ─── History ─────────────────────────────────────────────────────
+
+history:
+  - age: 0
+    event: "Born in the Grind, Chicago-Milwaukee corridor"
+    facet_impact: "ID established — the original Kyle Vasik"
+
+  - age: 9
+    event: "Father killed in Kessler-Dyne industrial accident. Corpo denied liability."
+    facet_impact: "WOUND +0.2 (foundational loss), IDEAL seed planted (injustice registered)"
+
+  - age: 10
+    event: "Mother excluded (Tier 3). Family falls from Grind to Undertow."
+    facet_impact: "WOUND +0.2, ID begins to fracture (the boy's world ends)"
+
+  - age: 11
+    event: "Mother disappears. Kyle alone in ungoverned zones."
+    facet_impact: "WOUND +0.3, MASK begins forming (survival requires performance)"
+
+  - age: 11-16
+    event: "Survives in Gary-Hammond corridor. Runs with Eastside Vago Kings. Learns the excluded economy."
+    facet_impact: "WOUND solidifies, SHADOW begins accumulating (things done to survive), MASK develops street persona"
+
+  - age: 16
+    event: "Taken by CII field station. Designated NDC-4471. Transported to NeoCortex subsurface facility."
+    facet_impact: "WOUND peaks, ID nearly shattered, SHADOW deepens catastrophically"
+
+  - age: 16-19
+    event: "Three years in the facility. Program Atlas, Subprogram A-7. Experimental 32,768-electrode array implanted. Dozens of procedures. Witnessed other subjects die. Witnessed children in the Developmental Cohort."
+    facet_impact: >
+      WOUND becomes defining trait. IDEAL crystallizes — the code is born here, in the room where
+      they break people. SHADOW accumulates the violence done to him and the clinical detachment
+      he learned to survive it. GHOST emerges for the first time when the implant activates and
+      his thoughts change speed. ID retreats but does not die.
+
+  - age: 19
+    event: >
+      Facility breach. Not an escape — a failure. A firmware stress test triggered a cascading
+      neural event across twelve subjects simultaneously. In the chaos, Kyle walked out. He
+      doesn't know if he was released as an unwitting field test or if the breach was genuine.
+      He has never been able to confirm either way. This uncertainty is permanent.
+    facet_impact: "GHOST +0.3 (was the escape real or engineered?), MASK resets (must build new identity from nothing)"
+
+  - age: 19-27
+    event: >
+      Eight years in the gap. Built a reputation as a freelance operator. Learned the katana
+      from a former Torii Security Group instructor who'd been excluded for refusing an order.
+      Maintained the experimental hardware with stolen tools. Took jobs that let him protect
+      people like his mother, people like the subjects in the facility. Never went back to
+      find out if the facility is still operating. Afraid of the answer. Afraid of what he'd do.
+    facet_impact: >
+      IDEAL solidifies into its current form. WOUND stabilizes at high but functional. MASK
+      develops the "professional" persona. SHADOW deepens quietly — the violence he's capable
+      of is becoming harder to suppress. GHOST fluctuates with hardware degradation.
+
+# ─── Relationships ───────────────────────────────────────────────
+
+relationships:
+  - name: "Mother (unnamed)"
+    status: "missing — presumed dead or taken"
+    facet_connection: "ID anchor — the last person who called him Kyle Vasik"
+    notes: >
+      Kyle doesn't look for her. Looking would mean finding out. The
+      uncertainty is less painful than the certainty would be. This is
+      the most honest thing his SHADOW knows about him.
+
+  - name: "The Instructor (unnamed)"
+    status: "deceased — hardware failure, age 61"
+    facet_connection: "IDEAL model — the person who showed him that a code could exist outside corpo structure"
+    notes: >
+      Former Torii Security Group. Excluded for refusing to fire on
+      unarmed climate refugees during the Milwaukee Intake Riots of 2091.
+      Taught Kyle the blade, the discipline, and the principle: the weapon
+      serves the code, not the other way around. Died when his own
+      deactivated corpo implants finally scarred through enough neural
+      tissue. Kyle maintained vigil for three days. It's the only time
+      in his adult life he's been unable to maintain MASK.
+
+  - name: "Eastside Vago Kings"
+    status: "estranged"
+    facet_connection: "WOUND / SHADOW — survival debt, things done as a runner that can't be undone"
+    notes: >
+      Kyle ran packages for the Kings from age 11-16. He doesn't romanticize
+      it. Some of those packages were people. He was a child and he didn't
+      ask questions. SHADOW holds this. IDEAL tries to contextualize it.
+      The contextualization doesn't work.
+
+# ─── Writer Notes ────────────────────────────────────────────────
+
+voice_notes: >
+  Kyle's narration is tight, sensory, and interior. He thinks in short
+  sentences because the experimental hardware processes faster than
+  language. Long thoughts fragment. He notices details before meaning —
+  the temperature of a room before the people in it, the hum of
+  electronics before the words being spoken.
+
+  His humor is rare, dry, and always at his own expense. He does not
+  make jokes about other people's pain. He makes jokes about his own
+  situation because the alternative is SHADOW.
+
+  When WOUND speaks through him, the prose gets clinical. Flat affect.
+  Cataloging damage.
+
+  When IDEAL speaks through him, the prose gets quiet. Fewer words.
+  More weight per word. Pauses that mean something.
+
+  When SHADOW surfaces, the prose gets cold and precise in a way that
+  should disturb the reader. Kyle is describing violence the way a
+  surgeon describes an incision. This is the facility's gift.
+
+  When GHOST activates (during micro-seizures or memory bleeds), the
+  prose fragments. Sensory details from lives he hasn't lived. Tense
+  shifts. Pronoun confusion. Brief, disorienting breaks in the
+  narrative that resolve as suddenly as they appeared.
+
+  When ID surfaces, the prose warms. Just slightly. A half-degree.
+  The sentence structure loosens. He notices something beautiful. Then
+  he shuts it down, because beauty is a vulnerability he can't afford.
+
+  MASK is the default voice — the professional. Competent, flat,
+  transactional. The reader should always feel that MASK is a thin
+  surface over deeper water.

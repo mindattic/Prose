@@ -1,9 +1,11 @@
 @page "/generate"
+@using StreetSamurai.Core.Models
+@using StreetSamurai.Core.Interfaces
 @inject SceneGenerationService SceneGen
 @inject CanonService Canon
 @inject FacetService FacetSvc
 @inject WorldGraphService Graph
-@inject StoryService StorySvc
+@inject IStoryBlockRepository Repo
 @inject NavigationManager Nav
 @inject ElevenLabsTtsService TtsSvc
 @implements IDisposable
@@ -251,16 +253,15 @@ else if (_generatedScene != null)
     private void SaveAsStory()
     {
         if (_generatedScene == null) return;
-        var story = new Story
+        var project = new StoryProject
         {
             Title = _goal.Length > 50 ? _goal[..50] + "..." : _goal,
-            CanonStatus = "draft",
             Location = _location,
-            Characters = _characterInput.Split(',', StringSplitOptions.TrimEntries).ToList(),
-            MarkdownContent = $"# {_goal}\n\n{_generatedScene.FullText}",
+            Characters = _characterInput.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(),
         };
-        StorySvc.SaveStory(story);
-        Nav.NavigateTo($"/editor/{story.Id}");
+        project.AddBlocksFromText(_generatedScene.FullText);
+        Repo.SaveProject(project);
+        Nav.NavigateTo($"/write/{project.Id}");
     }
 
     private void Reset()

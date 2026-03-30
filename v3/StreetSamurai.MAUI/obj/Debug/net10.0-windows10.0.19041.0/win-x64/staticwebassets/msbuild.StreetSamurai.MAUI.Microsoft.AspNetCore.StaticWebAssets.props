@@ -32,33 +32,33 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>n6n4a3dccu</Fingerprint>
-      <Integrity>oauZmpLoPzes22rmtRuSLFqo+bGU4YVasw8oT1w8ewA=</Integrity>
+      <Fingerprint>j6jwjk6fmn</Fingerprint>
+      <Integrity>GwwFzbsLNH0fkf8tp5dWwCIk6uPWKVZGFLKFGGzfoNw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>1065</FileLength>
-      <LastWriteTime>Mon, 30 Mar 2026 02:51:52 GMT</LastWriteTime>
+      <FileLength>1064</FileLength>
+      <LastWriteTime>Mon, 30 Mar 2026 21:17:49 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\editor-interop.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\write-interop.js'))">
       <SourceType>Package</SourceType>
       <SourceId>StreetSamurai.MAUI</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>/</BasePath>
-      <RelativePath>js/editor-interop.js</RelativePath>
+      <RelativePath>js/write-interop.js</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>55t8n5teo3</Fingerprint>
-      <Integrity>iUBZc3JFDSdJBOH1BPZMupWhXfCBRxh9qHWqSHrnAH0=</Integrity>
+      <Fingerprint>ag8z0r6dh2</Fingerprint>
+      <Integrity>igEFSkxpV6MPnTY9YbXwiemLADOjhLmungpyu5ABYIY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>2434</FileLength>
-      <LastWriteTime>Mon, 30 Mar 2026 02:54:16 GMT</LastWriteTime>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\editor-interop.js'))</OriginalItemSpec>
+      <FileLength>3949</FileLength>
+      <LastWriteTime>Mon, 30 Mar 2026 22:36:21 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\write-interop.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css'))">
       <SourceType>Package</SourceType>
