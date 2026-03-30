@@ -13,3 +13,9 @@ stories/
 # Canon queue working directories
 canon_queue/pending/
 canon_queue/rejected/
+
+# .NET build artifacts
+**/bin/
+**/obj/
+v3/.vs/
+*.user

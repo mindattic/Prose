@@ -124,6 +124,128 @@ public class CanonService
 
     public void InvalidateCache() => _corpCache = null;
 
+    // ── Factions ─────────────────────────────────────────────
+
+    public List<Faction> ListFactions()
+    {
+        var dir = Path.Combine(_paths.EssencesDir, "world", "factions");
+        if (!Directory.Exists(dir)) return [];
+
+        return Directory.GetFiles(dir, "*.yaml")
+            .Select(f =>
+            {
+                try
+                {
+                    var yaml = File.ReadAllText(f);
+                    return new Faction
+                    {
+                        Name = ExtractYamlField(yaml, "name") ?? Path.GetFileNameWithoutExtension(f),
+                        Type = ExtractYamlField(yaml, "type") ?? "faction",
+                        Description = ExtractYamlBlock(yaml, "description"),
+                        Ideology = ExtractYamlBlock(yaml, "ideology"),
+                        Territory = ExtractYamlField(yaml, "territory") ?? "",
+                        Leadership = ExtractYamlField(yaml, "leadership") ?? "",
+                        SourceFile = f,
+                    };
+                }
+                catch { return null; }
+            })
+            .Where(f => f != null)
+            .OrderBy(f => f!.Name)
+            .ToList()!;
+    }
+
+    public string? ReadFactionYaml(string nameOrPartial)
+    {
+        var dir = Path.Combine(_paths.EssencesDir, "world", "factions");
+        if (!Directory.Exists(dir)) return null;
+        var match = Directory.GetFiles(dir, "*.yaml")
+            .FirstOrDefault(f => Path.GetFileNameWithoutExtension(f)
+                .Contains(nameOrPartial, StringComparison.OrdinalIgnoreCase));
+        return match != null ? File.ReadAllText(match) : null;
+    }
+
+    // ── Districts ───────────────────────────────────────────
+
+    public List<District> ListDistricts()
+    {
+        var dir = Path.Combine(_paths.EssencesDir, "world", "districts");
+        if (!Directory.Exists(dir)) return [];
+
+        return Directory.GetFiles(dir, "*.yaml")
+            .Select(f =>
+            {
+                try
+                {
+                    var yaml = File.ReadAllText(f);
+                    return new District
+                    {
+                        Name = ExtractYamlField(yaml, "name") ?? Path.GetFileNameWithoutExtension(f),
+                        Type = ExtractYamlField(yaml, "type") ?? "place",
+                        Description = ExtractYamlBlock(yaml, "description"),
+                        SourceFile = f,
+                    };
+                }
+                catch { return null; }
+            })
+            .Where(d => d != null)
+            .OrderBy(d => d!.Name)
+            .ToList()!;
+    }
+
+    public string? ReadDistrictYaml(string nameOrPartial)
+    {
+        var dir = Path.Combine(_paths.EssencesDir, "world", "districts");
+        if (!Directory.Exists(dir)) return null;
+        var match = Directory.GetFiles(dir, "*.yaml")
+            .FirstOrDefault(f => Path.GetFileNameWithoutExtension(f)
+                .Contains(nameOrPartial, StringComparison.OrdinalIgnoreCase));
+        return match != null ? File.ReadAllText(match) : null;
+    }
+
+    // ── Technology ──────────────────────────────────────────
+
+    public string? ReadTechnology()
+    {
+        var path = Path.Combine(_paths.EssencesDir, "world", "technology.yaml");
+        return File.Exists(path) ? File.ReadAllText(path) : null;
+    }
+
+    // ── World Rules ─────────────────────────────────────────
+
+    public string? ReadWorldFile(string fileName)
+    {
+        var path = Path.Combine(_paths.WorldbuildingDir, "..", "world", fileName);
+        if (File.Exists(path)) return File.ReadAllText(path);
+        // Also check the _paths.WorldDir if different
+        return null;
+    }
+
+    public List<(string Name, string Content)> ListWorldRuleFiles()
+    {
+        var worldDir = Path.Combine(_paths.WorldbuildingDir, "..", "world");
+        if (!Directory.Exists(worldDir)) return [];
+        return Directory.GetFiles(worldDir, "*.yaml")
+            .Select(f => (Path.GetFileNameWithoutExtension(f), File.ReadAllText(f)))
+            .OrderBy(x => x.Item1)
+            .ToList();
+    }
+
+    // ── Character YAML ──────────────────────────────────────
+
+    public string? ReadCharacterYaml(string nameOrPartial)
+    {
+        foreach (var dir in new[] { _paths.CharactersDir, Path.Combine(_paths.EssencesDir, "characters") })
+        {
+            if (!Directory.Exists(dir)) continue;
+            var match = Directory.GetFiles(dir, "*.yaml", SearchOption.AllDirectories)
+                .FirstOrDefault(f => Path.GetFileNameWithoutExtension(f)
+                    .Contains(nameOrPartial, StringComparison.OrdinalIgnoreCase));
+            if (match != null) return File.ReadAllText(match);
+        }
+        return null;
+    }
+
     // ── Characters ──────────────────────────────────────────
 
     public List<Character> ListCharacters()
@@ -210,6 +332,16 @@ public class CanonService
     {
         var m = Regex.Match(yaml, $@"^{Regex.Escape(field)}:\s*""?(.+?)""?\s*$", RegexOptions.Multiline);
         return m.Success ? m.Groups[1].Value.Trim().Trim('"') : null;
+    }
+
+    private static string ExtractYamlBlock(string yaml, string field)
+    {
+        var m = Regex.Match(yaml, $@"^{Regex.Escape(field)}:\s*\|?\s*\n((?:\s+.+\n?)+)", RegexOptions.Multiline);
+        if (!m.Success) return ExtractYamlField(yaml, field) ?? "";
+        return string.Join("\n", m.Groups[1].Value
+            .Split('\n')
+            .Select(l => l.TrimStart())
+            .Where(l => !string.IsNullOrWhiteSpace(l)));
     }
 
     private static string ExtractTitle(string path)

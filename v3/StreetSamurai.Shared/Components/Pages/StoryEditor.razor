@@ -1,0 +1,310 @@
+@page "/editor"
+@page "/editor/{StoryId}"
+@inject StoryService StorySvc
+@inject MarkdownService MdSvc
+@inject CanonService Canon
+@inject TextAnalysisService Analysis
+@inject NavigationManager Nav
+@inject IJSRuntime JS
+@implements IDisposable
+
+<div class="editor-container d-flex flex-column" style="height: calc(100vh - 40px);">
+    @* ── Toolbar ─────────────────────────────────────────── *@
+    <div class="editor-toolbar bg-dark border-bottom border-secondary p-2 d-flex align-items-center gap-2 flex-wrap">
+        <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+               style="max-width: 300px;" placeholder="Story title..."
+               @bind="_title" @bind:event="oninput" />
+
+        <select class="form-select form-select-sm bg-dark text-light border-secondary" style="width: 120px;"
+                @bind="_canonStatus">
+            <option value="draft">Draft</option>
+            <option value="canon">Canon</option>
+            <option value="non-canon">Non-Canon</option>
+        </select>
+
+        <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+               style="max-width: 200px;" placeholder="Location..."
+               @bind="_location" @bind:event="oninput" />
+
+        <button class="btn btn-sm btn-outline-danger" @onclick="SaveStory" title="Save (Ctrl+S)">
+            Save
+        </button>
+
+        <div class="vr text-secondary mx-1"></div>
+
+        @* Analysis tools — active when text is selected *@
+        <div class="dropdown">
+            <button class="btn btn-sm btn-outline-info dropdown-toggle" type="button"
+                    data-bs-toggle="dropdown" disabled="@(!_hasSelection)">
+                Analyze
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li><button class="dropdown-item" @onclick="RunLoreCheck">Lore Check</button></li>
+                <li><button class="dropdown-item" @onclick="RunClicheCheck">Cliche Check</button></li>
+                <li><button class="dropdown-item" @onclick="RunExpand">Expand</button></li>
+                <li><button class="dropdown-item" @onclick="RunRephrase">Rephrase</button></li>
+            </ul>
+        </div>
+
+        <button class="btn btn-sm @(_showPreview ? "btn-info" : "btn-outline-secondary")"
+                @onclick="() => _showPreview = !_showPreview">
+            Preview
+        </button>
+
+        <span class="ms-auto text-muted small">
+            @if (_saving) { <span>Saving...</span> }
+            else if (_lastSaved != null) { <span>Saved @_lastSaved.Value.ToString("HH:mm:ss")</span> }
+        </span>
+    </div>
+
+    @* ── Editor Body ─────────────────────────────────────── *@
+    <div class="flex-grow-1 d-flex" style="overflow: hidden;">
+        @* Markdown Editor *@
+        <div class="@(_showPreview ? "w-50" : "w-100") d-flex flex-column" style="overflow: hidden;">
+            <textarea id="story-editor"
+                      class="flex-grow-1 bg-dark text-light border-0 p-3"
+                      style="resize: none; font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace; font-size: 14px; line-height: 1.6; outline: none;"
+                      @bind="_markdownContent"
+                      @bind:event="oninput"
+                      @onfocus="OnEditorFocus"
+                      @onmouseup="CheckSelection"
+                      @onkeyup="OnKeyUp"
+                      spellcheck="true"
+                      placeholder="Start writing your story..."></textarea>
+        </div>
+
+        @* Preview Pane *@
+        @if (_showPreview)
+        {
+            <div class="w-50 border-start border-secondary overflow-auto p-3"
+                 id="preview-pane"
+                 style="background: #1a1a2e;">
+                <div class="story-preview" style="font-family: Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.8; color: #ddd;">
+                    @((MarkupString)_renderedHtml)
+                </div>
+            </div>
+        }
+    </div>
+
+    @* ── Analysis Panel (slides up from bottom) ──────────── *@
+    @if (_analysisResult != null)
+    {
+        <div class="analysis-panel bg-dark border-top border-info p-3" style="max-height: 40vh; overflow-y: auto;">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="text-info mb-0">@_analysisType</h6>
+                <div class="d-flex gap-2">
+                    @if (_analysisType is "Expand" or "Rephrase")
+                    {
+                        <button class="btn btn-sm btn-outline-success" @onclick="InsertAnalysisResult">Insert</button>
+                    }
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="DismissAnalysis">Dismiss</button>
+                </div>
+            </div>
+            @if (_analysisLoading)
+            {
+                <LoadingSpinner Visible="true" Message="Analyzing..." />
+            }
+            else
+            {
+                <div class="small" style="white-space: pre-wrap;">@_analysisResult</div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter] public string? StoryId { get; set; }
+
+    private string _title = "Untitled";
+    private string _canonStatus = "draft";
+    private string _location = "";
+    private string _markdownContent = "";
+    private string _renderedHtml = "";
+    private bool _showPreview = true;
+    private bool _saving;
+    private DateTime? _lastSaved;
+    private string _currentStoryId = "";
+    private string _currentFilePath = "";
+
+    // Selection state
+    private bool _hasSelection;
+    private string _selectedText = "";
+
+    // Analysis state
+    private string? _analysisResult;
+    private string _analysisType = "";
+    private bool _analysisLoading;
+
+    // Auto-save timer
+    private Timer? _autoSaveTimer;
+    private Timer? _previewTimer;
+    private bool _dirty;
+
+    protected override void OnInitialized()
+    {
+        if (!string.IsNullOrEmpty(StoryId))
+        {
+            var story = StorySvc.LoadStory(StoryId);
+            if (story != null)
+            {
+                _currentStoryId = story.Id;
+                _title = story.Title;
+                _canonStatus = story.CanonStatus;
+                _location = story.Location ?? "";
+                _markdownContent = story.MarkdownContent;
+                _currentFilePath = story.FilePath;
+                UpdatePreview();
+            }
+        }
+
+        if (string.IsNullOrEmpty(_currentStoryId))
+            _currentStoryId = Guid.NewGuid().ToString("N")[..8];
+
+        _autoSaveTimer = new Timer(AutoSave, null, Timeout.Infinite, Timeout.Infinite);
+        _previewTimer = new Timer(UpdatePreviewCallback, null, Timeout.Infinite, Timeout.Infinite);
+    }
+
+    private void OnKeyUp(KeyboardEventArgs e)
+    {
+        _dirty = true;
+        _autoSaveTimer?.Change(2000, Timeout.Infinite);
+        _previewTimer?.Change(500, Timeout.Infinite);
+        CheckSelection();
+    }
+
+    private async void CheckSelection()
+    {
+        try
+        {
+            var sel = await JS.InvokeAsync<SelectionInfo>("editorInterop.getSelection", "story-editor");
+            _hasSelection = sel.End > sel.Start;
+            _selectedText = sel.Text;
+            await InvokeAsync(StateHasChanged);
+        }
+        catch { /* JS not ready */ }
+    }
+
+    private void OnEditorFocus() { }
+
+    private void UpdatePreview()
+    {
+        _renderedHtml = MdSvc.RenderToHtml(MdSvc.StripFrontMatter(_markdownContent));
+    }
+
+    private async void UpdatePreviewCallback(object? state)
+    {
+        UpdatePreview();
+        await InvokeAsync(StateHasChanged);
+    }
+
+    private async void AutoSave(object? state)
+    {
+        if (!_dirty) return;
+        await InvokeAsync(async () =>
+        {
+            await SaveStoryInternal();
+            StateHasChanged();
+        });
+    }
+
+    private async Task SaveStory()
+    {
+        await SaveStoryInternal();
+    }
+
+    private Task SaveStoryInternal()
+    {
+        _saving = true;
+        var story = new Story
+        {
+            Id = _currentStoryId,
+            Title = _title,
+            CanonStatus = _canonStatus,
+            Location = string.IsNullOrEmpty(_location) ? null : _location,
+            MarkdownContent = _markdownContent,
+            FilePath = _currentFilePath,
+        };
+        StorySvc.SaveStory(story);
+        if (string.IsNullOrEmpty(_currentFilePath))
+            _currentFilePath = story.FilePath;
+        _saving = false;
+        _dirty = false;
+        _lastSaved = DateTime.Now;
+        return Task.CompletedTask;
+    }
+
+    // ── Analysis Commands ───────────────────────────────────
+
+    private async Task RunLoreCheck() => await RunAnalysis("Lore Check",
+        () => Analysis.LoreCheckAsync(_selectedText, GetSurroundingContext()));
+
+    private async Task RunClicheCheck() => await RunAnalysis("Cliche Check",
+        () => Analysis.ClicheCheckAsync(_selectedText));
+
+    private async Task RunExpand() => await RunAnalysis("Expand",
+        () => Analysis.ExpandAsync(_selectedText, GetSurroundingContext()));
+
+    private async Task RunRephrase() => await RunAnalysis("Rephrase",
+        () => Analysis.RephraseAsync(_selectedText));
+
+    private async Task RunAnalysis(string type, Func<Task<string>> action)
+    {
+        _analysisType = type;
+        _analysisResult = "";
+        _analysisLoading = true;
+
+        try
+        {
+            _analysisResult = await action();
+        }
+        catch (Exception ex)
+        {
+            _analysisResult = $"Error: {ex.Message}";
+        }
+        finally
+        {
+            _analysisLoading = false;
+        }
+    }
+
+    private async Task InsertAnalysisResult()
+    {
+        if (string.IsNullOrEmpty(_analysisResult)) return;
+        try
+        {
+            var newContent = await JS.InvokeAsync<string>("editorInterop.replaceSelection", "story-editor", _analysisResult);
+            _markdownContent = newContent;
+            _dirty = true;
+            UpdatePreview();
+            DismissAnalysis();
+        }
+        catch { /* JS not ready */ }
+    }
+
+    private void DismissAnalysis()
+    {
+        _analysisResult = null;
+        _analysisType = "";
+    }
+
+    private string GetSurroundingContext()
+    {
+        var lines = _markdownContent.Split('\n');
+        return lines.Length > 10
+            ? string.Join("\n", lines.TakeLast(20))
+            : _markdownContent;
+    }
+
+    public void Dispose()
+    {
+        _autoSaveTimer?.Dispose();
+        _previewTimer?.Dispose();
+    }
+
+    private record SelectionInfo
+    {
+        public int Start { get; init; }
+        public int End { get; init; }
+        public string Text { get; init; } = "";
+    }
+}

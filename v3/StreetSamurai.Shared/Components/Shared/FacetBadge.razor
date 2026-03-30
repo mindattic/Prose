@@ -1,0 +1,17 @@
+@* Colored badge for a facet name *@
+<span class="badge" style="background-color: @GetColor(Name); font-size: 0.75rem;">@Name.ToUpperInvariant()</span>
+
+@code {
+    [Parameter] public string Name { get; set; } = "";
+
+    private static string GetColor(string facet) => facet.ToLowerInvariant() switch
+    {
+        "wound" => "#dc3545",
+        "ideal" => "#198754",
+        "id" => "#ffc107",
+        "shadow" => "#6f42c1",
+        "mask" => "#0dcaf0",
+        "ghost" => "#6c757d",
+        _ => "#adb5bd",
+    };
+}

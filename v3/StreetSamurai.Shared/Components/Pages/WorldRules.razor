@@ -1,0 +1,46 @@
+@page "/rules"
+@inject CanonService Canon
+
+<h4 class="text-danger mb-3">World Rules</h4>
+
+@foreach (var (name, content) in _ruleFiles)
+{
+    <div class="card bg-dark text-light border-secondary mb-3">
+        <div class="card-header text-muted d-flex justify-content-between align-items-center"
+             style="cursor: pointer;" @onclick="() => Toggle(name)">
+            <span>@FormatName(name)</span>
+            <small>@(IsExpanded(name) ? "collapse" : "expand")</small>
+        </div>
+        @if (IsExpanded(name))
+        {
+            <div class="card-body" style="max-height: 60vh; overflow-y: auto;">
+                <pre style="white-space: pre-wrap; font-size: 0.85rem; color: #ddd;">@content</pre>
+            </div>
+        }
+    </div>
+}
+
+@if (!_ruleFiles.Any())
+{
+    <p class="text-muted">No world rule files found. Ensure Canon Root Path is set in Settings.</p>
+}
+
+@code {
+    private List<(string Name, string Content)> _ruleFiles = [];
+    private HashSet<string> _expanded = new() { "literary_rules", "story_bible", "motifs" };
+
+    protected override void OnInitialized()
+    {
+        _ruleFiles = Canon.ListWorldRuleFiles();
+    }
+
+    private void Toggle(string name)
+    {
+        if (!_expanded.Remove(name)) _expanded.Add(name);
+    }
+
+    private bool IsExpanded(string name) => _expanded.Contains(name);
+
+    private static string FormatName(string name) =>
+        string.Join(' ', name.Split('_').Select(w => char.ToUpper(w[0]) + w[1..]));
+}

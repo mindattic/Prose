@@ -1,0 +1,81 @@
+@page "/stories"
+@inject StoryService StorySvc
+@inject NavigationManager Nav
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h4 class="text-danger mb-0">Stories (@_stories.Count)</h4>
+    <button class="btn btn-sm btn-outline-danger" @onclick="CreateNew">+ New Story</button>
+</div>
+
+<div class="mb-3">
+    <div class="btn-group btn-group-sm">
+        <button class="btn @(_filter == "" ? "btn-danger" : "btn-outline-secondary")" @onclick='() => SetFilter("")'>All</button>
+        <button class="btn @(_filter == "draft" ? "btn-danger" : "btn-outline-secondary")" @onclick='() => SetFilter("draft")'>Drafts</button>
+        <button class="btn @(_filter == "canon" ? "btn-danger" : "btn-outline-secondary")" @onclick='() => SetFilter("canon")'>Canon</button>
+        <button class="btn @(_filter == "non-canon" ? "btn-danger" : "btn-outline-secondary")" @onclick='() => SetFilter("non-canon")'>Non-Canon</button>
+    </div>
+</div>
+
+@if (_filtered.Any())
+{
+    <div class="table-responsive">
+        <table class="table table-dark table-hover table-sm">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Status</th>
+                    <th>Characters</th>
+                    <th>Location</th>
+                    <th>Modified</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var s in _filtered)
+                {
+                    <tr style="cursor: pointer;" @onclick="() => OpenStory(s.Id)">
+                        <td class="fw-bold">@s.Title</td>
+                        <td><CanonStatusBadge Status="@s.CanonStatus" /></td>
+                        <td class="text-muted small">@string.Join(", ", s.Characters)</td>
+                        <td class="text-muted small">@s.Location</td>
+                        <td class="text-muted small">@s.Modified.ToString("yyyy-MM-dd HH:mm")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div class="text-center py-5 text-muted">
+        <p>No stories yet.</p>
+        <button class="btn btn-outline-danger" @onclick="CreateNew">Create Your First Story</button>
+    </div>
+}
+
+@code {
+    private List<Story> _stories = [];
+    private List<Story> _filtered = [];
+    private string _filter = "";
+
+    protected override void OnInitialized()
+    {
+        _stories = StorySvc.ListStories();
+        _filtered = _stories;
+    }
+
+    private void SetFilter(string filter)
+    {
+        _filter = filter;
+        _filtered = string.IsNullOrEmpty(filter)
+            ? _stories
+            : _stories.Where(s => s.CanonStatus == filter).ToList();
+    }
+
+    private void OpenStory(string id) => Nav.NavigateTo($"/editor/{id}");
+
+    private void CreateNew()
+    {
+        var story = StorySvc.CreateNew("Untitled");
+        Nav.NavigateTo($"/editor/{story.Id}");
+    }
+}

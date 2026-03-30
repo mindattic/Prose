@@ -1,0 +1,39 @@
+@page "/technology"
+@inject CanonService Canon
+
+<h4 class="text-danger mb-3">Technology</h4>
+
+@if (_content != null)
+{
+    <div class="card bg-dark text-light border-secondary">
+        <div class="card-header text-muted">essences/world/technology.yaml</div>
+        <div class="card-body" style="max-height: 80vh; overflow-y: auto;">
+            <pre style="white-space: pre-wrap; font-size: 0.85rem; color: #ddd;">@_content</pre>
+        </div>
+    </div>
+}
+else
+{
+    <p class="text-muted">No technology data found. Ensure Canon Root Path is set in Settings.</p>
+}
+
+@if (_augTierDoc != null)
+{
+    <h5 class="text-danger mt-4 mb-3">Augmentation Tiers (Worldbuilding)</h5>
+    <div class="card bg-dark text-light border-secondary">
+        <div class="card-body" style="max-height: 60vh; overflow-y: auto;">
+            <pre style="white-space: pre-wrap; font-size: 0.85rem; color: #ddd;">@_augTierDoc</pre>
+        </div>
+    </div>
+}
+
+@code {
+    private string? _content;
+    private string? _augTierDoc;
+
+    protected override void OnInitialized()
+    {
+        _content = Canon.ReadTechnology();
+        _augTierDoc = Canon.ReadDocument("augmentation_tiers");
+    }
+}

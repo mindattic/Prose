@@ -1,0 +1,16 @@
+<span class="badge @GetClass(Status)">@Status</span>
+
+@code {
+    [Parameter] public string Status { get; set; } = "draft";
+
+    private static string GetClass(string status) => status.ToLowerInvariant() switch
+    {
+        "canon" => "bg-success",
+        "draft" => "bg-warning text-dark",
+        "non-canon" => "bg-secondary",
+        "pending" => "bg-info text-dark",
+        "rejected" => "bg-danger",
+        "promoted" => "bg-success",
+        _ => "bg-secondary",
+    };
+}

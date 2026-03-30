@@ -1,0 +1,104 @@
+@page "/queue"
+@inject CanonQueueService QueueSvc
+
+<h4 class="text-danger mb-3">Canon Queue</h4>
+
+<div class="btn-group btn-group-sm mb-3">
+    <button class="btn @(_tab == "pending" ? "btn-danger" : "btn-outline-secondary")" @onclick='() => _tab = "pending"'>
+        Pending (@_pending.Count)
+    </button>
+    <button class="btn @(_tab == "promoted" ? "btn-danger" : "btn-outline-secondary")" @onclick='() => _tab = "promoted"'>
+        Promoted (@_promoted.Count)
+    </button>
+    <button class="btn @(_tab == "rejected" ? "btn-danger" : "btn-outline-secondary")" @onclick='() => _tab = "rejected"'>
+        Rejected (@_rejected.Count)
+    </button>
+</div>
+
+@{
+    var entries = _tab switch
+    {
+        "promoted" => _promoted,
+        "rejected" => _rejected,
+        _ => _pending,
+    };
+}
+
+@if (entries.Any())
+{
+    @foreach (var entry in entries)
+    {
+        <div class="card bg-dark text-light border-secondary mb-2">
+            <div class="card-body py-2">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="fw-bold">@entry.Name</span>
+                        <span class="badge bg-secondary ms-2">@entry.Type</span>
+                        <CanonStatusBadge Status="@entry.Status" />
+                    </div>
+                    <small class="text-muted">@entry.Submitted.ToString("yyyy-MM-dd")</small>
+                </div>
+                @if (!string.IsNullOrEmpty(entry.Context))
+                {
+                    <div class="small text-muted mt-1">@Truncate(entry.Context, 200)</div>
+                }
+                @if (!string.IsNullOrEmpty(entry.SourceScene))
+                {
+                    <small class="text-info">Source: @entry.SourceScene</small>
+                }
+
+                @if (_tab == "pending")
+                {
+                    <div class="mt-2 d-flex gap-2">
+                        <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                               placeholder="Notes..." @bind="_notes" style="max-width: 300px;" />
+                        <button class="btn btn-sm btn-outline-success" @onclick="() => Promote(entry)">Approve</button>
+                        <button class="btn btn-sm btn-outline-danger" @onclick="() => Reject(entry)">Reject</button>
+                    </div>
+                }
+                @if (!string.IsNullOrEmpty(entry.Notes))
+                {
+                    <div class="small text-muted mt-1"><em>@entry.Notes</em></div>
+                }
+            </div>
+        </div>
+    }
+}
+else
+{
+    <p class="text-muted">No @_tab entries.</p>
+}
+
+@code {
+    private string _tab = "pending";
+    private string _notes = "";
+    private List<CanonQueueEntry> _pending = [];
+    private List<CanonQueueEntry> _promoted = [];
+    private List<CanonQueueEntry> _rejected = [];
+
+    protected override void OnInitialized() => Refresh();
+
+    private void Refresh()
+    {
+        _pending = QueueSvc.ListByStatus("pending");
+        _promoted = QueueSvc.ListByStatus("promoted");
+        _rejected = QueueSvc.ListByStatus("rejected");
+    }
+
+    private void Promote(CanonQueueEntry entry)
+    {
+        QueueSvc.Promote(entry.FilePath, _notes);
+        _notes = "";
+        Refresh();
+    }
+
+    private void Reject(CanonQueueEntry entry)
+    {
+        QueueSvc.Reject(entry.FilePath, _notes);
+        _notes = "";
+        Refresh();
+    }
+
+    private static string Truncate(string s, int max) =>
+        s.Length > max ? s[..(max - 3)] + "..." : s;
+}

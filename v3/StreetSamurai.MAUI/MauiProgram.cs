@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using StreetSamurai.Core.Extensions;
 
 namespace StreetSamurai.MAUI;
 
@@ -15,6 +16,7 @@ public static class MauiProgram
 			});
 
 		builder.Services.AddMauiBlazorWebView();
+		builder.Services.AddStreetSamuraiServices();
 
 #if DEBUG
 		builder.Services.AddBlazorWebViewDeveloperTools();

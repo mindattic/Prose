@@ -23,6 +23,10 @@ public class SettingsService
     public string Theme { get => _data.Theme; set { _data.Theme = value; Save(); } }
     public string CanonRootPath { get => _data.CanonRootPath; set { _data.CanonRootPath = value; Save(); } }
     public int MaxTokens { get => _data.MaxTokens; set { _data.MaxTokens = value; Save(); } }
+    public string ElevenLabsApiKey { get => _data.ElevenLabsApiKey; set { _data.ElevenLabsApiKey = value; Save(); } }
+    public string ElevenLabsVoiceId { get => _data.ElevenLabsVoiceId; set { _data.ElevenLabsVoiceId = value; Save(); } }
+    public int EditorFontSize { get => _data.EditorFontSize; set { _data.EditorFontSize = value; Save(); } }
+    public int AutoSaveIntervalMs { get => _data.AutoSaveIntervalMs; set { _data.AutoSaveIntervalMs = value; Save(); } }
 
     private void Load()
     {
@@ -46,5 +50,9 @@ public class SettingsService
         public string Theme { get; set; } = "dark";
         public string CanonRootPath { get; set; } = "";
         public int MaxTokens { get; set; } = 4096;
+        public string ElevenLabsApiKey { get; set; } = "";
+        public string ElevenLabsVoiceId { get; set; } = "";
+        public int EditorFontSize { get; set; } = 14;
+        public int AutoSaveIntervalMs { get; set; } = 2000;
     }
 }
