@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "E4F7jhjFx4k=",
+  "dgSpecHash": "H50mjmfCZNY=",
   "success": true,
   "projectFilePath": "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.Shared\\StreetSamurai.Shared.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ryand\\.nuget\\packages\\markdig\\1.1.2\\markdig.1.1.2.nupkg.sha512",
     "C:\\Users\\ryand\\.nuget\\packages\\microsoft.aspnetcore.authorization\\10.0.5\\microsoft.aspnetcore.authorization.10.0.5.nupkg.sha512",
     "C:\\Users\\ryand\\.nuget\\packages\\microsoft.aspnetcore.components\\10.0.5\\microsoft.aspnetcore.components.10.0.5.nupkg.sha512",
     "C:\\Users\\ryand\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\10.0.5\\microsoft.aspnetcore.components.analyzers.10.0.5.nupkg.sha512",
@@ -17,12 +18,17 @@
     "C:\\Users\\ryand\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.5\\microsoft.extensions.dependencyinjection.abstractions.10.0.5.nupkg.sha512",
     "C:\\Users\\ryand\\.nuget\\packages\\microsoft.extensions.diagnostics\\10.0.5\\microsoft.extensions.diagnostics.10.0.5.nupkg.sha512",
     "C:\\Users\\ryand\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\10.0.5\\microsoft.extensions.diagnostics.abstractions.10.0.5.nupkg.sha512",
+    "C:\\Users\\ryand\\.nuget\\packages\\microsoft.extensions.http\\10.0.5\\microsoft.extensions.http.10.0.5.nupkg.sha512",
+    "C:\\Users\\ryand\\.nuget\\packages\\microsoft.extensions.logging\\10.0.5\\microsoft.extensions.logging.10.0.5.nupkg.sha512",
     "C:\\Users\\ryand\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.5\\microsoft.extensions.logging.abstractions.10.0.5.nupkg.sha512",
     "C:\\Users\\ryand\\.nuget\\packages\\microsoft.extensions.options\\10.0.5\\microsoft.extensions.options.10.0.5.nupkg.sha512",
     "C:\\Users\\ryand\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\10.0.5\\microsoft.extensions.options.configurationextensions.10.0.5.nupkg.sha512",
     "C:\\Users\\ryand\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.5\\microsoft.extensions.primitives.10.0.5.nupkg.sha512",
     "C:\\Users\\ryand\\.nuget\\packages\\microsoft.extensions.validation\\10.0.5\\microsoft.extensions.validation.10.0.5.nupkg.sha512",
-    "C:\\Users\\ryand\\.nuget\\packages\\microsoft.jsinterop\\10.0.5\\microsoft.jsinterop.10.0.5.nupkg.sha512"
+    "C:\\Users\\ryand\\.nuget\\packages\\microsoft.jsinterop\\10.0.5\\microsoft.jsinterop.10.0.5.nupkg.sha512",
+    "C:\\Users\\ryand\\.nuget\\packages\\quikgraph\\2.5.0\\quikgraph.2.5.0.nupkg.sha512",
+    "C:\\Users\\ryand\\.nuget\\packages\\quikgraph.serialization\\2.5.0\\quikgraph.serialization.2.5.0.nupkg.sha512",
+    "C:\\Users\\ryand\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512"
   ],
   "logs": []
 }
