@@ -77,6 +77,21 @@ public class SettingsService
     public string ActiveLlmProvider { get => _data.ActiveLlmProvider; set { _data.ActiveLlmProvider = value; Save(); } }
     public int EditorFontSize { get => _data.EditorFontSize; set { _data.EditorFontSize = value; Save(); } }
     public int AutoSaveIntervalMs { get => _data.AutoSaveIntervalMs; set { _data.AutoSaveIntervalMs = value; Save(); } }
+    public string GeminiApiKey { get => _data.GeminiApiKey; set { _data.GeminiApiKey = value; Save(); } }
+    public string DeepSeekApiKey { get => _data.DeepSeekApiKey; set { _data.DeepSeekApiKey = value; Save(); } }
+    public string MistralApiKey { get => _data.MistralApiKey; set { _data.MistralApiKey = value; Save(); } }
+    public string GrokApiKey { get => _data.GrokApiKey; set { _data.GrokApiKey = value; Save(); } }
+    public string GroqApiKey { get => _data.GroqApiKey; set { _data.GroqApiKey = value; Save(); } }
+    public string TogetherApiKey { get => _data.TogetherApiKey; set { _data.TogetherApiKey = value; Save(); } }
+    public string OpenRouterApiKey { get => _data.OpenRouterApiKey; set { _data.OpenRouterApiKey = value; Save(); } }
+    public string FireworksApiKey { get => _data.FireworksApiKey; set { _data.FireworksApiKey = value; Save(); } }
+    public string CohereApiKey { get => _data.CohereApiKey; set { _data.CohereApiKey = value; Save(); } }
+    public bool GhostWriterEnabled { get => _data.GhostWriterEnabled; set { _data.GhostWriterEnabled = value; Save(); } }
+    public int GhostWriterScanIntervalSeconds { get => _data.GhostWriterScanIntervalSeconds; set { _data.GhostWriterScanIntervalSeconds = value; Save(); } }
+    public int GhostWriterRateLimitDelayMs { get => _data.GhostWriterRateLimitDelayMs; set { _data.GhostWriterRateLimitDelayMs = value; Save(); } }
+    public int GhostWriterMaxVoters { get => _data.GhostWriterMaxVoters; set { _data.GhostWriterMaxVoters = value; Save(); } }
+    public int GhostWriterRescanMinutes { get => _data.GhostWriterRescanMinutes; set { _data.GhostWriterRescanMinutes = value; Save(); } }
+    public double GhostWriterMajorityThreshold { get => _data.GhostWriterMajorityThreshold; set { _data.GhostWriterMajorityThreshold = value; Save(); } }
 
     /// <summary>Reset non-secret settings to defaults. Preserves API keys and canon root.</summary>
     public void ResetToDefaults()
@@ -132,5 +147,21 @@ public class SettingsService
         public string ActiveLlmProvider { get; set; } = "claude";
         public int EditorFontSize { get; set; } = 14;
         public int AutoSaveIntervalMs { get; set; } = 2000;
+        public string GeminiApiKey { get; set; } = "";
+        public string DeepSeekApiKey { get; set; } = "";
+        public string MistralApiKey { get; set; } = "";
+        public string GrokApiKey { get; set; } = "";
+        public string GroqApiKey { get; set; } = "";
+        public string TogetherApiKey { get; set; } = "";
+        public string OpenRouterApiKey { get; set; } = "";
+        public string FireworksApiKey { get; set; } = "";
+        public string CohereApiKey { get; set; } = "";
+        // GhostWriter settings
+        public bool GhostWriterEnabled { get; set; } = true;
+        public int GhostWriterScanIntervalSeconds { get; set; } = 120;
+        public int GhostWriterRateLimitDelayMs { get; set; } = 65000;
+        public int GhostWriterMaxVoters { get; set; } = 5;
+        public int GhostWriterRescanMinutes { get; set; } = 30;
+        public double GhostWriterMajorityThreshold { get; set; } = 0.67;
     }
 }

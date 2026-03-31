@@ -59,6 +59,9 @@ public static class ServiceCollectionExtensions
         // Audio file service
         services.AddSingleton<IAudioFileService, AudioFileService>();
 
+        // Multi-LLM service — calls multiple providers for majority voting
+        services.AddHttpClient<MultiLlmService>();
+
         // TTS enhancement — adds ElevenLabs audio tags before synthesis
         services.AddSingleton<TtsEnhancementService>();
 

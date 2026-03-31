@@ -50,6 +50,16 @@
                 <label class="form-label text-muted small">Narrative Function</label>
                 <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="2" @bind="_editing.NarrativeFunction"></textarea>
             </div>
+            <div class="mb-2">
+                <label class="form-label text-muted small">Narration Voice (how this character sounds as POV narrator)</label>
+                <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="3"
+                          placeholder="Describe the prose style, what they notice, how their interior voice works..."
+                          @bind="_editing.NarrationVoice"></textarea>
+            </div>
+            <div class="form-check mb-2">
+                <input type="checkbox" class="form-check-input" id="usesFacets" @bind="_editing.UsesFacets" />
+                <label class="form-check-label text-muted small" for="usesFacets">Uses facet tags in narration (only Kyle)</label>
+            </div>
             <div class="row g-2 mb-2">
                 <div class="col-md-2"><label class="form-label text-muted small">Wound</label><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editWound" /></div>
                 <div class="col-md-2"><label class="form-label text-muted small">Ideal</label><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editIdeal" /></div>
@@ -111,7 +121,7 @@
     // Facet weight edit fields (records are immutable, need mutable proxies)
     private double _editWound, _editIdeal, _editId, _editShadow, _editMask, _editGhost;
 
-    protected override void OnInitialized() => _items = Repo.GetAll();
+    protected override void OnInitialized() { Repo.Reload(); _items = Repo.GetAll(); }
 
     private void AddNew()
     {
@@ -138,17 +148,12 @@
         if (_editing == null || string.IsNullOrWhiteSpace(_editing.Name)) return;
 
         // Update facet weights
-        _editing = _editing with
-        {
-            Psychology = _editing.Psychology with
-            {
-                FacetWeights = new FacetWeights
-                {
-                    Wound = _editWound, Ideal = _editIdeal, Id = _editId,
-                    Shadow = _editShadow, Mask = _editMask, Ghost = _editGhost
-                }
-            }
-        };
+        _editing.Psychology.FacetWeights.Wound = _editWound;
+        _editing.Psychology.FacetWeights.Ideal = _editIdeal;
+        _editing.Psychology.FacetWeights.Id = _editId;
+        _editing.Psychology.FacetWeights.Shadow = _editShadow;
+        _editing.Psychology.FacetWeights.Mask = _editMask;
+        _editing.Psychology.FacetWeights.Ghost = _editGhost;
 
         // If name changed during edit, delete the old entry
         if (!_isNew && _originalName != _editing.Name)

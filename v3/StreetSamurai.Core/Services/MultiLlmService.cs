@@ -1,0 +1,231 @@
+using System.Net.Http.Headers;
+using System.Text;
+using System.Text.Json;
+
+namespace StreetSamurai.Core.Services;
+
+/// <summary>
+/// Multi-provider LLM service. Calls multiple LLMs and can run majority-vote
+/// consensus across them. Used by GhostWriter for narrative alignment.
+/// </summary>
+public class MultiLlmService
+{
+    private readonly HttpClient _http;
+    private readonly SettingsService _settings;
+
+    public record LlmProvider(string Id, string Name, string Endpoint, string Model, string AuthType);
+
+    private readonly List<LlmProvider> _providers;
+
+    public MultiLlmService(HttpClient http, SettingsService settings)
+    {
+        _http = http;
+        _http.Timeout = TimeSpan.FromMinutes(3);
+        _settings = settings;
+
+        _providers =
+        [
+            new("claude", "Claude", "https://api.anthropic.com/v1/messages", "claude-sonnet-4-6", "anthropic"),
+            new("openai", "ChatGPT", "https://api.openai.com/v1/chat/completions", "gpt-4.1-mini", "bearer"),
+            new("gemini", "Gemini", "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}", "gemini-2.5-flash", "google"),
+            new("deepseek", "DeepSeek", "https://api.deepseek.com/chat/completions", "deepseek-chat", "bearer"),
+            new("mistral", "Mistral", "https://api.mistral.ai/v1/chat/completions", "mistral-small-latest", "bearer"),
+            new("xai", "Grok", "https://api.x.ai/v1/chat/completions", "grok-3-mini-fast", "bearer"),
+            new("groq", "Groq", "https://api.groq.com/openai/v1/chat/completions", "llama-3.3-70b-versatile", "bearer"),
+            new("together", "Together", "https://api.together.xyz/v1/chat/completions", "meta-llama/Llama-4-Scout-17B-16E-Instruct", "bearer"),
+            new("openrouter", "OpenRouter", "https://openrouter.ai/api/v1/chat/completions", "meta-llama/llama-3.1-8b-instruct", "bearer"),
+            new("fireworks", "Fireworks", "https://api.fireworks.ai/inference/v1/chat/completions", "accounts/fireworks/models/llama-v3p3-70b-instruct", "bearer"),
+            new("cohere", "Cohere", "https://api.cohere.com/v2/chat", "command-r-plus-08-2024", "bearer"),
+        ];
+    }
+
+    /// <summary>Get all configured (have API key) providers.</summary>
+    public List<LlmProvider> GetConfiguredProviders()
+    {
+        return _providers.Where(p => !string.IsNullOrWhiteSpace(GetApiKey(p.Id))).ToList();
+    }
+
+    /// <summary>Call a single provider.</summary>
+    public async Task<string> CallProviderAsync(string providerId, string system, string user, CancellationToken ct = default)
+    {
+        var provider = _providers.FirstOrDefault(p => p.Id == providerId);
+        if (provider == null) throw new ArgumentException($"Unknown provider: {providerId}");
+
+        var key = GetApiKey(providerId);
+        if (string.IsNullOrWhiteSpace(key)) throw new InvalidOperationException($"No API key for {providerId}");
+
+        return provider.AuthType switch
+        {
+            "anthropic" => await CallClaude(provider, key, system, user, ct),
+            "google" => await CallGemini(provider, key, system, user, ct),
+            _ => await CallOpenAiCompatible(provider, key, system, user, ct),
+        };
+    }
+
+    /// <summary>
+    /// Call multiple providers in parallel and return results keyed by provider name.
+    /// Failures are logged but don't stop other providers.
+    /// </summary>
+    public async Task<Dictionary<string, string>> CallMultipleAsync(
+        List<string> providerIds, string system, string user, CancellationToken ct = default)
+    {
+        var tasks = providerIds.Select(async id =>
+        {
+            try
+            {
+                var result = await CallProviderAsync(id, system, user, ct);
+                var name = _providers.FirstOrDefault(p => p.Id == id)?.Name ?? id;
+                return (name, result, success: true);
+            }
+            catch (Exception ex)
+            {
+                var name = _providers.FirstOrDefault(p => p.Id == id)?.Name ?? id;
+                return (name, result: $"ERROR: {ex.Message}", success: false);
+            }
+        });
+
+        var results = await Task.WhenAll(tasks);
+        return results.Where(r => r.success).ToDictionary(r => r.name, r => r.result);
+    }
+
+    /// <summary>
+    /// Majority vote: call N providers, then use a judge LLM to synthesize
+    /// a consensus from the responses. Returns the consensus + individual votes.
+    /// </summary>
+    public async Task<(string consensus, Dictionary<string, string> votes)> MajorityVoteAsync(
+        List<string> providerIds, string system, string user, CancellationToken ct = default)
+    {
+        var votes = await CallMultipleAsync(providerIds, system, user, ct);
+
+        if (votes.Count == 0)
+            return ("No providers responded.", votes);
+
+        if (votes.Count == 1)
+            return (votes.Values.First(), votes);
+
+        // Use Claude as the judge to synthesize consensus
+        var voteText = string.Join("\n\n---\n\n",
+            votes.Select(kv => $"[{kv.Key}]:\n{kv.Value}"));
+
+        var threshold = _settings.GhostWriterMajorityThreshold;
+        var thresholdPct = (int)(threshold * 100);
+
+        var judgeSystem = $"""
+            You are a consensus judge. Multiple AI models have reviewed a piece of fiction
+            and provided their analysis. Your job is to synthesize a SINGLE consensus response.
+
+            Rules:
+            - An issue must be flagged by at least {thresholdPct}% of the models to be included
+            - If models disagree, go with the majority
+            - If a suggestion appears in only one model's response, EXCLUDE it
+            - Preserve the format: GRAMMAR, FLOW, CONTINUITY, VOICE, SUGGESTIONS
+            - Be concise. One line per issue.
+            - If no issues reach 2/3 consensus, say "NO CONSENSUS ISSUES FOUND."
+            """;
+
+        var judgeUser = $"Here are the individual model responses:\n\n{voteText}";
+
+        try
+        {
+            var consensus = await CallProviderAsync("claude", judgeSystem, judgeUser, ct);
+            return (consensus, votes);
+        }
+        catch
+        {
+            // Fallback: just return the first response
+            return (votes.Values.First(), votes);
+        }
+    }
+
+    // ── Provider-specific call methods ──
+
+    private async Task<string> CallOpenAiCompatible(LlmProvider provider, string key, string system, string user, CancellationToken ct)
+    {
+        var payload = new
+        {
+            model = provider.Model,
+            max_tokens = 2048,
+            temperature = 0.3,
+            messages = new object[]
+            {
+                new { role = "system", content = system },
+                new { role = "user", content = user },
+            }
+        };
+
+        using var req = new HttpRequestMessage(HttpMethod.Post, provider.Endpoint);
+        req.Headers.Authorization = new AuthenticationHeaderValue("Bearer", key);
+        req.Content = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
+
+        var res = await _http.SendAsync(req, ct);
+        res.EnsureSuccessStatusCode();
+        var json = await res.Content.ReadAsStringAsync(ct);
+        var doc = JsonDocument.Parse(json);
+        return doc.RootElement.GetProperty("choices")[0].GetProperty("message").GetProperty("content").GetString() ?? "";
+    }
+
+    private async Task<string> CallClaude(LlmProvider provider, string key, string system, string user, CancellationToken ct)
+    {
+        var payload = new
+        {
+            model = provider.Model,
+            max_tokens = 2048,
+            temperature = 0.3,
+            system,
+            messages = new[] { new { role = "user", content = user } }
+        };
+
+        using var req = new HttpRequestMessage(HttpMethod.Post, provider.Endpoint);
+        req.Headers.Add("x-api-key", key);
+        req.Headers.Add("anthropic-version", "2023-06-01");
+        req.Content = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
+
+        var res = await _http.SendAsync(req, ct);
+        res.EnsureSuccessStatusCode();
+        var json = await res.Content.ReadAsStringAsync(ct);
+        var doc = JsonDocument.Parse(json);
+        return doc.RootElement.GetProperty("content")[0].GetProperty("text").GetString() ?? "";
+    }
+
+    private async Task<string> CallGemini(LlmProvider provider, string key, string system, string user, CancellationToken ct)
+    {
+        var url = provider.Endpoint
+            .Replace("{model}", provider.Model)
+            .Replace("{key}", key);
+
+        var payload = new
+        {
+            contents = new[]
+            {
+                new { parts = new[] { new { text = $"{system}\n\n{user}" } } }
+            }
+        };
+
+        using var req = new HttpRequestMessage(HttpMethod.Post, url);
+        req.Content = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
+
+        var res = await _http.SendAsync(req, ct);
+        res.EnsureSuccessStatusCode();
+        var json = await res.Content.ReadAsStringAsync(ct);
+        var doc = JsonDocument.Parse(json);
+        return doc.RootElement.GetProperty("candidates")[0].GetProperty("content").GetProperty("parts")[0].GetProperty("text").GetString() ?? "";
+    }
+
+    // ── API Key resolution ──
+
+    private string? GetApiKey(string providerId) => providerId switch
+    {
+        "claude" => _settings.ApiKey,
+        "openai" => _settings.OpenAiApiKey,
+        "gemini" => _settings.GeminiApiKey,
+        "deepseek" => _settings.DeepSeekApiKey,
+        "mistral" => _settings.MistralApiKey,
+        "xai" => _settings.GrokApiKey,
+        "groq" => _settings.GroqApiKey,
+        "together" => _settings.TogetherApiKey,
+        "openrouter" => _settings.OpenRouterApiKey,
+        "fireworks" => _settings.FireworksApiKey,
+        "cohere" => _settings.CohereApiKey,
+        _ => null,
+    };
+}

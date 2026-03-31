@@ -5,7 +5,7 @@ namespace StreetSamurai.Core.Models.Canon;
 /// <summary>
 /// Strongly-typed facet definition. One per psychological voice.
 /// </summary>
-public record FacetData
+public class FacetData
 {
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("label")] public string Label { get; set; } = "";
@@ -18,7 +18,7 @@ public record FacetData
     [JsonPropertyName("system_prompt")] public string SystemPrompt { get; set; } = "";
 }
 
-public record FacetVoice
+public class FacetVoice
 {
     [JsonPropertyName("tone")] public string Tone { get; set; } = "";
     [JsonPropertyName("style")] public string Style { get; set; } = "";

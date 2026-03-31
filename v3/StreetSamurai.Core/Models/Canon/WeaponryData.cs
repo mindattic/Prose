@@ -6,7 +6,7 @@ namespace StreetSamurai.Core.Models.Canon;
 /// A weapon or weapon system in the Meridian 88 world.
 /// Links back to base technologies that enable it.
 /// </summary>
-public record WeaponryData
+public class WeaponryData
 {
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("type")] public string Type { get; set; } = "weapon";

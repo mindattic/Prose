@@ -100,7 +100,7 @@
     private bool _confirmDelete;
     private string _originalName = "";
 
-    protected override void OnInitialized() => _items = Repo.GetAll();
+    protected override void OnInitialized() { Repo.Reload(); _items = Repo.GetAll(); }
 
     private void AddNew()
     {
