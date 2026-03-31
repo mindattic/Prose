@@ -7,37 +7,37 @@ namespace StreetSamurai.Core.Models.Canon;
 /// </summary>
 public record DistrictData
 {
-    [JsonPropertyName("type")] public string Type { get; init; } = "place";
-    [JsonPropertyName("name")] public string Name { get; init; } = "";
-    [JsonPropertyName("aliases")] public List<string> Aliases { get; init; } = [];
-    [JsonPropertyName("description")] public string Description { get; init; } = "";
-    [JsonPropertyName("atmosphere")] public AtmosphereData Atmosphere { get; init; } = new();
-    [JsonPropertyName("demographics")] public string Demographics { get; init; } = "";
-    [JsonPropertyName("economy")] public string Economy { get; init; } = "";
-    [JsonPropertyName("power_structure")] public string PowerStructure { get; init; } = "";
-    [JsonPropertyName("dangers")] public List<string> Dangers { get; init; } = [];
-    [JsonPropertyName("opportunities")] public List<string> Opportunities { get; init; } = [];
-    [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; init; } = [];
-    [JsonPropertyName("connections")] public DistrictConnections Connections { get; init; } = new();
-    [JsonPropertyName("frequented_by")] public List<string> FrequentedBy { get; init; } = [];
-    [JsonPropertyName("notable_locations")] public List<NotableLocation> NotableLocations { get; init; } = [];
+    [JsonPropertyName("type")] public string Type { get; set; } = "place";
+    [JsonPropertyName("name")] public string Name { get; set; } = "";
+    [JsonPropertyName("aliases")] public List<string> Aliases { get; set; } = [];
+    [JsonPropertyName("description")] public string Description { get; set; } = "";
+    [JsonPropertyName("atmosphere")] public AtmosphereData Atmosphere { get; set; } = new();
+    [JsonPropertyName("demographics")] public string Demographics { get; set; } = "";
+    [JsonPropertyName("economy")] public string Economy { get; set; } = "";
+    [JsonPropertyName("power_structure")] public string PowerStructure { get; set; } = "";
+    [JsonPropertyName("dangers")] public List<string> Dangers { get; set; } = [];
+    [JsonPropertyName("opportunities")] public List<string> Opportunities { get; set; } = [];
+    [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
+    [JsonPropertyName("connections")] public DistrictConnections Connections { get; set; } = new();
+    [JsonPropertyName("frequented_by")] public List<string> FrequentedBy { get; set; } = [];
+    [JsonPropertyName("notable_locations")] public List<NotableLocation> NotableLocations { get; set; } = [];
 }
 
 public record AtmosphereData
 {
-    [JsonPropertyName("sights")] public List<string> Sights { get; init; } = [];
-    [JsonPropertyName("sounds")] public List<string> Sounds { get; init; } = [];
-    [JsonPropertyName("smells")] public List<string> Smells { get; init; } = [];
-    [JsonPropertyName("feel")] public string Feel { get; init; } = "";
+    [JsonPropertyName("sights")] public List<string> Sights { get; set; } = [];
+    [JsonPropertyName("sounds")] public List<string> Sounds { get; set; } = [];
+    [JsonPropertyName("smells")] public List<string> Smells { get; set; } = [];
+    [JsonPropertyName("feel")] public string Feel { get; set; } = "";
 }
 
 public record DistrictConnections
 {
-    [JsonPropertyName("adjacent_to")] public List<string> AdjacentTo { get; init; } = [];
+    [JsonPropertyName("adjacent_to")] public List<string> AdjacentTo { get; set; } = [];
 }
 
 public record NotableLocation
 {
-    [JsonPropertyName("name")] public string Name { get; init; } = "";
-    [JsonPropertyName("description")] public string Description { get; init; } = "";
+    [JsonPropertyName("name")] public string Name { get; set; } = "";
+    [JsonPropertyName("description")] public string Description { get; set; } = "";
 }

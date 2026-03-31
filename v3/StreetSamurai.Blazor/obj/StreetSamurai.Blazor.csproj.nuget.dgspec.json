@@ -568,6 +568,10 @@
             "QuikGraph.Serialization": {
               "target": "Package",
               "version": "[2.5.0, )"
+            },
+            "System.Speech": {
+              "target": "Package",
+              "version": "[10.0.5, )"
             }
           },
           "imports": [

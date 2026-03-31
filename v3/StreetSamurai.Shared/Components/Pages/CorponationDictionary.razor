@@ -1,0 +1,148 @@
+@page "/corps"
+@inject CorponationRepository Repo
+
+<div class="d-flex justify-content-between align-items-center mb-2">
+    <h4 class="text-danger mb-0">Corponations</h4>
+    <button class="btn btn-sm btn-outline-danger" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New Corponation</button>
+</div>
+
+@if (_editing != null)
+{
+    <div class="card bg-dark text-light border-danger mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+            <span class="text-danger fw-bold">@(_isNew ? "New Corponation" : _editing.Name)</span>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="card-body">
+            <div class="row g-2 mb-2">
+                <div class="col-md-4">
+                    <label class="form-label text-muted small">Name</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Name" />
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label text-muted small">Sector</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Sector" />
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label text-muted small">Valuation</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Valuation" />
+                </div>
+            </div>
+            <div class="row g-2 mb-2">
+                <div class="col-md-6">
+                    <label class="form-label text-muted small">Sovereign Territory</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.SovereignTerritory" />
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label text-muted small">Security Force</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.SecurityForce" />
+                </div>
+            </div>
+            <div class="mb-2">
+                <label class="form-label text-muted small">Key Detail</label>
+                <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.KeyDetail" />
+            </div>
+            <div class="mb-2">
+                <label class="form-label text-muted small">Full Text</label>
+                <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="4" @bind="_editing.FullText"></textarea>
+            </div>
+            <div class="mb-2">
+                <label class="form-label text-muted small">Founding Story</label>
+                <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="2" @bind="_editing.FoundingStory"></textarea>
+            </div>
+            <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
+                @if (!_isNew)
+                {
+                    @if (_confirmDelete)
+                    {
+                        <span class="d-flex align-items-center gap-1">
+                            <small class="text-warning">Delete @_editing.Name?</small>
+                            <button class="btn btn-sm btn-danger" @onclick="DoDelete">Yes</button>
+                            <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button>
+                        </span>
+                    }
+                    else
+                    {
+                        <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-trash3"></i> Delete</button>
+                    }
+                }
+                <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit">Cancel</button>
+            </div>
+        </div>
+    </div>
+}
+
+<div class="table-responsive">
+    <table class="table table-dark table-hover table-sm">
+        <thead>
+            <tr><th>#</th><th>Name</th><th>Sector</th><th>Valuation</th><th>Territory</th></tr>
+        </thead>
+        <tbody>
+            @foreach (var c in _items)
+            {
+                <tr style="cursor: pointer;" @onclick="() => Edit(c)">
+                    <td class="text-muted small">@c.Number</td>
+                    <td class="fw-bold">@c.Name</td>
+                    <td class="text-muted small">@c.Sector</td>
+                    <td class="text-muted small">@c.Valuation</td>
+                    <td class="text-muted small">@c.SovereignTerritory</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    private List<CorponationData> _items = [];
+    private CorponationData? _editing;
+    private bool _isNew;
+    private bool _confirmDelete;
+    private string _originalName = "";
+
+    protected override void OnInitialized() => _items = Repo.GetAll();
+
+    private void AddNew()
+    {
+        _editing = new CorponationData();
+        _isNew = true;
+        _confirmDelete = false;
+    }
+
+    private void Edit(CorponationData c)
+    {
+        _editing = c;
+        _originalName = c.Name;
+        _isNew = false;
+        _confirmDelete = false;
+    }
+
+    private void SaveEdit()
+    {
+        if (_editing == null || string.IsNullOrWhiteSpace(_editing.Name)) return;
+
+        // If name changed during edit, delete the old entry
+        if (!_isNew && _originalName != _editing.Name)
+            Repo.Delete(_originalName);
+
+        Repo.Save(_editing);
+        _editing = null;
+        _items = Repo.GetAll();
+    }
+
+    private void DoDelete()
+    {
+        if (_editing == null) return;
+        Repo.Delete(_editing.Name);
+        _editing = null;
+        _confirmDelete = false;
+        _items = Repo.GetAll();
+    }
+
+    private void CancelEdit()
+    {
+        _editing = null;
+        _confirmDelete = false;
+        _items = Repo.GetAll(); // Reload to discard in-memory mutations
+    }
+}

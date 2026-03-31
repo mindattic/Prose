@@ -301,6 +301,28 @@
             "related": ".xml"
           }
         }
+      },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net10.0/System.Speech.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
       }
     }
   },
@@ -827,6 +849,38 @@
         "quikgraph.serialization.nuspec",
         "quikgraph_logo.png"
       ]
+    },
+    "System.Speech/10.0.5": {
+      "sha512": "MYkGiMGWYc9rhyvsmf2UGIHD4RVJ3+uNgllFPP1YW6ILJJDXpDN8jMcy++0E/KrG507kTPCo5EOW4tEwUOCKhQ==",
+      "type": "package",
+      "path": "system.speech/10.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Speech.targets",
+        "lib/net10.0/System.Speech.dll",
+        "lib/net10.0/System.Speech.xml",
+        "lib/net462/_._",
+        "lib/net8.0/System.Speech.dll",
+        "lib/net8.0/System.Speech.xml",
+        "lib/net9.0/System.Speech.dll",
+        "lib/net9.0/System.Speech.xml",
+        "lib/netstandard2.0/System.Speech.dll",
+        "lib/netstandard2.0/System.Speech.xml",
+        "runtimes/win/lib/net10.0/System.Speech.dll",
+        "runtimes/win/lib/net10.0/System.Speech.xml",
+        "runtimes/win/lib/net8.0/System.Speech.dll",
+        "runtimes/win/lib/net8.0/System.Speech.xml",
+        "runtimes/win/lib/net9.0/System.Speech.dll",
+        "runtimes/win/lib/net9.0/System.Speech.xml",
+        "system.speech.10.0.5.nupkg.sha512",
+        "system.speech.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -835,7 +889,8 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 10.0.5",
       "Microsoft.Extensions.Http >= 10.0.5",
       "QuikGraph >= 2.5.0",
-      "QuikGraph.Serialization >= 2.5.0"
+      "QuikGraph.Serialization >= 2.5.0",
+      "System.Speech >= 10.0.5"
     ]
   },
   "packageFolders": {
@@ -869,7 +924,6 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {}
         }
@@ -888,7 +942,6 @@
     },
     "frameworks": {
       "net10.0": {
-        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Markdig": {
@@ -910,6 +963,10 @@
           "QuikGraph.Serialization": {
             "target": "Package",
             "version": "[2.5.0, )"
+          },
+          "System.Speech": {
+            "target": "Package",
+            "version": "[10.0.5, )"
           }
         },
         "imports": [

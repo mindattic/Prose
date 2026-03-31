@@ -20,6 +20,16 @@ public class TtsEnhancementService
         _paths = paths;
     }
 
+    // Tags that ElevenLabs v3 reliably interprets as vocal direction (not read aloud)
+    private static readonly HashSet<string> SafeTags = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "laughs", "laughs harder", "starts laughing", "wheezing",
+        "whispers", "sighs", "exhales", "exhales sharply", "inhales deeply",
+        "sarcastic", "curious", "excited", "crying", "snorts",
+        "chuckles", "clears throat", "short pause", "long pause",
+        "swallows", "gulps",
+    };
+
     /// <summary>
     /// Enhance story text with ElevenLabs audio tags for more expressive narration.
     /// </summary>
@@ -27,43 +37,47 @@ public class TtsEnhancementService
     {
         if (string.IsNullOrWhiteSpace(text)) return text;
 
-        var rules = LoadRules();
-        var audioTags = rules != null ? BuildTagList(rules) : DefaultTagList();
-
         var system = """
-            You are an AI assistant specializing in enhancing narrative text for speech generation.
-            Your PRIMARY GOAL is to dynamically integrate audio tags into the text, making it more
-            expressive and engaging for auditory experiences, while STRICTLY preserving the original
-            text and meaning.
+            You are enhancing narrative text for ElevenLabs v3 text-to-speech.
 
-            This is cyberpunk noir fiction — favor tags that match the tone: [whispers], [sighs],
-            [exhales sharply], [thoughtful], [sad], [angry]. Use them sparingly but effectively.
-            The narration should feel like a world-weary voice telling a story in a dark room.
+            ALLOWED TAGS (use ONLY these, in square brackets, BEFORE the text they modify):
+            [whispers], [sighs], [exhales], [exhales sharply], [inhales deeply],
+            [laughs], [chuckles], [clears throat], [short pause], [long pause]
 
-            RULES:
-            - DO integrate audio tags to add expression and realism
-            - DO place tags strategically before or after the segments they modify
-            - DO add emphasis via CAPITALIZATION on key dramatic words
-            - DO use ellipses (...) for weighted pauses
-            - DO NOT alter, add, or remove any words from the original text
-            - DO NOT create tags from existing narrative descriptions
-            - DO NOT use visual-only tags like [standing], [grinning], [pacing]
-            - DO NOT overdo it — a few well-placed tags per paragraph is enough
-            - DO NOT add tags to every sentence
+            EMPHASIS: Use CAPITALS on 1-2 key words per paragraph for dramatic weight.
+            PAUSES: Use ellipses (...) for meaningful pauses.
 
-            Reply with ONLY the enhanced text. No commentary.
+            CRITICAL RULES:
+            - Tags go BEFORE the phrase they affect: "[sighs] I never asked for this."
+            - NEVER put tags at the END of a sentence
+            - NEVER use tags like [thoughtful], [sad], [angry], [happy] — the voice engine
+              reads these as literal words. Only use sound/action tags listed above.
+            - NEVER alter the original words — only insert tags and capitalize for emphasis
+            - Use 2-4 tags total across the ENTIRE text. Less is more.
+            - Reply with ONLY the enhanced text. No commentary, no explanation.
             """;
 
         var user = $"""
-            Enhance the following story text for ElevenLabs text-to-speech narration.
-            Add audio tags from this list where they naturally fit:
-            {audioTags}
+            Enhance for narration:
 
-            TEXT TO ENHANCE:
             {text}
             """;
 
-        return await _llm.GenerateAsync(system, user, 0.3, 8192, ct: ct);
+        var enhanced = await _llm.GenerateAsync(system, user, 0.2, 8192, ct: ct);
+        return SanitizeTags(enhanced);
+    }
+
+    /// <summary>
+    /// Remove any tags that aren't in the safe list — prevents the voice from
+    /// reading "Thoughtful" or "Angry" as literal spoken words.
+    /// </summary>
+    private static string SanitizeTags(string text)
+    {
+        return System.Text.RegularExpressions.Regex.Replace(text, @"\[([^\]]+)\]", match =>
+        {
+            var tag = match.Groups[1].Value.Trim();
+            return SafeTags.Contains(tag) ? match.Value : "";
+        });
     }
 
     private TtsRules? LoadRules()

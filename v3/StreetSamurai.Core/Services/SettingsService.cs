@@ -78,6 +78,26 @@ public class SettingsService
     public int EditorFontSize { get => _data.EditorFontSize; set { _data.EditorFontSize = value; Save(); } }
     public int AutoSaveIntervalMs { get => _data.AutoSaveIntervalMs; set { _data.AutoSaveIntervalMs = value; Save(); } }
 
+    /// <summary>Reset non-secret settings to defaults. Preserves API keys and canon root.</summary>
+    public void ResetToDefaults()
+    {
+        var keys = new
+        {
+            _data.ApiKey, _data.OpenAiApiKey, _data.ElevenLabsApiKey,
+            _data.ElevenLabsVoiceId, _data.NarratorVoiceName, _data.CanonRootPath,
+        };
+        _data = new SettingsData
+        {
+            ApiKey = keys.ApiKey,
+            OpenAiApiKey = keys.OpenAiApiKey,
+            ElevenLabsApiKey = keys.ElevenLabsApiKey,
+            ElevenLabsVoiceId = keys.ElevenLabsVoiceId,
+            NarratorVoiceName = keys.NarratorVoiceName,
+            CanonRootPath = keys.CanonRootPath,
+        };
+        Save();
+    }
+
     private void Load()
     {
         if (File.Exists(_settingsPath))
@@ -103,7 +123,7 @@ public class SettingsService
         public string ElevenLabsApiKey { get; set; } = "";
         public string ElevenLabsVoiceId { get; set; } = "";
         public string NarratorVoiceName { get; set; } = "Oliver Silk";
-        public string TtsModel { get; set; } = "eleven_multilingual_v2";
+        public string TtsModel { get; set; } = "eleven_v3";
         public double TtsStability { get; set; } = 0.5;
         public double TtsSimilarityBoost { get; set; } = 0.75;
         public double TtsStyle { get; set; } = 0.0;

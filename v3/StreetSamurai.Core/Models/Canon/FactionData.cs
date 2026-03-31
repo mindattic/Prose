@@ -7,25 +7,25 @@ namespace StreetSamurai.Core.Models.Canon;
 /// </summary>
 public record FactionData
 {
-    [JsonPropertyName("type")] public string Type { get; init; } = "faction";
-    [JsonPropertyName("name")] public string Name { get; init; } = "";
-    [JsonPropertyName("aliases")] public List<string> Aliases { get; init; } = [];
-    [JsonPropertyName("motto")] public string Motto { get; init; } = "";
-    [JsonPropertyName("description")] public string Description { get; init; } = "";
-    [JsonPropertyName("ideology")] public string Ideology { get; init; } = "";
-    [JsonPropertyName("territory")] public string Territory { get; init; } = "";
-    [JsonPropertyName("leadership")] public string Leadership { get; init; } = "";
-    [JsonPropertyName("methods")] public List<string> Methods { get; init; } = [];
-    [JsonPropertyName("resources")] public List<string> Resources { get; init; } = [];
-    [JsonPropertyName("goals")] public List<string> Goals { get; init; } = [];
-    [JsonPropertyName("relationships")] public List<FactionRelationship> Relationships { get; init; } = [];
-    [JsonPropertyName("narrative_function")] public string NarrativeFunction { get; init; } = "";
-    [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; init; } = [];
+    [JsonPropertyName("type")] public string Type { get; set; } = "faction";
+    [JsonPropertyName("name")] public string Name { get; set; } = "";
+    [JsonPropertyName("aliases")] public List<string> Aliases { get; set; } = [];
+    [JsonPropertyName("motto")] public string Motto { get; set; } = "";
+    [JsonPropertyName("description")] public string Description { get; set; } = "";
+    [JsonPropertyName("ideology")] public string Ideology { get; set; } = "";
+    [JsonPropertyName("territory")] public string Territory { get; set; } = "";
+    [JsonPropertyName("leadership")] public string Leadership { get; set; } = "";
+    [JsonPropertyName("methods")] public List<string> Methods { get; set; } = [];
+    [JsonPropertyName("resources")] public List<string> Resources { get; set; } = [];
+    [JsonPropertyName("goals")] public List<string> Goals { get; set; } = [];
+    [JsonPropertyName("relationships")] public List<FactionRelationship> Relationships { get; set; } = [];
+    [JsonPropertyName("narrative_function")] public string NarrativeFunction { get; set; } = "";
+    [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
 }
 
 public record FactionRelationship
 {
-    [JsonPropertyName("name")] public string Name { get; init; } = "";
-    [JsonPropertyName("type")] public string Type { get; init; } = "";
-    [JsonPropertyName("description")] public string Description { get; init; } = "";
+    [JsonPropertyName("name")] public string Name { get; set; } = "";
+    [JsonPropertyName("type")] public string Type { get; set; } = "";
+    [JsonPropertyName("description")] public string Description { get; set; } = "";
 }

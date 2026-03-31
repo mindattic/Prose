@@ -919,6 +919,28 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net10.0/System.Speech.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "Xamarin.Android.Glide/4.16.0.14": {
         "type": "package",
         "dependencies": {
@@ -2918,7 +2940,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -3861,6 +3884,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "Xamarin.Android.Glide/4.16.0.14": {
         "type": "package",
         "dependencies": {
@@ -5860,7 +5899,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -6803,6 +6843,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "Xamarin.Android.Glide/4.16.0.14": {
         "type": "package",
         "dependencies": {
@@ -8802,7 +8858,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -9745,6 +9802,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "Xamarin.Android.Glide/4.16.0.14": {
         "type": "package",
         "dependencies": {
@@ -11744,7 +11817,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -12687,6 +12761,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "Xamarin.Android.Glide/4.16.0.14": {
         "type": "package",
         "dependencies": {
@@ -14686,7 +14776,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -15629,6 +15720,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "Xamarin.Android.Glide/4.16.0.14": {
         "type": "package",
         "dependencies": {
@@ -17628,7 +17735,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -18542,6 +18650,28 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net10.0/System.Speech.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -18550,7 +18680,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -19464,6 +19595,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -19472,7 +19619,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -20386,6 +20534,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -20394,7 +20558,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -21308,6 +21473,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -21316,7 +21497,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -22230,6 +22412,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -22238,7 +22436,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -23152,6 +23351,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -23160,7 +23375,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -24074,6 +24290,28 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net10.0/System.Speech.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -24082,7 +24320,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -24996,6 +25235,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -25004,7 +25259,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -25918,6 +26174,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -25926,7 +26198,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -26840,6 +27113,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -26848,7 +27137,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -27762,6 +28052,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -27770,7 +28076,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -28684,6 +28991,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -28692,7 +29015,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -29857,6 +30181,28 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net10.0/System.Speech.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -29865,7 +30211,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -30968,6 +31315,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -30976,7 +31339,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -32079,6 +32443,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -32087,7 +32467,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -33190,6 +33571,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -33198,7 +33595,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -34301,6 +34699,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -34309,7 +34723,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -35422,6 +35837,22 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net10.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -35430,7 +35861,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "compile": {
           "bin/placeholder/StreetSamurai.Core.dll": {}
@@ -38207,6 +38639,38 @@
         "quikgraph.serialization.2.5.0.nupkg.sha512",
         "quikgraph.serialization.nuspec",
         "quikgraph_logo.png"
+      ]
+    },
+    "System.Speech/10.0.5": {
+      "sha512": "MYkGiMGWYc9rhyvsmf2UGIHD4RVJ3+uNgllFPP1YW6ILJJDXpDN8jMcy++0E/KrG507kTPCo5EOW4tEwUOCKhQ==",
+      "type": "package",
+      "path": "system.speech/10.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Speech.targets",
+        "lib/net10.0/System.Speech.dll",
+        "lib/net10.0/System.Speech.xml",
+        "lib/net462/_._",
+        "lib/net8.0/System.Speech.dll",
+        "lib/net8.0/System.Speech.xml",
+        "lib/net9.0/System.Speech.dll",
+        "lib/net9.0/System.Speech.xml",
+        "lib/netstandard2.0/System.Speech.dll",
+        "lib/netstandard2.0/System.Speech.xml",
+        "runtimes/win/lib/net10.0/System.Speech.dll",
+        "runtimes/win/lib/net10.0/System.Speech.xml",
+        "runtimes/win/lib/net8.0/System.Speech.dll",
+        "runtimes/win/lib/net8.0/System.Speech.xml",
+        "runtimes/win/lib/net9.0/System.Speech.dll",
+        "runtimes/win/lib/net9.0/System.Speech.xml",
+        "system.speech.10.0.5.nupkg.sha512",
+        "system.speech.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "Xamarin.Android.Glide/4.16.0.14": {

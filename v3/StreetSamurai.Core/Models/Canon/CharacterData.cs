@@ -8,57 +8,57 @@ namespace StreetSamurai.Core.Models.Canon;
 /// </summary>
 public record CharacterData
 {
-    [JsonPropertyName("type")] public string Type { get; init; } = "character";
-    [JsonPropertyName("name")] public string Name { get; init; } = "";
-    [JsonPropertyName("aliases")] public List<string> Aliases { get; init; } = [];
-    [JsonPropertyName("role")] public string Role { get; init; } = "";
-    [JsonPropertyName("age")] public int Age { get; init; }
-    [JsonPropertyName("status")] public string Status { get; init; } = "alive";
-    [JsonPropertyName("location")] public string Location { get; init; } = "";
-    [JsonPropertyName("description")] public string Description { get; init; } = "";
-    [JsonPropertyName("psychology")] public CharacterPsychology Psychology { get; init; } = new();
-    [JsonPropertyName("speech_patterns")] public SpeechPatterns SpeechPatterns { get; init; } = new();
-    [JsonPropertyName("relationships")] public List<CharacterRelationship> Relationships { get; init; } = [];
-    [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; init; } = [];
-    [JsonPropertyName("narrative_function")] public string NarrativeFunction { get; init; } = "";
-    [JsonPropertyName("augmentations")] public string Augmentations { get; init; } = "";
-    [JsonPropertyName("daily_life")] public string DailyLife { get; init; } = "";
-    [JsonPropertyName("affiliation")] public string Affiliation { get; init; } = "";
+    [JsonPropertyName("type")] public string Type { get; set; } = "character";
+    [JsonPropertyName("name")] public string Name { get; set; } = "";
+    [JsonPropertyName("aliases")] public List<string> Aliases { get; set; } = [];
+    [JsonPropertyName("role")] public string Role { get; set; } = "";
+    [JsonPropertyName("age")] public int Age { get; set; }
+    [JsonPropertyName("status")] public string Status { get; set; } = "alive";
+    [JsonPropertyName("location")] public string Location { get; set; } = "";
+    [JsonPropertyName("description")] public string Description { get; set; } = "";
+    [JsonPropertyName("psychology")] public CharacterPsychology Psychology { get; set; } = new();
+    [JsonPropertyName("speech_patterns")] public SpeechPatterns SpeechPatterns { get; set; } = new();
+    [JsonPropertyName("relationships")] public List<CharacterRelationship> Relationships { get; set; } = [];
+    [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
+    [JsonPropertyName("narrative_function")] public string NarrativeFunction { get; set; } = "";
+    [JsonPropertyName("augmentations")] public string Augmentations { get; set; } = "";
+    [JsonPropertyName("daily_life")] public string DailyLife { get; set; } = "";
+    [JsonPropertyName("affiliation")] public string Affiliation { get; set; } = "";
 }
 
 public record CharacterPsychology
 {
-    [JsonPropertyName("facet_weights")] public FacetWeights FacetWeights { get; init; } = new();
-    [JsonPropertyName("core_fears")] public List<string> CoreFears { get; init; } = [];
-    [JsonPropertyName("core_desires")] public List<string> CoreDesires { get; init; } = [];
-    [JsonPropertyName("coping_mechanisms")] public List<string> CopingMechanisms { get; init; } = [];
-    [JsonPropertyName("blind_spots")] public List<string> BlindSpots { get; init; } = [];
-    [JsonPropertyName("secret")] public string Secret { get; init; } = "";
+    [JsonPropertyName("facet_weights")] public FacetWeights FacetWeights { get; set; } = new();
+    [JsonPropertyName("core_fears")] public List<string> CoreFears { get; set; } = [];
+    [JsonPropertyName("core_desires")] public List<string> CoreDesires { get; set; } = [];
+    [JsonPropertyName("coping_mechanisms")] public List<string> CopingMechanisms { get; set; } = [];
+    [JsonPropertyName("blind_spots")] public List<string> BlindSpots { get; set; } = [];
+    [JsonPropertyName("secret")] public string Secret { get; set; } = "";
 }
 
 public record FacetWeights
 {
-    [JsonPropertyName("wound")] public double Wound { get; init; }
-    [JsonPropertyName("ideal")] public double Ideal { get; init; }
-    [JsonPropertyName("id")] public double Id { get; init; }
-    [JsonPropertyName("shadow")] public double Shadow { get; init; }
-    [JsonPropertyName("mask")] public double Mask { get; init; }
-    [JsonPropertyName("ghost")] public double Ghost { get; init; }
+    [JsonPropertyName("wound")] public double Wound { get; set; }
+    [JsonPropertyName("ideal")] public double Ideal { get; set; }
+    [JsonPropertyName("id")] public double Id { get; set; }
+    [JsonPropertyName("shadow")] public double Shadow { get; set; }
+    [JsonPropertyName("mask")] public double Mask { get; set; }
+    [JsonPropertyName("ghost")] public double Ghost { get; set; }
 }
 
 public record SpeechPatterns
 {
-    [JsonPropertyName("vocabulary")] public string Vocabulary { get; init; } = "";
-    [JsonPropertyName("cadence")] public string Cadence { get; init; } = "";
-    [JsonPropertyName("verbal_tics")] public List<string> VerbalTics { get; init; } = [];
-    [JsonPropertyName("example_lines")] public List<string> ExampleLines { get; init; } = [];
+    [JsonPropertyName("vocabulary")] public string Vocabulary { get; set; } = "";
+    [JsonPropertyName("cadence")] public string Cadence { get; set; } = "";
+    [JsonPropertyName("verbal_tics")] public List<string> VerbalTics { get; set; } = [];
+    [JsonPropertyName("example_lines")] public List<string> ExampleLines { get; set; } = [];
 }
 
 public record CharacterRelationship
 {
-    [JsonPropertyName("name")] public string Name { get; init; } = "";
-    [JsonPropertyName("type")] public string Type { get; init; } = "";
-    [JsonPropertyName("description")] public string Description { get; init; } = "";
-    [JsonPropertyName("emotional_core")] public string EmotionalCore { get; init; } = "";
-    [JsonPropertyName("story_tension")] public string StoryTension { get; init; } = "";
+    [JsonPropertyName("name")] public string Name { get; set; } = "";
+    [JsonPropertyName("type")] public string Type { get; set; } = "";
+    [JsonPropertyName("description")] public string Description { get; set; } = "";
+    [JsonPropertyName("emotional_core")] public string EmotionalCore { get; set; } = "";
+    [JsonPropertyName("story_tension")] public string StoryTension { get; set; } = "";
 }

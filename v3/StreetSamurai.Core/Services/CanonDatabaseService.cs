@@ -1,4 +1,3 @@
-using System.Text.Json;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
 using StreetSamurai.Core.Models.Canon;
@@ -6,68 +5,68 @@ using StreetSamurai.Core.Models.Canon;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Typed canon database. Reads from canon.json — the single source of truth.
+/// Aggregates data from individual typed JSON repositories.
+/// Keeps the same public API so downstream services (StoryStarterService,
+/// SceneGenerationService, WorldGraphService) don't break.
 /// </summary>
 public class CanonDatabaseService
 {
-    private readonly ICanonPathProvider _paths;
-    private CanonDatabase? _db;
-    private readonly object _lock = new();
-    private string CanonJsonPath => Path.Combine(_paths.EngineDataDir, "canon.json");
+    private readonly CharacterRepository _characters;
+    private readonly FacetRepository _facets;
+    private readonly DistrictRepository _districts;
+    private readonly FactionRepository _factions;
+    private readonly CorponationRepository _corponations;
+    private readonly WorldbuildingDocRepository _docs;
+    private readonly StoryBibleRepository _storyBible;
+    private readonly LiteraryRulesRepository _literaryRules;
+    private readonly MotifRepository _motifs;
+    private readonly CharacterProfileRepository _characterProfile;
 
-    public CanonDatabaseService(ICanonPathProvider paths)
+    public CanonDatabaseService(
+        CharacterRepository characters, FacetRepository facets,
+        DistrictRepository districts, FactionRepository factions,
+        CorponationRepository corponations, WorldbuildingDocRepository docs,
+        StoryBibleRepository storyBible, LiteraryRulesRepository literaryRules,
+        MotifRepository motifs, CharacterProfileRepository characterProfile)
     {
-        _paths = paths;
-    }
-
-    /// <summary>
-    /// Get the loaded database. Loads on first access.
-    /// </summary>
-    public CanonDatabase Db
-    {
-        get
-        {
-            if (_db != null) return _db;
-            lock (_lock)
-            {
-                if (_db != null) return _db;
-                EnsureLoaded();
-                return _db!;
-            }
-        }
-    }
-
-    public void EnsureLoaded()
-    {
-        var jsonPath = CanonJsonPath;
-        if (!File.Exists(jsonPath))
-            throw new FileNotFoundException($"Canon database not found at {jsonPath}. Ensure canon.json exists in engine_data/.");
-
-        var json = File.ReadAllText(jsonPath);
-        _db = JsonSerializer.Deserialize<CanonDatabase>(json, new JsonSerializerOptions
-        {
-            PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower,
-        }) ?? new();
-    }
-
-    public void Reload()
-    {
-        _db = null;
-        EnsureLoaded();
+        _characters = characters;
+        _facets = facets;
+        _districts = districts;
+        _factions = factions;
+        _corponations = corponations;
+        _docs = docs;
+        _storyBible = storyBible;
+        _literaryRules = literaryRules;
+        _motifs = motifs;
+        _characterProfile = characterProfile;
     }
 
     // ── Typed Accessors ─────────────────────────────────
 
-    public List<CharacterData> Characters => Db.Characters;
-    public List<FacetData> Facets => Db.Facets;
-    public List<DistrictData> Districts => Db.Districts;
-    public List<FactionData> Factions => Db.Factions;
-    public List<CorponationData> Corponations => Db.Corponations;
-    public List<WorldbuildingDocument> WorldbuildingDocs => Db.WorldbuildingDocs;
-    public StoryBibleData StoryBible => Db.StoryBible;
-    public LiteraryRulesData LiteraryRules => Db.LiteraryRules;
-    public List<MotifData> Motifs => Db.Motifs;
-    public CharacterProfileData CharacterProfile => Db.CharacterProfile;
+    public List<CharacterData> Characters => _characters.GetAll();
+    public List<FacetData> Facets => _facets.GetAll();
+    public List<DistrictData> Districts => _districts.GetAll();
+    public List<FactionData> Factions => _factions.GetAll();
+    public List<CorponationData> Corponations => _corponations.GetAll();
+    public List<WorldbuildingDocument> WorldbuildingDocs => _docs.GetAll();
+    public StoryBibleData StoryBible => _storyBible.Get();
+    public LiteraryRulesData LiteraryRules => _literaryRules.Get();
+    public List<MotifData> Motifs => _motifs.GetAll();
+    public CharacterProfileData CharacterProfile => _characterProfile.Get();
+
+    public void Reload()
+    {
+        _characters.Reload();
+        _facets.Reload();
+        _districts.Reload();
+        _factions.Reload();
+        _corponations.Reload();
+        _docs.Reload();
+        _storyBible.Reload();
+        _literaryRules.Reload();
+        _motifs.Reload();
+        _characterProfile.Reload();
+    }
 
     // ── Character Lookups ───────────────────────────────
 
@@ -100,9 +99,6 @@ public class CanonDatabaseService
         };
     }
 
-    /// <summary>
-    /// Builds a rich LLM prompt context for a character — psychology, speech, relationships.
-    /// </summary>
     public string GetCharacterContext(string nameOrAlias)
     {
         var c = FindCharacter(nameOrAlias);
@@ -143,9 +139,6 @@ public class CanonDatabaseService
         return string.Join("\n", lines);
     }
 
-    /// <summary>
-    /// Builds rich location context for LLM prompts — description, atmosphere, connections.
-    /// </summary>
     public string GetDistrictContext(string nameOrAlias)
     {
         var d = Districts.FirstOrDefault(x =>
@@ -167,9 +160,6 @@ public class CanonDatabaseService
         return string.Join("\n", lines);
     }
 
-    /// <summary>
-    /// Full literary rules + motifs as a prompt string.
-    /// </summary>
     public string GetLiteraryRulesPrompt()
     {
         var rules = LiteraryRules;
@@ -201,9 +191,6 @@ public class CanonDatabaseService
         return string.Join("\n", lines);
     }
 
-    /// <summary>
-    /// Full-text search across worldbuilding documents.
-    /// </summary>
     public List<SearchResult> Search(string query, int maxResults = 20)
     {
         var results = new List<SearchResult>();

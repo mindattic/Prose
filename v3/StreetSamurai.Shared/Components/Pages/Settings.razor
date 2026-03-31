@@ -3,8 +3,29 @@
 @inject LlmRouter LlmRouter
 @inject ElevenLabsTtsService TtsSvc
 
-<h4 class="text-danger mb-1">Settings</h4>
-<p class="text-muted mb-3">Configure API keys, LLM providers, TTS narration, canon paths, and editor preferences.</p>
+<div class="d-flex justify-content-between align-items-center mb-1">
+    <h4 class="text-danger mb-0">Settings</h4>
+    <div class="d-flex gap-2">
+        <button class="btn btn-sm btn-success" @onclick="SaveSettings">
+            <i class="bi bi-floppy"></i> Save
+        </button>
+        @if (_confirmReset)
+        {
+            <span class="d-flex align-items-center gap-1">
+                <small class="text-warning">Reset all non-key settings?</small>
+                <button class="btn btn-sm btn-danger" @onclick="DoReset">Yes</button>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmReset = false">No</button>
+            </span>
+        }
+        else
+        {
+            <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmReset = true">
+                <i class="bi bi-arrow-counterclockwise"></i> Reset to Defaults
+            </button>
+        }
+    </div>
+</div>
+<p class="text-muted mb-3">Configure API keys, LLM providers, TTS narration, and canon paths.</p>
 
 <div class="row g-3">
     <div class="col-md-6">
@@ -159,6 +180,7 @@
                 <div class="mb-3">
                     <label class="form-label text-muted">Model</label>
                     <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.TtsModel">
+                        <option value="eleven_v3">v3 (Recommended)</option>
                         <option value="eleven_multilingual_v2">Multilingual v2</option>
                         <option value="eleven_turbo_v2_5">Turbo v2.5</option>
                         <option value="eleven_monolingual_v1">Monolingual v1</option>
@@ -212,6 +234,7 @@
     private bool _testingTts;
     private string? _ttsTestResult;
     private bool _ttsTestSuccess;
+    private bool _confirmReset;
 
     protected override async Task OnInitializedAsync()
     {
@@ -277,5 +300,18 @@
         {
             _testingTts = false;
         }
+    }
+
+    private void SaveSettings()
+    {
+        // All settings auto-save on change via SettingsService setters,
+        // but this gives the user a deliberate save action
+        _ = SettingsSvc.TtsModel; // trigger a read to ensure loaded
+    }
+
+    private void DoReset()
+    {
+        SettingsSvc.ResetToDefaults();
+        _confirmReset = false;
     }
 }
