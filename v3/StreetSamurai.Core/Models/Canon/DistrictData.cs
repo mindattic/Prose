@@ -5,7 +5,7 @@ namespace StreetSamurai.Core.Models.Canon;
 /// <summary>
 /// Strongly-typed district/place model.
 /// </summary>
-public record DistrictData
+public class DistrictData
 {
     [JsonPropertyName("type")] public string Type { get; set; } = "place";
     [JsonPropertyName("name")] public string Name { get; set; } = "";
@@ -23,7 +23,7 @@ public record DistrictData
     [JsonPropertyName("notable_locations")] public List<NotableLocation> NotableLocations { get; set; } = [];
 }
 
-public record AtmosphereData
+public class AtmosphereData
 {
     [JsonPropertyName("sights")] public List<string> Sights { get; set; } = [];
     [JsonPropertyName("sounds")] public List<string> Sounds { get; set; } = [];
@@ -31,12 +31,12 @@ public record AtmosphereData
     [JsonPropertyName("feel")] public string Feel { get; set; } = "";
 }
 
-public record DistrictConnections
+public class DistrictConnections
 {
     [JsonPropertyName("adjacent_to")] public List<string> AdjacentTo { get; set; } = [];
 }
 
-public record NotableLocation
+public class NotableLocation
 {
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("description")] public string Description { get; set; } = "";

@@ -21,7 +21,7 @@ public class JsonDictionaryRepository<T> where T : class
         _jsonOptions = new JsonSerializerOptions
         {
             WriteIndented = true,
-            PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower,
+            PropertyNameCaseInsensitive = true,
             DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         };
     }
@@ -31,16 +31,9 @@ public class JsonDictionaryRepository<T> where T : class
         if (_cache != null) return _cache;
         if (!File.Exists(_filePath)) return _cache = [];
 
-        try
-        {
-            var json = File.ReadAllText(_filePath);
-            _cache = JsonSerializer.Deserialize<List<T>>(json, _jsonOptions) ?? [];
-            return _cache;
-        }
-        catch
-        {
-            return _cache = [];
-        }
+        var json = File.ReadAllText(_filePath);
+        _cache = JsonSerializer.Deserialize<List<T>>(json, _jsonOptions) ?? [];
+        return _cache;
     }
 
     public T? GetByName(string name)
@@ -108,7 +101,7 @@ public class JsonSingletonRepository<T> where T : class, new()
         _jsonOptions = new JsonSerializerOptions
         {
             WriteIndented = true,
-            PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower,
+            PropertyNameCaseInsensitive = true,
             DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         };
     }
@@ -118,16 +111,9 @@ public class JsonSingletonRepository<T> where T : class, new()
         if (_cache != null) return _cache;
         if (!File.Exists(_filePath)) return _cache = new T();
 
-        try
-        {
-            var json = File.ReadAllText(_filePath);
-            _cache = JsonSerializer.Deserialize<T>(json, _jsonOptions) ?? new T();
-            return _cache;
-        }
-        catch
-        {
-            return _cache = new T();
-        }
+        var json = File.ReadAllText(_filePath);
+        _cache = JsonSerializer.Deserialize<T>(json, _jsonOptions) ?? new T();
+        return _cache;
     }
 
     public void Save(T item)

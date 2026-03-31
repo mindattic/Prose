@@ -6,7 +6,7 @@ namespace StreetSamurai.Core.Models.Canon;
 /// Strongly-typed character model matching the actual YAML structure.
 /// Serialized/deserialized as JSON — no regex, no guessing.
 /// </summary>
-public record CharacterData
+public class CharacterData
 {
     [JsonPropertyName("type")] public string Type { get; set; } = "character";
     [JsonPropertyName("name")] public string Name { get; set; } = "";
@@ -24,9 +24,13 @@ public record CharacterData
     [JsonPropertyName("augmentations")] public string Augmentations { get; set; } = "";
     [JsonPropertyName("daily_life")] public string DailyLife { get; set; } = "";
     [JsonPropertyName("affiliation")] public string Affiliation { get; set; } = "";
+    /// <summary>Whether this character uses the facet tag system in narration (only Kyle).</summary>
+    [JsonPropertyName("uses_facets")] public bool UsesFacets { get; set; }
+    /// <summary>How this character's POV narration sounds — prose style, interior voice, what they notice first.</summary>
+    [JsonPropertyName("narration_voice")] public string NarrationVoice { get; set; } = "";
 }
 
-public record CharacterPsychology
+public class CharacterPsychology
 {
     [JsonPropertyName("facet_weights")] public FacetWeights FacetWeights { get; set; } = new();
     [JsonPropertyName("core_fears")] public List<string> CoreFears { get; set; } = [];
@@ -36,7 +40,7 @@ public record CharacterPsychology
     [JsonPropertyName("secret")] public string Secret { get; set; } = "";
 }
 
-public record FacetWeights
+public class FacetWeights
 {
     [JsonPropertyName("wound")] public double Wound { get; set; }
     [JsonPropertyName("ideal")] public double Ideal { get; set; }
@@ -46,7 +50,7 @@ public record FacetWeights
     [JsonPropertyName("ghost")] public double Ghost { get; set; }
 }
 
-public record SpeechPatterns
+public class SpeechPatterns
 {
     [JsonPropertyName("vocabulary")] public string Vocabulary { get; set; } = "";
     [JsonPropertyName("cadence")] public string Cadence { get; set; } = "";
@@ -54,7 +58,7 @@ public record SpeechPatterns
     [JsonPropertyName("example_lines")] public List<string> ExampleLines { get; set; } = [];
 }
 
-public record CharacterRelationship
+public class CharacterRelationship
 {
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("type")] public string Type { get; set; } = "";

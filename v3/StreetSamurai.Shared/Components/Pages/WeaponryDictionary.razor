@@ -145,7 +145,7 @@
         ? _items
         : _items.Where(w => w.Category == _filterCategory);
 
-    protected override void OnInitialized() => _items = Repo.GetAll();
+    protected override void OnInitialized() { Repo.Reload(); _items = Repo.GetAll(); }
 
     private void AddNew()
     {

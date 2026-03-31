@@ -120,6 +120,10 @@ public class StoryProject
     [JsonPropertyName("plot_arc")]
     public string PlotArc { get; set; } = "";
 
+    /// <summary>Full structured outline — chapter-by-chapter breakdown with continuity checks. Updated by Outline button.</summary>
+    [JsonPropertyName("outline")]
+    public string Outline { get; set; } = "";
+
     [JsonPropertyName("created")]
     public DateTime Created { get; set; } = DateTime.UtcNow;
 

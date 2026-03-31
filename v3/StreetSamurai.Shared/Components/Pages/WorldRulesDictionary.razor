@@ -138,7 +138,9 @@
 
     private void SaveRules()
     {
-        _rules = _rules with { Structural = _rules.Structural with { Pov = _rulesPov, Pace = _rulesPace, Ending = _rulesEnding } };
+        _rules.Structural.Pov = _rulesPov;
+        _rules.Structural.Pace = _rulesPace;
+        _rules.Structural.Ending = _rulesEnding;
         LitRulesRepo.Save(_rules);
         _editRules = false;
     }

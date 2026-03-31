@@ -223,6 +223,103 @@
             </div>
         </div>
     </div>
+
+    @* ── GhostWriter ──────────────────────────────────────── *@
+    <div class="col-md-6">
+        <div class="card bg-dark text-light border-secondary mt-3">
+            <div class="card-header text-muted">GhostWriter</div>
+            <div class="card-body">
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="gwEnabled"
+                           checked="@SettingsSvc.GhostWriterEnabled"
+                           @onchange="e => SettingsSvc.GhostWriterEnabled = (bool)(e.Value ?? false)" />
+                    <label class="form-check-label text-muted" for="gwEnabled">Enabled</label>
+                </div>
+                <div class="row g-2 mb-2">
+                    <div class="col-md-6">
+                        <label class="form-label text-muted small">Scan Interval (seconds)</label>
+                        <input type="number" class="form-control form-control-sm bg-dark text-light border-secondary"
+                               min="30" max="600" step="10"
+                               @bind="SettingsSvc.GhostWriterScanIntervalSeconds" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label text-muted small">Rate Limit Delay (ms)</label>
+                        <input type="number" class="form-control form-control-sm bg-dark text-light border-secondary"
+                               min="10000" max="120000" step="5000"
+                               @bind="SettingsSvc.GhostWriterRateLimitDelayMs" />
+                    </div>
+                </div>
+                <div class="row g-2 mb-2">
+                    <div class="col-md-4">
+                        <label class="form-label text-muted small">Max Voters</label>
+                        <input type="number" class="form-control form-control-sm bg-dark text-light border-secondary"
+                               min="1" max="11"
+                               @bind="SettingsSvc.GhostWriterMaxVoters" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label text-muted small">Rescan Cooldown (min)</label>
+                        <input type="number" class="form-control form-control-sm bg-dark text-light border-secondary"
+                               min="5" max="120"
+                               @bind="SettingsSvc.GhostWriterRescanMinutes" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label text-muted small">Majority Threshold</label>
+                        <input type="number" class="form-control form-control-sm bg-dark text-light border-secondary"
+                               min="0.5" max="1.0" step="0.05"
+                               @bind="SettingsSvc.GhostWriterMajorityThreshold" />
+                        <small class="text-muted">@((SettingsSvc.GhostWriterMajorityThreshold * 100).ToString("F0"))%</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* ── Multi-LLM API Keys ───────────────────────────────── *@
+    <div class="col-md-6">
+        <div class="card bg-dark text-light border-secondary mt-3">
+            <div class="card-header text-muted">Multi-LLM API Keys</div>
+            <div class="card-body">
+                <div class="row g-2">
+                    <div class="col-md-6 mb-2">
+                        <label class="form-label text-muted small">Gemini</label>
+                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="SettingsSvc.GeminiApiKey" @bind:event="onchange" />
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label class="form-label text-muted small">DeepSeek</label>
+                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="SettingsSvc.DeepSeekApiKey" @bind:event="onchange" />
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label class="form-label text-muted small">Mistral</label>
+                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="SettingsSvc.MistralApiKey" @bind:event="onchange" />
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label class="form-label text-muted small">Grok (xAI)</label>
+                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="SettingsSvc.GrokApiKey" @bind:event="onchange" />
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label class="form-label text-muted small">Groq</label>
+                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="SettingsSvc.GroqApiKey" @bind:event="onchange" />
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label class="form-label text-muted small">Together</label>
+                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="SettingsSvc.TogetherApiKey" @bind:event="onchange" />
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label class="form-label text-muted small">OpenRouter</label>
+                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="SettingsSvc.OpenRouterApiKey" @bind:event="onchange" />
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label class="form-label text-muted small">Fireworks</label>
+                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="SettingsSvc.FireworksApiKey" @bind:event="onchange" />
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label class="form-label text-muted small">Cohere</label>
+                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="SettingsSvc.CohereApiKey" @bind:event="onchange" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 @code {

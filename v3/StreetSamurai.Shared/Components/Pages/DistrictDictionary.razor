@@ -84,7 +84,7 @@
     // Atmosphere.Feel is inside a nested record, so use a mutable proxy
     private string _editFeel = "";
 
-    protected override void OnInitialized() => _items = Repo.GetAll();
+    protected override void OnInitialized() { Repo.Reload(); _items = Repo.GetAll(); }
 
     private void AddNew()
     {
@@ -108,10 +108,7 @@
         if (_editing == null || string.IsNullOrWhiteSpace(_editing.Name)) return;
 
         // Update nested Atmosphere.Feel
-        _editing = _editing with
-        {
-            Atmosphere = _editing.Atmosphere with { Feel = _editFeel }
-        };
+        _editing.Atmosphere.Feel = _editFeel;
 
         // If name changed during edit, delete the old entry
         if (!_isNew && _originalName != _editing.Name)

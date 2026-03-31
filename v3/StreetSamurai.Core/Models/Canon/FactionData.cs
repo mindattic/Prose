@@ -5,7 +5,7 @@ namespace StreetSamurai.Core.Models.Canon;
 /// <summary>
 /// Strongly-typed faction model.
 /// </summary>
-public record FactionData
+public class FactionData
 {
     [JsonPropertyName("type")] public string Type { get; set; } = "faction";
     [JsonPropertyName("name")] public string Name { get; set; } = "";
@@ -23,7 +23,7 @@ public record FactionData
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
 }
 
-public record FactionRelationship
+public class FactionRelationship
 {
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("type")] public string Type { get; set; } = "";
