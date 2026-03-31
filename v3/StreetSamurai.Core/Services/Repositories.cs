@@ -59,6 +59,12 @@ public class LiteraryRulesRepository : JsonSingletonRepository<LiteraryRulesData
         : base(Path.Combine(paths.EngineDataDir, "literary_rules.json")) { }
 }
 
+public class WeaponryRepository : JsonDictionaryRepository<WeaponryData>
+{
+    public WeaponryRepository(ICanonPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "weaponry.json"), w => w.Name) { }
+}
+
 public class CharacterProfileRepository : JsonSingletonRepository<CharacterProfileData>
 {
     public CharacterProfileRepository(ICanonPathProvider paths)

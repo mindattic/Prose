@@ -19,6 +19,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<FactionRepository>();
         services.AddSingleton<FacetRepository>();
         services.AddSingleton<WorldbuildingDocRepository>();
+        services.AddSingleton<WeaponryRepository>();
         services.AddSingleton<MotifRepository>();
         services.AddSingleton<StoryBibleRepository>();
         services.AddSingleton<LiteraryRulesRepository>();

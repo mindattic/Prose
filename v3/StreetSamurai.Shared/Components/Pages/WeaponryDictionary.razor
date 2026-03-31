@@ -1,0 +1,185 @@
+@page "/weaponry"
+@inject WeaponryRepository Repo
+
+<div class="d-flex justify-content-between align-items-center mb-2">
+    <h4 class="text-danger mb-0">Weaponry</h4>
+    <button class="btn btn-sm btn-outline-danger" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New Weapon</button>
+</div>
+
+@if (!string.IsNullOrEmpty(_filterCategory))
+{
+    <div class="mb-2">
+        <span class="badge bg-danger me-1">@_filterCategory</span>
+        <button class="btn btn-sm btn-outline-secondary py-0" @onclick='() => _filterCategory = ""'>Clear</button>
+    </div>
+}
+
+@if (_editing != null)
+{
+    <div class="card bg-dark text-light border-danger mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+            <span class="text-danger fw-bold">@(_isNew ? "New Weapon" : _editing.Name)</span>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="card-body">
+            <div class="row g-2 mb-2">
+                <div class="col-md-4">
+                    <label class="form-label text-muted small">Name</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Name" />
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label text-muted small">Category</label>
+                    <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="_editing.Category">
+                        <option value="">-- Select --</option>
+                        <option value="melee">Melee</option>
+                        <option value="firearm">Firearm</option>
+                        <option value="energy">Energy</option>
+                        <option value="explosive">Explosive</option>
+                        <option value="chemical">Chemical</option>
+                        <option value="cyber">Cyber/Neural</option>
+                        <option value="drone">Drone/Autonomous</option>
+                        <option value="exotic">Exotic</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label text-muted small">Manufacturer</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Manufacturer" />
+                </div>
+            </div>
+            <div class="row g-2 mb-2">
+                <div class="col-md-4">
+                    <label class="form-label text-muted small">Tier Availability</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="e.g. Tier 2+, Black market only" @bind="_editing.TierAvailability" />
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label text-muted small">Legality</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="e.g. Restricted, Prohibited, Licensed" @bind="_editing.Legality" />
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label text-muted small">Base Technologies (comma-separated)</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="e.g. Linear magnetic acceleration, Piezoelectric materials"
+                           value="@string.Join(", ", _editing.BaseTechnologies)"
+                           @onchange="OnBaseTechChanged" />
+                </div>
+            </div>
+            <div class="mb-2">
+                <label class="form-label text-muted small">Description</label>
+                <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="3" @bind="_editing.Description"></textarea>
+            </div>
+            <div class="row g-2 mb-2">
+                <div class="col-md-6">
+                    <label class="form-label text-muted small">Specifications</label>
+                    <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="2" @bind="_editing.Specifications"></textarea>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label text-muted small">Tactical Use</label>
+                    <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="2" @bind="_editing.TacticalUse"></textarea>
+                </div>
+            </div>
+            <div class="mb-2">
+                <label class="form-label text-muted small">Cultural Context</label>
+                <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="2" @bind="_editing.CulturalContext"></textarea>
+            </div>
+            <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
+                @if (!_isNew)
+                {
+                    @if (_confirmDelete)
+                    {
+                        <span class="d-flex align-items-center gap-1">
+                            <small class="text-warning">Delete @_editing.Name?</small>
+                            <button class="btn btn-sm btn-danger" @onclick="DoDelete">Yes</button>
+                            <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button>
+                        </span>
+                    }
+                    else
+                    {
+                        <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-trash3"></i> Delete</button>
+                    }
+                }
+                <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit">Cancel</button>
+            </div>
+        </div>
+    </div>
+}
+
+@* ── Category filter chips ─────────────────────────────── *@
+<div class="d-flex gap-1 mb-2 flex-wrap">
+    @foreach (var cat in _items.Select(w => w.Category).Where(c => !string.IsNullOrEmpty(c)).Distinct().OrderBy(c => c))
+    {
+        <button class="btn btn-sm @(cat == _filterCategory ? "btn-danger" : "btn-outline-secondary") py-0 px-2"
+                style="font-size: 0.75rem;" @onclick="() => _filterCategory = cat">
+            @cat (@_items.Count(w => w.Category == cat))
+        </button>
+    }
+</div>
+
+<div class="table-responsive">
+    <table class="table table-dark table-hover table-sm">
+        <thead>
+            <tr><th>Name</th><th>Category</th><th>Manufacturer</th><th>Tier</th><th>Base Tech</th></tr>
+        </thead>
+        <tbody>
+            @foreach (var w in Filtered)
+            {
+                <tr style="cursor: pointer;" @onclick="() => Edit(w)">
+                    <td class="fw-bold">@w.Name</td>
+                    <td><span class="badge bg-secondary">@w.Category</span></td>
+                    <td class="text-muted small">@w.Manufacturer</td>
+                    <td class="text-muted small">@w.TierAvailability</td>
+                    <td class="text-muted small">@string.Join(", ", w.BaseTechnologies.Take(2))</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    private List<WeaponryData> _items = [];
+    private WeaponryData? _editing;
+    private bool _isNew, _confirmDelete;
+    private string _originalName = "";
+    private string _filterCategory = "";
+
+    private IEnumerable<WeaponryData> Filtered => string.IsNullOrEmpty(_filterCategory)
+        ? _items
+        : _items.Where(w => w.Category == _filterCategory);
+
+    protected override void OnInitialized() => _items = Repo.GetAll();
+
+    private void AddNew()
+    {
+        _editing = new WeaponryData();
+        _isNew = true; _confirmDelete = false;
+    }
+
+    private void Edit(WeaponryData w)
+    {
+        _editing = w; _originalName = w.Name; _isNew = false; _confirmDelete = false;
+    }
+
+    private void SaveEdit()
+    {
+        if (_editing == null || string.IsNullOrWhiteSpace(_editing.Name)) return;
+        if (!_isNew && _originalName != _editing.Name) Repo.Delete(_originalName);
+        Repo.Save(_editing);
+        _editing = null; _items = Repo.GetAll();
+    }
+
+    private void DoDelete()
+    {
+        if (_editing == null) return;
+        Repo.Delete(_editing.Name);
+        _editing = null; _confirmDelete = false; _items = Repo.GetAll();
+    }
+
+    private void CancelEdit() { _editing = null; _confirmDelete = false; _items = Repo.GetAll(); }
+
+    private void OnBaseTechChanged(ChangeEventArgs e)
+    {
+        if (_editing == null) return;
+        _editing.BaseTechnologies = (e.Value?.ToString() ?? "")
+            .Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries)
+            .ToList();
+    }
+}
