@@ -77,17 +77,50 @@
             </button>
         }
     }
-    <button class="btn btn-sm btn-outline-info" @onclick="StartRefactor" disabled="@(_generating || _refactoring || string.IsNullOrWhiteSpace(_storyText))" title="Find and fix narrative issues, contradictions, pacing problems">
-        @if (_refactoring) { <span class="spinner-border spinner-border-sm"></span> }
+    <button class="btn btn-sm btn-outline-info" @onclick="StartSync" disabled="@(_generating || _syncing || string.IsNullOrWhiteSpace(_storyText))" title="Find and fix narrative issues, contradictions, pacing problems">
+        @if (_syncing) { <span class="spinner-border spinner-border-sm"></span> }
         else { <i class="bi bi-tools"></i> }
-        Refactor
+        Synchronize
     </button>
     <button class="btn btn-sm btn-outline-secondary" @onclick="GenerateSynopsis" disabled="@(_generating || _synopsizing || string.IsNullOrWhiteSpace(_storyText))" title="Generate a tight synopsis of this chapter for continuity">
         @if (_synopsizing) { <span class="spinner-border spinner-border-sm"></span> }
         else { <i class="bi bi-card-text"></i> }
         Synopsis
     </button>
+    <button class="btn btn-sm btn-outline-secondary" @onclick="GenerateOutline" disabled="@(_generating || _outlining)" title="Generate a chapter-by-chapter outline of the entire story">
+        @if (_outlining) { <span class="spinner-border spinner-border-sm"></span> }
+        else { <i class="bi bi-list-ol"></i> }
+        Outline
+    </button>
 </div>
+
+@* ── Outline Modal ────────────────────────────────────── *@
+@if (_showOutline)
+{
+    <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => _showOutline = false">
+        <div class="card bg-dark text-light border-secondary" style="width: 700px; max-height: 85vh; overflow-y: auto;"
+             @onclick:stopPropagation="true">
+            <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+                <span class="text-light fw-bold"><i class="bi bi-list-ol"></i> Story Outline</span>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => _showOutline = false"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="card-body">
+                @if (_outlining)
+                {
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="spinner-border spinner-border-sm text-light"></div>
+                        <small class="text-muted">Reading all chapters and building outline...</small>
+                    </div>
+                }
+                else if (!string.IsNullOrEmpty(_outlineText))
+                {
+                    <div style="font-family: monospace; font-size: 13px; line-height: 1.6; white-space: pre-wrap;">@_outlineText</div>
+                }
+            </div>
+        </div>
+    </div>
+}
 
 @* ── Chapter Tabs ─────────────────────────────────────── *@
 <div class="d-flex align-items-center gap-1 mb-2">
@@ -455,61 +488,61 @@
     </div>
 }
 
-@* ── Refactor Modal ────────────────────────────────────── *@
-@if (_showRefactor)
+@* ── Synchronize Modal ────────────────────────────────────── *@
+@if (_showSync)
 {
     <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="CloseRefactor">
+         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="CloseSync">
         <div class="card bg-dark text-light border-info" style="width: 700px; max-height: 85vh; overflow-y: auto;"
              @onclick:stopPropagation="true">
             <div class="card-header d-flex justify-content-between align-items-center border-secondary">
-                <span class="text-info fw-bold"><i class="bi bi-tools"></i> Refactor</span>
-                <button class="btn btn-sm btn-outline-secondary" @onclick="CloseRefactor"><i class="bi bi-x-lg"></i></button>
+                <span class="text-info fw-bold"><i class="bi bi-tools"></i> Synchronize</span>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="CloseSync"><i class="bi bi-x-lg"></i></button>
             </div>
             <div class="card-body">
-                @if (_refactoring)
+                @if (_syncing)
                 {
                     <div class="d-flex align-items-center gap-2">
                         <div class="spinner-border spinner-border-sm text-info"></div>
-                        <small class="text-muted">@_refactorStatus</small>
+                        <small class="text-muted">@_syncStatus</small>
                     </div>
                 }
-                else if (!string.IsNullOrEmpty(_refactorIssues))
+                else if (!string.IsNullOrEmpty(_syncIssues))
                 {
                     <div class="mb-2">
                         <label class="form-label text-muted small">Issues found — edit to remove or add items, then Apply All to fix them:</label>
                         <textarea class="form-control bg-dark text-light border-secondary"
                                   rows="12"
                                   style="font-family: monospace; font-size: 13px; line-height: 1.5;"
-                                  @bind="_refactorIssues"></textarea>
+                                  @bind="_syncIssues"></textarea>
                     </div>
 
-                    @if (!string.IsNullOrEmpty(_refactorPreview))
+                    @if (!string.IsNullOrEmpty(_syncPreview))
                     {
                         <div class="mb-2">
-                            <label class="form-label text-muted small">Refactored text (preview):</label>
+                            <label class="form-label text-muted small">Synchronizeed text (preview):</label>
                             <textarea class="form-control bg-dark text-light border-secondary"
                                       rows="10"
                                       style="font-family: Georgia, serif; font-size: 14px; line-height: 1.7;"
-                                      @bind="_refactorPreview"></textarea>
+                                      @bind="_syncPreview"></textarea>
                         </div>
                         <div class="d-flex gap-2">
-                            <button class="btn btn-success" @onclick="ApplyRefactor">
+                            <button class="btn btn-success" @onclick="ApplySync">
                                 <i class="bi bi-check-lg"></i> Apply
                             </button>
-                            <button class="btn btn-outline-info" @onclick="RunRefactorFixes" disabled="@_refactoring">
+                            <button class="btn btn-outline-info" @onclick="RunSyncFixes" disabled="@_syncing">
                                 <i class="bi bi-arrow-repeat"></i> Regenerate
                             </button>
-                            <button class="btn btn-outline-secondary" @onclick="CloseRefactor">Dismiss</button>
+                            <button class="btn btn-outline-secondary" @onclick="CloseSync">Dismiss</button>
                         </div>
                     }
                     else
                     {
                         <div class="d-flex gap-2">
-                            <button class="btn btn-info text-dark" @onclick="RunRefactorFixes" disabled="@_refactoring">
+                            <button class="btn btn-info text-dark" @onclick="RunSyncFixes" disabled="@_syncing">
                                 <i class="bi bi-wrench"></i> Apply All Fixes
                             </button>
-                            <button class="btn btn-outline-secondary" @onclick="CloseRefactor">Dismiss</button>
+                            <button class="btn btn-outline-secondary" @onclick="CloseSync">Dismiss</button>
                         </div>
                     }
                 }
@@ -564,16 +597,19 @@
     private string? _graphStatus;
     private string _lastExtractedText = "";
 
-    // ── Refactor ──
-    private bool _refactoring;
-    private bool _showRefactor;
-    private string _refactorIssues = "";
-    private string _refactorPreview = "";
-    private string _refactorStatus = "";
+    // ── Synchronize ──
+    private bool _syncing;
+    private bool _showSync;
+    private string _syncIssues = "";
+    private string _syncPreview = "";
+    private string _syncStatus = "";
 
     // ── Chapters ──
     private int _activeChapter = 1;
     private bool _synopsizing;
+    private bool _outlining;
+    private bool _showOutline;
+    private string _outlineText = "";
     private bool _showSynopsis = true;
     private StoryChapter? CurrentChapter => _project.Chapters.FirstOrDefault(c => c.Number == _activeChapter);
     private bool _showNewChapterDialog;
@@ -723,8 +759,8 @@
 
     private void SwitchChapter(int number)
     {
-        // Save current chapter text before switching
         SyncChapter();
+        Save();
         _activeChapter = number;
         _storyText = CurrentChapter?.Text ?? "";
         UpdateWordCount();
@@ -891,6 +927,66 @@
         {
             _synopsizing = false;
             _statusMessage = "";
+        }
+    }
+
+    private async Task GenerateOutline()
+    {
+        if (_outlining) return;
+        _outlining = true;
+        _showOutline = true;
+        _outlineText = "";
+        SyncChapter();
+        StateHasChanged();
+
+        try
+        {
+            // Feed ALL chapter text into the outline generator
+            var chapterSummaries = new List<string>();
+            foreach (var ch in _project.Chapters.OrderBy(c => c.Number))
+            {
+                var perspective = string.IsNullOrWhiteSpace(ch.Perspective) ? "" : $" [POV: {ch.Perspective}]";
+                var textPreview = string.IsNullOrWhiteSpace(ch.Text) ? "(empty)" : ch.Text;
+                chapterSummaries.Add($"=== CHAPTER {ch.Number}: {ch.Title}{perspective} ===\n{textPreview}");
+            }
+
+            var allText = string.Join("\n\n", chapterSummaries);
+
+            var system = """
+                You are a story editor creating a structured outline of a cyberpunk novel.
+                Read ALL chapters and produce a chapter-by-chapter outline that shows:
+
+                For each chapter:
+                - Chapter number and title
+                - POV character (if applicable)
+                - 3-5 bullet points of key events IN ORDER
+                - Characters who appear
+                - Locations used
+                - Unresolved threads left hanging
+
+                After all chapters, add:
+                CONTINUITY CHECK:
+                - Flag any contradictions between chapters (character in two places, timeline issues, etc.)
+                - Flag any dropped threads (something set up in an earlier chapter that's never addressed)
+                - Flag any character voice inconsistencies
+
+                STORY ARC STATUS:
+                - Where is the story right now in its arc?
+                - What needs to happen next?
+                - What threads are ready to be resolved?
+
+                Be specific. Quote text when flagging issues. This is a working document, not praise.
+                """;
+
+            _outlineText = await Llm.GenerateAsync(system, allText, 0.2, 8192);
+        }
+        catch (Exception ex)
+        {
+            _outlineText = $"Outline failed: {ex.Message}";
+        }
+        finally
+        {
+            _outlining = false;
         }
     }
 
@@ -1284,16 +1380,16 @@
         }
     }
 
-    // ── Refactor ──
+    // ── Synchronize ──
 
-    private async Task StartRefactor()
+    private async Task StartSync()
     {
-        if (string.IsNullOrWhiteSpace(_storyText) || _refactoring) return;
-        _refactoring = true;
-        _showRefactor = true;
-        _refactorIssues = "";
-        _refactorPreview = "";
-        _refactorStatus = "Analyzing story for issues...";
+        if (string.IsNullOrWhiteSpace(_storyText) || _syncing) return;
+        _syncing = true;
+        _showSync = true;
+        _syncIssues = "";
+        _syncPreview = "";
+        _syncStatus = "Analyzing story for issues...";
         SyncCharacters();
         StateHasChanged();
 
@@ -1328,25 +1424,25 @@
                 If the story is clean, say "No issues found." Do NOT invent problems.
                 """;
 
-            _refactorIssues = await Llm.GenerateAsync(system, _storyText, 0.3, 4096);
+            _syncIssues = await Llm.GenerateAsync(system, _storyText, 0.3, 4096);
         }
         catch (Exception ex)
         {
-            _refactorIssues = $"Analysis failed: {ex.Message}";
+            _syncIssues = $"Analysis failed: {ex.Message}";
         }
         finally
         {
-            _refactoring = false;
-            _refactorStatus = "";
+            _syncing = false;
+            _syncStatus = "";
         }
     }
 
-    private async Task RunRefactorFixes()
+    private async Task RunSyncFixes()
     {
-        if (string.IsNullOrWhiteSpace(_refactorIssues) || _refactoring) return;
-        _refactoring = true;
-        _refactorPreview = "";
-        _refactorStatus = "Applying fixes...";
+        if (string.IsNullOrWhiteSpace(_syncIssues) || _syncing) return;
+        _syncing = true;
+        _syncPreview = "";
+        _syncStatus = "Applying fixes...";
         StateHasChanged();
 
         try
@@ -1361,40 +1457,40 @@
 
             var user = $"""
                 ISSUES TO FIX:
-                {_refactorIssues}
+                {_syncIssues}
 
                 ORIGINAL TEXT:
                 {_storyText}
                 """;
 
-            _refactorPreview = await Llm.GenerateAsync(system, user, 0.3, 8192);
+            _syncPreview = await Llm.GenerateAsync(system, user, 0.3, 8192);
         }
         catch (Exception ex)
         {
-            _error = $"Refactor failed: {ex.Message}";
+            _error = $"Synchronize failed: {ex.Message}";
         }
         finally
         {
-            _refactoring = false;
-            _refactorStatus = "";
+            _syncing = false;
+            _syncStatus = "";
         }
     }
 
-    private async Task ApplyRefactor()
+    private async Task ApplySync()
     {
-        if (string.IsNullOrEmpty(_refactorPreview)) return;
-        _storyText = _refactorPreview;
+        if (string.IsNullOrEmpty(_syncPreview)) return;
+        _storyText = _syncPreview;
         await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", _storyText);
         UpdateWordCount();
         Save();
-        CloseRefactor();
+        CloseSync();
     }
 
-    private void CloseRefactor()
+    private void CloseSync()
     {
-        _showRefactor = false;
-        _refactorIssues = "";
-        _refactorPreview = "";
+        _showSync = false;
+        _syncIssues = "";
+        _syncPreview = "";
     }
 
     // ── Entity Extraction ──
