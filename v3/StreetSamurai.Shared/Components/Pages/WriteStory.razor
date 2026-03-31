@@ -7,21 +7,16 @@
 @inject IStoryBlockRepository Repo
 @inject NavigationManager Nav
 @inject ElevenLabsTtsService TtsSvc
+@inject WindowsTtsService DraftTts
 @inject TtsEnhancementService TtsEnhance
 @inject EntityExtractionService EntityExtract
+@inject ILlmService Llm
+@inject CanonDatabaseService CanonDb
 @inject IJSRuntime JS
 @implements IDisposable
 
 @* ── Toolbar ──────────────────────────────────────────── *@
 <div class="d-flex align-items-center gap-2 mb-2 flex-wrap">
-    <div class="input-group" style="max-width: 140px;">
-        <span class="input-group-text bg-dark text-muted border-secondary" style="font-size: 0.7rem;">PREFIX</span>
-        <input type="text" class="form-control form-control-sm bg-dark text-warning border-secondary fw-bold text-uppercase"
-               style="max-width: 70px; font-family: monospace;"
-               maxlength="6"
-               value="@_project.Prefix"
-               @onchange="OnPrefixChanged" />
-    </div>
     <input type="text" class="form-control bg-dark text-danger border-0 fw-bold fst-italic flex-grow-1"
            style="font-family: Georgia, serif; font-size: 1.4rem; max-width: 400px;"
            placeholder="Untitled"
@@ -32,18 +27,11 @@
         <i class="bi bi-floppy"></i> @(_saved ? "Saved" : "Save")
     </button>
 
-    @if (_prefixError != null)
-    {
-        <span class="badge bg-danger">@_prefixError</span>
-    }
     <small class="text-muted">@_wordCount words</small>
 
-    <div class="ms-auto d-flex gap-1">
-        <button class="btn btn-sm btn-outline-secondary" @onclick="ToggleProjectList" title="Your stories">
-            <i class="bi bi-folder2-open"></i>
-        </button>
-        <button class="btn btn-sm btn-outline-secondary" @onclick="NewStory" title="New story">
-            <i class="bi bi-plus-lg"></i>
+    <div class="ms-auto">
+        <button class="btn btn-sm btn-outline-danger" @onclick="NewStory" title="New story">
+            <i class="bi bi-plus-lg"></i> New Story
         </button>
     </div>
 </div>
@@ -59,49 +47,160 @@
     <button class="btn btn-sm btn-outline-warning" @onclick="RewriteSelection" disabled="@_generating" title="Rewrite highlighted text — select a passage first">
         <i class="bi bi-arrow-repeat"></i> Rewrite Selection
     </button>
-    @if (_ttsAvailable)
+    @if (_confirmNarrateAll)
     {
-        <button class="btn btn-sm btn-outline-danger" @onclick="NarrateAll" disabled="@(_generating || _narrating || string.IsNullOrWhiteSpace(_storyText))" title="Narrate the full story">
+        <span class="d-flex align-items-center gap-1">
+            <small class="text-warning">Narrate entire chapter (@_wordCount words)?</small>
+            <button class="btn btn-sm btn-danger" @onclick="DoNarrateAll">Yes</button>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmNarrateAll = false">No</button>
+        </span>
+    }
+    else if (_confirmProfessional)
+    {
+        <span class="d-flex align-items-center gap-1">
+            <small class="text-warning">Use ElevenLabs (costs credits)?</small>
+            <button class="btn btn-sm btn-danger" @onclick="ConfirmProfessionalNarrate">Yes</button>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmProfessional = false">No</button>
+        </span>
+    }
+    else
+    {
+        <button class="btn btn-sm btn-outline-danger" @onclick="SmartNarrate" disabled="@(_generating || _narrating || string.IsNullOrWhiteSpace(_storyText))" title="Draft narrate (free) — select text or narrate all">
             @if (_narrating) { <span class="spinner-border spinner-border-sm"></span> }
             else { <i class="bi bi-volume-up"></i> }
             Narrate
         </button>
-        <button class="btn btn-sm btn-outline-secondary" @onclick="NarrateSelection" disabled="@(_generating || _narrating)" title="Narrate only the highlighted text">
-            <i class="bi bi-megaphone"></i> Narrate Selection
+        @if (_ttsAvailable)
+        {
+            <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmProfessional = true" disabled="@(_generating || _narrating || string.IsNullOrWhiteSpace(_storyText))" title="Professional narration with Oliver Silk (ElevenLabs — costs credits)">
+                <i class="bi bi-star-fill"></i> Pro
+            </button>
+        }
+    }
+    <button class="btn btn-sm btn-outline-info" @onclick="StartRefactor" disabled="@(_generating || _refactoring || string.IsNullOrWhiteSpace(_storyText))" title="Find and fix narrative issues, contradictions, pacing problems">
+        @if (_refactoring) { <span class="spinner-border spinner-border-sm"></span> }
+        else { <i class="bi bi-tools"></i> }
+        Refactor
+    </button>
+    <button class="btn btn-sm btn-outline-secondary" @onclick="GenerateSynopsis" disabled="@(_generating || _synopsizing || string.IsNullOrWhiteSpace(_storyText))" title="Generate a tight synopsis of this chapter for continuity">
+        @if (_synopsizing) { <span class="spinner-border spinner-border-sm"></span> }
+        else { <i class="bi bi-card-text"></i> }
+        Synopsis
+    </button>
+</div>
+
+@* ── Chapter Tabs ─────────────────────────────────────── *@
+<div class="d-flex align-items-center gap-1 mb-2">
+    @foreach (var ch in _project.Chapters.OrderBy(c => c.Number))
+    {
+        <button class="btn btn-sm @(ch.Number == _activeChapter ? "btn-danger" : "btn-outline-secondary")"
+                @onclick="() => SwitchChapter(ch.Number)">
+            @(string.IsNullOrWhiteSpace(ch.Title) ? $"Ch {ch.Number}" : ch.Title)
+            @if (!string.IsNullOrWhiteSpace(ch.Synopsis))
+            {
+                <i class="bi bi-check-circle-fill text-success ms-1" style="font-size: 0.6rem;" title="Synopsis generated"></i>
+            }
         </button>
+    }
+    <button class="btn btn-sm btn-outline-danger" @onclick="ShowNewChapterDialog" title="Add new chapter">
+        <i class="bi bi-plus-lg"></i>
+    </button>
+    @if (_project.Chapters.Count > 0)
+    {
+        <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary ms-2"
+               style="max-width: 200px; font-size: 0.8rem;"
+               placeholder="Chapter title..."
+               value="@CurrentChapter?.Title"
+               @onchange="OnChapterTitleChanged" />
     }
 </div>
 
-@* ── Project List (collapsible) ───────────────────────── *@
-@if (_showProjectList)
+@* ── New Chapter Dialog ───────────────────────────────── *@
+@if (_showNewChapterDialog)
 {
-    <div class="card bg-dark border-secondary mb-2">
-        <div class="card-header text-muted d-flex justify-content-between py-1">
-            <small>Your Stories</small>
-            <button class="btn btn-sm btn-outline-secondary py-0" @onclick="() => _showProjectList = false">
-                <i class="bi bi-x"></i>
-            </button>
-        </div>
-        <div class="card-body p-0" style="max-height: 200px; overflow-y: auto;">
-            @if (_projects.Count == 0)
+    <div class="card bg-dark text-light border-danger mb-2">
+        <div class="card-body py-2 px-3">
+            <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="text-danger fw-bold small">New Chapter</span>
+                @if (_creatingChapter)
+                {
+                    <div class="spinner-border spinner-border-sm text-danger"></div>
+                    <small class="text-muted">Generating synopsis and preparing chapter...</small>
+                }
+            </div>
+            @if (!_creatingChapter)
             {
-                <p class="text-muted p-2 mb-0 small">No stories yet.</p>
-            }
-            else
-            {
-                <div class="list-group list-group-flush">
-                    @foreach (var p in _projects)
-                    {
-                        <button class="list-group-item list-group-item-action bg-dark text-light border-secondary py-1 d-flex justify-content-between"
-                                @onclick="() => LoadProject(p.Id)">
-                            <div>
-                                <code class="text-warning me-1" style="font-size: 0.7rem;">@p.Prefix</code>
-                                <span class="fst-italic small">@p.Title</span>
-                            </div>
-                            <small class="text-muted">@p.Modified.ToString("MMM dd HH:mm")</small>
-                        </button>
-                    }
+                <div class="mb-2">
+                    <small class="text-muted">How should the next chapter begin?</small>
                 </div>
+                <div class="d-flex gap-2 mb-2">
+                    <button class="btn btn-sm btn-outline-danger" @onclick='() => CreateNewChapter("continue")'>
+                        <i class="bi bi-arrow-right"></i> Continue Story
+                    </button>
+                    <button class="btn btn-sm btn-outline-info" @onclick='() => _showPerspectiveInput = true'>
+                        <i class="bi bi-people"></i> Switch Perspective
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="() => _showNewChapterDialog = false">Cancel</button>
+                </div>
+                @if (_showPerspectiveInput)
+                {
+                    <div class="d-flex gap-2 align-items-center">
+                        <small class="text-muted">Whose perspective?</small>
+                        <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                               style="max-width: 200px;"
+                               placeholder="Character name..."
+                               @bind="_newChapterPerspective" />
+                        <button class="btn btn-sm btn-info text-dark" @onclick='() => CreateNewChapter("perspective")' disabled="@string.IsNullOrWhiteSpace(_newChapterPerspective)">
+                            Go
+                        </button>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+}
+
+@* ── Synopsis Display ──────────────────────────────────── *@
+@if (CurrentChapter != null && (!string.IsNullOrWhiteSpace(CurrentChapter.Synopsis) || !string.IsNullOrWhiteSpace(_project.StorySynopsis)))
+{
+    <div class="card bg-dark border-secondary mb-2" style="font-size: 0.8rem;">
+        <div class="card-body py-2 px-3">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+                <small class="text-info fw-bold">Context</small>
+                <button class="btn btn-sm btn-outline-secondary py-0 px-1" style="font-size: 0.65rem;" @onclick="() => _showSynopsis = !_showSynopsis">
+                    @(_showSynopsis ? "hide" : "show")
+                </button>
+            </div>
+            @if (_showSynopsis)
+            {
+                @if (!string.IsNullOrWhiteSpace(_project.StorySynopsis))
+                {
+                    <div class="mb-2">
+                        <small class="text-danger fw-bold">Story Overview</small>
+                        <div class="text-muted small" style="line-height: 1.4;">@_project.StorySynopsis</div>
+                    </div>
+                }
+                @if (!string.IsNullOrWhiteSpace(_project.PlotArc))
+                {
+                    <div class="mb-2">
+                        <small class="text-warning fw-bold">Plot Arc</small>
+                        <div class="text-muted small" style="line-height: 1.4; white-space: pre-wrap;">@_project.PlotArc</div>
+                    </div>
+                }
+                @if (!string.IsNullOrWhiteSpace(CurrentChapter.Synopsis))
+                {
+                    <div class="mb-2">
+                        <small class="text-info fw-bold">Chapter Synopsis</small>
+                        <div class="text-muted small" style="line-height: 1.4;">@CurrentChapter.Synopsis</div>
+                    </div>
+                }
+                @if (!string.IsNullOrWhiteSpace(CurrentChapter.Beats))
+                {
+                    <div>
+                        <small class="text-success fw-bold">Key Beats</small>
+                        <div class="text-muted small" style="line-height: 1.4; white-space: pre-wrap;">@CurrentChapter.Beats</div>
+                    </div>
+                }
             }
         </div>
     </div>
@@ -133,17 +232,14 @@
         <button class="dropdown-item text-light d-flex align-items-center gap-2 px-3 py-2" @onclick="ContextRewrite">
             <i class="bi bi-arrow-repeat text-warning"></i> <span>Rewrite</span>
         </button>
-        <div class="dropdown-divider border-secondary my-1"></div>
         @if (_ttsAvailable)
         {
-            <button class="dropdown-item text-light d-flex align-items-center gap-2 px-3 py-2" @onclick="ContextNarrate" disabled="@_narrating">
-                <i class="bi bi-volume-up text-danger"></i> <span>Narrate Selection</span>
-            </button>
-            <button class="dropdown-item text-light d-flex align-items-center gap-2 px-3 py-2" @onclick="ContextNarrateAll" disabled="@_narrating">
-                <i class="bi bi-megaphone text-danger"></i> <span>Narrate All</span>
-            </button>
             <div class="dropdown-divider border-secondary my-1"></div>
+            <button class="dropdown-item text-light d-flex align-items-center gap-2 px-3 py-2" @onclick="ContextNarrate" disabled="@_narrating">
+                <i class="bi bi-volume-up text-danger"></i> <span>Narrate</span>
+            </button>
         }
+        <div class="dropdown-divider border-secondary my-1"></div>
         <button class="dropdown-item text-light d-flex align-items-center gap-2 px-3 py-2" @onclick="ContextContinue" disabled="@_generating">
             <i class="bi bi-pen text-danger"></i> <span>Continue Story</span>
         </button>
@@ -359,6 +455,69 @@
     </div>
 }
 
+@* ── Refactor Modal ────────────────────────────────────── *@
+@if (_showRefactor)
+{
+    <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="CloseRefactor">
+        <div class="card bg-dark text-light border-info" style="width: 700px; max-height: 85vh; overflow-y: auto;"
+             @onclick:stopPropagation="true">
+            <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+                <span class="text-info fw-bold"><i class="bi bi-tools"></i> Refactor</span>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="CloseRefactor"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="card-body">
+                @if (_refactoring)
+                {
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="spinner-border spinner-border-sm text-info"></div>
+                        <small class="text-muted">@_refactorStatus</small>
+                    </div>
+                }
+                else if (!string.IsNullOrEmpty(_refactorIssues))
+                {
+                    <div class="mb-2">
+                        <label class="form-label text-muted small">Issues found — edit to remove or add items, then Apply All to fix them:</label>
+                        <textarea class="form-control bg-dark text-light border-secondary"
+                                  rows="12"
+                                  style="font-family: monospace; font-size: 13px; line-height: 1.5;"
+                                  @bind="_refactorIssues"></textarea>
+                    </div>
+
+                    @if (!string.IsNullOrEmpty(_refactorPreview))
+                    {
+                        <div class="mb-2">
+                            <label class="form-label text-muted small">Refactored text (preview):</label>
+                            <textarea class="form-control bg-dark text-light border-secondary"
+                                      rows="10"
+                                      style="font-family: Georgia, serif; font-size: 14px; line-height: 1.7;"
+                                      @bind="_refactorPreview"></textarea>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-success" @onclick="ApplyRefactor">
+                                <i class="bi bi-check-lg"></i> Apply
+                            </button>
+                            <button class="btn btn-outline-info" @onclick="RunRefactorFixes" disabled="@_refactoring">
+                                <i class="bi bi-arrow-repeat"></i> Regenerate
+                            </button>
+                            <button class="btn btn-outline-secondary" @onclick="CloseRefactor">Dismiss</button>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-info text-dark" @onclick="RunRefactorFixes" disabled="@_refactoring">
+                                <i class="bi bi-wrench"></i> Apply All Fixes
+                            </button>
+                            <button class="btn btn-outline-secondary" @onclick="CloseRefactor">Dismiss</button>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+}
+
 @code {
     [Parameter] public string? ProjectId { get; set; }
 
@@ -368,14 +527,11 @@
     private string _charactersInput = "";
     private int _wordCount;
     private bool _saved;
-    private string? _prefixError;
     private string? _error;
     private bool _generating => _assistGenerating || _rewriteGenerating;
     private string _statusMessage = "";
 
     // ── Project list ──
-    private bool _showProjectList;
-    private List<StoryProject> _projects = [];
     private List<District> _districts = [];
 
     // ── AI Assist ──
@@ -408,11 +564,31 @@
     private string? _graphStatus;
     private string _lastExtractedText = "";
 
+    // ── Refactor ──
+    private bool _refactoring;
+    private bool _showRefactor;
+    private string _refactorIssues = "";
+    private string _refactorPreview = "";
+    private string _refactorStatus = "";
+
+    // ── Chapters ──
+    private int _activeChapter = 1;
+    private bool _synopsizing;
+    private bool _showSynopsis = true;
+    private StoryChapter? CurrentChapter => _project.Chapters.FirstOrDefault(c => c.Number == _activeChapter);
+    private bool _showNewChapterDialog;
+    private bool _showPerspectiveInput;
+    private bool _creatingChapter;
+    private string _newChapterPerspective = "";
+
     // ── Context menu ──
     private bool _showContextMenu;
     private double _menuTop;
     private double _menuLeft;
     private DotNetObjectReference<WriteStory>? _dotNetRef;
+    private bool _confirmNarrateAll;
+    private bool _confirmProfessional;
+    private bool _useProfessionalTts;
 
     // ── Auto-save timer ──
     private System.Threading.Timer? _saveTimer;
@@ -424,19 +600,19 @@
     {
         _districts = Canon.ListDistricts();
         _ttsAvailable = await TtsSvc.IsConfiguredAsync();
-        _projects = Repo.ListProjects();
-
         if (!string.IsNullOrEmpty(ProjectId))
         {
             var loaded = Repo.LoadProject(ProjectId);
             if (loaded != null)
             {
                 _project = loaded;
-                _storyText = loaded.FullText;
                 _charactersInput = string.Join(", ", _project.Characters);
             }
         }
 
+        _project.EnsureChapters();
+        _activeChapter = _project.Chapters.First().Number;
+        _storyText = CurrentChapter?.Text ?? "";
         UpdateWordCount();
     }
 
@@ -479,13 +655,7 @@
     private async Task ContextNarrate()
     {
         _showContextMenu = false;
-        await NarrateSelection();
-    }
-
-    private async Task ContextNarrateAll()
-    {
-        _showContextMenu = false;
-        await NarrateAll();
+        await SmartNarrate();
     }
 
     private async Task ContextContinue()
@@ -522,7 +692,8 @@
     private void Save()
     {
         SyncCharacters();
-        SyncBlocks();
+        SyncChapter();
+        _project.SyncBlocksFromChapters();
         Repo.SaveProject(_project);
         _saved = true;
         _dirty = false;
@@ -533,18 +704,194 @@
     {
         Save();
         StateHasChanged();
-        // Run entity extraction in the background after explicit save
         if (!string.IsNullOrWhiteSpace(_storyText) && _storyText != _lastExtractedText)
             _ = RunExtractionAsync();
     }
 
-    private void SyncBlocks()
+    private void SyncChapter()
     {
-        // Rebuild blocks from the textarea text
-        _project.Blocks.Clear();
-        if (!string.IsNullOrWhiteSpace(_storyText))
-            _project.AddBlocksFromText(_storyText);
+        var ch = CurrentChapter;
+        if (ch != null)
+        {
+            ch.Text = _storyText;
+            ch.Modified = DateTime.UtcNow;
+        }
         _project.Modified = DateTime.UtcNow;
+    }
+
+    // ── Chapter management ──
+
+    private void SwitchChapter(int number)
+    {
+        // Save current chapter text before switching
+        SyncChapter();
+        _activeChapter = number;
+        _storyText = CurrentChapter?.Text ?? "";
+        UpdateWordCount();
+    }
+
+    private void ShowNewChapterDialog()
+    {
+        _showNewChapterDialog = true;
+        _showPerspectiveInput = false;
+        _newChapterPerspective = "";
+        _creatingChapter = false;
+    }
+
+    private async Task CreateNewChapter(string mode)
+    {
+        _creatingChapter = true;
+        StateHasChanged();
+
+        try
+        {
+            // Save current chapter
+            SyncChapter();
+
+            // Auto-generate synopsis + beats of the current chapter if missing
+            var currentCh = CurrentChapter;
+            if (currentCh != null && string.IsNullOrWhiteSpace(currentCh.Synopsis) && !string.IsNullOrWhiteSpace(currentCh.Text))
+            {
+                var synSystem = """
+                    Create a tight, factual synopsis of this chapter. Capture ALL key events,
+                    character actions, revelations, emotional beats, and unresolved threads.
+                    Name every character. Note every location. 1-2 dense paragraphs.
+                    """;
+                var priorCtx = _project.GetPriorContext(_activeChapter);
+                var synUser = string.IsNullOrWhiteSpace(priorCtx)
+                    ? currentCh.Text
+                    : $"PREVIOUS CHAPTERS:\n{priorCtx}\n\nCURRENT CHAPTER:\n{currentCh.Text}";
+
+                currentCh.Synopsis = (await Llm.GenerateAsync(synSystem, synUser, 0.2, 2048)).Trim();
+
+                var beatsSystem = """
+                    List the 3-6 major plot beats from this chapter as bullet points.
+                    Each beat: "- [what happened]". Focus on decisions, revelations, conflicts, turning points.
+                    """;
+                currentCh.Beats = (await Llm.GenerateAsync(beatsSystem, currentCh.Text, 0.2, 1024)).Trim();
+            }
+
+            // Create the new chapter
+            var nextNum = _project.Chapters.Max(c => c.Number) + 1;
+            var perspective = mode == "perspective" ? _newChapterPerspective : "";
+            var title = mode == "perspective"
+                ? $"Chapter {nextNum} — {_newChapterPerspective}"
+                : $"Chapter {nextNum}";
+
+            var newChapter = new StoryChapter { Number = nextNum, Title = title, Perspective = perspective };
+            _project.Chapters.Add(newChapter);
+            Save();
+
+            // Switch to the new chapter
+            _activeChapter = nextNum;
+            _storyText = "";
+            UpdateWordCount();
+
+            _showNewChapterDialog = false;
+            _showPerspectiveInput = false;
+        }
+        catch (Exception ex)
+        {
+            _error = $"Failed to create chapter: {ex.Message}";
+        }
+        finally
+        {
+            _creatingChapter = false;
+        }
+    }
+
+    private void OnChapterTitleChanged(ChangeEventArgs e)
+    {
+        var ch = CurrentChapter;
+        if (ch != null)
+        {
+            ch.Title = e.Value?.ToString() ?? "";
+            Save();
+        }
+    }
+
+    private async Task GenerateSynopsis()
+    {
+        if (string.IsNullOrWhiteSpace(_storyText) || _synopsizing) return;
+        _synopsizing = true;
+        _statusMessage = "Generating chapter synopsis + beats...";
+        StateHasChanged();
+
+        try
+        {
+            var priorContext = _project.GetPriorContext(_activeChapter);
+            var contextLine = string.IsNullOrWhiteSpace(priorContext)
+                ? ""
+                : $"PREVIOUS CHAPTERS CONTEXT:\n{priorContext}\n\n";
+
+            // Generate chapter synopsis
+            var synSystem = """
+                You are a story editor creating a tight, factual synopsis of a chapter.
+                Capture ALL key events, character actions, revelations, emotional beats,
+                and unresolved threads. Be precise and complete. No opinions —
+                just what happened, in order. 1-2 dense paragraphs.
+                """;
+            var synopsis = await Llm.GenerateAsync(synSystem,
+                $"{contextLine}CHAPTER TEXT:\n{_storyText}", 0.2, 2048);
+
+            // Generate key beats (bullet points)
+            _statusMessage = "Extracting key beats...";
+            StateHasChanged();
+            var beatsSystem = """
+                List the 3-6 major plot beats from this chapter as bullet points.
+                Each beat should be one line: "- [what happened]"
+                Focus on: character decisions, revelations, conflicts, turning points.
+                No filler. No opinions. Just the beats.
+                """;
+            var beats = await Llm.GenerateAsync(beatsSystem, _storyText, 0.2, 1024);
+
+            var ch = CurrentChapter;
+            if (ch != null)
+            {
+                ch.Synopsis = synopsis.Trim();
+                ch.Beats = beats.Trim();
+                Save();
+            }
+
+            // Update story-level synopsis if we have 2+ chapters with synopses
+            var chaptersWithSynopsis = _project.Chapters.Count(c => !string.IsNullOrWhiteSpace(c.Synopsis));
+            if (chaptersWithSynopsis >= 2)
+            {
+                _statusMessage = "Updating story overview...";
+                StateHasChanged();
+
+                var allSynopses = string.Join("\n\n",
+                    _project.Chapters.OrderBy(c => c.Number)
+                        .Where(c => !string.IsNullOrWhiteSpace(c.Synopsis))
+                        .Select(c => $"Chapter {c.Number} ({c.Title}): {c.Synopsis}"));
+
+                var storySystem = """
+                    Synthesize these chapter synopses into ONE story-level overview.
+                    2-3 paragraphs covering: premise, major events so far, current state
+                    of the main characters, and unresolved threads. This is the 30,000-foot
+                    view — someone reading this should understand the whole story without
+                    reading any chapters.
+                    """;
+                _project.StorySynopsis = (await Llm.GenerateAsync(storySystem, allSynopses, 0.2, 2048)).Trim();
+
+                var arcSystem = """
+                    Based on these chapter synopses, describe the plot arc so far in 3-5 bullet points.
+                    Format: "- [turning point or major shift]"
+                    Focus on the trajectory: where did it start, what changed, where is it heading?
+                    """;
+                _project.PlotArc = (await Llm.GenerateAsync(arcSystem, allSynopses, 0.2, 1024)).Trim();
+                Save();
+            }
+        }
+        catch (Exception ex)
+        {
+            _error = $"Synopsis failed: {ex.Message}";
+        }
+        finally
+        {
+            _synopsizing = false;
+            _statusMessage = "";
+        }
     }
 
     private void SyncCharacters()
@@ -554,64 +901,35 @@
             .ToList();
     }
 
-    // ── Prefix ──
-
-    private void OnPrefixChanged(ChangeEventArgs e)
-    {
-        var raw = e.Value?.ToString() ?? "";
-        var newPrefix = StoryProject.SanitizePrefix(raw);
-        _prefixError = null;
-
-        if (string.IsNullOrEmpty(newPrefix))
-        {
-            _prefixError = "Prefix required";
-            return;
-        }
-        if (newPrefix == _project.Prefix) return;
-        if (Repo.PrefixExists(newPrefix, _project.Id))
-        {
-            _prefixError = $"{newPrefix} already in use";
-            return;
-        }
-
-        if (Repo.LoadProject(_project.Id) != null)
-            _project = Repo.RenamePrefix(_project.Id, newPrefix);
-        else
-            _project.RenamePrefix(newPrefix);
-
-        _saved = false;
-    }
-
     // ── Project management ──
-
-    private void ToggleProjectList()
-    {
-        _projects = Repo.ListProjects();
-        _showProjectList = !_showProjectList;
-    }
 
     private void LoadProject(string id)
     {
+        if (!string.IsNullOrWhiteSpace(_storyText)) Save();
+
         var loaded = Repo.LoadProject(id);
         if (loaded == null) return;
 
         _project = loaded;
-        _storyText = loaded.FullText;
+        _project.EnsureChapters();
+        _activeChapter = _project.Chapters.First().Number;
+        _storyText = CurrentChapter?.Text ?? "";
         _charactersInput = string.Join(", ", _project.Characters);
         _error = null;
-        _prefixError = null;
-        _showProjectList = false;
         UpdateWordCount();
         Nav.NavigateTo($"/write/{id}", replace: true);
     }
 
     private void NewStory()
     {
+        if (!string.IsNullOrWhiteSpace(_storyText)) Save();
+
         _project = new StoryProject();
+        _project.EnsureChapters();
+        _activeChapter = 1;
         _storyText = "";
         _charactersInput = "";
         _error = null;
-        _prefixError = null;
         _saved = false;
         _wordCount = 0;
         Nav.NavigateTo("/write", replace: true);
@@ -781,9 +1099,15 @@
 
         try
         {
-            var paragraphs = _storyText
+            // Build context: prior chapter synopses + current chapter text
+            var priorContext = _project.GetPriorContext(_activeChapter);
+            var paragraphs = new List<string>();
+            if (!string.IsNullOrWhiteSpace(priorContext))
+                paragraphs.Add($"[PRIOR CHAPTERS SUMMARY]\n{priorContext}\n[CURRENT CHAPTER]");
+
+            paragraphs.AddRange(_storyText
                 .Split(["\n\n", "\r\n\r\n"], StringSplitOptions.RemoveEmptyEntries)
-                .Select(p => p.Trim()).Where(p => p.Length > 0).ToList();
+                .Select(p => p.Trim()).Where(p => p.Length > 0));
 
             var text = await Starter.ContinueAsync(
                 paragraphs, "continue",
@@ -886,29 +1210,40 @@
 
     // ── Audio ──
 
-    private async Task NarrateAll()
+    private async Task SmartNarrate()
     {
-        if (string.IsNullOrWhiteSpace(_storyText) || _narrating) return;
-        await NarrateText(_storyText);
-    }
+        if (_narrating || string.IsNullOrWhiteSpace(_storyText)) return;
 
-    private async Task NarrateSelection()
-    {
-        if (_narrating) return;
+        // Check if there's a selection first
         try
         {
             var sel = await JS.InvokeAsync<SelectionInfo>("writeInterop.getSelection", "story-surface");
-            if (sel == null || string.IsNullOrWhiteSpace(sel.Text))
+            if (sel != null && !string.IsNullOrWhiteSpace(sel.Text))
             {
-                _error = "Select some text first, then click Narrate Selection.";
+                // Has selection — narrate it directly, no confirmation needed
+                await NarrateText(sel.Text);
                 return;
             }
-            await NarrateText(sel.Text);
         }
-        catch (Exception ex)
-        {
-            _error = $"Could not read selection: {ex.Message}";
-        }
+        catch { }
+
+        // No selection — ask for confirmation before narrating all
+        _confirmNarrateAll = true;
+    }
+
+    private async Task DoNarrateAll()
+    {
+        _confirmNarrateAll = false;
+        if (!string.IsNullOrWhiteSpace(_storyText))
+            await NarrateText(_storyText);
+    }
+
+    private async Task ConfirmProfessionalNarrate()
+    {
+        _confirmProfessional = false;
+        _useProfessionalTts = true;
+        await SmartNarrate();
+        _useProfessionalTts = false;
     }
 
     private async Task NarrateText(string text)
@@ -921,14 +1256,20 @@
 
         try
         {
-            // Enhance with ElevenLabs audio tags for expressive narration
-            _statusMessage = "Enhancing text for narration...";
-            StateHasChanged();
-            var enhanced = await TtsEnhance.EnhanceForNarrationAsync(text);
+            byte[] audio;
+            if (_useProfessionalTts)
+            {
+                _statusMessage = "Synthesizing with Oliver Silk (ElevenLabs)...";
+                StateHasChanged();
+                audio = await TtsSvc.SynthesizeAsync(text);
+            }
+            else
+            {
+                _statusMessage = "Draft narration (Windows TTS)...";
+                StateHasChanged();
+                audio = await DraftTts.SynthesizeAsync(text);
+            }
 
-            _statusMessage = "Synthesizing with Oliver Silk...";
-            StateHasChanged();
-            var audio = await TtsSvc.SynthesizeAsync(enhanced);
             if (_audioPlayer != null)
                 await _audioPlayer.LoadAudioAsync(audio);
         }
@@ -941,6 +1282,119 @@
             _narrating = false;
             _statusMessage = "";
         }
+    }
+
+    // ── Refactor ──
+
+    private async Task StartRefactor()
+    {
+        if (string.IsNullOrWhiteSpace(_storyText) || _refactoring) return;
+        _refactoring = true;
+        _showRefactor = true;
+        _refactorIssues = "";
+        _refactorPreview = "";
+        _refactorStatus = "Analyzing story for issues...";
+        SyncCharacters();
+        StateHasChanged();
+
+        try
+        {
+            var characterContext = string.Join("\n---\n",
+                _project.Characters.Select(name => CanonDb.GetCharacterContext(name)).Where(c => c.Length > 0));
+
+            var rulesContext = CanonDb.GetLiteraryRulesPrompt();
+
+            var system = $"""
+                You are a story editor analyzing cyberpunk fiction set in Meridian 88.
+                Find every issue that needs fixing.
+
+                KNOWN CHARACTERS:
+                {characterContext}
+
+                LITERARY RULES:
+                {rulesContext}
+
+                List EVERY issue as a numbered item, one per line. Be specific — quote the
+                problematic text and explain what's wrong. Categories:
+                - CANON: contradicts established character/world details
+                - PLOT: logic gap, unexplained jump, dangling thread
+                - VOICE: character doesn't sound like themselves
+                - PACING: section drags or rushes
+                - PROSE: clumsy phrasing, cliché, weak imagery
+
+                Format each line as:
+                1. [CATEGORY] "quoted problem text" — explanation of what to fix
+
+                If the story is clean, say "No issues found." Do NOT invent problems.
+                """;
+
+            _refactorIssues = await Llm.GenerateAsync(system, _storyText, 0.3, 4096);
+        }
+        catch (Exception ex)
+        {
+            _refactorIssues = $"Analysis failed: {ex.Message}";
+        }
+        finally
+        {
+            _refactoring = false;
+            _refactorStatus = "";
+        }
+    }
+
+    private async Task RunRefactorFixes()
+    {
+        if (string.IsNullOrWhiteSpace(_refactorIssues) || _refactoring) return;
+        _refactoring = true;
+        _refactorPreview = "";
+        _refactorStatus = "Applying fixes...";
+        StateHasChanged();
+
+        try
+        {
+            var system = """
+                You are a literary editor fixing specific issues in cyberpunk fiction.
+                You will receive the original text and a numbered list of issues to fix.
+                Apply EVERY fix in the list. Do NOT change anything that isn't listed as an issue.
+                Preserve the original voice, structure, and meaning — only fix what's broken.
+                Return the COMPLETE corrected text. No commentary, no issue list, just the fixed story.
+                """;
+
+            var user = $"""
+                ISSUES TO FIX:
+                {_refactorIssues}
+
+                ORIGINAL TEXT:
+                {_storyText}
+                """;
+
+            _refactorPreview = await Llm.GenerateAsync(system, user, 0.3, 8192);
+        }
+        catch (Exception ex)
+        {
+            _error = $"Refactor failed: {ex.Message}";
+        }
+        finally
+        {
+            _refactoring = false;
+            _refactorStatus = "";
+        }
+    }
+
+    private async Task ApplyRefactor()
+    {
+        if (string.IsNullOrEmpty(_refactorPreview)) return;
+        _storyText = _refactorPreview;
+        await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", _storyText);
+        UpdateWordCount();
+        Save();
+        CloseRefactor();
+    }
+
+    private void CloseRefactor()
+    {
+        _showRefactor = false;
+        _refactorIssues = "";
+        _refactorPreview = "";
     }
 
     // ── Entity Extraction ──
@@ -985,7 +1439,8 @@
         if (_dirty)
         {
             SyncCharacters();
-            SyncBlocks();
+            SyncChapter();
+            _project.SyncBlocksFromChapters();
             Repo.SaveProject(_project);
         }
         _saveTimer?.Dispose();

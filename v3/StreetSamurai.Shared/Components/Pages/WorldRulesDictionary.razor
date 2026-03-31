@@ -1,0 +1,164 @@
+@page "/rules"
+@inject StoryBibleRepository StoryBibleRepo
+@inject LiteraryRulesRepository LitRulesRepo
+@inject MotifRepository MotifRepo
+
+<h4 class="text-danger mb-3">World Rules</h4>
+
+@* ── Story Bible ──────────────────────────────────────── *@
+<div class="card bg-dark text-light border-secondary mb-3">
+    <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+        <span class="text-danger fw-bold">Story Bible</span>
+        <button class="btn btn-sm btn-outline-secondary" @onclick="() => _editBible = !_editBible">
+            <i class="bi @(_editBible ? "bi-x" : "bi-pencil")"></i>
+        </button>
+    </div>
+    <div class="card-body">
+        @if (_editBible)
+        {
+            <div class="row g-2 mb-2">
+                <div class="col-md-4"><label class="form-label text-muted small">Title</label><input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_bible.Title" /></div>
+                <div class="col-md-4"><label class="form-label text-muted small">Genre</label><input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_bible.Genre" /></div>
+                <div class="col-md-4"><label class="form-label text-muted small">Tone</label><input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_bible.Tone" /></div>
+            </div>
+            <div class="row g-2 mb-2">
+                <div class="col-md-6"><label class="form-label text-muted small">Core Theme</label><input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_bible.CoreTheme" /></div>
+                <div class="col-md-6"><label class="form-label text-muted small">Core Hook</label><input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_bible.CoreHook" /></div>
+            </div>
+            <div class="mb-2"><label class="form-label text-muted small">Setting</label><textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="2" @bind="_bible.Setting"></textarea></div>
+            <div class="mb-2"><label class="form-label text-muted small">Protagonist</label><input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_bible.Protagonist" /></div>
+            <div class="mb-2"><label class="form-label text-muted small">Arc</label><textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="2" @bind="_bible.Arc"></textarea></div>
+            <button class="btn btn-sm btn-success" @onclick="SaveBible"><i class="bi bi-floppy"></i> Save</button>
+        }
+        else
+        {
+            <div class="small">
+                @if (_bible.Title.Length > 0) { <div><strong>Title:</strong> @_bible.Title</div> }
+                @if (_bible.Genre.Length > 0) { <div><strong>Genre:</strong> @_bible.Genre</div> }
+                @if (_bible.Tone.Length > 0) { <div><strong>Tone:</strong> @_bible.Tone</div> }
+                @if (_bible.CoreTheme.Length > 0) { <div><strong>Core Theme:</strong> @_bible.CoreTheme</div> }
+                @if (_bible.CoreHook.Length > 0) { <div><strong>Core Hook:</strong> @_bible.CoreHook</div> }
+                @if (_bible.Setting.Length > 0) { <div><strong>Setting:</strong> @_bible.Setting</div> }
+                @if (_bible.Protagonist.Length > 0) { <div><strong>Protagonist:</strong> @_bible.Protagonist</div> }
+                @if (_bible.Arc.Length > 0) { <div><strong>Arc:</strong> @_bible.Arc</div> }
+            </div>
+        }
+    </div>
+</div>
+
+@* ── Literary Rules ───────────────────────────────────── *@
+<div class="card bg-dark text-light border-secondary mb-3">
+    <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+        <span class="text-danger fw-bold">Literary Rules</span>
+        <button class="btn btn-sm btn-outline-secondary" @onclick="() => _editRules = !_editRules">
+            <i class="bi @(_editRules ? "bi-x" : "bi-pencil")"></i>
+        </button>
+    </div>
+    <div class="card-body">
+        @if (_editRules)
+        {
+            <div class="mb-2"><label class="form-label text-muted small">Sentence Max Words</label><input type="number" class="form-control form-control-sm bg-dark text-light border-secondary" style="max-width:100px;" @bind="_rules.SentenceMaxWords" /></div>
+            <div class="mb-2"><label class="form-label text-muted small">POV</label><input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_rulesPov" /></div>
+            <div class="mb-2"><label class="form-label text-muted small">Pace</label><input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_rulesPace" /></div>
+            <div class="mb-2"><label class="form-label text-muted small">Ending</label><input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_rulesEnding" /></div>
+            <button class="btn btn-sm btn-success" @onclick="SaveRules"><i class="bi bi-floppy"></i> Save</button>
+        }
+        else
+        {
+            <div class="small">
+                <div><strong>Max words/sentence:</strong> @_rules.SentenceMaxWords</div>
+                @if (_rules.Prohibitions.Any()) { <div><strong>Prohibitions:</strong> @string.Join("; ", _rules.Prohibitions)</div> }
+                @if (_rules.Structural.Pov.Length > 0) { <div><strong>POV:</strong> @_rules.Structural.Pov</div> }
+                @if (_rules.Structural.Pace.Length > 0) { <div><strong>Pace:</strong> @_rules.Structural.Pace</div> }
+            </div>
+        }
+    </div>
+</div>
+
+@* ── Motifs ───────────────────────────────────────────── *@
+<div class="card bg-dark text-light border-secondary mb-3">
+    <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+        <span class="text-danger fw-bold">Motifs</span>
+        <button class="btn btn-sm btn-outline-danger" @onclick="AddMotif"><i class="bi bi-plus-lg"></i></button>
+    </div>
+    <div class="card-body">
+        @if (_editingMotif != null)
+        {
+            <div class="row g-2 mb-2">
+                <div class="col-md-4"><label class="form-label text-muted small">Name</label><input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editingMotif.Name" /></div>
+                <div class="col-md-8"><label class="form-label text-muted small">Description</label><input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editingMotif.Description" /></div>
+            </div>
+            <div class="d-flex gap-2 mb-2">
+                <button class="btn btn-sm btn-success" @onclick="SaveMotif"><i class="bi bi-floppy"></i> Save</button>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => _editingMotif = null">Cancel</button>
+            </div>
+        }
+        @foreach (var m in _motifs)
+        {
+            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                <div>
+                    <span class="fw-bold small">@m.Name</span>
+                    <span class="text-muted small ms-2">@m.Description</span>
+                </div>
+                <div class="d-flex gap-1">
+                    <button class="btn btn-sm btn-outline-secondary py-0" @onclick="() => EditMotif(m)"><i class="bi bi-pencil"></i></button>
+                    <button class="btn btn-sm btn-outline-danger py-0" @onclick="() => DeleteMotif(m)"><i class="bi bi-trash3"></i></button>
+                </div>
+            </div>
+        }
+        @if (!_motifs.Any() && _editingMotif == null)
+        {
+            <small class="text-muted">No motifs defined yet.</small>
+        }
+    </div>
+</div>
+
+@code {
+    private StoryBibleData _bible = new();
+    private LiteraryRulesData _rules = new();
+    private List<MotifData> _motifs = [];
+    private bool _editBible, _editRules;
+    private MotifData? _editingMotif;
+    private string _motifOriginalName = "";
+
+    // Mutable proxies for record sub-objects
+    private string _rulesPov = "", _rulesPace = "", _rulesEnding = "";
+
+    protected override void OnInitialized()
+    {
+        _bible = StoryBibleRepo.Get();
+        _rules = LitRulesRepo.Get();
+        _motifs = MotifRepo.GetAll();
+        _rulesPov = _rules.Structural.Pov;
+        _rulesPace = _rules.Structural.Pace;
+        _rulesEnding = _rules.Structural.Ending;
+    }
+
+    private void SaveBible() { StoryBibleRepo.Save(_bible); _editBible = false; }
+
+    private void SaveRules()
+    {
+        _rules = _rules with { Structural = _rules.Structural with { Pov = _rulesPov, Pace = _rulesPace, Ending = _rulesEnding } };
+        LitRulesRepo.Save(_rules);
+        _editRules = false;
+    }
+
+    private void AddMotif() { _editingMotif = new MotifData(); _motifOriginalName = ""; }
+    private void EditMotif(MotifData m) { _editingMotif = m; _motifOriginalName = m.Name; }
+
+    private void SaveMotif()
+    {
+        if (_editingMotif == null || string.IsNullOrWhiteSpace(_editingMotif.Name)) return;
+        if (_motifOriginalName.Length > 0 && _motifOriginalName != _editingMotif.Name)
+            MotifRepo.Delete(_motifOriginalName);
+        MotifRepo.Save(_editingMotif);
+        _editingMotif = null;
+        _motifs = MotifRepo.GetAll();
+    }
+
+    private void DeleteMotif(MotifData m)
+    {
+        MotifRepo.Delete(m.Name);
+        _motifs = MotifRepo.GetAll();
+    }
+}

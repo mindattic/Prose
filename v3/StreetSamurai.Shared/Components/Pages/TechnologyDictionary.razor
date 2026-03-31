@@ -1,0 +1,109 @@
+@page "/technology"
+@inject WorldbuildingDocRepository Repo
+
+<div class="d-flex justify-content-between align-items-center mb-2">
+    <h4 class="text-danger mb-0">Technology</h4>
+    <button class="btn btn-sm btn-outline-danger" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New Entry</button>
+</div>
+
+@if (_editing != null)
+{
+    <div class="card bg-dark text-light border-danger mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+            <span class="text-danger fw-bold">@(_isNew ? "New Technology Entry" : _editing.Title)</span>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="card-body">
+            <div class="row g-2 mb-2">
+                <div class="col-md-4">
+                    <label class="form-label text-muted small">Title</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Title" />
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label text-muted small">File Name</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.FileName" />
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label text-muted small">Category</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Category" />
+                </div>
+            </div>
+            <div class="mb-2">
+                <label class="form-label text-muted small">Body</label>
+                <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="10" @bind="_editing.Body"></textarea>
+            </div>
+            <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
+                @if (!_isNew)
+                {
+                    @if (_confirmDelete)
+                    {
+                        <span class="d-flex align-items-center gap-1">
+                            <small class="text-warning">Delete?</small>
+                            <button class="btn btn-sm btn-danger" @onclick="DoDelete">Yes</button>
+                            <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button>
+                        </span>
+                    }
+                    else
+                    {
+                        <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-trash3"></i> Delete</button>
+                    }
+                }
+                <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit">Cancel</button>
+            </div>
+        </div>
+    </div>
+}
+
+<div class="table-responsive">
+    <table class="table table-dark table-hover table-sm">
+        <thead><tr><th>Title</th><th>Category</th><th>File</th></tr></thead>
+        <tbody>
+            @foreach (var d in _items.Where(d => d.Category is "technology" or "augmentation" or ""))
+            {
+                <tr style="cursor: pointer;" @onclick="() => Edit(d)">
+                    <td class="fw-bold">@d.Title</td>
+                    <td class="text-muted small">@d.Category</td>
+                    <td class="text-muted small">@d.FileName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    private List<WorldbuildingDocument> _items = [];
+    private WorldbuildingDocument? _editing;
+    private bool _isNew, _confirmDelete;
+    private string _originalName = "";
+
+    protected override void OnInitialized() => _items = Repo.GetAll();
+
+    private void AddNew()
+    {
+        _editing = new WorldbuildingDocument { Category = "technology" };
+        _isNew = true; _confirmDelete = false;
+    }
+
+    private void Edit(WorldbuildingDocument d)
+    {
+        _editing = d; _originalName = d.FileName; _isNew = false; _confirmDelete = false;
+    }
+
+    private void SaveEdit()
+    {
+        if (_editing == null || string.IsNullOrWhiteSpace(_editing.FileName)) return;
+        if (!_isNew && _originalName != _editing.FileName) Repo.Delete(_originalName);
+        Repo.Save(_editing);
+        _editing = null; _items = Repo.GetAll();
+    }
+
+    private void DoDelete()
+    {
+        if (_editing == null) return;
+        Repo.Delete(_editing.FileName);
+        _editing = null; _confirmDelete = false; _items = Repo.GetAll();
+    }
+
+    private void CancelEdit() { _editing = null; _confirmDelete = false; _items = Repo.GetAll(); }
+}

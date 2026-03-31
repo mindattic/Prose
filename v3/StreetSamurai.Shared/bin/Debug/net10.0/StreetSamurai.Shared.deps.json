@@ -277,13 +277,30 @@
           }
         }
       },
+      "System.Speech/10.0.5": {
+        "runtime": {
+          "lib/net10.0/System.Speech.dll": {
+            "assemblyVersion": "10.0.0.5",
+            "fileVersion": "10.0.526.15411"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net10.0/System.Speech.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.5",
+            "fileVersion": "10.0.526.15411"
+          }
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "dependencies": {
           "Markdig": "1.1.2",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
           "QuikGraph": "2.5.0",
-          "QuikGraph.Serialization": "2.5.0"
+          "QuikGraph.Serialization": "2.5.0",
+          "System.Speech": "10.0.5"
         },
         "runtime": {
           "StreetSamurai.Core.dll": {
@@ -460,6 +477,13 @@
       "sha512": "sha512-tirr+2APeantzmGvF8Ms2O+0IeSSR4JCL8h7krq/jbo5P22UtjAAUKBLXSx342b2wPgdi3869v/cLBMp7kfxjg==",
       "path": "quikgraph.serialization/2.5.0",
       "hashPath": "quikgraph.serialization.2.5.0.nupkg.sha512"
+    },
+    "System.Speech/10.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MYkGiMGWYc9rhyvsmf2UGIHD4RVJ3+uNgllFPP1YW6ILJJDXpDN8jMcy++0E/KrG507kTPCo5EOW4tEwUOCKhQ==",
+      "path": "system.speech/10.0.5",
+      "hashPath": "system.speech.10.0.5.nupkg.sha512"
     },
     "StreetSamurai.Core/1.0.0": {
       "type": "project",

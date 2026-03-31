@@ -1,4 +1,4 @@
-<nav class="sidebar bg-dark text-light p-3" style="width: 250px; min-height: 100vh;">
+<nav class="sidebar bg-dark text-light p-3" style="width: fit-content; min-width: 200px; min-height: 100vh; white-space: nowrap;">
     <div class="mb-4">
         <h5 class="text-danger fw-bold">Street Samurai</h5>
         <small class="text-muted">Canon Engine v3</small>
@@ -11,7 +11,29 @@
             </NavLink>
         </li>
 
+        <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">Story Engine</li>
+        <li class="nav-item">
+            <NavLink class="nav-link text-danger fw-bold" href="write">
+                <i class="bi bi-pen"></i> Story Editor
+            </NavLink>
+        </li>
+        <li class="nav-item">
+            <NavLink class="nav-link text-light" href="stories">
+                <i class="bi bi-journal-text"></i> Stories
+            </NavLink>
+        </li>
+        <li class="nav-item">
+            <NavLink class="nav-link text-light" href="queue">
+                <i class="bi bi-inbox"></i> Canon Queue
+            </NavLink>
+        </li>
+
         <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">Lore Browser</li>
+        <li class="nav-item">
+            <NavLink class="nav-link text-light" href="search">
+                <i class="bi bi-search"></i> Search
+            </NavLink>
+        </li>
         <li class="nav-item">
             <NavLink class="nav-link text-light" href="corps">
                 <i class="bi bi-building"></i> Corponations
@@ -25,11 +47,6 @@
         <li class="nav-item">
             <NavLink class="nav-link text-light" href="characters">
                 <i class="bi bi-people"></i> Characters
-            </NavLink>
-        </li>
-        <li class="nav-item">
-            <NavLink class="nav-link text-light" href="character-editor">
-                <i class="bi bi-person-plus"></i> New Character
             </NavLink>
         </li>
         <li class="nav-item">
@@ -55,33 +72,6 @@
         <li class="nav-item">
             <NavLink class="nav-link text-light" href="graph">
                 <i class="bi bi-diagram-3"></i> World Graph
-            </NavLink>
-        </li>
-        <li class="nav-item">
-            <NavLink class="nav-link text-light" href="search">
-                <i class="bi bi-search"></i> Search
-            </NavLink>
-        </li>
-
-        <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">Story Engine</li>
-        <li class="nav-item">
-            <NavLink class="nav-link text-danger fw-bold" href="write">
-                <i class="bi bi-pen"></i> Write Me a Story
-            </NavLink>
-        </li>
-        <li class="nav-item">
-            <NavLink class="nav-link text-light" href="stories">
-                <i class="bi bi-journal-text"></i> Stories
-            </NavLink>
-        </li>
-        @* <li class="nav-item">
-            <NavLink class="nav-link text-light" href="generate">
-                <i class="bi bi-lightning"></i> Generate Scene
-            </NavLink>
-        </li> *@
-        <li class="nav-item">
-            <NavLink class="nav-link text-light" href="queue">
-                <i class="bi bi-inbox"></i> Canon Queue
             </NavLink>
         </li>
 

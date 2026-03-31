@@ -7,55 +7,55 @@ namespace StreetSamurai.Core.Models.Canon;
 /// </summary>
 public record StoryBibleData
 {
-    [JsonPropertyName("title")] public string Title { get; init; } = "";
-    [JsonPropertyName("genre")] public string Genre { get; init; } = "";
-    [JsonPropertyName("tone")] public string Tone { get; init; } = "";
-    [JsonPropertyName("core_theme")] public string CoreTheme { get; init; } = "";
-    [JsonPropertyName("core_hook")] public string CoreHook { get; init; } = "";
-    [JsonPropertyName("setting")] public string Setting { get; init; } = "";
-    [JsonPropertyName("protagonist")] public string Protagonist { get; init; } = "";
-    [JsonPropertyName("arc")] public string Arc { get; init; } = "";
-    [JsonPropertyName("themes")] public List<string> Themes { get; init; } = [];
+    [JsonPropertyName("title")] public string Title { get; set; } = "";
+    [JsonPropertyName("genre")] public string Genre { get; set; } = "";
+    [JsonPropertyName("tone")] public string Tone { get; set; } = "";
+    [JsonPropertyName("core_theme")] public string CoreTheme { get; set; } = "";
+    [JsonPropertyName("core_hook")] public string CoreHook { get; set; } = "";
+    [JsonPropertyName("setting")] public string Setting { get; set; } = "";
+    [JsonPropertyName("protagonist")] public string Protagonist { get; set; } = "";
+    [JsonPropertyName("arc")] public string Arc { get; set; } = "";
+    [JsonPropertyName("themes")] public List<string> Themes { get; set; } = [];
 }
 
 public record LiteraryRulesData
 {
-    [JsonPropertyName("sentence_max_words")] public int SentenceMaxWords { get; init; } = 25;
-    [JsonPropertyName("paragraph_requirements")] public List<string> ParagraphRequirements { get; init; } = [];
-    [JsonPropertyName("prohibitions")] public List<string> Prohibitions { get; init; } = [];
-    [JsonPropertyName("structural")] public StructuralRulesData Structural { get; init; } = new();
-    [JsonPropertyName("facet_rules")] public FacetRulesData FacetRules { get; init; } = new();
+    [JsonPropertyName("sentence_max_words")] public int SentenceMaxWords { get; set; } = 25;
+    [JsonPropertyName("paragraph_requirements")] public List<string> ParagraphRequirements { get; set; } = [];
+    [JsonPropertyName("prohibitions")] public List<string> Prohibitions { get; set; } = [];
+    [JsonPropertyName("structural")] public StructuralRulesData Structural { get; set; } = new();
+    [JsonPropertyName("facet_rules")] public FacetRulesData FacetRules { get; set; } = new();
 }
 
 public record StructuralRulesData
 {
-    [JsonPropertyName("pov")] public string Pov { get; init; } = "";
-    [JsonPropertyName("location")] public string Location { get; init; } = "";
-    [JsonPropertyName("choice")] public string Choice { get; init; } = "";
-    [JsonPropertyName("consequence")] public string Consequence { get; init; } = "";
-    [JsonPropertyName("ending")] public string Ending { get; init; } = "";
-    [JsonPropertyName("pace")] public string Pace { get; init; } = "";
+    [JsonPropertyName("pov")] public string Pov { get; set; } = "";
+    [JsonPropertyName("location")] public string Location { get; set; } = "";
+    [JsonPropertyName("choice")] public string Choice { get; set; } = "";
+    [JsonPropertyName("consequence")] public string Consequence { get; set; } = "";
+    [JsonPropertyName("ending")] public string Ending { get; set; } = "";
+    [JsonPropertyName("pace")] public string Pace { get; set; } = "";
 }
 
 public record FacetRulesData
 {
-    [JsonPropertyName("interjections")] public string Interjections { get; init; } = "";
-    [JsonPropertyName("disagreement")] public string Disagreement { get; init; } = "";
-    [JsonPropertyName("lead_voice")] public string LeadVoice { get; init; } = "";
-    [JsonPropertyName("rotation")] public string Rotation { get; init; } = "";
+    [JsonPropertyName("interjections")] public string Interjections { get; set; } = "";
+    [JsonPropertyName("disagreement")] public string Disagreement { get; set; } = "";
+    [JsonPropertyName("lead_voice")] public string LeadVoice { get; set; } = "";
+    [JsonPropertyName("rotation")] public string Rotation { get; set; } = "";
 }
 
 public record MotifData
 {
-    [JsonPropertyName("name")] public string Name { get; init; } = "";
-    [JsonPropertyName("description")] public string Description { get; init; } = "";
-    [JsonPropertyName("appearances")] public List<MotifAppearanceData> Appearances { get; init; } = [];
+    [JsonPropertyName("name")] public string Name { get; set; } = "";
+    [JsonPropertyName("description")] public string Description { get; set; } = "";
+    [JsonPropertyName("appearances")] public List<MotifAppearanceData> Appearances { get; set; } = [];
 }
 
 public record MotifAppearanceData
 {
-    [JsonPropertyName("scene")] public int Scene { get; init; }
-    [JsonPropertyName("meaning")] public string Meaning { get; init; } = "";
+    [JsonPropertyName("scene")] public int Scene { get; set; }
+    [JsonPropertyName("meaning")] public string Meaning { get; set; } = "";
 }
 
 /// <summary>
@@ -63,14 +63,14 @@ public record MotifAppearanceData
 /// </summary>
 public record CharacterProfileData
 {
-    [JsonPropertyName("name")] public string Name { get; init; } = "";
-    [JsonPropertyName("title")] public string Title { get; init; } = "";
-    [JsonPropertyName("core_contradiction")] public string CoreContradiction { get; init; } = "";
-    [JsonPropertyName("era")] public string Era { get; init; } = "";
-    [JsonPropertyName("genre")] public string Genre { get; init; } = "";
-    [JsonPropertyName("arc")] public string Arc { get; init; } = "";
-    [JsonPropertyName("augmentation")] public string Augmentation { get; init; } = "";
-    [JsonPropertyName("facets")] public List<string> Facets { get; init; } = [];
+    [JsonPropertyName("name")] public string Name { get; set; } = "";
+    [JsonPropertyName("title")] public string Title { get; set; } = "";
+    [JsonPropertyName("core_contradiction")] public string CoreContradiction { get; set; } = "";
+    [JsonPropertyName("era")] public string Era { get; set; } = "";
+    [JsonPropertyName("genre")] public string Genre { get; set; } = "";
+    [JsonPropertyName("arc")] public string Arc { get; set; } = "";
+    [JsonPropertyName("augmentation")] public string Augmentation { get; set; } = "";
+    [JsonPropertyName("facets")] public List<string> Facets { get; set; } = [];
 }
 
 /// <summary>
@@ -80,12 +80,12 @@ public record CharacterProfileData
 /// </summary>
 public record WorldbuildingDocument
 {
-    [JsonPropertyName("file_name")] public string FileName { get; init; } = "";
-    [JsonPropertyName("title")] public string Title { get; init; } = "";
-    [JsonPropertyName("category")] public string Category { get; init; } = "";
-    [JsonPropertyName("body")] public string Body { get; init; } = "";
-    [JsonPropertyName("line_count")] public int LineCount { get; init; }
-    [JsonPropertyName("headings")] public List<string> Headings { get; init; } = [];
+    [JsonPropertyName("file_name")] public string FileName { get; set; } = "";
+    [JsonPropertyName("title")] public string Title { get; set; } = "";
+    [JsonPropertyName("category")] public string Category { get; set; } = "";
+    [JsonPropertyName("body")] public string Body { get; set; } = "";
+    [JsonPropertyName("line_count")] public int LineCount { get; set; }
+    [JsonPropertyName("headings")] public List<string> Headings { get; set; } = [];
 }
 
 /// <summary>
@@ -93,21 +93,21 @@ public record WorldbuildingDocument
 /// </summary>
 public record CorponationData
 {
-    [JsonPropertyName("number")] public int Number { get; init; }
-    [JsonPropertyName("name")] public string Name { get; init; } = "";
-    [JsonPropertyName("full_legal_name")] public string FullLegalName { get; init; } = "";
-    [JsonPropertyName("common_names")] public List<string> CommonNames { get; init; } = [];
-    [JsonPropertyName("stock_designation")] public string StockDesignation { get; init; } = "";
-    [JsonPropertyName("sector")] public string Sector { get; init; } = "";
-    [JsonPropertyName("valuation")] public string Valuation { get; init; } = "";
-    [JsonPropertyName("revenue")] public string Revenue { get; init; } = "";
-    [JsonPropertyName("employees")] public string Employees { get; init; } = "";
-    [JsonPropertyName("sovereign_territory")] public string SovereignTerritory { get; init; } = "";
-    [JsonPropertyName("founding_story")] public string FoundingStory { get; init; } = "";
-    [JsonPropertyName("security_force")] public string SecurityForce { get; init; } = "";
-    [JsonPropertyName("key_detail")] public string KeyDetail { get; init; } = "";
-    [JsonPropertyName("relationship_to_big_20")] public string RelationshipToBig20 { get; init; } = "";
-    [JsonPropertyName("full_text")] public string FullText { get; init; } = "";
+    [JsonPropertyName("number")] public int Number { get; set; }
+    [JsonPropertyName("name")] public string Name { get; set; } = "";
+    [JsonPropertyName("full_legal_name")] public string FullLegalName { get; set; } = "";
+    [JsonPropertyName("common_names")] public List<string> CommonNames { get; set; } = [];
+    [JsonPropertyName("stock_designation")] public string StockDesignation { get; set; } = "";
+    [JsonPropertyName("sector")] public string Sector { get; set; } = "";
+    [JsonPropertyName("valuation")] public string Valuation { get; set; } = "";
+    [JsonPropertyName("revenue")] public string Revenue { get; set; } = "";
+    [JsonPropertyName("employees")] public string Employees { get; set; } = "";
+    [JsonPropertyName("sovereign_territory")] public string SovereignTerritory { get; set; } = "";
+    [JsonPropertyName("founding_story")] public string FoundingStory { get; set; } = "";
+    [JsonPropertyName("security_force")] public string SecurityForce { get; set; } = "";
+    [JsonPropertyName("key_detail")] public string KeyDetail { get; set; } = "";
+    [JsonPropertyName("relationship_to_big_20")] public string RelationshipToBig20 { get; set; } = "";
+    [JsonPropertyName("full_text")] public string FullText { get; set; } = "";
 }
 
 /// <summary>
@@ -115,16 +115,16 @@ public record CorponationData
 /// </summary>
 public record CanonDatabase
 {
-    [JsonPropertyName("version")] public int Version { get; init; } = 1;
-    [JsonPropertyName("generated_at")] public DateTime GeneratedAt { get; init; }
-    [JsonPropertyName("characters")] public List<CharacterData> Characters { get; init; } = [];
-    [JsonPropertyName("facets")] public List<FacetData> Facets { get; init; } = [];
-    [JsonPropertyName("districts")] public List<DistrictData> Districts { get; init; } = [];
-    [JsonPropertyName("factions")] public List<FactionData> Factions { get; init; } = [];
-    [JsonPropertyName("corponations")] public List<CorponationData> Corponations { get; init; } = [];
-    [JsonPropertyName("worldbuilding_docs")] public List<WorldbuildingDocument> WorldbuildingDocs { get; init; } = [];
-    [JsonPropertyName("story_bible")] public StoryBibleData StoryBible { get; init; } = new();
-    [JsonPropertyName("literary_rules")] public LiteraryRulesData LiteraryRules { get; init; } = new();
-    [JsonPropertyName("motifs")] public List<MotifData> Motifs { get; init; } = [];
-    [JsonPropertyName("character_profile")] public CharacterProfileData CharacterProfile { get; init; } = new();
+    [JsonPropertyName("version")] public int Version { get; set; } = 1;
+    [JsonPropertyName("generated_at")] public DateTime GeneratedAt { get; set; }
+    [JsonPropertyName("characters")] public List<CharacterData> Characters { get; set; } = [];
+    [JsonPropertyName("facets")] public List<FacetData> Facets { get; set; } = [];
+    [JsonPropertyName("districts")] public List<DistrictData> Districts { get; set; } = [];
+    [JsonPropertyName("factions")] public List<FactionData> Factions { get; set; } = [];
+    [JsonPropertyName("corponations")] public List<CorponationData> Corponations { get; set; } = [];
+    [JsonPropertyName("worldbuilding_docs")] public List<WorldbuildingDocument> WorldbuildingDocs { get; set; } = [];
+    [JsonPropertyName("story_bible")] public StoryBibleData StoryBible { get; set; } = new();
+    [JsonPropertyName("literary_rules")] public LiteraryRulesData LiteraryRules { get; set; } = new();
+    [JsonPropertyName("motifs")] public List<MotifData> Motifs { get; set; } = [];
+    [JsonPropertyName("character_profile")] public CharacterProfileData CharacterProfile { get; set; } = new();
 }

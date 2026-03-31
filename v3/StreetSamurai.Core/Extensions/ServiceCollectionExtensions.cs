@@ -12,6 +12,18 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<SettingsService>();
         services.AddSingleton<ISecurePreferences, FileSecurePreferences>();
         services.AddSingleton<ICanonPathProvider, FileSystemCanonPathProvider>();
+        // Typed JSON repositories — one file per entity type
+        services.AddSingleton<CharacterRepository>();
+        services.AddSingleton<CorponationRepository>();
+        services.AddSingleton<DistrictRepository>();
+        services.AddSingleton<FactionRepository>();
+        services.AddSingleton<FacetRepository>();
+        services.AddSingleton<WorldbuildingDocRepository>();
+        services.AddSingleton<MotifRepository>();
+        services.AddSingleton<StoryBibleRepository>();
+        services.AddSingleton<LiteraryRulesRepository>();
+        services.AddSingleton<CharacterProfileRepository>();
+
         services.AddSingleton<CanonDatabaseService>();
         services.AddSingleton<CanonService>();
         services.AddSingleton<MarkdownService>();
@@ -48,6 +60,9 @@ public static class ServiceCollectionExtensions
 
         // TTS enhancement — adds ElevenLabs audio tags before synthesis
         services.AddSingleton<TtsEnhancementService>();
+
+        // Draft narration — free Windows SAPI voices
+        services.AddSingleton<WindowsTtsService>();
 
         // Entity extraction — LLM-powered story-to-graph pipeline
         services.AddSingleton<EntityExtractionService>();
