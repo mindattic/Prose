@@ -7,10 +7,10 @@ public class StoryStarterService
 {
     private readonly ILlmService _llm;
     private readonly WorldGraphService _graph;
-    private readonly CanonService _canon;
-    private readonly CanonDatabaseService _canonDb;
+    private readonly LoreService _canon;
+    private readonly DatabaseService _canonDb;
     private readonly FacetService _facets;
-    private readonly ICanonPathProvider _paths;
+    private readonly IPathProvider _paths;
 
     // Seed premises for zero-input generation — drawn from the world's actual tensions
     private static readonly string[] SeedPremises =
@@ -31,8 +31,8 @@ public class StoryStarterService
     ];
 
     public StoryStarterService(
-        ILlmService llm, WorldGraphService graph, CanonService canon,
-        CanonDatabaseService canonDb, FacetService facets, ICanonPathProvider paths)
+        ILlmService llm, WorldGraphService graph, LoreService canon,
+        DatabaseService canonDb, FacetService facets, IPathProvider paths)
     {
         _llm = llm;
         _graph = graph;

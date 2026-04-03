@@ -11,10 +11,10 @@ namespace StreetSamurai.Core.Services;
 public class TtsEnhancementService
 {
     private readonly ILlmService _llm;
-    private readonly ICanonPathProvider _paths;
+    private readonly IPathProvider _paths;
     private TtsRules? _rules;
 
-    public TtsEnhancementService(ILlmService llm, ICanonPathProvider paths)
+    public TtsEnhancementService(ILlmService llm, IPathProvider paths)
     {
         _llm = llm;
         _paths = paths;
@@ -84,7 +84,7 @@ public class TtsEnhancementService
     {
         if (_rules != null) return _rules;
 
-        var rulesPath = Path.Combine(_paths.CanonRoot, "engine_data", "tts_rules.json");
+        var rulesPath = Path.Combine(_paths.DataRoot, "engine_data", "tts_rules.json");
         if (!File.Exists(rulesPath)) return null;
 
         try

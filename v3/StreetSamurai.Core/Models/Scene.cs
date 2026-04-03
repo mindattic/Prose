@@ -8,8 +8,8 @@ public record Scene
     public List<string> Entities { get; init; } = [];
     public List<string> Themes { get; init; } = [];
     public List<Beat> Beats { get; init; } = [];
-    public string CanonStatus { get; init; } = "draft";
-    public ValidationReport? Validation { get; init; }
+    public string Status { get; init; } = "draft";
+    public List<string> ValidationIssues { get; init; } = [];
     public DateTime Generated { get; init; } = DateTime.UtcNow;
     public string SourceDir { get; init; } = "";
 

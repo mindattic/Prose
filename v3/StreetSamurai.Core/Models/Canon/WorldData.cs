@@ -113,7 +113,7 @@ public class CorponationData
 /// <summary>
 /// The master canon database — single JSON file containing all structured data.
 /// </summary>
-public class CanonDatabase
+public class Database
 {
     [JsonPropertyName("version")] public int Version { get; set; } = 1;
     [JsonPropertyName("generated_at")] public DateTime GeneratedAt { get; set; }

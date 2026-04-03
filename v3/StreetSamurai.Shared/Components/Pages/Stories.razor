@@ -4,11 +4,10 @@
 @inject IStoryBlockRepository Repo
 @inject NavigationManager Nav
 
-<div class="d-flex justify-content-between align-items-center mb-1">
-    <h4 class="text-danger mb-0">Stories (@_projects.Count)</h4>
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h4 class="text-danger mb-0">Stories</h4>
     <button class="btn btn-sm btn-outline-danger" @onclick="CreateNew"><i class="bi bi-plus-lg"></i> New Story</button>
 </div>
-<p class="text-muted mb-3">Your stories. Click a title to open it in the writing IDE.</p>
 
 @if (_projects.Any())
 {
@@ -16,24 +15,32 @@
         <table class="table table-dark table-hover table-sm">
             <thead>
                 <tr>
-                    <th>Prefix</th>
                     <th>Title</th>
                     <th>Status</th>
                     <th>Characters</th>
-                    <th>Blocks</th>
                     <th>Modified</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var p in _projects)
                 {
                     <tr style="cursor: pointer;" @onclick="() => OpenProject(p.Id)">
-                        <td><code class="text-warning">@p.Prefix</code></td>
-                        <td class="fw-bold fst-italic">@p.Title</td>
+                        <td class="fw-bold fst-italic">@(string.IsNullOrWhiteSpace(p.Title) ? "Untitled" : p.Title)</td>
                         <td><span class="badge bg-secondary">@p.Status</span></td>
-                        <td class="text-muted small">@string.Join(", ", p.Characters)</td>
-                        <td class="text-muted small">@p.Blocks.Count</td>
+                        <td class="text-muted small">@string.Join(", ", p.Characters.Take(5))</td>
                         <td class="text-muted small">@p.Modified.ToString("yyyy-MM-dd HH:mm")</td>
+                        <td>
+                            @if (_confirmDeleteId == p.Id)
+                            {
+                                <button class="btn btn-sm btn-danger py-0" @onclick="() => DoDelete(p.Id)" @onclick:stopPropagation="true">Confirm</button>
+                                <button class="btn btn-sm btn-outline-secondary py-0" @onclick="() => _confirmDeleteId = null" @onclick:stopPropagation="true">No</button>
+                            }
+                            else
+                            {
+                                <button class="btn btn-sm btn-outline-danger py-0" @onclick="() => _confirmDeleteId = p.Id" @onclick:stopPropagation="true"><i class="bi bi-trash3"></i></button>
+                            }
+                        </td>
                     </tr>
                 }
             </tbody>
@@ -50,11 +57,9 @@ else
 
 @code {
     private List<StoryProject> _projects = [];
+    private string? _confirmDeleteId;
 
-    protected override void OnInitialized()
-    {
-        _projects = Repo.ListProjects();
-    }
+    protected override void OnInitialized() => _projects = Repo.ListProjects();
 
     private void OpenProject(string id) => Nav.NavigateTo($"/write/{id}");
 
@@ -63,5 +68,12 @@ else
         var project = new StoryProject();
         Repo.SaveProject(project);
         Nav.NavigateTo($"/write/{project.Id}");
+    }
+
+    private void DoDelete(string id)
+    {
+        Repo.DeleteProject(id);
+        _confirmDeleteId = null;
+        _projects = Repo.ListProjects();
     }
 }

@@ -2,7 +2,7 @@
 @using StreetSamurai.Core.Models
 @using StreetSamurai.Core.Interfaces
 @inject SceneGenerationService SceneGen
-@inject CanonService Canon
+@inject LoreService Canon
 @inject FacetService FacetSvc
 @inject WorldGraphService Graph
 @inject IStoryBlockRepository Repo
@@ -256,10 +256,9 @@ else if (_generatedScene != null)
         var project = new StoryProject
         {
             Title = _goal.Length > 50 ? _goal[..50] + "..." : _goal,
-            Location = _location,
             Characters = _characterInput.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(),
+            Html = $"<p>{System.Net.WebUtility.HtmlEncode(_generatedScene.FullText).Replace("\n\n", "</p><p>").Replace("\n", "<br>")}</p>",
         };
-        project.AddBlocksFromText(_generatedScene.FullText);
         Repo.SaveProject(project);
         Nav.NavigateTo($"/write/{project.Id}");
     }

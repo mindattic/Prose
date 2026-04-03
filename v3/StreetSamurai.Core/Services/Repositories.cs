@@ -7,78 +7,78 @@ namespace StreetSamurai.Core.Services;
 
 public class CharacterRepository : JsonDictionaryRepository<CharacterData>
 {
-    public CharacterRepository(ICanonPathProvider paths)
+    public CharacterRepository(IPathProvider paths)
         : base(Path.Combine(paths.EngineDataDir, "characters.json"), c => c.Name) { }
 }
 
 public class CorponationRepository : JsonDictionaryRepository<CorponationData>
 {
-    public CorponationRepository(ICanonPathProvider paths)
+    public CorponationRepository(IPathProvider paths)
         : base(Path.Combine(paths.EngineDataDir, "corponations.json"), c => c.Name) { }
 }
 
 public class DistrictRepository : JsonDictionaryRepository<DistrictData>
 {
-    public DistrictRepository(ICanonPathProvider paths)
+    public DistrictRepository(IPathProvider paths)
         : base(Path.Combine(paths.EngineDataDir, "districts.json"), d => d.Name) { }
 }
 
 public class FactionRepository : JsonDictionaryRepository<FactionData>
 {
-    public FactionRepository(ICanonPathProvider paths)
+    public FactionRepository(IPathProvider paths)
         : base(Path.Combine(paths.EngineDataDir, "factions.json"), f => f.Name) { }
 }
 
 public class FacetRepository : JsonDictionaryRepository<FacetData>
 {
-    public FacetRepository(ICanonPathProvider paths)
+    public FacetRepository(IPathProvider paths)
         : base(Path.Combine(paths.EngineDataDir, "facets.json"), f => f.Name) { }
 }
 
 public class WorldbuildingDocRepository : JsonDictionaryRepository<WorldbuildingDocument>
 {
-    public WorldbuildingDocRepository(ICanonPathProvider paths)
+    public WorldbuildingDocRepository(IPathProvider paths)
         : base(Path.Combine(paths.EngineDataDir, "worldbuilding_docs.json"), d => d.FileName) { }
 }
 
 public class MotifRepository : JsonDictionaryRepository<MotifData>
 {
-    public MotifRepository(ICanonPathProvider paths)
+    public MotifRepository(IPathProvider paths)
         : base(Path.Combine(paths.EngineDataDir, "motifs.json"), m => m.Name) { }
 }
 
 public class StoryBibleRepository : JsonSingletonRepository<StoryBibleData>
 {
-    public StoryBibleRepository(ICanonPathProvider paths)
+    public StoryBibleRepository(IPathProvider paths)
         : base(Path.Combine(paths.EngineDataDir, "story_bible.json")) { }
 }
 
 public class LiteraryRulesRepository : JsonSingletonRepository<LiteraryRulesData>
 {
-    public LiteraryRulesRepository(ICanonPathProvider paths)
+    public LiteraryRulesRepository(IPathProvider paths)
         : base(Path.Combine(paths.EngineDataDir, "literary_rules.json")) { }
 }
 
 public class WeaponryRepository : JsonDictionaryRepository<WeaponryData>
 {
-    public WeaponryRepository(ICanonPathProvider paths)
+    public WeaponryRepository(IPathProvider paths)
         : base(Path.Combine(paths.EngineDataDir, "weaponry.json"), w => w.Name) { }
 }
 
 public class EquipmentRepository : JsonDictionaryRepository<EquipmentData>
 {
-    public EquipmentRepository(ICanonPathProvider paths)
+    public EquipmentRepository(IPathProvider paths)
         : base(Path.Combine(paths.EngineDataDir, "equipment.json"), e => e.Name) { }
 }
 
 public class TechnologyRepository : JsonDictionaryRepository<TechnologyData>
 {
-    public TechnologyRepository(ICanonPathProvider paths)
+    public TechnologyRepository(IPathProvider paths)
         : base(Path.Combine(paths.EngineDataDir, "technology.json"), t => t.Name) { }
 }
 
 public class CharacterProfileRepository : JsonSingletonRepository<CharacterProfileData>
 {
-    public CharacterProfileRepository(ICanonPathProvider paths)
+    public CharacterProfileRepository(IPathProvider paths)
         : base(Path.Combine(paths.EngineDataDir, "character_profile.json")) { }
 }

@@ -10,12 +10,12 @@ namespace StreetSamurai.Core.Services;
 /// wrong affiliations, impossible locations. Returns a list of issues
 /// the generation pipeline can use to either flag or auto-correct.
 /// </summary>
-public class CanonValidationService
+public class ValidationService
 {
     private readonly WorldGraphService _graph;
     private readonly ILlmService _llm;
 
-    public CanonValidationService(WorldGraphService graph, ILlmService llm)
+    public ValidationService(WorldGraphService graph, ILlmService llm)
     {
         _graph = graph;
         _llm = llm;

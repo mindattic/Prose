@@ -5,11 +5,11 @@ using StreetSamurai.Core.Models.Canon;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Runtime canon access. Delegates to CanonDatabaseService (canon.json).
+/// Runtime canon access. Delegates to DatabaseService (canon.json).
 /// </summary>
-public class CanonService
+public class LoreService
 {
-    private readonly CanonDatabaseService _db;
+    private readonly DatabaseService _db;
 
     private static readonly JsonSerializerOptions JsonOpts = new()
     {
@@ -17,17 +17,17 @@ public class CanonService
         PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower,
     };
 
-    public CanonService(CanonDatabaseService db)
+    public LoreService(DatabaseService db)
     {
         _db = db;
     }
 
     // ── Documents ────────────────────────────────────────────
 
-    public List<CanonDocument> ListDocuments()
+    public List<Document> ListDocuments()
     {
         return _db.WorldbuildingDocs
-            .Select(d => new CanonDocument
+            .Select(d => new Document
             {
                 FileName = d.FileName,
                 Title = d.Title,

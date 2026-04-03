@@ -8,6 +8,7 @@
     <div class="d-flex gap-2 align-items-center">
         <small class="text-muted">@_allNodes.Count nodes, @_allEdges.Count edges</small>
         <button class="btn btn-sm btn-outline-warning" @onclick="RebuildGraph"><i class="bi bi-arrow-clockwise"></i> Rebuild</button>
+        <button class="btn btn-sm btn-outline-secondary" @onclick="PopOut" title="Open in new window"><i class="bi bi-box-arrow-up-right"></i></button>
     </div>
 </div>
 
@@ -74,58 +75,148 @@
         <div id="graphCanvas" class="border border-secondary rounded mb-2"
              style="width: 100%; height: 55vh; background: #111;"></div>
 
-        @* ── Selected Node Detail ─────────────────────────── *@
+        @* ── Selected Node Detail + Nearby Linkable Nodes ── *@
         @if (_selectedNode != null)
         {
-            <div class="card bg-dark text-light border-secondary">
-                <div class="card-header d-flex justify-content-between align-items-center py-1">
-                    <span>
-                        <span class="badge @GetTypeBadgeClass(_selectedNode.NodeType) me-1">@_selectedNode.NodeType</span>
-                        <strong>@_selectedNode.Name</strong>
-                        @if (_selectedNode.Properties.TryGetValue("gender", out var gender) && gender.Length > 0)
-                        {
-                            <small class="text-muted ms-2">@gender</small>
-                        }
-                        @if (_selectedNode.Properties.TryGetValue("pronouns", out var pronouns) && pronouns.Length > 0)
-                        {
-                            <small class="text-muted">(@pronouns)</small>
-                        }
-                    </span>
-                    <button class="btn btn-sm btn-outline-secondary py-0" @onclick="() => _selectedNode = null"><i class="bi bi-x"></i></button>
-                </div>
-                <div class="card-body py-2 small" style="max-height: 25vh; overflow-y: auto;">
-                    @if (_selectedNode.Properties.TryGetValue("description", out var desc) && desc.Length > 0)
-                    {
-                        <div class="text-muted mb-2" style="line-height: 1.4;">@(desc.Length > 500 ? desc[..497] + "..." : desc)</div>
-                    }
-                    @foreach (var key in new[] { "role", "affiliation", "status", "category", "sector", "manufacturer", "tier_availability", "legality" })
-                    {
-                        if (_selectedNode.Properties.TryGetValue(key, out var val) && val.Length > 0)
-                        {
-                            <div><span class="text-info">@key:</span> @val</div>
-                        }
-                    }
-                    @if (_nodeEdges.Any())
-                    {
-                        <div class="mt-2">
-                            <small class="text-muted fw-bold">Connections (@_nodeEdges.Count):</small>
-                            @foreach (var edge in _nodeEdges.Take(20))
+            <div class="row g-2">
+                @* ── Node detail (left) ──────────────────────── *@
+                <div class="col-md-6">
+                    <div class="card bg-dark text-light border-secondary">
+                        <div class="card-header d-flex justify-content-between align-items-center py-1">
+                            <span>
+                                <span class="badge @GetTypeBadgeClass(_selectedNode.NodeType) me-1">@_selectedNode.NodeType</span>
+                                <strong>@_selectedNode.Name</strong>
+                                @if (_selectedNode.Properties.TryGetValue("gender", out var gender) && gender.Length > 0)
+                                {
+                                    <small class="text-muted ms-2">@gender</small>
+                                }
+                                @if (_selectedNode.Properties.TryGetValue("pronouns", out var pronouns) && pronouns.Length > 0)
+                                {
+                                    <small class="text-muted">(@pronouns)</small>
+                                }
+                            </span>
+                            <button class="btn btn-sm btn-outline-secondary py-0" @onclick="() => _selectedNode = null"><i class="bi bi-x"></i></button>
+                        </div>
+                        <div class="card-body py-2 small" style="max-height: 30vh; overflow-y: auto;">
+                            @if (_selectedNode.Properties.TryGetValue("description", out var desc) && desc.Length > 0)
                             {
-                                var other = edge.Source == _selectedNode.Id ? edge.Target : edge.Source;
-                                var otherNode = Graph.GetNode(other);
-                                <div class="d-flex align-items-center gap-1" style="cursor: pointer;" @onclick="() => ExploreById(other)">
-                                    <span class="badge @GetRelBadgeClass(edge.RelationType)" style="font-size: 0.65rem;">@edge.RelationType</span>
-                                    <span>@(otherNode?.Name ?? other)</span>
-                                    @if (!string.IsNullOrEmpty(edge.Description))
+                                <div class="text-muted mb-2" style="line-height: 1.4;">@(desc.Length > 500 ? desc[..497] + "..." : desc)</div>
+                            }
+                            @foreach (var key in new[] { "role", "affiliation", "status", "category", "sector", "manufacturer", "tier_availability", "legality" })
+                            {
+                                if (_selectedNode.Properties.TryGetValue(key, out var val) && val.Length > 0)
+                                {
+                                    <div><span class="text-info">@key:</span> @val</div>
+                                }
+                            }
+                            @if (_nodeEdges.Any())
+                            {
+                                <div class="mt-2">
+                                    <small class="text-muted fw-bold">Connections (@_nodeEdges.Count):</small>
+                                    @foreach (var edge in _nodeEdges.Take(20))
                                     {
-                                        <small class="text-muted">— @Truncate(edge.Description, 50)</small>
+                                        var other = edge.Source == _selectedNode.Id ? edge.Target : edge.Source;
+                                        var otherNode = Graph.GetNode(other);
+                                        <div class="d-flex align-items-center gap-1" style="cursor: pointer;" @onclick="() => ExploreById(other)">
+                                            <span class="badge @GetRelBadgeClass(edge.RelationType)" style="font-size: 0.65rem;">@edge.RelationType</span>
+                                            <span>@(otherNode?.Name ?? other)</span>
+                                        </div>
                                     }
                                 </div>
                             }
-                            @if (_nodeEdges.Count > 20)
+                        </div>
+                    </div>
+                </div>
+
+                @* ── Nearby linkable nodes (right) ───────────── *@
+                <div class="col-md-6">
+                    <div class="card bg-dark text-light border-secondary">
+                        <div class="card-header py-1 d-flex justify-content-between align-items-center">
+                            <small class="text-muted fw-bold">Nearby — Link to @_selectedNode.Name</small>
+                            <div class="btn-group btn-group-sm">
+                                <button class="btn @(_hopDepth == 1 ? "btn-danger" : "btn-outline-secondary") py-0 px-2" @onclick="() => SetHopDepth(1)">1</button>
+                                <button class="btn @(_hopDepth == 2 ? "btn-danger" : "btn-outline-secondary") py-0 px-2" @onclick="() => SetHopDepth(2)">2</button>
+                                <button class="btn @(_hopDepth == 3 ? "btn-danger" : "btn-outline-secondary") py-0 px-2" @onclick="() => SetHopDepth(3)">3</button>
+                                <small class="text-muted align-self-center ms-1">hops</small>
+                            </div>
+                        </div>
+                        <div class="card-body py-1" style="max-height: 30vh; overflow-y: auto;">
+                            @if (!string.IsNullOrEmpty(_linkSuccess))
                             {
-                                <small class="text-muted">... and @(_nodeEdges.Count - 20) more</small>
+                                <div class="alert alert-success py-1 small mb-2">@_linkSuccess</div>
                             }
+                            @foreach (var group in _nearbyNodes.GroupBy(n => n.nodeType))
+                            {
+                                <div class="mb-1">
+                                    <small class="fw-bold" style="color: @GetTypeColorHex(group.Key);">@group.Key</small>
+                                    @foreach (var nearby in group)
+                                    {
+                                        var alreadyLinked = _nodeEdges.Any(e =>
+                                            (e.Source == _selectedNode.Id && e.Target == nearby.id) ||
+                                            (e.Target == _selectedNode.Id && e.Source == nearby.id));
+                                        <div class="d-flex align-items-center gap-1 py-1 border-bottom border-dark">
+                                            <span class="badge @GetTypeBadgeClass(nearby.nodeType)" style="font-size: 0.55rem;">@nearby.nodeType[..1].ToUpper()</span>
+                                            <span class="small flex-grow-1" style="cursor: pointer;" @onclick="() => ExploreById(nearby.id)">
+                                                @nearby.name
+                                                <small class="text-muted">(@nearby.hops hop@(nearby.hops > 1 ? "s" : ""))</small>
+                                            </span>
+                                            @if (alreadyLinked)
+                                            {
+                                                <span class="badge bg-success" style="font-size: 0.55rem;">linked</span>
+                                            }
+                                            else
+                                            {
+                                                <button class="btn btn-sm btn-outline-info py-0 px-1" style="font-size: 0.65rem;"
+                                                        @onclick="() => StartLink(nearby.id, nearby.name)">
+                                                    <i class="bi bi-link-45deg"></i>
+                                                </button>
+                                            }
+                                        </div>
+                                    }
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+                    @* ── Create Link Form ─────────────────────── *@
+                    @if (_linkTargetId != null)
+                    {
+                        <div class="card bg-dark text-light border-info mt-2">
+                            <div class="card-header py-1 small text-info fw-bold">
+                                Link: @_selectedNode.Name → @_linkTargetName
+                            </div>
+                            <div class="card-body py-2">
+                                <div class="row g-2 mb-2">
+                                    <div class="col-6">
+                                        <small class="text-muted">Relationship Type</small>
+                                        <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                                               placeholder="e.g. allied_with, wields, located_in"
+                                               @bind="_linkRelType" />
+                                    </div>
+                                    <div class="col-6">
+                                        <small class="text-muted">Sentiment</small>
+                                        <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="_linkSentiment">
+                                            <option value="neutral">neutral</option>
+                                            <option value="positive">positive</option>
+                                            <option value="negative">negative</option>
+                                            <option value="mixed">mixed</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-2">
+                                    <small class="text-muted">Description</small>
+                                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                                           placeholder="Brief description of the relationship"
+                                           @bind="_linkDescription" />
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-sm btn-info text-dark" @onclick="CreateLink"
+                                            disabled="@string.IsNullOrWhiteSpace(_linkRelType)">
+                                        <i class="bi bi-link-45deg"></i> Create Link
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary" @onclick="() => _linkTargetId = null">Cancel</button>
+                                </div>
+                            </div>
                         </div>
                     }
                 </div>
@@ -164,6 +255,16 @@
     private string _searchFilter = "";
     private string _sceneQuery = "";
     private string _sceneContext = "";
+
+    // Nearby linkable nodes
+    private int _hopDepth = 2;
+    private List<(string id, string name, string nodeType, int hops)> _nearbyNodes = [];
+    private string? _linkTargetId;
+    private string _linkTargetName = "";
+    private string _linkRelType = "";
+    private string _linkSentiment = "neutral";
+    private string _linkDescription = "";
+    private string? _linkSuccess;
 
     // Nodes/edges currently rendered in the D3 canvas
     private HashSet<string> _canvasNodeIds = new();
@@ -215,6 +316,9 @@
         await JS.InvokeVoidAsync("graphInterop.destroy");
     }
 
+    private async Task PopOut() =>
+        await JS.InvokeVoidAsync("open", "/graph", "_blank", "width=1200,height=800,menubar=no,toolbar=no");
+
     /// <summary>Unpin all nodes — let the simulation rearrange everything.</summary>
     private async Task UnpinAll()
     {
@@ -226,6 +330,9 @@
     {
         _selectedNode = node;
         _nodeEdges = _allEdges.Where(e => e.Source == node.Id || e.Target == node.Id).OrderBy(e => e.RelationType).ToList();
+        _linkTargetId = null;
+        _linkSuccess = null;
+        RefreshNearbyNodes();
 
         // Get 2-hop neighborhood
         var neighbors = Graph.GetNeighbors(node.Id, 2);
@@ -267,6 +374,9 @@
     {
         if (_selfRef == null) return;
 
+        // Build a set of node IDs actually being rendered — edges must only reference these
+        var renderedIds = new HashSet<string>(nodes.Select(n => n.Id));
+
         var jsNodes = nodes.Select(n => new
         {
             id = n.Id,
@@ -275,14 +385,16 @@
             edgeCount = _allEdges.Count(e => e.Source == n.Id || e.Target == n.Id)
         }).ToArray();
 
-        var jsEdges = edges.Select(e => new
-        {
-            source = e.Source,
-            target = e.Target,
-            relationType = e.RelationType,
-            weight = e.Weight,
-            sentiment = e.Sentiment,
-        }).ToArray();
+        var jsEdges = edges
+            .Where(e => renderedIds.Contains(e.Source) && renderedIds.Contains(e.Target))
+            .Select(e => new
+            {
+                source = e.Source,
+                target = e.Target,
+                relationType = e.RelationType,
+                weight = e.Weight,
+                sentiment = e.Sentiment,
+            }).ToArray();
 
         await JS.InvokeVoidAsync("graphInterop.init", "graphCanvas", _selfRef, jsNodes, jsEdges);
     }
@@ -297,7 +409,10 @@
             edgeCount = _allEdges.Count(e => e.Source == n.Id || e.Target == n.Id)
         }).ToArray();
 
-        var jsEdges = newEdges.Select(e => new
+        // Filter edges to only reference nodes that exist on the canvas
+        var jsEdges = newEdges
+            .Where(e => _canvasNodeIds.Contains(e.Source) && _canvasNodeIds.Contains(e.Target))
+            .Select(e => new
         {
             source = e.Source,
             target = e.Target,
@@ -317,6 +432,9 @@
         {
             _selectedNode = node;
             _nodeEdges = _allEdges.Where(e => e.Source == node.Id || e.Target == node.Id).OrderBy(e => e.RelationType).ToList();
+            _linkTargetId = null;
+            _linkSuccess = null;
+            RefreshNearbyNodes();
         }
         StateHasChanged();
     }
@@ -360,6 +478,101 @@
         if (string.IsNullOrWhiteSpace(_sceneContext))
             _sceneContext = "(No entities found matching those names)";
     }
+
+    // ── Nearby / Linking ────────────────────────────────
+
+    private void SetHopDepth(int depth)
+    {
+        _hopDepth = depth;
+        RefreshNearbyNodes();
+    }
+
+    private void RefreshNearbyNodes()
+    {
+        if (_selectedNode == null) { _nearbyNodes = []; return; }
+
+        // BFS with hop tracking
+        var visited = new Dictionary<string, int> { [_selectedNode.Id] = 0 };
+        var frontier = new Queue<(string id, int depth)>();
+        frontier.Enqueue((_selectedNode.Id, 0));
+
+        while (frontier.Count > 0)
+        {
+            var (current, d) = frontier.Dequeue();
+            if (d >= _hopDepth) continue;
+
+            foreach (var edge in Graph.GetAllEdges(current))
+            {
+                var neighbor = edge.Source == current ? edge.Target : edge.Source;
+                if (!visited.ContainsKey(neighbor))
+                {
+                    visited[neighbor] = d + 1;
+                    frontier.Enqueue((neighbor, d + 1));
+                }
+            }
+        }
+
+        visited.Remove(_selectedNode.Id);
+
+        _nearbyNodes = visited
+            .Select(kv =>
+            {
+                var n = Graph.GetNode(kv.Key);
+                return n != null ? (id: n.Id, name: n.Name, nodeType: n.NodeType, hops: kv.Value) : default;
+            })
+            .Where(x => x.id != null)
+            .OrderBy(x => x.hops)
+            .ThenBy(x => x.nodeType)
+            .ThenBy(x => x.name)
+            .ToList()!;
+    }
+
+    private void StartLink(string targetId, string targetName)
+    {
+        _linkTargetId = targetId;
+        _linkTargetName = targetName;
+        _linkRelType = "";
+        _linkSentiment = "neutral";
+        _linkDescription = "";
+        _linkSuccess = null;
+    }
+
+    private async Task CreateLink()
+    {
+        if (_selectedNode == null || _linkTargetId == null || string.IsNullOrWhiteSpace(_linkRelType)) return;
+
+        Graph.EvolveRelationship(
+            _selectedNode.Id, _linkTargetId, "manual",
+            _linkRelType, _linkDescription, 1.0, _linkSentiment);
+        Graph.Save();
+
+        // Refresh
+        _allEdges = Graph.AllNodes().SelectMany(n => Graph.GetAllEdges(n.Id))
+            .DistinctBy(e => (e.Source, e.Target, e.RelationType)).ToList();
+        _nodeEdges = _allEdges.Where(e => e.Source == _selectedNode.Id || e.Target == _selectedNode.Id)
+            .OrderBy(e => e.RelationType).ToList();
+
+        _linkSuccess = $"Linked {_selectedNode.Name} —[{_linkRelType}]→ {_linkTargetName}";
+        _linkTargetId = null;
+        RefreshNearbyNodes();
+
+        // Re-render D3 with new edge
+        if (_canvasNodeIds.Count > 0)
+        {
+            var nodes = _canvasNodeIds.Select(id => Graph.GetNode(id)).Where(n => n != null)
+                .Select(n => new { id = n!.Id, name = n.Name, nodeType = n.NodeType, edgeCount = Graph.GetAllEdges(n.Id).Count }).ToArray();
+            var edges = _allEdges.Where(e => _canvasNodeIds.Contains(e.Source) && _canvasNodeIds.Contains(e.Target))
+                .Select(e => new { source = e.Source, target = e.Target, relationType = e.RelationType, weight = e.Weight, sentiment = e.Sentiment }).ToArray();
+            await JS.InvokeVoidAsync("graphInterop.init", "graphCanvas", _selfRef, nodes, edges);
+        }
+    }
+
+    private static string GetTypeColorHex(string type) => type switch
+    {
+        "character" => "#17a2b8", "organization" => "#ffc107", "place" => "#28a745",
+        "faction" => "#6f42c1", "weapon" => "#dc3545", "equipment" => "#0d6efd",
+        "technology" => "#0dcaf0", _ => "#6c757d",
+    };
 
     private int GetEdgeCount(string nodeId) =>
         _allEdges.Count(e => e.Source == nodeId || e.Target == nodeId);

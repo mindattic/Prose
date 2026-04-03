@@ -11,7 +11,7 @@ public static class ServiceCollectionExtensions
         // Settings auto-detects canon root path on first run
         services.AddSingleton<SettingsService>();
         services.AddSingleton<ISecurePreferences, FileSecurePreferences>();
-        services.AddSingleton<ICanonPathProvider, FileSystemCanonPathProvider>();
+        services.AddSingleton<IPathProvider, FileSystemPathProvider>();
         // Typed JSON repositories — one file per entity type
         services.AddSingleton<CharacterRepository>();
         services.AddSingleton<CorponationRepository>();
@@ -27,20 +27,18 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<LiteraryRulesRepository>();
         services.AddSingleton<CharacterProfileRepository>();
 
-        services.AddSingleton<CanonDatabaseService>();
-        services.AddSingleton<CanonService>();
+        services.AddSingleton<DatabaseService>();
+        services.AddSingleton<LoreService>();
         services.AddSingleton<MarkdownService>();
         services.AddSingleton<StoryService>();
         services.AddSingleton<IStoryBlockRepository, JsonStoryBlockRepository>();
         services.AddSingleton<FacetService>();
-        services.AddSingleton<CanonQueueService>();
-
         // Graph builds from canon.json on first access
         services.AddSingleton<WorldGraphService>(sp =>
         {
             var graph = new WorldGraphService(
-                sp.GetRequiredService<ICanonPathProvider>(),
-                sp.GetRequiredService<CanonDatabaseService>());
+                sp.GetRequiredService<IPathProvider>(),
+                sp.GetRequiredService<DatabaseService>());
             graph.EnsureLoaded();
             return graph;
         });
@@ -74,7 +72,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<EntityExtractionService>();
 
         // Canon validation — checks generated text against graph for contradictions
-        services.AddSingleton<CanonValidationService>();
+        services.AddSingleton<ValidationService>();
 
         // Scene generation pipeline
         services.AddSingleton<TextAnalysisService>();

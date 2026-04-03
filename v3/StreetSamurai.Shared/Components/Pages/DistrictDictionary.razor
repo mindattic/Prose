@@ -1,140 +1,56 @@
 @page "/districts"
 @using StreetSamurai.Core.Models.Canon
 @inject DistrictRepository Repo
+@inject NavigationManager Nav
+@inject IJSRuntime JS
 
-<div class="d-flex justify-content-between align-items-center mb-2">
-    <h4 class="text-danger mb-0">Districts</h4>
-    <button class="btn btn-sm btn-outline-danger" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New District</button>
-</div>
+<div class="dict-layout">
+    <div class="dict-list bg-dark border-end border-secondary">
+        @foreach (var d in _items)
+        {
+            <div class="list-item text-light @(_editing?.Name == d.Name ? "active" : "")" @onclick="() => Edit(d)">
+                <div class="fw-bold small">@d.Name</div>
+            </div>
+        }
+    </div>
 
-@if (_editing != null)
-{
-    <div class="card bg-dark text-light border-danger mb-3">
-        <div class="card-header d-flex justify-content-between align-items-center border-secondary">
-            <span class="text-danger fw-bold">@(_isNew ? "New District" : _editing.Name)</span>
-            <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit"><i class="bi bi-x-lg"></i></button>
-        </div>
-        <div class="card-body">
-            <div class="row g-2 mb-2">
-                <div class="col-md-6">
-                    <label class="form-label text-muted small">Name</label>
-                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Name" />
+    <div class="dict-editor">
+        @if (_editing != null)
+        {
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="text-danger mb-0">@(_isNew ? "New District" : _editing.Name)</h5>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
+                    @if (!_isNew && !_confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-trash3"></i></button> }
+                    @if (_confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button> }
                 </div>
             </div>
-            <div class="mb-2">
-                <label class="form-label text-muted small">Description</label>
-                <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="3" @bind="_editing.Description"></textarea>
-            </div>
-            <div class="mb-2">
-                <label class="form-label text-muted small">Demographics</label>
-                <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="2" @bind="_editing.Demographics"></textarea>
-            </div>
-            <div class="mb-2">
-                <label class="form-label text-muted small">Feel</label>
-                <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="2" @bind="_editFeel"></textarea>
-            </div>
-            <div class="d-flex gap-2">
-                <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
-                @if (!_isNew)
-                {
-                    @if (_confirmDelete)
-                    {
-                        <span class="d-flex align-items-center gap-1">
-                            <small class="text-warning">Delete @_editing.Name?</small>
-                            <button class="btn btn-sm btn-danger" @onclick="DoDelete">Yes</button>
-                            <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button>
-                        </span>
-                    }
-                    else
-                    {
-                        <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-trash3"></i> Delete</button>
-                    }
-                }
-                <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit">Cancel</button>
-            </div>
-        </div>
-    </div>
-}
 
-<div class="table-responsive">
-    <table class="table table-dark table-hover table-sm">
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Demographics</th></tr>
-        </thead>
-        <tbody>
-            @foreach (var d in _items)
-            {
-                <tr style="cursor: pointer;" @onclick="() => Edit(d)">
-                    <td class="fw-bold">@d.Name</td>
-                    <td class="text-muted small">@d.Type</td>
-                    <td class="text-muted small">@Snippet(d.Demographics)</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+            <div class="row g-3 mb-3">
+                <div class="col-4"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Name" /></div>
+                <div class="col-4"><div class="field-label">Demographics</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Demographics" /></div>
+                <div class="col-4"><div class="field-label">Economy</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Economy" /></div>
+            </div>
+
+            <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.Description"></textarea></div>
+            <div class="mb-3"><div class="field-label">Power Structure</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.PowerStructure"></textarea></div>
+
+            <div class="field-label mb-1">Atmosphere</div>
+            <div class="mb-3"><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.Atmosphere.Feel"></textarea></div>
+        }
+        else { <div class="text-muted d-flex align-items-center justify-content-center h-100">Select a district or create a new one</div> }
+    </div>
 </div>
 
 @code {
     private List<DistrictData> _items = [];
     private DistrictData? _editing;
-    private bool _isNew;
-    private bool _confirmDelete;
+    private bool _isNew, _confirmDelete;
     private string _originalName = "";
-
-    // Atmosphere.Feel is inside a nested record, so use a mutable proxy
-    private string _editFeel = "";
-
-    protected override void OnInitialized() { Repo.Reload(); _items = Repo.GetAll(); }
-
-    private void AddNew()
-    {
-        _editing = new DistrictData();
-        _isNew = true;
-        _confirmDelete = false;
-        _editFeel = "";
-    }
-
-    private void Edit(DistrictData d)
-    {
-        _editing = d;
-        _originalName = d.Name;
-        _isNew = false;
-        _confirmDelete = false;
-        _editFeel = d.Atmosphere.Feel;
-    }
-
-    private void SaveEdit()
-    {
-        if (_editing == null || string.IsNullOrWhiteSpace(_editing.Name)) return;
-
-        // Update nested Atmosphere.Feel
-        _editing.Atmosphere.Feel = _editFeel;
-
-        // If name changed during edit, delete the old entry
-        if (!_isNew && _originalName != _editing.Name)
-            Repo.Delete(_originalName);
-
-        Repo.Save(_editing);
-        _editing = null;
-        _items = Repo.GetAll();
-    }
-
-    private void DoDelete()
-    {
-        if (_editing == null) return;
-        Repo.Delete(_editing.Name);
-        _editing = null;
-        _confirmDelete = false;
-        _items = Repo.GetAll();
-    }
-
-    private void CancelEdit()
-    {
-        _editing = null;
-        _confirmDelete = false;
-        _items = Repo.GetAll();
-    }
-
-    private static string Snippet(string text, int max = 60)
-        => string.IsNullOrWhiteSpace(text) ? "" : text.Length <= max ? text : text[..max] + "...";
+    protected override void OnInitialized() { Repo.Reload(); _items = Repo.GetAll(); if (Nav.Uri.Contains("new=true")) AddNew(); }
+    private void AddNew() { _editing = new DistrictData(); _isNew = true; _confirmDelete = false; }
+    private void Edit(DistrictData d) { _editing = d; _originalName = d.Name; _isNew = false; _confirmDelete = false; }
+    private void SaveEdit() { if (_editing == null || string.IsNullOrWhiteSpace(_editing.Name)) return; if (!_isNew && _originalName != _editing.Name) Repo.Delete(_originalName); Repo.Save(_editing); _editing = null; _items = Repo.GetAll(); }
+    private void DoDelete() { if (_editing == null) return; Repo.Delete(_editing.Name); _editing = null; _confirmDelete = false; _items = Repo.GetAll(); }
+    protected override async Task OnAfterRenderAsync(bool firstRender) { await JS.InvokeVoidAsync("writeInterop.autoResizeAll"); }
 }

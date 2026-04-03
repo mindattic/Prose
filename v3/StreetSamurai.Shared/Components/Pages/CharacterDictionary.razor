@@ -1,151 +1,107 @@
 @page "/characters"
 @inject CharacterRepository Repo
+@inject NavigationManager Nav
+@inject IJSRuntime JS
 
-<div class="d-flex justify-content-between align-items-center mb-2">
-    <h4 class="text-danger mb-0">Characters</h4>
-    <button class="btn btn-sm btn-outline-danger" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New Character</button>
-</div>
+<div class="dict-layout">
+    <div class="dict-list bg-dark border-end border-secondary">
+        @foreach (var c in _items)
+        {
+            <div class="list-item text-light @(_editing?.Name == c.Name ? "active" : "")" @onclick="() => Edit(c)">
+                <div class="fw-bold small">@c.Name</div>
+                <div class="text-muted" style="font-size: 0.7rem;">@c.Gender @(c.Age > 0 ? $"({c.Age})" : "")</div>
+            </div>
+        }
+    </div>
 
-@if (_editing != null)
-{
-    <div class="card bg-dark text-light border-danger mb-3">
-        <div class="card-header d-flex justify-content-between align-items-center border-secondary">
-            <span class="text-danger fw-bold">@(_isNew ? "New Character" : _editing.Name)</span>
-            <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit"><i class="bi bi-x-lg"></i></button>
-        </div>
-        <div class="card-body">
-            <div class="row g-2 mb-2">
-                <div class="col-md-4">
-                    <label class="form-label text-muted small">Name</label>
-                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Name" />
-                </div>
-                <div class="col-md-2">
-                    <label class="form-label text-muted small">Age</label>
-                    <input type="number" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Age" />
-                </div>
-                <div class="col-md-3">
-                    <label class="form-label text-muted small">Status</label>
-                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Status" />
-                </div>
-                <div class="col-md-3">
-                    <label class="form-label text-muted small">Affiliation</label>
-                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Affiliation" />
-                </div>
-            </div>
-            <div class="row g-2 mb-2">
-                <div class="col-md-3">
-                    <label class="form-label text-muted small">Gender</label>
-                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="e.g. female, male, non-binary" @bind="_editing.Gender" />
-                </div>
-                <div class="col-md-3">
-                    <label class="form-label text-muted small">Pronouns</label>
-                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="e.g. she/her, he/him, they/them" @bind="_editing.Pronouns" />
-                </div>
-                <div class="col-md-3">
-                    <label class="form-label text-muted small">Role</label>
-                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Role" />
-                </div>
-                <div class="col-md-6">
-                    <label class="form-label text-muted small">Augmentations</label>
-                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Augmentations" />
-                </div>
-            </div>
-            <div class="mb-2">
-                <label class="form-label text-muted small">Description</label>
-                <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="4" @bind="_editing.Description"></textarea>
-            </div>
-            <div class="mb-2">
-                <label class="form-label text-muted small">Narrative Function</label>
-                <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="2" @bind="_editing.NarrativeFunction"></textarea>
-            </div>
-            <div class="mb-2">
-                <label class="form-label text-muted small">Narration Voice (how this character sounds as POV narrator)</label>
-                <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="3"
-                          placeholder="Describe the prose style, what they notice, how their interior voice works..."
-                          @bind="_editing.NarrationVoice"></textarea>
-            </div>
-            <div class="form-check mb-2">
-                <input type="checkbox" class="form-check-input" id="usesFacets" @bind="_editing.UsesFacets" />
-                <label class="form-check-label text-muted small" for="usesFacets">Uses facet tags in narration (only Kyle)</label>
-            </div>
-            <div class="row g-2 mb-2">
-                <div class="col-md-2"><label class="form-label text-muted small">Wound</label><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editWound" /></div>
-                <div class="col-md-2"><label class="form-label text-muted small">Ideal</label><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editIdeal" /></div>
-                <div class="col-md-2"><label class="form-label text-muted small">Id</label><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editId" /></div>
-                <div class="col-md-2"><label class="form-label text-muted small">Shadow</label><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editShadow" /></div>
-                <div class="col-md-2"><label class="form-label text-muted small">Mask</label><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editMask" /></div>
-                <div class="col-md-2"><label class="form-label text-muted small">Ghost</label><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editGhost" /></div>
-            </div>
-            <div class="d-flex gap-2">
-                <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
-                @if (!_isNew)
-                {
+    <div class="dict-editor">
+        @if (_editing != null)
+        {
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="text-danger mb-0">@(_isNew ? "New Character" : _editing.Name)</h5>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
+                    @if (!_isNew && !_confirmDelete)
+                    {
+                        <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-trash3"></i></button>
+                    }
                     @if (_confirmDelete)
                     {
-                        <span class="d-flex align-items-center gap-1">
-                            <small class="text-warning">Delete @_editing.Name?</small>
-                            <button class="btn btn-sm btn-danger" @onclick="DoDelete">Yes</button>
-                            <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button>
-                        </span>
+                        <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm Delete</button>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button>
                     }
-                    else
-                    {
-                        <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-trash3"></i> Delete</button>
-                    }
-                }
-                <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit">Cancel</button>
+                </div>
             </div>
-        </div>
-    </div>
-}
 
-<div class="table-responsive">
-    <table class="table table-dark table-hover table-sm">
-        <thead>
-            <tr><th>Name</th><th>Role</th><th>Status</th><th>Affiliation</th><th>Age</th></tr>
-        </thead>
-        <tbody>
-            @foreach (var c in _items)
-            {
-                <tr style="cursor: pointer;" @onclick="() => Edit(c)">
-                    <td class="fw-bold">@c.Name</td>
-                    <td class="text-muted small">@c.Role</td>
-                    <td><span class="badge @(c.Status == "active" ? "bg-success" : "bg-secondary")">@c.Status</span></td>
-                    <td class="text-muted small">@c.Affiliation</td>
-                    <td class="text-muted small">@c.Age</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+            <div class="row g-3 mb-3">
+                <div class="col-3"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Name" /></div>
+                <div class="col-2"><div class="field-label">Gender</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Gender" /></div>
+                <div class="col-2"><div class="field-label">Pronouns</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Pronouns" /></div>
+                <div class="col-1"><div class="field-label">Age</div><input type="number" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Age" /></div>
+                <div class="col-2"><div class="field-label">Status</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Status" /></div>
+                <div class="col-2"><div class="field-label">Affiliation</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Affiliation" /></div>
+            </div>
+
+            <div class="row g-3 mb-3">
+                <div class="col-6"><div class="field-label">Role</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Role" /></div>
+                <div class="col-6"><div class="field-label">Augmentations</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Augmentations" /></div>
+            </div>
+
+            <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.Description" @oninput="AutoResize"></textarea></div>
+            <div class="mb-3"><div class="field-label">Narrative Function</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.NarrativeFunction" @oninput="AutoResize"></textarea></div>
+            <div class="mb-3"><div class="field-label">Narration Voice</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.NarrationVoice" @oninput="AutoResize"></textarea></div>
+
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="usesFacets" @bind="_editing.UsesFacets" />
+                <label class="form-check-label text-muted small" for="usesFacets">Uses facet tags (only Kyle)</label>
+            </div>
+
+            <div class="field-label">Facet Weights</div>
+            <div class="row g-2 mb-3">
+                <div class="col-2"><small class="text-muted">Wound</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editWound" /></div>
+                <div class="col-2"><small class="text-muted">Ideal</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editIdeal" /></div>
+                <div class="col-2"><small class="text-muted">Id</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editId" /></div>
+                <div class="col-2"><small class="text-muted">Shadow</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editShadow" /></div>
+                <div class="col-2"><small class="text-muted">Mask</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editMask" /></div>
+                <div class="col-2"><small class="text-muted">Ghost</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editGhost" /></div>
+            </div>
+        }
+        else
+        {
+            <div class="text-muted d-flex align-items-center justify-content-center h-100">Select a character or create a new one</div>
+        }
+    </div>
 </div>
 
 @code {
     private List<CharacterData> _items = [];
     private CharacterData? _editing;
-    private bool _isNew;
-    private bool _confirmDelete;
+    private bool _isNew, _confirmDelete;
     private string _originalName = "";
-
-    // Facet weight edit fields (records are immutable, need mutable proxies)
     private double _editWound, _editIdeal, _editId, _editShadow, _editMask, _editGhost;
 
-    protected override void OnInitialized() { Repo.Reload(); _items = Repo.GetAll(); }
+    protected override void OnInitialized()
+    {
+        Repo.Reload(); _items = Repo.GetAll();
+        if (Nav.Uri.Contains("new=true")) AddNew();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JS.InvokeVoidAsync("writeInterop.autoResizeAll");
+    }
 
     private void AddNew()
     {
         _editing = new CharacterData();
-        _isNew = true;
-        _confirmDelete = false;
+        _isNew = true; _confirmDelete = false;
         _editWound = 0.5; _editIdeal = 0.5; _editId = 0.5;
         _editShadow = 0.5; _editMask = 0.5; _editGhost = 0.5;
     }
 
     private void Edit(CharacterData c)
     {
-        _editing = c;
-        _originalName = c.Name;
-        _isNew = false;
-        _confirmDelete = false;
+        _editing = c; _originalName = c.Name; _isNew = false; _confirmDelete = false;
         var fw = c.Psychology.FacetWeights;
         _editWound = fw.Wound; _editIdeal = fw.Ideal; _editId = fw.Id;
         _editShadow = fw.Shadow; _editMask = fw.Mask; _editGhost = fw.Ghost;
@@ -154,37 +110,13 @@
     private void SaveEdit()
     {
         if (_editing == null || string.IsNullOrWhiteSpace(_editing.Name)) return;
-
-        // Update facet weights
-        _editing.Psychology.FacetWeights.Wound = _editWound;
-        _editing.Psychology.FacetWeights.Ideal = _editIdeal;
-        _editing.Psychology.FacetWeights.Id = _editId;
-        _editing.Psychology.FacetWeights.Shadow = _editShadow;
-        _editing.Psychology.FacetWeights.Mask = _editMask;
-        _editing.Psychology.FacetWeights.Ghost = _editGhost;
-
-        // If name changed during edit, delete the old entry
-        if (!_isNew && _originalName != _editing.Name)
-            Repo.Delete(_originalName);
-
-        Repo.Save(_editing);
-        _editing = null;
-        _items = Repo.GetAll();
+        _editing.Psychology.FacetWeights.Wound = _editWound; _editing.Psychology.FacetWeights.Ideal = _editIdeal;
+        _editing.Psychology.FacetWeights.Id = _editId; _editing.Psychology.FacetWeights.Shadow = _editShadow;
+        _editing.Psychology.FacetWeights.Mask = _editMask; _editing.Psychology.FacetWeights.Ghost = _editGhost;
+        if (!_isNew && _originalName != _editing.Name) Repo.Delete(_originalName);
+        Repo.Save(_editing); _editing = null; _items = Repo.GetAll();
     }
 
-    private void DoDelete()
-    {
-        if (_editing == null) return;
-        Repo.Delete(_editing.Name);
-        _editing = null;
-        _confirmDelete = false;
-        _items = Repo.GetAll();
-    }
-
-    private void CancelEdit()
-    {
-        _editing = null;
-        _confirmDelete = false;
-        _items = Repo.GetAll(); // Reload to discard in-memory mutations
-    }
+    private void DoDelete() { if (_editing == null) return; Repo.Delete(_editing.Name); _editing = null; _confirmDelete = false; _items = Repo.GetAll(); }
+    private void AutoResize() { } // CSS handles auto-height via min-height
 }

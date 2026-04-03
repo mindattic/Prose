@@ -4,10 +4,10 @@ namespace StreetSamurai.Core.Services;
 
 public class FacetService
 {
-    private readonly CanonDatabaseService _db;
+    private readonly DatabaseService _db;
     private Dictionary<string, FacetDefinition>? _cache;
 
-    public FacetService(CanonDatabaseService db)
+    public FacetService(DatabaseService db)
     {
         _db = db;
     }

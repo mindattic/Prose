@@ -72,7 +72,7 @@ window.graphInterop = {
         defs.append('marker')
             .attr('id', 'arrowhead')
             .attr('viewBox', '0 -5 10 10')
-            .attr('refX', 22).attr('refY', 0)
+            .attr('refX', 18).attr('refY', 0)
             .attr('markerWidth', 5).attr('markerHeight', 5)
             .attr('orient', 'auto')
             .append('path').attr('d', 'M0,-5L10,0L0,5').attr('fill', '#555');
@@ -140,20 +140,20 @@ window.graphInterop = {
         if (!this._nodeSelection) return;
         const self = this;
 
-        // Pin indicator: small red dot above pinned nodes
+        // Pin indicator: pushpin emoji overlapping top-center of the square node
+        // Positioned so the pin tip appears to pierce through the node
         this._nodeSelection.selectAll('.pin-indicator').remove();
         this._nodeSelection.filter(d => d._pinned)
-            .append('circle')
+            .append('text')
             .attr('class', 'pin-indicator')
-            .attr('r', 3)
-            .attr('cx', 0)
-            .attr('cy', d => -self._radius(d) - 5)
-            .attr('fill', '#dc3545')
-            .attr('stroke', '#fff')
-            .attr('stroke-width', 0.5);
+            .attr('x', d => self._radius(d) * 0.4)
+            .attr('y', d => -self._radius(d) + 4)
+            .attr('text-anchor', 'middle')
+            .attr('font-size', 14)
+            .text('\uD83D\uDCCC');
 
-        // Pinned nodes get a dashed stroke
-        this._nodeSelection.selectAll('circle:first-child')
+        // Pinned nodes get a dashed stroke on the rect
+        this._nodeSelection.selectAll('rect')
             .attr('stroke-dasharray', d => d._pinned ? '3,2' : 'none')
             .attr('stroke', d => {
                 if (d.id === self._selectedId) return '#fff';
@@ -217,9 +217,13 @@ window.graphInterop = {
 
         this._nodeSelection = node;
 
-        // Node circles
-        node.append('circle')
-            .attr('r', d => self._radius(d))
+        // Node squares (rounded rect)
+        node.append('rect')
+            .attr('width', d => self._radius(d) * 2)
+            .attr('height', d => self._radius(d) * 2)
+            .attr('x', d => -self._radius(d))
+            .attr('y', d => -self._radius(d))
+            .attr('rx', 3).attr('ry', 3)
             .attr('fill', d => self.typeColors[d.nodeType] || '#6c757d')
             .attr('stroke', '#222')
             .attr('stroke-width', 1.5);

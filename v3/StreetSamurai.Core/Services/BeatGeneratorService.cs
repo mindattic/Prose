@@ -7,9 +7,9 @@ public class BeatGeneratorService
 {
     private readonly ILlmService _llm;
     private readonly WorldGraphService _graph;
-    private readonly CanonService _canon;
+    private readonly LoreService _canon;
 
-    public BeatGeneratorService(ILlmService llm, WorldGraphService graph, CanonService canon)
+    public BeatGeneratorService(ILlmService llm, WorldGraphService graph, LoreService canon)
     {
         _llm = llm;
         _graph = graph;

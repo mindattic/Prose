@@ -5,10 +5,10 @@ namespace StreetSamurai.Core.Services;
 public class TextAnalysisService
 {
     private readonly ILlmService _llm;
-    private readonly CanonService _canon;
+    private readonly LoreService _canon;
     private readonly WorldGraphService _graph;
 
-    public TextAnalysisService(ILlmService llm, CanonService canon, WorldGraphService graph)
+    public TextAnalysisService(ILlmService llm, LoreService canon, WorldGraphService graph)
     {
         _llm = llm;
         _canon = canon;

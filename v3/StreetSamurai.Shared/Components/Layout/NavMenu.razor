@@ -6,8 +6,9 @@
 @inject TechnologyRepository TechRepo
 @inject WeaponryRepository WeaponRepo
 @inject EquipmentRepository EquipRepo
+@inject NavigationManager Nav
 
-<nav class="sidebar bg-dark text-light p-3" style="width: fit-content; min-width: 200px; min-height: 100vh; white-space: nowrap;">
+<nav class="sidebar bg-dark text-light p-3" style="width: fit-content; min-width: 240px; min-height: 100vh; white-space: nowrap; flex-shrink: 0;">
     <div class="mb-4">
         <h5 class="text-danger fw-bold">Street Samurai</h5>
         <small class="text-muted">Canon Engine v3</small>
@@ -22,79 +23,36 @@
 
         <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">Story Engine</li>
         <li class="nav-item">
-            <NavLink class="nav-link text-danger fw-bold" href="write">
-                <i class="bi bi-pen"></i> Story Editor
-            </NavLink>
-        </li>
-        <li class="nav-item">
             <NavLink class="nav-link text-light" href="stories">
                 <i class="bi bi-journal-text"></i> Stories
             </NavLink>
         </li>
-        <li class="nav-item">
-            <NavLink class="nav-link text-light" href="queue">
-                <i class="bi bi-inbox"></i> Canon Queue
-            </NavLink>
-        </li>
 
-        <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">Lore Browser</li>
-        <li class="nav-item">
-            <NavLink class="nav-link text-light" href="search">
-                <i class="bi bi-search"></i> Search
-            </NavLink>
-        </li>
-        <li class="nav-item">
-            <NavLink class="nav-link text-light" href="corps">
-                <i class="bi bi-building"></i> Corponations <span class="badge bg-secondary ms-1">@_corpCount</span>
-            </NavLink>
-        </li>
-        <li class="nav-item">
-            <NavLink class="nav-link text-light" href="factions">
-                <i class="bi bi-shield-exclamation"></i> Factions <span class="badge bg-secondary ms-1">@_factionCount</span>
-            </NavLink>
-        </li>
-        <li class="nav-item">
-            <NavLink class="nav-link text-light" href="characters">
-                <i class="bi bi-people"></i> Characters <span class="badge bg-secondary ms-1">@_charCount</span>
-            </NavLink>
-        </li>
-        <li class="nav-item">
-            <NavLink class="nav-link text-light" href="districts">
-                <i class="bi bi-geo-alt"></i> Districts <span class="badge bg-secondary ms-1">@_districtCount</span>
-            </NavLink>
-        </li>
-        <li class="nav-item">
-            <NavLink class="nav-link text-light" href="technology">
-                <i class="bi bi-cpu"></i> Technology <span class="badge bg-secondary ms-1">@_techCount</span>
-            </NavLink>
-        </li>
-        <li class="nav-item">
-            <NavLink class="nav-link text-light" href="weaponry">
-                <i class="bi bi-crosshair"></i> Weaponry <span class="badge bg-secondary ms-1">@_weaponCount</span>
-            </NavLink>
-        </li>
-        <li class="nav-item">
-            <NavLink class="nav-link text-light" href="equipment">
-                <i class="bi bi-shield-shaded"></i> Equipment <span class="badge bg-secondary ms-1">@_equipCount</span>
-            </NavLink>
-        </li>
-        <li class="nav-item">
-            <NavLink class="nav-link text-light" href="documents">
-                <i class="bi bi-file-earmark-text"></i> Documents <span class="badge bg-secondary ms-1">@_docCount</span>
-            </NavLink>
-        </li>
-        <li class="nav-item">
-            <NavLink class="nav-link text-light" href="rules">
-                <i class="bi bi-book"></i> World Rules
-            </NavLink>
-        </li>
+        <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">World Graph</li>
         <li class="nav-item">
             <NavLink class="nav-link text-light" href="graph">
                 <i class="bi bi-diagram-3"></i> World Graph
             </NavLink>
         </li>
 
+        <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">Lore Browser</li>
+
+        @NavItem("bi-building", "corps", "Corponations", _corpCount)
+        @NavItem("bi-shield-exclamation", "factions", "Factions", _factionCount)
+        @NavItem("bi-people", "characters", "Characters", _charCount)
+        @NavItem("bi-geo-alt", "districts", "Districts", _districtCount)
+        @NavItem("bi-cpu", "technology", "Technology", _techCount)
+        @NavItem("bi-crosshair", "weaponry", "Weaponry", _weaponCount)
+        @NavItem("bi-shield-shaded", "equipment", "Equipment", _equipCount)
+        @NavItem("bi-file-earmark-text", "documents", "Documents", _docCount)
+
+
         <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">System</li>
+        <li class="nav-item">
+            <NavLink class="nav-link text-light" href="rules">
+                <i class="bi bi-book"></i> World Rules
+            </NavLink>
+        </li>
         <li class="nav-item">
             <NavLink class="nav-link text-light" href="settings">
                 <i class="bi bi-gear"></i> Settings
@@ -117,4 +75,21 @@
         _techCount = TechRepo.GetAll().Count;
         _docCount = DocRepo.GetAll().Count;
     }
+
+    private RenderFragment NavItem(string icon, string href, string label, int count) => __builder =>
+    {
+        var newUrl = "/" + href + "?new=true";
+        <li class="nav-item">
+            <div class="d-flex align-items-center">
+                <NavLink class="nav-link text-light flex-grow-1 py-1" href="@href">
+                    <i class="bi @icon"></i> @label
+                </NavLink>
+                <span class="badge bg-secondary me-1" style="min-width: 44px; text-align: right; font-variant-numeric: tabular-nums;">@count</span>
+                <button class="btn btn-sm text-danger p-0 border-0" style="font-size: 0.9rem; line-height: 1; flex-shrink: 0;"
+                        @onclick="() => Nav.NavigateTo(newUrl)" title="@($"New {label}")">
+                    <i class="bi bi-plus-circle-fill"></i>
+                </button>
+            </div>
+        </li>;
+    };
 }
