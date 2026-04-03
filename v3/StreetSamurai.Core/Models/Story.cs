@@ -4,7 +4,7 @@ public record Story
 {
     public string Id { get; init; } = Guid.NewGuid().ToString("N")[..8];
     public string Title { get; init; } = "Untitled";
-    public string CanonStatus { get; init; } = "draft";
+    public string Status { get; init; } = "draft";
     public List<string> Characters { get; init; } = [];
     public string? Location { get; init; }
     public DateTime Created { get; init; } = DateTime.UtcNow;

@@ -136,9 +136,9 @@ public class SettingsService
         public string CanonRootPath { get; set; } = "";
         public int MaxTokens { get; set; } = 4096;
         public string ElevenLabsApiKey { get; set; } = "";
-        public string ElevenLabsVoiceId { get; set; } = "";
+        public string ElevenLabsVoiceId { get; set; } = "jfIS2w2yJi0grJZPyEsk";
         public string NarratorVoiceName { get; set; } = "Oliver Silk";
-        public string TtsModel { get; set; } = "eleven_v3";
+        public string TtsModel { get; set; } = "eleven_multilingual_v2";
         public double TtsStability { get; set; } = 0.5;
         public double TtsSimilarityBoost { get; set; } = 0.75;
         public double TtsStyle { get; set; } = 0.0;

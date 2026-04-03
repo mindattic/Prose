@@ -7,9 +7,9 @@ namespace StreetSamurai.Core.Services;
 
 public partial class StoryService
 {
-    private readonly ICanonPathProvider _paths;
+    private readonly IPathProvider _paths;
 
-    public StoryService(ICanonPathProvider paths)
+    public StoryService(IPathProvider paths)
     {
         _paths = paths;
     }
@@ -48,7 +48,7 @@ public partial class StoryService
         sb.AppendLine("---");
         sb.AppendLine($"id: \"{story.Id}\"");
         sb.AppendLine($"title: \"{story.Title}\"");
-        sb.AppendLine($"canon_status: {story.CanonStatus}");
+        sb.AppendLine($"canon_status: {story.Status}");
         if (story.Characters.Count > 0)
             sb.AppendLine($"characters: [{string.Join(", ", story.Characters)}]");
         if (!string.IsNullOrEmpty(story.Location))
@@ -95,7 +95,7 @@ public partial class StoryService
             {
                 Id = GetFm(fm, "id") ?? Path.GetFileNameWithoutExtension(filePath),
                 Title = GetFm(fm, "title") ?? Path.GetFileNameWithoutExtension(filePath),
-                CanonStatus = GetFm(fm, "canon_status") ?? "draft",
+                Status = GetFm(fm, "canon_status") ?? "draft",
                 Location = GetFm(fm, "location"),
                 Characters = ParseList(GetFm(fm, "characters") ?? ""),
                 Tags = ParseList(GetFm(fm, "tags") ?? ""),

@@ -5,6 +5,11 @@ html, body {
 }
 
 /* Dark theme overrides */
+.app-shell {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0d1117;
+}
 .app-container { background-color: #0d1117; min-height: 100vh; }
 .sidebar { background-color: #161b22 !important; border-right: 1px solid #30363d; }
 .sidebar .nav-link:hover { background-color: #21262d; border-radius: 4px; }
@@ -162,4 +167,63 @@ h1:focus {
 
 /* ── View mode tabs ──────────────────────────────────── */
 .view-tabs .btn.active { background-color: #21262d !important; border-color: #dc3545 !important; }
+
+/* ── Standard 32x32 toolbar buttons ──────────────────── */
+.tb {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+}
 .bg-cyan { background-color: #0dcaf0 !important; }
+
+/* ── 3-pane dictionary layout ────────────────────────── */
+.dict-layout {
+    display: flex;
+    gap: 1rem;
+    min-height: calc(100vh - 80px);
+}
+.dict-nav {
+    width: 180px;
+    flex-shrink: 0;
+}
+.dict-list {
+    width: 320px;
+    flex-shrink: 0;
+    overflow-y: auto;
+    max-height: calc(100vh - 80px);
+}
+.dict-editor {
+    flex: 1;
+    overflow-y: auto;
+    max-height: calc(100vh - 80px);
+    padding-right: 1rem;
+}
+.dict-editor textarea,
+textarea.auto-grow {
+    resize: none !important;
+    overflow: hidden;
+    min-height: 2.5rem;
+    height: auto;
+}
+.dict-editor .field-label {
+    color: #9ca3af;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+}
+.dict-list .list-item {
+    padding: 0.4rem 0.75rem;
+    cursor: pointer;
+    border-bottom: 1px solid #21262d;
+    border-left: 3px solid transparent;
+    transition: background 0.1s;
+}
+.dict-list .list-item:hover { background: #21262d; }
+.dict-list .list-item.active { background: #21262d; border-left-color: #dc3545; }

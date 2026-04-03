@@ -9,7 +9,7 @@ namespace StreetSamurai.Core.Services;
 /// Keeps the same public API so downstream services (StoryStarterService,
 /// SceneGenerationService, WorldGraphService) don't break.
 /// </summary>
-public class CanonDatabaseService
+public class DatabaseService
 {
     private readonly CharacterRepository _characters;
     private readonly FacetRepository _facets;
@@ -25,7 +25,7 @@ public class CanonDatabaseService
     private readonly MotifRepository _motifs;
     private readonly CharacterProfileRepository _characterProfile;
 
-    public CanonDatabaseService(
+    public DatabaseService(
         CharacterRepository characters, FacetRepository facets,
         DistrictRepository districts, FactionRepository factions,
         CorponationRepository corponations, WorldbuildingDocRepository docs,
@@ -236,4 +236,20 @@ public class CanonDatabaseService
 
     private static string Trunc(string s, int max) =>
         s.Length > max ? s[..(max - 3)] + "..." : s;
+}
+
+public record SearchResult
+{
+    public string FileName { get; init; } = "";
+    public string Heading { get; init; } = "";
+    public int LineNumber { get; init; }
+    public string Context { get; init; } = "";
+}
+
+public record Document
+{
+    public string FileName { get; init; } = "";
+    public string Title { get; init; } = "";
+    public string Category { get; init; } = "";
+    public int LineCount { get; init; }
 }

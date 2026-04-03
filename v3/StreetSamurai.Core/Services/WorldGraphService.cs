@@ -9,13 +9,13 @@ namespace StreetSamurai.Core.Services;
 
 public class WorldGraphService
 {
-    private readonly ICanonPathProvider _paths;
-    private readonly CanonDatabaseService _db;
+    private readonly IPathProvider _paths;
+    private readonly DatabaseService _db;
     private readonly AdjacencyGraph<string, WorldEdge> _graph = new();
     private readonly Dictionary<string, WorldNode> _nodes = new();
     private bool _loaded;
 
-    public WorldGraphService(ICanonPathProvider paths, CanonDatabaseService db)
+    public WorldGraphService(IPathProvider paths, DatabaseService db)
     {
         _paths = paths;
         _db = db;
@@ -455,14 +455,14 @@ public class WorldGraphService
         _graph.Clear();
         _nodes.Clear();
 
-        BuildFromCanonDatabase();
+        BuildFromDatabase();
         InferCorpRelationships();
         Save();
     }
 
     // ── Graph Builders (from canon.json) ────────────────────
 
-    private void BuildFromCanonDatabase()
+    private void BuildFromDatabase()
     {
         BuildCharacters();
         BuildDistricts();

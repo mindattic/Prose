@@ -2,23 +2,22 @@ using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
 
-public class FileSystemCanonPathProvider : ICanonPathProvider
+public class FileSystemPathProvider : IPathProvider
 {
     private readonly SettingsService _settings;
 
-    public FileSystemCanonPathProvider(SettingsService settings)
+    public FileSystemPathProvider(SettingsService settings)
     {
         _settings = settings;
     }
 
     private string Root => _settings.CanonRootPath;
 
-    public string CanonRoot => Root;
+    public string DataRoot => Root;
     public string WorldbuildingDir => Path.Combine(Root, "worldbuilding");
     public string CharactersDir => Path.Combine(Root, "characters");
     public string EssencesDir => Path.Combine(Root, "essences");
     public string StoriesDir => EnsureDir(Path.Combine(Root, "stories"));
-    public string CanonQueueDir => EnsureDir(Path.Combine(Root, "canon_queue"));
     public string EngineDataDir => EnsureDir(Path.Combine(Root, "engine_data"));
     public string NarrativeBiblePath => Path.Combine(Root, "narrative_bible.md");
     public string WorldDir => Path.Combine(Root, "world");

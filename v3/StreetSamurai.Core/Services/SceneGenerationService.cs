@@ -9,17 +9,17 @@ public class SceneGenerationService
     private readonly ContextAnalyzerService _analyzer;
     private readonly BeatGeneratorService _beatGen;
     private readonly WorldGraphService _graph;
-    private readonly CanonDatabaseService _canonDb;
-    private readonly CanonValidationService _validator;
-    private readonly ICanonPathProvider _paths;
+    private readonly DatabaseService _canonDb;
+    private readonly ValidationService _validator;
+    private readonly IPathProvider _paths;
 
     public event Action<BeatGenerationProgress>? OnBeatProgress;
     public event Action<GeneratedBeat>? OnBeatCompleted;
 
     public SceneGenerationService(
         FacetService facets, ContextAnalyzerService analyzer, BeatGeneratorService beatGen,
-        WorldGraphService graph, CanonDatabaseService canonDb, CanonValidationService validator,
-        ICanonPathProvider paths)
+        WorldGraphService graph, DatabaseService canonDb, ValidationService validator,
+        IPathProvider paths)
     {
         _facets = facets;
         _analyzer = analyzer;

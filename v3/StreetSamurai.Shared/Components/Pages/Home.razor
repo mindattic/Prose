@@ -1,5 +1,5 @@
 @page "/"
-@inject CanonService Canon
+@inject LoreService Canon
 @inject WorldGraphService Graph
 @using StreetSamurai.Core.Models
 @using StreetSamurai.Core.Interfaces
@@ -16,7 +16,7 @@
     <div class="col-md-2">
         <div class="card bg-dark text-light border-secondary" title="Markdown and YAML files in the worldbuilding directory">
             <div class="card-body text-center">
-                <h6 class="card-title text-muted small">Canon Vault</h6>
+                <h6 class="card-title text-muted small">Documents</h6>
                 <p class="display-6 mb-0">@_docCount</p>
                 <small class="text-muted">documents</small>
             </div>
@@ -71,12 +71,6 @@
     </div>
 </div>
 
-@* ── Quick Actions ──────────────────────────────────── *@
-<div class="d-flex gap-2 mt-3 mb-3">
-    <a href="write" class="btn btn-sm btn-danger"><i class="bi bi-pen"></i> Story Editor</a>
-    <a href="graph" class="btn btn-sm btn-outline-info"><i class="bi bi-diagram-3"></i> World Graph</a>
-    <a href="search" class="btn btn-sm btn-outline-secondary"><i class="bi bi-search"></i> Search Canon</a>
-</div>
 
 <div class="row g-3">
     @* ── Stories ────────────────────────────────────────── *@
@@ -151,21 +145,6 @@
             </div>
         </div>
 
-        <div class="card bg-dark text-light border-secondary">
-            <div class="card-header text-muted d-flex justify-content-between align-items-center">
-                Recent Documents
-                <a href="documents" class="text-info small text-decoration-none">Browse</a>
-            </div>
-            <div class="card-body">
-                @foreach (var doc in _recentDocs)
-                {
-                    <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                        <a href="documents/@doc.FileName" class="text-light text-decoration-none small">@doc.FileName</a>
-                        <small class="text-muted">@doc.LineCount lines</small>
-                    </div>
-                }
-            </div>
-        </div>
     </div>
 </div>
 
@@ -174,7 +153,6 @@
     private bool _llmReady, _ttsReady;
     private string _searchQuery = "";
     private List<SearchResult> _searchResults = [];
-    private List<CanonDocument> _recentDocs = [];
     private List<StoryProject> _stories = [];
     private List<(WorldNode node, int count)> _topConnected = [];
 
@@ -184,7 +162,6 @@
         _docCount = docs.Count;
         _corpCount = Canon.ListCorponations().Count;
         _charCount = Canon.ListCharacters().Count;
-        _recentDocs = docs.OrderByDescending(d => d.LineCount).Take(6).ToList();
 
         Graph.EnsureLoaded();
         _nodeCount = Graph.NodeCount;

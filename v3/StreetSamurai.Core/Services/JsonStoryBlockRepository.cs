@@ -1,32 +1,30 @@
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
 
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// JSON-file-backed implementation of IStoryBlockRepository.
-/// One JSON file per story project: {prefix}.json in the story_blocks directory.
-/// Designed for eventual replacement by a database-backed implementation.
+/// Story repository — single JSON file per story, named by ID.
+/// The HTML body is the source of truth (rich text with embedded images, entity links, etc.).
 /// </summary>
 public class JsonStoryBlockRepository : IStoryBlockRepository
 {
-    private readonly ICanonPathProvider _paths;
+    private readonly IPathProvider _paths;
     private static readonly JsonSerializerOptions JsonOpts = new()
     {
         WriteIndented = true,
+        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
     };
 
-    private string StoryBlocksDir => EnsureDir(Path.Combine(_paths.CanonRoot, "story_blocks"));
+    private string StoryDir => EnsureDir(Path.Combine(_paths.DataRoot, "story_blocks"));
 
-    public JsonStoryBlockRepository(ICanonPathProvider paths)
-    {
-        _paths = paths;
-    }
+    public JsonStoryBlockRepository(IPathProvider paths) => _paths = paths;
 
     public List<StoryProject> ListProjects()
     {
-        var dir = StoryBlocksDir;
+        var dir = StoryDir;
         if (!Directory.Exists(dir)) return [];
 
         return Directory.GetFiles(dir, "*.json")
@@ -38,11 +36,12 @@ public class JsonStoryBlockRepository : IStoryBlockRepository
 
     public StoryProject? LoadProject(string id)
     {
-        var dir = StoryBlocksDir;
-        if (!Directory.Exists(dir)) return null;
+        // Try direct file by ID
+        var path = Path.Combine(StoryDir, $"{id}.json");
+        if (File.Exists(path)) return LoadFromFile(path);
 
-        // Find by ID — scan files since the filename is the prefix, not the ID
-        return Directory.GetFiles(dir, "*.json")
+        // Fallback: scan all files (for legacy prefix-named files)
+        return Directory.GetFiles(StoryDir, "*.json")
             .Select(LoadFromFile)
             .FirstOrDefault(p => p?.Id == id);
     }
@@ -50,81 +49,20 @@ public class JsonStoryBlockRepository : IStoryBlockRepository
     public void SaveProject(StoryProject project)
     {
         project.Modified = DateTime.UtcNow;
-
-        // Clean up old file if prefix changed (filename is prefix-based)
-        CleanupOldFiles(project.Id, project.Prefix);
-
-        var path = ProjectPath(project.Prefix);
-        var json = JsonSerializer.Serialize(project, JsonOpts);
-        File.WriteAllText(path, json);
+        var path = Path.Combine(StoryDir, $"{project.Id}.json");
+        File.WriteAllText(path, JsonSerializer.Serialize(project, JsonOpts));
     }
 
     public void DeleteProject(string id)
     {
-        var project = LoadProject(id);
-        if (project == null) return;
+        var path = Path.Combine(StoryDir, $"{id}.json");
+        if (File.Exists(path)) File.Delete(path);
 
-        var path = ProjectPath(project.Prefix);
-        if (File.Exists(path))
-            File.Delete(path);
-    }
-
-    public StoryProject RenamePrefix(string projectId, string newPrefix)
-    {
-        newPrefix = StoryProject.SanitizePrefix(newPrefix);
-
-        var project = LoadProject(projectId)
-            ?? throw new InvalidOperationException($"Project {projectId} not found");
-
-        var oldPath = ProjectPath(project.Prefix);
-
-        // Rename prefix and all block IDs
-        project.RenamePrefix(newPrefix);
-
-        // Write to new path
-        var newPath = ProjectPath(newPrefix);
-        var json = JsonSerializer.Serialize(project, JsonOpts);
-        File.WriteAllText(newPath, json);
-
-        // Delete old file if it's different
-        if (oldPath != newPath && File.Exists(oldPath))
-            File.Delete(oldPath);
-
-        return project;
-    }
-
-    public bool PrefixExists(string prefix, string? excludeProjectId = null)
-    {
-        prefix = StoryProject.SanitizePrefix(prefix);
-        var path = ProjectPath(prefix);
-        if (!File.Exists(path)) return false;
-
-        if (excludeProjectId != null)
+        // Also clean up any legacy files with this ID
+        foreach (var file in Directory.GetFiles(StoryDir, "*.json"))
         {
-            var existing = LoadFromFile(path);
-            return existing != null && existing.Id != excludeProjectId;
-        }
-
-        return true;
-    }
-
-    // ── Private ──
-
-    private string ProjectPath(string prefix) =>
-        Path.Combine(StoryBlocksDir, $"{prefix}.json");
-
-    private void CleanupOldFiles(string projectId, string currentPrefix)
-    {
-        var dir = StoryBlocksDir;
-        if (!Directory.Exists(dir)) return;
-
-        foreach (var file in Directory.GetFiles(dir, "*.json"))
-        {
-            if (Path.GetFileNameWithoutExtension(file).Equals(currentPrefix, StringComparison.OrdinalIgnoreCase))
-                continue;
-
-            var existing = LoadFromFile(file);
-            if (existing?.Id == projectId)
+            var proj = LoadFromFile(file);
+            if (proj?.Id == id && file != path)
                 File.Delete(file);
         }
     }
@@ -136,10 +74,7 @@ public class JsonStoryBlockRepository : IStoryBlockRepository
             var json = File.ReadAllText(path);
             return JsonSerializer.Deserialize<StoryProject>(json);
         }
-        catch
-        {
-            return null;
-        }
+        catch { return null; }
     }
 
     private static string EnsureDir(string path)

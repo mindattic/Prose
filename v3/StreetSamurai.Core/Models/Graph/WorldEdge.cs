@@ -16,7 +16,7 @@ public record WorldEdge : IEdge<string>
     public double Weight { get; init; } = 1.0;
     public string Sentiment { get; init; } = "neutral";
     public string Description { get; init; } = "";
-    public string CanonStatus { get; init; } = "canon";
+    public string Status { get; init; } = "canon";
     public DateTime LastModified { get; init; } = DateTime.UtcNow;
     public string ModifiedBy { get; init; } = "";
 

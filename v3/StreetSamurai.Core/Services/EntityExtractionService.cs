@@ -164,7 +164,7 @@ public class EntityExtractionService
                     Id = id,
                     Name = entity.Name,
                     NodeType = nodeType,
-                    CanonStatus = "extracted",
+                    Status = "extracted",
                     Properties = props,
                     ExtractedFrom = storyId,
                 });
@@ -186,7 +186,7 @@ public class EntityExtractionService
                 _graph.AddNode(new WorldNode
                 {
                     Id = sourceId, Name = rel.Source,
-                    NodeType = EntityTypes.Unknown, CanonStatus = "extracted",
+                    NodeType = EntityTypes.Unknown, Status = "extracted",
                     ExtractedFrom = storyId,
                 });
                 newEntities++;
@@ -197,7 +197,7 @@ public class EntityExtractionService
                 _graph.AddNode(new WorldNode
                 {
                     Id = targetId, Name = rel.Target,
-                    NodeType = EntityTypes.Unknown, CanonStatus = "extracted",
+                    NodeType = EntityTypes.Unknown, Status = "extracted",
                     ExtractedFrom = storyId,
                 });
                 newEntities++;
