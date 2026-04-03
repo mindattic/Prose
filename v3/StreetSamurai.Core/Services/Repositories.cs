@@ -65,6 +65,18 @@ public class WeaponryRepository : JsonDictionaryRepository<WeaponryData>
         : base(Path.Combine(paths.EngineDataDir, "weaponry.json"), w => w.Name) { }
 }
 
+public class EquipmentRepository : JsonDictionaryRepository<EquipmentData>
+{
+    public EquipmentRepository(ICanonPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "equipment.json"), e => e.Name) { }
+}
+
+public class TechnologyRepository : JsonDictionaryRepository<TechnologyData>
+{
+    public TechnologyRepository(ICanonPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "technology.json"), t => t.Name) { }
+}
+
 public class CharacterProfileRepository : JsonSingletonRepository<CharacterProfileData>
 {
     public CharacterProfileRepository(ICanonPathProvider paths)

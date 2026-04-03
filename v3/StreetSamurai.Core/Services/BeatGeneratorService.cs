@@ -40,11 +40,9 @@ public class BeatGeneratorService
             CORE MEMORIES TO DRAW FROM:
             {coreMemories}
 
-            CHARACTER CONTEXT:
+            WORLD CONTEXT (characters, locations, equipment, relationships — use these as canon facts):
             {context.RelationshipContext}
-
-            LOCATION:
-            {context.LocationContext}
+            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}
             """;
 
         var user = $"""

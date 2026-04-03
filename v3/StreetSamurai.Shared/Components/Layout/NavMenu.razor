@@ -1,3 +1,12 @@
+@inject CorponationRepository CorpRepo
+@inject FactionRepository FactionRepo
+@inject CharacterRepository CharRepo
+@inject DistrictRepository DistrictRepo
+@inject WorldbuildingDocRepository DocRepo
+@inject TechnologyRepository TechRepo
+@inject WeaponryRepository WeaponRepo
+@inject EquipmentRepository EquipRepo
+
 <nav class="sidebar bg-dark text-light p-3" style="width: fit-content; min-width: 200px; min-height: 100vh; white-space: nowrap;">
     <div class="mb-4">
         <h5 class="text-danger fw-bold">Street Samurai</h5>
@@ -36,37 +45,42 @@
         </li>
         <li class="nav-item">
             <NavLink class="nav-link text-light" href="corps">
-                <i class="bi bi-building"></i> Corponations
+                <i class="bi bi-building"></i> Corponations <span class="badge bg-secondary ms-1">@_corpCount</span>
             </NavLink>
         </li>
         <li class="nav-item">
             <NavLink class="nav-link text-light" href="factions">
-                <i class="bi bi-shield-exclamation"></i> Factions
+                <i class="bi bi-shield-exclamation"></i> Factions <span class="badge bg-secondary ms-1">@_factionCount</span>
             </NavLink>
         </li>
         <li class="nav-item">
             <NavLink class="nav-link text-light" href="characters">
-                <i class="bi bi-people"></i> Characters
+                <i class="bi bi-people"></i> Characters <span class="badge bg-secondary ms-1">@_charCount</span>
             </NavLink>
         </li>
         <li class="nav-item">
             <NavLink class="nav-link text-light" href="districts">
-                <i class="bi bi-geo-alt"></i> Districts
+                <i class="bi bi-geo-alt"></i> Districts <span class="badge bg-secondary ms-1">@_districtCount</span>
             </NavLink>
         </li>
         <li class="nav-item">
             <NavLink class="nav-link text-light" href="technology">
-                <i class="bi bi-cpu"></i> Technology
+                <i class="bi bi-cpu"></i> Technology <span class="badge bg-secondary ms-1">@_techCount</span>
             </NavLink>
         </li>
         <li class="nav-item">
             <NavLink class="nav-link text-light" href="weaponry">
-                <i class="bi bi-crosshair"></i> Weaponry
+                <i class="bi bi-crosshair"></i> Weaponry <span class="badge bg-secondary ms-1">@_weaponCount</span>
+            </NavLink>
+        </li>
+        <li class="nav-item">
+            <NavLink class="nav-link text-light" href="equipment">
+                <i class="bi bi-shield-shaded"></i> Equipment <span class="badge bg-secondary ms-1">@_equipCount</span>
             </NavLink>
         </li>
         <li class="nav-item">
             <NavLink class="nav-link text-light" href="documents">
-                <i class="bi bi-file-earmark-text"></i> Documents
+                <i class="bi bi-file-earmark-text"></i> Documents <span class="badge bg-secondary ms-1">@_docCount</span>
             </NavLink>
         </li>
         <li class="nav-item">
@@ -88,3 +102,19 @@
         </li>
     </ul>
 </nav>
+
+@code {
+    private int _corpCount, _factionCount, _charCount, _districtCount, _techCount, _weaponCount, _equipCount, _docCount;
+
+    protected override void OnInitialized()
+    {
+        _corpCount = CorpRepo.GetAll().Count;
+        _factionCount = FactionRepo.GetAll().Count;
+        _charCount = CharRepo.GetAll().Count;
+        _districtCount = DistrictRepo.GetAll().Count;
+        _weaponCount = WeaponRepo.GetAll().Count;
+        _equipCount = EquipRepo.GetAll().Count;
+        _techCount = TechRepo.GetAll().Count;
+        _docCount = DocRepo.GetAll().Count;
+    }
+}

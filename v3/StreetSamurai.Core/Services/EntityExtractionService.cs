@@ -95,18 +95,19 @@ public class EntityExtractionService
     /// <summary>
     /// Extract entities from story text and merge them into the world graph.
     /// Returns the number of new entities and relationships added.
+    /// storyPoint identifies where in the story this happened (e.g. "chapter:3" or "SS_00045").
     /// </summary>
     public async Task<(int entities, int relationships)> ExtractAndMergeAsync(
-        string storyText, string storyId, CancellationToken ct = default)
+        string storyText, string storyId, string storyPoint = "", CancellationToken ct = default)
     {
         var result = await ExtractAsync(storyText, ct);
-        return MergeIntoGraph(result, storyId);
+        return MergeIntoGraph(result, storyId, storyPoint);
     }
 
     /// <summary>
     /// Merge extraction results into the world graph.
     /// </summary>
-    public (int entities, int relationships) MergeIntoGraph(ExtractionResult result, string storyId)
+    public (int entities, int relationships) MergeIntoGraph(ExtractionResult result, string storyId, string storyPoint = "")
     {
         _graph.EnsureLoaded();
         int newEntities = 0, newRelationships = 0;
@@ -122,12 +123,24 @@ public class EntityExtractionService
 
             if (existing != null)
             {
-                // Merge properties — add new ones, don't overwrite existing
+                // Merge properties — track changes temporally for key properties
                 var mergedProps = new Dictionary<string, string>(existing.Properties);
+                var trackableProps = new HashSet<string> { "status", "location", "affiliation" };
+
                 foreach (var (key, value) in entity.Properties)
                 {
-                    if (!mergedProps.ContainsKey(key) && !string.IsNullOrEmpty(value))
+                    if (string.IsNullOrEmpty(value)) continue;
+                    var oldVal = mergedProps.GetValueOrDefault(key, "");
+
+                    if (trackableProps.Contains(key) && oldVal.Length > 0 && oldVal != value && !string.IsNullOrEmpty(storyPoint))
+                    {
+                        // Temporal change — record in history
+                        _graph.RecordPropertyChange(id, key, value, storyPoint, storyId);
+                    }
+                    else if (!mergedProps.ContainsKey(key))
+                    {
                         mergedProps[key] = value;
+                    }
                 }
 
                 // Update description if the existing one is empty
@@ -191,7 +204,7 @@ public class EntityExtractionService
             }
 
             _graph.EvolveRelationship(sourceId, targetId, storyId,
-                rel.Type, rel.Description, 1.0, rel.Sentiment);
+                rel.Type, rel.Description, 1.0, rel.Sentiment, storyPoint);
             newRelationships++;
         }
 

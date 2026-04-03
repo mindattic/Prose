@@ -27,6 +27,9 @@ public record GeneratedBeat
     public List<string> SupportingFacets { get; init; } = [];
     public string Text { get; init; } = "";
     public List<string> ContextTags { get; init; } = [];
+    /// <summary>Canon issues detected by post-generation validation. Empty = clean.</summary>
+    public List<string> ValidationIssues { get; init; } = [];
+    public bool HasIssues => ValidationIssues.Count > 0;
 }
 
 public record BeatGenerationProgress

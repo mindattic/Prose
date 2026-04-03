@@ -76,6 +76,14 @@ public class StoryChapter
     [JsonPropertyName("perspective")]
     public string Perspective { get; set; } = "";
 
+    /// <summary>Characters that appear in this chapter — auto-detected from entity extraction.</summary>
+    [JsonPropertyName("characters")]
+    public List<string> Characters { get; set; } = [];
+
+    /// <summary>Locations that appear in this chapter — auto-detected from entity extraction.</summary>
+    [JsonPropertyName("locations")]
+    public List<string> Locations { get; set; } = [];
+
     [JsonPropertyName("created")]
     public DateTime Created { get; set; } = DateTime.UtcNow;
 

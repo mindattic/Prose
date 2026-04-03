@@ -81,11 +81,30 @@ public class StoryStarterService
     {
         _graph.EnsureLoaded();
 
-        // Build world context from typed JSON database
+        // Build world context — graph-first, typed JSON as fallback
         var literaryRules = _canonDb.GetLiteraryRulesPrompt();
         var storyBible = JsonStoryBible();
-        var locationContext = request.Location != null ? _canonDb.GetDistrictContext(request.Location) : "Location not specified — choose one that fits.";
-        var characterContext = BuildCharacterContext(request.Characters);
+
+        // Pull full scene context from graph: characters (with gender, pronouns,
+        // psychology, speech), locations (with atmosphere), equipment, weapons,
+        // affiliations, and 1-hop neighbors for relationship web
+        var entityNames = new List<string>(request.Characters);
+        if (request.Location != null) entityNames.Add(request.Location);
+        var sceneContext = _graph.GetSceneContext(entityNames);
+
+        // Fall back to typed JSON if graph is empty
+        string locationContext, characterContext;
+        if (!string.IsNullOrWhiteSpace(sceneContext))
+        {
+            characterContext = sceneContext;
+            locationContext = ""; // Already included in scene context
+        }
+        else
+        {
+            locationContext = BuildLocationContext(request.Location);
+            characterContext = BuildCharacterContext(request.Characters);
+        }
+
         var worldFlavor = BuildWorldFlavor();
 
         // Select lead facet based on character behavioral baselines
@@ -300,10 +319,20 @@ public class StoryStarterService
 
         var literaryRules = _canonDb.GetLiteraryRulesPrompt();
         var storyBible = JsonStoryBible();
-        var locationContext = location != null ? _canonDb.GetDistrictContext(location) : "";
-        var characterContext = BuildCharacterContext(characters);
+
+        // Session context: seed with requested characters + location, then
+        // scan the existing story text to load any entities already mentioned.
+        // This means if chapter 3 mentions "the Veil-9", continuing chapter 4
+        // already knows what it is without being told again.
+        var session = new NarrativeSessionContext(_graph);
+        session.TouchAll(characters);
+        if (location != null) session.Touch(location);
 
         var storySoFar = string.Join("\n\n", existingParagraphs);
+        session.ScanText(storySoFar);
+
+        var characterContext = session.BuildContext();
+        var locationContext = "";
 
         var blended = _canonDb.GetBlendedWeights(characters);
         var weights = new FacetState
@@ -410,8 +439,15 @@ public class StoryStarterService
         string selectedText, string? direction, string? mood, string? location,
         List<string> characters, CancellationToken ct = default)
     {
+        _graph.EnsureLoaded();
         var literaryRules = _canonDb.GetLiteraryRulesPrompt();
-        var characterContext = BuildCharacterContext(characters);
+
+        // Graph context for rewrites — ensures character facts stay consistent
+        var entityNames = new List<string>(characters);
+        if (location != null) entityNames.Add(location);
+        var characterContext = _graph.GetSceneContext(entityNames);
+        if (string.IsNullOrWhiteSpace(characterContext))
+            characterContext = BuildCharacterContext(characters);
 
         var directionLine = string.IsNullOrWhiteSpace(direction)
             ? "Polish and refine — tighten prose, sharpen imagery, fix awkward phrasing. Keep the same events and meaning."

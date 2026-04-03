@@ -16,8 +16,10 @@ public class ContextAnalyzerService
 
     public async Task<ContextAnalysis> AnalyzeAsync(string sceneContext, List<string> characterIds, CancellationToken ct = default)
     {
-        var relationshipContext = string.Join("\n", characterIds
-            .Select(id => _graph.GetContextForNode(id))
+        // Pull full entity briefs from the graph — includes gender, pronouns,
+        // psychology, relationships, equipment, and 1-hop neighbors
+        var relationshipContext = string.Join("\n\n", characterIds
+            .Select(id => _graph.GetEntityBrief(id))
             .Where(c => !string.IsNullOrEmpty(c)));
 
         var system = """

@@ -1,159 +1,156 @@
 @page "/graph"
 @inject WorldGraphService Graph
-@inject CanonService Canon
+@inject IJSRuntime JS
+@implements IDisposable
 
-<h4 class="text-danger mb-1">World Graph</h4>
-<p class="text-muted mb-3">Relationship network of every entity in the canon — characters, corponations, districts, and factions. Click a node to explore its connections.</p>
+<div class="d-flex justify-content-between align-items-center mb-1">
+    <h4 class="text-danger mb-0">World Graph</h4>
+    <div class="d-flex gap-2 align-items-center">
+        <small class="text-muted">@_allNodes.Count nodes, @_allEdges.Count edges</small>
+        <button class="btn btn-sm btn-outline-warning" @onclick="RebuildGraph"><i class="bi bi-arrow-clockwise"></i> Rebuild</button>
+    </div>
+</div>
 
-<div class="row g-3">
-    @* ── Controls ─────────────────────────────────────── *@
+<div class="row g-2">
+    @* ── Left: Filters + Node List ─────────────────────── *@
     <div class="col-md-3">
-        <div class="card bg-dark text-light border-secondary mb-3">
-            <div class="card-header text-muted">Filters</div>
-            <div class="card-body">
+        <div class="card bg-dark text-light border-secondary mb-2">
+            <div class="card-body py-2">
                 <div class="mb-2">
-                    <label class="form-label text-muted small">Node Type</label>
-                    <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="_filterType">
-                        <option value="">All</option>
+                    <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="_filterType" @bind:after="ApplyFilters">
+                        <option value="">All types</option>
                         <option value="character">Characters</option>
-                        <option value="corporation">Corporations</option>
-                        <option value="district">Districts</option>
+                        <option value="organization">Corponations</option>
+                        <option value="place">Places</option>
                         <option value="faction">Factions</option>
+                        <option value="weapon">Weaponry</option>
+                        <option value="equipment">Equipment</option>
+                        <option value="technology">Technology</option>
                     </select>
                 </div>
                 <div class="mb-2">
-                    <label class="form-label text-muted small">Search</label>
                     <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
-                           placeholder="Filter nodes..."
-                           @bind="_searchFilter" @bind:event="oninput" />
+                           placeholder="Search..." @bind="_searchFilter" @bind:event="oninput" @bind:after="ApplyFilters" />
                 </div>
-                <div class="text-muted small mt-2">
-                    @_filteredNodes.Count nodes / @_filteredEdges.Count edges
+                <div class="d-flex gap-2 flex-wrap">
+                    <button class="btn btn-sm btn-outline-danger" @onclick="LoadAll" title="Load all nodes into the graph">
+                        <i class="bi bi-globe"></i> Load All
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="UnpinAll" title="Unpin all nodes">
+                        <i class="bi bi-pin-angle"></i> Unpin All
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="ClearCanvas" title="Clear the canvas">
+                        <i class="bi bi-eraser"></i> Clear
+                    </button>
                 </div>
+                <small class="text-muted mt-1" style="font-size: 0.7rem;">
+                    <kbd>P</kbd> pin/unpin hovered node &middot; double-click to expand &middot; drag to move
+                </small>
             </div>
         </div>
 
-        @* ── Node List ────────────────────────────────── *@
-        <div class="card bg-dark text-light border-secondary" style="max-height: 60vh; overflow-y: auto;">
-            <div class="card-header text-muted">Nodes</div>
+        @* ── Node list (click to add to graph) ─────────── *@
+        <div class="card bg-dark text-light border-secondary" style="max-height: 55vh; overflow-y: auto;">
+            <div class="card-header text-muted py-1 small">Click to explore (@_filteredNodes.Count)</div>
             <div class="list-group list-group-flush">
                 @foreach (var node in _filteredNodes.Take(100))
                 {
-                    <button class="list-group-item list-group-item-action bg-dark text-light border-secondary d-flex justify-content-between align-items-center @(_selectedNode?.Id == node.Id ? "active" : "")"
-                            @onclick="() => SelectNode(node)">
+                    <button class="list-group-item list-group-item-action bg-dark text-light border-secondary py-1 d-flex justify-content-between align-items-center small @(_selectedNode?.Id == node.Id ? "active" : "")"
+                            @onclick="() => ExploreNode(node)">
                         <span>
-                            <span class="badge @GetTypeBadgeClass(node.NodeType) me-1">@node.NodeType[..1].ToUpper()</span>
+                            <span class="badge @GetTypeBadgeClass(node.NodeType) me-1" style="font-size: 0.6rem;">@node.NodeType[..1].ToUpper()</span>
                             @node.Name
                         </span>
-                        <span class="badge bg-secondary rounded-pill">@GetEdgeCount(node.Id)</span>
+                        <span class="badge bg-secondary rounded-pill" style="font-size: 0.6rem;">@GetEdgeCount(node.Id)</span>
                     </button>
                 }
             </div>
         </div>
     </div>
 
-    @* ── Graph Canvas / Detail ────────────────────────── *@
+    @* ── Center: D3 Force Canvas + Detail ──────────────── *@
     <div class="col-md-9">
+        @* ── D3 Canvas ────────────────────────────────────── *@
+        <div id="graphCanvas" class="border border-secondary rounded mb-2"
+             style="width: 100%; height: 55vh; background: #111;"></div>
+
+        @* ── Selected Node Detail ─────────────────────────── *@
         @if (_selectedNode != null)
         {
-            <div class="card bg-dark text-light border-secondary mb-3">
-                <div class="card-header d-flex justify-content-between align-items-center">
-                    <span>
-                        <span class="badge @GetTypeBadgeClass(_selectedNode.NodeType) me-2">@_selectedNode.NodeType</span>
-                        <strong>@_selectedNode.Name</strong>
-                    </span>
-                    <button class="btn btn-sm btn-outline-secondary" @onclick="() => _selectedNode = null" title="Close detail view">
-                        <i class="bi bi-x"></i> Close
-                    </button>
-                </div>
-                <div class="card-body">
-                    @if (!string.IsNullOrEmpty(_nodeContext))
-                    {
-                        <div class="mb-3" style="white-space: pre-wrap; font-size: 0.9rem;">@_nodeContext</div>
-                    }
-                </div>
-            </div>
-
-            @* ── Relationship Web ────────────────────────── *@
             <div class="card bg-dark text-light border-secondary">
-                <div class="card-header text-muted">Connections (@_nodeEdges.Count)</div>
-                <div class="card-body">
+                <div class="card-header d-flex justify-content-between align-items-center py-1">
+                    <span>
+                        <span class="badge @GetTypeBadgeClass(_selectedNode.NodeType) me-1">@_selectedNode.NodeType</span>
+                        <strong>@_selectedNode.Name</strong>
+                        @if (_selectedNode.Properties.TryGetValue("gender", out var gender) && gender.Length > 0)
+                        {
+                            <small class="text-muted ms-2">@gender</small>
+                        }
+                        @if (_selectedNode.Properties.TryGetValue("pronouns", out var pronouns) && pronouns.Length > 0)
+                        {
+                            <small class="text-muted">(@pronouns)</small>
+                        }
+                    </span>
+                    <button class="btn btn-sm btn-outline-secondary py-0" @onclick="() => _selectedNode = null"><i class="bi bi-x"></i></button>
+                </div>
+                <div class="card-body py-2 small" style="max-height: 25vh; overflow-y: auto;">
+                    @if (_selectedNode.Properties.TryGetValue("description", out var desc) && desc.Length > 0)
+                    {
+                        <div class="text-muted mb-2" style="line-height: 1.4;">@(desc.Length > 500 ? desc[..497] + "..." : desc)</div>
+                    }
+                    @foreach (var key in new[] { "role", "affiliation", "status", "category", "sector", "manufacturer", "tier_availability", "legality" })
+                    {
+                        if (_selectedNode.Properties.TryGetValue(key, out var val) && val.Length > 0)
+                        {
+                            <div><span class="text-info">@key:</span> @val</div>
+                        }
+                    }
                     @if (_nodeEdges.Any())
                     {
-                        <div class="row g-2">
-                            @foreach (var edge in _nodeEdges)
+                        <div class="mt-2">
+                            <small class="text-muted fw-bold">Connections (@_nodeEdges.Count):</small>
+                            @foreach (var edge in _nodeEdges.Take(20))
                             {
                                 var other = edge.Source == _selectedNode.Id ? edge.Target : edge.Source;
                                 var otherNode = Graph.GetNode(other);
-                                <div class="col-md-6">
-                                    <div class="border border-secondary rounded p-2 d-flex align-items-center gap-2 cursor-pointer"
-                                         style="cursor: pointer;"
-                                         @onclick="() => NavigateToNode(other)">
-                                        <span class="badge @GetRelBadgeClass(edge.RelationType)">@edge.RelationType</span>
-                                        <span>@(otherNode?.Name ?? other)</span>
-                                        @if (!string.IsNullOrEmpty(edge.Description))
-                                        {
-                                            <small class="text-muted ms-auto">@Truncate(edge.Description, 40)</small>
-                                        }
-                                    </div>
+                                <div class="d-flex align-items-center gap-1" style="cursor: pointer;" @onclick="() => ExploreById(other)">
+                                    <span class="badge @GetRelBadgeClass(edge.RelationType)" style="font-size: 0.65rem;">@edge.RelationType</span>
+                                    <span>@(otherNode?.Name ?? other)</span>
+                                    @if (!string.IsNullOrEmpty(edge.Description))
+                                    {
+                                        <small class="text-muted">— @Truncate(edge.Description, 50)</small>
+                                    }
                                 </div>
+                            }
+                            @if (_nodeEdges.Count > 20)
+                            {
+                                <small class="text-muted">... and @(_nodeEdges.Count - 20) more</small>
                             }
                         </div>
                     }
-                    else
-                    {
-                        <small class="text-muted">No connections found.</small>
-                    }
                 </div>
             </div>
         }
-        else
-        {
-            @* ── Overview visualization ──────────────────── *@
-            <div class="card bg-dark text-light border-secondary">
-                <div class="card-header text-muted">Graph Overview</div>
-                <div class="card-body">
-                    <div class="row g-3 mb-3">
-                        @foreach (var group in _filteredNodes.GroupBy(n => n.NodeType).OrderByDescending(g => g.Count()))
-                        {
-                            <div class="col-md-3">
-                                <div class="border border-secondary rounded p-3 text-center">
-                                    <span class="badge @GetTypeBadgeClass(group.Key) mb-2" style="display:inline-block;">@group.Key</span>
-                                    <h4>@group.Count()</h4>
-                                </div>
-                            </div>
-                        }
-                    </div>
 
-                    @* ── Top connected nodes ──────────────────── *@
-                    <h6 class="text-muted mt-3">Most Connected</h6>
-                    <div class="row g-2">
-                        @foreach (var node in _allNodes.OrderByDescending(n => GetEdgeCount(n.Id)).Take(12))
-                        {
-                            <div class="col-md-4">
-                                <div class="border border-secondary rounded p-2 d-flex align-items-center gap-2"
-                                     style="cursor: pointer;" @onclick="() => SelectNode(node)">
-                                    <span class="badge @GetTypeBadgeClass(node.NodeType)">@node.NodeType[..1].ToUpper()</span>
-                                    <span class="small">@node.Name</span>
-                                    <span class="badge bg-danger rounded-pill ms-auto">@GetEdgeCount(node.Id)</span>
-                                </div>
-                            </div>
-                        }
-                    </div>
-
-                    @* ── Relationship type distribution ──────── *@
-                    <h6 class="text-muted mt-4">Relationship Types</h6>
-                    <div class="d-flex flex-wrap gap-2">
-                        @foreach (var group in _allEdges.GroupBy(e => e.RelationType).OrderByDescending(g => g.Count()))
-                        {
-                            <span class="badge @GetRelBadgeClass(group.Key) fs-6">
-                                @group.Key <span class="badge bg-dark">@group.Count()</span>
-                            </span>
-                        }
-                    </div>
-                </div>
+        @* ── Scene Context Tester ─────────────────────────── *@
+        <div class="card bg-dark text-light border-secondary mt-2">
+            <div class="card-header text-muted py-1 d-flex justify-content-between small">
+                <span>Scene Context Lookup</span>
+                <small>What the LLM sees for a scene</small>
             </div>
-        }
+            <div class="card-body py-2">
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control bg-dark text-light border-secondary"
+                           placeholder="Entity names, comma-separated (e.g. Sable, Kyle, Old Harbor)"
+                           @bind="_sceneQuery" />
+                    <button class="btn btn-outline-danger" @onclick="LookupSceneContext">Lookup</button>
+                </div>
+                @if (!string.IsNullOrEmpty(_sceneContext))
+                {
+                    <pre class="bg-black text-light p-2 rounded small mt-2" style="max-height: 300px; overflow-y: auto; white-space: pre-wrap; font-size: 0.75rem;">@_sceneContext</pre>
+                }
+            </div>
+        </div>
     </div>
 </div>
 
@@ -161,22 +158,34 @@
     private List<WorldNode> _allNodes = [];
     private List<WorldEdge> _allEdges = [];
     private List<WorldNode> _filteredNodes = [];
-    private List<WorldEdge> _filteredEdges = [];
     private WorldNode? _selectedNode;
     private List<WorldEdge> _nodeEdges = [];
-    private string _nodeContext = "";
     private string _filterType = "";
     private string _searchFilter = "";
+    private string _sceneQuery = "";
+    private string _sceneContext = "";
+
+    // Nodes/edges currently rendered in the D3 canvas
+    private HashSet<string> _canvasNodeIds = new();
+
+    private DotNetObjectReference<WorldGraph>? _selfRef;
 
     protected override void OnInitialized()
     {
         Graph.EnsureLoaded();
         _allNodes = Graph.AllNodes();
-        _allEdges = _allNodes.SelectMany(n => Graph.GetAllEdges(n.Id)).DistinctBy(e => (e.Source, e.Target, e.RelationType)).ToList();
+        _allEdges = _allNodes.SelectMany(n => Graph.GetAllEdges(n.Id))
+            .DistinctBy(e => (e.Source, e.Target, e.RelationType)).ToList();
         ApplyFilters();
     }
 
-    protected override void OnParametersSet() => ApplyFilters();
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            _selfRef = DotNetObjectReference.Create(this);
+        }
+    }
 
     private void ApplyFilters()
     {
@@ -187,26 +196,169 @@
                         n.Id.Contains(_searchFilter, StringComparison.OrdinalIgnoreCase))
             .OrderBy(n => n.Name)
             .ToList();
-
-        _filteredEdges = _allEdges
-            .Where(e => _filteredNodes.Any(n => n.Id == e.Source || n.Id == e.Target))
-            .ToList();
     }
 
-    private void SelectNode(WorldNode node)
+    // ── D3 Interactions ─────────────────────────────────
+
+    /// <summary>Load all nodes into the D3 canvas at once.</summary>
+    private async Task LoadAll()
+    {
+        _canvasNodeIds = new HashSet<string>(_allNodes.Select(n => n.Id));
+        await RenderD3(_allNodes, _allEdges);
+    }
+
+    /// <summary>Clear the canvas.</summary>
+    private async Task ClearCanvas()
+    {
+        _canvasNodeIds.Clear();
+        _selectedNode = null;
+        await JS.InvokeVoidAsync("graphInterop.destroy");
+    }
+
+    /// <summary>Unpin all nodes — let the simulation rearrange everything.</summary>
+    private async Task UnpinAll()
+    {
+        await JS.InvokeVoidAsync("graphInterop.unpinAll");
+    }
+
+    /// <summary>Explore a node: add it + 2-hop neighbors to the canvas.</summary>
+    private async Task ExploreNode(WorldNode node)
     {
         _selectedNode = node;
-        _nodeEdges = _allEdges
-            .Where(e => e.Source == node.Id || e.Target == node.Id)
-            .OrderBy(e => e.RelationType)
-            .ToList();
-        _nodeContext = Graph.GetContextForNode(node.Id);
+        _nodeEdges = _allEdges.Where(e => e.Source == node.Id || e.Target == node.Id).OrderBy(e => e.RelationType).ToList();
+
+        // Get 2-hop neighborhood
+        var neighbors = Graph.GetNeighbors(node.Id, 2);
+        var nodeIds = new HashSet<string>(neighbors.Select(n => n.Id)) { node.Id };
+
+        if (_canvasNodeIds.Count == 0)
+        {
+            // Fresh canvas — init with this neighborhood
+            _canvasNodeIds = nodeIds;
+            var nodes = nodeIds.Select(id => Graph.GetNode(id)).Where(n => n != null).ToList();
+            var edges = _allEdges.Where(e => nodeIds.Contains(e.Source) && nodeIds.Contains(e.Target)).ToList();
+            await RenderD3(nodes!, edges);
+        }
+        else
+        {
+            // Growing canvas — add new nodes/edges
+            var newIds = nodeIds.Except(_canvasNodeIds).ToHashSet();
+            if (newIds.Count > 0)
+            {
+                _canvasNodeIds.UnionWith(newIds);
+                var newNodes = newIds.Select(id => Graph.GetNode(id)).Where(n => n != null).ToList();
+                var newEdges = _allEdges.Where(e =>
+                    _canvasNodeIds.Contains(e.Source) && _canvasNodeIds.Contains(e.Target) &&
+                    (newIds.Contains(e.Source) || newIds.Contains(e.Target))).ToList();
+                await GrowD3(newNodes!, newEdges);
+            }
+
+            await JS.InvokeVoidAsync("graphInterop.highlight", node.Id);
+        }
     }
 
-    private void NavigateToNode(string nodeId)
+    private async Task ExploreById(string nodeId)
     {
         var node = Graph.GetNode(nodeId);
-        if (node != null) SelectNode(node);
+        if (node != null) await ExploreNode(node);
+    }
+
+    private async Task RenderD3(List<WorldNode> nodes, List<WorldEdge> edges)
+    {
+        if (_selfRef == null) return;
+
+        var jsNodes = nodes.Select(n => new
+        {
+            id = n.Id,
+            name = n.Name,
+            nodeType = n.NodeType,
+            edgeCount = _allEdges.Count(e => e.Source == n.Id || e.Target == n.Id)
+        }).ToArray();
+
+        var jsEdges = edges.Select(e => new
+        {
+            source = e.Source,
+            target = e.Target,
+            relationType = e.RelationType,
+            weight = e.Weight,
+            sentiment = e.Sentiment,
+        }).ToArray();
+
+        await JS.InvokeVoidAsync("graphInterop.init", "graphCanvas", _selfRef, jsNodes, jsEdges);
+    }
+
+    private async Task GrowD3(List<WorldNode> newNodes, List<WorldEdge> newEdges)
+    {
+        var jsNodes = newNodes.Select(n => new
+        {
+            id = n.Id,
+            name = n.Name,
+            nodeType = n.NodeType,
+            edgeCount = _allEdges.Count(e => e.Source == n.Id || e.Target == n.Id)
+        }).ToArray();
+
+        var jsEdges = newEdges.Select(e => new
+        {
+            source = e.Source,
+            target = e.Target,
+            relationType = e.RelationType,
+            weight = e.Weight,
+            sentiment = e.Sentiment,
+        }).ToArray();
+
+        await JS.InvokeVoidAsync("graphInterop.addData", jsNodes, jsEdges);
+    }
+
+    [JSInvokable]
+    public void OnNodeClicked(string nodeId)
+    {
+        var node = Graph.GetNode(nodeId);
+        if (node != null)
+        {
+            _selectedNode = node;
+            _nodeEdges = _allEdges.Where(e => e.Source == node.Id || e.Target == node.Id).OrderBy(e => e.RelationType).ToList();
+        }
+        StateHasChanged();
+    }
+
+    [JSInvokable]
+    public async Task OnNodeExpand(string nodeId)
+    {
+        var node = Graph.GetNode(nodeId);
+        if (node != null) await ExploreNode(node);
+        StateHasChanged();
+    }
+
+    [JSInvokable]
+    public void OnBackgroundClicked()
+    {
+        _selectedNode = null;
+        _nodeEdges = [];
+        StateHasChanged();
+    }
+
+    // ── Other Actions ───────────────────────────────────
+
+    private async Task RebuildGraph()
+    {
+        Graph.Rebuild();
+        _allNodes = Graph.AllNodes();
+        _allEdges = _allNodes.SelectMany(n => Graph.GetAllEdges(n.Id))
+            .DistinctBy(e => (e.Source, e.Target, e.RelationType)).ToList();
+        _selectedNode = null;
+        _sceneContext = "";
+        _canvasNodeIds.Clear();
+        ApplyFilters();
+        await JS.InvokeVoidAsync("graphInterop.destroy");
+    }
+
+    private void LookupSceneContext()
+    {
+        if (string.IsNullOrWhiteSpace(_sceneQuery)) return;
+        var names = _sceneQuery.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries);
+        _sceneContext = Graph.GetSceneContext(names);
+        if (string.IsNullOrWhiteSpace(_sceneContext))
+            _sceneContext = "(No entities found matching those names)";
     }
 
     private int GetEdgeCount(string nodeId) =>
@@ -215,9 +367,12 @@
     private static string GetTypeBadgeClass(string type) => type switch
     {
         "character" => "bg-info",
-        "corporation" => "bg-warning text-dark",
-        "district" => "bg-success",
+        "organization" => "bg-warning text-dark",
+        "place" => "bg-success",
         "faction" => "bg-purple",
+        "weapon" => "bg-danger",
+        "equipment" => "bg-primary",
+        "technology" => "bg-cyan",
         _ => "bg-secondary",
     };
 
@@ -227,11 +382,20 @@
         "rivalry" or "rival" or "enemy" => "bg-danger",
         "kinship" or "family" => "bg-info",
         "mentor" or "mentorship" => "bg-warning text-dark",
-        "operates_in" or "located_in" or "territory" => "bg-secondary",
-        "employs" or "member" or "employed_by" => "bg-primary",
+        "operates_in" or "located_in" or "frequents" or "adjacent_to" or "controls_territory" => "bg-secondary",
+        "employs" or "member_of" or "employed_by" or "affiliated_with" => "bg-primary",
+        "manufactured_by" or "developed_by" => "bg-warning text-dark",
+        "wields" or "uses" => "bg-info",
+        "built_on" or "depends_on" or "enables" => "bg-cyan",
         _ => "bg-dark border border-secondary",
     };
 
     private static string Truncate(string text, int max) =>
         text.Length > max ? text[..max] + "..." : text;
+
+    public void Dispose()
+    {
+        _ = JS.InvokeVoidAsync("graphInterop.destroy");
+        _selfRef?.Dispose();
+    }
 }

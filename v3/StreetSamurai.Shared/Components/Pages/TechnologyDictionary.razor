@@ -1,37 +1,88 @@
 @page "/technology"
-@inject WorldbuildingDocRepository Repo
+@inject TechnologyRepository Repo
+@inject NavigationManager Nav
 
 <div class="d-flex justify-content-between align-items-center mb-2">
     <h4 class="text-danger mb-0">Technology</h4>
     <button class="btn btn-sm btn-outline-danger" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New Entry</button>
 </div>
 
+@if (!string.IsNullOrEmpty(_filterSubcategory))
+{
+    <div class="mb-2">
+        <span class="badge bg-danger me-1">@_filterSubcategory</span>
+        <button class="btn btn-sm btn-outline-secondary py-0" @onclick='() => _filterSubcategory = ""'>Clear</button>
+    </div>
+}
+
 @if (_editing != null)
 {
     <div class="card bg-dark text-light border-danger mb-3">
         <div class="card-header d-flex justify-content-between align-items-center border-secondary">
-            <span class="text-danger fw-bold">@(_isNew ? "New Technology Entry" : _editing.Title)</span>
+            <span class="text-danger fw-bold">@(_isNew ? "New Technology" : _editing.Name)</span>
             <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEdit"><i class="bi bi-x-lg"></i></button>
         </div>
         <div class="card-body">
             <div class="row g-2 mb-2">
                 <div class="col-md-4">
-                    <label class="form-label text-muted small">Title</label>
-                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Title" />
+                    <label class="form-label text-muted small">Name</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Name" />
                 </div>
                 <div class="col-md-4">
-                    <label class="form-label text-muted small">File Name</label>
-                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.FileName" />
+                    <label class="form-label text-muted small">Subcategory</label>
+                    <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="_editing.Subcategory">
+                        <option value="">-- Select --</option>
+                        <option value="neural_interfaces">Neural Interfaces</option>
+                        <option value="augmentation">Augmentation</option>
+                        <option value="weapons_tech">Weapons Tech</option>
+                        <option value="surveillance">Surveillance</option>
+                        <option value="medical">Medical</option>
+                        <option value="transportation">Transportation</option>
+                        <option value="communications">Communications</option>
+                        <option value="energy">Energy</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="ai_systems">AI Systems</option>
+                        <option value="cybersecurity">Cybersecurity</option>
+                        <option value="biotech">Biotech</option>
+                        <option value="materials_science">Materials Science</option>
+                        <option value="environmental">Environmental</option>
+                        <option value="corporate_security">Corporate Security</option>
+                    </select>
                 </div>
                 <div class="col-md-4">
-                    <label class="form-label text-muted small">Category</label>
-                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Category" />
+                    <label class="form-label text-muted small">Tier Availability</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="e.g. Tier 2+, Military only" @bind="_editing.TierAvailability" />
+                </div>
+            </div>
+            <div class="row g-2 mb-2">
+                <div class="col-md-6">
+                    <label class="form-label text-muted small">Developers (comma-separated)</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                           value="@string.Join(", ", _editing.Developers)"
+                           @onchange="OnDevelopersChanged" />
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label text-muted small">Base Technologies (comma-separated)</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                           value="@string.Join(", ", _editing.BaseTechnologies)"
+                           @onchange="OnBaseTechChanged" />
                 </div>
             </div>
             <div class="mb-2">
-                <label class="form-label text-muted small">Body</label>
-                <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="10" @bind="_editing.Body"></textarea>
+                <label class="form-label text-muted small">Enables (comma-separated)</label>
+                <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                       value="@string.Join(", ", _editing.Enables)"
+                       @onchange="OnEnablesChanged" />
             </div>
+            <div class="mb-2">
+                <label class="form-label text-muted small">Description</label>
+                <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="8" @bind="_editing.Description"></textarea>
+            </div>
+            <div class="mb-2">
+                <label class="form-label text-muted small">Social Impact</label>
+                <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="3" @bind="_editing.SocialImpact"></textarea>
+            </div>
+            <TechEdges BaseTechnologies="_editing.BaseTechnologies" ExcludeType="technology" ExcludeName="@_editing.Name" />
             <div class="d-flex gap-2">
                 <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
                 @if (!_isNew)
@@ -39,7 +90,7 @@
                     @if (_confirmDelete)
                     {
                         <span class="d-flex align-items-center gap-1">
-                            <small class="text-warning">Delete?</small>
+                            <small class="text-warning">Delete @_editing.Name?</small>
                             <button class="btn btn-sm btn-danger" @onclick="DoDelete">Yes</button>
                             <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button>
                         </span>
@@ -55,16 +106,28 @@
     </div>
 }
 
+@* ── Subcategory filter chips ─────────────────────────────── *@
+<div class="d-flex gap-1 mb-2 flex-wrap">
+    @foreach (var sub in _items.Select(t => t.Subcategory).Where(s => !string.IsNullOrEmpty(s)).Distinct().OrderBy(s => s))
+    {
+        <button class="btn btn-sm @(sub == _filterSubcategory ? "btn-danger" : "btn-outline-secondary") py-0 px-2"
+                style="font-size: 0.75rem;" @onclick="() => _filterSubcategory = sub">
+            @sub (@_items.Count(t => t.Subcategory == sub))
+        </button>
+    }
+</div>
+
 <div class="table-responsive">
     <table class="table table-dark table-hover table-sm">
-        <thead><tr><th>Title</th><th>Category</th><th>File</th></tr></thead>
+        <thead><tr><th>Name</th><th>Subcategory</th><th>Tier</th><th>Developers</th></tr></thead>
         <tbody>
-            @foreach (var d in _items.Where(d => d.Category.Equals("Technology", StringComparison.OrdinalIgnoreCase) || d.Category.Equals("augmentation", StringComparison.OrdinalIgnoreCase) || string.IsNullOrEmpty(d.Category)))
+            @foreach (var t in Filtered)
             {
-                <tr style="cursor: pointer;" @onclick="() => Edit(d)">
-                    <td class="fw-bold">@d.Title</td>
-                    <td class="text-muted small">@d.Category</td>
-                    <td class="text-muted small">@d.FileName</td>
+                <tr style="cursor: pointer;" @onclick="() => Edit(t)">
+                    <td class="fw-bold">@t.Name</td>
+                    <td><span class="badge bg-secondary">@t.Subcategory</span></td>
+                    <td class="text-muted small">@t.TierAvailability</td>
+                    <td class="text-muted small">@string.Join(", ", t.Developers.Take(2))</td>
                 </tr>
             }
         </tbody>
@@ -72,28 +135,43 @@
 </div>
 
 @code {
-    private List<WorldbuildingDocument> _items = [];
-    private WorldbuildingDocument? _editing;
+    private List<TechnologyData> _items = [];
+    private TechnologyData? _editing;
     private bool _isNew, _confirmDelete;
     private string _originalName = "";
+    private string _filterSubcategory = "";
 
-    protected override void OnInitialized() { Repo.Reload(); _items = Repo.GetAll(); }
+    private IEnumerable<TechnologyData> Filtered => string.IsNullOrEmpty(_filterSubcategory)
+        ? _items
+        : _items.Where(t => t.Subcategory == _filterSubcategory);
+
+    protected override void OnInitialized()
+    {
+        Repo.Reload(); _items = Repo.GetAll();
+        var uri = new Uri(Nav.Uri);
+        var select = uri.Query.Contains("select=") ? Uri.UnescapeDataString(uri.Query.Split("select=")[1].Split('&')[0]) : null;
+        if (!string.IsNullOrEmpty(select))
+        {
+            var match = _items.FirstOrDefault(t => t.Name == select);
+            if (match != null) Edit(match);
+        }
+    }
 
     private void AddNew()
     {
-        _editing = new WorldbuildingDocument { Category = "technology" };
+        _editing = new TechnologyData();
         _isNew = true; _confirmDelete = false;
     }
 
-    private void Edit(WorldbuildingDocument d)
+    private void Edit(TechnologyData t)
     {
-        _editing = d; _originalName = d.FileName; _isNew = false; _confirmDelete = false;
+        _editing = t; _originalName = t.Name; _isNew = false; _confirmDelete = false;
     }
 
     private void SaveEdit()
     {
-        if (_editing == null || string.IsNullOrWhiteSpace(_editing.FileName)) return;
-        if (!_isNew && _originalName != _editing.FileName) Repo.Delete(_originalName);
+        if (_editing == null || string.IsNullOrWhiteSpace(_editing.Name)) return;
+        if (!_isNew && _originalName != _editing.Name) Repo.Delete(_originalName);
         Repo.Save(_editing);
         _editing = null; _items = Repo.GetAll();
     }
@@ -101,9 +179,30 @@
     private void DoDelete()
     {
         if (_editing == null) return;
-        Repo.Delete(_editing.FileName);
+        Repo.Delete(_editing.Name);
         _editing = null; _confirmDelete = false; _items = Repo.GetAll();
     }
 
     private void CancelEdit() { _editing = null; _confirmDelete = false; _items = Repo.GetAll(); }
+
+    private void OnDevelopersChanged(ChangeEventArgs e)
+    {
+        if (_editing == null) return;
+        _editing.Developers = (e.Value?.ToString() ?? "")
+            .Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
+    }
+
+    private void OnBaseTechChanged(ChangeEventArgs e)
+    {
+        if (_editing == null) return;
+        _editing.BaseTechnologies = (e.Value?.ToString() ?? "")
+            .Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
+    }
+
+    private void OnEnablesChanged(ChangeEventArgs e)
+    {
+        if (_editing == null) return;
+        _editing.Enables = (e.Value?.ToString() ?? "")
+            .Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
+    }
 }

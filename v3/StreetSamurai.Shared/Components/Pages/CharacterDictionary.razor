@@ -33,7 +33,15 @@
                 </div>
             </div>
             <div class="row g-2 mb-2">
-                <div class="col-md-6">
+                <div class="col-md-3">
+                    <label class="form-label text-muted small">Gender</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="e.g. female, male, non-binary" @bind="_editing.Gender" />
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label text-muted small">Pronouns</label>
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="e.g. she/her, he/him, they/them" @bind="_editing.Pronouns" />
+                </div>
+                <div class="col-md-3">
                     <label class="form-label text-muted small">Role</label>
                     <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Role" />
                 </div>

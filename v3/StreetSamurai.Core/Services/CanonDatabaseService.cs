@@ -17,6 +17,9 @@ public class CanonDatabaseService
     private readonly FactionRepository _factions;
     private readonly CorponationRepository _corponations;
     private readonly WorldbuildingDocRepository _docs;
+    private readonly WeaponryRepository _weaponry;
+    private readonly EquipmentRepository _equipment;
+    private readonly TechnologyRepository _technology;
     private readonly StoryBibleRepository _storyBible;
     private readonly LiteraryRulesRepository _literaryRules;
     private readonly MotifRepository _motifs;
@@ -26,6 +29,8 @@ public class CanonDatabaseService
         CharacterRepository characters, FacetRepository facets,
         DistrictRepository districts, FactionRepository factions,
         CorponationRepository corponations, WorldbuildingDocRepository docs,
+        WeaponryRepository weaponry, EquipmentRepository equipment,
+        TechnologyRepository technology,
         StoryBibleRepository storyBible, LiteraryRulesRepository literaryRules,
         MotifRepository motifs, CharacterProfileRepository characterProfile)
     {
@@ -35,6 +40,9 @@ public class CanonDatabaseService
         _factions = factions;
         _corponations = corponations;
         _docs = docs;
+        _weaponry = weaponry;
+        _equipment = equipment;
+        _technology = technology;
         _storyBible = storyBible;
         _literaryRules = literaryRules;
         _motifs = motifs;
@@ -48,6 +56,9 @@ public class CanonDatabaseService
     public List<DistrictData> Districts => _districts.GetAll();
     public List<FactionData> Factions => _factions.GetAll();
     public List<CorponationData> Corponations => _corponations.GetAll();
+    public List<WeaponryData> Weaponry => _weaponry.GetAll();
+    public List<EquipmentData> Equipment => _equipment.GetAll();
+    public List<TechnologyData> Technology => _technology.GetAll();
     public List<WorldbuildingDocument> WorldbuildingDocs => _docs.GetAll();
     public StoryBibleData StoryBible => _storyBible.Get();
     public LiteraryRulesData LiteraryRules => _literaryRules.Get();
@@ -61,6 +72,9 @@ public class CanonDatabaseService
         _districts.Reload();
         _factions.Reload();
         _corponations.Reload();
+        _weaponry.Reload();
+        _equipment.Reload();
+        _technology.Reload();
         _docs.Reload();
         _storyBible.Reload();
         _literaryRules.Reload();
@@ -105,6 +119,8 @@ public class CanonDatabaseService
         if (c == null) return "";
 
         var lines = new List<string> { $"CHARACTER: {c.Name}" };
+        if (c.Gender.Length > 0) lines.Add($"GENDER: {c.Gender}");
+        if (c.Pronouns.Length > 0) lines.Add($"PRONOUNS: {c.Pronouns}");
         if (c.Role.Length > 0) lines.Add($"ROLE: {c.Role}");
         if (c.Description.Length > 0) lines.Add($"DESCRIPTION: {Trunc(c.Description, 600)}");
 

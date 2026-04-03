@@ -1,0 +1,112 @@
+@* Displays bidirectional graph edges between the current entity's base_technologies
+   and Technology/Weapon/Equipment entries that share those tags. *@
+@inject TechnologyRepository TechRepo
+@inject WeaponryRepository WeaponRepo
+@inject EquipmentRepository EquipRepo
+@inject NavigationManager Nav
+
+@if (BaseTechnologies.Any())
+{
+    <div class="mt-2 mb-2">
+        <label class="form-label text-muted small mb-1">
+            <i class="bi bi-diagram-3"></i> Technology Graph Edges
+        </label>
+
+        @* Show base tech tags *@
+        <div class="d-flex gap-1 flex-wrap mb-2">
+            @foreach (var tag in BaseTechnologies)
+            {
+                <span class="badge bg-dark border border-secondary" style="font-size: 0.7rem;">@tag</span>
+            }
+        </div>
+
+        @* Linked Technologies *@
+        @if (_linkedTech.Any())
+        {
+            <div class="mb-1">
+                <small class="text-muted"><i class="bi bi-cpu"></i> Technologies:</small>
+                <div class="d-flex gap-1 flex-wrap">
+                    @foreach (var t in _linkedTech)
+                    {
+                        <a href="technology?select=@Uri.EscapeDataString(t.Name)" class="badge bg-primary text-decoration-none" style="font-size: 0.7rem; cursor: pointer;">
+                            @t.Name
+                        </a>
+                    }
+                </div>
+            </div>
+        }
+
+        @* Linked Weapons (only show when not on weaponry page) *@
+        @if (_linkedWeapons.Any() && ExcludeType != "weapon")
+        {
+            <div class="mb-1">
+                <small class="text-muted"><i class="bi bi-crosshair"></i> Weapons:</small>
+                <div class="d-flex gap-1 flex-wrap">
+                    @foreach (var w in _linkedWeapons.Take(10))
+                    {
+                        <a href="weaponry?select=@Uri.EscapeDataString(w.Name)" class="badge bg-danger text-decoration-none" style="font-size: 0.7rem; cursor: pointer;">
+                            @w.Name
+                        </a>
+                    }
+                    @if (_linkedWeapons.Count > 10)
+                    {
+                        <span class="badge bg-dark border border-secondary" style="font-size: 0.7rem;">+@(_linkedWeapons.Count - 10) more</span>
+                    }
+                </div>
+            </div>
+        }
+
+        @* Linked Equipment (only show when not on equipment page) *@
+        @if (_linkedEquip.Any() && ExcludeType != "equipment")
+        {
+            <div class="mb-1">
+                <small class="text-muted"><i class="bi bi-shield-shaded"></i> Equipment:</small>
+                <div class="d-flex gap-1 flex-wrap">
+                    @foreach (var e in _linkedEquip.Take(10))
+                    {
+                        <a href="equipment?select=@Uri.EscapeDataString(e.Name)" class="badge bg-info text-decoration-none" style="font-size: 0.7rem; cursor: pointer;">
+                            @e.Name
+                        </a>
+                    }
+                    @if (_linkedEquip.Count > 10)
+                    {
+                        <span class="badge bg-dark border border-secondary" style="font-size: 0.7rem;">+@(_linkedEquip.Count - 10) more</span>
+                    }
+                </div>
+            </div>
+        }
+
+        @if (!_linkedTech.Any() && !_linkedWeapons.Any() && !_linkedEquip.Any())
+        {
+            <small class="text-muted fst-italic">No linked nodes found</small>
+        }
+    </div>
+}
+
+@code {
+    [Parameter] public List<string> BaseTechnologies { get; set; } = [];
+    [Parameter] public string ExcludeType { get; set; } = "";
+    [Parameter] public string ExcludeName { get; set; } = "";
+
+    private List<TechnologyData> _linkedTech = [];
+    private List<WeaponryData> _linkedWeapons = [];
+    private List<EquipmentData> _linkedEquip = [];
+
+    protected override void OnParametersSet()
+    {
+        if (!BaseTechnologies.Any()) return;
+        var tags = new HashSet<string>(BaseTechnologies, StringComparer.OrdinalIgnoreCase);
+
+        _linkedTech = TechRepo.GetAll()
+            .Where(t => t.Name != ExcludeName && t.BaseTechnologies.Any(bt => tags.Contains(bt)))
+            .ToList();
+
+        _linkedWeapons = WeaponRepo.GetAll()
+            .Where(w => w.Name != ExcludeName && w.BaseTechnologies.Any(bt => tags.Contains(bt)))
+            .ToList();
+
+        _linkedEquip = EquipRepo.GetAll()
+            .Where(e => e.Name != ExcludeName && e.BaseTechnologies.Any(bt => tags.Contains(bt)))
+            .ToList();
+    }
+}
