@@ -108,3 +108,58 @@ h1:focus {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
 }
+
+/* ── Entity links in rich editor ─────────────────────── */
+.entity-link {
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 0 2px;
+    font-weight: 500;
+    transition: background 0.15s, filter 0.15s;
+}
+.entity-link:hover { filter: brightness(1.4); text-decoration: underline; }
+.entity-character    { color: #17a2b8; background: rgba(23,162,184,0.12); }
+.entity-organization { color: #ffc107; background: rgba(255,193,7,0.12); }
+.entity-place        { color: #28a745; background: rgba(40,167,69,0.12); }
+.entity-faction      { color: #6f42c1; background: rgba(111,66,193,0.12); }
+.entity-weapon       { color: #dc3545; background: rgba(220,53,69,0.12); }
+.entity-equipment    { color: #0d6efd; background: rgba(13,110,253,0.12); }
+.entity-technology   { color: #0dcaf0; background: rgba(13,202,240,0.12); }
+.entity-unknown      { color: #6c757d; background: rgba(108,117,125,0.12); }
+
+/* ── Chapter breaks in rich editor ───────────────────── */
+.chapter-break {
+    user-select: none;
+    margin: 1.5rem 0;
+}
+.chapter-break .chapter-title {
+    font-family: Georgia, serif;
+    letter-spacing: 0.05em;
+}
+
+/* ── Rich editor surface ─────────────────────────────── */
+.rich-editor {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.8;
+    min-height: 60vh;
+    outline: none;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+.rich-editor:focus { box-shadow: none; }
+.rich-editor p { margin-bottom: 1em; }
+
+/* ── Entity popover ──────────────────────────────────── */
+.entity-popover {
+    position: fixed;
+    z-index: 1060;
+    max-width: 400px;
+    max-height: 300px;
+    overflow-y: auto;
+    animation: fadeIn 0.15s ease-in;
+}
+
+/* ── View mode tabs ──────────────────────────────────── */
+.view-tabs .btn.active { background-color: #21262d !important; border-color: #dc3545 !important; }
+.bg-cyan { background-color: #0dcaf0 !important; }

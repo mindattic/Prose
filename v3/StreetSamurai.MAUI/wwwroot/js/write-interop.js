@@ -1,12 +1,15 @@
 window.writeInterop = {
-    getCursorPosition: function (id) {
-        const el = document.getElementById(id);
-        return el ? el.selectionStart : 0;
-    },
+
+    // ── Plain textarea interop (kept for backwards compat) ──────────
 
     getSelection: function (id) {
         const el = document.getElementById(id);
         if (!el) return { start: 0, end: 0, text: "" };
+        // contenteditable
+        if (el.contentEditable === 'true') {
+            const sel = window.getSelection();
+            return { start: 0, end: 0, text: sel.toString() };
+        }
         return {
             start: el.selectionStart,
             end: el.selectionEnd,
@@ -14,18 +17,32 @@ window.writeInterop = {
         };
     },
 
-    insertText: function (id, position, text) {
+    setText: function (id, text) {
         const el = document.getElementById(id);
-        if (!el) return "";
-        const before = el.value.substring(0, position);
-        const after = el.value.substring(position);
-        el.value = before + text + after;
-        const newPos = position + text.length;
-        el.selectionStart = newPos;
-        el.selectionEnd = newPos;
-        el.dispatchEvent(new Event("input", { bubbles: true }));
-        el.dispatchEvent(new Event("change", { bubbles: true }));
-        return el.value;
+        if (!el) return;
+        if (el.contentEditable === 'true') {
+            el.innerText = text;
+        } else {
+            el.value = text;
+            el.dispatchEvent(new Event("input", { bubbles: true }));
+        }
+    },
+
+    focusEnd: function (id) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.focus();
+        if (el.contentEditable === 'true') {
+            const range = document.createRange();
+            range.selectNodeContents(el);
+            range.collapse(false);
+            const sel = window.getSelection();
+            sel.removeAllRanges();
+            sel.addRange(range);
+        } else {
+            el.selectionStart = el.value.length;
+            el.selectionEnd = el.value.length;
+        }
     },
 
     replaceRange: function (id, start, end, text) {
@@ -41,79 +58,6 @@ window.writeInterop = {
         return el.value;
     },
 
-    setText: function (id, text) {
-        const el = document.getElementById(id);
-        if (!el) return;
-        el.value = text;
-        el.dispatchEvent(new Event("input", { bubbles: true }));
-    },
-
-    focusEnd: function (id) {
-        const el = document.getElementById(id);
-        if (!el) return;
-        el.focus();
-        el.selectionStart = el.value.length;
-        el.selectionEnd = el.value.length;
-    },
-
-    focusAt: function (id, position) {
-        const el = document.getElementById(id);
-        if (!el) return;
-        el.focus();
-        el.selectionStart = position;
-        el.selectionEnd = position;
-    },
-
-    // Right-click context menu — fires Blazor callback with position when text is selected
-    _contextRef: null,
-    _contextHandler: null,
-    _dismissHandler: null,
-
-    watchRightClick: function (id, dotNetRef) {
-        const el = document.getElementById(id);
-        if (!el) return;
-
-        if (this._contextHandler) {
-            el.removeEventListener("contextmenu", this._contextHandler);
-        }
-        if (this._dismissHandler) {
-            document.removeEventListener("mousedown", this._dismissHandler);
-        }
-
-        this._contextRef = dotNetRef;
-
-        this._contextHandler = function (e) {
-            const hasSelection = el.selectionStart !== el.selectionEnd;
-            if (!hasSelection) return; // no selection = use default browser menu
-
-            e.preventDefault();
-            dotNetRef.invokeMethodAsync("OnContextMenu", e.clientY, e.clientX);
-        };
-
-        this._dismissHandler = function (e) {
-            // Dismiss context menu when clicking outside it
-            if (!e.target.closest(".story-context-menu")) {
-                dotNetRef.invokeMethodAsync("OnDismissContextMenu");
-            }
-        };
-
-        el.addEventListener("contextmenu", this._contextHandler);
-        document.addEventListener("mousedown", this._dismissHandler);
-    },
-
-    unwatchRightClick: function (id) {
-        const el = document.getElementById(id);
-        if (el && this._contextHandler) {
-            el.removeEventListener("contextmenu", this._contextHandler);
-        }
-        if (this._dismissHandler) {
-            document.removeEventListener("mousedown", this._dismissHandler);
-        }
-        this._contextHandler = null;
-        this._dismissHandler = null;
-        this._contextRef = null;
-    },
-
     downloadText: function (filename, text) {
         const blob = new Blob([text], { type: "text/plain" });
         const url = URL.createObjectURL(blob);
@@ -124,5 +68,181 @@ window.writeInterop = {
         a.click();
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
+    },
+
+    // ── Rich editor (contenteditable) ───────────────────────────
+
+    richEditor: {
+        _ref: null,
+        _debounce: null,
+        _entityIndex: [],
+
+        init: function (id, dotNetRef, initialHtml) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            this._ref = dotNetRef;
+            el.innerHTML = initialHtml || '';
+
+            // Debounced content sync back to Blazor
+            el.addEventListener('input', () => {
+                clearTimeout(this._debounce);
+                this._debounce = setTimeout(() => {
+                    if (this._ref) this._ref.invokeMethodAsync('OnRichContentChanged', el.innerHTML, el.innerText);
+                }, 500);
+            });
+
+            // Entity click delegation
+            el.addEventListener('click', (e) => {
+                const link = e.target.closest('.entity-link');
+                if (link && this._ref) {
+                    e.preventDefault();
+                    const entityId = link.getAttribute('data-entity-id');
+                    if (entityId) this._ref.invokeMethodAsync('OnEntityClicked', entityId);
+                }
+            });
+        },
+
+        getPlainText: function (id) {
+            const el = document.getElementById(id);
+            return el ? el.innerText : '';
+        },
+
+        getHtml: function (id) {
+            const el = document.getElementById(id);
+            return el ? el.innerHTML : '';
+        },
+
+        setHtml: function (id, html) {
+            const el = document.getElementById(id);
+            if (el) el.innerHTML = html;
+        },
+
+        appendHtml: function (id, html) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            el.innerHTML += html;
+            // Scroll to bottom
+            el.scrollTop = el.scrollHeight;
+        },
+
+        // Build the entity name index from graph data (called once from Blazor)
+        buildEntityIndex: function (entities) {
+            // entities: [{name, id, nodeType}, ...]
+            // Sort by name length desc for greedy matching
+            this._entityIndex = entities.sort((a, b) => b.name.length - a.name.length);
+        },
+
+        // Scan all text nodes and wrap entity mentions in colored spans
+        highlightEntities: function (id) {
+            const el = document.getElementById(id);
+            if (!el || this._entityIndex.length === 0) return;
+
+            const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+            const replacements = [];
+
+            while (walker.nextNode()) {
+                const textNode = walker.currentNode;
+                // Skip if inside an entity span or chapter header
+                if (textNode.parentElement.closest('.entity-link, .chapter-break')) continue;
+
+                for (const ent of this._entityIndex) {
+                    if (ent.name.length < 3) continue; // skip very short names
+                    const escaped = ent.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                    const regex = new RegExp('\\b' + escaped + '\\b', 'gi');
+                    let match;
+                    while ((match = regex.exec(textNode.textContent)) !== null) {
+                        replacements.push({
+                            node: textNode,
+                            start: match.index,
+                            end: match.index + match[0].length,
+                            matchText: match[0],
+                            entity: ent
+                        });
+                    }
+                }
+            }
+
+            // Deduplicate overlapping matches (keep longest)
+            const filtered = [];
+            replacements.sort((a, b) => a.start - b.start || b.end - a.end);
+            let lastEnd = -1;
+            let lastNode = null;
+            for (const rep of replacements) {
+                if (rep.node !== lastNode) { lastEnd = -1; lastNode = rep.node; }
+                if (rep.start >= lastEnd) {
+                    filtered.push(rep);
+                    lastEnd = rep.end;
+                }
+            }
+
+            // Apply in reverse order so offsets stay valid
+            filtered.sort((a, b) => {
+                if (a.node !== b.node) return 0; // different nodes, order doesn't matter
+                return b.start - a.start;
+            });
+
+            for (const rep of filtered) {
+                try {
+                    const range = document.createRange();
+                    range.setStart(rep.node, rep.start);
+                    range.setEnd(rep.node, rep.end);
+
+                    const span = document.createElement('span');
+                    span.className = 'entity-link entity-' + rep.entity.nodeType;
+                    span.setAttribute('data-entity-id', rep.entity.id);
+                    span.setAttribute('title', rep.entity.nodeType + ': ' + rep.entity.name);
+                    span.textContent = rep.matchText;
+
+                    range.deleteContents();
+                    range.insertNode(span);
+                } catch (e) {
+                    // Range may be invalid if DOM changed during iteration
+                }
+            }
+
+            if (this._ref) {
+                this._ref.invokeMethodAsync('OnRichContentChanged', el.innerHTML, el.innerText);
+            }
+        },
+
+        // Strip all entity markup — return plain text with paragraph breaks
+        stripToPlainText: function (id) {
+            const el = document.getElementById(id);
+            if (!el) return '';
+
+            const clone = el.cloneNode(true);
+            // Remove chapter break divs but keep their text
+            clone.querySelectorAll('.chapter-break').forEach(cb => {
+                const title = cb.getAttribute('data-title') || '';
+                const text = document.createTextNode('\n\n--- ' + title + ' ---\n\n');
+                cb.replaceWith(text);
+            });
+            // Remove entity spans but keep text
+            clone.querySelectorAll('.entity-link').forEach(span => {
+                span.replaceWith(document.createTextNode(span.textContent));
+            });
+            return clone.innerText;
+        },
+
+        // Insert a chapter break at the end
+        insertChapterBreak: function (id, chapterNum, title) {
+            const el = document.getElementById(id);
+            if (!el) return;
+
+            const divider = document.createElement('div');
+            divider.className = 'chapter-break';
+            divider.contentEditable = 'false';
+            divider.setAttribute('data-chapter', chapterNum);
+            divider.setAttribute('data-title', title);
+            divider.innerHTML = '<hr style="border-color: #dc3545; margin: 2rem 0 0.5rem;"><span class="chapter-title" style="color: #dc3545; font-weight: bold; font-size: 1.1rem;">' +
+                title + '</span><hr style="border-color: #333; margin: 0.5rem 0 2rem;">';
+
+            el.appendChild(divider);
+
+            // Add a new editable paragraph after the break
+            const p = document.createElement('p');
+            p.innerHTML = '<br>';
+            el.appendChild(p);
+        }
     }
 };

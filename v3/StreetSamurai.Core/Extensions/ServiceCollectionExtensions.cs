@@ -20,6 +20,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<FacetRepository>();
         services.AddSingleton<WorldbuildingDocRepository>();
         services.AddSingleton<WeaponryRepository>();
+        services.AddSingleton<EquipmentRepository>();
+        services.AddSingleton<TechnologyRepository>();
         services.AddSingleton<MotifRepository>();
         services.AddSingleton<StoryBibleRepository>();
         services.AddSingleton<LiteraryRulesRepository>();
@@ -70,6 +72,9 @@ public static class ServiceCollectionExtensions
 
         // Entity extraction — LLM-powered story-to-graph pipeline
         services.AddSingleton<EntityExtractionService>();
+
+        // Canon validation — checks generated text against graph for contradictions
+        services.AddSingleton<CanonValidationService>();
 
         // Scene generation pipeline
         services.AddSingleton<TextAnalysisService>();

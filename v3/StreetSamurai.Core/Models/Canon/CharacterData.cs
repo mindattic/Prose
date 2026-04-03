@@ -11,6 +11,8 @@ public class CharacterData
     [JsonPropertyName("type")] public string Type { get; set; } = "character";
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("aliases")] public List<string> Aliases { get; set; } = [];
+    [JsonPropertyName("gender")] public string Gender { get; set; } = "";
+    [JsonPropertyName("pronouns")] public string Pronouns { get; set; } = "";
     [JsonPropertyName("role")] public string Role { get; set; } = "";
     [JsonPropertyName("age")] public int Age { get; set; }
     [JsonPropertyName("status")] public string Status { get; set; } = "alive";

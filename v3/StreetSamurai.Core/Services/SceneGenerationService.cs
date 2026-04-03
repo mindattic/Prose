@@ -10,6 +10,7 @@ public class SceneGenerationService
     private readonly BeatGeneratorService _beatGen;
     private readonly WorldGraphService _graph;
     private readonly CanonDatabaseService _canonDb;
+    private readonly CanonValidationService _validator;
     private readonly ICanonPathProvider _paths;
 
     public event Action<BeatGenerationProgress>? OnBeatProgress;
@@ -17,13 +18,15 @@ public class SceneGenerationService
 
     public SceneGenerationService(
         FacetService facets, ContextAnalyzerService analyzer, BeatGeneratorService beatGen,
-        WorldGraphService graph, CanonDatabaseService canonDb, ICanonPathProvider paths)
+        WorldGraphService graph, CanonDatabaseService canonDb, CanonValidationService validator,
+        ICanonPathProvider paths)
     {
         _facets = facets;
         _analyzer = analyzer;
         _beatGen = beatGen;
         _graph = graph;
         _canonDb = canonDb;
+        _validator = validator;
         _paths = paths;
     }
 
@@ -32,8 +35,10 @@ public class SceneGenerationService
         _graph.EnsureLoaded();
         var allFacets = _facets.LoadAllFacets();
         var storyBible = _canonDb.GetLiteraryRulesPrompt();
-        var locationContext = request.Location != null ? _canonDb.GetDistrictContext(request.Location) : "";
-        var relationshipContext = string.Join("\n\n---\n\n", request.Characters.Select(c => _canonDb.GetCharacterContext(c)).Where(c => c.Length > 0));
+
+        var session = new NarrativeSessionContext(_graph);
+        session.TouchAll(request.Characters);
+        if (request.Location != null) session.Touch(request.Location);
 
         var scene = new GeneratedScene { Request = request };
         var beats = new List<GeneratedBeat>();
@@ -43,6 +48,8 @@ public class SceneGenerationService
         for (int i = 0; i < request.NumBeats; i++)
         {
             ct.ThrowIfCancellationRequested();
+
+            var worldContext = session.BuildContext();
 
             var analysis = await _analyzer.AnalyzeAsync(
                 $"{request.Goal}\n\nScene so far:\n{sceneSoFar}",
@@ -63,8 +70,7 @@ public class SceneGenerationService
             var beatContext = new BeatContext
             {
                 StoryBibleContext = storyBible,
-                RelationshipContext = relationshipContext,
-                LocationContext = locationContext,
+                RelationshipContext = worldContext,
                 SceneSoFar = sceneSoFar,
                 BeatGoal = request.Themes.Count > i
                     ? request.Themes[i]
@@ -72,6 +78,12 @@ public class SceneGenerationService
             };
 
             var text = await _beatGen.GenerateBeatAsync(beatContext, lead, supporting, ct);
+
+            // Validate against canon — catch pronoun errors, dead characters, etc.
+            var issues = _validator.ValidateQuick(text);
+
+            // Scan for new entity mentions
+            var newEntities = session.ScanText(text);
 
             var beat = new GeneratedBeat
             {
@@ -81,6 +93,7 @@ public class SceneGenerationService
                 SupportingFacets = supporting.Select(f => f.Name).ToList(),
                 Text = text,
                 ContextTags = analysis.PsychologicalTriggers,
+                ValidationIssues = issues.Select(iss => $"[{iss.Category}] {iss.EntityName}: {iss.Description}").ToList(),
             };
 
             beats.Add(beat);

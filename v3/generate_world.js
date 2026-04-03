@@ -150,31 +150,30 @@ async function generateDistricts(target) {
 
 // ── Technology ──
 async function generateTech(target) {
-  const existing = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'worldbuilding_docs.json'), 'utf8'));
-  const techDocs = existing.filter(d => d.category === 'technology' || d.category === 'Technology');
-  const existingTitles = existing.map(d => d.title || d.file_name);
-  const needed = target - techDocs.length;
-  if (needed <= 0) { console.log(`Already have ${techDocs.length} tech docs`); return; }
+  const existing = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'technology.json'), 'utf8'));
+  const existingNames = existing.map(t => t.name);
+  const corps = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'corponations.json'), 'utf8')).map(c => c.name);
+  const needed = target - existing.length;
+  if (needed <= 0) { console.log(`Already have ${existing.length} tech entries`); return; }
 
-  const BATCH = 10;
+  const subcategories = ['neural_interfaces', 'augmentation', 'weapons_tech', 'surveillance', 'medical', 'transportation', 'communications', 'energy', 'manufacturing', 'ai_systems', 'cybersecurity', 'biotech', 'materials_science', 'environmental', 'corporate_security'];
+  const BATCH = 5;
   for (let i = 0; i < needed; i += BATCH) {
     const count = Math.min(BATCH, needed - i);
-    console.log(`Generating tech ${techDocs.length + i + 1} to ${techDocs.length + i + count}...`);
-
-    const subcategories = ['neural_interfaces', 'augmentation', 'weapons', 'surveillance', 'medical', 'transportation', 'communications', 'energy', 'manufacturing', 'AI_systems', 'cybersecurity', 'biotech', 'materials_science', 'environmental_tech', 'corporate_security'];
     const sub = subcategories[Math.floor(Math.random() * subcategories.length)];
+    console.log(`Generating tech ${existing.length + 1} to ${existing.length + count} (${sub})...`);
 
-    const system = `You generate technology reference documents for a cyberpunk world called Meridian 88. Return a JSON array of ${count} entries. Each must have: file_name (snake_case, unique), title, category ("Technology"), body (3-5 paragraphs of detailed worldbuilding text about this technology — how it works, who uses it, social implications, tier availability), line_count (int, approximate), headings (array of section headings within the body). Focus on ${sub} technology. Be specific, grounded, and consistent with near-future extrapolation of real technology.`;
+    const system = `You generate INDIVIDUAL, SPECIFIC technology entries for a cyberpunk world called Meridian 88 (Great Lakes megacity, corporate sovereignty, neural augmentation ubiquitous, tiered citizenship). Each entry is ONE specific technology product or system — a particular model, version, or implementation with a manufacturer and designation. NOT encyclopedic essays about technology categories. Think: "CortexLink v4.2 Neural Interface" or "Tessera LUX-3 Pulse Laser Optics" or "Helix NanoSuture Mk.II Wound Closure System" — real products that exist in this world. Return a JSON array of ${count} entries. Each must have: name (specific product/system name with version or designation), type ("technology"), aliases (array of street names or abbreviations), subcategory ("${sub}"), description (2-3 paragraphs — how THIS specific technology works, what makes it distinctive, who uses it), tier_availability (e.g. "Tier 1+", "Tier 3+", "Military only", "Universal"), developers (array of corponation names — use these: ${corps.slice(0,15).join(', ')}), base_technologies (array of foundational technologies this builds on — these are edges to other tech nodes), enables (array of technologies or capabilities this makes possible — forward edges), social_impact (1 paragraph on how this specific tech affects daily life or power structures), story_hooks (array). Focus on ${sub}.`;
 
-    const user = `Existing titles (DO NOT duplicate): ${existingTitles.slice(-30).join(', ')}. Generate ${count} NEW technology documents. Return ONLY the JSON array.`;
+    const user = `Existing tech (DO NOT duplicate): ${existingNames.slice(-30).join(', ')}. Generate ${count} NEW ${sub} technologies. Return ONLY the JSON array.`;
 
     try {
       const result = await callClaude(system, user, 8192);
-      const newDocs = parseJsonArray(result);
-      existing.push(...newDocs);
-      existingTitles.push(...newDocs.map(d => d.title || d.file_name));
-      fs.writeFileSync(path.join(ENGINE_DATA, 'worldbuilding_docs.json'), JSON.stringify(existing, null, 2));
-      console.log(`  Added ${newDocs.length}, total tech: ${existing.filter(d => d.category === 'Technology').length}`);
+      const newTech = parseJsonArray(result);
+      existing.push(...newTech);
+      existingNames.push(...newTech.map(t => t.name));
+      fs.writeFileSync(path.join(ENGINE_DATA, 'technology.json'), JSON.stringify(existing, null, 2));
+      console.log(`  Added ${newTech.length}, total: ${existing.length}`);
     } catch (e) {
       console.error(`  Error: ${e.message}`);
     }
@@ -237,7 +236,7 @@ async function generateWeapons(target) {
     const cat = categories[Math.floor(Math.random() * categories.length)];
     console.log(`Generating weapons ${existing.length + 1} to ${existing.length + count} (${cat})...`);
 
-    const system = `You generate weapon entries for a cyberpunk world called Meridian 88. Return a JSON array of ${count} entries. Each must have: name, type ("weapon"), aliases (array), category ("${cat}"), description (2-3 paragraphs — how it works, what makes it distinctive), manufacturer (use real-sounding corp names or these: ${corps.slice(0,10).join(', ')}), tier_availability (e.g. "Tier 3+", "Black market", "Military only"), legality (e.g. "Restricted", "Prohibited", "Licensed"), base_technologies (array of foundational tech names like "Linear magnetic acceleration", "Piezoelectric disruption", "Neural feedback loops"), specifications (technical details), tactical_use (how operators use it), cultural_context (social meaning, who carries it and why), known_users (array of character names or archetypes), story_hooks (array). Every weapon should reference 1-3 base technologies. Be specific and grounded.`;
+    const system = `You generate INDIVIDUAL, SPECIFIC weapon entries for a cyberpunk world called Meridian 88. Each entry is ONE specific weapon — a particular model with a manufacturer, model number, and street name. NOT essays or overviews about weapon categories. Think: "Arcturus Mk.7 Whisper Coilgun" or "Thermite Dispersal Grenade TDG-9 'Dragonspittle'" — real items an operator would buy, carry, and use. Return a JSON array of ${count} entries. Each must have: name (specific model name with designation), type ("weapon"), aliases (array of street names/nicknames), category ("${cat}"), description (2-3 paragraphs — how THIS specific weapon works, what makes it distinctive from competitors), manufacturer (use these corponations: ${corps.slice(0,10).join(', ')}), tier_availability (e.g. "Tier 3+", "Black market", "Military only"), legality (e.g. "Restricted", "Prohibited", "Licensed"), base_technologies (array of foundational tech names like "Linear magnetic acceleration", "Piezoelectric disruption", "Neural feedback loops"), specifications (technical specs — caliber, range, fire rate, weight, power source, etc.), tactical_use (how operators use it in the field), cultural_context (social meaning, who carries it and why, street reputation), known_users (array of character names or archetypes), story_hooks (array). Every weapon should reference 1-3 base technologies.`;
 
     const user = `Existing weapons (DO NOT duplicate): ${existingNames.slice(-30).join(', ')}. Generate ${count} NEW ${cat} weapons. Return ONLY the JSON array.`;
 
@@ -255,19 +254,90 @@ async function generateWeapons(target) {
   }
 }
 
+// ── Factions ──
+async function generateFactions(target) {
+  const existing = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'factions.json'), 'utf8'));
+  const existingNames = existing.map(f => f.name);
+  const corps = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'corponations.json'), 'utf8')).map(c => c.name);
+  const districts = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'districts.json'), 'utf8')).map(d => d.name);
+  const needed = target - existing.length;
+  if (needed <= 0) { console.log(`Already have ${existing.length} factions`); return; }
+
+  const BATCH = 2;
+  for (let i = 0; i < needed; i += BATCH) {
+    const count = Math.min(BATCH, needed - i);
+    console.log(`Generating factions ${existing.length + 1} to ${existing.length + count}...`);
+
+    const factionTypes = ['street gang', 'resistance movement', 'religious cult', 'hacker collective', 'mercenary company', 'mutual aid network', 'smuggling ring', 'political movement', 'labor union', 'augmentation club', 'Blank community', 'rogue AI sympathizer cell', 'deep-Undertow tribe', 'corporate splinter group'];
+    const fType = factionTypes[Math.floor(Math.random() * factionTypes.length)];
+
+    const system = `You generate faction entries for a cyberpunk world called Meridian 88 (Great Lakes megacity corridor, corporate sovereignty, neural augmentation is ubiquitous, tiered citizenship). Return a JSON array of ${count} entries. Each must have: type ("faction"), name, aliases (array), motto, description (2-3 paragraphs — origins, current state, what makes them distinctive), ideology (1 paragraph), territory (where they operate), leadership (key figures or structure), methods (array of strings — how they operate), resources (array of strings — what they have access to), relationships (array of {faction, stance, description}), story_hooks (array). Generate a ${fType} type faction. Reference known districts: ${districts.slice(0,10).join(', ')} and corponations: ${corps.slice(0,10).join(', ')}. Be specific and avoid generic cyberpunk cliches.`;
+
+    const user = `Existing factions (DO NOT duplicate): ${existingNames.join(', ')}. Generate ${count} NEW factions. Return ONLY the JSON array.`;
+
+    try {
+      const result = await callClaude(system, user, 8192);
+      const newFactions = parseJsonArray(result);
+      existing.push(...newFactions);
+      existingNames.push(...newFactions.map(f => f.name));
+      fs.writeFileSync(path.join(ENGINE_DATA, 'factions.json'), JSON.stringify(existing, null, 2));
+      console.log(`  Added ${newFactions.length}, total: ${existing.length}`);
+    } catch (e) {
+      console.error(`  Error: ${e.message}`);
+    }
+    if (i + BATCH < needed) { console.log(`  Waiting ${WAIT_MS/1000}s for rate limit...`); await sleep(WAIT_MS); }
+  }
+}
+
+// ── Equipment ──
+async function generateEquipment(target) {
+  const existing = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'equipment.json'), 'utf8'));
+  const existingNames = existing.map(e => e.name);
+  const corps = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'corponations.json'), 'utf8')).map(c => c.name);
+  const needed = target - existing.length;
+  if (needed <= 0) { console.log(`Already have ${existing.length} equipment`); return; }
+
+  const categories = ['augmentation', 'implant', 'armor', 'comms', 'sensor', 'medical', 'stealth', 'utility', 'vehicle'];
+  const BATCH = 5;
+  for (let i = 0; i < needed; i += BATCH) {
+    const count = Math.min(BATCH, needed - i);
+    const cat = categories[Math.floor(Math.random() * categories.length)];
+    console.log(`Generating equipment ${existing.length + 1} to ${existing.length + count} (${cat})...`);
+
+    const system = `You generate INDIVIDUAL, SPECIFIC equipment/gear entries for a cyberpunk world called Meridian 88. Each entry is ONE specific piece of equipment — a particular model with a manufacturer, model designation, and street name. NOT essays or overviews about equipment categories. Think: "Veil-9 Thermoptic Shroud" or "Murmur-3 Acoustic Suppression Field" — real items an operator would buy, carry, and use. Return a JSON array of ${count} entries. Each must have: name (specific model name with designation), type ("equipment"), aliases (array of street names/nicknames), category ("${cat}"), description (2-3 paragraphs — how THIS specific item works, what makes it distinctive from competitors), manufacturer (use these corponations: ${corps.slice(0,10).join(', ')}), tier_availability (e.g. "Tier 1+", "Tier 3+", "Black market", "Corporate only"), legality (e.g. "Unrestricted", "Restricted", "Licensed", "Prohibited"), base_technologies (array of foundational tech names), specifications (object with technical specs as key-value pairs — weight, range, duration, power source, form factor, failure mode, etc.), tactical_use (how it's used in the field), cultural_context (social meaning, status symbol, necessity, street reputation), known_users (array of character names or archetypes), story_hooks (array). Category "${cat}" covers: ${cat === 'augmentation' ? 'cybernetic enhancements, neural upgrades, sensory mods, reflex boosters, cognitive accelerators' : cat === 'implant' ? 'subdermal devices, cranial BCIs, biomonitors, internal storage, skeletal reinforcement' : cat === 'armor' ? 'body armor, ablative coatings, reactive plating, stealth suits, exoskeletons' : cat === 'comms' ? 'encrypted comm devices, mesh network nodes, signal jammers, secure channels, dead drops' : cat === 'sensor' ? 'scanners, threat detectors, surveillance gear, counter-surveillance, environmental sensors' : cat === 'medical' ? 'field medkits, nanite injectors, trauma patches, stim packs, surgical tools' : cat === 'stealth' ? 'cloaking devices, signal maskers, identity spoofers, thermal dampeners, acoustic suppressors' : cat === 'utility' ? 'multitools, climbing gear, breaching tools, drones, hacking rigs, portable power cells' : 'personal vehicles, bikes, drones, exo-rigs, submersibles'}.`;
+
+    const user = `Existing equipment (DO NOT duplicate): ${existingNames.slice(-30).join(', ')}. Generate ${count} NEW ${cat} equipment. Return ONLY the JSON array.`;
+
+    try {
+      const result = await callClaude(system, user, 8192);
+      const newEquip = parseJsonArray(result);
+      existing.push(...newEquip);
+      existingNames.push(...newEquip.map(e => e.name));
+      fs.writeFileSync(path.join(ENGINE_DATA, 'equipment.json'), JSON.stringify(existing, null, 2));
+      console.log(`  Added ${newEquip.length}, total: ${existing.length}`);
+    } catch (e) {
+      console.error(`  Error: ${e.message}`);
+    }
+    if (i + BATCH < needed) { console.log(`  Waiting ${WAIT_MS/1000}s for rate limit...`); await sleep(WAIT_MS); }
+  }
+}
+
 const WAIT_MS = 65000; // 65 seconds between calls to stay under 8k tokens/min
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
 async function main() {
   const type = process.argv[2] || 'all';
+  const count = process.argv[3] ? parseInt(process.argv[3]) : null;
 
-  if (type === 'corps' || type === 'all') await generateCorps(50);
-  if (type === 'chars' || type === 'all') await generateChars(50);
-  if (type === 'districts' || type === 'all') await generateDistricts(50);
-  if (type === 'tech' || type === 'all') await generateTech(200);
-  if (type === 'docs' || type === 'all') await generateDocs(1024);
-  if (type === 'weapons' || type === 'all') await generateWeapons(512);
+  if (type === 'corps' || type === 'all') await generateCorps(count || 50);
+  if (type === 'chars' || type === 'all') await generateChars(count || 50);
+  if (type === 'districts' || type === 'all') await generateDistricts(count || 50);
+  if (type === 'tech' || type === 'all') await generateTech(count || 200);
+  if (type === 'docs' || type === 'all') await generateDocs(count || 1024);
+  if (type === 'weapons' || type === 'all') await generateWeapons(count || 512);
+  if (type === 'factions' || type === 'all') await generateFactions(count || 50);
+  if (type === 'equipment' || type === 'all') await generateEquipment(count || 512);
 
   console.log('\n=== DONE ===');
   const corps = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'corponations.json'), 'utf8'));
@@ -275,7 +345,10 @@ async function main() {
   const dists = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'districts.json'), 'utf8'));
   const docs = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'worldbuilding_docs.json'), 'utf8'));
   const weaps = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'weaponry.json'), 'utf8'));
-  console.log(`Corps: ${corps.length}, Chars: ${chars.length}, Districts: ${dists.length}, Docs: ${docs.length}, Weapons: ${weaps.length}`);
+  const facs = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'factions.json'), 'utf8'));
+  const equip = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'equipment.json'), 'utf8'));
+  const tech = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'technology.json'), 'utf8'));
+  console.log(`Corps: ${corps.length}, Chars: ${chars.length}, Districts: ${dists.length}, Docs: ${docs.length}, Tech: ${tech.length}, Weapons: ${weaps.length}, Factions: ${facs.length}, Equipment: ${equip.length}`);
 }
 
 main().catch(e => console.error(e));

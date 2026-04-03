@@ -12,8 +12,10 @@
 @inject EntityExtractionService EntityExtract
 @inject ILlmService Llm
 @inject CanonDatabaseService CanonDb
+@inject WorldGraphService Graph
 @inject ICanonPathProvider Paths
 @inject CharacterRepository CharRepo
+@inject CanonValidationService Validator
 @inject IJSRuntime JS
 @implements IDisposable
 
@@ -32,11 +34,17 @@
     <small class="text-muted">@_wordCount words</small>
 
     <div class="ms-auto d-flex gap-1">
+        @if (_ttsAvailable)
+        {
+            <button class="btn btn-sm btn-outline-secondary" @onclick="SmartNarrate" disabled="@_narrating" title="Narrate selection or chapter">
+                <i class="bi bi-volume-up"></i>
+            </button>
+        }
         <button class="btn btn-sm btn-outline-secondary" @onclick="ExportStory" title="Export story as .txt file">
-            <i class="bi bi-download"></i> Export
+            <i class="bi bi-download"></i>
         </button>
         <button class="btn btn-sm btn-outline-danger" @onclick="NewStory" title="New story">
-            <i class="bi bi-plus-lg"></i> New Story
+            <i class="bi bi-plus-lg"></i>
         </button>
     </div>
 </div>
@@ -74,15 +82,13 @@
                 <div class="row g-2 mb-3">
                     <div class="col-md-5">
                         <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="_commandMode">
-                            <option value="assist">AI Assist — generate or direct content</option>
+                            <option value="assist">Write — generate or direct content</option>
                             <option value="continue">Continue — extend the story</option>
                             <option value="rewrite">Rewrite — rewrite selected text</option>
                             <option value="sync">Synchronize — find and fix issues</option>
-                            <option value="ask">Ask — question about the story/world</option>
+                            <option value="ask">Ask — question about the world</option>
                             <option value="synopsis">Synopsis — generate chapter summary</option>
                             <option value="outline">Outline — full story breakdown</option>
-                            <option value="basic_narrate">Basic Narration — free TTS</option>
-                            <option value="pro_narrate">Pro Narration — ElevenLabs</option>
                         </select>
                     </div>
                     <div class="col-md-7">
@@ -230,47 +236,6 @@
     </div>
 }
 
-@* ── Ask Modal ─────────────────────────────────────────── *@
-@if (_showAsk)
-{
-    <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => _showAsk = false">
-        <div class="card bg-dark text-light border-secondary" style="width: 650px; max-height: 85vh; overflow-y: auto;"
-             @onclick:stopPropagation="true">
-            <div class="card-header d-flex justify-content-between align-items-center border-secondary">
-                <span class="text-light fw-bold"><i class="bi bi-chat-dots"></i> Ask About the Story</span>
-                <button class="btn btn-sm btn-outline-secondary" @onclick="() => _showAsk = false"><i class="bi bi-x-lg"></i></button>
-            </div>
-            <div class="card-body">
-                <div class="mb-2">
-                    <input type="text" class="form-control bg-dark text-light border-secondary"
-                           placeholder="Who is Sable? What happened in Chapter 2? Where is the Seam?"
-                           @bind="_askQuestion"
-                           @onkeydown="HandleAskKeyDown" />
-                </div>
-                @if (_asking)
-                {
-                    <div class="d-flex align-items-center gap-2">
-                        <div class="spinner-border spinner-border-sm text-light"></div>
-                        <small class="text-muted">Thinking...</small>
-                    </div>
-                }
-                else
-                {
-                    <button class="btn btn-sm btn-info text-dark mb-2" @onclick="AskQuestion" disabled="@string.IsNullOrWhiteSpace(_askQuestion)">
-                        <i class="bi bi-send"></i> Ask
-                    </button>
-                }
-                @if (!string.IsNullOrEmpty(_askAnswer))
-                {
-                    <div class="border-top border-secondary pt-2 mt-2"
-                         style="font-family: Georgia, serif; font-size: 14px; line-height: 1.7; white-space: pre-wrap;">@_askAnswer</div>
-                }
-            </div>
-        </div>
-    </div>
-}
-
 @* ── GhostWriter Suggestions Modal ─────────────────────── *@
 @if (_showGhostWriter)
 {
@@ -300,40 +265,35 @@
                             <small class="text-muted">Applying fixes...</small>
                         </div>
                     }
-                    else if (!string.IsNullOrEmpty(_ghostPreview))
+
+                    @if (!string.IsNullOrEmpty(_ghostPreview))
                     {
                         <div class="mb-2">
-                            <label class="form-label text-muted small">Fixed text (edit before applying):</label>
+                            <label class="form-label text-muted small">Fixed text (preview):</label>
                             <textarea class="form-control bg-dark text-light border-secondary"
-                                      rows="8"
+                                      rows="10"
                                       style="font-family: Georgia, serif; font-size: 14px; line-height: 1.7;"
                                       @bind="_ghostPreview"></textarea>
                         </div>
                         <div class="d-flex gap-2">
-                            <button class="btn btn-success btn-sm" @onclick="ApplyGhostFixes">
+                            <button class="btn btn-success" @onclick="ApplyGhostFixes">
                                 <i class="bi bi-check-lg"></i> Apply
                             </button>
-                            <button class="btn btn-outline-warning btn-sm" @onclick="RunGhostFixes" disabled="@_ghostApplying">
+                            <button class="btn btn-outline-warning" @onclick="RunGhostFixes" disabled="@_ghostApplying">
                                 <i class="bi bi-arrow-repeat"></i> Regenerate
                             </button>
-                            <button class="btn btn-outline-secondary btn-sm" @onclick="DismissGhost">Dismiss</button>
+                            <button class="btn btn-outline-secondary" @onclick="DismissGhost">Dismiss</button>
                         </div>
                     }
                     else
                     {
                         <div class="d-flex gap-2">
-                            <button class="btn btn-warning text-dark btn-sm" @onclick="RunGhostFixes" disabled="@_ghostApplying">
+                            <button class="btn btn-warning text-dark" @onclick="RunGhostFixes" disabled="@_ghostApplying">
                                 <i class="bi bi-wrench"></i> Apply Fixes
                             </button>
-                            <button class="btn btn-outline-secondary btn-sm" @onclick="DismissGhost">
-                                <i class="bi bi-trash3"></i> Dismiss All
-                            </button>
+                            <button class="btn btn-outline-secondary" @onclick="DismissGhost">Dismiss All</button>
                         </div>
                     }
-                }
-                else
-                {
-                    <p class="text-muted small">No suggestions for this chapter.</p>
                 }
             </div>
         </div>
@@ -341,171 +301,311 @@
 }
 
 @* ── Chapter Tabs ─────────────────────────────────────── *@
-<div class="d-flex align-items-center gap-1 mb-2">
+<div class="d-flex gap-1 mb-2 flex-wrap align-items-center">
     @foreach (var ch in _project.Chapters.OrderBy(c => c.Number))
     {
-        <button class="btn btn-sm @(ch.Number == _activeChapter ? "btn-danger" : "btn-outline-secondary")"
+        <button class="btn btn-sm @(_activeChapter == ch.Number ? "btn-danger" : "btn-outline-secondary")"
                 @onclick="() => SwitchChapter(ch.Number)">
-            @(string.IsNullOrWhiteSpace(ch.Title) ? $"Ch {ch.Number}" : ch.Title)
             @if (!string.IsNullOrWhiteSpace(ch.Synopsis))
             {
-                <i class="bi bi-check-circle-fill text-success ms-1" style="font-size: 0.6rem;" title="Synopsis generated"></i>
+                <i class="bi bi-check-circle-fill text-success me-1" style="font-size: 0.6rem;"></i>
             }
             @if (HasGhostWriterSuggestions(ch.Number))
             {
-                <i class="bi bi-eye-fill text-warning ms-1" style="font-size: 0.6rem; cursor: pointer;"
-                   title="GhostWriter found issues — click to review"
-                   @onclick="() => ShowGhostWriterSuggestions(ch.Number)"
-                   @onclick:stopPropagation="true"></i>
+                <button class="btn btn-sm p-0 border-0" @onclick="() => ShowGhostWriterSuggestions(ch.Number)" @onclick:stopPropagation="true"
+                        title="GhostWriter found issues">
+                    <i class="bi bi-eye-fill text-warning ms-1" style="font-size: 0.6rem;"></i>
+                </button>
             }
+            @(string.IsNullOrWhiteSpace(ch.Title) ? $"Ch {ch.Number}" : ch.Title)
         </button>
     }
     <button class="btn btn-sm btn-outline-secondary" @onclick="InsertChapterBefore" title="Insert chapter before current">
-        <i class="bi bi-chevron-bar-left"></i>
+        <i class="bi bi-chevron-left"></i>
     </button>
-    <button class="btn btn-sm btn-outline-danger" @onclick="ShowNewChapterDialog" title="Add chapter after last">
+    <button class="btn btn-sm btn-outline-danger" @onclick="ShowNewChapterDialog" title="New chapter">
         <i class="bi bi-plus-lg"></i>
     </button>
-    @if (_project.Chapters.Count > 0)
-    {
-        <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary ms-2"
-               style="max-width: 200px; font-size: 0.8rem;"
-               placeholder="Chapter title..."
-               value="@CurrentChapter?.Title"
-               @onchange="OnChapterTitleChanged" />
-    }
 </div>
 
 @* ── New Chapter Dialog ───────────────────────────────── *@
 @if (_showNewChapterDialog)
 {
-    <div class="card bg-dark text-light border-danger mb-2">
-        <div class="card-body py-2 px-3">
-            <div class="d-flex align-items-center gap-2 mb-2">
-                <span class="text-danger fw-bold small">New Chapter</span>
-                @if (_creatingChapter)
-                {
-                    <div class="spinner-border spinner-border-sm text-danger"></div>
-                    <small class="text-muted">Generating synopsis and preparing chapter...</small>
-                }
-            </div>
-            @if (!_creatingChapter)
+    <div class="card bg-dark text-light border-secondary mb-2">
+        <div class="card-body py-2">
+            @if (_creatingChapter)
             {
-                <div class="mb-2">
-                    <small class="text-muted">How should the next chapter begin?</small>
+                <div class="d-flex align-items-center gap-2">
+                    <div class="spinner-border spinner-border-sm text-danger"></div>
+                    <small class="text-muted">Creating chapter (generating synopsis for current chapter)...</small>
                 </div>
-                <div class="d-flex gap-2 mb-2">
+            }
+            else
+            {
+                <div class="d-flex gap-2 align-items-center">
                     <button class="btn btn-sm btn-outline-danger" @onclick='() => CreateNewChapter("continue")'>
                         <i class="bi bi-arrow-right"></i> Continue Story
                     </button>
-                    <button class="btn btn-sm btn-outline-info" @onclick='() => _showPerspectiveInput = true'>
-                        <i class="bi bi-people"></i> Switch Perspective
-                    </button>
-                    <button class="btn btn-sm btn-outline-secondary" @onclick="() => _showNewChapterDialog = false">Cancel</button>
-                </div>
-                @if (_showPerspectiveInput)
-                {
-                    <div class="d-flex gap-2 align-items-center">
-                        <small class="text-muted">Whose perspective?</small>
-                        <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
-                               style="max-width: 200px;"
-                               placeholder="Character name..."
-                               @bind="_newChapterPerspective" />
-                        <button class="btn btn-sm btn-info text-dark" @onclick='() => CreateNewChapter("perspective")' disabled="@string.IsNullOrWhiteSpace(_newChapterPerspective)">
-                            Go
+                    @if (!_showPerspectiveInput)
+                    {
+                        <button class="btn btn-sm btn-outline-info" @onclick="() => _showPerspectiveInput = true">
+                            <i class="bi bi-person-badge"></i> Switch Perspective
                         </button>
-                    </div>
-                }
+                    }
+                    else
+                    {
+                        <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                               style="max-width: 200px;" placeholder="Character name..."
+                               @bind="_newChapterPerspective" />
+                        <button class="btn btn-sm btn-info text-dark" @onclick='() => CreateNewChapter("perspective")'
+                                disabled="@string.IsNullOrWhiteSpace(_newChapterPerspective)">Go</button>
+                    }
+                    <button class="btn btn-sm btn-outline-secondary ms-auto" @onclick="() => _showNewChapterDialog = false">Cancel</button>
+                </div>
             }
         </div>
     </div>
 }
 
-@* ── Synopsis Display ──────────────────────────────────── *@
-@if (CurrentChapter != null && (!string.IsNullOrWhiteSpace(CurrentChapter.Synopsis) || !string.IsNullOrWhiteSpace(_project.StorySynopsis)))
-{
-    <div class="card bg-dark border-secondary mb-2" style="font-size: 0.8rem;">
-        <div class="card-body py-2 px-3">
-            <div class="d-flex justify-content-between align-items-center mb-1">
-                <small class="text-info fw-bold">Context</small>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-1" style="font-size: 0.65rem;" @onclick="() => _showSynopsis = !_showSynopsis">
-                    @(_showSynopsis ? "hide" : "show")
-                </button>
-            </div>
-            @if (_showSynopsis)
-            {
-                @if (!string.IsNullOrWhiteSpace(_project.StorySynopsis))
-                {
-                    <div class="mb-2">
-                        <small class="text-danger fw-bold">Story Overview</small>
-                        <div class="text-muted small" style="line-height: 1.4;">@_project.StorySynopsis</div>
-                    </div>
-                }
-                @if (!string.IsNullOrWhiteSpace(_project.PlotArc))
-                {
-                    <div class="mb-2">
-                        <small class="text-warning fw-bold">Plot Arc</small>
-                        <div class="text-muted small" style="line-height: 1.4; white-space: pre-wrap;">@_project.PlotArc</div>
-                    </div>
-                }
-                @if (!string.IsNullOrWhiteSpace(CurrentChapter.Synopsis))
-                {
-                    <div class="mb-2">
-                        <small class="text-info fw-bold">Chapter Synopsis</small>
-                        <div class="text-muted small" style="line-height: 1.4;">@CurrentChapter.Synopsis</div>
-                    </div>
-                }
-                @if (!string.IsNullOrWhiteSpace(CurrentChapter.Beats))
-                {
-                    <div>
-                        <small class="text-success fw-bold">Key Beats</small>
-                        <div class="text-muted small" style="line-height: 1.4; white-space: pre-wrap;">@CurrentChapter.Beats</div>
-                    </div>
-                }
-            }
-        </div>
-    </div>
-}
-
-@* ── Generating Indicator ─────────────────────────────── *@
-@if (_generating)
+@* ── Chapter title + context ──────────────────────────── *@
+@if (CurrentChapter != null)
 {
     <div class="d-flex align-items-center gap-2 mb-2">
-        <div class="spinner-border spinner-border-sm text-danger"></div>
-        <small class="text-muted">@_statusMessage</small>
-    </div>
-}
-
-@* ── Writing Surface ──────────────────────────────────── *@
-<textarea id="story-surface"
-          class="form-control bg-dark text-light border-secondary w-100"
-          style="font-family: Georgia, 'Times New Roman', serif; font-size: 16px; line-height: 1.8; resize: none; min-height: calc(100vh - 260px); color: #ddd !important;"
-          placeholder="Start writing, paste in content, or click AI Assist to generate..."
-          @bind="_storyText"
-          @bind:event="oninput"
-          @bind:after="OnTextChanged"></textarea>
-
-@* ── Right-Click Context Menu ──────────────────────────── *@
-@if (_showContextMenu)
-{
-    <div class="story-context-menu position-fixed bg-dark border border-secondary rounded shadow-lg py-1"
-         style="top: @(_menuTop)px; left: @(_menuLeft)px; z-index: 1060; min-width: 180px;">
-        <button class="dropdown-item text-light d-flex align-items-center gap-2 px-3 py-2" @onclick="ContextRewrite">
-            <i class="bi bi-arrow-repeat text-warning"></i> <span>Rewrite</span>
-        </button>
-        @if (_ttsAvailable)
+        <input type="text" class="form-control form-control-sm bg-dark text-light border-0 fw-bold"
+               style="max-width: 300px;" value="@CurrentChapter.Title" @onchange="OnChapterTitleChanged" />
+        @if (!string.IsNullOrWhiteSpace(CurrentChapter.Perspective))
         {
-            <div class="dropdown-divider border-secondary my-1"></div>
-            <button class="dropdown-item text-light d-flex align-items-center gap-2 px-3 py-2" @onclick="ContextNarrate" disabled="@_narrating">
-                <i class="bi bi-volume-up text-danger"></i> <span>Narrate</span>
-            </button>
+            <span class="badge bg-info text-dark"><i class="bi bi-person-badge"></i> @CurrentChapter.Perspective</span>
         }
-        <div class="dropdown-divider border-secondary my-1"></div>
-        <button class="dropdown-item text-light d-flex align-items-center gap-2 px-3 py-2" @onclick="ContextContinue" disabled="@_generating">
-            <i class="bi bi-pen text-danger"></i> <span>Continue Story</span>
-        </button>
     </div>
 }
+
+@* ── Context synopsis (collapsed by default) ─────────── *@
+@if (!string.IsNullOrWhiteSpace(_project.StorySynopsis) || CurrentChapter?.Synopsis != null)
+{
+    <div class="mb-2">
+        <a href="javascript:void(0)" class="text-muted small text-decoration-none"
+           @onclick="() => _showSynopsis = !_showSynopsis">
+            <i class="bi @(_showSynopsis ? "bi-chevron-up" : "bi-chevron-down")"></i> Context
+        </a>
+        @if (_showSynopsis)
+        {
+            <div class="card bg-dark border-secondary mt-1">
+                <div class="card-body py-2 small text-muted" style="line-height: 1.4;">
+                    @if (!string.IsNullOrWhiteSpace(_project.StorySynopsis))
+                    {
+                        <div class="mb-1"><span class="text-info fw-bold">Story Overview:</span> @_project.StorySynopsis</div>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(_project.PlotArc))
+                    {
+                        <div class="mb-1"><span class="text-warning fw-bold">Plot Arc:</span> <span style="white-space: pre-wrap;">@_project.PlotArc</span></div>
+                    }
+                    @if (CurrentChapter?.Synopsis != null)
+                    {
+                        <div class="mb-1"><span class="text-success fw-bold">Chapter @_activeChapter Synopsis:</span> @CurrentChapter.Synopsis</div>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(CurrentChapter?.Beats))
+                    {
+                        <div><span class="text-danger fw-bold">Beats:</span> <span style="white-space: pre-wrap;">@CurrentChapter.Beats</span></div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@* ── View Mode Tabs ──────────────────────────────────── *@
+<div class="d-flex gap-1 mb-1 view-tabs">
+    <button class="btn btn-sm @(_viewMode == "rich" ? "btn-outline-danger active" : "btn-outline-secondary")"
+            @onclick='() => SwitchViewMode("rich")'>
+        <i class="bi bi-brush"></i> Rich
+    </button>
+    <button class="btn btn-sm @(_viewMode == "raw" ? "btn-outline-danger active" : "btn-outline-secondary")"
+            @onclick='() => SwitchViewMode("raw")'>
+        <i class="bi bi-file-text"></i> Raw
+    </button>
+    @if (_viewMode == "rich")
+    {
+        <button class="btn btn-sm btn-outline-info ms-2" @onclick="AutoLinkEntities" title="Highlight entity names from the world graph">
+            <i class="bi bi-link-45deg"></i> Link Entities
+        </button>
+    }
+    <button class="btn btn-sm @(_showSceneSidebar ? "btn-outline-danger" : "btn-outline-secondary") ms-auto"
+            @onclick="() => _showSceneSidebar = !_showSceneSidebar" title="Scene graph sidebar">
+        <i class="bi bi-diagram-3"></i>
+    </button>
+</div>
+
+@* ── Editor + Scene Sidebar ───────────────────────────── *@
+<div class="row g-2">
+    <div class="@(_showSceneSidebar ? "col-md-8" : "col-12")">
+        @* ── Writing surface ──────────────────────────────── *@
+        @if (_viewMode == "rich")
+        {
+            <div id="story-surface" class="form-control bg-dark text-light border-secondary rich-editor"
+                 contenteditable="true"
+                 style="resize: vertical;"></div>
+        }
+        else
+        {
+            <textarea id="story-surface-raw" class="form-control bg-dark text-light border-secondary"
+                      style="font-family: 'Cascadia Code', 'Fira Code', monospace; font-size: 14px; line-height: 1.6; min-height: 60vh; resize: vertical;"
+                      @bind="_storyText"
+                      @bind:event="oninput"
+                      @bind:after="OnTextChanged"></textarea>
+        }
+    </div>
+
+    @if (_showSceneSidebar)
+    {
+        <div class="col-md-4">
+            @* ── Validation Warnings ──────────────────────── *@
+            @if (_validationIssues.Count > 0)
+            {
+                <div class="card bg-dark text-light border-warning mb-2">
+                    <div class="card-header py-1 text-warning small fw-bold">
+                        <i class="bi bi-exclamation-triangle"></i> Canon Issues (@_validationIssues.Count)
+                    </div>
+                    <div class="card-body py-2 small">
+                        @foreach (var issue in _validationIssues)
+                        {
+                            <div class="d-flex align-items-start gap-1 mb-1">
+                                <i class="bi bi-exclamation-circle text-warning" style="margin-top: 2px;"></i>
+                                <span>@issue</span>
+                            </div>
+                        }
+                        <button class="btn btn-sm btn-outline-warning mt-1" @onclick="ClearValidationIssues">Dismiss</button>
+                    </div>
+                </div>
+            }
+
+            @* ── Scene Entities ────────────────────────────── *@
+            <div class="card bg-dark text-light border-secondary mb-2">
+                <div class="card-header py-1 d-flex justify-content-between align-items-center">
+                    <small class="text-muted fw-bold">Scene Entities</small>
+                    <button class="btn btn-sm btn-outline-info py-0 px-1" @onclick="RefreshSceneEntities" title="Scan text for entities">
+                        <i class="bi bi-arrow-repeat" style="font-size: 0.7rem;"></i>
+                    </button>
+                </div>
+                <div class="card-body py-1" style="max-height: 30vh; overflow-y: auto;">
+                    @if (_sceneCharacters.Count == 0 && _sceneLocations.Count == 0 && _sceneItems.Count == 0)
+                    {
+                        <small class="text-muted">Write or generate text, then scan to see entities.</small>
+                    }
+                    @if (_sceneCharacters.Count > 0)
+                    {
+                        <div class="mb-1">
+                            <small class="text-info fw-bold">Characters</small>
+                            @foreach (var c in _sceneCharacters)
+                            {
+                                <div class="d-flex align-items-center gap-1 small" style="cursor: pointer;" @onclick="() => ShowEntityPopover(c.id)">
+                                    <span class="badge bg-info" style="font-size: 0.55rem;">C</span>
+                                    <span>@c.name</span>
+                                    @if (c.detail.Length > 0)
+                                    {
+                                        <small class="text-muted">— @c.detail</small>
+                                    }
+                                </div>
+                            }
+                        </div>
+                    }
+                    @if (_sceneLocations.Count > 0)
+                    {
+                        <div class="mb-1">
+                            <small class="text-success fw-bold">Locations</small>
+                            @foreach (var l in _sceneLocations)
+                            {
+                                <div class="d-flex align-items-center gap-1 small" style="cursor: pointer;" @onclick="() => ShowEntityPopover(l.id)">
+                                    <span class="badge bg-success" style="font-size: 0.55rem;">P</span>
+                                    <span>@l.name</span>
+                                </div>
+                            }
+                        </div>
+                    }
+                    @if (_sceneItems.Count > 0)
+                    {
+                        <div class="mb-1">
+                            <small class="text-danger fw-bold">Weapons/Equipment/Tech</small>
+                            @foreach (var item in _sceneItems)
+                            {
+                                <div class="d-flex align-items-center gap-1 small" style="cursor: pointer;" @onclick="() => ShowEntityPopover(item.id)">
+                                    <span class="badge @GetTypeBadgeClass(item.nodeType)" style="font-size: 0.55rem;">@item.nodeType[..1].ToUpper()</span>
+                                    <span>@item.name</span>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+
+            @* ── Mini Scene Graph ──────────────────────────── *@
+            <div class="card bg-dark text-light border-secondary">
+                <div class="card-header py-1 d-flex justify-content-between align-items-center">
+                    <small class="text-muted fw-bold">Scene Graph</small>
+                    <button class="btn btn-sm btn-outline-danger py-0 px-1" @onclick="RenderMiniGraph" title="Render scene graph">
+                        <i class="bi bi-play" style="font-size: 0.7rem;"></i>
+                    </button>
+                </div>
+                <div id="miniGraphCanvas" style="width: 100%; height: 30vh; background: #111; border-radius: 0 0 4px 4px;"></div>
+            </div>
+
+            @* ── Entity Popover (in sidebar) ─────────────── *@
+            @if (_showEntityPopover && _popoverNode != null)
+            {
+                <div class="card bg-dark text-light border-info mt-2">
+                    <div class="card-header py-1 d-flex justify-content-between align-items-center">
+                        <span>
+                            <span class="badge @GetTypeBadgeClass(_popoverNode.NodeType) me-1">@_popoverNode.NodeType</span>
+                            <strong>@_popoverNode.Name</strong>
+                        </span>
+                        <button class="btn btn-sm btn-outline-secondary py-0 px-1" @onclick="() => _showEntityPopover = false"><i class="bi bi-x"></i></button>
+                    </div>
+                    <div class="card-body py-2 small" style="max-height: 25vh; overflow-y: auto; line-height: 1.4;">
+                        @foreach (var key in new[] { "gender", "pronouns", "role", "status", "age", "affiliation", "location", "category", "manufacturer" })
+                        {
+                            if (_popoverNode.Properties.TryGetValue(key, out var val) && val.Length > 0)
+                            {
+                                <div><span class="text-info">@key:</span> @val</div>
+                            }
+                        }
+                        @if (_popoverNode.Properties.TryGetValue("description", out var pdesc) && pdesc.Length > 0)
+                        {
+                            <div class="text-muted mt-1">@(pdesc.Length > 300 ? pdesc[..297] + "..." : pdesc)</div>
+                        }
+                        @{
+                            var popoverEdges = Graph.GetAllEdges(_popoverNode.Id);
+                            if (popoverEdges.Count > 0)
+                            {
+                                <div class="mt-1">
+                                    <small class="text-muted fw-bold">Relationships:</small>
+                                    @foreach (var edge in popoverEdges.Take(8))
+                                    {
+                                        var other = edge.Source == _popoverNode.Id ? edge.Target : edge.Source;
+                                        var otherNode = Graph.GetNode(other);
+                                        <div class="d-flex align-items-center gap-1">
+                                            <span class="badge bg-dark border border-secondary" style="font-size: 0.6rem;">@edge.RelationType</span>
+                                            <span>@(otherNode?.Name ?? other)</span>
+                                        </div>
+                                    }
+                                </div>
+                            }
+                        }
+                        @if (_popoverNode.History.Count > 0)
+                        {
+                            <div class="mt-1 text-warning">
+                                <small class="fw-bold">Timeline:</small>
+                                @foreach (var h in _popoverNode.History.OrderBy(x => x.StoryPoint))
+                                {
+                                    <div>[@h.StoryPoint] @h.Property: @h.OldValue → @h.NewValue</div>
+                                }
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
 
 @* ── Audio Player ─────────────────────────────────────── *@
 <AudioPlayer @ref="_audioPlayer" Visible="_showAudioPlayer" OnDismissed="() => _showAudioPlayer = false" CssClass="mt-2" />
@@ -530,193 +630,7 @@
     </div>
 }
 
-@* ── AI Assist Modal ──────────────────────────────────── *@
-@if (_showAssist)
-{
-    <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="CloseAssist">
-        <div class="card bg-dark text-light border-danger" style="width: 600px; max-height: 80vh; overflow-y: auto;"
-             @onclick:stopPropagation="true">
-            <div class="card-header d-flex justify-content-between align-items-center border-secondary">
-                <span class="text-danger fw-bold"><i class="bi bi-stars"></i> AI Assist</span>
-                <button class="btn btn-sm btn-outline-secondary" @onclick="CloseAssist"><i class="bi bi-x-lg"></i></button>
-            </div>
-            <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label text-muted small">What should happen next?</label>
-                    <textarea class="form-control bg-dark text-light border-secondary"
-                              rows="3"
-                              placeholder="@(_hasExistingText ? "Give the engine a direction — 'continue', 'Kyle enters the building', or describe a full scene..." : "A premise to start from — who, where, what's happening...")"
-                              @bind="_assistPrompt"
-                              @onkeydown="HandleAssistKeyDown"
-                              style="font-family: Georgia, serif;"></textarea>
-                </div>
-
-                @* Options *@
-                <div class="mb-3">
-                    <a href="javascript:void(0)" class="text-muted small text-decoration-none" @onclick="() => _showAssistOptions = !_showAssistOptions">
-                        <i class="bi @(_showAssistOptions ? "bi-chevron-up" : "bi-chevron-down")"></i> Options
-                    </a>
-                </div>
-                @if (_showAssistOptions)
-                {
-                    <div class="row g-2 mb-3">
-                        <div class="col-md-4">
-                            <label class="form-label text-muted small">Mood</label>
-                            <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="_project.Mood">
-                                <option value="">-- Engine decides --</option>
-                                <option value="desperate and claustrophobic">Desperate</option>
-                                <option value="slow burn dread">Slow burn dread</option>
-                                <option value="electric and kinetic">Electric</option>
-                                <option value="melancholic and beautiful">Melancholic</option>
-                                <option value="paranoid and fractured">Paranoid</option>
-                                <option value="tender amid violence">Tender amid violence</option>
-                                <option value="dark humor and irony">Dark humor</option>
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-                            <label class="form-label text-muted small">Location</label>
-                            <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="_project.Location">
-                                <option value="">-- Anywhere --</option>
-                                @foreach (var d in _districts)
-                                {
-                                    <option value="@d.Name">@d.Name</option>
-                                }
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-                            <label class="form-label text-muted small">Characters</label>
-                            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
-                                   placeholder="Kyle, Sable..."
-                                   @bind="_charactersInput" />
-                        </div>
-                    </div>
-                }
-
-                @* Mode selection *@
-                <div class="mb-3 d-flex gap-3">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="modeAppend" value="append"
-                               checked="@(_assistMode == "append")" @onchange='() => _assistMode = "append"' />
-                        <label class="form-check-label text-muted small" for="modeAppend">Append to end</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="modeInsert" value="insert"
-                               checked="@(_assistMode == "insert")" @onchange='() => _assistMode = "insert"' />
-                        <label class="form-check-label text-muted small" for="modeInsert">Insert at cursor</label>
-                    </div>
-                </div>
-
-                @if (_assistGenerating)
-                {
-                    <div class="d-flex align-items-center gap-2 mb-3">
-                        <div class="spinner-border spinner-border-sm text-danger"></div>
-                        <small class="text-muted">@_statusMessage</small>
-                    </div>
-                }
-
-                @if (string.IsNullOrEmpty(_assistPreview))
-                {
-                    <button class="btn btn-danger" @onclick="AssistGenerate"
-                            disabled="@(string.IsNullOrWhiteSpace(_assistPrompt) || _assistGenerating)">
-                        <i class="bi bi-pen"></i> Generate
-                    </button>
-                    @if (!_hasExistingText)
-                    {
-                        <button class="btn btn-outline-danger ms-2" @onclick="AssistSurprise" disabled="@_assistGenerating">
-                            <i class="bi bi-shuffle"></i> Surprise Me
-                        </button>
-                    }
-                }
-                else
-                {
-                    @* Preview *@
-                    <div class="mb-3">
-                        <label class="form-label text-muted small">Preview (edit before inserting)</label>
-                        <textarea class="form-control bg-dark text-light border-secondary"
-                                  rows="8"
-                                  style="font-family: Georgia, serif; font-size: 15px; line-height: 1.7;"
-                                  @bind="_assistPreview"></textarea>
-                    </div>
-                    <div class="d-flex gap-2">
-                        <button class="btn btn-success" @onclick="AssistInsert">
-                            <i class="bi bi-box-arrow-in-down"></i> Insert
-                        </button>
-                        <button class="btn btn-outline-danger" @onclick="AssistGenerate" disabled="@_assistGenerating">
-                            <i class="bi bi-arrow-repeat"></i> Regenerate
-                        </button>
-                        <button class="btn btn-outline-secondary" @onclick="AssistDiscard">Discard</button>
-                    </div>
-                }
-            </div>
-        </div>
-    </div>
-}
-
-@* ── Rewrite Modal ────────────────────────────────────── *@
-@if (_showRewrite)
-{
-    <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="CloseRewrite">
-        <div class="card bg-dark text-light border-warning" style="width: 600px; max-height: 80vh; overflow-y: auto;"
-             @onclick:stopPropagation="true">
-            <div class="card-header d-flex justify-content-between align-items-center border-secondary">
-                <span class="text-warning fw-bold"><i class="bi bi-arrow-repeat"></i> Rewrite Selection</span>
-                <button class="btn btn-sm btn-outline-secondary" @onclick="CloseRewrite"><i class="bi bi-x-lg"></i></button>
-            </div>
-            <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label text-muted small">Selected passage:</label>
-                    <div class="bg-black rounded p-2 small" style="font-family: Georgia, serif; line-height: 1.6; max-height: 120px; overflow-y: auto; color: #999;">
-                        @_rewriteOriginal
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label text-muted small">Direction (optional)</label>
-                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
-                           placeholder="e.g. 'make it more tense', 'add sensory detail', or leave blank for a straight polish"
-                           @bind="_rewriteDirection" />
-                </div>
-
-                @if (_rewriteGenerating)
-                {
-                    <div class="d-flex align-items-center gap-2 mb-3">
-                        <div class="spinner-border spinner-border-sm text-warning"></div>
-                        <small class="text-muted">Rewriting...</small>
-                    </div>
-                }
-
-                @if (string.IsNullOrEmpty(_rewritePreview))
-                {
-                    <button class="btn btn-warning text-dark" @onclick="DoRewrite" disabled="@_rewriteGenerating">
-                        <i class="bi bi-arrow-repeat"></i> Rewrite
-                    </button>
-                }
-                else
-                {
-                    <div class="mb-3">
-                        <label class="form-label text-muted small">Rewritten (edit before applying)</label>
-                        <textarea class="form-control bg-dark text-light border-secondary"
-                                  rows="6"
-                                  style="font-family: Georgia, serif; font-size: 15px; line-height: 1.7;"
-                                  @bind="_rewritePreview"></textarea>
-                    </div>
-                    <div class="d-flex gap-2">
-                        <button class="btn btn-success" @onclick="ApplyRewrite">
-                            <i class="bi bi-check-lg"></i> Apply
-                        </button>
-                        <button class="btn btn-outline-warning" @onclick="DoRewrite" disabled="@_rewriteGenerating">
-                            <i class="bi bi-arrow-repeat"></i> Regenerate
-                        </button>
-                        <button class="btn btn-outline-secondary" @onclick="CloseRewrite">Discard</button>
-                    </div>
-                }
-            </div>
-        </div>
-    </div>
-}
-
-@* ── Synchronize Modal ────────────────────────────────────── *@
+@* ── Synchronize Modal ────────────────────────────────── *@
 @if (_showSync)
 {
     <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
@@ -748,7 +662,7 @@
                     @if (!string.IsNullOrEmpty(_syncPreview))
                     {
                         <div class="mb-2">
-                            <label class="form-label text-muted small">Synchronizeed text (preview):</label>
+                            <label class="form-label text-muted small">Synchronized text (preview):</label>
                             <textarea class="form-control bg-dark text-light border-secondary"
                                       rows="10"
                                       style="font-family: Georgia, serif; font-size: 14px; line-height: 1.7;"
@@ -785,34 +699,11 @@
     // ── Core state ──
     private StoryProject _project = new();
     private string _storyText = "";
-    private string _charactersInput = "";
     private int _wordCount;
     private bool _saved;
     private string? _error;
-    private bool _generating => _assistGenerating || _rewriteGenerating;
+    private bool _generating => _commandBusy;
     private string _statusMessage = "";
-
-    // ── Project list ──
-    private List<District> _districts = [];
-
-    // ── AI Assist ──
-    private bool _showAssist;
-    private bool _showAssistOptions;
-    private string _assistPrompt = "";
-    private string _assistMode = "append";
-    private string _assistPreview = "";
-    private bool _assistGenerating;
-    private string? _assistTitle;
-    private int _cursorPosition;
-
-    // ── Rewrite ──
-    private bool _showRewrite;
-    private string _rewriteOriginal = "";
-    private string _rewriteDirection = "";
-    private string _rewritePreview = "";
-    private bool _rewriteGenerating;
-    private int _rewriteStart;
-    private int _rewriteEnd;
 
     // ── Audio ──
     private bool _ttsAvailable;
@@ -845,17 +736,58 @@
     private string _commandResult = "";
     private bool _commandBusy;
 
+    // ── GhostWriter ──
+    private bool _showGhostWriter;
+    private int _ghostChapterNum;
+    private string _ghostIssues = "";
+    private string _ghostPreview = "";
+    private bool _ghostApplying;
+    private bool _showOutline;
+    private string _outlineText = "";
+    private bool _showSynopsis = true;
+    private StoryChapter? CurrentChapter => _project.Chapters.FirstOrDefault(c => c.Number == _activeChapter);
+    private bool _showNewChapterDialog;
+    private bool _showPerspectiveInput;
+    private bool _creatingChapter;
+    private string _newChapterPerspective = "";
+
+    // ── Rewrite tracking (for Command modal rewrite) ──
+    private int _rewriteStart;
+    private int _rewriteEnd;
+
+    // ── Rich editor ──
+    private string _viewMode = "rich";
+    private string _richHtml = "";
+    private DotNetObjectReference<WriteStory>? _editorRef;
+    private bool _richEditorInitialized;
+
+    // ── Entity popover ──
+    private bool _showEntityPopover;
+    private WorldNode? _popoverNode;
+
+    // ── Scene sidebar ──
+    private bool _showSceneSidebar;
+    private List<(string id, string name, string detail)> _sceneCharacters = [];
+    private List<(string id, string name)> _sceneLocations = [];
+    private List<(string id, string name, string nodeType)> _sceneItems = [];
+    private List<string> _validationIssues = [];
+    private DotNetObjectReference<WriteStory>? _miniGraphRef;
+
+    // ── Auto-save timer ──
+    private System.Threading.Timer? _saveTimer;
+    private bool _dirty;
+
+    private bool _hasExistingText => !string.IsNullOrWhiteSpace(_storyText);
+
     private string CommandDescription => _commandMode switch
     {
         "assist" => "Direct the AI to write, expand, or modify content",
         "continue" => "Continue the story from where it left off",
         "rewrite" => "Rewrite the selected/highlighted text",
-        "sync" => "Check for contradictions, plot holes, voice issues",
-        "ask" => "Ask any question about the story, characters, or world",
+        "sync" => "Validate against the world graph — find contradictions with canon",
+        "ask" => "Query the world graph — look up any entity, relationship, or fact",
         "synopsis" => "Generate a synopsis of the current chapter",
         "outline" => "Generate a full story outline with continuity checks",
-        "basic_narrate" => "Narrate with free Windows TTS",
-        "pro_narrate" => "Narrate with ElevenLabs Oliver Silk (costs credits)",
         _ => ""
     };
 
@@ -864,8 +796,280 @@
         "assist" => "What should happen? e.g. 'Kyle enters the building and finds it empty'",
         "continue" => "Optional direction, or leave blank to auto-continue",
         "rewrite" => "Direction for rewrite, e.g. 'make it more tense' or leave blank for polish",
-        "ask" => "Who is Sable? What happened in Chapter 2? Where is the Seam?",
+        "ask" => "Who is Sable? What's her relationship to Kyle? What weapons does he carry?",
         _ => ""
+    };
+
+    // ── Lifecycle ──
+
+    protected override async Task OnInitializedAsync()
+    {
+        _ttsAvailable = await TtsSvc.IsConfiguredAsync();
+        if (!string.IsNullOrEmpty(ProjectId))
+        {
+            var loaded = Repo.LoadProject(ProjectId);
+            if (loaded != null) _project = loaded;
+        }
+
+        _project.EnsureChapters();
+        _activeChapter = _project.Chapters.First().Number;
+        _storyText = CurrentChapter?.Text ?? "";
+        UpdateWordCount();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender || (!_richEditorInitialized && _viewMode == "rich"))
+        {
+            await InitRichEditor();
+        }
+    }
+
+    private async Task InitRichEditor()
+    {
+        if (_viewMode != "rich") return;
+        _editorRef?.Dispose();
+        _editorRef = DotNetObjectReference.Create(this);
+        // Convert plain text to HTML paragraphs
+        _richHtml = TextToHtml(_storyText);
+        await JS.InvokeVoidAsync("writeInterop.richEditor.init", "story-surface", _editorRef, _richHtml);
+        _richEditorInitialized = true;
+
+        // Build entity index for auto-linking
+        var allNodes = Graph.AllNodes();
+        var entities = allNodes
+            .Where(n => n.Name.Length >= 3)
+            .Select(n => new { name = n.Name, id = n.Id, nodeType = n.NodeType })
+            .ToArray();
+        await JS.InvokeVoidAsync("writeInterop.richEditor.buildEntityIndex", (object)entities);
+    }
+
+    [JSInvokable]
+    public void OnRichContentChanged(string html, string plainText)
+    {
+        _richHtml = html;
+        _storyText = plainText;
+        _dirty = true;
+        _saved = false;
+        UpdateWordCount();
+
+        _saveTimer?.Dispose();
+        _saveTimer = new System.Threading.Timer(_ =>
+        {
+            if (_dirty) InvokeAsync(Save);
+        }, null, 2000, Timeout.Infinite);
+    }
+
+    [JSInvokable]
+    public void OnEntityClicked(string entityId)
+    {
+        ShowEntityPopover(entityId);
+        if (!_showSceneSidebar) _showSceneSidebar = true;
+        StateHasChanged();
+    }
+
+    private async Task AutoLinkEntities()
+    {
+        await JS.InvokeVoidAsync("writeInterop.richEditor.highlightEntities", "story-surface");
+    }
+
+    private async Task SwitchViewMode(string mode)
+    {
+        if (mode == _viewMode) return;
+
+        if (_viewMode == "rich" && mode == "raw")
+        {
+            // Sync rich → raw: get plain text from contenteditable
+            _storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.stripToPlainText", "story-surface");
+            _richEditorInitialized = false;
+        }
+
+        _viewMode = mode;
+        StateHasChanged();
+
+        if (mode == "rich")
+        {
+            // Need to wait for the DOM to render the contenteditable div
+            await Task.Delay(50);
+            await InitRichEditor();
+        }
+    }
+
+    private static string TextToHtml(string text)
+    {
+        if (string.IsNullOrWhiteSpace(text)) return "";
+        // Convert plain text paragraphs to <p> tags
+        var paragraphs = text.Split(["\n\n", "\r\n\r\n"], StringSplitOptions.RemoveEmptyEntries);
+        return string.Join("", paragraphs.Select(p =>
+            $"<p>{System.Net.WebUtility.HtmlEncode(p.Trim()).Replace("\n", "<br>")}</p>"));
+    }
+
+    /// <summary>Set the editor content in whichever mode is active.</summary>
+    private async Task SetEditorText(string text)
+    {
+        _storyText = text;
+        if (_viewMode == "rich")
+        {
+            _richHtml = TextToHtml(text);
+            await JS.InvokeVoidAsync("writeInterop.richEditor.setHtml", "story-surface", _richHtml);
+        }
+        else
+        {
+            await JS.InvokeVoidAsync("writeInterop.setText", "story-surface-raw", text);
+        }
+    }
+
+    /// <summary>Append text to the editor in whichever mode is active.</summary>
+    private async Task AppendEditorText(string text)
+    {
+        if (_viewMode == "rich")
+        {
+            var html = TextToHtml(text);
+            await JS.InvokeVoidAsync("writeInterop.richEditor.appendHtml", "story-surface", html);
+            _storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.getPlainText", "story-surface");
+        }
+        else
+        {
+            if (!string.IsNullOrWhiteSpace(_storyText)) _storyText += "\n\n";
+            _storyText += text;
+            await JS.InvokeVoidAsync("writeInterop.setText", "story-surface-raw", _storyText);
+        }
+    }
+
+    /// <summary>Focus the end of the editor.</summary>
+    private async Task FocusEditorEnd()
+    {
+        var surfaceId = _viewMode == "rich" ? "story-surface" : "story-surface-raw";
+        await JS.InvokeVoidAsync("writeInterop.focusEnd", surfaceId);
+    }
+
+    // ── Scene Sidebar ──────────────────────────────────
+
+    private void ShowEntityPopover(string entityId)
+    {
+        var node = Graph.GetNode(entityId);
+        if (node == null) return;
+        _popoverNode = node;
+        _showEntityPopover = true;
+    }
+
+    private void RefreshSceneEntities()
+    {
+        if (string.IsNullOrWhiteSpace(_storyText)) return;
+
+        var session = new NarrativeSessionContext(Graph);
+        session.ScanText(_storyText);
+        var snapshot = session.GetSnapshot();
+        var textLower = _storyText.ToLowerInvariant();
+
+        // Filter to entities actually mentioned in text
+        _sceneCharacters = snapshot.PrimaryEntities
+            .Concat(snapshot.SecondaryEntities)
+            .Where(e => e.NodeType == "character" && textLower.Contains(e.Name.ToLowerInvariant()))
+            .Select(e =>
+            {
+                var node = Graph.GetNode(Graph.ResolveId(e.Name) ?? "");
+                var detail = node?.Properties.GetValueOrDefault("role", "") ?? "";
+                return (id: Graph.ResolveId(e.Name) ?? "", name: e.Name, detail);
+            })
+            .DistinctBy(e => e.name)
+            .ToList();
+
+        _sceneLocations = snapshot.PrimaryEntities
+            .Concat(snapshot.SecondaryEntities)
+            .Where(e => e.NodeType == "place" && textLower.Contains(e.Name.ToLowerInvariant()))
+            .Select(e => (id: Graph.ResolveId(e.Name) ?? "", name: e.Name))
+            .DistinctBy(e => e.name)
+            .ToList();
+
+        _sceneItems = snapshot.PrimaryEntities
+            .Concat(snapshot.SecondaryEntities)
+            .Where(e => e.NodeType is "weapon" or "equipment" or "technology" && textLower.Contains(e.Name.ToLowerInvariant()))
+            .Select(e => (id: Graph.ResolveId(e.Name) ?? "", name: e.Name, nodeType: e.NodeType))
+            .DistinctBy(e => e.name)
+            .ToList();
+
+        // Run quick validation
+        var issues = Validator.ValidateQuick(_storyText);
+        _validationIssues = issues.Select(i => $"[{i.Category}] {i.EntityName}: {i.Description}").ToList();
+    }
+
+    private async Task RenderMiniGraph()
+    {
+        RefreshSceneEntities();
+        if (_sceneCharacters.Count == 0 && _sceneLocations.Count == 0) return;
+
+        _miniGraphRef?.Dispose();
+        _miniGraphRef = DotNetObjectReference.Create(this);
+
+        // Collect all entity IDs from the scene
+        var entityIds = _sceneCharacters.Select(c => c.id)
+            .Concat(_sceneLocations.Select(l => l.id))
+            .Concat(_sceneItems.Select(i => i.id))
+            .Where(id => !string.IsNullOrEmpty(id))
+            .ToHashSet();
+
+        // Add 1-hop neighbors for context
+        var expanded = new HashSet<string>(entityIds);
+        foreach (var id in entityIds)
+        {
+            foreach (var neighbor in Graph.GetNeighbors(id, 1))
+                expanded.Add(neighbor.Id);
+        }
+
+        var nodes = expanded
+            .Select(id => Graph.GetNode(id))
+            .Where(n => n != null)
+            .Select(n => new
+            {
+                id = n!.Id,
+                name = n.Name,
+                nodeType = n.NodeType,
+                edgeCount = Graph.GetAllEdges(n.Id).Count
+            })
+            .ToArray();
+
+        var allEdges = expanded
+            .SelectMany(id => Graph.GetAllEdges(id))
+            .Where(e => expanded.Contains(e.Source) && expanded.Contains(e.Target))
+            .DistinctBy(e => (e.Source, e.Target, e.RelationType))
+            .Select(e => new
+            {
+                source = e.Source,
+                target = e.Target,
+                relationType = e.RelationType,
+                weight = e.Weight,
+                sentiment = e.Sentiment,
+            })
+            .ToArray();
+
+        await JS.InvokeVoidAsync("graphInterop.init", "miniGraphCanvas", _miniGraphRef, nodes, allEdges);
+    }
+
+    private void ClearValidationIssues() => _validationIssues.Clear();
+
+    /// <summary>
+    /// After text is generated and inserted, auto-link entities and refresh the scene sidebar.
+    /// </summary>
+    private async Task PostGenerationHook()
+    {
+        if (_viewMode == "rich")
+            await AutoLinkEntities();
+        if (_showSceneSidebar)
+            RefreshSceneEntities();
+        _ = RunExtractionAsync();
+    }
+
+    private static string GetTypeBadgeClass(string type) => type switch
+    {
+        "character" => "bg-info",
+        "organization" => "bg-warning text-dark",
+        "place" => "bg-success",
+        "faction" => "bg-purple",
+        "weapon" => "bg-danger",
+        "equipment" => "bg-primary",
+        "technology" => "bg-cyan",
+        _ => "bg-secondary",
     };
 
     // ── Unified Command Execution ──
@@ -875,7 +1079,6 @@
         if (_commandBusy) return;
         _commandBusy = true;
         _commandResult = "";
-        SyncCharacters();
         StateHasChanged();
 
         try
@@ -901,13 +1104,13 @@
                     break;
 
                 case "sync":
-                    _statusMessage = "Analyzing for issues...";
+                    _statusMessage = "Validating against world graph...";
                     StateHasChanged();
                     await ExecuteSyncCommand();
                     break;
 
                 case "ask":
-                    _statusMessage = "Thinking...";
+                    _statusMessage = "Querying world graph...";
                     StateHasChanged();
                     await ExecuteAskCommand();
                     break;
@@ -924,21 +1127,6 @@
                     StateHasChanged();
                     ShowOutline();
                     await UpdateOutline();
-                    break;
-
-                case "basic_narrate":
-                    _showCommand = false;
-                    _useProfessionalTts = false;
-                    StateHasChanged();
-                    await SmartNarrate();
-                    break;
-
-                case "pro_narrate":
-                    _showCommand = false;
-                    _useProfessionalTts = true;
-                    StateHasChanged();
-                    await SmartNarrate();
-                    _useProfessionalTts = false;
                     break;
             }
         }
@@ -963,12 +1151,12 @@
             var request = new StoryStarterRequest
             {
                 Premise = _commandText,
-                Mood = string.IsNullOrEmpty(_project.Mood) ? null : _project.Mood,
-                Location = string.IsNullOrEmpty(_project.Location) ? null : _project.Location,
                 Characters = _project.Characters,
             };
             var opening = await Starter.GenerateOpeningAsync(request);
             _commandResult = opening.Text;
+            if (_project.Title is "Untitled" or "")
+                _project.Title = opening.Title;
         }
         else
         {
@@ -979,9 +1167,7 @@
                 paragraphs.AddRange(_storyText.Split(["\n\n", "\r\n\r\n"], StringSplitOptions.RemoveEmptyEntries)
                     .Select(p => p.Trim()).Where(p => p.Length > 0));
             _commandResult = await Starter.ContinueAsync(paragraphs, _commandText,
-                string.IsNullOrEmpty(_project.Mood) ? null : _project.Mood,
-                string.IsNullOrEmpty(_project.Location) ? null : _project.Location,
-                _project.Characters);
+                null, null, _project.Characters);
         }
     }
 
@@ -999,50 +1185,85 @@
             _rewriteEnd = sel.End;
             _commandResult = await Starter.RewriteAsync(sel.Text,
                 string.IsNullOrWhiteSpace(_commandText) ? null : _commandText,
-                string.IsNullOrEmpty(_project.Mood) ? null : _project.Mood,
-                string.IsNullOrEmpty(_project.Location) ? null : _project.Location,
-                _project.Characters);
+                null, null, _project.Characters);
         }
         catch (Exception ex) { _commandResult = $"Could not read selection: {ex.Message}"; }
     }
 
+    /// <summary>
+    /// Validate story text against the world graph. Scans the text for entity mentions,
+    /// pulls their canonical facts from the graph, and asks the LLM to find contradictions.
+    /// This is graph-powered validation — not ad-hoc context building.
+    /// </summary>
     private async Task ExecuteSyncCommand()
     {
-        var characterContext = string.Join("\n---\n",
-            _project.Characters.Select(name => CanonDb.GetCharacterContext(name)).Where(c => c.Length > 0));
+        // Build a session context from the story text — auto-detect every entity mentioned
+        var session = new NarrativeSessionContext(Graph);
+        session.ScanText(_storyText);
+        var worldContext = session.BuildContext();
+
         var rulesContext = CanonDb.GetLiteraryRulesPrompt();
 
         var system = $"""
-            You are a story editor analyzing cyberpunk fiction set in Meridian 88.
-            KNOWN CHARACTERS:
-            {characterContext}
+            You are a story editor validating cyberpunk fiction against its world database.
+            The WORLD CONTEXT below is the canonical truth from the world graph.
+            Find every place where the story contradicts these facts.
+
+            WORLD CONTEXT (canonical — this is what is TRUE):
+            {worldContext}
+
             LITERARY RULES:
             {rulesContext}
 
-            List EVERY issue as a numbered item. Categories: CANON, PLOT, VOICE, PACING, PROSE.
+            List EVERY issue as a numbered item. Categories:
+            - CANON: contradicts established character/world details (wrong gender, wrong affiliation, dead character alive, etc.)
+            - PLOT: logic gap, unexplained jump, dangling thread
+            - VOICE: character doesn't sound like themselves
+            - PACING: section drags or rushes
+            - PROSE: clumsy phrasing, cliche, weak imagery
+
             Format: 1. [CATEGORY] "quoted problem" — what to fix
             If clean, say "No issues found."
             """;
         _commandResult = await Llm.GenerateAsync(system, _storyText, 0.3, 4096);
     }
 
+    /// <summary>
+    /// Answer questions by querying the world graph, not by stuffing all chapter text
+    /// into a prompt. The graph knows entities, relationships, and canon facts.
+    /// Story synopses provide narrative context without burning the full text budget.
+    /// </summary>
     private async Task ExecuteAskCommand()
     {
         if (string.IsNullOrWhiteSpace(_commandText)) return;
 
-        var chapterTexts = string.Join("\n\n",
-            _project.Chapters.OrderBy(c => c.Number)
-                .Where(c => !string.IsNullOrWhiteSpace(c.Text))
-                .Select(c => $"=== Chapter {c.Number}: {c.Title} ===\n{c.Text}"));
-        var characterProfiles = string.Join("\n---\n",
-            CharRepo.GetAll().Take(20).Select(c =>
-                $"{c.Name} ({c.Role}): {c.Description?.Substring(0, Math.Min(c.Description?.Length ?? 0, 300))}"));
+        // Build graph context from the question — scan for entity names
+        var session = new NarrativeSessionContext(Graph);
+        session.ScanText(_commandText);
+        // Also load entities from the current chapter for context
+        if (!string.IsNullOrWhiteSpace(_storyText))
+            session.ScanText(_storyText);
+        var worldContext = session.BuildContext();
+
+        // Use synopses for narrative context (not full chapter text)
+        var synopses = string.Join("\n",
+            _project.Chapters.Where(c => !string.IsNullOrWhiteSpace(c.Synopsis))
+                .OrderBy(c => c.Number)
+                .Select(c => $"Ch{c.Number} ({c.Title}): {c.Synopsis}"));
 
         var system = $"""
-            Answer using ONLY the provided story text and character data. Do not invent facts.
-            STORY: {chapterTexts}
-            CHARACTERS: {characterProfiles}
-            OUTLINE: {_project.Outline}
+            Answer using the world graph data and story synopses below. Do not invent facts.
+
+            WORLD GRAPH (canonical entity data):
+            {worldContext}
+
+            STORY SYNOPSES:
+            {synopses}
+
+            STORY OUTLINE:
+            {_project.Outline}
+
+            Answer directly and concisely. If the answer is not in the provided data, say so.
             """;
         _commandResult = await Llm.GenerateAsync(system, _commandText, 0.3, 2048);
     }
@@ -1059,14 +1280,10 @@
         }
         else if (_commandMode is "assist" or "continue")
         {
-            if (!string.IsNullOrWhiteSpace(_storyText))
-                _storyText += "\n\n";
-            _storyText += _commandResult;
-            await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", _storyText);
+            await AppendEditorText(_commandResult);
         }
         else if (_commandMode == "sync")
         {
-            // Sync result is an issue list — apply fixes
             _syncIssues = _commandResult;
             _showCommand = false;
             _showSync = true;
@@ -1078,7 +1295,8 @@
         Save();
         _commandResult = "";
         _showCommand = false;
-        await JS.InvokeVoidAsync("writeInterop.focusEnd", "story-surface");
+        _ = PostGenerationHook();
+        await FocusEditorEnd();
     }
 
     private async Task HandleCommandKeyDown(KeyboardEventArgs e)
@@ -1086,108 +1304,73 @@
         if (e is { Key: "Enter", CtrlKey: true }) await ExecuteCommand();
     }
 
-    // ── Ask (kept for backward compat) ──
-    private bool _showAsk;
-    private bool _asking;
-    private string _askQuestion = "";
-    private string _askAnswer = "";
+    // ── Direct Continue (no modal) ──
 
-    // ── GhostWriter ──
-    private bool _showGhostWriter;
-    private int _ghostChapterNum;
-    private string _ghostIssues = "";
-    private string _ghostPreview = "";
-    private bool _ghostApplying;
-    private bool _showOutline;
-    private string _outlineText = "";
-    private bool _showSynopsis = true;
-    private StoryChapter? CurrentChapter => _project.Chapters.FirstOrDefault(c => c.Number == _activeChapter);
-    private bool _showNewChapterDialog;
-    private bool _showPerspectiveInput;
-    private bool _creatingChapter;
-    private string _newChapterPerspective = "";
-
-    // ── Context menu ──
-    private bool _showContextMenu;
-    private double _menuTop;
-    private double _menuLeft;
-    private DotNetObjectReference<WriteStory>? _dotNetRef;
-    private bool _confirmNarrateAll;
-    private bool _confirmProfessional;
-    private bool _useProfessionalTts;
-
-    // ── Auto-save timer ──
-    private System.Threading.Timer? _saveTimer;
-    private bool _dirty;
-
-    private bool _hasExistingText => !string.IsNullOrWhiteSpace(_storyText);
-
-    protected override async Task OnInitializedAsync()
+    private async Task ContinueStory()
     {
-        _districts = Canon.ListDistricts();
-        _ttsAvailable = await TtsSvc.IsConfiguredAsync();
-        if (!string.IsNullOrEmpty(ProjectId))
+        if (_commandBusy) return;
+
+        var priorContext = _project.GetPriorContext(_activeChapter);
+        if (string.IsNullOrWhiteSpace(_storyText) && string.IsNullOrWhiteSpace(priorContext))
         {
-            var loaded = Repo.LoadProject(ProjectId);
-            if (loaded != null)
-            {
-                _project = loaded;
-                _charactersInput = string.Join(", ", _project.Characters);
-            }
+            _error = "Nothing to continue from — use Command > Write to start.";
+            return;
         }
 
-        _project.EnsureChapters();
-        _activeChapter = _project.Chapters.First().Number;
-        _storyText = CurrentChapter?.Text ?? "";
-        UpdateWordCount();
-    }
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
-            _dotNetRef = DotNetObjectReference.Create(this);
-            await JS.InvokeVoidAsync("writeInterop.watchRightClick", "story-surface", _dotNetRef);
-            if (!string.IsNullOrEmpty(_storyText))
-                await JS.InvokeVoidAsync("writeInterop.focusEnd", "story-surface");
-        }
-    }
-
-    [JSInvokable]
-    public void OnContextMenu(double top, double left)
-    {
-        _menuTop = top;
-        _menuLeft = left;
-        _showContextMenu = true;
+        _commandBusy = true;
+        _error = null;
+        _statusMessage = "Continuing the story...";
         StateHasChanged();
-    }
 
-    [JSInvokable]
-    public void OnDismissContextMenu()
-    {
-        if (_showContextMenu)
+        try
         {
-            _showContextMenu = false;
-            StateHasChanged();
+            var paragraphs = new List<string>();
+            if (!string.IsNullOrWhiteSpace(priorContext))
+                paragraphs.Add($"[PRIOR CHAPTERS SUMMARY]\n{priorContext}\n[CURRENT CHAPTER]");
+
+            if (!string.IsNullOrWhiteSpace(_storyText))
+            {
+                paragraphs.AddRange(_storyText
+                    .Split(["\n\n", "\r\n\r\n"], StringSplitOptions.RemoveEmptyEntries)
+                    .Select(p => p.Trim()).Where(p => p.Length > 0));
+            }
+
+            // Build direction with POV narration voice
+            var povChar = CurrentChapter?.Perspective;
+            var narrationVoice = "";
+            if (!string.IsNullOrWhiteSpace(povChar))
+            {
+                var charData = CharRepo.GetByName(povChar);
+                if (charData != null && !string.IsNullOrWhiteSpace(charData.NarrationVoice))
+                    narrationVoice = $"\n\nNARRATION VOICE ({charData.Name}):\n{charData.NarrationVoice}" +
+                        (charData.UsesFacets ? "" : "\nDo NOT use facet tags like [WOUND], [IDEAL], etc. This character does not use them.");
+            }
+
+            var direction = string.IsNullOrWhiteSpace(_storyText)
+                ? $"Begin this new chapter. Continue from where the previous chapter left off.{narrationVoice}"
+                : $"continue{narrationVoice}";
+
+            var text = await Starter.ContinueAsync(
+                paragraphs, direction, null, null, _project.Characters);
+
+            if (string.IsNullOrWhiteSpace(_storyText))
+                await SetEditorText(text);
+            else
+                await AppendEditorText(text);
+            UpdateWordCount();
+            Save();
+            _ = PostGenerationHook();
+            await FocusEditorEnd();
         }
-    }
-
-    private async Task ContextRewrite()
-    {
-        _showContextMenu = false;
-        await RewriteSelection();
-    }
-
-    private async Task ContextNarrate()
-    {
-        _showContextMenu = false;
-        await SmartNarrate();
-    }
-
-    private async Task ContextContinue()
-    {
-        _showContextMenu = false;
-        await ContinueStory();
+        catch (Exception ex)
+        {
+            _error = ex.Message;
+        }
+        finally
+        {
+            _commandBusy = false;
+            _statusMessage = "";
+        }
     }
 
     // ── Text changes ──
@@ -1198,7 +1381,6 @@
         _dirty = true;
         _saved = false;
 
-        // Debounce: save 2 seconds after last keystroke
         _saveTimer?.Dispose();
         _saveTimer = new System.Threading.Timer(_ =>
         {
@@ -1217,7 +1399,6 @@
 
     private void Save()
     {
-        SyncCharacters();
         SyncChapter();
         _project.SyncBlocksFromChapters();
         Repo.SaveProject(_project);
@@ -1247,28 +1428,36 @@
 
     // ── Chapter management ──
 
-    private void SwitchChapter(int number)
+    private async Task SwitchChapter(int number)
     {
+        // Sync current chapter — pull from rich editor if active
+        if (_viewMode == "rich" && _richEditorInitialized)
+            _storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.getPlainText", "story-surface");
         SyncChapter();
         Save();
+
         _activeChapter = number;
         _storyText = CurrentChapter?.Text ?? "";
         UpdateWordCount();
+
+        // Re-init the editor with the new chapter content
+        if (_viewMode == "rich")
+        {
+            _richEditorInitialized = false;
+            StateHasChanged();
+            await Task.Delay(50);
+            await InitRichEditor();
+        }
     }
 
     private void InsertChapterBefore()
     {
         SyncChapter();
-
-        // Shift all chapter numbers up by 1 from current position
         var insertAt = _activeChapter;
         foreach (var ch in _project.Chapters.Where(c => c.Number >= insertAt).OrderByDescending(c => c.Number))
             ch.Number++;
-
-        // Insert new chapter at the current position
         var newChapter = new StoryChapter { Number = insertAt, Title = insertAt == 1 ? "Prologue" : $"Chapter {insertAt}" };
         _project.Chapters.Add(newChapter);
-
         _activeChapter = insertAt;
         _storyText = "";
         UpdateWordCount();
@@ -1290,10 +1479,9 @@
 
         try
         {
-            // Save current chapter
             SyncChapter();
 
-            // Auto-generate synopsis + beats of the current chapter if missing
+            // Auto-generate synopsis + beats for current chapter if missing
             var currentCh = CurrentChapter;
             if (currentCh != null && string.IsNullOrWhiteSpace(currentCh.Synopsis) && !string.IsNullOrWhiteSpace(currentCh.Text))
             {
@@ -1316,7 +1504,6 @@
                 currentCh.Beats = (await Llm.GenerateAsync(beatsSystem, currentCh.Text, 0.2, 1024)).Trim();
             }
 
-            // Create the new chapter
             var nextNum = _project.Chapters.Max(c => c.Number) + 1;
             var perspective = mode == "perspective" ? _newChapterPerspective : "";
             var title = mode == "perspective"
@@ -1327,11 +1514,9 @@
             _project.Chapters.Add(newChapter);
             Save();
 
-            // Switch to the new chapter
             _activeChapter = nextNum;
             _storyText = "";
             UpdateWordCount();
-
             _showNewChapterDialog = false;
             _showPerspectiveInput = false;
         }
@@ -1355,10 +1540,7 @@
         }
     }
 
-    private void ShowSynopsisModal()
-    {
-        _showSynopsisModal = true;
-    }
+    private void ShowSynopsisModal() => _showSynopsisModal = true;
 
     private async Task GenerateSynopsis()
     {
@@ -1374,7 +1556,6 @@
                 ? ""
                 : $"PREVIOUS CHAPTERS CONTEXT:\n{priorContext}\n\n";
 
-            // Generate chapter synopsis
             var synSystem = """
                 You are a story editor creating a tight, factual synopsis of a chapter.
                 Capture ALL key events, character actions, revelations, emotional beats,
@@ -1384,7 +1565,6 @@
             var synopsis = await Llm.GenerateAsync(synSystem,
                 $"{contextLine}CHAPTER TEXT:\n{_storyText}", 0.2, 2048);
 
-            // Generate key beats (bullet points)
             _statusMessage = "Extracting key beats...";
             StateHasChanged();
             var beatsSystem = """
@@ -1418,30 +1598,20 @@
                 var storySystem = """
                     Synthesize these chapter synopses into ONE story-level overview.
                     2-3 paragraphs covering: premise, major events so far, current state
-                    of the main characters, and unresolved threads. This is the 30,000-foot
-                    view — someone reading this should understand the whole story without
-                    reading any chapters.
+                    of the main characters, and unresolved threads.
                     """;
                 _project.StorySynopsis = (await Llm.GenerateAsync(storySystem, allSynopses, 0.2, 2048)).Trim();
 
                 var arcSystem = """
                     Based on these chapter synopses, describe the plot arc so far in 3-5 bullet points.
                     Format: "- [turning point or major shift]"
-                    Focus on the trajectory: where did it start, what changed, where is it heading?
                     """;
                 _project.PlotArc = (await Llm.GenerateAsync(arcSystem, allSynopses, 0.2, 1024)).Trim();
                 Save();
             }
         }
-        catch (Exception ex)
-        {
-            _error = $"Synopsis failed: {ex.Message}";
-        }
-        finally
-        {
-            _synopsizing = false;
-            _statusMessage = "";
-        }
+        catch (Exception ex) { _error = $"Synopsis failed: {ex.Message}"; }
+        finally { _synopsizing = false; _statusMessage = ""; }
     }
 
     private void ShowOutline()
@@ -1460,7 +1630,6 @@
 
         try
         {
-            // Feed ALL chapter text into the outline generator
             var chapterSummaries = new List<string>();
             foreach (var ch in _project.Chapters.OrderBy(c => c.Number))
             {
@@ -1469,53 +1638,22 @@
                 chapterSummaries.Add($"=== CHAPTER {ch.Number}: {ch.Title}{perspective} ===\n{textPreview}");
             }
 
-            var allText = string.Join("\n\n", chapterSummaries);
-
             var system = """
                 You are a story editor creating a structured outline of a cyberpunk novel.
-                Read ALL chapters and produce a chapter-by-chapter outline that shows:
+                For each chapter: number, title, POV, 3-5 key events, characters, locations, unresolved threads.
 
-                For each chapter:
-                - Chapter number and title
-                - POV character (if applicable)
-                - 3-5 bullet points of key events IN ORDER
-                - Characters who appear
-                - Locations used
-                - Unresolved threads left hanging
-
-                After all chapters, add:
-                CONTINUITY CHECK:
-                - Flag any contradictions between chapters (character in two places, timeline issues, etc.)
-                - Flag any dropped threads (something set up in an earlier chapter that's never addressed)
-                - Flag any character voice inconsistencies
-
-                STORY ARC STATUS:
-                - Where is the story right now in its arc?
-                - What needs to happen next?
-                - What threads are ready to be resolved?
-
-                Be specific. Quote text when flagging issues. This is a working document, not praise.
+                After all chapters:
+                CONTINUITY CHECK: Flag contradictions, dropped threads, voice inconsistencies. Quote text.
+                STORY ARC STATUS: Where is the story now? What needs to happen? What threads are ready?
+                Be specific. This is a working document, not praise.
                 """;
 
-            _outlineText = await Llm.GenerateAsync(system, allText, 0.2, 8192);
+            _outlineText = await Llm.GenerateAsync(system, string.Join("\n\n", chapterSummaries), 0.2, 8192);
             _project.Outline = _outlineText;
             Save();
         }
-        catch (Exception ex)
-        {
-            _outlineText = $"Outline failed: {ex.Message}";
-        }
-        finally
-        {
-            _outlining = false;
-        }
-    }
-
-    private void SyncCharacters()
-    {
-        _project.Characters = _charactersInput
-            .Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries)
-            .ToList();
+        catch (Exception ex) { _outlineText = $"Outline failed: {ex.Message}"; }
+        finally { _outlining = false; }
     }
 
     // ── Project management ──
@@ -1523,15 +1661,12 @@
     private void LoadProject(string id)
     {
         if (!string.IsNullOrWhiteSpace(_storyText)) Save();
-
         var loaded = Repo.LoadProject(id);
         if (loaded == null) return;
-
         _project = loaded;
         _project.EnsureChapters();
         _activeChapter = _project.Chapters.First().Number;
         _storyText = CurrentChapter?.Text ?? "";
-        _charactersInput = string.Join(", ", _project.Characters);
         _error = null;
         UpdateWordCount();
         Nav.NavigateTo($"/write/{id}", replace: true);
@@ -1558,314 +1693,14 @@
     private void NewStory()
     {
         if (!string.IsNullOrWhiteSpace(_storyText)) Save();
-
         _project = new StoryProject();
         _project.EnsureChapters();
         _activeChapter = 1;
         _storyText = "";
-        _charactersInput = "";
         _error = null;
         _saved = false;
         _wordCount = 0;
         Nav.NavigateTo("/write", replace: true);
-    }
-
-    // ── AI Assist ──
-
-    private async Task OpenAssist()
-    {
-        _assistPreview = "";
-        _assistPrompt = "";
-        _assistTitle = null;
-        _showAssist = true;
-
-        // Capture cursor position for "insert at cursor" mode
-        try
-        {
-            _cursorPosition = await JS.InvokeAsync<int>("writeInterop.getCursorPosition", "story-surface");
-        }
-        catch { _cursorPosition = _storyText.Length; }
-    }
-
-    private void CloseAssist()
-    {
-        _showAssist = false;
-        _assistPreview = "";
-    }
-
-    private void AssistDiscard()
-    {
-        _assistPreview = "";
-        _assistTitle = null;
-    }
-
-    private async Task AssistGenerate()
-    {
-        if (string.IsNullOrWhiteSpace(_assistPrompt)) return;
-        _assistGenerating = true;
-        _assistPreview = "";
-        _error = null;
-        SyncCharacters();
-        StateHasChanged();
-
-        try
-        {
-            if (!_hasExistingText)
-            {
-                _statusMessage = "Writing the opening...";
-                StateHasChanged();
-
-                var request = new StoryStarterRequest
-                {
-                    Premise = _assistPrompt,
-                    Mood = string.IsNullOrEmpty(_project.Mood) ? null : _project.Mood,
-                    Location = string.IsNullOrEmpty(_project.Location) ? null : _project.Location,
-                    Characters = _project.Characters,
-                };
-
-                var opening = await Starter.GenerateOpeningAsync(request);
-                _assistPreview = opening.Text;
-                _assistTitle = opening.Title;
-            }
-            else
-            {
-                _statusMessage = "Continuing the story...";
-                StateHasChanged();
-
-                var paragraphs = _storyText
-                    .Split(["\n\n", "\r\n\r\n"], StringSplitOptions.RemoveEmptyEntries)
-                    .Select(p => p.Trim()).Where(p => p.Length > 0).ToList();
-
-                var text = await Starter.ContinueAsync(
-                    paragraphs, _assistPrompt,
-                    string.IsNullOrEmpty(_project.Mood) ? null : _project.Mood,
-                    string.IsNullOrEmpty(_project.Location) ? null : _project.Location,
-                    _project.Characters);
-
-                _assistPreview = text;
-            }
-        }
-        catch (Exception ex)
-        {
-            _error = ex.Message;
-        }
-        finally
-        {
-            _assistGenerating = false;
-            _statusMessage = "";
-        }
-    }
-
-    private async Task AssistSurprise()
-    {
-        _assistGenerating = true;
-        _assistPreview = "";
-        _statusMessage = "Rolling dice against the canon...";
-        StateHasChanged();
-
-        try
-        {
-            var opening = await Starter.GenerateRandomAsync();
-            _assistPreview = opening.Text;
-            _assistTitle = opening.Title;
-        }
-        catch (Exception ex)
-        {
-            _error = ex.Message;
-        }
-        finally
-        {
-            _assistGenerating = false;
-            _statusMessage = "";
-        }
-    }
-
-    private async Task AssistInsert()
-    {
-        if (string.IsNullOrEmpty(_assistPreview)) return;
-
-        // Set title if this is a new story
-        if (_assistTitle != null && _project.Title is "Untitled" or "")
-            _project.Title = _assistTitle;
-
-        if (_assistMode == "insert" && _cursorPosition < _storyText.Length)
-        {
-            // Insert at cursor position
-            var separator = _cursorPosition > 0 && _storyText[_cursorPosition - 1] != '\n' ? "\n\n" : "";
-            var newValue = await JS.InvokeAsync<string>("writeInterop.insertText",
-                "story-surface", _cursorPosition, separator + _assistPreview);
-            _storyText = newValue;
-        }
-        else
-        {
-            // Append
-            if (!string.IsNullOrWhiteSpace(_storyText))
-                _storyText += "\n\n";
-            _storyText += _assistPreview;
-            await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", _storyText);
-        }
-
-        UpdateWordCount();
-        _showAssist = false;
-        _assistPreview = "";
-        _assistTitle = null;
-        Save();
-        _ = RunExtractionAsync();
-
-        await JS.InvokeVoidAsync("writeInterop.focusEnd", "story-surface");
-    }
-
-    private async Task HandleAssistKeyDown(KeyboardEventArgs e)
-    {
-        if (e is { Key: "Enter", CtrlKey: true })
-            await AssistGenerate();
-    }
-
-    // ── Direct Continue (no modal) ──
-
-    private async Task ContinueStory()
-    {
-        if (_generating) return;
-
-        // Need either text in this chapter or prior chapters to continue from
-        var priorContext = _project.GetPriorContext(_activeChapter);
-        if (string.IsNullOrWhiteSpace(_storyText) && string.IsNullOrWhiteSpace(priorContext))
-        {
-            _error = "Nothing to continue from — write something or use AI Assist to start.";
-            return;
-        }
-
-        _assistGenerating = true;
-        _error = null;
-        _statusMessage = "Continuing the story...";
-        SyncCharacters();
-        StateHasChanged();
-
-        try
-        {
-            var paragraphs = new List<string>();
-            if (!string.IsNullOrWhiteSpace(priorContext))
-                paragraphs.Add($"[PRIOR CHAPTERS SUMMARY]\n{priorContext}\n[CURRENT CHAPTER]");
-
-            if (!string.IsNullOrWhiteSpace(_storyText))
-            {
-                paragraphs.AddRange(_storyText
-                    .Split(["\n\n", "\r\n\r\n"], StringSplitOptions.RemoveEmptyEntries)
-                    .Select(p => p.Trim()).Where(p => p.Length > 0));
-            }
-
-            // Build direction with POV narration voice
-            var povChar = CurrentChapter?.Perspective;
-            var narrationVoice = "";
-            if (!string.IsNullOrWhiteSpace(povChar))
-            {
-                var charData = CharRepo.GetByName(povChar);
-                if (charData != null && !string.IsNullOrWhiteSpace(charData.NarrationVoice))
-                    narrationVoice = $"\n\nNARRATION VOICE ({charData.Name}):\n{charData.NarrationVoice}" +
-                        (charData.UsesFacets ? "" : "\nDo NOT use facet tags like [WOUND], [IDEAL], etc. This character does not use them.");
-            }
-
-            var direction = string.IsNullOrWhiteSpace(_storyText)
-                ? $"Begin this new chapter. Continue from where the previous chapter left off.{narrationVoice}"
-                : $"continue{narrationVoice}";
-
-            var text = await Starter.ContinueAsync(
-                paragraphs, direction,
-                string.IsNullOrEmpty(_project.Mood) ? null : _project.Mood,
-                string.IsNullOrEmpty(_project.Location) ? null : _project.Location,
-                _project.Characters);
-
-            _storyText = string.IsNullOrWhiteSpace(_storyText) ? text : _storyText + "\n\n" + text;
-            await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", _storyText);
-            UpdateWordCount();
-            Save();
-            _ = RunExtractionAsync();
-            await JS.InvokeVoidAsync("writeInterop.focusEnd", "story-surface");
-        }
-        catch (Exception ex)
-        {
-            _error = ex.Message;
-        }
-        finally
-        {
-            _assistGenerating = false;
-            _statusMessage = "";
-        }
-    }
-
-    // ── Rewrite Selection ──
-
-    private async Task RewriteSelection()
-    {
-        try
-        {
-            var sel = await JS.InvokeAsync<SelectionInfo>("writeInterop.getSelection", "story-surface");
-            if (sel == null || string.IsNullOrWhiteSpace(sel.Text))
-            {
-                _error = "Select some text first, then click Rewrite Selection.";
-                return;
-            }
-
-            _rewriteOriginal = sel.Text;
-            _rewriteStart = sel.Start;
-            _rewriteEnd = sel.End;
-            _rewriteDirection = "";
-            _rewritePreview = "";
-            _showRewrite = true;
-            _error = null;
-        }
-        catch (Exception ex)
-        {
-            _error = $"Could not read selection: {ex.Message}";
-        }
-    }
-
-    private void CloseRewrite()
-    {
-        _showRewrite = false;
-        _rewritePreview = "";
-    }
-
-    private async Task DoRewrite()
-    {
-        _rewriteGenerating = true;
-        _rewritePreview = "";
-        SyncCharacters();
-        StateHasChanged();
-
-        try
-        {
-            var result = await Starter.RewriteAsync(
-                _rewriteOriginal,
-                string.IsNullOrWhiteSpace(_rewriteDirection) ? null : _rewriteDirection,
-                string.IsNullOrEmpty(_project.Mood) ? null : _project.Mood,
-                string.IsNullOrEmpty(_project.Location) ? null : _project.Location,
-                _project.Characters);
-
-            _rewritePreview = result.Trim();
-        }
-        catch (Exception ex)
-        {
-            _error = ex.Message;
-        }
-        finally
-        {
-            _rewriteGenerating = false;
-        }
-    }
-
-    private async Task ApplyRewrite()
-    {
-        if (string.IsNullOrEmpty(_rewritePreview)) return;
-
-        var newValue = await JS.InvokeAsync<string>("writeInterop.replaceRange",
-            "story-surface", _rewriteStart, _rewriteEnd, _rewritePreview);
-        _storyText = newValue;
-
-        UpdateWordCount();
-        _showRewrite = false;
-        _rewritePreview = "";
-        Save();
     }
 
     // ── Audio ──
@@ -1874,36 +1709,18 @@
     {
         if (_narrating || string.IsNullOrWhiteSpace(_storyText)) return;
 
-        // Check if there's a selection first
         try
         {
             var sel = await JS.InvokeAsync<SelectionInfo>("writeInterop.getSelection", "story-surface");
             if (sel != null && !string.IsNullOrWhiteSpace(sel.Text))
             {
-                // Has selection — narrate it directly, no confirmation needed
                 await NarrateText(sel.Text);
                 return;
             }
         }
         catch { }
 
-        // No selection — ask for confirmation before narrating all
-        _confirmNarrateAll = true;
-    }
-
-    private async Task DoNarrateAll()
-    {
-        _confirmNarrateAll = false;
-        if (!string.IsNullOrWhiteSpace(_storyText))
-            await NarrateText(_storyText);
-    }
-
-    private async Task ConfirmProfessionalNarrate()
-    {
-        _confirmProfessional = false;
-        _useProfessionalTts = true;
-        await SmartNarrate();
-        _useProfessionalTts = false;
+        await NarrateText(_storyText);
     }
 
     private async Task NarrateText(string text)
@@ -1916,32 +1733,20 @@
 
         try
         {
+            _statusMessage = "Synthesizing narration...";
+            StateHasChanged();
+
             byte[] audio;
-            if (_useProfessionalTts)
-            {
-                _statusMessage = "Synthesizing with Oliver Silk (ElevenLabs)...";
-                StateHasChanged();
+            if (await TtsSvc.IsConfiguredAsync())
                 audio = await TtsSvc.SynthesizeAsync(text);
-            }
             else
-            {
-                _statusMessage = "Draft narration (Windows TTS)...";
-                StateHasChanged();
                 audio = await DraftTts.SynthesizeAsync(text);
-            }
 
             if (_audioPlayer != null)
                 await _audioPlayer.LoadAudioAsync(audio);
         }
-        catch (Exception ex)
-        {
-            _audioPlayer?.SetError(ex.Message);
-        }
-        finally
-        {
-            _narrating = false;
-            _statusMessage = "";
-        }
+        catch (Exception ex) { _audioPlayer?.SetError(ex.Message); }
+        finally { _narrating = false; _statusMessage = ""; }
     }
 
     // ── Synchronize ──
@@ -1953,52 +1758,35 @@
         _showSync = true;
         _syncIssues = "";
         _syncPreview = "";
-        _syncStatus = "Analyzing story for issues...";
-        SyncCharacters();
+        _syncStatus = "Validating against world graph...";
         StateHasChanged();
 
         try
         {
-            var characterContext = string.Join("\n---\n",
-                _project.Characters.Select(name => CanonDb.GetCharacterContext(name)).Where(c => c.Length > 0));
-
+            var session = new NarrativeSessionContext(Graph);
+            session.ScanText(_storyText);
+            var worldContext = session.BuildContext();
             var rulesContext = CanonDb.GetLiteraryRulesPrompt();
 
             var system = $"""
-                You are a story editor analyzing cyberpunk fiction set in Meridian 88.
-                Find every issue that needs fixing.
+                You are a story editor validating cyberpunk fiction against its world database.
+                The WORLD CONTEXT below is canonical truth from the world graph.
 
-                KNOWN CHARACTERS:
-                {characterContext}
+                WORLD CONTEXT:
+                {worldContext}
 
                 LITERARY RULES:
                 {rulesContext}
 
-                List EVERY issue as a numbered item, one per line. Be specific — quote the
-                problematic text and explain what's wrong. Categories:
-                - CANON: contradicts established character/world details
-                - PLOT: logic gap, unexplained jump, dangling thread
-                - VOICE: character doesn't sound like themselves
-                - PACING: section drags or rushes
-                - PROSE: clumsy phrasing, cliché, weak imagery
-
-                Format each line as:
-                1. [CATEGORY] "quoted problem text" — explanation of what to fix
-
-                If the story is clean, say "No issues found." Do NOT invent problems.
+                List EVERY issue as a numbered item. Categories: CANON, PLOT, VOICE, PACING, PROSE.
+                Format: 1. [CATEGORY] "quoted problem" — what to fix
+                If clean, say "No issues found."
                 """;
 
             _syncIssues = await Llm.GenerateAsync(system, _storyText, 0.3, 4096);
         }
-        catch (Exception ex)
-        {
-            _syncIssues = $"Analysis failed: {ex.Message}";
-        }
-        finally
-        {
-            _syncing = false;
-            _syncStatus = "";
-        }
+        catch (Exception ex) { _syncIssues = $"Analysis failed: {ex.Message}"; }
+        finally { _syncing = false; _syncStatus = ""; }
     }
 
     private async Task RunSyncFixes()
@@ -2013,38 +1801,21 @@
         {
             var system = """
                 You are a literary editor fixing specific issues in cyberpunk fiction.
-                You will receive the original text and a numbered list of issues to fix.
-                Apply EVERY fix in the list. Do NOT change anything that isn't listed as an issue.
-                Preserve the original voice, structure, and meaning — only fix what's broken.
-                Return the COMPLETE corrected text. No commentary, no issue list, just the fixed story.
+                Apply EVERY fix in the list. Do NOT change anything not listed.
+                Preserve voice, structure, and meaning. Return the COMPLETE corrected text only.
                 """;
 
-            var user = $"""
-                ISSUES TO FIX:
-                {_syncIssues}
-
-                ORIGINAL TEXT:
-                {_storyText}
-                """;
-
-            _syncPreview = await Llm.GenerateAsync(system, user, 0.3, 8192);
+            _syncPreview = await Llm.GenerateAsync(system,
+                $"ISSUES TO FIX:\n{_syncIssues}\n\nORIGINAL TEXT:\n{_storyText}", 0.3, 8192);
         }
-        catch (Exception ex)
-        {
-            _error = $"Synchronize failed: {ex.Message}";
-        }
-        finally
-        {
-            _syncing = false;
-            _syncStatus = "";
-        }
+        catch (Exception ex) { _error = $"Synchronize failed: {ex.Message}"; }
+        finally { _syncing = false; _syncStatus = ""; }
     }
 
     private async Task ApplySync()
     {
         if (string.IsNullOrEmpty(_syncPreview)) return;
-        _storyText = _syncPreview;
-        await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", _storyText);
+        await SetEditorText(_syncPreview);
         UpdateWordCount();
         Save();
         CloseSync();
@@ -2068,112 +1839,73 @@
 
         try
         {
-            var (entities, relationships) = await EntityExtract.ExtractAndMergeAsync(_storyText, _project.Id);
+            var storyPoint = $"chapter:{_activeChapter}";
+            var (entities, relationships) = await EntityExtract.ExtractAndMergeAsync(
+                _storyText, _project.Id, storyPoint);
             _lastExtractedText = _storyText;
 
-            if (entities > 0 || relationships > 0)
-                _graphStatus = $"Graph updated: +{entities} entities, +{relationships} relationships";
-            else
-                _graphStatus = "Graph up to date";
+            // Auto-detect characters from extraction and update chapter/project
+            await UpdateCharactersFromGraph();
+
+            _graphStatus = entities > 0 || relationships > 0
+                ? $"Graph updated: +{entities} entities, +{relationships} relationships"
+                : "Graph up to date";
         }
-        catch (Exception ex)
-        {
-            _graphStatus = $"Extraction failed: {ex.Message}";
-        }
+        catch (Exception ex) { _graphStatus = $"Extraction failed: {ex.Message}"; }
         finally
         {
             _extracting = false;
             await InvokeAsync(StateHasChanged);
-
-            // Clear status after 5 seconds
             _ = Task.Delay(5000).ContinueWith(_ =>
                 InvokeAsync(() => { _graphStatus = null; StateHasChanged(); }));
         }
     }
 
-    // ── Cleanup ──
-
-    public void Dispose()
+    /// <summary>
+    /// After entity extraction, scan the current chapter text against the graph
+    /// to auto-detect which characters and locations appear. Updates both the
+    /// chapter-level and project-level character lists.
+    /// </summary>
+    private Task UpdateCharactersFromGraph()
     {
-        // Final save if dirty
-        if (_dirty)
+        var ch = CurrentChapter;
+        if (ch == null || string.IsNullOrWhiteSpace(_storyText)) return Task.CompletedTask;
+
+        var session = new NarrativeSessionContext(Graph);
+        session.ScanText(_storyText);
+        var snapshot = session.GetSnapshot();
+
+        // Update chapter characters/locations from what was detected
+        var characters = snapshot.PrimaryEntities
+            .Concat(snapshot.SecondaryEntities)
+            .Where(e => e.NodeType == "character")
+            .Select(e => e.Name)
+            .Distinct()
+            .ToList();
+
+        var locations = snapshot.PrimaryEntities
+            .Concat(snapshot.SecondaryEntities)
+            .Where(e => e.NodeType == "place")
+            .Select(e => e.Name)
+            .Distinct()
+            .ToList();
+
+        // Only keep characters that are actually mentioned in the text (not just neighbors)
+        var textLower = _storyText.ToLowerInvariant();
+        ch.Characters = characters.Where(name => textLower.Contains(name.ToLowerInvariant())).ToList();
+        ch.Locations = locations.Where(name => textLower.Contains(name.ToLowerInvariant())).ToList();
+
+        // Update project-level character list with any new discoveries
+        foreach (var name in ch.Characters)
         {
-            SyncCharacters();
-            SyncChapter();
-            _project.SyncBlocksFromChapters();
-            Repo.SaveProject(_project);
+            if (!_project.Characters.Contains(name, StringComparer.OrdinalIgnoreCase))
+                _project.Characters.Add(name);
         }
-        _saveTimer?.Dispose();
-        try { JS.InvokeVoidAsync("writeInterop.unwatchRightClick", "story-surface"); } catch { }
-        _dotNetRef?.Dispose();
+
+        return Task.CompletedTask;
     }
 
-    // ── JS Interop types ──
-
-    private record SelectionInfo(int Start, int End, string Text);
-
-    // ── Ask ──
-
-    private async Task AskQuestion()
-    {
-        if (string.IsNullOrWhiteSpace(_askQuestion) || _asking) return;
-        _asking = true;
-        _askAnswer = "";
-        StateHasChanged();
-
-        try
-        {
-            // Build a knowledge base from all available data
-            var chapterTexts = string.Join("\n\n",
-                _project.Chapters.OrderBy(c => c.Number)
-                    .Where(c => !string.IsNullOrWhiteSpace(c.Text))
-                    .Select(c => $"=== Chapter {c.Number}: {c.Title} ===\n{c.Text}"));
-
-            var characterProfiles = string.Join("\n---\n",
-                CharRepo.GetAll().Take(20).Select(c =>
-                    $"{c.Name} ({c.Role}): {c.Description?.Substring(0, Math.Min(c.Description?.Length ?? 0, 300))}"));
-
-            var synopses = string.Join("\n",
-                _project.Chapters.Where(c => !string.IsNullOrWhiteSpace(c.Synopsis))
-                    .OrderBy(c => c.Number)
-                    .Select(c => $"Ch{c.Number} ({c.Title}): {c.Synopsis}"));
-
-            var system = $"""
-                You are a story assistant for a cyberpunk novel set in Meridian 88.
-                Answer questions using ONLY the information provided below. Do not invent
-                facts. If the answer is not in the provided text, say so.
-
-                STORY TEXT:
-                {chapterTexts}
-
-                CHAPTER SYNOPSES:
-                {synopses}
-
-                KNOWN CHARACTERS:
-                {characterProfiles}
-
-                STORY OUTLINE:
-                {_project.Outline}
-
-                Answer directly and concisely. Quote the text when relevant.
-                """;
-
-            _askAnswer = await Llm.GenerateAsync(system, _askQuestion, 0.3, 2048);
-        }
-        catch (Exception ex)
-        {
-            _askAnswer = $"Error: {ex.Message}";
-        }
-        finally
-        {
-            _asking = false;
-        }
-    }
-
-    private async Task HandleAskKeyDown(KeyboardEventArgs e)
-    {
-        if (e.Key == "Enter") await AskQuestion();
-    }
+    // ── GhostWriter ──
 
     private bool HasGhostWriterSuggestions(int chapterNumber)
     {
@@ -2217,34 +1949,25 @@
                 Preserve voice, structure, and meaning. Return the COMPLETE corrected text only.
                 """;
 
-            var user = $"ISSUES TO FIX:\n{_ghostIssues}\n\nORIGINAL TEXT:\n{chapter.Text}";
-            _ghostPreview = await Llm.GenerateAsync(system, user, 0.3, 8192);
+            _ghostPreview = await Llm.GenerateAsync(system,
+                $"ISSUES TO FIX:\n{_ghostIssues}\n\nORIGINAL TEXT:\n{chapter.Text}", 0.3, 8192);
         }
-        catch (Exception ex)
-        {
-            _error = $"GhostWriter fix failed: {ex.Message}";
-        }
-        finally
-        {
-            _ghostApplying = false;
-        }
+        catch (Exception ex) { _error = $"GhostWriter fix failed: {ex.Message}"; }
+        finally { _ghostApplying = false; }
     }
 
     private async Task ApplyGhostFixes()
     {
         if (string.IsNullOrEmpty(_ghostPreview)) return;
-
         var chapter = _project.Chapters.FirstOrDefault(c => c.Number == _ghostChapterNum);
         if (chapter == null) return;
 
         chapter.Text = _ghostPreview;
         chapter.Modified = DateTime.UtcNow;
 
-        // If we're viewing this chapter, update the textarea too
         if (_ghostChapterNum == _activeChapter)
         {
-            _storyText = _ghostPreview;
-            await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", _storyText);
+            await SetEditorText(_ghostPreview);
             UpdateWordCount();
         }
 
@@ -2254,12 +1977,27 @@
 
     private void DismissGhost()
     {
-        // Delete the suggestion file
         var filepath = Path.Combine(Paths.CanonRoot, "ghostwriter", $"{_project.Id}_ch{_ghostChapterNum}.json");
         if (File.Exists(filepath)) File.Delete(filepath);
-
         _showGhostWriter = false;
         _ghostIssues = "";
         _ghostPreview = "";
     }
+
+    // ── Cleanup ──
+
+    public void Dispose()
+    {
+        if (_dirty)
+        {
+            SyncChapter();
+            _project.SyncBlocksFromChapters();
+            Repo.SaveProject(_project);
+        }
+        _saveTimer?.Dispose();
+        _editorRef?.Dispose();
+        _miniGraphRef?.Dispose();
+    }
+
+    private record SelectionInfo(int Start, int End, string Text);
 }

@@ -65,7 +65,17 @@ class Program
         Console.WriteLine($"Scan interval: {settings.GhostWriterScanIntervalSeconds}s");
         Console.WriteLine($"Rate limit delay: {settings.GhostWriterRateLimitDelayMs}ms");
         Console.WriteLine($"Rescan cooldown: {settings.GhostWriterRescanMinutes}min");
-        Console.WriteLine($"Press Ctrl+C to stop.");
+        Console.ResetColor();
+        Console.WriteLine();
+
+        // Start paused — wait for user to activate
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine("PAUSED — Press [Enter] to start scanning, Ctrl+C to quit.");
+        Console.ResetColor();
+        Console.ReadLine();
+
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("Activated. Scanning...");
         Console.ResetColor();
         Console.WriteLine();
 
