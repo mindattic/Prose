@@ -86,12 +86,15 @@ public class SettingsService
     public string OpenRouterApiKey { get => _data.OpenRouterApiKey; set { _data.OpenRouterApiKey = value; Save(); } }
     public string FireworksApiKey { get => _data.FireworksApiKey; set { _data.FireworksApiKey = value; Save(); } }
     public string CohereApiKey { get => _data.CohereApiKey; set { _data.CohereApiKey = value; Save(); } }
-    public bool GhostWriterEnabled { get => _data.GhostWriterEnabled; set { _data.GhostWriterEnabled = value; Save(); } }
-    public int GhostWriterScanIntervalSeconds { get => _data.GhostWriterScanIntervalSeconds; set { _data.GhostWriterScanIntervalSeconds = value; Save(); } }
-    public int GhostWriterRateLimitDelayMs { get => _data.GhostWriterRateLimitDelayMs; set { _data.GhostWriterRateLimitDelayMs = value; Save(); } }
-    public int GhostWriterMaxVoters { get => _data.GhostWriterMaxVoters; set { _data.GhostWriterMaxVoters = value; Save(); } }
-    public int GhostWriterRescanMinutes { get => _data.GhostWriterRescanMinutes; set { _data.GhostWriterRescanMinutes = value; Save(); } }
-    public double GhostWriterMajorityThreshold { get => _data.GhostWriterMajorityThreshold; set { _data.GhostWriterMajorityThreshold = value; Save(); } }
+    public string GeminiModel { get => _data.GeminiModel; set { _data.GeminiModel = value; Save(); } }
+    public string DeepSeekModel { get => _data.DeepSeekModel; set { _data.DeepSeekModel = value; Save(); } }
+    public string MistralModel { get => _data.MistralModel; set { _data.MistralModel = value; Save(); } }
+    public string GrokModel { get => _data.GrokModel; set { _data.GrokModel = value; Save(); } }
+    public string GroqModel { get => _data.GroqModel; set { _data.GroqModel = value; Save(); } }
+    public string TogetherModel { get => _data.TogetherModel; set { _data.TogetherModel = value; Save(); } }
+    public string OpenRouterModel { get => _data.OpenRouterModel; set { _data.OpenRouterModel = value; Save(); } }
+    public string FireworksModel { get => _data.FireworksModel; set { _data.FireworksModel = value; Save(); } }
+    public string CohereModel { get => _data.CohereModel; set { _data.CohereModel = value; Save(); } }
 
     /// <summary>Reset non-secret settings to defaults. Preserves API keys and canon root.</summary>
     public void ResetToDefaults()
@@ -100,6 +103,9 @@ public class SettingsService
         {
             _data.ApiKey, _data.OpenAiApiKey, _data.ElevenLabsApiKey,
             _data.ElevenLabsVoiceId, _data.NarratorVoiceName, _data.CanonRootPath,
+            _data.GeminiApiKey, _data.DeepSeekApiKey, _data.MistralApiKey,
+            _data.GrokApiKey, _data.GroqApiKey, _data.TogetherApiKey,
+            _data.OpenRouterApiKey, _data.FireworksApiKey, _data.CohereApiKey,
         };
         _data = new SettingsData
         {
@@ -109,6 +115,15 @@ public class SettingsService
             ElevenLabsVoiceId = keys.ElevenLabsVoiceId,
             NarratorVoiceName = keys.NarratorVoiceName,
             CanonRootPath = keys.CanonRootPath,
+            GeminiApiKey = keys.GeminiApiKey,
+            DeepSeekApiKey = keys.DeepSeekApiKey,
+            MistralApiKey = keys.MistralApiKey,
+            GrokApiKey = keys.GrokApiKey,
+            GroqApiKey = keys.GroqApiKey,
+            TogetherApiKey = keys.TogetherApiKey,
+            OpenRouterApiKey = keys.OpenRouterApiKey,
+            FireworksApiKey = keys.FireworksApiKey,
+            CohereApiKey = keys.CohereApiKey,
         };
         Save();
     }
@@ -137,8 +152,8 @@ public class SettingsService
         public int MaxTokens { get; set; } = 4096;
         public string ElevenLabsApiKey { get; set; } = "";
         public string ElevenLabsVoiceId { get; set; } = "jfIS2w2yJi0grJZPyEsk";
-        public string NarratorVoiceName { get; set; } = "Oliver Silk";
-        public string TtsModel { get; set; } = "eleven_multilingual_v2";
+        public string NarratorVoiceName { get; set; } = "Oliver Silk - Deep Gravel Narrative";
+        public string TtsModel { get; set; } = "eleven_v3";
         public double TtsStability { get; set; } = 0.5;
         public double TtsSimilarityBoost { get; set; } = 0.75;
         public double TtsStyle { get; set; } = 0.0;
@@ -156,12 +171,15 @@ public class SettingsService
         public string OpenRouterApiKey { get; set; } = "";
         public string FireworksApiKey { get; set; } = "";
         public string CohereApiKey { get; set; } = "";
-        // GhostWriter settings
-        public bool GhostWriterEnabled { get; set; } = true;
-        public int GhostWriterScanIntervalSeconds { get; set; } = 120;
-        public int GhostWriterRateLimitDelayMs { get; set; } = 65000;
-        public int GhostWriterMaxVoters { get; set; } = 5;
-        public int GhostWriterRescanMinutes { get; set; } = 30;
-        public double GhostWriterMajorityThreshold { get; set; } = 0.67;
+        // Model selections per provider
+        public string GeminiModel { get; set; } = "gemini-2.5-flash";
+        public string DeepSeekModel { get; set; } = "deepseek-chat";
+        public string MistralModel { get; set; } = "mistral-large-latest";
+        public string GrokModel { get; set; } = "grok-3-mini";
+        public string GroqModel { get; set; } = "llama-3.3-70b-versatile";
+        public string TogetherModel { get; set; } = "meta-llama/Llama-3.3-70B-Instruct-Turbo";
+        public string OpenRouterModel { get; set; } = "anthropic/claude-sonnet-4";
+        public string FireworksModel { get; set; } = "accounts/fireworks/models/llama-v3p3-70b-instruct";
+        public string CohereModel { get; set; } = "command-r-plus";
     }
 }

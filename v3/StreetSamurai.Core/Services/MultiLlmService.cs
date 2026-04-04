@@ -107,7 +107,7 @@ public class MultiLlmService
         var voteText = string.Join("\n\n---\n\n",
             votes.Select(kv => $"[{kv.Key}]:\n{kv.Value}"));
 
-        var threshold = _settings.GhostWriterMajorityThreshold;
+        var threshold = 0.67;
         var thresholdPct = (int)(threshold * 100);
 
         var judgeSystem = $"""

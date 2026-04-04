@@ -71,8 +71,7 @@
     </div>
 </div>
 
-
-<div class="row g-3">
+<div class="row g-3 mt-2">
     @* ── Stories ────────────────────────────────────────── *@
     <div class="col-md-4">
         <div class="card bg-dark text-light border-secondary">
@@ -142,6 +141,13 @@
                         <span class="badge bg-danger rounded-pill">@count</span>
                     </div>
                 }
+                @if (_orphanCount > 0)
+                {
+                    <div class="d-flex justify-content-between py-1 mt-1">
+                        <small class="text-muted">Orphaned Nodes</small>
+                        <span class="badge bg-secondary rounded-pill">@_orphanCount</span>
+                    </div>
+                }
             </div>
         </div>
 
@@ -155,6 +161,7 @@
     private List<SearchResult> _searchResults = [];
     private List<StoryProject> _stories = [];
     private List<(WorldNode node, int count)> _topConnected = [];
+    private int _orphanCount;
 
     protected override async Task OnInitializedAsync()
     {
@@ -176,11 +183,14 @@
         // Top connected entities
         var allNodes = Graph.AllNodes();
         _topConnected = allNodes
+            .Where(n => !string.IsNullOrWhiteSpace(n.Id) && !string.IsNullOrWhiteSpace(n.Name))
             .Select(n => (node: n, count: Graph.GetAllEdges(n.Id).Count))
             .Where(x => x.count > 0)
             .OrderByDescending(x => x.count)
             .Take(6)
             .ToList();
+        _orphanCount = allNodes.Count(n => string.IsNullOrWhiteSpace(n.Id) || string.IsNullOrWhiteSpace(n.Name)
+            || Graph.GetAllEdges(n.Id).Count == 0);
     }
 
     private void DoSearch()

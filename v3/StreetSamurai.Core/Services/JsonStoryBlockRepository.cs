@@ -30,6 +30,7 @@ public class JsonStoryBlockRepository : IStoryBlockRepository
         return Directory.GetFiles(dir, "*.json")
             .Select(LoadFromFile)
             .Where(p => p != null)
+            .DistinctBy(p => p!.Id)
             .OrderByDescending(p => p!.Modified)
             .ToList()!;
     }
@@ -51,6 +52,15 @@ public class JsonStoryBlockRepository : IStoryBlockRepository
         project.Modified = DateTime.UtcNow;
         var path = Path.Combine(StoryDir, $"{project.Id}.json");
         File.WriteAllText(path, JsonSerializer.Serialize(project, JsonOpts));
+
+        // Clean up any legacy files with the same ID but different filename
+        foreach (var file in Directory.GetFiles(StoryDir, "*.json"))
+        {
+            if (string.Equals(file, path, StringComparison.OrdinalIgnoreCase)) continue;
+            var proj = LoadFromFile(file);
+            if (proj?.Id == project.Id)
+                File.Delete(file);
+        }
     }
 
     public void DeleteProject(string id)

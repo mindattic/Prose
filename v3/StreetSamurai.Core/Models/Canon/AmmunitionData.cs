@@ -3,24 +3,23 @@ using System.Text.Json.Serialization;
 namespace StreetSamurai.Core.Models.Canon;
 
 /// <summary>
-/// A weapon or weapon system in the Meridian 88 world.
-/// Links back to base technologies that enable it.
+/// An ammunition type in the Meridian 88 world.
+/// Cross-references compatible weapons by name.
 /// </summary>
-public class WeaponryData
+public class AmmunitionData
 {
     [JsonPropertyName("name")] public string Name { get; set; } = "";
-    [JsonPropertyName("type")] public string Type { get; set; } = "weapon";
+    [JsonPropertyName("type")] public string Type { get; set; } = "ammunition";
     [JsonPropertyName("aliases")] public List<string> Aliases { get; set; } = [];
     [JsonPropertyName("category")] public string Category { get; set; } = "";
+    [JsonPropertyName("caliber")] public string Caliber { get; set; } = "";
     [JsonPropertyName("description")] public string Description { get; set; } = "";
     [JsonPropertyName("manufacturer")] public string Manufacturer { get; set; } = "";
     [JsonPropertyName("tier_availability")] public string TierAvailability { get; set; } = "";
     [JsonPropertyName("legality")] public string Legality { get; set; } = "";
-    [JsonPropertyName("base_technologies")] public List<string> BaseTechnologies { get; set; } = [];
     [JsonPropertyName("specifications")] public string Specifications { get; set; } = "";
-    [JsonPropertyName("tactical_use")] public string TacticalUse { get; set; } = "";
+    [JsonPropertyName("compatible_weapons")] public List<string> CompatibleWeapons { get; set; } = [];
+    [JsonPropertyName("variants")] public List<string> Variants { get; set; } = [];
     [JsonPropertyName("cultural_context")] public string CulturalContext { get; set; } = "";
-    [JsonPropertyName("known_users")] public List<string> KnownUsers { get; set; } = [];
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
-    [JsonPropertyName("ammunition_type")] public List<string> AmmunitionType { get; set; } = [];
 }

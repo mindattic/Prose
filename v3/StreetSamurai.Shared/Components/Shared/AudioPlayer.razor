@@ -22,46 +22,46 @@
         }
 
         @* ── Controls row (centered) ───────────────── *@
-        <div class="d-flex align-items-center justify-content-center gap-3 py-1">
+        <div class="d-flex align-items-center justify-content-center gap-2 py-1">
             @* Read Selected / Read All *@
-            <button class="btn btn-sm btn-outline-info py-0 px-2" @onclick="OnReadSelected" disabled="@_loading" title="Narrate selected text" style="font-size: 0.75rem;">
+            <button class="btn btn-sm btn-outline-info px-2" @onclick="OnReadSelected" disabled="@(_loading || !HasSelection)" title="Narrate selected text (select 3+ words)" style="height: 32px; font-size: 0.75rem; line-height: 24px;">
                 <i class="bi bi-text-indent-left"></i> Selected
             </button>
-            <button class="btn btn-sm btn-outline-info py-0 px-2" @onclick="OnReadAll" disabled="@_loading" title="Narrate entire document" style="font-size: 0.75rem;">
+            <button class="btn btn-sm btn-outline-info px-2" @onclick="OnReadAll" disabled="@_loading" title="Narrate entire document" style="height: 32px; font-size: 0.75rem; line-height: 24px;">
                 <i class="bi bi-megaphone"></i> All
             </button>
 
             @* Rewind *@
-            <button class="btn btn-sm btn-outline-secondary py-0 px-1" @onclick="() => Seek(-10)" disabled="@(_audioUrl == null)" title="Back 10s">
+            <button class="btn btn-sm btn-outline-secondary" @onclick="() => Seek(-10)" disabled="@(_audioUrl == null)" title="Back 10s" style="width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center;">
                 <i class="bi bi-skip-backward-fill"></i>
             </button>
 
             @* Play / Pause *@
-            <button class="btn btn-sm @(_playing ? "btn-danger" : "btn-outline-danger") px-2" @onclick="TogglePlayback" disabled="@(_audioUrl == null)">
+            <button class="btn btn-sm @(_playing ? "btn-danger" : "btn-outline-danger")" @onclick="TogglePlayback" disabled="@(_audioUrl == null)" style="width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center;">
                 @if (_loading) { <span class="spinner-border spinner-border-sm"></span> }
                 else { <i class="bi @(_playing ? "bi-pause-fill" : "bi-play-fill")"></i> }
             </button>
 
             @* Stop *@
-            <button class="btn btn-sm btn-outline-secondary py-0 px-1" @onclick="Stop" disabled="@(_audioUrl == null)" title="Stop">
+            <button class="btn btn-sm btn-outline-secondary" @onclick="Stop" disabled="@(_audioUrl == null)" title="Stop" style="width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center;">
                 <i class="bi bi-stop-fill"></i>
             </button>
 
             @* Forward *@
-            <button class="btn btn-sm btn-outline-secondary py-0 px-1" @onclick="() => Seek(10)" disabled="@(_audioUrl == null)" title="Forward 10s">
+            <button class="btn btn-sm btn-outline-secondary" @onclick="() => Seek(10)" disabled="@(_audioUrl == null)" title="Forward 10s" style="width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center;">
                 <i class="bi bi-skip-forward-fill"></i>
             </button>
 
             @* Time *@
-            <small class="text-muted" style="font-variant-numeric: tabular-nums;">
+            <small class="text-muted" style="font-variant-numeric: tabular-nums; line-height: 32px;">
                 @FormatTime(_currentTime) / @FormatTime(_duration)
             </small>
 
             @* Save + Dismiss *@
-            <button class="btn btn-sm btn-outline-secondary py-0 px-1" @onclick="SaveAudio" disabled="@(_saving || _audioData == null)" title="Save">
+            <button class="btn btn-sm btn-outline-secondary" @onclick="SaveAudio" disabled="@(_saving || _audioData == null)" title="Save" style="width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center;">
                 <i class="bi @(_saving ? "bi-hourglass-split" : "bi-download")"></i>
             </button>
-            <button class="btn btn-sm btn-outline-secondary py-0 px-1" @onclick="Dismiss" title="Close">
+            <button class="btn btn-sm btn-outline-secondary" @onclick="Dismiss" title="Close" style="width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center;">
                 <i class="bi bi-x"></i>
             </button>
         </div>
@@ -82,6 +82,7 @@
     [Parameter] public EventCallback<string> OnInsertTag { get; set; }
     [Parameter] public EventCallback OnReadSelected { get; set; }
     [Parameter] public EventCallback OnReadAll { get; set; }
+    [Parameter] public bool HasSelection { get; set; }
     [Parameter] public bool ShowTagInserter { get; set; } = true;
     [Parameter] public string Engine { get; set; } = "elevenlabs";
     [Parameter] public EventCallback<string> EngineChanged { get; set; }
