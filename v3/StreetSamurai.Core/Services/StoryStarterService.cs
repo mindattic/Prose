@@ -11,6 +11,8 @@ public class StoryStarterService
     private readonly DatabaseService _canonDb;
     private readonly FacetService _facets;
     private readonly IPathProvider _paths;
+    private readonly SemanticIndexService _semanticIndex;
+    private readonly InferenceService _inference;
 
     // Seed premises for zero-input generation — drawn from the world's actual tensions
     private static readonly string[] SeedPremises =
@@ -32,7 +34,8 @@ public class StoryStarterService
 
     public StoryStarterService(
         ILlmService llm, WorldGraphService graph, LoreService canon,
-        DatabaseService canonDb, FacetService facets, IPathProvider paths)
+        DatabaseService canonDb, FacetService facets, IPathProvider paths,
+        SemanticIndexService semanticIndex, InferenceService inference)
     {
         _llm = llm;
         _graph = graph;
@@ -40,6 +43,8 @@ public class StoryStarterService
         _canonDb = canonDb;
         _facets = facets;
         _paths = paths;
+        _semanticIndex = semanticIndex;
+        _inference = inference;
     }
 
     /// <summary>
@@ -313,23 +318,22 @@ public class StoryStarterService
     /// </summary>
     public async Task<string> ContinueAsync(
         List<string> existingParagraphs, string prompt, string? mood, string? location,
-        List<string> characters, CancellationToken ct = default)
+        List<string> characters, string? storyConstraints = null,
+        string? knowledgeConstraints = null, string? eventContext = null,
+        string? outlineContext = null, CancellationToken ct = default)
     {
         _graph.EnsureLoaded();
 
         var literaryRules = _canonDb.GetLiteraryRulesPrompt();
         var storyBible = JsonStoryBible();
 
-        // Session context: seed with requested characters + location, then
-        // scan the existing story text to load any entities already mentioned.
-        // This means if chapter 3 mentions "the Veil-9", continuing chapter 4
-        // already knows what it is without being told again.
-        var session = new NarrativeSessionContext(_graph);
+        var session = new NarrativeSessionContext(_graph, _semanticIndex, _inference);
         session.TouchAll(characters);
         if (location != null) session.Touch(location);
 
         var storySoFar = string.Join("\n\n", existingParagraphs);
         session.ScanText(storySoFar);
+        session.ScanTextSemantic(storySoFar);
 
         var characterContext = session.BuildContext();
         var locationContext = "";
@@ -359,6 +363,14 @@ public class StoryStarterService
             {(locationContext.Length > 0 ? $"LOCATION:\n{locationContext}" : "")}
 
             {(characterContext.Length > 0 ? $"CHARACTERS:\n{characterContext}" : "")}
+
+            {(storyConstraints?.Length > 0 ? storyConstraints : "")}
+
+            {(knowledgeConstraints?.Length > 0 ? knowledgeConstraints : "")}
+
+            {(eventContext?.Length > 0 ? eventContext : "")}
+
+            {(outlineContext?.Length > 0 ? outlineContext : "")}
             """;
 
         var moodLine = string.IsNullOrWhiteSpace(mood) ? "" : $"\nMOOD/TONE: {mood}";

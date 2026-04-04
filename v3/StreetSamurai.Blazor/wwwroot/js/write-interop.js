@@ -392,6 +392,13 @@ window.writeInterop = {
             }
         },
 
+        toggleLinks: function (id, show) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            if (show) el.classList.remove('hide-links');
+            else el.classList.add('hide-links');
+        },
+
         // ── Markdown formatting (for textarea/Md mode) ──
 
         mdWrapSelection: function (id, prefix, suffix) {

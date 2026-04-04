@@ -21,6 +21,13 @@ public class DistrictData
     [JsonPropertyName("connections")] public DistrictConnections Connections { get; set; } = new();
     [JsonPropertyName("frequented_by")] public List<string> FrequentedBy { get; set; } = [];
     [JsonPropertyName("notable_locations")] public List<NotableLocation> NotableLocations { get; set; } = [];
+    [JsonPropertyName("coordinates")] public GeoCoordinates Coordinates { get; set; } = new();
+}
+
+public class GeoCoordinates
+{
+    [JsonPropertyName("lat")] public double Lat { get; set; }
+    [JsonPropertyName("lng")] public double Lng { get; set; }
 }
 
 public class AtmosphereData
@@ -34,6 +41,25 @@ public class AtmosphereData
 public class DistrictConnections
 {
     [JsonPropertyName("adjacent_to")] public List<string> AdjacentTo { get; set; } = [];
+
+    /// <summary>Directional exits — Zork-style. Each exit has a direction, destination, and description of the passage.</summary>
+    [JsonPropertyName("exits")] public List<PlaceExit> Exits { get; set; } = [];
+}
+
+/// <summary>
+/// A directional exit from a place. Not just a link — each exit is unique.
+/// Some are open roads, others are guarded checkpoints, tunnels, maglev stations,
+/// waterways, or maintenance corridors. The exit description affects how characters
+/// experience the transition and what dangers they face.
+/// </summary>
+public class PlaceExit
+{
+    [JsonPropertyName("direction")] public string Direction { get; set; } = "";
+    [JsonPropertyName("destination")] public string Destination { get; set; } = "";
+    [JsonPropertyName("type")] public string Type { get; set; } = "road";
+    [JsonPropertyName("description")] public string Description { get; set; } = "";
+    [JsonPropertyName("restricted")] public bool Restricted { get; set; }
+    [JsonPropertyName("danger_level")] public int DangerLevel { get; set; }
 }
 
 public class NotableLocation

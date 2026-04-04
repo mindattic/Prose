@@ -12,12 +12,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>klmea5r7dx</Fingerprint>
-      <Integrity>6FfrV/FtEcUAPqPVLuoPN4Wf4acbOiie2n7c5QYIl6c=</Integrity>
+      <Fingerprint>h500hbyyk7</Fingerprint>
+      <Integrity>O6JyoqFW2nTHyYGl/AuCVhIXlsaZfP0d9wspqWhkPDs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>9057</FileLength>
-      <LastWriteTime>Fri, 03 Apr 2026 20:53:13 GMT</LastWriteTime>
+      <FileLength>10553</FileLength>
+      <LastWriteTime>Sat, 04 Apr 2026 03:55:43 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))">
@@ -60,6 +60,26 @@
       <LastWriteTime>Fri, 03 Apr 2026 18:31:17 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\graph-interop.js'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\here-map.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>StreetSamurai.MAUI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>js/here-map.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>dbyt6nr72i</Fingerprint>
+      <Integrity>+URIjZCpnMRRPLMjkJeHECnWxTF1tShvYM3xY0at1jY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>4072</FileLength>
+      <LastWriteTime>Sat, 04 Apr 2026 16:20:37 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\here-map.js'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\write-interop.js'))">
       <SourceType>Package</SourceType>
       <SourceId>StreetSamurai.MAUI</SourceId>
@@ -72,12 +92,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>aw3heceak1</Fingerprint>
-      <Integrity>BvTDS5iB4BS8mjeAWahH7bDBPaQ3KG15eWboCvERE6M=</Integrity>
+      <Fingerprint>0omd6fyuz7</Fingerprint>
+      <Integrity>AEpyl67NziqpbcGoHi2gUg3uXUti0CriERwhAMX8P+4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>16716</FileLength>
-      <LastWriteTime>Fri, 03 Apr 2026 20:49:24 GMT</LastWriteTime>
+      <FileLength>18520</FileLength>
+      <LastWriteTime>Sat, 04 Apr 2026 15:49:24 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\write-interop.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css'))">

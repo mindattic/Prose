@@ -158,6 +158,8 @@ h1:focus {
     transition: background 0.15s, filter 0.15s;
 }
 .entity-link:hover { filter: brightness(1.4); text-decoration: underline; }
+.hide-links .entity-link { color: inherit; background: none; cursor: text; pointer-events: none; }
+.hide-links .entity-link:hover { filter: none; text-decoration: none; }
 .entity-character    { color: #17a2b8; background: rgba(23,162,184,0.12); }
 .entity-organization { color: #ffc107; background: rgba(255,193,7,0.12); }
 .entity-place        { color: #28a745; background: rgba(40,167,69,0.12); }

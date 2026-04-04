@@ -67,6 +67,115 @@ public class WorldGraphService
         return from.Concat(to).ToList();
     }
 
+    // ── Temporal queries ──────────────────────────────────
+
+    /// <summary>
+    /// Get edges valid at a specific story point. An edge is valid if:
+    /// ValidFrom is empty or <= storyPoint, AND ValidUntil is empty or > storyPoint,
+    /// AND not invalidated in the database.
+    /// </summary>
+    public List<WorldEdge> GetEdgesAt(string nodeId, string storyPoint)
+    {
+        EnsureLoaded();
+        return _graph.Edges
+            .Where(e => (e.Source == nodeId || e.Target == nodeId) && IsEdgeValidAt(e, storyPoint))
+            .ToList();
+    }
+
+    /// <summary>
+    /// Build entity brief filtered to a specific story point — uses historical
+    /// property values and temporally-filtered edges.
+    /// </summary>
+    public string GetEntityBriefAt(string nodeId, string storyPoint)
+    {
+        EnsureLoaded();
+        var node = GetNode(nodeId);
+        if (node == null) return "";
+
+        var lines = new List<string> { $"[{node.NodeType.ToUpperInvariant()}] {node.Name}" };
+
+        // Use temporal property values
+        foreach (var key in new[] { "gender", "pronouns", "role", "status", "age", "affiliation", "location",
+                                     "category", "manufacturer", "sector", "tier_availability", "legality" })
+        {
+            var val = node.GetPropertyAt(key, storyPoint);
+            if (val.Length > 0) lines.Add($"  {key}: {val}");
+        }
+
+        var desc = node.GetPropertyAt("description", storyPoint);
+        if (desc.Length > 0)
+            lines.Add($"  description: {(desc.Length > 400 ? desc[..397] + "..." : desc)}");
+
+        // Temporally filtered edges
+        var edges = GetEdgesAt(nodeId, storyPoint);
+        if (edges.Count > 0)
+        {
+            lines.Add("  relationships:");
+            foreach (var edge in edges.Take(15))
+            {
+                var other = edge.Source == nodeId ? edge.Target : edge.Source;
+                var otherNode = GetNode(other);
+                var dir = edge.Source == nodeId ? "->" : "<-";
+                var desc2 = !string.IsNullOrEmpty(edge.Description) ? $" — {edge.Description}" : "";
+                lines.Add($"    {dir} [{edge.RelationType}] {otherNode?.Name ?? other}{desc2}");
+            }
+        }
+
+        // Recent history relevant to this story point
+        var relevantHistory = node.History
+            .Where(h => CompareStoryPoints(h.StoryPoint, storyPoint) <= 0)
+            .OrderByDescending(h => h.StoryPoint)
+            .Take(3)
+            .ToList();
+
+        if (relevantHistory.Count > 0)
+        {
+            lines.Add("  recent_changes:");
+            foreach (var change in relevantHistory)
+                lines.Add($"    [{change.StoryPoint}] {change.Property}: {change.OldValue} -> {change.NewValue}");
+        }
+
+        return string.Join("\n", lines);
+    }
+
+    /// <summary>
+    /// Compare two story points numerically. Handles "chapter:N" and "story:ID_NNNNN" formats.
+    /// Returns negative if a &lt; b, zero if equal, positive if a &gt; b.
+    /// </summary>
+    public static int CompareStoryPoints(string a, string b)
+    {
+        if (string.IsNullOrEmpty(a) && string.IsNullOrEmpty(b)) return 0;
+        if (string.IsNullOrEmpty(a)) return -1; // empty = from the beginning
+        if (string.IsNullOrEmpty(b)) return 1;
+
+        var numA = ExtractStoryPointNumber(a);
+        var numB = ExtractStoryPointNumber(b);
+
+        if (numA.HasValue && numB.HasValue) return numA.Value.CompareTo(numB.Value);
+        return string.Compare(a, b, StringComparison.Ordinal);
+    }
+
+    private static int? ExtractStoryPointNumber(string sp)
+    {
+        // "chapter:12" -> 12
+        if (sp.StartsWith("chapter:", StringComparison.OrdinalIgnoreCase))
+            return int.TryParse(sp[8..], out var n) ? n : null;
+        // "SS_00045" -> 45
+        var lastUnder = sp.LastIndexOf('_');
+        if (lastUnder >= 0 && int.TryParse(sp[(lastUnder + 1)..], out var m)) return m;
+        return null;
+    }
+
+    private static bool IsEdgeValidAt(WorldEdge edge, string storyPoint)
+    {
+        if (edge.InvalidatedAt != null) return false;
+        if (!string.IsNullOrEmpty(edge.ValidFrom) && CompareStoryPoints(edge.ValidFrom, storyPoint) > 0)
+            return false; // not yet valid
+        if (!string.IsNullOrEmpty(edge.ValidUntil) && CompareStoryPoints(edge.ValidUntil, storyPoint) <= 0)
+            return false; // already expired
+        return true;
+    }
+
     /// <summary>Get ALL edges for a node including invalidated history.</summary>
     public List<WorldEdge> GetEdgeHistory(string nodeId)
     {
@@ -291,6 +400,15 @@ public class WorldGraphService
         _nodes[node.Id] = node;
         if (!_graph.ContainsVertex(node.Id))
             _graph.AddVertex(node.Id);
+    }
+
+    public void RemoveNode(string nameOrAlias)
+    {
+        var id = ResolveId(nameOrAlias);
+        if (id == null) return;
+        _nodes.Remove(id);
+        _graph.RemoveVertex(id);
+        Save();
     }
 
     public void AddEdge(WorldEdge edge)

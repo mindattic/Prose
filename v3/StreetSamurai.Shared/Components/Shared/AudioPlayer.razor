@@ -24,7 +24,7 @@
         @* ── Controls row (centered) ───────────────── *@
         <div class="d-flex align-items-center justify-content-center gap-2 py-1">
             @* Read Selected / Read All *@
-            <button class="btn btn-sm btn-outline-info px-2" @onclick="OnReadSelected" disabled="@(_loading || !HasSelection)" title="Narrate selected text (select 3+ words)" style="height: 32px; font-size: 0.75rem; line-height: 24px;">
+            <button class="btn btn-sm btn-outline-info px-2" @onclick="OnReadSelected" disabled="@_loading" title="Narrate selected text (select 3+ words)" style="height: 32px; font-size: 0.75rem; line-height: 24px;">
                 <i class="bi bi-text-indent-left"></i> Selected
             </button>
             <button class="btn btn-sm btn-outline-info px-2" @onclick="OnReadAll" disabled="@_loading" title="Narrate entire document" style="height: 32px; font-size: 0.75rem; line-height: 24px;">

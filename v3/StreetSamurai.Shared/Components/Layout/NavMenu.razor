@@ -6,6 +6,8 @@
 @inject TechnologyRepository TechRepo
 @inject WeaponryRepository WeaponRepo
 @inject EquipmentRepository EquipRepo
+@inject CyberwareRepository CyberRepo
+@inject VocabularyRepository VocabRepo
 @inject NavigationManager Nav
 
 <nav class="sidebar bg-dark text-light p-3" style="width: fit-content; min-width: 240px; min-height: 100vh; white-space: nowrap; flex-shrink: 0;">
@@ -28,10 +30,15 @@
             </NavLink>
         </li>
 
-        <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">World Graph</li>
+        <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">Tools</li>
         <li class="nav-item">
             <NavLink class="nav-link text-light" href="graph">
                 <i class="bi bi-diagram-3"></i> World Graph
+            </NavLink>
+        </li>
+        <li class="nav-item">
+            <NavLink class="nav-link text-light" href="places">
+                <i class="bi bi-geo-alt"></i> Places Map
             </NavLink>
         </li>
 
@@ -40,11 +47,13 @@
         @NavItem("bi-building", "corps", "Corponations", _corpCount)
         @NavItem("bi-shield-exclamation", "factions", "Factions", _factionCount)
         @NavItem("bi-people", "characters", "Characters", _charCount)
-        @NavItem("bi-geo-alt", "districts", "Districts", _districtCount)
+        @NavItem("bi-geo-alt", "places", "Places", _districtCount)
         @NavItem("bi-cpu", "technology", "Technology", _techCount)
         @NavItem("bi-crosshair", "weaponry", "Weaponry", _weaponCount)
         @NavItem("bi-shield-shaded", "equipment", "Equipment", _equipCount)
+        @NavItem("bi-motherboard", "cyberware", "Cyberware", _cyberwareCount)
         @NavItem("bi-file-earmark-text", "documents", "Documents", _docCount)
+        @NavItem("bi-chat-quote", "vocabulary", "Vocabulary", _vocabCount)
 
 
         <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">System</li>
@@ -62,7 +71,7 @@
 </nav>
 
 @code {
-    private int _corpCount, _factionCount, _charCount, _districtCount, _techCount, _weaponCount, _equipCount, _docCount;
+    private int _corpCount, _factionCount, _charCount, _districtCount, _techCount, _weaponCount, _equipCount, _cyberwareCount, _docCount, _vocabCount;
 
     protected override void OnInitialized()
     {
@@ -72,23 +81,20 @@
         _districtCount = DistrictRepo.GetAll().Count;
         _weaponCount = WeaponRepo.GetAll().Count;
         _equipCount = EquipRepo.GetAll().Count;
+        _cyberwareCount = CyberRepo.GetAll().Count;
         _techCount = TechRepo.GetAll().Count;
         _docCount = DocRepo.GetAll().Count;
+        _vocabCount = VocabRepo.GetAll().Count;
     }
 
     private RenderFragment NavItem(string icon, string href, string label, int count) => __builder =>
     {
-        var newUrl = "/" + href + "?new=true";
         <li class="nav-item">
             <div class="d-flex align-items-center">
                 <NavLink class="nav-link text-light flex-grow-1 py-1" href="@href">
                     <i class="bi @icon"></i> @label
                 </NavLink>
                 <span class="badge bg-secondary me-1" style="min-width: 44px; text-align: right; font-variant-numeric: tabular-nums;">@count</span>
-                <button class="btn btn-sm text-danger p-0 border-0" style="font-size: 0.9rem; line-height: 1; flex-shrink: 0;"
-                        @onclick="() => Nav.NavigateTo(newUrl)" title="@($"New {label}")">
-                    <i class="bi bi-plus-circle-fill"></i>
-                </button>
             </div>
         </li>;
     };

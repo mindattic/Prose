@@ -351,6 +351,11 @@ window.graphInterop = {
             try { this._svg.node().removeEventListener('keydown', this._keyHandler); } catch (e) {}
         }
         if (this._sim) this._sim.stop();
+        // Clear the SVG content so the canvas visually empties
+        if (this._containerId) {
+            const el = document.getElementById(this._containerId);
+            if (el) el.innerHTML = '';
+        }
         this._sim = null;
         this._svg = null;
         this._g = null;

@@ -1,7 +1,42 @@
+:root {
+    --gutter: 10px;
+    --bs-gutter-x: 10px;
+    --bs-gutter-y: 10px;
+}
+
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #0d1117;
     color: #e6edf3;
+}
+
+.g-2, .g-3, .gx-2, .gx-3 { --bs-gutter-x: 10px; --bs-gutter-y: 10px; }
+.row { --bs-gutter-x: 10px; --bs-gutter-y: 10px; }
+.gap-1, .gap-2, .gap-3 { gap: 10px !important; }
+.mb-1, .mb-2, .mb-3, .my-1, .my-2, .my-3 { margin-bottom: 10px !important; }
+.mt-1, .mt-2, .mt-3 { margin-top: 10px !important; }
+.mx-1, .mx-2, .mx-3 { margin-left: 10px !important; margin-right: 10px !important; }
+.p-1, .p-2, .p-3 { padding: 10px !important; }
+.px-1, .px-2, .px-3 { padding-left: 10px !important; padding-right: 10px !important; }
+.py-1, .py-2, .py-3 { padding-top: 10px !important; padding-bottom: 10px !important; }
+.card-body { padding: 10px; }
+.card-header { padding: 10px; }
+
+.btn { height: 32px; padding-top: 0; padding-bottom: 0; display: inline-flex; align-items: center; justify-content: center; }
+.btn-sm { height: 32px; }
+.btn-group .btn { height: 32px; }
+.dropdown-toggle { height: 32px; }
+.btn-sq, .tb { width: 32px; height: 32px; padding: 0; }
+.btn > i.bi:not(:only-child) { margin-right: 6px; }
+
+.dict-editor .row > [class*="col-"] { flex: 0 0 100%; max-width: 100%; }
+.dict-editor textarea,
+.dict-editor .auto-grow {
+    min-height: 40px;
+    height: auto;
+    overflow: hidden;
+    resize: none;
+    field-sizing: content;
 }
 
 /* Dark theme overrides */
@@ -72,7 +107,7 @@ a, .btn-link {
 }
 
 .content {
-    padding-top: 1.1rem;
+    padding-top: 10px;
 }
 
 h1:focus {
@@ -123,6 +158,8 @@ h1:focus {
     transition: background 0.15s, filter 0.15s;
 }
 .entity-link:hover { filter: brightness(1.4); text-decoration: underline; }
+.hide-links .entity-link { color: inherit; background: none; cursor: text; pointer-events: none; }
+.hide-links .entity-link:hover { filter: none; text-decoration: none; }
 .entity-character    { color: #17a2b8; background: rgba(23,162,184,0.12); }
 .entity-organization { color: #ffc107; background: rgba(255,193,7,0.12); }
 .entity-place        { color: #28a745; background: rgba(40,167,69,0.12); }
@@ -147,7 +184,6 @@ h1:focus {
     font-family: Georgia, serif;
     font-size: 16px;
     line-height: 1.8;
-    min-height: 60vh;
     outline: none;
     white-space: pre-wrap;
     overflow-wrap: break-word;

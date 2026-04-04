@@ -2,69 +2,124 @@
 @inject CharacterRepository Repo
 @inject NavigationManager Nav
 @inject IJSRuntime JS
+@inject WorldGraphService Graph
 
 <div class="dict-layout">
     <div class="dict-list bg-dark border-end border-secondary">
-        @foreach (var c in _items)
+        <div class="p-2">
+            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                   placeholder="Filter..." @bind="_filter" @bind:event="oninput" />
+        </div>
+        @foreach (var c in FilteredItems)
         {
             <div class="list-item text-light @(_editing?.Name == c.Name ? "active" : "")" @onclick="() => Edit(c)">
                 <div class="fw-bold small">@c.Name</div>
-                <div class="text-muted" style="font-size: 0.7rem;">@c.Gender @(c.Age > 0 ? $"({c.Age})" : "")</div>
+                <div class="text-muted" style="font-size: 0.7rem;">@c.Role</div>
             </div>
         }
+        <div class="p-2">
+            <button class="btn btn-sm btn-outline-danger w-100" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New Character</button>
+        </div>
     </div>
 
-    <div class="dict-editor">
+    <div class="dict-editor" style="overflow-y: auto; max-height: calc(100vh - 60px);">
         @if (_editing != null)
         {
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h5 class="text-danger mb-0">@(_isNew ? "New Character" : _editing.Name)</h5>
                 <div class="d-flex gap-2">
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
-                    @if (!_isNew && !_confirmDelete)
-                    {
-                        <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-trash3"></i></button>
-                    }
-                    @if (_confirmDelete)
-                    {
-                        <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm Delete</button>
-                        <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button>
-                    }
+                    @if (!_isNew && !_confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-trash3"></i></button> }
+                    @if (_confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button> }
                 </div>
             </div>
 
-            <div class="row g-3 mb-3">
-                <div class="col-3"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Name" /></div>
-                <div class="col-2"><div class="field-label">Gender</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Gender" /></div>
-                <div class="col-2"><div class="field-label">Pronouns</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Pronouns" /></div>
-                <div class="col-1"><div class="field-label">Age</div><input type="number" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Age" /></div>
-                <div class="col-2"><div class="field-label">Status</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Status" /></div>
-                <div class="col-2"><div class="field-label">Affiliation</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Affiliation" /></div>
+            @* ── Identity ─────────────────────────────── *@
+            <div class="field-label text-danger">Identity</div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 3; min-width: 180px;"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Name" /></div>
+                <div style="flex: 1; min-width: 80px;"><div class="field-label">Gender</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Gender" /></div>
+                <div style="flex: 1; min-width: 80px;"><div class="field-label">Pronouns</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Pronouns" /></div>
+                <div style="min-width: 55px;"><div class="field-label">Age</div><input type="number" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Age" /></div>
+                <div style="flex: 1; min-width: 70px;"><div class="field-label">Status</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Status" /></div>
+                <div style="flex: 1; min-width: 100px;"><div class="field-label">Affiliation</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Affiliation" /></div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 2; min-width: 200px;"><div class="field-label">Role</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Role" /></div>
+                <div style="flex: 2; min-width: 200px;"><div class="field-label">Location</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Location" /></div>
+            </div>
+            <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.Description"></textarea></div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Augmentations</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.Augmentations"></textarea></div>
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Daily Life</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.DailyLife"></textarea></div>
             </div>
 
-            <div class="row g-3 mb-3">
-                <div class="col-6"><div class="field-label">Role</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Role" /></div>
-                <div class="col-6"><div class="field-label">Augmentations</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Augmentations" /></div>
+            @* ── Narrative ────────────────────────────── *@
+            <div class="field-label text-danger mt-3">Narrative</div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Narrative Function</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.NarrativeFunction"></textarea></div>
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Narration Voice</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.NarrationVoice"></textarea></div>
             </div>
-
-            <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.Description" @oninput="AutoResize"></textarea></div>
-            <div class="mb-3"><div class="field-label">Narrative Function</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.NarrativeFunction" @oninput="AutoResize"></textarea></div>
-            <div class="mb-3"><div class="field-label">Narration Voice</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.NarrationVoice" @oninput="AutoResize"></textarea></div>
-
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Vocabulary</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.SpeechPatterns.Vocabulary"></textarea></div>
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Cadence</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.SpeechPatterns.Cadence"></textarea></div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Verbal Tics (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editVerbalTics"></textarea></div>
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Example Lines (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editExampleLines"></textarea></div>
+            </div>
             <div class="form-check mb-3">
                 <input type="checkbox" class="form-check-input" id="usesFacets" @bind="_editing.UsesFacets" />
-                <label class="form-check-label text-muted small" for="usesFacets">Uses facet tags (only Kyle)</label>
+                <label class="form-check-label text-muted small" for="usesFacets">Uses facet tags in narration</label>
             </div>
 
+            @* ── Psychology ───────────────────────────── *@
+            <div class="field-label text-danger mt-3">Psychology</div>
             <div class="field-label">Facet Weights</div>
-            <div class="row g-2 mb-3">
-                <div class="col-2"><small class="text-muted">Wound</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editWound" /></div>
-                <div class="col-2"><small class="text-muted">Ideal</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editIdeal" /></div>
-                <div class="col-2"><small class="text-muted">Id</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editId" /></div>
-                <div class="col-2"><small class="text-muted">Shadow</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editShadow" /></div>
-                <div class="col-2"><small class="text-muted">Mask</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editMask" /></div>
-                <div class="col-2"><small class="text-muted">Ghost</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editGhost" /></div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="min-width: 70px;"><small class="text-muted">Wound</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editWound" /></div>
+                <div style="min-width: 70px;"><small class="text-muted">Ideal</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editIdeal" /></div>
+                <div style="min-width: 70px;"><small class="text-muted">Id</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editId" /></div>
+                <div style="min-width: 70px;"><small class="text-muted">Shadow</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editShadow" /></div>
+                <div style="min-width: 70px;"><small class="text-muted">Mask</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editMask" /></div>
+                <div style="min-width: 70px;"><small class="text-muted">Ghost</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editGhost" /></div>
             </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Core Fears</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editCoreFears"></textarea></div>
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Core Desires</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editCoreDesires"></textarea></div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Coping Mechanisms</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editCopingMechanisms"></textarea></div>
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Blind Spots</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editBlindSpots"></textarea></div>
+            </div>
+            <div class="mb-3"><div class="field-label">Secret</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.Psychology.Secret"></textarea></div>
+
+            @* ── Behavioral ──────────────────────────── *@
+            <div class="field-label text-danger mt-3">Behavioral</div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Decision Rules (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editDecisionRules"></textarea></div>
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Escalation Ladder (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editEscalation"></textarea></div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Habits (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editHabits"></textarea></div>
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Breaking Points (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editBreakingPoints"></textarea></div>
+            </div>
+            <div class="mb-3"><div class="field-label">Contradictions (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editContradictions"></textarea></div>
+
+            @* ── Stress Responses ─────────────────────── *@
+            <div class="field-label text-danger mt-3">Stress Responses</div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Low</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editStressLow"></textarea></div>
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Medium</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editStressMed"></textarea></div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">High</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editStressHigh"></textarea></div>
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Critical</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editStressCrit"></textarea></div>
+            </div>
+
+            @* ── Story ───────────────────────────────── *@
+            <div class="field-label text-danger mt-3">Story</div>
+            <div class="mb-3"><div class="field-label">Story Hooks (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editStoryHooks"></textarea></div>
         }
         else
         {
@@ -78,7 +133,22 @@
     private CharacterData? _editing;
     private bool _isNew, _confirmDelete;
     private string _originalName = "";
+    private string _filter = "";
+
+    // Facet weights
     private double _editWound, _editIdeal, _editId, _editShadow, _editMask, _editGhost;
+
+    // List fields edited as newline-separated strings
+    private string _editCoreFears = "", _editCoreDesires = "", _editCopingMechanisms = "", _editBlindSpots = "";
+    private string _editVerbalTics = "", _editExampleLines = "";
+    private string _editDecisionRules = "", _editEscalation = "", _editContradictions = "", _editHabits = "", _editBreakingPoints = "";
+    private string _editStressLow = "", _editStressMed = "", _editStressHigh = "", _editStressCrit = "";
+    private string _editStoryHooks = "";
+
+    private IEnumerable<CharacterData> FilteredItems => string.IsNullOrWhiteSpace(_filter)
+        ? _items
+        : _items.Where(c => c.Name.Contains(_filter, StringComparison.OrdinalIgnoreCase)
+            || c.Role.Contains(_filter, StringComparison.OrdinalIgnoreCase));
 
     protected override void OnInitialized()
     {
@@ -86,10 +156,8 @@
         if (Nav.Uri.Contains("new=true")) AddNew();
     }
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
+    protected override async Task OnAfterRenderAsync(bool firstRender) =>
         await JS.InvokeVoidAsync("writeInterop.autoResizeAll");
-    }
 
     private void AddNew()
     {
@@ -97,6 +165,7 @@
         _isNew = true; _confirmDelete = false;
         _editWound = 0.5; _editIdeal = 0.5; _editId = 0.5;
         _editShadow = 0.5; _editMask = 0.5; _editGhost = 0.5;
+        ClearListFields();
     }
 
     private void Edit(CharacterData c)
@@ -105,18 +174,91 @@
         var fw = c.Psychology.FacetWeights;
         _editWound = fw.Wound; _editIdeal = fw.Ideal; _editId = fw.Id;
         _editShadow = fw.Shadow; _editMask = fw.Mask; _editGhost = fw.Ghost;
+
+        // Psychology lists
+        _editCoreFears = string.Join("\n", c.Psychology.CoreFears);
+        _editCoreDesires = string.Join("\n", c.Psychology.CoreDesires);
+        _editCopingMechanisms = string.Join("\n", c.Psychology.CopingMechanisms);
+        _editBlindSpots = string.Join("\n", c.Psychology.BlindSpots);
+
+        // Speech
+        _editVerbalTics = string.Join("\n", c.SpeechPatterns.VerbalTics);
+        _editExampleLines = string.Join("\n", c.SpeechPatterns.ExampleLines);
+
+        // Behavioral
+        _editDecisionRules = string.Join("\n", c.Behavioral.DecisionRules);
+        _editEscalation = string.Join("\n", c.Behavioral.EscalationLadder);
+        _editContradictions = string.Join("\n", c.Behavioral.Contradictions);
+        _editHabits = string.Join("\n", c.Behavioral.Habits);
+        _editBreakingPoints = string.Join("\n", c.Behavioral.BreakingPoints);
+
+        // Stress
+        c.Behavioral.StressResponses.TryGetValue("low", out var sl); _editStressLow = sl ?? "";
+        c.Behavioral.StressResponses.TryGetValue("medium", out var sm); _editStressMed = sm ?? "";
+        c.Behavioral.StressResponses.TryGetValue("high", out var sh); _editStressHigh = sh ?? "";
+        c.Behavioral.StressResponses.TryGetValue("critical", out var sc); _editStressCrit = sc ?? "";
+
+        // Story
+        _editStoryHooks = string.Join("\n", c.StoryHooks);
     }
 
     private void SaveEdit()
     {
         if (_editing == null || string.IsNullOrWhiteSpace(_editing.Name)) return;
+
+        // Facet weights
         _editing.Psychology.FacetWeights.Wound = _editWound; _editing.Psychology.FacetWeights.Ideal = _editIdeal;
         _editing.Psychology.FacetWeights.Id = _editId; _editing.Psychology.FacetWeights.Shadow = _editShadow;
         _editing.Psychology.FacetWeights.Mask = _editMask; _editing.Psychology.FacetWeights.Ghost = _editGhost;
+
+        // Psychology lists
+        _editing.Psychology.CoreFears = SplitLines(_editCoreFears);
+        _editing.Psychology.CoreDesires = SplitLines(_editCoreDesires);
+        _editing.Psychology.CopingMechanisms = SplitLines(_editCopingMechanisms);
+        _editing.Psychology.BlindSpots = SplitLines(_editBlindSpots);
+
+        // Speech
+        _editing.SpeechPatterns.VerbalTics = SplitLines(_editVerbalTics);
+        _editing.SpeechPatterns.ExampleLines = SplitLines(_editExampleLines);
+
+        // Behavioral
+        _editing.Behavioral.DecisionRules = SplitLines(_editDecisionRules);
+        _editing.Behavioral.EscalationLadder = SplitLines(_editEscalation);
+        _editing.Behavioral.Contradictions = SplitLines(_editContradictions);
+        _editing.Behavioral.Habits = SplitLines(_editHabits);
+        _editing.Behavioral.BreakingPoints = SplitLines(_editBreakingPoints);
+        _editing.Behavioral.StressResponses = new Dictionary<string, string>
+        {
+            ["low"] = _editStressLow,
+            ["medium"] = _editStressMed,
+            ["high"] = _editStressHigh,
+            ["critical"] = _editStressCrit,
+        };
+
+        // Story
+        _editing.StoryHooks = SplitLines(_editStoryHooks);
+
         if (!_isNew && _originalName != _editing.Name) Repo.Delete(_originalName);
         Repo.Save(_editing); _editing = null; _items = Repo.GetAll();
     }
 
-    private void DoDelete() { if (_editing == null) return; Repo.Delete(_editing.Name); _editing = null; _confirmDelete = false; _items = Repo.GetAll(); }
-    private void AutoResize() { } // CSS handles auto-height via min-height
+    private void DoDelete()
+    {
+        if (_editing == null) return;
+        Graph.RemoveNode(_editing.Name);
+        Repo.Delete(_editing.Name);
+        _editing = null; _confirmDelete = false; _items = Repo.GetAll();
+    }
+
+    private void ClearListFields()
+    {
+        _editCoreFears = _editCoreDesires = _editCopingMechanisms = _editBlindSpots = "";
+        _editVerbalTics = _editExampleLines = "";
+        _editDecisionRules = _editEscalation = _editContradictions = _editHabits = _editBreakingPoints = "";
+        _editStressLow = _editStressMed = _editStressHigh = _editStressCrit = "";
+        _editStoryHooks = "";
+    }
+
+    private static List<string> SplitLines(string text) =>
+        (text ?? "").Split('\n', StringSplitOptions.RemoveEmptyEntries).Select(l => l.Trim()).Where(l => l.Length > 0).ToList();
 }
