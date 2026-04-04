@@ -65,6 +65,12 @@ public class WeaponryRepository : JsonDictionaryRepository<WeaponryData>
         : base(Path.Combine(paths.EngineDataDir, "weaponry.json"), w => w.Name) { }
 }
 
+public class AmmunitionRepository : JsonDictionaryRepository<AmmunitionData>
+{
+    public AmmunitionRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "ammunition.json"), a => a.Name) { }
+}
+
 public class EquipmentRepository : JsonDictionaryRepository<EquipmentData>
 {
     public EquipmentRepository(IPathProvider paths)

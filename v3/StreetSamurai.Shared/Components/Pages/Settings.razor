@@ -2,6 +2,7 @@
 @inject SettingsService SettingsSvc
 @inject LlmRouter LlmRouter
 @inject ElevenLabsTtsService TtsSvc
+@inject WorldGraphService Graph
 
 <div class="d-flex justify-content-between align-items-center mb-1">
     <h4 class="text-danger mb-0">Settings</h4>
@@ -19,6 +20,10 @@
         }
         else
         {
+            <button class="btn btn-sm btn-outline-warning" @onclick="RebuildGraph" disabled="@_rebuilding">
+                @if (_rebuilding) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                <i class="bi bi-diagram-3"></i> Rebuild Graph
+            </button>
             <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmReset = true">
                 <i class="bi bi-arrow-counterclockwise"></i> Reset to Defaults
             </button>
@@ -27,294 +32,321 @@
 </div>
 <p class="text-muted mb-3">Configure API keys, LLM providers, TTS narration, and canon paths.</p>
 
-<div class="row g-3">
-    <div class="col-md-6">
-        @* ── LLM Provider Selection ─────────────────────── *@
-        <div class="card bg-dark text-light border-secondary mb-3">
-            <div class="card-header text-muted d-flex justify-content-between align-items-center">
-                LLM Provider
-                @if (_providerStatus.Any())
-                {
-                    <span class="badge @(_activeProvider?.IsConfigured == true ? "bg-success" : "bg-warning text-dark")">
-                        @(_activeProvider?.IsConfigured == true ? "Connected" : "Not Configured")
-                    </span>
-                }
-            </div>
+@* ── Active Provider + Canon ───────────────────────────── *@
+<div class="row g-3 mb-3">
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted">General</div>
             <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label text-muted">Active Provider</label>
-                    <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.ActiveLlmProvider">
-                        <option value="claude">Claude (Anthropic)</option>
-                        <option value="openai">OpenAI</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-
-        @* ── Anthropic API ──────────────────────────────── *@
-        <div class="card bg-dark text-light border-secondary mb-3 @(SettingsSvc.ActiveLlmProvider == "claude" ? "border-danger" : "")">
-            <div class="card-header text-muted">Anthropic API</div>
-            <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label text-muted">API Key</label>
-                    <input type="password" class="form-control bg-dark text-light border-secondary"
-                           placeholder="sk-ant-..."
-                           title="Your Anthropic API key — get one at console.anthropic.com"
-                           @bind="SettingsSvc.ApiKey" @bind:event="onchange" />
-                    <small class="text-muted">From console.anthropic.com. Required for Claude text generation.</small>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label text-muted">Model</label>
-                    <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.Model">
-                        <option value="claude-sonnet-4-6">Claude Sonnet 4.6</option>
-                        <option value="claude-opus-4-6">Claude Opus 4.6</option>
-                        <option value="claude-haiku-4-5-20251001">Claude Haiku 4.5</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label text-muted">Max Tokens</label>
-                    <input type="number" class="form-control bg-dark text-light border-secondary"
-                           @bind="SettingsSvc.MaxTokens" @bind:event="onchange" />
-                </div>
-            </div>
-        </div>
-
-        @* ── OpenAI API ─────────────────────────────────── *@
-        <div class="card bg-dark text-light border-secondary mb-3 @(SettingsSvc.ActiveLlmProvider == "openai" ? "border-danger" : "")">
-            <div class="card-header text-muted">OpenAI API</div>
-            <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label text-muted">API Key</label>
-                    <input type="password" class="form-control bg-dark text-light border-secondary"
-                           placeholder="sk-..."
-                           title="Your OpenAI API key — get one at platform.openai.com"
-                           @bind="SettingsSvc.OpenAiApiKey" @bind:event="onchange" />
-                    <small class="text-muted">From platform.openai.com. Alternative to Claude for text generation.</small>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label text-muted">Model</label>
-                    <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.OpenAiModel">
-                        <option value="gpt-4.1-mini">GPT-4.1 Mini</option>
-                        <option value="gpt-4.1">GPT-4.1</option>
-                        <option value="gpt-4o">GPT-4o</option>
-                        <option value="o3-mini">o3-mini</option>
-                    </select>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label class="form-label text-muted">Active LLM Provider</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.ActiveLlmProvider">
+                            <option value="claude">Claude (Anthropic)</option>
+                            <option value="openai">OpenAI</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label text-muted">Canon Root Path</label>
+                        <input type="text" class="form-control bg-dark text-light border-secondary"
+                               placeholder="D:\Projects\MindAttic\StreetSamurai"
+                               @bind="SettingsSvc.CanonRootPath" @bind:event="onchange" />
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-muted">Max Tokens</label>
+                        <input type="number" class="form-control bg-dark text-light border-secondary"
+                               @bind="SettingsSvc.MaxTokens" @bind:event="onchange" />
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-muted">Editor Font Size</label>
+                        <input type="number" class="form-control bg-dark text-light border-secondary"
+                               @bind="SettingsSvc.EditorFontSize" @bind:event="onchange" />
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="col-md-6">
+@* ── LLM Providers ─────────────────────────────────────── *@
+<div class="row g-3 mb-3">
+    <div class="col-12">
         <div class="card bg-dark text-light border-secondary">
-            <div class="card-header text-muted">Canon Engine</div>
+            <div class="card-header text-muted d-flex justify-content-between align-items-center">
+                Anthropic API
+                @StatusBadge("anthropic")
+            </div>
             <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label text-muted">Canon Root Path</label>
-                    <input type="text" class="form-control bg-dark text-light border-secondary"
-                           placeholder="D:\Projects\MindAttic\StreetSamurai"
-                           @bind="SettingsSvc.CanonRootPath" @bind:event="onchange" />
-                    <small class="text-muted">Path to the StreetSamurai repo containing worldbuilding/</small>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label text-muted">API Key</label>
+                        <input type="password" class="form-control bg-dark text-light border-secondary" placeholder="sk-ant-..." @bind="SettingsSvc.ApiKey" @bind:event="onchange" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label text-muted">Model</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.Model">
+                            <option value="claude-sonnet-4-6">Claude Sonnet 4.6</option>
+                            <option value="claude-opus-4-6">Claude Opus 4.6</option>
+                            <option value="claude-haiku-4-5-20251001">Claude Haiku 4.5</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted d-flex justify-content-between align-items-center">
+                OpenAI API
+                @StatusBadge("openai")
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label text-muted">API Key</label>
+                        <input type="password" class="form-control bg-dark text-light border-secondary" placeholder="sk-..." @bind="SettingsSvc.OpenAiApiKey" @bind:event="onchange" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label text-muted">Model</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.OpenAiModel">
+                            <option value="gpt-4.1-mini">GPT-4.1 Mini</option>
+                            <option value="gpt-4.1">GPT-4.1</option>
+                            <option value="gpt-4o">GPT-4o</option>
+                            <option value="o3-mini">o3-mini</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted d-flex justify-content-between align-items-center">Google Gemini @StatusBadge("gemini")</div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="AIza..." @bind="SettingsSvc.GeminiApiKey" @bind:event="onchange" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">Model</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.GeminiModel">
+                            <option value="gemini-2.5-pro">Gemini 2.5 Pro</option>
+                            <option value="gemini-2.5-flash">Gemini 2.5 Flash</option>
+                            <option value="gemini-2.0-flash">Gemini 2.0 Flash</option>
+                        </select></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted d-flex justify-content-between align-items-center">DeepSeek @StatusBadge("deepseek")</div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="sk-..." @bind="SettingsSvc.DeepSeekApiKey" @bind:event="onchange" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">Model</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.DeepSeekModel">
+                            <option value="deepseek-chat">DeepSeek Chat (V3)</option>
+                            <option value="deepseek-reasoner">DeepSeek Reasoner (R1)</option>
+                        </select></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted d-flex justify-content-between align-items-center">Mistral @StatusBadge("mistral")</div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.MistralApiKey" @bind:event="onchange" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">Model</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.MistralModel">
+                            <option value="mistral-large-latest">Mistral Large</option>
+                            <option value="mistral-medium-latest">Mistral Medium</option>
+                            <option value="mistral-small-latest">Mistral Small</option>
+                            <option value="codestral-latest">Codestral</option>
+                        </select></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted d-flex justify-content-between align-items-center">Grok (xAI) @StatusBadge("grok")</div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="xai-..." @bind="SettingsSvc.GrokApiKey" @bind:event="onchange" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">Model</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.GrokModel">
+                            <option value="grok-3">Grok 3</option>
+                            <option value="grok-3-mini">Grok 3 Mini</option>
+                        </select></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted d-flex justify-content-between align-items-center">Groq @StatusBadge("groq")</div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="gsk_..." @bind="SettingsSvc.GroqApiKey" @bind:event="onchange" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">Model</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.GroqModel">
+                            <option value="llama-3.3-70b-versatile">Llama 3.3 70B</option>
+                            <option value="llama-3.1-8b-instant">Llama 3.1 8B</option>
+                            <option value="mixtral-8x7b-32768">Mixtral 8x7B</option>
+                            <option value="gemma2-9b-it">Gemma2 9B</option>
+                        </select></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted d-flex justify-content-between align-items-center">Together AI @StatusBadge("together")</div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.TogetherApiKey" @bind:event="onchange" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">Model</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.TogetherModel">
+                            <option value="meta-llama/Llama-3.3-70B-Instruct-Turbo">Llama 3.3 70B Turbo</option>
+                            <option value="Qwen/Qwen2.5-72B-Instruct-Turbo">Qwen 2.5 72B Turbo</option>
+                            <option value="deepseek-ai/DeepSeek-R1">DeepSeek R1</option>
+                        </select></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted d-flex justify-content-between align-items-center">OpenRouter @StatusBadge("openrouter")</div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="sk-or-..." @bind="SettingsSvc.OpenRouterApiKey" @bind:event="onchange" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">Model</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.OpenRouterModel">
+                            <option value="anthropic/claude-sonnet-4">Claude Sonnet 4</option>
+                            <option value="google/gemini-2.5-pro">Gemini 2.5 Pro</option>
+                            <option value="openai/gpt-4.1">GPT-4.1</option>
+                            <option value="meta-llama/llama-3.3-70b-instruct">Llama 3.3 70B</option>
+                        </select></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted d-flex justify-content-between align-items-center">Fireworks AI @StatusBadge("fireworks")</div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="fw_..." @bind="SettingsSvc.FireworksApiKey" @bind:event="onchange" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">Model</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.FireworksModel">
+                            <option value="accounts/fireworks/models/llama-v3p3-70b-instruct">Llama 3.3 70B</option>
+                            <option value="accounts/fireworks/models/qwen2p5-72b-instruct">Qwen 2.5 72B</option>
+                        </select></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted d-flex justify-content-between align-items-center">Cohere @StatusBadge("cohere")</div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.CohereApiKey" @bind:event="onchange" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">Model</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.CohereModel">
+                            <option value="command-r-plus">Command R+</option>
+                            <option value="command-r">Command R</option>
+                            <option value="command-a-03-2025">Command A</option>
+                        </select></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-        @* ── ElevenLabs TTS ─────────────────────────────── *@
-        <div class="card bg-dark text-light border-secondary mt-3">
+@* ── ElevenLabs TTS ────────────────────────────────────── *@
+<div class="row g-3 mb-3">
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
             <div class="card-header text-muted d-flex justify-content-between align-items-center">
                 ElevenLabs TTS
-                @if (_ttsConfigured)
-                {
-                    <span class="badge bg-success">Connected</span>
-                }
+                <span class="badge @(_ttsConfigured ? "bg-success" : "bg-secondary")">@(_ttsConfigured ? "Connected" : "Offline")</span>
             </div>
             <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label text-muted">API Key</label>
-                    <input type="password" class="form-control bg-dark text-light border-secondary"
-                           placeholder="sk_..."
-                           title="Your ElevenLabs API key — get one at elevenlabs.io"
-                           @bind="SettingsSvc.ElevenLabsApiKey" @bind:event="onchange" />
-                    <small class="text-muted">From elevenlabs.io. Enables text-to-speech narration in the editor and scene generator.</small>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label text-muted">Narrator Voice</label>
-                    @if (_loadingVoices)
-                    {
-                        <div class="d-flex align-items-center gap-2 mb-1">
-                            <div class="spinner-border spinner-border-sm text-danger"></div>
-                            <small class="text-muted">Loading voices...</small>
-                        </div>
-                    }
-                    else if (_voices.Any())
-                    {
-                        <select class="form-select bg-dark text-light border-secondary"
-                                value="@SettingsSvc.ElevenLabsVoiceId"
-                                @onchange="OnVoiceSelected">
-                            @foreach (var v in _voices)
-                            {
-                                <option value="@v.VoiceId">@v.Name (@v.Category)</option>
-                            }
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label class="form-label text-muted">API Key</label>
+                        <input type="password" class="form-control bg-dark text-light border-secondary"
+                               placeholder="sk_..." @bind="SettingsSvc.ElevenLabsApiKey" @bind:event="onchange" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label text-muted">Narrator Voice</label>
+                        @if (_loadingVoices)
+                        {
+                            <div class="d-flex align-items-center gap-2 mt-1">
+                                <div class="spinner-border spinner-border-sm text-danger"></div>
+                                <small class="text-muted">Loading voices...</small>
+                            </div>
+                        }
+                        else if (_voices.Any())
+                        {
+                            <select class="form-select bg-dark text-light border-secondary"
+                                    value="@SettingsSvc.ElevenLabsVoiceId" @onchange="OnVoiceSelected">
+                                @foreach (var v in _voices)
+                                {
+                                    <option value="@v.VoiceId">@v.Name (@v.Category)</option>
+                                }
+                            </select>
+                        }
+                        else
+                        {
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-dark text-light border-secondary"
+                                       placeholder="Voice ID" @bind="SettingsSvc.ElevenLabsVoiceId" @bind:event="onchange" />
+                                @if (_ttsConfigured)
+                                {
+                                    <button class="btn btn-outline-info btn-sm" @onclick="LoadVoices"><i class="bi bi-arrow-repeat"></i></button>
+                                }
+                            </div>
+                        }
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label text-muted">Model</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.TtsModel">
+                            <option value="eleven_v3">v3 (Recommended)</option>
+                            <option value="eleven_multilingual_v2">Multilingual v2</option>
+                            <option value="eleven_turbo_v2_5">Turbo v2.5</option>
+                            <option value="eleven_monolingual_v1">Monolingual v1</option>
                         </select>
-                        <small class="text-muted">@(_voices.Count) voices available</small>
-                    }
-                    else
-                    {
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-dark text-light border-secondary"
-                                   placeholder="Enter voice ID or add API key to load voices"
-                                   @bind="SettingsSvc.ElevenLabsVoiceId" @bind:event="onchange" />
-                            @if (_ttsConfigured)
+                    </div>
+                </div>
+                <div class="row g-3 mt-2">
+                    <div class="col-md-3">
+                        <label class="form-label text-muted small">Stability: @SettingsSvc.TtsStability.ToString("F2")</label>
+                        <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="SettingsSvc.TtsStability" />
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label text-muted small">Similarity: @SettingsSvc.TtsSimilarityBoost.ToString("F2")</label>
+                        <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="SettingsSvc.TtsSimilarityBoost" />
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label text-muted small">Style: @SettingsSvc.TtsStyle.ToString("F2")</label>
+                        <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="SettingsSvc.TtsStyle" />
+                    </div>
+                    <div class="col-md-3 d-flex align-items-end">
+                        @if (_ttsConfigured)
+                        {
+                            <button class="btn btn-sm btn-outline-danger" @onclick="TestTts" disabled="@_testingTts">
+                                @if (_testingTts) { <span class="spinner-border spinner-border-sm"></span> }
+                                else { <i class="bi bi-volume-up"></i> }
+                                Test Voice
+                            </button>
+                            @if (_ttsTestResult != null)
                             {
-                                <button class="btn btn-outline-info btn-sm" @onclick="LoadVoices">
-                                    <i class="bi bi-arrow-repeat"></i>
-                                </button>
+                                <small class="ms-2 @(_ttsTestSuccess ? "text-success" : "text-warning")">@_ttsTestResult</small>
                             }
-                        </div>
-                        @if (!string.IsNullOrEmpty(SettingsSvc.NarratorVoiceName))
-                        {
-                            <small class="text-muted">Current: @SettingsSvc.NarratorVoiceName</small>
                         }
-                    }
-                </div>
-                <div class="mb-3">
-                    <label class="form-label text-muted">Model</label>
-                    <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.TtsModel">
-                        <option value="eleven_v3">v3 (Recommended)</option>
-                        <option value="eleven_multilingual_v2">Multilingual v2</option>
-                        <option value="eleven_turbo_v2_5">Turbo v2.5</option>
-                        <option value="eleven_monolingual_v1">Monolingual v1</option>
-                    </select>
-                </div>
-                <div class="row g-2">
-                    <div class="col-4">
-                        <label class="form-label text-muted small">Stability</label>
-                        <input type="range" class="form-range" min="0" max="1" step="0.05"
-                               @bind="SettingsSvc.TtsStability" />
-                        <small class="text-muted">@SettingsSvc.TtsStability.ToString("F2")</small>
-                    </div>
-                    <div class="col-4">
-                        <label class="form-label text-muted small">Similarity</label>
-                        <input type="range" class="form-range" min="0" max="1" step="0.05"
-                               @bind="SettingsSvc.TtsSimilarityBoost" />
-                        <small class="text-muted">@SettingsSvc.TtsSimilarityBoost.ToString("F2")</small>
-                    </div>
-                    <div class="col-4">
-                        <label class="form-label text-muted small">Style</label>
-                        <input type="range" class="form-range" min="0" max="1" step="0.05"
-                               @bind="SettingsSvc.TtsStyle" />
-                        <small class="text-muted">@SettingsSvc.TtsStyle.ToString("F2")</small>
-                    </div>
-                </div>
-                @if (_ttsConfigured)
-                {
-                    <div class="mt-3">
-                        <button class="btn btn-sm btn-outline-danger" @onclick="TestTts" disabled="@_testingTts">
-                            @if (_testingTts) { <span class="spinner-border spinner-border-sm"></span> }
-                            else { <i class="bi bi-volume-up"></i> }
-                            Test Voice
-                        </button>
-                        @if (_ttsTestResult != null)
-                        {
-                            <small class="ms-2 @(_ttsTestSuccess ? "text-success" : "text-warning")">@_ttsTestResult</small>
-                        }
-                    </div>
-                }
-            </div>
-        </div>
-    </div>
-
-    @* ── GhostWriter ──────────────────────────────────────── *@
-    <div class="col-md-6">
-        <div class="card bg-dark text-light border-secondary mt-3">
-            <div class="card-header text-muted">GhostWriter</div>
-            <div class="card-body">
-                <div class="form-check mb-3">
-                    <input type="checkbox" class="form-check-input" id="gwEnabled"
-                           checked="@SettingsSvc.GhostWriterEnabled"
-                           @onchange="e => SettingsSvc.GhostWriterEnabled = (bool)(e.Value ?? false)" />
-                    <label class="form-check-label text-muted" for="gwEnabled">Enabled</label>
-                </div>
-                <div class="row g-2 mb-2">
-                    <div class="col-md-6">
-                        <label class="form-label text-muted small">Scan Interval (seconds)</label>
-                        <input type="number" class="form-control form-control-sm bg-dark text-light border-secondary"
-                               min="30" max="600" step="10"
-                               @bind="SettingsSvc.GhostWriterScanIntervalSeconds" />
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label text-muted small">Rate Limit Delay (ms)</label>
-                        <input type="number" class="form-control form-control-sm bg-dark text-light border-secondary"
-                               min="10000" max="120000" step="5000"
-                               @bind="SettingsSvc.GhostWriterRateLimitDelayMs" />
-                    </div>
-                </div>
-                <div class="row g-2 mb-2">
-                    <div class="col-md-4">
-                        <label class="form-label text-muted small">Max Voters</label>
-                        <input type="number" class="form-control form-control-sm bg-dark text-light border-secondary"
-                               min="1" max="11"
-                               @bind="SettingsSvc.GhostWriterMaxVoters" />
-                    </div>
-                    <div class="col-md-4">
-                        <label class="form-label text-muted small">Rescan Cooldown (min)</label>
-                        <input type="number" class="form-control form-control-sm bg-dark text-light border-secondary"
-                               min="5" max="120"
-                               @bind="SettingsSvc.GhostWriterRescanMinutes" />
-                    </div>
-                    <div class="col-md-4">
-                        <label class="form-label text-muted small">Majority Threshold</label>
-                        <input type="number" class="form-control form-control-sm bg-dark text-light border-secondary"
-                               min="0.5" max="1.0" step="0.05"
-                               @bind="SettingsSvc.GhostWriterMajorityThreshold" />
-                        <small class="text-muted">@((SettingsSvc.GhostWriterMajorityThreshold * 100).ToString("F0"))%</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    @* ── Multi-LLM API Keys ───────────────────────────────── *@
-    <div class="col-md-6">
-        <div class="card bg-dark text-light border-secondary mt-3">
-            <div class="card-header text-muted">Multi-LLM API Keys</div>
-            <div class="card-body">
-                <div class="row g-2">
-                    <div class="col-md-6 mb-2">
-                        <label class="form-label text-muted small">Gemini</label>
-                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="SettingsSvc.GeminiApiKey" @bind:event="onchange" />
-                    </div>
-                    <div class="col-md-6 mb-2">
-                        <label class="form-label text-muted small">DeepSeek</label>
-                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="SettingsSvc.DeepSeekApiKey" @bind:event="onchange" />
-                    </div>
-                    <div class="col-md-6 mb-2">
-                        <label class="form-label text-muted small">Mistral</label>
-                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="SettingsSvc.MistralApiKey" @bind:event="onchange" />
-                    </div>
-                    <div class="col-md-6 mb-2">
-                        <label class="form-label text-muted small">Grok (xAI)</label>
-                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="SettingsSvc.GrokApiKey" @bind:event="onchange" />
-                    </div>
-                    <div class="col-md-6 mb-2">
-                        <label class="form-label text-muted small">Groq</label>
-                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="SettingsSvc.GroqApiKey" @bind:event="onchange" />
-                    </div>
-                    <div class="col-md-6 mb-2">
-                        <label class="form-label text-muted small">Together</label>
-                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="SettingsSvc.TogetherApiKey" @bind:event="onchange" />
-                    </div>
-                    <div class="col-md-6 mb-2">
-                        <label class="form-label text-muted small">OpenRouter</label>
-                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="SettingsSvc.OpenRouterApiKey" @bind:event="onchange" />
-                    </div>
-                    <div class="col-md-6 mb-2">
-                        <label class="form-label text-muted small">Fireworks</label>
-                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="SettingsSvc.FireworksApiKey" @bind:event="onchange" />
-                    </div>
-                    <div class="col-md-6 mb-2">
-                        <label class="form-label text-muted small">Cohere</label>
-                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="SettingsSvc.CohereApiKey" @bind:event="onchange" />
                     </div>
                 </div>
             </div>
@@ -332,6 +364,26 @@
     private string? _ttsTestResult;
     private bool _ttsTestSuccess;
     private bool _confirmReset;
+    private bool _rebuilding;
+
+    // Provider connectivity: "none" | "testing" | "ok" | "fail"
+    private Dictionary<string, string> _apiStatus = new();
+
+    private RenderFragment StatusBadge(string provider) => builder =>
+    {
+        var status = _apiStatus.GetValueOrDefault(provider, "none");
+        var (css, label) = status switch
+        {
+            "ok" => ("bg-success", "Connected"),
+            "fail" => ("bg-danger", "Offline"),
+            "testing" => ("bg-warning text-dark", "Connecting"),
+            _ => ("bg-secondary", "Offline"),
+        };
+        builder.OpenElement(0, "span");
+        builder.AddAttribute(1, "class", $"badge {css}");
+        builder.AddContent(2, label);
+        builder.CloseElement();
+    };
 
     protected override async Task OnInitializedAsync()
     {
@@ -341,6 +393,78 @@
 
         if (_ttsConfigured)
             await LoadVoices();
+
+        _ = TestAllProviders();
+    }
+
+    private async Task TestAllProviders()
+    {
+        var tests = new (string name, string key, string endpoint, string authHeader, string body)[]
+        {
+            ("anthropic", SettingsSvc.ApiKey, "https://api.anthropic.com/v1/messages",
+                "x-api-key", """{"model":"claude-haiku-4-5-20251001","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+            ("openai", SettingsSvc.OpenAiApiKey, "https://api.openai.com/v1/chat/completions",
+                "Bearer", """{"model":"gpt-4.1-mini","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+            ("gemini", SettingsSvc.GeminiApiKey, "", "", ""),
+            ("deepseek", SettingsSvc.DeepSeekApiKey, "https://api.deepseek.com/chat/completions",
+                "Bearer", """{"model":"deepseek-chat","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+            ("mistral", SettingsSvc.MistralApiKey, "https://api.mistral.ai/v1/chat/completions",
+                "Bearer", """{"model":"mistral-small-latest","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+            ("grok", SettingsSvc.GrokApiKey, "https://api.x.ai/v1/chat/completions",
+                "Bearer", """{"model":"grok-3-mini","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+            ("groq", SettingsSvc.GroqApiKey, "https://api.groq.com/openai/v1/chat/completions",
+                "Bearer", """{"model":"llama-3.1-8b-instant","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+            ("together", SettingsSvc.TogetherApiKey, "https://api.together.xyz/v1/chat/completions",
+                "Bearer", """{"model":"meta-llama/Llama-3.3-70B-Instruct-Turbo","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+            ("openrouter", SettingsSvc.OpenRouterApiKey, "https://openrouter.ai/api/v1/chat/completions",
+                "Bearer", """{"model":"meta-llama/llama-3.3-70b-instruct","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+            ("fireworks", SettingsSvc.FireworksApiKey, "https://api.fireworks.ai/inference/v1/chat/completions",
+                "Bearer", """{"model":"accounts/fireworks/models/llama-v3p3-70b-instruct","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+            ("cohere", SettingsSvc.CohereApiKey, "https://api.cohere.com/v2/chat",
+                "Bearer", """{"model":"command-r","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+        };
+
+        var tasks = tests.Select(t => TestProvider(t.name, t.key, t.endpoint, t.authHeader, t.body));
+        await Task.WhenAll(tasks);
+    }
+
+    private async Task TestProvider(string name, string key, string endpoint, string authHeader, string body)
+    {
+        if (string.IsNullOrWhiteSpace(key)) { _apiStatus[name] = "none"; await InvokeAsync(StateHasChanged); return; }
+        _apiStatus[name] = "testing";
+        await InvokeAsync(StateHasChanged);
+
+        if (name == "gemini")
+        {
+            endpoint = $"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={key}";
+            authHeader = "";
+            body = """{"contents":[{"parts":[{"text":"hi"}]}],"generationConfig":{"maxOutputTokens":1}}""";
+        }
+
+        try
+        {
+            using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(15) };
+            using var req = new HttpRequestMessage(HttpMethod.Post, endpoint);
+            req.Content = new StringContent(body, System.Text.Encoding.UTF8, "application/json");
+
+            if (name == "anthropic")
+            {
+                req.Headers.Add("x-api-key", key);
+                req.Headers.Add("anthropic-version", "2023-06-01");
+            }
+            else if (authHeader == "Bearer")
+            {
+                req.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", key);
+            }
+
+            var resp = await http.SendAsync(req);
+            _apiStatus[name] = resp.IsSuccessStatusCode ? "ok" : "fail";
+        }
+        catch
+        {
+            _apiStatus[name] = "fail";
+        }
+        await InvokeAsync(StateHasChanged);
     }
 
     private async Task LoadVoices()
@@ -350,8 +474,6 @@
         try
         {
             _voices = await TtsSvc.ListVoicesAsync();
-
-            // Auto-select Oliver Silk if no voice is set yet
             if (string.IsNullOrWhiteSpace(SettingsSvc.ElevenLabsVoiceId) && _voices.Any())
             {
                 var defaultVoice = _voices.FirstOrDefault(v =>
@@ -361,10 +483,7 @@
                 SettingsSvc.NarratorVoiceName = defaultVoice.Name;
             }
         }
-        finally
-        {
-            _loadingVoices = false;
-        }
+        finally { _loadingVoices = false; }
     }
 
     private void OnVoiceSelected(ChangeEventArgs e)
@@ -380,35 +499,25 @@
 
     private async Task TestTts()
     {
-        _testingTts = true;
-        _ttsTestResult = null;
+        _testingTts = true; _ttsTestResult = null;
         try
         {
             var audio = await TtsSvc.SynthesizeAsync("The neon bleeds through cracked concrete. Welcome to the machine.");
             _ttsTestSuccess = audio.Length > 0;
             _ttsTestResult = _ttsTestSuccess ? $"Success ({audio.Length / 1024}KB)" : "Empty response";
         }
-        catch (Exception ex)
-        {
-            _ttsTestSuccess = false;
-            _ttsTestResult = ex.Message;
-        }
-        finally
-        {
-            _testingTts = false;
-        }
+        catch (Exception ex) { _ttsTestSuccess = false; _ttsTestResult = ex.Message; }
+        finally { _testingTts = false; }
     }
 
-    private void SaveSettings()
-    {
-        // All settings auto-save on change via SettingsService setters,
-        // but this gives the user a deliberate save action
-        _ = SettingsSvc.TtsModel; // trigger a read to ensure loaded
-    }
+    private void SaveSettings() { _ = SettingsSvc.TtsModel; }
 
-    private void DoReset()
+    private void DoReset() { SettingsSvc.ResetToDefaults(); _confirmReset = false; }
+
+    private async Task RebuildGraph()
     {
-        SettingsSvc.ResetToDefaults();
-        _confirmReset = false;
+        _rebuilding = true; StateHasChanged();
+        await Task.Run(() => Graph.Rebuild());
+        _rebuilding = false;
     }
 }

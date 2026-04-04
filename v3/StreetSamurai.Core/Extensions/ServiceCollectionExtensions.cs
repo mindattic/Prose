@@ -20,6 +20,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<FacetRepository>();
         services.AddSingleton<WorldbuildingDocRepository>();
         services.AddSingleton<WeaponryRepository>();
+        services.AddSingleton<AmmunitionRepository>();
         services.AddSingleton<EquipmentRepository>();
         services.AddSingleton<TechnologyRepository>();
         services.AddSingleton<MotifRepository>();
@@ -30,6 +31,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<DatabaseService>();
         services.AddSingleton<LoreService>();
         services.AddSingleton<MarkdownService>();
+        services.AddSingleton<ExportService>();
         services.AddSingleton<StoryService>();
         services.AddSingleton<IStoryBlockRepository, JsonStoryBlockRepository>();
         services.AddSingleton<FacetService>();

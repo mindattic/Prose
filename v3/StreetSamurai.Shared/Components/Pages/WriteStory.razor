@@ -14,18 +14,18 @@
 @inject IPathProvider Paths
 @inject ValidationService Validator
 @inject MarkdownService Markdown
+@inject ExportService Export
 @inject IJSRuntime JS
 @implements IDisposable
 
-@* ── Title + Word Count + Save ────────────────────────── *@
-<div class="d-flex align-items-center gap-2 mb-2">
-    <input type="text" class="form-control bg-dark text-danger border-secondary fw-bold fst-italic flex-grow-1"
-           style="font-family: Georgia, serif; font-size: 1.4rem;"
+@* ── Title + Save ─────────────────────────────────────── *@
+<div class="d-flex align-items-center gap-2 mb-2" style="height: 32px;">
+    <input type="text" class="form-control form-control-sm bg-dark text-danger border-secondary fw-bold fst-italic flex-grow-1"
+           style="font-family: Georgia, serif; font-size: 1rem; height: 32px;"
            placeholder="Untitled"
            @bind="_project.Title"
            @bind:after="Save" />
-    <small class="text-muted text-nowrap">@_wordCount words</small>
-    <button class="btn btn-sm btn-danger text-nowrap" @onclick="ForceSave">
+    <button class="btn btn-sm btn-danger text-nowrap" style="height: 32px;" @onclick="ForceSave">
         <i class="bi bi-floppy"></i> Save
     </button>
 </div>
@@ -125,7 +125,7 @@
 @* ── Formatting Toolbar ────────────────────────────────── *@
 @if (_viewMode == "editor")
 {
-<div class="d-flex gap-1 mb-1 align-items-center" style="overflow-x: auto; white-space: nowrap;">
+<div class="d-flex gap-1 mb-1 align-items-center" style="overflow-x: auto; white-space: nowrap; padding-top: 3px; padding-bottom: 3px;">
     <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h1")' title="Heading 1" style="font-weight: bold;">H1</button>
     <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h2")' title="Heading 2" style="font-weight: bold;">H2</button>
     <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h3")' title="Heading 3" style="font-weight: bold;">H3</button>
@@ -142,10 +142,20 @@
     <button class="btn btn-outline-secondary tb" @onclick="InsertHorizontalRule" title="Scene break"><i class="bi bi-dash-lg"></i></button>
     <button class="btn btn-outline-secondary tb" @onclick="() => _showImageInsert = !_showImageInsert" title="Insert image"><i class="bi bi-image"></i></button>
     <span class="text-secondary mx-1">|</span>
-    <button class="btn btn-outline-secondary tb" @onclick="() => _showTagBar = !_showTagBar" title="ElevenLabs tags"><i class="bi bi-music-note"></i></button>
-    <button class="btn btn-outline-secondary tb" @onclick="() => _showAudioPlayer = !_showAudioPlayer" title="Audio player"><i class="bi bi-volume-up"></i></button>
     <button class="btn @(_showSceneSidebar ? "btn-outline-danger" : "btn-outline-secondary") tb" @onclick="() => _showSceneSidebar = !_showSceneSidebar" title="Scene sidebar"><i class="bi bi-diagram-3"></i></button>
-    <button class="btn btn-outline-secondary tb" @onclick="ExportStory" title="Export"><i class="bi bi-download"></i></button>
+    <div class="dropdown d-inline-block">
+        <button class="btn btn-outline-secondary tb dropdown-toggle" type="button" data-bs-toggle="dropdown" title="Export">
+            <i class="bi bi-download"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+            <li><button class="dropdown-item" @onclick="ExportAsTxt"><i class="bi bi-file-text me-2"></i>Plain Text (.txt)</button></li>
+            <li><button class="dropdown-item" @onclick="ExportAsMd"><i class="bi bi-markdown me-2"></i>Markdown (.md)</button></li>
+            <li><button class="dropdown-item" @onclick="ExportAsPdf"><i class="bi bi-file-pdf me-2"></i>PDF (Print)</button></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><button class="dropdown-item @(_narrating || !_ttsAvailable ? "disabled" : "")" @onclick="ExportAsMp3"><i class="bi bi-file-music me-2"></i>MP3 (Narration)</button></li>
+            <li><button class="dropdown-item @(_narrating || !_ttsAvailable ? "disabled" : "")" @onclick="ExportAsOgg"><i class="bi bi-file-music me-2"></i>OGG (Narration)</button></li>
+        </ul>
+    </div>
 </div>
 }
 
@@ -154,37 +164,40 @@
         @if (_viewMode == "editor")
         {
             <div id="story-surface" class="form-control bg-dark text-light border-secondary rich-editor"
-                 contenteditable="true" style="resize: vertical;"
+                 contenteditable="true" style="min-height: calc(100vh - 300px); overflow-y: scroll; overflow-x: hidden;"
                  @onclick="() => { _showContextMenu = false; _showImageInsert = false; }"></div>
         }
 
         @* ── Image Insert Panel ────────────────────────── *@
+        @* ── Image Insert Modal ─────────────────────── *@
         @if (_showImageInsert)
         {
-            <div class="card bg-dark text-light border-secondary mt-1">
-                <div class="card-body py-2">
-                    <div class="d-flex justify-content-between align-items-center mb-1">
-                        <small class="text-muted fw-bold">Insert Image (base64)</small>
-                        <button class="btn btn-sm btn-outline-secondary py-0 px-1" @onclick="() => _showImageInsert = false"><i class="bi bi-x"></i></button>
+            <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                 style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => _showImageInsert = false">
+                <div class="card bg-dark text-light border-secondary" style="width: 500px;" @onclick:stopPropagation="true">
+                    <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+                        <span class="text-muted fw-bold"><i class="bi bi-image"></i> Insert Image</span>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="() => _showImageInsert = false"><i class="bi bi-x-lg"></i></button>
                     </div>
-                    <textarea class="form-control form-control-sm bg-dark text-light border-secondary mb-2 auto-grow"
-                              placeholder="Paste base64 image data here (data:image/png;base64,... or just the raw base64)"
-                              @bind="_imageBase64" style="font-family: monospace; font-size: 0.7rem; min-height: 60px;"></textarea>
-                    <div class="d-flex gap-2 align-items-center">
-                        <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
-                               placeholder="Alt text (optional)" @bind="_imageAlt" style="max-width: 200px;" />
-                        <button class="btn btn-sm btn-info text-dark" @onclick="DoInsertImage"
-                                disabled="@string.IsNullOrWhiteSpace(_imageBase64)">
-                            <i class="bi bi-image"></i> Insert
-                        </button>
-                    </div>
-                    @if (!string.IsNullOrWhiteSpace(_imageBase64))
-                    {
-                        <div class="mt-2">
-                            <small class="text-muted">Preview:</small>
-                            <div class="mt-1"><img src="@NormalizeImageSrc(_imageBase64)" alt="@_imageAlt" style="max-width: 300px; max-height: 200px; border-radius: 4px;" /></div>
+                    <div class="card-body">
+                        <textarea class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
+                                  placeholder="Paste base64 image data (data:image/png;base64,... or raw base64)"
+                                  @bind="_imageBase64" style="font-family: monospace; font-size: 0.7rem; min-height: 80px;"></textarea>
+                        <div class="d-flex gap-2 align-items-center mb-2">
+                            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                                   placeholder="Alt text (optional)" @bind="_imageAlt" />
+                            <button class="btn btn-sm btn-info text-dark text-nowrap" @onclick="DoInsertImage"
+                                    disabled="@string.IsNullOrWhiteSpace(_imageBase64)">
+                                <i class="bi bi-image"></i> Insert
+                            </button>
                         </div>
-                    }
+                        @if (!string.IsNullOrWhiteSpace(_imageBase64))
+                        {
+                            <div class="text-center">
+                                <img src="@NormalizeImageSrc(_imageBase64)" alt="@_imageAlt" style="max-width: 100%; max-height: 250px; border-radius: 4px;" />
+                            </div>
+                        }
+                    </div>
                 </div>
             </div>
         }
@@ -194,7 +207,7 @@
         {
             <div class="position-fixed bg-dark border border-secondary rounded shadow-lg py-1"
                  style="z-index: 1070; top: @(_ctxMenuTop)px; left: @(_ctxMenuLeft)px; min-width: 160px;">
-                <button class="btn btn-sm btn-dark text-light d-block w-100 text-start px-3 py-1" @onclick="ReadSelected" disabled="@_narrating">
+                <button class="btn btn-sm btn-dark text-light d-block w-100 text-start px-3 py-1" @onclick="ReadSelected" disabled="@(_narrating || !_hasSelection)">
                     <i class="bi bi-volume-up text-info me-2"></i>Read Selected
                 </button>
                 <button class="btn btn-sm btn-dark text-light d-block w-100 text-start px-3 py-1" @onclick="ReadAll" disabled="@_narrating">
@@ -218,34 +231,31 @@
             }
         }
 
-        @* ── ElevenLabs Tag Bar ──────────────────────── *@
-        @if (_showTagBar)
-        {
-            <div class="bg-dark border border-secondary rounded mt-1 d-flex align-items-center gap-1 px-3 py-1 flex-wrap" style="font-size: 0.75rem;">
-                <small class="text-muted fw-bold me-1">ElevenLabs</small>
-                <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[short pause]")'>short pause</button>
-                <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[long pause]")'>long pause</button>
-                <span class="text-secondary mx-1">|</span>
-                <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[whispers]")'>whispers</button>
-                <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[sighs]")'>sighs</button>
-                <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[laughs]")'>laughs</button>
-                <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[chuckles]")'>chuckles</button>
-                <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[clears throat]")'>clears throat</button>
-                <span class="text-secondary mx-1">|</span>
-                <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[exhales]")'>exhales</button>
-                <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[exhales sharply]")'>sharp exhale</button>
-                <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[inhales deeply]")'>deep inhale</button>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-1 ms-auto" @onclick="() => _showTagBar = false" style="font-size: 0.65rem;"><i class="bi bi-x"></i></button>
-            </div>
-        }
+        @* ── ElevenLabs Tag Bar (always visible) ───── *@
+        <div class="bg-dark border border-secondary rounded mt-1 d-flex align-items-center gap-1 px-3 py-1 flex-wrap" style="font-size: 0.75rem;">
+            <small class="text-muted fw-bold me-1">TTS Tags</small>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[short pause]")'>short pause</button>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[long pause]")'>long pause</button>
+            <span class="text-secondary mx-1">|</span>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[whispers]")'>whispers</button>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[sighs]")'>sighs</button>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[laughs]")'>laughs</button>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[chuckles]")'>chuckles</button>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[clears throat]")'>clears throat</button>
+            <span class="text-secondary mx-1">|</span>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[exhales]")'>exhales</button>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[exhales sharply]")'>sharp exhale</button>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[inhales deeply]")'>deep inhale</button>
+        </div>
 
         @* ── Audio Player ──────────────────────────── *@
         <AudioPlayer @ref="_audioPlayer"
-                     Visible="_showAudioPlayer"
-                     OnDismissed="() => _showAudioPlayer = false"
+                     Visible="true"
+                     OnDismissed="() => {}"
                      OnInsertTag="InsertTag"
                      OnReadSelected="ReadSelected"
                      OnReadAll="ReadAll"
+                     HasSelection="_hasSelection"
                      Engine="@_ttsEngine"
                      EngineChanged="e => _ttsEngine = e"
                      ShowTagInserter="false"
@@ -254,8 +264,8 @@
         @* ── Bottom bar: view toggle left, Ask/Write right ── *@
         <div class="d-flex align-items-center mt-1">
             <div class="btn-group">
-                <button class="btn btn-sm @(_viewMode == "editor" ? "btn-danger" : "btn-outline-secondary")" @onclick='() => SwitchViewMode("editor")'><i class="bi bi-brush"></i> Editor</button>
-                <button class="btn btn-sm @(_viewMode == "preview" ? "btn-danger" : "btn-outline-secondary")" @onclick='() => SwitchViewMode("preview")'><i class="bi bi-printer"></i> Preview</button>
+                <button class="btn btn-sm @(_viewMode == "editor" ? "btn-danger" : "btn-outline-secondary")" style="width: 100px;" @onclick='() => SwitchViewMode("editor")'><i class="bi bi-brush"></i> Editor</button>
+                <button class="btn btn-sm @(_viewMode == "preview" ? "btn-danger" : "btn-outline-secondary")" style="width: 100px;" @onclick='() => SwitchViewMode("preview")'><i class="bi bi-printer"></i> Preview</button>
             </div>
             <div class="ms-auto d-flex gap-2">
                 <button class="btn btn-sm btn-outline-info" @onclick="() => _showAskModal = true" disabled="@_busy">
@@ -450,7 +460,7 @@
     // ── Audio ──
     private bool _ttsAvailable;
     private bool _narrating;
-    private bool _showAudioPlayer;
+    private bool _hasSelection;
     private AudioPlayer? _audioPlayer;
     private string _ttsEngine = "elevenlabs"; // "elevenlabs" or "windows"
 
@@ -589,6 +599,16 @@
         StateHasChanged();
     }
 
+    [JSInvokable]
+    public async Task OnSelectionChanged(string selectedText)
+    {
+        var wordCount = string.IsNullOrWhiteSpace(selectedText) ? 0
+            : selectedText.Split([' ', '\n', '\r', '\t'], StringSplitOptions.RemoveEmptyEntries).Length;
+        var had = _hasSelection;
+        _hasSelection = wordCount >= 3;
+        if (had != _hasSelection) await InvokeAsync(StateHasChanged);
+    }
+
     // ── Command Execution ──
 
     // ── Ask ──
@@ -656,16 +676,39 @@
         if (string.IsNullOrWhiteSpace(_writeText)) return;
         _busy = true;
         _writeResult = "";
-        _statusMessage = "Writing...";
+        _statusMessage = "Loading world context...";
         StateHasChanged();
 
         try
         {
+            // Auto-detect characters and locations from existing story text + prompt
+            // so the LLM always has full graph context for every entity mentioned
+            var characters = new List<string>(_project.Characters);
+            if (_hasExistingText)
+            {
+                var session = new NarrativeSessionContext(Graph);
+                session.ScanText(_storyText);
+                session.ScanText(_writeText);
+                var snapshot = session.GetSnapshot();
+                foreach (var e in snapshot.PrimaryEntities.Where(e => e.NodeType == "character"))
+                    if (!characters.Contains(e.Name, StringComparer.OrdinalIgnoreCase))
+                        characters.Add(e.Name);
+            }
+
+            // Detect location from scene sidebar or graph scan
+            string? location = _sceneEntities
+                .Where(e => e.nodeType is "district" or "place" or "location")
+                .Select(e => e.name)
+                .FirstOrDefault();
+
+            _statusMessage = "Writing...";
+            StateHasChanged();
+
             if (!_hasExistingText)
             {
                 var opening = await Starter.GenerateOpeningAsync(new StoryStarterRequest
                 {
-                    Premise = _writeText, Characters = _project.Characters,
+                    Premise = _writeText, Characters = characters, Location = location,
                 });
                 _writeResult = opening.Text;
                 if (_project.Title is "Untitled" or "") _project.Title = opening.Title;
@@ -674,7 +717,7 @@
             {
                 var paragraphs = _storyText.Split(["\n\n", "\r\n\r\n"], StringSplitOptions.RemoveEmptyEntries)
                     .Select(p => p.Trim()).Where(p => p.Length > 0).ToList();
-                _writeResult = await Starter.ContinueAsync(paragraphs, _writeText, null, null, _project.Characters);
+                _writeResult = await Starter.ContinueAsync(paragraphs, _writeText, null, location, characters);
             }
         }
         catch (Exception ex) { _writeResult = $"Error: {ex.Message}"; }
@@ -1008,11 +1051,45 @@
         Nav.NavigateTo($"/write/{id}", replace: true);
     }
 
-    private async Task ExportStory()
+    private string SafeFilename(string ext) =>
+        _project.Title.Replace(" ", "_").Replace("\"", "").Replace("'", "").Replace("/", "").Replace("\\", "") + ext;
+
+    private async Task ExportAsTxt()
     {
-        var text = $"# {_project.Title}\n\n{_storyText}";
-        var filename = _project.Title.Replace(" ", "_").Replace("\"", "").Replace("'", "") + ".txt";
-        await JS.InvokeVoidAsync("writeInterop.downloadText", filename, text);
+        var text = Export.ToPlainText(_project.Title, _richHtml);
+        await JS.InvokeVoidAsync("writeInterop.downloadText", SafeFilename(".txt"), text);
+    }
+
+    private async Task ExportAsMd()
+    {
+        var md = Export.ToMarkdown(_project.Title, _richHtml);
+        await JS.InvokeVoidAsync("writeInterop.downloadText", SafeFilename(".md"), md);
+    }
+
+    private async Task ExportAsPdf()
+    {
+        var html = Export.ToPrintHtml(_project.Title, _richHtml, _project.Characters);
+        await JS.InvokeVoidAsync("writeInterop.openPrintWindow", html);
+    }
+
+    private async Task ExportAsMp3() => await ExportAudio("mp3_44100_128", ".mp3", "audio/mpeg");
+    private async Task ExportAsOgg() => await ExportAudio("ogg_vorbis", ".ogg", "audio/ogg");
+
+    private async Task ExportAudio(string format, string ext, string mime)
+    {
+        if (_narrating || !_ttsAvailable || !_hasExistingText) return;
+        _narrating = true;
+        _statusMessage = $"Synthesizing {ext.TrimStart('.')} narration...";
+        StateHasChanged();
+        try
+        {
+            var ttsText = ConvertTagsForTts(_storyText);
+            var audio = await TtsSvc.SynthesizeAsync(ttsText, voiceId: null, outputFormat: format, ct: default);
+            var b64 = Convert.ToBase64String(audio);
+            await JS.InvokeVoidAsync("writeInterop.downloadBlob", SafeFilename(ext), b64, mime);
+        }
+        catch (Exception ex) { _error = $"Audio export failed: {ex.Message}"; }
+        finally { _narrating = false; _statusMessage = ""; }
     }
 
     private void NewStory()
@@ -1053,7 +1130,6 @@
     private async Task NarrateText(string text)
     {
         _narrating = true;
-        _showAudioPlayer = true;
         _audioPlayer?.SetLoading(true);
         StateHasChanged();
         try

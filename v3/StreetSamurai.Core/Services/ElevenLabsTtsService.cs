@@ -24,6 +24,13 @@ public class ElevenLabsTtsService : ITtsService
         => Task.FromResult(!string.IsNullOrWhiteSpace(_settings.ElevenLabsApiKey));
 
     public async Task<byte[]> SynthesizeAsync(string text, string? voiceId = null, CancellationToken ct = default)
+        => await SynthesizeAsync(text, voiceId, outputFormat: null, ct);
+
+    /// <summary>
+    /// Synthesize speech with explicit output format.
+    /// Supported formats: mp3_44100_128 (default), ogg_vorbis, pcm_16000, pcm_22050, pcm_24000, pcm_44100.
+    /// </summary>
+    public async Task<byte[]> SynthesizeAsync(string text, string? voiceId, string? outputFormat, CancellationToken ct)
     {
         if (string.IsNullOrWhiteSpace(_settings.ElevenLabsApiKey))
             throw new InvalidOperationException("ElevenLabs API key not configured.");
@@ -32,7 +39,8 @@ public class ElevenLabsTtsService : ITtsService
         if (string.IsNullOrWhiteSpace(voice))
             voice = "jfIS2w2yJi0grJZPyEsk"; // Default: Oliver Silk
 
-        var url = $"https://api.elevenlabs.io/v1/text-to-speech/{voice}";
+        var format = outputFormat ?? "mp3_44100_128";
+        var url = $"https://api.elevenlabs.io/v1/text-to-speech/{voice}?output_format={format}";
 
         var payload = new
         {

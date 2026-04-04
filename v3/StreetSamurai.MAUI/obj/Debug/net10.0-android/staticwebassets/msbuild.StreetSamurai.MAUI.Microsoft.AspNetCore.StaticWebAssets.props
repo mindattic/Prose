@@ -12,12 +12,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wb6pkrfw0b</Fingerprint>
-      <Integrity>tEMYYYt0yxCWkeXii4JBe6rLdUF4TbkBJoLVMqxrhDM=</Integrity>
+      <Fingerprint>klmea5r7dx</Fingerprint>
+      <Integrity>6FfrV/FtEcUAPqPVLuoPN4Wf4acbOiie2n7c5QYIl6c=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>7696</FileLength>
-      <LastWriteTime>Fri, 03 Apr 2026 17:49:33 GMT</LastWriteTime>
+      <FileLength>9057</FileLength>
+      <LastWriteTime>Fri, 03 Apr 2026 20:53:13 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))">
@@ -52,12 +52,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>aevtk01mkr</Fingerprint>
-      <Integrity>MmhOTwPH16s7J4n/h8+Xif8bIW+A3i4/zjp+0tvAPb0=</Integrity>
+      <Fingerprint>0exqotokm1</Fingerprint>
+      <Integrity>eKjgdd7ECePdrzoDEm5veImoBs6P93kaCZi7jHEugpw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>12054</FileLength>
-      <LastWriteTime>Fri, 03 Apr 2026 16:28:04 GMT</LastWriteTime>
+      <FileLength>12380</FileLength>
+      <LastWriteTime>Fri, 03 Apr 2026 18:31:17 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\graph-interop.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\write-interop.js'))">
@@ -72,12 +72,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3uy5cclpyq</Fingerprint>
-      <Integrity>ZfRtjrV5ow/pbcbQA699SVnpKJaThFF6bJPyQIRSZcA=</Integrity>
+      <Fingerprint>aw3heceak1</Fingerprint>
+      <Integrity>BvTDS5iB4BS8mjeAWahH7bDBPaQ3KG15eWboCvERE6M=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>11329</FileLength>
-      <LastWriteTime>Fri, 03 Apr 2026 16:33:52 GMT</LastWriteTime>
+      <FileLength>16716</FileLength>
+      <LastWriteTime>Fri, 03 Apr 2026 20:49:24 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\write-interop.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css'))">

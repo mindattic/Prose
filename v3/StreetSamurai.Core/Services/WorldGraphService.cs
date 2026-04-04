@@ -287,6 +287,7 @@ public class WorldGraphService
 
     public void AddNode(WorldNode node)
     {
+        if (string.IsNullOrWhiteSpace(node.Id) || string.IsNullOrWhiteSpace(node.Name)) return;
         _nodes[node.Id] = node;
         if (!_graph.ContainsVertex(node.Id))
             _graph.AddVertex(node.Id);
@@ -294,6 +295,7 @@ public class WorldGraphService
 
     public void AddEdge(WorldEdge edge)
     {
+        if (string.IsNullOrWhiteSpace(edge.Source) || string.IsNullOrWhiteSpace(edge.Target)) return;
         if (!_graph.ContainsVertex(edge.Source)) _graph.AddVertex(edge.Source);
         if (!_graph.ContainsVertex(edge.Target)) _graph.AddVertex(edge.Target);
         _graph.AddEdge(edge);
