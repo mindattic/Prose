@@ -87,6 +87,29 @@ window.writeInterop = {
         URL.revokeObjectURL(url);
     },
 
+    downloadBlob: function (filename, base64, mimeType) {
+        const byteChars = atob(base64);
+        const byteArray = new Uint8Array(byteChars.length);
+        for (let i = 0; i < byteChars.length; i++) byteArray[i] = byteChars.charCodeAt(i);
+        const blob = new Blob([byteArray], { type: mimeType });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    },
+
+    openPrintWindow: function (html) {
+        const win = window.open('', '_blank');
+        if (!win) return false;
+        win.document.write(html);
+        win.document.close();
+        return true;
+    },
+
     // ── Rich editor (contenteditable) ───────────────────────
 
     richEditor: {
@@ -125,6 +148,22 @@ window.writeInterop = {
             // Track cursor for tag insertion
             el.addEventListener('keyup', () => self._saveCaret(el));
             el.addEventListener('mouseup', () => self._saveCaret(el));
+
+            // Track selection changes for Read Selected availability
+            if (!self._selectionListener) {
+                self._selectionDebounce = null;
+                self._selectionListener = true;
+                document.addEventListener('selectionchange', () => {
+                    clearTimeout(self._selectionDebounce);
+                    self._selectionDebounce = setTimeout(() => {
+                        const sel = window.getSelection();
+                        const text = sel ? sel.toString() : '';
+                        if (self._ref) {
+                            self._ref.invokeMethodAsync('OnSelectionChanged', text);
+                        }
+                    }, 150);
+                });
+            }
 
             // Entity click delegation
             el.addEventListener('click', (e) => {
@@ -313,7 +352,7 @@ window.writeInterop = {
             const el = document.getElementById(id);
             if (!el) return;
             el.focus();
-            document.execCommand('formatBlock', false, tag);
+            document.execCommand('formatBlock', false, '<' + tag + '>');
             this._notifyChange(el);
         },
 
@@ -351,6 +390,13 @@ window.writeInterop = {
             if (this._ref) {
                 this._ref.invokeMethodAsync('OnRichContentChanged', el.innerHTML, el.innerText);
             }
+        },
+
+        toggleLinks: function (id, show) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            if (show) el.classList.remove('hide-links');
+            else el.classList.add('hide-links');
         },
 
         // ── Markdown formatting (for textarea/Md mode) ──

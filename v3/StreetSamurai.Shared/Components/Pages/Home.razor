@@ -112,16 +112,19 @@
                 @if (_searchResults.Any())
                 {
                     <div class="mt-3">
-                        @foreach (var r in _searchResults.Take(5))
+                        @foreach (var r in _searchResults.Take(8))
                         {
-                            <div class="border-bottom border-secondary py-2">
-                                <small class="text-muted">@r.FileName:@r.LineNumber</small>
+                            <a href="@r.Route" class="d-block text-decoration-none border-bottom border-secondary py-2" style="cursor: pointer;">
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="badge @TypeBadge(r.EntityType)">@r.EntityType</span>
+                                    <span class="text-light fw-bold small">@(string.IsNullOrEmpty(r.EntityName) ? r.FileName : r.EntityName)</span>
+                                </div>
                                 @if (!string.IsNullOrEmpty(r.Heading))
                                 {
-                                    <small class="text-info"> > @r.Heading</small>
+                                    <small class="text-info">@r.Heading</small>
                                 }
-                                <div class="small mt-1" style="white-space: pre-wrap;">@r.Context</div>
-                            </div>
+                                <div class="text-muted small mt-1" style="white-space: pre-wrap; max-height: 3em; overflow: hidden;">@r.Context</div>
+                            </a>
                         }
                     </div>
                 }
@@ -196,11 +199,24 @@
     private void DoSearch()
     {
         if (!string.IsNullOrWhiteSpace(_searchQuery))
-            _searchResults = Canon.Search(_searchQuery, 5);
+            _searchResults = Canon.Search(_searchQuery, 8);
     }
 
     private void HandleSearchKey(KeyboardEventArgs e)
     {
         if (e.Key == "Enter") DoSearch();
     }
+
+    private static string TypeBadge(string type) => type switch
+    {
+        "character" => "bg-info",
+        "place" => "bg-success",
+        "faction" => "bg-purple",
+        "corponation" => "bg-warning text-dark",
+        "weapon" => "bg-danger",
+        "equipment" => "bg-primary",
+        "technology" => "bg-cyan",
+        "document" => "bg-secondary",
+        _ => "bg-secondary",
+    };
 }

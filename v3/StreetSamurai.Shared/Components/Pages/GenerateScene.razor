@@ -32,8 +32,8 @@
                     <div class="row g-3">
                         <div class="col-md-6">
                             <label class="form-label text-muted">Location</label>
-                            <select class="form-select bg-dark text-light border-secondary" @bind="_location" title="District from canon — provides atmosphere and sensory context to the AI">
-                                <option value="">-- Select District --</option>
+                            <select class="form-select bg-dark text-light border-secondary" @bind="_location" title="Place from canon — provides atmosphere and sensory context to the AI">
+                                <option value="">-- Select Place --</option>
                                 @foreach (var d in _districts)
                                 {
                                     <option value="@d.Name">@d.Name</option>

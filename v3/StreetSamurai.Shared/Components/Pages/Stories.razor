@@ -2,12 +2,69 @@
 @using StreetSamurai.Core.Models
 @using StreetSamurai.Core.Interfaces
 @inject IStoryBlockRepository Repo
+@inject StoryDirectorService Director
 @inject NavigationManager Nav
+@implements IDisposable
 
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h4 class="text-danger mb-0">Stories</h4>
-    <button class="btn btn-sm btn-outline-danger" @onclick="CreateNew"><i class="bi bi-plus-lg"></i> New Story</button>
+    <div class="d-flex gap-2">
+        <button class="btn btn-sm btn-outline-primary" @onclick="SurpriseMe" disabled="@_generating">
+            <i class="bi bi-lightning"></i> Surprise Me
+        </button>
+        <button class="btn btn-sm btn-outline-danger" @onclick="CreateNew"><i class="bi bi-plus-lg"></i> New Story</button>
+    </div>
 </div>
+
+@* ── Autonomous Generation Progress ────────────────────── *@
+@if (_generating)
+{
+    <div class="card bg-dark text-light border-primary mb-3">
+        <div class="card-body">
+            <div class="d-flex align-items-center gap-2 mb-2">
+                <div class="spinner-border spinner-border-sm text-primary"></div>
+                <span class="fw-bold text-primary">Autonomous Story Generation</span>
+            </div>
+            @if (_autonomousStory != null)
+            {
+                <div class="small mb-2">
+                    <span class="text-info">Protagonist:</span> @_autonomousStory.Protagonist
+                    <span class="text-muted mx-2">|</span>
+                    <span class="text-info">Cast:</span> @string.Join(", ", _autonomousStory.Characters)
+                    @if (!string.IsNullOrEmpty(_autonomousStory.Location))
+                    {
+                        <span class="text-muted mx-2">|</span>
+                        <span class="text-info">Location:</span> @_autonomousStory.Location
+                    }
+                </div>
+            }
+            <div class="small text-muted mb-2">@_progressMessage</div>
+            @if (_progressTotal > 0)
+            {
+                <div class="progress" style="height: 6px;">
+                    <div class="progress-bar bg-danger" style="width: @(_progressCurrent * 100 / _progressTotal)%"></div>
+                </div>
+                <small class="text-muted">Beat @_progressCurrent / @_progressTotal</small>
+            }
+
+            @* Live beat rendering *@
+            @foreach (var beat in _liveBeats)
+            {
+                <div class="mt-3 border-start border-danger ps-3">
+                    <div class="d-flex justify-content-between">
+                        <small class="text-danger fw-bold">Act @beat.Act — @beat.Title</small>
+                        <small class="text-muted">Beat @(beat.BeatIndex + 1)</small>
+                    </div>
+                    <div class="small mt-1" style="font-family: Georgia, serif; line-height: 1.7; white-space: pre-wrap; max-height: 150px; overflow-y: auto;">@beat.Text</div>
+                </div>
+            }
+
+            <div class="mt-3">
+                <button class="btn btn-sm btn-outline-secondary" @onclick="CancelGeneration">Cancel</button>
+            </div>
+        </div>
+    </div>
+}
 
 @if (_projects.Any())
 {
@@ -45,19 +102,51 @@
         </table>
     </div>
 }
-else
+else if (!_generating)
 {
     <div class="text-center py-5 text-muted">
         <p>No stories yet.</p>
-        <button class="btn btn-outline-danger" @onclick="CreateNew">Create Your First Story</button>
+        <div class="d-flex gap-2 justify-content-center">
+            <button class="btn btn-outline-primary" @onclick="SurpriseMe"><i class="bi bi-lightning"></i> Surprise Me</button>
+            <button class="btn btn-outline-danger" @onclick="CreateNew">New Story</button>
+        </div>
     </div>
 }
 
 @code {
     private List<StoryProject> _projects = [];
     private string? _confirmDeleteId;
+    private bool _generating;
+    private string _progressMessage = "";
+    private int _progressCurrent, _progressTotal;
+    private AutonomousStory? _autonomousStory;
+    private List<GeneratedStoryBeat> _liveBeats = [];
+    private CancellationTokenSource? _cts;
 
-    protected override void OnInitialized() => _projects = Repo.ListProjects();
+    protected override void OnInitialized()
+    {
+        _projects = Repo.ListProjects();
+        Director.OnProgress += OnDirectorProgress;
+    }
+
+    public void Dispose()
+    {
+        Director.OnProgress -= OnDirectorProgress;
+        _cts?.Cancel();
+    }
+
+    private void OnDirectorProgress(DirectorProgress p)
+    {
+        _progressMessage = p.Message;
+        _progressCurrent = p.CurrentBeat;
+        _progressTotal = p.TotalBeats;
+
+        // Check if new beats arrived
+        if (_autonomousStory?.Beats.Count > _liveBeats.Count)
+            _liveBeats = new List<GeneratedStoryBeat>(_autonomousStory.Beats);
+
+        InvokeAsync(StateHasChanged);
+    }
 
     private void OpenProject(string id) => Nav.NavigateTo($"/write/{id}");
 
@@ -68,10 +157,75 @@ else
         Nav.NavigateTo($"/write/{project.Id}");
     }
 
+    private async Task SurpriseMe()
+    {
+        _generating = true;
+        _liveBeats.Clear();
+        _progressMessage = "Initializing...";
+        _progressCurrent = 0;
+        _progressTotal = 0;
+        _cts = new CancellationTokenSource();
+        StateHasChanged();
+
+        try
+        {
+            _autonomousStory = await Director.SurpriseMeAsync(_cts.Token);
+
+            if (_autonomousStory.Complete)
+            {
+                // Save as a StoryProject
+                var project = new StoryProject
+                {
+                    Title = _autonomousStory.Title,
+                    Characters = _autonomousStory.Characters,
+                    Html = ConvertToHtml(_autonomousStory),
+                    Status = "draft",
+                };
+                Repo.SaveProject(project);
+                _projects = Repo.ListProjects();
+
+                // Navigate to the new story
+                Nav.NavigateTo($"/write/{project.Id}");
+            }
+        }
+        catch (OperationCanceledException) { _progressMessage = "Cancelled."; }
+        catch (Exception ex) { _progressMessage = $"Error: {ex.Message}"; }
+        finally { _generating = false; }
+    }
+
+    private void CancelGeneration() => _cts?.Cancel();
+
     private void DoDelete(string id)
     {
         Repo.DeleteProject(id);
         _confirmDeleteId = null;
         _projects = Repo.ListProjects();
+    }
+
+    private static string ConvertToHtml(AutonomousStory story)
+    {
+        var sb = new System.Text.StringBuilder();
+        sb.Append($"<h1>{System.Web.HttpUtility.HtmlEncode(story.Title)}</h1>");
+        sb.Append($"<p><em>Protagonist: {System.Web.HttpUtility.HtmlEncode(story.Protagonist)}</em></p>");
+
+        int lastAct = 0;
+        foreach (var beat in story.Beats)
+        {
+            if (beat.Act != lastAct)
+            {
+                var actName = story.Outline?.Acts.FirstOrDefault(a => a.ActNumber == beat.Act)?.Name ?? $"Act {beat.Act}";
+                sb.Append($"<h2>Act {beat.Act}: {System.Web.HttpUtility.HtmlEncode(actName)}</h2>");
+                lastAct = beat.Act;
+            }
+
+            // Convert newlines to paragraphs
+            var paragraphs = beat.Text.Split(["\n\n", "\r\n\r\n"], StringSplitOptions.RemoveEmptyEntries);
+            foreach (var p in paragraphs)
+                sb.Append($"<p>{System.Web.HttpUtility.HtmlEncode(p.Trim())}</p>");
+
+            sb.Append("<hr/>");
+        }
+
+        return sb.ToString();
     }
 }

@@ -12,12 +12,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>l9ljfzwpzy</Fingerprint>
-      <Integrity>l/Kbg1aITRC6txooUaA9m3qlOB5fhBDqg36n6bcDBa0=</Integrity>
+      <Fingerprint>h500hbyyk7</Fingerprint>
+      <Integrity>O6JyoqFW2nTHyYGl/AuCVhIXlsaZfP0d9wspqWhkPDs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>10380</FileLength>
-      <LastWriteTime>Sat, 04 Apr 2026 03:25:23 GMT</LastWriteTime>
+      <FileLength>10553</FileLength>
+      <LastWriteTime>Sat, 04 Apr 2026 03:55:43 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))">
@@ -32,12 +32,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>4cjzg8lgyk</Fingerprint>
-      <Integrity>XDM10fYr6RGdae7KvOZJM1WW4j/lSo0kvE+kxR+CaNc=</Integrity>
+      <Fingerprint>xrdc4uyuiv</Fingerprint>
+      <Integrity>Q9M30P8+jxCjAMasNy8T0cH6qnZeIkDTlDRNhiE4RhU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>1172</FileLength>
-      <LastWriteTime>Fri, 03 Apr 2026 01:16:46 GMT</LastWriteTime>
+      <FileLength>1216</FileLength>
+      <LastWriteTime>Sat, 04 Apr 2026 19:59:34 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\graph-interop.js'))">
@@ -60,6 +60,26 @@
       <LastWriteTime>Fri, 03 Apr 2026 18:31:17 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\graph-interop.js'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\here-map.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>StreetSamurai.MAUI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>js/here-map.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>l7vtfhhkfd</Fingerprint>
+      <Integrity>Qaa6v/jLg1gzLg4fL/Mn5BVu4VJtIS9vFFOg7QNQn+E=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>6248</FileLength>
+      <LastWriteTime>Sat, 04 Apr 2026 20:14:59 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\here-map.js'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\write-interop.js'))">
       <SourceType>Package</SourceType>
       <SourceId>StreetSamurai.MAUI</SourceId>
@@ -72,12 +92,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>aw3heceak1</Fingerprint>
-      <Integrity>BvTDS5iB4BS8mjeAWahH7bDBPaQ3KG15eWboCvERE6M=</Integrity>
+      <Fingerprint>0omd6fyuz7</Fingerprint>
+      <Integrity>AEpyl67NziqpbcGoHi2gUg3uXUti0CriERwhAMX8P+4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>16716</FileLength>
-      <LastWriteTime>Fri, 03 Apr 2026 20:49:24 GMT</LastWriteTime>
+      <FileLength>18520</FileLength>
+      <LastWriteTime>Sat, 04 Apr 2026 15:49:24 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\write-interop.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css'))">

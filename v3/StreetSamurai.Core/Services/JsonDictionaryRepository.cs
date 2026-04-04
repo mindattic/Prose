@@ -42,6 +42,9 @@ public class JsonDictionaryRepository<T> where T : class
             _nameSelector(item).Equals(name, StringComparison.OrdinalIgnoreCase));
     }
 
+    /// <summary>Fired after an item is saved, with the entity name.</summary>
+    public event Action<string>? OnItemSaved;
+
     public void Save(T item)
     {
         var items = GetAll();
@@ -55,6 +58,7 @@ public class JsonDictionaryRepository<T> where T : class
             items.Add(item);
 
         Persist(items);
+        OnItemSaved?.Invoke(name);
     }
 
     public void Delete(string name)

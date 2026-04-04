@@ -15,6 +15,13 @@
 @inject ValidationService Validator
 @inject MarkdownService Markdown
 @inject ExportService Export
+@inject StoryStateService StoryState
+@inject EventLogService EventLog
+@inject KnowledgeMapService KnowledgeMap
+@inject AgendaEngine Agenda
+@inject OutlineService OutlineSvc
+@inject SemanticIndexService SemanticIndex
+@inject InferenceService Inference
 @inject IJSRuntime JS
 @implements IDisposable
 
@@ -122,6 +129,218 @@
     </div>
 }
 
+@* ── What Next Modal ─────────────────────────────────── *@
+@if (_showWhatNextModal)
+{
+    <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => _showWhatNextModal = false">
+        <div class="card bg-dark text-light border-primary" style="width: 750px; max-height: 85vh; overflow-y: auto;"
+             @onclick:stopPropagation="true">
+            <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+                <span class="text-primary fw-bold"><i class="bi bi-lightning"></i> What Next?</span>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => _showWhatNextModal = false"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="card-body">
+                @if (_generatingPremises)
+                {
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="spinner-border spinner-border-sm text-primary"></div>
+                        <small class="text-muted">Analyzing character goals and finding conflicts...</small>
+                    </div>
+                }
+                else if (_conflictPremises.Any())
+                {
+                    <p class="text-muted small mb-3">Based on character goals and current story state, these conflicts are ready to erupt:</p>
+                    @foreach (var premise in _conflictPremises)
+                    {
+                        var p = premise;
+                        <div class="border border-secondary rounded p-3 mb-2">
+                            <div class="d-flex justify-content-between align-items-start mb-1">
+                                <span class="fw-bold">@p.Title</span>
+                                <span class="badge bg-danger">Tension @p.Tension/10</span>
+                            </div>
+                            <div class="small text-muted mb-1">@p.ConflictType — @string.Join(", ", p.CharactersInvolved)</div>
+                            <div class="small mb-2">@p.Premise</div>
+                            <div class="small text-info mb-2">@p.ThematicResonance</div>
+                            <button class="btn btn-sm btn-outline-danger" @onclick="() => UseConflictPremise(p)">
+                                <i class="bi bi-pen"></i> Write This
+                            </button>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="text-muted text-center py-3">No conflicts found. Add more characters to the story.</div>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+@* ── Outline Modal ──────────────────────────────────── *@
+@if (_showOutlineModal)
+{
+    <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => _showOutlineModal = false">
+        <div class="card bg-dark text-light border-success" style="width: 800px; max-height: 85vh; overflow-y: auto;"
+             @onclick:stopPropagation="true">
+            <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+                <span class="text-success fw-bold"><i class="bi bi-list-ol"></i> Story Outline</span>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => _showOutlineModal = false"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="card-body">
+                @if (_generatingOutline)
+                {
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="spinner-border spinner-border-sm text-success"></div>
+                        <small class="text-muted">Architecting story arc...</small>
+                    </div>
+                }
+                else if (_currentOutline != null)
+                {
+                    <h6 class="text-danger">@_currentOutline.Title</h6>
+                    <p class="small text-muted">@_currentOutline.Logline</p>
+                    <p class="small text-info">Theme: @_currentOutline.Theme</p>
+
+                    @foreach (var act in _currentOutline.Acts)
+                    {
+                        <div class="mb-3">
+                            <div class="fw-bold text-warning">Act @act.ActNumber: @act.Name</div>
+                            <small class="text-muted">@act.Purpose</small>
+                            @foreach (var beat in act.Beats)
+                            {
+                                var b = beat;
+                                <div class="d-flex align-items-start gap-2 border-start border-secondary ps-2 ms-2 mt-1 @(b.Written ? "opacity-50" : "")">
+                                    <span class="badge @(b.Written ? "bg-success" : "bg-secondary") mt-1" style="min-width: 24px;">@(b.BeatIndex + 1)</span>
+                                    <div class="flex-grow-1">
+                                        <div class="small fw-bold">@b.Title</div>
+                                        <div class="small text-muted">@b.Goal</div>
+                                        @if (b.Seeds.Count > 0) { <small class="text-info">Seeds: @string.Join(", ", b.Seeds)</small> }
+                                    </div>
+                                    @if (!b.Written)
+                                    {
+                                        <button class="btn btn-sm btn-outline-danger" @onclick="() => WriteBeatFromOutline(b)">Write</button>
+                                    }
+                                </div>
+                            }
+                        </div>
+                    }
+
+                    @if (_currentOutline.CharacterArcs.Any())
+                    {
+                        <div class="field-label text-danger mt-3">Character Arcs</div>
+                        @foreach (var arc in _currentOutline.CharacterArcs)
+                        {
+                            <div class="small border-start border-secondary ps-2 ms-2 mt-1">
+                                <span class="fw-bold">@arc.Character:</span> @arc.StartState → @arc.EndState
+                                <div class="text-muted">Turning point: @arc.TurningPoint (Cost: @arc.Cost)</div>
+                            </div>
+                        }
+                    }
+                }
+                else
+                {
+                    <div class="mb-3">
+                        <label class="form-label text-muted">Premise</label>
+                        <textarea class="form-control bg-dark text-light border-secondary" rows="2"
+                                  placeholder="What's this story about?" @bind="_outlinePremise"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-muted">Target Beats</label>
+                        <input type="number" class="form-control form-control-sm bg-dark text-light border-secondary"
+                               min="6" max="24" @bind="_outlineTargetBeats" style="width: 80px;" />
+                    </div>
+                    <button class="btn btn-sm btn-success" @onclick="GenerateOutline" disabled="@string.IsNullOrWhiteSpace(_outlinePremise)">
+                        <i class="bi bi-list-ol"></i> Generate Outline
+                    </button>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+@* ── Validate Modal ──────────────────────────────────── *@
+@if (_showValidateModal)
+{
+    <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+         style="z-index: 1050; background: rgba(0,0,0,0.7);">
+        <div class="card bg-dark text-light border-warning" style="width: 900px; max-height: 85vh; overflow-y: auto;">
+            <div class="card-header d-flex justify-content-between align-items-center border-secondary">
+                <span class="text-warning fw-bold"><i class="bi bi-shield-check"></i> Validate (@_validationResults.Count issues)</span>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => _showValidateModal = false"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="card-body">
+                @if (_validating)
+                {
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="spinner-border spinner-border-sm text-warning"></div>
+                        <small class="text-muted">Checking story against canon...</small>
+                    </div>
+                }
+                else if (!_validationResults.Any())
+                {
+                    <div class="text-success text-center py-4">
+                        <i class="bi bi-check-circle" style="font-size: 2rem;"></i>
+                        <div class="mt-2">No contradictions found</div>
+                    </div>
+                }
+                else
+                {
+                    @for (int idx = 0; idx < _validationResults.Count; idx++)
+                    {
+                        var issue = _validationResults[idx];
+                        var i = idx;
+                        <div class="border border-secondary rounded p-3 mb-3 @(i == _activeIssueIdx ? "border-warning" : "")">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <div>
+                                    <span class="badge @(issue.Severity == IssueSeverity.Hard ? "bg-danger" : "bg-warning text-dark") me-2">@issue.Category</span>
+                                    <span class="fw-bold">@issue.EntityName</span>
+                                </div>
+                                <small class="text-muted">@(i + 1) / @_validationResults.Count</small>
+                            </div>
+                            <div class="small text-muted mb-2">@issue.Description</div>
+
+                            @* Side-by-side: Story vs Canon *@
+                            <div class="row g-2 mb-2">
+                                <div class="col-6">
+                                    <div class="field-label text-danger">In Story</div>
+                                    <div class="bg-black rounded p-2 small" style="min-height: 40px;">@issue.StoryText</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="field-label text-success">Canon Truth</div>
+                                    <div class="bg-black rounded p-2 small" style="min-height: 40px;">@issue.CanonTruth</div>
+                                </div>
+                            </div>
+
+                            @* Resolution options *@
+                            <div class="field-label text-info mb-1">Resolve</div>
+                            <div class="d-flex flex-column gap-1 mb-2">
+                                <button class="btn btn-sm btn-outline-success text-start" @onclick="() => ResolveKeepCanon(i)">
+                                    <i class="bi bi-check-lg me-1"></i> Update story to match canon
+                                </button>
+                                @foreach (var alt in issue.Alternatives)
+                                {
+                                    var altText = alt;
+                                    <button class="btn btn-sm btn-outline-info text-start" @onclick="() => ResolveWithAlternative(i, altText)">
+                                        <i class="bi bi-arrow-right me-1"></i> @altText
+                                    </button>
+                                }
+                                <button class="btn btn-sm btn-outline-secondary text-start" @onclick="() => GenerateMore(i)" disabled="@_generatingMore">
+                                    @if (_generatingMore && _activeIssueIdx == i) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                    <i class="bi bi-arrow-repeat me-1"></i> Generate more alternatives
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary text-start" @onclick="() => DismissIssue(i)">
+                                    <i class="bi bi-x me-1"></i> Ignore this issue
+                                </button>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+}
+
 @* ── Formatting Toolbar ────────────────────────────────── *@
 @if (_viewMode == "editor")
 {
@@ -142,6 +361,7 @@
     <button class="btn btn-outline-secondary tb" @onclick="InsertHorizontalRule" title="Scene break"><i class="bi bi-dash-lg"></i></button>
     <button class="btn btn-outline-secondary tb" @onclick="() => _showImageInsert = !_showImageInsert" title="Insert image"><i class="bi bi-image"></i></button>
     <span class="text-secondary mx-1">|</span>
+    <button class="btn @(_showLinks ? "btn-outline-info" : "btn-outline-secondary") tb" @onclick="ToggleLinks" title="Toggle entity links"><i class="bi bi-link-45deg"></i></button>
     <button class="btn @(_showSceneSidebar ? "btn-outline-danger" : "btn-outline-secondary") tb" @onclick="() => _showSceneSidebar = !_showSceneSidebar" title="Scene sidebar"><i class="bi bi-diagram-3"></i></button>
     <div class="dropdown d-inline-block">
         <button class="btn btn-outline-secondary tb dropdown-toggle" type="button" data-bs-toggle="dropdown" title="Export">
@@ -163,7 +383,7 @@
     <div class="@(_showSceneSidebar ? "col-md-8" : "col-12")">
         @if (_viewMode == "editor")
         {
-            <div id="story-surface" class="form-control bg-dark text-light border-secondary rich-editor"
+            <div id="story-surface" class="form-control bg-dark text-light border-secondary rich-editor @(_showLinks ? "" : "hide-links")"
                  contenteditable="true" style="min-height: calc(100vh - 300px); overflow-y: scroll; overflow-x: hidden;"
                  @onclick="() => { _showContextMenu = false; _showImageInsert = false; }"></div>
         }
@@ -268,6 +488,15 @@
                 <button class="btn btn-sm @(_viewMode == "preview" ? "btn-danger" : "btn-outline-secondary")" style="width: 100px;" @onclick='() => SwitchViewMode("preview")'><i class="bi bi-printer"></i> Preview</button>
             </div>
             <div class="ms-auto d-flex gap-2">
+                <button class="btn btn-sm btn-outline-success" @onclick="ShowOutlineModal" disabled="@_busy">
+                    <i class="bi bi-list-ol"></i> Outline
+                </button>
+                <button class="btn btn-sm btn-outline-primary" @onclick="WhatNext" disabled="@(_busy || _project.Characters.Count == 0)">
+                    <i class="bi bi-lightning"></i> What Next?
+                </button>
+                <button class="btn btn-sm btn-outline-warning" @onclick="RunValidation" disabled="@(_busy || !_hasExistingText)">
+                    <i class="bi bi-shield-check"></i> Validate
+                </button>
                 <button class="btn btn-sm btn-outline-info" @onclick="() => _showAskModal = true" disabled="@_busy">
                     <i class="bi bi-chat-dots"></i> Ask
                 </button>
@@ -494,7 +723,27 @@
     private string _writeText = "";
     private string _writeResult = "";
 
+    // ── What Next ──
+    private bool _showWhatNextModal;
+    private bool _generatingPremises;
+    private List<ConflictPremise> _conflictPremises = [];
+
+    // ── Outline ──
+    private bool _showOutlineModal;
+    private bool _generatingOutline;
+    private StoryOutline? _currentOutline;
+    private string _outlinePremise = "";
+    private int _outlineTargetBeats = 12;
+
+    // ── Validate ──
+    private bool _showValidateModal;
+    private bool _validating;
+    private bool _generatingMore;
+    private int _activeIssueIdx;
+    private List<CanonIssue> _validationResults = [];
+
     // ── Editor ──
+    private bool _showLinks;
     private string _viewMode = "editor"; // "editor" or "preview"
     private string _richHtml = "";
     private string _printHtml = "";
@@ -717,7 +966,16 @@
             {
                 var paragraphs = _storyText.Split(["\n\n", "\r\n\r\n"], StringSplitOptions.RemoveEmptyEntries)
                     .Select(p => p.Trim()).Where(p => p.Length > 0).ToList();
-                _writeResult = await Starter.ContinueAsync(paragraphs, _writeText, null, location, characters);
+
+                // Inject story intelligence constraints
+                var storyConstraints = StoryState.BuildConstraints(_project.Id);
+                var knowledgeConstraints = KnowledgeMap.BuildPovConstraints(_project.Id, characters.FirstOrDefault() ?? "Kyle");
+                var eventContext = EventLog.BuildRecentContext(_project.Id);
+                var outline = OutlineSvc.Load(_project.Id);
+                var outlineCtx = outline != null ? OutlineSvc.BuildBeatContext(outline, StoryState.GetState(_project.Id).BeatCount) : null;
+
+                _writeResult = await Starter.ContinueAsync(paragraphs, _writeText, null, location, characters,
+                    storyConstraints, knowledgeConstraints, eventContext, outlineCtx);
             }
         }
         catch (Exception ex) { _writeResult = $"Error: {ex.Message}"; }
@@ -833,6 +1091,12 @@
     private async Task InsertHorizontalRule() =>
         await JS.InvokeVoidAsync("writeInterop.richEditor.insertHr", "story-surface");
 
+    private async Task ToggleLinks()
+    {
+        _showLinks = !_showLinks;
+        await JS.InvokeVoidAsync("writeInterop.richEditor.toggleLinks", "story-surface", _showLinks);
+    }
+
     private async Task DoInsertImage()
     {
         if (string.IsNullOrWhiteSpace(_imageBase64)) return;
@@ -918,10 +1182,26 @@
     private async Task PostGenerationHook()
     {
         // Entity linking happens automatically via the 2s input debounce in JS
-        // Just refresh the sidebar and kick off extraction
         if (_showSceneSidebar) RefreshOutline();
         _ = RunExtractionAsync();
-        await Task.CompletedTask;
+
+        // Closed-loop story intelligence: update state, log events, sync knowledge
+        var pid = _project.Id;
+        var beatIdx = StoryState.GetState(pid).BeatCount;
+        try
+        {
+            // Extract what changed in the narrative (character positions, injuries, emotions)
+            await StoryState.UpdateFromTextAsync(pid, _writeResult ?? _storyText, _storyText);
+
+            // Record structured events (who did what, where)
+            await EventLog.ExtractAndLogAsync(pid, _writeResult ?? _storyText, beatIdx);
+
+            // Sync knowledge map (who learned what, dramatic irony tracking)
+            var state = StoryState.GetState(pid);
+            var recentEvents = EventLog.GetEvents(pid);
+            KnowledgeMap.SyncFromState(pid, state, recentEvents, beatIdx);
+        }
+        catch { /* Story intelligence is best-effort — never break generation */ }
     }
 
     // ── Scene sidebar ──
@@ -1183,6 +1463,138 @@
             await InvokeAsync(StateHasChanged);
             _ = Task.Delay(5000).ContinueWith(_ => InvokeAsync(() => { _graphStatus = null; StateHasChanged(); }));
         }
+    }
+
+    // ── What Next ──
+
+    private async Task WhatNext()
+    {
+        _showWhatNextModal = true;
+        _generatingPremises = true;
+        _conflictPremises.Clear();
+        StateHasChanged();
+        try
+        {
+            var characters = _project.Characters.Count > 0 ? _project.Characters : ["Kyle", "Sable"];
+            var state = StoryState.GetState(_project.Id);
+            var events = EventLog.BuildRecentContext(_project.Id);
+            _conflictPremises = await Agenda.GenerateScenePremisesAsync(characters, state, events);
+        }
+        catch (Exception ex) { _error = $"Agenda failed: {ex.Message}"; }
+        finally { _generatingPremises = false; }
+    }
+
+    private void UseConflictPremise(ConflictPremise premise)
+    {
+        _showWhatNextModal = false;
+        _writeText = premise.Premise;
+        _showWriteModal = true;
+    }
+
+    // ── Outline ──
+
+    private void ShowOutlineModal()
+    {
+        _currentOutline = OutlineSvc.Load(_project.Id);
+        _showOutlineModal = true;
+    }
+
+    private async Task GenerateOutline()
+    {
+        _generatingOutline = true;
+        StateHasChanged();
+        try
+        {
+            var characters = _project.Characters.Count > 0 ? _project.Characters : ["Kyle", "Sable"];
+            _currentOutline = await OutlineSvc.GenerateOutlineAsync(
+                _outlinePremise, characters, null, _outlineTargetBeats);
+            OutlineSvc.Save(_project.Id, _currentOutline);
+            if (_project.Title is "Untitled" or "" && !string.IsNullOrEmpty(_currentOutline.Title))
+                _project.Title = _currentOutline.Title;
+        }
+        catch (Exception ex) { _error = $"Outline failed: {ex.Message}"; }
+        finally { _generatingOutline = false; }
+    }
+
+    private void WriteBeatFromOutline(OutlineBeat beat)
+    {
+        _showOutlineModal = false;
+        _writeText = beat.Goal;
+        _showWriteModal = true;
+        OutlineSvc.MarkBeatWritten(_currentOutline!, beat.BeatIndex);
+        OutlineSvc.Save(_project.Id, _currentOutline!);
+    }
+
+    // ── Validate ──
+
+    private async Task RunValidation()
+    {
+        _showValidateModal = true;
+        _validating = true;
+        _validationResults.Clear();
+        StateHasChanged();
+        try
+        {
+            var session = new NarrativeSessionContext(Graph);
+            session.ScanText(_storyText);
+            var worldContext = session.BuildContext();
+            _validationResults = await Validator.ValidateDeepAsync(_storyText, worldContext);
+        }
+        catch (Exception ex) { _error = $"Validation failed: {ex.Message}"; }
+        finally { _validating = false; }
+    }
+
+    private async Task ResolveKeepCanon(int idx)
+    {
+        if (idx < 0 || idx >= _validationResults.Count) return;
+        var issue = _validationResults[idx];
+        if (string.IsNullOrEmpty(issue.StoryText) || string.IsNullOrEmpty(issue.CanonTruth)) return;
+
+        // Replace the contradicting text in the editor with the canon truth
+        _richHtml = _richHtml.Replace(issue.StoryText, issue.CanonTruth);
+        _storyText = _storyText.Replace(issue.StoryText, issue.CanonTruth);
+        await JS.InvokeVoidAsync("writeInterop.richEditor.setHtml", "story-surface", _richHtml);
+        Save();
+        _validationResults.RemoveAt(idx);
+    }
+
+    private async Task ResolveWithAlternative(int idx, string altText)
+    {
+        if (idx < 0 || idx >= _validationResults.Count) return;
+        var issue = _validationResults[idx];
+        if (string.IsNullOrEmpty(issue.StoryText)) return;
+
+        // Replace story text with the chosen alternative
+        _richHtml = _richHtml.Replace(issue.StoryText, altText);
+        _storyText = _storyText.Replace(issue.StoryText, altText);
+        await JS.InvokeVoidAsync("writeInterop.richEditor.setHtml", "story-surface", _richHtml);
+        Save();
+        _validationResults.RemoveAt(idx);
+    }
+
+    private async Task GenerateMore(int idx)
+    {
+        if (idx < 0 || idx >= _validationResults.Count) return;
+        _activeIssueIdx = idx;
+        _generatingMore = true;
+        StateHasChanged();
+        try
+        {
+            var issue = _validationResults[idx];
+            var moreAlts = await Validator.GenerateAlternativesAsync(
+                issue.StoryText, issue.CanonTruth, _storyText);
+            issue.Alternatives.AddRange(moreAlts);
+        }
+        catch { }
+        finally { _generatingMore = false; }
+    }
+
+    private void DismissIssue(int idx)
+    {
+        if (idx >= 0 && idx < _validationResults.Count)
+            _validationResults.RemoveAt(idx);
+        if (!_validationResults.Any())
+            _showValidateModal = false;
     }
 
     // ── Cleanup ──

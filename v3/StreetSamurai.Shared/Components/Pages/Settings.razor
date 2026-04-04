@@ -73,7 +73,7 @@
     <div class="col-12">
         <div class="card bg-dark text-light border-secondary">
             <div class="card-header text-muted d-flex justify-content-between align-items-center">
-                Anthropic API
+                <span>Anthropic API <a href="https://console.anthropic.com/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span>
                 @StatusBadge("anthropic")
             </div>
             <div class="card-body">
@@ -97,7 +97,7 @@
     <div class="col-12">
         <div class="card bg-dark text-light border-secondary">
             <div class="card-header text-muted d-flex justify-content-between align-items-center">
-                OpenAI API
+                <span>OpenAI API <a href="https://platform.openai.com/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span>
                 @StatusBadge("openai")
             </div>
             <div class="card-body">
@@ -121,7 +121,7 @@
     </div>
     <div class="col-12">
         <div class="card bg-dark text-light border-secondary">
-            <div class="card-header text-muted d-flex justify-content-between align-items-center">Google Gemini @StatusBadge("gemini")</div>
+            <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Google Gemini <a href="https://aistudio.google.com/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("gemini")</div>
             <div class="card-body">
                 <div class="row g-3">
                     <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="AIza..." @bind="SettingsSvc.GeminiApiKey" @bind:event="onchange" /></div>
@@ -137,7 +137,7 @@
     </div>
     <div class="col-12">
         <div class="card bg-dark text-light border-secondary">
-            <div class="card-header text-muted d-flex justify-content-between align-items-center">DeepSeek @StatusBadge("deepseek")</div>
+            <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>DeepSeek <a href="https://platform.deepseek.com/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("deepseek")</div>
             <div class="card-body">
                 <div class="row g-3">
                     <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="sk-..." @bind="SettingsSvc.DeepSeekApiKey" @bind:event="onchange" /></div>
@@ -152,7 +152,7 @@
     </div>
     <div class="col-12">
         <div class="card bg-dark text-light border-secondary">
-            <div class="card-header text-muted d-flex justify-content-between align-items-center">Mistral @StatusBadge("mistral")</div>
+            <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Mistral <a href="https://console.mistral.ai/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("mistral")</div>
             <div class="card-body">
                 <div class="row g-3">
                     <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.MistralApiKey" @bind:event="onchange" /></div>
@@ -169,7 +169,7 @@
     </div>
     <div class="col-12">
         <div class="card bg-dark text-light border-secondary">
-            <div class="card-header text-muted d-flex justify-content-between align-items-center">Grok (xAI) @StatusBadge("grok")</div>
+            <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Grok (xAI) <a href="https://console.x.ai/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("grok")</div>
             <div class="card-body">
                 <div class="row g-3">
                     <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="xai-..." @bind="SettingsSvc.GrokApiKey" @bind:event="onchange" /></div>
@@ -184,7 +184,7 @@
     </div>
     <div class="col-12">
         <div class="card bg-dark text-light border-secondary">
-            <div class="card-header text-muted d-flex justify-content-between align-items-center">Groq @StatusBadge("groq")</div>
+            <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Groq <a href="https://console.groq.com/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("groq")</div>
             <div class="card-body">
                 <div class="row g-3">
                     <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="gsk_..." @bind="SettingsSvc.GroqApiKey" @bind:event="onchange" /></div>
@@ -201,7 +201,7 @@
     </div>
     <div class="col-12">
         <div class="card bg-dark text-light border-secondary">
-            <div class="card-header text-muted d-flex justify-content-between align-items-center">Together AI @StatusBadge("together")</div>
+            <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Together AI <a href="https://api.together.ai/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("together")</div>
             <div class="card-body">
                 <div class="row g-3">
                     <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.TogetherApiKey" @bind:event="onchange" /></div>
@@ -217,7 +217,7 @@
     </div>
     <div class="col-12">
         <div class="card bg-dark text-light border-secondary">
-            <div class="card-header text-muted d-flex justify-content-between align-items-center">OpenRouter @StatusBadge("openrouter")</div>
+            <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>OpenRouter <a href="https://openrouter.ai/settings/keys" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("openrouter")</div>
             <div class="card-body">
                 <div class="row g-3">
                     <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="sk-or-..." @bind="SettingsSvc.OpenRouterApiKey" @bind:event="onchange" /></div>
@@ -234,7 +234,7 @@
     </div>
     <div class="col-12">
         <div class="card bg-dark text-light border-secondary">
-            <div class="card-header text-muted d-flex justify-content-between align-items-center">Fireworks AI @StatusBadge("fireworks")</div>
+            <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Fireworks AI <a href="https://fireworks.ai/account/api-keys" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("fireworks")</div>
             <div class="card-body">
                 <div class="row g-3">
                     <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="fw_..." @bind="SettingsSvc.FireworksApiKey" @bind:event="onchange" /></div>
@@ -249,7 +249,7 @@
     </div>
     <div class="col-12">
         <div class="card bg-dark text-light border-secondary">
-            <div class="card-header text-muted d-flex justify-content-between align-items-center">Cohere @StatusBadge("cohere")</div>
+            <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Cohere <a href="https://dashboard.cohere.com/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("cohere")</div>
             <div class="card-body">
                 <div class="row g-3">
                     <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.CohereApiKey" @bind:event="onchange" /></div>
@@ -265,12 +265,37 @@
     </div>
 </div>
 
+@* ── HERE Maps ────────────────────────────────────────── *@
+<div class="row g-3 mb-3">
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted"><span>HERE Maps <a href="https://platform.here.com/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span></div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label class="form-label text-muted">App ID</label>
+                        <input type="text" class="form-control bg-dark text-light border-secondary"
+                               placeholder="App ID"
+                               @bind="SettingsSvc.MapAppId" @bind:event="onchange" />
+                    </div>
+                    <div class="col-md-8">
+                        <label class="form-label text-muted">API Key</label>
+                        <input type="password" class="form-control bg-dark text-light border-secondary"
+                               placeholder="HERE Maps API key"
+                               @bind="SettingsSvc.MapApiKey" @bind:event="onchange" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 @* ── ElevenLabs TTS ────────────────────────────────────── *@
 <div class="row g-3 mb-3">
     <div class="col-12">
         <div class="card bg-dark text-light border-secondary">
             <div class="card-header text-muted d-flex justify-content-between align-items-center">
-                ElevenLabs TTS
+                <span>ElevenLabs TTS <a href="https://elevenlabs.io/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span>
                 <span class="badge @(_ttsConfigured ? "bg-success" : "bg-secondary")">@(_ttsConfigured ? "Connected" : "Offline")</span>
             </div>
             <div class="card-body">

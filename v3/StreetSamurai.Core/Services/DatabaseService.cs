@@ -152,6 +152,31 @@ public class DatabaseService
 
         if (c.NarrativeFunction.Length > 0) lines.Add($"NARRATIVE FUNCTION: {c.NarrativeFunction}");
 
+        // Behavioral patterns — concrete rules for how this character acts
+        var b = c.Behavioral;
+        if (b.DecisionRules.Any())
+            lines.Add($"DECISION RULES:\n{string.Join("\n", b.DecisionRules.Select(r => $"  - {r}"))}");
+        if (b.EscalationLadder.Any())
+            lines.Add($"ESCALATION:\n{string.Join("\n", b.EscalationLadder.Select(s => $"  {s}"))}");
+        if (b.InterpersonalModes.Any())
+        {
+            lines.Add("INTERPERSONAL MODES:");
+            foreach (var (person, mode) in b.InterpersonalModes)
+                lines.Add($"  [{person}]: {mode}");
+        }
+        if (b.StressResponses.Any())
+        {
+            lines.Add("STRESS RESPONSES:");
+            foreach (var (level, response) in b.StressResponses)
+                lines.Add($"  [{level}]: {response}");
+        }
+        if (b.Contradictions.Any())
+            lines.Add($"INTERNAL CONTRADICTIONS:\n{string.Join("\n", b.Contradictions.Select(c2 => $"  - {c2}"))}");
+        if (b.Habits.Any())
+            lines.Add($"HABITS:\n{string.Join("\n", b.Habits.Select(h => $"  - {h}"))}");
+        if (b.BreakingPoints.Any())
+            lines.Add($"BREAKING POINTS:\n{string.Join("\n", b.BreakingPoints.Select(bp => $"  - {bp}"))}");
+
         return string.Join("\n", lines);
     }
 
@@ -210,6 +235,27 @@ public class DatabaseService
     public List<SearchResult> Search(string query, int maxResults = 20)
     {
         var results = new List<SearchResult>();
+        var q = query;
+
+        // Search entities first (exact and partial name matches)
+        foreach (var c in Characters.Where(c => c.Name.Contains(q, StringComparison.OrdinalIgnoreCase) || c.Description.Contains(q, StringComparison.OrdinalIgnoreCase)))
+            results.Add(new SearchResult { EntityType = "character", EntityName = c.Name, Route = "/characters", FileName = "characters.json", Heading = c.Role, Context = Trunc(c.Description, 200) });
+        foreach (var d in Districts.Where(d => d.Name.Contains(q, StringComparison.OrdinalIgnoreCase) || d.Description.Contains(q, StringComparison.OrdinalIgnoreCase)))
+            results.Add(new SearchResult { EntityType = "place", EntityName = d.Name, Route = "/places", FileName = "districts.json", Heading = "", Context = Trunc(d.Description, 200) });
+        foreach (var f in Factions.Where(f => f.Name.Contains(q, StringComparison.OrdinalIgnoreCase) || f.Description.Contains(q, StringComparison.OrdinalIgnoreCase)))
+            results.Add(new SearchResult { EntityType = "faction", EntityName = f.Name, Route = "/factions", FileName = "factions.json", Heading = f.Motto, Context = Trunc(f.Description, 200) });
+        foreach (var c in Corponations.Where(c => c.Name.Contains(q, StringComparison.OrdinalIgnoreCase) || c.Sector.Contains(q, StringComparison.OrdinalIgnoreCase)))
+            results.Add(new SearchResult { EntityType = "corponation", EntityName = c.Name, Route = "/corps", FileName = "corponations.json", Heading = c.Sector, Context = Trunc(c.FoundingStory, 200) });
+        foreach (var w in Weaponry.Where(w => w.Name.Contains(q, StringComparison.OrdinalIgnoreCase) || w.Description.Contains(q, StringComparison.OrdinalIgnoreCase)))
+            results.Add(new SearchResult { EntityType = "weapon", EntityName = w.Name, Route = "/weaponry", FileName = "weaponry.json", Heading = w.Category, Context = Trunc(w.Description, 200) });
+        foreach (var e in Equipment.Where(e => e.Name.Contains(q, StringComparison.OrdinalIgnoreCase) || e.Description.Contains(q, StringComparison.OrdinalIgnoreCase)))
+            results.Add(new SearchResult { EntityType = "equipment", EntityName = e.Name, Route = "/equipment", FileName = "equipment.json", Heading = e.Category, Context = Trunc(e.Description, 200) });
+        foreach (var t in Technology.Where(t => t.Name.Contains(q, StringComparison.OrdinalIgnoreCase) || t.Description.Contains(q, StringComparison.OrdinalIgnoreCase)))
+            results.Add(new SearchResult { EntityType = "technology", EntityName = t.Name, Route = "/technology", FileName = "technology.json", Heading = t.Subcategory, Context = Trunc(t.Description, 200) });
+
+        if (results.Count >= maxResults) return results.Take(maxResults).ToList();
+
+        // Search worldbuilding documents
         foreach (var doc in WorldbuildingDocs)
         {
             var lines = doc.Body.Split('\n');
@@ -217,7 +263,7 @@ public class DatabaseService
             for (int i = 0; i < lines.Length; i++)
             {
                 if (lines[i].StartsWith('#')) currentHeading = lines[i].TrimStart('#').Trim();
-                if (!lines[i].Contains(query, StringComparison.OrdinalIgnoreCase)) continue;
+                if (!lines[i].Contains(q, StringComparison.OrdinalIgnoreCase)) continue;
 
                 var start = Math.Max(0, i - 1);
                 var end = Math.Min(lines.Length, i + 2);
@@ -227,6 +273,9 @@ public class DatabaseService
                     Heading = currentHeading,
                     LineNumber = i + 1,
                     Context = string.Join("\n", lines[start..end]),
+                    EntityType = "document",
+                    EntityName = doc.Title,
+                    Route = "/documents",
                 });
                 if (results.Count >= maxResults) return results;
             }
@@ -244,6 +293,9 @@ public record SearchResult
     public string Heading { get; init; } = "";
     public int LineNumber { get; init; }
     public string Context { get; init; } = "";
+    public string EntityType { get; init; } = "document";
+    public string EntityName { get; init; } = "";
+    public string Route { get; init; } = "";
 }
 
 public record Document

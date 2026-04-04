@@ -2,6 +2,7 @@
 @inject WorldbuildingDocRepository Repo
 @inject NavigationManager Nav
 @inject IJSRuntime JS
+@inject WorldGraphService Graph
 
 <div class="dict-layout">
     <div class="dict-list bg-dark border-end border-secondary">
@@ -12,6 +13,9 @@
                 <div class="text-muted" style="font-size: 0.7rem;">@d.Category</div>
             </div>
         }
+        <div class="p-2">
+            <button class="btn btn-sm btn-outline-danger w-100" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New Document</button>
+        </div>
     </div>
 
     <div class="dict-editor">
@@ -47,6 +51,6 @@
     private void AddNew() { _editing = new WorldbuildingDocument(); _isNew = true; _confirmDelete = false; }
     private void Edit(WorldbuildingDocument d) { _editing = d; _originalName = d.FileName; _isNew = false; _confirmDelete = false; }
     private void SaveEdit() { if (_editing == null || string.IsNullOrWhiteSpace(_editing.FileName)) return; if (!_isNew && _originalName != _editing.FileName) Repo.Delete(_originalName); Repo.Save(_editing); _editing = null; _items = Repo.GetAll(); }
-    private void DoDelete() { if (_editing == null) return; Repo.Delete(_editing.FileName); _editing = null; _confirmDelete = false; _items = Repo.GetAll(); }
+    private void DoDelete() { if (_editing == null) return; Graph.RemoveNode(_editing.Title); Repo.Delete(_editing.FileName); _editing = null; _confirmDelete = false; _items = Repo.GetAll(); }
     protected override async Task OnAfterRenderAsync(bool firstRender) { await JS.InvokeVoidAsync("writeInterop.autoResizeAll"); }
 }

@@ -12,6 +12,8 @@ public class SceneGenerationService
     private readonly DatabaseService _canonDb;
     private readonly ValidationService _validator;
     private readonly IPathProvider _paths;
+    private readonly SemanticIndexService _semanticIndex;
+    private readonly InferenceService _inference;
 
     public event Action<BeatGenerationProgress>? OnBeatProgress;
     public event Action<GeneratedBeat>? OnBeatCompleted;
@@ -19,7 +21,7 @@ public class SceneGenerationService
     public SceneGenerationService(
         FacetService facets, ContextAnalyzerService analyzer, BeatGeneratorService beatGen,
         WorldGraphService graph, DatabaseService canonDb, ValidationService validator,
-        IPathProvider paths)
+        IPathProvider paths, SemanticIndexService semanticIndex, InferenceService inference)
     {
         _facets = facets;
         _analyzer = analyzer;
@@ -28,6 +30,8 @@ public class SceneGenerationService
         _canonDb = canonDb;
         _validator = validator;
         _paths = paths;
+        _semanticIndex = semanticIndex;
+        _inference = inference;
     }
 
     public async Task<GeneratedScene> GenerateSceneAsync(SceneRequest request, FacetState characterWeights, CancellationToken ct = default)
@@ -36,7 +40,7 @@ public class SceneGenerationService
         var allFacets = _facets.LoadAllFacets();
         var storyBible = _canonDb.GetLiteraryRulesPrompt();
 
-        var session = new NarrativeSessionContext(_graph);
+        var session = new NarrativeSessionContext(_graph, _semanticIndex, _inference);
         session.TouchAll(request.Characters);
         if (request.Location != null) session.Touch(request.Location);
 
@@ -82,8 +86,9 @@ public class SceneGenerationService
             // Validate against canon — catch pronoun errors, dead characters, etc.
             var issues = _validator.ValidateQuick(text);
 
-            // Scan for new entity mentions
+            // Scan for new entity mentions (keyword + semantic)
             var newEntities = session.ScanText(text);
+            session.ScanTextSemantic(text);
 
             var beat = new GeneratedBeat
             {

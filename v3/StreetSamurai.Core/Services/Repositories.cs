@@ -3,50 +3,106 @@ using StreetSamurai.Core.Models.Canon;
 
 namespace StreetSamurai.Core.Services;
 
-/// <summary>Typed repositories — one per entity type, one JSON file each.</summary>
+/// <summary>
+/// Typed repositories — one per entity type. Each stores entities as individual
+/// JSON files in a typed directory (e.g. engine_data/characters/kyle.json).
+/// On first access, auto-migrates from legacy single-array files if present.
+/// </summary>
 
-public class CharacterRepository : JsonDictionaryRepository<CharacterData>
+public class CharacterRepository : JsonDirectoryRepository<CharacterData>
 {
     public CharacterRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "characters.json"), c => c.Name) { }
+        : base(Path.Combine(paths.EngineDataDir, "characters"), c => c.Name) { AutoMigrate(paths); }
+    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "characters.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
 }
 
-public class CorponationRepository : JsonDictionaryRepository<CorponationData>
+public class CorponationRepository : JsonDirectoryRepository<CorponationData>
 {
     public CorponationRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "corponations.json"), c => c.Name) { }
+        : base(Path.Combine(paths.EngineDataDir, "corponations"), c => c.Name) { AutoMigrate(paths); }
+    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "corponations.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
 }
 
-public class DistrictRepository : JsonDictionaryRepository<DistrictData>
+public class DistrictRepository : JsonDirectoryRepository<DistrictData>
 {
     public DistrictRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "districts.json"), d => d.Name) { }
+        : base(Path.Combine(paths.EngineDataDir, "places"), d => d.Name) { AutoMigrate(paths); }
+    private void AutoMigrate(IPathProvider p)
+    {
+        var old = Path.Combine(p.EngineDataDir, "districts.json");
+        if (File.Exists(old)) MigrateFromArrayFile(old);
+    }
 }
 
-public class FactionRepository : JsonDictionaryRepository<FactionData>
+public class FactionRepository : JsonDirectoryRepository<FactionData>
 {
     public FactionRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "factions.json"), f => f.Name) { }
+        : base(Path.Combine(paths.EngineDataDir, "factions"), f => f.Name) { AutoMigrate(paths); }
+    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "factions.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
 }
 
-public class FacetRepository : JsonDictionaryRepository<FacetData>
+public class FacetRepository : JsonDirectoryRepository<FacetData>
 {
     public FacetRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "facets.json"), f => f.Name) { }
+        : base(Path.Combine(paths.EngineDataDir, "facets"), f => f.Name) { AutoMigrate(paths); }
+    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "facets.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
 }
 
-public class WorldbuildingDocRepository : JsonDictionaryRepository<WorldbuildingDocument>
+public class WorldbuildingDocRepository : JsonDirectoryRepository<WorldbuildingDocument>
 {
     public WorldbuildingDocRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "worldbuilding_docs.json"), d => d.FileName) { }
+        : base(Path.Combine(paths.EngineDataDir, "documents"), d => d.FileName) { AutoMigrate(paths); }
+    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "worldbuilding_docs.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
 }
 
-public class MotifRepository : JsonDictionaryRepository<MotifData>
+public class MotifRepository : JsonDirectoryRepository<MotifData>
 {
     public MotifRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "motifs.json"), m => m.Name) { }
+        : base(Path.Combine(paths.EngineDataDir, "motifs"), m => m.Name) { AutoMigrate(paths); }
+    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "motifs.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
 }
 
+public class WeaponryRepository : JsonDirectoryRepository<WeaponryData>
+{
+    public WeaponryRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "weaponry"), w => w.Name) { AutoMigrate(paths); }
+    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "weaponry.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
+}
+
+public class AmmunitionRepository : JsonDirectoryRepository<AmmunitionData>
+{
+    public AmmunitionRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "ammunition"), a => a.Name) { AutoMigrate(paths); }
+    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "ammunition.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
+}
+
+public class EquipmentRepository : JsonDirectoryRepository<EquipmentData>
+{
+    public EquipmentRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "equipment"), e => e.Name) { AutoMigrate(paths); }
+    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "equipment.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
+}
+
+public class TechnologyRepository : JsonDirectoryRepository<TechnologyData>
+{
+    public TechnologyRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "technology"), t => t.Name) { AutoMigrate(paths); }
+    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "technology.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
+}
+
+public class CyberwareRepository : JsonDirectoryRepository<CyberwareData>
+{
+    public CyberwareRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "cyberware"), c => c.Name) { }
+}
+
+public class VocabularyRepository : JsonDirectoryRepository<VocabularyEntry>
+{
+    public VocabularyRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "vocabulary"), v => v.Term) { }
+}
+
+// Singleton repositories stay file-based (they're single objects, not collections)
 public class StoryBibleRepository : JsonSingletonRepository<StoryBibleData>
 {
     public StoryBibleRepository(IPathProvider paths)
@@ -57,30 +113,6 @@ public class LiteraryRulesRepository : JsonSingletonRepository<LiteraryRulesData
 {
     public LiteraryRulesRepository(IPathProvider paths)
         : base(Path.Combine(paths.EngineDataDir, "literary_rules.json")) { }
-}
-
-public class WeaponryRepository : JsonDictionaryRepository<WeaponryData>
-{
-    public WeaponryRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "weaponry.json"), w => w.Name) { }
-}
-
-public class AmmunitionRepository : JsonDictionaryRepository<AmmunitionData>
-{
-    public AmmunitionRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "ammunition.json"), a => a.Name) { }
-}
-
-public class EquipmentRepository : JsonDictionaryRepository<EquipmentData>
-{
-    public EquipmentRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "equipment.json"), e => e.Name) { }
-}
-
-public class TechnologyRepository : JsonDictionaryRepository<TechnologyData>
-{
-    public TechnologyRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "technology.json"), t => t.Name) { }
 }
 
 public class CharacterProfileRepository : JsonSingletonRepository<CharacterProfileData>

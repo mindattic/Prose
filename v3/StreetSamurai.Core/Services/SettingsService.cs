@@ -95,6 +95,9 @@ public class SettingsService
     public string OpenRouterModel { get => _data.OpenRouterModel; set { _data.OpenRouterModel = value; Save(); } }
     public string FireworksModel { get => _data.FireworksModel; set { _data.FireworksModel = value; Save(); } }
     public string CohereModel { get => _data.CohereModel; set { _data.CohereModel = value; Save(); } }
+    public string MapService { get => _data.MapService; set { _data.MapService = value; Save(); } }
+    public string MapAppId { get => _data.MapAppId; set { _data.MapAppId = value; Save(); } }
+    public string MapApiKey { get => _data.MapApiKey; set { _data.MapApiKey = value; Save(); } }
 
     /// <summary>Reset non-secret settings to defaults. Preserves API keys and canon root.</summary>
     public void ResetToDefaults()
@@ -181,5 +184,8 @@ public class SettingsService
         public string OpenRouterModel { get; set; } = "anthropic/claude-sonnet-4";
         public string FireworksModel { get; set; } = "accounts/fireworks/models/llama-v3p3-70b-instruct";
         public string CohereModel { get; set; } = "command-r-plus";
+        public string MapService { get; set; } = "here";
+        public string MapAppId { get; set; } = "";
+        public string MapApiKey { get; set; } = "";
     }
 }
