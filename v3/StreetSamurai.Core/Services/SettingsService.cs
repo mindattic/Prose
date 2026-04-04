@@ -185,7 +185,7 @@ public class SettingsService
         public string FireworksModel { get; set; } = "accounts/fireworks/models/llama-v3p3-70b-instruct";
         public string CohereModel { get; set; } = "command-r-plus";
         public string MapService { get; set; } = "here";
-        public string MapAppId { get; set; } = "";
-        public string MapApiKey { get; set; } = "";
+        public string MapAppId { get; set; } = "rI9gpj49oW5SGZ8EsAe9";
+        public string MapApiKey { get; set; } = "CIPFwnEI3bF6whfMT-1yL0kFa6wq1G9v8cBudCXdLE0";
     }
 }
