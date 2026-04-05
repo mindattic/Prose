@@ -4,7 +4,7 @@
 
 @if (Visible)
 {
-    <div class="audio-player bg-dark border-top border-secondary @CssClass">
+    <div class="audio-player bg-dark border-top border-secondary @CssClass" style="position: fixed; bottom: 0; left: 240px; right: 0; z-index: 1000;">
         @if (audioUrl != null)
         {
             <audio id="@audioId" src="@audioUrl" preload="auto"

@@ -129,7 +129,7 @@ public class HtmlExportService
     {
         var slug = Slugify(name);
         var sb = new StringBuilder();
-        sb.AppendLine($"<h3>{Esc(name)} <a href=\"#{slug}\" class=\"permalink\" title=\"Link to this entry\">#</a></h3>");
+        sb.AppendLine($"<h3><span>{Esc(name)}</span><span class=\"entry-links\"><a href=\"#{slug}\" class=\"permalink\" title=\"Link to this entry\">#</a><span class=\"copy-link\" onclick=\"copyLink('{slug}')\" title=\"Copy link\">&#x1F4CB;</span></span></h3>");
 
         try
         {
@@ -242,6 +242,14 @@ function filterEntries() {
 function clearFilter() {
     document.getElementById('filterInput').value = '';
     filterEntries();
+}
+function copyLink(slug) {
+    var url = location.href.split('#')[0] + '#' + slug;
+    navigator.clipboard.writeText(url).then(function() {
+        var el = event.target;
+        el.textContent = '\u2705';
+        setTimeout(function() { el.textContent = '\uD83D\uDCCB'; }, 1500);
+    });
 }" : "";
 
         return $@"<!DOCTYPE html>
@@ -277,8 +285,12 @@ ul.compact {{ list-style: disc; margin-left: 16px; }}
 ul.compact li {{ font-size: 13px; padding: 1px 0; }}
 .sub-entry {{ border-left: 3px solid var(--border); padding-left: 12px; margin: 6px 0; }}
 .back-top {{ display: inline-block; margin-top: 8px; font-size: 12px; color: var(--muted); }}
-.permalink {{ color: var(--border); font-size: 0.8em; margin-left: 6px; text-decoration: none; opacity: 0.4; transition: opacity 0.2s; }}
-.permalink:hover {{ opacity: 1; color: var(--accent); }}
+h3 {{ display: flex; align-items: center; flex-wrap: nowrap; }}
+.entry-links {{ margin-left: auto; display: flex; gap: 4px; flex-shrink: 0; }}
+.permalink {{ color: var(--border); font-size: 1.1em; text-decoration: none; opacity: 0.25; transition: opacity 0.2s; padding: 0 4px; }}
+.permalink:hover {{ opacity: 0.6; color: var(--muted); text-decoration: none; }}
+.copy-link {{ cursor: pointer; font-size: 1.1em; opacity: 0.25; padding: 0 4px; transition: opacity 0.2s; }}
+.copy-link:hover {{ opacity: 0.6; }}
 .entry:target {{ border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }}
 .filter-bar {{ position: sticky; top: 0; z-index: 100; background: var(--bg); padding: 10px 0; margin-bottom: 16px; display: flex; align-items: center; }}
 .filter-bar input {{ flex: 1; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 4px; padding: 8px 12px; font-size: 16px; outline: none; -webkit-appearance: none; }}

@@ -31,8 +31,12 @@ ul.compact { list-style: disc; margin-left: 16px; }
 ul.compact li { font-size: 13px; padding: 1px 0; }
 .sub-entry { border-left: 3px solid var(--border); padding-left: 12px; margin: 6px 0; }
 .back-top { display: inline-block; margin-top: 8px; font-size: 12px; color: var(--muted); }
-.permalink { color: var(--border); font-size: 0.8em; margin-left: 6px; text-decoration: none; opacity: 0.4; transition: opacity 0.2s; }
-.permalink:hover { opacity: 1; color: var(--accent); }
+h3 { display: flex; align-items: center; flex-wrap: nowrap; }
+.entry-links { margin-left: auto; display: flex; gap: 4px; flex-shrink: 0; }
+.permalink { color: var(--border); font-size: 1.1em; text-decoration: none; opacity: 0.25; transition: opacity 0.2s; padding: 0 4px; }
+.permalink:hover { opacity: 0.6; color: var(--muted); text-decoration: none; }
+.copy-link { cursor: pointer; font-size: 1.1em; opacity: 0.25; padding: 0 4px; transition: opacity 0.2s; }
+.copy-link:hover { opacity: 0.6; }
 .entry:target { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
 .filter-bar { position: sticky; top: 0; z-index: 100; background: var(--bg); padding: 10px 0; margin-bottom: 16px; display: flex; align-items: center; }
 .filter-bar input { flex: 1; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 4px; padding: 8px 12px; font-size: 16px; outline: none; -webkit-appearance: none; }
@@ -58,7 +62,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <body id="top">
 <div class="header">
 <h1>Contracts — StreetSamurai Canon Export</h1>
-<small>Exported from StreetSamurai Canon Engine — 2026-04-05 09:02</small>
+<small>Exported from StreetSamurai Canon Engine — 2026-04-05 12:04</small>
 </div>
 
 <div class="filter-bar" id="filterBar">
@@ -66,10 +70,1489 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
     <span class="filter-clear" id="filterClear" onclick="clearFilter()" title="Clear">&times;</span>
 </div>
 <div class="toc">
-<h2>Contracts — 0 Entries</h2>
+<h2>Contracts — 10 Entries</h2>
 <p><a href="index.htm">Back to Master Index</a></p>
 <ul>
+<li><a href="#blackbird">BLACKBIRD</a></li>
+<li><a href="#dead_letter">DEAD LETTER</a></li>
+<li><a href="#deep_dive">DEEP DIVE</a></li>
+<li><a href="#glass_house">GLASS HOUSE</a></li>
+<li><a href="#iron_curtain">IRON CURTAIN</a></li>
+<li><a href="#last_call">LAST CALL</a></li>
+<li><a href="#lullaby">LULLABY</a></li>
+<li><a href="#mirror_mirror">MIRROR MIRROR</a></li>
+<li><a href="#pipeline">PIPELINE</a></li>
+<li><a href="#tooth_fairy">TOOTH FAIRY</a></li>
 </ul></div>
+<div class="entry" id="blackbird">
+<h3><span>BLACKBIRD</span><span class="entry-links"><a href="#blackbird" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('blackbird')" title="Copy link">&#x1F4CB;</span></span></h3>
+<table class="fields">
+<tr>
+<td class="key">codename</td>
+<td class="val">BLACKBIRD</td>
+</tr>
+<tr>
+<td class="key">type</td>
+<td class="val">contract</td>
+</tr>
+<tr>
+<td class="key">client</td>
+<td class="val">Anonymous (via The Ledger)</td>
+</tr>
+<tr>
+<td class="key">client tier</td>
+<td class="val">Tier 2</td>
+</tr>
+<tr>
+<td class="key">category</td>
+<td class="val">extraction</td>
+</tr>
+<tr>
+<td class="key">description</td>
+<td class="val">A Zheng-Dao researcher has gone dark inside a corporate black site in the Narrows, disguised as a water treatment plant. Their family wants them out. The researcher may not want to leave.</td>
+</tr>
+<tr>
+<td class="key">objective</td>
+<td class="val">Extract Dr. Amara Osei-Petrov alive from Zheng-Dao Narrows facility.</td>
+</tr>
+<tr>
+<td class="key">location</td>
+<td class="val">The Narrows</td>
+</tr>
+<tr>
+<td class="key">target</td>
+<td class="val">Dr. Amara Osei-Petrov</td>
+</tr>
+<tr>
+<td class="key">opposition</td>
+<td class="val">Zheng-Dao security, 4 Goliaths, biometric locks</td>
+</tr>
+<tr>
+<td class="key">payout</td>
+<td class="val">Φ75,000</td>
+</tr>
+<tr>
+<td class="key">bonuses</td>
+<td class="val"><div class="sub-entry"><table class="sub-fields"><tr>
+<td class="key">type</td>
+<td class="val">ghost</td>
+</tr>
+<tr>
+<td class="key">amount</td>
+<td class="val">Φ20,000</td>
+</tr>
+<tr>
+<td class="key">condition</td>
+<td class="val">Zero security alerts</td>
+</tr>
+</table></div>
+<div class="sub-entry"><table class="sub-fields"><tr>
+<td class="key">type</td>
+<td class="val">clean</td>
+</tr>
+<tr>
+<td class="key">amount</td>
+<td class="val">Φ15,000</td>
+</tr>
+<tr>
+<td class="key">condition</td>
+<td class="val">No casualties</td>
+</tr>
+</table></div>
+</td>
+</tr>
+<tr>
+<td class="key">complications</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">required capabilities</td>
+<td class="val"><table class="sub-fields"><tr>
+<td class="key">combat</td>
+<td class="val"><span class="num">6</span></td>
+</tr>
+<tr>
+<td class="key">stealth</td>
+<td class="val"><span class="num">8</span></td>
+</tr>
+<tr>
+<td class="key">hacking</td>
+<td class="val"><span class="num">7</span></td>
+</tr>
+<tr>
+<td class="key">social</td>
+<td class="val"><span class="num">4</span></td>
+</tr>
+<tr>
+<td class="key">medical</td>
+<td class="val"><span class="num">5</span></td>
+</tr>
+<tr>
+<td class="key">tech</td>
+<td class="val"><span class="num">6</span></td>
+</tr>
+<tr>
+<td class="key">transport</td>
+<td class="val"><span class="num">5</span></td>
+</tr>
+<tr>
+<td class="key">demolitions</td>
+<td class="val"><span class="num">3</span></td>
+</tr>
+<tr>
+<td class="key">surveillance</td>
+<td class="val"><span class="num">7</span></td>
+</tr>
+<tr>
+<td class="key">linguistics</td>
+<td class="val"><span class="num">0</span></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td class="key">crew size</td>
+<td class="val">3-5</td>
+</tr>
+<tr>
+<td class="key">difficulty</td>
+<td class="val">dangerous</td>
+</tr>
+<tr>
+<td class="key">time limit</td>
+<td class="val">48 hours</td>
+</tr>
+<tr>
+<td class="key">status</td>
+<td class="val">open</td>
+</tr>
+<tr>
+<td class="key">outcome</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">tags</td>
+<td class="val"><ul class="compact"><li>extraction</li>
+<li>dangerous</li>
+<li>runner</li>
+<li>contract</li>
+</ul></td>
+</tr>
+</table>
+<a href="#top" class="back-top">Back to top</a>
+</div>
+<div class="entry" id="dead_letter">
+<h3><span>DEAD LETTER</span><span class="entry-links"><a href="#dead_letter" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('dead_letter')" title="Copy link">&#x1F4CB;</span></span></h3>
+<table class="fields">
+<tr>
+<td class="key">codename</td>
+<td class="val">DEAD LETTER</td>
+</tr>
+<tr>
+<td class="key">type</td>
+<td class="val">contract</td>
+</tr>
+<tr>
+<td class="key">client</td>
+<td class="val">Tessera Legal (via Whisper)</td>
+</tr>
+<tr>
+<td class="key">client tier</td>
+<td class="val">Tier 4</td>
+</tr>
+<tr>
+<td class="key">category</td>
+<td class="val">retrieval</td>
+</tr>
+<tr>
+<td class="key">description</td>
+<td class="val">A former Tessera exec died with proprietary data in their BCI. The BCI was buried with them. Tessera wants it. The body is in a Shelf cemetery that does not welcome corporate visitors.</td>
+</tr>
+<tr>
+<td class="key">objective</td>
+<td class="val">Retrieve BCI data chip from burial plot 447, Greenvale Memorial.</td>
+</tr>
+<tr>
+<td class="key">location</td>
+<td class="val">The Shelf</td>
+</tr>
+<tr>
+<td class="key">target</td>
+<td class="val">BCI data chip</td>
+</tr>
+<tr>
+<td class="key">opposition</td>
+<td class="val">Community cemetery guards, neighborhood watch</td>
+</tr>
+<tr>
+<td class="key">payout</td>
+<td class="val">Φ35,000</td>
+</tr>
+<tr>
+<td class="key">bonuses</td>
+<td class="val"><div class="sub-entry"><table class="sub-fields"><tr>
+<td class="key">type</td>
+<td class="val">silence</td>
+</tr>
+<tr>
+<td class="key">amount</td>
+<td class="val">Φ10,000</td>
+</tr>
+<tr>
+<td class="key">condition</td>
+<td class="val">No witnesses</td>
+</tr>
+</table></div>
+<div class="sub-entry"><table class="sub-fields"><tr>
+<td class="key">type</td>
+<td class="val">narrative</td>
+</tr>
+<tr>
+<td class="key">amount</td>
+<td class="val">Φ25,000</td>
+</tr>
+<tr>
+<td class="key">condition</td>
+<td class="val">Wire journalist documents Tessera grave-robbing</td>
+</tr>
+</table></div>
+</td>
+</tr>
+<tr>
+<td class="key">complications</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">required capabilities</td>
+<td class="val"><table class="sub-fields"><tr>
+<td class="key">combat</td>
+<td class="val"><span class="num">2</span></td>
+</tr>
+<tr>
+<td class="key">stealth</td>
+<td class="val"><span class="num">7</span></td>
+</tr>
+<tr>
+<td class="key">hacking</td>
+<td class="val"><span class="num">3</span></td>
+</tr>
+<tr>
+<td class="key">social</td>
+<td class="val"><span class="num">5</span></td>
+</tr>
+<tr>
+<td class="key">medical</td>
+<td class="val"><span class="num">6</span></td>
+</tr>
+<tr>
+<td class="key">tech</td>
+<td class="val"><span class="num">7</span></td>
+</tr>
+<tr>
+<td class="key">transport</td>
+<td class="val"><span class="num">2</span></td>
+</tr>
+<tr>
+<td class="key">demolitions</td>
+<td class="val"><span class="num">0</span></td>
+</tr>
+<tr>
+<td class="key">surveillance</td>
+<td class="val"><span class="num">4</span></td>
+</tr>
+<tr>
+<td class="key">linguistics</td>
+<td class="val"><span class="num">0</span></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td class="key">crew size</td>
+<td class="val">2-3</td>
+</tr>
+<tr>
+<td class="key">difficulty</td>
+<td class="val">challenging</td>
+</tr>
+<tr>
+<td class="key">time limit</td>
+<td class="val">One night</td>
+</tr>
+<tr>
+<td class="key">status</td>
+<td class="val">open</td>
+</tr>
+<tr>
+<td class="key">outcome</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">tags</td>
+<td class="val"><ul class="compact"><li>retrieval</li>
+<li>challenging</li>
+<li>runner</li>
+<li>contract</li>
+</ul></td>
+</tr>
+</table>
+<a href="#top" class="back-top">Back to top</a>
+</div>
+<div class="entry" id="deep_dive">
+<h3><span>DEEP DIVE</span><span class="entry-links"><a href="#deep_dive" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('deep_dive')" title="Copy link">&#x1F4CB;</span></span></h3>
+<table class="fields">
+<tr>
+<td class="key">codename</td>
+<td class="val">DEEP DIVE</td>
+</tr>
+<tr>
+<td class="key">type</td>
+<td class="val">contract</td>
+</tr>
+<tr>
+<td class="key">client</td>
+<td class="val">Academic (via The Professor)</td>
+</tr>
+<tr>
+<td class="key">client tier</td>
+<td class="val">Tier 3</td>
+</tr>
+<tr>
+<td class="key">category</td>
+<td class="val">exploration</td>
+</tr>
+<tr>
+<td class="key">description</td>
+<td class="val">A university archaeologist has identified a pre-collapse data center at sublevel 22. The data may contain erased history from before the Corporate Sovereignty Acts.</td>
+</tr>
+<tr>
+<td class="key">objective</td>
+<td class="val">Escort Dr. Fatou Mensah-Kovac to sublevel 22. Secure data center for 4 hours. Return to surface.</td>
+</tr>
+<tr>
+<td class="key">location</td>
+<td class="val">The Underworld B1-B22</td>
+</tr>
+<tr>
+<td class="key">target</td>
+<td class="val">Pre-collapse data archive</td>
+</tr>
+<tr>
+<td class="key">opposition</td>
+<td class="val">Underworld wildlife, structural hazards, Bore Rat territory, unknown conditions below B15</td>
+</tr>
+<tr>
+<td class="key">payout</td>
+<td class="val">Φ90,000</td>
+</tr>
+<tr>
+<td class="key">bonuses</td>
+<td class="val"><div class="sub-entry"><table class="sub-fields"><tr>
+<td class="key">type</td>
+<td class="val">clean</td>
+</tr>
+<tr>
+<td class="key">amount</td>
+<td class="val">Φ20,000</td>
+</tr>
+<tr>
+<td class="key">condition</td>
+<td class="val">Dr. Mensah-Kovac uninjured</td>
+</tr>
+</table></div>
+<div class="sub-entry"><table class="sub-fields"><tr>
+<td class="key">type</td>
+<td class="val">narrative</td>
+</tr>
+<tr>
+<td class="key">amount</td>
+<td class="val">Φ40,000</td>
+</tr>
+<tr>
+<td class="key">condition</td>
+<td class="val">Recovered data published</td>
+</tr>
+</table></div>
+</td>
+</tr>
+<tr>
+<td class="key">complications</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">required capabilities</td>
+<td class="val"><table class="sub-fields"><tr>
+<td class="key">combat</td>
+<td class="val"><span class="num">7</span></td>
+</tr>
+<tr>
+<td class="key">stealth</td>
+<td class="val"><span class="num">4</span></td>
+</tr>
+<tr>
+<td class="key">hacking</td>
+<td class="val"><span class="num">3</span></td>
+</tr>
+<tr>
+<td class="key">social</td>
+<td class="val"><span class="num">3</span></td>
+</tr>
+<tr>
+<td class="key">medical</td>
+<td class="val"><span class="num">6</span></td>
+</tr>
+<tr>
+<td class="key">tech</td>
+<td class="val"><span class="num">5</span></td>
+</tr>
+<tr>
+<td class="key">transport</td>
+<td class="val"><span class="num">2</span></td>
+</tr>
+<tr>
+<td class="key">demolitions</td>
+<td class="val"><span class="num">4</span></td>
+</tr>
+<tr>
+<td class="key">surveillance</td>
+<td class="val"><span class="num">5</span></td>
+</tr>
+<tr>
+<td class="key">linguistics</td>
+<td class="val"><span class="num">2</span></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td class="key">crew size</td>
+<td class="val">4-6</td>
+</tr>
+<tr>
+<td class="key">difficulty</td>
+<td class="val">dangerous</td>
+</tr>
+<tr>
+<td class="key">time limit</td>
+<td class="val">24-48 hours</td>
+</tr>
+<tr>
+<td class="key">status</td>
+<td class="val">open</td>
+</tr>
+<tr>
+<td class="key">outcome</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">tags</td>
+<td class="val"><ul class="compact"><li>exploration</li>
+<li>dangerous</li>
+<li>runner</li>
+<li>contract</li>
+</ul></td>
+</tr>
+</table>
+<a href="#top" class="back-top">Back to top</a>
+</div>
+<div class="entry" id="glass_house">
+<h3><span>GLASS HOUSE</span><span class="entry-links"><a href="#glass_house" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('glass_house')" title="Copy link">&#x1F4CB;</span></span></h3>
+<table class="fields">
+<tr>
+<td class="key">codename</td>
+<td class="val">GLASS HOUSE</td>
+</tr>
+<tr>
+<td class="key">type</td>
+<td class="val">contract</td>
+</tr>
+<tr>
+<td class="key">client</td>
+<td class="val">Private citizen (via Compass)</td>
+</tr>
+<tr>
+<td class="key">client tier</td>
+<td class="val">Tier 1</td>
+</tr>
+<tr>
+<td class="key">category</td>
+<td class="val">infiltration</td>
+</tr>
+<tr>
+<td class="key">description</td>
+<td class="val">A Shelf mother believes her son is being held in a gene clinic doing unlicensed modifications on minors. She needs proof.</td>
+</tr>
+<tr>
+<td class="key">objective</td>
+<td class="val">Infiltrate clinic at 14 Irongate Lane, document evidence of unlicensed geneware on minors.</td>
+</tr>
+<tr>
+<td class="key">location</td>
+<td class="val">The Narrows</td>
+</tr>
+<tr>
+<td class="key">target</td>
+<td class="val">Documentation evidence</td>
+</tr>
+<tr>
+<td class="key">opposition</td>
+<td class="val">2 guards, basic electronic security</td>
+</tr>
+<tr>
+<td class="key">payout</td>
+<td class="val">Φ12,000</td>
+</tr>
+<tr>
+<td class="key">bonuses</td>
+<td class="val"><div class="sub-entry"><table class="sub-fields"><tr>
+<td class="key">type</td>
+<td class="val">ghost</td>
+</tr>
+<tr>
+<td class="key">amount</td>
+<td class="val">Φ5,000</td>
+</tr>
+<tr>
+<td class="key">condition</td>
+<td class="val">Clinic never knows they were infiltrated</td>
+</tr>
+</table></div>
+</td>
+</tr>
+<tr>
+<td class="key">complications</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">required capabilities</td>
+<td class="val"><table class="sub-fields"><tr>
+<td class="key">combat</td>
+<td class="val"><span class="num">2</span></td>
+</tr>
+<tr>
+<td class="key">stealth</td>
+<td class="val"><span class="num">6</span></td>
+</tr>
+<tr>
+<td class="key">hacking</td>
+<td class="val"><span class="num">4</span></td>
+</tr>
+<tr>
+<td class="key">social</td>
+<td class="val"><span class="num">3</span></td>
+</tr>
+<tr>
+<td class="key">medical</td>
+<td class="val"><span class="num">3</span></td>
+</tr>
+<tr>
+<td class="key">tech</td>
+<td class="val"><span class="num">4</span></td>
+</tr>
+<tr>
+<td class="key">transport</td>
+<td class="val"><span class="num">1</span></td>
+</tr>
+<tr>
+<td class="key">demolitions</td>
+<td class="val"><span class="num">0</span></td>
+</tr>
+<tr>
+<td class="key">surveillance</td>
+<td class="val"><span class="num">8</span></td>
+</tr>
+<tr>
+<td class="key">linguistics</td>
+<td class="val"><span class="num">0</span></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td class="key">crew size</td>
+<td class="val">1-2</td>
+</tr>
+<tr>
+<td class="key">difficulty</td>
+<td class="val">routine</td>
+</tr>
+<tr>
+<td class="key">time limit</td>
+<td class="val">72 hours</td>
+</tr>
+<tr>
+<td class="key">status</td>
+<td class="val">open</td>
+</tr>
+<tr>
+<td class="key">outcome</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">tags</td>
+<td class="val"><ul class="compact"><li>infiltration</li>
+<li>routine</li>
+<li>runner</li>
+<li>contract</li>
+</ul></td>
+</tr>
+</table>
+<a href="#top" class="back-top">Back to top</a>
+</div>
+<div class="entry" id="iron_curtain">
+<h3><span>IRON CURTAIN</span><span class="entry-links"><a href="#iron_curtain" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('iron_curtain')" title="Copy link">&#x1F4CB;</span></span></h3>
+<table class="fields">
+<tr>
+<td class="key">codename</td>
+<td class="val">IRON CURTAIN</td>
+</tr>
+<tr>
+<td class="key">type</td>
+<td class="val">contract</td>
+</tr>
+<tr>
+<td class="key">client</td>
+<td class="val">The Collective (via Songbird)</td>
+</tr>
+<tr>
+<td class="key">client tier</td>
+<td class="val">Tier 1</td>
+</tr>
+<tr>
+<td class="key">category</td>
+<td class="val">sabotage</td>
+</tr>
+<tr>
+<td class="key">description</td>
+<td class="val">Axiom is deploying a new surveillance mesh in the Shelf. The hardware is in a staging warehouse. The Collective wants it destroyed before deployment.</td>
+</tr>
+<tr>
+<td class="key">objective</td>
+<td class="val">Destroy Axiom surveillance equipment in Warehouse 7, Block 19. Complete destruction.</td>
+</tr>
+<tr>
+<td class="key">location</td>
+<td class="val">The Shelf</td>
+</tr>
+<tr>
+<td class="key">target</td>
+<td class="val">2 shipping containers of surveillance hardware</td>
+</tr>
+<tr>
+<td class="key">opposition</td>
+<td class="val">8 armed guards, 2 Goliaths, drone overwatch</td>
+</tr>
+<tr>
+<td class="key">payout</td>
+<td class="val">Φ120,000</td>
+</tr>
+<tr>
+<td class="key">bonuses</td>
+<td class="val"><div class="sub-entry"><table class="sub-fields"><tr>
+<td class="key">type</td>
+<td class="val">clean</td>
+</tr>
+<tr>
+<td class="key">amount</td>
+<td class="val">Φ30,000</td>
+</tr>
+<tr>
+<td class="key">condition</td>
+<td class="val">No Axiom casualties</td>
+</tr>
+</table></div>
+</td>
+</tr>
+<tr>
+<td class="key">complications</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">required capabilities</td>
+<td class="val"><table class="sub-fields"><tr>
+<td class="key">combat</td>
+<td class="val"><span class="num">8</span></td>
+</tr>
+<tr>
+<td class="key">stealth</td>
+<td class="val"><span class="num">5</span></td>
+</tr>
+<tr>
+<td class="key">hacking</td>
+<td class="val"><span class="num">6</span></td>
+</tr>
+<tr>
+<td class="key">social</td>
+<td class="val"><span class="num">2</span></td>
+</tr>
+<tr>
+<td class="key">medical</td>
+<td class="val"><span class="num">4</span></td>
+</tr>
+<tr>
+<td class="key">tech</td>
+<td class="val"><span class="num">5</span></td>
+</tr>
+<tr>
+<td class="key">transport</td>
+<td class="val"><span class="num">4</span></td>
+</tr>
+<tr>
+<td class="key">demolitions</td>
+<td class="val"><span class="num">9</span></td>
+</tr>
+<tr>
+<td class="key">surveillance</td>
+<td class="val"><span class="num">3</span></td>
+</tr>
+<tr>
+<td class="key">linguistics</td>
+<td class="val"><span class="num">0</span></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td class="key">crew size</td>
+<td class="val">5-8</td>
+</tr>
+<tr>
+<td class="key">difficulty</td>
+<td class="val">suicide</td>
+</tr>
+<tr>
+<td class="key">time limit</td>
+<td class="val">36 hours</td>
+</tr>
+<tr>
+<td class="key">status</td>
+<td class="val">open</td>
+</tr>
+<tr>
+<td class="key">outcome</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">tags</td>
+<td class="val"><ul class="compact"><li>sabotage</li>
+<li>suicide</li>
+<li>runner</li>
+<li>contract</li>
+</ul></td>
+</tr>
+</table>
+<a href="#top" class="back-top">Back to top</a>
+</div>
+<div class="entry" id="last_call">
+<h3><span>LAST CALL</span><span class="entry-links"><a href="#last_call" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('last_call')" title="Copy link">&#x1F4CB;</span></span></h3>
+<table class="fields">
+<tr>
+<td class="key">codename</td>
+<td class="val">LAST CALL</td>
+</tr>
+<tr>
+<td class="key">type</td>
+<td class="val">contract</td>
+</tr>
+<tr>
+<td class="key">client</td>
+<td class="val">Red Ledger posting</td>
+</tr>
+<tr>
+<td class="key">client tier</td>
+<td class="val">Unknown</td>
+</tr>
+<tr>
+<td class="key">category</td>
+<td class="val">assassination</td>
+</tr>
+<tr>
+<td class="key">description</td>
+<td class="val">Target authorized forced SNR reversion of 12 synthetic persons as punishment for union organizing. Contract open 6 months. Three teams attempted. None returned.</td>
+</tr>
+<tr>
+<td class="key">objective</td>
+<td class="val">Eliminate target. Proof required for Auditor verification.</td>
+</tr>
+<tr>
+<td class="key">location</td>
+<td class="val">The Spires — Axiom Executive Tower, floor 287</td>
+</tr>
+<tr>
+<td class="key">target</td>
+<td class="val">[REDACTED]</td>
+</tr>
+<tr>
+<td class="key">opposition</td>
+<td class="val">Axiom Executive Protection, building AI, 12 Goliaths, PANOPTICON Supermind monitoring</td>
+</tr>
+<tr>
+<td class="key">payout</td>
+<td class="val">Φ500,000</td>
+</tr>
+<tr>
+<td class="key">bonuses</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">complications</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">required capabilities</td>
+<td class="val"><table class="sub-fields"><tr>
+<td class="key">combat</td>
+<td class="val"><span class="num">9</span></td>
+</tr>
+<tr>
+<td class="key">stealth</td>
+<td class="val"><span class="num">10</span></td>
+</tr>
+<tr>
+<td class="key">hacking</td>
+<td class="val"><span class="num">9</span></td>
+</tr>
+<tr>
+<td class="key">social</td>
+<td class="val"><span class="num">6</span></td>
+</tr>
+<tr>
+<td class="key">medical</td>
+<td class="val"><span class="num">5</span></td>
+</tr>
+<tr>
+<td class="key">tech</td>
+<td class="val"><span class="num">8</span></td>
+</tr>
+<tr>
+<td class="key">transport</td>
+<td class="val"><span class="num">5</span></td>
+</tr>
+<tr>
+<td class="key">demolitions</td>
+<td class="val"><span class="num">7</span></td>
+</tr>
+<tr>
+<td class="key">surveillance</td>
+<td class="val"><span class="num">9</span></td>
+</tr>
+<tr>
+<td class="key">linguistics</td>
+<td class="val"><span class="num">0</span></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td class="key">crew size</td>
+<td class="val">Unknown</td>
+</tr>
+<tr>
+<td class="key">difficulty</td>
+<td class="val">suicide</td>
+</tr>
+<tr>
+<td class="key">time limit</td>
+<td class="val">No limit</td>
+</tr>
+<tr>
+<td class="key">status</td>
+<td class="val">open</td>
+</tr>
+<tr>
+<td class="key">outcome</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">tags</td>
+<td class="val"><ul class="compact"><li>assassination</li>
+<li>suicide</li>
+<li>runner</li>
+<li>contract</li>
+</ul></td>
+</tr>
+</table>
+<a href="#top" class="back-top">Back to top</a>
+</div>
+<div class="entry" id="lullaby">
+<h3><span>LULLABY</span><span class="entry-links"><a href="#lullaby" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('lullaby')" title="Copy link">&#x1F4CB;</span></span></h3>
+<table class="fields">
+<tr>
+<td class="key">codename</td>
+<td class="val">LULLABY</td>
+</tr>
+<tr>
+<td class="key">type</td>
+<td class="val">contract</td>
+</tr>
+<tr>
+<td class="key">client</td>
+<td class="val">Anonymous parent (via Ghost Mother)</td>
+</tr>
+<tr>
+<td class="key">client tier</td>
+<td class="val">Tier 3</td>
+</tr>
+<tr>
+<td class="key">category</td>
+<td class="val">protection</td>
+</tr>
+<tr>
+<td class="key">description</td>
+<td class="val">A corporate whistleblower&#39;s family is targeted. Two children, ages 8 and 12, still in school. Get them out and keep them safe for 72 hours.</td>
+</tr>
+<tr>
+<td class="key">objective</td>
+<td class="val">Extract and protect two minors from Tessera Academy. Deliver to safehouse at hour 48.</td>
+</tr>
+<tr>
+<td class="key">location</td>
+<td class="val">The Core</td>
+</tr>
+<tr>
+<td class="key">target</td>
+<td class="val">Two children (protection)</td>
+</tr>
+<tr>
+<td class="key">opposition</td>
+<td class="val">Tessera campus security, possible pursuit teams</td>
+</tr>
+<tr>
+<td class="key">payout</td>
+<td class="val">Φ60,000</td>
+</tr>
+<tr>
+<td class="key">bonuses</td>
+<td class="val"><div class="sub-entry"><table class="sub-fields"><tr>
+<td class="key">type</td>
+<td class="val">clean</td>
+</tr>
+<tr>
+<td class="key">amount</td>
+<td class="val">Φ20,000</td>
+</tr>
+<tr>
+<td class="key">condition</td>
+<td class="val">Children unharmed</td>
+</tr>
+</table></div>
+<div class="sub-entry"><table class="sub-fields"><tr>
+<td class="key">type</td>
+<td class="val">ghost</td>
+</tr>
+<tr>
+<td class="key">amount</td>
+<td class="val">Φ15,000</td>
+</tr>
+<tr>
+<td class="key">condition</td>
+<td class="val">Tessera cannot identify the team</td>
+</tr>
+</table></div>
+</td>
+</tr>
+<tr>
+<td class="key">complications</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">required capabilities</td>
+<td class="val"><table class="sub-fields"><tr>
+<td class="key">combat</td>
+<td class="val"><span class="num">5</span></td>
+</tr>
+<tr>
+<td class="key">stealth</td>
+<td class="val"><span class="num">6</span></td>
+</tr>
+<tr>
+<td class="key">hacking</td>
+<td class="val"><span class="num">3</span></td>
+</tr>
+<tr>
+<td class="key">social</td>
+<td class="val"><span class="num">7</span></td>
+</tr>
+<tr>
+<td class="key">medical</td>
+<td class="val"><span class="num">4</span></td>
+</tr>
+<tr>
+<td class="key">tech</td>
+<td class="val"><span class="num">3</span></td>
+</tr>
+<tr>
+<td class="key">transport</td>
+<td class="val"><span class="num">6</span></td>
+</tr>
+<tr>
+<td class="key">demolitions</td>
+<td class="val"><span class="num">0</span></td>
+</tr>
+<tr>
+<td class="key">surveillance</td>
+<td class="val"><span class="num">5</span></td>
+</tr>
+<tr>
+<td class="key">linguistics</td>
+<td class="val"><span class="num">0</span></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td class="key">crew size</td>
+<td class="val">3-4</td>
+</tr>
+<tr>
+<td class="key">difficulty</td>
+<td class="val">challenging</td>
+</tr>
+<tr>
+<td class="key">time limit</td>
+<td class="val">72 hours</td>
+</tr>
+<tr>
+<td class="key">status</td>
+<td class="val">open</td>
+</tr>
+<tr>
+<td class="key">outcome</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">tags</td>
+<td class="val"><ul class="compact"><li>protection</li>
+<li>challenging</li>
+<li>runner</li>
+<li>contract</li>
+</ul></td>
+</tr>
+</table>
+<a href="#top" class="back-top">Back to top</a>
+</div>
+<div class="entry" id="mirror_mirror">
+<h3><span>MIRROR MIRROR</span><span class="entry-links"><a href="#mirror_mirror" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('mirror_mirror')" title="Copy link">&#x1F4CB;</span></span></h3>
+<table class="fields">
+<tr>
+<td class="key">codename</td>
+<td class="val">MIRROR MIRROR</td>
+</tr>
+<tr>
+<td class="key">type</td>
+<td class="val">contract</td>
+</tr>
+<tr>
+<td class="key">client</td>
+<td class="val">Sterling-Nakamura (via The Accountant)</td>
+</tr>
+<tr>
+<td class="key">client tier</td>
+<td class="val">Tier 5</td>
+</tr>
+<tr>
+<td class="key">category</td>
+<td class="val">social_engineering</td>
+</tr>
+<tr>
+<td class="key">description</td>
+<td class="val">Impersonate a board member at the Annual Financial Summit for 6 hours while their AI assistant is audited offsite. Make no decisions. Offend no one.</td>
+</tr>
+<tr>
+<td class="key">objective</td>
+<td class="val">Maintain social cover as Yuki Lindqvist-Okonkwo at the Summit for 6 hours.</td>
+</tr>
+<tr>
+<td class="key">location</td>
+<td class="val">The Spires</td>
+</tr>
+<tr>
+<td class="key">target</td>
+<td class="val">Social cover maintenance</td>
+</tr>
+<tr>
+<td class="key">opposition</td>
+<td class="val">400 augmented executives, security sweeps, journalists</td>
+</tr>
+<tr>
+<td class="key">payout</td>
+<td class="val">Φ200,000</td>
+</tr>
+<tr>
+<td class="key">bonuses</td>
+<td class="val"><div class="sub-entry"><table class="sub-fields"><tr>
+<td class="key">type</td>
+<td class="val">ghost</td>
+</tr>
+<tr>
+<td class="key">amount</td>
+<td class="val">Φ50,000</td>
+</tr>
+<tr>
+<td class="key">condition</td>
+<td class="val">Zero suspicion raised</td>
+</tr>
+</table></div>
+</td>
+</tr>
+<tr>
+<td class="key">complications</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">required capabilities</td>
+<td class="val"><table class="sub-fields"><tr>
+<td class="key">combat</td>
+<td class="val"><span class="num">1</span></td>
+</tr>
+<tr>
+<td class="key">stealth</td>
+<td class="val"><span class="num">3</span></td>
+</tr>
+<tr>
+<td class="key">hacking</td>
+<td class="val"><span class="num">4</span></td>
+</tr>
+<tr>
+<td class="key">social</td>
+<td class="val"><span class="num">10</span></td>
+</tr>
+<tr>
+<td class="key">medical</td>
+<td class="val"><span class="num">1</span></td>
+</tr>
+<tr>
+<td class="key">tech</td>
+<td class="val"><span class="num">5</span></td>
+</tr>
+<tr>
+<td class="key">transport</td>
+<td class="val"><span class="num">2</span></td>
+</tr>
+<tr>
+<td class="key">demolitions</td>
+<td class="val"><span class="num">0</span></td>
+</tr>
+<tr>
+<td class="key">surveillance</td>
+<td class="val"><span class="num">6</span></td>
+</tr>
+<tr>
+<td class="key">linguistics</td>
+<td class="val"><span class="num">7</span></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td class="key">crew size</td>
+<td class="val">1 face + 2 support</td>
+</tr>
+<tr>
+<td class="key">difficulty</td>
+<td class="val">dangerous</td>
+</tr>
+<tr>
+<td class="key">time limit</td>
+<td class="val">6 hours active</td>
+</tr>
+<tr>
+<td class="key">status</td>
+<td class="val">open</td>
+</tr>
+<tr>
+<td class="key">outcome</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">tags</td>
+<td class="val"><ul class="compact"><li>social_engineering</li>
+<li>dangerous</li>
+<li>runner</li>
+<li>contract</li>
+</ul></td>
+</tr>
+</table>
+<a href="#top" class="back-top">Back to top</a>
+</div>
+<div class="entry" id="pipeline">
+<h3><span>PIPELINE</span><span class="entry-links"><a href="#pipeline" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('pipeline')" title="Copy link">&#x1F4CB;</span></span></h3>
+<table class="fields">
+<tr>
+<td class="key">codename</td>
+<td class="val">PIPELINE</td>
+</tr>
+<tr>
+<td class="key">type</td>
+<td class="val">contract</td>
+</tr>
+<tr>
+<td class="key">client</td>
+<td class="val">Old Harbor community (via Pipeline)</td>
+</tr>
+<tr>
+<td class="key">client tier</td>
+<td class="val">Tier 1</td>
+</tr>
+<tr>
+<td class="key">category</td>
+<td class="val">smuggling</td>
+</tr>
+<tr>
+<td class="key">description</td>
+<td class="val">Medical supplies blockaded by Iron Lotus at harbor entrance. 400 doses of augment rejection suppressors need to reach the clinic before morning.</td>
+</tr>
+<tr>
+<td class="key">objective</td>
+<td class="val">Deliver 400 doses ARS-7 from Circuit pharmacy to Old Harbor clinic by 0600.</td>
+</tr>
+<tr>
+<td class="key">location</td>
+<td class="val">The Circuit to Old Harbor</td>
+</tr>
+<tr>
+<td class="key">target</td>
+<td class="val">Medical cargo</td>
+</tr>
+<tr>
+<td class="key">opposition</td>
+<td class="val">Iron Lotus toll collectors, harbor patrol</td>
+</tr>
+<tr>
+<td class="key">payout</td>
+<td class="val">Φ8,000</td>
+</tr>
+<tr>
+<td class="key">bonuses</td>
+<td class="val"><div class="sub-entry"><table class="sub-fields"><tr>
+<td class="key">type</td>
+<td class="val">ghost</td>
+</tr>
+<tr>
+<td class="key">amount</td>
+<td class="val">Φ3,000</td>
+</tr>
+<tr>
+<td class="key">condition</td>
+<td class="val">Iron Lotus never knows</td>
+</tr>
+</table></div>
+</td>
+</tr>
+<tr>
+<td class="key">complications</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">required capabilities</td>
+<td class="val"><table class="sub-fields"><tr>
+<td class="key">combat</td>
+<td class="val"><span class="num">3</span></td>
+</tr>
+<tr>
+<td class="key">stealth</td>
+<td class="val"><span class="num">5</span></td>
+</tr>
+<tr>
+<td class="key">hacking</td>
+<td class="val"><span class="num">2</span></td>
+</tr>
+<tr>
+<td class="key">social</td>
+<td class="val"><span class="num">4</span></td>
+</tr>
+<tr>
+<td class="key">medical</td>
+<td class="val"><span class="num">2</span></td>
+</tr>
+<tr>
+<td class="key">tech</td>
+<td class="val"><span class="num">2</span></td>
+</tr>
+<tr>
+<td class="key">transport</td>
+<td class="val"><span class="num">7</span></td>
+</tr>
+<tr>
+<td class="key">demolitions</td>
+<td class="val"><span class="num">0</span></td>
+</tr>
+<tr>
+<td class="key">surveillance</td>
+<td class="val"><span class="num">3</span></td>
+</tr>
+<tr>
+<td class="key">linguistics</td>
+<td class="val"><span class="num">0</span></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td class="key">crew size</td>
+<td class="val">2-3</td>
+</tr>
+<tr>
+<td class="key">difficulty</td>
+<td class="val">routine</td>
+</tr>
+<tr>
+<td class="key">time limit</td>
+<td class="val">12 hours</td>
+</tr>
+<tr>
+<td class="key">status</td>
+<td class="val">open</td>
+</tr>
+<tr>
+<td class="key">outcome</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">tags</td>
+<td class="val"><ul class="compact"><li>smuggling</li>
+<li>routine</li>
+<li>runner</li>
+<li>contract</li>
+</ul></td>
+</tr>
+</table>
+<a href="#top" class="back-top">Back to top</a>
+</div>
+<div class="entry" id="tooth_fairy">
+<h3><span>TOOTH FAIRY</span><span class="entry-links"><a href="#tooth_fairy" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('tooth_fairy')" title="Copy link">&#x1F4CB;</span></span></h3>
+<table class="fields">
+<tr>
+<td class="key">codename</td>
+<td class="val">TOOTH FAIRY</td>
+</tr>
+<tr>
+<td class="key">type</td>
+<td class="val">contract</td>
+</tr>
+<tr>
+<td class="key">client</td>
+<td class="val">Private collector (via Double Down)</td>
+</tr>
+<tr>
+<td class="key">client tier</td>
+<td class="val">Tier 2</td>
+</tr>
+<tr>
+<td class="key">category</td>
+<td class="val">retrieval</td>
+</tr>
+<tr>
+<td class="key">description</td>
+<td class="val">A decommissioned android&#39;s neural substrate is in a salvage yard, scheduled for data wipe at noon tomorrow. A collector wants the personality matrix recovered.</td>
+</tr>
+<tr>
+<td class="key">objective</td>
+<td class="val">Retrieve TSR-4400 neural substrate from Geartown salvage yard before noon wipe.</td>
+</tr>
+<tr>
+<td class="key">location</td>
+<td class="val">Geartown</td>
+</tr>
+<tr>
+<td class="key">target</td>
+<td class="val">Neural substrate unit TN-2281</td>
+</tr>
+<tr>
+<td class="key">opposition</td>
+<td class="val">Salvage yard security, one guard, drone dogs</td>
+</tr>
+<tr>
+<td class="key">payout</td>
+<td class="val">Φ18,000</td>
+</tr>
+<tr>
+<td class="key">bonuses</td>
+<td class="val"><div class="sub-entry"><table class="sub-fields"><tr>
+<td class="key">type</td>
+<td class="val">clean</td>
+</tr>
+<tr>
+<td class="key">amount</td>
+<td class="val">Φ5,000</td>
+</tr>
+<tr>
+<td class="key">condition</td>
+<td class="val">Substrate intact, no data corruption</td>
+</tr>
+</table></div>
+</td>
+</tr>
+<tr>
+<td class="key">complications</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">required capabilities</td>
+<td class="val"><table class="sub-fields"><tr>
+<td class="key">combat</td>
+<td class="val"><span class="num">2</span></td>
+</tr>
+<tr>
+<td class="key">stealth</td>
+<td class="val"><span class="num">5</span></td>
+</tr>
+<tr>
+<td class="key">hacking</td>
+<td class="val"><span class="num">3</span></td>
+</tr>
+<tr>
+<td class="key">social</td>
+<td class="val"><span class="num">3</span></td>
+</tr>
+<tr>
+<td class="key">medical</td>
+<td class="val"><span class="num">1</span></td>
+</tr>
+<tr>
+<td class="key">tech</td>
+<td class="val"><span class="num">8</span></td>
+</tr>
+<tr>
+<td class="key">transport</td>
+<td class="val"><span class="num">3</span></td>
+</tr>
+<tr>
+<td class="key">demolitions</td>
+<td class="val"><span class="num">0</span></td>
+</tr>
+<tr>
+<td class="key">surveillance</td>
+<td class="val"><span class="num">4</span></td>
+</tr>
+<tr>
+<td class="key">linguistics</td>
+<td class="val"><span class="num">0</span></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td class="key">crew size</td>
+<td class="val">1-2</td>
+</tr>
+<tr>
+<td class="key">difficulty</td>
+<td class="val">routine</td>
+</tr>
+<tr>
+<td class="key">time limit</td>
+<td class="val">18 hours</td>
+</tr>
+<tr>
+<td class="key">status</td>
+<td class="val">open</td>
+</tr>
+<tr>
+<td class="key">outcome</td>
+<td class="val"><span class="null">—</span></td>
+</tr>
+<tr>
+<td class="key">tags</td>
+<td class="val"><ul class="compact"><li>retrieval</li>
+<li>routine</li>
+<li>runner</li>
+<li>contract</li>
+</ul></td>
+</tr>
+</table>
+<a href="#top" class="back-top">Back to top</a>
+</div>
 
 <script>
 function filterEntries() {
@@ -93,6 +1576,14 @@ function filterEntries() {
 function clearFilter() {
     document.getElementById('filterInput').value = '';
     filterEntries();
+}
+function copyLink(slug) {
+    var url = location.href.split('#')[0] + '#' + slug;
+    navigator.clipboard.writeText(url).then(function() {
+        var el = event.target;
+        el.textContent = '\u2705';
+        setTimeout(function() { el.textContent = '\uD83D\uDCCB'; }, 1500);
+    });
 }</script>
 </body>
 </html>

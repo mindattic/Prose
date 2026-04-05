@@ -13,6 +13,10 @@ public class WorldGraphService
     private readonly DatabaseService db;
     private readonly AdjacencyGraph<string, WorldEdge> _graph = new();
     private readonly Dictionary<string, WorldNode> _nodes = new();
+    // Index: node type -> set of node IDs for fast type-based lookup
+    private readonly Dictionary<string, HashSet<string>> typeIndex = new(StringComparer.OrdinalIgnoreCase);
+    // Index: territory/location -> set of node IDs for spatial queries
+    private readonly Dictionary<string, HashSet<string>> territoryIndex = new(StringComparer.OrdinalIgnoreCase);
     private bool loaded;
 
     public WorldGraphService(IPathProvider paths, DatabaseService db)
@@ -29,6 +33,7 @@ public class WorldGraphService
         if (loaded) return;
         Load();
         if (_nodes.Count == 0) Rebuild();
+        RebuildIndexes();
         loaded = true;
     }
 
@@ -37,8 +42,20 @@ public class WorldGraphService
     public WorldNode? GetNode(string id) =>
         _nodes.GetValueOrDefault(id);
 
-    public List<WorldNode> GetNodesByType(string nodeType) =>
-        _nodes.Values.Where(n => n.NodeType.Equals(nodeType, StringComparison.OrdinalIgnoreCase)).ToList();
+    public List<WorldNode> GetNodesByType(string nodeType)
+    {
+        if (typeIndex.TryGetValue(nodeType, out var ids))
+            return ids.Select(id => _nodes.GetValueOrDefault(id)).Where(n => n != null).ToList()!;
+        return [];
+    }
+
+    /// <summary>Get all nodes in a territory/location. Fast spatial query.</summary>
+    public List<WorldNode> GetNodesByTerritory(string territory)
+    {
+        if (territoryIndex.TryGetValue(territory, out var ids))
+            return ids.Select(id => _nodes.GetValueOrDefault(id)).Where(n => n != null).ToList()!;
+        return [];
+    }
 
     public List<WorldNode> AllNodes() => _nodes.Values.ToList();
 
@@ -400,12 +417,75 @@ public class WorldGraphService
         _nodes[node.Id] = node;
         if (!_graph.ContainsVertex(node.Id))
             _graph.AddVertex(node.Id);
+
+        // Maintain type index
+        if (!string.IsNullOrWhiteSpace(node.NodeType))
+        {
+            if (!typeIndex.TryGetValue(node.NodeType, out var typeSet))
+            {
+                typeSet = [];
+                typeIndex[node.NodeType] = typeSet;
+            }
+            typeSet.Add(node.Id);
+        }
+
+        // Maintain territory index — extract location from properties
+        IndexNodeTerritory(node);
+    }
+
+    private void IndexNodeTerritory(WorldNode node)
+    {
+        var locationKeys = new[] { "location", "territory", "sovereign_territory", "home_turf" };
+        foreach (var key in locationKeys)
+        {
+            if (node.Properties.TryGetValue(key, out var loc) && !string.IsNullOrWhiteSpace(loc))
+            {
+                // Extract known territory names
+                var territories = ExtractTerritories(loc);
+                foreach (var t in territories)
+                {
+                    if (!territoryIndex.TryGetValue(t, out var terrSet))
+                    {
+                        terrSet = [];
+                        territoryIndex[t] = terrSet;
+                    }
+                    terrSet.Add(node.Id);
+                }
+            }
+        }
+    }
+
+    private static readonly string[] KnownTerritories = [
+        "The Shelf", "The Circuit", "The Narrows", "Old Harbor", "Geartown",
+        "The Spires", "The Core", "The Underworld", "The Gulch", "The Grind",
+        "Mirror Mile", "The Threshold", "Dearborn Forge", "The Arcade"
+    ];
+
+    private static List<string> ExtractTerritories(string text)
+    {
+        var found = new List<string>();
+        var lower = text.ToLowerInvariant();
+        foreach (var t in KnownTerritories)
+        {
+            if (lower.Contains(t.ToLowerInvariant()))
+                found.Add(t);
+        }
+        return found;
     }
 
     public void RemoveNode(string nameOrAlias)
     {
         var id = ResolveId(nameOrAlias);
         if (id == null) return;
+
+        // Clean indexes
+        var node = _nodes.GetValueOrDefault(id);
+        if (node != null)
+        {
+            if (typeIndex.TryGetValue(node.NodeType, out var typeSet)) typeSet.Remove(id);
+            foreach (var terrSet in territoryIndex.Values) terrSet.Remove(id);
+        }
+
         _nodes.Remove(id);
         _graph.RemoveVertex(id);
         Save();
@@ -534,6 +614,75 @@ public class WorldGraphService
         return events.OrderBy(e => e.storyPoint).ToList();
     }
 
+    // ── Maintenance ────────────────────────────────────────
+
+    /// <summary>
+    /// Deduplicate edges — merge edges between the same source/target with the same
+    /// relation type. Keeps the highest-weight version. Returns count of removed duplicates.
+    /// </summary>
+    public int DeduplicateEdges()
+    {
+        var allEdges = _graph.Edges.ToList();
+        var seen = new Dictionary<string, WorldEdge>();
+        var toRemove = new List<WorldEdge>();
+
+        foreach (var edge in allEdges)
+        {
+            var key = $"{edge.Source}|{edge.Target}|{edge.RelationType}";
+            if (seen.TryGetValue(key, out var existing))
+            {
+                // Keep the one with higher weight
+                if (edge.Weight > existing.Weight)
+                {
+                    toRemove.Add(existing);
+                    seen[key] = edge;
+                }
+                else
+                {
+                    toRemove.Add(edge);
+                }
+            }
+            else
+            {
+                seen[key] = edge;
+            }
+        }
+
+        foreach (var edge in toRemove)
+            _graph.RemoveEdge(edge);
+
+        if (toRemove.Count > 0) Save();
+        return toRemove.Count;
+    }
+
+    /// <summary>Rebuild all indexes from current node data.</summary>
+    public void RebuildIndexes()
+    {
+        typeIndex.Clear();
+        territoryIndex.Clear();
+        foreach (var node in _nodes.Values)
+        {
+            if (!string.IsNullOrWhiteSpace(node.NodeType))
+            {
+                if (!typeIndex.TryGetValue(node.NodeType, out var typeSet))
+                {
+                    typeSet = [];
+                    typeIndex[node.NodeType] = typeSet;
+                }
+                typeSet.Add(node.Id);
+            }
+            IndexNodeTerritory(node);
+        }
+    }
+
+    /// <summary>Get territory index stats for display.</summary>
+    public Dictionary<string, int> GetTerritoryStats() =>
+        territoryIndex.ToDictionary(kv => kv.Key, kv => kv.Value.Count);
+
+    /// <summary>Get type index stats for display.</summary>
+    public Dictionary<string, int> GetTypeStats() =>
+        typeIndex.ToDictionary(kv => kv.Key, kv => kv.Value.Count);
+
     // ── Persistence ─────────────────────────────────────────
 
     public void Save()
@@ -574,9 +723,18 @@ public class WorldGraphService
     {
         _graph.Clear();
         _nodes.Clear();
+        typeIndex.Clear();
+        territoryIndex.Clear();
 
         BuildFromDatabase();
         InferCorpRelationships();
+
+        // Optimize: deduplicate edges and rebuild indexes
+        var deduped = DeduplicateEdges();
+        RebuildIndexes();
+
+        System.Diagnostics.Debug.WriteLine($"[WorldGraph] Rebuild complete: {_nodes.Count} nodes, {_graph.EdgeCount} edges, {deduped} duplicates removed, {typeIndex.Count} type indexes, {territoryIndex.Count} territory indexes");
+
         Save();
     }
 

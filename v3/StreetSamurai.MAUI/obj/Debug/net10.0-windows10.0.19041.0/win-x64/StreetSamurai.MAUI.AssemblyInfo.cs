@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StreetSamurai.MAUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+151193eec1e655ce9b6e65976d94425a912f9b26")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+e63e9050065f167ccf0f957c4f55077a503b7f9f")]
 [assembly: System.Reflection.AssemblyProductAttribute("StreetSamurai.MAUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StreetSamurai.MAUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

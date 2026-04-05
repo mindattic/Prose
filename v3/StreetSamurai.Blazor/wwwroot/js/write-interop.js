@@ -138,11 +138,9 @@ window.writeInterop = {
                     if (self._ref) self._ref.invokeMethodAsync('OnRichContentChanged', el.innerHTML, el.innerText);
                 }, 500);
 
-                // Auto-link entities (2s after last keystroke — longer debounce so it doesn't fight typing)
-                clearTimeout(self._linkDebounce);
-                self._linkDebounce = setTimeout(() => {
-                    self._autoLink(id);
-                }, 2000);
+                // Auto-linking disabled — user can right-click > Ask for context instead
+                // clearTimeout(self._linkDebounce);
+                // self._linkDebounce = setTimeout(() => { self._autoLink(id); }, 2000);
             });
 
             // Track cursor for tag insertion
@@ -240,6 +238,7 @@ window.writeInterop = {
         // ── Auto-link: runs on timer, saves/restores cursor ──
 
         _autoLink: function (id) {
+            return; // Auto-linking disabled — use right-click > Ask instead
             const el = document.getElementById(id);
             if (!el || this._entityIndex.length === 0) return;
 

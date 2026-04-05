@@ -2,9 +2,9 @@
 @* This file kept only as a fallback — the Router uses Shared's layout *@
 @inherits LayoutComponentBase
 
-<div class="app-container d-flex">
+<div class="app-container d-flex" style="height: 100vh; overflow: hidden;">
     <StreetSamurai.Shared.Components.Layout.NavMenu />
-    <main class="flex-grow-1 p-3">
+    <main class="flex-grow-1" style="overflow-y: auto; padding: 10px;">
         <div class="container-fluid">
             @Body
         </div>

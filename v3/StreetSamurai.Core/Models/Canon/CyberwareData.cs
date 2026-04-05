@@ -11,6 +11,8 @@ namespace StreetSamurai.Core.Models.Canon;
 public class CyberwareData
 {
     [JsonPropertyName("name")] public string Name { get; set; } = "";
+    [JsonPropertyName("brand_name")] public string BrandName { get; set; } = "";
+    [JsonPropertyName("product_name")] public string ProductName { get; set; } = "";
     [JsonPropertyName("type")] public string Type { get; set; } = "cyberware";
     [JsonPropertyName("aliases")] public List<string> Aliases { get; set; } = [];
     [JsonPropertyName("category")] public string Category { get; set; } = "";

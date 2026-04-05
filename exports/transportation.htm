@@ -31,8 +31,12 @@ ul.compact { list-style: disc; margin-left: 16px; }
 ul.compact li { font-size: 13px; padding: 1px 0; }
 .sub-entry { border-left: 3px solid var(--border); padding-left: 12px; margin: 6px 0; }
 .back-top { display: inline-block; margin-top: 8px; font-size: 12px; color: var(--muted); }
-.permalink { color: var(--border); font-size: 0.8em; margin-left: 6px; text-decoration: none; opacity: 0.4; transition: opacity 0.2s; }
-.permalink:hover { opacity: 1; color: var(--accent); }
+h3 { display: flex; align-items: center; flex-wrap: nowrap; }
+.entry-links { margin-left: auto; display: flex; gap: 4px; flex-shrink: 0; }
+.permalink { color: var(--border); font-size: 1.1em; text-decoration: none; opacity: 0.25; transition: opacity 0.2s; padding: 0 4px; }
+.permalink:hover { opacity: 0.6; color: var(--muted); text-decoration: none; }
+.copy-link { cursor: pointer; font-size: 1.1em; opacity: 0.25; padding: 0 4px; transition: opacity 0.2s; }
+.copy-link:hover { opacity: 0.6; }
 .entry:target { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
 .filter-bar { position: sticky; top: 0; z-index: 100; background: var(--bg); padding: 10px 0; margin-bottom: 16px; display: flex; align-items: center; }
 .filter-bar input { flex: 1; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 4px; padding: 8px 12px; font-size: 16px; outline: none; -webkit-appearance: none; }
@@ -58,7 +62,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <body id="top">
 <div class="header">
 <h1>Transportation — StreetSamurai Canon Export</h1>
-<small>Exported from StreetSamurai Canon Engine — 2026-04-05 09:02</small>
+<small>Exported from StreetSamurai Canon Engine — 2026-04-05 12:04</small>
 </div>
 
 <div class="filter-bar" id="filterBar">
@@ -171,7 +175,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <li><a href="#walking_throne">Walking Throne</a></li>
 </ul></div>
 <div class="entry" id="arc_roller">
-<h3>ARC-Roller <a href="#arc_roller" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>ARC-Roller</span><span class="entry-links"><a href="#arc_roller" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('arc_roller')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -260,7 +264,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="arcturus_bulwark_apc">
-<h3>Arcturus Bulwark APC <a href="#arcturus_bulwark_apc" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Arcturus Bulwark APC</span><span class="entry-links"><a href="#arcturus_bulwark_apc" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('arcturus_bulwark_apc')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -349,7 +353,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="arcturus_combat_bike">
-<h3>Arcturus Combat Bike <a href="#arcturus_combat_bike" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Arcturus Combat Bike</span><span class="entry-links"><a href="#arcturus_combat_bike" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('arcturus_combat_bike')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -441,7 +445,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="arcturus_exo_runner_frame">
-<h3>Arcturus Exo-Runner Frame <a href="#arcturus_exo_runner_frame" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Arcturus Exo-Runner Frame</span><span class="entry-links"><a href="#arcturus_exo_runner_frame" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('arcturus_exo_runner_frame')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -532,7 +536,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="arcturus_jp_4_jetpack">
-<h3>Arcturus JP-4 Jetpack <a href="#arcturus_jp_4_jetpack" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Arcturus JP-4 Jetpack</span><span class="entry-links"><a href="#arcturus_jp_4_jetpack" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('arcturus_jp_4_jetpack')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -624,7 +628,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="arcturus_mule_cargo_drone">
-<h3>Arcturus Mule Cargo Drone <a href="#arcturus_mule_cargo_drone" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Arcturus Mule Cargo Drone</span><span class="entry-links"><a href="#arcturus_mule_cargo_drone" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('arcturus_mule_cargo_drone')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -710,7 +714,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="arcturus_perimeter_drone_autonomous_patrol">
-<h3>Arcturus Perimeter Drone (Autonomous Patrol) <a href="#arcturus_perimeter_drone_autonomous_patrol" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Arcturus Perimeter Drone (Autonomous Patrol)</span><span class="entry-links"><a href="#arcturus_perimeter_drone_autonomous_patrol" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('arcturus_perimeter_drone_autonomous_patrol')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -799,7 +803,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="arcturus_raptor_gunship">
-<h3>Arcturus Raptor Gunship <a href="#arcturus_raptor_gunship" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Arcturus Raptor Gunship</span><span class="entry-links"><a href="#arcturus_raptor_gunship" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('arcturus_raptor_gunship')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -888,7 +892,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="arcturus_recon_hawk">
-<h3>Arcturus Recon Hawk <a href="#arcturus_recon_hawk" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Arcturus Recon Hawk</span><span class="entry-links"><a href="#arcturus_recon_hawk" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('arcturus_recon_hawk')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -975,7 +979,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="arcturus_siege_platform">
-<h3>Arcturus Siege Platform <a href="#arcturus_siege_platform" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Arcturus Siege Platform</span><span class="entry-links"><a href="#arcturus_siege_platform" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('arcturus_siege_platform')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1066,7 +1070,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="arcturus_warden_exo_carrier">
-<h3>Arcturus Warden Exo-Carrier <a href="#arcturus_warden_exo_carrier" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Arcturus Warden Exo-Carrier</span><span class="entry-links"><a href="#arcturus_warden_exo_carrier" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('arcturus_warden_exo_carrier')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1155,7 +1159,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="automated_street_sweeper">
-<h3>Automated Street Sweeper <a href="#automated_street_sweeper" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Automated Street Sweeper</span><span class="entry-links"><a href="#automated_street_sweeper" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('automated_street_sweeper')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1245,7 +1249,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="axiom_apex_vtol">
-<h3>Axiom Apex VTOL <a href="#axiom_apex_vtol" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Axiom Apex VTOL</span><span class="entry-links"><a href="#axiom_apex_vtol" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('axiom_apex_vtol')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1333,7 +1337,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="axiom_bathyscaphe">
-<h3>Axiom Bathyscaphe <a href="#axiom_bathyscaphe" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Axiom Bathyscaphe</span><span class="entry-links"><a href="#axiom_bathyscaphe" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('axiom_bathyscaphe')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1418,7 +1422,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="axiom_corporate_shuttle_bus">
-<h3>Axiom Corporate Shuttle Bus <a href="#axiom_corporate_shuttle_bus" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Axiom Corporate Shuttle Bus</span><span class="entry-links"><a href="#axiom_corporate_shuttle_bus" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('axiom_corporate_shuttle_bus')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1505,7 +1509,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="axiom_executive_helicopter">
-<h3>Axiom Executive Helicopter <a href="#axiom_executive_helicopter" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Axiom Executive Helicopter</span><span class="entry-links"><a href="#axiom_executive_helicopter" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('axiom_executive_helicopter')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1592,7 +1596,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="axiom_hovercraft_lake_patrol">
-<h3>Axiom Hovercraft (Lake Patrol) <a href="#axiom_hovercraft_lake_patrol" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Axiom Hovercraft (Lake Patrol)</span><span class="entry-links"><a href="#axiom_hovercraft_lake_patrol" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('axiom_hovercraft_lake_patrol')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1679,7 +1683,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="axiom_orbital_shuttle">
-<h3>Axiom Orbital Shuttle <a href="#axiom_orbital_shuttle" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Axiom Orbital Shuttle</span><span class="entry-links"><a href="#axiom_orbital_shuttle" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('axiom_orbital_shuttle')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1765,7 +1769,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="axiom_sentinel_patrol_drone">
-<h3>Axiom Sentinel Patrol Drone <a href="#axiom_sentinel_patrol_drone" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Axiom Sentinel Patrol Drone</span><span class="entry-links"><a href="#axiom_sentinel_patrol_drone" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('axiom_sentinel_patrol_drone')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1853,7 +1857,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="axiom_shadow_drone">
-<h3>Axiom Shadow Drone <a href="#axiom_shadow_drone" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Axiom Shadow Drone</span><span class="entry-links"><a href="#axiom_shadow_drone" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('axiom_shadow_drone')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1943,7 +1947,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="axiom_skybridge_tether_car">
-<h3>Axiom SkyBridge Tether Car <a href="#axiom_skybridge_tether_car" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Axiom SkyBridge Tether Car</span><span class="entry-links"><a href="#axiom_skybridge_tether_car" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('axiom_skybridge_tether_car')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2028,7 +2032,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="axiom_skylux">
-<h3>Axiom SkyLux <a href="#axiom_skylux" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Axiom SkyLux</span><span class="entry-links"><a href="#axiom_skylux" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('axiom_skylux')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2114,7 +2118,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="axiom_sovereign_limousine">
-<h3>Axiom Sovereign Limousine <a href="#axiom_sovereign_limousine" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Axiom Sovereign Limousine</span><span class="entry-links"><a href="#axiom_sovereign_limousine" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('axiom_sovereign_limousine')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2206,7 +2210,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="canal_barge_industrial">
-<h3>Canal Barge (Industrial) <a href="#canal_barge_industrial" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Canal Barge (Industrial)</span><span class="entry-links"><a href="#canal_barge_industrial" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('canal_barge_industrial')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2294,7 +2298,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="cargo_bicycle">
-<h3>Cargo Bicycle <a href="#cargo_bicycle" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Cargo Bicycle</span><span class="entry-links"><a href="#cargo_bicycle" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('cargo_bicycle')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2384,7 +2388,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="cargo_zeppelin_tender">
-<h3>Cargo Zeppelin Tender <a href="#cargo_zeppelin_tender" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Cargo Zeppelin Tender</span><span class="entry-links"><a href="#cargo_zeppelin_tender" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('cargo_zeppelin_tender')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2473,7 +2477,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="deep_bore_elevator">
-<h3>Deep Bore Elevator <a href="#deep_bore_elevator" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Deep Bore Elevator</span><span class="entry-links"><a href="#deep_bore_elevator" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('deep_bore_elevator')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2561,7 +2565,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="deep_rail_mining_cart">
-<h3>Deep Rail Mining Cart <a href="#deep_rail_mining_cart" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Deep Rail Mining Cart</span><span class="entry-links"><a href="#deep_rail_mining_cart" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('deep_rail_mining_cart')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2648,7 +2652,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="dervish_board">
-<h3>Dervish Board <a href="#dervish_board" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Dervish Board</span><span class="entry-links"><a href="#dervish_board" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('dervish_board')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2737,7 +2741,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ferrogate_cargo_trike">
-<h3>Ferrogate Cargo Trike <a href="#ferrogate_cargo_trike" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ferrogate Cargo Trike</span><span class="entry-links"><a href="#ferrogate_cargo_trike" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ferrogate_cargo_trike')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2824,7 +2828,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ferrogate_cl_9_l_train">
-<h3>Ferrogate CL-9 L-Train <a href="#ferrogate_cl_9_l_train" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ferrogate CL-9 L-Train</span><span class="entry-links"><a href="#ferrogate_cl_9_l_train" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ferrogate_cl_9_l_train')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2915,7 +2919,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ferrogate_deep_line">
-<h3>Ferrogate Deep Line <a href="#ferrogate_deep_line" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ferrogate Deep Line</span><span class="entry-links"><a href="#ferrogate_deep_line" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ferrogate_deep_line')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3007,7 +3011,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ferrogate_emergency_response_vehicle">
-<h3>Ferrogate Emergency Response Vehicle <a href="#ferrogate_emergency_response_vehicle" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ferrogate Emergency Response Vehicle</span><span class="entry-links"><a href="#ferrogate_emergency_response_vehicle" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ferrogate_emergency_response_vehicle')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3094,7 +3098,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ferrogate_enforcer_cruiser">
-<h3>Ferrogate Enforcer Cruiser <a href="#ferrogate_enforcer_cruiser" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ferrogate Enforcer Cruiser</span><span class="entry-links"><a href="#ferrogate_enforcer_cruiser" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ferrogate_enforcer_cruiser')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3184,7 +3188,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ferrogate_freight_elevator_platform">
-<h3>Ferrogate Freight Elevator Platform <a href="#ferrogate_freight_elevator_platform" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ferrogate Freight Elevator Platform</span><span class="entry-links"><a href="#ferrogate_freight_elevator_platform" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ferrogate_freight_elevator_platform')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3269,7 +3273,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ferrogate_harbor_ferry">
-<h3>Ferrogate Harbor Ferry <a href="#ferrogate_harbor_ferry" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ferrogate Harbor Ferry</span><span class="entry-links"><a href="#ferrogate_harbor_ferry" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ferrogate_harbor_ferry')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3360,7 +3364,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ferrogate_heavy_hauler">
-<h3>Ferrogate Heavy Hauler <a href="#ferrogate_heavy_hauler" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ferrogate Heavy Hauler</span><span class="entry-links"><a href="#ferrogate_heavy_hauler" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ferrogate_heavy_hauler')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3445,7 +3449,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ferrogate_metro_bus">
-<h3>Ferrogate Metro Bus <a href="#ferrogate_metro_bus" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ferrogate Metro Bus</span><span class="entry-links"><a href="#ferrogate_metro_bus" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ferrogate_metro_bus')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3532,7 +3536,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ferrogate_night_bus">
-<h3>Ferrogate Night Bus <a href="#ferrogate_night_bus" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ferrogate Night Bus</span><span class="entry-links"><a href="#ferrogate_night_bus" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ferrogate_night_bus')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3619,7 +3623,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ferrogate_prison_transport">
-<h3>Ferrogate Prison Transport <a href="#ferrogate_prison_transport" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ferrogate Prison Transport</span><span class="entry-links"><a href="#ferrogate_prison_transport" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ferrogate_prison_transport')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3707,7 +3711,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ferrogate_school_bus">
-<h3>Ferrogate School Bus <a href="#ferrogate_school_bus" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ferrogate School Bus</span><span class="entry-links"><a href="#ferrogate_school_bus" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ferrogate_school_bus')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3798,7 +3802,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ferrogate_skybridge_tram">
-<h3>Ferrogate Skybridge Tram <a href="#ferrogate_skybridge_tram" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ferrogate Skybridge Tram</span><span class="entry-links"><a href="#ferrogate_skybridge_tram" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ferrogate_skybridge_tram')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3886,7 +3890,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ferrogate_transit_security_bike">
-<h3>Ferrogate Transit Security Bike <a href="#ferrogate_transit_security_bike" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ferrogate Transit Security Bike</span><span class="entry-links"><a href="#ferrogate_transit_security_bike" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ferrogate_transit_security_bike')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3973,7 +3977,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ghost_cab">
-<h3>Ghost Cab <a href="#ghost_cab" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ghost Cab</span><span class="entry-links"><a href="#ghost_cab" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ghost_cab')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -4064,7 +4068,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="grav_board">
-<h3>Grav-Board <a href="#grav_board" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Grav-Board</span><span class="entry-links"><a href="#grav_board" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('grav_board')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -4152,7 +4156,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="gravity_train_theoretical_rumored">
-<h3>Gravity Train (Theoretical/Rumored) <a href="#gravity_train_theoretical_rumored" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Gravity Train (Theoretical/Rumored)</span><span class="entry-links"><a href="#gravity_train_theoretical_rumored" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('gravity_train_theoretical_rumored')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -4242,7 +4246,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="icecutter_supply_barge">
-<h3>Icecutter Supply Barge <a href="#icecutter_supply_barge" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Icecutter Supply Barge</span><span class="entry-links"><a href="#icecutter_supply_barge" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('icecutter_supply_barge')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -4329,7 +4333,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="improvised_shield_sled">
-<h3>Improvised Shield Sled <a href="#improvised_shield_sled" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Improvised Shield Sled</span><span class="entry-links"><a href="#improvised_shield_sled" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('improvised_shield_sled')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -4416,7 +4420,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="junkyard_dog">
-<h3>Junkyard Dog <a href="#junkyard_dog" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Junkyard Dog</span><span class="entry-links"><a href="#junkyard_dog" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('junkyard_dog')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -4503,7 +4507,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="kang_li_viper_e_bike">
-<h3>Kang-Li Viper E-Bike <a href="#kang_li_viper_e_bike" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Kang-Li Viper E-Bike</span><span class="entry-links"><a href="#kang_li_viper_e_bike" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('kang_li_viper_e_bike')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -4589,7 +4593,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="lake_skimmer_hydrofoil">
-<h3>Lake Skimmer Hydrofoil <a href="#lake_skimmer_hydrofoil" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Lake Skimmer Hydrofoil</span><span class="entry-links"><a href="#lake_skimmer_hydrofoil" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('lake_skimmer_hydrofoil')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -4679,7 +4683,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="man_carrying_cargo_drone_improvised">
-<h3>Man-Carrying Cargo Drone (Improvised) <a href="#man_carrying_cargo_drone_improvised" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Man-Carrying Cargo Drone (Improvised)</span><span class="entry-links"><a href="#man_carrying_cargo_drone_improvised" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('man_carrying_cargo_drone_improvised')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -4768,7 +4772,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="meridian_gondola">
-<h3>Meridian Gondola <a href="#meridian_gondola" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Meridian Gondola</span><span class="entry-links"><a href="#meridian_gondola" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('meridian_gondola')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -4853,7 +4857,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="meridian_monorail">
-<h3>Meridian Monorail <a href="#meridian_monorail" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Meridian Monorail</span><span class="entry-links"><a href="#meridian_monorail" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('meridian_monorail')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -4945,7 +4949,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="meridian_water_taxi">
-<h3>Meridian Water Taxi <a href="#meridian_water_taxi" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Meridian Water Taxi</span><span class="entry-links"><a href="#meridian_water_taxi" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('meridian_water_taxi')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -5036,7 +5040,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="meridian_zeppelin_cargo_class">
-<h3>Meridian Zeppelin — Cargo Class <a href="#meridian_zeppelin_cargo_class" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Meridian Zeppelin — Cargo Class</span><span class="entry-links"><a href="#meridian_zeppelin_cargo_class" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('meridian_zeppelin_cargo_class')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -5124,7 +5128,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="meridian_zeppelin_executive_class">
-<h3>Meridian Zeppelin — Executive Class <a href="#meridian_zeppelin_executive_class" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Meridian Zeppelin — Executive Class</span><span class="entry-links"><a href="#meridian_zeppelin_executive_class" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('meridian_zeppelin_executive_class')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -5213,7 +5217,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="meridian_zeppelin_hospital_ship">
-<h3>Meridian Zeppelin — Hospital Ship <a href="#meridian_zeppelin_hospital_ship" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Meridian Zeppelin — Hospital Ship</span><span class="entry-links"><a href="#meridian_zeppelin_hospital_ship" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('meridian_zeppelin_hospital_ship')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -5304,7 +5308,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="orbital_drop_pod">
-<h3>Orbital Drop Pod <a href="#orbital_drop_pod" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Orbital Drop Pod</span><span class="entry-links"><a href="#orbital_drop_pod" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('orbital_drop_pod')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -5389,7 +5393,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="para_wing">
-<h3>Para-Wing <a href="#para_wing" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Para-Wing</span><span class="entry-links"><a href="#para_wing" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('para_wing')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -5479,7 +5483,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="parcel_drone_standard">
-<h3>Parcel Drone (Standard) <a href="#parcel_drone_standard" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Parcel Drone (Standard)</span><span class="entry-links"><a href="#parcel_drone_standard" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('parcel_drone_standard')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -5572,7 +5576,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="patchwork_scooter">
-<h3>Patchwork Scooter <a href="#patchwork_scooter" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Patchwork Scooter</span><span class="entry-links"><a href="#patchwork_scooter" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('patchwork_scooter')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -5659,7 +5663,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="pneumatic_transit_capsule">
-<h3>Pneumatic Transit Capsule <a href="#pneumatic_transit_capsule" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Pneumatic Transit Capsule</span><span class="entry-links"><a href="#pneumatic_transit_capsule" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('pneumatic_transit_capsule')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -5743,7 +5747,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="rickshaw_drone">
-<h3>Rickshaw Drone <a href="#rickshaw_drone" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Rickshaw Drone</span><span class="entry-links"><a href="#rickshaw_drone" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('rickshaw_drone')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -5834,7 +5838,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ringo_information_kiosk_mobile">
-<h3>Ringo Information Kiosk (Mobile) <a href="#ringo_information_kiosk_mobile" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ringo Information Kiosk (Mobile)</span><span class="entry-links"><a href="#ringo_information_kiosk_mobile" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ringo_information_kiosk_mobile')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -5920,7 +5924,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ringo_popup_stall_trailer">
-<h3>Ringo Popup Stall Trailer <a href="#ringo_popup_stall_trailer" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ringo Popup Stall Trailer</span><span class="entry-links"><a href="#ringo_popup_stall_trailer" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ringo_popup_stall_trailer')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -6009,7 +6013,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ringo_street_vendor_cart">
-<h3>Ringo Street Vendor Cart <a href="#ringo_street_vendor_cart" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ringo Street Vendor Cart</span><span class="entry-links"><a href="#ringo_street_vendor_cart" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ringo_street_vendor_cart')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -6098,7 +6102,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ringo_swarm_delivery_network">
-<h3>Ringo Swarm Delivery Network <a href="#ringo_swarm_delivery_network" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ringo Swarm Delivery Network</span><span class="entry-links"><a href="#ringo_swarm_delivery_network" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ringo_swarm_delivery_network')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -6191,7 +6195,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="rooftop_garden_cart">
-<h3>Rooftop Garden Cart <a href="#rooftop_garden_cart" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Rooftop Garden Cart</span><span class="entry-links"><a href="#rooftop_garden_cart" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('rooftop_garden_cart')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -6280,7 +6284,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="sewer_skimmer">
-<h3>Sewer Skimmer <a href="#sewer_skimmer" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Sewer Skimmer</span><span class="entry-links"><a href="#sewer_skimmer" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('sewer_skimmer')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -6369,7 +6373,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="shelf_chairlift">
-<h3>Shelf Chairlift <a href="#shelf_chairlift" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Shelf Chairlift</span><span class="entry-links"><a href="#shelf_chairlift" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('shelf_chairlift')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -6454,7 +6458,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="shelf_rope_bridge_network">
-<h3>Shelf Rope Bridge Network <a href="#shelf_rope_bridge_network" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Shelf Rope Bridge Network</span><span class="entry-links"><a href="#shelf_rope_bridge_network" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('shelf_rope_bridge_network')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -6541,7 +6545,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="shelf_tramway">
-<h3>Shelf Tramway <a href="#shelf_tramway" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Shelf Tramway</span><span class="entry-links"><a href="#shelf_tramway" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('shelf_tramway')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -6630,7 +6634,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="shelf_zipline_network">
-<h3>Shelf Zipline Network <a href="#shelf_zipline_network" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Shelf Zipline Network</span><span class="entry-links"><a href="#shelf_zipline_network" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('shelf_zipline_network')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -6718,7 +6722,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="sn_kestrel_hover_bike">
-<h3>SN Kestrel Hover-Bike <a href="#sn_kestrel_hover_bike" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>SN Kestrel Hover-Bike</span><span class="entry-links"><a href="#sn_kestrel_hover_bike" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('sn_kestrel_hover_bike')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -6811,7 +6815,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="sn_kite_vtol_freighter">
-<h3>SN Kite VTOL Freighter <a href="#sn_kite_vtol_freighter" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>SN Kite VTOL Freighter</span><span class="entry-links"><a href="#sn_kite_vtol_freighter" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('sn_kite_vtol_freighter')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -6900,7 +6904,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="sn_manta_submersible_glider">
-<h3>SN Manta Submersible Glider <a href="#sn_manta_submersible_glider" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>SN Manta Submersible Glider</span><span class="entry-links"><a href="#sn_manta_submersible_glider" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('sn_manta_submersible_glider')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -6991,7 +6995,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="sn_meridian_yacht">
-<h3>SN Meridian Yacht <a href="#sn_meridian_yacht" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>SN Meridian Yacht</span><span class="entry-links"><a href="#sn_meridian_yacht" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('sn_meridian_yacht')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -7082,7 +7086,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="sn_nighthawk_stealth_vtol">
-<h3>SN Nighthawk Stealth VTOL <a href="#sn_nighthawk_stealth_vtol" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>SN Nighthawk Stealth VTOL</span><span class="entry-links"><a href="#sn_nighthawk_stealth_vtol" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('sn_nighthawk_stealth_vtol')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -7176,7 +7180,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="sn_phantom_motorcycle">
-<h3>SN Phantom Motorcycle <a href="#sn_phantom_motorcycle" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>SN Phantom Motorcycle</span><span class="entry-links"><a href="#sn_phantom_motorcycle" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('sn_phantom_motorcycle')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -7268,7 +7272,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="sn_tempest_air_racer">
-<h3>SN Tempest Air Racer <a href="#sn_tempest_air_racer" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>SN Tempest Air Racer</span><span class="entry-links"><a href="#sn_tempest_air_racer" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('sn_tempest_air_racer')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -7358,7 +7362,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="sn_wave_runner">
-<h3>SN Wave Runner <a href="#sn_wave_runner" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>SN Wave Runner</span><span class="entry-links"><a href="#sn_wave_runner" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('sn_wave_runner')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -7445,7 +7449,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="sn_wraith_e_cycle">
-<h3>SN Wraith E-Cycle <a href="#sn_wraith_e_cycle" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>SN Wraith E-Cycle</span><span class="entry-links"><a href="#sn_wraith_e_cycle" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('sn_wraith_e_cycle')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -7533,7 +7537,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="sparrow_micro_vtol">
-<h3>Sparrow Micro-VTOL <a href="#sparrow_micro_vtol" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Sparrow Micro-VTOL</span><span class="entry-links"><a href="#sparrow_micro_vtol" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('sparrow_micro_vtol')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -7620,7 +7624,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="sterling_nakamura_heritage_roadster">
-<h3>Sterling-Nakamura Heritage Roadster <a href="#sterling_nakamura_heritage_roadster" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Sterling-Nakamura Heritage Roadster</span><span class="entry-links"><a href="#sterling_nakamura_heritage_roadster" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('sterling_nakamura_heritage_roadster')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -7708,7 +7712,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="street_luge">
-<h3>Street Luge <a href="#street_luge" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Street Luge</span><span class="entry-links"><a href="#street_luge" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('street_luge')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -7796,7 +7800,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="tessera_ambulance_drone">
-<h3>Tessera Ambulance Drone <a href="#tessera_ambulance_drone" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Tessera Ambulance Drone</span><span class="entry-links"><a href="#tessera_ambulance_drone" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('tessera_ambulance_drone')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -7882,7 +7886,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="tessera_autocab">
-<h3>Tessera AutoCab <a href="#tessera_autocab" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Tessera AutoCab</span><span class="entry-links"><a href="#tessera_autocab" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('tessera_autocab')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -7972,7 +7976,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="tessera_data_courier_van">
-<h3>Tessera Data Courier Van <a href="#tessera_data_courier_van" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Tessera Data Courier Van</span><span class="entry-links"><a href="#tessera_data_courier_van" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('tessera_data_courier_van')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -8061,7 +8065,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="tessera_depth_crawler">
-<h3>Tessera Depth Crawler <a href="#tessera_depth_crawler" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Tessera Depth Crawler</span><span class="entry-links"><a href="#tessera_depth_crawler" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('tessera_depth_crawler')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -8149,7 +8153,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="tessera_logistics_van">
-<h3>Tessera Logistics Van <a href="#tessera_logistics_van" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Tessera Logistics Van</span><span class="entry-links"><a href="#tessera_logistics_van" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('tessera_logistics_van')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -8236,7 +8240,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="tessera_nexus_town_car">
-<h3>Tessera Nexus Town Car <a href="#tessera_nexus_town_car" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Tessera Nexus Town Car</span><span class="entry-links"><a href="#tessera_nexus_town_car" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('tessera_nexus_town_car')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -8323,7 +8327,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="tessera_personal_pod">
-<h3>Tessera Personal Pod <a href="#tessera_personal_pod" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Tessera Personal Pod</span><span class="entry-links"><a href="#tessera_personal_pod" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('tessera_personal_pod')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -8410,7 +8414,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="the_meridian_underground_railroad">
-<h3>The Meridian Underground Railroad <a href="#the_meridian_underground_railroad" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>The Meridian Underground Railroad</span><span class="entry-links"><a href="#the_meridian_underground_railroad" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('the_meridian_underground_railroad')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -8501,7 +8505,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="underworld_crawler">
-<h3>Underworld Crawler <a href="#underworld_crawler" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Underworld Crawler</span><span class="entry-links"><a href="#underworld_crawler" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('underworld_crawler')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -8589,7 +8593,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="underworld_fungal_raft">
-<h3>Underworld Fungal Raft <a href="#underworld_fungal_raft" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Underworld Fungal Raft</span><span class="entry-links"><a href="#underworld_fungal_raft" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('underworld_fungal_raft')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -8678,7 +8682,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="underworld_raft">
-<h3>Underworld Raft <a href="#underworld_raft" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Underworld Raft</span><span class="entry-links"><a href="#underworld_raft" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('underworld_raft')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -8769,7 +8773,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="underworld_tunneler">
-<h3>Underworld Tunneler <a href="#underworld_tunneler" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Underworld Tunneler</span><span class="entry-links"><a href="#underworld_tunneler" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('underworld_tunneler')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -8857,7 +8861,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="walking_street_autonomous_road_section">
-<h3>Walking Street (Autonomous Road Section) <a href="#walking_street_autonomous_road_section" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Walking Street (Autonomous Road Section)</span><span class="entry-links"><a href="#walking_street_autonomous_road_section" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('walking_street_autonomous_road_section')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -8944,7 +8948,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="walking_throne">
-<h3>Walking Throne <a href="#walking_throne" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Walking Throne</span><span class="entry-links"><a href="#walking_throne" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('walking_throne')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -9054,6 +9058,14 @@ function filterEntries() {
 function clearFilter() {
     document.getElementById('filterInput').value = '';
     filterEntries();
+}
+function copyLink(slug) {
+    var url = location.href.split('#')[0] + '#' + slug;
+    navigator.clipboard.writeText(url).then(function() {
+        var el = event.target;
+        el.textContent = '\u2705';
+        setTimeout(function() { el.textContent = '\uD83D\uDCCB'; }, 1500);
+    });
 }</script>
 </body>
 </html>

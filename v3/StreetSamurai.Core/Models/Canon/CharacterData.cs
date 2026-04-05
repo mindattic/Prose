@@ -39,6 +39,14 @@ public class CharacterData
     [JsonPropertyName("behavioral")] public CharacterBehavioral Behavioral { get; set; } = new();
     /// <summary>Installed cyberware/augmentations with body location and status.</summary>
     [JsonPropertyName("cyberware_inventory")] public List<CyberwareEntry> CyberwareInventory { get; set; } = [];
+    /// <summary>
+    /// What this character owns, uses, wears, drives, drinks, and carries.
+    /// Cross-references other repos by name — the character's vehicle points to a
+    /// transportation entry, their weapon to weaponry, their drink to consumer goods.
+    /// This is how the story engine knows Kyle drives a specific motorcycle and
+    /// Sable drinks a specific brand of synth-coffee.
+    /// </summary>
+    [JsonPropertyName("belongings")] public CharacterBelongings Belongings { get; set; } = new();
     /// <summary>Archetype scores — behavioral patterns this character exhibits (0.0-1.0 each).</summary>
     [JsonPropertyName("archetypes")] public Dictionary<string, double> Archetypes { get; set; } = new();
     /// <summary>Where this operator works — their home turf and surrounding areas they know well.</summary>
@@ -86,6 +94,28 @@ public class TimelineEvent
     [JsonPropertyName("consequences")] public string Consequences { get; set; } = "";
     [JsonPropertyName("body_changes")] public List<string> BodyChanges { get; set; } = [];
     [JsonPropertyName("status_change")] public string StatusChange { get; set; } = "";
+}
+
+/// <summary>
+/// What a character owns, uses, and is associated with. Cross-references other repos.
+/// Each field is a name that matches an entry in the corresponding repo.
+/// Empty strings mean unspecified — the story engine can assign or the user can fill in.
+/// </summary>
+public class CharacterBelongings
+{
+    [JsonPropertyName("primary_weapon")] public string PrimaryWeapon { get; set; } = "";
+    [JsonPropertyName("secondary_weapon")] public string SecondaryWeapon { get; set; } = "";
+    [JsonPropertyName("armor")] public string Armor { get; set; } = "";
+    [JsonPropertyName("vehicle")] public string Vehicle { get; set; } = "";
+    [JsonPropertyName("residence")] public string Residence { get; set; } = "";
+    [JsonPropertyName("clothing_style")] public string ClothingStyle { get; set; } = "";
+    [JsonPropertyName("favorite_drink")] public string FavoriteDrink { get; set; } = "";
+    [JsonPropertyName("favorite_food")] public string FavoriteFood { get; set; } = "";
+    [JsonPropertyName("stimulant")] public string Stimulant { get; set; } = "";
+    [JsonPropertyName("comm_device")] public string CommDevice { get; set; } = "";
+    [JsonPropertyName("signature_gear")] public List<string> SignatureGear { get; set; } = [];
+    [JsonPropertyName("pharmaceuticals")] public List<string> Pharmaceuticals { get; set; } = [];
+    [JsonPropertyName("other")] public Dictionary<string, string> Other { get; set; } = new();
 }
 
 /// <summary>

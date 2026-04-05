@@ -86,6 +86,9 @@ public class BehaviorPredictionService
         // Archetype-driven behavior
         prediction.ArchetypeInfluences = PredictArchetypeInfluences(character, tensionLevel, beatGoal);
 
+        // Belongings — what they have with them
+        prediction.Belongings = ExtractBelongings(character);
+
         return prediction;
     }
 
@@ -127,6 +130,9 @@ public class BehaviorPredictionService
 
             if (p.ArchetypeInfluences.Count > 0)
                 lines.Add($"    ARCHETYPES: {string.Join("; ", p.ArchetypeInfluences)}");
+
+            if (p.Belongings.Count > 0)
+                lines.Add($"    HAS: {string.Join("; ", p.Belongings)}");
 
             if (p.NearBreakingPoint)
                 lines.Add("    WARNING: Near breaking point — behavior may become erratic or uncharacteristic");
@@ -379,6 +385,20 @@ public class BehaviorPredictionService
         });
     }
 
+    private static List<string> ExtractBelongings(CharacterData character)
+    {
+        var items = new List<string>();
+        var b = character.Belongings;
+        if (b.PrimaryWeapon.Length > 0) items.Add($"weapon: {b.PrimaryWeapon}");
+        if (b.SecondaryWeapon.Length > 0) items.Add($"sidearm: {b.SecondaryWeapon}");
+        if (b.Armor.Length > 0) items.Add($"armor: {b.Armor}");
+        if (b.Vehicle.Length > 0) items.Add($"drives: {b.Vehicle}");
+        if (b.ClothingStyle.Length > 0) items.Add($"wearing: {b.ClothingStyle}");
+        if (b.CommDevice.Length > 0) items.Add($"comm: {b.CommDevice}");
+        foreach (var gear in b.SignatureGear) items.Add(gear);
+        return items;
+    }
+
     private List<string> PredictArchetypeInfluences(CharacterData character, int tension, string beatGoal)
     {
         var influences = new List<string>();
@@ -465,4 +485,5 @@ public class CharacterBehaviorPrediction
     public string StressResponse { get; set; } = "";
     public bool NearBreakingPoint { get; set; }
     public List<string> ArchetypeInfluences { get; set; } = [];
+    public List<string> Belongings { get; set; } = [];
 }

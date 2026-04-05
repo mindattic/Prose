@@ -84,28 +84,19 @@ window.hereMap = {
             });
             this._map = map;
 
-            // Strip labels, roads, and borders from the vector layer
+            // Strip EVERYTHING except land and water — maximally featureless
             var provider = baseLayer.getProvider();
             if (provider && provider.getStyle) {
                 var style = provider.getStyle();
                 var applyMinimalStyle = function () {
                     var config = style.extractConfig();
                     if (config && config.layers) {
+                        // Only keep layers related to land mass, water, and earth
+                        var keepPatterns = ['water', 'ocean', 'sea', 'lake', 'river', 'land', 'earth', 'background', 'continent', 'natural', 'green', 'park', 'forest', 'wood'];
                         Object.keys(config.layers).forEach(function (layerName) {
                             var lower = layerName.toLowerCase();
-                            if (lower.indexOf('label') !== -1 ||
-                                lower.indexOf('road') !== -1 ||
-                                lower.indexOf('street') !== -1 ||
-                                lower.indexOf('highway') !== -1 ||
-                                lower.indexOf('boundary') !== -1 ||
-                                lower.indexOf('border') !== -1 ||
-                                lower.indexOf('admin') !== -1 ||
-                                lower.indexOf('place') !== -1 ||
-                                lower.indexOf('poi') !== -1 ||
-                                lower.indexOf('transit') !== -1 ||
-                                lower.indexOf('ferry') !== -1 ||
-                                lower.indexOf('path') !== -1 ||
-                                lower.indexOf('text') !== -1) {
+                            var keep = keepPatterns.some(function (p) { return lower.indexOf(p) !== -1; });
+                            if (!keep) {
                                 config.layers[layerName].visible = false;
                             }
                         });

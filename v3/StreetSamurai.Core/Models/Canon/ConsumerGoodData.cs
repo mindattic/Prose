@@ -11,6 +11,8 @@ namespace StreetSamurai.Core.Models.Canon;
 public class ConsumerGoodData
 {
     [JsonPropertyName("name")] public string Name { get; set; } = "";
+    [JsonPropertyName("brand_name")] public string BrandName { get; set; } = "";
+    [JsonPropertyName("product_name")] public string ProductName { get; set; } = "";
     [JsonPropertyName("type")] public string Type { get; set; } = "consumer_good";
     [JsonPropertyName("category")] public string Category { get; set; } = "";
     [JsonPropertyName("subcategory")] public string Subcategory { get; set; } = "";
