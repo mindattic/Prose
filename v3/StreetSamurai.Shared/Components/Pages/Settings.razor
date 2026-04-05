@@ -65,6 +65,36 @@
                                @bind="SettingsSvc.EditorFontSize" @bind:event="onchange" />
                     </div>
                 </div>
+                <div class="row g-3 mt-1">
+                    <div class="col-md-2">
+                        <label class="form-label text-muted">Time Format</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.TimeFormat">
+                            <option value="12h">12-hour (AM/PM)</option>
+                            <option value="24h">24-hour</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label text-muted">Timezone</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.TimezoneId">
+                            @foreach (var tz in TimeZoneInfo.GetSystemTimeZones())
+                            {
+                                <option value="@tz.Id">@tz.DisplayName</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label text-muted">UI Font</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.FontFamily">
+                            <option value="Outfit">Outfit</option>
+                            <option value="Inter">Inter</option>
+                            <option value="Roboto">Roboto</option>
+                            <option value="Source Sans 3">Source Sans 3</option>
+                            <option value="Nunito">Nunito</option>
+                            <option value="Poppins">Poppins</option>
+                            <option value="Helvetica Neue">Helvetica Neue (System)</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -9,8 +9,8 @@
         @foreach (var t in items)
         {
             <div class="list-item text-light @(editing?.Name == t.Name ? "active" : "")" @onclick="() => Edit(t)">
-                <div class="fw-bold small">@t.Name</div>
-                <div class="text-muted" style="font-size: 0.7rem;">@t.Subcategory</div>
+                <div class="fw-bold small">@(string.IsNullOrEmpty(t.ProductName) ? t.Name : t.ProductName)</div>
+                <div class="text-muted" style="font-size: 0.7rem;">@t.BrandName @(string.IsNullOrEmpty(t.Subcategory) ? "" : $"· {t.Subcategory}")</div>
             </div>
         }
         <div class="p-2">

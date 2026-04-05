@@ -17,8 +17,15 @@ public class SettingsService
         settingsPath = Path.Combine(appData, "Settings.json");
         Load();
 
-        // Auto-detect canon root if not set
-        if (string.IsNullOrWhiteSpace(data.CanonRootPath))
+        // Auto-detect canon root if not set or current path has insufficient data
+        var engineDir = string.IsNullOrWhiteSpace(data.CanonRootPath)
+            ? ""
+            : Path.Combine(data.CanonRootPath, "engine_data");
+        var hasData = !string.IsNullOrWhiteSpace(engineDir)
+            && Directory.Exists(engineDir)
+            && Directory.EnumerateFiles(engineDir, "*.json", SearchOption.AllDirectories).Take(10).Count() >= 10;
+
+        if (!hasData)
         {
             var detected = AutoDetectCanonRoot();
             if (detected != null)
@@ -40,8 +47,9 @@ public class SettingsService
 
         foreach (var path in candidates)
         {
-            if (Directory.Exists(Path.Combine(path, "engine_data")) &&
-                File.Exists(Path.Combine(path, "engine_data", "canon.json")))
+            var candidateDir = Path.Combine(path, "engine_data");
+            if (Directory.Exists(candidateDir) &&
+                Directory.EnumerateFiles(candidateDir, "*.json", SearchOption.AllDirectories).Take(10).Count() >= 10)
                 return path;
         }
 
@@ -98,6 +106,20 @@ public class SettingsService
     public string MapService { get => data.MapService; set { data.MapService = value; Save(); } }
     public string MapAppId { get => data.MapAppId; set { data.MapAppId = value; Save(); } }
     public string MapApiKey { get => data.MapApiKey; set { data.MapApiKey = value; Save(); } }
+    public string TimeFormat { get => data.TimeFormat; set { data.TimeFormat = value; Save(); } }
+    public string TimezoneId { get => data.TimezoneId; set { data.TimezoneId = value; Save(); } }
+    public string FontFamily { get => data.FontFamily; set { data.FontFamily = value; Save(); } }
+
+    /// <summary>Formats a UTC or local DateTime according to the user's configured time format and timezone.</summary>
+    public string FormatTimestamp(DateTime timestamp, bool includeMilliseconds = true)
+    {
+        var tz = TimeZoneInfo.FindSystemTimeZoneById(TimezoneId);
+        var converted = TimeZoneInfo.ConvertTime(timestamp, tz);
+        var pattern = TimeFormat == "12h"
+            ? (includeMilliseconds ? "h:mm:ss.fff tt" : "h:mm:ss tt")
+            : (includeMilliseconds ? "HH:mm:ss.fff" : "HH:mm:ss");
+        return converted.ToString(pattern);
+    }
 
     /// <summary>Reset non-secret settings to defaults. Preserves API keys and canon root.</summary>
     public void ResetToDefaults()
@@ -187,5 +209,8 @@ public class SettingsService
         public string MapService { get; set; } = "here";
         public string MapAppId { get; set; } = "rI9gpj49oW5SGZ8EsAe9";
         public string MapApiKey { get; set; } = "CIPFwnEI3bF6whfMT-1yL0kFa6wq1G9v8cBudCXdLE0";
+        public string TimeFormat { get; set; } = "12h";
+        public string TimezoneId { get; set; } = "Central Standard Time";
+        public string FontFamily { get; set; } = "Outfit";
     }
 }
