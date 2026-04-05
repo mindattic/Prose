@@ -89,7 +89,7 @@ public class RandomEncounterService
                     if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
                     if (json.EndsWith("```")) json = json[..^3];
                     meta = JsonSerializer.Deserialize<EncounterMeta>(json.Trim(),
-                        new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                        JsonDefaults.LlmParsing);
                 }
                 catch (Exception ex) { log.LogWarning(ex, "Random encounter generation failed"); }
             }
@@ -106,8 +106,9 @@ public class RandomEncounterService
                 ConsequencesIfIgnored = meta?.ConsequencesIfIgnored ?? "",
             };
         }
-        catch
+        catch (Exception ex)
         {
+            log.LogWarning(ex, "Random encounter generation failed for type {EncounterType} at {Location}", encounterType, location);
             return new RandomEncounter
             {
                 Type = encounterType,

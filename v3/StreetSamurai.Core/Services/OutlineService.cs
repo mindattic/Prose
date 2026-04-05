@@ -103,7 +103,7 @@ public class OutlineService
         try
         {
             var outline = JsonSerializer.Deserialize<StoryOutline>(json,
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new();
+                JsonDefaults.LlmParsing) ?? new();
 
             outline.Premise = premise;
             outline.Characters = characters;
@@ -122,7 +122,7 @@ public class OutlineService
             {
                 var repaired = RepairTruncatedJson(json);
                 var outline = JsonSerializer.Deserialize<StoryOutline>(repaired,
-                    new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new();
+                    JsonDefaults.LlmParsing) ?? new();
 
                 outline.Premise = premise;
                 outline.Characters = characters;
@@ -244,7 +244,7 @@ public class OutlineService
         var path = Path.Combine(paths.DataRoot, "story_blocks", $"{projectId}.outline.json");
         var dir = Path.GetDirectoryName(path);
         if (dir != null) Directory.CreateDirectory(dir);
-        File.WriteAllText(path, JsonSerializer.Serialize(outline, new JsonSerializerOptions { WriteIndented = true }));
+        File.WriteAllText(path, JsonSerializer.Serialize(outline, JsonDefaults.Indented));
     }
 
     /// <summary>Load outline from disk.</summary>

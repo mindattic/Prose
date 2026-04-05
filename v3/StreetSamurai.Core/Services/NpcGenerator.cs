@@ -102,7 +102,7 @@ public class NpcGenerator
             if (json.EndsWith("```")) json = json[..^3];
 
             var character = JsonSerializer.Deserialize<CharacterData>(json.Trim(),
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                JsonDefaults.LlmParsing);
 
             if (character != null && !string.IsNullOrWhiteSpace(character.Name))
             {
@@ -135,7 +135,7 @@ public class NpcGenerator
                 return character.Name;
             }
         }
-        catch { /* Fall through to fallback */ }
+        catch (Exception ex) { Serilog.Log.Warning(ex, "NPC generation failed, falling through to fallback"); }
 
         return "Unknown Operator";
     }

@@ -66,8 +66,9 @@ public class FileSecurePreferences : ISecurePreferences
             var json = Encoding.UTF8.GetString(decrypted).TrimEnd('\0');
             _cache = JsonSerializer.Deserialize<Dictionary<string, string>>(json) ?? new();
         }
-        catch
+        catch (Exception ex)
         {
+            Serilog.Log.Warning(ex, "Failed to decrypt secure preferences, resetting cache");
             _cache = new();
         }
     }

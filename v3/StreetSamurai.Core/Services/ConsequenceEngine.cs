@@ -205,7 +205,7 @@ public class ConsequenceEngine
         var path = GetPath();
         var dir = Path.GetDirectoryName(path);
         if (dir != null) Directory.CreateDirectory(dir);
-        File.WriteAllText(path, JsonSerializer.Serialize(consequences, new JsonSerializerOptions { WriteIndented = true }));
+        File.WriteAllText(path, JsonSerializer.Serialize(consequences, JsonDefaults.Indented));
     }
 
     private string GetPath() => Path.Combine(paths.EngineDataDir, "consequences.json");

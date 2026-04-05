@@ -88,7 +88,7 @@ public class JsonStoryBlockRepository : IStoryBlockRepository
             var json = File.ReadAllText(path);
             return JsonSerializer.Deserialize<StoryProject>(json);
         }
-        catch { return null; }
+        catch (Exception ex) { Serilog.Log.Warning(ex, "Failed to load story project from {Path}", path); return null; }
     }
 
     private static string EnsureDir(string path)

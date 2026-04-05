@@ -111,7 +111,7 @@ public class StoryStateService
             if (json.EndsWith("```")) json = json[..^3];
 
             var update = JsonSerializer.Deserialize<StateUpdate>(json.Trim(),
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                JsonDefaults.LlmParsing);
 
             if (update != null)
                 ApplyUpdate(state, update);

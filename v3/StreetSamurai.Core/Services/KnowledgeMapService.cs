@@ -213,7 +213,7 @@ public class KnowledgeMapService
         var dir = Path.GetDirectoryName(path);
         if (dir != null) Directory.CreateDirectory(dir);
         File.WriteAllText(path, JsonSerializer.Serialize(GetMap(projectId),
-            new JsonSerializerOptions { WriteIndented = true }));
+            JsonDefaults.Indented));
     }
 
     private string GetPath(string projectId) =>

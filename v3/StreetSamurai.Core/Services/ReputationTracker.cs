@@ -210,7 +210,7 @@ public class ReputationTracker
         var path = GetPath();
         var dir = Path.GetDirectoryName(path);
         if (dir != null) Directory.CreateDirectory(dir);
-        File.WriteAllText(path, JsonSerializer.Serialize(_data, new JsonSerializerOptions { WriteIndented = true }));
+        File.WriteAllText(path, JsonSerializer.Serialize(_data, JsonDefaults.Indented));
     }
 
     private string GetPath() => Path.Combine(paths.EngineDataDir, "reputation.json");

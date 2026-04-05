@@ -7,7 +7,7 @@ using StreetSamurai.Core.Models.Graph;
 
 namespace StreetSamurai.Core.Services;
 
-public class WorldGraphService
+public class WorldGraphService : IWorldGraphService
 {
     private readonly IPathProvider paths;
     private readonly DatabaseService db;
@@ -693,7 +693,7 @@ public class WorldGraphService
             Edges = _graph.Edges.ToList(),
             LastSaved = DateTime.UtcNow,
         };
-        var json = JsonSerializer.Serialize(snapshot, new JsonSerializerOptions { WriteIndented = true });
+        var json = JsonSerializer.Serialize(snapshot, JsonDefaults.Indented);
         File.WriteAllText(Path.Combine(paths.GraphDir, "world_graph.json"), json);
     }
 
@@ -716,7 +716,7 @@ public class WorldGraphService
             foreach (var edge in snapshot.Edges)
                 AddEdge(edge);
         }
-        catch { /* corrupt graph — will be rebuilt */ }
+        catch (Exception ex) { Serilog.Log.Warning(ex, "Corrupt graph file, will be rebuilt"); }
     }
 
     public void Rebuild()

@@ -41,10 +41,11 @@ public class ContextAnalyzerService
         try
         {
             return JsonSerializer.Deserialize<ContextAnalysis>(response,
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new();
+                JsonDefaults.LlmParsing) ?? new();
         }
-        catch
+        catch (Exception ex)
         {
+            Serilog.Log.Warning(ex, "Context analysis failed, returning default");
             return new ContextAnalysis { PsychologicalTriggers = ["unknown"] };
         }
     }

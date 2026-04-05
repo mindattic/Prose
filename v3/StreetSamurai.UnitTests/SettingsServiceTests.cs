@@ -25,6 +25,7 @@ public class SettingsServiceTests
     {
         // Reset settings file so tests don't leak state
         svc.ResetToDefaults();
+        svc.Dispose();
     }
 
     // ── FormatTimestamp ─────────────────────────────────────
@@ -128,5 +129,37 @@ public class SettingsServiceTests
 
         Assert.That(svc.ApiKey, Is.EqualTo("sk-saved"));
         Assert.That(svc.MaxTokens, Is.EqualTo(2048));
+    }
+
+    // ── Debounce ────────────────────────────────────────────
+
+    [Test]
+    public void Debounce_InMemoryValueIsImmediate()
+    {
+        svc.MaxTokens = 7777;
+        Assert.That(svc.MaxTokens, Is.EqualTo(7777));
+    }
+
+    [Test]
+    public async Task Debounce_FlushPersistsToDisk()
+    {
+        svc.MaxTokens = 8888;
+        svc.Flush();
+
+        var fresh = new SettingsService();
+        Assert.That(fresh.MaxTokens, Is.EqualTo(8888));
+        fresh.Dispose();
+    }
+
+    [Test]
+    public async Task Debounce_TimerPersistsAfterDelay()
+    {
+        svc.MaxTokens = 9999;
+        // Wait for debounce timer to fire (500ms + margin)
+        await Task.Delay(700);
+
+        var fresh = new SettingsService();
+        Assert.That(fresh.MaxTokens, Is.EqualTo(9999));
+        fresh.Dispose();
     }
 }

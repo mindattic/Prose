@@ -3,11 +3,13 @@ using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
 
-public class SettingsService
+public class SettingsService : IDisposable
 {
     private readonly string settingsPath;
     private readonly string defaultsPath;
     private SettingsData data = new();
+    private Timer? saveTimer;
+    private readonly object saveLock = new();
 
     public SettingsService()
     {
@@ -33,7 +35,7 @@ public class SettingsService
             if (detected != null)
             {
                 data.CanonRootPath = detected;
-                Save();
+                Flush();
             }
         }
     }
@@ -70,47 +72,47 @@ public class SettingsService
         return null;
     }
 
-    public string ApiKey { get => data.ApiKey; set { data.ApiKey = value; Save(); } }
-    public string Model { get => data.Model; set { data.Model = value; Save(); } }
-    public string Theme { get => data.Theme; set { data.Theme = value; Save(); } }
-    public string CanonRootPath { get => data.CanonRootPath; set { data.CanonRootPath = value; Save(); } }
-    public int MaxTokens { get => data.MaxTokens; set { data.MaxTokens = value; Save(); } }
-    public string ElevenLabsApiKey { get => data.ElevenLabsApiKey; set { data.ElevenLabsApiKey = value; Save(); } }
-    public string ElevenLabsVoiceId { get => data.ElevenLabsVoiceId; set { data.ElevenLabsVoiceId = value; Save(); } }
-    public string NarratorVoiceName { get => data.NarratorVoiceName; set { data.NarratorVoiceName = value; Save(); } }
-    public string TtsModel { get => data.TtsModel; set { data.TtsModel = value; Save(); } }
-    public double TtsStability { get => data.TtsStability; set { data.TtsStability = value; Save(); } }
-    public double TtsSimilarityBoost { get => data.TtsSimilarityBoost; set { data.TtsSimilarityBoost = value; Save(); } }
-    public double TtsStyle { get => data.TtsStyle; set { data.TtsStyle = value; Save(); } }
-    public string OpenAiApiKey { get => data.OpenAiApiKey; set { data.OpenAiApiKey = value; Save(); } }
-    public string OpenAiModel { get => data.OpenAiModel; set { data.OpenAiModel = value; Save(); } }
-    public string ActiveLlmProvider { get => data.ActiveLlmProvider; set { data.ActiveLlmProvider = value; Save(); } }
-    public int EditorFontSize { get => data.EditorFontSize; set { data.EditorFontSize = value; Save(); } }
-    public int AutoSaveIntervalMs { get => data.AutoSaveIntervalMs; set { data.AutoSaveIntervalMs = value; Save(); } }
-    public string GeminiApiKey { get => data.GeminiApiKey; set { data.GeminiApiKey = value; Save(); } }
-    public string DeepSeekApiKey { get => data.DeepSeekApiKey; set { data.DeepSeekApiKey = value; Save(); } }
-    public string MistralApiKey { get => data.MistralApiKey; set { data.MistralApiKey = value; Save(); } }
-    public string GrokApiKey { get => data.GrokApiKey; set { data.GrokApiKey = value; Save(); } }
-    public string GroqApiKey { get => data.GroqApiKey; set { data.GroqApiKey = value; Save(); } }
-    public string TogetherApiKey { get => data.TogetherApiKey; set { data.TogetherApiKey = value; Save(); } }
-    public string OpenRouterApiKey { get => data.OpenRouterApiKey; set { data.OpenRouterApiKey = value; Save(); } }
-    public string FireworksApiKey { get => data.FireworksApiKey; set { data.FireworksApiKey = value; Save(); } }
-    public string CohereApiKey { get => data.CohereApiKey; set { data.CohereApiKey = value; Save(); } }
-    public string GeminiModel { get => data.GeminiModel; set { data.GeminiModel = value; Save(); } }
-    public string DeepSeekModel { get => data.DeepSeekModel; set { data.DeepSeekModel = value; Save(); } }
-    public string MistralModel { get => data.MistralModel; set { data.MistralModel = value; Save(); } }
-    public string GrokModel { get => data.GrokModel; set { data.GrokModel = value; Save(); } }
-    public string GroqModel { get => data.GroqModel; set { data.GroqModel = value; Save(); } }
-    public string TogetherModel { get => data.TogetherModel; set { data.TogetherModel = value; Save(); } }
-    public string OpenRouterModel { get => data.OpenRouterModel; set { data.OpenRouterModel = value; Save(); } }
-    public string FireworksModel { get => data.FireworksModel; set { data.FireworksModel = value; Save(); } }
-    public string CohereModel { get => data.CohereModel; set { data.CohereModel = value; Save(); } }
-    public string MapService { get => data.MapService; set { data.MapService = value; Save(); } }
-    public string MapAppId { get => data.MapAppId; set { data.MapAppId = value; Save(); } }
-    public string MapApiKey { get => data.MapApiKey; set { data.MapApiKey = value; Save(); } }
-    public string TimestampFormat { get => data.TimestampFormat; set { data.TimestampFormat = value; Save(); } }
-    public string TimezoneId { get => data.TimezoneId; set { data.TimezoneId = value; Save(); } }
-    public string FontFamily { get => data.FontFamily; set { data.FontFamily = value; Save(); } }
+    public string ApiKey { get => data.ApiKey; set { data.ApiKey = value; ScheduleSave(); } }
+    public string Model { get => data.Model; set { data.Model = value; ScheduleSave(); } }
+    public string Theme { get => data.Theme; set { data.Theme = value; ScheduleSave(); } }
+    public string CanonRootPath { get => data.CanonRootPath; set { data.CanonRootPath = value; ScheduleSave(); } }
+    public int MaxTokens { get => data.MaxTokens; set { data.MaxTokens = value; ScheduleSave(); } }
+    public string ElevenLabsApiKey { get => data.ElevenLabsApiKey; set { data.ElevenLabsApiKey = value; ScheduleSave(); } }
+    public string ElevenLabsVoiceId { get => data.ElevenLabsVoiceId; set { data.ElevenLabsVoiceId = value; ScheduleSave(); } }
+    public string NarratorVoiceName { get => data.NarratorVoiceName; set { data.NarratorVoiceName = value; ScheduleSave(); } }
+    public string TtsModel { get => data.TtsModel; set { data.TtsModel = value; ScheduleSave(); } }
+    public double TtsStability { get => data.TtsStability; set { data.TtsStability = value; ScheduleSave(); } }
+    public double TtsSimilarityBoost { get => data.TtsSimilarityBoost; set { data.TtsSimilarityBoost = value; ScheduleSave(); } }
+    public double TtsStyle { get => data.TtsStyle; set { data.TtsStyle = value; ScheduleSave(); } }
+    public string OpenAiApiKey { get => data.OpenAiApiKey; set { data.OpenAiApiKey = value; ScheduleSave(); } }
+    public string OpenAiModel { get => data.OpenAiModel; set { data.OpenAiModel = value; ScheduleSave(); } }
+    public string ActiveLlmProvider { get => data.ActiveLlmProvider; set { data.ActiveLlmProvider = value; ScheduleSave(); } }
+    public int EditorFontSize { get => data.EditorFontSize; set { data.EditorFontSize = value; ScheduleSave(); } }
+    public int AutoSaveIntervalMs { get => data.AutoSaveIntervalMs; set { data.AutoSaveIntervalMs = value; ScheduleSave(); } }
+    public string GeminiApiKey { get => data.GeminiApiKey; set { data.GeminiApiKey = value; ScheduleSave(); } }
+    public string DeepSeekApiKey { get => data.DeepSeekApiKey; set { data.DeepSeekApiKey = value; ScheduleSave(); } }
+    public string MistralApiKey { get => data.MistralApiKey; set { data.MistralApiKey = value; ScheduleSave(); } }
+    public string GrokApiKey { get => data.GrokApiKey; set { data.GrokApiKey = value; ScheduleSave(); } }
+    public string GroqApiKey { get => data.GroqApiKey; set { data.GroqApiKey = value; ScheduleSave(); } }
+    public string TogetherApiKey { get => data.TogetherApiKey; set { data.TogetherApiKey = value; ScheduleSave(); } }
+    public string OpenRouterApiKey { get => data.OpenRouterApiKey; set { data.OpenRouterApiKey = value; ScheduleSave(); } }
+    public string FireworksApiKey { get => data.FireworksApiKey; set { data.FireworksApiKey = value; ScheduleSave(); } }
+    public string CohereApiKey { get => data.CohereApiKey; set { data.CohereApiKey = value; ScheduleSave(); } }
+    public string GeminiModel { get => data.GeminiModel; set { data.GeminiModel = value; ScheduleSave(); } }
+    public string DeepSeekModel { get => data.DeepSeekModel; set { data.DeepSeekModel = value; ScheduleSave(); } }
+    public string MistralModel { get => data.MistralModel; set { data.MistralModel = value; ScheduleSave(); } }
+    public string GrokModel { get => data.GrokModel; set { data.GrokModel = value; ScheduleSave(); } }
+    public string GroqModel { get => data.GroqModel; set { data.GroqModel = value; ScheduleSave(); } }
+    public string TogetherModel { get => data.TogetherModel; set { data.TogetherModel = value; ScheduleSave(); } }
+    public string OpenRouterModel { get => data.OpenRouterModel; set { data.OpenRouterModel = value; ScheduleSave(); } }
+    public string FireworksModel { get => data.FireworksModel; set { data.FireworksModel = value; ScheduleSave(); } }
+    public string CohereModel { get => data.CohereModel; set { data.CohereModel = value; ScheduleSave(); } }
+    public string MapService { get => data.MapService; set { data.MapService = value; ScheduleSave(); } }
+    public string MapAppId { get => data.MapAppId; set { data.MapAppId = value; ScheduleSave(); } }
+    public string MapApiKey { get => data.MapApiKey; set { data.MapApiKey = value; ScheduleSave(); } }
+    public string TimestampFormat { get => data.TimestampFormat; set { data.TimestampFormat = value; ScheduleSave(); } }
+    public string TimezoneId { get => data.TimezoneId; set { data.TimezoneId = value; ScheduleSave(); } }
+    public string FontFamily { get => data.FontFamily; set { data.FontFamily = value; ScheduleSave(); } }
 
     /// <summary>All supported timestamp formats, keyed by .NET format string with example display values.</summary>
     public static readonly (string Format, string Example)[] TimestampFormats =
@@ -136,7 +138,7 @@ public class SettingsService
     /// <summary>Snapshot current settings as the default baseline for future resets.</summary>
     public void SaveAsDefaults()
     {
-        var json = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
+        var json = JsonSerializer.Serialize(data, JsonDefaults.Indented);
         File.WriteAllText(defaultsPath, json);
     }
 
@@ -152,7 +154,7 @@ public class SettingsService
         {
             data = new SettingsData();
         }
-        Save();
+        Flush();
     }
 
     private void Load()
@@ -164,10 +166,31 @@ public class SettingsService
         }
     }
 
-    private void Save()
+    private void ScheduleSave()
     {
-        var json = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
-        File.WriteAllText(settingsPath, json);
+        lock (saveLock)
+        {
+            saveTimer?.Dispose();
+            saveTimer = new Timer(_ => Flush(), null, 500, Timeout.Infinite);
+        }
+    }
+
+    /// <summary>Immediately write pending settings to disk.</summary>
+    public void Flush()
+    {
+        lock (saveLock)
+        {
+            saveTimer?.Dispose();
+            saveTimer = null;
+            var json = JsonSerializer.Serialize(data, JsonDefaults.Indented);
+            File.WriteAllText(settingsPath, json);
+        }
+    }
+
+    public void Dispose()
+    {
+        Flush();
+        GC.SuppressFinalize(this);
     }
 
     private class SettingsData
