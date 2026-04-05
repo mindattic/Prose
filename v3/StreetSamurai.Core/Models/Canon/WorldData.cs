@@ -108,6 +108,7 @@ public class CorponationData
     [JsonPropertyName("key_detail")] public string KeyDetail { get; set; } = "";
     [JsonPropertyName("relationship_to_big_20")] public string RelationshipToBig20 { get; set; } = "";
     [JsonPropertyName("full_text")] public string FullText { get; set; } = "";
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }
 
 /// <summary>

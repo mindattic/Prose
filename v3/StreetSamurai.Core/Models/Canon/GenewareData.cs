@@ -27,4 +27,5 @@ public class GenewareData
     [JsonPropertyName("side_effects")] public List<string> SideEffects { get; set; } = [];
     [JsonPropertyName("social_perception")] public string SocialPerception { get; set; } = "";
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }

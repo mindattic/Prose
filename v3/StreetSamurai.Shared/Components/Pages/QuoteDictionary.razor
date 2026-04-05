@@ -1,0 +1,99 @@
+@page "/quotes"
+@using StreetSamurai.Core.Models.Canon
+@inject QuoteRepository Repo
+@inject NavigationManager Nav
+
+<div class="dict-layout">
+    <div class="dict-list bg-dark border-end border-secondary">
+        <div class="p-2">
+            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                   placeholder="Filter..." @bind="filter" @bind:event="oninput" />
+        </div>
+        @foreach (var q in FilteredItems)
+        {
+            <div class="list-item text-light @(editing?.Quote == q.Quote ? "active" : "")" @onclick="() => Edit(q)">
+                <div class="fw-bold small fst-italic" style="max-width:220px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">@q.Quote</div>
+                <div class="text-muted" style="font-size: 0.7rem;">@(string.IsNullOrEmpty(q.Attribution) ? "Anonymous" : q.Attribution)</div>
+            </div>
+        }
+        <div class="p-2 d-flex gap-1">
+            <button class="btn btn-sm btn-outline-danger flex-grow-1" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
+            <ExportButton Mode="repo" RepoName="Quotes" GetRepoEntries="GetExportEntries" />
+        </div>
+    </div>
+
+    <div class="dict-editor" style="overflow-y: auto; max-height: calc(100vh - 60px);">
+        @if (editing != null)
+        {
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="text-danger mb-0">@(isNew ? "New Quote" : "Edit Quote")</h5>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
+                    @if (!isNew) { <ExportButton Mode="entry" RepoName="Quotes" EntryName="@(editing.Quote.Length > 30 ? editing.Quote[..30] : editing.Quote)" EntryJson="@System.Text.Json.JsonSerializer.Serialize(editing)" /> }
+                    @if (!isNew && !confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => confirmDelete = true"><i class="bi bi-trash3"></i></button> }
+                    @if (confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => confirmDelete = false">No</button> }
+                </div>
+            </div>
+
+            <div class="mb-3"><div class="field-label">Quote</div><textarea class="form-control bg-dark text-light border-secondary" rows="3" @bind="editing.Quote"></textarea></div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Attribution</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Who said it (blank for anonymous)" @bind="editing.Attribution" /></div>
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Source</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="Book, film, in-world origin..." @bind="editing.Source" /></div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 1; min-width: 150px;"><div class="field-label">Category</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="wisdom, warning, insult, proverb..." @bind="editing.Category" /></div>
+                <div style="flex: 0 0 auto;" class="d-flex align-items-end gap-2">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" @bind="editing.InWorld" id="inWorldCheck" />
+                        <label class="form-check-label text-muted small" for="inWorldCheck">In-world (said by M88 character)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3"><div class="field-label">Context</div><textarea class="form-control bg-dark text-light border-secondary" rows="2" placeholder="When/why this was said..." @bind="editing.Context"></textarea></div>
+
+            @if (!string.IsNullOrWhiteSpace(editing.Quote))
+            {
+                <div class="card bg-black border-secondary mt-3">
+                    <div class="card-body">
+                        <blockquote class="mb-1 fst-italic" style="font-size: 1.1rem; color: var(--bs-light);">@editing.Quote</blockquote>
+                        @if (!string.IsNullOrWhiteSpace(editing.Attribution))
+                        {
+                            <small class="text-muted">— @editing.Attribution</small>
+                        }
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="text-center text-muted py-5"><i class="bi bi-quote" style="font-size:3rem;"></i><p class="mt-2">Select a quote or add a new one.</p></div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<QuoteData> items = [];
+    private QuoteData? editing;
+    private string originalQuote = "";
+    private string filter = "";
+    private bool isNew, confirmDelete;
+
+    private IEnumerable<QuoteData> FilteredItems => string.IsNullOrWhiteSpace(filter)
+        ? items : items.Where(q => q.Quote.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || q.Attribution.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || q.Category.Contains(filter, StringComparison.OrdinalIgnoreCase));
+
+    protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); if (Nav.Uri.Contains("new=true")) AddNew(); }
+    private void AddNew() { editing = new QuoteData(); isNew = true; confirmDelete = false; }
+    private void Edit(QuoteData q) { editing = q; originalQuote = q.Quote; isNew = false; confirmDelete = false; }
+    private void SaveEdit()
+    {
+        if (editing == null || string.IsNullOrWhiteSpace(editing.Quote)) return;
+        if (!isNew && originalQuote != editing.Quote) Repo.Delete(originalQuote);
+        Repo.Save(editing);
+        editing = null;
+        items = Repo.GetAll();
+    }
+    private void DoDelete() { if (editing != null) { Repo.Delete(editing.Quote); editing = null; items = Repo.GetAll(); confirmDelete = false; } }
+    private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Quote.Length > 40 ? e.Quote[..40] : e.Quote, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
+}

@@ -72,12 +72,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>l7vtfhhkfd</Fingerprint>
-      <Integrity>Qaa6v/jLg1gzLg4fL/Mn5BVu4VJtIS9vFFOg7QNQn+E=</Integrity>
+      <Fingerprint>kyw96zp1yf</Fingerprint>
+      <Integrity>HBG6nNBEEZkwdXguo+Rr/0yI2fXuFAYrIPQuKFP6d0w=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>6248</FileLength>
-      <LastWriteTime>Sat, 04 Apr 2026 20:14:59 GMT</LastWriteTime>
+      <FileLength>8251</FileLength>
+      <LastWriteTime>Sat, 04 Apr 2026 20:48:14 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\here-map.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\write-interop.js'))">

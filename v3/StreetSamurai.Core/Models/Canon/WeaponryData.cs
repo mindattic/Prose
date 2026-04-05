@@ -23,4 +23,5 @@ public class WeaponryData
     [JsonPropertyName("known_users")] public List<string> KnownUsers { get; set; } = [];
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
     [JsonPropertyName("ammunition_type")] public List<string> AmmunitionType { get; set; } = [];
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }

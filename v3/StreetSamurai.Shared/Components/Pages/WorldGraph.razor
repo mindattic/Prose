@@ -313,7 +313,10 @@
     {
         canvasNodeIds.Clear();
         selectedNode = null;
-        await JS.InvokeVoidAsync("graphInterop.destroy");
+        try { await JS.InvokeVoidAsync("graphInterop.destroy"); } catch { }
+        // Also manually clear the DOM container in case destroy didn't reach it
+        try { await JS.InvokeVoidAsync("eval", "document.getElementById('graphCanvas').innerHTML = ''"); } catch { }
+        StateHasChanged();
     }
 
     private async Task PopOut() =>

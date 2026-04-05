@@ -25,4 +25,5 @@ public class SyntheticLifeData
     [JsonPropertyName("dti_rating")] public double DtiRating { get; set; }
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
     [JsonPropertyName("paratechnological")] public bool Paratechnological { get; set; }
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }

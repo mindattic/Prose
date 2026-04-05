@@ -29,4 +29,5 @@ public class CyberwareData
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
     [JsonPropertyName("street_price")] public string StreetPrice { get; set; } = "";
     [JsonPropertyName("licensed_price")] public string LicensedPrice { get; set; } = "";
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }

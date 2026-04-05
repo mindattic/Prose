@@ -16,4 +16,5 @@ public class VocabularyEntry
     [JsonPropertyName("tier")] public string Tier { get; set; } = "";
     [JsonPropertyName("category")] public string Category { get; set; } = "";
     [JsonPropertyName("example")] public string Example { get; set; } = "";
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }

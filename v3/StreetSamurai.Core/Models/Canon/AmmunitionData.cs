@@ -22,4 +22,5 @@ public class AmmunitionData
     [JsonPropertyName("variants")] public List<string> Variants { get; set; } = [];
     [JsonPropertyName("cultural_context")] public string CulturalContext { get; set; } = "";
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }

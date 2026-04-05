@@ -8,6 +8,14 @@
 @inject EquipmentRepository EquipRepo
 @inject CyberwareRepository CyberRepo
 @inject AmmunitionRepository AmmoRepo
+@inject QuoteRepository QuoteRepo
+@inject ConsumerGoodRepository GoodsRepo
+@inject PharmaceuticalRepository PharmaRepo
+@inject SubstrateRepository SubstrateRepo
+@inject ContractRepository ContractRepo
+@inject ApparelRepository ApparelRepo
+@inject NewsRepository NewsRepo
+@inject ArchetypeRepository ArchetypeRepo
 @inject VocabularyRepository VocabRepo
 @inject SyntheticLifeRepository SynthRepo
 @inject GenewareRepository GenewareRepo
@@ -33,6 +41,14 @@
             <NavLink class="nav-link text-light" href="stories">
                 <i class="bi bi-journal-text"></i> Stories
             </NavLink>
+        </li>
+        <li class="nav-item">
+            <div class="d-flex align-items-center">
+                <NavLink class="nav-link text-light flex-grow-1 py-1" href="contracts">
+                    <i class="bi bi-clipboard-check"></i> Contracts
+                </NavLink>
+                <span class="badge bg-secondary me-1" style="min-width: 44px; text-align: right; font-variant-numeric: tabular-nums;">@_contractCount</span>
+            </div>
         </li>
 
         <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">Tools</li>
@@ -63,6 +79,13 @@
         @NavItem("bi-motherboard", "cyberware", "Cyberware", _cyberwareCount)
         @NavItem("bi-file-earmark-text", "documents", "Documents", _docCount)
         @NavItem("bi-chat-quote", "vocabulary", "Vocabulary", _vocabCount)
+        @NavItem("bi-quote", "quotes", "Quotes", _quoteCount)
+        @NavItem("bi-basket", "goods", "Consumer Goods", _goodsCount)
+        @NavItem("bi-capsule", "pharmaceuticals", "Pharmaceuticals", _pharmaCount)
+        @NavItem("bi-gem", "substrates", "Substrates", _substrateCount)
+        @NavItem("bi-handbag", "apparel", "Apparel", _apparelCount)
+        @NavItem("bi-newspaper", "news", "News Archive", _newsCount)
+        @NavItem("bi-person-bounding-box", "archetypes", "Archetypes", _archetypeCount)
         @NavItem("bi-cpu", "synthetics", "Synthetics", _synthCount)
         @NavItem("bi-virus", "geneware", "Geneware", _genewareCount)
         @NavItem("bi-truck", "transportation", "Transportation", _transportCount)
@@ -88,7 +111,7 @@
 </nav>
 
 @code {
-    private int corpCount, _factionCount, _charCount, _districtCount, _techCount, _weaponCount, _ammoCount, _equipCount, _cyberwareCount, _docCount, _vocabCount, _synthCount, _genewareCount, _transportCount, _graphNodeCount;
+    private int corpCount, _factionCount, _charCount, _districtCount, _techCount, _weaponCount, _ammoCount, _equipCount, _cyberwareCount, _docCount, _vocabCount, _quoteCount, _goodsCount, _pharmaCount, _substrateCount, _contractCount, _apparelCount, _newsCount, _archetypeCount, _synthCount, _genewareCount, _transportCount, _graphNodeCount;
 
     protected override void OnInitialized()
     {
@@ -103,6 +126,14 @@
         _techCount = TechRepo.GetAll().Count;
         _docCount = DocRepo.GetAll().Count;
         _vocabCount = VocabRepo.GetAll().Count;
+        _quoteCount = QuoteRepo.GetAll().Count;
+        _goodsCount = GoodsRepo.GetAll().Count;
+        _pharmaCount = PharmaRepo.GetAll().Count;
+        _substrateCount = SubstrateRepo.GetAll().Count;
+        _contractCount = ContractRepo.GetAll().Count;
+        _apparelCount = ApparelRepo.GetAll().Count;
+        _newsCount = NewsRepo.GetAll().Count;
+        _archetypeCount = ArchetypeRepo.GetAll().Count;
         _synthCount = SynthRepo.GetAll().Count;
         _genewareCount = GenewareRepo.GetAll().Count;
         _transportCount = TransportRepo.GetAll().Count;

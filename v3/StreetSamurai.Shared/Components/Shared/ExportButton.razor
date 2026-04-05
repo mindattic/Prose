@@ -1,5 +1,6 @@
 @inject HtmlExportService ExportSvc
-@inject IJSRuntime JS
+@using Microsoft.Extensions.Logging
+@inject ILogger<ExportButton> Log
 
 @if (exporting)
 {
@@ -13,6 +14,10 @@
         </svg>
         <small class="text-muted">@statusText</small>
     </div>
+}
+else if (errorText != null)
+{
+    <span class="text-danger small">@errorText</span>
 }
 else
 {
@@ -32,6 +37,7 @@ else
     private bool exporting;
     private double progress;
     private string statusText = "";
+    private string? errorText;
 
     private string Label => Mode switch { "entry" => "Export", "repo" => "Export Repo", "all" => "Export All", _ => "Export" };
     private string Title => Mode switch { "entry" => $"Export {EntryName} as .htm", "repo" => $"Export all {RepoName} as .htm", "all" => "Export all repos as .htm", _ => "Export" };
@@ -42,48 +48,78 @@ else
         exporting = true;
         progress = 0;
         statusText = "Preparing...";
-        StateHasChanged();
+        errorText = null;
 
-        await Task.Run(() =>
+        try
         {
+            // Gather data on the Blazor sync context (repos aren't thread-safe)
+            string? resultPath = null;
+
             switch (Mode)
             {
                 case "entry":
-                    ExportSvc.ExportEntry(RepoName, EntryName, EntryJson);
+                    statusText = "Exporting entry...";
+                    await InvokeAsync(StateHasChanged);
+                    resultPath = ExportSvc.ExportEntry(RepoName, EntryName, EntryJson);
                     progress = 100;
                     break;
 
                 case "repo":
                     if (GetRepoEntries != null)
                     {
+                        statusText = "Loading entries...";
+                        await InvokeAsync(StateHasChanged);
                         var entries = GetRepoEntries();
-                        ExportSvc.ExportRepo(RepoName, entries, (cur, tot) =>
-                        {
-                            progress = (double)cur / tot * 100;
-                            statusText = $"{cur}/{tot}";
-                        });
+                        statusText = $"Exporting {entries.Count} entries...";
+                        await InvokeAsync(StateHasChanged);
+
+                        // Run the actual file writing on a background thread
+                        var capturedEntries = entries;
+                        resultPath = await Task.Run(() =>
+                            ExportSvc.ExportRepo(RepoName, capturedEntries, (cur, tot) =>
+                            {
+                                progress = (double)cur / tot * 100;
+                                statusText = $"{cur}/{tot}";
+                            }));
                     }
                     break;
 
                 case "all":
                     if (GetAllRepos != null)
                     {
+                        statusText = "Loading all repos...";
+                        await InvokeAsync(StateHasChanged);
                         var repos = GetAllRepos();
-                        ExportSvc.ExportAll(repos, (cur, tot) =>
-                        {
-                            progress = (double)cur / tot * 100;
-                            statusText = $"{cur}/{tot}";
-                        });
+                        var totalEntries = repos.Values.Sum(r => r.Count);
+                        statusText = $"Exporting {totalEntries} entries across {repos.Count} repos...";
+                        await InvokeAsync(StateHasChanged);
+
+                        var capturedRepos = repos;
+                        resultPath = await Task.Run(() =>
+                            ExportSvc.ExportAll(capturedRepos, (cur, tot) =>
+                            {
+                                progress = (double)cur / tot * 100;
+                                statusText = $"{cur}/{tot}";
+                            }));
                     }
                     break;
             }
-        });
 
-        progress = 100;
-        statusText = "Done!";
-        StateHasChanged();
-        await Task.Delay(1500);
+            progress = 100;
+            statusText = resultPath != null ? $"Done! Saved to exports/" : "Nothing to export";
+            Log.LogInformation("Export complete: mode={Mode}, path={Path}", Mode, resultPath);
+        }
+        catch (Exception ex)
+        {
+            Log.LogError(ex, "Export failed: mode={Mode}, repo={Repo}", Mode, RepoName);
+            errorText = $"Export failed: {ex.Message}";
+            exporting = false;
+            return;
+        }
+
+        await InvokeAsync(StateHasChanged);
+        await Task.Delay(2000);
         exporting = false;
-        StateHasChanged();
+        await InvokeAsync(StateHasChanged);
     }
 }

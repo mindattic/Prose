@@ -22,12 +22,14 @@ public class DistrictData
     [JsonPropertyName("frequented_by")] public List<string> FrequentedBy { get; set; } = [];
     [JsonPropertyName("notable_locations")] public List<NotableLocation> NotableLocations { get; set; } = [];
     [JsonPropertyName("coordinates")] public GeoCoordinates Coordinates { get; set; } = new();
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }
 
 public class GeoCoordinates
 {
     [JsonPropertyName("lat")] public double Lat { get; set; }
     [JsonPropertyName("lng")] public double Lng { get; set; }
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }
 
 public class AtmosphereData
@@ -36,6 +38,7 @@ public class AtmosphereData
     [JsonPropertyName("sounds")] public List<string> Sounds { get; set; } = [];
     [JsonPropertyName("smells")] public List<string> Smells { get; set; } = [];
     [JsonPropertyName("feel")] public string Feel { get; set; } = "";
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }
 
 public class DistrictConnections
@@ -44,6 +47,7 @@ public class DistrictConnections
 
     /// <summary>Directional exits — Zork-style. Each exit has a direction, destination, and description of the passage.</summary>
     [JsonPropertyName("exits")] public List<PlaceExit> Exits { get; set; } = [];
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }
 
 /// <summary>
@@ -60,10 +64,12 @@ public class PlaceExit
     [JsonPropertyName("description")] public string Description { get; set; } = "";
     [JsonPropertyName("restricted")] public bool Restricted { get; set; }
     [JsonPropertyName("danger_level")] public int DangerLevel { get; set; }
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }
 
 public class NotableLocation
 {
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("description")] public string Description { get; set; } = "";
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }
