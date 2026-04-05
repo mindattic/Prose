@@ -34,7 +34,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<TransportationRepository>();
         services.AddSingleton<QuoteRepository>();
         services.AddSingleton<ContractRepository>();
-        services.AddSingleton<ApparelRepository>();
         services.AddSingleton<NewsRepository>();
         services.AddSingleton<ArchetypeRepository>();
         services.AddSingleton<SubstrateRepository>();
