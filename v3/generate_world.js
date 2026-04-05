@@ -1,6 +1,6 @@
 // World content generator for StreetSamurai
-// Calls Claude API to batch-generate entities and appends to JSON files
-// Run: node generate_world.js [corps|chars|districts|tech|docs] [count]
+// Calls Claude API to batch-generate entities and writes to JSON files
+// Run: node generate_world.js [corps|chars|districts|tech|docs|weapons|factions|equipment|consumer_goods|pharma|substrates|melee] [count]
 
 const fs = require('fs');
 const https = require('https');
@@ -322,6 +322,192 @@ async function generateEquipment(target) {
   }
 }
 
+// ── Helpers for directory-based generators ──
+
+function slugify(name) {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
+}
+
+function readDirEntities(dirPath) {
+  if (!fs.existsSync(dirPath)) { fs.mkdirSync(dirPath, { recursive: true }); return []; }
+  const files = fs.readdirSync(dirPath).filter(f => f.endsWith('.json'));
+  return files.map(f => {
+    try { return JSON.parse(fs.readFileSync(path.join(dirPath, f), 'utf8')); }
+    catch { return null; }
+  }).filter(Boolean);
+}
+
+function writeEntityFile(dirPath, entity, nameField = 'name') {
+  const slug = slugify(entity[nameField] || 'unnamed');
+  const filePath = path.join(dirPath, slug + '.json');
+  fs.writeFileSync(filePath, JSON.stringify(entity, null, 2));
+  return filePath;
+}
+
+function loadCorpNames() {
+  const corpDir = path.join(ENGINE_DATA, 'corponations');
+  return readDirEntities(corpDir).map(c => c.name).filter(Boolean);
+}
+
+// ── Consumer Goods (directory-based) ──
+async function generateConsumerGoods(target) {
+  const dir = path.join(ENGINE_DATA, 'consumer_goods');
+  const existing = readDirEntities(dir);
+  const existingNames = existing.map(e => e.name).filter(Boolean);
+  const corps = loadCorpNames();
+  const needed = target - existing.length;
+  if (needed <= 0) { console.log(`Already have ${existing.length} consumer goods`); return; }
+
+  const categories = [
+    'food_beverage', 'personal_care', 'household', 'entertainment', 'fashion_accessory',
+    'pet_product', 'cleaning_supply', 'snack', 'beverage', 'candy', 'prepared_meal',
+    'hygiene', 'cosmetic', 'stim_drink', 'comfort_item', 'novelty', 'subscription_box',
+    'vending_machine_item', 'street_food', 'luxury_consumable'
+  ];
+  const BATCH = 5;
+  for (let i = 0; i < needed; i += BATCH) {
+    const count = Math.min(BATCH, needed - i);
+    const cat = categories[Math.floor(Math.random() * categories.length)];
+    console.log(`Generating consumer goods ${existing.length + i + 1} to ${existing.length + i + count} (${cat})...`);
+
+    const system = `You generate INDIVIDUAL consumer product entries for a cyberpunk world called Meridian 88 (Great Lakes megacity corridor, corporate sovereignty, neural augmentation ubiquitous, tiered citizenship 1-5 + Excluded, QUANTA currency symbol is \u03A6). Each entry is ONE specific consumer product — a brand-name item people buy and use in daily life. Think: "Koko-Volt Caffeinated Kelp Chips" or "NeuCalm Dermal Mist" — everyday products, not weapons or tech. Return a JSON array of ${count} entries. Each must have: name (brand name), type ("consumer_good"), category ("${cat}"), subcategory (more specific), manufacturer (use these corponations when appropriate: ${corps.slice(0, 15).join(', ')}, or invent smaller brands), description (1-2 paragraphs — what it is, how it's used, what makes it distinctive), flavor_profile (if food/beverage, otherwise omit), tier_availability (e.g. "Tier 2-4", "Universal", "Tier 1 only"), price (in \u03A6, e.g. "\u03A64.50"), popularity_rank (int 1-100), slogan (marketing tagline), cultural_context (1 paragraph — who buys it, social meaning, market niche), story_hooks (array of 2-3 narrative hooks), tags (array of keywords). Products should reflect the world: algae-based foods, mood-modulating snacks, neural-interface accessories, augmentation care products, corporate-branded everything, street vendor items, black market luxuries. Default to mixed heritage from unexpected global combinations for cultural flavor profiles.`;
+
+    const user = `Existing product names (DO NOT duplicate): ${existingNames.slice(-50).join(', ')}. Generate ${count} NEW ${cat} consumer goods. Return ONLY the JSON array.`;
+
+    try {
+      const result = await callClaude(system, user, 8192);
+      const items = parseJsonArray(result);
+      for (const item of items) {
+        writeEntityFile(dir, item);
+        existingNames.push(item.name);
+      }
+      console.log(`  Added ${items.length}, total: ${existing.length + i + items.length}`);
+    } catch (e) {
+      console.error(`  Error: ${e.message}`);
+    }
+    if (i + BATCH < needed) { console.log(`  Waiting ${WAIT_MS/1000}s for rate limit...`); await sleep(WAIT_MS); }
+  }
+}
+
+// ── Pharmaceuticals (directory-based) ──
+async function generatePharma(target) {
+  const dir = path.join(ENGINE_DATA, 'pharmaceuticals');
+  const existing = readDirEntities(dir);
+  const existingNames = existing.map(e => e.name).filter(Boolean);
+  const corps = loadCorpNames();
+  const needed = target - existing.length;
+  if (needed <= 0) { console.log(`Already have ${existing.length} pharmaceuticals`); return; }
+
+  const categories = [
+    'combat_stimulant', 'nootropic', 'painkiller', 'mood_stabilizer', 'neural_enhancer',
+    'immunosuppressant', 'regenerative', 'recreational', 'anti_rejection', 'black_market_designer',
+    'gene_therapy', 'cognitive_booster', 'sedative', 'anti_psychotic', 'performance_enhancer',
+    'anti_radiation', 'detox_agent', 'synth_hormone', 'biocompatibility_agent', 'nanite_carrier'
+  ];
+  const BATCH = 5;
+  for (let i = 0; i < needed; i += BATCH) {
+    const count = Math.min(BATCH, needed - i);
+    const cat = categories[Math.floor(Math.random() * categories.length)];
+    console.log(`Generating pharmaceuticals ${existing.length + i + 1} to ${existing.length + i + count} (${cat})...`);
+
+    const system = `You generate INDIVIDUAL pharmaceutical/drug entries for a cyberpunk world called Meridian 88 (Great Lakes megacity corridor, corporate sovereignty, neural augmentation ubiquitous, tiered citizenship 1-5 + Excluded, QUANTA currency symbol is \u03A6). Each entry is ONE specific drug — a particular formulation with a brand name, street name, and manufacturer. Include both legal prescription drugs and black-market substances. Return a JSON array of ${count} entries. Each must have: name (brand/chemical name), type ("pharmaceutical"), aliases (array of street names), category ("${cat}"), subcategory (more specific), manufacturer (use these corponations: ${corps.slice(0, 15).join(', ')}, or underground labs), description (2-3 paragraphs — what it does, how it works, who uses it), method_of_use (e.g. "injection", "oral", "inhaled", "dermal patch", "neural port"), effects (array of specific effects), side_effects (array), duration (e.g. "4-6 hours"), addiction_risk ("none"/"low"/"moderate"/"high"/"extreme"), tier_availability (e.g. "Tier 2-4", "Black market only"), legality ("unrestricted"/"prescription"/"controlled"/"prohibited"/"unclassified"), price (in \u03A6), interactions (array of dangerous drug interactions), cultural_context (1 paragraph), story_hooks (array of 2-3 hooks), tags (array). Mix legal and illegal, therapeutic and recreational, common and exotic.`;
+
+    const user = `Existing pharma names (DO NOT duplicate): ${existingNames.join(', ')}. Generate ${count} NEW ${cat} pharmaceuticals. Return ONLY the JSON array.`;
+
+    try {
+      const result = await callClaude(system, user, 8192);
+      const items = parseJsonArray(result);
+      for (const item of items) {
+        writeEntityFile(dir, item);
+        existingNames.push(item.name);
+      }
+      console.log(`  Added ${items.length}, total: ${existing.length + i + items.length}`);
+    } catch (e) {
+      console.error(`  Error: ${e.message}`);
+    }
+    if (i + BATCH < needed) { console.log(`  Waiting ${WAIT_MS/1000}s for rate limit...`); await sleep(WAIT_MS); }
+  }
+}
+
+// ── Substrates (directory-based) ──
+async function generateSubstrates(target) {
+  const dir = path.join(ENGINE_DATA, 'substrates');
+  const existing = readDirEntities(dir);
+  const existingNames = existing.map(e => e.name).filter(Boolean);
+  const corps = loadCorpNames();
+  const needed = target - existing.length;
+  if (needed <= 0) { console.log(`Already have ${existing.length} substrates`); return; }
+
+  const categories = [
+    'ceramic', 'polymer', 'metallic_alloy', 'composite', 'biological', 'synthetic_tissue',
+    'hybrid_organic', 'nanomaterial', 'smart_material', 'crystal_lattice', 'gel_matrix',
+    'carbon_variant', 'reactive', 'self_healing', 'phase_change', 'biomimetic',
+    'electroactive', 'metamaterial', 'aerogel', 'liquid_armor'
+  ];
+  const BATCH = 5;
+  for (let i = 0; i < needed; i += BATCH) {
+    const count = Math.min(BATCH, needed - i);
+    const cat = categories[Math.floor(Math.random() * categories.length)];
+    console.log(`Generating substrates ${existing.length + i + 1} to ${existing.length + i + count} (${cat})...`);
+
+    const system = `You generate INDIVIDUAL substrate/material entries for a cyberpunk world called Meridian 88 (Great Lakes megacity corridor, corporate sovereignty, neural augmentation ubiquitous, tiered citizenship). Substrates are body types, materials, and forms — synthetic, biological, hybrid — used in augmentation, construction, armor, prosthetics, and other applications. Return a JSON array of ${count} entries. Each must have: name (material designation, e.g. "Ablonite-KR" or "NervWeave-7S"), type ("substrate"), aliases (array of street/trade names), category ("${cat}"), description (2-3 paragraphs — composition, how it's manufactured, unique properties, what makes it different from similar materials), properties (array of property strings like "reactive_ablation_on_impact", "self_healing", "biocompatible"), developers (array of corponation names — use: ${corps.slice(0, 15).join(', ')}), applications (array of specific use cases), tier_availability (e.g. "Tier 2-4", "Military only"), base_technologies (array of foundational technologies it relies on), specifications (object with measurable specs — tensile_strength, density, operating_temp_range, conductivity, etc.), cultural_context (who uses it and why), story_hooks (array of 2-3 hooks), tags (array). Mix exotic high-tech materials with more mundane but world-specific variants.`;
+
+    const user = `Existing substrate names (DO NOT duplicate): ${existingNames.join(', ')}. Generate ${count} NEW ${cat} substrates. Return ONLY the JSON array.`;
+
+    try {
+      const result = await callClaude(system, user, 8192);
+      const items = parseJsonArray(result);
+      for (const item of items) {
+        writeEntityFile(dir, item);
+        existingNames.push(item.name);
+      }
+      console.log(`  Added ${items.length}, total: ${existing.length + i + items.length}`);
+    } catch (e) {
+      console.error(`  Error: ${e.message}`);
+    }
+    if (i + BATCH < needed) { console.log(`  Waiting ${WAIT_MS/1000}s for rate limit...`); await sleep(WAIT_MS); }
+  }
+}
+
+// ── Melee Weapons (directory-based, writes to weaponry/) ──
+async function generateMelee(target) {
+  const dir = path.join(ENGINE_DATA, 'weaponry');
+  const existing = readDirEntities(dir);
+  const meleeExisting = existing.filter(w => w.category === 'melee' || w.category === 'melee_blunt' || w.category === 'melee_sharp');
+  const existingNames = existing.map(w => w.name).filter(Boolean);
+  const corps = loadCorpNames();
+  const needed = target - meleeExisting.length;
+  if (needed <= 0) { console.log(`Already have ${meleeExisting.length} melee weapons`); return; }
+
+  const subcategories = [
+    { cat: 'melee_blunt', desc: 'blunt melee weapons: clubs, maces, stun batons, impact gauntlets, hammers, telescoping batons, weighted knuckles, shock mauls, concussion rods, kinetic fists' },
+    { cat: 'melee_sharp', desc: 'sharp/edged melee weapons: knives, swords, vibroblades, mono-edge weapons, machetes, combat axes, ceramic daggers, retractable claws, heated blades, molecular-edge razors, wakizashi, tantos' }
+  ];
+  const BATCH = 5;
+  for (let i = 0; i < needed; i += BATCH) {
+    const count = Math.min(BATCH, needed - i);
+    const sub = subcategories[i % 2 === 0 ? 0 : 1]; // alternate blunt and sharp
+    console.log(`Generating melee weapons ${meleeExisting.length + i + 1} to ${meleeExisting.length + i + count} (${sub.cat})...`);
+
+    const system = `You generate INDIVIDUAL, SPECIFIC melee weapon entries for a cyberpunk world called Meridian 88 (Great Lakes megacity corridor, corporate sovereignty, neural augmentation ubiquitous, tiered citizenship, QUANTA currency symbol is \u03A6). Each entry is ONE specific melee weapon — a particular model with a manufacturer, model number, and street name. Focus on ${sub.desc}. Return a JSON array of ${count} entries. Each must have: name (specific model name with designation, e.g. "Crucible KR-7 Shock Maul" or "Helix Mono-Edge Tanto Mk.III"), type ("weapon"), aliases (array of street names/nicknames), category ("${sub.cat}"), description (2-3 paragraphs — how THIS specific weapon works, what makes it distinctive, materials used, what it feels like to wield), manufacturer (use these corponations: ${corps.slice(0, 15).join(', ')}), tier_availability (e.g. "Tier 3+", "Black market", "Universal"), legality (e.g. "Restricted", "Prohibited", "Licensed", "Unrestricted"), base_technologies (array of foundational tech names like "Piezoelectric disruption", "Molecular edge alignment", "Kinetic energy storage", "Neural feedback loops", "Vibration frequency modulation"), specifications (object with weight, length, material, power_source if applicable, edge_type or impact_type, damage_profile), tactical_use (how operators use it — close quarters, stealth kills, crowd control, etc.), cultural_context (social meaning, who carries it, street reputation, legal gray areas), known_users (array of character archetypes), story_hooks (array of 2-3 hooks), price (in \u03A6), tags (array). Every weapon must feel like a real product someone would buy in this world.`;
+
+    const user = `Existing weapon names (DO NOT duplicate): ${existingNames.slice(-40).join(', ')}. Generate ${count} NEW ${sub.cat} melee weapons. Return ONLY the JSON array.`;
+
+    try {
+      const result = await callClaude(system, user, 8192);
+      const items = parseJsonArray(result);
+      for (const item of items) {
+        writeEntityFile(dir, item);
+        existingNames.push(item.name);
+      }
+      console.log(`  Added ${items.length}, total melee: ${meleeExisting.length + i + items.length}`);
+    } catch (e) {
+      console.error(`  Error: ${e.message}`);
+    }
+    if (i + BATCH < needed) { console.log(`  Waiting ${WAIT_MS/1000}s for rate limit...`); await sleep(WAIT_MS); }
+  }
+}
+
 const WAIT_MS = 65000; // 65 seconds between calls to stay under 8k tokens/min
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
@@ -338,6 +524,10 @@ async function main() {
   if (type === 'weapons' || type === 'all') await generateWeapons(count || 512);
   if (type === 'factions' || type === 'all') await generateFactions(count || 50);
   if (type === 'equipment' || type === 'all') await generateEquipment(count || 512);
+  if (type === 'consumer_goods' || type === 'all') await generateConsumerGoods(count || 500);
+  if (type === 'pharma' || type === 'all') await generatePharma(count || 200);
+  if (type === 'substrates' || type === 'all') await generateSubstrates(count || 200);
+  if (type === 'melee' || type === 'all') await generateMelee(count || 100);
 
   console.log('\n=== DONE ===');
   const corps = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'corponations.json'), 'utf8'));
@@ -348,7 +538,12 @@ async function main() {
   const facs = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'factions.json'), 'utf8'));
   const equip = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'equipment.json'), 'utf8'));
   const tech = JSON.parse(fs.readFileSync(path.join(ENGINE_DATA, 'technology.json'), 'utf8'));
+  const cGoods = readDirEntities(path.join(ENGINE_DATA, 'consumer_goods'));
+  const pharma = readDirEntities(path.join(ENGINE_DATA, 'pharmaceuticals'));
+  const subs = readDirEntities(path.join(ENGINE_DATA, 'substrates'));
+  const meleeWeaps = readDirEntities(path.join(ENGINE_DATA, 'weaponry')).filter(w => w.category === 'melee' || w.category === 'melee_blunt' || w.category === 'melee_sharp');
   console.log(`Corps: ${corps.length}, Chars: ${chars.length}, Districts: ${dists.length}, Docs: ${docs.length}, Tech: ${tech.length}, Weapons: ${weaps.length}, Factions: ${facs.length}, Equipment: ${equip.length}`);
+  console.log(`Consumer Goods: ${cGoods.length}, Pharmaceuticals: ${pharma.length}, Substrates: ${subs.length}, Melee Weapons: ${meleeWeaps.length}`);
 }
 
 main().catch(e => console.error(e));

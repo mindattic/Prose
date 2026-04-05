@@ -1,9 +1,14 @@
 @inherits LayoutComponentBase
+@inject SettingsService SettingsSvc
+
+<style>
+    html, body { font-family: '@SettingsSvc.FontFamily', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+</style>
 
 <div class="app-shell">
-    <div class="app-container d-flex" style="height: 100vh; overflow: hidden;">
+    <div class="app-container d-flex">
         <NavMenu />
-        <main class="flex-grow-1" style="overflow-y: auto; padding: 10px;">
+        <main class="flex-grow-1" style="padding: 10px;">
             <div class="container-fluid">
                 @Body
             </div>

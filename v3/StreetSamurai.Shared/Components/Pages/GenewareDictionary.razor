@@ -12,8 +12,8 @@
         @foreach (var g in FilteredItems)
         {
             <div class="list-item text-light @(editing?.Name == g.Name ? "active" : "")" @onclick="() => Edit(g)">
-                <div class="fw-bold small">@g.Name</div>
-                <div class="text-muted" style="font-size: 0.7rem;">@g.Category — @g.SourceOrganism</div>
+                <div class="fw-bold small">@(string.IsNullOrEmpty(g.ProductName) ? g.Name : g.ProductName)</div>
+                <div class="text-muted" style="font-size: 0.7rem;">@g.BrandName @(string.IsNullOrEmpty(g.Category) ? "" : $"· {g.Category}")</div>
             </div>
         }
         <div class="p-2">

@@ -1,5 +1,6 @@
 @page "/logging"
 @inject LoggingService LogSvc
+@inject SettingsService SettingsSvc
 
 <div class="d-flex justify-content-between align-items-center mb-1">
     <h4 class="text-danger mb-0">Logging</h4>
@@ -102,7 +103,7 @@
         {
             <div class="log-entry @SeverityRowClass(entry.Level) px-2 py-1 border-bottom border-secondary"
                  style="border-bottom-width: 1px !important;">
-                <span class="text-muted">@entry.Timestamp.ToString("HH:mm:ss.fff")</span>
+                <span class="text-muted">@SettingsSvc.FormatTimestamp(entry.Timestamp)</span>
                 <span class="badge @SeverityBadgeClass(entry.Level) ms-1" style="font-size:0.65rem; min-width:32px;">@SeverityAbbrev(entry.Level)</span>
                 <span class="ms-1 @SeverityTextClass(entry.Level)">@HighlightSearch(entry.Message)</span>
 
