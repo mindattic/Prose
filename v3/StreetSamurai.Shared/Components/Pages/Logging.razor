@@ -1,0 +1,242 @@
+@page "/logging"
+@inject LoggingService LogSvc
+
+<div class="d-flex justify-content-between align-items-center mb-1">
+    <h4 class="text-danger mb-0">Logging</h4>
+    <div class="d-flex gap-2 align-items-center">
+        <small class="text-muted">@(entries.Count) entries</small>
+        <button class="btn btn-sm btn-outline-info" @onclick="Search">
+            <i class="bi bi-arrow-clockwise"></i> Refresh
+        </button>
+    </div>
+</div>
+<p class="text-muted mb-3">Search and filter application logs by time, severity, and text.</p>
+
+@* ── Filters ─────────────────────────────────────────── *@
+<div class="row g-2 mb-3">
+    <div class="col-auto">
+        <label class="form-label text-muted small mb-1">Time Range</label>
+        <select class="form-select form-select-sm bg-dark text-light border-secondary" style="width:150px;"
+                @bind="selectedTimeRange" @bind:after="Search">
+            <option value="1">1 minute</option>
+            <option value="5">5 minutes</option>
+            <option value="15">15 minutes</option>
+            <option value="30">30 minutes</option>
+            <option value="60">1 hour</option>
+            <option value="120">2 hours</option>
+            <option value="240">4 hours</option>
+            <option value="480">8 hours</option>
+            <option value="1440">24 hours</option>
+            <option value="2880">2 days</option>
+            <option value="4320">3 days</option>
+            <option value="10080">1 week</option>
+            <option value="20160">2 weeks</option>
+            <option value="43200">1 month</option>
+        </select>
+    </div>
+    <div class="col-auto">
+        <label class="form-label text-muted small mb-1">Severity</label>
+        <select class="form-select form-select-sm bg-dark text-light border-secondary" style="width:150px;"
+                @bind="selectedSeverity" @bind:after="Search">
+            <option value="">All</option>
+            <option value="Verbose">Verbose</option>
+            <option value="Debug">Debug</option>
+            <option value="Information">Information</option>
+            <option value="Warning">Warning</option>
+            <option value="Error">Error</option>
+            <option value="Fatal">Fatal</option>
+        </select>
+    </div>
+    <div class="col">
+        <label class="form-label text-muted small mb-1">Search Text</label>
+        <div class="input-group input-group-sm">
+            <input type="text" class="form-control bg-dark text-light border-secondary"
+                   placeholder="Search logs..." @bind="searchText"
+                   @onkeydown="OnSearchKeyDown" />
+            <button class="btn btn-outline-info" @onclick="Search">
+                <i class="bi bi-search"></i>
+            </button>
+            @if (!string.IsNullOrWhiteSpace(searchText))
+            {
+                <button class="btn btn-outline-secondary" @onclick="ClearSearch">
+                    <i class="bi bi-x"></i>
+                </button>
+            }
+        </div>
+    </div>
+</div>
+
+@* ── Severity Summary ─────────────────────────────────── *@
+@if (entries.Count > 0)
+{
+    <div class="d-flex gap-3 mb-3">
+        @{ var groups = entries.GroupBy(e => e.Level).ToDictionary(g => g.Key, g => g.Count()); }
+        @foreach (var (level, count) in groups.OrderBy(kv => SeverityOrder(kv.Key)))
+        {
+            <span class="badge @SeverityBadgeClass(level)" style="cursor:pointer;" @onclick="() => FilterBySeverity(level)">
+                @level: @count
+            </span>
+        }
+    </div>
+}
+
+@* ── Log Entries ──────────────────────────────────────── *@
+<div class="log-viewer" style="max-height: calc(100vh - 320px); overflow-y: auto; font-family: 'Cascadia Code', 'Consolas', monospace; font-size: 0.78rem;">
+    @if (searching)
+    {
+        <div class="text-center py-4">
+            <div class="spinner-border spinner-border-sm text-danger"></div>
+            <span class="text-muted ms-2">Searching logs...</span>
+        </div>
+    }
+    else if (entries.Count == 0)
+    {
+        <div class="text-center py-4 text-muted">
+            <i class="bi bi-journal-x" style="font-size:2rem;"></i>
+            <p class="mt-2">No log entries found for the selected filters.</p>
+        </div>
+    }
+    else
+    {
+        @foreach (var entry in entries)
+        {
+            <div class="log-entry @SeverityRowClass(entry.Level) px-2 py-1 border-bottom border-secondary"
+                 style="border-bottom-width: 1px !important;">
+                <span class="text-muted">@entry.Timestamp.ToString("HH:mm:ss.fff")</span>
+                <span class="badge @SeverityBadgeClass(entry.Level) ms-1" style="font-size:0.65rem; min-width:32px;">@SeverityAbbrev(entry.Level)</span>
+                <span class="ms-1 @SeverityTextClass(entry.Level)">@HighlightSearch(entry.Message)</span>
+
+                @if (!string.IsNullOrEmpty(entry.Exception))
+                {
+                    <div class="mt-1 ms-4">
+                        <button class="btn btn-link btn-sm text-warning p-0" style="font-size:0.7rem;" @onclick="() => ToggleException(entry)">
+                            <i class="bi @(IsExpanded(entry) ? "bi-chevron-down" : "bi-chevron-right")"></i> Exception
+                        </button>
+                        @if (IsExpanded(entry))
+                        {
+                            <pre class="text-danger small mt-1 mb-0 p-2 bg-black" style="white-space: pre-wrap; max-height: 300px; overflow-y: auto; border-radius: 4px;">@entry.Exception</pre>
+                        }
+                    </div>
+                }
+            </div>
+        }
+    }
+</div>
+
+@code {
+    private List<LogEntry> entries = [];
+    private int selectedTimeRange = 1440;
+    private string selectedSeverity = "";
+    private string searchText = "";
+    private bool searching;
+    private readonly HashSet<LogEntry> expandedExceptions = new();
+
+    protected override void OnInitialized() => Search();
+
+    private void Search()
+    {
+        searching = true;
+        StateHasChanged();
+
+        try
+        {
+            entries = LogSvc.Search(new LogSearchRequest
+            {
+                Since = DateTime.Now.AddMinutes(-selectedTimeRange),
+                MinSeverity = string.IsNullOrEmpty(selectedSeverity) ? null : selectedSeverity,
+                SearchText = string.IsNullOrWhiteSpace(searchText) ? null : searchText,
+                MaxResults = 1000,
+            });
+        }
+        finally { searching = false; }
+    }
+
+    private void OnSearchKeyDown(Microsoft.AspNetCore.Components.Web.KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter") Search();
+    }
+
+    private void ClearSearch()
+    {
+        searchText = "";
+        Search();
+    }
+
+    private void FilterBySeverity(string level)
+    {
+        selectedSeverity = selectedSeverity == level ? "" : level;
+        Search();
+    }
+
+    private void ToggleException(LogEntry entry)
+    {
+        if (!expandedExceptions.Remove(entry))
+            expandedExceptions.Add(entry);
+    }
+
+    private bool IsExpanded(LogEntry entry) => expandedExceptions.Contains(entry);
+
+    private MarkupString HighlightSearch(string text)
+    {
+        if (string.IsNullOrWhiteSpace(searchText))
+            return new MarkupString(System.Net.WebUtility.HtmlEncode(text));
+
+        var encoded = System.Net.WebUtility.HtmlEncode(text);
+        var searchEncoded = System.Net.WebUtility.HtmlEncode(searchText);
+
+        var highlighted = encoded.Replace(
+            searchEncoded,
+            $"<mark style='background:#b8860b;color:#fff;padding:0 2px;border-radius:2px;'>{searchEncoded}</mark>",
+            StringComparison.OrdinalIgnoreCase);
+
+        return new MarkupString(highlighted);
+    }
+
+    private static string SeverityBadgeClass(string level) => level switch
+    {
+        "Fatal" => "bg-danger",
+        "Error" => "bg-danger",
+        "Warning" => "bg-warning text-dark",
+        "Information" => "bg-info text-dark",
+        "Debug" => "bg-secondary",
+        "Verbose" => "bg-dark text-muted",
+        _ => "bg-secondary",
+    };
+
+    private static string SeverityRowClass(string level) => level switch
+    {
+        "Fatal" or "Error" => "bg-danger bg-opacity-10",
+        "Warning" => "bg-warning bg-opacity-10",
+        _ => "",
+    };
+
+    private static string SeverityTextClass(string level) => level switch
+    {
+        "Fatal" or "Error" => "text-danger",
+        "Warning" => "text-warning",
+        "Information" => "text-light",
+        _ => "text-muted",
+    };
+
+    private static string SeverityAbbrev(string level) => level switch
+    {
+        "Verbose" => "VRB",
+        "Debug" => "DBG",
+        "Information" => "INF",
+        "Warning" => "WRN",
+        "Error" => "ERR",
+        "Fatal" => "FTL",
+        _ => level[..3].ToUpperInvariant(),
+    };
+
+    private static int SeverityOrder(string level) => level switch
+    {
+        "Fatal" => 0,
+        "Error" => 1,
+        "Warning" => 2,
+        "Information" => 3,
+        "Debug" => 4,
+        "Verbose" => 5,
+        _ => 6,
+    };
+}

@@ -41,6 +41,13 @@ public class CharacterData
     [JsonPropertyName("cyberware_inventory")] public List<CyberwareEntry> CyberwareInventory { get; set; } = [];
     /// <summary>Chronological timeline of events that have happened to this character across all stories.</summary>
     [JsonPropertyName("timeline")] public List<TimelineEvent> Timeline { get; set; } = [];
+    /// <summary>
+    /// Canonical data changelog — tracks significant changes to this character's
+    /// permanent record (affiliation shifts, status changes, injuries, transformations).
+    /// Only story-driven changes that alter who the character IS, not ephemeral scene state.
+    /// Empty until stories produce permanent consequences.
+    /// </summary>
+    [JsonPropertyName("changelog")] public List<CharacterChangelog> Changelog { get; set; } = [];
 }
 
 /// <summary>
@@ -75,6 +82,22 @@ public class TimelineEvent
     [JsonPropertyName("consequences")] public string Consequences { get; set; } = "";
     [JsonPropertyName("body_changes")] public List<string> BodyChanges { get; set; } = [];
     [JsonPropertyName("status_change")] public string StatusChange { get; set; } = "";
+}
+
+/// <summary>
+/// A permanent change to a character's canonical data, driven by story events.
+/// "Sable's affiliation changed from Iron Lotus to Independent after story_042:beat_7
+/// because she burned her handler." This is the narrative version history.
+/// </summary>
+public class CharacterChangelog
+{
+    [JsonPropertyName("story_id")] public string StoryId { get; set; } = "";
+    [JsonPropertyName("beat")] public string Beat { get; set; } = "";
+    [JsonPropertyName("date")] public string Date { get; set; } = "";
+    [JsonPropertyName("field")] public string Field { get; set; } = "";
+    [JsonPropertyName("from")] public string From { get; set; } = "";
+    [JsonPropertyName("to")] public string To { get; set; } = "";
+    [JsonPropertyName("reason")] public string Reason { get; set; } = "";
 }
 
 public class CharacterStats

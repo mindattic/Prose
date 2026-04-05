@@ -8,16 +8,16 @@
     <input type="text" class="form-control bg-dark text-light border-secondary"
            placeholder="Search across all worldbuilding files..."
            title="Searches all markdown and YAML files in the worldbuilding directory. Press Enter to search."
-           @bind="_query" @bind:event="oninput"
+           @bind="query" @bind:event="oninput"
            @onkeydown="HandleKey" />
     <button class="btn btn-outline-danger" @onclick="DoSearch">Search</button>
 </div>
 
-@if (_results.Any())
+@if (results.Any())
 {
-    <p class="text-muted small">@_results.Count results for "@_query"</p>
+    <p class="text-muted small">@results.Count results for "@query"</p>
 
-    @foreach (var r in _results)
+    @foreach (var r in results)
     {
         <div class="card bg-dark text-light border-secondary mb-2">
             <div class="card-body py-2">
@@ -33,22 +33,22 @@
         </div>
     }
 }
-else if (_searched)
+else if (searched)
 {
     <p class="text-muted">No results found.</p>
 }
 
 @code {
-    private string _query = "";
-    private List<SearchResult> _results = [];
-    private bool _searched;
+    private string query = "";
+    private List<SearchResult> results = [];
+    private bool searched;
 
     private void DoSearch()
     {
-        if (!string.IsNullOrWhiteSpace(_query))
+        if (!string.IsNullOrWhiteSpace(query))
         {
-            _results = Canon.Search(_query, 20);
-            _searched = true;
+            results = Canon.Search(query, 20);
+            searched = true;
         }
     }
 

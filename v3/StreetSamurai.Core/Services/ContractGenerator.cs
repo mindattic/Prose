@@ -40,15 +40,15 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class ContractGenerator
 {
-    private readonly ILlmService _llm;
-    private readonly DatabaseService _db;
-    private readonly WorldGraphService _graph;
+    private readonly ILlmService llm;
+    private readonly DatabaseService db;
+    private readonly WorldGraphService graph;
 
     public ContractGenerator(ILlmService llm, DatabaseService db, WorldGraphService graph)
     {
-        _llm = llm;
-        _db = db;
-        _graph = graph;
+        this.llm = llm;
+        this.db = db;
+        this.graph = graph;
     }
 
     // Job type pools — randomly selected then passed to the LLM as a constraint.
@@ -82,9 +82,9 @@ public class ContractGenerator
         CancellationToken ct = default)
     {
         // Pull real entities for grounding
-        var corps = _db.Corponations;
-        var factions = _db.Factions;
-        var districts = _db.Districts;
+        var corps = db.Corponations;
+        var factions = db.Factions;
+        var districts = db.Districts;
 
         var randomCorp = corps.Count > 0 ? corps[Random.Shared.Next(corps.Count)].Name : "Axiom Industries";
         var randomFaction = factions.Count > 0 ? factions[Random.Shared.Next(factions.Count)].Name : "Iron Lotus";
@@ -123,7 +123,7 @@ public class ContractGenerator
 
         try
         {
-            var response = await _llm.GenerateAsync(system, "Generate the contract now.", 0.8, 2048, ct: ct);
+            var response = await llm.GenerateAsync(system, "Generate the contract now.", 0.8, 2048, ct: ct);
             var json = response.Trim();
             if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
             if (json.EndsWith("```")) json = json[..^3];
@@ -152,8 +152,8 @@ public class ContractGenerator
     /// <summary>Generate a quick random contract without LLM (for UI previews).</summary>
     public Contract GenerateQuickContract()
     {
-        var districts = _db.Districts;
-        var corps = _db.Corponations;
+        var districts = db.Districts;
+        var corps = db.Corponations;
         var location = districts.Count > 0 ? districts[Random.Shared.Next(districts.Count)].Name : "The Shelf";
         var corp = corps.Count > 0 ? corps[Random.Shared.Next(corps.Count)].Name : "Axiom";
         var jobType = JobTypes[Random.Shared.Next(JobTypes.Length)];

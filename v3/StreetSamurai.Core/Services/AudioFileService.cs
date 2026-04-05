@@ -5,18 +5,18 @@ namespace StreetSamurai.Core.Services;
 
 public class AudioFileService : IAudioFileService
 {
-    private readonly IPathProvider _paths;
+    private readonly IPathProvider paths;
 
     public AudioFileService(IPathProvider paths)
     {
-        _paths = paths;
+        this.paths = paths;
     }
 
     private string AudioDir
     {
         get
         {
-            var dir = Path.Combine(_paths.DataRoot, "audio");
+            var dir = Path.Combine(paths.DataRoot, "audio");
             Directory.CreateDirectory(dir);
             return dir;
         }

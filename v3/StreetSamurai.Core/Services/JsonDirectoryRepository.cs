@@ -16,17 +16,17 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public partial class JsonDirectoryRepository<T> where T : class
 {
-    private readonly string _directory;
+    private readonly string directory;
     private readonly Func<T, string> _nameSelector;
-    private readonly JsonSerializerOptions _jsonOptions;
-    private List<T>? _cache;
+    private readonly JsonSerializerOptions jsonOptions;
+    private List<T>? cache;
 
     public JsonDirectoryRepository(string directory, Func<T, string> nameSelector)
     {
-        _directory = directory;
+        this.directory = directory;
         Directory.CreateDirectory(directory);
         _nameSelector = nameSelector;
-        _jsonOptions = new JsonSerializerOptions
+        jsonOptions = new JsonSerializerOptions
         {
             WriteIndented = true,
             PropertyNameCaseInsensitive = true,
@@ -39,21 +39,21 @@ public partial class JsonDirectoryRepository<T> where T : class
 
     public List<T> GetAll()
     {
-        if (_cache != null) return _cache;
-        if (!Directory.Exists(_directory)) return _cache = [];
+        if (cache != null) return cache;
+        if (!Directory.Exists(directory)) return cache = [];
 
-        _cache = Directory.GetFiles(_directory, "*.json")
+        cache = Directory.GetFiles(directory, "*.json")
             .Select(LoadFromFile)
             .Where(item => item != null)
             .ToList()!;
-        return _cache;
+        return cache;
     }
 
     public T? GetByName(string name)
     {
         // Try direct file lookup first (fast path)
         var slug = Slugify(name);
-        var path = Path.Combine(_directory, $"{slug}.json");
+        var path = Path.Combine(directory, $"{slug}.json");
         if (File.Exists(path))
         {
             var item = LoadFromFile(path);
@@ -69,26 +69,26 @@ public partial class JsonDirectoryRepository<T> where T : class
     {
         var name = _nameSelector(item);
         var slug = Slugify(name);
-        var path = Path.Combine(_directory, $"{slug}.json");
+        var path = Path.Combine(directory, $"{slug}.json");
 
-        var json = JsonSerializer.Serialize(item, _jsonOptions);
+        var json = JsonSerializer.Serialize(item, jsonOptions);
         File.WriteAllText(path, json);
 
         // Invalidate cache
-        _cache = null;
+        cache = null;
         OnItemSaved?.Invoke(name);
     }
 
     public void Delete(string name)
     {
         var slug = Slugify(name);
-        var path = Path.Combine(_directory, $"{slug}.json");
+        var path = Path.Combine(directory, $"{slug}.json");
         if (File.Exists(path)) File.Delete(path);
 
         // Also scan for any file containing this entity (in case slug doesn't match)
         if (!File.Exists(path))
         {
-            foreach (var file in Directory.GetFiles(_directory, "*.json"))
+            foreach (var file in Directory.GetFiles(directory, "*.json"))
             {
                 var item = LoadFromFile(file);
                 if (item != null && _nameSelector(item).Equals(name, StringComparison.OrdinalIgnoreCase))
@@ -99,7 +99,7 @@ public partial class JsonDirectoryRepository<T> where T : class
             }
         }
 
-        _cache = null;
+        cache = null;
     }
 
     public void SaveAll(List<T> items)
@@ -108,18 +108,18 @@ public partial class JsonDirectoryRepository<T> where T : class
         {
             var name = _nameSelector(item);
             var slug = Slugify(name);
-            var path = Path.Combine(_directory, $"{slug}.json");
-            File.WriteAllText(path, JsonSerializer.Serialize(item, _jsonOptions));
+            var path = Path.Combine(directory, $"{slug}.json");
+            File.WriteAllText(path, JsonSerializer.Serialize(item, jsonOptions));
         }
-        _cache = null;
+        cache = null;
     }
 
-    public void Reload() => _cache = null;
+    public void Reload() => cache = null;
 
     public int Count()
     {
-        if (!Directory.Exists(_directory)) return 0;
-        return Directory.GetFiles(_directory, "*.json").Length;
+        if (!Directory.Exists(directory)) return 0;
+        return Directory.GetFiles(directory, "*.json").Length;
     }
 
     /// <summary>
@@ -132,22 +132,22 @@ public partial class JsonDirectoryRepository<T> where T : class
         if (!File.Exists(sourceFilePath)) return 0;
 
         var json = File.ReadAllText(sourceFilePath);
-        var items = JsonSerializer.Deserialize<List<T>>(json, _jsonOptions);
+        var items = JsonSerializer.Deserialize<List<T>>(json, jsonOptions);
         if (items == null || items.Count == 0) return 0;
 
-        Directory.CreateDirectory(_directory);
+        Directory.CreateDirectory(directory);
         foreach (var item in items)
         {
             var name = _nameSelector(item);
             if (string.IsNullOrWhiteSpace(name)) continue;
             var slug = Slugify(name);
-            var path = Path.Combine(_directory, $"{slug}.json");
-            File.WriteAllText(path, JsonSerializer.Serialize(item, _jsonOptions));
+            var path = Path.Combine(directory, $"{slug}.json");
+            File.WriteAllText(path, JsonSerializer.Serialize(item, jsonOptions));
         }
 
         // Rename source to .migrated so it's not loaded again
         File.Move(sourceFilePath, sourceFilePath + ".migrated", overwrite: true);
-        _cache = null;
+        cache = null;
         return items.Count;
     }
 
@@ -156,7 +156,7 @@ public partial class JsonDirectoryRepository<T> where T : class
         try
         {
             var json = File.ReadAllText(path);
-            return JsonSerializer.Deserialize<T>(json, _jsonOptions);
+            return JsonSerializer.Deserialize<T>(json, jsonOptions);
         }
         catch (Exception ex)
         {

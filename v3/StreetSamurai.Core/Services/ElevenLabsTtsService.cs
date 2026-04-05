@@ -10,18 +10,18 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class ElevenLabsTtsService : ITtsService
 {
-    private readonly HttpClient _http;
-    private readonly SettingsService _settings;
+    private readonly HttpClient http;
+    private readonly SettingsService settings;
 
     public ElevenLabsTtsService(HttpClient http, SettingsService settings)
     {
-        _http = http;
-        _http.Timeout = TimeSpan.FromMinutes(2);
-        _settings = settings;
+        this.http = http;
+        http.Timeout = TimeSpan.FromMinutes(2);
+        this.settings = settings;
     }
 
     public Task<bool> IsConfiguredAsync()
-        => Task.FromResult(!string.IsNullOrWhiteSpace(_settings.ElevenLabsApiKey));
+        => Task.FromResult(!string.IsNullOrWhiteSpace(settings.ElevenLabsApiKey));
 
     public async Task<byte[]> SynthesizeAsync(string text, string? voiceId = null, CancellationToken ct = default)
         => await SynthesizeAsync(text, voiceId, outputFormat: null, ct);
@@ -32,10 +32,10 @@ public class ElevenLabsTtsService : ITtsService
     /// </summary>
     public async Task<byte[]> SynthesizeAsync(string text, string? voiceId, string? outputFormat, CancellationToken ct)
     {
-        if (string.IsNullOrWhiteSpace(_settings.ElevenLabsApiKey))
+        if (string.IsNullOrWhiteSpace(settings.ElevenLabsApiKey))
             throw new InvalidOperationException("ElevenLabs API key not configured.");
 
-        var voice = voiceId ?? _settings.ElevenLabsVoiceId;
+        var voice = voiceId ?? settings.ElevenLabsVoiceId;
         if (string.IsNullOrWhiteSpace(voice))
             voice = "jfIS2w2yJi0grJZPyEsk"; // Default: Oliver Silk
 
@@ -45,25 +45,25 @@ public class ElevenLabsTtsService : ITtsService
         var payload = new
         {
             text,
-            model_id = _settings.TtsModel,
+            model_id = settings.TtsModel,
             voice_settings = new
             {
-                stability = _settings.TtsStability,
-                similarity_boost = _settings.TtsSimilarityBoost,
-                style = _settings.TtsStyle,
+                stability = settings.TtsStability,
+                similarity_boost = settings.TtsSimilarityBoost,
+                style = settings.TtsStyle,
                 use_speaker_boost = true,
             }
         };
 
         using var request = new HttpRequestMessage(HttpMethod.Post, url);
-        request.Headers.Add("xi-api-key", _settings.ElevenLabsApiKey);
+        request.Headers.Add("xi-api-key", settings.ElevenLabsApiKey);
         request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("audio/mpeg"));
         request.Content = new StringContent(
             JsonSerializer.Serialize(payload),
             Encoding.UTF8,
             "application/json");
 
-        var response = await _http.SendAsync(request, ct);
+        var response = await http.SendAsync(request, ct);
         response.EnsureSuccessStatusCode();
 
         return await response.Content.ReadAsByteArrayAsync(ct);
@@ -74,13 +74,13 @@ public class ElevenLabsTtsService : ITtsService
     /// </summary>
     public async Task<List<TtsVoice>> ListVoicesAsync(CancellationToken ct = default)
     {
-        if (string.IsNullOrWhiteSpace(_settings.ElevenLabsApiKey))
+        if (string.IsNullOrWhiteSpace(settings.ElevenLabsApiKey))
             return [];
 
         using var request = new HttpRequestMessage(HttpMethod.Get, "https://api.elevenlabs.io/v1/voices");
-        request.Headers.Add("xi-api-key", _settings.ElevenLabsApiKey);
+        request.Headers.Add("xi-api-key", settings.ElevenLabsApiKey);
 
-        var response = await _http.SendAsync(request, ct);
+        var response = await http.SendAsync(request, ct);
         if (!response.IsSuccessStatusCode) return [];
 
         var json = await response.Content.ReadAsStringAsync(ct);

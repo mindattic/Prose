@@ -1,0 +1,110 @@
+@page "/synthetics"
+@using StreetSamurai.Core.Models.Canon
+@inject SyntheticLifeRepository Repo
+@inject NavigationManager Nav
+
+<div class="dict-layout">
+    <div class="dict-list bg-dark border-end border-secondary">
+        <div class="p-2">
+            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                   placeholder="Filter..." @bind="filter" @bind:event="oninput" />
+        </div>
+        @foreach (var s in FilteredItems)
+        {
+            <div class="list-item text-light @(editing?.Name == s.Name ? "active" : "")" @onclick="() => Edit(s)">
+                <div class="fw-bold small">@s.Name</div>
+                <div class="text-muted" style="font-size: 0.7rem;">@s.Classification — @s.Disposition</div>
+            </div>
+        }
+        <div class="p-2">
+            <ExportButton Mode="repo" RepoName="Synthetics" GetRepoEntries="GetExportEntries" />
+            <button class="btn btn-sm btn-outline-danger w-100" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New Synthetic Life</button>
+        </div>
+    </div>
+
+    <div class="dict-editor" style="overflow-y: auto; max-height: calc(100vh - 60px);">
+        @if (editing != null)
+        {
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="text-danger mb-0">@(isNew ? "New Synthetic Life" : editing.Name)</h5>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
+                    @if (!isNew) { <ExportButton Mode="entry" RepoName="Synthetics" EntryName="@editing.Name" EntryJson="@System.Text.Json.JsonSerializer.Serialize(editing)" /> }
+                    @if (!isNew && !_confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-trash3"></i></button> }
+                    @if (_confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button> }
+                </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 2; min-width: 200px;"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
+                <div style="flex: 1; min-width: 120px;"><div class="field-label">Classification</div>
+                    <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="editing.Classification">
+                        <option value="E.L.F. (Electronic Life Form)">E.L.F.</option>
+                        <option value="Rogue AI — Fragment">Fragment</option>
+                        <option value="Rogue AI — Stray">Stray</option>
+                        <option value="Rogue AI — Prowler">Prowler</option>
+                        <option value="Rogue AI — Leviathan">Leviathan</option>
+                        <option value="Supermind">Supermind</option>
+                    </select>
+                </div>
+                <div style="flex: 1; min-width: 100px;"><div class="field-label">Status</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Status" /></div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 1; min-width: 120px;"><div class="field-label">Disposition</div>
+                    <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="editing.Disposition">
+                        <option value="brownie">Brownie</option>
+                        <option value="gremlin">Gremlin</option>
+                        <option value="trickster">Trickster</option>
+                        <option value="echo">Echo</option>
+                        <option value="wisp">Wisp</option>
+                        <option value="predator">Predator</option>
+                        <option value="neutral">Neutral</option>
+                    </select>
+                </div>
+                <div style="flex: 1; min-width: 120px;"><div class="field-label">Habitat</div>
+                    <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="editing.Habitat">
+                        <option value="chrome_dweller">Chrome Dweller</option>
+                        <option value="network_sprite">Network Sprite</option>
+                        <option value="wallet_whisper">Wallet Whisper</option>
+                        <option value="threshold_keeper">Threshold Keeper</option>
+                        <option value="void_swimmer">Void Swimmer</option>
+                        <option value="distributed">Distributed</option>
+                    </select>
+                </div>
+                <div style="flex: 1; min-width: 120px;"><div class="field-label">Origin</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Origin" /></div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 1; min-width: 100px;"><div class="field-label">DTI Rating</div><input type="number" step="0.1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.DtiRating" /></div>
+                <div style="flex: 1; min-width: 100px;"><div class="field-label">Encounter Frequency</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.EncounterFrequency" /></div>
+                <div style="flex: 1; min-width: 100px;"><div class="field-label">Confirmed Sightings</div><input type="number" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.ConfirmedSightings" /></div>
+            </div>
+            <div class="mb-3"><div class="field-label">Location</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Location" /></div>
+            <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="4" @bind="editing.Description"></textarea></div>
+            <div class="mb-3"><div class="field-label">Observed Behavior</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="3" @bind="editing.ObservedBehavior"></textarea></div>
+        }
+        else
+        {
+            <div class="text-center text-muted py-5"><i class="bi bi-cpu" style="font-size:3rem;"></i><p class="mt-2">Select a synthetic life form or create a new one.</p></div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<SyntheticLifeData> items = [];
+    private SyntheticLifeData? editing;
+    private string originalName = "";
+    private string filter = "";
+    private bool isNew, _confirmDelete;
+
+    private IEnumerable<SyntheticLifeData> FilteredItems => string.IsNullOrWhiteSpace(filter)
+        ? items : items.Where(s => s.Name.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || s.Classification.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || s.Disposition.Contains(filter, StringComparison.OrdinalIgnoreCase));
+
+    protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); if (Nav.Uri.Contains("new=true")) AddNew(); }
+    private void AddNew() { editing = new SyntheticLifeData(); isNew = true; _confirmDelete = false; }
+    private void Edit(SyntheticLifeData s) { editing = s; originalName = s.Name; isNew = false; _confirmDelete = false; }
+    private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return; if (!isNew && originalName != editing.Name) Repo.Delete(originalName); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
+    private void DoDelete() { if (editing != null) { Repo.Delete(editing.Name); editing = null; items = Repo.GetAll(); _confirmDelete = false; } }
+    private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
+}

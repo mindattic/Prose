@@ -11,13 +11,13 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class EntityExtractionService
 {
-    private readonly ILlmService _llm;
-    private readonly WorldGraphService _graph;
+    private readonly ILlmService llm;
+    private readonly WorldGraphService graph;
 
     public EntityExtractionService(ILlmService llm, WorldGraphService graph)
     {
-        _llm = llm;
-        _graph = graph;
+        this.llm = llm;
+        this.graph = graph;
     }
 
     /// <summary>
@@ -28,7 +28,7 @@ public class EntityExtractionService
         if (string.IsNullOrWhiteSpace(storyText)) return new ExtractionResult();
 
         // Provide existing entity names so the LLM can match rather than duplicate
-        var existingNames = _graph.AllNodes()
+        var existingNames = graph.AllNodes()
             .Select(n => $"{n.Name} ({n.NodeType})")
             .Take(100);
         var existingContext = string.Join("\n", existingNames);
@@ -88,7 +88,7 @@ public class EntityExtractionService
             {storyText}
             """;
 
-        var response = await _llm.GenerateAsync(system, user, 0.2, 4096, ct: ct);
+        var response = await llm.GenerateAsync(system, user, 0.2, 4096, ct: ct);
         return ParseExtraction(response);
     }
 
@@ -109,7 +109,7 @@ public class EntityExtractionService
     /// </summary>
     public (int entities, int relationships) MergeIntoGraph(ExtractionResult result, string storyId, string storyPoint = "")
     {
-        _graph.EnsureLoaded();
+        graph.EnsureLoaded();
         int newEntities = 0, newRelationships = 0;
 
         // Merge entities
@@ -119,7 +119,7 @@ public class EntityExtractionService
             if (string.IsNullOrEmpty(id)) continue;
 
             var nodeType = EntityTypes.Normalize(entity.Type);
-            var existing = _graph.GetNode(id);
+            var existing = graph.GetNode(id);
 
             if (existing != null)
             {
@@ -135,7 +135,7 @@ public class EntityExtractionService
                     if (trackableProps.Contains(key) && oldVal.Length > 0 && oldVal != value && !string.IsNullOrEmpty(storyPoint))
                     {
                         // Temporal change — record in history
-                        _graph.RecordPropertyChange(id, key, value, storyPoint, storyId);
+                        graph.RecordPropertyChange(id, key, value, storyPoint, storyId);
                     }
                     else if (!mergedProps.ContainsKey(key))
                     {
@@ -150,7 +150,7 @@ public class EntityExtractionService
                 // Update node type if it was "unknown"
                 var updatedType = existing.NodeType == EntityTypes.Unknown ? nodeType : existing.NodeType;
 
-                _graph.AddNode(existing with { NodeType = updatedType, Properties = mergedProps });
+                graph.AddNode(existing with { NodeType = updatedType, Properties = mergedProps });
             }
             else
             {
@@ -159,7 +159,7 @@ public class EntityExtractionService
                 if (!string.IsNullOrEmpty(entity.Description))
                     props["description"] = entity.Description;
 
-                _graph.AddNode(new WorldNode
+                graph.AddNode(new WorldNode
                 {
                     Id = id,
                     Name = entity.Name,
@@ -181,9 +181,9 @@ public class EntityExtractionService
             if (sourceId == targetId) continue;
 
             // Ensure both nodes exist (create stubs if not)
-            if (_graph.GetNode(sourceId) == null)
+            if (graph.GetNode(sourceId) == null)
             {
-                _graph.AddNode(new WorldNode
+                graph.AddNode(new WorldNode
                 {
                     Id = sourceId, Name = rel.Source,
                     NodeType = EntityTypes.Unknown, Status = "extracted",
@@ -192,9 +192,9 @@ public class EntityExtractionService
                 newEntities++;
             }
 
-            if (_graph.GetNode(targetId) == null)
+            if (graph.GetNode(targetId) == null)
             {
-                _graph.AddNode(new WorldNode
+                graph.AddNode(new WorldNode
                 {
                     Id = targetId, Name = rel.Target,
                     NodeType = EntityTypes.Unknown, Status = "extracted",
@@ -203,12 +203,12 @@ public class EntityExtractionService
                 newEntities++;
             }
 
-            _graph.EvolveRelationship(sourceId, targetId, storyId,
+            graph.EvolveRelationship(sourceId, targetId, storyId,
                 rel.Type, rel.Description, 1.0, rel.Sentiment, storyPoint);
             newRelationships++;
         }
 
-        _graph.Save();
+        graph.Save();
         return (newEntities, newRelationships);
     }
 

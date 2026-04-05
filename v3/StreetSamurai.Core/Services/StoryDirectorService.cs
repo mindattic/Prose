@@ -1,3 +1,5 @@
+using System.Net.Http;
+using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
 using StreetSamurai.Core.Models.Canon;
@@ -46,18 +48,22 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class StoryDirectorService
 {
-    private readonly ILlmService _llm;
-    private readonly DatabaseService _db;
-    private readonly WorldGraphService _graph;
-    private readonly FacetService _facets;
-    private readonly OutlineService _outline;
-    private readonly AgendaEngine _agenda;
-    private readonly StoryStateService _storyState;
-    private readonly EventLogService _eventLog;
-    private readonly KnowledgeMapService _knowledge;
-    private readonly StoryStarterService _starter;
-    private readonly SemanticIndexService _semanticIndex;
-    private readonly InferenceService _inference;
+    private readonly ILlmService llm;
+    private readonly DatabaseService db;
+    private readonly WorldGraphService graph;
+    private readonly FacetService facets;
+    private readonly OutlineService outlineSvc;
+    private readonly AgendaEngine agenda;
+    private readonly StoryStateService storyState;
+    private readonly EventLogService eventLog;
+    private readonly KnowledgeMapService knowledge;
+    private readonly StoryStarterService starter;
+    private readonly SemanticIndexService semanticIndex;
+    private readonly InferenceService inference;
+    private readonly ILogger<StoryDirectorService> log;
+    private readonly IPathProvider paths;
+    private readonly ConsequenceEngine consequences;
+    private readonly ThematicIndexService thematicIndex;
 
     public event Action<DirectorProgress>? OnProgress;
 
@@ -66,20 +72,26 @@ public class StoryDirectorService
         FacetService facets, OutlineService outline, AgendaEngine agenda,
         StoryStateService storyState, EventLogService eventLog,
         KnowledgeMapService knowledge, StoryStarterService starter,
-        SemanticIndexService semanticIndex, InferenceService inference)
+        SemanticIndexService semanticIndex, InferenceService inference,
+        ILogger<StoryDirectorService> log, IPathProvider paths,
+        ConsequenceEngine consequences, ThematicIndexService thematicIndex)
     {
-        _llm = llm;
-        _db = db;
-        _graph = graph;
-        _facets = facets;
-        _outline = outline;
-        _agenda = agenda;
-        _storyState = storyState;
-        _eventLog = eventLog;
-        _knowledge = knowledge;
-        _starter = starter;
-        _semanticIndex = semanticIndex;
-        _inference = inference;
+        this.llm = llm;
+        this.db = db;
+        this.graph = graph;
+        this.facets = facets;
+        this.outlineSvc = outline;
+        this.agenda = agenda;
+        this.storyState = storyState;
+        this.eventLog = eventLog;
+        this.knowledge = knowledge;
+        this.starter = starter;
+        this.semanticIndex = semanticIndex;
+        this.inference = inference;
+        this.log = log;
+        this.paths = paths;
+        this.consequences = consequences;
+        this.thematicIndex = thematicIndex;
     }
 
     /// <summary>
@@ -89,120 +101,218 @@ public class StoryDirectorService
     /// </summary>
     public async Task<AutonomousStory> SurpriseMeAsync(CancellationToken ct = default)
     {
+        log.LogInformation("=== SurpriseMeAsync: Starting autonomous story generation ===");
         var story = new AutonomousStory();
 
-        // Phase 1: Pick a protagonist and supporting cast from the canon database.
-        // Biased 70/30 toward non-Kyle protagonists for variety.
-        Report("Choosing protagonist...");
-        var cast = await PickCastAsync(ct);
-        story.Protagonist = cast.protagonist;
-        story.Characters = cast.all;
+        try
+        {
+            // Phase 1: Pick a protagonist and supporting cast from the canon database.
+            Report("Choosing protagonist...");
+            var cast = await PickCastAsync(ct);
+            story.Protagonist = cast.protagonist;
+            story.Characters = cast.all;
+            log.LogInformation("Phase 1 complete: protagonist={Protagonist}, cast=[{Cast}]",
+                cast.protagonist, string.Join(", ", cast.all));
 
-        // Phase 2: Generate a premise from character goals
-        Report("Finding conflicts...");
-        var premises = await _agenda.GenerateScenePremisesAsync(cast.all, ct: ct);
-        var premise = premises.FirstOrDefault()?.Premise
-            ?? $"{cast.protagonist} receives a contract that forces them to confront something they've been avoiding.";
-        story.Premise = premise;
+            // Phase 2: Generate a premise from character goals
+            Report("Finding conflicts...");
+            var premises = await agenda.GenerateScenePremisesAsync(cast.all, ct: ct);
+            var premise = premises.FirstOrDefault()?.Premise
+                ?? $"{cast.protagonist} receives a contract that forces them to confront something they've been avoiding.";
+            story.Premise = premise;
+            log.LogInformation("Phase 2 complete: {PremiseCount} premises generated", premises.Count);
 
-        // Phase 3: Pick a location
-        var districts = _db.Districts;
-        var location = districts.Count > 0
-            ? districts[Random.Shared.Next(districts.Count)].Name
-            : "The Shelf";
-        story.Location = location;
+            // Phase 3: Pick a location
+            var districts = db.Districts;
+            var location = districts.Count > 0
+                ? districts[Random.Shared.Next(districts.Count)].Name
+                : "The Shelf";
+            story.Location = location;
 
-        // Phase 4: Generate outline with mandatory battle beat.
-        // The battle requirement is injected into the premise text so the LLM plans for it.
-        // EnsureBattleBeat() is a safety net — if the LLM ignores the instruction, we inject one.
-        Report("Architecting story arc...");
-        var battlePremise = premise + "\n\nIMPORTANT: Meridian 88 is a dangerous world. This story MUST include at least one battle/combat/violent conflict scene. Random crime and violence can erupt at any time. Include at least one beat specifically tagged for combat.";
-        var outline = await _outline.GenerateOutlineAsync(battlePremise, cast.all, location, 8, ct);
+            // Phase 4: Generate outline with mandatory battle beat + world consequences.
+            Report("Architecting story arc...");
+            var consequenceContext = consequences.BuildConsequenceContext(cast.protagonist);
+            var battlePremise = premise + "\n\nIMPORTANT: Meridian 88 is a dangerous world. This story MUST include at least one battle/combat/violent conflict scene. Random crime and violence can erupt at any time. Include at least one beat specifically tagged for combat."
+                + (consequenceContext.Length > 0 ? $"\n\nWORLD CONSEQUENCES FROM PREVIOUS STORIES:\n{consequenceContext}" : "");
+            var outline = await outlineSvc.GenerateOutlineAsync(battlePremise, cast.all, location, 8, ct);
+            story.Outline = outline;
+            story.Title = outline.Title;
+            log.LogInformation("Phase 4 complete: outline title={Title}, acts={ActCount}",
+                outline.Title, outline.Acts.Count);
+
+            EnsureBattleBeat(outline);
+
+            // Assign project ID and save the checkpoint with outline (before any beats)
+            var projectId = Guid.NewGuid().ToString("N");
+            story.ProjectId = projectId;
+            outlineSvc.Save(projectId, outline);
+            SaveCheckpoint(story);
+            log.LogInformation("Outline checkpoint saved: {ProjectId}", projectId);
+
+            // Phase 5: Write beats with per-beat resilience
+            storyState.InitializeCharacter(projectId, cast.protagonist, location);
+            foreach (var c in cast.all.Where(c => c != cast.protagonist))
+                storyState.InitializeCharacter(projectId, c);
+
+            await WritBeatsWithResilience(story, outline, cast, location, ct);
+        }
+        catch (OperationCanceledException)
+        {
+            log.LogWarning("Story generation cancelled by user — saving partial story");
+            story.FailureReason = "Cancelled by user";
+            SaveCheckpoint(story);
+            Report("Generation cancelled — partial story saved", story.Beats.Count, story.Outline?.Acts.SelectMany(a => a.Beats).Count() ?? 0);
+        }
+        catch (Exception ex)
+        {
+            log.LogError(ex, "Story generation failed at phase level — saving whatever we have");
+            story.FailureReason = $"Pipeline failure: {ex.Message}";
+            SaveCheckpoint(story);
+            Report($"Generation failed — partial story saved ({story.Beats.Count} beats)", story.Beats.Count, 0);
+        }
+
+        return story;
+    }
+
+    /// <summary>
+    /// Resume a previously failed or partially generated story from its last checkpoint.
+    /// Loads the saved outline and continues from the first unwritten beat.
+    /// </summary>
+    public async Task<AutonomousStory> ResumeStoryAsync(AutonomousStory story, CancellationToken ct = default)
+    {
+        if (story.Complete)
+        {
+            log.LogWarning("ResumeStoryAsync called on already-complete story {ProjectId}", story.ProjectId);
+            return story;
+        }
+
+        log.LogInformation("=== ResumeStoryAsync: Resuming story {ProjectId} from beat {BeatCount} ===",
+            story.ProjectId, story.Beats.Count);
+
+        story.FailureReason = null; // Clear previous failure
+
+        // Load or use existing outline
+        var outline = story.Outline ?? outlineSvc.Load(story.ProjectId);
+        if (outline == null || outline.Acts.Count == 0)
+        {
+            log.LogError("Cannot resume — no outline found for {ProjectId}", story.ProjectId);
+            story.FailureReason = "No outline available to resume from";
+            return story;
+        }
         story.Outline = outline;
-        story.Title = outline.Title;
 
-        // Ensure at least one beat has combat (inject if the LLM didn't)
-        EnsureBattleBeat(outline);
+        // Mark already-written beats
+        foreach (var existingBeat in story.Beats)
+            outlineSvc.MarkBeatWritten(outline, existingBeat.BeatIndex);
 
-        // Phase 5: Write each beat sequentially. Each beat feeds back into state tracking
-        // so the next beat gets accurate constraints (closed-loop generation).
-        var projectId = Guid.NewGuid().ToString("N");
-        story.ProjectId = projectId;
-        // Seed the story state with initial character positions from the world model
-        _storyState.InitializeCharacter(projectId, cast.protagonist, location);
-        foreach (var c in cast.all.Where(c => c != cast.protagonist))
-            _storyState.InitializeCharacter(projectId, c);
+        // Re-initialize story state from existing beats
+        var location = story.Location ?? "The Shelf";
+        storyState.InitializeCharacter(story.ProjectId, story.Protagonist, location);
+        foreach (var c in story.Characters.Where(c => c != story.Protagonist))
+            storyState.InitializeCharacter(story.ProjectId, c);
 
-        var allText = new List<string>();
+        var cast = (protagonist: story.Protagonist, all: story.Characters);
+        await WritBeatsWithResilience(story, outline, cast, location, ct);
+
+        return story;
+    }
+
+    /// <summary>
+    /// Core beat-writing loop with full resilience:
+    /// - Saves checkpoint after every successful beat
+    /// - Retries once on transient failures (timeout, connection)
+    /// - On permanent failure, saves partial story and stops gracefully
+    /// - Never loses completed work
+    /// </summary>
+    private async Task WritBeatsWithResilience(
+        AutonomousStory story, StoryOutline outline,
+        (string protagonist, List<string> all) cast, string location,
+        CancellationToken ct)
+    {
+        var allText = story.Beats.Select(b => b.Text).ToList();
         var totalBeats = outline.Acts.SelectMany(a => a.Beats).Count();
+        var projectId = story.ProjectId;
 
         foreach (var act in outline.Acts)
         {
             foreach (var beat in act.Beats)
             {
-                ct.ThrowIfCancellationRequested();
+                if (beat.Written) continue; // Skip already-written beats (resume case)
+
+                if (ct.IsCancellationRequested)
+                {
+                    log.LogWarning("Cancellation requested — saving checkpoint at beat {BeatIndex}", beat.BeatIndex);
+                    FinalizePartialStory(story, allText, "Cancelled by user");
+                    return;
+                }
 
                 Report($"Writing beat {beat.BeatIndex + 1}/{totalBeats}: {beat.Title}");
 
-                // Build full context from all intelligence services.
-                // Each service contributes a different layer of constraints:
-                // - storyConstraints: who is where, who is alive, inventory, injuries
-                // - knowledgeConstraints: what the POV character knows vs. doesn't
-                // - eventContext: recent plot events for continuity
-                // - outlineContext: where this beat sits in the arc
-                // - dialogueConstraints: speech patterns per character (voice distinction)
-                var storyConstraints = _storyState.BuildConstraints(projectId);
-                var knowledgeConstraints = _knowledge.BuildPovConstraints(projectId, cast.protagonist);
-                var eventContext = _eventLog.BuildRecentContext(projectId);
-                var outlineContext = _outline.BuildBeatContext(outline, beat.BeatIndex);
-                var dialogueConstraints = BuildDialogueConstraints(beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all);
+                string? beatText = null;
+                Exception? lastError = null;
 
-                var storySoFar = string.Join("\n\n", allText);
-                var paragraphs = allText.ToList();
-
-                // Generate the beat
-                var beatGoal = beat.Goal;
-                if (!string.IsNullOrEmpty(dialogueConstraints))
-                    beatGoal += "\n\n" + dialogueConstraints;
-
-                string beatText;
-                if (allText.Count == 0)
+                // Retry loop: try twice on transient failures
+                for (int attempt = 1; attempt <= 2; attempt++)
                 {
-                    var opening = await _starter.GenerateOpeningAsync(new StoryStarterRequest
+                    try
                     {
-                        Premise = beatGoal,
-                        Characters = beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all,
-                        Location = beat.Location ?? location,
-                    }, ct);
-                    beatText = opening.Text;
-                    if (string.IsNullOrEmpty(story.Title) || story.Title == "Outline generation failed")
-                        story.Title = opening.Title;
+                        beatText = await GenerateSingleBeat(
+                            story, outline, beat, cast, location, allText, projectId, ct);
+                        break; // Success — exit retry loop
+                    }
+                    catch (TaskCanceledException ex) when (!ct.IsCancellationRequested && attempt < 2)
+                    {
+                        // HTTP timeout (not user cancellation) — retry
+                        log.LogWarning(ex, "Beat {BeatIndex} timed out (attempt {Attempt}/2) — retrying", beat.BeatIndex, attempt);
+                        lastError = ex;
+                        await Task.Delay(2000, ct);
+                    }
+                    catch (OperationCanceledException)
+                    {
+                        // User cancellation — save and exit immediately
+                        FinalizePartialStory(story, allText, "Cancelled by user");
+                        return;
+                    }
+                    catch (HttpRequestException ex) when (attempt < 2)
+                    {
+                        log.LogWarning(ex, "Beat {BeatIndex} failed (attempt {Attempt}/2) — retrying in 3s", beat.BeatIndex, attempt);
+                        lastError = ex;
+                        await Task.Delay(3000, ct);
+                    }
+                    catch (Exception ex)
+                    {
+                        lastError = ex;
+                        break; // Non-transient error — don't retry
+                    }
                 }
-                else
+
+                if (beatText == null)
                 {
-                    beatText = await _starter.ContinueAsync(
-                        paragraphs, beatGoal, null, beat.Location ?? location,
-                        beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all,
-                        storyConstraints, knowledgeConstraints, eventContext, outlineContext, ct);
+                    // Beat generation failed after retries — save what we have and stop
+                    log.LogError(lastError, "Beat {BeatIndex} failed permanently — saving partial story ({BeatsWritten}/{TotalBeats})",
+                        beat.BeatIndex, story.Beats.Count, totalBeats);
+                    FinalizePartialStory(story, allText, $"Beat {beat.BeatIndex + 1} failed: {lastError?.Message ?? "unknown error"}");
+                    Report($"Generation paused — {story.Beats.Count}/{totalBeats} beats saved", story.Beats.Count, totalBeats);
+                    return;
                 }
 
                 allText.Add(beatText);
 
-                // Closed-loop feedback: extract what changed in this beat and update all
-                // intelligence services. This is what prevents continuity errors — the next
-                // beat will know that a character moved, got injured, or learned something.
-                // Best-effort: if extraction fails, generation continues with stale state
-                // rather than crashing the entire story.
+                // State extraction (best-effort)
                 try
                 {
-                    await _storyState.UpdateFromTextAsync(projectId, beatText, storySoFar + "\n\n" + beatText);
-                    await _eventLog.ExtractAndLogAsync(projectId, beatText, beat.BeatIndex, ct);
-                    var state = _storyState.GetState(projectId);
-                    _knowledge.SyncFromState(projectId, state, _eventLog.GetEvents(projectId), beat.BeatIndex);
+                    var storySoFar = string.Join("\n\n", allText);
+                    await storyState.UpdateFromTextAsync(projectId, beatText, storySoFar);
+                    await eventLog.ExtractAndLogAsync(projectId, beatText, beat.BeatIndex, ct);
+                    var state = storyState.GetState(projectId);
+                    knowledge.SyncFromState(projectId, state, eventLog.GetEvents(projectId), beat.BeatIndex);
                 }
-                catch { /* Best effort — stale state is better than a crashed story */ }
+                catch (Exception ex)
+                {
+                    log.LogWarning(ex, "State extraction failed for beat {BeatIndex} — continuing with stale state", beat.BeatIndex);
+                }
 
-                _outline.MarkBeatWritten(outline, beat.BeatIndex);
+                outlineSvc.MarkBeatWritten(outline, beat.BeatIndex);
 
                 story.Beats.Add(new GeneratedStoryBeat
                 {
@@ -212,21 +322,134 @@ public class StoryDirectorService
                     Act = act.ActNumber,
                 });
 
+                // CHECKPOINT: Save after every beat — this is the resilience guarantee
+                SaveCheckpoint(story);
+                log.LogInformation("Beat {BeatIndex}/{Total} saved: {Title}",
+                    beat.BeatIndex + 1, totalBeats, beat.Title);
+
                 Report($"Beat {beat.BeatIndex + 1}/{totalBeats} complete", beat.BeatIndex + 1, totalBeats);
             }
         }
 
+        // All beats written successfully
         story.FullText = string.Join("\n\n---\n\n", allText);
         story.Complete = true;
+        story.FailureReason = null;
+        SaveCheckpoint(story);
         Report("Story complete!", totalBeats, totalBeats);
 
-        return story;
+        log.LogInformation("=== Story complete: title={Title}, protagonist={Protagonist}, beats={BeatCount}, chars={TextLen} ===",
+            story.Title, story.Protagonist, story.Beats.Count, story.FullText.Length);
+    }
+
+    /// <summary>Generate a single beat's prose.</summary>
+    private async Task<string> GenerateSingleBeat(
+        AutonomousStory story, StoryOutline outline, OutlineBeat beat,
+        (string protagonist, List<string> all) cast, string location,
+        List<string> allText, string projectId, CancellationToken ct)
+    {
+        var storyConstraints = storyState.BuildConstraints(projectId);
+        var knowledgeConstraints = knowledge.BuildPovConstraints(projectId, cast.protagonist);
+        var eventContext = eventLog.BuildRecentContext(projectId);
+        var outlineContext = outlineSvc.BuildBeatContext(outline, beat.BeatIndex);
+        var dialogueConstraints = BuildDialogueConstraints(beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all);
+
+        // Thematic enrichment: extract themes from beat goal and pull relevant entities from all repos
+        var beatThemes = thematicIndex.ExtractThemes(beat.Goal + " " + beat.Title + " " + (beat.Location ?? ""));
+        var thematicHits = thematicIndex.GetRelevantEntities(beatThemes, 10);
+        var thematicContext = thematicHits.Count > 0
+            ? "WORLD DETAILS RELEVANT TO THIS BEAT (use naturally, don't list):\n" +
+              string.Join("\n", thematicHits.Select(h => $"  [{h.EntityType}] {h.EntityName} (themes: {string.Join(", ", h.Themes)})"))
+            : "";
+
+        var paragraphs = allText.ToList();
+        var beatGoal = beat.Goal;
+        if (!string.IsNullOrEmpty(dialogueConstraints))
+            beatGoal += "\n\n" + dialogueConstraints;
+
+        if (allText.Count == 0)
+        {
+            var opening = await starter.GenerateOpeningAsync(new StoryStarterRequest
+            {
+                Premise = beatGoal,
+                Characters = beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all,
+                Location = beat.Location ?? location,
+            }, ct);
+
+            if (string.IsNullOrEmpty(story.Title) || story.Title == "Outline generation failed")
+                story.Title = opening.Title;
+
+            return opening.Text;
+        }
+
+        var fullOutlineContext = outlineContext + (thematicContext.Length > 0 ? "\n\n" + thematicContext : "");
+        return await starter.ContinueAsync(
+            paragraphs, beatGoal, null, beat.Location ?? location,
+            beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all,
+            storyConstraints, knowledgeConstraints, eventContext, fullOutlineContext, ct);
+    }
+
+    /// <summary>Save a partial or complete story as a checkpoint to disk.</summary>
+    private void SaveCheckpoint(AutonomousStory story)
+    {
+        try
+        {
+            var dir = Path.Combine(paths.DataRoot, "story_blocks");
+            Directory.CreateDirectory(dir);
+            var path = Path.Combine(dir, $"{story.ProjectId}.checkpoint.json");
+            var json = System.Text.Json.JsonSerializer.Serialize(story,
+                new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(path, json);
+        }
+        catch (Exception ex)
+        {
+            log.LogError(ex, "Failed to save checkpoint for {ProjectId} — partial work may be lost", story.ProjectId);
+        }
+    }
+
+    /// <summary>Load a checkpoint from disk.</summary>
+    public AutonomousStory? LoadCheckpoint(string projectId)
+    {
+        var path = Path.Combine(paths.DataRoot, "story_blocks", $"{projectId}.checkpoint.json");
+        if (!File.Exists(path)) return null;
+        try
+        {
+            var json = File.ReadAllText(path);
+            return System.Text.Json.JsonSerializer.Deserialize<AutonomousStory>(json);
+        }
+        catch (Exception ex)
+        {
+            log.LogError(ex, "Failed to load checkpoint for {ProjectId}", projectId);
+            return null;
+        }
+    }
+
+    /// <summary>List all available checkpoints (partial and complete stories).</summary>
+    public List<AutonomousStory> ListCheckpoints()
+    {
+        var dir = Path.Combine(paths.DataRoot, "story_blocks");
+        if (!Directory.Exists(dir)) return [];
+        return Directory.GetFiles(dir, "*.checkpoint.json")
+            .Select(f => { try { return System.Text.Json.JsonSerializer.Deserialize<AutonomousStory>(File.ReadAllText(f)); } catch { return null; } })
+            .Where(s => s != null)
+            .ToList()!;
+    }
+
+    /// <summary>Finalize a partial story — assemble text, set failure reason, save.</summary>
+    private void FinalizePartialStory(AutonomousStory story, List<string> allText, string reason)
+    {
+        story.FullText = string.Join("\n\n---\n\n", allText);
+        story.Complete = false;
+        story.FailureReason = reason;
+        SaveCheckpoint(story);
+        log.LogWarning("Partial story saved: {ProjectId}, {BeatCount} beats, reason={Reason}",
+            story.ProjectId, story.Beats.Count, reason);
     }
 
     /// <summary>Pick a protagonist and 2-4 supporting characters from the canon.</summary>
     private async Task<(string protagonist, List<string> all)> PickCastAsync(CancellationToken ct)
     {
-        var allChars = _db.Characters;
+        var allChars = db.Characters;
         if (allChars.Count == 0)
             return ("Kyle", ["Kyle", "Sable"]);
 
@@ -317,7 +540,7 @@ public class StoryDirectorService
         var lines = new List<string> { "DIALOGUE VOICE DISTINCTION — each character must sound DIFFERENT:" };
         foreach (var name in charactersInScene)
         {
-            var c = _db.FindCharacter(name);
+            var c = db.FindCharacter(name);
             if (c == null) continue;
             var sp = c.SpeechPatterns;
             if (sp.Vocabulary.Length > 0 || sp.Cadence.Length > 0)
@@ -358,6 +581,9 @@ public class AutonomousStory
     public List<GeneratedStoryBeat> Beats { get; set; } = [];
     public string FullText { get; set; } = "";
     public bool Complete { get; set; }
+    public string? FailureReason { get; set; }
+    public DateTime Created { get; set; } = DateTime.UtcNow;
+    public DateTime LastModified { get; set; } = DateTime.UtcNow;
 }
 
 public class GeneratedStoryBeat

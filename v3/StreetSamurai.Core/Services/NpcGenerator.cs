@@ -15,17 +15,17 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class NpcGenerator
 {
-    private readonly ILlmService _llm;
-    private readonly DatabaseService _db;
-    private readonly CharacterRepository _charRepo;
-    private readonly WorldGraphService _graph;
+    private readonly ILlmService llm;
+    private readonly DatabaseService db;
+    private readonly CharacterRepository charRepo;
+    private readonly WorldGraphService graph;
 
     public NpcGenerator(ILlmService llm, DatabaseService db, CharacterRepository charRepo, WorldGraphService graph)
     {
-        _llm = llm;
-        _db = db;
-        _charRepo = charRepo;
-        _graph = graph;
+        this.llm = llm;
+        this.db = db;
+        this.charRepo = charRepo;
+        this.graph = graph;
     }
 
     /// <summary>
@@ -36,7 +36,7 @@ public class NpcGenerator
         string role, string context, string? location = null,
         string? affiliation = null, CancellationToken ct = default)
     {
-        var existingNames = _db.Characters.Select(c => c.Name).ToHashSet();
+        var existingNames = db.Characters.Select(c => c.Name).ToHashSet();
 
         var system = """
             You are a character designer for cyberpunk fiction set in Meridian 88 (2100).
@@ -96,7 +96,7 @@ public class NpcGenerator
 
         try
         {
-            var response = await _llm.GenerateAsync(system, user, 0.9, 3072, ct: ct);
+            var response = await llm.GenerateAsync(system, user, 0.9, 3072, ct: ct);
             var json = response.Trim();
             if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
             if (json.EndsWith("```")) json = json[..^3];
@@ -111,11 +111,11 @@ public class NpcGenerator
                     character.Name += $" ({Random.Shared.Next(100, 999)})";
 
                 // Save to repository — this character is now permanent canon
-                _charRepo.Save(character);
+                charRepo.Save(character);
 
                 // Add to world graph
                 var nodeId = WorldGraphService.Slugify(character.Name);
-                _graph.AddNode(new Models.Graph.WorldNode
+                graph.AddNode(new Models.Graph.WorldNode
                 {
                     Id = nodeId,
                     Name = character.Name,
@@ -146,7 +146,7 @@ public class NpcGenerator
         var names = new List<string>();
 
         // Generate client if not an existing character
-        if (!string.IsNullOrWhiteSpace(contract.ClientName) && _db.FindCharacter(contract.ClientName) == null)
+        if (!string.IsNullOrWhiteSpace(contract.ClientName) && db.FindCharacter(contract.ClientName) == null)
         {
             var name = await GenerateAndSaveAsync(
                 $"Contract client — {contract.ClientName}",
@@ -156,7 +156,7 @@ public class NpcGenerator
         }
 
         // Generate secondary antagonist if needed
-        if (!string.IsNullOrWhiteSpace(contract.SecondaryAntagonist) && _db.FindCharacter(contract.SecondaryAntagonist) == null)
+        if (!string.IsNullOrWhiteSpace(contract.SecondaryAntagonist) && db.FindCharacter(contract.SecondaryAntagonist) == null)
         {
             var name = await GenerateAndSaveAsync(
                 $"Antagonist — {contract.SecondaryAntagonist}",

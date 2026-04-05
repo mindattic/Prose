@@ -9,7 +9,7 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class LoreService
 {
-    private readonly DatabaseService _db;
+    private readonly DatabaseService db;
 
     private static readonly JsonSerializerOptions JsonOpts = new()
     {
@@ -19,14 +19,14 @@ public class LoreService
 
     public LoreService(DatabaseService db)
     {
-        _db = db;
+        this.db = db;
     }
 
     // ── Documents ────────────────────────────────────────────
 
     public List<Document> ListDocuments()
     {
-        return _db.WorldbuildingDocs
+        return db.WorldbuildingDocs
             .Select(d => new Document
             {
                 FileName = d.FileName,
@@ -39,7 +39,7 @@ public class LoreService
 
     public string? ReadDocument(string nameOrPartial)
     {
-        var doc = _db.WorldbuildingDocs
+        var doc = db.WorldbuildingDocs
             .FirstOrDefault(d => d.FileName.Contains(nameOrPartial, StringComparison.OrdinalIgnoreCase));
         return doc?.Body;
     }
@@ -47,13 +47,13 @@ public class LoreService
     // ── Text Search ─────────────────────────────────────────
 
     public List<SearchResult> Search(string query, int maxResults = 20)
-        => _db.Search(query, maxResults);
+        => db.Search(query, maxResults);
 
     // ── Corponations ────────────────────────────────────────
 
     public List<Corponation> ListCorponations(string? filter = null)
     {
-        var corps = _db.Corponations.Select(MapCorponation).ToList();
+        var corps = db.Corponations.Select(MapCorponation).ToList();
         if (string.IsNullOrWhiteSpace(filter)) return corps;
         var ft = filter.ToLowerInvariant();
         return corps
@@ -67,9 +67,9 @@ public class LoreService
     {
         CorponationData? data;
         if (int.TryParse(identifier, out var num))
-            data = _db.Corponations.FirstOrDefault(c => c.Number == num);
+            data = db.Corponations.FirstOrDefault(c => c.Number == num);
         else
-            data = _db.Corponations.FirstOrDefault(c =>
+            data = db.Corponations.FirstOrDefault(c =>
                 c.Name.Contains(identifier, StringComparison.OrdinalIgnoreCase));
         return data != null ? MapCorponation(data) : null;
     }
@@ -80,7 +80,7 @@ public class LoreService
 
     public List<Faction> ListFactions()
     {
-        return _db.Factions
+        return db.Factions
             .Select(f => new Faction
             {
                 Name = f.Name,
@@ -100,7 +100,7 @@ public class LoreService
 
     public string? ReadFactionJson(string nameOrPartial)
     {
-        var faction = _db.Factions
+        var faction = db.Factions
             .FirstOrDefault(f => f.Name.Contains(nameOrPartial, StringComparison.OrdinalIgnoreCase));
         return faction != null ? JsonSerializer.Serialize(faction, JsonOpts) : null;
     }
@@ -109,7 +109,7 @@ public class LoreService
 
     public List<District> ListDistricts()
     {
-        return _db.Districts
+        return db.Districts
             .Select(d => new District
             {
                 Name = d.Name,
@@ -133,7 +133,7 @@ public class LoreService
 
     public string? ReadDistrictJson(string nameOrPartial)
     {
-        var district = _db.Districts
+        var district = db.Districts
             .FirstOrDefault(d => d.Name.Contains(nameOrPartial, StringComparison.OrdinalIgnoreCase));
         return district != null ? JsonSerializer.Serialize(district, JsonOpts) : null;
     }
@@ -142,7 +142,7 @@ public class LoreService
 
     public string? ReadTechnology()
     {
-        var doc = _db.WorldbuildingDocs
+        var doc = db.WorldbuildingDocs
             .FirstOrDefault(d => d.FileName.Equals("technology", StringComparison.OrdinalIgnoreCase));
         return doc?.Body;
     }
@@ -153,9 +153,9 @@ public class LoreService
     {
         var results = new List<(string, string)>();
 
-        results.Add(("story_bible", JsonSerializer.Serialize(_db.StoryBible, JsonOpts)));
-        results.Add(("literary_rules", JsonSerializer.Serialize(_db.LiteraryRules, JsonOpts)));
-        results.Add(("motifs", JsonSerializer.Serialize(_db.Motifs, JsonOpts)));
+        results.Add(("story_bible", JsonSerializer.Serialize(db.StoryBible, JsonOpts)));
+        results.Add(("literary_rules", JsonSerializer.Serialize(db.LiteraryRules, JsonOpts)));
+        results.Add(("motifs", JsonSerializer.Serialize(db.Motifs, JsonOpts)));
 
         return results;
     }
@@ -164,7 +164,7 @@ public class LoreService
 
     public string? ReadCharacterJson(string nameOrPartial)
     {
-        var character = _db.FindCharacter(nameOrPartial);
+        var character = db.FindCharacter(nameOrPartial);
         return character != null ? JsonSerializer.Serialize(character, JsonOpts) : null;
     }
 
@@ -172,7 +172,7 @@ public class LoreService
 
     public List<Character> ListCharacters()
     {
-        return _db.Characters
+        return db.Characters
             .Select(c => new Character
             {
                 Name = c.Name,
@@ -208,7 +208,7 @@ public class LoreService
     /// Returns the full character psychology context for LLM prompts.
     /// </summary>
     public string GetCharacterPsychologyContext(string nameOrAlias)
-        => _db.GetCharacterContext(nameOrAlias);
+        => db.GetCharacterContext(nameOrAlias);
 
     // ── Helpers ──────────────────────────────────────────────
 

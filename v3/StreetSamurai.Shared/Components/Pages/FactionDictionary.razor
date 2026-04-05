@@ -6,56 +6,59 @@
 
 <div class="dict-layout">
     <div class="dict-list bg-dark border-end border-secondary">
-        @foreach (var f in _items)
+        @foreach (var f in items)
         {
-            <div class="list-item text-light @(_editing?.Name == f.Name ? "active" : "")" @onclick="() => Edit(f)">
+            <div class="list-item text-light @(editing?.Name == f.Name ? "active" : "")" @onclick="() => Edit(f)">
                 <div class="fw-bold small">@f.Name</div>
                 <div class="text-muted" style="font-size: 0.7rem;">@f.Territory</div>
             </div>
         }
         <div class="p-2">
+            <ExportButton Mode="repo" RepoName="Factions" GetRepoEntries="GetExportEntries" />
             <button class="btn btn-sm btn-outline-danger w-100" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New Faction</button>
         </div>
     </div>
 
     <div class="dict-editor">
-        @if (_editing != null)
+        @if (editing != null)
         {
             <div class="d-flex justify-content-between align-items-center mb-3">
-                <h5 class="text-danger mb-0">@(_isNew ? "New Faction" : _editing.Name)</h5>
+                <h5 class="text-danger mb-0">@(isNew ? "New Faction" : editing.Name)</h5>
                 <div class="d-flex gap-2">
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
-                    @if (!_isNew && !_confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-trash3"></i></button> }
+                    @if (!isNew) { <ExportButton Mode="entry" RepoName="Factions" EntryName="@editing.Name" EntryJson="@System.Text.Json.JsonSerializer.Serialize(editing)" /> }
+                    @if (!isNew && !_confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-trash3"></i></button> }
                     @if (_confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button> }
                 </div>
             </div>
 
             <div class="row g-3 mb-3">
-                <div class="col-4"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Name" /></div>
-                <div class="col-4"><div class="field-label">Motto</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Motto" /></div>
-                <div class="col-4"><div class="field-label">Territory</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Territory" /></div>
+                <div class="col-4"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
+                <div class="col-4"><div class="field-label">Motto</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Motto" /></div>
+                <div class="col-4"><div class="field-label">Territory</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Territory" /></div>
             </div>
             <div class="row g-3 mb-3">
-                <div class="col-6"><div class="field-label">Leadership</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Leadership" /></div>
+                <div class="col-6"><div class="field-label">Leadership</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Leadership" /></div>
             </div>
 
-            <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.Description"></textarea></div>
-            <div class="mb-3"><div class="field-label">Ideology</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.Ideology"></textarea></div>
-            <div class="mb-3"><div class="field-label">Narrative Function</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editing.NarrativeFunction"></textarea></div>
+            <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Description"></textarea></div>
+            <div class="mb-3"><div class="field-label">Ideology</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Ideology"></textarea></div>
+            <div class="mb-3"><div class="field-label">Narrative Function</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.NarrativeFunction"></textarea></div>
         }
         else { <div class="text-muted d-flex align-items-center justify-content-center h-100">Select a faction or create a new one</div> }
     </div>
 </div>
 
 @code {
-    private List<FactionData> _items = [];
-    private FactionData? _editing;
-    private bool _isNew, _confirmDelete;
-    private string _originalName = "";
-    protected override void OnInitialized() { Repo.Reload(); _items = Repo.GetAll(); if (Nav.Uri.Contains("new=true")) AddNew(); }
-    private void AddNew() { _editing = new FactionData(); _isNew = true; _confirmDelete = false; }
-    private void Edit(FactionData f) { _editing = f; _originalName = f.Name; _isNew = false; _confirmDelete = false; }
-    private void SaveEdit() { if (_editing == null || string.IsNullOrWhiteSpace(_editing.Name)) return; if (!_isNew && _originalName != _editing.Name) Repo.Delete(_originalName); Repo.Save(_editing); _editing = null; _items = Repo.GetAll(); }
-    private void DoDelete() { if (_editing == null) return; Graph.RemoveNode(_editing.Name); Repo.Delete(_editing.Name); _editing = null; _confirmDelete = false; _items = Repo.GetAll(); }
+    private List<FactionData> items = [];
+    private FactionData? editing;
+    private bool isNew, _confirmDelete;
+    private string originalName = "";
+    protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); if (Nav.Uri.Contains("new=true")) AddNew(); }
+    private void AddNew() { editing = new FactionData(); isNew = true; _confirmDelete = false; }
+    private void Edit(FactionData f) { editing = f; originalName = f.Name; isNew = false; _confirmDelete = false; }
+    private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return; if (!isNew && originalName != editing.Name) Repo.Delete(originalName); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
+    private void DoDelete() { if (editing == null) return; Graph.RemoveNode(editing.Name); Repo.Delete(editing.Name); editing = null; _confirmDelete = false; items = Repo.GetAll(); }
     protected override async Task OnAfterRenderAsync(bool firstRender) { await JS.InvokeVoidAsync("writeInterop.autoResizeAll"); }
+    private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
 }

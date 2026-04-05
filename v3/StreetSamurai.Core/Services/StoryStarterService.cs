@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
 
@@ -5,14 +6,15 @@ namespace StreetSamurai.Core.Services;
 
 public class StoryStarterService
 {
-    private readonly ILlmService _llm;
-    private readonly WorldGraphService _graph;
-    private readonly LoreService _canon;
-    private readonly DatabaseService _canonDb;
-    private readonly FacetService _facets;
-    private readonly IPathProvider _paths;
-    private readonly SemanticIndexService _semanticIndex;
-    private readonly InferenceService _inference;
+    private readonly ILlmService llm;
+    private readonly WorldGraphService graph;
+    private readonly LoreService canon;
+    private readonly DatabaseService canonDb;
+    private readonly FacetService facets;
+    private readonly IPathProvider paths;
+    private readonly SemanticIndexService semanticIndex;
+    private readonly InferenceService inference;
+    private readonly ILogger<StoryStarterService> log;
 
     // Seed premises for zero-input generation — drawn from the world's actual tensions
     private static readonly string[] SeedPremises =
@@ -25,7 +27,7 @@ public class StoryStarterService
         "Mrs. Chen's shop is targeted for demolition. The corporate order has Sable's cipher on it.",
         "A child from the Grey Stacks shows up with military-grade augments and no memory of how they got them.",
         "The Collective intercepts a data shipment that contains employee records from a facility in the Mindanao Economic Zone.",
-        "Tanaka's sword — the one Kyle carries — is identified by a Corporate Wars veteran who says it was stolen from a dead ronin.",
+        "Seo's blade — the one Kyle carries — is identified by a Corporate Wars veteran who claims it was taken from a battlefield in the Upper Peninsula.",
         "A blackout hits the Shelf. When power returns, three people are missing and a door that was always locked is open.",
         "Sable cooks dinner for two. The second plate is a negotiation tactic.",
         "Pixel builds something that works too well. Corporate scouts arrive within hours.",
@@ -35,16 +37,18 @@ public class StoryStarterService
     public StoryStarterService(
         ILlmService llm, WorldGraphService graph, LoreService canon,
         DatabaseService canonDb, FacetService facets, IPathProvider paths,
-        SemanticIndexService semanticIndex, InferenceService inference)
+        SemanticIndexService semanticIndex, InferenceService inference,
+        ILogger<StoryStarterService> log)
     {
-        _llm = llm;
-        _graph = graph;
-        _canon = canon;
-        _canonDb = canonDb;
-        _facets = facets;
-        _paths = paths;
-        _semanticIndex = semanticIndex;
-        _inference = inference;
+        this.llm = llm;
+        this.graph = graph;
+        this.canon = canon;
+        this.canonDb = canonDb;
+        this.facets = facets;
+        this.paths = paths;
+        this.semanticIndex = semanticIndex;
+        this.inference = inference;
+        this.log = log;
     }
 
     /// <summary>
@@ -52,8 +56,8 @@ public class StoryStarterService
     /// </summary>
     public Task<GeneratedOpening> GenerateRandomAsync(CancellationToken ct = default)
     {
-        var allChars = _canonDb.Characters;
-        var allDistricts = _canonDb.Districts;
+        var allChars = canonDb.Characters;
+        var allDistricts = canonDb.Districts;
 
         // Pick 1-3 characters at random
         var charCount = Random.Shared.Next(1, Math.Min(4, allChars.Count + 1));
@@ -84,10 +88,15 @@ public class StoryStarterService
     public async Task<GeneratedOpening> GenerateOpeningAsync(
         StoryStarterRequest request, CancellationToken ct = default)
     {
-        _graph.EnsureLoaded();
+        log.LogInformation("GenerateOpeningAsync: characters=[{Characters}], location={Location}, premise={PremisePreview}",
+            string.Join(", ", request.Characters), request.Location ?? "none",
+            request.Premise.Length > 80 ? request.Premise[..80] + "..." : request.Premise);
+        graph.EnsureLoaded();
 
         // Build world context — graph-first, typed JSON as fallback
-        var literaryRules = _canonDb.GetLiteraryRulesPrompt();
+        var literaryRules = canonDb.GetLiteraryRulesPrompt();
+        var toneBible = canonDb.GetToneBiblePrompt();
+        var sensoryPalette = canonDb.GetSensoryPalettePrompt(request.Location);
         var storyBible = JsonStoryBible();
 
         // Pull full scene context from graph: characters (with gender, pronouns,
@@ -95,7 +104,7 @@ public class StoryStarterService
         // affiliations, and 1-hop neighbors for relationship web
         var entityNames = new List<string>(request.Characters);
         if (request.Location != null) entityNames.Add(request.Location);
-        var sceneContext = _graph.GetSceneContext(entityNames);
+        var sceneContext = graph.GetSceneContext(entityNames);
 
         // Fall back to typed JSON if graph is empty
         string locationContext, characterContext;
@@ -113,14 +122,14 @@ public class StoryStarterService
         var worldFlavor = BuildWorldFlavor();
 
         // Select lead facet based on character behavioral baselines
-        var blended = _canonDb.GetBlendedWeights(request.Characters);
+        var blended = canonDb.GetBlendedWeights(request.Characters);
         var weights = new FacetState
         {
             Wound = blended.Wound, Ideal = blended.Ideal, Id = blended.Id,
             Shadow = blended.Shadow, Mask = blended.Mask, Ghost = blended.Ghost,
         };
         var seedTriggers = InferTriggers(request);
-        var (lead, supporting) = _facets.SelectFacets(weights, seedTriggers, []);
+        var (lead, supporting) = facets.SelectFacets(weights, seedTriggers, []);
 
         var supportingVoices = string.Join("\n", supporting.Select(f =>
             $"- {f.Label}: {f.VoiceTone}"));
@@ -140,8 +149,12 @@ public class StoryStarterService
             STORY BIBLE:
             {storyBible}
 
+            {toneBible}
+
             LITERARY RULES — THESE ARE NON-NEGOTIABLE:
             {literaryRules}
+
+            {sensoryPalette}
 
             LOCATION:
             {locationContext}
@@ -170,14 +183,17 @@ public class StoryStarterService
             Write ONLY the story text. No titles, no headers, no metadata.
             """;
 
-        var text = await _llm.GenerateAsync(system, user, lead.Temperature, 2048, lead.Model, ct);
+        var text = await llm.GenerateAsync(system, user, lead.Temperature, 2048, lead.Model, ct);
 
         // Generate a title
         var titlePrompt = $"Given this story opening, generate a short, evocative title (2-5 words, no quotes). The title should feel like graffiti on a wall — raw, cryptic, beautiful:\n\n{text}";
-        var title = await _llm.GenerateAsync(
+        var title = await llm.GenerateAsync(
             "You generate short, evocative titles for cyberpunk fiction. Respond with ONLY the title, nothing else.",
             titlePrompt, 0.9, 50, ct: ct);
         title = title.Trim().Trim('"').Trim('\'');
+
+        log.LogInformation("Opening generated: title={Title}, facet={LeadFacet}, textLen={TextLen}",
+            title, lead.Name, text.Length);
 
         return new GeneratedOpening
         {
@@ -192,7 +208,7 @@ public class StoryStarterService
 
     private string JsonStoryBible()
     {
-        var sb = _canonDb.StoryBible;
+        var sb = canonDb.StoryBible;
         var lines = new List<string>();
         if (sb.Title.Length > 0) lines.Add($"Title: {sb.Title}");
         if (sb.Genre.Length > 0) lines.Add($"Genre: {sb.Genre}");
@@ -209,11 +225,11 @@ public class StoryStarterService
         if (string.IsNullOrEmpty(location)) return "Location not specified — choose one that fits.";
 
         // Get rich context from typed JSON database
-        var districtContext = _canonDb.GetDistrictContext(location);
+        var districtContext = canonDb.GetDistrictContext(location);
 
         // Supplement with graph relationships
         var id = WorldGraphService.Slugify(location);
-        var graphContext = _graph.GetContextForNode(id);
+        var graphContext = graph.GetContextForNode(id);
 
         if (districtContext.Length > 0)
         {
@@ -233,19 +249,19 @@ public class StoryStarterService
         foreach (var name in characters)
         {
             // Primary: typed JSON data with full psychology
-            var ctx = _canonDb.GetCharacterContext(name);
+            var ctx = canonDb.GetCharacterContext(name);
             if (ctx.Length > 0)
             {
                 // Supplement with graph relationships (broader world connections)
                 var id = WorldGraphService.Slugify(name);
-                var edges = _graph.GetAllEdges(id);
+                var edges = graph.GetAllEdges(id);
                 if (edges.Any())
                 {
                     ctx += "\n\nWORLD GRAPH CONNECTIONS:\n";
                     foreach (var edge in edges)
                     {
                         var other = edge.Source == id ? edge.Target : edge.Source;
-                        var otherNode = _graph.GetNode(other);
+                        var otherNode = graph.GetNode(other);
                         ctx += $"  [{edge.RelationType}] {otherNode?.Name ?? other}: {edge.Description}\n";
                     }
                 }
@@ -255,7 +271,7 @@ public class StoryStarterService
             {
                 // Fallback: graph-only context
                 var id = WorldGraphService.Slugify(name);
-                var graphCtx = _graph.GetContextForNode(id);
+                var graphCtx = graph.GetContextForNode(id);
                 if (graphCtx.Length > 0) contexts.Add(graphCtx);
             }
         }
@@ -268,7 +284,7 @@ public class StoryStarterService
         var lines = new List<string>();
 
         // Typed corponation data
-        var corps = _canonDb.Corponations;
+        var corps = canonDb.Corponations;
         if (corps.Any())
         {
             foreach (var c in corps.OrderBy(_ => Random.Shared.Next()).Take(2))
@@ -276,7 +292,7 @@ public class StoryStarterService
         }
 
         // Profile context
-        var profile = _canonDb.CharacterProfile;
+        var profile = canonDb.CharacterProfile;
         if (profile.CoreContradiction.Length > 0)
             lines.Add($"PROTAGONIST CONTRADICTION: {profile.CoreContradiction}");
 
@@ -285,7 +301,7 @@ public class StoryStarterService
 
     private FacetState LoadBlendedWeights(List<string> characters)
     {
-        var allChars = _canon.ListCharacters();
+        var allChars = canon.ListCharacters();
         var weights = new List<FacetState>();
 
         foreach (var name in characters)
@@ -322,12 +338,16 @@ public class StoryStarterService
         string? knowledgeConstraints = null, string? eventContext = null,
         string? outlineContext = null, CancellationToken ct = default)
     {
-        _graph.EnsureLoaded();
+        log.LogInformation("ContinueAsync: paragraphs={ParagraphCount}, characters=[{Characters}], location={Location}",
+            existingParagraphs.Count, string.Join(", ", characters), location ?? "none");
+        graph.EnsureLoaded();
 
-        var literaryRules = _canonDb.GetLiteraryRulesPrompt();
+        var literaryRules = canonDb.GetLiteraryRulesPrompt();
+        var toneBibleCont = canonDb.GetToneBiblePrompt();
+        var sensoryPaletteCont = canonDb.GetSensoryPalettePrompt(location);
         var storyBible = JsonStoryBible();
 
-        var session = new NarrativeSessionContext(_graph, _semanticIndex, _inference);
+        var session = new NarrativeSessionContext(graph, semanticIndex, inference);
         session.TouchAll(characters);
         if (location != null) session.Touch(location);
 
@@ -338,14 +358,14 @@ public class StoryStarterService
         var characterContext = session.BuildContext();
         var locationContext = "";
 
-        var blended = _canonDb.GetBlendedWeights(characters);
+        var blended = canonDb.GetBlendedWeights(characters);
         var weights = new FacetState
         {
             Wound = blended.Wound, Ideal = blended.Ideal, Id = blended.Id,
             Shadow = blended.Shadow, Mask = blended.Mask, Ghost = blended.Ghost,
         };
         var seedTriggers = InferTriggers(new StoryStarterRequest { Premise = prompt, Mood = mood });
-        var (lead, _) = _facets.SelectFacets(weights, seedTriggers, []);
+        var (lead, _) = facets.SelectFacets(weights, seedTriggers, []);
 
         var system = $"""
             You are a literary fiction author continuing a cyberpunk story
@@ -357,8 +377,12 @@ public class StoryStarterService
             STORY BIBLE:
             {storyBible}
 
+            {toneBibleCont}
+
             LITERARY RULES — THESE ARE NON-NEGOTIABLE:
             {literaryRules}
+
+            {sensoryPaletteCont}
 
             {(locationContext.Length > 0 ? $"LOCATION:\n{locationContext}" : "")}
 
@@ -387,7 +411,7 @@ public class StoryStarterService
             Write ONLY the story text. No titles, no headers, no metadata.
             """;
 
-        return await _llm.GenerateAsync(system, user, lead.Temperature, 2048, lead.Model, ct);
+        return await llm.GenerateAsync(system, user, lead.Temperature, 2048, lead.Model, ct);
     }
 
     /// <summary>
@@ -397,7 +421,7 @@ public class StoryStarterService
         List<(string text, bool locked)> blocks, string? mood, string? location,
         List<string> characters, CancellationToken ct = default)
     {
-        var literaryRules = _canonDb.GetLiteraryRulesPrompt();
+        var literaryRules = canonDb.GetLiteraryRulesPrompt();
 
         // Build the text with markers so the LLM knows what to touch
         var sb = new System.Text.StringBuilder();
@@ -432,7 +456,7 @@ public class StoryStarterService
             {sb}
             """;
 
-        var result = await _llm.GenerateAsync(system, user, 0.4, 4096, ct: ct);
+        var result = await llm.GenerateAsync(system, user, 0.4, 4096, ct: ct);
 
         // Split back into paragraphs
         var polished = result
@@ -451,13 +475,13 @@ public class StoryStarterService
         string selectedText, string? direction, string? mood, string? location,
         List<string> characters, CancellationToken ct = default)
     {
-        _graph.EnsureLoaded();
-        var literaryRules = _canonDb.GetLiteraryRulesPrompt();
+        graph.EnsureLoaded();
+        var literaryRules = canonDb.GetLiteraryRulesPrompt();
 
         // Graph context for rewrites — ensures character facts stay consistent
         var entityNames = new List<string>(characters);
         if (location != null) entityNames.Add(location);
-        var characterContext = _graph.GetSceneContext(entityNames);
+        var characterContext = graph.GetSceneContext(entityNames);
         if (string.IsNullOrWhiteSpace(characterContext))
             characterContext = BuildCharacterContext(characters);
 
@@ -490,7 +514,7 @@ public class StoryStarterService
             Maintain the same approximate length unless the direction says otherwise.
             """;
 
-        return await _llm.GenerateAsync(system, user, 0.5, 4096, ct: ct);
+        return await llm.GenerateAsync(system, user, 0.5, 4096, ct: ct);
     }
 
     private static List<string> InferTriggers(StoryStarterRequest request)

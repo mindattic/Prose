@@ -102,7 +102,31 @@ public class VocabularyRepository : JsonDirectoryRepository<VocabularyEntry>
         : base(Path.Combine(paths.EngineDataDir, "vocabulary"), v => v.Term) { }
 }
 
+public class SyntheticLifeRepository : JsonDirectoryRepository<SyntheticLifeData>
+{
+    public SyntheticLifeRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "synthetics"), s => s.Name) { }
+}
+
+public class GenewareRepository : JsonDirectoryRepository<GenewareData>
+{
+    public GenewareRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "geneware"), g => g.Name) { }
+}
+
+public class TransportationRepository : JsonDirectoryRepository<TransportationData>
+{
+    public TransportationRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "transportation"), t => t.Name) { }
+}
+
 // Singleton repositories stay file-based (they're single objects, not collections)
+public class ToneBibleRepository : JsonSingletonRepository<ToneBibleData>
+{
+    public ToneBibleRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "cyberpunk_tone_bible.json")) { }
+}
+
 public class StoryBibleRepository : JsonSingletonRepository<StoryBibleData>
 {
     public StoryBibleRepository(IPathProvider paths)

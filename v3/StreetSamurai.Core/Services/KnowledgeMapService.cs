@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -16,14 +17,16 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class KnowledgeMapService
 {
-    private readonly IPathProvider _paths;
+    private readonly IPathProvider paths;
+    private readonly ILogger<KnowledgeMapService> log;
 
     // Per-story knowledge maps
     private readonly Dictionary<string, KnowledgeMap> _maps = new();
 
-    public KnowledgeMapService(IPathProvider paths)
+    public KnowledgeMapService(IPathProvider paths, ILogger<KnowledgeMapService> log)
     {
-        _paths = paths;
+        this.paths = paths;
+        this.log = log;
     }
 
     /// <summary>Get or create the knowledge map for a story.</summary>
@@ -201,7 +204,7 @@ public class KnowledgeMapService
         var path = GetPath(projectId);
         if (!File.Exists(path)) return null;
         try { return JsonSerializer.Deserialize<KnowledgeMap>(File.ReadAllText(path)); }
-        catch { return null; }
+        catch (Exception ex) { log.LogWarning(ex, "Failed to load knowledge map from {Path}", path); return null; }
     }
 
     private void SaveToDisk(string projectId)
@@ -214,7 +217,7 @@ public class KnowledgeMapService
     }
 
     private string GetPath(string projectId) =>
-        Path.Combine(_paths.DataRoot, "story_blocks", $"{projectId}.knowledge.json");
+        Path.Combine(paths.DataRoot, "story_blocks", $"{projectId}.knowledge.json");
 }
 
 public class KnowledgeMap

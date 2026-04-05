@@ -12,7 +12,7 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public partial class MarkdownService
 {
-    private readonly MarkdownPipeline _pipeline = new MarkdownPipelineBuilder()
+    private readonly MarkdownPipeline pipeline = new MarkdownPipelineBuilder()
         .UseAdvancedExtensions()
         .Build();
 
@@ -21,7 +21,7 @@ public partial class MarkdownService
     {
         if (string.IsNullOrWhiteSpace(markdown)) return "";
 
-        var html = Markdown.ToHtml(markdown, _pipeline);
+        var html = Markdown.ToHtml(markdown, pipeline);
 
         // Facet tags → colored badges
         html = FacetTagRegex().Replace(html, match =>
@@ -71,7 +71,7 @@ public partial class MarkdownService
         clean = ElevenLabsTagRegex().Replace(clean, ""); // strip entirely
         clean = FacetTagRegex().Replace(clean, ""); // strip facet tags for print
 
-        var html = Markdown.ToHtml(clean, _pipeline);
+        var html = Markdown.ToHtml(clean, pipeline);
 
         // Chapter breaks → simple centered text
         html = html.Replace("<p>======</p>", "<div style=\"text-align:center;margin:3rem 0;font-size:1.5rem;\">* * *</div>");

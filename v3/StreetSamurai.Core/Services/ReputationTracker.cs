@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -45,12 +46,14 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class ReputationTracker
 {
-    private readonly IPathProvider _paths;
+    private readonly IPathProvider paths;
+    private readonly ILogger<ReputationTracker> log;
     private Dictionary<string, CharacterReputation>? _data;
 
-    public ReputationTracker(IPathProvider paths)
+    public ReputationTracker(IPathProvider paths, ILogger<ReputationTracker> log)
     {
-        _paths = paths;
+        this.paths = paths;
+        this.log = log;
     }
 
     /// <summary>Get reputation data for a character.</summary>
@@ -197,7 +200,7 @@ public class ReputationTracker
         if (File.Exists(path))
         {
             try { _data = JsonSerializer.Deserialize<Dictionary<string, CharacterReputation>>(File.ReadAllText(path)); }
-            catch { }
+            catch (Exception ex) { log.LogError(ex, "Failed to load reputation data from {Path}", path); }
         }
         _data ??= new();
     }
@@ -210,7 +213,7 @@ public class ReputationTracker
         File.WriteAllText(path, JsonSerializer.Serialize(_data, new JsonSerializerOptions { WriteIndented = true }));
     }
 
-    private string GetPath() => Path.Combine(_paths.EngineDataDir, "reputation.json");
+    private string GetPath() => Path.Combine(paths.EngineDataDir, "reputation.json");
 }
 
 public class CharacterReputation

@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -47,12 +48,14 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class ConsequenceEngine
 {
-    private readonly IPathProvider _paths;
-    private List<WorldConsequence>? _consequences;
+    private readonly IPathProvider paths;
+    private readonly ILogger<ConsequenceEngine> log;
+    private List<WorldConsequence>? consequences;
 
-    public ConsequenceEngine(IPathProvider paths)
+    public ConsequenceEngine(IPathProvider paths, ILogger<ConsequenceEngine> log)
     {
-        _paths = paths;
+        this.paths = paths;
+        this.log = log;
     }
 
     /// <summary>Record a consequence from a completed story.</summary>
@@ -61,7 +64,7 @@ public class ConsequenceEngine
         LoadIfNeeded();
         consequence.Id = Guid.NewGuid().ToString("N")[..8];
         consequence.RecordedAt = DateTime.UtcNow;
-        _consequences!.Add(consequence);
+        consequences!.Add(consequence);
         Save();
     }
 
@@ -104,7 +107,7 @@ public class ConsequenceEngine
     public List<WorldConsequence> GetAll()
     {
         LoadIfNeeded();
-        return _consequences!;
+        return consequences!;
     }
 
     /// <summary>Get consequences affecting a specific entity (character, faction, place).</summary>
@@ -181,20 +184,20 @@ public class ConsequenceEngine
     public void ResolveConsequence(string consequenceId)
     {
         LoadIfNeeded();
-        var c = _consequences!.FirstOrDefault(x => x.Id == consequenceId);
+        var c = consequences!.FirstOrDefault(x => x.Id == consequenceId);
         if (c != null) { c.Resolved = true; Save(); }
     }
 
     private void LoadIfNeeded()
     {
-        if (_consequences != null) return;
+        if (consequences != null) return;
         var path = GetPath();
         if (File.Exists(path))
         {
-            try { _consequences = JsonSerializer.Deserialize<List<WorldConsequence>>(File.ReadAllText(path)); }
-            catch { }
+            try { consequences = JsonSerializer.Deserialize<List<WorldConsequence>>(File.ReadAllText(path)); }
+            catch (Exception ex) { log.LogError(ex, "Failed to load consequences from {Path}", path); }
         }
-        _consequences ??= [];
+        consequences ??= [];
     }
 
     private void Save()
@@ -202,10 +205,10 @@ public class ConsequenceEngine
         var path = GetPath();
         var dir = Path.GetDirectoryName(path);
         if (dir != null) Directory.CreateDirectory(dir);
-        File.WriteAllText(path, JsonSerializer.Serialize(_consequences, new JsonSerializerOptions { WriteIndented = true }));
+        File.WriteAllText(path, JsonSerializer.Serialize(consequences, new JsonSerializerOptions { WriteIndented = true }));
     }
 
-    private string GetPath() => Path.Combine(_paths.EngineDataDir, "consequences.json");
+    private string GetPath() => Path.Combine(paths.EngineDataDir, "consequences.json");
 }
 
 public class WorldConsequence

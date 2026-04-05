@@ -6,51 +6,54 @@
 
 <div class="dict-layout">
     <div class="dict-list bg-dark border-end border-secondary">
-        @foreach (var d in _items)
+        @foreach (var d in items)
         {
-            <div class="list-item text-light @(_editing?.FileName == d.FileName ? "active" : "")" @onclick="() => Edit(d)">
+            <div class="list-item text-light @(editing?.FileName == d.FileName ? "active" : "")" @onclick="() => Edit(d)">
                 <div class="fw-bold small">@d.Title</div>
                 <div class="text-muted" style="font-size: 0.7rem;">@d.Category</div>
             </div>
         }
         <div class="p-2">
+            <ExportButton Mode="repo" RepoName="Documents" GetRepoEntries="GetExportEntries" />
             <button class="btn btn-sm btn-outline-danger w-100" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New Document</button>
         </div>
     </div>
 
     <div class="dict-editor">
-        @if (_editing != null)
+        @if (editing != null)
         {
             <div class="d-flex justify-content-between align-items-center mb-3">
-                <h5 class="text-danger mb-0">@(_isNew ? "New Document" : _editing.Title)</h5>
+                <h5 class="text-danger mb-0">@(isNew ? "New Document" : editing.Title)</h5>
                 <div class="d-flex gap-2">
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
-                    @if (!_isNew && !_confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-trash3"></i></button> }
+                    @if (!isNew) { <ExportButton Mode="entry" RepoName="Documents" EntryName="@editing.FileName" EntryJson="@System.Text.Json.JsonSerializer.Serialize(editing)" /> }
+                    @if (!isNew && !_confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-trash3"></i></button> }
                     @if (_confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button> }
                 </div>
             </div>
 
             <div class="row g-3 mb-3">
-                <div class="col-4"><div class="field-label">Title</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Title" /></div>
-                <div class="col-4"><div class="field-label">Category</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.Category" /></div>
-                <div class="col-4"><div class="field-label">File Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editing.FileName" /></div>
+                <div class="col-4"><div class="field-label">Title</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Title" /></div>
+                <div class="col-4"><div class="field-label">Category</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Category" /></div>
+                <div class="col-4"><div class="field-label">File Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.FileName" /></div>
             </div>
 
-            <div class="mb-3"><div class="field-label">Body</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" style="font-family: Georgia, serif; line-height: 1.7;" @bind="_editing.Body"></textarea></div>
+            <div class="mb-3"><div class="field-label">Body</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" style="font-family: Georgia, serif; line-height: 1.7;" @bind="editing.Body"></textarea></div>
         }
         else { <div class="text-muted d-flex align-items-center justify-content-center h-100">Select a document or create a new one</div> }
     </div>
 </div>
 
 @code {
-    private List<WorldbuildingDocument> _items = [];
-    private WorldbuildingDocument? _editing;
-    private bool _isNew, _confirmDelete;
-    private string _originalName = "";
-    protected override void OnInitialized() { Repo.Reload(); _items = Repo.GetAll(); if (Nav.Uri.Contains("new=true")) AddNew(); }
-    private void AddNew() { _editing = new WorldbuildingDocument(); _isNew = true; _confirmDelete = false; }
-    private void Edit(WorldbuildingDocument d) { _editing = d; _originalName = d.FileName; _isNew = false; _confirmDelete = false; }
-    private void SaveEdit() { if (_editing == null || string.IsNullOrWhiteSpace(_editing.FileName)) return; if (!_isNew && _originalName != _editing.FileName) Repo.Delete(_originalName); Repo.Save(_editing); _editing = null; _items = Repo.GetAll(); }
-    private void DoDelete() { if (_editing == null) return; Graph.RemoveNode(_editing.Title); Repo.Delete(_editing.FileName); _editing = null; _confirmDelete = false; _items = Repo.GetAll(); }
+    private List<WorldbuildingDocument> items = [];
+    private WorldbuildingDocument? editing;
+    private bool isNew, _confirmDelete;
+    private string originalName = "";
+    protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); if (Nav.Uri.Contains("new=true")) AddNew(); }
+    private void AddNew() { editing = new WorldbuildingDocument(); isNew = true; _confirmDelete = false; }
+    private void Edit(WorldbuildingDocument d) { editing = d; originalName = d.FileName; isNew = false; _confirmDelete = false; }
+    private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.FileName)) return; if (!isNew && originalName != editing.FileName) Repo.Delete(originalName); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
+    private void DoDelete() { if (editing == null) return; Graph.RemoveNode(editing.Title); Repo.Delete(editing.FileName); editing = null; _confirmDelete = false; items = Repo.GetAll(); }
     protected override async Task OnAfterRenderAsync(bool firstRender) { await JS.InvokeVoidAsync("writeInterop.autoResizeAll"); }
+    private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.FileName, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
 }

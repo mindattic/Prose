@@ -53,34 +53,34 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class NarrativeSessionContext
 {
-    private readonly WorldGraphService _graph;
-    private readonly SemanticIndexService? _semanticIndex;
-    private readonly InferenceService? _inference;
+    private readonly WorldGraphService graph;
+    private readonly SemanticIndexService? semanticIndex;
+    private readonly InferenceService? inference;
 
     // Entities whose full 2-hop neighborhood has been loaded
-    private readonly HashSet<string> _resolvedIds = new();
+    private readonly HashSet<string> resolvedIds = new();
 
     // All entity IDs currently in the session context (resolved + their neighbors)
-    private readonly HashSet<string> _knownIds = new();
+    private readonly HashSet<string> knownIds = new();
 
     // Ordered list of when entities entered the session (for context building)
-    private readonly List<string> _loadOrder = [];
+    private readonly List<string> loadOrder = [];
 
     // Primary entities — directly mentioned in the narrative
-    private readonly HashSet<string> _primaryIds = new();
+    private readonly HashSet<string> primaryIds = new();
 
     // Semantically discovered entities (thematic matches, not name matches)
-    private readonly HashSet<string> _semanticIds = new();
+    private readonly HashSet<string> semanticIds = new();
 
     // Inferred connections discovered for this session
-    private readonly List<InferredEdge> _inferredEdges = [];
+    private readonly List<InferredEdge> inferredEdges = [];
 
     // Token budget tracking
-    private int _estimatedTokens;
-    private readonly int _maxTokens;
+    private int estimatedTokens;
+    private readonly int maxTokens;
 
     // Temporal filtering
-    private string? _storyPoint;
+    private string? storyPoint;
 
     public NarrativeSessionContext(WorldGraphService graph, int maxTokens = 16_000)
         : this(graph, null, null, maxTokens) { }
@@ -91,19 +91,19 @@ public class NarrativeSessionContext
         InferenceService? inference,
         int maxTokens = 16_000)
     {
-        _graph = graph;
-        _semanticIndex = semanticIndex;
-        _inference = inference;
-        _graph.EnsureLoaded();
-        _maxTokens = maxTokens;
+        this.graph = graph;
+        this.semanticIndex = semanticIndex;
+        this.inference = inference;
+        graph.EnsureLoaded();
+        this.maxTokens = maxTokens;
     }
 
     /// <summary>Set the story point for temporal filtering. Null = use current state.</summary>
-    public void SetStoryPoint(string? storyPoint) => _storyPoint = storyPoint;
+    public void SetStoryPoint(string? point) => storyPoint = point;
 
-    public int EntityCount => _knownIds.Count;
-    public int PrimaryCount => _primaryIds.Count;
-    public int EstimatedTokens => _estimatedTokens;
+    public int EntityCount => knownIds.Count;
+    public int PrimaryCount => primaryIds.Count;
+    public int EstimatedTokens => estimatedTokens;
 
     /// <summary>
     /// Touch an entity by name — resolve it in the graph, load its 2-hop
@@ -112,10 +112,10 @@ public class NarrativeSessionContext
     /// </summary>
     public bool Touch(string nameOrAlias)
     {
-        var id = _graph.ResolveId(nameOrAlias);
+        var id = graph.ResolveId(nameOrAlias);
         if (id == null) return false;
 
-        _primaryIds.Add(id);
+        primaryIds.Add(id);
         Resolve(id);
         return true;
     }
@@ -143,15 +143,15 @@ public class NarrativeSessionContext
         var textLower = narrativeText.ToLowerInvariant();
 
         // Check all known graph nodes for mentions in the text
-        foreach (var node in _graph.AllNodes())
+        foreach (var node in graph.AllNodes())
         {
             // Already resolved — skip
-            if (_resolvedIds.Contains(node.Id)) continue;
+            if (resolvedIds.Contains(node.Id)) continue;
 
             // Check name match
             if (textLower.Contains(node.Name.ToLowerInvariant()))
             {
-                _primaryIds.Add(node.Id);
+                primaryIds.Add(node.Id);
                 Resolve(node.Id);
                 newlyLoaded.Add(node.Name);
                 continue;
@@ -163,7 +163,7 @@ public class NarrativeSessionContext
                 var aliasList = aliases.Split(',', StringSplitOptions.TrimEntries);
                 if (aliasList.Any(a => a.Length > 2 && textLower.Contains(a.ToLowerInvariant())))
                 {
-                    _primaryIds.Add(node.Id);
+                    primaryIds.Add(node.Id);
                     Resolve(node.Id);
                     newlyLoaded.Add(node.Name);
                 }
@@ -182,34 +182,34 @@ public class NarrativeSessionContext
     /// </summary>
     public List<string> ScanTextSemantic(string narrativeText, int topK = 5)
     {
-        if (_semanticIndex == null || string.IsNullOrWhiteSpace(narrativeText)) return [];
+        if (semanticIndex == null || string.IsNullOrWhiteSpace(narrativeText)) return [];
 
-        var results = _semanticIndex.Search(narrativeText, topK);
+        var results = semanticIndex.Search(narrativeText, topK);
         var newlyLoaded = new List<string>();
 
         foreach (var (nodeId, score) in results)
         {
             // Score threshold of 0.05 filters out noise from TF-IDF
-            if (_resolvedIds.Contains(nodeId) || score < 0.05) continue;
-            var node = _graph.GetNode(nodeId);
+            if (resolvedIds.Contains(nodeId) || score < 0.05) continue;
+            var node = graph.GetNode(nodeId);
             if (node == null) continue;
 
-            _semanticIds.Add(nodeId);
-            if (_knownIds.Add(nodeId)) _loadOrder.Add(nodeId);
+            semanticIds.Add(nodeId);
+            if (knownIds.Add(nodeId)) loadOrder.Add(nodeId);
             newlyLoaded.Add(node.Name);
         }
 
         // Also discover inferred connections for primary entities
-        if (_inference != null)
+        if (inference != null)
         {
-            foreach (var primaryId in _primaryIds.ToList())
+            foreach (var primaryId in primaryIds.ToList())
             {
-                var inferred = _inference.GetInferredConnections(primaryId, 5);
+                var inferred = inference.GetInferredConnections(primaryId, 5);
                 foreach (var edge in inferred)
                 {
-                    if (_knownIds.Contains(edge.TargetId)) continue;
-                    _inferredEdges.Add(edge);
-                    if (_knownIds.Add(edge.TargetId)) _loadOrder.Add(edge.TargetId);
+                    if (knownIds.Contains(edge.TargetId)) continue;
+                    inferredEdges.Add(edge);
+                    if (knownIds.Add(edge.TargetId)) loadOrder.Add(edge.TargetId);
                 }
             }
         }
@@ -232,12 +232,12 @@ public class NarrativeSessionContext
 
         // Tier 1: Primary entities — full briefs
         var primarySection = new List<string>();
-        foreach (var id in _loadOrder)
+        foreach (var id in loadOrder)
         {
-            if (!_primaryIds.Contains(id)) continue;
-            var brief = _storyPoint != null
-                ? _graph.GetEntityBriefAt(id, _storyPoint)
-                : _graph.GetEntityBrief(id);
+            if (!primaryIds.Contains(id)) continue;
+            var brief = storyPoint != null
+                ? graph.GetEntityBriefAt(id, storyPoint)
+                : graph.GetEntityBrief(id);
             if (brief.Length > 0) primarySection.Add(brief);
         }
         if (primarySection.Count > 0)
@@ -245,10 +245,10 @@ public class NarrativeSessionContext
 
         // Tier 2: Connected entities — compact one-liners
         var secondaryLines = new List<string>();
-        foreach (var id in _loadOrder)
+        foreach (var id in loadOrder)
         {
-            if (_primaryIds.Contains(id) || _semanticIds.Contains(id)) continue;
-            var node = _graph.GetNode(id);
+            if (primaryIds.Contains(id) || semanticIds.Contains(id)) continue;
+            var node = graph.GetNode(id);
             if (node == null) continue;
 
             var line = $"[{node.NodeType.ToUpperInvariant()}] {node.Name}";
@@ -266,12 +266,12 @@ public class NarrativeSessionContext
             sections.Add("--- CONNECTED ENTITIES ---\n" + string.Join("\n", secondaryLines));
 
         // Tier 3: Semantically related entities
-        if (_semanticIds.Count > 0)
+        if (semanticIds.Count > 0)
         {
             var semanticLines = new List<string>();
-            foreach (var id in _semanticIds)
+            foreach (var id in semanticIds)
             {
-                var node = _graph.GetNode(id);
+                var node = graph.GetNode(id);
                 if (node == null) continue;
                 var line = $"[{node.NodeType.ToUpperInvariant()}] {node.Name}";
                 if (node.Properties.TryGetValue("role", out var r) && r.Length > 0) line += $" — {r}";
@@ -282,15 +282,15 @@ public class NarrativeSessionContext
         }
 
         // Tier 4: Inferred connections
-        if (_inferredEdges.Count > 0)
+        if (inferredEdges.Count > 0)
         {
-            var inferredLines = _inferredEdges.Select(e =>
+            var inferredLines = inferredEdges.Select(e =>
                 $"[INFERRED] {e.TargetName} — {e.Explanation}").ToList();
             sections.Add("--- INFERRED CONNECTIONS ---\n" + string.Join("\n", inferredLines));
         }
 
         var result = string.Join("\n\n", sections);
-        _estimatedTokens = EstimateTokens(result);
+        estimatedTokens = EstimateTokens(result);
         return result;
     }
 
@@ -299,14 +299,14 @@ public class NarrativeSessionContext
     /// </summary>
     public SessionSnapshot GetSnapshot()
     {
-        var primary = _primaryIds
-            .Select(id => _graph.GetNode(id))
+        var primary = primaryIds
+            .Select(id => graph.GetNode(id))
             .Where(n => n != null)
             .Select(n => new SessionEntity { Name = n!.Name, NodeType = n.NodeType, IsPrimary = true })
             .ToList();
 
-        var secondary = _knownIds.Except(_primaryIds)
-            .Select(id => _graph.GetNode(id))
+        var secondary = knownIds.Except(primaryIds)
+            .Select(id => graph.GetNode(id))
             .Where(n => n != null)
             .Select(n => new SessionEntity { Name = n!.Name, NodeType = n.NodeType, IsPrimary = false })
             .ToList();
@@ -315,7 +315,7 @@ public class NarrativeSessionContext
         {
             PrimaryEntities = primary,
             SecondaryEntities = secondary,
-            EstimatedTokens = _estimatedTokens,
+            EstimatedTokens = estimatedTokens,
         };
     }
 
@@ -324,11 +324,11 @@ public class NarrativeSessionContext
     /// </summary>
     public void Reset()
     {
-        _resolvedIds.Clear();
-        _knownIds.Clear();
-        _loadOrder.Clear();
-        _primaryIds.Clear();
-        _estimatedTokens = 0;
+        resolvedIds.Clear();
+        knownIds.Clear();
+        loadOrder.Clear();
+        primaryIds.Clear();
+        estimatedTokens = 0;
     }
 
     // ── Internal ──────────────────────────────────────────
@@ -341,21 +341,21 @@ public class NarrativeSessionContext
     /// </summary>
     private void Resolve(string id)
     {
-        if (_resolvedIds.Contains(id)) return;
-        _resolvedIds.Add(id);
+        if (resolvedIds.Contains(id)) return;
+        resolvedIds.Add(id);
 
-        if (!_knownIds.Contains(id))
+        if (!knownIds.Contains(id))
         {
-            _knownIds.Add(id);
-            _loadOrder.Add(id);
+            knownIds.Add(id);
+            loadOrder.Add(id);
         }
 
         // Load 2-hop neighborhood — fog-of-war expansion
-        var neighbors = _graph.GetNeighbors(id, depth: 2);
+        var neighbors = graph.GetNeighbors(id, depth: 2);
         foreach (var neighbor in neighbors)
         {
-            if (_knownIds.Add(neighbor.Id))
-                _loadOrder.Add(neighbor.Id);
+            if (knownIds.Add(neighbor.Id))
+                loadOrder.Add(neighbor.Id);
         }
     }
 

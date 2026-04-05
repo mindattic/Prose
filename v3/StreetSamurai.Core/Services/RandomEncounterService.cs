@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -12,8 +13,8 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class RandomEncounterService
 {
-    private readonly ILlmService _llm;
-    private readonly DatabaseService _db;
+    private readonly ILlmService llm;
+    private readonly DatabaseService db;
 
     private static readonly string[] EncounterTypes =
     [
@@ -27,10 +28,13 @@ public class RandomEncounterService
         "street_preacher_provocation", "weapons_malfunction", "identity_scanner_alert"
     ];
 
-    public RandomEncounterService(ILlmService llm, DatabaseService db)
+    private readonly ILogger<RandomEncounterService> log;
+
+    public RandomEncounterService(ILlmService llm, DatabaseService db, ILogger<RandomEncounterService> log)
     {
-        _llm = llm;
-        _db = db;
+        this.llm = llm;
+        this.db = db;
+        this.log = log;
     }
 
     /// <summary>
@@ -42,7 +46,7 @@ public class RandomEncounterService
         int currentTension, CancellationToken ct = default)
     {
         var encounterType = EncounterTypes[Random.Shared.Next(EncounterTypes.Length)];
-        var districtContext = _db.GetDistrictContext(location);
+        var districtContext = db.GetDistrictContext(location);
 
         // Scale encounter danger to current tension (don't add a mugging to a firefight)
         var dangerLevel = currentTension < 4 ? "low" : currentTension < 7 ? "medium" : "high";
@@ -71,7 +75,7 @@ public class RandomEncounterService
 
         try
         {
-            var response = await _llm.GenerateAsync(system, "Generate the encounter now.", 0.85, 1024, ct: ct);
+            var response = await llm.GenerateAsync(system, "Generate the encounter now.", 0.85, 1024, ct: ct);
 
             var parts = response.Split("===", 2);
             var narrative = parts[0].Trim();
@@ -87,7 +91,7 @@ public class RandomEncounterService
                     meta = JsonSerializer.Deserialize<EncounterMeta>(json.Trim(),
                         new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
                 }
-                catch { }
+                catch (Exception ex) { log.LogWarning(ex, "Random encounter generation failed"); }
             }
 
             return new RandomEncounter

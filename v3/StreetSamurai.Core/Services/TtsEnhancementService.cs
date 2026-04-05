@@ -10,14 +10,14 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class TtsEnhancementService
 {
-    private readonly ILlmService _llm;
-    private readonly IPathProvider _paths;
-    private TtsRules? _rules;
+    private readonly ILlmService llm;
+    private readonly IPathProvider paths;
+    private TtsRules? rules;
 
     public TtsEnhancementService(ILlmService llm, IPathProvider paths)
     {
-        _llm = llm;
-        _paths = paths;
+        this.llm = llm;
+        this.paths = paths;
     }
 
     // Tags that ElevenLabs v3 reliably interprets as vocal direction (not read aloud)
@@ -63,7 +63,7 @@ public class TtsEnhancementService
             {text}
             """;
 
-        var enhanced = await _llm.GenerateAsync(system, user, 0.2, 8192, ct: ct);
+        var enhanced = await llm.GenerateAsync(system, user, 0.2, 8192, ct: ct);
         return SanitizeTags(enhanced);
     }
 
@@ -82,19 +82,19 @@ public class TtsEnhancementService
 
     private TtsRules? LoadRules()
     {
-        if (_rules != null) return _rules;
+        if (rules != null) return rules;
 
-        var rulesPath = Path.Combine(_paths.DataRoot, "engine_data", "tts_rules.json");
+        var rulesPath = Path.Combine(paths.DataRoot, "engine_data", "tts_rules.json");
         if (!File.Exists(rulesPath)) return null;
 
         try
         {
             var json = File.ReadAllText(rulesPath);
-            _rules = JsonSerializer.Deserialize<TtsRules>(json, new JsonSerializerOptions
+            rules = JsonSerializer.Deserialize<TtsRules>(json, new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true
             });
-            return _rules;
+            return rules;
         }
         catch
         {

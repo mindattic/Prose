@@ -45,17 +45,17 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class DynamicPlaceGenerator
 {
-    private readonly ILlmService _llm;
-    private readonly DatabaseService _db;
-    private readonly DistrictRepository _places;
-    private readonly NavigationService _nav;
+    private readonly ILlmService llm;
+    private readonly DatabaseService db;
+    private readonly DistrictRepository places;
+    private readonly NavigationService nav;
 
     public DynamicPlaceGenerator(ILlmService llm, DatabaseService db, DistrictRepository places, NavigationService nav)
     {
-        _llm = llm;
-        _db = db;
-        _places = places;
-        _nav = nav;
+        this.llm = llm;
+        this.db = db;
+        this.places = places;
+        this.nav = nav;
     }
 
     /// <summary>
@@ -72,7 +72,7 @@ public class DynamicPlaceGenerator
         string fromPlace, string direction, int count, string destinationContext,
         string? parentBuilding = null, CancellationToken ct = default)
     {
-        var from = _places.GetByName(fromPlace);
+        var from = places.GetByName(fromPlace);
         if (from == null) return [];
 
         var created = new List<string>();
@@ -86,7 +86,7 @@ public class DynamicPlaceGenerator
                 : $"{fromPlace} — {NavigationService.DirectionLabel(direction)} Level {i}";
 
             // Skip if already exists
-            if (_places.GetByName(floorName) != null) { created.Add(floorName); continue; }
+            if (places.GetByName(floorName) != null) { created.Add(floorName); continue; }
 
             var passThrough = new DistrictData
             {
@@ -117,7 +117,7 @@ public class DynamicPlaceGenerator
                 },
             };
 
-            _places.Save(passThrough);
+            places.Save(passThrough);
             created.Add(floorName);
         }
 
@@ -128,12 +128,12 @@ public class DynamicPlaceGenerator
         // Wire the last pass-through to the destination
         if (created.Count >= 2)
         {
-            var lastPassThrough = _places.GetByName(created[^2]);
+            var lastPassThrough = places.GetByName(created[^2]);
             if (lastPassThrough != null)
             {
                 var exit = lastPassThrough.Connections.Exits.FirstOrDefault(e => e.Direction == direction);
                 if (exit != null) exit.Destination = destName;
-                _places.Save(lastPassThrough);
+                places.Save(lastPassThrough);
             }
         }
 
@@ -148,7 +148,7 @@ public class DynamicPlaceGenerator
         string name, string context, string? parentPlace = null,
         GeoCoordinates? coords = null, CancellationToken ct = default)
     {
-        if (_places.GetByName(name) != null) return name;
+        if (places.GetByName(name) != null) return name;
 
         var system = """
             You are generating a place for cyberpunk fiction set in Meridian 88 (2100).
@@ -175,7 +175,7 @@ public class DynamicPlaceGenerator
 
         try
         {
-            var response = await _llm.GenerateAsync(system, user, 0.8, 1024, ct: ct);
+            var response = await llm.GenerateAsync(system, user, 0.8, 1024, ct: ct);
             var json = response.Trim();
             if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
             if (json.EndsWith("```")) json = json[..^3];
@@ -198,13 +198,13 @@ public class DynamicPlaceGenerator
                 place.Connections.AdjacentTo.Add(parentPlace);
             }
 
-            _places.Save(place);
+            places.Save(place);
             return name;
         }
         catch
         {
             // Fallback — save minimal entry
-            _places.Save(new DistrictData { Name = name, Description = context, Coordinates = coords ?? new() });
+            places.Save(new DistrictData { Name = name, Description = context, Coordinates = coords ?? new() });
             return name;
         }
     }
@@ -220,7 +220,7 @@ public class DynamicPlaceGenerator
         string streetPlace, string buildingName, string buildingContext,
         CancellationToken ct = default)
     {
-        var street = _places.GetByName(streetPlace);
+        var street = places.GetByName(streetPlace);
         var coords = street?.Coordinates ?? new GeoCoordinates();
 
         var lobbyName = $"{buildingName} Lobby";
@@ -236,11 +236,11 @@ public class DynamicPlaceGenerator
                 Type = "entrance",
                 Description = $"Enter {buildingName} through the main entrance.",
             });
-            _places.Save(street);
+            places.Save(street);
         }
 
         // Connect lobby back to street
-        var lobby = _places.GetByName(lobbyName);
+        var lobby = places.GetByName(lobbyName);
         if (lobby != null)
         {
             lobby.Connections.Exits.Add(new PlaceExit
@@ -250,7 +250,7 @@ public class DynamicPlaceGenerator
                 Type = "entrance",
                 Description = $"Exit {buildingName} to the street.",
             });
-            _places.Save(lobby);
+            places.Save(lobby);
         }
 
         return lobbyName;

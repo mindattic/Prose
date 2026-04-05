@@ -1,4 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Services;
 
@@ -8,6 +9,9 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddStreetSamuraiServices(this IServiceCollection services)
     {
+        // Application logging — reads daily Serilog log files for the UI viewer
+        services.AddSingleton<LoggingService>();
+
         // Settings auto-detects canon root path on first run
         services.AddSingleton<SettingsService>();
         services.AddSingleton<ISecurePreferences, FileSecurePreferences>();
@@ -25,7 +29,11 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<TechnologyRepository>();
         services.AddSingleton<CyberwareRepository>();
         services.AddSingleton<VocabularyRepository>();
+        services.AddSingleton<SyntheticLifeRepository>();
+        services.AddSingleton<GenewareRepository>();
+        services.AddSingleton<TransportationRepository>();
         services.AddSingleton<MotifRepository>();
+        services.AddSingleton<ToneBibleRepository>();
         services.AddSingleton<StoryBibleRepository>();
         services.AddSingleton<LiteraryRulesRepository>();
         services.AddSingleton<CharacterProfileRepository>();
@@ -34,6 +42,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<LoreService>();
         services.AddSingleton<MarkdownService>();
         services.AddSingleton<ExportService>();
+        services.AddSingleton<HtmlExportService>();
         services.AddSingleton<StoryService>();
         services.AddSingleton<IStoryBlockRepository, JsonStoryBlockRepository>();
         services.AddSingleton<FacetService>();
@@ -89,7 +98,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<LlmRouter>(sp => new LlmRouter(
             sp.GetRequiredService<ClaudeService>(),
             sp.GetRequiredService<OpenAiService>(),
-            sp.GetRequiredService<SettingsService>()));
+            sp.GetRequiredService<SettingsService>(),
+            sp.GetRequiredService<ILogger<LlmRouter>>()));
         services.AddSingleton<ILlmService>(sp => sp.GetRequiredService<LlmRouter>());
 
         // TTS service
@@ -113,6 +123,18 @@ public static class ServiceCollectionExtensions
 
         // Canon validation — checks generated text against graph for contradictions
         services.AddSingleton<ValidationService>();
+
+        // Thematic index — fast cross-repo theme retrieval for story generation
+        services.AddSingleton<ThematicIndexService>(sp =>
+        {
+            var idx = new ThematicIndexService(
+                sp.GetRequiredService<DatabaseService>(),
+                sp.GetRequiredService<SyntheticLifeRepository>(),
+                sp.GetRequiredService<GenewareRepository>(),
+                sp.GetRequiredService<TransportationRepository>());
+            idx.RebuildIndex();
+            return idx;
+        });
 
         // Narrative intelligence — story model layer
         services.AddSingleton<StoryStateService>();

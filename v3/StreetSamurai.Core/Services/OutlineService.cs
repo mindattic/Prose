@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -14,15 +15,17 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class OutlineService
 {
-    private readonly ILlmService _llm;
-    private readonly DatabaseService _db;
-    private readonly IPathProvider _paths;
+    private readonly ILlmService llm;
+    private readonly DatabaseService db;
+    private readonly IPathProvider paths;
+    private readonly ILogger<OutlineService> log;
 
-    public OutlineService(ILlmService llm, DatabaseService db, IPathProvider paths)
+    public OutlineService(ILlmService llm, DatabaseService db, IPathProvider paths, ILogger<OutlineService> log)
     {
-        _llm = llm;
-        _db = db;
-        _paths = paths;
+        this.llm = llm;
+        this.db = db;
+        this.paths = paths;
+        this.log = log;
     }
 
     /// <summary>
@@ -34,11 +37,11 @@ public class OutlineService
         int targetBeats = 12, CancellationToken ct = default)
     {
         var charContext = string.Join("\n\n", characters
-            .Select(c => _db.GetCharacterContext(c))
+            .Select(c => db.GetCharacterContext(c))
             .Where(ctx => ctx.Length > 0));
 
-        var locationContext = location != null ? _db.GetDistrictContext(location) : "";
-        var literaryRules = _db.GetLiteraryRulesPrompt();
+        var locationContext = location != null ? db.GetDistrictContext(location) : "";
+        var literaryRules = db.GetLiteraryRulesPrompt();
 
         var jsonExample = """
             {"title":"working title","logline":"one-sentence summary","theme":"thematic question",
@@ -72,26 +75,70 @@ public class OutlineService
             Return ONLY the JSON.
             """;
 
-        var response = await _llm.GenerateAsync(system,
-            $"PREMISE: {premise}\nCHARACTERS: {string.Join(", ", characters)}\nTARGET BEATS: {targetBeats}",
-            0.8, 4096, ct: ct);
+        log.LogInformation("Generating outline: premise={PremiseLen}chars, characters=[{Characters}], location={Location}, targetBeats={TargetBeats}",
+            premise.Length, string.Join(", ", characters), location ?? "none", targetBeats);
 
+        string response;
         try
         {
-            var json = response.Trim();
-            if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
-            if (json.EndsWith("```")) json = json[..^3];
+            response = await llm.GenerateAsync(system,
+                $"PREMISE: {premise}\nCHARACTERS: {string.Join(", ", characters)}\nTARGET BEATS: {targetBeats}",
+                0.8, 8192, ct: ct);
 
-            var outline = JsonSerializer.Deserialize<StoryOutline>(json.Trim(),
+            log.LogDebug("Outline LLM response received: {ResponseLen} chars", response.Length);
+        }
+        catch (Exception ex)
+        {
+            log.LogError(ex, "Outline generation LLM call failed for characters=[{Characters}]",
+                string.Join(", ", characters));
+            return new StoryOutline { Premise = premise, Characters = characters, Title = "Outline generation failed" };
+        }
+
+        var json = response.Trim();
+        if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
+        if (json.EndsWith("```")) json = json[..^3];
+        json = json.Trim();
+
+        // First attempt: parse as-is
+        try
+        {
+            var outline = JsonSerializer.Deserialize<StoryOutline>(json,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new();
 
             outline.Premise = premise;
             outline.Characters = characters;
+
+            log.LogInformation("Outline generated: title={Title}, acts={ActCount}, beats={BeatCount}",
+                outline.Title, outline.Acts.Count, outline.Acts.SelectMany(a => a.Beats).Count());
+
             return outline;
         }
-        catch
+        catch (JsonException firstEx)
         {
-            return new StoryOutline { Premise = premise, Characters = characters, Title = "Outline generation failed" };
+            log.LogWarning("Outline JSON parse failed on first attempt, trying truncation repair: {Error}", firstEx.Message);
+
+            // Second attempt: repair truncated JSON by closing open structures
+            try
+            {
+                var repaired = RepairTruncatedJson(json);
+                var outline = JsonSerializer.Deserialize<StoryOutline>(repaired,
+                    new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new();
+
+                outline.Premise = premise;
+                outline.Characters = characters;
+
+                var beatCount = outline.Acts.SelectMany(a => a.Beats).Count();
+                log.LogInformation("Outline RESCUED from truncated JSON: title={Title}, acts={ActCount}, beats={BeatCount} (some beats may be incomplete)",
+                    outline.Title, outline.Acts.Count, beatCount);
+
+                return outline;
+            }
+            catch (Exception repairEx)
+            {
+                log.LogError(repairEx, "Outline JSON repair also failed. Raw response (first 500 chars): {ResponsePreview}",
+                    response.Length > 500 ? response[..500] : response);
+                return new StoryOutline { Premise = premise, Characters = characters, Title = "Outline generation failed" };
+            }
         }
     }
 
@@ -148,10 +195,53 @@ public class OutlineService
         return string.Join("\n", lines);
     }
 
+    /// <summary>
+    /// Attempt to repair truncated JSON by closing all open structures.
+    /// When the LLM runs out of tokens mid-response, the JSON is valid up to
+    /// the truncation point. We close open strings, arrays, and objects to
+    /// salvage whatever was successfully generated.
+    /// </summary>
+    private static string RepairTruncatedJson(string json)
+    {
+        // Trim to the last complete value boundary we can find
+        // Walk backwards to find a reasonable cut point
+        var trimmed = json.TrimEnd();
+
+        // If we're mid-string, close the string and trim the incomplete value
+        var inString = false;
+        var escaped = false;
+        var stack = new Stack<char>(); // tracks { and [
+
+        for (int i = 0; i < trimmed.Length; i++)
+        {
+            var c = trimmed[i];
+            if (escaped) { escaped = false; continue; }
+            if (c == '\\' && inString) { escaped = true; continue; }
+            if (c == '"') { inString = !inString; continue; }
+            if (inString) continue;
+
+            if (c == '{') stack.Push('}');
+            else if (c == '[') stack.Push(']');
+            else if (c == '}' || c == ']')
+            {
+                if (stack.Count > 0 && stack.Peek() == c) stack.Pop();
+            }
+        }
+
+        // If we ended inside a string, close it
+        if (inString) trimmed += "\"";
+
+        // Close all open structures
+        while (stack.Count > 0)
+            trimmed += stack.Pop();
+
+        return trimmed;
+    }
+
     /// <summary>Save outline to disk alongside the story project.</summary>
     public void Save(string projectId, StoryOutline outline)
     {
-        var path = Path.Combine(_paths.DataRoot, "story_blocks", $"{projectId}.outline.json");
+        var path = Path.Combine(paths.DataRoot, "story_blocks", $"{projectId}.outline.json");
         var dir = Path.GetDirectoryName(path);
         if (dir != null) Directory.CreateDirectory(dir);
         File.WriteAllText(path, JsonSerializer.Serialize(outline, new JsonSerializerOptions { WriteIndented = true }));
@@ -160,10 +250,10 @@ public class OutlineService
     /// <summary>Load outline from disk.</summary>
     public StoryOutline? Load(string projectId)
     {
-        var path = Path.Combine(_paths.DataRoot, "story_blocks", $"{projectId}.outline.json");
+        var path = Path.Combine(paths.DataRoot, "story_blocks", $"{projectId}.outline.json");
         if (!File.Exists(path)) return null;
         try { return JsonSerializer.Deserialize<StoryOutline>(File.ReadAllText(path)); }
-        catch { return null; }
+        catch (Exception ex) { log.LogError(ex, "Failed to load outline from {Path}", path); return null; }
     }
 }
 
