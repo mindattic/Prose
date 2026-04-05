@@ -17,6 +17,14 @@
 @inject SyntheticLifeRepository SynthRepoExport
 @inject GenewareRepository GeneRepoExport
 @inject TransportationRepository TransportRepoExport
+@inject ContractRepository ContractRepoExport
+@inject NewsRepository NewsRepoExport
+@inject ArchetypeRepository ArchetypeRepoExport
+@inject QuoteRepository QuoteRepoExport
+@inject ConsumerGoodRepository GoodsRepoExport
+@inject PharmaceuticalRepository PharmaRepoExport
+@inject SubstrateRepository SubstrateRepoExport
+@inject AmmunitionRepository AmmoRepoExport
 
 <div class="d-flex justify-content-between align-items-center mb-1">
     <h4 class="text-danger mb-0">Settings</h4>
@@ -661,6 +669,14 @@
             ["Synthetics"] = SynthRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
             ["Geneware"] = GeneRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
             ["Transportation"] = TransportRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Contracts"] = ContractRepoExport.GetAll().Select(e => (e.Codename, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["News Archive"] = NewsRepoExport.GetAll().Select(e => (e.Headline, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Archetypes"] = ArchetypeRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Quotes"] = QuoteRepoExport.GetAll().Select(e => (e.Quote.Length > 40 ? e.Quote[..40] : e.Quote, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Consumer Goods"] = GoodsRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Pharmaceuticals"] = PharmaRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Substrates"] = SubstrateRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Ammunition"] = AmmoRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
         };
     }
 }
