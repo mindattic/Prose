@@ -35,24 +35,11 @@ public class JsonStoryBlockRepository : IStoryBlockRepository
         if (!Directory.Exists(dir)) return [];
 
         return Directory.GetFiles(dir, "*.json")
-            .Where(f => !IsArchived(f))
             .Select(LoadFromFile)
-            .Where(p => p != null)
+            .Where(p => p != null && !p.IsArchived)
             .DistinctBy(p => p!.Id)
             .OrderByDescending(p => p!.Modified)
             .ToList()!;
-    }
-
-    private static bool IsArchived(string filePath)
-    {
-        try
-        {
-            var json = File.ReadAllText(filePath);
-            if (!json.Contains("\"is_archived\"")) return false;
-            var doc = JsonDocument.Parse(json);
-            return doc.RootElement.TryGetProperty("is_archived", out var val) && val.ValueKind == JsonValueKind.True;
-        }
-        catch { return false; }
     }
 
     public StoryProject? LoadProject(string id)
@@ -86,29 +73,11 @@ public class JsonStoryBlockRepository : IStoryBlockRepository
 
     public void DeleteProject(string id)
     {
-        // Soft delete — set is_archived flag
-        var filePath = Path.Combine(StoryDir, $"{id}.json");
-        if (File.Exists(filePath))
+        var project = LoadProject(id);
+        if (project != null)
         {
-            try
-            {
-                var json = File.ReadAllText(filePath);
-                var doc = JsonDocument.Parse(json);
-                using var ms = new System.IO.MemoryStream();
-                using var writer = new Utf8JsonWriter(ms, new JsonWriterOptions { Indented = true });
-                writer.WriteStartObject();
-                bool wroteArchived = false;
-                foreach (var prop in doc.RootElement.EnumerateObject())
-                {
-                    if (prop.Name == "is_archived") { writer.WriteBoolean("is_archived", true); wroteArchived = true; }
-                    else prop.WriteTo(writer);
-                }
-                if (!wroteArchived) writer.WriteBoolean("is_archived", true);
-                writer.WriteEndObject();
-                writer.Flush();
-                File.WriteAllText(filePath, System.Text.Encoding.UTF8.GetString(ms.ToArray()));
-            }
-            catch { File.Delete(filePath); } // Fallback to hard delete if JSON fails
+            project.IsArchived = true;
+            SaveProject(project);
         }
     }
 

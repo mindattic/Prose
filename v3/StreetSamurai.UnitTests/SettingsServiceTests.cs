@@ -7,24 +7,41 @@ public class SettingsServiceTests
 {
     private SettingsService svc = null!;
 
+    private static readonly string AppDataDir = Path.Combine(
+        Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+        "MindAttic", "StreetSamurai");
+
     [SetUp]
-    public void Setup() => svc = new SettingsService();
+    public void Setup()
+    {
+        // Clear any saved defaults snapshot from prior tests
+        var defaultsPath = Path.Combine(AppDataDir, "Defaults.json");
+        if (File.Exists(defaultsPath)) File.Delete(defaultsPath);
+        svc = new SettingsService();
+    }
+
+    [TearDown]
+    public void Teardown()
+    {
+        // Reset settings file so tests don't leak state
+        svc.ResetToDefaults();
+    }
 
     // ── FormatTimestamp ─────────────────────────────────────
 
     [Test]
-    public void FormatTimestamp_12h_ContainsAmPm()
+    public void FormatTimestamp_12hFormat_ContainsAmPm()
     {
-        svc.TimeFormat = "12h";
+        svc.TimestampFormat = "yyyy-MM-dd hh:mm:sstt";
         svc.TimezoneId = "Central Standard Time";
         var result = svc.FormatTimestamp(new DateTime(2026, 4, 5, 18, 30, 0, DateTimeKind.Utc));
         Assert.That(result, Does.Contain("PM").Or.Contain("AM"));
     }
 
     [Test]
-    public void FormatTimestamp_24h_NoAmPm()
+    public void FormatTimestamp_24hFormat_NoAmPm()
     {
-        svc.TimeFormat = "24h";
+        svc.TimestampFormat = "yyyy-MM-dd HH:mm:ss";
         svc.TimezoneId = "UTC";
         var result = svc.FormatTimestamp(new DateTime(2026, 4, 5, 18, 30, 0, DateTimeKind.Utc));
         Assert.That(result, Does.Not.Contain("PM"));
@@ -32,30 +49,30 @@ public class SettingsServiceTests
     }
 
     [Test]
-    public void FormatTimestamp_IncludesMilliseconds_ByDefault()
+    public void FormatTimestamp_MatchesExpectedOutput()
     {
-        svc.TimeFormat = "12h";
+        svc.TimestampFormat = "yyyy-MM-dd hh:mm:sstt";
         svc.TimezoneId = "UTC";
-        var result = svc.FormatTimestamp(new DateTime(2026, 4, 5, 12, 0, 0, 123, DateTimeKind.Utc));
-        Assert.That(result, Does.Contain("123"));
+        var result = svc.FormatTimestamp(new DateTime(2026, 4, 5, 14, 1, 23, DateTimeKind.Utc));
+        Assert.That(result, Is.EqualTo("2026-04-05 02:01:23PM"));
     }
 
     [Test]
-    public void FormatTimestamp_ExcludeMilliseconds_NoFraction()
+    public void FormatTimestamp_SlashFormat_Works()
     {
-        svc.TimeFormat = "12h";
+        svc.TimestampFormat = "MM/dd/yyyy hh:mm:sstt";
         svc.TimezoneId = "UTC";
-        var result = svc.FormatTimestamp(new DateTime(2026, 4, 5, 12, 0, 0, 123, DateTimeKind.Utc), includeMilliseconds: false);
-        Assert.That(result, Does.Not.Contain("123"));
+        var result = svc.FormatTimestamp(new DateTime(2026, 4, 5, 14, 1, 23, DateTimeKind.Utc));
+        Assert.That(result, Is.EqualTo("04/05/2026 02:01:23PM"));
     }
 
     // ── Defaults ────────────────────────────────────────────
 
     [Test]
-    public void Defaults_TimeFormat_Is12h()
+    public void Defaults_TimestampFormat_IsDefault()
     {
         var fresh = new SettingsService();
-        Assert.That(fresh.TimeFormat, Is.EqualTo("12h"));
+        Assert.That(fresh.TimestampFormat, Is.EqualTo("yyyy-MM-dd hh:mm:sstt"));
     }
 
     [Test]
@@ -86,31 +103,30 @@ public class SettingsServiceTests
         Assert.That(fresh.EditorFontSize, Is.EqualTo(14));
     }
 
-    // ── ResetToDefaults ─────────────────────────────────────
+    // ── SaveAsDefaults / ResetToDefaults ──────────────────────
 
     [Test]
-    public void ResetToDefaults_PreservesApiKey()
+    public void ResetToDefaults_WithNoSnapshot_ReturnsFactoryDefaults()
     {
+        svc.MaxTokens = 999;
         svc.ApiKey = "sk-test-key";
-        svc.MaxTokens = 999;
         svc.ResetToDefaults();
-        Assert.That(svc.ApiKey, Is.EqualTo("sk-test-key"));
         Assert.That(svc.MaxTokens, Is.EqualTo(4096));
+        Assert.That(svc.ApiKey, Is.EqualTo(""));
     }
 
     [Test]
-    public void ResetToDefaults_RestoresMaxTokens()
+    public void SaveAsDefaults_ThenReset_RestoresSnapshot()
     {
-        svc.MaxTokens = 999;
-        svc.ResetToDefaults();
-        Assert.That(svc.MaxTokens, Is.EqualTo(4096));
-    }
+        svc.ApiKey = "sk-saved";
+        svc.MaxTokens = 2048;
+        svc.SaveAsDefaults();
 
-    [Test]
-    public void ResetToDefaults_PreservesCanonRootPath()
-    {
-        svc.CanonRootPath = @"D:\Custom\Path";
+        svc.ApiKey = "sk-changed";
+        svc.MaxTokens = 111;
         svc.ResetToDefaults();
-        Assert.That(svc.CanonRootPath, Is.EqualTo(@"D:\Custom\Path"));
+
+        Assert.That(svc.ApiKey, Is.EqualTo("sk-saved"));
+        Assert.That(svc.MaxTokens, Is.EqualTo(2048));
     }
 }

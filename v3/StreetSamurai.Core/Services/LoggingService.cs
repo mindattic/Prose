@@ -135,17 +135,21 @@ public class LoggingService
         return entries;
     }
 
-    // Serilog default format: 2026-04-04 14:30:22.123 [INF] Message here
+    // Matches any supported timestamp format followed by [LVL] message
     private static readonly Regex LogLinePattern = new(
-        @"^(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d{3}) \[(\w{3})\] (.+)$",
+        @"^(.+?) \[(\w{3})\] (.+)$",
         RegexOptions.Compiled);
+
+    // All format strings we may encounter in log files
+    private static readonly string[] ParseFormats = SettingsService.TimestampFormats
+        .Select(f => f.Format).ToArray();
 
     private static LogEntry? TryParseLogLine(string line)
     {
         var match = LogLinePattern.Match(line);
         if (!match.Success) return null;
 
-        if (!DateTime.TryParseExact(match.Groups[1].Value, "yyyy-MM-dd HH:mm:ss.fff",
+        if (!DateTime.TryParseExact(match.Groups[1].Value, ParseFormats,
             CultureInfo.InvariantCulture, DateTimeStyles.None, out var timestamp))
             return null;
 

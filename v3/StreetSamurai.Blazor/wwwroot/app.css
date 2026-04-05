@@ -43,9 +43,7 @@ html, body {
 .btn-group .btn { height: 32px; }
 .dropdown-toggle { height: 32px; }
 .btn-sq, .tb { width: 32px; height: 32px; padding: 0; }
-.btn .bi + span, .btn .bi ~ text, .btn > .bi { margin-right: 0; }
-.btn > i + span, .btn > span + i { margin-left: 6px; }
-.btn > i.bi:not(:only-child) { margin-right: 6px; }
+.btn > i.bi:only-child { margin-right: 0; }
 
 /* Dictionary editors: all fields full width, textareas auto-height */
 .dict-editor .row > [class*="col-"] { flex: 0 0 100%; max-width: 100%; }
