@@ -31,8 +31,12 @@ ul.compact { list-style: disc; margin-left: 16px; }
 ul.compact li { font-size: 13px; padding: 1px 0; }
 .sub-entry { border-left: 3px solid var(--border); padding-left: 12px; margin: 6px 0; }
 .back-top { display: inline-block; margin-top: 8px; font-size: 12px; color: var(--muted); }
-.permalink { color: var(--border); font-size: 0.8em; margin-left: 6px; text-decoration: none; opacity: 0.4; transition: opacity 0.2s; }
-.permalink:hover { opacity: 1; color: var(--accent); }
+h3 { display: flex; align-items: center; flex-wrap: nowrap; }
+.entry-links { margin-left: auto; display: flex; gap: 4px; flex-shrink: 0; }
+.permalink { color: var(--border); font-size: 1.1em; text-decoration: none; opacity: 0.25; transition: opacity 0.2s; padding: 0 4px; }
+.permalink:hover { opacity: 0.6; color: var(--muted); text-decoration: none; }
+.copy-link { cursor: pointer; font-size: 1.1em; opacity: 0.25; padding: 0 4px; transition: opacity 0.2s; }
+.copy-link:hover { opacity: 0.6; }
 .entry:target { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
 .filter-bar { position: sticky; top: 0; z-index: 100; background: var(--bg); padding: 10px 0; margin-bottom: 16px; display: flex; align-items: center; }
 .filter-bar input { flex: 1; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 4px; padding: 8px 12px; font-size: 16px; outline: none; -webkit-appearance: none; }
@@ -58,7 +62,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <body id="top">
 <div class="header">
 <h1>Pharmaceuticals — StreetSamurai Canon Export</h1>
-<small>Exported from StreetSamurai Canon Engine — 2026-04-05 09:02</small>
+<small>Exported from StreetSamurai Canon Engine — 2026-04-05 12:04</small>
 </div>
 
 <div class="filter-bar" id="filterBar">
@@ -111,7 +115,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <li><a href="#vorrathine">Vorrathine</a></li>
 </ul></div>
 <div class="entry" id="adrenyx">
-<h3>Adrenyx <a href="#adrenyx" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Adrenyx</span><span class="entry-links"><a href="#adrenyx" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('adrenyx')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -224,7 +228,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="amygdacet">
-<h3>Amygdacet <a href="#amygdacet" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Amygdacet</span><span class="entry-links"><a href="#amygdacet" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('amygdacet')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -335,7 +339,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="amytal_x">
-<h3>Amytal-X <a href="#amytal_x" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Amytal-X</span><span class="entry-links"><a href="#amytal_x" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('amytal_x')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -451,7 +455,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="aurocet">
-<h3>Aurocet <a href="#aurocet" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Aurocet</span><span class="entry-links"><a href="#aurocet" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('aurocet')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -564,7 +568,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="blessura">
-<h3>Blessura <a href="#blessura" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Blessura</span><span class="entry-links"><a href="#blessura" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('blessura')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -673,7 +677,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="calydrin">
-<h3>Calydrin <a href="#calydrin" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Calydrin</span><span class="entry-links"><a href="#calydrin" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('calydrin')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -788,7 +792,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="celerix">
-<h3>Celerix <a href="#celerix" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Celerix</span><span class="entry-links"><a href="#celerix" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('celerix')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -899,7 +903,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="chromasin">
-<h3>Chromasin <a href="#chromasin" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Chromasin</span><span class="entry-links"><a href="#chromasin" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('chromasin')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1011,7 +1015,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="dravecor">
-<h3>Dravecor <a href="#dravecor" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Dravecor</span><span class="entry-links"><a href="#dravecor" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('dravecor')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1125,7 +1129,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="drexaline">
-<h3>Drexaline <a href="#drexaline" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Drexaline</span><span class="entry-links"><a href="#drexaline" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('drexaline')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1239,7 +1243,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="duravex">
-<h3>Duravex <a href="#duravex" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Duravex</span><span class="entry-links"><a href="#duravex" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('duravex')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1347,7 +1351,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ferrocaine">
-<h3>Ferrocaine <a href="#ferrocaine" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ferrocaine</span><span class="entry-links"><a href="#ferrocaine" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ferrocaine')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1460,7 +1464,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="focadrin">
-<h3>Focadrin <a href="#focadrin" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Focadrin</span><span class="entry-links"><a href="#focadrin" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('focadrin')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1572,7 +1576,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="hexadrine">
-<h3>Hexadrine <a href="#hexadrine" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Hexadrine</span><span class="entry-links"><a href="#hexadrine" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('hexadrine')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1686,7 +1690,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="kairos">
-<h3>Kairos <a href="#kairos" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Kairos</span><span class="entry-links"><a href="#kairos" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('kairos')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1794,7 +1798,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="kethavar">
-<h3>Kethavar <a href="#kethavar" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Kethavar</span><span class="entry-links"><a href="#kethavar" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('kethavar')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1912,7 +1916,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="korrath">
-<h3>Korrath <a href="#korrath" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Korrath</span><span class="entry-links"><a href="#korrath" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('korrath')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2031,7 +2035,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="marathine">
-<h3>Marathine <a href="#marathine" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Marathine</span><span class="entry-links"><a href="#marathine" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('marathine')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2142,7 +2146,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="narrowcast">
-<h3>Narrowcast <a href="#narrowcast" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Narrowcast</span><span class="entry-links"><a href="#narrowcast" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('narrowcast')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2258,7 +2262,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="nullform">
-<h3>Nullform <a href="#nullform" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Nullform</span><span class="entry-links"><a href="#nullform" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('nullform')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2366,7 +2370,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="nullocaine">
-<h3>Nullocaine <a href="#nullocaine" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Nullocaine</span><span class="entry-links"><a href="#nullocaine" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('nullocaine')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2479,7 +2483,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="nullthar">
-<h3>Nullthar <a href="#nullthar" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Nullthar</span><span class="entry-links"><a href="#nullthar" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('nullthar')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2593,7 +2597,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="omnipex">
-<h3>Omnipex <a href="#omnipex" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Omnipex</span><span class="entry-links"><a href="#omnipex" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('omnipex')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2703,7 +2707,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="oxytrel">
-<h3>Oxytrel <a href="#oxytrel" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Oxytrel</span><span class="entry-links"><a href="#oxytrel" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('oxytrel')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2815,7 +2819,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="phaedrin">
-<h3>Phaedrin <a href="#phaedrin" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Phaedrin</span><span class="entry-links"><a href="#phaedrin" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('phaedrin')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2926,7 +2930,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="praevex">
-<h3>Praevex <a href="#praevex" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Praevex</span><span class="entry-links"><a href="#praevex" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('praevex')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3037,7 +3041,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="prismatol">
-<h3>Prismatol <a href="#prismatol" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Prismatol</span><span class="entry-links"><a href="#prismatol" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('prismatol')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3148,7 +3152,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="serafin">
-<h3>Serafin <a href="#serafin" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Serafin</span><span class="entry-links"><a href="#serafin" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('serafin')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3259,7 +3263,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="somalex">
-<h3>Somalex <a href="#somalex" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Somalex</span><span class="entry-links"><a href="#somalex" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('somalex')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3364,7 +3368,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="strathex">
-<h3>Strathex <a href="#strathex" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Strathex</span><span class="entry-links"><a href="#strathex" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('strathex')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3477,7 +3481,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="strelazine">
-<h3>Strelazine <a href="#strelazine" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Strelazine</span><span class="entry-links"><a href="#strelazine" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('strelazine')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3590,7 +3594,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="sustrel">
-<h3>Sustrel <a href="#sustrel" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Sustrel</span><span class="entry-links"><a href="#sustrel" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('sustrel')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3705,7 +3709,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="synaptrel">
-<h3>Synaptrel <a href="#synaptrel" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Synaptrel</span><span class="entry-links"><a href="#synaptrel" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('synaptrel')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3818,7 +3822,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="tethrin">
-<h3>Tethrin <a href="#tethrin" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Tethrin</span><span class="entry-links"><a href="#tethrin" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('tethrin')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3930,7 +3934,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="tharcon">
-<h3>Tharcon <a href="#tharcon" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Tharcon</span><span class="entry-links"><a href="#tharcon" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('tharcon')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -4043,7 +4047,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="vantabloc">
-<h3>Vantabloc <a href="#vantabloc" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Vantabloc</span><span class="entry-links"><a href="#vantabloc" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('vantabloc')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -4156,7 +4160,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="vellichor">
-<h3>Vellichor <a href="#vellichor" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Vellichor</span><span class="entry-links"><a href="#vellichor" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('vellichor')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -4264,7 +4268,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="velorin">
-<h3>Velorin <a href="#velorin" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Velorin</span><span class="entry-links"><a href="#velorin" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('velorin')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -4373,7 +4377,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="voraxin">
-<h3>Voraxin <a href="#voraxin" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Voraxin</span><span class="entry-links"><a href="#voraxin" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('voraxin')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -4491,7 +4495,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="vorrathine">
-<h3>Vorrathine <a href="#vorrathine" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Vorrathine</span><span class="entry-links"><a href="#vorrathine" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('vorrathine')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -4635,6 +4639,14 @@ function filterEntries() {
 function clearFilter() {
     document.getElementById('filterInput').value = '';
     filterEntries();
+}
+function copyLink(slug) {
+    var url = location.href.split('#')[0] + '#' + slug;
+    navigator.clipboard.writeText(url).then(function() {
+        var el = event.target;
+        el.textContent = '\u2705';
+        setTimeout(function() { el.textContent = '\uD83D\uDCCB'; }, 1500);
+    });
 }</script>
 </body>
 </html>

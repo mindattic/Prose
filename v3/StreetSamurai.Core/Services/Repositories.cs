@@ -79,21 +79,21 @@ public class AmmunitionRepository : JsonDirectoryRepository<AmmunitionData>
 public class EquipmentRepository : JsonDirectoryRepository<EquipmentData>
 {
     public EquipmentRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "equipment"), e => e.Name) { AutoMigrate(paths); }
+        : base(Path.Combine(paths.EngineDataDir, "equipment"), e => e.BrandName.Length > 0 ? e.BrandName : e.Name) { AutoMigrate(paths); }
     private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "equipment.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
 }
 
 public class TechnologyRepository : JsonDirectoryRepository<TechnologyData>
 {
     public TechnologyRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "technology"), t => t.Name) { AutoMigrate(paths); }
+        : base(Path.Combine(paths.EngineDataDir, "technology"), t => t.BrandName.Length > 0 ? t.BrandName : t.Name) { AutoMigrate(paths); }
     private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "technology.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
 }
 
 public class CyberwareRepository : JsonDirectoryRepository<CyberwareData>
 {
     public CyberwareRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "cyberware"), c => c.Name) { }
+        : base(Path.Combine(paths.EngineDataDir, "cyberware"), c => c.BrandName.Length > 0 ? c.BrandName : c.Name) { }
 }
 
 public class VocabularyRepository : JsonDirectoryRepository<VocabularyEntry>
@@ -111,7 +111,7 @@ public class SyntheticLifeRepository : JsonDirectoryRepository<SyntheticLifeData
 public class GenewareRepository : JsonDirectoryRepository<GenewareData>
 {
     public GenewareRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "geneware"), g => g.Name) { }
+        : base(Path.Combine(paths.EngineDataDir, "geneware"), g => g.BrandName.Length > 0 ? g.BrandName : g.Name) { }
 }
 
 public class TransportationRepository : JsonDirectoryRepository<TransportationData>
@@ -147,7 +147,7 @@ public class ArchetypeRepository : JsonDirectoryRepository<ArchetypeData>
 public class SubstrateRepository : JsonDirectoryRepository<SubstrateData>
 {
     public SubstrateRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "substrates"), s => s.Name) { }
+        : base(Path.Combine(paths.EngineDataDir, "substrates"), s => s.BrandName.Length > 0 ? s.BrandName : s.Name) { }
 }
 
 public class PharmaceuticalRepository : JsonDirectoryRepository<PharmaceuticalData>
@@ -159,7 +159,7 @@ public class PharmaceuticalRepository : JsonDirectoryRepository<PharmaceuticalDa
 public class ConsumerGoodRepository : JsonDirectoryRepository<ConsumerGoodData>
 {
     public ConsumerGoodRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "consumer_goods"), g => g.Name) { }
+        : base(Path.Combine(paths.EngineDataDir, "consumer_goods"), g => g.BrandName.Length > 0 ? g.BrandName : g.Name) { }
 }
 
 public class QuoteRepository : JsonDirectoryRepository<QuoteData>

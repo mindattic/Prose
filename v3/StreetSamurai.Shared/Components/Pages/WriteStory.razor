@@ -361,7 +361,7 @@
     <button class="btn btn-outline-secondary tb" @onclick="InsertHorizontalRule" title="Scene break"><i class="bi bi-dash-lg"></i></button>
     <button class="btn btn-outline-secondary tb" @onclick="() => showImageInsert = !showImageInsert" title="Insert image"><i class="bi bi-image"></i></button>
     <span class="text-secondary mx-1">|</span>
-    <button class="btn @(showLinks ? "btn-outline-info" : "btn-outline-secondary") tb" @onclick="ToggleLinks" title="Toggle entity links"><i class="bi bi-link-45deg"></i></button>
+    @* Entity link toggle removed — use right-click > Ask instead *@
     <button class="btn @(showSceneSidebar ? "btn-outline-danger" : "btn-outline-secondary") tb" @onclick="() => showSceneSidebar = !showSceneSidebar" title="Scene sidebar"><i class="bi bi-diagram-3"></i></button>
     <div class="dropdown d-inline-block">
         <button class="btn btn-outline-secondary tb dropdown-toggle" type="button" data-bs-toggle="dropdown" title="Export">

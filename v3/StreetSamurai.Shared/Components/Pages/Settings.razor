@@ -4,27 +4,7 @@
 @inject ElevenLabsTtsService TtsSvc
 @inject WorldGraphService Graph
 @inject IPathProvider Paths
-@inject CharacterRepository CharRepoExport
-@inject CorponationRepository CorpRepoExport
-@inject DistrictRepository DistrictRepoExport
-@inject FactionRepository FactionRepoExport
-@inject WeaponryRepository WeaponRepoExport
-@inject EquipmentRepository EquipRepoExport
-@inject CyberwareRepository CyberRepoExport
-@inject TechnologyRepository TechRepoExport
-@inject VocabularyRepository VocabRepoExport
-@inject WorldbuildingDocRepository DocRepoExport
-@inject SyntheticLifeRepository SynthRepoExport
-@inject GenewareRepository GeneRepoExport
-@inject TransportationRepository TransportRepoExport
-@inject ContractRepository ContractRepoExport
-@inject NewsRepository NewsRepoExport
-@inject ArchetypeRepository ArchetypeRepoExport
-@inject QuoteRepository QuoteRepoExport
-@inject ConsumerGoodRepository GoodsRepoExport
-@inject PharmaceuticalRepository PharmaRepoExport
-@inject SubstrateRepository SubstrateRepoExport
-@inject AmmunitionRepository AmmoRepoExport
+@inject ExportDiscoveryService ExportDiscovery
 
 <div class="d-flex justify-content-between align-items-center mb-1">
     <h4 class="text-danger mb-0">Settings</h4>
@@ -652,31 +632,5 @@
     }
 
     private Dictionary<string, List<(string name, string json)>> GetAllReposForExport()
-    {
-        var jso = new System.Text.Json.JsonSerializerOptions();
-        return new Dictionary<string, List<(string name, string json)>>
-        {
-            ["Characters"] = CharRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Corponations"] = CorpRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Places"] = DistrictRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Factions"] = FactionRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Weaponry"] = WeaponRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Equipment"] = EquipRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Cyberware"] = CyberRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Technology"] = TechRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Vocabulary"] = VocabRepoExport.GetAll().Select(e => (e.Term, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Documents"] = DocRepoExport.GetAll().Select(e => (e.FileName, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Synthetics"] = SynthRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Geneware"] = GeneRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Transportation"] = TransportRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Contracts"] = ContractRepoExport.GetAll().Select(e => (e.Codename, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["News Archive"] = NewsRepoExport.GetAll().Select(e => (e.Headline, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Archetypes"] = ArchetypeRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Quotes"] = QuoteRepoExport.GetAll().Select(e => (e.Quote.Length > 40 ? e.Quote[..40] : e.Quote, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Consumer Goods"] = GoodsRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Pharmaceuticals"] = PharmaRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Substrates"] = SubstrateRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-            ["Ammunition"] = AmmoRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
-        };
-    }
+        => ExportDiscovery.GetAllRepos();
 }

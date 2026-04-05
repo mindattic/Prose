@@ -31,8 +31,12 @@ ul.compact { list-style: disc; margin-left: 16px; }
 ul.compact li { font-size: 13px; padding: 1px 0; }
 .sub-entry { border-left: 3px solid var(--border); padding-left: 12px; margin: 6px 0; }
 .back-top { display: inline-block; margin-top: 8px; font-size: 12px; color: var(--muted); }
-.permalink { color: var(--border); font-size: 0.8em; margin-left: 6px; text-decoration: none; opacity: 0.4; transition: opacity 0.2s; }
-.permalink:hover { opacity: 1; color: var(--accent); }
+h3 { display: flex; align-items: center; flex-wrap: nowrap; }
+.entry-links { margin-left: auto; display: flex; gap: 4px; flex-shrink: 0; }
+.permalink { color: var(--border); font-size: 1.1em; text-decoration: none; opacity: 0.25; transition: opacity 0.2s; padding: 0 4px; }
+.permalink:hover { opacity: 0.6; color: var(--muted); text-decoration: none; }
+.copy-link { cursor: pointer; font-size: 1.1em; opacity: 0.25; padding: 0 4px; transition: opacity 0.2s; }
+.copy-link:hover { opacity: 0.6; }
 .entry:target { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
 .filter-bar { position: sticky; top: 0; z-index: 100; background: var(--bg); padding: 10px 0; margin-bottom: 16px; display: flex; align-items: center; }
 .filter-bar input { flex: 1; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 4px; padding: 8px 12px; font-size: 16px; outline: none; -webkit-appearance: none; }
@@ -58,7 +62,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <body id="top">
 <div class="header">
 <h1>Ammunition — StreetSamurai Canon Export</h1>
-<small>Exported from StreetSamurai Canon Engine — 2026-04-05 09:02</small>
+<small>Exported from StreetSamurai Canon Engine — 2026-04-05 12:04</small>
 </div>
 
 <div class="filter-bar" id="filterBar">
@@ -102,7 +106,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <li><a href="#zheng_dao_type_4_bioelectric_cell_zd_t4">Zheng-Dao Type-4 Bioelectric Cell ZD-T4</a></li>
 </ul></div>
 <div class="entry" id="1_8x12mm_piezoelectric_micro_flechette_cluster_pmc_18">
-<h3>1.8x12mm Piezoelectric Micro-Flechette Cluster PMC-18 <a href="#1_8x12mm_piezoelectric_micro_flechette_cluster_pmc_18" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>1.8x12mm Piezoelectric Micro-Flechette Cluster PMC-18</span><span class="entry-links"><a href="#1_8x12mm_piezoelectric_micro_flechette_cluster_pmc_18" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('1_8x12mm_piezoelectric_micro_flechette_cluster_pmc_18')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -200,7 +204,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="11_2mm_tungsten_composite_resonance_slug_tcs_11">
-<h3>11.2mm Tungsten-Composite Resonance Slug TCS-11 <a href="#11_2mm_tungsten_composite_resonance_slug_tcs_11" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>11.2mm Tungsten-Composite Resonance Slug TCS-11</span><span class="entry-links"><a href="#11_2mm_tungsten_composite_resonance_slug_tcs_11" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('11_2mm_tungsten_composite_resonance_slug_tcs_11')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -290,7 +294,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="12_7mm_helical_sleeve_penetrator_hsp_127">
-<h3>12.7mm Helical-Sleeve Penetrator HSP-127 <a href="#12_7mm_helical_sleeve_penetrator_hsp_127" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>12.7mm Helical-Sleeve Penetrator HSP-127</span><span class="entry-links"><a href="#12_7mm_helical_sleeve_penetrator_hsp_127" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('12_7mm_helical_sleeve_penetrator_hsp_127')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -382,7 +386,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="12_7x55mm_subsonic_caseless_round_scr_127">
-<h3>12.7x55mm Subsonic Caseless Round SCR-127 <a href="#12_7x55mm_subsonic_caseless_round_scr_127" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>12.7x55mm Subsonic Caseless Round SCR-127</span><span class="entry-links"><a href="#12_7x55mm_subsonic_caseless_round_scr_127" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('12_7x55mm_subsonic_caseless_round_scr_127')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -476,7 +480,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="12g_ceramic_composite_scatter_load_ccs_12">
-<h3>12g Ceramic Composite Scatter Load CCS-12 <a href="#12g_ceramic_composite_scatter_load_ccs_12" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>12g Ceramic Composite Scatter Load CCS-12</span><span class="entry-links"><a href="#12g_ceramic_composite_scatter_load_ccs_12" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('12g_ceramic_composite_scatter_load_ccs_12')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -567,7 +571,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="2mm_tungsten_neural_payload_dart_tnp_2">
-<h3>2mm Tungsten Neural-Payload Dart TNP-2 <a href="#2mm_tungsten_neural_payload_dart_tnp_2" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>2mm Tungsten Neural-Payload Dart TNP-2</span><span class="entry-links"><a href="#2mm_tungsten_neural_payload_dart_tnp_2" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('2mm_tungsten_neural_payload_dart_tnp_2')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -660,7 +664,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="3_2mm_ferromagnetic_tungsten_dart_ftd_3">
-<h3>3.2mm Ferromagnetic Tungsten Dart FTD-3 <a href="#3_2mm_ferromagnetic_tungsten_dart_ftd_3" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>3.2mm Ferromagnetic Tungsten Dart FTD-3</span><span class="entry-links"><a href="#3_2mm_ferromagnetic_tungsten_dart_ftd_3" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('3_2mm_ferromagnetic_tungsten_dart_ftd_3')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -752,7 +756,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="3x22mm_tungsten_ceramic_flechette_tcf_322">
-<h3>3x22mm Tungsten-Ceramic Flechette TCF-322 <a href="#3x22mm_tungsten_ceramic_flechette_tcf_322" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>3x22mm Tungsten-Ceramic Flechette TCF-322</span><span class="entry-links"><a href="#3x22mm_tungsten_ceramic_flechette_tcf_322" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('3x22mm_tungsten_ceramic_flechette_tcf_322')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -846,7 +850,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="4mm_piezoelectric_crystal_array_dart_pca_4">
-<h3>4mm Piezoelectric Crystal-Array Dart PCA-4 <a href="#4mm_piezoelectric_crystal_array_dart_pca_4" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>4mm Piezoelectric Crystal-Array Dart PCA-4</span><span class="entry-links"><a href="#4mm_piezoelectric_crystal_array_dart_pca_4" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('4mm_piezoelectric_crystal_array_dart_pca_4')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -933,7 +937,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="4mm_piezoelectric_gel_micro_bead_pgm_4">
-<h3>4mm Piezoelectric Gel Micro-Bead PGM-4 <a href="#4mm_piezoelectric_gel_micro_bead_pgm_4" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>4mm Piezoelectric Gel Micro-Bead PGM-4</span><span class="entry-links"><a href="#4mm_piezoelectric_gel_micro_bead_pgm_4" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('4mm_piezoelectric_gel_micro_bead_pgm_4')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1027,7 +1031,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="8_6x70mm_electrothermal_chemical_projectile_etc_86">
-<h3>8.6x70mm Electrothermal Chemical Projectile ETC-86 <a href="#8_6x70mm_electrothermal_chemical_projectile_etc_86" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>8.6x70mm Electrothermal Chemical Projectile ETC-86</span><span class="entry-links"><a href="#8_6x70mm_electrothermal_chemical_projectile_etc_86" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('8_6x70mm_electrothermal_chemical_projectile_etc_86')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1122,7 +1126,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="80mm_x_0_3mm_tungsten_conductive_needle_array_tna_80">
-<h3>80mm x 0.3mm Tungsten Conductive Needle Array TNA-80 <a href="#80mm_x_0_3mm_tungsten_conductive_needle_array_tna_80" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>80mm x 0.3mm Tungsten Conductive Needle Array TNA-80</span><span class="entry-links"><a href="#80mm_x_0_3mm_tungsten_conductive_needle_array_tna_80" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('80mm_x_0_3mm_tungsten_conductive_needle_array_tna_80')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1217,7 +1221,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="9_5mm_frangible_thermobaric_micro_canister_ftm_95">
-<h3>9.5mm Frangible Thermobaric Micro-Canister FTM-95 <a href="#9_5mm_frangible_thermobaric_micro_canister_ftm_95" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>9.5mm Frangible Thermobaric Micro-Canister FTM-95</span><span class="entry-links"><a href="#9_5mm_frangible_thermobaric_micro_canister_ftm_95" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('9_5mm_frangible_thermobaric_micro_canister_ftm_95')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1312,7 +1316,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="aerosol_chemical_payload_canister_acp_35">
-<h3>Aerosol Chemical Payload Canister ACP-35 <a href="#aerosol_chemical_payload_canister_acp_35" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Aerosol Chemical Payload Canister ACP-35</span><span class="entry-links"><a href="#aerosol_chemical_payload_canister_acp_35" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('aerosol_chemical_payload_canister_acp_35')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1407,7 +1411,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="arcturus_high_density_capacitor_cell_ads_hc9">
-<h3>Arcturus High-Density Capacitor Cell ADS-HC9 <a href="#arcturus_high_density_capacitor_cell_ads_hc9" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Arcturus High-Density Capacitor Cell ADS-HC9</span><span class="entry-links"><a href="#arcturus_high_density_capacitor_cell_ads_hc9" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('arcturus_high_density_capacitor_cell_ads_hc9')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1501,7 +1505,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="black_market_depleted_uranium_flechette_duf_3x22">
-<h3>Black Market Depleted Uranium Flechette DUF-3x22 <a href="#black_market_depleted_uranium_flechette_duf_3x22" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Black Market Depleted Uranium Flechette DUF-3x22</span><span class="entry-links"><a href="#black_market_depleted_uranium_flechette_duf_3x22" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('black_market_depleted_uranium_flechette_duf_3x22')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1591,7 +1595,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="compressed_hydraulic_fluid_canister_chf_400">
-<h3>Compressed Hydraulic Fluid Canister CHF-400 <a href="#compressed_hydraulic_fluid_canister_chf_400" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Compressed Hydraulic Fluid Canister CHF-400</span><span class="entry-links"><a href="#compressed_hydraulic_fluid_canister_chf_400" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('compressed_hydraulic_fluid_canister_chf_400')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1684,7 +1688,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="cryogenic_dendrite_filament_cartridge_cdf_12">
-<h3>Cryogenic Dendrite Filament Cartridge CDF-12 <a href="#cryogenic_dendrite_filament_cartridge_cdf_12" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Cryogenic Dendrite Filament Cartridge CDF-12</span><span class="entry-links"><a href="#cryogenic_dendrite_filament_cartridge_cdf_12" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('cryogenic_dendrite_filament_cartridge_cdf_12')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1771,7 +1775,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ferroelectric_ceramic_microbead_charge_fec_8">
-<h3>Ferroelectric Ceramic Microbead Charge FEC-8 <a href="#ferroelectric_ceramic_microbead_charge_fec_8" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ferroelectric Ceramic Microbead Charge FEC-8</span><span class="entry-links"><a href="#ferroelectric_ceramic_microbead_charge_fec_8" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ferroelectric_ceramic_microbead_charge_fec_8')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1859,7 +1863,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="helix_biosystems_compact_power_cell_hb_3">
-<h3>Helix Biosystems Compact Power Cell HB-3 <a href="#helix_biosystems_compact_power_cell_hb_3" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Helix Biosystems Compact Power Cell HB-3</span><span class="entry-links"><a href="#helix_biosystems_compact_power_cell_hb_3" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('helix_biosystems_compact_power_cell_hb_3')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -1956,7 +1960,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="improvised_resonance_slug_irs_11">
-<h3>Improvised Resonance Slug IRS-11 <a href="#improvised_resonance_slug_irs_11" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Improvised Resonance Slug IRS-11</span><span class="entry-links"><a href="#improvised_resonance_slug_irs_11" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('improvised_resonance_slug_irs_11')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2042,7 +2046,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="magnetically_accelerated_synovial_crystallization_round_mascr_8">
-<h3>Magnetically Accelerated Synovial Crystallization Round MASCR-8 <a href="#magnetically_accelerated_synovial_crystallization_round_mascr_8" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Magnetically Accelerated Synovial Crystallization Round MASCR-8</span><span class="entry-links"><a href="#magnetically_accelerated_synovial_crystallization_round_mascr_8" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('magnetically_accelerated_synovial_crystallization_round_mascr_8')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2130,7 +2134,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="nutrient_cartridge_biological_sustenance_pack_bsp_72">
-<h3>Nutrient Cartridge Biological Sustenance Pack BSP-72 <a href="#nutrient_cartridge_biological_sustenance_pack_bsp_72" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Nutrient Cartridge Biological Sustenance Pack BSP-72</span><span class="entry-links"><a href="#nutrient_cartridge_biological_sustenance_pack_bsp_72" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('nutrient_cartridge_biological_sustenance_pack_bsp_72')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2221,7 +2225,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ouroboros_oe_heavy_power_cell_oe_h7">
-<h3>Ouroboros OE-Heavy Power Cell OE-H7 <a href="#ouroboros_oe_heavy_power_cell_oe_h7" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ouroboros OE-Heavy Power Cell OE-H7</span><span class="entry-links"><a href="#ouroboros_oe_heavy_power_cell_oe_h7" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ouroboros_oe_heavy_power_cell_oe_h7')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2317,7 +2321,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="ringo_corponation_r_cell_type_9_rc_9">
-<h3>Ringo Corponation R-Cell Type-9 RC-9 <a href="#ringo_corponation_r_cell_type_9_rc_9" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Ringo Corponation R-Cell Type-9 RC-9</span><span class="entry-links"><a href="#ringo_corponation_r_cell_type_9_rc_9" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('ringo_corponation_r_cell_type_9_rc_9')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2413,7 +2417,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="standard_co2_propulsion_cartridge_spc_12">
-<h3>Standard CO2 Propulsion Cartridge SPC-12 <a href="#standard_co2_propulsion_cartridge_spc_12" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Standard CO2 Propulsion Cartridge SPC-12</span><span class="entry-links"><a href="#standard_co2_propulsion_cartridge_spc_12" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('standard_co2_propulsion_cartridge_spc_12')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2510,7 +2514,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="street_loaded_piezoelectric_overcharge_bead_pzo_4">
-<h3>Street-Loaded Piezoelectric Overcharge Bead PZO-4 <a href="#street_loaded_piezoelectric_overcharge_bead_pzo_4" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Street-Loaded Piezoelectric Overcharge Bead PZO-4</span><span class="entry-links"><a href="#street_loaded_piezoelectric_overcharge_bead_pzo_4" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('street_loaded_piezoelectric_overcharge_bead_pzo_4')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2598,7 +2602,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="tessera_multi_platform_liquid_propellant_cartridge_tmp_40">
-<h3>Tessera Multi-Platform Liquid Propellant Cartridge TMP-40 <a href="#tessera_multi_platform_liquid_propellant_cartridge_tmp_40" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Tessera Multi-Platform Liquid Propellant Cartridge TMP-40</span><span class="entry-links"><a href="#tessera_multi_platform_liquid_propellant_cartridge_tmp_40" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('tessera_multi_platform_liquid_propellant_cartridge_tmp_40')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2693,7 +2697,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="torsional_filament_web_cassette_tfw_2">
-<h3>Torsional Filament Web Cassette TFW-2 <a href="#torsional_filament_web_cassette_tfw_2" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Torsional Filament Web Cassette TFW-2</span><span class="entry-links"><a href="#torsional_filament_web_cassette_tfw_2" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('torsional_filament_web_cassette_tfw_2')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2786,7 +2790,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="universal_ferrofluid_suspension_cartridge_ufc_40">
-<h3>Universal Ferrofluid Suspension Cartridge UFC-40 <a href="#universal_ferrofluid_suspension_cartridge_ufc_40" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Universal Ferrofluid Suspension Cartridge UFC-40</span><span class="entry-links"><a href="#universal_ferrofluid_suspension_cartridge_ufc_40" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('universal_ferrofluid_suspension_cartridge_ufc_40')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -2881,7 +2885,7 @@ ul.compact li { font-size: 13px; padding: 1px 0; }
 <a href="#top" class="back-top">Back to top</a>
 </div>
 <div class="entry" id="zheng_dao_type_4_bioelectric_cell_zd_t4">
-<h3>Zheng-Dao Type-4 Bioelectric Cell ZD-T4 <a href="#zheng_dao_type_4_bioelectric_cell_zd_t4" class="permalink" title="Link to this entry">#</a></h3>
+<h3><span>Zheng-Dao Type-4 Bioelectric Cell ZD-T4</span><span class="entry-links"><a href="#zheng_dao_type_4_bioelectric_cell_zd_t4" class="permalink" title="Link to this entry">#</a><span class="copy-link" onclick="copyLink('zheng_dao_type_4_bioelectric_cell_zd_t4')" title="Copy link">&#x1F4CB;</span></span></h3>
 <table class="fields">
 <tr>
 <td class="key">name</td>
@@ -3002,6 +3006,14 @@ function filterEntries() {
 function clearFilter() {
     document.getElementById('filterInput').value = '';
     filterEntries();
+}
+function copyLink(slug) {
+    var url = location.href.split('#')[0] + '#' + slug;
+    navigator.clipboard.writeText(url).then(function() {
+        var el = event.target;
+        el.textContent = '\u2705';
+        setTimeout(function() { el.textContent = '\uD83D\uDCCB'; }, 1500);
+    });
 }</script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+using StreetSamurai.Core.Models.Canon;
 using StreetSamurai.Core.Models.Graph;
 
 namespace StreetSamurai.Core.Services;
@@ -86,6 +87,95 @@ public class RelationshipDiscoveryService
         }
 
         return newEdges;
+    }
+
+    /// <summary>
+    /// Create graph edges from character archetypes and belongings.
+    /// Call after characters are loaded/saved.
+    /// </summary>
+    public int DiscoverFromCharacter(string characterName, Dictionary<string, double> archetypes, CharacterBelongings? belongings)
+    {
+        var charId = WorldGraphService.Slugify(characterName);
+        if (graph.GetNode(charId) == null) return 0;
+        int edges = 0;
+
+        // Archetype edges
+        foreach (var (archName, score) in archetypes)
+        {
+            if (score < 0.4) continue;
+            var archId = WorldGraphService.Slugify(archName);
+            // Ensure archetype node exists
+            if (graph.GetNode(archId) == null)
+            {
+                graph.AddNode(new WorldNode
+                {
+                    Id = archId, Name = archName, NodeType = "archetype",
+                    Properties = new Dictionary<string, string> { ["score"] = score.ToString("F1") }
+                });
+            }
+            var existing = graph.GetRelationshipsBetween(charId, archId);
+            if (!existing.Any())
+            {
+                graph.AddEdge(new WorldEdge
+                {
+                    Source = charId,
+                    Target = archId,
+                    RelationType = "has_archetype",
+                    Description = $"{characterName} exhibits {archName} at {score:F1}",
+                    Weight = score,
+                    Sentiment = "neutral",
+                });
+                edges++;
+            }
+        }
+
+        // Belongings edges
+        if (belongings != null)
+        {
+            edges += TryBelongingEdge(charId, characterName, belongings.PrimaryWeapon, "carries");
+            edges += TryBelongingEdge(charId, characterName, belongings.SecondaryWeapon, "carries");
+            edges += TryBelongingEdge(charId, characterName, belongings.Vehicle, "drives");
+            edges += TryBelongingEdge(charId, characterName, belongings.Armor, "wears");
+            edges += TryBelongingEdge(charId, characterName, belongings.Residence, "lives_at");
+            edges += TryBelongingEdge(charId, characterName, belongings.FavoriteDrink, "drinks");
+            edges += TryBelongingEdge(charId, characterName, belongings.FavoriteFood, "eats");
+            edges += TryBelongingEdge(charId, characterName, belongings.Stimulant, "uses");
+            foreach (var gear in belongings.SignatureGear)
+                edges += TryBelongingEdge(charId, characterName, gear, "owns");
+        }
+
+        if (edges > 0)
+        {
+            inference.InvalidateCache();
+            graph.Save();
+        }
+
+        return edges;
+    }
+
+    private int TryBelongingEdge(string charId, string charName, string itemName, string relType)
+    {
+        if (string.IsNullOrWhiteSpace(itemName)) return 0;
+        var itemId = WorldGraphService.Slugify(itemName);
+        var existing = graph.GetRelationshipsBetween(charId, itemId);
+        if (existing.Any()) return 0;
+
+        // Create item node if missing
+        if (graph.GetNode(itemId) == null)
+        {
+            graph.AddNode(new WorldNode { Id = itemId, Name = itemName, NodeType = "item", Properties = new() });
+        }
+
+        graph.AddEdge(new WorldEdge
+        {
+            Source = charId,
+            Target = itemId,
+            RelationType = relType,
+            Description = $"{charName} {relType} {itemName}",
+            Weight = 0.7,
+            Sentiment = "neutral",
+        });
+        return 1;
     }
 
     /// <summary>

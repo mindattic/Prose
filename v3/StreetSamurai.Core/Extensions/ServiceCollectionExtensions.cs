@@ -41,6 +41,32 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ConsumerGoodRepository>();
         services.AddSingleton<MotifRepository>();
         services.AddSingleton<ToneBibleRepository>();
+
+        // Auto-register all directory repos as IExportableRepository for discovery
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<CharacterRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<CorponationRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<DistrictRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<FactionRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<WorldbuildingDocRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<WeaponryRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<AmmunitionRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<EquipmentRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<TechnologyRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<CyberwareRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<VocabularyRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<SyntheticLifeRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<GenewareRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<TransportationRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<QuoteRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<ContractRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<NewsRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<ArchetypeRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<SubstrateRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<PharmaceuticalRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<ConsumerGoodRepository>());
+
+        // Export discovery — auto-finds all IExportableRepository instances
+        services.AddSingleton<ExportDiscoveryService>();
         services.AddSingleton<StoryBibleRepository>();
         services.AddSingleton<LiteraryRulesRepository>();
         services.AddSingleton<CharacterProfileRepository>();
@@ -88,7 +114,15 @@ public static class ServiceCollectionExtensions
                 sp.GetRequiredService<InferenceService>());
 
             // Wire repository save events to auto-discover relationships
-            sp.GetRequiredService<CharacterRepository>().OnItemSaved += name => discovery.DiscoverFromEntity(name, "character");
+            sp.GetRequiredService<CharacterRepository>().OnItemSaved += name =>
+            {
+                discovery.DiscoverFromEntity(name, "character");
+                // Also graph archetypes and belongings
+                var charRepo = sp.GetRequiredService<CharacterRepository>();
+                var character = charRepo.GetByName(name);
+                if (character != null)
+                    discovery.DiscoverFromCharacter(name, character.Archetypes, character.Belongings);
+            };
             sp.GetRequiredService<CorponationRepository>().OnItemSaved += name => discovery.DiscoverFromEntity(name, "organization");
             sp.GetRequiredService<DistrictRepository>().OnItemSaved += name => discovery.DiscoverFromEntity(name, "place");
             sp.GetRequiredService<FactionRepository>().OnItemSaved += name => discovery.DiscoverFromEntity(name, "faction");
@@ -151,6 +185,9 @@ public static class ServiceCollectionExtensions
 
         // Crew assessment — grades team capability against contract requirements
         services.AddSingleton<CrewAssessmentService>();
+
+        // Graph health analysis — orphan detection, bad node flagging
+        services.AddSingleton<GraphHealthService>();
 
         // Character behavior prediction — psychological modeling
         services.AddSingleton<BehaviorPredictionService>();

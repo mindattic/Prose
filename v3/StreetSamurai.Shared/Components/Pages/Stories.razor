@@ -197,9 +197,11 @@ else if (!generating)
 
     private void DoDelete(string id)
     {
-        Repo.DeleteProject(id);
+        try { Repo.DeleteProject(id); }
+        catch (Exception ex) { System.Diagnostics.Debug.WriteLine($"Delete failed: {ex.Message}"); }
         confirmDeleteId = null;
         projects = Repo.ListProjects();
+        StateHasChanged();
     }
 
     private static string ConvertToHtml(AutonomousStory story)

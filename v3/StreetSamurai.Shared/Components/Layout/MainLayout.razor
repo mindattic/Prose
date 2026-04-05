@@ -1,9 +1,9 @@
 @inherits LayoutComponentBase
 
 <div class="app-shell">
-    <div class="app-container d-flex">
+    <div class="app-container d-flex" style="height: 100vh; overflow: hidden;">
         <NavMenu />
-        <main class="flex-grow-1 p-3">
+        <main class="flex-grow-1" style="overflow-y: auto; padding: 10px;">
             <div class="container-fluid">
                 @Body
             </div>
