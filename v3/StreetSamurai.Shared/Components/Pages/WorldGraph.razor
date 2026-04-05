@@ -3,14 +3,6 @@
 @inject IJSRuntime JS
 @implements IDisposable
 
-<div class="d-flex justify-content-between align-items-center mb-1">
-    <h4 class="text-danger mb-0">World Graph</h4>
-    <div class="d-flex gap-2 align-items-center">
-        <small class="text-muted">@allNodes.Count nodes, @allEdges.Count edges</small>
-        <button class="btn btn-sm btn-outline-warning" @onclick="RebuildGraph"><i class="bi bi-arrow-clockwise"></i> Rebuild</button>
-        <button class="btn btn-sm btn-outline-secondary" @onclick="PopOut" title="Open in new window"><i class="bi bi-box-arrow-up-right"></i></button>
-    </div>
-</div>
 
 <div class="row g-2">
     @* ── Left: Filters + Node List ─────────────────────── *@
@@ -51,7 +43,7 @@
         </div>
 
         @* ── Node list (click to add to graph) ─────────── *@
-        <div class="card bg-dark text-light border-secondary" style="max-height: 55vh; overflow-y: auto;">
+        <div class="card bg-dark text-light border-secondary" style="max-height: calc(100vh - 150px); overflow-y: auto;">
             <div class="card-header text-muted py-1 small">Click to explore (@filteredNodes.Count)</div>
             <div class="list-group list-group-flush">
                 @foreach (var node in filteredNodes.Take(100))
@@ -73,7 +65,7 @@
     <div class="col-md-9">
         @* ── D3 Canvas ────────────────────────────────────── *@
         <div id="graphCanvas" class="border border-secondary rounded mb-2"
-             style="width: 100%; height: 55vh; background: #111;"></div>
+             style="width: 100%; height: calc(100vh - 150px); background: #111;"></div>
 
         @* ── Selected Node Detail + Nearby Linkable Nodes ── *@
         @if (selectedNode != null)

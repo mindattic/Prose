@@ -4,21 +4,23 @@
 @inject NavigationManager Nav
 
 <div class="dict-layout">
-    <div class="dict-list bg-dark border-end border-secondary">
-        <div class="p-2">
-            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+    <div class="dict-list">
+        <div class="card bg-dark text-light border-secondary mb-2 card-body">
+            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
                    placeholder="Filter..." @bind="filter" @bind:event="oninput" />
-        </div>
-        @foreach (var a in FilteredItems)
-        {
-            <div class="list-item text-light @(editing?.Name == a.Name ? "active" : "")" @onclick="() => Edit(a)">
-                <div class="fw-bold small">@a.Name</div>
-                <div class="text-muted" style="font-size: 0.7rem;">@a.Category — @a.TierAssociation</div>
+            <div class="d-flex gap-2">
+            <ExportButton Mode="repo" ExtraStyle="flex:1;" RepoName="Apparel" GetRepoEntries="GetExportEntries" />
+            <button class="btn btn-sm btn-outline-danger flex-fill" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
             </div>
-        }
-        <div class="p-2 d-flex gap-1">
-            <button class="btn btn-sm btn-outline-danger flex-grow-1" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
-            <ExportButton Mode="repo" RepoName="Apparel" GetRepoEntries="GetExportEntries" />
+        </div>
+        <div class="dict-items">
+            @foreach (var a in FilteredItems)
+            {
+                <div class="list-item text-light @(editing?.Name == a.Name ? "active" : "")" @onclick="() => Edit(a)">
+                    <div class="fw-bold small">@a.Name</div>
+                    <div class="text-muted" style="font-size: 0.7rem;">@a.Category — @a.TierAssociation</div>
+                </div>
+            }
         </div>
     </div>
     <div class="dict-editor">

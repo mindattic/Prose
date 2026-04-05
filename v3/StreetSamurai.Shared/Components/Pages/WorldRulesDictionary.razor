@@ -82,6 +82,8 @@
         <button class="btn btn-sm btn-outline-danger" @onclick="AddMotif"><i class="bi bi-plus-lg"></i></button>
     </div>
     <div class="card-body">
+        <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
+               placeholder="Filter..." @bind="filter" @bind:event="oninput" />
         @if (editingMotif != null)
         {
             <div class="row g-2 mb-2">
@@ -93,7 +95,7 @@
                 <button class="btn btn-sm btn-outline-secondary" @onclick="() => editingMotif = null">Cancel</button>
             </div>
         }
-        @foreach (var m in motifs)
+        @foreach (var m in FilteredMotifs)
         {
             <div class="d-flex justify-content-between border-bottom border-secondary py-1">
                 <div>
@@ -106,7 +108,7 @@
                 </div>
             </div>
         }
-        @if (!motifs.Any() && editingMotif == null)
+        @if (!FilteredMotifs.Any() && editingMotif == null)
         {
             <small class="text-muted">No motifs defined yet.</small>
         }
@@ -118,6 +120,12 @@
     private LiteraryRulesData rules = new();
     private List<MotifData> motifs = [];
     private bool editBible, _editRules;
+    private string filter = "";
+
+    private IEnumerable<MotifData> FilteredMotifs => string.IsNullOrWhiteSpace(filter)
+        ? motifs
+        : motifs.Where(m => m.Name.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || m.Description.Contains(filter, StringComparison.OrdinalIgnoreCase));
     private MotifData? editingMotif;
     private string motifOriginalName = "";
 

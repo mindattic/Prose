@@ -5,17 +5,23 @@
 @inject WorldGraphService Graph
 
 <div class="dict-layout">
-    <div class="dict-list bg-dark border-end border-secondary">
-        @foreach (var w in items)
-        {
-            <div class="list-item text-light @(editing?.Name == w.Name ? "active" : "")" @onclick="() => Edit(w)">
-                <div class="fw-bold small">@w.Name</div>
-                <div class="text-muted" style="font-size: 0.7rem;">@w.Category</div>
+    <div class="dict-list">
+        <div class="card bg-dark text-light border-secondary mb-2 card-body">
+            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
+                   placeholder="Filter..." @bind="filter" @bind:event="oninput" />
+            <div class="d-flex gap-2">
+            <ExportButton Mode="repo" ExtraStyle="flex:1;" RepoName="Weaponry" GetRepoEntries="GetExportEntries" />
+            <button class="btn btn-sm btn-outline-danger flex-fill" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
             </div>
-        }
-        <div class="p-2">
-            <ExportButton Mode="repo" RepoName="Weaponry" GetRepoEntries="GetExportEntries" />
-            <button class="btn btn-sm btn-outline-danger w-100" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New Weapon</button>
+        </div>
+        <div class="dict-items">
+            @foreach (var w in FilteredItems)
+            {
+                <div class="list-item text-light @(editing?.Name == w.Name ? "active" : "")" @onclick="() => Edit(w)">
+                    <div class="fw-bold small">@w.Name</div>
+                    <div class="text-muted" style="font-size: 0.7rem;">@w.Category</div>
+                </div>
+            }
         </div>
     </div>
 
@@ -57,6 +63,13 @@
     private WeaponryData? editing;
     private bool isNew, _confirmDelete;
     private string originalName = "", _baseTechInput = "";
+    private string filter = "";
+
+    private IEnumerable<WeaponryData> FilteredItems => string.IsNullOrWhiteSpace(filter)
+        ? items
+        : items.Where(w => w.Name.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || w.Description.Contains(filter, StringComparison.OrdinalIgnoreCase));
+
     protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); if (Nav.Uri.Contains("new=true")) AddNew(); }
     private void AddNew() { editing = new WeaponryData(); isNew = true; _confirmDelete = false; _baseTechInput = ""; }
     private void Edit(WeaponryData w) { editing = w; originalName = w.Name; isNew = false; _confirmDelete = false; _baseTechInput = string.Join(", ", w.BaseTechnologies); }

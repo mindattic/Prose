@@ -21,7 +21,7 @@ else if (errorText != null)
 }
 else
 {
-    <button class="btn btn-sm @ButtonClass" @onclick="DoExport" title="@Title">
+    <button class="btn btn-sm @ButtonClass" style="@ExtraStyle" @onclick="DoExport" title="@Title">
         <i class="bi bi-file-earmark-code"></i> @Label
     </button>
 }
@@ -33,15 +33,16 @@ else
     [Parameter] public string EntryJson { get; set; } = "";
     [Parameter] public Func<List<(string name, string json)>>? GetRepoEntries { get; set; }
     [Parameter] public Func<Dictionary<string, List<(string name, string json)>>>? GetAllRepos { get; set; }
+    [Parameter] public string ExtraStyle { get; set; } = "";
 
     private bool exporting;
     private double progress;
     private string statusText = "";
     private string? errorText;
 
-    private string Label => Mode switch { "entry" => "Export", "repo" => "Export Repo", "all" => "Export All", _ => "Export" };
+    private string Label => Mode switch { "entry" => "Export", "repo" => "Export", "all" => "Export All", _ => "Export" };
     private string Title => Mode switch { "entry" => $"Export {EntryName} as .htm", "repo" => $"Export all {RepoName} as .htm", "all" => "Export all repos as .htm", _ => "Export" };
-    private string ButtonClass => Mode switch { "all" => "btn-outline-info", _ => "btn-outline-secondary" };
+    private string ButtonClass => "btn-outline-info";
 
     private async Task DoExport()
     {
