@@ -15,20 +15,13 @@
         @if (confirmReset)
         {
             <span class="d-flex align-items-center gap-1">
-                <small class="text-warning">Reset all non-key settings?</small>
+                <small class="text-warning">Reset all settings to defaults?</small>
                 <button class="btn btn-sm btn-danger" @onclick="DoReset">Yes</button>
                 <button class="btn btn-sm btn-outline-secondary" @onclick="() => confirmReset = false">No</button>
             </span>
         }
         else
         {
-            <button class="btn btn-sm btn-outline-warning" @onclick="RebuildGraph" disabled="@rebuilding">
-                @if (rebuilding) { <span class="spinner-border spinner-border-sm me-1"></span> }
-                <i class="bi bi-diagram-3"></i> Rebuild Graph
-            </button>
-            <button class="btn btn-sm btn-outline-info" @onclick="SaveDefaults">
-                <i class="bi bi-bookmark-star"></i> Save as Defaults
-            </button>
             <button class="btn btn-sm btn-outline-secondary" @onclick="() => confirmReset = true">
                 <i class="bi bi-arrow-counterclockwise"></i> Reset to Defaults
             </button>
@@ -105,6 +98,60 @@
     </div>
 </div>
 
+@* ── Options ──────────────────────────────────────────── *@
+<div class="row g-3 mb-3">
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted">Options</div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label class="form-label text-muted">Rebuild the world graph from all canon data.</label>
+                        <div class="input-group">
+                            <button class="btn btn-outline-warning" @onclick="RebuildGraph" disabled="@rebuilding">
+                                @if (rebuilding) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                <i class="bi bi-diagram-3"></i> Rebuild Graph
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label text-muted">Scan every data file for corrupt or malformed JSON.</label>
+                        <div class="input-group">
+                            <button class="btn btn-outline-success" @onclick="ValidateJson" disabled="@validating">
+                                @if (validating) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                <i class="bi bi-check-circle"></i> Validate All JSON
+                            </button>
+                            @if (validationResult != null)
+                            {
+                                <span class="input-group-text bg-dark border-secondary">
+                                    <span class="badge @(_validationErrors == 0 ? "bg-success" : "bg-danger")">
+                                        @validationTotal files — @(_validationErrors == 0 ? "all valid" : $"{_validationErrors} broken")
+                                    </span>
+                                </span>
+                            }
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label text-muted">Generate browsable .htm files for all repositories to ~/exports/.</label>
+                        <div class="input-group">
+                            <ExportButton Mode="all" GetAllRepos="GetAllReposForExport" ExtraStyle="" />
+                        </div>
+                    </div>
+                </div>
+                @if (brokenFiles.Count > 0)
+                {
+                    <div class="mt-2">
+                        @foreach (var err in brokenFiles)
+                        {
+                            <div class="small text-danger"><i class="bi bi-x-circle"></i> @err</div>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
 @* ── LLM Providers ─────────────────────────────────────── *@
 <div class="row g-3 mb-3">
     <div class="col-12">
@@ -117,7 +164,10 @@
                 <div class="row g-3">
                     <div class="col-md-6">
                         <label class="form-label text-muted">API Key</label>
-                        <input type="password" class="form-control bg-dark text-light border-secondary" placeholder="sk-ant-..." @bind="SettingsSvc.ApiKey" @bind:event="onchange" @bind:after="RetestAnthropic" />
+                        <div class="input-group">
+                            <input type="@KeyType("anthropic")" class="form-control bg-dark text-light border-secondary" placeholder="sk-ant-..." @bind="SettingsSvc.ApiKey" @bind:event="onchange" @bind:after="RetestAnthropic" />
+                            <button class="btn btn-outline-secondary" type="button" @onclick='() => ToggleKeyVisibility("anthropic")'><i class="bi @(visibleKeys.Contains("anthropic") ? "bi-eye-slash" : "bi-eye")"></i></button>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <label class="form-label text-muted">Model</label>
@@ -141,7 +191,10 @@
                 <div class="row g-3">
                     <div class="col-md-6">
                         <label class="form-label text-muted">API Key</label>
-                        <input type="password" class="form-control bg-dark text-light border-secondary" placeholder="sk-..." @bind="SettingsSvc.OpenAiApiKey" @bind:event="onchange" @bind:after="RetestOpenai" />
+                        <div class="input-group">
+                            <input type="@KeyType("openai")" class="form-control bg-dark text-light border-secondary" placeholder="sk-..." @bind="SettingsSvc.OpenAiApiKey" @bind:event="onchange" @bind:after="RetestOpenai" />
+                            <button class="btn btn-outline-secondary" type="button" @onclick='() => ToggleKeyVisibility("openai")'><i class="bi @(visibleKeys.Contains("openai") ? "bi-eye-slash" : "bi-eye")"></i></button>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <label class="form-label text-muted">Model</label>
@@ -161,7 +214,7 @@
             <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Google Gemini <a href="https://aistudio.google.com/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("gemini")</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="AIza..." @bind="SettingsSvc.GeminiApiKey" @bind:event="onchange" @bind:after="RetestGemini" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><div class="input-group"><input type="@KeyType("gemini")" class="form-control bg-dark text-light border-secondary" placeholder="AIza..." @bind="SettingsSvc.GeminiApiKey" @bind:event="onchange" @bind:after="RetestGemini" /><button class="btn btn-outline-secondary" type="button" @onclick='() => ToggleKeyVisibility("gemini")'><i class="bi @(visibleKeys.Contains("gemini") ? "bi-eye-slash" : "bi-eye")"></i></button></div></div>
                     <div class="col-md-6"><label class="form-label text-muted">Model</label>
                         <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.GeminiModel" @bind:after="RetestGemini">
                             <option value="gemini-2.5-pro">Gemini 2.5 Pro</option>
@@ -177,7 +230,7 @@
             <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>DeepSeek <a href="https://platform.deepseek.com/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("deepseek")</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="sk-..." @bind="SettingsSvc.DeepSeekApiKey" @bind:event="onchange" @bind:after="RetestDeepseek" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><div class="input-group"><input type="@KeyType("deepseek")" class="form-control bg-dark text-light border-secondary" placeholder="sk-..." @bind="SettingsSvc.DeepSeekApiKey" @bind:event="onchange" @bind:after="RetestDeepseek" /><button class="btn btn-outline-secondary" type="button" @onclick='() => ToggleKeyVisibility("deepseek")'><i class="bi @(visibleKeys.Contains("deepseek") ? "bi-eye-slash" : "bi-eye")"></i></button></div></div>
                     <div class="col-md-6"><label class="form-label text-muted">Model</label>
                         <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.DeepSeekModel" @bind:after="RetestDeepseek">
                             <option value="deepseek-chat">DeepSeek Chat (V3)</option>
@@ -192,7 +245,7 @@
             <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Mistral <a href="https://console.mistral.ai/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("mistral")</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.MistralApiKey" @bind:event="onchange" @bind:after="RetestMistral" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><div class="input-group"><input type="@KeyType("mistral")" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.MistralApiKey" @bind:event="onchange" @bind:after="RetestMistral" /><button class="btn btn-outline-secondary" type="button" @onclick='() => ToggleKeyVisibility("mistral")'><i class="bi @(visibleKeys.Contains("mistral") ? "bi-eye-slash" : "bi-eye")"></i></button></div></div>
                     <div class="col-md-6"><label class="form-label text-muted">Model</label>
                         <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.MistralModel" @bind:after="RetestMistral">
                             <option value="mistral-large-latest">Mistral Large</option>
@@ -209,7 +262,7 @@
             <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Grok (xAI) <a href="https://console.x.ai/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("grok")</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="xai-..." @bind="SettingsSvc.GrokApiKey" @bind:event="onchange" @bind:after="RetestGrok" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><div class="input-group"><input type="@KeyType("grok")" class="form-control bg-dark text-light border-secondary" placeholder="xai-..." @bind="SettingsSvc.GrokApiKey" @bind:event="onchange" @bind:after="RetestGrok" /><button class="btn btn-outline-secondary" type="button" @onclick='() => ToggleKeyVisibility("grok")'><i class="bi @(visibleKeys.Contains("grok") ? "bi-eye-slash" : "bi-eye")"></i></button></div></div>
                     <div class="col-md-6"><label class="form-label text-muted">Model</label>
                         <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.GrokModel" @bind:after="RetestGrok">
                             <option value="grok-3">Grok 3</option>
@@ -224,7 +277,7 @@
             <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Groq <a href="https://console.groq.com/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("groq")</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="gsk_..." @bind="SettingsSvc.GroqApiKey" @bind:event="onchange" @bind:after="RetestGroq" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><div class="input-group"><input type="@KeyType("groq")" class="form-control bg-dark text-light border-secondary" placeholder="gsk_..." @bind="SettingsSvc.GroqApiKey" @bind:event="onchange" @bind:after="RetestGroq" /><button class="btn btn-outline-secondary" type="button" @onclick='() => ToggleKeyVisibility("groq")'><i class="bi @(visibleKeys.Contains("groq") ? "bi-eye-slash" : "bi-eye")"></i></button></div></div>
                     <div class="col-md-6"><label class="form-label text-muted">Model</label>
                         <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.GroqModel" @bind:after="RetestGroq">
                             <option value="llama-3.3-70b-versatile">Llama 3.3 70B</option>
@@ -241,7 +294,7 @@
             <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Together AI <a href="https://api.together.ai/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("together")</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.TogetherApiKey" @bind:event="onchange" @bind:after="RetestTogether" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><div class="input-group"><input type="@KeyType("together")" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.TogetherApiKey" @bind:event="onchange" @bind:after="RetestTogether" /><button class="btn btn-outline-secondary" type="button" @onclick='() => ToggleKeyVisibility("together")'><i class="bi @(visibleKeys.Contains("together") ? "bi-eye-slash" : "bi-eye")"></i></button></div></div>
                     <div class="col-md-6"><label class="form-label text-muted">Model</label>
                         <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.TogetherModel" @bind:after="RetestTogether">
                             <option value="meta-llama/Llama-3.3-70B-Instruct-Turbo">Llama 3.3 70B Turbo</option>
@@ -257,7 +310,7 @@
             <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>OpenRouter <a href="https://openrouter.ai/settings/keys" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("openrouter")</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="sk-or-..." @bind="SettingsSvc.OpenRouterApiKey" @bind:event="onchange" @bind:after="RetestOpenrouter" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><div class="input-group"><input type="@KeyType("openrouter")" class="form-control bg-dark text-light border-secondary" placeholder="sk-or-..." @bind="SettingsSvc.OpenRouterApiKey" @bind:event="onchange" @bind:after="RetestOpenrouter" /><button class="btn btn-outline-secondary" type="button" @onclick='() => ToggleKeyVisibility("openrouter")'><i class="bi @(visibleKeys.Contains("openrouter") ? "bi-eye-slash" : "bi-eye")"></i></button></div></div>
                     <div class="col-md-6"><label class="form-label text-muted">Model</label>
                         <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.OpenRouterModel" @bind:after="RetestOpenrouter">
                             <option value="anthropic/claude-sonnet-4">Claude Sonnet 4</option>
@@ -274,7 +327,7 @@
             <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Fireworks AI <a href="https://fireworks.ai/account/api-keys" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("fireworks")</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="fw_..." @bind="SettingsSvc.FireworksApiKey" @bind:event="onchange" @bind:after="RetestFireworks" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><div class="input-group"><input type="@KeyType("fireworks")" class="form-control bg-dark text-light border-secondary" placeholder="fw_..." @bind="SettingsSvc.FireworksApiKey" @bind:event="onchange" @bind:after="RetestFireworks" /><button class="btn btn-outline-secondary" type="button" @onclick='() => ToggleKeyVisibility("fireworks")'><i class="bi @(visibleKeys.Contains("fireworks") ? "bi-eye-slash" : "bi-eye")"></i></button></div></div>
                     <div class="col-md-6"><label class="form-label text-muted">Model</label>
                         <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.FireworksModel" @bind:after="RetestFireworks">
                             <option value="accounts/fireworks/models/llama-v3p3-70b-instruct">Llama 3.3 70B</option>
@@ -289,12 +342,13 @@
             <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Cohere <a href="https://dashboard.cohere.com/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("cohere")</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.CohereApiKey" @bind:event="onchange" @bind:after="RetestCohere" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><div class="input-group"><input type="@KeyType("cohere")" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.CohereApiKey" @bind:event="onchange" @bind:after="RetestCohere" /><button class="btn btn-outline-secondary" type="button" @onclick='() => ToggleKeyVisibility("cohere")'><i class="bi @(visibleKeys.Contains("cohere") ? "bi-eye-slash" : "bi-eye")"></i></button></div></div>
                     <div class="col-md-6"><label class="form-label text-muted">Model</label>
                         <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.CohereModel" @bind:after="RetestCohere">
-                            <option value="command-r-plus">Command R+</option>
-                            <option value="command-r">Command R</option>
-                            <option value="command-a-03-2025">Command A</option>
+                            <option value="command-a-03-2025">Command A (Latest)</option>
+                            <option value="command-r-plus-08-2024">Command R+ 08-2024</option>
+                            <option value="command-r-08-2024">Command R 08-2024</option>
+                            <option value="command-r7b-12-2024">Command R 7B</option>
                         </select></div>
                 </div>
             </div>
@@ -311,15 +365,11 @@
                 <div class="row g-3">
                     <div class="col-md-4">
                         <label class="form-label text-muted">App ID</label>
-                        <input type="text" class="form-control bg-dark text-light border-secondary"
-                               placeholder="App ID"
-                               @bind="SettingsSvc.MapAppId" @bind:event="onchange" />
+                        <div class="input-group"><input type="@KeyType("here-app")" class="form-control bg-dark text-light border-secondary" placeholder="App ID" @bind="SettingsSvc.MapAppId" @bind:event="onchange" /><button class="btn btn-outline-secondary" type="button" @onclick='() => ToggleKeyVisibility("here-app")'><i class="bi @(visibleKeys.Contains("here-app") ? "bi-eye-slash" : "bi-eye")"></i></button></div>
                     </div>
                     <div class="col-md-8">
                         <label class="form-label text-muted">API Key</label>
-                        <input type="password" class="form-control bg-dark text-light border-secondary"
-                               placeholder="HERE Maps API key"
-                               @bind="SettingsSvc.MapApiKey" @bind:event="onchange" />
+                        <div class="input-group"><input type="@KeyType("here-api")" class="form-control bg-dark text-light border-secondary" placeholder="HERE Maps API key" @bind="SettingsSvc.MapApiKey" @bind:event="onchange" /><button class="btn btn-outline-secondary" type="button" @onclick='() => ToggleKeyVisibility("here-api")'><i class="bi @(visibleKeys.Contains("here-api") ? "bi-eye-slash" : "bi-eye")"></i></button></div>
                     </div>
                 </div>
             </div>
@@ -339,8 +389,7 @@
                 <div class="row g-3">
                     <div class="col-md-4">
                         <label class="form-label text-muted">API Key</label>
-                        <input type="password" class="form-control bg-dark text-light border-secondary"
-                               placeholder="sk_..." @bind="SettingsSvc.ElevenLabsApiKey" @bind:event="onchange" />
+                        <div class="input-group"><input type="@KeyType("elevenlabs")" class="form-control bg-dark text-light border-secondary" placeholder="sk_..." @bind="SettingsSvc.ElevenLabsApiKey" @bind:event="onchange" /><button class="btn btn-outline-secondary" type="button" @onclick='() => ToggleKeyVisibility("elevenlabs")'><i class="bi @(visibleKeys.Contains("elevenlabs") ? "bi-eye-slash" : "bi-eye")"></i></button></div>
                     </div>
                     <div class="col-md-4">
                         <label class="form-label text-muted">Narrator Voice</label>
@@ -416,48 +465,6 @@
     </div>
 </div>
 
-@* ── Data Maintenance ─────────────────────────────────── *@
-<div class="row g-3 mb-3">
-    <div class="col-12">
-        <div class="card bg-dark text-light border-secondary">
-            <div class="card-header text-muted">Data Maintenance</div>
-            <div class="card-body">
-                <div class="d-flex gap-2 align-items-center">
-                    <button class="btn btn-sm btn-outline-info" @onclick="ValidateJson" disabled="@validating">
-                        @if (validating) { <span class="spinner-border spinner-border-sm me-1"></span> }
-                        <i class="bi bi-check-circle"></i> Validate All JSON
-                    </button>
-                    @if (validationResult != null)
-                    {
-                        <span class="badge @(_validationErrors == 0 ? "bg-success" : "bg-danger")">
-                            @validationTotal files — @(_validationErrors == 0 ? "all valid" : $"{_validationErrors} broken")
-                        </span>
-                    }
-                </div>
-                @if (brokenFiles.Count > 0)
-                {
-                    <div class="mt-2">
-                        @foreach (var err in brokenFiles)
-                        {
-                            <div class="small text-danger"><i class="bi bi-x-circle"></i> @err</div>
-                        }
-                    </div>
-                }
-            </div>
-        </div>
-    </div>
-    <div class="col-12">
-        <div class="card bg-dark text-light border-secondary">
-            <div class="card-header text-muted">HTML Export</div>
-            <div class="card-body">
-                <div class="d-flex gap-2 align-items-center">
-                    <ExportButton Mode="all" GetAllRepos="GetAllReposForExport" />
-                    <small class="text-muted">Export all repos as linked .htm files to engine_data/exports/</small>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 @code {
     private List<LlmProviderStatus> providerStatus = [];
@@ -474,6 +481,10 @@
     private string? validationResult;
     private int validationTotal, _validationErrors;
     private List<string> brokenFiles = [];
+
+    private HashSet<string> visibleKeys = new();
+    private string KeyType(string field) => visibleKeys.Contains(field) ? "text" : "password";
+    private void ToggleKeyVisibility(string field) { if (!visibleKeys.Remove(field)) visibleKeys.Add(field); }
 
     // Provider connectivity: "none" | "testing" | "ok" | "fail"
     private Dictionary<string, string> _apiStatus = new();
@@ -528,7 +539,7 @@
         "fireworks" => (SettingsSvc.FireworksApiKey, "https://api.fireworks.ai/inference/v1/chat/completions",
             "Bearer", """{"model":"accounts/fireworks/models/llama-v3p3-70b-instruct","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
         "cohere" => (SettingsSvc.CohereApiKey, "https://api.cohere.com/v2/chat",
-            "Bearer", """{"model":"command-r","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+            "Bearer", """{"model":"command-a-03-2025","messages":[{"role":"user","content":"hi"}]}"""),
         _ => ("", "", "", ""),
     };
 
@@ -564,14 +575,15 @@
 
         if (name == "gemini")
         {
-            endpoint = $"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={key}";
+            endpoint = $"https://generativelanguage.googleapis.com/v1beta/models/{SettingsSvc.GeminiModel}:generateContent?key={key}";
             authHeader = "";
             body = """{"contents":[{"parts":[{"text":"hi"}]}],"generationConfig":{"maxOutputTokens":1}}""";
         }
 
         try
         {
-            using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(15) };
+            using var handler = new HttpClientHandler { CheckCertificateRevocationList = false };
+            using var http = new HttpClient(handler) { Timeout = TimeSpan.FromSeconds(15) };
             using var req = new HttpRequestMessage(HttpMethod.Post, endpoint);
             req.Content = new StringContent(body, System.Text.Encoding.UTF8, "application/json");
 
@@ -640,7 +652,6 @@
 
     private void SaveSettings() { _ = SettingsSvc.TtsModel; }
 
-    private void SaveDefaults() { SettingsSvc.SaveAsDefaults(); }
 
     private async Task DoReset() { SettingsSvc.ResetToDefaults(); confirmReset = false; await TestAllProviders(); }
 

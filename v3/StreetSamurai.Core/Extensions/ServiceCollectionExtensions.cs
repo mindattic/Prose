@@ -154,7 +154,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IAudioFileService, AudioFileService>();
 
         // Multi-LLM service — calls multiple providers for majority voting
-        services.AddHttpClient<MultiLlmService>();
+        services.AddHttpClient<MultiLlmService>()
+            .ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler { CheckCertificateRevocationList = false });
 
         // TTS enhancement — adds ElevenLabs audio tags before synthesis
         services.AddSingleton<TtsEnhancementService>();

@@ -5,17 +5,23 @@
 @inject WorldGraphService Graph
 
 <div class="dict-layout">
-    <div class="dict-list bg-dark border-end border-secondary">
-        @foreach (var d in items)
-        {
-            <div class="list-item text-light @(editing?.FileName == d.FileName ? "active" : "")" @onclick="() => Edit(d)">
-                <div class="fw-bold small">@d.Title</div>
-                <div class="text-muted" style="font-size: 0.7rem;">@d.Category</div>
+    <div class="dict-list">
+        <div class="card bg-dark text-light border-secondary mb-2 card-body">
+            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
+                   placeholder="Filter..." @bind="filter" @bind:event="oninput" />
+            <div class="d-flex gap-2">
+            <ExportButton Mode="repo" ExtraStyle="flex:1;" RepoName="Documents" GetRepoEntries="GetExportEntries" />
+            <button class="btn btn-sm btn-outline-danger flex-fill" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
             </div>
-        }
-        <div class="p-2">
-            <ExportButton Mode="repo" RepoName="Documents" GetRepoEntries="GetExportEntries" />
-            <button class="btn btn-sm btn-outline-danger w-100" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New Document</button>
+        </div>
+        <div class="dict-items">
+            @foreach (var d in FilteredItems)
+            {
+                <div class="list-item text-light @(editing?.FileName == d.FileName ? "active" : "")" @onclick="() => Edit(d)">
+                    <div class="fw-bold small">@d.Title</div>
+                    <div class="text-muted" style="font-size: 0.7rem;">@d.Category</div>
+                </div>
+            }
         </div>
     </div>
 
@@ -49,6 +55,13 @@
     private WorldbuildingDocument? editing;
     private bool isNew, _confirmDelete;
     private string originalName = "";
+    private string filter = "";
+
+    private IEnumerable<WorldbuildingDocument> FilteredItems => string.IsNullOrWhiteSpace(filter)
+        ? items
+        : items.Where(d => d.Title.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || d.FileName.Contains(filter, StringComparison.OrdinalIgnoreCase));
+
     protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); if (Nav.Uri.Contains("new=true")) AddNew(); }
     private void AddNew() { editing = new WorldbuildingDocument(); isNew = true; _confirmDelete = false; }
     private void Edit(WorldbuildingDocument d) { editing = d; originalName = d.FileName; isNew = false; _confirmDelete = false; }

@@ -5,17 +5,23 @@
 @inject WorldGraphService Graph
 
 <div class="dict-layout">
-    <div class="dict-list bg-dark border-end border-secondary">
-        @foreach (var e in items)
-        {
-            <div class="list-item text-light @(editing?.Name == e.Name ? "active" : "")" @onclick="() => Edit(e)">
-                <div class="fw-bold small">@(string.IsNullOrEmpty(e.ProductName) ? e.Name : e.ProductName)</div>
-                <div class="text-muted" style="font-size: 0.7rem;">@e.BrandName @(string.IsNullOrEmpty(e.Category) ? "" : $"· {e.Category}")</div>
+    <div class="dict-list">
+        <div class="card bg-dark text-light border-secondary mb-2 card-body">
+            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
+                   placeholder="Filter..." @bind="filter" @bind:event="oninput" />
+            <div class="d-flex gap-2">
+            <ExportButton Mode="repo" ExtraStyle="flex:1;" RepoName="Equipment" GetRepoEntries="GetExportEntries" />
+            <button class="btn btn-sm btn-outline-danger flex-fill" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
             </div>
-        }
-        <div class="p-2">
-            <ExportButton Mode="repo" RepoName="Equipment" GetRepoEntries="GetExportEntries" />
-            <button class="btn btn-sm btn-outline-danger w-100" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New Equipment</button>
+        </div>
+        <div class="dict-items">
+            @foreach (var e in FilteredItems)
+            {
+                <div class="list-item text-light @(editing?.Name == e.Name ? "active" : "")" @onclick="() => Edit(e)">
+                    <div class="fw-bold small">@(string.IsNullOrEmpty(e.ProductName) ? e.Name : e.ProductName)</div>
+                    <div class="text-muted" style="font-size: 0.7rem;">@e.BrandName @(string.IsNullOrEmpty(e.Category) ? "" : $"· {e.Category}")</div>
+                </div>
+            }
         </div>
     </div>
 
@@ -56,6 +62,13 @@
     private EquipmentData? editing;
     private bool isNew, _confirmDelete;
     private string originalName = "", _baseTechInput = "";
+    private string filter = "";
+
+    private IEnumerable<EquipmentData> FilteredItems => string.IsNullOrWhiteSpace(filter)
+        ? items
+        : items.Where(e => e.Name.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || e.Description.Contains(filter, StringComparison.OrdinalIgnoreCase));
+
     protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); if (Nav.Uri.Contains("new=true")) AddNew(); }
     private void AddNew() { editing = new EquipmentData(); isNew = true; _confirmDelete = false; _baseTechInput = ""; }
     private void Edit(EquipmentData e) { editing = e; originalName = e.Name; isNew = false; _confirmDelete = false; _baseTechInput = string.Join(", ", e.BaseTechnologies); }

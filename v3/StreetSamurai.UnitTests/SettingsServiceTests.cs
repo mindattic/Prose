@@ -6,26 +6,21 @@ using StreetSamurai.Core.Services;
 public class SettingsServiceTests
 {
     private SettingsService svc = null!;
-
-    private static readonly string AppDataDir = Path.Combine(
-        Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-        "MindAttic", "StreetSamurai");
+    private string tempDir = null!;
 
     [SetUp]
     public void Setup()
     {
-        // Clear any saved defaults snapshot from prior tests
-        var defaultsPath = Path.Combine(AppDataDir, "Defaults.json");
-        if (File.Exists(defaultsPath)) File.Delete(defaultsPath);
-        svc = new SettingsService();
+        tempDir = Path.Combine(Path.GetTempPath(), "ss_settings_test_" + Guid.NewGuid().ToString("N")[..8]);
+        svc = new SettingsService(tempDir);
     }
 
     [TearDown]
     public void Teardown()
     {
-        // Reset settings file so tests don't leak state
-        svc.ResetToDefaults();
         svc.Dispose();
+        if (Directory.Exists(tempDir))
+            Directory.Delete(tempDir, true);
     }
 
     // ── FormatTimestamp ─────────────────────────────────────
@@ -72,35 +67,35 @@ public class SettingsServiceTests
     [Test]
     public void Defaults_TimestampFormat_IsDefault()
     {
-        var fresh = new SettingsService();
+        using var fresh = new SettingsService(tempDir);
         Assert.That(fresh.TimestampFormat, Is.EqualTo("yyyy-MM-dd hh:mm:sstt"));
     }
 
     [Test]
     public void Defaults_FontFamily_IsOutfit()
     {
-        var fresh = new SettingsService();
+        using var fresh = new SettingsService(tempDir);
         Assert.That(fresh.FontFamily, Is.EqualTo("Outfit"));
     }
 
     [Test]
     public void Defaults_ActiveLlmProvider_IsClaude()
     {
-        var fresh = new SettingsService();
+        using var fresh = new SettingsService(tempDir);
         Assert.That(fresh.ActiveLlmProvider, Is.EqualTo("claude"));
     }
 
     [Test]
-    public void Defaults_MaxTokens_Is4096()
+    public void Defaults_MaxTokens_Is2048()
     {
-        var fresh = new SettingsService();
-        Assert.That(fresh.MaxTokens, Is.EqualTo(4096));
+        using var fresh = new SettingsService(tempDir);
+        Assert.That(fresh.MaxTokens, Is.EqualTo(2048));
     }
 
     [Test]
     public void Defaults_EditorFontSize_Is14()
     {
-        var fresh = new SettingsService();
+        using var fresh = new SettingsService(tempDir);
         Assert.That(fresh.EditorFontSize, Is.EqualTo(14));
     }
 
@@ -112,8 +107,8 @@ public class SettingsServiceTests
         svc.MaxTokens = 999;
         svc.ApiKey = "sk-test-key";
         svc.ResetToDefaults();
-        Assert.That(svc.MaxTokens, Is.EqualTo(4096));
-        Assert.That(svc.ApiKey, Is.EqualTo(""));
+        Assert.That(svc.MaxTokens, Is.EqualTo(2048));
+        Assert.That(svc.ApiKey, Does.StartWith("sk-ant-"));
     }
 
     [Test]
@@ -146,7 +141,7 @@ public class SettingsServiceTests
         svc.MaxTokens = 8888;
         svc.Flush();
 
-        var fresh = new SettingsService();
+        using var fresh = new SettingsService(tempDir);
         Assert.That(fresh.MaxTokens, Is.EqualTo(8888));
         fresh.Dispose();
     }
@@ -158,7 +153,7 @@ public class SettingsServiceTests
         // Wait for debounce timer to fire (500ms + margin)
         await Task.Delay(700);
 
-        var fresh = new SettingsService();
+        using var fresh = new SettingsService(tempDir);
         Assert.That(fresh.MaxTokens, Is.EqualTo(9999));
         fresh.Dispose();
     }

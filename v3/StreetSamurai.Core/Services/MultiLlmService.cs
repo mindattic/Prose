@@ -25,17 +25,17 @@ public class MultiLlmService
 
         providers =
         [
-            new("claude", "Claude", "https://api.anthropic.com/v1/messages", "claude-sonnet-4-6", "anthropic"),
-            new("openai", "ChatGPT", "https://api.openai.com/v1/chat/completions", "gpt-4.1-mini", "bearer"),
-            new("gemini", "Gemini", "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}", "gemini-2.5-flash", "google"),
-            new("deepseek", "DeepSeek", "https://api.deepseek.com/chat/completions", "deepseek-chat", "bearer"),
-            new("mistral", "Mistral", "https://api.mistral.ai/v1/chat/completions", "mistral-small-latest", "bearer"),
-            new("xai", "Grok", "https://api.x.ai/v1/chat/completions", "grok-3-mini-fast", "bearer"),
-            new("groq", "Groq", "https://api.groq.com/openai/v1/chat/completions", "llama-3.3-70b-versatile", "bearer"),
-            new("together", "Together", "https://api.together.xyz/v1/chat/completions", "meta-llama/Llama-4-Scout-17B-16E-Instruct", "bearer"),
-            new("openrouter", "OpenRouter", "https://openrouter.ai/api/v1/chat/completions", "meta-llama/llama-3.1-8b-instruct", "bearer"),
-            new("fireworks", "Fireworks", "https://api.fireworks.ai/inference/v1/chat/completions", "accounts/fireworks/models/llama-v3p3-70b-instruct", "bearer"),
-            new("cohere", "Cohere", "https://api.cohere.com/v2/chat", "command-r-plus-08-2024", "bearer"),
+            new("claude", "Claude", "https://api.anthropic.com/v1/messages", settings.Model, "anthropic"),
+            new("openai", "ChatGPT", "https://api.openai.com/v1/chat/completions", settings.OpenAiModel, "bearer"),
+            new("gemini", "Gemini", "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}", settings.GeminiModel, "google"),
+            new("deepseek", "DeepSeek", "https://api.deepseek.com/chat/completions", settings.DeepSeekModel, "bearer"),
+            new("mistral", "Mistral", "https://api.mistral.ai/v1/chat/completions", settings.MistralModel, "bearer"),
+            new("xai", "Grok", "https://api.x.ai/v1/chat/completions", settings.GrokModel, "bearer"),
+            new("groq", "Groq", "https://api.groq.com/openai/v1/chat/completions", settings.GroqModel, "bearer"),
+            new("together", "Together", "https://api.together.xyz/v1/chat/completions", settings.TogetherModel, "bearer"),
+            new("openrouter", "OpenRouter", "https://openrouter.ai/api/v1/chat/completions", settings.OpenRouterModel, "bearer"),
+            new("fireworks", "Fireworks", "https://api.fireworks.ai/inference/v1/chat/completions", settings.FireworksModel, "bearer"),
+            new("cohere", "Cohere", "https://api.cohere.com/v2/chat", settings.CohereModel, "cohere"),
         ];
     }
 
@@ -58,6 +58,7 @@ public class MultiLlmService
         {
             "anthropic" => await CallClaude(provider, key, system, user, ct),
             "google" => await CallGemini(provider, key, system, user, ct),
+            "cohere" => await CallCohere(provider, key, system, user, ct),
             _ => await CallOpenAiCompatible(provider, key, system, user, ct),
         };
     }
@@ -195,9 +196,10 @@ public class MultiLlmService
 
         var payload = new
         {
+            systemInstruction = new { parts = new[] { new { text = system } } },
             contents = new[]
             {
-                new { parts = new[] { new { text = $"{system}\n\n{user}" } } }
+                new { parts = new[] { new { text = user } } }
             }
         };
 
@@ -209,6 +211,29 @@ public class MultiLlmService
         var json = await res.Content.ReadAsStringAsync(ct);
         var doc = JsonDocument.Parse(json);
         return doc.RootElement.GetProperty("candidates")[0].GetProperty("content").GetProperty("parts")[0].GetProperty("text").GetString() ?? "";
+    }
+
+    private async Task<string> CallCohere(LlmProvider provider, string key, string system, string user, CancellationToken ct)
+    {
+        var payload = new
+        {
+            model = provider.Model,
+            messages = new object[]
+            {
+                new { role = "system", content = system },
+                new { role = "user", content = user },
+            }
+        };
+
+        using var req = new HttpRequestMessage(HttpMethod.Post, provider.Endpoint);
+        req.Headers.Authorization = new AuthenticationHeaderValue("Bearer", key);
+        req.Content = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
+
+        var res = await http.SendAsync(req, ct);
+        res.EnsureSuccessStatusCode();
+        var json = await res.Content.ReadAsStringAsync(ct);
+        var doc = JsonDocument.Parse(json);
+        return doc.RootElement.GetProperty("message").GetProperty("content")[0].GetProperty("text").GetString() ?? "";
     }
 
     // ── API Key resolution ──

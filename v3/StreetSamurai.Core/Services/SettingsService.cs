@@ -11,14 +11,16 @@ public class SettingsService : IDisposable
     private Timer? saveTimer;
     private readonly object saveLock = new();
 
-    public SettingsService()
+    public SettingsService() : this(Path.Combine(
+        Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+        "MindAttic", "StreetSamurai")) { }
+
+    /// <summary>Constructor with explicit storage directory (for tests).</summary>
+    public SettingsService(string storageDir)
     {
-        var appData = Path.Combine(
-            Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-            "MindAttic", "StreetSamurai");
-        Directory.CreateDirectory(appData);
-        settingsPath = Path.Combine(appData, "Settings.json");
-        defaultsPath = Path.Combine(appData, "Defaults.json");
+        Directory.CreateDirectory(storageDir);
+        settingsPath = Path.Combine(storageDir, "Settings.json");
+        defaultsPath = Path.Combine(storageDir, "Defaults.json");
         Load();
 
         // Auto-detect canon root if not set or current path has insufficient data
@@ -195,42 +197,41 @@ public class SettingsService : IDisposable
 
     private class SettingsData
     {
-        public string ApiKey { get; set; } = "";
+        public string ApiKey { get; set; } = "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";
         public string Model { get; set; } = "claude-sonnet-4-6";
         public string Theme { get; set; } = "dark";
-        public string CanonRootPath { get; set; } = "";
-        public int MaxTokens { get; set; } = 4096;
-        public string ElevenLabsApiKey { get; set; } = "";
+        public string CanonRootPath { get; set; } = @"D:\Projects\MindAttic\StreetSamurai";
+        public int MaxTokens { get; set; } = 2048;
+        public string ElevenLabsApiKey { get; set; } = "sk_4629fe8a5990d7933ab5da85aea893004c3a4eb17ef9db66";
         public string ElevenLabsVoiceId { get; set; } = "jfIS2w2yJi0grJZPyEsk";
         public string NarratorVoiceName { get; set; } = "Oliver Silk - Deep Gravel Narrative";
         public string TtsModel { get; set; } = "eleven_v3";
         public double TtsStability { get; set; } = 0.5;
         public double TtsSimilarityBoost { get; set; } = 0.75;
         public double TtsStyle { get; set; } = 0.0;
-        public string OpenAiApiKey { get; set; } = "";
+        public string OpenAiApiKey { get; set; } = "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";
         public string OpenAiModel { get; set; } = "gpt-4.1-mini";
         public string ActiveLlmProvider { get; set; } = "claude";
         public int EditorFontSize { get; set; } = 14;
         public int AutoSaveIntervalMs { get; set; } = 2000;
-        public string GeminiApiKey { get; set; } = "";
-        public string DeepSeekApiKey { get; set; } = "";
-        public string MistralApiKey { get; set; } = "";
-        public string GrokApiKey { get; set; } = "";
-        public string GroqApiKey { get; set; } = "";
-        public string TogetherApiKey { get; set; } = "";
-        public string OpenRouterApiKey { get; set; } = "";
-        public string FireworksApiKey { get; set; } = "";
-        public string CohereApiKey { get; set; } = "";
-        // Model selections per provider
+        public string GeminiApiKey { get; set; } = "AIzaSyAp2rIRvnI2pMousS5eP7SjcR6OXICNBfk";
+        public string DeepSeekApiKey { get; set; } = "sk-1a8145822c034c4f8e597dfe9f04a087";
+        public string MistralApiKey { get; set; } = "lQSTOCmmZNojM8S5YvuyRu2qeFuwwBH7";
+        public string GrokApiKey { get; set; } = "xai-f2MSqay0QBo2hufoEKSInvqAD95AForb86gWgmbbROx0I8PIk3q3wqOluWc1K7Lr4n1MHXlwku4VV6PB";
+        public string GroqApiKey { get; set; } = "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";
+        public string TogetherApiKey { get; set; } = "59cbfe080650dae4731340f91b9c7d10e596860e4fb1fdf0f0acdd62327e8ba1";
+        public string OpenRouterApiKey { get; set; } = "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";
+        public string FireworksApiKey { get; set; } = "fw_KU2LBYf59KS3ZvAqUYLhZ9";
+        public string CohereApiKey { get; set; } = "gvA72uoBrRCDJjNYDdW9nsoGWSJ3426jVyRKiSOF";
         public string GeminiModel { get; set; } = "gemini-2.5-flash";
         public string DeepSeekModel { get; set; } = "deepseek-chat";
         public string MistralModel { get; set; } = "mistral-large-latest";
         public string GrokModel { get; set; } = "grok-3-mini";
         public string GroqModel { get; set; } = "llama-3.3-70b-versatile";
         public string TogetherModel { get; set; } = "meta-llama/Llama-3.3-70B-Instruct-Turbo";
-        public string OpenRouterModel { get; set; } = "anthropic/claude-sonnet-4";
+        public string OpenRouterModel { get; set; } = "meta-llama/llama-3.3-70b-instruct";
         public string FireworksModel { get; set; } = "accounts/fireworks/models/llama-v3p3-70b-instruct";
-        public string CohereModel { get; set; } = "command-r-plus";
+        public string CohereModel { get; set; } = "command-a-03-2025";
         public string MapService { get; set; } = "here";
         public string MapAppId { get; set; } = "rI9gpj49oW5SGZ8EsAe9";
         public string MapApiKey { get; set; } = "CIPFwnEI3bF6whfMT-1yL0kFa6wq1G9v8cBudCXdLE0";

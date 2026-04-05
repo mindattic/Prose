@@ -5,17 +5,23 @@
 @inject WorldGraphService Graph
 
 <div class="dict-layout">
-    <div class="dict-list bg-dark border-end border-secondary">
-        @foreach (var t in items)
-        {
-            <div class="list-item text-light @(editing?.Name == t.Name ? "active" : "")" @onclick="() => Edit(t)">
-                <div class="fw-bold small">@(string.IsNullOrEmpty(t.ProductName) ? t.Name : t.ProductName)</div>
-                <div class="text-muted" style="font-size: 0.7rem;">@t.BrandName @(string.IsNullOrEmpty(t.Subcategory) ? "" : $"· {t.Subcategory}")</div>
+    <div class="dict-list">
+        <div class="card bg-dark text-light border-secondary mb-2 card-body">
+            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
+                   placeholder="Filter..." @bind="filter" @bind:event="oninput" />
+            <div class="d-flex gap-2">
+            <ExportButton Mode="repo" ExtraStyle="flex:1;" RepoName="Technology" GetRepoEntries="GetExportEntries" />
+            <button class="btn btn-sm btn-outline-danger flex-fill" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
             </div>
-        }
-        <div class="p-2">
-            <ExportButton Mode="repo" RepoName="Technology" GetRepoEntries="GetExportEntries" />
-            <button class="btn btn-sm btn-outline-danger w-100" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New Technology</button>
+        </div>
+        <div class="dict-items">
+            @foreach (var t in FilteredItems)
+            {
+                <div class="list-item text-light @(editing?.Name == t.Name ? "active" : "")" @onclick="() => Edit(t)">
+                    <div class="fw-bold small">@(string.IsNullOrEmpty(t.ProductName) ? t.Name : t.ProductName)</div>
+                    <div class="text-muted" style="font-size: 0.7rem;">@t.BrandName @(string.IsNullOrEmpty(t.Subcategory) ? "" : $"· {t.Subcategory}")</div>
+                </div>
+            }
         </div>
     </div>
 
@@ -55,6 +61,13 @@
     private bool isNew, _confirmDelete;
     private string originalName = "";
     private string devInput = "", _baseTechInput = "";
+    private string filter = "";
+
+    private IEnumerable<TechnologyData> FilteredItems => string.IsNullOrWhiteSpace(filter)
+        ? items
+        : items.Where(t => t.Name.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || t.Description.Contains(filter, StringComparison.OrdinalIgnoreCase));
+
     protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); if (Nav.Uri.Contains("new=true")) AddNew(); }
     private void AddNew() { editing = new TechnologyData(); isNew = true; _confirmDelete = false; devInput = ""; _baseTechInput = ""; }
     private void Edit(TechnologyData t) { editing = t; originalName = t.Name; isNew = false; _confirmDelete = false; devInput = string.Join(", ", t.Developers); _baseTechInput = string.Join(", ", t.BaseTechnologies); }

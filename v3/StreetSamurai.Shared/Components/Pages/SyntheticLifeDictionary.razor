@@ -4,21 +4,23 @@
 @inject NavigationManager Nav
 
 <div class="dict-layout">
-    <div class="dict-list bg-dark border-end border-secondary">
-        <div class="p-2">
-            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+    <div class="dict-list">
+        <div class="card bg-dark text-light border-secondary mb-2 card-body">
+            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
                    placeholder="Filter..." @bind="filter" @bind:event="oninput" />
-        </div>
-        @foreach (var s in FilteredItems)
-        {
-            <div class="list-item text-light @(editing?.Name == s.Name ? "active" : "")" @onclick="() => Edit(s)">
-                <div class="fw-bold small">@s.Name</div>
-                <div class="text-muted" style="font-size: 0.7rem;">@s.Classification — @s.Disposition</div>
+            <div class="d-flex gap-2">
+            <ExportButton Mode="repo" ExtraStyle="flex:1;" RepoName="Synthetics" GetRepoEntries="GetExportEntries" />
+            <button class="btn btn-sm btn-outline-danger flex-fill" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
             </div>
-        }
-        <div class="p-2">
-            <ExportButton Mode="repo" RepoName="Synthetics" GetRepoEntries="GetExportEntries" />
-            <button class="btn btn-sm btn-outline-danger w-100" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New Synthetic Life</button>
+        </div>
+        <div class="dict-items">
+            @foreach (var s in FilteredItems)
+            {
+                <div class="list-item text-light @(editing?.Name == s.Name ? "active" : "")" @onclick="() => Edit(s)">
+                    <div class="fw-bold small">@s.Name</div>
+                    <div class="text-muted" style="font-size: 0.7rem;">@s.Classification — @s.Disposition</div>
+                </div>
+            }
         </div>
     </div>
 
