@@ -3,6 +3,20 @@
 @inject LlmRouter LlmRouter
 @inject ElevenLabsTtsService TtsSvc
 @inject WorldGraphService Graph
+@inject IPathProvider Paths
+@inject CharacterRepository CharRepoExport
+@inject CorponationRepository CorpRepoExport
+@inject DistrictRepository DistrictRepoExport
+@inject FactionRepository FactionRepoExport
+@inject WeaponryRepository WeaponRepoExport
+@inject EquipmentRepository EquipRepoExport
+@inject CyberwareRepository CyberRepoExport
+@inject TechnologyRepository TechRepoExport
+@inject VocabularyRepository VocabRepoExport
+@inject WorldbuildingDocRepository DocRepoExport
+@inject SyntheticLifeRepository SynthRepoExport
+@inject GenewareRepository GeneRepoExport
+@inject TransportationRepository TransportRepoExport
 
 <div class="d-flex justify-content-between align-items-center mb-1">
     <h4 class="text-danger mb-0">Settings</h4>
@@ -10,21 +24,21 @@
         <button class="btn btn-sm btn-success" @onclick="SaveSettings">
             <i class="bi bi-floppy"></i> Save
         </button>
-        @if (_confirmReset)
+        @if (confirmReset)
         {
             <span class="d-flex align-items-center gap-1">
                 <small class="text-warning">Reset all non-key settings?</small>
                 <button class="btn btn-sm btn-danger" @onclick="DoReset">Yes</button>
-                <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmReset = false">No</button>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => confirmReset = false">No</button>
             </span>
         }
         else
         {
-            <button class="btn btn-sm btn-outline-warning" @onclick="RebuildGraph" disabled="@_rebuilding">
-                @if (_rebuilding) { <span class="spinner-border spinner-border-sm me-1"></span> }
+            <button class="btn btn-sm btn-outline-warning" @onclick="RebuildGraph" disabled="@rebuilding">
+                @if (rebuilding) { <span class="spinner-border spinner-border-sm me-1"></span> }
                 <i class="bi bi-diagram-3"></i> Rebuild Graph
             </button>
-            <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmReset = true">
+            <button class="btn btn-sm btn-outline-secondary" @onclick="() => confirmReset = true">
                 <i class="bi bi-arrow-counterclockwise"></i> Reset to Defaults
             </button>
         }
@@ -296,7 +310,7 @@
         <div class="card bg-dark text-light border-secondary">
             <div class="card-header text-muted d-flex justify-content-between align-items-center">
                 <span>ElevenLabs TTS <a href="https://elevenlabs.io/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span>
-                <span class="badge @(_ttsConfigured ? "bg-success" : "bg-secondary")">@(_ttsConfigured ? "Connected" : "Offline")</span>
+                <span class="badge @(ttsConfigured ? "bg-success" : "bg-secondary")">@(ttsConfigured ? "Connected" : "Offline")</span>
             </div>
             <div class="card-body">
                 <div class="row g-3">
@@ -307,18 +321,18 @@
                     </div>
                     <div class="col-md-4">
                         <label class="form-label text-muted">Narrator Voice</label>
-                        @if (_loadingVoices)
+                        @if (loadingVoices)
                         {
                             <div class="d-flex align-items-center gap-2 mt-1">
                                 <div class="spinner-border spinner-border-sm text-danger"></div>
                                 <small class="text-muted">Loading voices...</small>
                             </div>
                         }
-                        else if (_voices.Any())
+                        else if (voices.Any())
                         {
                             <select class="form-select bg-dark text-light border-secondary"
                                     value="@SettingsSvc.ElevenLabsVoiceId" @onchange="OnVoiceSelected">
-                                @foreach (var v in _voices)
+                                @foreach (var v in voices)
                                 {
                                     <option value="@v.VoiceId">@v.Name (@v.Category)</option>
                                 }
@@ -329,7 +343,7 @@
                             <div class="input-group">
                                 <input type="text" class="form-control bg-dark text-light border-secondary"
                                        placeholder="Voice ID" @bind="SettingsSvc.ElevenLabsVoiceId" @bind:event="onchange" />
-                                @if (_ttsConfigured)
+                                @if (ttsConfigured)
                                 {
                                     <button class="btn btn-outline-info btn-sm" @onclick="LoadVoices"><i class="bi bi-arrow-repeat"></i></button>
                                 }
@@ -360,16 +374,16 @@
                         <input type="range" class="form-range" min="0" max="1" step="0.05" @bind="SettingsSvc.TtsStyle" />
                     </div>
                     <div class="col-md-3 d-flex align-items-end">
-                        @if (_ttsConfigured)
+                        @if (ttsConfigured)
                         {
-                            <button class="btn btn-sm btn-outline-danger" @onclick="TestTts" disabled="@_testingTts">
-                                @if (_testingTts) { <span class="spinner-border spinner-border-sm"></span> }
+                            <button class="btn btn-sm btn-outline-danger" @onclick="TestTts" disabled="@testingTts">
+                                @if (testingTts) { <span class="spinner-border spinner-border-sm"></span> }
                                 else { <i class="bi bi-volume-up"></i> }
                                 Test Voice
                             </button>
-                            @if (_ttsTestResult != null)
+                            @if (ttsTestResult != null)
                             {
-                                <small class="ms-2 @(_ttsTestSuccess ? "text-success" : "text-warning")">@_ttsTestResult</small>
+                                <small class="ms-2 @(ttsTestSuccess ? "text-success" : "text-warning")">@ttsTestResult</small>
                             }
                         }
                     </div>
@@ -379,17 +393,64 @@
     </div>
 </div>
 
+@* ── Data Maintenance ─────────────────────────────────── *@
+<div class="row g-3 mb-3">
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted">Data Maintenance</div>
+            <div class="card-body">
+                <div class="d-flex gap-2 align-items-center">
+                    <button class="btn btn-sm btn-outline-info" @onclick="ValidateJson" disabled="@validating">
+                        @if (validating) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                        <i class="bi bi-check-circle"></i> Validate All JSON
+                    </button>
+                    @if (validationResult != null)
+                    {
+                        <span class="badge @(_validationErrors == 0 ? "bg-success" : "bg-danger")">
+                            @validationTotal files — @(_validationErrors == 0 ? "all valid" : $"{_validationErrors} broken")
+                        </span>
+                    }
+                </div>
+                @if (brokenFiles.Count > 0)
+                {
+                    <div class="mt-2">
+                        @foreach (var err in brokenFiles)
+                        {
+                            <div class="small text-danger"><i class="bi bi-x-circle"></i> @err</div>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted">HTML Export</div>
+            <div class="card-body">
+                <div class="d-flex gap-2 align-items-center">
+                    <ExportButton Mode="all" GetAllRepos="GetAllReposForExport" />
+                    <small class="text-muted">Export all repos as linked .htm files to engine_data/exports/</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 @code {
-    private List<LlmProviderStatus> _providerStatus = [];
-    private LlmProviderStatus? _activeProvider;
-    private bool _ttsConfigured;
-    private List<TtsVoice> _voices = [];
-    private bool _loadingVoices;
-    private bool _testingTts;
-    private string? _ttsTestResult;
-    private bool _ttsTestSuccess;
-    private bool _confirmReset;
-    private bool _rebuilding;
+    private List<LlmProviderStatus> providerStatus = [];
+    private LlmProviderStatus? activeProvider;
+    private bool ttsConfigured;
+    private List<TtsVoice> voices = [];
+    private bool loadingVoices;
+    private bool testingTts;
+    private string? ttsTestResult;
+    private bool ttsTestSuccess;
+    private bool confirmReset;
+    private bool rebuilding;
+    private bool validating;
+    private string? validationResult;
+    private int validationTotal, _validationErrors;
+    private List<string> brokenFiles = [];
 
     // Provider connectivity: "none" | "testing" | "ok" | "fail"
     private Dictionary<string, string> _apiStatus = new();
@@ -412,11 +473,11 @@
 
     protected override async Task OnInitializedAsync()
     {
-        _providerStatus = await LlmRouter.GetProvidersAsync();
-        _activeProvider = _providerStatus.FirstOrDefault(p => p.IsActive);
-        _ttsConfigured = await TtsSvc.IsConfiguredAsync();
+        providerStatus = await LlmRouter.GetProvidersAsync();
+        activeProvider = providerStatus.FirstOrDefault(p => p.IsActive);
+        ttsConfigured = await TtsSvc.IsConfiguredAsync();
 
-        if (_ttsConfigured)
+        if (ttsConfigured)
             await LoadVoices();
 
         _ = TestAllProviders();
@@ -494,21 +555,21 @@
 
     private async Task LoadVoices()
     {
-        _loadingVoices = true;
+        loadingVoices = true;
         StateHasChanged();
         try
         {
-            _voices = await TtsSvc.ListVoicesAsync();
-            if (string.IsNullOrWhiteSpace(SettingsSvc.ElevenLabsVoiceId) && _voices.Any())
+            voices = await TtsSvc.ListVoicesAsync();
+            if (string.IsNullOrWhiteSpace(SettingsSvc.ElevenLabsVoiceId) && voices.Any())
             {
-                var defaultVoice = _voices.FirstOrDefault(v =>
+                var defaultVoice = voices.FirstOrDefault(v =>
                     v.Name.Equals("Oliver Silk", StringComparison.OrdinalIgnoreCase))
-                    ?? _voices.First();
+                    ?? voices.First();
                 SettingsSvc.ElevenLabsVoiceId = defaultVoice.VoiceId;
                 SettingsSvc.NarratorVoiceName = defaultVoice.Name;
             }
         }
-        finally { _loadingVoices = false; }
+        finally { loadingVoices = false; }
     }
 
     private void OnVoiceSelected(ChangeEventArgs e)
@@ -517,32 +578,89 @@
         if (!string.IsNullOrEmpty(voiceId))
         {
             SettingsSvc.ElevenLabsVoiceId = voiceId;
-            var voice = _voices.FirstOrDefault(v => v.VoiceId == voiceId);
+            var voice = voices.FirstOrDefault(v => v.VoiceId == voiceId);
             SettingsSvc.NarratorVoiceName = voice?.Name ?? "";
         }
     }
 
     private async Task TestTts()
     {
-        _testingTts = true; _ttsTestResult = null;
+        testingTts = true; ttsTestResult = null;
         try
         {
             var audio = await TtsSvc.SynthesizeAsync("The neon bleeds through cracked concrete. Welcome to the machine.");
-            _ttsTestSuccess = audio.Length > 0;
-            _ttsTestResult = _ttsTestSuccess ? $"Success ({audio.Length / 1024}KB)" : "Empty response";
+            ttsTestSuccess = audio.Length > 0;
+            ttsTestResult = ttsTestSuccess ? $"Success ({audio.Length / 1024}KB)" : "Empty response";
         }
-        catch (Exception ex) { _ttsTestSuccess = false; _ttsTestResult = ex.Message; }
-        finally { _testingTts = false; }
+        catch (Exception ex) { ttsTestSuccess = false; ttsTestResult = ex.Message; }
+        finally { testingTts = false; }
     }
 
     private void SaveSettings() { _ = SettingsSvc.TtsModel; }
 
-    private void DoReset() { SettingsSvc.ResetToDefaults(); _confirmReset = false; }
+    private void DoReset() { SettingsSvc.ResetToDefaults(); confirmReset = false; }
 
     private async Task RebuildGraph()
     {
-        _rebuilding = true; StateHasChanged();
+        rebuilding = true; StateHasChanged();
         await Task.Run(() => Graph.Rebuild());
-        _rebuilding = false;
+        rebuilding = false;
+    }
+
+    private async Task ValidateJson()
+    {
+        validating = true; brokenFiles = []; validationResult = null;
+        StateHasChanged();
+
+        await Task.Run(() =>
+        {
+            var dir = Paths.EngineDataDir;
+            int total = 0, errors = 0;
+            var broken = new List<string>();
+
+            void Scan(string d)
+            {
+                foreach (var f in Directory.GetFiles(d, "*.json"))
+                {
+                    total++;
+                    try { System.Text.Json.JsonDocument.Parse(File.ReadAllText(f)).Dispose(); }
+                    catch (Exception ex)
+                    {
+                        errors++;
+                        broken.Add(Path.GetRelativePath(dir, f) + ": " + ex.Message[..Math.Min(ex.Message.Length, 120)]);
+                    }
+                }
+                foreach (var sub in Directory.GetDirectories(d)) Scan(sub);
+            }
+
+            Scan(dir);
+            validationTotal = total;
+            _validationErrors = errors;
+            brokenFiles = broken;
+            validationResult = "done";
+        });
+
+        validating = false;
+    }
+
+    private Dictionary<string, List<(string name, string json)>> GetAllReposForExport()
+    {
+        var jso = new System.Text.Json.JsonSerializerOptions();
+        return new Dictionary<string, List<(string name, string json)>>
+        {
+            ["Characters"] = CharRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Corponations"] = CorpRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Places"] = DistrictRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Factions"] = FactionRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Weaponry"] = WeaponRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Equipment"] = EquipRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Cyberware"] = CyberRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Technology"] = TechRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Vocabulary"] = VocabRepoExport.GetAll().Select(e => (e.Term, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Documents"] = DocRepoExport.GetAll().Select(e => (e.FileName, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Synthetics"] = SynthRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Geneware"] = GeneRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+            ["Transportation"] = TransportRepoExport.GetAll().Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e, jso))).ToList(),
+        };
     }
 }

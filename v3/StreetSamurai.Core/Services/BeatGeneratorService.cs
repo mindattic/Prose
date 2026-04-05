@@ -5,15 +5,15 @@ namespace StreetSamurai.Core.Services;
 
 public class BeatGeneratorService
 {
-    private readonly ILlmService _llm;
-    private readonly WorldGraphService _graph;
-    private readonly LoreService _canon;
+    private readonly ILlmService llm;
+    private readonly WorldGraphService graph;
+    private readonly LoreService canon;
 
     public BeatGeneratorService(ILlmService llm, WorldGraphService graph, LoreService canon)
     {
-        _llm = llm;
-        _graph = graph;
-        _canon = canon;
+        this.llm = llm;
+        this.graph = graph;
+        this.canon = canon;
     }
 
     public async Task<string> GenerateBeatAsync(
@@ -58,7 +58,7 @@ public class BeatGeneratorService
             Write 2-4 paragraphs. Make every word count.
             """;
 
-        return await _llm.GenerateAsync(system, user, leadFacet.Temperature, 2048, leadFacet.Model, ct);
+        return await llm.GenerateAsync(system, user, leadFacet.Temperature, 2048, leadFacet.Model, ct);
     }
 }
 

@@ -9,7 +9,7 @@
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h4 class="text-danger mb-0">Stories</h4>
     <div class="d-flex gap-2">
-        <button class="btn btn-sm btn-outline-primary" @onclick="SurpriseMe" disabled="@_generating">
+        <button class="btn btn-sm btn-outline-primary" @onclick="SurpriseMe" disabled="@generating">
             <i class="bi bi-lightning"></i> Surprise Me
         </button>
         <button class="btn btn-sm btn-outline-danger" @onclick="CreateNew"><i class="bi bi-plus-lg"></i> New Story</button>
@@ -17,7 +17,7 @@
 </div>
 
 @* ── Autonomous Generation Progress ────────────────────── *@
-@if (_generating)
+@if (generating)
 {
     <div class="card bg-dark text-light border-primary mb-3">
         <div class="card-body">
@@ -25,30 +25,30 @@
                 <div class="spinner-border spinner-border-sm text-primary"></div>
                 <span class="fw-bold text-primary">Autonomous Story Generation</span>
             </div>
-            @if (_autonomousStory != null)
+            @if (autonomousStory != null)
             {
                 <div class="small mb-2">
-                    <span class="text-info">Protagonist:</span> @_autonomousStory.Protagonist
+                    <span class="text-info">Protagonist:</span> @autonomousStory.Protagonist
                     <span class="text-muted mx-2">|</span>
-                    <span class="text-info">Cast:</span> @string.Join(", ", _autonomousStory.Characters)
-                    @if (!string.IsNullOrEmpty(_autonomousStory.Location))
+                    <span class="text-info">Cast:</span> @string.Join(", ", autonomousStory.Characters)
+                    @if (!string.IsNullOrEmpty(autonomousStory.Location))
                     {
                         <span class="text-muted mx-2">|</span>
-                        <span class="text-info">Location:</span> @_autonomousStory.Location
+                        <span class="text-info">Location:</span> @autonomousStory.Location
                     }
                 </div>
             }
-            <div class="small text-muted mb-2">@_progressMessage</div>
+            <div class="small text-muted mb-2">@progressMessage</div>
             @if (_progressTotal > 0)
             {
                 <div class="progress" style="height: 6px;">
-                    <div class="progress-bar bg-danger" style="width: @(_progressCurrent * 100 / _progressTotal)%"></div>
+                    <div class="progress-bar bg-danger" style="width: @(progressCurrent * 100 / _progressTotal)%"></div>
                 </div>
-                <small class="text-muted">Beat @_progressCurrent / @_progressTotal</small>
+                <small class="text-muted">Beat @progressCurrent / @_progressTotal</small>
             }
 
             @* Live beat rendering *@
-            @foreach (var beat in _liveBeats)
+            @foreach (var beat in liveBeats)
             {
                 <div class="mt-3 border-start border-danger ps-3">
                     <div class="d-flex justify-content-between">
@@ -66,7 +66,7 @@
     </div>
 }
 
-@if (_projects.Any())
+@if (projects.Any())
 {
     <div class="table-responsive">
         <table class="table table-dark table-hover table-sm">
@@ -79,21 +79,21 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var p in _projects)
+                @foreach (var p in projects)
                 {
                     <tr style="cursor: pointer;" @onclick="() => OpenProject(p.Id)">
                         <td class="fw-bold fst-italic">@(string.IsNullOrWhiteSpace(p.Title) ? "Untitled" : p.Title)</td>
                         <td><span class="badge bg-secondary">@p.Status</span></td>
                         <td class="text-muted small">@p.Modified.ToString("yyyy-MM-dd HH:mm")</td>
                         <td>
-                            @if (_confirmDeleteId == p.Id)
+                            @if (confirmDeleteId == p.Id)
                             {
                                 <button class="btn btn-sm btn-danger py-0" @onclick="() => DoDelete(p.Id)" @onclick:stopPropagation="true">Confirm</button>
-                                <button class="btn btn-sm btn-outline-secondary py-0" @onclick="() => _confirmDeleteId = null" @onclick:stopPropagation="true">No</button>
+                                <button class="btn btn-sm btn-outline-secondary py-0" @onclick="() => confirmDeleteId = null" @onclick:stopPropagation="true">No</button>
                             }
                             else
                             {
-                                <button class="btn btn-sm btn-outline-danger py-0" @onclick="() => _confirmDeleteId = p.Id" @onclick:stopPropagation="true"><i class="bi bi-trash3"></i></button>
+                                <button class="btn btn-sm btn-outline-danger py-0" @onclick="() => confirmDeleteId = p.Id" @onclick:stopPropagation="true"><i class="bi bi-trash3"></i></button>
                             }
                         </td>
                     </tr>
@@ -102,7 +102,7 @@
         </table>
     </div>
 }
-else if (!_generating)
+else if (!generating)
 {
     <div class="text-center py-5 text-muted">
         <p>No stories yet.</p>
@@ -114,36 +114,36 @@ else if (!_generating)
 }
 
 @code {
-    private List<StoryProject> _projects = [];
-    private string? _confirmDeleteId;
-    private bool _generating;
-    private string _progressMessage = "";
-    private int _progressCurrent, _progressTotal;
-    private AutonomousStory? _autonomousStory;
-    private List<GeneratedStoryBeat> _liveBeats = [];
-    private CancellationTokenSource? _cts;
+    private List<StoryProject> projects = [];
+    private string? confirmDeleteId;
+    private bool generating;
+    private string progressMessage = "";
+    private int progressCurrent, _progressTotal;
+    private AutonomousStory? autonomousStory;
+    private List<GeneratedStoryBeat> liveBeats = [];
+    private CancellationTokenSource? cts;
 
     protected override void OnInitialized()
     {
-        _projects = Repo.ListProjects();
+        projects = Repo.ListProjects();
         Director.OnProgress += OnDirectorProgress;
     }
 
     public void Dispose()
     {
         Director.OnProgress -= OnDirectorProgress;
-        _cts?.Cancel();
+        cts?.Cancel();
     }
 
     private void OnDirectorProgress(DirectorProgress p)
     {
-        _progressMessage = p.Message;
-        _progressCurrent = p.CurrentBeat;
+        progressMessage = p.Message;
+        progressCurrent = p.CurrentBeat;
         _progressTotal = p.TotalBeats;
 
         // Check if new beats arrived
-        if (_autonomousStory?.Beats.Count > _liveBeats.Count)
-            _liveBeats = new List<GeneratedStoryBeat>(_autonomousStory.Beats);
+        if (autonomousStory?.Beats.Count > liveBeats.Count)
+            liveBeats = new List<GeneratedStoryBeat>(autonomousStory.Beats);
 
         InvokeAsync(StateHasChanged);
     }
@@ -159,47 +159,47 @@ else if (!_generating)
 
     private async Task SurpriseMe()
     {
-        _generating = true;
-        _liveBeats.Clear();
-        _progressMessage = "Initializing...";
-        _progressCurrent = 0;
+        generating = true;
+        liveBeats.Clear();
+        progressMessage = "Initializing...";
+        progressCurrent = 0;
         _progressTotal = 0;
-        _cts = new CancellationTokenSource();
+        cts = new CancellationTokenSource();
         StateHasChanged();
 
         try
         {
-            _autonomousStory = await Director.SurpriseMeAsync(_cts.Token);
+            autonomousStory = await Director.SurpriseMeAsync(cts.Token);
 
-            if (_autonomousStory.Complete)
+            if (autonomousStory.Complete)
             {
                 // Save as a StoryProject
                 var project = new StoryProject
                 {
-                    Title = _autonomousStory.Title,
-                    Characters = _autonomousStory.Characters,
-                    Html = ConvertToHtml(_autonomousStory),
+                    Title = autonomousStory.Title,
+                    Characters = autonomousStory.Characters,
+                    Html = ConvertToHtml(autonomousStory),
                     Status = "draft",
                 };
                 Repo.SaveProject(project);
-                _projects = Repo.ListProjects();
+                projects = Repo.ListProjects();
 
                 // Navigate to the new story
                 Nav.NavigateTo($"/write/{project.Id}");
             }
         }
-        catch (OperationCanceledException) { _progressMessage = "Cancelled."; }
-        catch (Exception ex) { _progressMessage = $"Error: {ex.Message}"; }
-        finally { _generating = false; }
+        catch (OperationCanceledException) { progressMessage = "Cancelled."; }
+        catch (Exception ex) { progressMessage = $"Error: {ex.Message}"; }
+        finally { generating = false; }
     }
 
-    private void CancelGeneration() => _cts?.Cancel();
+    private void CancelGeneration() => cts?.Cancel();
 
     private void DoDelete(string id)
     {
         Repo.DeleteProject(id);
-        _confirmDeleteId = null;
-        _projects = Repo.ListProjects();
+        confirmDeleteId = null;
+        projects = Repo.ListProjects();
     }
 
     private static string ConvertToHtml(AutonomousStory story)

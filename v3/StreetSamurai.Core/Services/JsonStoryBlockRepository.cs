@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
 
@@ -11,16 +12,22 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class JsonStoryBlockRepository : IStoryBlockRepository
 {
-    private readonly IPathProvider _paths;
+    private readonly IPathProvider paths;
     private static readonly JsonSerializerOptions JsonOpts = new()
     {
         WriteIndented = true,
         DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
     };
 
-    private string StoryDir => EnsureDir(Path.Combine(_paths.DataRoot, "story_blocks"));
+    private string StoryDir => EnsureDir(Path.Combine(paths.DataRoot, "story_blocks"));
 
-    public JsonStoryBlockRepository(IPathProvider paths) => _paths = paths;
+    private readonly ILogger<JsonStoryBlockRepository> log;
+
+    public JsonStoryBlockRepository(IPathProvider paths, ILogger<JsonStoryBlockRepository> log)
+    {
+        this.paths = paths;
+        this.log = log;
+    }
 
     public List<StoryProject> ListProjects()
     {
@@ -51,6 +58,7 @@ public class JsonStoryBlockRepository : IStoryBlockRepository
     {
         project.Modified = DateTime.UtcNow;
         var path = Path.Combine(StoryDir, $"{project.Id}.json");
+        log.LogDebug("Saving story project {Id} to {Path}", project.Id, path);
         File.WriteAllText(path, JsonSerializer.Serialize(project, JsonOpts));
 
         // Clean up any legacy files with the same ID but different filename

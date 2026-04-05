@@ -5,15 +5,15 @@ namespace StreetSamurai.Core.Services;
 
 public class SceneGenerationService
 {
-    private readonly FacetService _facets;
-    private readonly ContextAnalyzerService _analyzer;
-    private readonly BeatGeneratorService _beatGen;
-    private readonly WorldGraphService _graph;
-    private readonly DatabaseService _canonDb;
-    private readonly ValidationService _validator;
-    private readonly IPathProvider _paths;
-    private readonly SemanticIndexService _semanticIndex;
-    private readonly InferenceService _inference;
+    private readonly FacetService facets;
+    private readonly ContextAnalyzerService analyzer;
+    private readonly BeatGeneratorService beatGen;
+    private readonly WorldGraphService graph;
+    private readonly DatabaseService canonDb;
+    private readonly ValidationService validator;
+    private readonly IPathProvider paths;
+    private readonly SemanticIndexService semanticIndex;
+    private readonly InferenceService inference;
 
     public event Action<BeatGenerationProgress>? OnBeatProgress;
     public event Action<GeneratedBeat>? OnBeatCompleted;
@@ -23,24 +23,24 @@ public class SceneGenerationService
         WorldGraphService graph, DatabaseService canonDb, ValidationService validator,
         IPathProvider paths, SemanticIndexService semanticIndex, InferenceService inference)
     {
-        _facets = facets;
-        _analyzer = analyzer;
-        _beatGen = beatGen;
-        _graph = graph;
-        _canonDb = canonDb;
-        _validator = validator;
-        _paths = paths;
-        _semanticIndex = semanticIndex;
-        _inference = inference;
+        this.facets = facets;
+        this.analyzer = analyzer;
+        this.beatGen = beatGen;
+        this.graph = graph;
+        this.canonDb = canonDb;
+        this.validator = validator;
+        this.paths = paths;
+        this.semanticIndex = semanticIndex;
+        this.inference = inference;
     }
 
     public async Task<GeneratedScene> GenerateSceneAsync(SceneRequest request, FacetState characterWeights, CancellationToken ct = default)
     {
-        _graph.EnsureLoaded();
-        var allFacets = _facets.LoadAllFacets();
-        var storyBible = _canonDb.GetLiteraryRulesPrompt();
+        graph.EnsureLoaded();
+        var allFacets = facets.LoadAllFacets();
+        var storyBible = canonDb.GetLiteraryRulesPrompt();
 
-        var session = new NarrativeSessionContext(_graph, _semanticIndex, _inference);
+        var session = new NarrativeSessionContext(graph, semanticIndex, inference);
         session.TouchAll(request.Characters);
         if (request.Location != null) session.Touch(request.Location);
 
@@ -55,12 +55,12 @@ public class SceneGenerationService
 
             var worldContext = session.BuildContext();
 
-            var analysis = await _analyzer.AnalyzeAsync(
+            var analysis = await analyzer.AnalyzeAsync(
                 $"{request.Goal}\n\nScene so far:\n{sceneSoFar}",
                 request.Characters.Select(WorldGraphService.Slugify).ToList(),
                 ct);
 
-            var (lead, supporting) = _facets.SelectFacets(
+            var (lead, supporting) = facets.SelectFacets(
                 characterWeights, analysis.PsychologicalTriggers, recentLeads);
 
             OnBeatProgress?.Invoke(new BeatGenerationProgress
@@ -81,10 +81,10 @@ public class SceneGenerationService
                     : $"Continue the scene toward: {request.Goal}",
             };
 
-            var text = await _beatGen.GenerateBeatAsync(beatContext, lead, supporting, ct);
+            var text = await beatGen.GenerateBeatAsync(beatContext, lead, supporting, ct);
 
             // Validate against canon — catch pronoun errors, dead characters, etc.
-            var issues = _validator.ValidateQuick(text);
+            var issues = validator.ValidateQuick(text);
 
             // Scan for new entity mentions (keyword + semantic)
             var newEntities = session.ScanText(text);

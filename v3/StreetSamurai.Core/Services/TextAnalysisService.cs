@@ -4,15 +4,15 @@ namespace StreetSamurai.Core.Services;
 
 public class TextAnalysisService
 {
-    private readonly ILlmService _llm;
-    private readonly LoreService _canon;
-    private readonly WorldGraphService _graph;
+    private readonly ILlmService llm;
+    private readonly LoreService canon;
+    private readonly WorldGraphService graph;
 
     public TextAnalysisService(ILlmService llm, LoreService canon, WorldGraphService graph)
     {
-        _llm = llm;
-        _canon = canon;
-        _graph = graph;
+        this.llm = llm;
+        this.canon = canon;
+        this.graph = graph;
     }
 
     public async Task<string> LoreCheckAsync(string selectedText, string surroundingContext, CancellationToken ct = default)
@@ -30,7 +30,7 @@ public class TextAnalysisService
             Be specific and cite sources.
             """;
         var user = $"SURROUNDING CONTEXT:\n{surroundingContext}\n\nSELECTED TEXT TO CHECK:\n{selectedText}";
-        return await _llm.GenerateAsync(system, user, 0.3, 2048, ct: ct);
+        return await llm.GenerateAsync(system, user, 0.3, 2048, ct: ct);
     }
 
     public async Task<string> ClicheCheckAsync(string selectedText, CancellationToken ct = default)
@@ -51,7 +51,7 @@ public class TextAnalysisService
             Analyze the text for violations. Be specific about what's cliche and why.
             Suggest concrete improvements that maintain the dark, literary tone.
             """;
-        return await _llm.GenerateAsync(system, selectedText, 0.4, 2048, ct: ct);
+        return await llm.GenerateAsync(system, selectedText, 0.4, 2048, ct: ct);
     }
 
     public async Task<string> ExpandAsync(string selectedText, string surroundingContext, CancellationToken ct = default)
@@ -69,7 +69,7 @@ public class TextAnalysisService
             {canonContext}
             """;
         var user = $"CONTEXT:\n{surroundingContext}\n\nCONTINUE FROM:\n{selectedText}\n\nWrite 2-3 paragraphs continuing this passage.";
-        return await _llm.GenerateAsync(system, user, 0.85, 2048, ct: ct);
+        return await llm.GenerateAsync(system, user, 0.85, 2048, ct: ct);
     }
 
     public async Task<string> RephraseAsync(string selectedText, CancellationToken ct = default)
@@ -79,19 +79,19 @@ public class TextAnalysisService
             Rules: sentences max 25 words, sharp sensory detail, no cliches, no generic noir.
             Return ONLY the rephrased text, nothing else.
             """;
-        return await _llm.GenerateAsync(system, selectedText, 0.7, 1024, ct: ct);
+        return await llm.GenerateAsync(system, selectedText, 0.7, 1024, ct: ct);
     }
 
     private string BuildCanonContext(string text)
     {
-        var results = _canon.Search(text, 5);
-        var graphResults = _graph.Search(text);
+        var results = canon.Search(text, 5);
+        var graphResults = graph.Search(text);
 
         var lines = new List<string>();
         foreach (var r in results)
             lines.Add($"[{r.FileName}:{r.LineNumber}] {r.Context}");
         foreach (var n in graphResults.Take(5))
-            lines.Add($"[GRAPH: {n.NodeType}] {_graph.GetContextForNode(n.Id)}");
+            lines.Add($"[GRAPH: {n.NodeType}] {graph.GetContextForNode(n.Id)}");
 
         return string.Join("\n\n", lines);
     }

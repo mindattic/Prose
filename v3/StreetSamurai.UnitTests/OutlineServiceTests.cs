@@ -5,27 +5,27 @@ namespace StreetSamurai.UnitTests;
 [TestFixture]
 public class OutlineServiceTests
 {
-    private string _testDir = "";
+    private string testDir = "";
 
     [SetUp]
     public void Setup()
     {
-        _testDir = Path.Combine(Path.GetTempPath(), $"ss_test_{Guid.NewGuid():N}");
-        Directory.CreateDirectory(Path.Combine(_testDir, "story_blocks"));
+        testDir = Path.Combine(Path.GetTempPath(), $"ss_test_{Guid.NewGuid():N}");
+        Directory.CreateDirectory(Path.Combine(testDir, "story_blocks"));
     }
 
     [TearDown]
     public void Cleanup()
     {
-        if (Directory.Exists(_testDir)) Directory.Delete(_testDir, true);
+        if (Directory.Exists(testDir)) Directory.Delete(testDir, true);
     }
 
     [Test]
     public void GetNextBeat_ReturnsFirstUnwritten()
     {
         var outline = MakeTestOutline();
-        var paths = new TestPathProviderWithRoot(_testDir);
-        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths);
+        var paths = new TestPathProviderWithRoot(testDir);
+        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, NullLoggers.For<OutlineService>());
 
         var next = svc.GetNextBeat(outline, -1);
         Assert.That(next, Is.Not.Null);
@@ -38,8 +38,8 @@ public class OutlineServiceTests
         var outline = MakeTestOutline();
         outline.Acts[0].Beats[0].Written = true;
 
-        var paths = new TestPathProviderWithRoot(_testDir);
-        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths);
+        var paths = new TestPathProviderWithRoot(testDir);
+        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, NullLoggers.For<OutlineService>());
 
         var next = svc.GetNextBeat(outline, -1);
         Assert.That(next, Is.Not.Null);
@@ -54,8 +54,8 @@ public class OutlineServiceTests
             foreach (var beat in act.Beats)
                 beat.Written = true;
 
-        var paths = new TestPathProviderWithRoot(_testDir);
-        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths);
+        var paths = new TestPathProviderWithRoot(testDir);
+        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, NullLoggers.For<OutlineService>());
 
         Assert.That(svc.GetNextBeat(outline, -1), Is.Null);
     }
@@ -64,8 +64,8 @@ public class OutlineServiceTests
     public void MarkBeatWritten_SetsFlag()
     {
         var outline = MakeTestOutline();
-        var paths = new TestPathProviderWithRoot(_testDir);
-        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths);
+        var paths = new TestPathProviderWithRoot(testDir);
+        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, NullLoggers.For<OutlineService>());
 
         svc.MarkBeatWritten(outline, 0);
         Assert.That(outline.Acts[0].Beats[0].Written, Is.True);
@@ -76,8 +76,8 @@ public class OutlineServiceTests
     public void BuildBeatContext_IncludesArcInfo()
     {
         var outline = MakeTestOutline();
-        var paths = new TestPathProviderWithRoot(_testDir);
-        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths);
+        var paths = new TestPathProviderWithRoot(testDir);
+        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, NullLoggers.For<OutlineService>());
 
         var ctx = svc.BuildBeatContext(outline, 0);
         Assert.That(ctx, Does.Contain("STORY OUTLINE CONTEXT"));
@@ -91,8 +91,8 @@ public class OutlineServiceTests
     public void BuildBeatContext_ShowsSeedsAndPayoffs()
     {
         var outline = MakeTestOutline();
-        var paths = new TestPathProviderWithRoot(_testDir);
-        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths);
+        var paths = new TestPathProviderWithRoot(testDir);
+        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, NullLoggers.For<OutlineService>());
 
         var ctx = svc.BuildBeatContext(outline, 0);
         Assert.That(ctx, Does.Contain("PLANT these seeds"));
@@ -103,8 +103,8 @@ public class OutlineServiceTests
     public void BuildBeatContext_ShowsNextBeat()
     {
         var outline = MakeTestOutline();
-        var paths = new TestPathProviderWithRoot(_testDir);
-        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths);
+        var paths = new TestPathProviderWithRoot(testDir);
+        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, NullLoggers.For<OutlineService>());
 
         var ctx = svc.BuildBeatContext(outline, 0);
         Assert.That(ctx, Does.Contain("NEXT BEAT"));
@@ -114,8 +114,8 @@ public class OutlineServiceTests
     public void SaveAndLoad_RoundTrips()
     {
         var outline = MakeTestOutline();
-        var paths = new TestPathProviderWithRoot(_testDir);
-        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths);
+        var paths = new TestPathProviderWithRoot(testDir);
+        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, NullLoggers.For<OutlineService>());
 
         svc.Save("proj1", outline);
         var loaded = svc.Load("proj1");
@@ -129,8 +129,8 @@ public class OutlineServiceTests
     [Test]
     public void Load_NonExistent_ReturnsNull()
     {
-        var paths = new TestPathProviderWithRoot(_testDir);
-        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths);
+        var paths = new TestPathProviderWithRoot(testDir);
+        var svc = new OutlineService(new FakeLlmService(), new TestDatabaseService(), paths, NullLoggers.For<OutlineService>());
 
         Assert.That(svc.Load("nonexistent"), Is.Null);
     }

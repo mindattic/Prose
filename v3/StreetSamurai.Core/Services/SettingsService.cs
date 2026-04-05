@@ -5,8 +5,8 @@ namespace StreetSamurai.Core.Services;
 
 public class SettingsService
 {
-    private readonly string _settingsPath;
-    private SettingsData _data = new();
+    private readonly string settingsPath;
+    private SettingsData data = new();
 
     public SettingsService()
     {
@@ -14,16 +14,16 @@ public class SettingsService
             Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
             "MindAttic", "StreetSamurai");
         Directory.CreateDirectory(appData);
-        _settingsPath = Path.Combine(appData, "Settings.json");
+        settingsPath = Path.Combine(appData, "Settings.json");
         Load();
 
         // Auto-detect canon root if not set
-        if (string.IsNullOrWhiteSpace(_data.CanonRootPath))
+        if (string.IsNullOrWhiteSpace(data.CanonRootPath))
         {
             var detected = AutoDetectCanonRoot();
             if (detected != null)
             {
-                _data.CanonRootPath = detected;
+                data.CanonRootPath = detected;
                 Save();
             }
         }
@@ -60,57 +60,57 @@ public class SettingsService
         return null;
     }
 
-    public string ApiKey { get => _data.ApiKey; set { _data.ApiKey = value; Save(); } }
-    public string Model { get => _data.Model; set { _data.Model = value; Save(); } }
-    public string Theme { get => _data.Theme; set { _data.Theme = value; Save(); } }
-    public string CanonRootPath { get => _data.CanonRootPath; set { _data.CanonRootPath = value; Save(); } }
-    public int MaxTokens { get => _data.MaxTokens; set { _data.MaxTokens = value; Save(); } }
-    public string ElevenLabsApiKey { get => _data.ElevenLabsApiKey; set { _data.ElevenLabsApiKey = value; Save(); } }
-    public string ElevenLabsVoiceId { get => _data.ElevenLabsVoiceId; set { _data.ElevenLabsVoiceId = value; Save(); } }
-    public string NarratorVoiceName { get => _data.NarratorVoiceName; set { _data.NarratorVoiceName = value; Save(); } }
-    public string TtsModel { get => _data.TtsModel; set { _data.TtsModel = value; Save(); } }
-    public double TtsStability { get => _data.TtsStability; set { _data.TtsStability = value; Save(); } }
-    public double TtsSimilarityBoost { get => _data.TtsSimilarityBoost; set { _data.TtsSimilarityBoost = value; Save(); } }
-    public double TtsStyle { get => _data.TtsStyle; set { _data.TtsStyle = value; Save(); } }
-    public string OpenAiApiKey { get => _data.OpenAiApiKey; set { _data.OpenAiApiKey = value; Save(); } }
-    public string OpenAiModel { get => _data.OpenAiModel; set { _data.OpenAiModel = value; Save(); } }
-    public string ActiveLlmProvider { get => _data.ActiveLlmProvider; set { _data.ActiveLlmProvider = value; Save(); } }
-    public int EditorFontSize { get => _data.EditorFontSize; set { _data.EditorFontSize = value; Save(); } }
-    public int AutoSaveIntervalMs { get => _data.AutoSaveIntervalMs; set { _data.AutoSaveIntervalMs = value; Save(); } }
-    public string GeminiApiKey { get => _data.GeminiApiKey; set { _data.GeminiApiKey = value; Save(); } }
-    public string DeepSeekApiKey { get => _data.DeepSeekApiKey; set { _data.DeepSeekApiKey = value; Save(); } }
-    public string MistralApiKey { get => _data.MistralApiKey; set { _data.MistralApiKey = value; Save(); } }
-    public string GrokApiKey { get => _data.GrokApiKey; set { _data.GrokApiKey = value; Save(); } }
-    public string GroqApiKey { get => _data.GroqApiKey; set { _data.GroqApiKey = value; Save(); } }
-    public string TogetherApiKey { get => _data.TogetherApiKey; set { _data.TogetherApiKey = value; Save(); } }
-    public string OpenRouterApiKey { get => _data.OpenRouterApiKey; set { _data.OpenRouterApiKey = value; Save(); } }
-    public string FireworksApiKey { get => _data.FireworksApiKey; set { _data.FireworksApiKey = value; Save(); } }
-    public string CohereApiKey { get => _data.CohereApiKey; set { _data.CohereApiKey = value; Save(); } }
-    public string GeminiModel { get => _data.GeminiModel; set { _data.GeminiModel = value; Save(); } }
-    public string DeepSeekModel { get => _data.DeepSeekModel; set { _data.DeepSeekModel = value; Save(); } }
-    public string MistralModel { get => _data.MistralModel; set { _data.MistralModel = value; Save(); } }
-    public string GrokModel { get => _data.GrokModel; set { _data.GrokModel = value; Save(); } }
-    public string GroqModel { get => _data.GroqModel; set { _data.GroqModel = value; Save(); } }
-    public string TogetherModel { get => _data.TogetherModel; set { _data.TogetherModel = value; Save(); } }
-    public string OpenRouterModel { get => _data.OpenRouterModel; set { _data.OpenRouterModel = value; Save(); } }
-    public string FireworksModel { get => _data.FireworksModel; set { _data.FireworksModel = value; Save(); } }
-    public string CohereModel { get => _data.CohereModel; set { _data.CohereModel = value; Save(); } }
-    public string MapService { get => _data.MapService; set { _data.MapService = value; Save(); } }
-    public string MapAppId { get => _data.MapAppId; set { _data.MapAppId = value; Save(); } }
-    public string MapApiKey { get => _data.MapApiKey; set { _data.MapApiKey = value; Save(); } }
+    public string ApiKey { get => data.ApiKey; set { data.ApiKey = value; Save(); } }
+    public string Model { get => data.Model; set { data.Model = value; Save(); } }
+    public string Theme { get => data.Theme; set { data.Theme = value; Save(); } }
+    public string CanonRootPath { get => data.CanonRootPath; set { data.CanonRootPath = value; Save(); } }
+    public int MaxTokens { get => data.MaxTokens; set { data.MaxTokens = value; Save(); } }
+    public string ElevenLabsApiKey { get => data.ElevenLabsApiKey; set { data.ElevenLabsApiKey = value; Save(); } }
+    public string ElevenLabsVoiceId { get => data.ElevenLabsVoiceId; set { data.ElevenLabsVoiceId = value; Save(); } }
+    public string NarratorVoiceName { get => data.NarratorVoiceName; set { data.NarratorVoiceName = value; Save(); } }
+    public string TtsModel { get => data.TtsModel; set { data.TtsModel = value; Save(); } }
+    public double TtsStability { get => data.TtsStability; set { data.TtsStability = value; Save(); } }
+    public double TtsSimilarityBoost { get => data.TtsSimilarityBoost; set { data.TtsSimilarityBoost = value; Save(); } }
+    public double TtsStyle { get => data.TtsStyle; set { data.TtsStyle = value; Save(); } }
+    public string OpenAiApiKey { get => data.OpenAiApiKey; set { data.OpenAiApiKey = value; Save(); } }
+    public string OpenAiModel { get => data.OpenAiModel; set { data.OpenAiModel = value; Save(); } }
+    public string ActiveLlmProvider { get => data.ActiveLlmProvider; set { data.ActiveLlmProvider = value; Save(); } }
+    public int EditorFontSize { get => data.EditorFontSize; set { data.EditorFontSize = value; Save(); } }
+    public int AutoSaveIntervalMs { get => data.AutoSaveIntervalMs; set { data.AutoSaveIntervalMs = value; Save(); } }
+    public string GeminiApiKey { get => data.GeminiApiKey; set { data.GeminiApiKey = value; Save(); } }
+    public string DeepSeekApiKey { get => data.DeepSeekApiKey; set { data.DeepSeekApiKey = value; Save(); } }
+    public string MistralApiKey { get => data.MistralApiKey; set { data.MistralApiKey = value; Save(); } }
+    public string GrokApiKey { get => data.GrokApiKey; set { data.GrokApiKey = value; Save(); } }
+    public string GroqApiKey { get => data.GroqApiKey; set { data.GroqApiKey = value; Save(); } }
+    public string TogetherApiKey { get => data.TogetherApiKey; set { data.TogetherApiKey = value; Save(); } }
+    public string OpenRouterApiKey { get => data.OpenRouterApiKey; set { data.OpenRouterApiKey = value; Save(); } }
+    public string FireworksApiKey { get => data.FireworksApiKey; set { data.FireworksApiKey = value; Save(); } }
+    public string CohereApiKey { get => data.CohereApiKey; set { data.CohereApiKey = value; Save(); } }
+    public string GeminiModel { get => data.GeminiModel; set { data.GeminiModel = value; Save(); } }
+    public string DeepSeekModel { get => data.DeepSeekModel; set { data.DeepSeekModel = value; Save(); } }
+    public string MistralModel { get => data.MistralModel; set { data.MistralModel = value; Save(); } }
+    public string GrokModel { get => data.GrokModel; set { data.GrokModel = value; Save(); } }
+    public string GroqModel { get => data.GroqModel; set { data.GroqModel = value; Save(); } }
+    public string TogetherModel { get => data.TogetherModel; set { data.TogetherModel = value; Save(); } }
+    public string OpenRouterModel { get => data.OpenRouterModel; set { data.OpenRouterModel = value; Save(); } }
+    public string FireworksModel { get => data.FireworksModel; set { data.FireworksModel = value; Save(); } }
+    public string CohereModel { get => data.CohereModel; set { data.CohereModel = value; Save(); } }
+    public string MapService { get => data.MapService; set { data.MapService = value; Save(); } }
+    public string MapAppId { get => data.MapAppId; set { data.MapAppId = value; Save(); } }
+    public string MapApiKey { get => data.MapApiKey; set { data.MapApiKey = value; Save(); } }
 
     /// <summary>Reset non-secret settings to defaults. Preserves API keys and canon root.</summary>
     public void ResetToDefaults()
     {
         var keys = new
         {
-            _data.ApiKey, _data.OpenAiApiKey, _data.ElevenLabsApiKey,
-            _data.ElevenLabsVoiceId, _data.NarratorVoiceName, _data.CanonRootPath,
-            _data.GeminiApiKey, _data.DeepSeekApiKey, _data.MistralApiKey,
-            _data.GrokApiKey, _data.GroqApiKey, _data.TogetherApiKey,
-            _data.OpenRouterApiKey, _data.FireworksApiKey, _data.CohereApiKey,
+            data.ApiKey, data.OpenAiApiKey, data.ElevenLabsApiKey,
+            data.ElevenLabsVoiceId, data.NarratorVoiceName, data.CanonRootPath,
+            data.GeminiApiKey, data.DeepSeekApiKey, data.MistralApiKey,
+            data.GrokApiKey, data.GroqApiKey, data.TogetherApiKey,
+            data.OpenRouterApiKey, data.FireworksApiKey, data.CohereApiKey,
         };
-        _data = new SettingsData
+        data = new SettingsData
         {
             ApiKey = keys.ApiKey,
             OpenAiApiKey = keys.OpenAiApiKey,
@@ -133,17 +133,17 @@ public class SettingsService
 
     private void Load()
     {
-        if (File.Exists(_settingsPath))
+        if (File.Exists(settingsPath))
         {
-            var json = File.ReadAllText(_settingsPath);
-            _data = JsonSerializer.Deserialize<SettingsData>(json) ?? new();
+            var json = File.ReadAllText(settingsPath);
+            data = JsonSerializer.Deserialize<SettingsData>(json) ?? new();
         }
     }
 
     private void Save()
     {
-        var json = JsonSerializer.Serialize(_data, new JsonSerializerOptions { WriteIndented = true });
-        File.WriteAllText(_settingsPath, json);
+        var json = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
+        File.WriteAllText(settingsPath, json);
     }
 
     private class SettingsData

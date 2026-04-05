@@ -75,13 +75,51 @@ window.hereMap = {
             var defaultLayers = platform.createDefaultLayers();
             this._defaultLayers = defaultLayers;
 
-            // Start with vector map
-            var map = new H.Map(el, defaultLayers.vector.normal.map, {
+            // Start with vector map — terrain only, no labels/roads/borders
+            var baseLayer = defaultLayers.vector.normal.map;
+            var map = new H.Map(el, baseLayer, {
                 center: { lat: lat, lng: lng },
                 zoom: 14,
                 pixelRatio: window.devicePixelRatio || 1
             });
             this._map = map;
+
+            // Strip labels, roads, and borders from the vector layer
+            var provider = baseLayer.getProvider();
+            if (provider && provider.getStyle) {
+                var style = provider.getStyle();
+                var applyMinimalStyle = function () {
+                    var config = style.extractConfig();
+                    if (config && config.layers) {
+                        Object.keys(config.layers).forEach(function (layerName) {
+                            var lower = layerName.toLowerCase();
+                            if (lower.indexOf('label') !== -1 ||
+                                lower.indexOf('road') !== -1 ||
+                                lower.indexOf('street') !== -1 ||
+                                lower.indexOf('highway') !== -1 ||
+                                lower.indexOf('boundary') !== -1 ||
+                                lower.indexOf('border') !== -1 ||
+                                lower.indexOf('admin') !== -1 ||
+                                lower.indexOf('place') !== -1 ||
+                                lower.indexOf('poi') !== -1 ||
+                                lower.indexOf('transit') !== -1 ||
+                                lower.indexOf('ferry') !== -1 ||
+                                lower.indexOf('path') !== -1 ||
+                                lower.indexOf('text') !== -1) {
+                                config.layers[layerName].visible = false;
+                            }
+                        });
+                        style.mergeConfig(config);
+                    }
+                };
+                if (style.getState() === 'ready') {
+                    applyMinimalStyle();
+                } else {
+                    style.addEventListener('change', function () {
+                        if (style.getState() === 'ready') applyMinimalStyle();
+                    });
+                }
+            }
 
             // Resize listener
             window.addEventListener('resize', function () { map.getViewPort().resize(); });

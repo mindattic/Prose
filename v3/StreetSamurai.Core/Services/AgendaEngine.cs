@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -15,15 +16,17 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class AgendaEngine
 {
-    private readonly ILlmService _llm;
-    private readonly DatabaseService _db;
-    private readonly WorldGraphService _graph;
+    private readonly ILlmService llm;
+    private readonly DatabaseService db;
+    private readonly WorldGraphService graph;
+    private readonly ILogger<AgendaEngine> log;
 
-    public AgendaEngine(ILlmService llm, DatabaseService db, WorldGraphService graph)
+    public AgendaEngine(ILlmService llm, DatabaseService db, WorldGraphService graph, ILogger<AgendaEngine> log)
     {
-        _llm = llm;
-        _db = db;
-        _graph = graph;
+        this.llm = llm;
+        this.db = db;
+        this.graph = graph;
+        this.log = log;
     }
 
     /// <summary>
@@ -35,7 +38,7 @@ public class AgendaEngine
         string? recentEvents = null, CancellationToken ct = default)
     {
         var charContexts = characterNames
-            .Select(n => _db.GetCharacterContext(n))
+            .Select(n => db.GetCharacterContext(n))
             .Where(c => c.Length > 0)
             .ToList();
 
@@ -77,15 +80,21 @@ public class AgendaEngine
 
         try
         {
-            var response = await _llm.GenerateAsync(system, "Generate character agendas now.", 0.6, 2048, ct: ct);
+            var response = await llm.GenerateAsync(system, "Generate character agendas now.", 0.6, 2048, ct: ct);
             var json = response.Trim();
             if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
             if (json.EndsWith("```")) json = json[..^3];
 
-            return JsonSerializer.Deserialize<List<CharacterAgenda>>(json.Trim(),
+            var agendas = JsonSerializer.Deserialize<List<CharacterAgenda>>(json.Trim(),
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? [];
+            log.LogInformation("Generated {Count} character agendas", agendas.Count);
+            return agendas;
         }
-        catch { return []; }
+        catch (Exception ex)
+        {
+            log.LogError(ex, "Agenda generation failed for characters=[{Characters}]", string.Join(", ", characterNames));
+            return [];
+        }
     }
 
     /// <summary>
@@ -129,15 +138,21 @@ public class AgendaEngine
 
         try
         {
-            var response = await _llm.GenerateAsync(system, agendaText, 0.7, 2048, ct: ct);
+            var response = await llm.GenerateAsync(system, agendaText, 0.7, 2048, ct: ct);
             var json = response.Trim();
             if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
             if (json.EndsWith("```")) json = json[..^3];
 
-            return JsonSerializer.Deserialize<List<ConflictPremise>>(json.Trim(),
+            var conflicts = JsonSerializer.Deserialize<List<ConflictPremise>>(json.Trim(),
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? [];
+            log.LogInformation("Found {Count} conflicts from agendas", conflicts.Count);
+            return conflicts;
         }
-        catch { return []; }
+        catch (Exception ex)
+        {
+            log.LogError(ex, "Conflict discovery failed");
+            return [];
+        }
     }
 
     /// <summary>

@@ -11,19 +11,20 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class DatabaseService
 {
-    private readonly CharacterRepository _characters;
-    private readonly FacetRepository _facets;
-    private readonly DistrictRepository _districts;
-    private readonly FactionRepository _factions;
-    private readonly CorponationRepository _corponations;
-    private readonly WorldbuildingDocRepository _docs;
-    private readonly WeaponryRepository _weaponry;
-    private readonly EquipmentRepository _equipment;
-    private readonly TechnologyRepository _technology;
-    private readonly StoryBibleRepository _storyBible;
-    private readonly LiteraryRulesRepository _literaryRules;
-    private readonly MotifRepository _motifs;
-    private readonly CharacterProfileRepository _characterProfile;
+    private readonly CharacterRepository characters;
+    private readonly FacetRepository facets;
+    private readonly DistrictRepository districts;
+    private readonly FactionRepository factions;
+    private readonly CorponationRepository corponations;
+    private readonly WorldbuildingDocRepository docs;
+    private readonly WeaponryRepository weaponry;
+    private readonly EquipmentRepository equipment;
+    private readonly TechnologyRepository technology;
+    private readonly StoryBibleRepository storyBible;
+    private readonly LiteraryRulesRepository literaryRules;
+    private readonly MotifRepository motifs;
+    private readonly CharacterProfileRepository characterProfile;
+    private readonly ToneBibleRepository toneBible;
 
     public DatabaseService(
         CharacterRepository characters, FacetRepository facets,
@@ -32,54 +33,56 @@ public class DatabaseService
         WeaponryRepository weaponry, EquipmentRepository equipment,
         TechnologyRepository technology,
         StoryBibleRepository storyBible, LiteraryRulesRepository literaryRules,
-        MotifRepository motifs, CharacterProfileRepository characterProfile)
+        MotifRepository motifs, CharacterProfileRepository characterProfile,
+        ToneBibleRepository toneBible)
     {
-        _characters = characters;
-        _facets = facets;
-        _districts = districts;
-        _factions = factions;
-        _corponations = corponations;
-        _docs = docs;
-        _weaponry = weaponry;
-        _equipment = equipment;
-        _technology = technology;
-        _storyBible = storyBible;
-        _literaryRules = literaryRules;
-        _motifs = motifs;
-        _characterProfile = characterProfile;
+        this.characters = characters;
+        this.facets = facets;
+        this.districts = districts;
+        this.factions = factions;
+        this.corponations = corponations;
+        this.docs = docs;
+        this.weaponry = weaponry;
+        this.equipment = equipment;
+        this.technology = technology;
+        this.storyBible = storyBible;
+        this.literaryRules = literaryRules;
+        this.motifs = motifs;
+        this.characterProfile = characterProfile;
+        this.toneBible = toneBible;
     }
 
     // ── Typed Accessors ─────────────────────────────────
 
-    public List<CharacterData> Characters => _characters.GetAll();
-    public List<FacetData> Facets => _facets.GetAll();
-    public List<DistrictData> Districts => _districts.GetAll();
-    public List<FactionData> Factions => _factions.GetAll();
-    public List<CorponationData> Corponations => _corponations.GetAll();
-    public List<WeaponryData> Weaponry => _weaponry.GetAll();
-    public List<EquipmentData> Equipment => _equipment.GetAll();
-    public List<TechnologyData> Technology => _technology.GetAll();
-    public List<WorldbuildingDocument> WorldbuildingDocs => _docs.GetAll();
-    public StoryBibleData StoryBible => _storyBible.Get();
-    public LiteraryRulesData LiteraryRules => _literaryRules.Get();
-    public List<MotifData> Motifs => _motifs.GetAll();
-    public CharacterProfileData CharacterProfile => _characterProfile.Get();
+    public List<CharacterData> Characters => characters.GetAll();
+    public List<FacetData> Facets => facets.GetAll();
+    public List<DistrictData> Districts => districts.GetAll();
+    public List<FactionData> Factions => factions.GetAll();
+    public List<CorponationData> Corponations => corponations.GetAll();
+    public List<WeaponryData> Weaponry => weaponry.GetAll();
+    public List<EquipmentData> Equipment => equipment.GetAll();
+    public List<TechnologyData> Technology => technology.GetAll();
+    public List<WorldbuildingDocument> WorldbuildingDocs => docs.GetAll();
+    public StoryBibleData StoryBible => storyBible.Get();
+    public LiteraryRulesData LiteraryRules => literaryRules.Get();
+    public List<MotifData> Motifs => motifs.GetAll();
+    public CharacterProfileData CharacterProfile => characterProfile.Get();
 
     public void Reload()
     {
-        _characters.Reload();
-        _facets.Reload();
-        _districts.Reload();
-        _factions.Reload();
-        _corponations.Reload();
-        _weaponry.Reload();
-        _equipment.Reload();
-        _technology.Reload();
-        _docs.Reload();
-        _storyBible.Reload();
-        _literaryRules.Reload();
-        _motifs.Reload();
-        _characterProfile.Reload();
+        characters.Reload();
+        facets.Reload();
+        districts.Reload();
+        factions.Reload();
+        corponations.Reload();
+        weaponry.Reload();
+        equipment.Reload();
+        technology.Reload();
+        docs.Reload();
+        storyBible.Reload();
+        literaryRules.Reload();
+        motifs.Reload();
+        characterProfile.Reload();
     }
 
     // ── Character Lookups ───────────────────────────────
@@ -198,6 +201,59 @@ public class DatabaseService
         if (d.Dangers.Any()) lines.Add($"DANGERS: {string.Join("; ", d.Dangers.Take(4))}");
         if (d.FrequentedBy.Any()) lines.Add($"FREQUENTED BY: {string.Join(", ", d.FrequentedBy.Take(6))}");
 
+        return string.Join("\n", lines);
+    }
+
+    public ToneBibleData ToneBible => toneBible.Get();
+
+    public string GetToneBiblePrompt()
+    {
+        var tb = ToneBible;
+        var lines = new List<string> { "CYBERPUNK TONE — THESE DEFINE HOW THE STORY FEELS:" };
+        foreach (var rule in tb.ToneRules.Take(8))
+            lines.Add($"  - {rule}");
+        if (tb.DialogueRules.Any())
+        {
+            lines.Add("DIALOGUE:");
+            foreach (var rule in tb.DialogueRules.Take(4))
+                lines.Add($"  - {rule}");
+        }
+        if (tb.StoryStructure.Any())
+        {
+            lines.Add("STORY STRUCTURE:");
+            foreach (var rule in tb.StoryStructure.Take(4))
+                lines.Add($"  - {rule}");
+        }
+        return string.Join("\n", lines);
+    }
+
+    public string GetSensoryPalettePrompt(string? location = null)
+    {
+        var tb = ToneBible;
+        var lines = new List<string> { "SENSORY PALETTE — weave these into the prose:" };
+
+        // If we have a specific location with atmosphere, use that
+        if (location != null)
+        {
+            var district = Districts.FirstOrDefault(d =>
+                d.Name.Equals(location, StringComparison.OrdinalIgnoreCase));
+            if (district?.Atmosphere != null)
+            {
+                var a = district.Atmosphere;
+                if (a.Sights.Any()) lines.Add($"  SIGHTS: {string.Join("; ", a.Sights.Take(4))}");
+                if (a.Sounds.Any()) lines.Add($"  SOUNDS: {string.Join("; ", a.Sounds.Take(4))}");
+                if (a.Smells.Any()) lines.Add($"  SMELLS: {string.Join("; ", a.Smells.Take(3))}");
+                if (a.Feel.Length > 0) lines.Add($"  FEEL: {a.Feel}");
+                return string.Join("\n", lines);
+            }
+        }
+
+        // Fallback to global sensory palette
+        var sp = tb.SensoryPalette;
+        if (sp.Sights.Any()) lines.Add($"  SIGHTS: {string.Join("; ", sp.Sights.OrderBy(_ => Random.Shared.Next()).Take(4))}");
+        if (sp.Sounds.Any()) lines.Add($"  SOUNDS: {string.Join("; ", sp.Sounds.OrderBy(_ => Random.Shared.Next()).Take(4))}");
+        if (sp.Smells.Any()) lines.Add($"  SMELLS: {string.Join("; ", sp.Smells.OrderBy(_ => Random.Shared.Next()).Take(3))}");
+        if (sp.Textures.Any()) lines.Add($"  TEXTURES: {string.Join("; ", sp.Textures.OrderBy(_ => Random.Shared.Next()).Take(3))}");
         return string.Join("\n", lines);
     }
 

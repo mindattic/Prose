@@ -1,6 +1,16 @@
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.UnitTests;
+
+/// <summary>
+/// Provides NullLogger instances for all service types — no output, no cost.
+/// </summary>
+public static class NullLoggers
+{
+    public static ILogger<T> For<T>() => NullLogger<T>.Instance;
+}
 
 /// <summary>
 /// Fake LLM service for unit tests. Returns empty strings — never calls an API.
@@ -21,18 +31,18 @@ public class FakeLlmService : ILlmService
 /// </summary>
 public class TestPathProviderWithRoot : IPathProvider
 {
-    private readonly string _root;
+    private readonly string root;
 
-    public TestPathProviderWithRoot(string root) => _root = root;
+    public TestPathProviderWithRoot(string root) => this.root = root;
 
-    public string DataRoot => _root;
-    public string WorldbuildingDir => Path.Combine(_root, "worldbuilding");
-    public string CharactersDir => Path.Combine(_root, "characters");
-    public string EssencesDir => Path.Combine(_root, "essences");
-    public string StoriesDir => Path.Combine(_root, "stories");
-    public string EngineDataDir => Path.Combine(_root, "engine_data");
-    public string NarrativeBiblePath => Path.Combine(_root, "narrative_bible.md");
-    public string WorldDir => Path.Combine(_root, "world");
-    public string FacetsDir => Path.Combine(_root, "character", "facets");
-    public string GraphDir => Path.Combine(_root, "engine_data", "graph");
+    public string DataRoot => root;
+    public string WorldbuildingDir => Path.Combine(root, "worldbuilding");
+    public string CharactersDir => Path.Combine(root, "characters");
+    public string EssencesDir => Path.Combine(root, "essences");
+    public string StoriesDir => Path.Combine(root, "stories");
+    public string EngineDataDir => Path.Combine(root, "engine_data");
+    public string NarrativeBiblePath => Path.Combine(root, "narrative_bible.md");
+    public string WorldDir => Path.Combine(root, "world");
+    public string FacetsDir => Path.Combine(root, "character", "facets");
+    public string GraphDir => Path.Combine(root, "engine_data", "graph");
 }

@@ -5,13 +5,13 @@ namespace StreetSamurai.Core.Services;
 
 public class ContextAnalyzerService
 {
-    private readonly ILlmService _llm;
-    private readonly WorldGraphService _graph;
+    private readonly ILlmService llm;
+    private readonly WorldGraphService graph;
 
     public ContextAnalyzerService(ILlmService llm, WorldGraphService graph)
     {
-        _llm = llm;
-        _graph = graph;
+        this.llm = llm;
+        this.graph = graph;
     }
 
     public async Task<ContextAnalysis> AnalyzeAsync(string sceneContext, List<string> characterIds, CancellationToken ct = default)
@@ -19,7 +19,7 @@ public class ContextAnalyzerService
         // Pull full entity briefs from the graph — includes gender, pronouns,
         // psychology, relationships, equipment, and 1-hop neighbors
         var relationshipContext = string.Join("\n\n", characterIds
-            .Select(id => _graph.GetEntityBrief(id))
+            .Select(id => graph.GetEntityBrief(id))
             .Where(c => !string.IsNullOrEmpty(c)));
 
         var system = """
@@ -36,7 +36,7 @@ public class ContextAnalyzerService
 
         var user = $"SCENE:\n{sceneContext}\n\nRELATIONSHIPS:\n{relationshipContext}";
 
-        var response = await _llm.GenerateAsync(system, user, 0.3, 1024, ct: ct);
+        var response = await llm.GenerateAsync(system, user, 0.3, 1024, ct: ct);
 
         try
         {

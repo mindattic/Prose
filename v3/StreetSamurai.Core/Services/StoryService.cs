@@ -1,5 +1,6 @@
 using System.Text;
 using System.Text.RegularExpressions;
+using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
 
@@ -7,16 +8,18 @@ namespace StreetSamurai.Core.Services;
 
 public partial class StoryService
 {
-    private readonly IPathProvider _paths;
+    private readonly IPathProvider paths;
+    private readonly ILogger<StoryService> log;
 
-    public StoryService(IPathProvider paths)
+    public StoryService(IPathProvider paths, ILogger<StoryService> log)
     {
-        _paths = paths;
+        this.paths = paths;
+        this.log = log;
     }
 
     public List<Story> ListStories()
     {
-        var dir = _paths.StoriesDir;
+        var dir = paths.StoriesDir;
         if (!Directory.Exists(dir)) return [];
 
         return Directory.GetFiles(dir, "*.md")
@@ -28,7 +31,7 @@ public partial class StoryService
 
     public Story? LoadStory(string id)
     {
-        var dir = _paths.StoriesDir;
+        var dir = paths.StoriesDir;
         if (!Directory.Exists(dir)) return null;
 
         var file = Directory.GetFiles(dir, "*.md")
@@ -41,7 +44,7 @@ public partial class StoryService
     {
         var fileName = SanitizeFileName(story.Title) + ".md";
         var filePath = string.IsNullOrEmpty(story.FilePath)
-            ? Path.Combine(_paths.StoriesDir, fileName)
+            ? Path.Combine(paths.StoriesDir, fileName)
             : story.FilePath;
 
         var sb = new StringBuilder();
@@ -73,7 +76,7 @@ public partial class StoryService
             MarkdownContent = $"# {title}\n\n",
         };
         SaveStory(story);
-        return story with { FilePath = Path.Combine(_paths.StoriesDir, SanitizeFileName(title) + ".md") };
+        return story with { FilePath = Path.Combine(paths.StoriesDir, SanitizeFileName(title) + ".md") };
     }
 
     public void DeleteStory(string id)
@@ -105,7 +108,7 @@ public partial class StoryService
                 FilePath = filePath,
             };
         }
-        catch { return null; }
+        catch (Exception ex) { log.LogError(ex, "Failed to load story"); return null; }
     }
 
     private static Dictionary<string, string> ExtractFrontMatter(string text)

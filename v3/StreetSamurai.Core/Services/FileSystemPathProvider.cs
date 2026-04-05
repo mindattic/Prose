@@ -4,14 +4,14 @@ namespace StreetSamurai.Core.Services;
 
 public class FileSystemPathProvider : IPathProvider
 {
-    private readonly SettingsService _settings;
+    private readonly SettingsService settings;
 
     public FileSystemPathProvider(SettingsService settings)
     {
-        _settings = settings;
+        this.settings = settings;
     }
 
-    private string Root => _settings.CanonRootPath;
+    private string Root => settings.CanonRootPath;
 
     public string DataRoot => Root;
     public string WorldbuildingDir => Path.Combine(Root, "worldbuilding");

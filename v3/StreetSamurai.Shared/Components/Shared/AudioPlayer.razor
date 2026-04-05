@@ -5,61 +5,61 @@
 @if (Visible)
 {
     <div class="audio-player bg-dark border-top border-secondary @CssClass">
-        @if (_audioUrl != null)
+        @if (audioUrl != null)
         {
-            <audio id="@_audioId" src="@_audioUrl" preload="auto"
+            <audio id="@audioId" src="@audioUrl" preload="auto"
                    @onended="OnEnded" @ontimeupdate="OnTimeUpdate"></audio>
         }
 
         @* ── Error (inline) ────────────────────────── *@
-        @if (_errorMessage != null)
+        @if (errorMessage != null)
         {
             <div class="d-flex align-items-center gap-2 px-3 py-1" style="font-size: 0.75rem;">
                 <i class="bi bi-exclamation-triangle text-warning"></i>
-                <small class="text-warning">@_errorMessage</small>
-                <button class="btn btn-sm btn-outline-secondary py-0 px-1" @onclick='() => _errorMessage = null' style="font-size: 0.65rem;"><i class="bi bi-x"></i></button>
+                <small class="text-warning">@errorMessage</small>
+                <button class="btn btn-sm btn-outline-secondary py-0 px-1" @onclick='() => errorMessage = null' style="font-size: 0.65rem;"><i class="bi bi-x"></i></button>
             </div>
         }
 
         @* ── Controls row (centered) ───────────────── *@
         <div class="d-flex align-items-center justify-content-center gap-2 py-1">
             @* Read Selected / Read All *@
-            <button class="btn btn-sm btn-outline-info px-2" @onclick="OnReadSelected" disabled="@_loading" title="Narrate selected text (select 3+ words)" style="height: 32px; font-size: 0.75rem; line-height: 24px;">
+            <button class="btn btn-sm btn-outline-info px-2" @onclick="OnReadSelected" disabled="@loading" title="Narrate selected text (select 3+ words)" style="height: 32px; font-size: 0.75rem; line-height: 24px;">
                 <i class="bi bi-text-indent-left"></i> Selected
             </button>
-            <button class="btn btn-sm btn-outline-info px-2" @onclick="OnReadAll" disabled="@_loading" title="Narrate entire document" style="height: 32px; font-size: 0.75rem; line-height: 24px;">
+            <button class="btn btn-sm btn-outline-info px-2" @onclick="OnReadAll" disabled="@loading" title="Narrate entire document" style="height: 32px; font-size: 0.75rem; line-height: 24px;">
                 <i class="bi bi-megaphone"></i> All
             </button>
 
             @* Rewind *@
-            <button class="btn btn-sm btn-outline-secondary" @onclick="() => Seek(-10)" disabled="@(_audioUrl == null)" title="Back 10s" style="width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center;">
+            <button class="btn btn-sm btn-outline-secondary" @onclick="() => Seek(-10)" disabled="@(audioUrl == null)" title="Back 10s" style="width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center;">
                 <i class="bi bi-skip-backward-fill"></i>
             </button>
 
             @* Play / Pause *@
-            <button class="btn btn-sm @(_playing ? "btn-danger" : "btn-outline-danger")" @onclick="TogglePlayback" disabled="@(_audioUrl == null)" style="width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center;">
-                @if (_loading) { <span class="spinner-border spinner-border-sm"></span> }
-                else { <i class="bi @(_playing ? "bi-pause-fill" : "bi-play-fill")"></i> }
+            <button class="btn btn-sm @(playing ? "btn-danger" : "btn-outline-danger")" @onclick="TogglePlayback" disabled="@(audioUrl == null)" style="width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center;">
+                @if (loading) { <span class="spinner-border spinner-border-sm"></span> }
+                else { <i class="bi @(playing ? "bi-pause-fill" : "bi-play-fill")"></i> }
             </button>
 
             @* Stop *@
-            <button class="btn btn-sm btn-outline-secondary" @onclick="Stop" disabled="@(_audioUrl == null)" title="Stop" style="width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center;">
+            <button class="btn btn-sm btn-outline-secondary" @onclick="Stop" disabled="@(audioUrl == null)" title="Stop" style="width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center;">
                 <i class="bi bi-stop-fill"></i>
             </button>
 
             @* Forward *@
-            <button class="btn btn-sm btn-outline-secondary" @onclick="() => Seek(10)" disabled="@(_audioUrl == null)" title="Forward 10s" style="width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center;">
+            <button class="btn btn-sm btn-outline-secondary" @onclick="() => Seek(10)" disabled="@(audioUrl == null)" title="Forward 10s" style="width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center;">
                 <i class="bi bi-skip-forward-fill"></i>
             </button>
 
             @* Time *@
             <small class="text-muted" style="font-variant-numeric: tabular-nums; line-height: 32px;">
-                @FormatTime(_currentTime) / @FormatTime(_duration)
+                @FormatTime(currentTime) / @FormatTime(duration)
             </small>
 
             @* Save + Dismiss *@
-            <button class="btn btn-sm btn-outline-secondary" @onclick="SaveAudio" disabled="@(_saving || _audioData == null)" title="Save" style="width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center;">
-                <i class="bi @(_saving ? "bi-hourglass-split" : "bi-download")"></i>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="SaveAudio" disabled="@(saving || audioData == null)" title="Save" style="width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center;">
+                <i class="bi @(saving ? "bi-hourglass-split" : "bi-download")"></i>
             </button>
             <button class="btn btn-sm btn-outline-secondary" @onclick="Dismiss" title="Close" style="width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center;">
                 <i class="bi bi-x"></i>
@@ -67,9 +67,9 @@
         </div>
 
         @* ── Progress bar (full width, bottom edge) ── *@
-        <div id="@_progressId" style="cursor: pointer; padding: 0; margin: 0 -1px -1px -1px;" @onclick="OnProgressClick">
+        <div id="@progressId" style="cursor: pointer; padding: 0; margin: 0 -1px -1px -1px;" @onclick="OnProgressClick">
             <div style="height: 4px; background: #30363d;">
-                <div style="height: 4px; background: #dc3545; width: @(_duration > 0 ? (_currentTime / _duration * 100) : 0)%; transition: width 0.1s linear;"></div>
+                <div style="height: 4px; background: #dc3545; width: @(duration > 0 ? (currentTime / duration * 100) : 0)%; transition: width 0.1s linear;"></div>
             </div>
         </div>
     </div>
@@ -89,61 +89,61 @@
 
     private async Task OnEngineChanged() => await EngineChanged.InvokeAsync(Engine);
 
-    private string _audioId = $"audio-{Guid.NewGuid():N}";
-    private string _progressId = $"progress-{Guid.NewGuid():N}";
-    private string? _audioUrl;
-    private byte[]? _audioData;
-    private bool _loading;
-    private bool _playing;
-    private bool _saving;
-    private string? _savedPath;
-    private string? _errorMessage;
-    private double _currentTime;
-    private double _duration;
+    private string audioId = $"audio-{Guid.NewGuid():N}";
+    private string progressId = $"progress-{Guid.NewGuid():N}";
+    private string? audioUrl;
+    private byte[]? audioData;
+    private bool loading;
+    private bool playing;
+    private bool saving;
+    private string? savedPath;
+    private string? errorMessage;
+    private double currentTime;
+    private double duration;
 
     public async Task LoadAudioAsync(byte[] audioData)
     {
-        _loading = true;
-        _playing = false;
-        _errorMessage = null;
-        _audioUrl = null;
-        _audioData = audioData;
-        _savedPath = null;
-        _currentTime = 0;
-        _duration = 0;
+        loading = true;
+        playing = false;
+        errorMessage = null;
+        audioUrl = null;
+        audioData = audioData;
+        savedPath = null;
+        currentTime = 0;
+        duration = 0;
         StateHasChanged();
 
         try
         {
             var base64 = Convert.ToBase64String(audioData);
-            _audioUrl = $"data:audio/mpeg;base64,{base64}";
-            _loading = false;
+            audioUrl = $"data:audio/mpeg;base64,{base64}";
+            loading = false;
             StateHasChanged();
 
             await Task.Delay(200);
-            _duration = await JS.InvokeAsync<double>("eval",
-                $"(function(){{ var a=document.getElementById('{_audioId}'); return a ? a.duration || 0 : 0; }})()");
+            duration = await JS.InvokeAsync<double>("eval",
+                $"(function(){{ var a=document.getElementById('{audioId}'); return a ? a.duration || 0 : 0; }})()");
             await PlayAsync();
         }
         catch (Exception ex)
         {
-            _loading = false;
-            _errorMessage = ex.Message;
+            loading = false;
+            errorMessage = ex.Message;
             StateHasChanged();
         }
     }
 
     public void SetLoading(bool loading)
     {
-        _loading = loading;
-        if (loading) { _playing = false; _currentTime = 0; _duration = 0; }
+        loading = loading;
+        if (loading) { playing = false; currentTime = 0; duration = 0; }
         StateHasChanged();
     }
 
     public void SetError(string message)
     {
-        _loading = false;
-        _errorMessage = message;
+        loading = false;
+        errorMessage = message;
         StateHasChanged();
     }
 
@@ -151,18 +151,18 @@
     {
         try
         {
-            await JS.InvokeVoidAsync("eval", $"document.getElementById('{_audioId}')?.play()");
-            _playing = true;
+            await JS.InvokeVoidAsync("eval", $"document.getElementById('{audioId}')?.play()");
+            playing = true;
         }
         catch { }
     }
 
     private async Task TogglePlayback()
     {
-        if (_playing)
+        if (playing)
         {
-            await JS.InvokeVoidAsync("eval", $"document.getElementById('{_audioId}')?.pause()");
-            _playing = false;
+            await JS.InvokeVoidAsync("eval", $"document.getElementById('{audioId}')?.pause()");
+            playing = false;
         }
         else
             await PlayAsync();
@@ -171,26 +171,26 @@
     private async Task Stop()
     {
         await JS.InvokeVoidAsync("eval",
-            $"(function(){{ var a=document.getElementById('{_audioId}'); if(a){{ a.pause(); a.currentTime=0; }} }})()");
-        _playing = false;
-        _currentTime = 0;
+            $"(function(){{ var a=document.getElementById('{audioId}'); if(a){{ a.pause(); a.currentTime=0; }} }})()");
+        playing = false;
+        currentTime = 0;
     }
 
     private async Task Seek(double seconds)
     {
         await JS.InvokeVoidAsync("eval",
-            $"(function(){{ var a=document.getElementById('{_audioId}'); if(a) a.currentTime=Math.max(0,Math.min(a.duration||0,a.currentTime+({seconds}))); }})()");
+            $"(function(){{ var a=document.getElementById('{audioId}'); if(a) a.currentTime=Math.max(0,Math.min(a.duration||0,a.currentTime+({seconds}))); }})()");
     }
 
     private async Task OnProgressClick(MouseEventArgs e)
     {
-        if (_duration <= 0) return;
+        if (duration <= 0) return;
         var fraction = await JS.InvokeAsync<double>("eval",
-            $"(function(){{ var el=document.getElementById('{_progressId}'); if(!el) return 0; var r=el.getBoundingClientRect(); return Math.max(0,Math.min(1,({e.ClientX}-r.left)/r.width)); }})()");
-        var newTime = fraction * _duration;
+            $"(function(){{ var el=document.getElementById('{progressId}'); if(!el) return 0; var r=el.getBoundingClientRect(); return Math.max(0,Math.min(1,({e.ClientX}-r.left)/r.width)); }})()");
+        var newTime = fraction * duration;
         await JS.InvokeVoidAsync("eval",
-            $"(function(){{ var a=document.getElementById('{_audioId}'); if(a) a.currentTime={newTime}; }})()");
-        _currentTime = newTime;
+            $"(function(){{ var a=document.getElementById('{audioId}'); if(a) a.currentTime={newTime}; }})()");
+        currentTime = newTime;
     }
 
     private async Task OnTimeUpdate()
@@ -198,33 +198,33 @@
         try
         {
             var vals = await JS.InvokeAsync<double[]>("eval",
-                $"(function(){{ var a=document.getElementById('{_audioId}'); return a ? [a.currentTime, a.duration||0] : [0,0]; }})()");
-            _currentTime = vals[0];
-            if (vals[1] > 0) _duration = vals[1];
+                $"(function(){{ var a=document.getElementById('{audioId}'); return a ? [a.currentTime, a.duration||0] : [0,0]; }})()");
+            currentTime = vals[0];
+            if (vals[1] > 0) duration = vals[1];
         }
         catch { }
     }
 
-    private void OnEnded() { _playing = false; StateHasChanged(); }
+    private void OnEnded() { playing = false; StateHasChanged(); }
 
     private async Task SaveAudio()
     {
-        if (_audioData == null || _saving) return;
-        _saving = true; StateHasChanged();
-        try { _savedPath = await AudioFiles.SaveAudioAsync(_audioData); }
-        catch (Exception ex) { _errorMessage = $"Save failed: {ex.Message}"; }
-        finally { _saving = false; StateHasChanged(); }
+        if (audioData == null || saving) return;
+        saving = true; StateHasChanged();
+        try { savedPath = await AudioFiles.SaveAudioAsync(audioData); }
+        catch (Exception ex) { errorMessage = $"Save failed: {ex.Message}"; }
+        finally { saving = false; StateHasChanged(); }
     }
 
-    private void OpenInExplorer() { if (_savedPath != null) AudioFiles.RevealInExplorer(_savedPath); }
+    private void OpenInExplorer() { if (savedPath != null) AudioFiles.RevealInExplorer(savedPath); }
 
     private async Task Dismiss()
     {
-        if (_playing)
-            await JS.InvokeVoidAsync("eval", $"(function(){{ var a=document.getElementById('{_audioId}'); if(a) a.pause(); }})()");
-        _audioUrl = null; _audioData = null; _playing = false; _loading = false;
-        _saving = false; _savedPath = null; _errorMessage = null;
-        _currentTime = 0; _duration = 0; Visible = false;
+        if (playing)
+            await JS.InvokeVoidAsync("eval", $"(function(){{ var a=document.getElementById('{audioId}'); if(a) a.pause(); }})()");
+        audioUrl = null; audioData = null; playing = false; loading = false;
+        saving = false; savedPath = null; errorMessage = null;
+        currentTime = 0; duration = 0; Visible = false;
         await OnDismissed.InvokeAsync();
     }
 

@@ -41,7 +41,7 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class NavigationService
 {
-    private readonly DistrictRepository _places;
+    private readonly DistrictRepository places;
 
     // Max distance in km to consider places "adjacent" for exits
     private const double MaxExitDistanceKm = 50.0;
@@ -56,7 +56,7 @@ public class NavigationService
 
     public NavigationService(DistrictRepository places)
     {
-        _places = places;
+        this.places = places;
     }
 
     /// <summary>
@@ -65,7 +65,7 @@ public class NavigationService
     /// </summary>
     public int ComputeAllExits()
     {
-        var all = _places.GetAll();
+        var all = places.GetAll();
         var withCoords = all.Where(p => p.Coordinates.Lat != 0 && p.Coordinates.Lng != 0).ToList();
         int updated = 0;
 
@@ -107,7 +107,7 @@ public class NavigationService
             if (exits.Count > 0)
             {
                 place.Connections.Exits = exits;
-                _places.Save(place);
+                places.Save(place);
                 updated++;
             }
         }
@@ -120,14 +120,14 @@ public class NavigationService
     /// </summary>
     public List<PlaceExit> GetExits(string placeName)
     {
-        var place = _places.GetByName(placeName);
+        var place = places.GetByName(placeName);
         if (place == null) return [];
 
         if (place.Connections.Exits.Count > 0)
             return place.Connections.Exits;
 
         // Compute lazily
-        var all = _places.GetAll().Where(p => p.Coordinates.Lat != 0).ToList();
+        var all = places.GetAll().Where(p => p.Coordinates.Lat != 0).ToList();
         var isChicago = IsInChicagoCore(place.Coordinates);
         var maxDist = isChicago ? CityExitDistanceKm : MaxExitDistanceKm;
         var exits = new List<PlaceExit>();
@@ -166,7 +166,7 @@ public class NavigationService
     /// </summary>
     public List<string> FindRoute(string fromName, string toName)
     {
-        var all = _places.GetAll().Where(p => p.Coordinates.Lat != 0).ToDictionary(p => p.Name);
+        var all = places.GetAll().Where(p => p.Coordinates.Lat != 0).ToDictionary(p => p.Name);
         if (!all.ContainsKey(fromName) || !all.ContainsKey(toName)) return [];
 
         var target = all[toName];
@@ -223,7 +223,7 @@ public class NavigationService
         if (route.Count == 1) return $"You're already at {fromName}.";
 
         var totalDist = 0.0;
-        var all = _places.GetAll().ToDictionary(p => p.Name);
+        var all = places.GetAll().ToDictionary(p => p.Name);
 
         var steps = new List<string>();
         for (int i = 0; i < route.Count - 1; i++)

@@ -10,18 +10,18 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class InferenceService
 {
-    private readonly WorldGraphService _graph;
+    private readonly WorldGraphService graph;
 
     // Property index: (propertyKey, propertyValue) -> list of nodeIds sharing that value
     private Dictionary<(string key, string value), List<string>> _propertyIndex = new();
-    private bool _indexBuilt;
+    private bool indexBuilt;
 
     // Cache of computed inferences per node
     private readonly Dictionary<string, List<InferredEdge>> _cache = new();
 
     public InferenceService(WorldGraphService graph)
     {
-        _graph = graph;
+        this.graph = graph;
     }
 
     /// <summary>
@@ -35,7 +35,7 @@ public class InferenceService
         var indexableKeys = new[] { "manufacturer", "affiliation", "location", "sector", "territory",
             "tier_availability", "category", "role" };
 
-        foreach (var node in _graph.AllNodes())
+        foreach (var node in graph.AllNodes())
         {
             foreach (var key in indexableKeys)
             {
@@ -59,7 +59,7 @@ public class InferenceService
                 }
             }
         }
-        _indexBuilt = true;
+        indexBuilt = true;
     }
 
     /// <summary>
@@ -67,24 +67,24 @@ public class InferenceService
     /// </summary>
     public List<InferredEdge> GetInferredConnections(string nodeId, int maxResults = 15)
     {
-        if (!_indexBuilt) RebuildPropertyIndex();
+        if (!indexBuilt) RebuildPropertyIndex();
 
         if (_cache.TryGetValue(nodeId, out var cached)) return cached;
 
         var results = new List<InferredEdge>();
-        var directNeighborIds = _graph.GetAllEdges(nodeId).Select(e => e.Source == nodeId ? e.Target : e.Source).ToHashSet();
+        var directNeighborIds = graph.GetAllEdges(nodeId).Select(e => e.Source == nodeId ? e.Target : e.Source).ToHashSet();
 
         // Strategy 1: Shared-hub inference (2-hop via common neighbor)
         foreach (var neighborId in directNeighborIds)
         {
-            var neighborEdges = _graph.GetAllEdges(neighborId);
+            var neighborEdges = graph.GetAllEdges(neighborId);
             foreach (var edge in neighborEdges)
             {
                 var otherId = edge.Source == neighborId ? edge.Target : edge.Source;
                 if (otherId == nodeId || directNeighborIds.Contains(otherId)) continue;
 
-                var otherNode = _graph.GetNode(otherId);
-                var hubNode = _graph.GetNode(neighborId);
+                var otherNode = graph.GetNode(otherId);
+                var hubNode = graph.GetNode(neighborId);
                 if (otherNode == null || hubNode == null) continue;
 
                 results.Add(new InferredEdge
@@ -101,7 +101,7 @@ public class InferenceService
         }
 
         // Strategy 2: Shared-property inference
-        var node = _graph.GetNode(nodeId);
+        var node = graph.GetNode(nodeId);
         if (node != null)
         {
             var indexableKeys = new[] { "manufacturer", "affiliation", "location", "sector", "territory" };
@@ -117,7 +117,7 @@ public class InferenceService
                 foreach (var siblingId in siblings)
                 {
                     if (siblingId == nodeId || directNeighborIds.Contains(siblingId)) continue;
-                    var siblingNode = _graph.GetNode(siblingId);
+                    var siblingNode = graph.GetNode(siblingId);
                     if (siblingNode == null) continue;
 
                     // Avoid duplicates
@@ -156,7 +156,7 @@ public class InferenceService
     /// </summary>
     public List<string> GetNodesByProperty(string key, string value)
     {
-        if (!_indexBuilt) RebuildPropertyIndex();
+        if (!indexBuilt) RebuildPropertyIndex();
         var indexKey = (key, value.ToLowerInvariant());
         return _propertyIndex.TryGetValue(indexKey, out var nodes) ? nodes : [];
     }

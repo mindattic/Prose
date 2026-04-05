@@ -1,0 +1,89 @@
+@inject HtmlExportService ExportSvc
+@inject IJSRuntime JS
+
+@if (exporting)
+{
+    <div class="d-inline-flex align-items-center gap-2">
+        <svg width="24" height="24" viewBox="0 0 36 36" class="radial-progress">
+            <circle cx="18" cy="18" r="15" fill="none" stroke="#30363d" stroke-width="3" />
+            <circle cx="18" cy="18" r="15" fill="none" stroke="#dc3545" stroke-width="3"
+                    stroke-dasharray="@($"{94.25 * progress / 100:F1}") 94.25"
+                    stroke-linecap="round" transform="rotate(-90 18 18)" />
+            <text x="18" y="20" text-anchor="middle" fill="#e6edf3" font-size="8">@((int)progress)%</text>
+        </svg>
+        <small class="text-muted">@statusText</small>
+    </div>
+}
+else
+{
+    <button class="btn btn-sm @ButtonClass" @onclick="DoExport" title="@Title">
+        <i class="bi bi-file-earmark-code"></i> @Label
+    </button>
+}
+
+@code {
+    [Parameter] public string Mode { get; set; } = "entry";
+    [Parameter] public string RepoName { get; set; } = "";
+    [Parameter] public string EntryName { get; set; } = "";
+    [Parameter] public string EntryJson { get; set; } = "";
+    [Parameter] public Func<List<(string name, string json)>>? GetRepoEntries { get; set; }
+    [Parameter] public Func<Dictionary<string, List<(string name, string json)>>>? GetAllRepos { get; set; }
+
+    private bool exporting;
+    private double progress;
+    private string statusText = "";
+
+    private string Label => Mode switch { "entry" => "Export", "repo" => "Export Repo", "all" => "Export All", _ => "Export" };
+    private string Title => Mode switch { "entry" => $"Export {EntryName} as .htm", "repo" => $"Export all {RepoName} as .htm", "all" => "Export all repos as .htm", _ => "Export" };
+    private string ButtonClass => Mode switch { "all" => "btn-outline-info", _ => "btn-outline-secondary" };
+
+    private async Task DoExport()
+    {
+        exporting = true;
+        progress = 0;
+        statusText = "Preparing...";
+        StateHasChanged();
+
+        await Task.Run(() =>
+        {
+            switch (Mode)
+            {
+                case "entry":
+                    ExportSvc.ExportEntry(RepoName, EntryName, EntryJson);
+                    progress = 100;
+                    break;
+
+                case "repo":
+                    if (GetRepoEntries != null)
+                    {
+                        var entries = GetRepoEntries();
+                        ExportSvc.ExportRepo(RepoName, entries, (cur, tot) =>
+                        {
+                            progress = (double)cur / tot * 100;
+                            statusText = $"{cur}/{tot}";
+                        });
+                    }
+                    break;
+
+                case "all":
+                    if (GetAllRepos != null)
+                    {
+                        var repos = GetAllRepos();
+                        ExportSvc.ExportAll(repos, (cur, tot) =>
+                        {
+                            progress = (double)cur / tot * 100;
+                            statusText = $"{cur}/{tot}";
+                        });
+                    }
+                    break;
+            }
+        });
+
+        progress = 100;
+        statusText = "Done!";
+        StateHasChanged();
+        await Task.Delay(1500);
+        exporting = false;
+        StateHasChanged();
+    }
+}

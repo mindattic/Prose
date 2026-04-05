@@ -10,20 +10,20 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class MultiLlmService
 {
-    private readonly HttpClient _http;
-    private readonly SettingsService _settings;
+    private readonly HttpClient http;
+    private readonly SettingsService settings;
 
     public record LlmProvider(string Id, string Name, string Endpoint, string Model, string AuthType);
 
-    private readonly List<LlmProvider> _providers;
+    private readonly List<LlmProvider> providers;
 
     public MultiLlmService(HttpClient http, SettingsService settings)
     {
-        _http = http;
-        _http.Timeout = TimeSpan.FromMinutes(3);
-        _settings = settings;
+        this.http = http;
+        http.Timeout = TimeSpan.FromMinutes(3);
+        this.settings = settings;
 
-        _providers =
+        providers =
         [
             new("claude", "Claude", "https://api.anthropic.com/v1/messages", "claude-sonnet-4-6", "anthropic"),
             new("openai", "ChatGPT", "https://api.openai.com/v1/chat/completions", "gpt-4.1-mini", "bearer"),
@@ -42,13 +42,13 @@ public class MultiLlmService
     /// <summary>Get all configured (have API key) providers.</summary>
     public List<LlmProvider> GetConfiguredProviders()
     {
-        return _providers.Where(p => !string.IsNullOrWhiteSpace(GetApiKey(p.Id))).ToList();
+        return providers.Where(p => !string.IsNullOrWhiteSpace(GetApiKey(p.Id))).ToList();
     }
 
     /// <summary>Call a single provider.</summary>
     public async Task<string> CallProviderAsync(string providerId, string system, string user, CancellationToken ct = default)
     {
-        var provider = _providers.FirstOrDefault(p => p.Id == providerId);
+        var provider = providers.FirstOrDefault(p => p.Id == providerId);
         if (provider == null) throw new ArgumentException($"Unknown provider: {providerId}");
 
         var key = GetApiKey(providerId);
@@ -74,12 +74,12 @@ public class MultiLlmService
             try
             {
                 var result = await CallProviderAsync(id, system, user, ct);
-                var name = _providers.FirstOrDefault(p => p.Id == id)?.Name ?? id;
+                var name = providers.FirstOrDefault(p => p.Id == id)?.Name ?? id;
                 return (name, result, success: true);
             }
             catch (Exception ex)
             {
-                var name = _providers.FirstOrDefault(p => p.Id == id)?.Name ?? id;
+                var name = providers.FirstOrDefault(p => p.Id == id)?.Name ?? id;
                 return (name, result: $"ERROR: {ex.Message}", success: false);
             }
         });
@@ -157,7 +157,7 @@ public class MultiLlmService
         req.Headers.Authorization = new AuthenticationHeaderValue("Bearer", key);
         req.Content = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
 
-        var res = await _http.SendAsync(req, ct);
+        var res = await http.SendAsync(req, ct);
         res.EnsureSuccessStatusCode();
         var json = await res.Content.ReadAsStringAsync(ct);
         var doc = JsonDocument.Parse(json);
@@ -180,7 +180,7 @@ public class MultiLlmService
         req.Headers.Add("anthropic-version", "2023-06-01");
         req.Content = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
 
-        var res = await _http.SendAsync(req, ct);
+        var res = await http.SendAsync(req, ct);
         res.EnsureSuccessStatusCode();
         var json = await res.Content.ReadAsStringAsync(ct);
         var doc = JsonDocument.Parse(json);
@@ -204,7 +204,7 @@ public class MultiLlmService
         using var req = new HttpRequestMessage(HttpMethod.Post, url);
         req.Content = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
 
-        var res = await _http.SendAsync(req, ct);
+        var res = await http.SendAsync(req, ct);
         res.EnsureSuccessStatusCode();
         var json = await res.Content.ReadAsStringAsync(ct);
         var doc = JsonDocument.Parse(json);
@@ -215,17 +215,17 @@ public class MultiLlmService
 
     private string? GetApiKey(string providerId) => providerId switch
     {
-        "claude" => _settings.ApiKey,
-        "openai" => _settings.OpenAiApiKey,
-        "gemini" => _settings.GeminiApiKey,
-        "deepseek" => _settings.DeepSeekApiKey,
-        "mistral" => _settings.MistralApiKey,
-        "xai" => _settings.GrokApiKey,
-        "groq" => _settings.GroqApiKey,
-        "together" => _settings.TogetherApiKey,
-        "openrouter" => _settings.OpenRouterApiKey,
-        "fireworks" => _settings.FireworksApiKey,
-        "cohere" => _settings.CohereApiKey,
+        "claude" => settings.ApiKey,
+        "openai" => settings.OpenAiApiKey,
+        "gemini" => settings.GeminiApiKey,
+        "deepseek" => settings.DeepSeekApiKey,
+        "mistral" => settings.MistralApiKey,
+        "xai" => settings.GrokApiKey,
+        "groq" => settings.GroqApiKey,
+        "together" => settings.TogetherApiKey,
+        "openrouter" => settings.OpenRouterApiKey,
+        "fireworks" => settings.FireworksApiKey,
+        "cohere" => settings.CohereApiKey,
         _ => null,
     };
 }

@@ -10,18 +10,18 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class RelationshipDiscoveryService
 {
-    private readonly WorldGraphService _graph;
-    private readonly SemanticIndexService _semanticIndex;
-    private readonly InferenceService _inference;
+    private readonly WorldGraphService graph;
+    private readonly SemanticIndexService semanticIndex;
+    private readonly InferenceService inference;
 
     public RelationshipDiscoveryService(
         WorldGraphService graph,
         SemanticIndexService semanticIndex,
         InferenceService inference)
     {
-        _graph = graph;
-        _semanticIndex = semanticIndex;
-        _inference = inference;
+        this.graph = graph;
+        this.semanticIndex = semanticIndex;
+        this.inference = inference;
     }
 
     /// <summary>
@@ -31,7 +31,7 @@ public class RelationshipDiscoveryService
     public int DiscoverFromEntity(string entityName, string entityType)
     {
         var nodeId = WorldGraphService.Slugify(entityName);
-        var node = _graph.GetNode(nodeId);
+        var node = graph.GetNode(nodeId);
         if (node == null) return 0;
 
         int newEdges = 0;
@@ -45,7 +45,7 @@ public class RelationshipDiscoveryService
         var textProps = new[] { "description", "story_hooks", "cultural_context",
             "narrative_function", "founding_story", "ideology", "tactical_use" };
 
-        var allNodeNames = _graph.AllNodes()
+        var allNodeNames = graph.AllNodes()
             .Where(n => n.Id != nodeId && n.Name.Length > 2)
             .OrderByDescending(n => n.Name.Length) // longest first to avoid partial matches
             .ToList();
@@ -61,10 +61,10 @@ public class RelationshipDiscoveryService
                 if (!textLower.Contains(other.Name.ToLowerInvariant())) continue;
 
                 // Check if edge already exists
-                var existingEdges = _graph.GetRelationshipsBetween(nodeId, other.Id);
+                var existingEdges = graph.GetRelationshipsBetween(nodeId, other.Id);
                 if (existingEdges.Any()) continue;
 
-                _graph.AddEdge(new WorldEdge
+                graph.AddEdge(new WorldEdge
                 {
                     Source = nodeId,
                     Target = other.Id,
@@ -80,9 +80,9 @@ public class RelationshipDiscoveryService
         // Refresh downstream indexes
         if (newEdges > 0)
         {
-            _semanticIndex.UpdateNode(nodeId);
-            _inference.InvalidateCache();
-            _graph.Save();
+            semanticIndex.UpdateNode(nodeId);
+            inference.InvalidateCache();
+            graph.Save();
         }
 
         return newEdges;
@@ -95,7 +95,7 @@ public class RelationshipDiscoveryService
     public int DiscoverAll()
     {
         int total = 0;
-        foreach (var node in _graph.AllNodes())
+        foreach (var node in graph.AllNodes())
         {
             total += DiscoverFromEntity(node.Name, node.NodeType);
         }
@@ -107,14 +107,14 @@ public class RelationshipDiscoveryService
         if (!props.TryGetValue(propKey, out var value) || string.IsNullOrWhiteSpace(value))
             return 0;
 
-        var targetId = _graph.ResolveId(value);
+        var targetId = graph.ResolveId(value);
         if (targetId == null || targetId == sourceId) return 0;
 
         // Check if edge already exists
-        var existing = _graph.GetRelationshipsBetween(sourceId, targetId);
+        var existing = graph.GetRelationshipsBetween(sourceId, targetId);
         if (existing.Any(e => e.RelationType == relationType)) return 0;
 
-        _graph.AddEdge(new WorldEdge
+        graph.AddEdge(new WorldEdge
         {
             Source = sourceId,
             Target = targetId,

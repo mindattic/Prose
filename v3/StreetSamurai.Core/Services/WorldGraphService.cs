@@ -9,16 +9,16 @@ namespace StreetSamurai.Core.Services;
 
 public class WorldGraphService
 {
-    private readonly IPathProvider _paths;
-    private readonly DatabaseService _db;
+    private readonly IPathProvider paths;
+    private readonly DatabaseService db;
     private readonly AdjacencyGraph<string, WorldEdge> _graph = new();
     private readonly Dictionary<string, WorldNode> _nodes = new();
-    private bool _loaded;
+    private bool loaded;
 
     public WorldGraphService(IPathProvider paths, DatabaseService db)
     {
-        _paths = paths;
-        _db = db;
+        this.paths = paths;
+        this.db = db;
     }
 
     public int NodeCount => _nodes.Count;
@@ -26,10 +26,10 @@ public class WorldGraphService
 
     public void EnsureLoaded()
     {
-        if (_loaded) return;
+        if (loaded) return;
         Load();
         if (_nodes.Count == 0) Rebuild();
-        _loaded = true;
+        loaded = true;
     }
 
     // ── Queries (current edges only by default) ───────────────
@@ -545,12 +545,12 @@ public class WorldGraphService
             LastSaved = DateTime.UtcNow,
         };
         var json = JsonSerializer.Serialize(snapshot, new JsonSerializerOptions { WriteIndented = true });
-        File.WriteAllText(Path.Combine(_paths.GraphDir, "world_graph.json"), json);
+        File.WriteAllText(Path.Combine(paths.GraphDir, "world_graph.json"), json);
     }
 
     public void Load()
     {
-        var path = Path.Combine(_paths.GraphDir, "world_graph.json");
+        var path = Path.Combine(paths.GraphDir, "world_graph.json");
         if (!File.Exists(path)) return;
 
         try
@@ -596,7 +596,7 @@ public class WorldGraphService
 
     private void BuildCharacters()
     {
-        foreach (var c in _db.Characters)
+        foreach (var c in db.Characters)
         {
             var id = Slugify(c.Name);
             var props = new Dictionary<string, string>();
@@ -659,7 +659,7 @@ public class WorldGraphService
 
     private void BuildDistricts()
     {
-        foreach (var d in _db.Districts)
+        foreach (var d in db.Districts)
         {
             var id = Slugify(d.Name);
             var props = new Dictionary<string, string>();
@@ -703,7 +703,7 @@ public class WorldGraphService
 
     private void BuildFactions()
     {
-        foreach (var f in _db.Factions)
+        foreach (var f in db.Factions)
         {
             var id = Slugify(f.Name);
             var props = new Dictionary<string, string>();
@@ -745,7 +745,7 @@ public class WorldGraphService
 
     private void BuildCorponations()
     {
-        foreach (var c in _db.Corponations)
+        foreach (var c in db.Corponations)
         {
             var id = Slugify(c.Name);
             var props = new Dictionary<string, string>();
@@ -774,7 +774,7 @@ public class WorldGraphService
 
     private void BuildWeaponry()
     {
-        foreach (var w in _db.Weaponry)
+        foreach (var w in db.Weaponry)
         {
             var id = Slugify(w.Name);
             var props = new Dictionary<string, string>();
@@ -822,7 +822,7 @@ public class WorldGraphService
 
     private void BuildEquipment()
     {
-        foreach (var e in _db.Equipment)
+        foreach (var e in db.Equipment)
         {
             var id = Slugify(e.Name);
             var props = new Dictionary<string, string>();
@@ -867,7 +867,7 @@ public class WorldGraphService
 
     private void BuildTechnology()
     {
-        foreach (var t in _db.Technology)
+        foreach (var t in db.Technology)
         {
             var id = Slugify(t.Name);
             var props = new Dictionary<string, string>();
@@ -912,7 +912,7 @@ public class WorldGraphService
     /// </summary>
     private void LinkDistrictFrequentedBy()
     {
-        foreach (var d in _db.Districts)
+        foreach (var d in db.Districts)
         {
             var districtId = Slugify(d.Name);
             foreach (var name in d.FrequentedBy)

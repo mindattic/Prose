@@ -4,19 +4,19 @@ namespace StreetSamurai.Core.Services;
 
 public class FacetService
 {
-    private readonly DatabaseService _db;
+    private readonly DatabaseService db;
     private Dictionary<string, FacetDefinition>? _cache;
 
     public FacetService(DatabaseService db)
     {
-        _db = db;
+        this.db = db;
     }
 
     public Dictionary<string, FacetDefinition> LoadAllFacets()
     {
         if (_cache != null) return _cache;
 
-        _cache = _db.Facets.ToDictionary(
+        _cache = db.Facets.ToDictionary(
             f => f.Name,
             f => new FacetDefinition
             {

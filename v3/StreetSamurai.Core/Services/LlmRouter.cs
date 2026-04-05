@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -8,32 +9,46 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class LlmRouter : ILlmService
 {
-    private readonly ClaudeService _claude;
-    private readonly OpenAiService _openAi;
-    private readonly SettingsService _settings;
+    private readonly ClaudeService claude;
+    private readonly OpenAiService openAi;
+    private readonly SettingsService settings;
+    private readonly ILogger<LlmRouter> log;
 
-    public LlmRouter(ClaudeService claude, OpenAiService openAi, SettingsService settings)
+    public LlmRouter(ClaudeService claude, OpenAiService openAi, SettingsService settings, ILogger<LlmRouter> log)
     {
-        _claude = claude;
-        _openAi = openAi;
-        _settings = settings;
+        this.claude = claude;
+        this.openAi = openAi;
+        this.settings = settings;
+        this.log = log;
     }
 
     public Task<bool> IsConfiguredAsync() => GetActiveProvider().IsConfiguredAsync();
 
-    public Task<string> GenerateAsync(
+    public async Task<string> GenerateAsync(
         string system,
         string user,
         double temperature = 0.8,
         int maxTokens = 4096,
         string? model = null,
         CancellationToken ct = default)
-        => GetActiveProvider().GenerateAsync(system, user, temperature, maxTokens, model, ct);
-
-    private ILlmService GetActiveProvider() => _settings.ActiveLlmProvider switch
     {
-        "openai" => _openAi,
-        _ => _claude, // default to Claude
+        var provider = settings.ActiveLlmProvider ?? "claude";
+        log.LogDebug("LlmRouter dispatching to provider={Provider}", provider);
+        try
+        {
+            return await GetActiveProvider().GenerateAsync(system, user, temperature, maxTokens, model, ct);
+        }
+        catch (Exception ex)
+        {
+            log.LogError(ex, "LlmRouter: generation failed via provider={Provider}", provider);
+            throw;
+        }
+    }
+
+    private ILlmService GetActiveProvider() => settings.ActiveLlmProvider switch
+    {
+        "openai" => openAi,
+        _ => claude, // default to Claude
     };
 
     /// <summary>
@@ -43,8 +58,8 @@ public class LlmRouter : ILlmService
     {
         return
         [
-            new() { Id = "claude", Name = "Claude (Anthropic)", IsConfigured = await _claude.IsConfiguredAsync(), IsActive = _settings.ActiveLlmProvider != "openai" },
-            new() { Id = "openai", Name = "OpenAI", IsConfigured = await _openAi.IsConfiguredAsync(), IsActive = _settings.ActiveLlmProvider == "openai" },
+            new() { Id = "claude", Name = "Claude (Anthropic)", IsConfigured = await claude.IsConfiguredAsync(), IsActive = settings.ActiveLlmProvider != "openai" },
+            new() { Id = "openai", Name = "OpenAI", IsConfigured = await openAi.IsConfiguredAsync(), IsActive = settings.ActiveLlmProvider == "openai" },
         ];
     }
 }

@@ -5,15 +5,15 @@ namespace StreetSamurai.UnitTests;
 [TestFixture]
 public class ExportServiceTests
 {
-    private ExportService _export = null!;
+    private ExportService export = null!;
 
     [SetUp]
-    public void Setup() => _export = new ExportService();
+    public void Setup() => export = new ExportService();
 
     [Test]
     public void ToPlainText_IncludesTitle()
     {
-        var result = _export.ToPlainText("My Story", "<p>Hello world</p>");
+        var result = export.ToPlainText("My Story", "<p>Hello world</p>");
         Assert.That(result, Does.StartWith("My Story"));
         Assert.That(result, Does.Contain("Hello world"));
     }
@@ -21,7 +21,7 @@ public class ExportServiceTests
     [Test]
     public void ToPlainText_StripsHtmlTags()
     {
-        var result = _export.ToPlainText("Test", "<p><b>Bold</b> and <i>italic</i></p>");
+        var result = export.ToPlainText("Test", "<p><b>Bold</b> and <i>italic</i></p>");
         Assert.That(result, Does.Not.Contain("<b>"));
         Assert.That(result, Does.Not.Contain("<i>"));
         Assert.That(result, Does.Contain("Bold"));
@@ -31,14 +31,14 @@ public class ExportServiceTests
     [Test]
     public void ToPlainText_EmptyHtml_ReturnsTitle()
     {
-        var result = _export.ToPlainText("Title", "");
+        var result = export.ToPlainText("Title", "");
         Assert.That(result, Does.Contain("Title"));
     }
 
     [Test]
     public void ToMarkdown_ConvertsHeadings()
     {
-        var result = _export.ToMarkdown("Test", "<h1>Chapter One</h1><p>Text here</p>");
+        var result = export.ToMarkdown("Test", "<h1>Chapter One</h1><p>Text here</p>");
         Assert.That(result, Does.Contain("# Test"));
         Assert.That(result, Does.Contain("# Chapter One"));
     }
@@ -46,7 +46,7 @@ public class ExportServiceTests
     [Test]
     public void ToMarkdown_ConvertsBoldItalic()
     {
-        var result = _export.ToMarkdown("Test", "<b>bold</b> and <i>italic</i>");
+        var result = export.ToMarkdown("Test", "<b>bold</b> and <i>italic</i>");
         Assert.That(result, Does.Contain("**bold**"));
         Assert.That(result, Does.Contain("*italic*"));
     }
@@ -54,14 +54,14 @@ public class ExportServiceTests
     [Test]
     public void ToMarkdown_ConvertsHorizontalRules()
     {
-        var result = _export.ToMarkdown("Test", "<p>Before</p><hr/><p>After</p>");
+        var result = export.ToMarkdown("Test", "<p>Before</p><hr/><p>After</p>");
         Assert.That(result, Does.Contain("---"));
     }
 
     [Test]
     public void ToMarkdown_StripsEntityLinks()
     {
-        var result = _export.ToMarkdown("Test", """<span class="entity-link entity-character" data-entity-id="kyle">Kyle</span> walked.""");
+        var result = export.ToMarkdown("Test", """<span class="entity-link entity-character" data-entity-id="kyle">Kyle</span> walked.""");
         Assert.That(result, Does.Contain("Kyle"));
         Assert.That(result, Does.Not.Contain("entity-link"));
     }
@@ -69,7 +69,7 @@ public class ExportServiceTests
     [Test]
     public void ToPrintHtml_IsCompleteDocument()
     {
-        var result = _export.ToPrintHtml("My Title", "<p>Content</p>");
+        var result = export.ToPrintHtml("My Title", "<p>Content</p>");
         Assert.That(result, Does.Contain("<!DOCTYPE html>"));
         Assert.That(result, Does.Contain("My Title"));
         Assert.That(result, Does.Contain("<p>Content</p>"));
@@ -79,7 +79,7 @@ public class ExportServiceTests
     [Test]
     public void ToPrintHtml_IncludesCharacters()
     {
-        var result = _export.ToPrintHtml("Title", "<p>Text</p>", ["Kyle", "Sable"]);
+        var result = export.ToPrintHtml("Title", "<p>Text</p>", ["Kyle", "Sable"]);
         Assert.That(result, Does.Contain("Kyle"));
         Assert.That(result, Does.Contain("Sable"));
     }

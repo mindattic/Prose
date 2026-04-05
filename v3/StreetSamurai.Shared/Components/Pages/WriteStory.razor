@@ -30,7 +30,7 @@
     <input type="text" class="form-control form-control-sm bg-dark text-danger border-secondary fw-bold fst-italic flex-grow-1"
            style="font-family: Georgia, serif; font-size: 1rem; height: 32px;"
            placeholder="Untitled"
-           @bind="_project.Title"
+           @bind="project.Title"
            @bind:after="Save" />
     <button class="btn btn-sm btn-danger text-nowrap" style="height: 32px;" @onclick="ForceSave">
         <i class="bi bi-floppy"></i> Save
@@ -38,19 +38,19 @@
 </div>
 
 @* ── Ask Modal ───────────────────────────────────────── *@
-@if (_showAskModal)
+@if (showAskModal)
 {
     <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => _showAskModal = false">
+         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => showAskModal = false">
         <div class="card bg-dark text-light border-info" style="width: 650px; max-height: 85vh; overflow-y: auto;"
              @onclick:stopPropagation="true">
             <div class="card-header d-flex justify-content-between align-items-center border-secondary">
                 <span class="text-info fw-bold"><i class="bi bi-chat-dots"></i> Ask</span>
-                <button class="btn btn-sm btn-outline-secondary" @onclick="() => _showAskModal = false"><i class="bi bi-x-lg"></i></button>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => showAskModal = false"><i class="bi bi-x-lg"></i></button>
             </div>
             <div class="card-body">
                 <div class="mb-2">
-                    <select class="form-select form-select-sm bg-dark text-light border-secondary" style="width: auto;" @bind="_askScope">
+                    <select class="form-select form-select-sm bg-dark text-light border-secondary" style="width: auto;" @bind="askScope">
                         <option value="story">This Story</option>
                         <option value="series">All Stories (Series)</option>
                     </select>
@@ -58,22 +58,22 @@
                 <div class="mb-3">
                     <textarea class="form-control bg-dark text-light border-secondary" rows="3"
                               placeholder="Ask a question about the world, characters, story..."
-                              @bind="_commandText" @onkeydown="HandleAskKeyDown"
+                              @bind="commandText" @onkeydown="HandleAskKeyDown"
                               style="font-family: Georgia, serif;"></textarea>
                 </div>
-                @if (_busy)
+                @if (busy)
                 {
                     <div class="d-flex align-items-center gap-2 mb-3">
                         <div class="spinner-border spinner-border-sm text-info"></div>
-                        <small class="text-muted">@_statusMessage</small>
+                        <small class="text-muted">@statusMessage</small>
                     </div>
                 }
-                @if (!string.IsNullOrEmpty(_commandResult))
+                @if (!string.IsNullOrEmpty(commandResult))
                 {
-                    <div class="mb-3 bg-black rounded p-3 small" style="white-space: pre-wrap; max-height: 400px; overflow-y: auto;">@_commandResult</div>
+                    <div class="mb-3 bg-black rounded p-3 small" style="white-space: pre-wrap; max-height: 400px; overflow-y: auto;">@commandResult</div>
                     <button class="btn btn-sm btn-outline-secondary" @onclick="CloseAsk">Close</button>
                 }
-                else if (!_busy)
+                else if (!busy)
                 {
                     <button class="btn btn-sm btn-info text-dark" @onclick="ExecuteAsk"><i class="bi bi-send"></i> Ask</button>
                 }
@@ -83,44 +83,44 @@
 }
 
 @* ── Write Modal ─────────────────────────────────────── *@
-@if (_showWriteModal)
+@if (showWriteModal)
 {
     <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => _showWriteModal = false">
+         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => showWriteModal = false">
         <div class="card bg-dark text-light border-danger" style="width: 650px; max-height: 85vh; overflow-y: auto;"
              @onclick:stopPropagation="true">
             <div class="card-header d-flex justify-content-between align-items-center border-secondary">
                 <span class="text-danger fw-bold"><i class="bi bi-pen"></i> Write</span>
-                <button class="btn btn-sm btn-outline-secondary" @onclick="() => _showWriteModal = false"><i class="bi bi-x-lg"></i></button>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => showWriteModal = false"><i class="bi bi-x-lg"></i></button>
             </div>
             <div class="card-body">
                 <div class="mb-3">
                     <textarea class="form-control bg-dark text-light border-secondary" rows="3"
                               placeholder="What should happen next? Describe the scene, direction, or premise..."
-                              @bind="_writeText" @onkeydown="HandleWriteKeyDown"
+                              @bind="writeText" @onkeydown="HandleWriteKeyDown"
                               style="font-family: Georgia, serif;"></textarea>
                 </div>
-                @if (_busy)
+                @if (busy)
                 {
                     <div class="d-flex align-items-center gap-2 mb-3">
                         <div class="spinner-border spinner-border-sm text-danger"></div>
-                        <small class="text-muted">@_statusMessage</small>
+                        <small class="text-muted">@statusMessage</small>
                     </div>
                 }
-                @if (!string.IsNullOrEmpty(_writeResult))
+                @if (!string.IsNullOrEmpty(writeResult))
                 {
                     <div class="mb-3">
                         <textarea class="form-control bg-dark text-light border-secondary" rows="8"
                                   style="font-family: Georgia, serif; font-size: 14px; line-height: 1.7;"
-                                  @bind="_writeResult"></textarea>
+                                  @bind="writeResult"></textarea>
                     </div>
                     <div class="d-flex gap-2">
                         <button class="btn btn-sm btn-success" @onclick="ApplyWrite"><i class="bi bi-check-lg"></i> Insert</button>
-                        <button class="btn btn-sm btn-outline-secondary" @onclick='() => _writeResult = ""'>Clear</button>
-                        <button class="btn btn-sm btn-outline-secondary" @onclick="() => _showWriteModal = false">Dismiss</button>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick='() => writeResult = ""'>Clear</button>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="() => showWriteModal = false">Dismiss</button>
                     </div>
                 }
-                else if (!_busy)
+                else if (!busy)
                 {
                     <button class="btn btn-sm btn-danger" @onclick="DoWrite"><i class="bi bi-pen"></i> Generate</button>
                 }
@@ -130,28 +130,28 @@
 }
 
 @* ── What Next Modal ─────────────────────────────────── *@
-@if (_showWhatNextModal)
+@if (showWhatNextModal)
 {
     <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => _showWhatNextModal = false">
+         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => showWhatNextModal = false">
         <div class="card bg-dark text-light border-primary" style="width: 750px; max-height: 85vh; overflow-y: auto;"
              @onclick:stopPropagation="true">
             <div class="card-header d-flex justify-content-between align-items-center border-secondary">
                 <span class="text-primary fw-bold"><i class="bi bi-lightning"></i> What Next?</span>
-                <button class="btn btn-sm btn-outline-secondary" @onclick="() => _showWhatNextModal = false"><i class="bi bi-x-lg"></i></button>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => showWhatNextModal = false"><i class="bi bi-x-lg"></i></button>
             </div>
             <div class="card-body">
-                @if (_generatingPremises)
+                @if (generatingPremises)
                 {
                     <div class="d-flex align-items-center gap-2">
                         <div class="spinner-border spinner-border-sm text-primary"></div>
                         <small class="text-muted">Analyzing character goals and finding conflicts...</small>
                     </div>
                 }
-                else if (_conflictPremises.Any())
+                else if (conflictPremises.Any())
                 {
                     <p class="text-muted small mb-3">Based on character goals and current story state, these conflicts are ready to erupt:</p>
-                    @foreach (var premise in _conflictPremises)
+                    @foreach (var premise in conflictPremises)
                     {
                         var p = premise;
                         <div class="border border-secondary rounded p-3 mb-2">
@@ -178,31 +178,31 @@
 }
 
 @* ── Outline Modal ──────────────────────────────────── *@
-@if (_showOutlineModal)
+@if (showOutlineModal)
 {
     <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => _showOutlineModal = false">
+         style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => showOutlineModal = false">
         <div class="card bg-dark text-light border-success" style="width: 800px; max-height: 85vh; overflow-y: auto;"
              @onclick:stopPropagation="true">
             <div class="card-header d-flex justify-content-between align-items-center border-secondary">
                 <span class="text-success fw-bold"><i class="bi bi-list-ol"></i> Story Outline</span>
-                <button class="btn btn-sm btn-outline-secondary" @onclick="() => _showOutlineModal = false"><i class="bi bi-x-lg"></i></button>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => showOutlineModal = false"><i class="bi bi-x-lg"></i></button>
             </div>
             <div class="card-body">
-                @if (_generatingOutline)
+                @if (generatingOutline)
                 {
                     <div class="d-flex align-items-center gap-2">
                         <div class="spinner-border spinner-border-sm text-success"></div>
                         <small class="text-muted">Architecting story arc...</small>
                     </div>
                 }
-                else if (_currentOutline != null)
+                else if (currentOutline != null)
                 {
-                    <h6 class="text-danger">@_currentOutline.Title</h6>
-                    <p class="small text-muted">@_currentOutline.Logline</p>
-                    <p class="small text-info">Theme: @_currentOutline.Theme</p>
+                    <h6 class="text-danger">@currentOutline.Title</h6>
+                    <p class="small text-muted">@currentOutline.Logline</p>
+                    <p class="small text-info">Theme: @currentOutline.Theme</p>
 
-                    @foreach (var act in _currentOutline.Acts)
+                    @foreach (var act in currentOutline.Acts)
                     {
                         <div class="mb-3">
                             <div class="fw-bold text-warning">Act @act.ActNumber: @act.Name</div>
@@ -226,10 +226,10 @@
                         </div>
                     }
 
-                    @if (_currentOutline.CharacterArcs.Any())
+                    @if (currentOutline.CharacterArcs.Any())
                     {
                         <div class="field-label text-danger mt-3">Character Arcs</div>
-                        @foreach (var arc in _currentOutline.CharacterArcs)
+                        @foreach (var arc in currentOutline.CharacterArcs)
                         {
                             <div class="small border-start border-secondary ps-2 ms-2 mt-1">
                                 <span class="fw-bold">@arc.Character:</span> @arc.StartState → @arc.EndState
@@ -243,14 +243,14 @@
                     <div class="mb-3">
                         <label class="form-label text-muted">Premise</label>
                         <textarea class="form-control bg-dark text-light border-secondary" rows="2"
-                                  placeholder="What's this story about?" @bind="_outlinePremise"></textarea>
+                                  placeholder="What's this story about?" @bind="outlinePremise"></textarea>
                     </div>
                     <div class="mb-3">
                         <label class="form-label text-muted">Target Beats</label>
                         <input type="number" class="form-control form-control-sm bg-dark text-light border-secondary"
-                               min="6" max="24" @bind="_outlineTargetBeats" style="width: 80px;" />
+                               min="6" max="24" @bind="outlineTargetBeats" style="width: 80px;" />
                     </div>
-                    <button class="btn btn-sm btn-success" @onclick="GenerateOutline" disabled="@string.IsNullOrWhiteSpace(_outlinePremise)">
+                    <button class="btn btn-sm btn-success" @onclick="GenerateOutline" disabled="@string.IsNullOrWhiteSpace(outlinePremise)">
                         <i class="bi bi-list-ol"></i> Generate Outline
                     </button>
                 }
@@ -260,24 +260,24 @@
 }
 
 @* ── Validate Modal ──────────────────────────────────── *@
-@if (_showValidateModal)
+@if (showValidateModal)
 {
     <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
          style="z-index: 1050; background: rgba(0,0,0,0.7);">
         <div class="card bg-dark text-light border-warning" style="width: 900px; max-height: 85vh; overflow-y: auto;">
             <div class="card-header d-flex justify-content-between align-items-center border-secondary">
-                <span class="text-warning fw-bold"><i class="bi bi-shield-check"></i> Validate (@_validationResults.Count issues)</span>
-                <button class="btn btn-sm btn-outline-secondary" @onclick="() => _showValidateModal = false"><i class="bi bi-x-lg"></i></button>
+                <span class="text-warning fw-bold"><i class="bi bi-shield-check"></i> Validate (@validationResults.Count issues)</span>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => showValidateModal = false"><i class="bi bi-x-lg"></i></button>
             </div>
             <div class="card-body">
-                @if (_validating)
+                @if (validating)
                 {
                     <div class="d-flex align-items-center gap-2">
                         <div class="spinner-border spinner-border-sm text-warning"></div>
                         <small class="text-muted">Checking story against canon...</small>
                     </div>
                 }
-                else if (!_validationResults.Any())
+                else if (!validationResults.Any())
                 {
                     <div class="text-success text-center py-4">
                         <i class="bi bi-check-circle" style="font-size: 2rem;"></i>
@@ -286,17 +286,17 @@
                 }
                 else
                 {
-                    @for (int idx = 0; idx < _validationResults.Count; idx++)
+                    @for (int idx = 0; idx < validationResults.Count; idx++)
                     {
-                        var issue = _validationResults[idx];
+                        var issue = validationResults[idx];
                         var i = idx;
-                        <div class="border border-secondary rounded p-3 mb-3 @(i == _activeIssueIdx ? "border-warning" : "")">
+                        <div class="border border-secondary rounded p-3 mb-3 @(i == activeIssueIdx ? "border-warning" : "")">
                             <div class="d-flex justify-content-between align-items-start mb-2">
                                 <div>
                                     <span class="badge @(issue.Severity == IssueSeverity.Hard ? "bg-danger" : "bg-warning text-dark") me-2">@issue.Category</span>
                                     <span class="fw-bold">@issue.EntityName</span>
                                 </div>
-                                <small class="text-muted">@(i + 1) / @_validationResults.Count</small>
+                                <small class="text-muted">@(i + 1) / @validationResults.Count</small>
                             </div>
                             <div class="small text-muted mb-2">@issue.Description</div>
 
@@ -325,8 +325,8 @@
                                         <i class="bi bi-arrow-right me-1"></i> @altText
                                     </button>
                                 }
-                                <button class="btn btn-sm btn-outline-secondary text-start" @onclick="() => GenerateMore(i)" disabled="@_generatingMore">
-                                    @if (_generatingMore && _activeIssueIdx == i) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                <button class="btn btn-sm btn-outline-secondary text-start" @onclick="() => GenerateMore(i)" disabled="@generatingMore">
+                                    @if (generatingMore && activeIssueIdx == i) { <span class="spinner-border spinner-border-sm me-1"></span> }
                                     <i class="bi bi-arrow-repeat me-1"></i> Generate more alternatives
                                 </button>
                                 <button class="btn btn-sm btn-outline-secondary text-start" @onclick="() => DismissIssue(i)">
@@ -342,7 +342,7 @@
 }
 
 @* ── Formatting Toolbar ────────────────────────────────── *@
-@if (_viewMode == "editor")
+@if (viewMode == "editor")
 {
 <div class="d-flex gap-1 mb-1 align-items-center" style="overflow-x: auto; white-space: nowrap; padding-top: 3px; padding-bottom: 3px;">
     <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h1")' title="Heading 1" style="font-weight: bold;">H1</button>
@@ -359,10 +359,10 @@
     <button class="btn btn-outline-secondary tb" @onclick='() => FormatList("ordered")' title="Numbered list"><i class="bi bi-list-ol"></i></button>
     <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("blockquote")' title="Quote"><i class="bi bi-quote"></i></button>
     <button class="btn btn-outline-secondary tb" @onclick="InsertHorizontalRule" title="Scene break"><i class="bi bi-dash-lg"></i></button>
-    <button class="btn btn-outline-secondary tb" @onclick="() => _showImageInsert = !_showImageInsert" title="Insert image"><i class="bi bi-image"></i></button>
+    <button class="btn btn-outline-secondary tb" @onclick="() => showImageInsert = !showImageInsert" title="Insert image"><i class="bi bi-image"></i></button>
     <span class="text-secondary mx-1">|</span>
-    <button class="btn @(_showLinks ? "btn-outline-info" : "btn-outline-secondary") tb" @onclick="ToggleLinks" title="Toggle entity links"><i class="bi bi-link-45deg"></i></button>
-    <button class="btn @(_showSceneSidebar ? "btn-outline-danger" : "btn-outline-secondary") tb" @onclick="() => _showSceneSidebar = !_showSceneSidebar" title="Scene sidebar"><i class="bi bi-diagram-3"></i></button>
+    <button class="btn @(showLinks ? "btn-outline-info" : "btn-outline-secondary") tb" @onclick="ToggleLinks" title="Toggle entity links"><i class="bi bi-link-45deg"></i></button>
+    <button class="btn @(showSceneSidebar ? "btn-outline-danger" : "btn-outline-secondary") tb" @onclick="() => showSceneSidebar = !showSceneSidebar" title="Scene sidebar"><i class="bi bi-diagram-3"></i></button>
     <div class="dropdown d-inline-block">
         <button class="btn btn-outline-secondary tb dropdown-toggle" type="button" data-bs-toggle="dropdown" title="Export">
             <i class="bi bi-download"></i>
@@ -372,49 +372,49 @@
             <li><button class="dropdown-item" @onclick="ExportAsMd"><i class="bi bi-markdown me-2"></i>Markdown (.md)</button></li>
             <li><button class="dropdown-item" @onclick="ExportAsPdf"><i class="bi bi-file-pdf me-2"></i>PDF (Print)</button></li>
             <li><hr class="dropdown-divider"></li>
-            <li><button class="dropdown-item @(_narrating || !_ttsAvailable ? "disabled" : "")" @onclick="ExportAsMp3"><i class="bi bi-file-music me-2"></i>MP3 (Narration)</button></li>
-            <li><button class="dropdown-item @(_narrating || !_ttsAvailable ? "disabled" : "")" @onclick="ExportAsOgg"><i class="bi bi-file-music me-2"></i>OGG (Narration)</button></li>
+            <li><button class="dropdown-item @(narrating || !ttsAvailable ? "disabled" : "")" @onclick="ExportAsMp3"><i class="bi bi-file-music me-2"></i>MP3 (Narration)</button></li>
+            <li><button class="dropdown-item @(narrating || !ttsAvailable ? "disabled" : "")" @onclick="ExportAsOgg"><i class="bi bi-file-music me-2"></i>OGG (Narration)</button></li>
         </ul>
     </div>
 </div>
 }
 
 <div class="row g-2">
-    <div class="@(_showSceneSidebar ? "col-md-8" : "col-12")">
-        @if (_viewMode == "editor")
+    <div class="@(showSceneSidebar ? "col-md-8" : "col-12")">
+        @if (viewMode == "editor")
         {
-            <div id="story-surface" class="form-control bg-dark text-light border-secondary rich-editor @(_showLinks ? "" : "hide-links")"
+            <div id="story-surface" class="form-control bg-dark text-light border-secondary rich-editor @(showLinks ? "" : "hide-links")"
                  contenteditable="true" style="min-height: calc(100vh - 300px); overflow-y: scroll; overflow-x: hidden;"
-                 @onclick="() => { _showContextMenu = false; _showImageInsert = false; }"></div>
+                 @onclick="() => { showContextMenu = false; showImageInsert = false; }"></div>
         }
 
         @* ── Image Insert Panel ────────────────────────── *@
         @* ── Image Insert Modal ─────────────────────── *@
-        @if (_showImageInsert)
+        @if (showImageInsert)
         {
             <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-                 style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => _showImageInsert = false">
+                 style="z-index: 1050; background: rgba(0,0,0,0.7);" @onclick="() => showImageInsert = false">
                 <div class="card bg-dark text-light border-secondary" style="width: 500px;" @onclick:stopPropagation="true">
                     <div class="card-header d-flex justify-content-between align-items-center border-secondary">
                         <span class="text-muted fw-bold"><i class="bi bi-image"></i> Insert Image</span>
-                        <button class="btn btn-sm btn-outline-secondary" @onclick="() => _showImageInsert = false"><i class="bi bi-x-lg"></i></button>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="() => showImageInsert = false"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="card-body">
                         <textarea class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
                                   placeholder="Paste base64 image data (data:image/png;base64,... or raw base64)"
-                                  @bind="_imageBase64" style="font-family: monospace; font-size: 0.7rem; min-height: 80px;"></textarea>
+                                  @bind="imageBase64" style="font-family: monospace; font-size: 0.7rem; min-height: 80px;"></textarea>
                         <div class="d-flex gap-2 align-items-center mb-2">
                             <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
-                                   placeholder="Alt text (optional)" @bind="_imageAlt" />
+                                   placeholder="Alt text (optional)" @bind="imageAlt" />
                             <button class="btn btn-sm btn-info text-dark text-nowrap" @onclick="DoInsertImage"
-                                    disabled="@string.IsNullOrWhiteSpace(_imageBase64)">
+                                    disabled="@string.IsNullOrWhiteSpace(imageBase64)">
                                 <i class="bi bi-image"></i> Insert
                             </button>
                         </div>
-                        @if (!string.IsNullOrWhiteSpace(_imageBase64))
+                        @if (!string.IsNullOrWhiteSpace(imageBase64))
                         {
                             <div class="text-center">
-                                <img src="@NormalizeImageSrc(_imageBase64)" alt="@_imageAlt" style="max-width: 100%; max-height: 250px; border-radius: 4px;" />
+                                <img src="@NormalizeImageSrc(imageBase64)" alt="@imageAlt" style="max-width: 100%; max-height: 250px; border-radius: 4px;" />
                             </div>
                         }
                     </div>
@@ -423,21 +423,21 @@
         }
 
         @* ── Right-click context menu ──────────────────── *@
-        @if (_showContextMenu)
+        @if (showContextMenu)
         {
             <div class="position-fixed bg-dark border border-secondary rounded shadow-lg py-1"
-                 style="z-index: 1070; top: @(_ctxMenuTop)px; left: @(_ctxMenuLeft)px; min-width: 160px;">
-                <button class="btn btn-sm btn-dark text-light d-block w-100 text-start px-3 py-1" @onclick="ReadSelected" disabled="@(_narrating || !_hasSelection)">
+                 style="z-index: 1070; top: @(ctxMenuTop)px; left: @(ctxMenuLeft)px; min-width: 160px;">
+                <button class="btn btn-sm btn-dark text-light d-block w-100 text-start px-3 py-1" @onclick="ReadSelected" disabled="@(narrating || !hasSelection)">
                     <i class="bi bi-volume-up text-info me-2"></i>Read Selected
                 </button>
-                <button class="btn btn-sm btn-dark text-light d-block w-100 text-start px-3 py-1" @onclick="ReadAll" disabled="@_narrating">
+                <button class="btn btn-sm btn-dark text-light d-block w-100 text-start px-3 py-1" @onclick="ReadAll" disabled="@narrating">
                     <i class="bi bi-megaphone text-info me-2"></i>Read All
                 </button>
             </div>
         }
-        else if (_viewMode == "preview")
+        else if (viewMode == "preview")
         {
-            @if (string.IsNullOrWhiteSpace(_printHtml))
+            @if (string.IsNullOrWhiteSpace(printHtml))
             {
                 <div class="text-muted d-flex align-items-center justify-content-center" style="min-height: 40vh;">
                     Nothing to preview — write something first.
@@ -446,7 +446,7 @@
             else
             {
                 <div class="bg-white text-dark p-4 rounded" style="min-height: 60vh; font-family: Georgia, serif; font-size: 16px; line-height: 2; max-width: 700px; margin: 0 auto;">
-                    @((MarkupString)_printHtml)
+                    @((MarkupString)printHtml)
                 </div>
             }
         }
@@ -469,63 +469,63 @@
         </div>
 
         @* ── Audio Player ──────────────────────────── *@
-        <AudioPlayer @ref="_audioPlayer"
+        <AudioPlayer @ref="audioPlayer"
                      Visible="true"
                      OnDismissed="() => {}"
                      OnInsertTag="InsertTag"
                      OnReadSelected="ReadSelected"
                      OnReadAll="ReadAll"
-                     HasSelection="_hasSelection"
-                     Engine="@_ttsEngine"
-                     EngineChanged="e => _ttsEngine = e"
+                     HasSelection="hasSelection"
+                     Engine="@ttsEngine"
+                     EngineChanged="e => ttsEngine = e"
                      ShowTagInserter="false"
                      CssClass="mt-1 rounded border border-secondary" />
 
         @* ── Bottom bar: view toggle left, Ask/Write right ── *@
         <div class="d-flex align-items-center mt-1">
             <div class="btn-group">
-                <button class="btn btn-sm @(_viewMode == "editor" ? "btn-danger" : "btn-outline-secondary")" style="width: 100px;" @onclick='() => SwitchViewMode("editor")'><i class="bi bi-brush"></i> Editor</button>
-                <button class="btn btn-sm @(_viewMode == "preview" ? "btn-danger" : "btn-outline-secondary")" style="width: 100px;" @onclick='() => SwitchViewMode("preview")'><i class="bi bi-printer"></i> Preview</button>
+                <button class="btn btn-sm @(viewMode == "editor" ? "btn-danger" : "btn-outline-secondary")" style="width: 100px;" @onclick='() => SwitchViewMode("editor")'><i class="bi bi-brush"></i> Editor</button>
+                <button class="btn btn-sm @(viewMode == "preview" ? "btn-danger" : "btn-outline-secondary")" style="width: 100px;" @onclick='() => SwitchViewMode("preview")'><i class="bi bi-printer"></i> Preview</button>
             </div>
             <div class="ms-auto d-flex gap-2">
-                <button class="btn btn-sm btn-outline-success" @onclick="ShowOutlineModal" disabled="@_busy">
+                <button class="btn btn-sm btn-outline-success" @onclick="ShowOutlineModal" disabled="@busy">
                     <i class="bi bi-list-ol"></i> Outline
                 </button>
-                <button class="btn btn-sm btn-outline-primary" @onclick="WhatNext" disabled="@(_busy || _project.Characters.Count == 0)">
+                <button class="btn btn-sm btn-outline-primary" @onclick="WhatNext" disabled="@(busy || project.Characters.Count == 0)">
                     <i class="bi bi-lightning"></i> What Next?
                 </button>
-                <button class="btn btn-sm btn-outline-warning" @onclick="RunValidation" disabled="@(_busy || !_hasExistingText)">
+                <button class="btn btn-sm btn-outline-warning" @onclick="RunValidation" disabled="@(busy || !hasExistingText)">
                     <i class="bi bi-shield-check"></i> Validate
                 </button>
-                <button class="btn btn-sm btn-outline-info" @onclick="() => _showAskModal = true" disabled="@_busy">
+                <button class="btn btn-sm btn-outline-info" @onclick="() => showAskModal = true" disabled="@busy">
                     <i class="bi bi-chat-dots"></i> Ask
                 </button>
-                <button class="btn btn-sm btn-outline-danger" @onclick="() => _showWriteModal = true" disabled="@_busy">
+                <button class="btn btn-sm btn-outline-danger" @onclick="() => showWriteModal = true" disabled="@busy">
                     <i class="bi bi-pen"></i> Write
                 </button>
             </div>
         </div>
     </div>
 
-    @if (_showSceneSidebar)
+    @if (showSceneSidebar)
     {
         <div class="col-md-4">
             @* ── Validation Warnings ──────────────────── *@
-            @if (_validationIssues.Count > 0)
+            @if (validationIssues.Count > 0)
             {
                 <div class="card bg-dark text-light border-warning mb-2">
                     <div class="card-header py-1 text-warning small fw-bold">
-                        <i class="bi bi-exclamation-triangle"></i> Canon Issues (@_validationIssues.Count)
+                        <i class="bi bi-exclamation-triangle"></i> Canon Issues (@validationIssues.Count)
                     </div>
                     <div class="card-body py-2 small">
-                        @foreach (var issue in _validationIssues)
+                        @foreach (var issue in validationIssues)
                         {
                             <div class="d-flex align-items-start gap-1 mb-1">
                                 <i class="bi bi-exclamation-circle text-warning" style="margin-top: 2px;"></i>
                                 <span>@issue</span>
                             </div>
                         }
-                        <button class="btn btn-sm btn-outline-warning mt-1" @onclick="() => _validationIssues.Clear()">Dismiss</button>
+                        <button class="btn btn-sm btn-outline-warning mt-1" @onclick="() => validationIssues.Clear()">Dismiss</button>
                     </div>
                 </div>
             }
@@ -539,11 +539,11 @@
                     </button>
                 </div>
                 <div class="card-body py-1" style="max-height: 40vh; overflow-y: auto;">
-                    @if (_outlineSections.Count == 0)
+                    @if (outlineSections.Count == 0)
                     {
                         <small class="text-muted">Write some text, then refresh.</small>
                     }
-                    @foreach (var sec in _outlineSections)
+                    @foreach (var sec in outlineSections)
                     {
                         <div class="mb-2">
                             <div class="fw-bold small text-danger" style="cursor: pointer;" @onclick="() => ScrollToSection(sec.index)">
@@ -598,35 +598,35 @@
             </div>
 
             @* ── Entity Detail ─────────────────────────── *@
-            @if (_detailNode != null)
+            @if (detailNode != null)
             {
                 <div class="card bg-dark text-light border-info mb-2">
                     <div class="card-header py-1 d-flex justify-content-between align-items-center">
                         <span>
-                            <span class="badge @GetTypeBadgeClass(_detailNode.NodeType) me-1">@_detailNode.NodeType</span>
-                            <strong>@_detailNode.Name</strong>
+                            <span class="badge @GetTypeBadgeClass(detailNode.NodeType) me-1">@detailNode.NodeType</span>
+                            <strong>@detailNode.Name</strong>
                         </span>
-                        <button class="btn btn-sm btn-outline-secondary py-0 px-1" @onclick="() => _detailNode = null"><i class="bi bi-x"></i></button>
+                        <button class="btn btn-sm btn-outline-secondary py-0 px-1" @onclick="() => detailNode = null"><i class="bi bi-x"></i></button>
                     </div>
                     <div class="card-body py-2 small" style="max-height: 30vh; overflow-y: auto; line-height: 1.4;">
                         @foreach (var key in new[] { "gender", "pronouns", "role", "status", "age", "affiliation", "location", "category", "manufacturer" })
                         {
-                            if (_detailNode.Properties.TryGetValue(key, out var val) && val.Length > 0)
+                            if (detailNode.Properties.TryGetValue(key, out var val) && val.Length > 0)
                             {
                                 <div><span class="text-info">@key:</span> @val</div>
                             }
                         }
-                        @if (_detailNode.Properties.TryGetValue("description", out var ddesc) && ddesc.Length > 0)
+                        @if (detailNode.Properties.TryGetValue("description", out var ddesc) && ddesc.Length > 0)
                         {
                             <div class="text-muted mt-1">@(ddesc.Length > 300 ? ddesc[..297] + "..." : ddesc)</div>
                         }
-                        @{ var detailEdges = Graph.GetAllEdges(_detailNode.Id); }
+                        @{ var detailEdges = Graph.GetAllEdges(detailNode.Id); }
                         @if (detailEdges.Count > 0)
                         {
                             <div class="mt-1"><small class="text-muted fw-bold">Relationships:</small></div>
                             @foreach (var edge in detailEdges.Take(10))
                             {
-                                var other = edge.Source == _detailNode.Id ? edge.Target : edge.Source;
+                                var other = edge.Source == detailNode.Id ? edge.Target : edge.Source;
                                 var otherNode = Graph.GetNode(other);
                                 <div class="d-flex align-items-center gap-1">
                                     <span class="badge bg-dark border border-secondary" style="font-size: 0.6rem;">@edge.RelationType</span>
@@ -634,10 +634,10 @@
                                 </div>
                             }
                         }
-                        @if (_detailNode.History.Count > 0)
+                        @if (detailNode.History.Count > 0)
                         {
                             <div class="mt-1 text-warning"><small class="fw-bold">Timeline:</small></div>
-                            @foreach (var h in _detailNode.History.OrderBy(x => x.StoryPoint))
+                            @foreach (var h in detailNode.History.OrderBy(x => x.StoryPoint))
                             {
                                 <div>[@h.StoryPoint] @h.Property: @h.OldValue → @h.NewValue</div>
                             }
@@ -660,17 +660,17 @@
     }
 </div>
 
-@if (_error != null)
+@if (error != null)
 {
-    <div class="alert alert-warning mt-2 py-1 small">@_error</div>
+    <div class="alert alert-warning mt-2 py-1 small">@error</div>
 }
 
-@if (_graphStatus != null)
+@if (graphStatus != null)
 {
     <div class="d-flex align-items-center gap-2 mt-1">
-        @if (_extracting) { <div class="spinner-border spinner-border-sm text-info" style="width: 0.8rem; height: 0.8rem;"></div> }
+        @if (extracting) { <div class="spinner-border spinner-border-sm text-info" style="width: 0.8rem; height: 0.8rem;"></div> }
         else { <i class="bi bi-diagram-3 text-info" style="font-size: 0.75rem;"></i> }
-        <small class="text-muted" style="font-size: 0.7rem;">@_graphStatus</small>
+        <small class="text-muted" style="font-size: 0.7rem;">@graphStatus</small>
     </div>
 }
 
@@ -678,85 +678,85 @@
     [Parameter] public string? ProjectId { get; set; }
 
     // ── Core state ──
-    private StoryProject _project = new();
-    private string _storyText = "";
-    private int _wordCount;
-    private bool _saved;
-    private string? _error;
-    private bool _busy;
-    private string _statusMessage = "";
+    private StoryProject project = new();
+    private string storyText = "";
+    private int wordCount;
+    private bool saved;
+    private string? error;
+    private bool busy;
+    private string statusMessage = "";
 
     // ── Audio ──
-    private bool _ttsAvailable;
-    private bool _narrating;
-    private bool _hasSelection;
-    private AudioPlayer? _audioPlayer;
-    private string _ttsEngine = "elevenlabs"; // "elevenlabs" or "windows"
+    private bool ttsAvailable;
+    private bool narrating;
+    private bool hasSelection;
+    private AudioPlayer? audioPlayer;
+    private string ttsEngine = "elevenlabs"; // "elevenlabs" or "windows"
 
 
     // ── Bottom dock ──
-    private bool _showTagBar;
+    private bool showTagBar;
 
     // ── Image insert ──
-    private bool _showImageInsert;
-    private string _imageBase64 = "";
-    private string _imageAlt = "";
+    private bool showImageInsert;
+    private string imageBase64 = "";
+    private string imageAlt = "";
 
     // ── Context menu ──
-    private bool _showContextMenu;
-    private double _ctxMenuTop;
-    private double _ctxMenuLeft;
+    private bool showContextMenu;
+    private double ctxMenuTop;
+    private double ctxMenuLeft;
 
     // ── Entity extraction ──
-    private bool _extracting;
-    private string? _graphStatus;
-    private string _lastExtractedText = "";
+    private bool extracting;
+    private string? graphStatus;
+    private string lastExtractedText = "";
 
     // ── Ask modal ──
-    private bool _showAskModal;
-    private string _commandText = "";
-    private string _commandResult = "";
-    private string _askScope = "story";
+    private bool showAskModal;
+    private string commandText = "";
+    private string commandResult = "";
+    private string askScope = "story";
 
     // ── Write modal ──
-    private bool _showWriteModal;
-    private string _writeText = "";
-    private string _writeResult = "";
+    private bool showWriteModal;
+    private string writeText = "";
+    private string writeResult = "";
 
     // ── What Next ──
-    private bool _showWhatNextModal;
-    private bool _generatingPremises;
-    private List<ConflictPremise> _conflictPremises = [];
+    private bool showWhatNextModal;
+    private bool generatingPremises;
+    private List<ConflictPremise> conflictPremises = [];
 
     // ── Outline ──
-    private bool _showOutlineModal;
-    private bool _generatingOutline;
-    private StoryOutline? _currentOutline;
-    private string _outlinePremise = "";
-    private int _outlineTargetBeats = 12;
+    private bool showOutlineModal;
+    private bool generatingOutline;
+    private StoryOutline? currentOutline;
+    private string outlinePremise = "";
+    private int outlineTargetBeats = 12;
 
     // ── Validate ──
-    private bool _showValidateModal;
-    private bool _validating;
-    private bool _generatingMore;
-    private int _activeIssueIdx;
-    private List<CanonIssue> _validationResults = [];
+    private bool showValidateModal;
+    private bool validating;
+    private bool generatingMore;
+    private int activeIssueIdx;
+    private List<CanonIssue> validationResults = [];
 
     // ── Editor ──
-    private bool _showLinks;
-    private string _viewMode = "editor"; // "editor" or "preview"
-    private string _richHtml = "";
-    private string _printHtml = "";
-    private DotNetObjectReference<WriteStory>? _editorRef;
-    private bool _richEditorInitialized;
+    private bool showLinks;
+    private string viewMode = "editor"; // "editor" or "preview"
+    private string richHtml = "";
+    private string printHtml = "";
+    private DotNetObjectReference<WriteStory>? editorRef;
+    private bool richEditorInitialized;
 
     // ── Scene sidebar ──
-    private bool _showSceneSidebar;
+    private bool showSceneSidebar;
     private List<(string id, string name, string nodeType)> _sceneEntities = [];
-    private List<string> _validationIssues = [];
-    private WorldNode? _detailNode;
-    private DotNetObjectReference<WriteStory>? _miniGraphRef;
-    private List<OutlineSection> _outlineSections = [];
+    private List<string> validationIssues = [];
+    private WorldNode? detailNode;
+    private DotNetObjectReference<WriteStory>? miniGraphRef;
+    private List<OutlineSection> outlineSections = [];
 
     private record OutlineSection(
         int index,
@@ -767,45 +767,45 @@
         List<(string id, string name, string nodeType)> items);
 
     // ── Auto-save ──
-    private System.Threading.Timer? _saveTimer;
-    private bool _dirty;
-    private bool _hasExistingText => !string.IsNullOrWhiteSpace(_storyText);
+    private System.Threading.Timer? saveTimer;
+    private bool dirty;
+    private bool hasExistingText => !string.IsNullOrWhiteSpace(storyText);
 
     // ── Lifecycle ──
 
     protected override async Task OnInitializedAsync()
     {
-        _ttsAvailable = await TtsSvc.IsConfiguredAsync();
+        ttsAvailable = await TtsSvc.IsConfiguredAsync();
         if (!string.IsNullOrEmpty(ProjectId))
         {
             var loaded = Repo.LoadProject(ProjectId);
-            if (loaded != null) _project = loaded;
+            if (loaded != null) project = loaded;
         }
-        _richHtml = _project.Html;
-        _storyText = _project.PlainText;
+        richHtml = project.Html;
+        storyText = project.PlainText;
         UpdateWordCount();
 
         // Auto-save new projects so they appear in the Stories list
         if (string.IsNullOrEmpty(ProjectId))
         {
-            Repo.SaveProject(_project);
-            Nav.NavigateTo($"/write/{_project.Id}", replace: true);
+            Repo.SaveProject(project);
+            Nav.NavigateTo($"/write/{project.Id}", replace: true);
         }
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (firstRender || (!_richEditorInitialized && _viewMode == "editor"))
+        if (firstRender || (!richEditorInitialized && viewMode == "editor"))
             await InitRichEditor();
     }
 
     private async Task InitRichEditor()
     {
-        if (_viewMode != "editor") return;
-        _editorRef?.Dispose();
-        _editorRef = DotNetObjectReference.Create(this);
-        await JS.InvokeVoidAsync("writeInterop.richEditor.init", "story-surface", _editorRef, _richHtml);
-        _richEditorInitialized = true;
+        if (viewMode != "editor") return;
+        editorRef?.Dispose();
+        editorRef = DotNetObjectReference.Create(this);
+        await JS.InvokeVoidAsync("writeInterop.richEditor.init", "story-surface", editorRef, richHtml);
+        richEditorInitialized = true;
 
         var allNodes = Graph.AllNodes();
         var entities = allNodes.Where(n => n.Name.Length >= 3)
@@ -818,33 +818,33 @@
     [JSInvokable]
     public void OnRichContentChanged(string html, string plainText)
     {
-        _richHtml = html;
-        _storyText = plainText;
-        _dirty = true;
-        _saved = false;
+        richHtml = html;
+        storyText = plainText;
+        dirty = true;
+        saved = false;
         UpdateWordCount();
-        _saveTimer?.Dispose();
-        _saveTimer = new System.Threading.Timer(_ => { if (_dirty) InvokeAsync(Save); }, null, 2000, Timeout.Infinite);
+        saveTimer?.Dispose();
+        saveTimer = new System.Threading.Timer(_ => { if (dirty) InvokeAsync(Save); }, null, 2000, Timeout.Infinite);
     }
 
     [JSInvokable]
     public void OnEntityClicked(string entityId)
     {
         ShowEntityDetail(entityId);
-        if (!_showSceneSidebar) _showSceneSidebar = true;
+        if (!showSceneSidebar) showSceneSidebar = true;
         StateHasChanged();
     }
 
     [JSInvokable] public void OnNodeClicked(string nodeId) => OnEntityClicked(nodeId);
     [JSInvokable] public Task OnNodeExpand(string nodeId) { OnEntityClicked(nodeId); return Task.CompletedTask; }
-    [JSInvokable] public void OnBackgroundClicked() { _detailNode = null; StateHasChanged(); }
+    [JSInvokable] public void OnBackgroundClicked() { detailNode = null; StateHasChanged(); }
 
     [JSInvokable]
     public void OnEditorContextMenu(double top, double left)
     {
-        _ctxMenuTop = top;
-        _ctxMenuLeft = left;
-        _showContextMenu = true;
+        ctxMenuTop = top;
+        ctxMenuLeft = left;
+        showContextMenu = true;
         StateHasChanged();
     }
 
@@ -853,9 +853,9 @@
     {
         var wordCount = string.IsNullOrWhiteSpace(selectedText) ? 0
             : selectedText.Split([' ', '\n', '\r', '\t'], StringSplitOptions.RemoveEmptyEntries).Length;
-        var had = _hasSelection;
-        _hasSelection = wordCount >= 3;
-        if (had != _hasSelection) await InvokeAsync(StateHasChanged);
+        var had = hasSelection;
+        hasSelection = wordCount >= 3;
+        if (had != hasSelection) await InvokeAsync(StateHasChanged);
     }
 
     // ── Command Execution ──
@@ -864,21 +864,21 @@
 
     private async Task ExecuteAsk()
     {
-        if (string.IsNullOrWhiteSpace(_commandText)) return;
-        _busy = true;
-        _commandResult = "";
-        _statusMessage = _askScope == "series" ? "Querying all stories + world graph..." : "Querying story + world graph...";
+        if (string.IsNullOrWhiteSpace(commandText)) return;
+        busy = true;
+        commandResult = "";
+        statusMessage = askScope == "series" ? "Querying all stories + world graph..." : "Querying story + world graph...";
         StateHasChanged();
 
         try
         {
             var session = new NarrativeSessionContext(Graph);
-            session.ScanText(_commandText);
-            if (_hasExistingText) session.ScanText(_storyText);
+            session.ScanText(commandText);
+            if (hasExistingText) session.ScanText(storyText);
             var worldContext = session.BuildContext();
 
             string storyContext;
-            if (_askScope == "series")
+            if (askScope == "series")
             {
                 var allProjects = Repo.ListProjects();
                 var parts = new List<string>();
@@ -893,7 +893,7 @@
                 storyContext = string.Join("\n\n", parts);
             }
             else
-                storyContext = _storyText;
+                storyContext = storyText;
 
             var system = $"""
                 You are a story assistant. Answer ONLY using the story text and world graph data below.
@@ -905,13 +905,13 @@
                 STORY TEXT:
                 {(storyContext.Length > 12000 ? storyContext[..12000] + "\n[truncated]" : storyContext)}
                 """;
-            _commandResult = await Llm.GenerateAsync(system, _commandText, 0.3, 2048);
+            commandResult = await Llm.GenerateAsync(system, commandText, 0.3, 2048);
         }
-        catch (Exception ex) { _commandResult = $"Error: {ex.Message}"; }
-        finally { _busy = false; _statusMessage = ""; }
+        catch (Exception ex) { commandResult = $"Error: {ex.Message}"; }
+        finally { busy = false; statusMessage = ""; }
     }
 
-    private void CloseAsk() { _commandResult = ""; _showAskModal = false; }
+    private void CloseAsk() { commandResult = ""; showAskModal = false; }
 
     private async Task HandleAskKeyDown(KeyboardEventArgs e)
     {
@@ -922,22 +922,22 @@
 
     private async Task DoWrite()
     {
-        if (string.IsNullOrWhiteSpace(_writeText)) return;
-        _busy = true;
-        _writeResult = "";
-        _statusMessage = "Loading world context...";
+        if (string.IsNullOrWhiteSpace(writeText)) return;
+        busy = true;
+        writeResult = "";
+        statusMessage = "Loading world context...";
         StateHasChanged();
 
         try
         {
             // Auto-detect characters and locations from existing story text + prompt
             // so the LLM always has full graph context for every entity mentioned
-            var characters = new List<string>(_project.Characters);
-            if (_hasExistingText)
+            var characters = new List<string>(project.Characters);
+            if (hasExistingText)
             {
                 var session = new NarrativeSessionContext(Graph);
-                session.ScanText(_storyText);
-                session.ScanText(_writeText);
+                session.ScanText(storyText);
+                session.ScanText(writeText);
                 var snapshot = session.GetSnapshot();
                 foreach (var e in snapshot.PrimaryEntities.Where(e => e.NodeType == "character"))
                     if (!characters.Contains(e.Name, StringComparer.OrdinalIgnoreCase))
@@ -950,47 +950,47 @@
                 .Select(e => e.name)
                 .FirstOrDefault();
 
-            _statusMessage = "Writing...";
+            statusMessage = "Writing...";
             StateHasChanged();
 
-            if (!_hasExistingText)
+            if (!hasExistingText)
             {
                 var opening = await Starter.GenerateOpeningAsync(new StoryStarterRequest
                 {
-                    Premise = _writeText, Characters = characters, Location = location,
+                    Premise = writeText, Characters = characters, Location = location,
                 });
-                _writeResult = opening.Text;
-                if (_project.Title is "Untitled" or "") _project.Title = opening.Title;
+                writeResult = opening.Text;
+                if (project.Title is "Untitled" or "") project.Title = opening.Title;
             }
             else
             {
-                var paragraphs = _storyText.Split(["\n\n", "\r\n\r\n"], StringSplitOptions.RemoveEmptyEntries)
+                var paragraphs = storyText.Split(["\n\n", "\r\n\r\n"], StringSplitOptions.RemoveEmptyEntries)
                     .Select(p => p.Trim()).Where(p => p.Length > 0).ToList();
 
                 // Inject story intelligence constraints
-                var storyConstraints = StoryState.BuildConstraints(_project.Id);
-                var knowledgeConstraints = KnowledgeMap.BuildPovConstraints(_project.Id, characters.FirstOrDefault() ?? "Kyle");
-                var eventContext = EventLog.BuildRecentContext(_project.Id);
-                var outline = OutlineSvc.Load(_project.Id);
-                var outlineCtx = outline != null ? OutlineSvc.BuildBeatContext(outline, StoryState.GetState(_project.Id).BeatCount) : null;
+                var storyConstraints = StoryState.BuildConstraints(project.Id);
+                var knowledgeConstraints = KnowledgeMap.BuildPovConstraints(project.Id, characters.FirstOrDefault() ?? "Kyle");
+                var eventContext = EventLog.BuildRecentContext(project.Id);
+                var outline = OutlineSvc.Load(project.Id);
+                var outlineCtx = outline != null ? OutlineSvc.BuildBeatContext(outline, StoryState.GetState(project.Id).BeatCount) : null;
 
-                _writeResult = await Starter.ContinueAsync(paragraphs, _writeText, null, location, characters,
+                writeResult = await Starter.ContinueAsync(paragraphs, writeText, null, location, characters,
                     storyConstraints, knowledgeConstraints, eventContext, outlineCtx);
             }
         }
-        catch (Exception ex) { _writeResult = $"Error: {ex.Message}"; }
-        finally { _busy = false; _statusMessage = ""; }
+        catch (Exception ex) { writeResult = $"Error: {ex.Message}"; }
+        finally { busy = false; statusMessage = ""; }
     }
 
     private async Task ApplyWrite()
     {
-        if (string.IsNullOrEmpty(_writeResult)) return;
-        await AppendEditorText(_writeResult);
+        if (string.IsNullOrEmpty(writeResult)) return;
+        await AppendEditorText(writeResult);
         UpdateWordCount();
         Save();
-        _writeResult = "";
-        _writeText = "";
-        _showWriteModal = false;
+        writeResult = "";
+        writeText = "";
+        showWriteModal = false;
         _ = PostGenerationHook();
         await FocusEditorEnd();
     }
@@ -1005,69 +1005,69 @@
     private void OnTextChanged()
     {
         UpdateWordCount();
-        _dirty = true;
-        _saved = false;
-        _saveTimer?.Dispose();
-        _saveTimer = new System.Threading.Timer(_ => { if (_dirty) InvokeAsync(Save); }, null, 2000, Timeout.Infinite);
+        dirty = true;
+        saved = false;
+        saveTimer?.Dispose();
+        saveTimer = new System.Threading.Timer(_ => { if (dirty) InvokeAsync(Save); }, null, 2000, Timeout.Infinite);
     }
 
     private void UpdateWordCount() =>
-        _wordCount = string.IsNullOrWhiteSpace(_storyText) ? 0
-            : _storyText.Split((char[])[' ', '\n', '\r', '\t'], StringSplitOptions.RemoveEmptyEntries).Length;
+        wordCount = string.IsNullOrWhiteSpace(storyText) ? 0
+            : storyText.Split((char[])[' ', '\n', '\r', '\t'], StringSplitOptions.RemoveEmptyEntries).Length;
 
     // ── Persistence ──
 
     private void Save()
     {
-        // _richHtml is kept in sync by OnRichContentChanged (JS callback on every edit)
-        _project.Html = _richHtml;
-        _project.Modified = DateTime.UtcNow;
-        Repo.SaveProject(_project);
-        _saved = true;
-        _dirty = false;
+        // richHtml is kept in sync by OnRichContentChanged (JS callback on every edit)
+        project.Html = richHtml;
+        project.Modified = DateTime.UtcNow;
+        Repo.SaveProject(project);
+        saved = true;
+        dirty = false;
     }
 
     private async Task ForceSave()
     {
         // Pull latest HTML from the rich editor before saving
-        if (_viewMode == "editor" && _richEditorInitialized)
+        if (viewMode == "editor" && richEditorInitialized)
         {
-            _richHtml = await JS.InvokeAsync<string>("writeInterop.richEditor.getHtml", "story-surface");
-            _storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.getPlainText", "story-surface");
+            richHtml = await JS.InvokeAsync<string>("writeInterop.richEditor.getHtml", "story-surface");
+            storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.getPlainText", "story-surface");
         }
         Save();
-        if (_hasExistingText && _storyText != _lastExtractedText) _ = RunExtractionAsync();
+        if (hasExistingText && storyText != lastExtractedText) _ = RunExtractionAsync();
     }
 
     // ── Editor helpers ──
 
     private async Task SetEditorText(string text)
     {
-        _storyText = text;
-        _richHtml = TextToHtml(text);
-        if (_viewMode == "editor")
-            await JS.InvokeVoidAsync("writeInterop.richEditor.setHtml", "story-surface", _richHtml);
+        storyText = text;
+        richHtml = TextToHtml(text);
+        if (viewMode == "editor")
+            await JS.InvokeVoidAsync("writeInterop.richEditor.setHtml", "story-surface", richHtml);
     }
 
     private async Task AppendEditorText(string text)
     {
         var html = TextToHtml(text);
-        if (_viewMode == "editor")
+        if (viewMode == "editor")
         {
             await JS.InvokeVoidAsync("writeInterop.richEditor.appendHtml", "story-surface", html);
-            _richHtml = await JS.InvokeAsync<string>("writeInterop.richEditor.getHtml", "story-surface");
-            _storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.getPlainText", "story-surface");
+            richHtml = await JS.InvokeAsync<string>("writeInterop.richEditor.getHtml", "story-surface");
+            storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.getPlainText", "story-surface");
         }
         else
         {
-            _richHtml += html;
-            _storyText += "\n\n" + text;
+            richHtml += html;
+            storyText += "\n\n" + text;
         }
     }
 
     private async Task FocusEditorEnd()
     {
-        if (_viewMode == "preview") return;
+        if (viewMode == "preview") return;
         await JS.InvokeVoidAsync("writeInterop.focusEnd", "story-surface");
     }
 
@@ -1093,18 +1093,18 @@
 
     private async Task ToggleLinks()
     {
-        _showLinks = !_showLinks;
-        await JS.InvokeVoidAsync("writeInterop.richEditor.toggleLinks", "story-surface", _showLinks);
+        showLinks = !showLinks;
+        await JS.InvokeVoidAsync("writeInterop.richEditor.toggleLinks", "story-surface", showLinks);
     }
 
     private async Task DoInsertImage()
     {
-        if (string.IsNullOrWhiteSpace(_imageBase64)) return;
-        var src = NormalizeImageSrc(_imageBase64);
-        await JS.InvokeVoidAsync("writeInterop.richEditor.insertImage", "story-surface", src, _imageAlt);
-        _imageBase64 = "";
-        _imageAlt = "";
-        _showImageInsert = false;
+        if (string.IsNullOrWhiteSpace(imageBase64)) return;
+        var src = NormalizeImageSrc(imageBase64);
+        await JS.InvokeVoidAsync("writeInterop.richEditor.insertImage", "story-surface", src, imageAlt);
+        imageBase64 = "";
+        imageAlt = "";
+        showImageInsert = false;
     }
 
     private static string NormalizeImageSrc(string input)
@@ -1120,22 +1120,22 @@
 
     private async Task SwitchViewMode(string mode)
     {
-        if (mode == _viewMode) return;
+        if (mode == viewMode) return;
 
-        if (_viewMode == "editor" && _richEditorInitialized)
+        if (viewMode == "editor" && richEditorInitialized)
         {
             // Save the HTML and get plain text for the print view
-            _richHtml = await JS.InvokeAsync<string>("writeInterop.richEditor.getHtml", "story-surface");
-            _storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.getPlainText", "story-surface");
-            _richEditorInitialized = false;
+            richHtml = await JS.InvokeAsync<string>("writeInterop.richEditor.getHtml", "story-surface");
+            storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.getPlainText", "story-surface");
+            richEditorInitialized = false;
         }
 
-        _viewMode = mode;
+        viewMode = mode;
 
         if (mode == "preview")
         {
             // Strip interactive elements from the rich HTML for clean book preview
-            _printHtml = BuildPrintHtml(_richHtml);
+            printHtml = BuildPrintHtml(richHtml);
         }
 
         StateHasChanged();
@@ -1182,19 +1182,19 @@
     private async Task PostGenerationHook()
     {
         // Entity linking happens automatically via the 2s input debounce in JS
-        if (_showSceneSidebar) RefreshOutline();
+        if (showSceneSidebar) RefreshOutline();
         _ = RunExtractionAsync();
 
         // Closed-loop story intelligence: update state, log events, sync knowledge
-        var pid = _project.Id;
+        var pid = project.Id;
         var beatIdx = StoryState.GetState(pid).BeatCount;
         try
         {
             // Extract what changed in the narrative (character positions, injuries, emotions)
-            await StoryState.UpdateFromTextAsync(pid, _writeResult ?? _storyText, _storyText);
+            await StoryState.UpdateFromTextAsync(pid, writeResult ?? storyText, storyText);
 
             // Record structured events (who did what, where)
-            await EventLog.ExtractAndLogAsync(pid, _writeResult ?? _storyText, beatIdx);
+            await EventLog.ExtractAndLogAsync(pid, writeResult ?? storyText, beatIdx);
 
             // Sync knowledge map (who learned what, dramatic irony tracking)
             var state = StoryState.GetState(pid);
@@ -1208,25 +1208,25 @@
 
     private void ShowEntityDetail(string entityId)
     {
-        _detailNode = Graph.GetNode(entityId);
+        detailNode = Graph.GetNode(entityId);
     }
 
     private void RefreshOutline()
     {
-        if (string.IsNullOrWhiteSpace(_storyText))
+        if (string.IsNullOrWhiteSpace(storyText))
         {
-            _outlineSections = [];
+            outlineSections = [];
             _sceneEntities = [];
             return;
         }
 
         // Split document on scene breaks (====== or <hr>)
-        var sections = _storyText.Split(["======"], StringSplitOptions.None)
+        var sections = storyText.Split(["======"], StringSplitOptions.None)
             .Select(s => s.Trim())
             .Where(s => s.Length > 0)
             .ToList();
 
-        _outlineSections = [];
+        outlineSections = [];
 
         for (int i = 0; i < sections.Count; i++)
         {
@@ -1255,14 +1255,14 @@
                 .Select(e => (id: Graph.ResolveId(e.Name) ?? "", name: e.Name, nodeType: e.NodeType))
                 .DistinctBy(e => e.name).ToList();
 
-            _outlineSections.Add(new OutlineSection(i, title, wordCount, chars, locs, items));
+            outlineSections.Add(new OutlineSection(i, title, wordCount, chars, locs, items));
         }
 
         // Also refresh the flat entity list
         RefreshSceneEntities();
 
         // Validation
-        _validationIssues = Validator.ValidateQuick(_storyText)
+        validationIssues = Validator.ValidateQuick(storyText)
             .Select(iss => $"[{iss.Category}] {iss.EntityName}: {iss.Description}").ToList();
     }
 
@@ -1276,11 +1276,11 @@
 
     private void RefreshSceneEntities()
     {
-        if (string.IsNullOrWhiteSpace(_storyText)) return;
+        if (string.IsNullOrWhiteSpace(storyText)) return;
         var session = new NarrativeSessionContext(Graph);
-        session.ScanText(_storyText);
+        session.ScanText(storyText);
         var snapshot = session.GetSnapshot();
-        var textLower = _storyText.ToLowerInvariant();
+        var textLower = storyText.ToLowerInvariant();
 
         _sceneEntities = snapshot.PrimaryEntities
             .Where(e => textLower.Contains(e.Name.ToLowerInvariant()))
@@ -1289,7 +1289,7 @@
             .OrderBy(e => e.nodeType).ThenBy(e => e.name)
             .ToList();
 
-        _validationIssues = Validator.ValidateQuick(_storyText)
+        validationIssues = Validator.ValidateQuick(storyText)
             .Select(i => $"[{i.Category}] {i.EntityName}: {i.Description}").ToList();
     }
 
@@ -1297,8 +1297,8 @@
     {
         RefreshSceneEntities();
         if (_sceneEntities.Count == 0) return;
-        _miniGraphRef?.Dispose();
-        _miniGraphRef = DotNetObjectReference.Create(this);
+        miniGraphRef?.Dispose();
+        miniGraphRef = DotNetObjectReference.Create(this);
 
         var ids = _sceneEntities.Select(e => e.id).Where(id => !string.IsNullOrEmpty(id)).ToHashSet();
         var expanded = new HashSet<string>(ids);
@@ -1313,42 +1313,42 @@
             .DistinctBy(e => (e.Source, e.Target, e.RelationType))
             .Select(e => new { source = e.Source, target = e.Target, relationType = e.RelationType, weight = e.Weight, sentiment = e.Sentiment }).ToArray();
 
-        await JS.InvokeVoidAsync("graphInterop.init", "miniGraphCanvas", _miniGraphRef, nodes, edges);
+        await JS.InvokeVoidAsync("graphInterop.init", "miniGraphCanvas", miniGraphRef, nodes, edges);
     }
 
     // ── Project management ──
 
     private void LoadProject(string id)
     {
-        if (_hasExistingText) Save();
+        if (hasExistingText) Save();
         var loaded = Repo.LoadProject(id);
         if (loaded == null) return;
-        _project = loaded;
-        _richHtml = _project.Html;
-        _storyText = _project.PlainText;
-        _error = null;
+        project = loaded;
+        richHtml = project.Html;
+        storyText = project.PlainText;
+        error = null;
         UpdateWordCount();
         Nav.NavigateTo($"/write/{id}", replace: true);
     }
 
     private string SafeFilename(string ext) =>
-        _project.Title.Replace(" ", "_").Replace("\"", "").Replace("'", "").Replace("/", "").Replace("\\", "") + ext;
+        project.Title.Replace(" ", "_").Replace("\"", "").Replace("'", "").Replace("/", "").Replace("\\", "") + ext;
 
     private async Task ExportAsTxt()
     {
-        var text = Export.ToPlainText(_project.Title, _richHtml);
+        var text = Export.ToPlainText(project.Title, richHtml);
         await JS.InvokeVoidAsync("writeInterop.downloadText", SafeFilename(".txt"), text);
     }
 
     private async Task ExportAsMd()
     {
-        var md = Export.ToMarkdown(_project.Title, _richHtml);
+        var md = Export.ToMarkdown(project.Title, richHtml);
         await JS.InvokeVoidAsync("writeInterop.downloadText", SafeFilename(".md"), md);
     }
 
     private async Task ExportAsPdf()
     {
-        var html = Export.ToPrintHtml(_project.Title, _richHtml, _project.Characters);
+        var html = Export.ToPrintHtml(project.Title, richHtml, project.Characters);
         await JS.InvokeVoidAsync("writeInterop.openPrintWindow", html);
     }
 
@@ -1357,30 +1357,30 @@
 
     private async Task ExportAudio(string format, string ext, string mime)
     {
-        if (_narrating || !_ttsAvailable || !_hasExistingText) return;
-        _narrating = true;
-        _statusMessage = $"Synthesizing {ext.TrimStart('.')} narration...";
+        if (narrating || !ttsAvailable || !hasExistingText) return;
+        narrating = true;
+        statusMessage = $"Synthesizing {ext.TrimStart('.')} narration...";
         StateHasChanged();
         try
         {
-            var ttsText = ConvertTagsForTts(_storyText);
+            var ttsText = ConvertTagsForTts(storyText);
             var audio = await TtsSvc.SynthesizeAsync(ttsText, voiceId: null, outputFormat: format, ct: default);
             var b64 = Convert.ToBase64String(audio);
             await JS.InvokeVoidAsync("writeInterop.downloadBlob", SafeFilename(ext), b64, mime);
         }
-        catch (Exception ex) { _error = $"Audio export failed: {ex.Message}"; }
-        finally { _narrating = false; _statusMessage = ""; }
+        catch (Exception ex) { error = $"Audio export failed: {ex.Message}"; }
+        finally { narrating = false; statusMessage = ""; }
     }
 
     private void NewStory()
     {
-        if (_hasExistingText) Save();
-        _project = new StoryProject();
-        _richHtml = "";
-        _storyText = "";
-        _error = null;
-        _saved = false;
-        _wordCount = 0;
+        if (hasExistingText) Save();
+        project = new StoryProject();
+        richHtml = "";
+        storyText = "";
+        error = null;
+        saved = false;
+        wordCount = 0;
         Nav.NavigateTo("/write", replace: true);
     }
 
@@ -1388,11 +1388,11 @@
 
     private async Task ReadSelected()
     {
-        _showContextMenu = false;
-        if (_narrating) return;
+        showContextMenu = false;
+        if (narrating) return;
         try
         {
-            var surfaceId = _viewMode == "editor" ? "story-surface" : "story-surface-raw";
+            var surfaceId = viewMode == "editor" ? "story-surface" : "story-surface-raw";
             var sel = await JS.InvokeAsync<SelectionInfo>("writeInterop.getSelection", surfaceId);
             if (sel != null && !string.IsNullOrWhiteSpace(sel.Text))
                 await NarrateText(sel.Text);
@@ -1402,15 +1402,15 @@
 
     private async Task ReadAll()
     {
-        _showContextMenu = false;
-        if (_narrating || !_hasExistingText) return;
-        await NarrateText(_storyText);
+        showContextMenu = false;
+        if (narrating || !hasExistingText) return;
+        await NarrateText(storyText);
     }
 
     private async Task NarrateText(string text)
     {
-        _narrating = true;
-        _audioPlayer?.SetLoading(true);
+        narrating = true;
+        audioPlayer?.SetLoading(true);
         StateHasChanged();
         try
         {
@@ -1418,50 +1418,50 @@
             var ttsText = ConvertTagsForTts(text);
 
             byte[] audio;
-            if (_ttsEngine == "elevenlabs" && await TtsSvc.IsConfiguredAsync())
+            if (ttsEngine == "elevenlabs" && await TtsSvc.IsConfiguredAsync())
                 audio = await TtsSvc.SynthesizeAsync(ttsText);
             else
                 audio = await DraftTts.SynthesizeAsync(ttsText);
-            if (_audioPlayer != null) await _audioPlayer.LoadAudioAsync(audio);
+            if (audioPlayer != null) await audioPlayer.LoadAudioAsync(audio);
         }
-        catch (Exception ex) { _audioPlayer?.SetError(ex.Message); }
-        finally { _narrating = false; }
+        catch (Exception ex) { audioPlayer?.SetError(ex.Message); }
+        finally { narrating = false; }
     }
 
     // ── Entity extraction ──
 
     private async Task RunExtractionAsync()
     {
-        if (_extracting || !_hasExistingText) return;
-        _extracting = true;
-        _graphStatus = "Scanning for entities...";
+        if (extracting || !hasExistingText) return;
+        extracting = true;
+        graphStatus = "Scanning for entities...";
         await InvokeAsync(StateHasChanged);
         try
         {
-            var storyPoint = $"story:{_project.Id}";
-            var (entities, relationships) = await EntityExtract.ExtractAndMergeAsync(_storyText, _project.Id, storyPoint);
-            _lastExtractedText = _storyText;
+            var storyPoint = $"story:{project.Id}";
+            var (entities, relationships) = await EntityExtract.ExtractAndMergeAsync(storyText, project.Id, storyPoint);
+            lastExtractedText = storyText;
 
             // Auto-detect characters
             var session = new NarrativeSessionContext(Graph);
-            session.ScanText(_storyText);
+            session.ScanText(storyText);
             var detected = session.GetSnapshot().PrimaryEntities
-                .Where(e => e.NodeType == "character" && _storyText.Contains(e.Name, StringComparison.OrdinalIgnoreCase))
+                .Where(e => e.NodeType == "character" && storyText.Contains(e.Name, StringComparison.OrdinalIgnoreCase))
                 .Select(e => e.Name);
             foreach (var name in detected)
-                if (!_project.Characters.Contains(name, StringComparer.OrdinalIgnoreCase))
-                    _project.Characters.Add(name);
+                if (!project.Characters.Contains(name, StringComparer.OrdinalIgnoreCase))
+                    project.Characters.Add(name);
 
-            _graphStatus = entities > 0 || relationships > 0
+            graphStatus = entities > 0 || relationships > 0
                 ? $"Graph: +{entities} entities, +{relationships} relationships"
                 : "Graph up to date";
         }
-        catch (Exception ex) { _graphStatus = $"Extraction failed: {ex.Message}"; }
+        catch (Exception ex) { graphStatus = $"Extraction failed: {ex.Message}"; }
         finally
         {
-            _extracting = false;
+            extracting = false;
             await InvokeAsync(StateHasChanged);
-            _ = Task.Delay(5000).ContinueWith(_ => InvokeAsync(() => { _graphStatus = null; StateHasChanged(); }));
+            _ = Task.Delay(5000).ContinueWith(_ => InvokeAsync(() => { graphStatus = null; StateHasChanged(); }));
         }
     }
 
@@ -1469,142 +1469,142 @@
 
     private async Task WhatNext()
     {
-        _showWhatNextModal = true;
-        _generatingPremises = true;
-        _conflictPremises.Clear();
+        showWhatNextModal = true;
+        generatingPremises = true;
+        conflictPremises.Clear();
         StateHasChanged();
         try
         {
-            var characters = _project.Characters.Count > 0 ? _project.Characters : ["Kyle", "Sable"];
-            var state = StoryState.GetState(_project.Id);
-            var events = EventLog.BuildRecentContext(_project.Id);
-            _conflictPremises = await Agenda.GenerateScenePremisesAsync(characters, state, events);
+            var characters = project.Characters.Count > 0 ? project.Characters : ["Kyle", "Sable"];
+            var state = StoryState.GetState(project.Id);
+            var events = EventLog.BuildRecentContext(project.Id);
+            conflictPremises = await Agenda.GenerateScenePremisesAsync(characters, state, events);
         }
-        catch (Exception ex) { _error = $"Agenda failed: {ex.Message}"; }
-        finally { _generatingPremises = false; }
+        catch (Exception ex) { error = $"Agenda failed: {ex.Message}"; }
+        finally { generatingPremises = false; }
     }
 
     private void UseConflictPremise(ConflictPremise premise)
     {
-        _showWhatNextModal = false;
-        _writeText = premise.Premise;
-        _showWriteModal = true;
+        showWhatNextModal = false;
+        writeText = premise.Premise;
+        showWriteModal = true;
     }
 
     // ── Outline ──
 
     private void ShowOutlineModal()
     {
-        _currentOutline = OutlineSvc.Load(_project.Id);
-        _showOutlineModal = true;
+        currentOutline = OutlineSvc.Load(project.Id);
+        showOutlineModal = true;
     }
 
     private async Task GenerateOutline()
     {
-        _generatingOutline = true;
+        generatingOutline = true;
         StateHasChanged();
         try
         {
-            var characters = _project.Characters.Count > 0 ? _project.Characters : ["Kyle", "Sable"];
-            _currentOutline = await OutlineSvc.GenerateOutlineAsync(
-                _outlinePremise, characters, null, _outlineTargetBeats);
-            OutlineSvc.Save(_project.Id, _currentOutline);
-            if (_project.Title is "Untitled" or "" && !string.IsNullOrEmpty(_currentOutline.Title))
-                _project.Title = _currentOutline.Title;
+            var characters = project.Characters.Count > 0 ? project.Characters : ["Kyle", "Sable"];
+            currentOutline = await OutlineSvc.GenerateOutlineAsync(
+                outlinePremise, characters, null, outlineTargetBeats);
+            OutlineSvc.Save(project.Id, currentOutline);
+            if (project.Title is "Untitled" or "" && !string.IsNullOrEmpty(currentOutline.Title))
+                project.Title = currentOutline.Title;
         }
-        catch (Exception ex) { _error = $"Outline failed: {ex.Message}"; }
-        finally { _generatingOutline = false; }
+        catch (Exception ex) { error = $"Outline failed: {ex.Message}"; }
+        finally { generatingOutline = false; }
     }
 
     private void WriteBeatFromOutline(OutlineBeat beat)
     {
-        _showOutlineModal = false;
-        _writeText = beat.Goal;
-        _showWriteModal = true;
-        OutlineSvc.MarkBeatWritten(_currentOutline!, beat.BeatIndex);
-        OutlineSvc.Save(_project.Id, _currentOutline!);
+        showOutlineModal = false;
+        writeText = beat.Goal;
+        showWriteModal = true;
+        OutlineSvc.MarkBeatWritten(currentOutline!, beat.BeatIndex);
+        OutlineSvc.Save(project.Id, currentOutline!);
     }
 
     // ── Validate ──
 
     private async Task RunValidation()
     {
-        _showValidateModal = true;
-        _validating = true;
-        _validationResults.Clear();
+        showValidateModal = true;
+        validating = true;
+        validationResults.Clear();
         StateHasChanged();
         try
         {
             var session = new NarrativeSessionContext(Graph);
-            session.ScanText(_storyText);
+            session.ScanText(storyText);
             var worldContext = session.BuildContext();
-            _validationResults = await Validator.ValidateDeepAsync(_storyText, worldContext);
+            validationResults = await Validator.ValidateDeepAsync(storyText, worldContext);
         }
-        catch (Exception ex) { _error = $"Validation failed: {ex.Message}"; }
-        finally { _validating = false; }
+        catch (Exception ex) { error = $"Validation failed: {ex.Message}"; }
+        finally { validating = false; }
     }
 
     private async Task ResolveKeepCanon(int idx)
     {
-        if (idx < 0 || idx >= _validationResults.Count) return;
-        var issue = _validationResults[idx];
+        if (idx < 0 || idx >= validationResults.Count) return;
+        var issue = validationResults[idx];
         if (string.IsNullOrEmpty(issue.StoryText) || string.IsNullOrEmpty(issue.CanonTruth)) return;
 
         // Replace the contradicting text in the editor with the canon truth
-        _richHtml = _richHtml.Replace(issue.StoryText, issue.CanonTruth);
-        _storyText = _storyText.Replace(issue.StoryText, issue.CanonTruth);
-        await JS.InvokeVoidAsync("writeInterop.richEditor.setHtml", "story-surface", _richHtml);
+        richHtml = richHtml.Replace(issue.StoryText, issue.CanonTruth);
+        storyText = storyText.Replace(issue.StoryText, issue.CanonTruth);
+        await JS.InvokeVoidAsync("writeInterop.richEditor.setHtml", "story-surface", richHtml);
         Save();
-        _validationResults.RemoveAt(idx);
+        validationResults.RemoveAt(idx);
     }
 
     private async Task ResolveWithAlternative(int idx, string altText)
     {
-        if (idx < 0 || idx >= _validationResults.Count) return;
-        var issue = _validationResults[idx];
+        if (idx < 0 || idx >= validationResults.Count) return;
+        var issue = validationResults[idx];
         if (string.IsNullOrEmpty(issue.StoryText)) return;
 
         // Replace story text with the chosen alternative
-        _richHtml = _richHtml.Replace(issue.StoryText, altText);
-        _storyText = _storyText.Replace(issue.StoryText, altText);
-        await JS.InvokeVoidAsync("writeInterop.richEditor.setHtml", "story-surface", _richHtml);
+        richHtml = richHtml.Replace(issue.StoryText, altText);
+        storyText = storyText.Replace(issue.StoryText, altText);
+        await JS.InvokeVoidAsync("writeInterop.richEditor.setHtml", "story-surface", richHtml);
         Save();
-        _validationResults.RemoveAt(idx);
+        validationResults.RemoveAt(idx);
     }
 
     private async Task GenerateMore(int idx)
     {
-        if (idx < 0 || idx >= _validationResults.Count) return;
-        _activeIssueIdx = idx;
-        _generatingMore = true;
+        if (idx < 0 || idx >= validationResults.Count) return;
+        activeIssueIdx = idx;
+        generatingMore = true;
         StateHasChanged();
         try
         {
-            var issue = _validationResults[idx];
+            var issue = validationResults[idx];
             var moreAlts = await Validator.GenerateAlternativesAsync(
-                issue.StoryText, issue.CanonTruth, _storyText);
+                issue.StoryText, issue.CanonTruth, storyText);
             issue.Alternatives.AddRange(moreAlts);
         }
         catch { }
-        finally { _generatingMore = false; }
+        finally { generatingMore = false; }
     }
 
     private void DismissIssue(int idx)
     {
-        if (idx >= 0 && idx < _validationResults.Count)
-            _validationResults.RemoveAt(idx);
-        if (!_validationResults.Any())
-            _showValidateModal = false;
+        if (idx >= 0 && idx < validationResults.Count)
+            validationResults.RemoveAt(idx);
+        if (!validationResults.Any())
+            showValidateModal = false;
     }
 
     // ── Cleanup ──
 
     public void Dispose()
     {
-        if (_dirty) { _project.Html = _richHtml; Repo.SaveProject(_project); }
-        _saveTimer?.Dispose();
-        _editorRef?.Dispose();
-        _miniGraphRef?.Dispose();
+        if (dirty) { project.Html = richHtml; Repo.SaveProject(project); }
+        saveTimer?.Dispose();
+        editorRef?.Dispose();
+        miniGraphRef?.Dispose();
     }
 
     // ── Helpers ──

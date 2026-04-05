@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -14,16 +15,18 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class EventLogService
 {
-    private readonly ILlmService _llm;
-    private readonly IPathProvider _paths;
+    private readonly ILlmService llm;
+    private readonly IPathProvider paths;
+    private readonly ILogger<EventLogService> log;
 
     // In-memory logs per project, lazy-loaded from disk
     private readonly Dictionary<string, List<StoryEvent>> _logs = new();
 
-    public EventLogService(ILlmService llm, IPathProvider paths)
+    public EventLogService(ILlmService llm, IPathProvider paths, ILogger<EventLogService> log)
     {
-        _llm = llm;
-        _paths = paths;
+        this.llm = llm;
+        this.paths = paths;
+        this.log = log;
     }
 
     /// <summary>Get all events for a story project.</summary>
@@ -63,7 +66,7 @@ public class EventLogService
 
         try
         {
-            var response = await _llm.GenerateAsync(system, newText, 0.1, 1024, ct: ct);
+            var response = await llm.GenerateAsync(system, newText, 0.1, 1024, ct: ct);
             var json = response.Trim();
             if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
             if (json.EndsWith("```")) json = json[..^3];
@@ -92,7 +95,7 @@ public class EventLogService
 
             SaveToDisk(projectId);
         }
-        catch { /* Event extraction is best-effort */ }
+        catch (Exception ex) { log.LogWarning(ex, "Event extraction failed for project={ProjectId}, beat={BeatIndex}", projectId, beatIndex); }
     }
 
     /// <summary>Add an event manually (for user-created events or system events).</summary>
@@ -176,7 +179,7 @@ public class EventLogService
             return JsonSerializer.Deserialize<List<StoryEvent>>(json,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? [];
         }
-        catch { return []; }
+        catch (Exception ex) { log.LogWarning(ex, "Failed to load event log from disk for project={ProjectId}", projectId); return []; }
     }
 
     private void SaveToDisk(string projectId)
@@ -190,7 +193,7 @@ public class EventLogService
     }
 
     private string GetLogPath(string projectId) =>
-        Path.Combine(_paths.DataRoot, "story_blocks", $"{projectId}.events.json");
+        Path.Combine(paths.DataRoot, "story_blocks", $"{projectId}.events.json");
 }
 
 /// <summary>A discrete narrative event — something that HAPPENED in the story.</summary>

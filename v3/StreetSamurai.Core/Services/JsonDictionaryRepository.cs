@@ -9,16 +9,16 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class JsonDictionaryRepository<T> where T : class
 {
-    private readonly string _filePath;
+    private readonly string filePath;
     private readonly Func<T, string> _nameSelector;
-    private readonly JsonSerializerOptions _jsonOptions;
-    private List<T>? _cache;
+    private readonly JsonSerializerOptions jsonOptions;
+    private List<T>? cache;
 
     public JsonDictionaryRepository(string filePath, Func<T, string> nameSelector)
     {
-        _filePath = filePath;
+        this.filePath = filePath;
         _nameSelector = nameSelector;
-        _jsonOptions = new JsonSerializerOptions
+        jsonOptions = new JsonSerializerOptions
         {
             WriteIndented = true,
             PropertyNameCaseInsensitive = true,
@@ -28,12 +28,12 @@ public class JsonDictionaryRepository<T> where T : class
 
     public List<T> GetAll()
     {
-        if (_cache != null) return _cache;
-        if (!File.Exists(_filePath)) return _cache = [];
+        if (cache != null) return cache;
+        if (!File.Exists(filePath)) return cache = [];
 
-        var json = File.ReadAllText(_filePath);
-        _cache = JsonSerializer.Deserialize<List<T>>(json, _jsonOptions) ?? [];
-        return _cache;
+        var json = File.ReadAllText(filePath);
+        cache = JsonSerializer.Deserialize<List<T>>(json, jsonOptions) ?? [];
+        return cache;
     }
 
     public T? GetByName(string name)
@@ -71,22 +71,22 @@ public class JsonDictionaryRepository<T> where T : class
 
     public void SaveAll(List<T> items)
     {
-        _cache = items;
+        cache = items;
         Persist(items);
     }
 
     public void Reload()
     {
-        _cache = null;
+        cache = null;
     }
 
     private void Persist(List<T> items)
     {
-        _cache = items;
-        var dir = Path.GetDirectoryName(_filePath);
+        cache = items;
+        var dir = Path.GetDirectoryName(filePath);
         if (dir != null) Directory.CreateDirectory(dir);
-        var json = JsonSerializer.Serialize(items, _jsonOptions);
-        File.WriteAllText(_filePath, json);
+        var json = JsonSerializer.Serialize(items, jsonOptions);
+        File.WriteAllText(filePath, json);
     }
 }
 
@@ -95,14 +95,14 @@ public class JsonDictionaryRepository<T> where T : class
 /// </summary>
 public class JsonSingletonRepository<T> where T : class, new()
 {
-    private readonly string _filePath;
-    private readonly JsonSerializerOptions _jsonOptions;
-    private T? _cache;
+    private readonly string filePath;
+    private readonly JsonSerializerOptions jsonOptions;
+    private T? cache;
 
     public JsonSingletonRepository(string filePath)
     {
-        _filePath = filePath;
-        _jsonOptions = new JsonSerializerOptions
+        this.filePath = filePath;
+        jsonOptions = new JsonSerializerOptions
         {
             WriteIndented = true,
             PropertyNameCaseInsensitive = true,
@@ -112,25 +112,25 @@ public class JsonSingletonRepository<T> where T : class, new()
 
     public T Get()
     {
-        if (_cache != null) return _cache;
-        if (!File.Exists(_filePath)) return _cache = new T();
+        if (cache != null) return cache;
+        if (!File.Exists(filePath)) return cache = new T();
 
-        var json = File.ReadAllText(_filePath);
-        _cache = JsonSerializer.Deserialize<T>(json, _jsonOptions) ?? new T();
-        return _cache;
+        var json = File.ReadAllText(filePath);
+        cache = JsonSerializer.Deserialize<T>(json, jsonOptions) ?? new T();
+        return cache;
     }
 
     public void Save(T item)
     {
-        _cache = item;
-        var dir = Path.GetDirectoryName(_filePath);
+        cache = item;
+        var dir = Path.GetDirectoryName(filePath);
         if (dir != null) Directory.CreateDirectory(dir);
-        var json = JsonSerializer.Serialize(item, _jsonOptions);
-        File.WriteAllText(_filePath, json);
+        var json = JsonSerializer.Serialize(item, jsonOptions);
+        File.WriteAllText(filePath, json);
     }
 
     public void Reload()
     {
-        _cache = null;
+        cache = null;
     }
 }

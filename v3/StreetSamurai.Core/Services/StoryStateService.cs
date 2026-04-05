@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -43,14 +44,16 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class StoryStateService
 {
-    private readonly ILlmService _llm;
+    private readonly ILlmService llm;
+    private readonly ILogger<StoryStateService> log;
 
     // Per-story state, keyed by story project ID
     private readonly Dictionary<string, StoryState> _states = new();
 
-    public StoryStateService(ILlmService llm)
+    public StoryStateService(ILlmService llm, ILogger<StoryStateService> log)
     {
-        _llm = llm;
+        this.llm = llm;
+        this.log = log;
     }
 
     /// <summary>Get or create state for a story project.</summary>
@@ -102,7 +105,7 @@ public class StoryStateService
 
         try
         {
-            var response = await _llm.GenerateAsync(system, $"NEW TEXT:\n{newText}", 0.1, 1024, ct: ct);
+            var response = await llm.GenerateAsync(system, $"NEW TEXT:\n{newText}", 0.1, 1024, ct: ct);
             var json = response.Trim();
             if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
             if (json.EndsWith("```")) json = json[..^3];
@@ -113,7 +116,7 @@ public class StoryStateService
             if (update != null)
                 ApplyUpdate(state, update);
         }
-        catch { /* State extraction is best-effort — don't break generation if it fails */ }
+        catch (Exception ex) { log.LogWarning(ex, "State extraction failed for project={ProjectId}", projectId); }
     }
 
     /// <summary>

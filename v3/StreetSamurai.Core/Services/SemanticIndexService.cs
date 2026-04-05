@@ -10,15 +10,15 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class SemanticIndexService
 {
-    private readonly WorldGraphService _graph;
+    private readonly WorldGraphService graph;
 
     // TF-IDF vectors: nodeId -> (term -> weight)
     private Dictionary<string, Dictionary<string, double>> _vectors = new();
     // Inverse document frequency per term
     private Dictionary<string, double> _idf = new();
     // Total indexed documents
-    private int _docCount;
-    private bool _built;
+    private int docCount;
+    private bool built;
 
     private static readonly HashSet<string> StopWords = new(StringComparer.OrdinalIgnoreCase)
     {
@@ -36,11 +36,11 @@ public class SemanticIndexService
 
     public SemanticIndexService(WorldGraphService graph)
     {
-        _graph = graph;
+        this.graph = graph;
     }
 
-    public int IndexedCount => _docCount;
-    public bool IsBuilt => _built;
+    public int IndexedCount => docCount;
+    public bool IsBuilt => built;
 
     /// <summary>
     /// Build or rebuild the full TF-IDF index from all graph nodes.
@@ -50,7 +50,7 @@ public class SemanticIndexService
         _vectors.Clear();
         _idf.Clear();
 
-        var allNodes = _graph.AllNodes();
+        var allNodes = graph.AllNodes();
         var documents = new Dictionary<string, List<string>>(); // nodeId -> tokens
 
         // Build documents from node properties
@@ -69,7 +69,7 @@ public class SemanticIndexService
             }
 
             // Include edge descriptions for richer context
-            var edges = _graph.GetAllEdges(node.Id);
+            var edges = graph.GetAllEdges(node.Id);
             foreach (var edge in edges)
             {
                 if (!string.IsNullOrWhiteSpace(edge.Description))
@@ -82,8 +82,8 @@ public class SemanticIndexService
                 documents[node.Id] = tokens;
         }
 
-        _docCount = documents.Count;
-        if (_docCount == 0) { _built = true; return; }
+        docCount = documents.Count;
+        if (docCount == 0) { built = true; return; }
 
         // Compute document frequency per term
         var df = new Dictionary<string, int>();
@@ -98,7 +98,7 @@ public class SemanticIndexService
         // Compute IDF
         foreach (var (term, count) in df)
         {
-            _idf[term] = Math.Log((double)_docCount / (1 + count));
+            _idf[term] = Math.Log((double)docCount / (1 + count));
         }
 
         // Compute TF-IDF vectors
@@ -118,7 +118,7 @@ public class SemanticIndexService
             _vectors[nodeId] = vector;
         }
 
-        _built = true;
+        built = true;
     }
 
     /// <summary>
@@ -126,16 +126,16 @@ public class SemanticIndexService
     /// </summary>
     public void UpdateNode(string nodeId)
     {
-        if (!_built) { RebuildIndex(); return; }
+        if (!built) { RebuildIndex(); return; }
 
-        var node = _graph.GetNode(nodeId);
+        var node = graph.GetNode(nodeId);
         if (node == null) { _vectors.Remove(nodeId); return; }
 
         var text = new System.Text.StringBuilder();
         text.Append(node.Name).Append(' ').Append(node.NodeType).Append(' ');
         foreach (var (_, value) in node.Properties)
             if (!string.IsNullOrWhiteSpace(value)) text.Append(value).Append(' ');
-        foreach (var edge in _graph.GetAllEdges(nodeId))
+        foreach (var edge in graph.GetAllEdges(nodeId))
         {
             if (!string.IsNullOrWhiteSpace(edge.Description)) text.Append(edge.Description).Append(' ');
             text.Append(edge.RelationType).Append(' ');
@@ -163,7 +163,7 @@ public class SemanticIndexService
     /// </summary>
     public List<(string nodeId, double score)> Search(string query, int topK = 10)
     {
-        if (!_built) RebuildIndex();
+        if (!built) RebuildIndex();
 
         var queryTokens = Tokenize(query);
         if (queryTokens.Count == 0) return [];

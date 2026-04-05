@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models.Graph;
 
@@ -12,13 +13,15 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class ValidationService
 {
-    private readonly WorldGraphService _graph;
-    private readonly ILlmService _llm;
+    private readonly WorldGraphService graph;
+    private readonly ILlmService llm;
+    private readonly ILogger<ValidationService> log;
 
-    public ValidationService(WorldGraphService graph, ILlmService llm)
+    public ValidationService(WorldGraphService graph, ILlmService llm, ILogger<ValidationService> log)
     {
-        _graph = graph;
-        _llm = llm;
+        this.graph = graph;
+        this.llm = llm;
+        this.log = log;
     }
 
     /// <summary>
@@ -28,11 +31,11 @@ public class ValidationService
     /// </summary>
     public List<CanonIssue> ValidateQuick(string generatedText)
     {
-        _graph.EnsureLoaded();
+        graph.EnsureLoaded();
         var issues = new List<CanonIssue>();
         var textLower = generatedText.ToLowerInvariant();
 
-        foreach (var node in _graph.AllNodes())
+        foreach (var node in graph.AllNodes())
         {
             if (node.NodeType != EntityTypes.Character) continue;
             if (!textLower.Contains(node.Name.ToLowerInvariant())) continue;
@@ -125,7 +128,7 @@ public class ValidationService
             Return ONLY the JSON array, nothing else.
             """;
 
-        var response = await _llm.GenerateAsync(system, generatedText, 0.1, 2048, ct: ct);
+        var response = await llm.GenerateAsync(system, generatedText, 0.1, 2048, ct: ct);
 
         try
         {
@@ -172,7 +175,7 @@ public class ValidationService
             Return ONLY a JSON array of 3 strings. Nothing else.
             """;
 
-        var response = await _llm.GenerateAsync(system, $"Rewrite this: {storyText}", 0.7, 512, ct: ct);
+        var response = await llm.GenerateAsync(system, $"Rewrite this: {storyText}", 0.7, 512, ct: ct);
         try
         {
             var json = response.Trim();
@@ -180,7 +183,7 @@ public class ValidationService
             if (json.EndsWith("```")) json = json[..^3];
             return System.Text.Json.JsonSerializer.Deserialize<List<string>>(json.Trim()) ?? [];
         }
-        catch { return []; }
+        catch (Exception ex) { log.LogWarning(ex, "Validation extraction failed"); return []; }
     }
 
     private static List<string> GetWrongPronouns(string correctPronouns)
