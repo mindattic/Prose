@@ -31,6 +31,10 @@ public class StoryProject
     [JsonPropertyName("modified")]
     public DateTime Modified { get; set; } = DateTime.UtcNow;
 
+    [JsonPropertyName("is_archived")]
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+    public bool IsArchived { get; set; }
+
     /// <summary>Plain text derived from HTML — for search, word count, entity detection.</summary>
     [JsonIgnore]
     public string PlainText => System.Text.RegularExpressions.Regex.Replace(Html, "<[^>]+>", " ").Trim();

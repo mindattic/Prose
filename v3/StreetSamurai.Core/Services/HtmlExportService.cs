@@ -12,10 +12,12 @@ namespace StreetSamurai.Core.Services;
 public class HtmlExportService
 {
     private readonly IPathProvider paths;
+    private readonly SettingsService settings;
 
-    public HtmlExportService(IPathProvider paths)
+    public HtmlExportService(IPathProvider paths, SettingsService settings)
     {
         this.paths = paths;
+        this.settings = settings;
     }
 
     public string ExportDir => Path.Combine(paths.DataRoot, "exports");
@@ -212,7 +214,7 @@ public class HtmlExportService
         return sb.ToString();
     }
 
-    private static string BuildPage(string title, string body, bool includeFilter)
+    private string BuildPage(string title, string body, bool includeFilter)
     {
         var filterHtml = includeFilter ? @"
 <div class=""filter-bar"" id=""filterBar"">
@@ -316,7 +318,7 @@ h3 {{ display: flex; align-items: center; flex-wrap: nowrap; }}
 <body id=""top"">
 <div class=""header"">
 <h1>{Esc(title)}</h1>
-<small>Exported from StreetSamurai Canon Engine — {DateTime.Now:yyyy-MM-dd HH:mm}</small>
+<small>Exported from StreetSamurai Canon Engine — {settings.FormatTimestamp(DateTime.Now)}</small>
 </div>
 {filterHtml}
 {body}

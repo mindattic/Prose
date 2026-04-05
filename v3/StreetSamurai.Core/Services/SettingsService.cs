@@ -6,6 +6,7 @@ namespace StreetSamurai.Core.Services;
 public class SettingsService
 {
     private readonly string settingsPath;
+    private readonly string defaultsPath;
     private SettingsData data = new();
 
     public SettingsService()
@@ -15,6 +16,7 @@ public class SettingsService
             "MindAttic", "StreetSamurai");
         Directory.CreateDirectory(appData);
         settingsPath = Path.Combine(appData, "Settings.json");
+        defaultsPath = Path.Combine(appData, "Defaults.json");
         Load();
 
         // Auto-detect canon root if not set or current path has insufficient data
@@ -106,50 +108,50 @@ public class SettingsService
     public string MapService { get => data.MapService; set { data.MapService = value; Save(); } }
     public string MapAppId { get => data.MapAppId; set { data.MapAppId = value; Save(); } }
     public string MapApiKey { get => data.MapApiKey; set { data.MapApiKey = value; Save(); } }
-    public string TimeFormat { get => data.TimeFormat; set { data.TimeFormat = value; Save(); } }
+    public string TimestampFormat { get => data.TimestampFormat; set { data.TimestampFormat = value; Save(); } }
     public string TimezoneId { get => data.TimezoneId; set { data.TimezoneId = value; Save(); } }
     public string FontFamily { get => data.FontFamily; set { data.FontFamily = value; Save(); } }
 
-    /// <summary>Formats a UTC or local DateTime according to the user's configured time format and timezone.</summary>
-    public string FormatTimestamp(DateTime timestamp, bool includeMilliseconds = true)
+    /// <summary>All supported timestamp formats, keyed by .NET format string with example display values.</summary>
+    public static readonly (string Format, string Example)[] TimestampFormats =
+    [
+        ("yyyy-MM-dd hh:mm:sstt",   "2026-04-05 02:01:23PM"),
+        ("yyyy-MM-dd hh:mmtt",      "2026-04-05 02:01PM"),
+        ("yyyy-MM-dd HH:mm:ss",     "2026-04-05 14:01:23"),
+        ("yyyy-MM-dd HH:mm",        "2026-04-05 14:01"),
+        ("MM/dd/yyyy hh:mm:sstt",   "04/05/2026 02:01:23PM"),
+        ("MM/dd/yyyy HH:mm:ss",     "04/05/2026 14:01:23"),
+        ("dd MMM yyyy hh:mm:sstt",  "05 Apr 2026 02:01:23PM"),
+        ("dd MMM yyyy HH:mm:ss",    "05 Apr 2026 14:01:23"),
+    ];
+
+    /// <summary>Formats a UTC or local DateTime according to the user's configured timestamp format and timezone.</summary>
+    public string FormatTimestamp(DateTime timestamp)
     {
         var tz = TimeZoneInfo.FindSystemTimeZoneById(TimezoneId);
         var converted = TimeZoneInfo.ConvertTime(timestamp, tz);
-        var pattern = TimeFormat == "12h"
-            ? (includeMilliseconds ? "h:mm:ss.fff tt" : "h:mm:ss tt")
-            : (includeMilliseconds ? "HH:mm:ss.fff" : "HH:mm:ss");
-        return converted.ToString(pattern);
+        return converted.ToString(TimestampFormat);
     }
 
-    /// <summary>Reset non-secret settings to defaults. Preserves API keys and canon root.</summary>
+    /// <summary>Snapshot current settings as the default baseline for future resets.</summary>
+    public void SaveAsDefaults()
+    {
+        var json = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
+        File.WriteAllText(defaultsPath, json);
+    }
+
+    /// <summary>Reset all settings to the saved defaults snapshot (includes secrets).</summary>
     public void ResetToDefaults()
     {
-        var keys = new
+        if (File.Exists(defaultsPath))
         {
-            data.ApiKey, data.OpenAiApiKey, data.ElevenLabsApiKey,
-            data.ElevenLabsVoiceId, data.NarratorVoiceName, data.CanonRootPath,
-            data.GeminiApiKey, data.DeepSeekApiKey, data.MistralApiKey,
-            data.GrokApiKey, data.GroqApiKey, data.TogetherApiKey,
-            data.OpenRouterApiKey, data.FireworksApiKey, data.CohereApiKey,
-        };
-        data = new SettingsData
+            var json = File.ReadAllText(defaultsPath);
+            data = JsonSerializer.Deserialize<SettingsData>(json) ?? new();
+        }
+        else
         {
-            ApiKey = keys.ApiKey,
-            OpenAiApiKey = keys.OpenAiApiKey,
-            ElevenLabsApiKey = keys.ElevenLabsApiKey,
-            ElevenLabsVoiceId = keys.ElevenLabsVoiceId,
-            NarratorVoiceName = keys.NarratorVoiceName,
-            CanonRootPath = keys.CanonRootPath,
-            GeminiApiKey = keys.GeminiApiKey,
-            DeepSeekApiKey = keys.DeepSeekApiKey,
-            MistralApiKey = keys.MistralApiKey,
-            GrokApiKey = keys.GrokApiKey,
-            GroqApiKey = keys.GroqApiKey,
-            TogetherApiKey = keys.TogetherApiKey,
-            OpenRouterApiKey = keys.OpenRouterApiKey,
-            FireworksApiKey = keys.FireworksApiKey,
-            CohereApiKey = keys.CohereApiKey,
-        };
+            data = new SettingsData();
+        }
         Save();
     }
 
@@ -209,7 +211,7 @@ public class SettingsService
         public string MapService { get; set; } = "here";
         public string MapAppId { get; set; } = "rI9gpj49oW5SGZ8EsAe9";
         public string MapApiKey { get; set; } = "CIPFwnEI3bF6whfMT-1yL0kFa6wq1G9v8cBudCXdLE0";
-        public string TimeFormat { get; set; } = "12h";
+        public string TimestampFormat { get; set; } = "yyyy-MM-dd hh:mm:sstt";
         public string TimezoneId { get; set; } = "Central Standard Time";
         public string FontFamily { get; set; } = "Outfit";
     }

@@ -26,6 +26,9 @@
                 @if (rebuilding) { <span class="spinner-border spinner-border-sm me-1"></span> }
                 <i class="bi bi-diagram-3"></i> Rebuild Graph
             </button>
+            <button class="btn btn-sm btn-outline-info" @onclick="SaveDefaults">
+                <i class="bi bi-bookmark-star"></i> Save as Defaults
+            </button>
             <button class="btn btn-sm btn-outline-secondary" @onclick="() => confirmReset = true">
                 <i class="bi bi-arrow-counterclockwise"></i> Reset to Defaults
             </button>
@@ -66,11 +69,13 @@
                     </div>
                 </div>
                 <div class="row g-3 mt-1">
-                    <div class="col-md-2">
-                        <label class="form-label text-muted">Time Format</label>
-                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.TimeFormat">
-                            <option value="12h">12-hour (AM/PM)</option>
-                            <option value="24h">24-hour</option>
+                    <div class="col-md-3">
+                        <label class="form-label text-muted">Timestamp Format</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.TimestampFormat">
+                            @foreach (var (fmt, example) in StreetSamurai.Core.Services.SettingsService.TimestampFormats)
+                            {
+                                <option value="@fmt">@example</option>
+                            }
                         </select>
                     </div>
                     <div class="col-md-3">
@@ -112,11 +117,11 @@
                 <div class="row g-3">
                     <div class="col-md-6">
                         <label class="form-label text-muted">API Key</label>
-                        <input type="password" class="form-control bg-dark text-light border-secondary" placeholder="sk-ant-..." @bind="SettingsSvc.ApiKey" @bind:event="onchange" />
+                        <input type="password" class="form-control bg-dark text-light border-secondary" placeholder="sk-ant-..." @bind="SettingsSvc.ApiKey" @bind:event="onchange" @bind:after="RetestAnthropic" />
                     </div>
                     <div class="col-md-6">
                         <label class="form-label text-muted">Model</label>
-                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.Model">
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.Model" @bind:after="RetestAnthropic">
                             <option value="claude-sonnet-4-6">Claude Sonnet 4.6</option>
                             <option value="claude-opus-4-6">Claude Opus 4.6</option>
                             <option value="claude-haiku-4-5-20251001">Claude Haiku 4.5</option>
@@ -136,11 +141,11 @@
                 <div class="row g-3">
                     <div class="col-md-6">
                         <label class="form-label text-muted">API Key</label>
-                        <input type="password" class="form-control bg-dark text-light border-secondary" placeholder="sk-..." @bind="SettingsSvc.OpenAiApiKey" @bind:event="onchange" />
+                        <input type="password" class="form-control bg-dark text-light border-secondary" placeholder="sk-..." @bind="SettingsSvc.OpenAiApiKey" @bind:event="onchange" @bind:after="RetestOpenai" />
                     </div>
                     <div class="col-md-6">
                         <label class="form-label text-muted">Model</label>
-                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.OpenAiModel">
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.OpenAiModel" @bind:after="RetestOpenai">
                             <option value="gpt-4.1-mini">GPT-4.1 Mini</option>
                             <option value="gpt-4.1">GPT-4.1</option>
                             <option value="gpt-4o">GPT-4o</option>
@@ -156,9 +161,9 @@
             <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Google Gemini <a href="https://aistudio.google.com/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("gemini")</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="AIza..." @bind="SettingsSvc.GeminiApiKey" @bind:event="onchange" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="AIza..." @bind="SettingsSvc.GeminiApiKey" @bind:event="onchange" @bind:after="RetestGemini" /></div>
                     <div class="col-md-6"><label class="form-label text-muted">Model</label>
-                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.GeminiModel">
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.GeminiModel" @bind:after="RetestGemini">
                             <option value="gemini-2.5-pro">Gemini 2.5 Pro</option>
                             <option value="gemini-2.5-flash">Gemini 2.5 Flash</option>
                             <option value="gemini-2.0-flash">Gemini 2.0 Flash</option>
@@ -172,9 +177,9 @@
             <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>DeepSeek <a href="https://platform.deepseek.com/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("deepseek")</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="sk-..." @bind="SettingsSvc.DeepSeekApiKey" @bind:event="onchange" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="sk-..." @bind="SettingsSvc.DeepSeekApiKey" @bind:event="onchange" @bind:after="RetestDeepseek" /></div>
                     <div class="col-md-6"><label class="form-label text-muted">Model</label>
-                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.DeepSeekModel">
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.DeepSeekModel" @bind:after="RetestDeepseek">
                             <option value="deepseek-chat">DeepSeek Chat (V3)</option>
                             <option value="deepseek-reasoner">DeepSeek Reasoner (R1)</option>
                         </select></div>
@@ -187,9 +192,9 @@
             <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Mistral <a href="https://console.mistral.ai/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("mistral")</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.MistralApiKey" @bind:event="onchange" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.MistralApiKey" @bind:event="onchange" @bind:after="RetestMistral" /></div>
                     <div class="col-md-6"><label class="form-label text-muted">Model</label>
-                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.MistralModel">
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.MistralModel" @bind:after="RetestMistral">
                             <option value="mistral-large-latest">Mistral Large</option>
                             <option value="mistral-medium-latest">Mistral Medium</option>
                             <option value="mistral-small-latest">Mistral Small</option>
@@ -204,9 +209,9 @@
             <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Grok (xAI) <a href="https://console.x.ai/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("grok")</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="xai-..." @bind="SettingsSvc.GrokApiKey" @bind:event="onchange" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="xai-..." @bind="SettingsSvc.GrokApiKey" @bind:event="onchange" @bind:after="RetestGrok" /></div>
                     <div class="col-md-6"><label class="form-label text-muted">Model</label>
-                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.GrokModel">
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.GrokModel" @bind:after="RetestGrok">
                             <option value="grok-3">Grok 3</option>
                             <option value="grok-3-mini">Grok 3 Mini</option>
                         </select></div>
@@ -219,9 +224,9 @@
             <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Groq <a href="https://console.groq.com/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("groq")</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="gsk_..." @bind="SettingsSvc.GroqApiKey" @bind:event="onchange" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="gsk_..." @bind="SettingsSvc.GroqApiKey" @bind:event="onchange" @bind:after="RetestGroq" /></div>
                     <div class="col-md-6"><label class="form-label text-muted">Model</label>
-                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.GroqModel">
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.GroqModel" @bind:after="RetestGroq">
                             <option value="llama-3.3-70b-versatile">Llama 3.3 70B</option>
                             <option value="llama-3.1-8b-instant">Llama 3.1 8B</option>
                             <option value="mixtral-8x7b-32768">Mixtral 8x7B</option>
@@ -236,9 +241,9 @@
             <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Together AI <a href="https://api.together.ai/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("together")</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.TogetherApiKey" @bind:event="onchange" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.TogetherApiKey" @bind:event="onchange" @bind:after="RetestTogether" /></div>
                     <div class="col-md-6"><label class="form-label text-muted">Model</label>
-                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.TogetherModel">
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.TogetherModel" @bind:after="RetestTogether">
                             <option value="meta-llama/Llama-3.3-70B-Instruct-Turbo">Llama 3.3 70B Turbo</option>
                             <option value="Qwen/Qwen2.5-72B-Instruct-Turbo">Qwen 2.5 72B Turbo</option>
                             <option value="deepseek-ai/DeepSeek-R1">DeepSeek R1</option>
@@ -252,9 +257,9 @@
             <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>OpenRouter <a href="https://openrouter.ai/settings/keys" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("openrouter")</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="sk-or-..." @bind="SettingsSvc.OpenRouterApiKey" @bind:event="onchange" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="sk-or-..." @bind="SettingsSvc.OpenRouterApiKey" @bind:event="onchange" @bind:after="RetestOpenrouter" /></div>
                     <div class="col-md-6"><label class="form-label text-muted">Model</label>
-                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.OpenRouterModel">
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.OpenRouterModel" @bind:after="RetestOpenrouter">
                             <option value="anthropic/claude-sonnet-4">Claude Sonnet 4</option>
                             <option value="google/gemini-2.5-pro">Gemini 2.5 Pro</option>
                             <option value="openai/gpt-4.1">GPT-4.1</option>
@@ -269,9 +274,9 @@
             <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Fireworks AI <a href="https://fireworks.ai/account/api-keys" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("fireworks")</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="fw_..." @bind="SettingsSvc.FireworksApiKey" @bind:event="onchange" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" placeholder="fw_..." @bind="SettingsSvc.FireworksApiKey" @bind:event="onchange" @bind:after="RetestFireworks" /></div>
                     <div class="col-md-6"><label class="form-label text-muted">Model</label>
-                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.FireworksModel">
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.FireworksModel" @bind:after="RetestFireworks">
                             <option value="accounts/fireworks/models/llama-v3p3-70b-instruct">Llama 3.3 70B</option>
                             <option value="accounts/fireworks/models/qwen2p5-72b-instruct">Qwen 2.5 72B</option>
                         </select></div>
@@ -284,9 +289,9 @@
             <div class="card-header text-muted d-flex justify-content-between align-items-center"><span>Cohere <a href="https://dashboard.cohere.com/" target="_blank" class="text-muted" style="font-size:0.7rem;"><i class="bi bi-box-arrow-up-right"></i></a></span> @StatusBadge("cohere")</div>
             <div class="card-body">
                 <div class="row g-3">
-                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.CohereApiKey" @bind:event="onchange" /></div>
+                    <div class="col-md-6"><label class="form-label text-muted">API Key</label><input type="password" class="form-control bg-dark text-light border-secondary" @bind="SettingsSvc.CohereApiKey" @bind:event="onchange" @bind:after="RetestCohere" /></div>
                     <div class="col-md-6"><label class="form-label text-muted">Model</label>
-                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.CohereModel">
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.CohereModel" @bind:after="RetestCohere">
                             <option value="command-r-plus">Command R+</option>
                             <option value="command-r">Command R</option>
                             <option value="command-a-03-2025">Command A</option>
@@ -501,36 +506,55 @@
         _ = TestAllProviders();
     }
 
+    private (string key, string endpoint, string authHeader, string body) GetTestConfig(string name) => name switch
+    {
+        "anthropic" => (SettingsSvc.ApiKey, "https://api.anthropic.com/v1/messages",
+            "x-api-key", """{"model":"claude-haiku-4-5-20251001","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+        "openai" => (SettingsSvc.OpenAiApiKey, "https://api.openai.com/v1/chat/completions",
+            "Bearer", """{"model":"gpt-4.1-mini","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+        "gemini" => (SettingsSvc.GeminiApiKey, "", "", ""),
+        "deepseek" => (SettingsSvc.DeepSeekApiKey, "https://api.deepseek.com/chat/completions",
+            "Bearer", """{"model":"deepseek-chat","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+        "mistral" => (SettingsSvc.MistralApiKey, "https://api.mistral.ai/v1/chat/completions",
+            "Bearer", """{"model":"mistral-small-latest","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+        "grok" => (SettingsSvc.GrokApiKey, "https://api.x.ai/v1/chat/completions",
+            "Bearer", """{"model":"grok-3-mini","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+        "groq" => (SettingsSvc.GroqApiKey, "https://api.groq.com/openai/v1/chat/completions",
+            "Bearer", """{"model":"llama-3.1-8b-instant","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+        "together" => (SettingsSvc.TogetherApiKey, "https://api.together.xyz/v1/chat/completions",
+            "Bearer", """{"model":"meta-llama/Llama-3.3-70B-Instruct-Turbo","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+        "openrouter" => (SettingsSvc.OpenRouterApiKey, "https://openrouter.ai/api/v1/chat/completions",
+            "Bearer", """{"model":"meta-llama/llama-3.3-70b-instruct","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+        "fireworks" => (SettingsSvc.FireworksApiKey, "https://api.fireworks.ai/inference/v1/chat/completions",
+            "Bearer", """{"model":"accounts/fireworks/models/llama-v3p3-70b-instruct","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+        "cohere" => (SettingsSvc.CohereApiKey, "https://api.cohere.com/v2/chat",
+            "Bearer", """{"model":"command-r","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
+        _ => ("", "", "", ""),
+    };
+
     private async Task TestAllProviders()
     {
-        var tests = new (string name, string key, string endpoint, string authHeader, string body)[]
-        {
-            ("anthropic", SettingsSvc.ApiKey, "https://api.anthropic.com/v1/messages",
-                "x-api-key", """{"model":"claude-haiku-4-5-20251001","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
-            ("openai", SettingsSvc.OpenAiApiKey, "https://api.openai.com/v1/chat/completions",
-                "Bearer", """{"model":"gpt-4.1-mini","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
-            ("gemini", SettingsSvc.GeminiApiKey, "", "", ""),
-            ("deepseek", SettingsSvc.DeepSeekApiKey, "https://api.deepseek.com/chat/completions",
-                "Bearer", """{"model":"deepseek-chat","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
-            ("mistral", SettingsSvc.MistralApiKey, "https://api.mistral.ai/v1/chat/completions",
-                "Bearer", """{"model":"mistral-small-latest","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
-            ("grok", SettingsSvc.GrokApiKey, "https://api.x.ai/v1/chat/completions",
-                "Bearer", """{"model":"grok-3-mini","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
-            ("groq", SettingsSvc.GroqApiKey, "https://api.groq.com/openai/v1/chat/completions",
-                "Bearer", """{"model":"llama-3.1-8b-instant","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
-            ("together", SettingsSvc.TogetherApiKey, "https://api.together.xyz/v1/chat/completions",
-                "Bearer", """{"model":"meta-llama/Llama-3.3-70B-Instruct-Turbo","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
-            ("openrouter", SettingsSvc.OpenRouterApiKey, "https://openrouter.ai/api/v1/chat/completions",
-                "Bearer", """{"model":"meta-llama/llama-3.3-70b-instruct","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
-            ("fireworks", SettingsSvc.FireworksApiKey, "https://api.fireworks.ai/inference/v1/chat/completions",
-                "Bearer", """{"model":"accounts/fireworks/models/llama-v3p3-70b-instruct","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
-            ("cohere", SettingsSvc.CohereApiKey, "https://api.cohere.com/v2/chat",
-                "Bearer", """{"model":"command-r","max_tokens":1,"messages":[{"role":"user","content":"hi"}]}"""),
-        };
-
-        var tasks = tests.Select(t => TestProvider(t.name, t.key, t.endpoint, t.authHeader, t.body));
-        await Task.WhenAll(tasks);
+        var names = new[] { "anthropic", "openai", "gemini", "deepseek", "mistral", "grok", "groq", "together", "openrouter", "fireworks", "cohere" };
+        await Task.WhenAll(names.Select(n => { var c = GetTestConfig(n); return TestProvider(n, c.key, c.endpoint, c.authHeader, c.body); }));
     }
+
+    private async Task RetestProvider(string name)
+    {
+        var c = GetTestConfig(name);
+        await TestProvider(name, c.key, c.endpoint, c.authHeader, c.body);
+    }
+
+    private Task RetestAnthropic() => RetestProvider("anthropic");
+    private Task RetestOpenai() => RetestProvider("openai");
+    private Task RetestGemini() => RetestProvider("gemini");
+    private Task RetestDeepseek() => RetestProvider("deepseek");
+    private Task RetestMistral() => RetestProvider("mistral");
+    private Task RetestGrok() => RetestProvider("grok");
+    private Task RetestGroq() => RetestProvider("groq");
+    private Task RetestTogether() => RetestProvider("together");
+    private Task RetestOpenrouter() => RetestProvider("openrouter");
+    private Task RetestFireworks() => RetestProvider("fireworks");
+    private Task RetestCohere() => RetestProvider("cohere");
 
     private async Task TestProvider(string name, string key, string endpoint, string authHeader, string body)
     {
@@ -616,7 +640,9 @@
 
     private void SaveSettings() { _ = SettingsSvc.TtsModel; }
 
-    private void DoReset() { SettingsSvc.ResetToDefaults(); confirmReset = false; }
+    private void SaveDefaults() { SettingsSvc.SaveAsDefaults(); }
+
+    private async Task DoReset() { SettingsSvc.ResetToDefaults(); confirmReset = false; await TestAllProviders(); }
 
     private async Task RebuildGraph()
     {
