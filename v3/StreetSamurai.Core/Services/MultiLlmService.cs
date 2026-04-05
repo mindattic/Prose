@@ -130,9 +130,9 @@ public class MultiLlmService
             var consensus = await CallProviderAsync("claude", judgeSystem, judgeUser, ct);
             return (consensus, votes);
         }
-        catch
+        catch (Exception ex)
         {
-            // Fallback: just return the first response
+            Serilog.Log.Warning(ex, "Consensus judge call failed, returning first response as fallback");
             return (votes.Values.First(), votes);
         }
     }

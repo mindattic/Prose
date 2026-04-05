@@ -72,7 +72,7 @@ public class EventLogService
             if (json.EndsWith("```")) json = json[..^3];
 
             var rawEvents = JsonSerializer.Deserialize<List<RawEvent>>(json.Trim(),
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                JsonDefaults.LlmParsing);
 
             var events = GetEvents(projectId);
             foreach (var raw in rawEvents ?? [])
@@ -177,7 +177,7 @@ public class EventLogService
         {
             var json = File.ReadAllText(path);
             return JsonSerializer.Deserialize<List<StoryEvent>>(json,
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? [];
+                JsonDefaults.LlmParsing) ?? [];
         }
         catch (Exception ex) { log.LogWarning(ex, "Failed to load event log from disk for project={ProjectId}", projectId); return []; }
     }
@@ -188,7 +188,7 @@ public class EventLogService
         var dir = Path.GetDirectoryName(path);
         if (dir != null) Directory.CreateDirectory(dir);
         var json = JsonSerializer.Serialize(_logs.GetValueOrDefault(projectId, []),
-            new JsonSerializerOptions { WriteIndented = true });
+            JsonDefaults.Indented);
         File.WriteAllText(path, json);
     }
 

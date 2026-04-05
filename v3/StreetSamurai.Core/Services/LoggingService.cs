@@ -59,7 +59,7 @@ public class LoggingService
                     results.Add(entry);
                 }
             }
-            catch { /* Skip unreadable log files */ }
+            catch (Exception ex) { Serilog.Log.Warning(ex, "Skipping unreadable log file"); }
         }
 
         return results.OrderByDescending(e => e.Timestamp).Take(request.MaxResults).ToList();

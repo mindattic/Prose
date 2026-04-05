@@ -20,7 +20,7 @@ v3/
   StreetSamurai.Shared/        All Razor pages and components shared by both hosts.
   StreetSamurai.Blazor/        Blazor Server web host (.NET 10).
   StreetSamurai.MAUI/          .NET MAUI desktop host.
-  StreetSamurai.UnitTests/     99 tests across 10 test classes.
+  StreetSamurai.UnitTests/     200 tests across 17 test classes.
   generate_world.js            Node.js world content generation pipeline.
   RebuildCanon/                Legacy canon migration tooling.
 ```
@@ -33,6 +33,15 @@ v3/
 - Microsoft.Extensions.Http 10.0.5 -- HttpClient factory
 
 Both hosts call `services.AddStreetSamuraiServices()` and receive the identical singleton service graph. Both hosts are kept in sync: routes, CSS, JS, and imports.
+
+### Architecture Patterns
+
+- **Debounced settings persistence** -- `SettingsService` batches property changes with a 500ms debounce timer, reducing disk I/O when multiple settings change in rapid succession (e.g., slider controls). Call `Flush()` to force an immediate write.
+- **Centralized JSON options** -- `JsonDefaults` provides three shared `JsonSerializerOptions` instances: `LlmParsing` (case-insensitive for LLM responses), `Indented` (for file persistence), and `SnakeCase` (for Claude API format). All services use these instead of creating ad-hoc options.
+- **Interface-backed core services** -- `IDatabaseService`, `IWorldGraphService`, and `IStoryDirectorService` interfaces enable mocking and test isolation. Registered as forwarding singletons alongside their concrete implementations.
+- **Structured error logging** -- All catch blocks log warnings via Serilog with context (file path, entity name, operation) before falling back to default behavior. No silent exception swallowing.
+- **Configurable timestamp format** -- Log files and UI timestamps use a user-selected format from `SettingsService.TimestampFormats`, stored as a .NET format string with example-based dropdown labels.
+- **CSS sync** -- Both Blazor and MAUI hosts share identical `app.css` files. Button icon spacing handled globally via `.btn > i.bi:not(:only-child) { margin-right: 6px; }`.
 
 ---
 

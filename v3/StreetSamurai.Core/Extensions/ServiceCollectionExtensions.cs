@@ -72,6 +72,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<CharacterProfileRepository>();
 
         services.AddSingleton<DatabaseService>();
+        services.AddSingleton<IDatabaseService>(sp => sp.GetRequiredService<DatabaseService>());
         services.AddSingleton<LoreService>();
         services.AddSingleton<MarkdownService>();
         services.AddSingleton<ExportService>();
@@ -88,6 +89,8 @@ public static class ServiceCollectionExtensions
             graph.EnsureLoaded();
             return graph;
         });
+
+        services.AddSingleton<IWorldGraphService>(sp => sp.GetRequiredService<WorldGraphService>());
 
         // Semantic search — TF-IDF index over all graph entities
         services.AddSingleton<SemanticIndexService>(sp =>
@@ -208,6 +211,7 @@ public static class ServiceCollectionExtensions
 
         // Story director — autonomous story generation
         services.AddSingleton<StoryDirectorService>();
+        services.AddSingleton<IStoryDirectorService>(sp => sp.GetRequiredService<StoryDirectorService>());
 
         // Geographic navigation, pathfinding, and dynamic place generation
         services.AddSingleton<NavigationService>();

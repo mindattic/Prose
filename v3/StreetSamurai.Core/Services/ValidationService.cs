@@ -151,8 +151,9 @@ public class ValidationService
                 Alternatives = r.Alternatives ?? [],
             }).ToList() ?? [];
         }
-        catch
+        catch (Exception ex)
         {
+            log.LogWarning(ex, "Validation canon check failed, returning empty results");
             return [];
         }
     }

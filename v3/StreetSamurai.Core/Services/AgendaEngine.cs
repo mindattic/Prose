@@ -86,7 +86,7 @@ public class AgendaEngine
             if (json.EndsWith("```")) json = json[..^3];
 
             var agendas = JsonSerializer.Deserialize<List<CharacterAgenda>>(json.Trim(),
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? [];
+                JsonDefaults.LlmParsing) ?? [];
             log.LogInformation("Generated {Count} character agendas", agendas.Count);
             return agendas;
         }
@@ -144,7 +144,7 @@ public class AgendaEngine
             if (json.EndsWith("```")) json = json[..^3];
 
             var conflicts = JsonSerializer.Deserialize<List<ConflictPremise>>(json.Trim(),
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? [];
+                JsonDefaults.LlmParsing) ?? [];
             log.LogInformation("Found {Count} conflicts from agendas", conflicts.Count);
             return conflicts;
         }

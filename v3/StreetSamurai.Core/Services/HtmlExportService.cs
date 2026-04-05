@@ -149,8 +149,9 @@ public class HtmlExportService
             }
             sb.AppendLine("</table>");
         }
-        catch
+        catch (Exception ex)
         {
+            Serilog.Log.Warning(ex, "HTML table render failed, falling back to raw JSON");
             sb.AppendLine($"<pre>{Esc(jsonContent)}</pre>");
         }
 

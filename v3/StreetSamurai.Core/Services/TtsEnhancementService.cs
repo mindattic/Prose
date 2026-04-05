@@ -90,14 +90,12 @@ public class TtsEnhancementService
         try
         {
             var json = File.ReadAllText(rulesPath);
-            rules = JsonSerializer.Deserialize<TtsRules>(json, new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true
-            });
+            rules = JsonSerializer.Deserialize<TtsRules>(json, JsonDefaults.LlmParsing);
             return rules;
         }
-        catch
+        catch (Exception ex)
         {
+            Serilog.Log.Warning(ex, "Failed to load TTS rules");
             return null;
         }
     }

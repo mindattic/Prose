@@ -181,7 +181,7 @@ public class DynamicPlaceGenerator
             if (json.EndsWith("```")) json = json[..^3];
 
             var generated = JsonSerializer.Deserialize<GeneratedPlaceData>(json.Trim(),
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                JsonDefaults.LlmParsing);
 
             var place = new DistrictData
             {
@@ -201,8 +201,9 @@ public class DynamicPlaceGenerator
             places.Save(place);
             return name;
         }
-        catch
+        catch (Exception ex)
         {
+            Serilog.Log.Warning(ex, "Dynamic place generation failed for {PlaceName}, saving minimal entry", name);
             // Fallback — save minimal entry
             places.Save(new DistrictData { Name = name, Description = context, Coordinates = coords ?? new() });
             return name;

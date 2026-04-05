@@ -9,7 +9,7 @@ namespace StreetSamurai.Core.Services;
 /// Keeps the same public API so downstream services (StoryStarterService,
 /// SceneGenerationService, WorldGraphService) don't break.
 /// </summary>
-public class DatabaseService
+public class DatabaseService : IDatabaseService
 {
     private readonly CharacterRepository characters;
     private readonly FacetRepository facets;

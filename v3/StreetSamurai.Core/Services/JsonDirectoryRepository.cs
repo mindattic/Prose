@@ -260,7 +260,7 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
                 {
                     AttemptAutoRepair(item.path, item.err);
                 }
-                catch { /* Don't let repair failures crash the thread */ }
+                catch (Exception ex) { Serilog.Log.Warning(ex, "Auto-repair failed for {FilePath}", item.path); }
             }
         });
     }
@@ -379,7 +379,7 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
             }
             return false;
         }
-        catch { return false; }
+        catch (Exception ex) { Serilog.Log.Warning(ex, "Failed to check archived status for {FilePath}", filePath); return false; }
     }
 
     public static string Slugify(string name) =>

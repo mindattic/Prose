@@ -226,14 +226,11 @@ public class EntityExtractionService
 
         try
         {
-            return JsonSerializer.Deserialize<ExtractionResult>(json, new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true,
-            }) ?? new ExtractionResult();
+            return JsonSerializer.Deserialize<ExtractionResult>(json, JsonDefaults.LlmParsing) ?? new ExtractionResult();
         }
-        catch
+        catch (Exception ex)
         {
-            // LLM returned malformed JSON — try to salvage
+            Serilog.Log.Warning(ex, "Entity extraction failed — LLM returned malformed JSON");
             return new ExtractionResult();
         }
     }

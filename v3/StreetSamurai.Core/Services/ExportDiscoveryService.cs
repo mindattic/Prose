@@ -33,7 +33,7 @@ public class ExportDiscoveryService
                 if (entries.Count > 0)
                     result[name] = entries;
             }
-            catch { /* Skip repos that fail to load */ }
+            catch (Exception ex) { Serilog.Log.Warning(ex, "Failed to load export entries from repo {RepoName}", name); }
         }
         return result;
     }
@@ -44,7 +44,7 @@ public class ExportDiscoveryService
         return repos.Select(r =>
         {
             try { return (r.RepoName, r.GetExportEntries().Count); }
-            catch { return (r.RepoName, 0); }
+            catch (Exception ex) { Serilog.Log.Warning(ex, "Failed to get export entry count for repo {RepoName}", r.RepoName); return (r.RepoName, 0); }
         }).Where(x => x.Item2 > 0).OrderBy(x => x.RepoName).ToList();
     }
 }

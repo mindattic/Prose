@@ -46,7 +46,7 @@ namespace StreetSamurai.Core.Services;
 ///    e. Sync knowledge map for POV filtering
 /// 5. Assemble full text and return AutonomousStory
 /// </summary>
-public class StoryDirectorService
+public class StoryDirectorService : IStoryDirectorService
 {
     private readonly ILlmService llm;
     private readonly DatabaseService db;
@@ -435,7 +435,7 @@ public class StoryDirectorService
         var dir = Path.Combine(paths.DataRoot, "story_blocks");
         if (!Directory.Exists(dir)) return [];
         return Directory.GetFiles(dir, "*.checkpoint.json")
-            .Select(f => { try { return System.Text.Json.JsonSerializer.Deserialize<AutonomousStory>(File.ReadAllText(f)); } catch { return null; } })
+            .Select(f => { try { return System.Text.Json.JsonSerializer.Deserialize<AutonomousStory>(File.ReadAllText(f)); } catch (Exception ex) { log.LogWarning(ex, "Failed to deserialize checkpoint {File}", f); return null; } })
             .Where(s => s != null)
             .ToList()!;
     }

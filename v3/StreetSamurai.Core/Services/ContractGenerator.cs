@@ -129,14 +129,15 @@ public class ContractGenerator
             if (json.EndsWith("```")) json = json[..^3];
 
             var contract = JsonSerializer.Deserialize<Contract>(json.Trim(),
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new();
+                JsonDefaults.LlmParsing) ?? new();
 
             contract.Id = Guid.NewGuid().ToString("N")[..8];
             contract.GeneratedAt = DateTime.UtcNow;
             return contract;
         }
-        catch
+        catch (Exception ex)
         {
+            Serilog.Log.Warning(ex, "Contract generation failed, returning fallback contract");
             return new Contract
             {
                 Id = Guid.NewGuid().ToString("N")[..8],
