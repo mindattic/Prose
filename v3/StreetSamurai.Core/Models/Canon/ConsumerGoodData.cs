@@ -1,0 +1,27 @@
+using System.Text.Json.Serialization;
+
+namespace StreetSamurai.Core.Models.Canon;
+
+/// <summary>
+/// A consumer product — the everyday items that populate the world.
+/// Sodas, candy, pizza, cleaning products, snacks, stimulants, hygiene,
+/// clothing brands, synth-food, street food, luxury goods.
+/// Ranked by popularity within their category.
+/// </summary>
+public class ConsumerGoodData
+{
+    [JsonPropertyName("name")] public string Name { get; set; } = "";
+    [JsonPropertyName("type")] public string Type { get; set; } = "consumer_good";
+    [JsonPropertyName("category")] public string Category { get; set; } = "";
+    [JsonPropertyName("subcategory")] public string Subcategory { get; set; } = "";
+    [JsonPropertyName("manufacturer")] public string Manufacturer { get; set; } = "";
+    [JsonPropertyName("description")] public string Description { get; set; } = "";
+    [JsonPropertyName("flavor_profile")] public string FlavorProfile { get; set; } = "";
+    [JsonPropertyName("tier_availability")] public string TierAvailability { get; set; } = "";
+    [JsonPropertyName("price")] public string Price { get; set; } = "";
+    [JsonPropertyName("popularity_rank")] public int PopularityRank { get; set; }
+    [JsonPropertyName("slogan")] public string Slogan { get; set; } = "";
+    [JsonPropertyName("cultural_context")] public string CulturalContext { get; set; } = "";
+    [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+}

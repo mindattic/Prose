@@ -39,6 +39,10 @@ public class CharacterData
     [JsonPropertyName("behavioral")] public CharacterBehavioral Behavioral { get; set; } = new();
     /// <summary>Installed cyberware/augmentations with body location and status.</summary>
     [JsonPropertyName("cyberware_inventory")] public List<CyberwareEntry> CyberwareInventory { get; set; } = [];
+    /// <summary>Archetype scores — behavioral patterns this character exhibits (0.0-1.0 each).</summary>
+    [JsonPropertyName("archetypes")] public Dictionary<string, double> Archetypes { get; set; } = new();
+    /// <summary>Where this operator works — their home turf and surrounding areas they know well.</summary>
+    [JsonPropertyName("operating_territory")] public OperatingTerritory Territory { get; set; } = new();
     /// <summary>Chronological timeline of events that have happened to this character across all stories.</summary>
     [JsonPropertyName("timeline")] public List<TimelineEvent> Timeline { get; set; } = [];
     /// <summary>
@@ -86,6 +90,25 @@ public class TimelineEvent
 
 /// <summary>
 /// A permanent change to a character's canonical data, driven by story events.
+/// <summary>
+/// Where a runner operates. Home turf is where they know every alley, every blind spot,
+/// every E.L.F., every fixer. Nearby zones are familiar but not home. Beyond that is
+/// foreign territory where they're at a disadvantage. Reputation varies by zone.
+/// </summary>
+public class OperatingTerritory
+{
+    /// <summary>Primary base of operations — the place they know best.</summary>
+    [JsonPropertyName("home_turf")] public string HomeTurf { get; set; } = "";
+    /// <summary>Adjacent zones they regularly operate in (2-5 locations).</summary>
+    [JsonPropertyName("familiar_zones")] public List<string> FamiliarZones { get; set; } = [];
+    /// <summary>Reputation in different zones: zone name -> reputation description.</summary>
+    [JsonPropertyName("zone_reputation")] public Dictionary<string, string> ZoneReputation { get; set; } = new();
+    /// <summary>Zones they avoid and why.</summary>
+    [JsonPropertyName("no_go_zones")] public List<string> NoGoZones { get; set; } = [];
+    /// <summary>How far they'll travel for a contract — local, regional, continental, global.</summary>
+    [JsonPropertyName("range")] public string Range { get; set; } = "local";
+}
+
 /// "Sable's affiliation changed from Iron Lotus to Independent after story_042:beat_7
 /// because she burned her handler." This is the narrative version history.
 /// </summary>

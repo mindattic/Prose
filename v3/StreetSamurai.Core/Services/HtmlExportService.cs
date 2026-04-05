@@ -127,8 +127,9 @@ public class HtmlExportService
 
     private static string BuildEntryHtml(string name, string jsonContent)
     {
+        var slug = Slugify(name);
         var sb = new StringBuilder();
-        sb.AppendLine($"<h3>{Esc(name)}</h3>");
+        sb.AppendLine($"<h3>{Esc(name)} <a href=\"#{slug}\" class=\"permalink\" title=\"Link to this entry\">#</a></h3>");
 
         try
         {
@@ -252,10 +253,10 @@ function clearFilter() {
 <style>
 :root {{ --bg: #0d1117; --surface: #161b22; --border: #30363d; --text: #e6edf3; --muted: #8b949e; --accent: #dc3545; --link: #58a6ff; --key-bg: #1c2128; }}
 * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-body {{ background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 14px; line-height: 1.6; padding: 20px 40px; }}
-h1 {{ color: var(--accent); font-size: 1.8rem; margin-bottom: 4px; }}
-h2 {{ color: var(--accent); font-size: 1.3rem; margin-bottom: 12px; }}
-h3 {{ color: var(--accent); font-size: 1.1rem; margin-bottom: 8px; padding-top: 16px; border-top: 1px solid var(--border); }}
+body {{ background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 14px; line-height: 1.6; padding: 20px clamp(12px, 4vw, 40px); max-width: 1400px; margin: 0 auto; }}
+h1 {{ color: var(--accent); font-size: clamp(1.2rem, 4vw, 1.8rem); margin-bottom: 4px; }}
+h2 {{ color: var(--accent); font-size: clamp(1rem, 3vw, 1.3rem); margin-bottom: 12px; }}
+h3 {{ color: var(--accent); font-size: clamp(0.95rem, 2.5vw, 1.1rem); margin-bottom: 8px; padding-top: 16px; border-top: 1px solid var(--border); }}
 a {{ color: var(--link); text-decoration: none; }} a:hover {{ text-decoration: underline; }}
 .header {{ margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--accent); }}
 .header small {{ color: var(--muted); }}
@@ -263,9 +264,9 @@ a {{ color: var(--link); text-decoration: none; }} a:hover {{ text-decoration: u
 .toc ul {{ columns: 3; column-gap: 24px; list-style: none; }}
 .toc li {{ padding: 2px 0; font-size: 13px; break-inside: avoid; }}
 .toc .badge {{ background: var(--border); color: var(--muted); border-radius: 10px; padding: 1px 8px; font-size: 11px; margin-left: 4px; }}
-.entry {{ background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 16px 20px; margin-bottom: 16px; }}
+.entry {{ background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: clamp(10px, 3vw, 20px); margin-bottom: 16px; overflow-x: auto; }}
 .fields, .sub-fields {{ width: 100%; border-collapse: collapse; }}
-.fields td, .sub-fields td {{ padding: 4px 10px; vertical-align: top; border-bottom: 1px solid var(--border); font-size: 13px; }}
+.fields td, .sub-fields td {{ padding: 4px 10px; vertical-align: top; border-bottom: 1px solid var(--border); font-size: 13px; word-break: break-word; }}
 .key {{ color: var(--muted); white-space: nowrap; width: 160px; background: var(--key-bg); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }}
 .sub-fields .key {{ width: 120px; font-size: 11px; }}
 .val {{ color: var(--text); }}
@@ -276,11 +277,27 @@ ul.compact {{ list-style: disc; margin-left: 16px; }}
 ul.compact li {{ font-size: 13px; padding: 1px 0; }}
 .sub-entry {{ border-left: 3px solid var(--border); padding-left: 12px; margin: 6px 0; }}
 .back-top {{ display: inline-block; margin-top: 8px; font-size: 12px; color: var(--muted); }}
+.permalink {{ color: var(--border); font-size: 0.8em; margin-left: 6px; text-decoration: none; opacity: 0.4; transition: opacity 0.2s; }}
+.permalink:hover {{ opacity: 1; color: var(--accent); }}
+.entry:target {{ border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }}
 .filter-bar {{ position: sticky; top: 0; z-index: 100; background: var(--bg); padding: 10px 0; margin-bottom: 16px; display: flex; align-items: center; }}
-.filter-bar input {{ flex: 1; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 4px; padding: 8px 12px; font-size: 14px; outline: none; }}
+.filter-bar input {{ flex: 1; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 4px; padding: 8px 12px; font-size: 16px; outline: none; -webkit-appearance: none; }}
 .filter-bar input:focus {{ border-color: var(--accent); }}
 .filter-clear {{ display: none; position: relative; right: 30px; cursor: pointer; color: var(--muted); font-size: 18px; width: 0; }}
 .filter-clear:hover {{ color: var(--accent); }}
+@media (max-width: 768px) {{
+    .toc ul {{ columns: 1; }}
+    .fields td, .sub-fields td {{ display: block; width: 100%; padding: 3px 8px; }}
+    .key {{ white-space: normal; width: 100%; border-bottom: none; padding-bottom: 0; }}
+    .val {{ padding-top: 0; }}
+    .fields tr, .sub-fields tr {{ display: block; border-bottom: 1px solid var(--border); padding: 6px 0; }}
+    .sub-fields .key {{ width: 100%; }}
+}}
+@media (max-width: 480px) {{
+    body {{ padding: 10px 8px; font-size: 13px; }}
+    .entry {{ padding: 10px; }}
+    h3 {{ font-size: 0.95rem; }}
+}}
 @media print {{ .filter-bar, .back-top {{ display: none; }} .entry {{ break-inside: avoid; }} }}
 </style>
 </head>

@@ -64,6 +64,7 @@ public class StoryDirectorService
     private readonly IPathProvider paths;
     private readonly ConsequenceEngine consequences;
     private readonly ThematicIndexService thematicIndex;
+    private readonly BehaviorPredictionService behaviorPredict;
 
     public event Action<DirectorProgress>? OnProgress;
 
@@ -74,7 +75,8 @@ public class StoryDirectorService
         KnowledgeMapService knowledge, StoryStarterService starter,
         SemanticIndexService semanticIndex, InferenceService inference,
         ILogger<StoryDirectorService> log, IPathProvider paths,
-        ConsequenceEngine consequences, ThematicIndexService thematicIndex)
+        ConsequenceEngine consequences, ThematicIndexService thematicIndex,
+        BehaviorPredictionService behaviorPredict)
     {
         this.llm = llm;
         this.db = db;
@@ -92,6 +94,7 @@ public class StoryDirectorService
         this.paths = paths;
         this.consequences = consequences;
         this.thematicIndex = thematicIndex;
+        this.behaviorPredict = behaviorPredict;
     }
 
     /// <summary>
@@ -354,13 +357,13 @@ public class StoryDirectorService
         var outlineContext = outlineSvc.BuildBeatContext(outline, beat.BeatIndex);
         var dialogueConstraints = BuildDialogueConstraints(beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all);
 
-        // Thematic enrichment: extract themes from beat goal and pull relevant entities from all repos
-        var beatThemes = thematicIndex.ExtractThemes(beat.Goal + " " + beat.Title + " " + (beat.Location ?? ""));
-        var thematicHits = thematicIndex.GetRelevantEntities(beatThemes, 10);
-        var thematicContext = thematicHits.Count > 0
-            ? "WORLD DETAILS RELEVANT TO THIS BEAT (use naturally, don't list):\n" +
-              string.Join("\n", thematicHits.Select(h => $"  [{h.EntityType}] {h.EntityName} (themes: {string.Join(", ", h.Themes)})"))
-            : "";
+        // Thematic enrichment: pull context snippets, vocabulary, quotes, and motifs from ALL repos
+        var thematicContext = thematicIndex.BuildBeatContext(beat.Goal, beat.Title, beat.Location ?? location);
+
+        // Behavior prediction: predict what each character will do based on psychology + state
+        var charsInBeat = beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all;
+        var behaviorContext = behaviorPredict.BuildBehaviorContext(
+            projectId, charsInBeat, beat.Location ?? location, beat.Goal, beat.Tension);
 
         var paragraphs = allText.ToList();
         var beatGoal = beat.Goal;
@@ -382,7 +385,9 @@ public class StoryDirectorService
             return opening.Text;
         }
 
-        var fullOutlineContext = outlineContext + (thematicContext.Length > 0 ? "\n\n" + thematicContext : "");
+        var fullOutlineContext = outlineContext
+            + (thematicContext.Length > 0 ? "\n\n" + thematicContext : "")
+            + (behaviorContext.Length > 0 ? "\n\n" + behaviorContext : "");
         return await starter.ContinueAsync(
             paragraphs, beatGoal, null, beat.Location ?? location,
             beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all,

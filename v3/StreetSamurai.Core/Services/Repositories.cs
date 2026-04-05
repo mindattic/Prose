@@ -120,6 +120,54 @@ public class TransportationRepository : JsonDirectoryRepository<TransportationDa
         : base(Path.Combine(paths.EngineDataDir, "transportation"), t => t.Name) { }
 }
 
+public class ContractRepository : JsonDirectoryRepository<ContractData>
+{
+    public ContractRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "contracts"), c => c.Codename) { }
+}
+
+public class ApparelRepository : JsonDirectoryRepository<ApparelData>
+{
+    public ApparelRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "apparel"), a => a.Name) { }
+}
+
+public class NewsRepository : JsonDirectoryRepository<NewsData>
+{
+    public NewsRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "news"), n => n.Headline) { }
+}
+
+public class ArchetypeRepository : JsonDirectoryRepository<ArchetypeData>
+{
+    public ArchetypeRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "archetypes"), a => a.Name) { }
+}
+
+public class SubstrateRepository : JsonDirectoryRepository<SubstrateData>
+{
+    public SubstrateRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "substrates"), s => s.Name) { }
+}
+
+public class PharmaceuticalRepository : JsonDirectoryRepository<PharmaceuticalData>
+{
+    public PharmaceuticalRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "pharmaceuticals"), p => p.Name) { }
+}
+
+public class ConsumerGoodRepository : JsonDirectoryRepository<ConsumerGoodData>
+{
+    public ConsumerGoodRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "consumer_goods"), g => g.Name) { }
+}
+
+public class QuoteRepository : JsonDirectoryRepository<QuoteData>
+{
+    public QuoteRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "quotes"), q => q.Quote.Length > 40 ? q.Quote[..40] : q.Quote) { }
+}
+
 // Singleton repositories stay file-based (they're single objects, not collections)
 public class ToneBibleRepository : JsonSingletonRepository<ToneBibleData>
 {

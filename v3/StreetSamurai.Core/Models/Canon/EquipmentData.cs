@@ -23,4 +23,5 @@ public class EquipmentData
     [JsonPropertyName("cultural_context")] public string CulturalContext { get; set; } = "";
     [JsonPropertyName("known_users")] public List<string> KnownUsers { get; set; } = [];
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }

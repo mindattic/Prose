@@ -1,0 +1,95 @@
+@page "/contracts"
+@using StreetSamurai.Core.Models.Canon
+@inject ContractRepository Repo
+@inject NavigationManager Nav
+
+<div class="dict-layout">
+    <div class="dict-list bg-dark border-end border-secondary">
+        <div class="p-2">
+            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                   placeholder="Filter..." @bind="filter" @bind:event="oninput" />
+        </div>
+        @foreach (var c in FilteredItems)
+        {
+            <div class="list-item text-light @(editing?.Codename == c.Codename ? "active" : "")" @onclick="() => Edit(c)">
+                <div class="fw-bold small">@c.Codename</div>
+                <div class="text-muted" style="font-size: 0.7rem;">@c.Category — @c.Difficulty — @c.Status</div>
+            </div>
+        }
+        <div class="p-2 d-flex gap-1">
+            <button class="btn btn-sm btn-outline-danger flex-grow-1" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
+            <ExportButton Mode="repo" RepoName="Contracts" GetRepoEntries="GetExportEntries" />
+        </div>
+    </div>
+    <div class="dict-editor" style="overflow-y: auto; max-height: calc(100vh - 60px);">
+        @if (editing != null)
+        {
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="text-danger mb-0">@(isNew ? "New Contract" : editing.Codename)</h5>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
+                    @if (!isNew) { <ExportButton Mode="entry" RepoName="Contracts" EntryName="@editing.Codename" EntryJson="@System.Text.Json.JsonSerializer.Serialize(editing)" /> }
+                    @if (!isNew && !confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => confirmDelete = true"><i class="bi bi-trash3"></i></button> }
+                    @if (confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => confirmDelete = false">No</button> }
+                </div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 2; min-width: 200px;"><div class="field-label">Codename</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Codename" /></div>
+                <div style="flex: 1; min-width: 120px;"><div class="field-label">Category</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="extraction|infiltration|sabotage|retrieval|protection|assassination" @bind="editing.Category" /></div>
+                <div style="flex: 1; min-width: 100px;"><div class="field-label">Difficulty</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="routine|challenging|dangerous|suicide" @bind="editing.Difficulty" /></div>
+                <div style="flex: 1; min-width: 100px;"><div class="field-label">Status</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="open|active|completed|failed" @bind="editing.Status" /></div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 1; min-width: 150px;"><div class="field-label">Client</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Client" /></div>
+                <div style="flex: 1; min-width: 100px;"><div class="field-label">Client Tier</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.ClientTier" /></div>
+                <div style="flex: 1; min-width: 100px;"><div class="field-label">Payout</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Payout" /></div>
+                <div style="flex: 1; min-width: 100px;"><div class="field-label">Crew Size</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.CrewSize" /></div>
+                <div style="flex: 1; min-width: 100px;"><div class="field-label">Time Limit</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.TimeLimit" /></div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Location</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Location" /></div>
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Target</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Target" /></div>
+                <div style="flex: 1; min-width: 200px;"><div class="field-label">Opposition</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Opposition" /></div>
+            </div>
+            <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="3" @bind="editing.Description"></textarea></div>
+            <div class="mb-3"><div class="field-label">Objective</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="2" @bind="editing.Objective"></textarea></div>
+            <div class="mb-3"><div class="field-label">Outcome</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="2" placeholder="How it ended (for completed/failed contracts)" @bind="editing.Outcome"></textarea></div>
+
+            <div class="card bg-black border-secondary mb-3">
+                <div class="card-header text-muted small">Required Crew Capabilities (0-10)</div>
+                <div class="card-body">
+                    <div class="d-flex flex-wrap gap-2">
+                        <div style="flex: 1; min-width: 80px;"><div class="field-label">Combat</div><input type="number" min="0" max="10" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.RequiredCapabilities.Combat" /></div>
+                        <div style="flex: 1; min-width: 80px;"><div class="field-label">Stealth</div><input type="number" min="0" max="10" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.RequiredCapabilities.Stealth" /></div>
+                        <div style="flex: 1; min-width: 80px;"><div class="field-label">Hacking</div><input type="number" min="0" max="10" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.RequiredCapabilities.Hacking" /></div>
+                        <div style="flex: 1; min-width: 80px;"><div class="field-label">Social</div><input type="number" min="0" max="10" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.RequiredCapabilities.Social" /></div>
+                        <div style="flex: 1; min-width: 80px;"><div class="field-label">Medical</div><input type="number" min="0" max="10" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.RequiredCapabilities.Medical" /></div>
+                        <div style="flex: 1; min-width: 80px;"><div class="field-label">Tech</div><input type="number" min="0" max="10" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.RequiredCapabilities.Tech" /></div>
+                        <div style="flex: 1; min-width: 80px;"><div class="field-label">Transport</div><input type="number" min="0" max="10" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.RequiredCapabilities.Transport" /></div>
+                        <div style="flex: 1; min-width: 80px;"><div class="field-label">Demo</div><input type="number" min="0" max="10" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.RequiredCapabilities.Demolitions" /></div>
+                        <div style="flex: 1; min-width: 80px;"><div class="field-label">Recon</div><input type="number" min="0" max="10" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.RequiredCapabilities.Surveillance" /></div>
+                        <div style="flex: 1; min-width: 80px;"><div class="field-label">Lingo</div><input type="number" min="0" max="10" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.RequiredCapabilities.Linguistics" /></div>
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="text-center text-muted py-5"><i class="bi bi-clipboard-check" style="font-size:3rem;"></i><p class="mt-2">Select a contract or post a new one.</p></div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<ContractData> items = [];
+    private ContractData? editing;
+    private string originalCodename = "", filter = "";
+    private bool isNew, confirmDelete;
+    private IEnumerable<ContractData> FilteredItems => string.IsNullOrWhiteSpace(filter) ? items : items.Where(c => c.Codename.Contains(filter, StringComparison.OrdinalIgnoreCase) || c.Category.Contains(filter, StringComparison.OrdinalIgnoreCase) || c.Description.Contains(filter, StringComparison.OrdinalIgnoreCase));
+    protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); if (Nav.Uri.Contains("new=true")) AddNew(); }
+    private void AddNew() { editing = new ContractData(); isNew = true; confirmDelete = false; }
+    private void Edit(ContractData c) { editing = c; originalCodename = c.Codename; isNew = false; confirmDelete = false; }
+    private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Codename)) return; if (!isNew && originalCodename != editing.Codename) Repo.Delete(originalCodename); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
+    private void DoDelete() { if (editing != null) { Repo.Delete(editing.Codename); editing = null; items = Repo.GetAll(); confirmDelete = false; } }
+    private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Codename, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
+}

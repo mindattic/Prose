@@ -21,6 +21,7 @@ public class FactionData
     [JsonPropertyName("relationships")] public List<FactionRelationship> Relationships { get; set; } = [];
     [JsonPropertyName("narrative_function")] public string NarrativeFunction { get; set; } = "";
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }
 
 public class FactionRelationship
@@ -28,4 +29,5 @@ public class FactionRelationship
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("type")] public string Type { get; set; } = "";
     [JsonPropertyName("description")] public string Description { get; set; } = "";
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }

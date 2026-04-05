@@ -32,6 +32,14 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<SyntheticLifeRepository>();
         services.AddSingleton<GenewareRepository>();
         services.AddSingleton<TransportationRepository>();
+        services.AddSingleton<QuoteRepository>();
+        services.AddSingleton<ContractRepository>();
+        services.AddSingleton<ApparelRepository>();
+        services.AddSingleton<NewsRepository>();
+        services.AddSingleton<ArchetypeRepository>();
+        services.AddSingleton<SubstrateRepository>();
+        services.AddSingleton<PharmaceuticalRepository>();
+        services.AddSingleton<ConsumerGoodRepository>();
         services.AddSingleton<MotifRepository>();
         services.AddSingleton<ToneBibleRepository>();
         services.AddSingleton<StoryBibleRepository>();
@@ -124,17 +132,29 @@ public static class ServiceCollectionExtensions
         // Canon validation — checks generated text against graph for contradictions
         services.AddSingleton<ValidationService>();
 
-        // Thematic index — fast cross-repo theme retrieval for story generation
+        // Thematic index — tag-based cross-repo retrieval for story generation
         services.AddSingleton<ThematicIndexService>(sp =>
         {
             var idx = new ThematicIndexService(
                 sp.GetRequiredService<DatabaseService>(),
                 sp.GetRequiredService<SyntheticLifeRepository>(),
                 sp.GetRequiredService<GenewareRepository>(),
-                sp.GetRequiredService<TransportationRepository>());
+                sp.GetRequiredService<TransportationRepository>(),
+                sp.GetRequiredService<VocabularyRepository>(),
+                sp.GetRequiredService<QuoteRepository>(),
+                sp.GetRequiredService<ConsumerGoodRepository>(),
+                sp.GetRequiredService<PharmaceuticalRepository>(),
+                sp.GetRequiredService<SubstrateRepository>(),
+                sp.GetRequiredService<AmmunitionRepository>());
             idx.RebuildIndex();
             return idx;
         });
+
+        // Crew assessment — grades team capability against contract requirements
+        services.AddSingleton<CrewAssessmentService>();
+
+        // Character behavior prediction — psychological modeling
+        services.AddSingleton<BehaviorPredictionService>();
 
         // Narrative intelligence — story model layer
         services.AddSingleton<StoryStateService>();

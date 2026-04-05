@@ -1,15 +1,11 @@
-using System.Text.RegularExpressions;
-
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Inverted thematic tag index across all repositories. Scans entity descriptions,
-/// story hooks, categories, and other text fields at startup to extract thematic tags.
-/// Provides fast retrieval of entities related to specific themes during story generation.
+/// Tag-based thematic index across all repositories. Uses the `tags` field on each entity
+/// for instant lookup instead of text scanning. Provides context snippets (not just names)
+/// and specialized injection for vocabulary, quotes, and motifs.
 ///
-/// No LLM needed — uses keyword extraction from a curated thematic vocabulary.
-/// No data duplication — indexes into existing repo data by name/type reference.
-/// Rebuilds in milliseconds on demand.
+/// The single integration point between ALL repos and the story generation pipeline.
 /// </summary>
 public class ThematicIndexService
 {
@@ -17,104 +13,79 @@ public class ThematicIndexService
     private readonly SyntheticLifeRepository synthRepo;
     private readonly GenewareRepository genewareRepo;
     private readonly TransportationRepository transportRepo;
+    private readonly VocabularyRepository vocabRepo;
+    private readonly QuoteRepository quoteRepo;
+    private readonly ConsumerGoodRepository goodsRepo;
+    private readonly PharmaceuticalRepository pharmaRepo;
+    private readonly SubstrateRepository substrateRepo;
+    private readonly AmmunitionRepository ammoRepo;
 
-    // theme -> list of (entityName, entityType, relevanceScore)
+    // tag -> list of hits with snippets
     private Dictionary<string, List<ThematicHit>> index = new(StringComparer.OrdinalIgnoreCase);
     private bool built;
 
     public ThematicIndexService(
         DatabaseService db, SyntheticLifeRepository synthRepo,
-        GenewareRepository genewareRepo, TransportationRepository transportRepo)
+        GenewareRepository genewareRepo, TransportationRepository transportRepo,
+        VocabularyRepository vocabRepo, QuoteRepository quoteRepo,
+        ConsumerGoodRepository goodsRepo, PharmaceuticalRepository pharmaRepo,
+        SubstrateRepository substrateRepo, AmmunitionRepository ammoRepo)
     {
         this.db = db;
         this.synthRepo = synthRepo;
         this.genewareRepo = genewareRepo;
         this.transportRepo = transportRepo;
+        this.vocabRepo = vocabRepo;
+        this.quoteRepo = quoteRepo;
+        this.goodsRepo = goodsRepo;
+        this.pharmaRepo = pharmaRepo;
+        this.substrateRepo = substrateRepo;
+        this.ammoRepo = ammoRepo;
     }
 
-    /// <summary>Build the index from all repos. Fast — no LLM calls.</summary>
+    /// <summary>Build the index from tags on all entities. Fast — reads tags arrays, no text scanning.</summary>
     public void RebuildIndex()
     {
         var newIndex = new Dictionary<string, List<ThematicHit>>(StringComparer.OrdinalIgnoreCase);
 
-        // Characters
         foreach (var c in db.Characters)
-        {
-            var text = $"{c.Description} {c.NarrativeFunction} {c.Role} {c.Affiliation} {string.Join(" ", c.StoryHooks)} {c.Psychology.Secret} {string.Join(" ", c.Psychology.CoreFears)} {string.Join(" ", c.Psychology.CoreDesires)}";
-            IndexEntity(newIndex, c.Name, "character", text);
-        }
-
-        // Places
+            IndexByTags(newIndex, c.Name, "character", FirstSentence(c.Description), c.Stats.Tags);
         foreach (var d in db.Districts)
-        {
-            var text = $"{d.Description} {d.Economy} {d.PowerStructure} {string.Join(" ", d.Dangers)} {string.Join(" ", d.Opportunities)} {string.Join(" ", d.StoryHooks)} {string.Join(" ", d.FrequentedBy)}";
-            IndexEntity(newIndex, d.Name, "place", text);
-        }
-
-        // Factions
+            IndexByTags(newIndex, d.Name, "place", FirstSentence(d.Description), d.Tags);
         foreach (var f in db.Factions)
-        {
-            var text = $"{f.Description} {f.Ideology} {f.Territory} {string.Join(" ", f.Methods)} {string.Join(" ", f.StoryHooks)}";
-            IndexEntity(newIndex, f.Name, "faction", text);
-        }
-
-        // Corponations
+            IndexByTags(newIndex, f.Name, "faction", FirstSentence(f.Description), f.Tags);
         foreach (var c in db.Corponations)
-        {
-            var text = $"{c.Name} {c.Sector} {c.KeyDetail} {c.FoundingStory} {c.SecurityForce}";
-            IndexEntity(newIndex, c.Name, "corponation", text);
-        }
-
-        // Weapons
+            IndexByTags(newIndex, c.Name, "corponation", FirstSentence(c.KeyDetail), c.Tags);
         foreach (var w in db.Weaponry)
-        {
-            var text = $"{w.Name} {w.Description} {w.Category} {string.Join(" ", w.StoryHooks)}";
-            IndexEntity(newIndex, w.Name, "weapon", text);
-        }
-
-        // Technology
+            IndexByTags(newIndex, w.Name, "weapon", FirstSentence(w.Description), w.Tags);
         foreach (var t in db.Technology)
-        {
-            var text = $"{t.Name} {t.Description} {t.Subcategory} {t.SocialImpact} {string.Join(" ", t.StoryHooks)}";
-            IndexEntity(newIndex, t.Name, "technology", text);
-        }
-
-        // Equipment
+            IndexByTags(newIndex, t.Name, "technology", FirstSentence(t.Description), t.Tags);
         foreach (var e in db.Equipment)
-        {
-            var text = $"{e.Name} {e.Description} {e.Category} {string.Join(" ", e.StoryHooks)}";
-            IndexEntity(newIndex, e.Name, "equipment", text);
-        }
-
-        // Synthetics
+            IndexByTags(newIndex, e.Name, "equipment", FirstSentence(e.Description), e.Tags);
         foreach (var s in synthRepo.GetAll())
-        {
-            var text = $"{s.Name} {s.Description} {s.ObservedBehavior} {s.Classification} {s.Disposition} {s.Habitat} {string.Join(" ", s.StoryHooks)}";
-            IndexEntity(newIndex, s.Name, "synthetic", text);
-        }
-
-        // Geneware
+            IndexByTags(newIndex, s.Name, "synthetic", FirstSentence(s.Description), s.Tags);
         foreach (var g in genewareRepo.GetAll())
-        {
-            var text = $"{g.Name} {g.Description} {g.Category} {g.SourceOrganism} {g.SocialPerception} {string.Join(" ", g.StoryHooks)}";
-            IndexEntity(newIndex, g.Name, "geneware", text);
-        }
-
-        // Transportation
+            IndexByTags(newIndex, g.Name, "geneware", FirstSentence(g.Description), g.Tags);
         foreach (var t in transportRepo.GetAll())
-        {
-            var text = $"{t.Name} {t.Description} {t.Category} {t.CommonUsage} {string.Join(" ", t.StoryHooks)}";
-            IndexEntity(newIndex, t.Name, "transportation", text);
-        }
+            IndexByTags(newIndex, t.Name, "transportation", FirstSentence(t.Description), t.Tags);
+        foreach (var v in vocabRepo.GetAll())
+            IndexByTags(newIndex, v.Term, "vocabulary", $"{v.Term} — {FirstSentence(v.Definition)}", v.Tags);
+        foreach (var q in quoteRepo.GetAll())
+            IndexByTags(newIndex, q.Attribution.Length > 0 ? q.Attribution : "Anonymous", "quote", q.Quote, q.Tags);
+        foreach (var g in goodsRepo.GetAll())
+            IndexByTags(newIndex, g.Name, "consumer_good", FirstSentence(g.Description), g.Tags);
+        foreach (var p in pharmaRepo.GetAll())
+            IndexByTags(newIndex, p.Name, "pharmaceutical", FirstSentence(p.Description), p.Tags);
+        foreach (var s in substrateRepo.GetAll())
+            IndexByTags(newIndex, s.Name, "substrate", FirstSentence(s.Description), s.Tags);
+        foreach (var a in ammoRepo.GetAll())
+            IndexByTags(newIndex, a.Name, "ammunition", FirstSentence(a.Description), a.Tags);
 
         index = newIndex;
         built = true;
     }
 
-    /// <summary>
-    /// Get entities relevant to a set of themes, ranked by relevance.
-    /// Returns up to `count` results with the highest combined theme match scores.
-    /// </summary>
+    /// <summary>Get entities relevant to tags, ranked by match count. Returns snippets.</summary>
     public List<ThematicHit> GetRelevantEntities(IEnumerable<string> themes, int count = 15)
     {
         if (!built) RebuildIndex();
@@ -127,12 +98,21 @@ public class ThematicIndexService
             {
                 var key = $"{hit.EntityType}:{hit.EntityName}";
                 if (scores.TryGetValue(key, out var existing))
-                    existing.Score += hit.Score;
+                {
+                    existing.Score += 1;
+                    if (!existing.Themes.Contains(theme)) existing.Themes.Add(theme);
+                }
                 else
-                    scores[key] = new ThematicHit { EntityName = hit.EntityName, EntityType = hit.EntityType, Score = hit.Score, Themes = [theme] };
-
-                if (!scores[key].Themes.Contains(theme))
-                    scores[key].Themes.Add(theme);
+                {
+                    scores[key] = new ThematicHit
+                    {
+                        EntityName = hit.EntityName,
+                        EntityType = hit.EntityType,
+                        Snippet = hit.Snippet,
+                        Score = 1,
+                        Themes = [theme]
+                    };
+                }
             }
         }
 
@@ -143,107 +123,133 @@ public class ThematicIndexService
             .ToList();
     }
 
-    /// <summary>Get all themes in the index with their entity counts.</summary>
-    public Dictionary<string, int> GetThemeCounts()
+    /// <summary>Get vocabulary terms matching tags. Returns term + definition pairs.</summary>
+    public List<(string term, string definition)> GetRelevantVocabulary(IEnumerable<string> themes, int count = 8)
     {
         if (!built) RebuildIndex();
-        return index.ToDictionary(kv => kv.Key, kv => kv.Value.Count);
+        var hits = GetRelevantEntities(themes, count * 3)
+            .Where(h => h.EntityType == "vocabulary")
+            .Take(count);
+        return hits.Select(h => (h.EntityName, h.Snippet)).ToList();
     }
 
-    /// <summary>Extract themes from a text (for matching a beat's goal/premise to the index).</summary>
+    /// <summary>Get quotes matching tags.</summary>
+    public List<string> GetRelevantQuotes(IEnumerable<string> themes, int count = 2)
+    {
+        if (!built) RebuildIndex();
+        return GetRelevantEntities(themes, count * 5)
+            .Where(h => h.EntityType == "quote")
+            .Take(count)
+            .Select(h => h.Snippet)
+            .ToList();
+    }
+
+    /// <summary>Get motifs matching tags.</summary>
+    public List<(string name, string description)> GetRelevantMotifs(IEnumerable<string> themes, int count = 2)
+    {
+        var motifs = db.Motifs;
+        if (motifs.Count == 0) return [];
+
+        var themeSet = new HashSet<string>(themes, StringComparer.OrdinalIgnoreCase);
+        // Match motifs by checking if any theme appears in motif name or description
+        return motifs
+            .Select(m => (m.Name, m.Description, score: themeSet.Count(t =>
+                m.Name.Contains(t, StringComparison.OrdinalIgnoreCase) ||
+                m.Description.Contains(t, StringComparison.OrdinalIgnoreCase))))
+            .Where(x => x.score > 0)
+            .OrderByDescending(x => x.score)
+            .Take(count)
+            .Select(x => (x.Name, x.Description))
+            .ToList();
+    }
+
+    /// <summary>Extract tags from text for matching.</summary>
     public List<string> ExtractThemes(string text)
     {
+        if (string.IsNullOrWhiteSpace(text)) return [];
         var textLower = text.ToLowerInvariant();
-        return ThematicVocabulary.Where(t => textLower.Contains(t)).ToList();
+        // Return tags that appear as words in the text
+        return index.Keys.Where(tag => textLower.Contains(tag)).Take(20).ToList();
     }
 
-    private static void IndexEntity(Dictionary<string, List<ThematicHit>> idx, string name, string type, string text)
+    /// <summary>Build a complete context injection block for a beat.</summary>
+    public string BuildBeatContext(string beatGoal, string beatTitle, string? location)
     {
-        if (string.IsNullOrWhiteSpace(text)) return;
-        var textLower = text.ToLowerInvariant();
+        var themes = ExtractThemes($"{beatGoal} {beatTitle} {location ?? ""}");
+        if (themes.Count == 0) return "";
 
-        foreach (var theme in ThematicVocabulary)
+        var parts = new List<string>();
+
+        // Context snippets from all repos
+        var entities = GetRelevantEntities(themes, 8);
+        if (entities.Count > 0)
         {
-            var count = CountOccurrences(textLower, theme);
-            if (count == 0) continue;
+            parts.Add("WORLD DETAILS RELEVANT TO THIS BEAT (weave naturally, don't list):");
+            foreach (var h in entities)
+                parts.Add($"  [{h.EntityType}] {h.EntityName} — {h.Snippet}");
+        }
 
-            if (!idx.TryGetValue(theme, out var list))
+        // Vocabulary injection
+        var vocab = GetRelevantVocabulary(themes, 5);
+        if (vocab.Count > 0)
+        {
+            parts.Add("USE THESE TERMS NATURALLY IN DIALOGUE AND NARRATION:");
+            foreach (var (term, def) in vocab)
+                parts.Add($"  {term} — {def}");
+        }
+
+        // Quote injection
+        var quotes = GetRelevantQuotes(themes, 1);
+        if (quotes.Count > 0)
+        {
+            parts.Add("A CHARACTER MIGHT SAY OR THINK SOMETHING LIKE:");
+            foreach (var q in quotes)
+                parts.Add($"  \"{q}\"");
+        }
+
+        // Motif injection
+        var motifs = GetRelevantMotifs(themes, 1);
+        if (motifs.Count > 0)
+        {
+            parts.Add("MOTIF OPPORTUNITY (if it fits naturally):");
+            foreach (var (name, desc) in motifs)
+                parts.Add($"  {name} — {desc}");
+        }
+
+        return string.Join("\n", parts);
+    }
+
+    private static void IndexByTags(Dictionary<string, List<ThematicHit>> idx, string name, string type, string snippet, List<string>? tags)
+    {
+        if (tags == null || tags.Count == 0) return;
+        foreach (var tag in tags)
+        {
+            if (string.IsNullOrWhiteSpace(tag)) continue;
+            var normalizedTag = tag.ToLowerInvariant().Trim();
+            if (!idx.TryGetValue(normalizedTag, out var list))
             {
                 list = [];
-                idx[theme] = list;
+                idx[normalizedTag] = list;
             }
-            list.Add(new ThematicHit { EntityName = name, EntityType = type, Score = count });
+            list.Add(new ThematicHit { EntityName = name, EntityType = type, Snippet = snippet, Score = 1 });
         }
     }
 
-    private static int CountOccurrences(string text, string word)
+    private static string FirstSentence(string text)
     {
-        int count = 0, idx = 0;
-        while ((idx = text.IndexOf(word, idx, StringComparison.Ordinal)) != -1)
-        {
-            // Check word boundary
-            bool leftOk = idx == 0 || !char.IsLetterOrDigit(text[idx - 1]);
-            bool rightOk = idx + word.Length >= text.Length || !char.IsLetterOrDigit(text[idx + word.Length]);
-            if (leftOk && rightOk) count++;
-            idx += word.Length;
-        }
-        return count;
+        if (string.IsNullOrWhiteSpace(text)) return "";
+        var clean = text.Replace("\\n", " ").Replace("\n", " ").Trim();
+        var end = clean.IndexOfAny(['.', '!', '?']);
+        if (end > 0 && end < 200) return clean[..(end + 1)];
+        return clean.Length > 150 ? clean[..150] + "..." : clean;
     }
-
-    // Curated thematic vocabulary — the themes the index tracks
-    private static readonly string[] ThematicVocabulary =
-    [
-        // Violence & conflict
-        "violence", "combat", "fight", "battle", "kill", "murder", "weapon", "gun", "blade", "knife",
-        "sniper", "ambush", "war", "assault", "explosion", "bomb", "siege", "raid",
-        // Crime & underworld
-        "crime", "theft", "smuggle", "smuggling", "heist", "robbery", "gang", "cartel", "syndicate",
-        "black market", "contraband", "forgery", "extortion", "bounty",
-        // Betrayal & trust
-        "betrayal", "betray", "trust", "loyalty", "traitor", "deception", "lie", "secret", "hidden",
-        // Loss & grief
-        "loss", "grief", "death", "mourning", "funeral", "orphan", "widow", "missing",
-        // Love & intimacy
-        "love", "romance", "intimate", "tender", "kiss", "partner", "marriage", "family",
-        // Identity & self
-        "identity", "memory", "amnesia", "consciousness", "self", "mirror", "mask", "disguise",
-        // Technology & augmentation
-        "augment", "cyberware", "prosthetic", "implant", "neural", "bci", "interface",
-        "chrome", "geneware", "genetic", "mutation", "biocompute",
-        // AI & synthetic life
-        "ai", "artificial", "synthetic", "android", "robot", "elf", "rogue", "leviathan",
-        "supermind", "sentient", "conscious", "hive mind",
-        // Corporate & power
-        "corporate", "corponation", "executive", "contract", "merger", "hostile", "takeover",
-        "surveillance", "control", "power", "authority", "sovereignty",
-        // Economic
-        "quanta", "money", "debt", "poverty", "wealth", "ubc", "compute", "wallet",
-        "scrip", "broker", "trade",
-        // Medical & body
-        "medical", "surgery", "hospital", "clinic", "doctor", "disease", "injury", "wound",
-        "pain", "healing", "organ", "blood", "transplant",
-        // Location types
-        "underworld", "tunnel", "subway", "harbor", "dock", "rooftop", "alley", "market",
-        "club", "bar", "clinic", "warehouse", "factory",
-        // Atmosphere & mood
-        "rain", "neon", "dark", "shadow", "fog", "night", "storm", "cold", "heat",
-        "silence", "noise", "crowd", "alone", "abandoned",
-        // Morality & philosophy
-        "moral", "ethics", "justice", "revenge", "redemption", "sacrifice", "guilt",
-        "innocent", "corrupt", "freedom", "slavery", "rights",
-        // Transportation
-        "vehicle", "motorcycle", "hover", "airship", "zeppelin", "train", "subway",
-        "mass driver", "hyperlane", "transit",
-        // Survival
-        "survival", "hunger", "shelter", "refugee", "escape", "chase", "hide",
-        "desperate", "starving", "homeless",
-    ];
 }
 
 public class ThematicHit
 {
     public string EntityName { get; set; } = "";
     public string EntityType { get; set; } = "";
+    public string Snippet { get; set; } = "";
     public double Score { get; set; }
     public List<string> Themes { get; set; } = [];
 }

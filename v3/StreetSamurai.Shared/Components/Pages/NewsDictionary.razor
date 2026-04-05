@@ -1,0 +1,69 @@
+@page "/news"
+@using StreetSamurai.Core.Models.Canon
+@inject NewsRepository Repo
+@inject NavigationManager Nav
+
+<div class="dict-layout">
+    <div class="dict-list bg-dark border-end border-secondary">
+        <div class="p-2">
+            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                   placeholder="Filter..." @bind="filter" @bind:event="oninput" />
+        </div>
+        @foreach (var n in FilteredItems)
+        {
+            <div class="list-item text-light @(editing?.Headline == n.Headline ? "active" : "")" @onclick="() => Edit(n)">
+                <div class="fw-bold small">@n.Headline</div>
+                <div class="text-muted" style="font-size: 0.7rem;">@n.Date — @n.Category</div>
+            </div>
+        }
+        <div class="p-2 d-flex gap-1">
+            <button class="btn btn-sm btn-outline-danger flex-grow-1" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
+            <ExportButton Mode="repo" RepoName="News" GetRepoEntries="GetExportEntries" />
+        </div>
+    </div>
+    <div class="dict-editor" style="overflow-y: auto; max-height: calc(100vh - 60px);">
+        @if (editing != null)
+        {
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="text-danger mb-0">@(isNew ? "New Report" : editing.Headline)</h5>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
+                    @if (!isNew) { <ExportButton Mode="entry" RepoName="News" EntryName="@editing.Headline" EntryJson="@System.Text.Json.JsonSerializer.Serialize(editing)" /> }
+                    @if (!isNew && !confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => confirmDelete = true"><i class="bi bi-trash3"></i></button> }
+                    @if (confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => confirmDelete = false">No</button> }
+                </div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 2; min-width: 200px;"><div class="field-label">Headline</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Headline" /></div>
+                <div style="flex: 1; min-width: 100px;"><div class="field-label">Date</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="2185-03-14" @bind="editing.Date" /></div>
+                <div style="flex: 1; min-width: 100px;"><div class="field-label">Category</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Category" /></div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <div style="flex: 1; min-width: 150px;"><div class="field-label">Source</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Source" /></div>
+                <div style="flex: 1; min-width: 150px;"><div class="field-label">Reporter</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Reporter" /></div>
+                <div style="flex: 1; min-width: 100px;"><div class="field-label">Casualties</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Casualties" /></div>
+            </div>
+            <div class="mb-3"><div class="field-label">Body</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="6" @bind="editing.Body"></textarea></div>
+            <div class="mb-3"><div class="field-label">Aftermath</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="2" @bind="editing.Aftermath"></textarea></div>
+            <div class="mb-3"><div class="field-label">Runner Relevance</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="2" placeholder="Why this event matters to the freelance economy..." @bind="editing.RunnerRelevance"></textarea></div>
+        }
+        else
+        {
+            <div class="text-center text-muted py-5"><i class="bi bi-newspaper" style="font-size:3rem;"></i><p class="mt-2">Select a news report or create a new one.</p></div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<NewsData> items = [];
+    private NewsData? editing;
+    private string originalHeadline = "", filter = "";
+    private bool isNew, confirmDelete;
+    private IEnumerable<NewsData> FilteredItems => string.IsNullOrWhiteSpace(filter) ? items.OrderByDescending(n => n.Date) : items.Where(n => n.Headline.Contains(filter, StringComparison.OrdinalIgnoreCase) || n.Body.Contains(filter, StringComparison.OrdinalIgnoreCase) || n.Category.Contains(filter, StringComparison.OrdinalIgnoreCase)).OrderByDescending(n => n.Date);
+    protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); if (Nav.Uri.Contains("new=true")) AddNew(); }
+    private void AddNew() { editing = new NewsData(); isNew = true; confirmDelete = false; }
+    private void Edit(NewsData n) { editing = n; originalHeadline = n.Headline; isNew = false; confirmDelete = false; }
+    private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Headline)) return; if (!isNew && originalHeadline != editing.Headline) Repo.Delete(originalHeadline); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
+    private void DoDelete() { if (editing != null) { Repo.Delete(editing.Headline); editing = null; items = Repo.GetAll(); confirmDelete = false; } }
+    private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Headline, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
+}

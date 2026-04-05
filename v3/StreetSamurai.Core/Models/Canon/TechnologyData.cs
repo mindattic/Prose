@@ -19,4 +19,5 @@ public class TechnologyData
     [JsonPropertyName("enables")] public List<string> Enables { get; set; } = [];
     [JsonPropertyName("social_impact")] public string SocialImpact { get; set; } = "";
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }

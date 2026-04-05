@@ -70,6 +70,7 @@ public class TestDatabaseService : DatabaseService
         new StoryBibleRepository(tp),
         new LiteraryRulesRepository(tp),
         new MotifRepository(tp),
-        new CharacterProfileRepository(tp)
+        new CharacterProfileRepository(tp),
+        new ToneBibleRepository(tp)
     ) { }
 }

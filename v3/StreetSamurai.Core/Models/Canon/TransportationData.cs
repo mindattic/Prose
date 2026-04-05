@@ -26,4 +26,5 @@ public class TransportationData
     [JsonPropertyName("armament")] public string Armament { get; set; } = "";
     [JsonPropertyName("common_usage")] public string CommonUsage { get; set; } = "";
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
+    [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 }
