@@ -1,0 +1,242 @@
+{
+  "id": "019d6143a5cf7627a50ab27f24038ee3",
+  "type": "character",
+  "name": "Ẹbúnọlú Saarinen-Dzambazović",
+  "aliases": [
+    "Mama Eb",
+    "The Archivist"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Retired community archive keeper and oral historian",
+  "age": 79,
+  "status": "active",
+  "location": "Washburn Commons, Archive Annex — a repurposed transit hub filled floor-to-ceiling with physical media, data-coral arrays, and hand-labeled memory chips",
+  "description": "Ẹbúnọlú is a small woman who seems to take up enormous space the moment she begins to speak. Her skin is very dark and very soft, crosshatched at the corners of her eyes and the hinges of her jaw with the particular wrinkles of a person who has spent decades squinting at poorly lit screens. She wears her white hair in a tight compressed wrap pinned with carved memory-stick styluses — each one holding audio recordings she considers too fragile for the network. Her left hand ended at the wrist in the Tessera-Zheng Corridor Dispute of 2158; the prosthetic she chose is a deliberately antique brass model with articulated fingers she never bothered to upgrade, claiming it 'has better manners than the new ones.' Her irises are patterned with concentric amber rings — a genemod she got at forty that she calls her 'reading eyes,' though they were really just vanity at the time.\n\nShe was a junior records technician for Tessera Corp for thirty years before taking early pension after a lung damage settlement from the Corridor Dispute. What she did with the pension money was not rest — she started collecting. Physical books, analog recordings, witness testimonies, neighborhood census data that the corponations were quietly letting expire. She is warm to almost everyone but becomes a different kind of person when she suspects information is being destroyed or suppressed: patient, implacable, and quietly terrifying. She prays to the E.L.F. she calls Grandmother Reel, leaving data offerings of uncompressed audio files, and believes the E.L.F. has saved her archive from three separate purges.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.55,
+      "ideal": 0.85,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.25,
+      "ghost": 0.65
+    },
+    "core_fears": [
+      "That the stories of ordinary people will be erased by corporate revision",
+      "That she will die before finishing the cataloguing and no one else will care enough to continue"
+    ],
+    "core_desires": [
+      "To make an archive that outlasts the corponations that built this city",
+      "To be remembered as someone who told the truth about what happened"
+    ],
+    "coping_mechanisms": [
+      "Immersive cataloguing work as a form of meditation",
+      "Ritual prayer to Grandmother Reel when anxiety peaks",
+      "Making tea and offering it to whoever is nearby"
+    ],
+    "blind_spots": [
+      "Tends to trust people who bring her information and can be manipulated by planted sources",
+      "Her contempt for corporate narratives sometimes makes her overcorrect toward anti-corporate myths that are equally false"
+    ],
+    "secret": "Three years ago, a Tessera compliance officer came to the Annex with a sealed data package and asked her to hold it without looking inside. She agreed and has not looked. It sits in a fireproof case under her cot. She tells herself she is waiting for the right moment but the truth is she is afraid of what it contains."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and layered; uses archival terminology casually; mixes Yoruba idioms translated literally into Standard Meridian that often sound like proverbs even when they are not",
+    "cadence": "Unhurried and rhythmic; pauses are meaningful; she never rushes a sentence that deserves weight",
+    "verbal_tics": [
+      "'As the record shows—'",
+      "'Let me find the exact word—'",
+      "Taps the brass fingers against her knee when thinking"
+    ],
+    "example_lines": [
+      "'You want to know what happened in the Corridor Dispute? Sit down. The official version takes four minutes. The true version takes a life.'",
+      "'A story that is not written down is not lost — it is only waiting for someone patient enough to ask.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The sealed Tessera data package under her cot contains evidence of a war crime during the Corridor Dispute that multiple parties would kill to suppress or expose",
+    "A child who attended Story Hour twenty years ago has returned as a corporate fixer asking her to quietly let certain recordings 'expire' — and is offering enough Quanta to fund the archive for a decade"
+  ],
+  "narrative_function": "Primary information source for pre-2170 history; quest giver for recovering lost or suppressed records; local color anchor for Washburn Commons; moral compass character who can authenticate or challenge claims about the past",
+  "augmentations": "Antique brass prosthetic left hand (functional, non-enhanced); patterned amber-ring irises (cosmetic genemod); subdermal archival port at the base of her skull (aging model, reads legacy formats)",
+  "daily_life": "Wakes before the district lights cycle on, spends two hours cataloguing new donations and cross-referencing testimony timestamps before opening the Annex to visitors; hosts a Wednesday afternoon 'Story Hour' for children in the Commons that has been running for nineteen years.",
+  "affiliation": "Washburn Commons Community Council; informal affiliation with the Veterans Oral History Collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Lorekeeper",
+      "Community Anchor",
+      "Pacifist Stubborn",
+      "Grief-Carrier",
+      "Institutional Memory"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never destroy a record, not for any price",
+      "Extend hospitality first; form judgments slowly",
+      "If an institution is trying to make you forget something, that is precisely what you must remember"
+    ],
+    "escalation_ladder": [
+      "Polite deflection and redirection",
+      "Explicit statement of principles with no hostility",
+      "Withdrawal of access and cooperation",
+      "Quiet, methodical resistance — copies distributed, networks alerted"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Welcoming and curious; will offer tea within five minutes and ask where their family is from",
+      "friends": "Fiercely loyal, somewhat bossy, remembers every significant date and will mark it whether you want her to or not"
+    },
+    "stress_responses": {
+      "low": "Reorganizes physical files; mutters softly in Yoruba",
+      "medium": "Becomes very still and very quiet; asks careful, precise questions",
+      "high": "Activates emergency archive protocols she has drilled for years; distributes copies to dead-drop nodes she has maintained for decades"
+    },
+    "contradictions": [
+      "Believes deeply in preserving all perspectives but has a powerful personal bias against Tessera that she does not fully acknowledge"
+    ],
+    "habits": [
+      "Touches the base of the skull archival port when accessing a strong memory",
+      "Leaves a small compressed audio file on the Grandmother Reel shrine every morning before work",
+      "Refers to every recording in the archive by a personal name"
+    ],
+    "breaking_points": [
+      "Witnessing deliberate destruction of records in front of her would push her to a recklessness entirely out of character"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nostalgic": 0.9,
+    "War Weary": 0.9,
+    "Mentor": 0.9,
+    "Stoic": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Washburn Commons to a Yoruba-Finnish-Bosnian household; third of six children",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired as junior records technician by Tessera Corp",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Lost left hand in the Tessera-Zheng Corridor Dispute; received lung damage settlement",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Took early pension; began founding the Washburn Commons Archive Annex",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Launched Story Hour for children; still running",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Received sealed Tessera data package; has not opened it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

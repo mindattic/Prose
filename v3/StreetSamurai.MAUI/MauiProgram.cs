@@ -18,11 +18,10 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 			});
 
-		// Configure Serilog — daily rolling log files in engine_data/logs/
+		// Configure Serilog — daily rolling log files in engine/logs/
 		var settings = new SettingsService();
 		var pathProvider = new FileSystemPathProvider(settings);
-		var logDir = Path.Combine(pathProvider.DataRoot, "logs");
-		Directory.CreateDirectory(logDir);
+		var logDir = pathProvider.LogDir;
 
 		Log.Logger = new LoggerConfiguration()
 			.MinimumLevel.Debug()

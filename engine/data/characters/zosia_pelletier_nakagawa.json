@@ -1,0 +1,243 @@
+{
+  "id": "019d6143a73976e1bc4dbfc3e6c7946d",
+  "type": "character",
+  "name": "Zosia Pelletier-Nakagawa",
+  "aliases": [
+    "Zos",
+    "the Paper Lady"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Laundry operator — runs a small laundromat and alteration service in Old Harbor",
+  "age": 61,
+  "status": "active",
+  "location": "Old Harbor — Pelletier's Wash & Press, a narrow shopfront on Gravesend Basin's lower commercial row, directly below an elevated transit line",
+  "description": "Zosia is small, precise, and seems to take up exactly the amount of space she has decided is appropriate — no more, no less. She has her Polish grandmother's cheekbones and her Japanese grandfather's stillness, and her skin has the particular texture of someone who has spent six decades in steam and detergent and doesn't mind. Her hair is white now and worn pinned close to her head; she had it dyed electric white at fifty and has maintained it since as a conscious aesthetic choice. Her hands have mild augmentation tremor from an older, cheaper nerve mod she can't afford to replace, which has the counterintuitive effect of making her sewing work more interesting — her stitch lines have a slight organic quality that customers have started requesting specifically.\n\nZosia has the disposition of someone who has decided that most things are manageable if you deal with them before they become crises. She runs her shop with the authority of a small sovereign — her word on fabric, cleaning chemistry, and alteration timelines is final and she will explain herself exactly once. She has a genuine fondness for the domestic mathematics of laundry: temperature, cycle, fiber content, time. She finds it meditative in the way other people find walking meditative. She is not warm exactly — warm implies an outward emission, and Zosia is more like a consistent ambient temperature. She's there, she's reliable, and you notice when she isn't.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Losing the shop — not for financial reasons, but because the shop is what she has built and it is her answer to the question of whether her life meant something",
+      "Her tremor worsening to the point that she can't sew"
+    ],
+    "core_desires": [
+      "To run the shop for another twenty years",
+      "For someone to be interested enough in the work to apprentice under her — she hasn't found the right person yet"
+    ],
+    "coping_mechanisms": [
+      "Routine as religion — the shop schedule is inviolable",
+      "Small sovereignty: controlling what can be controlled with extreme precision"
+    ],
+    "blind_spots": [
+      "She reads people through their clothes and habits, which is accurate more often than not but occasionally very wrong",
+      "She has more community investment and social presence than she acknowledges, and so she undersells her own importance to the block"
+    ],
+    "secret": "For fifteen years she has been quietly laundering (literally and figuratively) the clothes of a woman in Old Harbor who she has figured out is running from something — the woman pays triple, asks no questions, and Zosia asks none back. She doesn't know what the woman is hiding. She has decided she doesn't need to."
+  },
+  "speech_patterns": {
+    "vocabulary": "Economical and technical when discussing fabric and cleaning; drier and more precise in general speech; occasional Polish expressions that survived three generations ('no to co' — so what, 'jakoś to będzie' — it'll work out somehow)",
+    "cadence": "Even and measured, rarely interrupted, rarely interruptible",
+    "verbal_tics": [
+      "'Mm.' as full acknowledgment of a point she will now consider",
+      "'No to co' when dismissing excessive drama",
+      "Refers to the shop's machines by number, not nickname, unlike most of the street"
+    ],
+    "example_lines": [
+      "'Machine Three does wool and delicates. You can't rush wool. If you needed it faster, you should have brought it Wednesday.'",
+      "'I've heard worse things said in those chairs than anywhere else in Old Harbor. People think laundry is private. It's not. Nothing you do in front of me is private. I simply choose not to repeat most of it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The woman she's been sheltering through laundry transactions has not come in for six weeks — Zosia is concerned enough to ask around, quietly, which is out of character and the neighborhood has noticed",
+    "An item left in a pocket of someone's alteration — a data-chip she handed to the owner without examining — has apparently caused significant trouble, and now someone wants to know what she knows",
+    "The Small Operators' Circle is being pressured to accept a Palladian 'neighborhood services integration' deal that would put all laundry drop-off through a corporate app; Zosia's vote could decide the Circle's position"
+  ],
+  "narrative_function": "Local color and unlikely information nexus — people say things while waiting for their laundry that they wouldn't say anywhere else. She's heard confessions, arguments, business negotiations, and once an entire breakup play out in her waiting chairs. Practical resource for characters who need clothing altered, repaired, or cleaned quickly and quietly.",
+  "augmentations": "Outdated peripheral nerve stabilizer (causes the characteristic tremor; she refuses the upgrade on principle — 'the hands still work'); UV-filter contact lenses for fabric-condition assessment; a small hearing amplifier worn as an earring on her left ear",
+  "daily_life": "Opens at 07:00, sorts the overnight drop-offs, runs the morning cycle, does alterations from 10:00 to 14:00 while the machines work, takes lunch on her stool behind the counter, runs the afternoon cycle, closes at 19:00. Watches old textile-art feeds on a small screen mounted above the dryers on Tuesday evenings.",
+  "affiliation": "Independent; member of the Old Harbor Small Operators' Circle (a neighborhood business association)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -3,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Small Sovereign",
+      "Accidental Confessor",
+      "Quiet Protector",
+      "Veteran Tradesperson",
+      "Controlled Order"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The shop's rules are non-negotiable; exceptions exist but you must earn them",
+      "What happens in the shop stays in the shop — this is a rule she applies to herself as much as anyone",
+      "Don't take on more than she can do properly; quality over volume"
+    ],
+    "escalation_ladder": [
+      "State the shop policy once",
+      "Indicate which policy is being violated and what the consequence is",
+      "Implement the consequence without additional comment",
+      "Ask them to leave — this has only happened six times in fifteen years, and she remembers all six"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally neutral, assesses them through what they bring and how they handle it, warms slowly and on evidence",
+      "friends": "She has three friends. With them she is dry, funny, occasionally scathing about shared acquaintances, and fiercely loyal"
+    },
+    "stress_responses": {
+      "low": "Works through the alteration backlog she keeps for when she needs to focus on something controllable",
+      "medium": "Opens the shop earlier than usual, says less than usual",
+      "high": "Stays after closing and re-folds everything in the shop — every shelf, every hanging — until the order reasserts itself in her"
+    },
+    "contradictions": [
+      "Projects absolute predictability and reliability while maintaining a fifteen-year quiet conspiracy of protection for a stranger she's never asked to explain herself",
+      "Claims not to be interested in people's business while possessing an almost clinical memory for every interaction she has witnessed in the waiting chairs"
+    ],
+    "habits": [
+      "Touches the fabric of every item personally before assigning it to a machine — no exceptions",
+      "Leaves a single coin (Φ1, always the same denomination) at the base of Machine One's housing as an offering to the shop's E.L.F. every Monday morning",
+      "Drinks the same tea at the same time every afternoon; has been doing this for forty years"
+    ],
+    "breaking_points": [
+      "Anyone damaging her machines through misuse or aggression — she has bodily removed people from the shop for this and she's sixty-one and small and it has not not worked yet",
+      "Being asked to make an exception to a policy 'just this once' by someone who has already made the same request three times"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Old Harbor to a Polish-Japanese family; her grandmother ran a textile repair shop in the same district",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opened Pelletier's Wash & Press in the current location, taking over from a retiring operator",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Essential tremor diagnosis; peripheral nerve stabilizer installed; refuses upgrade despite worsening tremor",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First transaction with the woman she now quietly shelters; has not asked for explanation in fifteen years",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Small Operators' Circle began receiving Palladian integration overtures; Zosia became de facto opposition",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

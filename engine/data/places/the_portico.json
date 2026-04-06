@@ -1,0 +1,94 @@
+{
+  "id": "019d6143a94c73168aedaa6579303f6e",
+  "type": "place",
+  "name": "The Portico",
+  "aliases": [
+    "Portage Park",
+    "The Porch",
+    "Middle Ground",
+    "The Last Suburb"
+  ],
+  "description": "The Portico is what happens when a middle-class neighborhood survives the apocalypse through sheer stubbornness. Old Portage Park was solidly working-to-middle class — the kind of place where people mowed their lawns on Saturday and argued about property taxes at the alderman's office. When the corps carved up Chicago, the Portico fell into a strange in-between: too far northwest to matter strategically, too stable to collapse, too boring to attract either corporate investment or criminal enterprise. So it just... continued. Modified, degraded, patched and re-patched, but recognizably itself in a way that almost nothing else in Meridian 88 can claim.\n\nThe old Portage Theater still stands at the intersection of Milwaukee and Irving Park — or what those streets became when the corporate re-addressing system renamed them Corridor Feed 7 and Lateral 12. Nobody uses the corporate names. The theater itself was purchased by a Tier 3 residents' cooperative in Year 14 and converted into a community nexus: part entertainment venue, part town hall, part emergency shelter. The marquee still lights up, running on a generator that has been repaired so many times it is philosophically unclear whether any original component remains. On weekends, the Portico Theater shows pre-collapse films — actual celluloid prints, projected on actual film projectors maintained by a retired Axiom optical engineer who considers this his life's work. The audience sits in original 1920s seats that have been reupholstered in whatever was available. It is the only place in Meridian 88 where you can watch a movie without a targeted advertisement interrupting it.\n\nThe Portico's secret is its Tier 2-3 stability. These are people with enough corporate legitimacy to maintain infrastructure but not enough to attract predatory attention. They run their own water filtration. They maintain their own street lighting. They have an informal militia — not armed rebels, just neighbors with hunting rifles and neural-linked security cameras who have agreed that corporate security response times of 'never' are unacceptable. The Portico is proof that civil society can survive corporate sovereignty, but only in the margins, only where nobody important is looking, and only if you are boring enough to be left alone.\n\nKyle finds the Portico unsettling. Not because it's dangerous — it's one of the safest places in the outer districts — but because it reminds him of what normal looks like, and normal is a country he can't go back to.",
+  "atmosphere": {
+    "sights": [
+      "The Portage Theater marquee glowing in warm incandescent light against the Meridian haze",
+      "Residential blocks that look almost pre-collapse — bungalows with patched roofs and jury-rigged solar panels",
+      "Community bulletin boards — physical ones, cork and paper — at every intersection",
+      "Neighborhood militia members identifiable only by a subtle arm-patch and the way they watch the streets",
+      "Children playing outside, which is remarkable enough in Meridian 88 to constitute a sight",
+      "Gardens — actual food gardens in actual soil, tended by people who remember how"
+    ],
+    "sounds": [
+      "Relative quiet — the Portico is one of the few places in Meridian 88 where you can hear yourself think",
+      "The theater's film projector clicking on weekends — a mechanical heartbeat from another century",
+      "Neighborhood watch check-ins on low-frequency encrypted channels",
+      "Dogs barking — real dogs, not corporate companion units",
+      "The hum of jury-rigged solar arrays charging during daylight hours"
+    ],
+    "smells": [
+      "Garden soil and growing things — rare enough in Meridian to be startling",
+      "Home cooking through open windows — actual kitchens, not nutrient paste dispensers",
+      "Old building smell — wood, plaster, the accumulated scent of a hundred years of habitation"
+    ],
+    "feel": "Eerie normalcy. The Portico feels like a photograph from before the incorporation, preserved under glass. It provokes a specific emotion in Shelf residents who visit: grief for a way of living that they never had and that the Portico maintains only through constant, exhausting effort. Comfortable and heartbreaking in equal measure.",
+    "tags": []
+  },
+  "demographics": "Roughly 60,000 residents, predominantly Tier 2 and Tier 3. Ethnically mixed but trending older — the young leave for the Circuit or the Core, and the Portico is slowly aging. A significant population of retired corporate workers who chose stability over advancement. The most functional community governance structure outside the Core.",
+  "economy": "",
+  "power_structure": "",
+  "dangers": [
+    "The militia is protective and sometimes that protection becomes insularity — outsiders are watched closely",
+    "Infrastructure age — the Portico's self-maintained systems are one catastrophic failure away from collapse",
+    "Corporate re-zoning threats — the Portico's land has value, and someone will eventually notice",
+    "Complacency — the Portico's stability makes it slow to respond to external threats",
+    "The quiet desperation of maintaining normalcy in a world that has moved on from normal"
+  ],
+  "opportunities": [
+    "Safe houses — the Portico's boring stability makes it an excellent place to hide",
+    "Community intelligence networks — neighbors who notice everything",
+    "Pre-collapse knowledge preserved by older residents",
+    "The theater as a neutral meeting ground for negotiations between factions",
+    "Recruitment — the Portico produces competent, reliable people who sometimes want more"
+  ],
+  "story_hooks": [
+    "A corporate development firm has acquired rezoning rights to the Portico's eastern blocks, and the cooperative is looking for someone to make the problem go away",
+    "The theater's film archive contains pre-collapse news footage that contradicts the official corporate history of the incorporation",
+    "A Portico militia leader is Kyle's former neighbor from before he fell through the tiers — she remembers him as a child"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Irkalla",
+      "The Alban Souk",
+      "The Cragin Stacks"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Tier 2-3 residents maintaining a stubborn approximation of normal life",
+    "Operators and fixers seeking safe houses in an unremarkable neighborhood",
+    "Film enthusiasts making pilgrimages to the Portage Theater",
+    "Corporate scouts assessing the district's real estate potential",
+    "Shelf residents visiting for the novelty of seeing children play outside"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.956,
+    "lng": -87.708,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "secret",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "rights",
+    "shelter",
+    "chase",
+    "water",
+    "shelf",
+    "circuit"
+  ]
+}

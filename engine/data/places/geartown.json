@@ -1,0 +1,108 @@
+{
+  "id": "019d6143a91a7aeb870e990413666429",
+  "type": "place",
+  "name": "Geartown",
+  "aliases": [
+    "Corktown",
+    "The Proving Ground",
+    "Ford Zero"
+  ],
+  "description": "Geartown is what Corktown became when Ford Motor Company — or rather, the entity that emerged from Ford's 2144 merger with three autonomous vehicle startups and a military robotics firm — chose the neighborhood as its global autonomous vehicle testing campus. The name stuck because the locals refused to call it the Ford Autonomous Mobility Innovation District, which is what the brass plaque at Michigan Avenue and Trumbull says. Geartown. Where the gears turn. Where they turned you out of your house to make room for a parking algorithm.\n\nThe old neighborhood — Detroit's oldest, settled by Irish immigrants in the 1830s — is unrecognizable. The historic homes were bought, preserved as facades, and hollowed out to serve as sensor calibration labs, AV routing substations, and the kind of office space that looks like a living room but costs Φ40,000 per month. Michigan Central Station, the grand ruin that became a symbol of Detroit's decline and then its rebirth, now serves as Ford Meridian's primary AV command center — a gorgeous, vaulted space filled with holographic traffic models showing every autonomous vehicle in the Great Lakes Metropolitan Area as a point of light. Eighteen million points of light, moving in patterns no human mind can track without augmentation.\n\nThe testing ground extends six blocks in every direction from the station. Public access is restricted. Autonomous vehicles of every configuration run continuous test loops — freight haulers, passenger pods, military platforms, emergency response units, and experimental configurations that don't have names yet, just serial numbers. The vehicles are silent. The neighborhood is silent. The loudest sound in Geartown is the whisper of tires on smart-surface roads and the occasional distant clang from the maintenance bays where human technicians still do the work that robots can't. The irony of a neighborhood full of autonomous vehicles that still needs human hands to fix them is not lost on the technicians. It's the only job security they have.",
+  "atmosphere": {
+    "sights": [
+      "Michigan Central Station's restored Beaux-Arts facade, its windows now displaying real-time AV fleet data",
+      "Autonomous vehicles running silent test loops through empty streets — an entire neighborhood that moves without people",
+      "Historic Corktown facades preserved but hollow — beautiful shells housing sensor arrays and routing hardware",
+      "The Proving Ground perimeter fence, tastefully designed to not look like a fence and failing",
+      "Maintenance bay doors opening to reveal vehicles that don't exist in any public catalog"
+    ],
+    "sounds": [
+      "Tire whisper on smart-surface roads — the sound of a neighborhood running on software",
+      "The low hum of charging stations embedded in every curb",
+      "Maintenance bay impacts — human tools on machine bodies, the oldest sound in Detroit",
+      "Security drone patrol patterns overhead, their rotors tuned to a frequency designed to be ignorable",
+      "Nothing else. Geartown is the quietest neighborhood in Detroit, and the silence is engineered."
+    ],
+    "smells": [
+      "Ozone from vehicle charging infrastructure",
+      "Smart-surface road material — a chemical cleanliness that smells like nothing, which is itself a smell",
+      "Machine lubricant drifting from the maintenance bays — the one honest industrial smell left",
+      "The ghost of hops from the old Corktown breweries, which is probably imaginary but everyone claims to smell it"
+    ],
+    "feel": "Eerie. Geartown feels like a city that asked humans to leave and most of them did. The streets are immaculate. The vehicles are perfect. The buildings are preserved. And the entire neighborhood feels like a museum exhibit about what happens when machines inherit a place that used to be alive.",
+    "tags": []
+  },
+  "demographics": "Approximately 8,000 residents — almost entirely Ford Meridian employees, security personnel, and the maintenance technicians who keep the fleet running. Pre-corporate displacement population was 12,000. The displaced residents received relocation packages averaging Φ180,000, which bought them approximately eighteen months of housing in adjacent districts.",
+  "economy": "Ford Meridian's AV testing campus generates Φ320 billion annually in patent development, fleet licensing, and military autonomous platform contracts. The neighborhood itself has no informal economy. You cannot sell anything in Geartown that Ford Meridian does not authorize.",
+  "power_structure": "Ford Meridian holds sovereign authority over the entire Proving Ground. The company's Detroit Regional Director, currently Kenji Okafor, reports to the Ford Meridian board in Dearborn. Local governance does not exist. Geartown is a company town in the most literal sense.",
+  "dangers": [
+    "Autonomous vehicle test incidents — the vehicles are good but not perfect, and experimental platforms are unpredictable",
+    "Restricted zone violations — entering the Proving Ground without authorization triggers an immediate security response",
+    "Surveillance — every surface in Geartown is a sensor, because that's what autonomous vehicles need to navigate",
+    "The military platforms — some of the vehicles running test loops are armed, and the perimeter between civilian and military testing is a painted line on the road",
+    "Displacement creep — Ford Meridian acquires adjacent properties annually, and the perimeter keeps growing"
+  ],
+  "opportunities": [
+    "AV technology theft — Ford Meridian's experimental platforms are worth billions on the gray market",
+    "The maintenance technicians know things the engineers don't — hands-on knowledge of systems that only exist in prototype",
+    "Michigan Central Station's AV command center sees every autonomous vehicle in the GLM — access to that data is access to the region's circulatory system"
+  ],
+  "story_hooks": [
+    "A military autonomous platform disappears from the Proving Ground. Ford Meridian claims it was scrapped. The platform's maintenance technician says the bay was empty when he arrived for the scheduled teardown.",
+    "The AV command center's fleet data shows vehicles routing through areas that don't appear on any map — someone is using the autonomous fleet to access locations that officially don't exist",
+    "A group of former Corktown residents are suing Ford Meridian for displacement damages. Their lawyer keeps dying in autonomous vehicle accidents."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Renaissance Axis",
+      "Mexicantown Libre",
+      "The Delray Sacrifice Zone"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Ford Meridian engineers and executives",
+    "Maintenance technicians — the last human hands in the machine",
+    "Military autonomous systems contractors",
+    "Corporate espionage operators who find Geartown's silence very useful cover"
+  ],
+  "notable_locations": [
+    {
+      "name": "Michigan Central Command",
+      "description": "The restored train station, now Ford Meridian's AV fleet command center — 18 million vehicles tracked as points of light in a vaulted cathedral",
+      "tags": []
+    },
+    {
+      "name": "The Proving Ground",
+      "description": "Six-block restricted testing zone where experimental autonomous platforms run continuous loops",
+      "tags": []
+    },
+    {
+      "name": "Bay 7",
+      "description": "The maintenance facility where military-grade platforms are serviced — the most restricted civilian space in Detroit",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 42.3369,
+    "lng": -83.0637,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "theft",
+    "augment",
+    "ai",
+    "robot",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "pain",
+    "market",
+    "vehicle",
+    "lake",
+    "geartown"
+  ]
+}

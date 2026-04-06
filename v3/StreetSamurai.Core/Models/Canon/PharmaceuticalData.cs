@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Models.Canon;
 
@@ -7,8 +8,9 @@ namespace StreetSamurai.Core.Models.Canon;
 /// How people in 2200 get high, stay focused, fight harder, sleep deeper, forget,
 /// remember, and everything in between.
 /// </summary>
-public class PharmaceuticalData
+public class PharmaceuticalData : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("type")] public string Type { get; set; } = "pharmaceutical";
     [JsonPropertyName("aliases")] public List<string> Aliases { get; set; } = [];

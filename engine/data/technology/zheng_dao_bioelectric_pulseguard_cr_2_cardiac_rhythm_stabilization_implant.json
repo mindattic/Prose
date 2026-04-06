@@ -1,0 +1,59 @@
+{
+  "id": "019d6143aa5976ee91b5913f4db541a2",
+  "name": "Zheng-Dao Bioelectric PulseGuard CR-2 Cardiac Rhythm Stabilization Implant",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Bioelectric PulseGuard CR-2 Cardiac Rhythm Stabilization Implant",
+  "type": "technology",
+  "aliases": [
+    "The Ticker",
+    "CR-2",
+    "HeartLock",
+    "Zheng Pulse"
+  ],
+  "subcategory": "medical",
+  "description": "The PulseGuard CR-2 is a subdermal cardiac rhythm management implant roughly the size of a large coin, seated beneath the left clavicle via a 15-minute outpatient procedure. It combines a next-generation adaptive pacemaker with a bioelectric defibrillation module capable of delivering a precisely calibrated shock to terminate ventricular fibrillation without the energy demands that made earlier implanted defibrillators bulky and short-lived. The CR-2 harvests a portion of its operating power from the body's own bioelectric gradient using Zheng-Dao's established microcurrent harvesting architecture, supplemented by a solid-state reserve cell with a projected 12-year lifespan under normal load.\n\nWhat distinguishes the CR-2 from legacy cardiac implants is its real-time arrhythmia classification engine — a compact neuromorphic processing unit that continuously analyzes cardiac waveforms and distinguishes between benign rhythm variations (common in heavily augmented individuals whose implants introduce bioelectric interference) and genuinely dangerous arrhythmias requiring intervention. This dramatically reduces inappropriate shock delivery, which had been a leading cause of augmentation-related cardiac injury in Meridian 88's densely wired population. The device communicates with Saltmarsh Telecom's health monitoring infrastructure when in range, forwarding anonymized rhythm data to Zheng-Dao's cardiac analytics network.\n\nThe CR-2 is standard issue for any citizen receiving thoracic augmentation above a certain implant density threshold, and Tier 1 corporate employees frequently receive it as a proactive measure regardless of cardiac history. In lower tiers, access is more complicated — the device is theoretically available through subsidized Tier 3 health programs, but waiting lists run 18 months or longer, and counterfeit units using inferior capacitor arrays have caused several documented deaths by delayed defibrillation. A persistent rumor in security circles holds that the CR-2's Saltmarsh data uplink can be exploited to deliver a targeted cardiac event — a claim Zheng-Dao dismisses as technically impossible and Arcturus Defense Solutions has reportedly been investigating for three years.",
+  "tier_availability": "Tier 1–2 (standard issue); Tier 3 (subsidized waitlist); Grey market Tier 4+",
+  "developers": [
+    "ZHENG-DAO BIOELECTRIC",
+    "SALTMARSH TELECOM"
+  ],
+  "base_technologies": [
+    "Zheng-Dao Bioelectric CellStack BM-3 Biological Microbial Fuel Cell Implant",
+    "Zheng-Dao Bioelectric SynapseWeave NX-6 Cortical Mesh Implant",
+    "Saltmarsh Telecom AtmoMesh QL-7 Urban Air Quality Sensor Lattice",
+    "Ouroboros Energy CascadeCell Mk.IV Supercapacitor Array"
+  ],
+  "enables": [
+    "Safe high-density thoracic augmentation protocols",
+    "Real-time cardiac telemetry network integration",
+    "Bioelectric interference mapping in augmented populations",
+    "Targeted cardiac disruption attack vector (classified)"
+  ],
+  "social_impact": "The PulseGuard CR-2 has created a sharp and visible divide in Meridian 88's augmented population: those whose hearts are managed by a corporate device with a live uplink to Zheng-Dao's servers, and those who either can't afford the implant or refuse it on principle. The data uplink controversy has fed a growing anti-telemetry movement in the lower tiers, where 'going dark' — removing or blocking health monitoring implants — is simultaneously a political statement, a survival strategy against corporate surveillance, and a genuine medical risk. For the corporations, the CR-2 network represents one of the most intimate datasets they hold: the literal heartbeats of their workforce, in real time.",
+  "story_hooks": [
+    "Three senior executives from competing corporations have died of sudden cardiac arrest within a week — all had CR-2 implants, and the rhythm logs show identical anomalous signatures 30 seconds before each event",
+    "A Zheng-Dao data engineer approaches the players with evidence that the CR-2 uplink is being used to build a 'kill list' of high-value targets — and their own name is on it",
+    "A counterfeit CR-2 manufacturer in the Port District is producing units that look identical to legitimate devices but have a 40% failure rate on defibrillation — someone needs to find the supply chain before more people die",
+    "The players must keep a critically ill contact alive long enough to testify, but their contact's CR-2 has been remotely flagged for 'maintenance mode' — effectively disabling the defibrillation function"
+  ],
+  "tags": [
+    "medical",
+    "technology",
+    "war",
+    "death",
+    "augment",
+    "ai",
+    "corporate",
+    "surveillance",
+    "power",
+    "injury",
+    "market",
+    "dark",
+    "survival",
+    "energy",
+    "tier 1",
+    "tier 2",
+    "tier 3",
+    "tier 4"
+  ]
+}

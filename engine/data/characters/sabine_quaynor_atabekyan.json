@@ -1,0 +1,222 @@
+{
+  "id": "019d6143a6bf79c7b553f16a95e8ab67",
+  "type": "character",
+  "name": "Sabine Quaynor-Atabekyan",
+  "aliases": [
+    "Bee",
+    "The Fitter"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Clothing and fashion vendor, specializing in geneware-compatible garments and custom aug-fit tailoring",
+  "age": 31,
+  "status": "active",
+  "location": "The Alban Souk, Bronzeline",
+  "description": "Sabine is medium height with her Ghanaian mother's rich dark skin and her Armenian father's long, expressive hands that she uses constantly when she talks — sketching shapes in the air, measuring invisible distances, framing imaginary necklines. Her geneware includes a set of bioluminescent tracery lines running from her temples down her jaw and throat, a deep blue-violet that she originally got for professional display purposes (showing clients how light interacts with their own potential geneware) and has now had so long she forgets other people can see them. Her hair is geneware-modified to grow in precise architectural shapes she redesigns quarterly; currently a structured asymmetric sweep with the texture of woven textile rather than hair. She dresses to demonstrate, always — in things she has made or modified, things that show what she can do.\n\nSabine's stall in the Alban Souk has expanded twice since she set it up seven years ago and now occupies a corner unit with a small fitting alcove curtained off from the main market floor. She makes most of what she sells — adaptive fabrics that accommodate tail geneware, spine-following cuts for aug users with dorsal hardware, clothes that move with retractable claws rather than tearing on them. She is opinionated about aesthetics in the specific way of someone who thinks about it constantly and seriously, and will talk about garment theory for as long as you'll allow, which most of her regulars have stopped allowing because they have places to be. She is cheerfully pushy about what will suit a person and usually right, which is what keeps people coming back.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Her work becoming obsolete — that fashion will shift away from handmade and personal in a direction she can't follow",
+      "Her younger sister, who is Tier 1 and refusing help, getting swallowed by Irkalla"
+    ],
+    "core_desires": [
+      "Recognition — not fame exactly, but for her work to be taken seriously as craft, not just market goods",
+      "To design a complete geneware-adaptive collection significant enough that a Tier 3 boutique would carry it"
+    ],
+    "coping_mechanisms": [
+      "Channeling anxiety into elaborate new design projects",
+      "Social busyness — being around people in the Souk functions as mood regulation"
+    ],
+    "blind_spots": [
+      "Her professional confidence bleeds into overconfidence in her ability to manage people's problems — she often takes on other people's crises as design problems to solve, which doesn't work",
+      "Underestimates how much the two geneware clinics that refer clients to her control her market position"
+    ],
+    "secret": "She has been secretly making and donating geneware-compatible clothing to a Tier 1 mutual aid network in Irkalla for two years — clothing designed specifically for people whose geneware has grown out of the cheap stuff they could afford and now tears or tangles in standard garments. She keeps it secret because she's afraid people will think she's performing charity. She's also afraid she'll get too attached to the work there and lose focus on building her own business."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast and visual; describes everything in terms of texture, fit, and color; Twi and Armenian endearments mixed into everyday speech; market shorthand with vendor peers",
+    "cadence": "Enthusiastic and slightly too fast, with sudden focused slowdowns when she's assessing something seriously",
+    "verbal_tics": [
+      "'No, but look—'",
+      "Touching the fabric she's wearing as punctuation",
+      "'You see what I mean?' (whether or not you see what she means)"
+    ],
+    "example_lines": [
+      "'No, but look — the problem is the shoulder seam, you've been wearing the wrong shoulder seam for your whole augmentation profile and it shows in how you hold yourself, I can see it from here. Sit.'",
+      "'The Souk has been strange this week. Strange like — not the usual strange, different strange. You've been around, you know?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Her sister has pawned something at Constant's shop on The Shelf — something of their mother's — and word has reached Sabine through the vendor network. She needs someone to help her recover it quietly before the standard resale period expires.",
+    "A Helix Biosystems rep has approached her about designing a line of 'clinically certified geneware-compatible garments' under a Helix brand license — which would mean real money and distribution, but also corporate oversight of her designs and a non-compete that would kill her independent work. She's been agonizing over it for two weeks."
+  ],
+  "narrative_function": "Social hub and neighborhood gossip network node, equipment and clothing source for characters needing aug-compatible gear, potential quest giver for problems involving the Souk community.",
+  "augmentations": "Geneware: bioluminescent facial tracery (blue-violet), architecturally-structured hair modification. Cyberware: measurement implant in both hands (precise dimensional scanning for fitting purposes, outputs to a visual overlay). No other augmentations.",
+  "daily_life": "Alban Souk opens at 08:00; she's there at 07:00 setting up displays. Afternoons are peak fitting hours. Evenings she works on commissions in the back of the stall. Takes Tuesdays off to source fabric from Ironvein industrial suppliers.",
+  "affiliation": "Independent; Alban Souk vendors collective; informal professional relationship with two Bronzeline geneware clinics who refer aug clients to her for fitting",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": -4,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "craft specialist",
+      "community glue",
+      "hidden philanthropist",
+      "corporate temptation"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Make things well — shortcuts in craft compound into regret",
+      "Help people in the Souk community before outside obligations",
+      "Never let a corporate offer be the only offer on the table before deciding"
+    ],
+    "escalation_ladder": [
+      "Redirect with questions and topic reframing",
+      "Direct statement of objection with immediate pivot to alternatives",
+      "Cease interaction entirely and become very publicly busy",
+      "Loud, precise, surgical public disagreement — she is very good at this and uses it sparingly"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and assessing — she's reading your augmentation profile and silhouette simultaneously",
+      "friends": "Bossy and affectionate in equal measure; will fix your collar without asking permission"
+    },
+    "stress_responses": {
+      "low": "Talks faster; bioluminescent tracery brightens slightly",
+      "medium": "Gets very focused and quiet on whatever her hands are doing — sewing, measuring, folding",
+      "high": "Exits the situation to find fabric and works until she can think again"
+    },
+    "contradictions": [
+      "Craves professional recognition but hides her most meaningful work from public view",
+      "Pushes people to present themselves authentically while maintaining a very curated professional persona herself"
+    ],
+    "habits": [
+      "Touches the hem of whatever she's wearing when thinking",
+      "Always has a measuring tape somewhere on her body",
+      "Leaves worn fabric scraps at the Souk's central ELF shrine — considers it an offering of material transformed into something better"
+    ],
+    "breaking_points": [
+      "Her work being called decorative or trivial by someone who benefits from it",
+      "Her sister being in serious danger while refusing Sabine's help"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "People Pleaser": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 17 — began selling altered secondhand clothes from a bag in the Alban Souk",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Secured permanent stall; began specializing in aug-compatible tailoring after a gap in the market became obvious",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First geneware clinic referral relationship established; stall expanded to corner unit",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began anonymous donations to Irkalla mutual aid network",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Helix Biosystems licensing offer received; currently unresolved",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

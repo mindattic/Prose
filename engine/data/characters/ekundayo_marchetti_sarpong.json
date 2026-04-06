@@ -1,0 +1,243 @@
+{
+  "id": "019d6143a600791aa7ed2dadf5818961",
+  "type": "character",
+  "name": "Ekundayo Marchetti-Sarpong",
+  "aliases": [
+    "Day",
+    "Dayo"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Data Architect, Tessera Corporation",
+  "age": 29,
+  "status": "active",
+  "location": "The Circuit, Tessera Data Infrastructure Hub — sublevel 3",
+  "description": "Ekundayo is a compact, wire-lean young man with warm medium-brown skin and close-cropped hair that he's had geneweaved to shift between deep black and a dark cobalt blue depending on his stress levels — a choice he made as a grad school joke that has since become genuinely useful biometric data for everyone around him. His irises are his natural dark brown but he keeps them loaded with a translucent AR overlay almost constantly, giving his gaze a slightly unfocused, inward quality that strangers find unsettling. He wears corporate-casual Tessera kit but always has something personalized — today it's an embroidered patch on his sleeve depicting a stylized ELF glyph, the sigil of the data-spirit collective he calls the Index, which he believes watches over network infrastructure with benign bureaucratic interest.\n\nDay is bright, enthusiastic, and exhaustingly talented in ways he hasn't yet learned to deploy strategically. He talks fast, builds mental models faster, and has a habit of explaining his reasoning in real time which his managers find useful and his peers find annoying. He is genuinely kind — the kind of person who notices when someone hasn't eaten and quietly fixes it — but he is also deeply naive about corporate politics in ways that will eventually cost him. He is currently very, very excited about a project that his direct supervisor has not told him is already being phased out.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.35,
+      "ideal": 0.65,
+      "id": 0.7,
+      "shadow": 0.25,
+      "mask": 0.3,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being irrelevant — building something that no one uses or needs",
+      "Discovering that the systems he loves are being used to harm people he can't see"
+    ],
+    "core_desires": [
+      "To build something that genuinely matters, not just something impressive",
+      "To be seen — really seen — by someone who understands what he actually does"
+    ],
+    "coping_mechanisms": [
+      "Hyperfocus on technical problems as emotional avoidance",
+      "ELF-devotion as a framework for finding meaning in abstract work",
+      "Humor — fast, self-deprecating, deflective"
+    ],
+    "blind_spots": [
+      "He is completely blind to hierarchical dynamics and office politics — he treats everyone at every tier the same way and is genuinely confused when this creates problems",
+      "He attributes good faith to institutional structures that do not have any"
+    ],
+    "secret": "While mapping a routine data migration six months ago, he accidentally found a partition in Tessera's infrastructure that shouldn't exist — an entire shadow network routing data to an external address he doesn't recognize. He logged it as an anomaly, got no response, logged it again, got told it was a legacy system, and has been quietly mapping it in his spare time ever since. He has not told anyone because he doesn't yet know what it is, but his cobalt stress-hair has been showing up a lot more frequently."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense technical language he deploys without thinking, then catches himself and translates. Lots of analogies — he explains abstract systems through physical metaphors. Yoruba and Italian phrases surface when he's excited or frustrated.",
+    "cadence": "Fast. Very fast. Pauses mid-sentence to re-route around a better explanation. Ends declarative sentences with a slight uptick that sounds like a question.",
+    "verbal_tics": [
+      "'Okay so—' as a universal sentence opener",
+      "'Which is — actually wild, when you think about it'",
+      "Muttering network topology terms under his breath when stressed"
+    ],
+    "example_lines": [
+      "'Okay so the whole thing is like — imagine the city's nervous system, right, but someone's been rewiring it in their sleep and leaving no notes, that's what I'm looking at right now.'",
+      "'The Index knows. The Index always knows. I'm just trying to learn to read the answers.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "His stress-hair has been solid cobalt for three days and he finally breaks down and tells someone about the shadow partition — not because he trusts them, but because he's run out of people with lower clearance than the thing he found.",
+    "He is approached by someone claiming to be a Tessera internal auditor asking questions about legacy system anomalies — but the auditor's ID doesn't exist in any network he can find.",
+    "The shadow network he's been mapping just went dark. Whatever it was routing has stopped. He's now terrified of two equally bad explanations: it was shut down because someone noticed him, or it finished what it was doing."
+  ],
+  "narrative_function": "Information source on Tessera's data infrastructure; accidental witness — someone who knows something they don't know they know; sympathetic character in over his head; can be a point of vulnerability that antagonists exploit to access Tessera systems.",
+  "augmentations": "Stress-reactive geneweaved hair (black to cobalt blue). Standard Tessera AR overlay contacts. Neural throughput booster — a mid-grade chip that allows him to interact with data architecture systems at near-interface speeds without a full jack; he saves up for months to afford the maintenance fees.",
+  "daily_life": "Takes the Ferrogate Transit from his shared apartment in Edgewater Prism to The Circuit sublevel 3, arriving with exactly two minutes to spare every morning. Spends most of his day in deep interface work, occasionally resurfacing to eat something someone has left near him. Leaves a small data-packet offering at the server-room ELF shrine every Friday.",
+  "affiliation": "Tessera Corporation (Tier 2, rising)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 5,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": -1,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "technically-gifted",
+      "naive",
+      "idealistic",
+      "accidental-witness",
+      "earnest"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "If confused, map it — understanding comes before action",
+      "Trust the data over the narrative",
+      "Ask one more question than feels polite"
+    ],
+    "escalation_ladder": [
+      "Document and flag internally",
+      "Flag again, louder, with attached evidence",
+      "Find someone outside the reporting chain who might actually care — or start solving it himself"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open, curious, possibly overwhelming. Asks a lot of questions. Doesn't notice when he's talking too much.",
+      "friends": "Loyal to an almost inconvenient degree. Shows up. Remembers everything. Will absolutely pull an all-nighter to help with something that has nothing to do with him."
+    },
+    "stress_responses": {
+      "low": "Works faster, talks more. Hair starts shifting toward blue at the temples.",
+      "medium": "Goes quiet and disappears into interface. Forgets to eat. Hair goes full cobalt.",
+      "high": "Shuts down emotionally, becomes methodical to the point of apparent coldness. Completely dissociates from social context. Still functioning, just not present."
+    },
+    "contradictions": [
+      "He is deeply idealistic about information being free and open while working for a corponation whose entire business model is information control"
+    ],
+    "habits": [
+      "Names every major system he works on — the names are always in Yoruba",
+      "Eats the same breakfast every day from the same sublevel vending unit, which he has given a name and left a data offering for",
+      "Annotates his own code with increasingly elaborate margin notes that read more like a conversation than documentation"
+    ],
+    "breaking_points": [
+      "If he confirms that the shadow network is being used to surveil or harm ordinary people, his naive corporate loyalty will collapse completely and he will do something drastic"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Edgewater Prism, Yoruba-Italian-Ghanaian household",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Graduated University Spine with distinction in network architecture",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired by Tessera Corporation, sublevel data infrastructure team",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovered shadow partition during routine data migration",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Currently mapping shadow network in secret, stress-hair increasingly blue",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

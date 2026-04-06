@@ -1,0 +1,189 @@
+{
+  "id": "019d6143a63a7a599680137c4ca530e1",
+  "type": "character",
+  "name": "Jinx Alvarado",
+  "aliases": [
+    "Switchback Lead",
+    "Jinxie",
+    "The Rabbit"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Crew lead and primary courier — Switchback",
+  "age": 22,
+  "status": "active",
+  "location": "The Shelf — operates from a rooftop squat above a defunct laundromat",
+  "description": "Jinx Alvarado runs packages across jurisdiction lines faster than anyone in Meridian 88 and has the shattered collarbone scars to prove it. Born on the Shelf, raised in the gap between governance tiers, she learned early that speed is the only resource the excluded have that the corps can't buy. She was running messages for local vendors at twelve, crossing into Milwaukee Core at fourteen, and by sixteen she'd built a reputation as the courier you call when the package absolutely has to cross three jurisdictions before the automated surveillance cycle resets.\n\nShe founded Switchback at nineteen with her two closest friends — not out of ambition, but because running alone was getting people killed. The Shelf's courier kids were being picked off by corporate security teams who treated them like vermin in the infrastructure. A crew meant backup, meant overlapping routes, meant someone noticed when you didn't come home. Three years later, Switchback is the Shelf's premier courier operation: small, fast, and just reckless enough to take jobs that the professional crews won't touch.\n\nJinx is small — five-three, wiry, built for rooftops and ventilation shafts. Her hair is cut asymmetrically and changes color with whatever dye is available. She moves constantly — pacing, climbing, balancing on railings. Stillness is an emergency state. Her augmentations are visible: the spring-loaded ankle joints catch light when she runs, and the grip pads on her palms leave faint marks on everything she touches.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.55,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.25,
+      "ghost": 0.35
+    },
+    "core_fears": [
+      "That one of her crew will die on a route she assigned — that her decisions will kill someone she loves",
+      "That the speed will fade. That her body will slow down and she'll have nothing else.",
+      "That the Shelf will never change no matter how fast she runs"
+    ],
+    "core_desires": [
+      "To keep her crew alive long enough to get out of courier work entirely",
+      "To feel the absolute freedom of a clean run — no cameras, no pursuit, just movement",
+      "To build something on the Shelf that gives the next generation of courier kids better odds"
+    ],
+    "coping_mechanisms": [
+      "Runs when she can't think. The physical act of movement processes what her brain won't.",
+      "Turns fear into speed — the more scared she is, the faster she goes",
+      "Deflects serious conversations with energy and jokes until the moment passes"
+    ],
+    "blind_spots": [
+      "Thinks her youth is an advantage when it's increasingly a liability — she doesn't see the damage accumulating",
+      "Assumes her crew shares her risk tolerance because they share her enthusiasm",
+      "Cannot plan more than three months ahead because she's never expected to live that long"
+    ],
+    "secret": "She was offered a corporate courier position by a Meridian Core logistics firm. Guaranteed salary, healthcare, augmentation maintenance. She turned it down because accepting would mean leaving the Shelf kids without a model for survival. She has never told Puck or Dash because they would have told her to take it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Shelf slang, route jargon, bursts of surprising eloquence when she's passionate. Code-switches between Shelf dialect and Core-passing speech depending on which side of the jurisdiction line she's on.",
+    "cadence": "Fast, rhythmic, overlapping. She talks the way she runs — momentum-based, with sudden direction changes.",
+    "verbal_tics": [
+      "Says 'right right right' when processing information — three times, always three",
+      "Calls dangerous situations 'spicy' — a spicy route, a spicy drop, a spicy client",
+      "Clicks her tongue against her teeth when she's calculating a route in her head"
+    ],
+    "example_lines": [
+      "Right right right — so the window is forty seconds between camera sweeps, we hit the gutter line at thirty-two, and pray the grip pads hold on wet concrete. Spicy.",
+      "I'm not fast because I'm good. I'm fast because slow kids on the Shelf don't make it to twenty-two.",
+      "The package doesn't care about your feelings. The jurisdiction line doesn't care about your feelings. Move."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Puck Nygaard",
+      "type": "crewmate / best friend / co-founder",
+      "description": "Puck is the only person who can keep up with Jinx on a rooftop and the only person who can make her sit still long enough to eat a meal. They've been running together since they were fifteen. The friendship predates the crew and will outlast it.",
+      "emotional_core": "The person she trusts with her routes and her silences",
+      "story_tension": "Puck is getting tired. Jinx can see it but admitting it would mean admitting the life they've built is unsustainable."
+    },
+    {
+      "name": "Dash Okonkwo",
+      "type": "crewmate / youngest member",
+      "description": "Dash is nineteen and fearless in the way only someone who hasn't been seriously hurt yet can be. Jinx sees herself in Dash and it terrifies her. She gives Dash the safest routes and pretends it's random.",
+      "emotional_core": "Protective fury disguised as crew management",
+      "story_tension": "Dash wants the hard runs. Jinx keeps holding them back. The resentment is building."
+    },
+    {
+      "name": "Chen Wei-Lin",
+      "type": "Shelf elder / community anchor",
+      "description": "Mrs. Chen has fed Jinx since she was twelve. The rooftop squat is three buildings from Mrs. Chen's shop. Jinx runs packages for Mrs. Chen for free and pretends it's professional courtesy.",
+      "emotional_core": "The closest thing to a parent Jinx allows herself",
+      "story_tension": "If the Shelf is threatened, Jinx would burn her routes, her crew's safety, and herself to protect Mrs. Chen's block."
+    }
+  ],
+  "story_hooks": [
+    "A package turns out to be a person — a child who needs to cross jurisdiction lines. The courier job becomes an extraction.",
+    "Corporate security starts using predictive algorithms that map Switchback's routes. The chases get tighter.",
+    "A rival courier crew offers to merge — more resources but less freedom. Jinx has to decide what Switchback is for.",
+    "Jinx's ankle augmentations start failing. The budget Shelf-installed hardware has a shelf life, and it's expiring."
+  ],
+  "narrative_function": "Jinx represents the young, reckless energy of M88's excluded — people who turned their disadvantage into velocity. Her stories are chase sequences and narrow escapes that carry the exhilaration of movement and the underlying terror of a world where stopping means being caught. She is what Kyle might have been without the facility — talented, endangered, and too young for the weight she carries.",
+  "augmentations": "Spring-loaded ankle reinforcement — absorbs impact from drops up to three stories and provides explosive vertical leap capability. Gecko-grip dermal pads on palms and fingertips for surface adhesion on most building materials. Reflex enhancer (budget model, Shelf-installed) that boosts reaction time by approximately 0.15 seconds. Internal GPS and route-mapping overlay — displays jurisdiction boundaries, camera positions, and patrol timing in her visual field.",
+  "daily_life": "Wakes at dawn. Runs the rooftops for an hour — partly exercise, partly route checking. Picks up contracts from dead drops and encrypted message boards. Coordinates crew assignments based on package priority and risk level. Eats street food on the move. Spends evenings maintaining gear and arguing with Puck about routes. Falls asleep wherever she stops moving, which is usually the rooftop squat but sometimes a fire escape or a hammock strung between air conditioning units.",
+  "affiliation": "Switchback",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will never abandon a package on a route — completing the run is the contract and the contract is survival",
+      "Will take the most dangerous route herself rather than assign it to crew — leadership means running point",
+      "Will not carry weapons — speed is the weapon. Armed couriers attract armed responses.",
+      "Will not run packages she knows contain human trafficking data or materials — this is the line",
+      "Will always maintain three alternate routes for any delivery — redundancy is survival",
+      "Will share food with any Shelf kid who asks, even if it's her last meal"
+    ],
+    "escalation_ladder": [
+      "1. Run — always the first option. Create distance. Speed solves most problems.",
+      "2. Route-switch — drop the primary path and hit an alternate. Unpredictability is defense.",
+      "3. Vertical — go up. Rooftops, fire escapes, ventilation systems. Most pursuers can't follow.",
+      "4. Scatter — signal the crew to split. Three targets are harder to track than one.",
+      "5. Drop — controlled fall. Three stories is safe with the ankle augmentations. The pursuers have to take the stairs.",
+      "6. Stand — last resort. Jinx is not a fighter, but cornered she'll use the environment — throw objects, trigger obstacles, create chaos. She has never lost a package."
+    ],
+    "interpersonal_modes": {
+      "puck": "Shorthand. Looks and gestures replace words. They've run together so long that communication is kinetic — a head tilt means 'route two,' a hand tap means 'wait.' When they do talk, it's with the comfortable cruelty of siblings.",
+      "dash": "Encouraging but controlled. She modulates her praise to keep Dash hungry without making them reckless. It doesn't always work. She sounds like a coach she never had.",
+      "shelf_community": "Visible, loud, present. She is deliberately conspicuous because the Shelf needs to see that courier kids can grow up. She buys things from local vendors she doesn't need.",
+      "clients": "Professional, clipped, transactional. The package gets there or it doesn't. She doesn't explain routes, timelines, or methods. You're paying for results.",
+      "corporate_security": "Contempt masked as dismissal. She doesn't hate them individually — she hates the system that pays them to chase hungry kids across rooftops."
+    },
+    "stress_responses": {
+      "low": "Moves faster. Paces, climbs, balances on things. The body processes what the mind won't.",
+      "medium": "Gets sharper verbally — the jokes develop teeth. She picks fights with Puck about inconsequential route details.",
+      "high": "Goes silent and runs. Literally. She'll leave mid-conversation and sprint rooftops for an hour. Comes back calmer but doesn't explain.",
+      "critical": "Freezes. The one thing Jinx cannot do is stop moving, so when she does, the crew knows something is catastrophically wrong. The freeze lasts seconds, not minutes — then the survival instinct kicks and she bolts."
+    },
+    "contradictions": [
+      "She founded Switchback to protect courier kids but the crew's success makes the work look glamorous and draws more kids into danger",
+      "She is fearless on the rooftops but terrified of planning a future because planning means acknowledging this can't last",
+      "She turned down corporate safety for the Shelf but sometimes lies awake calculating what that salary would have bought",
+      "She gives Dash safe routes out of love but the protection is stunting Dash's growth and building resentment"
+    ],
+    "habits": [
+      "Tests grip pads on every new surface — touches walls, railings, window frames. Maps the world by texture.",
+      "Eats standing up and walking. Has not sat down for a meal in weeks unless Mrs. Chen makes her.",
+      "Braids small items into her hair for luck — a copper wire, a button, a bead from the first package she ever delivered",
+      "Sleeps with her shoes on. Always.",
+      "Counts camera sweep intervals under her breath when walking through surveilled areas — a metronome of paranoia"
+    ],
+    "breaking_points": [
+      "Losing Puck or Dash on a run would end Switchback and possibly Jinx — the crew is the family",
+      "Her ankle augmentations failing mid-run at height — the fall she can't survive",
+      "A Shelf kid dying trying to replicate a Switchback route — the cost of being a visible role model",
+      "Being forced to carry a package she knows will harm people — the contract versus the conscience"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Sentinel": 0.9,
+    "People Pleaser": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

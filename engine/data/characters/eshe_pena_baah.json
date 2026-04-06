@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a6067b7aa5b92d067d141e91",
+  "type": "character",
+  "name": "Eshe Pena-Baah",
+  "aliases": [
+    "Hollow",
+    "The Operator"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Field trauma surgeon and combat support — combat medic",
+  "age": 35,
+  "status": "active",
+  "location": "The Underbelly — sub-street tunnels and maintenance corridors",
+  "description": "Eshe Pena-Baah is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 35, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a combat medic out of The Underbelly, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEshe Pena-Baah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.57,
+      "ideal": 0.58,
+      "id": 0.75,
+      "shadow": 0.97,
+      "mask": 0.97,
+      "ghost": 0.16
+    },
+    "core_fears": [
+      "Betrayal by someone they trust — the only currency that matters",
+      "Being replaced — younger, faster, cheaper runners coming up behind them",
+      "That the work they do makes the city worse, not better"
+    ],
+    "core_desires": [
+      "To matter to someone for who they are, not what they can do",
+      "Stability — a place to sleep that's the same place two nights running",
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
+    ],
+    "coping_mechanisms": [
+      "Exercises compulsively — the body must be ready, always",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Ritual — follows the same pre-job routine every time, superstition as structure"
+    ],
+    "blind_spots": [
+      "Assumes their skill set is more transferable than it actually is",
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
+      "Believes their trauma makes them special instead of recognizing it as damage to manage"
+    ],
+    "secret": "Eshe Pena-Baah has a terminal condition — geneware degradation — with an estimated five years. They haven't changed their lifestyle. They haven't told anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
+    "cadence": "Flowing and unhurried — talks like someone who has never been interrupted and doesn't expect to be.",
+    "verbal_tics": [
+      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
+      "Ends statements with 'yeah?' — not a question, a dare"
+    ],
+    "example_lines": [
+      "\"Hold still. This is going to hurt and I don't care.\"",
+      "\"I can keep you alive through almost anything. What I can't do is make you grateful.\"",
+      "\"Blood type? No, I don't need your blood type. I need you to stop moving.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A corporate black site Eshe Pena-Baah once infiltrated is being reopened, and the people inside know his face",
+    "The fixer who handles Eshe Pena-Baah's contracts goes silent — dead, disappeared, or turned",
+    "A dead drop Eshe Pena-Baah maintains is found and cleaned out — whoever did it now has leverage"
+  ],
+  "narrative_function": "As a combat medic, Eshe Pena-Baah embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Cortical bomb (employer installed, removed by street doc, scar tissue remains). Neural interface jack at base of skull — standard runner-grade, allows direct net access",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Independent — known in Old Harbor circles",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 10
+      },
+      "agility": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 4
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 6
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 10
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 4
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 7
+      },
+      "technical": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 7
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 8
+      },
+      "intimidation": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 4
+      },
+      "deception": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 8
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 4
+      }
+    },
+    "personality": {
+      "aggression": 0.41,
+      "caution": 0.16,
+      "loyalty": 0.54,
+      "greed": 0.31,
+      "empathy": 0.54
+    },
+    "drives": [
+      "power",
+      "protection",
+      "revenge"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 3,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "network of reliable contacts",
+      "photographic memory for faces and layouts"
+    ],
+    "weaknesses": [
+      "chronic insomnia affecting long-term performance",
+      "augmentation dependency — performance drops sharply if chrome malfunctions"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "combat medic",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Never discusses active contracts with anyone not directly involved"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Presents as emotionless professional but is deeply affected by collateral damage",
+      "Claims not to care about reputation but monitors what people say about them obsessively",
+      "Preaches independence but is desperate for approval from people they respect"
+    ],
+    "habits": [
+      "Practices a kata or fighting form every morning regardless of circumstances",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space"
+    ],
+    "breaking_points": [
+      "A child being put in danger as leverage against them",
+      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+      "replaces": ""
+    },
+    {
+      "name": "Neural interface jack at base of skull",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Brawler": 0.9,
+    "Berserker": 0.9,
+    "Tactician": 0.9,
+    "Risk Taker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

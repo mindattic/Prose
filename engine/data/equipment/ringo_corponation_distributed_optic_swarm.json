@@ -1,0 +1,71 @@
+{
+  "id": "019d6143a8697c9095980b5b84e038ab",
+  "name": "Ringo Corponation Distributed Optic Swarm",
+  "brand_name": "Ringo",
+  "product_name": "Ringo Corponation Distributed Optic Swarm",
+  "type": "equipment",
+  "aliases": [
+    "DOS",
+    "The Flies",
+    "Ringo Eyes",
+    "Scatter Drones"
+  ],
+  "category": "utility",
+  "description": "The Distributed Optic Swarm is a reconnaissance drone system consisting of twelve semi-autonomous micro-units, each approximately the size of a large insect, capable of independent navigation and collective mesh-coordinated surveillance. Each unit carries a wide-aperture optical sensor, a short-range acoustic pickup, and a minimal onboard processor running RINGO's SWARM coordination firmware. Individually, each drone is limited — its optics are adequate but not exceptional, its battery life is measured in minutes, and its processing is insufficient for complex autonomous behavior. Collectively, the swarm is a different instrument entirely.\n\nThe DOS's engineering distinction is RINGO's COLLECTIVE APERTURE protocol, which treats the twelve optical sensors as a single distributed imaging array. By correlating the slightly different perspectives of drones positioned across a space, the system constructs composite imagery of significantly higher resolution and depth than any single unit could produce. It also enables triangulation of sound sources, detection of active electronic emissions through multi-point signal comparison, and the identification of targets occluded from any individual drone's line of sight. The operator interface is a wrist-mounted display and a neural-adjacent earpiece that translates swarm data into a navigable overview — experienced operators describe controlling the DOS as developing a sense of the space rather than watching a feed.\n\nRINGO CORPONATION markets the DOS primarily to investigative and intelligence clients — journalists, corporate intelligence firms, and private investigation agencies. Its civilian positioning keeps it below the threshold of military equipment regulation in most districts, though security forces have pushed repeatedly to have it reclassified. The swarm's small individual signature makes it exceptionally difficult to detect with standard anti-drone countermeasures, which are calibrated for larger units. The DOS is widely used and widely feared by anyone who needs to maintain operational security in Meridian 88's layered interior spaces.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "SWARM coordination firmware",
+    "COLLECTIVE APERTURE distributed imaging",
+    "Mesh-coordinated multi-unit navigation",
+    "Multi-point acoustic triangulation",
+    "Electronic emission detection array"
+  ],
+  "specifications": {
+    "unit_count": "12 per swarm kit",
+    "individual_unit_dimensions": "3.2cm wingspan, 1.1cm body length",
+    "individual_unit_weight": "1.4 grams",
+    "individual_battery_life": "8 minutes active flight",
+    "collective_imaging_resolution": "Equivalent to 40MP at 10 meter range",
+    "acoustic_pickup_range": "Up to 25 meters per unit",
+    "swarm_communication_protocol": "Encrypted mesh, 2.4GHz and 5.8GHz adaptive",
+    "operator_interface": "Wrist display unit plus neural-adjacent earpiece",
+    "recharge_time": "22 minutes full swarm via included cradle",
+    "minimum_functional_swarm_size": "4 units (degraded performance below 8)"
+  },
+  "tactical_use": "Standard deployment involves releasing the swarm through a small opening — ventilation gap, mail slot, partial door breach — and using the collective aperture to map an interior space before physical entry. The acoustic triangulation function identifies personnel positions behind walls and through floors with reasonable accuracy. Electronic emission detection locates active devices — security terminals, communication hardware, powered weapons. In extended operations, swarm units can be staged at relay positions to extend communication range through signal-dead areas. Losing units to anti-drone countermeasures degrades but rarely eliminates capability, making the DOS resilient in hostile environments.",
+  "cultural_context": "The DOS has a reputation that precedes it in corporate security circles — the discovery of a single swarm unit in a facility is treated as a major security event because the implication is that someone already has a detailed map of the interior. Among investigative journalists and freelance intelligence operatives, the DOS is considered essential equipment, a great equalizer that lets a single operator achieve surveillance coverage that previously required a team. There is a documented subculture of DOS operators who share swarm navigation techniques and COLLECTIVE APERTURE interpretation methods through encrypted forums — RINGO is believed to monitor these forums as a product development intelligence source.",
+  "known_users": [
+    "Investigative journalists operating in restricted corporate zones",
+    "Freelance intelligence operatives",
+    "Corporate counter-intelligence units (for detection training)",
+    "Extraction team advance scouts",
+    "High-end private investigation firms"
+  ],
+  "story_hooks": [
+    "A DOS swarm is recovered from inside a sealed corporate server room with its memory intact — the flight logs show it was navigating the space for six hours before the facility went into lockdown, and the imagery it captured includes personnel whose presence in that location is officially impossible.",
+    "One of the players' swarm units fails to return after a reconnaissance deployment — days later, it reappears in an unexpected location, suggesting it was captured, examined, and deliberately released, possibly with modifications.",
+    "RINGO Corponation pushes a mandatory firmware update that introduces a new feature: anonymous telemetry reporting swarm deployment locations back to RINGO's servers. An operator who reverse-engineers the update brings it to the players, and the question is what RINGO is doing with a real-time map of everywhere their product is being used.",
+    "A corporate security firm has developed a new counter-swarm protocol that identifies DOS units by their COLLECTIVE APERTURE communication signature — the players must complete a reconnaissance mission using a DOS against a target that is now specifically hardened against it."
+  ],
+  "tags": [
+    "utility",
+    "equipment",
+    "weapon",
+    "war",
+    "memory",
+    "neural",
+    "ai",
+    "corporate",
+    "surveillance",
+    "control",
+    "power",
+    "ubc",
+    "market",
+    "rain",
+    "train",
+    "drone",
+    "tier 2"
+  ]
+}

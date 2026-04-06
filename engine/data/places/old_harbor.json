@@ -1,0 +1,136 @@
+{
+  "id": "019d6143a92b7a70a77023efb936f255",
+  "type": "place",
+  "name": "Old Harbor",
+  "aliases": [
+    "The Drowned District",
+    "The Deep",
+    "Below",
+    "The Forgotten"
+  ],
+  "description": "Old Harbor is what Meridian was built to replace and couldn't quite bury. When the sea wall failed in Year 8 — a catastrophic breach that Axiom's own engineering reports had predicted and Axiom's own budget committee had declined to prevent — the lowest sections of the original city flooded permanently. The water came in and never left. What remains is a partially submerged urban landscape: buildings standing in two meters of water, their ground floors drowned and their upper stories colonized by the people nobody else would take. Streets have become canals. Rooftops have become docks. The city gave up on Old Harbor twenty years ago, and Old Harbor returned the favor.\n\nIt's beautiful, in the way ruins are always beautiful when nature starts winning. Bioluminescent algae — an engineered strain that escaped from a corporate lab years ago — coats the waterline, turning the flooded streets into rivers of soft blue-green light after dark. Flooded temples and churches rise from the water like stone ghosts, their interiors visible through broken windows, pews floating in lazy circles. Makeshift bridges connect the upper stories of buildings, creating an elevated network of walkways that constitutes Old Harbor's actual street grid. Below, in the water, there are things — salvage, secrets, and according to some residents, the preserved remains of the original city's data infrastructure, still humming away on waterproofed servers nobody has found yet.\n\nKael grew up here. He arrived as a refugee child in one of the waves of climate displaced people who washed up in Meridian with nothing and were pointed downward. Old Harbor taught him two things: how to survive when no one is coming to help you, and that beauty doesn't require permission. He left when he was old enough to climb to the Shelf, but Old Harbor is still in him — in the way he moves through water, in his comfort with darkness, in his refusal to trust any structure that someone with money built.",
+  "atmosphere": {
+    "sights": [
+      "Partially submerged buildings, their lower floors underwater, upper floors alive with squatter communities",
+      "Bioluminescent algae painting the waterline in shifting blue-green light",
+      "Makeshift bridges connecting rooftops and upper stories — wood, metal, cable, whatever works",
+      "Flooded temples and churches, eerily beautiful, candles still burning on upper altars",
+      "Small boats and rafts navigating the canal-streets — the only transit that works here",
+      "Murals painted on exposed walls above the waterline — art that nobody commissioned and everybody sees",
+      "The sky, fully visible — Old Harbor has no roof, no upper tiers, just open air and weather",
+      "Salvage divers disappearing beneath the surface, headlamps visible underwater like deep-sea creatures"
+    ],
+    "sounds": [
+      "Water — lapping, dripping, flowing. The constant soundtrack of a drowned place.",
+      "Boat motors — small, electric, humming across the canals",
+      "Birdsong — real birds, not the synthetic kind. Old Harbor has the best bird population in Meridian.",
+      "The creak of makeshift bridges under foot traffic",
+      "Silence — more of it here than anywhere else in the city. Old Harbor is quiet in a way that can be peaceful or menacing.",
+      "Distant thunder — real weather, not AtmoSync. Old Harbor gets the storms the system can't be bothered to redirect.",
+      "Children singing — there are kids here too, and they sing while they paddle."
+    ],
+    "smells": [
+      "Salt water and algae — the base note of everything",
+      "Wet concrete and rusted metal — the smell of infrastructure returning to the sea",
+      "Cooking fires on rooftop platforms — fish, mostly, caught from the harbor itself",
+      "Rain — real rain, not corporate rain, and it smells different, wilder",
+      "Rot, sometimes — the water brings things up and the sun breaks them down",
+      "Bioluminescent algae has its own smell — faintly sweet, faintly chemical, like a memory of a lab"
+    ],
+    "feel": "Haunted. Not with ghosts, but with the awareness that a city used to stand here and was allowed to drown. Old Harbor feels like grief that's grown moss — it's still sad, but it's also alive in ways the rest of Meridian isn't. There's a freedom here that comes from total abandonment: no surveillance, no corporate branding, no one telling you what the weather should be. It's dangerous and beautiful and completely honest, which makes it the opposite of everything above.",
+    "tags": []
+  },
+  "demographics": "~200,000 (nobody counts — there is no census, no registry, no records). The invisible. Refugees, outcasts, the undocumented, the deliberately disappeared.",
+  "economy": "Salvage operations — the drowned city contains pre-collapse technology, data archives, and infrastructure that's worth a fortune to the right buyer. Smuggling routes run through Old Harbor's waterways into and out of the city entirely.",
+  "power_structure": "No formal governance. Community elders and territorial groups enforce unwritten rules. Axiom Security doesn't come here — there's nothing to optimize.",
+  "dangers": [
+    "Drowning — the water is everywhere and not all of it is shallow",
+    "Structural collapse — waterlogged buildings fail without warning",
+    "No emergency services — if you get hurt here, you'd better know someone",
+    "Territorial disputes — some zones are claimed by groups who don't welcome visitors",
+    "The water itself — contaminated with industrial runoff, old chemicals, and things nobody's tested for",
+    "Predators — not the human kind. The harbor ecosystem has adapted, and some of what swims here has teeth.",
+    "Getting lost — the canal-streets don't match any surviving map",
+    "Storms — real weather hits hard when there's no AtmoSync to soften it"
+  ],
+  "opportunities": [
+    "Disappearance — Old Harbor is the best place in Meridian to stop existing",
+    "Salvage — pre-collapse tech pulled from submerged ruins can be worth a fortune",
+    "Freedom — no surveillance, no corporate rules, no access credentials required",
+    "Community — Old Harbor's residents are tight-knit and help those who earn trust",
+    "History — the drowned city remembers things the new one wants forgotten",
+    "Beauty — if you need to remember what the sky looks like, come here"
+  ],
+  "story_hooks": [
+    "Kael's childhood — the refugee camp where he grew up, now a permanent community",
+    "The submerged data centers — pre-collapse records that could shake the foundations of Axiom's legitimacy",
+    "A salvage diver who found something down there that someone upstairs wants recovered — or destroyed",
+    "The community elder who remembers the original city and tells stories the corps would rather forget",
+    "Old Harbor as sanctuary — when Kael needs to disappear, this is where he comes home to",
+    "The bioluminescent algae — engineered, escaped, and now evolving. It might be developing rudimentary intelligence. The corps don't know. The divers suspect."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Shelf",
+      "The Circuit",
+      "The open sea"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Refugees and climate-displaced people with nowhere else to go",
+    "Salvage divers — the closest thing Old Harbor has to an industry",
+    "People hiding from corporate warrants, Iron Lotus debts, or worse",
+    "Smugglers using the waterways to bypass Meridian's monitored entry points",
+    "Artists and romantics drawn to the ruins (the locals find this annoying)",
+    "Nobody from Axiom Security — they don't come here. There's nothing to optimize."
+  ],
+  "notable_locations": [
+    {
+      "name": "The Reef",
+      "description": "A cluster of interconnected rooftops that serves as Old Harbor's closest thing to a town square — market stalls, a clinic, and the community's only working comm relay",
+      "tags": []
+    },
+    {
+      "name": "Cathedral Row",
+      "description": "Three drowned churches whose spires still break the waterline — the upper galleries are used as meeting halls and the underwater naves are sacred diving sites",
+      "tags": []
+    },
+    {
+      "name": "The Kelp Gardens",
+      "description": "Engineered bioluminescent algae farms that provide both light and a meager food source — tended by families who treat the cultivation as an art form",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 43.015,
+    "lng": -87.905,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "smuggle",
+    "trust",
+    "secret",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "money",
+    "debt",
+    "harbor",
+    "rooftop",
+    "rain",
+    "dark",
+    "storm",
+    "freedom",
+    "train",
+    "refugee",
+    "escape",
+    "water",
+    "shelf",
+    "old harbor"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "019d6143a94979519c6fa8a0f45eb200",
+  "type": "place",
+  "name": "The Oxidian Market",
+  "aliases": [
+    "Rust Market",
+    "The Ox",
+    "The Exchange",
+    "Junkpeak"
+  ],
+  "description": "The Oxidian Market sprawls across a three-block elevated platform originally built to service a rail maintenance yard, now a permanent fixture of Meridian 88's gray economy. Built upward over decades from a single row of stalls into a layered, chaotic structure of permanent vendors, semi-permanent stalls, and itinerant traders, the Market has developed its own architecture — a self-organized accumulation of shipping containers, prefab panels, salvaged building materials, and improvised platforms that rises four stories in places and contains no right angles by accident.",
+  "atmosphere": {
+    "sights": [
+      "Stalls packed so tightly that vendor territories are marked by color-coded rope rather than physical barriers",
+      "Salvaged electronics in various states of disassembly displayed on rust-pocked metal shelving",
+      "Custom-fabricated weapons, implants, and tools hanging alongside mundane household goods",
+      "Traders in augmented reality rigs walking through catalogues only they can see",
+      "A perpetual low fog of vapor, smoke, and aerosolized cooking grease"
+    ],
+    "sounds": [
+      "Haggling in a dozen languages, some of it heated",
+      "Power tools from on-site repair vendors",
+      "The Market's unofficial PA system — a hijacked frequency broadcasting vendor announcements and occasional music",
+      "The creak and flex of the platform structure under weight",
+      "Alert chimes from traders' deal-tracking software"
+    ],
+    "smells": [
+      "Hot metal and solder",
+      "Grilled protein from the food corridor",
+      "Synthetic lubricants and cleaning agents",
+      "The particular smell of old electronics — dust, heat, and degraded plastic",
+      "Competing perfumes and incense from vendors trying to establish ambiance"
+    ],
+    "feel": "Overwhelming and exhilarating in equal measure — the Market operates at a frequency that demands full attention. Everything is available here, at the right price and with the right contacts, but the density of competing interests means every transaction carries some risk, and the line between vendor and predator is not always clear.",
+    "tags": []
+  },
+  "demographics": "No permanent residents; the Market's population is entirely transactional. Vendor community is mixed but heavily represented by independent operators, former corporate employees running gray-market operations, and community-tied traders from adjacent districts. Customer base spans nearly every demographic in the city.",
+  "economy": "The Oxidian Market runs on hard negotiation and reputation. No taxes, no licensing, no regulation — prices are set by supply, demand, and the vendor's read of the customer. Information, hardware, bioware, weapons, counterfeit goods, legitimate salvage, and services of all categories change hands here daily. The Market generates enormous informal economic activity that several city officials are paid not to quantify.",
+  "power_structure": "The Vendor Council — an assembly of the twenty longest-established traders — sets Market rules and handles internal disputes. Enforcement is handled by the Ironbacks, a security cooperative composed of traders' personal protection staff operating under collective contract. No external law enforcement operates in the Market by longstanding informal agreement that has been tested but not broken.",
+  "dangers": [
+    "Pickpockets and short-con operators are endemic and sophisticated",
+    "Counterfeit goods including faulty implants and contaminated pharmaceuticals circulate alongside legitimate product",
+    "Corporate agents conducting unauthorized acquisitions occasionally escalate to violence",
+    "The platform structure has never been formally inspected and has visible stress points",
+    "Certain vendor sections are controlled by organizations who use commerce as a front for other activities"
+  ],
+  "opportunities": [
+    "Virtually any piece of equipment, component, or substance can be sourced here with the right contacts",
+    "The Market's information economy is as valuable as its physical goods — vendors know what people are looking for",
+    "Established vendor relationships provide access to supply chains that extend well beyond Meridian 88",
+    "The Ironbacks occasionally contract outside security work through discreet channels",
+    "A vendor stall provides near-perfect cover for surveillance of a large cross-section of the city's gray economy"
+  ],
+  "story_hooks": [
+    "A specific piece of military-grade hardware has surfaced in the Market with a serial number that should not exist — three parties have already made offers and two of the intermediaries have since disappeared",
+    "One of the Vendor Council's founding members is selling off their entire inventory and preparing to leave Meridian 88 with an urgency that has made their colleagues nervous",
+    "A new vendor appeared two months ago with access to implant technology that exceeds anything currently on the legitimate market — no one knows their supplier",
+    "Someone has been systematically poisoning the Market's food vendors — not fatally, but enough to damage reputation — and the targeting follows a pattern no one has explained",
+    "The Ironbacks have found something in the sub-platform maintenance space and have quietly sealed the access point, claiming structural concerns"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Shelf",
+      "The Laceworks",
+      "The Circuit"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Independent operators, fixers, and runners sourcing equipment",
+    "Corporate procurement agents conducting off-record acquisitions",
+    "Collectors and enthusiasts seeking specific salvage",
+    "Ordinary city residents shopping for goods they can't afford through legitimate channels",
+    "Law enforcement officers shopping for goods they shouldn't be buying"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Spine",
+      "description": "The Market's central corridor running its full length — the highest-traffic, highest-visibility real estate, occupied by the most established vendors. The Spine functions as both commercial thoroughfare and social artery; major announcements are made here, disputes are sometimes settled publicly, and the Ironbacks' main station is positioned midway along it.",
+      "tags": []
+    },
+    {
+      "name": "The Wet Quarter",
+      "description": "The Market's food and pharmaceutical section, occupying the northeast corner of the second level. Named for the perpetual condensation dripping from the overhead structure. Vendors here sell printed food, cultured protein, gray-market medications, and substances of varying legality. The Quarter has its own informal regulations around adulteration — selling bad product here carries social consequences that are reliably enforced.",
+      "tags": []
+    },
+    {
+      "name": "Deep Stalls",
+      "description": "The poorly-lit, difficult-to-access inner sections of the Market's upper levels, reachable only through narrow passages between established vendor stalls. Deep Stalls vendors deal in goods too sensitive for open display — weapons above a certain threshold, black-market bioware, stolen data, and services that don't have physical inventory. First-time visitors need an introduction.",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.8695,
+    "lng": -87.644,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "violence",
+    "weapon",
+    "war",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "control",
+    "market",
+    "food",
+    "poison"
+  ]
+}

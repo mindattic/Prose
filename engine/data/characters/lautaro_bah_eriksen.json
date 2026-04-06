@@ -1,0 +1,199 @@
+{
+  "id": "019d6143a6487e219db0b91a9c9180e6",
+  "type": "character",
+  "name": "Lautaro Bah-Eriksen",
+  "aliases": [
+    "Taro",
+    "Taro-fix"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Freelance mechanic specializing in personal mobility rigs and modified transit vehicles, operates from a rented bay in Geartown",
+  "age": 23,
+  "status": "active",
+  "location": "Geartown — rents Bay 7 in the Corrigan's Collective workshop block",
+  "description": "Lautaro is a young man who looks like he was built for a different era — wide shoulders, large hands, a face that defaults to an expression of calm concentration that people sometimes mistake for slowness until they watch him work. His skin is a medium brown with warm undertones, his black hair cut close on the sides and longer on top, usually pushed back with a stripe of grease he hasn't noticed. His most striking feature is a patterned iris geneware mod: his eyes display a geometric repeating motif in amber and dark brown that he chose at twenty-one to mirror a pattern from his Fula grandmother's weaving. He has retractable claw fingertip implants — not geneware, hard chrome — that he uses as impromptu tools when he doesn't have the right implement to hand, which is more often than he'd like.\n\nHe is good at his job in the instinctive way that some people are, the kind of mechanic who listens to an engine before he looks at it. He is also twenty-three and running a one-person operation on a borrowed reputation and a rented bay, which means he is perpetually overextended, slightly too eager to please, and deeply anxious about money in the specific way of someone who grew up without it and is terrified of returning to that. He is honest to the point of commercial self-sabotage — he will tell you if the repair you want isn't the repair you need, even if the repair you need costs less.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.55,
+      "id": 0.65,
+      "shadow": 0.4,
+      "mask": 0.45,
+      "ghost": 0.25
+    },
+    "core_fears": [
+      "Failing publicly and losing the bay — being back to nothing with a reputation attached to the nothing",
+      "Discovering he is not actually as good as he thinks he is"
+    ],
+    "core_desires": [
+      "A legitimate contract — something that proves the business is real and not just provisional",
+      "To be taken seriously by people who have been doing this longer than he has been alive"
+    ],
+    "coping_mechanisms": [
+      "Throws himself into the technical problem in front of him when anxious about larger ones",
+      "Compulsive honesty as a form of self-protection — if he's always honest he can never be accused of the thing he fears most, which is being a fraud"
+    ],
+    "blind_spots": [
+      "Consistently undercharges for his labor because he doesn't feel entitled to charge what he's worth",
+      "Doesn't recognize when clients are testing him versus genuinely asking for advice"
+    ],
+    "secret": "The mentor who taught him — the retired mechanic in Ironvein — left him one thing when he retired: a handwritten manual covering modifications to Ferrogate vehicles that Ferrogate's own engineers don't know about, based on thirty years of unauthorized observation. Lautaro hasn't decided what to do with it. He knows it's valuable. He knows it might be dangerous."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical precision about anything mechanical; vague and slightly fumbling about everything else. Spanish words surface when he's excited about something. Uses 'like' as a filler when he's not in his area of expertise.",
+    "cadence": "Slow and deliberate when explaining something, speeds up when he's in the middle of a job and someone is asking him questions he doesn't have time for",
+    "verbal_tics": [
+      "'So what's happening is —'",
+      "Wiping his hands on his coveralls mid-sentence",
+      "'Which is fine. That's fixable.'"
+    ],
+    "example_lines": [
+      "'Okay, so what you told me is wrong, and I don't mean that badly — whoever told you that just didn't know. What's actually wrong is the coupling on the secondary drive. Which is fine. Cheaper, actually. You want me to show you?'",
+      "'I charge honest prices. Which means I charge less than I should. My mentor said that would change when I grew up. I'm working on it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client brought in a vehicle with a hidden compartment he wasn't told about; whatever was in it is gone but the compartment is still there and someone has been asking around Geartown whether anyone has seen the vehicle",
+    "He has quietly begun decoding the inherited manual and has found a modification that would make any Ferrogate tram capable of running on a completely separate unmonitored power grid — and he does not know what to do with this information"
+  ],
+  "narrative_function": "Practical resource — can repair, modify, or assess vehicles and mechanical systems. Can serve as an entry point into Geartown's working community, a quest giver when a client's vehicle holds something unexpected, or a character study in precarious early-adult ambition.",
+  "augmentations": "Patterned iris geneware (amber/dark brown geometric, Fula textile-inspired). Chrome retractable claw fingertips (both hands, tool-grade, not combat-optimized — thinner and more precise than fighting claws). Subdermal haptic feedback layer in both hands (allows him to feel vibration and heat differential in machinery more precisely — his most important professional tool).",
+  "daily_life": "In the bay by 07:00, takes whatever work comes through by word of mouth and via a listing on the Geartown local mesh. Eats one meal a day at Benedita's cart. Studies Ferrogate Transit vehicle schematics at night because he wants to bid for transit maintenance contracts but doesn't have the certification yet.",
+  "affiliation": "Independent (freelance); informal apprenticeship-era ties to a retired mechanic in Ironvein who taught him the trade",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 5,
+      "creativity": 7,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 4,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 3,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Gifted Tradesperson",
+      "Anxious Ambitious",
+      "Radical Honesty",
+      "Inherited Secret"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always tell the client the truth about what their vehicle needs, even when it costs him the larger job",
+      "Don't touch anything in a vehicle he wasn't asked to touch",
+      "If someone seems afraid, ask if they need him to not record the work order — he's done it before"
+    ],
+    "escalation_ladder": [
+      "Polite clarification of what he can and can't do",
+      "Transparent statement of his concern",
+      "Refuses the job and refunds any deposit",
+      "In genuine danger: freezes, then runs — he is not a fighter"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and slightly formal, warms up fast if they show any interest in the work itself",
+      "friends": "Relaxed and surprisingly funny, generous with his time and knowledge"
+    },
+    "stress_responses": {
+      "low": "Focuses intensely on whatever is in front of him",
+      "medium": "Talks through the problem aloud even if no one is listening",
+      "high": "Goes completely silent and either solves the problem or shuts down entirely"
+    },
+    "contradictions": [
+      "Deeply afraid of being seen as a fraud while being constitutionally incapable of being dishonest"
+    ],
+    "habits": [
+      "Tests every tool before he uses it even if he used it an hour ago",
+      "Says 'good morning' to the bay itself when he opens it up, which he would deny if asked"
+    ],
+    "breaking_points": [
+      "Being accused of deliberately overcharging or doing unnecessary work"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Patterned iris geneware (amber/dark brown geometric)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Patterned iris geneware (amber/dark brown geometric)",
+      "replaces": ""
+    },
+    {
+      "name": "Chrome retractable claw fingertips, tool-grade (both hands)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Chrome retractable claw fingertips, tool-grade (both hands)",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal haptic feedback layer, both hands (professional installation)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal haptic feedback layer, both hands (professional installation)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

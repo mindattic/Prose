@@ -1,0 +1,39 @@
+{
+  "id": "019d6143aa627a5a85e545f4dcf46bba",
+  "name": "Cargo Bicycle",
+  "type": "transportation",
+  "aliases": [
+    "Box Bike",
+    "Hauler Pedal",
+    "The Grind"
+  ],
+  "category": "personal_ground",
+  "manufacturer": "Various (mass-produced)",
+  "description": "A heavy-duty bicycle with an attached cargo box or flatbed, human-powered or electric-assisted. The cargo bike is the vehicle of Tier 1 commerce — if you're selling something, fixing something, or delivering something in the Shelf or the Narrows, you're probably pedaling a cargo bike to do it. They're slow, heavy, exhausting, and absolutely essential. The people who ride them are the muscles of the street economy, burning calories they can barely afford to replace.",
+  "propulsion": "Human power with optional electric assist motor",
+  "speed": "15 km/h (human), 25 km/h (electric assist)",
+  "capacity": "1 rider + 100 kg cargo",
+  "range": "Unlimited (human) / 30 km (electric assist)",
+  "tier_availability": "Tier 1-2",
+  "cost": "Φ50-200 depending on condition and assist motor",
+  "autonomy": "Manual only",
+  "armament": "None. A heavy bike lock on a chain.",
+  "common_usage": "Delivery, mobile vending, repair work, family transport, hauling anything that needs moving.",
+  "story_hooks": [
+    "A cargo bike rider's daily route takes them through every district in the city and they notice patterns no one else does — because no one else sees the city at pedaling speed",
+    "Cargo bikes are being confiscated by security forces as 'unregistered vehicles,' choking Tier 1 commerce"
+  ],
+  "tags": [
+    "personalground",
+    "transportation",
+    "ai",
+    "elf",
+    "power",
+    "bar",
+    "vehicle",
+    "shelf",
+    "narrows",
+    "tier 1",
+    "tier 2"
+  ]
+}

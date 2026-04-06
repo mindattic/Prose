@@ -1,0 +1,54 @@
+{
+  "id": "019d6143a9d771a0af8bf417f6537f2d",
+  "name": "Columite-GX",
+  "brand_name": "Columite",
+  "product_name": "Columite-GX",
+  "type": "substrate",
+  "aliases": [
+    "structural ceram",
+    "GX block",
+    "stone-steel"
+  ],
+  "category": "ceramic",
+  "description": "A silicon nitride–tungsten carbide structural ceramic developed as a direct replacement for construction-grade steel, offering comparable tensile strength at forty percent of the weight with far superior corrosion and thermal resistance. The microstructure is engineered through nano-assembly to include elongated beta-silicon nitride grains that act as crack deflectors, giving Columite-GX a fracture toughness unusually high for a ceramic — approaching that of cast iron. Crucible Industries markets it aggressively for megastructure construction where cumulative dead load reduction translates to significant engineering advantages.",
+  "properties": [
+    "high_tensile_strength",
+    "high_compressive_strength",
+    "lightweight_vs_steel",
+    "corrosion_resistant",
+    "thermally_stable",
+    "high_fracture_toughness_for_ceramic",
+    "non_magnetic"
+  ],
+  "developers": [
+    "Crucible Industries",
+    "Tessera Materials"
+  ],
+  "applications": [
+    "megastructure load-bearing columns",
+    "bridge and span construction",
+    "high-rise frame members",
+    "shipyard hull framing",
+    "underground tunnel liners",
+    "disaster-resistant shelter construction"
+  ],
+  "tier_availability": "Tier 2-3",
+  "cost": "Φ 420 per kg",
+  "story_hooks": [
+    "A structural survey reveals that load-bearing Columite-GX members in a Tier 2 residential tower have been substituted with counterfeit material — the building houses ten thousand people and the columns are already showing micro-fractures.",
+    "Crucible Industries has been quietly testing a new Columite-GX formulation in the foundations of Tier 3 district infrastructure without disclosure — and the long-term behavior of the experimental mix is unknown.",
+    "A demolitions team needs to bring down a Columite-GX reinforced structure quietly — the material's fracture toughness makes conventional explosives inefficient, and they need a materials specialist who knows its specific failure modes."
+  ],
+  "tags": [
+    "ceramic",
+    "substrate",
+    "ai",
+    "tunnel",
+    "market",
+    "rain",
+    "shelter",
+    "explosive",
+    "tier 2",
+    "tier 3"
+  ]
+}

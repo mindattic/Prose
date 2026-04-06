@@ -1,0 +1,168 @@
+{
+  "id": "019d6143a6637c628c9e19238a835d90",
+  "type": "character",
+  "name": "Ẹniọlá Vassiliev-Taumoefolau",
+  "aliases": [
+    "Nini",
+    "The Soft Death"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Death midwife and grief ritualist",
+  "age": 38,
+  "status": "active",
+  "location": "Irkalla, the Passage House on Undertow Row",
+  "description": "Ẹniọlá is a small woman who dresses exclusively in undyed natural fabrics, a deliberate choice that makes her look slightly out of place in every room she enters — soft and pale against the city's chrome and neon. Her hair is kept short and natural, and she wears no cosmetic geneware, though she could afford minimal modifications. Her one concession to body alteration is a set of patterned irises �� concentric rings of amber and dark brown — that she had done in honor of her Yoruba grandmother's description of the eye of god. Her hands are her most expressive feature: large, warm, always slightly in motion, and the first thing the dying reach for.\n\nShe came to death midwifery after her brother died alone in a Tessera medical pod, his passing logged and timestamped and unremarked. She was twenty-two. She spent three years studying under an older practitioner in the Canopy before establishing the Passage House in Irkalla, which is considered by most city planners to be an unfavorable address for anyone seeking comfort. Ẹniọlá disagrees. She thinks the dying deserve to be somewhere honest about what it is. The Passage House sees four to eight clients a week — some terminal, some simply old, some not yet dying but preparing — and she has never turned anyone away for inability to pay.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.9,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "dying in the same isolated, unmarked way her brother did",
+      "losing the capacity to be present — becoming numb from accumulated grief"
+    ],
+    "core_desires": [
+      "for every person to die feeling witnessed",
+      "to build something lasting enough to outlive her"
+    ],
+    "coping_mechanisms": [
+      "strict separation of her grief-work from her personal emotional life — she processes death at work and keeps home separate",
+      "physical ritual: she washes her hands in a specific sequence after every passing"
+    ],
+    "blind_spots": [
+      "she sometimes projects her brother's death onto her clients' families, assuming more dysfunction than exists",
+      "she undervalues her own need for care and becomes resentful without knowing why"
+    ],
+    "secret": "She has a terminal diagnosis — a slow cardiac condition that her haptic hand-sensitivity enhancement is quietly compensating for. She has told no one. She is not ready to be the one receiving care."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, unadorned, but precisely chosen; avoids euphemism for death — says 'dying' and 'death' and 'body' without flinching; occasionally slips into Yoruba endearments",
+    "cadence": "Unhurried and low; holds silences without discomfort; lets others finish every sentence",
+    "verbal_tics": [
+      "says 'yes' softly as an acknowledgment while listening, not necessarily agreement",
+      "uses 'we' when discussing death rituals even when speaking about her solo practice"
+    ],
+    "example_lines": [
+      "'What did she love? Tell me something specific. Not what she was proud of — what she loved.'",
+      "'We do not make death comfortable. We make the person comfortable inside it. There is a difference.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client died before completing their final legal wishes and someone is now contesting the estate — Ẹniọlá witnessed the dying person's verbal instructions and needs help ensuring they are honored",
+    "A family has hired her but the dying person is asking her in private to carry a message to someone the family has forbidden from entering — and the message contains information that could destabilize more than just the family"
+  ],
+  "narrative_function": "Emotional grounding figure; can provide information about recent deaths in Irkalla and surrounding areas; quest giver for honoring someone's final wishes; confronts players with questions about mortality and meaning",
+  "augmentations": "Patterned irises (cosmetic geneware, amber/brown concentric rings); low-grade haptic sensitivity enhancement in both hands (medical-grade, for pulse and tremor detection)",
+  "daily_life": "Mornings are for correspondence and intake — she answers every message personally; afternoons and evenings she spends at bedsides, conducting whatever rituals the dying person and their family practice or wish to practice.",
+  "affiliation": "Independent; loosely recognized by the Irkalla Community Council; occasional referrals from Aurochs Medical Complex palliative ward",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 5,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Death Work",
+      "Grief Specialist",
+      "Terminal Secret",
+      "Community Service",
+      "Emotionally Durable"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "the dying person's wishes take precedence over the family's comfort",
+      "never perform a ritual she does not believe she can do with genuine presence"
+    ],
+    "escalation_ladder": [
+      "gentle redirection",
+      "direct statement of the dying person's rights",
+      "asking the disruptive party to leave",
+      "calling in the community council as witness"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Opens with a question rather than information; disarmingly direct about death; makes people feel she has time for them",
+      "friends": "Rare and deeply private; shows love through showing up without being asked"
+    },
+    "stress_responses": {
+      "low": "Cleans the Passage House meticulously",
+      "medium": "Goes for long walks in Irkalla at hours when she knows she will not be recognized",
+      "high": "Sits alone in the room where she conducts the most passings and counts her own heartbeats until she stabilizes"
+    },
+    "contradictions": [
+      "ministers to others facing death with extraordinary presence while actively avoiding processing her own diagnosis"
+    ],
+    "habits": [
+      "washes hands in a specific seven-step sequence after each passing",
+      "keeps a small unlabeled jar of soil from her grandmother's described homeland on her windowsill",
+      "never eats during working hours"
+    ],
+    "breaking_points": [
+      "witnessing a preventable death caused by institutional neglect",
+      "being forced to perform a ritual she knows the dying person did not want"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

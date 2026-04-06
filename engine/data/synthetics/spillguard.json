@@ -1,0 +1,31 @@
+{
+  "id": "019d6143aa2379039424c22bab07873e",
+  "name": "Spillguard",
+  "type": "elf",
+  "aliases": [
+    "Quick Save"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "chrome_dweller",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Inhabits reflex-enhancement augments and occasionally triggers a save-reflex faster than the user's own nervous system — catching a cup, dodging a splash, pulling back from a hot surface.",
+  "observed_behavior": "Monitors sensory input for imminent minor hazards and triggers motor responses 40-80ms before conscious awareness.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 17,
+  "location": "Widespread",
+  "dti_rating": 0,
+  "story_hooks": [
+    "The reflex triggers during a fight and saves the user from a knife they genuinely didn't see"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "chrome dweller",
+    "e.l.f.",
+    "war",
+    "augment"
+  ]
+}

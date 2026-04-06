@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5987bcab23513aee420d0ea",
+  "name": "Triggerman",
+  "type": "archetype",
+  "category": "combat",
+  "description": "Pulls the trigger others won't",
+  "behavioral_signature": "Makes the hard call with cold efficiency",
+  "under_stress": "Emotionless, surgical",
+  "at_rest": "Quiet, distant, cleaning weapons",
+  "will_always": [
+    "finish the job"
+  ],
+  "will_never": [
+    "hesitate when the shot is clear"
+  ],
+  "unless": [
+    "the target is a child"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Executioner",
+      "threshold": 0.85,
+      "context": "lethal finality"
+    },
+    {
+      "archetype": "Sniper Mind",
+      "threshold": 0.75,
+      "context": "cold precision"
+    }
+  ],
+  "opposite_of": [
+    "Mercy Killer"
+  ],
+  "tags": [
+    "lethal",
+    "decisive"
+  ]
+}

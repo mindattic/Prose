@@ -1,4 +1,5 @@
 @page "/stories"
+@using StreetSamurai.Core
 @using StreetSamurai.Core.Models
 @using StreetSamurai.Core.Interfaces
 @inject IStoryBlockRepository Repo
@@ -66,6 +67,36 @@
     </div>
 }
 
+@if (failedCheckpoints.Any() && !generating)
+{
+    <div class="mb-3">
+        <h6 class="text-warning"><i class="bi bi-exclamation-triangle"></i> Failed / Partial Stories</h6>
+        @foreach (var cp in failedCheckpoints)
+        {
+            <div class="card bg-dark border-warning mb-2">
+                <div class="card-body py-2 d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="fw-bold text-light">@(string.IsNullOrWhiteSpace(cp.Title) ? Constants.Defaults.UntitledStory : cp.Title)</span>
+                        <small class="text-muted ms-2">@cp.Beats.Count beats written</small>
+                        @if (!string.IsNullOrEmpty(cp.FailureReason))
+                        {
+                            <div class="small text-warning mt-1">@cp.FailureReason</div>
+                        }
+                    </div>
+                    <div class="d-flex gap-1">
+                        <button class="btn btn-sm btn-outline-primary" @onclick="() => ResumeCheckpoint(cp)">
+                            <i class="bi bi-play-fill"></i> Resume
+                        </button>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="() => ArchiveCheckpoint(cp.ProjectId)">
+                            <i class="bi bi-archive"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
 @if (projects.Any())
 {
     <div class="table-responsive">
@@ -82,18 +113,18 @@
                 @foreach (var p in projects)
                 {
                     <tr style="cursor: pointer;" @onclick="() => OpenProject(p.Id)">
-                        <td class="fw-bold fst-italic">@(string.IsNullOrWhiteSpace(p.Title) ? "Untitled" : p.Title)</td>
+                        <td class="fw-bold">@(string.IsNullOrWhiteSpace(p.Title) ? Constants.Defaults.UntitledStory : p.Title)</td>
                         <td><span class="badge bg-secondary">@p.Status</span></td>
                         <td class="text-muted small">@p.Modified.ToString("yyyy-MM-dd HH:mm")</td>
                         <td>
-                            @if (confirmDeleteId == p.Id)
+                            @if (confirmArchiveId == p.Id)
                             {
-                                <button class="btn btn-sm btn-danger py-0" @onclick="() => DoDelete(p.Id)" @onclick:stopPropagation="true">Confirm</button>
-                                <button class="btn btn-sm btn-outline-secondary py-0" @onclick="() => confirmDeleteId = null" @onclick:stopPropagation="true">No</button>
+                                <button class="btn btn-sm btn-warning py-0" @onclick="() => DoArchive(p.Id)" @onclick:stopPropagation="true">Archive</button>
+                                <button class="btn btn-sm btn-outline-secondary py-0" @onclick="() => confirmArchiveId = null" @onclick:stopPropagation="true">No</button>
                             }
                             else
                             {
-                                <button class="btn btn-sm btn-outline-danger py-0" @onclick="() => confirmDeleteId = p.Id" @onclick:stopPropagation="true"><i class="bi bi-trash3"></i></button>
+                                <button class="btn btn-sm btn-outline-secondary py-0" @onclick="() => confirmArchiveId = p.Id" @onclick:stopPropagation="true"><i class="bi bi-archive"></i></button>
                             }
                         </td>
                     </tr>
@@ -115,7 +146,8 @@ else if (!generating)
 
 @code {
     private List<StoryProject> projects = [];
-    private string? confirmDeleteId;
+    private List<AutonomousStory> failedCheckpoints = [];
+    private string? confirmArchiveId;
     private bool generating;
     private string progressMessage = "";
     private int progressCurrent, _progressTotal;
@@ -126,7 +158,16 @@ else if (!generating)
     protected override void OnInitialized()
     {
         projects = Repo.ListProjects();
+        LoadFailedCheckpoints();
         Director.OnProgress += OnDirectorProgress;
+    }
+
+    private void LoadFailedCheckpoints()
+    {
+        failedCheckpoints = Director.ListCheckpoints()
+            .Where(c => !c.Complete && !string.IsNullOrEmpty(c.ProjectId))
+            .OrderByDescending(c => c.LastModified)
+            .ToList();
     }
 
     public void Dispose()
@@ -173,13 +214,15 @@ else if (!generating)
 
             if (autonomousStory.Complete)
             {
-                // Save as a StoryProject
+                // Save as a StoryProject — reuse the AutonomousStory's ProjectId
+                // so checkpoint, outline, events, and knowledge files stay associated
                 var project = new StoryProject
                 {
+                    Id = autonomousStory.ProjectId,
                     Title = autonomousStory.Title,
                     Characters = autonomousStory.Characters,
                     Html = ConvertToHtml(autonomousStory),
-                    Status = "draft",
+                    Status = Constants.Status.Draft,
                 };
                 Repo.SaveProject(project);
                 projects = Repo.ListProjects();
@@ -195,10 +238,56 @@ else if (!generating)
 
     private void CancelGeneration() => cts?.Cancel();
 
-    private void DoDelete(string id)
+    private async Task ResumeCheckpoint(AutonomousStory checkpoint)
+    {
+        generating = true;
+        liveBeats = new List<GeneratedStoryBeat>(checkpoint.Beats);
+        autonomousStory = checkpoint;
+        progressMessage = $"Resuming from beat {checkpoint.Beats.Count}...";
+        progressCurrent = checkpoint.Beats.Count;
+        _progressTotal = checkpoint.Outline?.Acts.Sum(a => a.Beats.Count) ?? 0;
+        cts = new CancellationTokenSource();
+        StateHasChanged();
+
+        try
+        {
+            autonomousStory = await Director.ResumeStoryAsync(checkpoint, cts.Token);
+
+            if (autonomousStory.Complete)
+            {
+                var project = new StoryProject
+                {
+                    Id = autonomousStory.ProjectId,
+                    Title = autonomousStory.Title,
+                    Characters = autonomousStory.Characters,
+                    Html = ConvertToHtml(autonomousStory),
+                    Status = Constants.Status.Draft,
+                };
+                Repo.SaveProject(project);
+                projects = Repo.ListProjects();
+                LoadFailedCheckpoints();
+                Nav.NavigateTo($"/write/{project.Id}");
+            }
+            else
+            {
+                LoadFailedCheckpoints();
+            }
+        }
+        catch (OperationCanceledException) { progressMessage = "Cancelled."; }
+        catch (Exception ex) { progressMessage = $"Error: {ex.Message}"; LoadFailedCheckpoints(); }
+        finally { generating = false; }
+    }
+
+    private void ArchiveCheckpoint(string projectId)
+    {
+        Director.ArchiveCheckpoint(projectId);
+        LoadFailedCheckpoints();
+    }
+
+    private void DoArchive(string id)
     {
         Repo.DeleteProject(id);
-        confirmDeleteId = null;
+        confirmArchiveId = null;
         projects.RemoveAll(p => p.Id == id);
     }
 

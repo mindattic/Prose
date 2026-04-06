@@ -1,0 +1,40 @@
+{
+  "id": "019d6143ab49705993bbac90b6ec7175",
+  "name": "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
+  "type": "weapon",
+  "aliases": [
+    "Mockingbird",
+    "Voice Trap",
+    "Name Gun",
+    "The Listener"
+  ],
+  "category": "improvised",
+  "description": "A concealed firearm — typically a sawed-off shotgun or heavy-caliber pistol — connected to a voice-recognition trigger that fires when it detects a specific spoken phrase or voice pattern. The Mockingbird is hidden behind walls, under furniture, or inside containers, aimed at a kill zone, and programmed to fire when the target speaks a particular word or when a specific person's voice is detected. The voice recognition uses salvaged smart-home assistant hardware, which means it is affordable, widely available, and approximately 85% accurate — the 15% error rate means Mockingbirds occasionally fire at the wrong person, which their deployers consider an acceptable margin. The weapon represents the intersection of cheap AI hardware and lethal intent.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — automated lethal trap",
+  "base_technologies": [
+    "Voice-recognition trigger interface",
+    "Automated trap weapon deployment",
+    "Smart-home hardware weaponization"
+  ],
+  "specifications": "firearm: Variable — sawed-off shotgun, heavy pistol, or similar\ntrigger: Salvaged voice-recognition hardware\nactivation: Specific phrase or voice-pattern match\naccuracy of recognition: approximately 85%\nrange: Determined by firearm and placement\npower source: Battery-powered voice module, 72-hour standby\ninstallation time: 30-60 minutes\nconcealment: Behind walls, under furniture, inside containers",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A prominent community leader was killed when they said their own name at their front door — a Mockingbird had been installed inside their wall, programmed to their voice pattern.",
+    "Mockingbird traps programmed to common greetings have been found in abandoned buildings in Tier 1 — they are not targeted at anyone specific, they are designed to kill whoever enters."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "improvised",
+    "weapon",
+    "gun",
+    "war",
+    "ai",
+    "power",
+    "fire",
+    "tier 1"
+  ]
+}

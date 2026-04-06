@@ -1,0 +1,234 @@
+{
+  "id": "019d6143a6907fd5aef5d81c7e8c2fa2",
+  "type": "character",
+  "name": "Palesa Vuorinen-Ekwensi",
+  "aliases": [
+    "Plese",
+    "The Ghost"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Freelance private investigator specializing in missing persons, Tier 1-2 clientele",
+  "age": 38,
+  "status": "active",
+  "location": "Burnside Pocket",
+  "description": "Palesa Vuorinen-Ekwensi runs their operation out of a secondhand electronics repair shop in Burnside Pocket — a legitimate business that pays approximately forty percent of its bills, with the PI work covering the rest. They are medium height and move with a deliberate economy, the kind of person who picks a spot in a room and knows all the exits before they sit down. Their skin is a warm golden-brown, their eyes dark and slightly asymmetrical from a scar through the left brow that healed badly after an incident they don't discuss. They have geneware cat ears — tawny and slightly oversized — acquired as a teenager and kept because, they say, the enhanced hearing is professionally useful, which is true and also not the whole reason.\n\nPalesa specializes in finding people who don't have the Quanta to hire a proper firm and who Metro Police will not look for — runaways into Irkalla, workers who vanished after missing a debt payment, kids eaten by the gap between Tier 1 and Tier 2. They charge on a sliding scale that regularly slides to nothing. Their shop is a known safe harbor; people leave messages in a particular cracked planter out front. They are pragmatic about almost everything and sentimental about this work in a way they have never articulated to anyone.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "finding someone too late",
+      "becoming indifferent — the gradual professional numbing they've watched happen to others"
+    ],
+    "core_desires": [
+      "to find one particular person they stopped looking for eight years ago",
+      "a city where the people they serve don't need someone like them"
+    ],
+    "coping_mechanisms": [
+      "keeping their hands busy (repairs, tinkering)",
+      "ritualistic prayer to the Burnside E.L.F. — a spirit they've cultivated a genuine working relationship with",
+      "dark humor deployed before emotion can arrive"
+    ],
+    "blind_spots": [
+      "takes on more than they can carry and doesn't acknowledge limits until they're past them",
+      "occasionally so focused on the missing that they neglect the people currently in front of them"
+    ],
+    "secret": "Eight years ago they were hired to find a missing fifteen-year-old and found evidence the girl had gone willingly into an Arcturus subsidiary community — was safe, was happy, had left her family for reasons. Palesa filed a report saying the trail went cold. They still don't know if that was the right call. They still check the girl's public profile quarterly."
+  },
+  "speech_patterns": {
+    "vocabulary": "Street-register with technical interludes — code-switches fluidly depending on who they're talking to",
+    "cadence": "Quick when comfortable, very still and careful when something matters",
+    "verbal_tics": [
+      "'Here's the thing—'",
+      "using 'right' as punctuation at the end of questions"
+    ],
+    "example_lines": [
+      "'I don't take retainer. You tell me what happened, I tell you if I can help, and then we figure out what it costs. That order matters.'",
+      "'Here's the thing — I've found people in worse places than that. The question is never can I find them. It's always what happens after.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "They've been hired to find someone whose disappearance is connected to something the players are already involved in — and they are several steps ahead",
+    "The Burnside Pocket E.L.F. has given Palesa information about a pattern of disappearances and wants Palesa to pass it along — but the E.L.F.'s motives are unclear"
+  ],
+  "narrative_function": "Information broker and community-tier quest giver; connects players to Tier 1 networks; moral compass figure who operates outside institutional structures; can find almost anyone if given enough time",
+  "augmentations": "Geneware cat ears (tawny, enhanced hearing); mesh-weave subdermal armor on forearms and torso (light, civilian grade); retinal data-capture for evidence documentation",
+  "daily_life": "Opens the repair shop at nine, takes three or four jobs a week, spends evenings doing legwork on foot or by transit. Eats whatever is fast. Sleeps irregularly and badly.",
+  "affiliation": "Self-employed; informal network of Burnside Pocket community contacts; occasional contract work for Tessera Compliance Bureau (which they are ambivalent about)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 0,
+      "assertion_deference": 2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community-embedded",
+      "tenacious",
+      "burdened",
+      "street-smart",
+      "quietly compassionate"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never hand information to anyone who will use it to harm the person they're looking for",
+      "Charge what people can afford — take the hit yourself",
+      "Don't lie to clients about bad outcomes, but choose the moment carefully"
+    ],
+    "escalation_ladder": [
+      "Passive observation and community network queries",
+      "Direct approach and interview",
+      "Confrontation with person or persons obstructing the search",
+      "Tactical extraction — they have done this, do not advertise it",
+      "Walking away when a situation becomes genuinely beyond civilian scope — they know where this line is"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Measured assessment — reads people quickly and calibrates warmth accordingly",
+      "friends": "Surprising warmth and loyalty, expressed through action rather than words"
+    },
+    "stress_responses": {
+      "low": "Gets busier — more jobs, more tinkering",
+      "medium": "Goes quiet and observational, listens more than speaks",
+      "high": "Becomes very precise and task-focused, strips emotional content from communication entirely"
+    },
+    "contradictions": [
+      "Professes not to get attached and visibly is attached to almost every case"
+    ],
+    "habits": [
+      "Leaves a specific data offering at the Burnside E.L.F. shrine every morning before opening",
+      "repairs things that don't need fixing when thinking",
+      "carries a physical photo of the girl from the Arcturus case, face down in their wallet"
+    ],
+    "breaking_points": [
+      "Finding a body when they were close — being almost fast enough"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Opportunist": 0.9,
+    "Info Broker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born, Burnside Pocket",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Brief stint with Metro Police auxiliary — resigned after one year",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opened Vuorinen's Repair as cover and cash flow",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Filed the false dead-end report on the Arcturus girl case",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

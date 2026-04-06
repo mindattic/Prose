@@ -1,0 +1,62 @@
+{
+  "id": "019d6143ab2178fa800c26ba86e79216",
+  "name": "Cortical Bleed Emitter CBE-4 'Lacuna'",
+  "type": "weapon",
+  "aliases": [
+    "Lacuna",
+    "The Bleeder",
+    "Gray Fog",
+    "Memory Eater"
+  ],
+  "category": "cyber",
+  "description": "The CBE-4 operates by projecting a focused burst of low-frequency electromagnetic interference tuned specifically to the oscillation bands of augmented neural tissue. When fired, the emitter generates a cone-shaped pulse that interacts with cybernetic implants in the target's skull — particularly memory indexing chips, cortical overlays, and sensory processing units — causing cascading micro-interruptions that present clinically as sudden, disorienting amnesia. The target does not lose consciousness but instead enters a fugue state lasting between forty seconds and several minutes depending on the density of their implant load. They remain ambulatory but functionally useless: unable to recognize faces, recall mission objectives, or operate complex motor sequences.\n\nWhat makes the Lacuna distinctive is its surgical specificity. It does not affect unaugmented individuals at all, which makes it uniquely terrifying in a world where most professionals carry at least one neural implant. Corporate security teams with heavy cyberware loadouts are paradoxically more vulnerable than street-level operators with minimal augmentation. This has created a counter-culture of deliberately 'running light' on neural implants among certain mercenary circles who know they operate in Lacuna-hostile environments.\n\nZHENG-DAO BIOELECTRIC developed the CBE-4 ostensibly as a non-lethal compliance tool for use in corporate detention scenarios. The weapon's designation as 'non-lethal' is technically accurate but practically disputed — targets caught mid-operation, mid-traffic, or in any situation requiring conscious agency have died in significant numbers. On the black market, it is sometimes called 'The Inheritance' because it leaves victims alive but stripped of who they were, at least temporarily.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 4+ / Black market",
+  "legality": "Prohibited (civilian), Restricted (licensed corporate security)",
+  "base_technologies": [
+    "Targeted electromagnetic interference",
+    "Neural feedback loops",
+    "Cyberware resonance mapping"
+  ],
+  "specifications": "form factor: Handheld emitter, 340mm barrel length, resembles oversized sidearm\neffective range: 8–14 meters (cone, 40-degree spread)\npower source: Zinc-ceramic capacitor cell, 6 shots per charge\nweight: 1.4 kg\npulse duration: 0.3 seconds per discharge\neffect duration: 40 seconds to 4 minutes depending on implant load\ncollateral radius: Cone-shaped — limited splash risk if aimed precisely\nrecharge time: 90 seconds between full discharges",
+  "tactical_use": "Operators use the Lacuna as an opener in close-quarters corporate raids, firing into a security cluster before breaching. A single well-placed pulse can neutralize a four-person augmented security team simultaneously. It is also used in interrogation-adjacent scenarios — firing at a target to temporarily prevent them from accessing encrypted memory or executing a neural dead-man's switch. Extraction teams favor it for disabling high-value targets without causing physical damage that would complicate medical extraction.",
+  "cultural_context": "The Lacuna occupies a unique psychological space in Meridian 88's weapon culture. It does not kill, does not visibly wound, and leaves no immediate trace — yet it is feared more viscerally than most lethal weapons by the augmented professional class. To be 'Lacuna'd' is slang for any sudden, humiliating lapse in competence. Corporate executives who survive an attack rarely speak of it publicly; the implication that their augmentations made them vulnerable is professionally damaging. Among street operators, carrying a Lacuna signals a preference for surgical, intelligence-driven work over brute force — it marks someone as a professional who thinks before shooting.",
+  "known_users": [
+    "Corporate extraction specialists",
+    "Counter-intelligence operatives",
+    "High-end fixers with non-lethal contract clauses",
+    "Rogue ZHENG-DAO field researchers",
+    "Interrogation facilitators working for mid-tier corps"
+  ],
+  "story_hooks": [
+    "A fixer wakes up mid-job with no memory of the last six hours — the Lacuna was used on them, but by whom, and what did they do during those six hours?",
+    "A ZHENG-DAO whistleblower claims the CBE-4 has a hidden secondary mode that causes permanent rather than temporary erasure — and they have a victim to prove it.",
+    "A street operator running deliberately light on implants is hired specifically because they're Lacuna-immune, but the job turns out to be bait.",
+    "The black market supply of CBE-4 units has suddenly dried up — someone is buying every unit they can find, and the reason is unknown."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "cyber",
+    "weapon",
+    "war",
+    "memory",
+    "consciousness",
+    "augment",
+    "cyberware",
+    "neural",
+    "ai",
+    "rogue",
+    "corporate",
+    "contract",
+    "power",
+    "medical",
+    "clinic",
+    "market",
+    "bar",
+    "energy",
+    "fire",
+    "tier 4"
+  ]
+}

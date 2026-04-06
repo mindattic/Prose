@@ -1,0 +1,36 @@
+{
+  "id": "019d6143aa747023a70cf6b23c73ab53",
+  "name": "Tessera Personal Pod",
+  "type": "transportation",
+  "aliases": [
+    "Pod",
+    "The Egg",
+    "Bubble Car"
+  ],
+  "category": "personal_ground",
+  "manufacturer": "Tessera",
+  "description": "A single-occupant autonomous vehicle the size of a large armchair, enclosed in a transparent shell. The Pod is Tessera's vision of personal urban transport — you sit inside your climate-controlled bubble and it drives you wherever you need to go at city speeds. No parking needed; it drops you off and drives itself to the next customer. In Tier 3-4 districts, Pods fill the streets like chrome eggs, each containing a person staring at their own reflection in someone else's Pod. It's efficient, antisocial, and a perfect metaphor for the city.",
+  "propulsion": "Electric, three-wheel, autonomous drive",
+  "speed": "50 km/h",
+  "capacity": "1 passenger + small bag",
+  "range": "200 km per charge",
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ8-25 per ride (subscription: Φ300/month unlimited)",
+  "autonomy": "Fully autonomous, Tessera routing network",
+  "armament": "None. Transparent shell provides no protection or privacy.",
+  "common_usage": "Solo commuting, short urban trips, a mobile private space in a crowded city.",
+  "story_hooks": [
+    "Pods are being used as mobile dead drops — someone leaves a data chip under the seat, and the next passenger finds it",
+    "A Pod's autonomous system routes its passenger through a district they've never seen, where the streets don't match any map, before delivering them to their destination as if nothing happened"
+  ],
+  "tags": [
+    "personalground",
+    "transportation",
+    "ai",
+    "elf",
+    "control",
+    "vehicle",
+    "tier 3",
+    "tier 4"
+  ]
+}

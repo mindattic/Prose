@@ -1,0 +1,228 @@
+{
+  "id": "019d6143a6ff7e4e8b52b7b9efe69713",
+  "type": "character",
+  "name": "Tokoua Andrić-Mensah",
+  "aliases": [
+    "Tok",
+    "Pixel"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Q-zero ghost, scrapper, and itinerant data-thief",
+  "age": 17,
+  "status": "active",
+  "location": "Waukegan Industrial Shelf, pipe warren sector nine",
+  "description": "Tokoua is a lean teenager who moves like water finding its way downhill — always the path of least resistance, always finding the gap. They are mixed-dark, their skin a deep warm brown with a faint bioluminescent shimmer along their collarbones that they did not pay for and cannot explain, a geneware expression that surfaced at puberty from some deep ancestral combination no one has mapped. Their hair is cut close on the sides and left wild on top, dyed a persistent rust-orange that clashes magnificently with everything. Their eyes are dark with irises that shift to a green-gold in bright light. They wear clothes assembled with an engineer's practicality — lots of pockets, nothing that snags, shoes that fit.\n\nTokoua has no legal identity whatsoever. They were born in a transit shelter to a mother who died of an untreated infection three years later, before any papers were filed. They grew up in the pipe warrens of the Waukegan Industrial Shelf among other Q-zeros, learning to exist in the margins of a city that has never officially acknowledged them. They are not bitter about this — or rather, they have metabolized the bitterness into something more useful: a comprehensive and functional understanding of how to extract resources from a system that believes you don't exist. They are quick, funny, and deeply lonely in a way they would violently deny.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.4,
+      "id": 0.8,
+      "shadow": 0.5,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "being captured and assigned an identity by a corponation — losing the freedom of nonexistence",
+      "dying before anyone knows they were here"
+    ],
+    "core_desires": [
+      "to build something permanent and real with their hands",
+      "to be known by at least one person who would grieve for them"
+    ],
+    "coping_mechanisms": [
+      "compulsive collecting of data scraps with no practical value",
+      "humor as deflection",
+      "building elaborate mechanical objects from scavenged parts and then dismantling them"
+    ],
+    "blind_spots": [
+      "believes they are completely self-sufficient when they are actually deeply embedded in an informal support network they refuse to acknowledge"
+    ],
+    "secret": "Tokoua has been compiling a meticulous, encrypted record of every Q-zero person they have ever met — names, faces, histories, locations. They intend it as proof that these people exist. They are terrified of what happens if it falls into the wrong hands and more terrified of what happens if they lose it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, dense with technical jargon and transit-slang, drops in Tuvaluan phrases when emotional without noticing",
+    "cadence": "Rapid-fire when engaged, goes completely silent when processing something difficult",
+    "verbal_tics": [
+      "'Right, okay, so—'",
+      "trailing off mid-sentence and restarting from a different angle",
+      "'No, that's — no.' (self-correction habit)"
+    ],
+    "example_lines": [
+      "'Right, okay, so the node is hot but only between shift changes, which gives you a nine-minute window, which is fine if you move like you mean it.'",
+      "'No, that's — no. I don't need anything from anyone. I was just asking because — it doesn't matter. Forget it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Tokoua's encrypted Q-zero registry has accidentally captured documentation of an Axiom corponation illegal dumping operation — they don't realize what they have, but someone else does and is searching the Shelf for the source",
+    "Their pirated neural cache chip contains fragments of a previous owner's memories and one of those fragments is a location, a code, and a name that someone very powerful wants buried"
+  ],
+  "narrative_function": "Information source with unique access (can go where identity-checked systems block others), quest giver for Q-zero community issues, represents the human cost of digital identity systems, potential ally for characters operating outside official channels.",
+  "augmentations": "Bioluminescent shimmer along the collarbones (natural geneware expression, not installed). A pirated neural cache chip they found in a scrapper haul and installed themselves with mixed results — it stores data but occasionally dumps it at random.",
+  "daily_life": "Scavenges industrial components from the Shelf's decommissioned machinery during off-hours, sells what they can to grey-market parts dealers, and spends evenings cracking low-security data nodes for the information inside, which they trade or simply hoard.",
+  "affiliation": "Loose affiliation with the Waukegan Q-zero community, no formal ties",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -2,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Q-zero ghost",
+      "scrapper",
+      "data-thief",
+      "community archivist (unofficial)",
+      "bioluminescent"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never give a corponation ID officer a real answer",
+      "If you can reach it, you can take it",
+      "Protect Q-zero community information above everything else"
+    ],
+    "escalation_ladder": [
+      "Joke and deflect",
+      "Go evasive and non-committal",
+      "Disappear mid-conversation without warning",
+      "If cornered, cause a scene loud enough to draw a crowd and escape in the confusion"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Performs confidence aggressively — lots of banter, takes up space, never stands still",
+      "friends": "Drops the performance and becomes awkwardly sincere, asks too many questions, forgets to be cool"
+    },
+    "stress_responses": {
+      "low": "Talks faster and starts touching everything within reach",
+      "medium": "Goes very still and very quiet, which is alarming to people who know them",
+      "high": "Runs. Just runs. Figures the rest out later."
+    },
+    "contradictions": [
+      "Insists they don't trust anyone but maintains an elaborate encrypted record of people they care about; claims to want no permanent connections but keeps coming back to the same locations and the same people"
+    ],
+    "habits": [
+      "Leaves small improvised mechanical trinkets in places they have been as a kind of unsigned signature",
+      "Eats standing up, always facing a door or exit",
+      "Hums Tuvaluan work songs while cracking data nodes"
+    ],
+    "breaking_points": [
+      "Someone threatening to report a Q-zero community member to identity enforcement — Tokoua will do something reckless and disproportionate"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "pirated neural cache chip (self-installed, unstable — intermittent data dumps)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "pirated neural cache chip (self-installed, unstable — intermittent data dumps)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 0: Born in a Waukegan Industrial Shelf transit shelter, no papers filed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 3: Mother dies of untreated respiratory infection",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 5-13: Raised communally in the pipe warren Q-zero community",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 14: Begins serious data-cracking, first major scrapper haul",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 15: Installs pirated neural cache chip; begins the Q-zero registry project",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 17: Present day",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

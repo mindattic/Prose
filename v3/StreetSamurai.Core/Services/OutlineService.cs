@@ -241,17 +241,15 @@ public class OutlineService
     /// <summary>Save outline to disk alongside the story project.</summary>
     public void Save(string projectId, StoryOutline outline)
     {
-        var path = Path.Combine(paths.DataRoot, "story_blocks", $"{projectId}.outline.json");
-        var dir = Path.GetDirectoryName(path);
-        if (dir != null) Directory.CreateDirectory(dir);
+        var path = StoryFolderHelper.GetFilePath(paths.StoriesDir, projectId, "outline.json");
         File.WriteAllText(path, JsonSerializer.Serialize(outline, JsonDefaults.Indented));
     }
 
     /// <summary>Load outline from disk.</summary>
     public StoryOutline? Load(string projectId)
     {
-        var path = Path.Combine(paths.DataRoot, "story_blocks", $"{projectId}.outline.json");
-        if (!File.Exists(path)) return null;
+        var path = StoryFolderHelper.FindFile(paths.StoriesDir, projectId, "outline.json");
+        if (path == null) return null;
         try { return JsonSerializer.Deserialize<StoryOutline>(File.ReadAllText(path)); }
         catch (Exception ex) { log.LogError(ex, "Failed to load outline from {Path}", path); return null; }
     }

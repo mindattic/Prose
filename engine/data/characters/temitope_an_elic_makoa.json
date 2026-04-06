@@ -1,0 +1,166 @@
+{
+  "id": "019d6143a70b7ac7ba14c6a8b899ce5a",
+  "type": "character",
+  "name": "Tèmítọpẹ Anđelić-Makoa",
+  "aliases": [
+    "Temi",
+    "TM16"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "gene-mod body artist and tattoo artist",
+  "age": 19,
+  "status": "active",
+  "location": "Hamtramck Enclave — works out of a studio called 'Derma' on the Enclave's main commercial strip",
+  "description": "Tèmítọpẹ is nineteen and operates at the velocity of someone who knows they are good and cannot wait for the world to confirm it. She is compact and energetic, her dark skin extensively modified with her own work: bioluminescent subcutaneous patterns run from her collarbones to her wrists in interlocking Yoruba adinkra symbols and Polynesian wave-forms, her Māori grandfather's heritage made literal on her body, the two visual languages coexisting in something that is recognizably neither and entirely her own. She has retractable claw mods on her right hand — practical for fine-work and also, she admits, because they look excellent — and her irises are modified to display the Enclave's coordinates in tiny glowing text, a joke that is also a statement of belonging.\n\nShe apprenticed at Derma at fifteen, doing cleanup and equipment sterilization. By seventeen she was doing bioluminescent pattern work. Now she is the reason people come to Derma specifically — her reputation spreading through the Hamtramck Enclave's dense social networks faster than she can accommodate the demand. She is brash and funny and has opinions about everything, delivered with the cheerful certainty of someone who has not yet been wrong enough times to become cautious. She is also, underneath the performance of confidence, deeply serious about her craft in a way she rarely lets people see directly.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.5,
+      "id": 0.8,
+      "shadow": 0.4,
+      "mask": 0.7,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "that her talent is real but not enough — that she will hit a ceiling she cannot skill her way through",
+      "losing the Enclave as a home to slow gentrification or corporate rezoning"
+    ],
+    "core_desires": [
+      "to design a gene-mod that becomes culturally significant — something that enters the visual language of the city",
+      "for her parents (both mid-tier corporate, both skeptical of her path) to see what she's built"
+    ],
+    "coping_mechanisms": [
+      "redirects anxiety into work — books herself solid when afraid",
+      "uses humor as a firewall against vulnerability"
+    ],
+    "blind_spots": [
+      "believes charm and skill can navigate situations that actually require patience and political understanding",
+      "does not take seriously the Helix Biosystems certification entanglement she's in"
+    ],
+    "secret": "She has been secretly developing an unlicensed bioluminescent geneware mod — a pattern that responds to specific emotional states rather than just ambient neural activity — using a combination of pirated Helix code and original synthesis. It works. It is also completely illegal, and if Helix Biosystems discovers it they will own it under her certification contract."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, colloquial, dense with Hamtramck Enclave slang and Yoruba expressions she uses as punctuation. Switches to precise technical language when discussing the work — the register-shift is startling.",
+    "cadence": "Rapid-fire in conversation, with overlapping ideas. Slows down completely when she's being serious, which is the tell.",
+    "verbal_tics": [
+      "'I'm not even joking' (said when she is 100% joking)",
+      "'okay but technically—' (when correcting something she cares about)"
+    ],
+    "example_lines": [
+      "'Helix wants me to pay licensing fees on work I designed myself with techniques they've never published. Okay but technically that means I invented something they haven't, which, yes.'",
+      "'Every piece I put on someone is a conversation between where they're from and where they're going. I'm not a printer. I'm a translator.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Her unlicensed emotional-response geneware mod has been noticed — a client posted a discreet video of the pattern responding to grief at a funeral and it has attracted attention from a Helix Biosystems IP enforcement agent who is now quietly investigating who did the work.",
+    "Someone came into Derma asking for a specific pattern that Temi recognized immediately — it's a marking used by a network she's heard rumors about, and the client insisted it was 'just aesthetic.' She did the work and now she's not sure."
+  ],
+  "narrative_function": "Social connector — knows everyone young in the Enclave and most people who move through it; access point for geneware information and modification services; represents the generation that has grown up entirely inside Meridian 88's reality; can be quest giver for anything touching the Enclave's community politics.",
+  "augmentations": "Extensive self-applied bioluminescent subcutaneous patterns (own work). Retractable claw mods on right hand (function and aesthetics). Coordinate-display iris mods. Scent gland enhancement — she chose a specific compound she describes as 'like the Enclave smells when it rains.'",
+  "daily_life": "Opens Derma at noon, works clients until 20:00, spends evenings with a rotating group of Enclave peers, researches new geneware techniques late at night on pirated Helix Biosystems technical manuals she's compiled over four years.",
+  "affiliation": "Derma studio (Hamtramck Enclave); loose affiliation with Helix Biosystems through their licensed geneware supply chain — she is technically a certified Helix applicator, which she finds both useful and ideologically uncomfortable",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 4,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "prodigy",
+      "enclave-rooted",
+      "legally-entangled",
+      "performer",
+      "quietly-serious"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never applies a modification she hasn't researched thoroughly — the bravado stops at the skin",
+      "always gets explicit consent for design choices, even minor ones"
+    ],
+    "escalation_ladder": [
+      "joke that also makes the point",
+      "direct statement without the joke",
+      "becomes very still and very cold — the humor vanishes completely"
+    ],
+    "interpersonal_modes": {
+      "strangers": "performs confidence and warmth — genuine but amplified for first contact",
+      "friends": "drops the performance, is funnier and more uncertain and more real"
+    },
+    "stress_responses": {
+      "low": "gets louder and funnier",
+      "medium": "books more clients, works more hours",
+      "high": "goes completely quiet and disappears into research mode for 48 hours"
+    },
+    "contradictions": [
+      "performs certainty while secretly consuming technical documentation obsessively because she is terrified of being caught inadequate",
+      "advocates for body autonomy while being contractually entangled with a corporation that owns the tools she uses"
+    ],
+    "habits": [
+      "sketches designs on her own arms with a washable stylus while thinking",
+      "greets the E.L.F. she believes inhabits Derma's autoclave with a specific three-tap ritual before starting any session"
+    ],
+    "breaking_points": [
+      "someone treating a client's modification as a novelty or joke",
+      "Helix Biosystems claiming credit for or ownership of her work"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Artist": 0.9,
+    "Dreamer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

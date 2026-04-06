@@ -1,0 +1,230 @@
+{
+  "id": "019d6143a5ad790a92111ea0e4869e54",
+  "type": "character",
+  "name": "Amara Kaboré-Volkov",
+  "aliases": [
+    "No aliases — refuses them on principle"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Protest coordinator and direct action organizer",
+  "age": 22,
+  "status": "active",
+  "location": "Mexicantown Libre, living communally in a building called the Stack",
+  "description": "Amara is young and loud about it — she has the particular energy of someone who has concluded that patience is a trap laid by people who benefit from delay. She is dark-skinned and angular, with natural hair grown into a dense crown she clips with political buttons and small brass charms. Her geneware is exuberant: color-shifting hair underlayer that blooms from black to vivid copper to green depending on ambient temperature and her mood; she had it done as soon as she could afford it and considers it a form of emotional honesty, not vanity. Her arms are covered in handpoked ink — dates, phrases, names of people and places that matter to her, in at least four scripts.\n\nAmara coordinates street mobilizations for a loose coalition she calls the Libre Front — not an organization exactly, more a persistent methodology: show up, be visible, make the cost of ignoring you higher than the cost of addressing you. She has been arrested twice, released both times due to procedural errors she suspects were deliberate tests of whether she'd sign anything. She signed nothing. She is not naive — she knows spectacle alone changes little — but she also knows that the invisible don't get concessions, and she is determinedly, loudly, exasperatingly visible.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.9,
+      "id": 0.8,
+      "shadow": 0.4,
+      "mask": 0.2,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "becoming irrelevant — pouring everything into this and having it not matter",
+      "being used — her visibility weaponized by someone with an agenda she didn't consent to"
+    ],
+    "core_desires": [
+      "a genuine moment of rupture — something that actually shifts the material conditions of Mexicantown Libre, not just the discourse",
+      "to build enough trust between the Libre Front and older organizations that they stop treating each other as competitors"
+    ],
+    "coping_mechanisms": [
+      "physical activity — she processes everything by moving; she runs, she dances, she paces",
+      "communal meals at the Stack, which she treats as sacred in a way she'd be embarrassed to articulate"
+    ],
+    "blind_spots": [
+      "underestimates how much her youth and energy are themselves a resource that gets used up, and the toll the work takes on her body and emotions",
+      "can mistake opposition to her specific tactics for opposition to the cause itself, leading her to burn bridges with potential allies"
+    ],
+    "secret": "After her second arrest, an Axiom security liaison approached her privately and suggested — very carefully, very deniably — that her charges would be quietly dropped if she began sharing advance notice of planned actions. She refused immediately and furiously, but she has told no one because she's afraid of how it would look — as if she were suspected of having accepted. She also hasn't processed how frightening the approach was."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, passionate, code-switches between Mexicantown Libre street dialect, standard Meridian, and fragments of her grandmother's Mooré; drops theoretical language in public, uses it fluently in movement spaces",
+    "cadence": "Rhythmic and percussive; natural speaker who lands emphasis like a drummer; can switch to soft and direct when someone is genuinely distressed",
+    "verbal_tics": [
+      "'Here's the thing — '",
+      "'No, listen'",
+      "running her hand over her hair when she's excited, which changes the color"
+    ],
+    "example_lines": [
+      "'They want you to think the only legitimate protest is one they can ignore. I'm not interested in legitimacy on their terms.'",
+      "'I'm not asking you to agree with everything I do. I'm asking you to be there at seven. The rest we can argue about after.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Axiom liaison has made a second, more explicit approach — this time with documentation that could be used to coerce her. She needs help finding out who authorized this and whether it's being done to other organizers.",
+    "A planned Libre Front action has been leaked to corporate security before it happened three times running; she needs someone outside her network to find the breach without her having to suspect her own people."
+  ],
+  "narrative_function": "Energy source and potential wild card; she can draw crowds or attention with short notice; represents a generational and tactical contrast to more institutional activists; her directness and visibility make her both useful and dangerous to associate with; can be a quest giver for actions that require numbers or public pressure.",
+  "augmentations": "Color-shifting hair geneware (black to copper to green, temperature and mood responsive); no chrome, no implants — she is deeply suspicious of implanted tech as a surveillance vector and has done extensive research to support this suspicion",
+  "daily_life": "Irregular schedule centered on the current campaign; mornings doing outreach and flyering in Mexicantown Libre and adjacent zones; afternoons in planning meetings at the Stack or in the streets; evenings are when the actions happen — marches, occupations, noise demonstrations outside corponation facilities.",
+  "affiliation": "Libre Front (founding coordinator); Mexicantown Libre residents' network; loose solidarity connections with Ghostprint and other independent media",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 8,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 9,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": 4,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "direct action",
+      "crowd mobilizer",
+      "young and burning",
+      "surveillance paranoid",
+      "communal heart"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Act — inaction is a choice that favors whoever benefits from the status quo",
+      "Protect participants — never put people in the street without knowing the risk and communicating it honestly",
+      "Don't sign anything, don't take anything, don't negotiate alone"
+    ],
+    "escalation_ladder": [
+      "Outreach, flyering, community conversation",
+      "Permitted public gathering and demonstration",
+      "Unpermitted action — marches, occupations, disruption",
+      "Escalated direct action targeting corponation property or operations",
+      "Going dark and rebuilding if the network is compromised"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open and immediate — she treats strangers as potential allies until proven otherwise and makes them feel that; can overwhelm people who aren't used to being assumed trustworthy",
+      "friends": "Fiercely loyal, occasionally overwhelming; shows up at 2am with food and feelings; holds a grudge for betrayals but doesn't build toward it slowly — she'll tell you to your face"
+    },
+    "stress_responses": {
+      "low": "Moves faster, talks more",
+      "medium": "Goes quiet between bursts of energy — people who know her find the quiet alarming",
+      "high": "Needs to move — will physically leave a space she cannot act in; sometimes finds herself running without a destination"
+    },
+    "contradictions": [
+      "Insists on collective leadership and consensus process but is temperamentally a centrifuge around which the coalition organizes; the Libre Front runs on her energy whether she intends it or not",
+      "Deeply committed to transparency within the movement while carrying the Axiom approach as a private terror"
+    ],
+    "habits": [
+      "Burns a small data stick at the E.L.F. shrine at the Stack before every major action — she claims it's ironic, but she doesn't miss it",
+      "Eats communal dinner at the Stack whenever she's in Mexicantown, no matter how late",
+      "Writes the names of action participants in a personal ledger after each event — 'because someone should know we were there'"
+    ],
+    "breaking_points": [
+      "A participant being seriously hurt in an action she organized — especially if she had information about the risk that she downplayed",
+      "Being publicly accused of the collaboration she refused and finding no one believes her denial"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "stable, well-maintained",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Mexicantown Libre to a market vendor and a sanitation collective worker",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Participates in first major protest at age 17 — a rent strike response to a Palladian development proposal",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Co-founds the Libre Front after the rent strike coalition dissolves; emerges as primary coordinator",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First arrest; released after 36 hours on procedural grounds; signs nothing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Second arrest; receives private approach from Axiom liaison; refuses and tells no one",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Libre Front actions increasing in frequency and scale; coalition beginning to draw attention from city-wide networks",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

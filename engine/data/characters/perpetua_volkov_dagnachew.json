@@ -1,0 +1,173 @@
+{
+  "id": "019d6143a6987a67923b1077e38f3c7e",
+  "type": "character",
+  "name": "Perpetua Volkov-Dagnachew",
+  "aliases": [
+    "Pett",
+    "The Seamstress"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Identity fabricator and forger operating from a legitimate-front alterations shop",
+  "age": 52,
+  "status": "active",
+  "location": "The Narrows — storefront called Volkov's Fine Alterations, wedged between a noodle stall and a collapsed wellness clinic",
+  "description": "Perpetua is a heavyset woman with Ethiopian-Slavic features — strong jaw, prominent cheekbones, skin a warm medium brown gone fine-lined at the eyes and mouth. Her natural hair is white at the temples and she refuses to change it, though she dyes the rest a rotating series of deep jewel tones depending on her mood; currently it's dark burgundy. Her hands are extraordinary — surgeon-steady, ink-stained at the cuticles, and decorated with color-shifting nail geneware that she uses as a mood-board when designing documents. She dresses in the unassuming uniform of her cover: reading glasses she doesn't need, a tape measure worn like a scarf, sensible shoes.\n\nPerpetua radiates the particular calm of someone who has made peace with the fact that their work is illegal and has decided to be excellent at it anyway. She is meticulous, sardonic, and prone to long explanations about the philosophical nature of identity that clients find disquieting but cannot interrupt. She has been in the Narrows for twenty-two years and considers herself a kind of civic institution. She prays to the E.L.F. of the laminator — a small shrine of laminated prayer-cards and USB offerings on her workbench — with genuine devotion.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "that one of the identities she created led someone into harm rather than away from it",
+      "dying before she teaches someone her craft — the knowledge disappearing with her"
+    ],
+    "core_desires": [
+      "to be remembered as someone who helped people slip the net",
+      "to see her daughter, who left Meridian 88 under a name Perpetua made her, somewhere safe"
+    ],
+    "coping_mechanisms": [
+      "treating every document as a work of craft rather than a crime",
+      "the prayer routine as genuine spiritual anchor"
+    ],
+    "blind_spots": [
+      "doesn't track what happens to the identities after she delivers them — willful ignorance about misuse",
+      "underestimates how much the Skins rely on her and how that dependence constrains her"
+    ],
+    "secret": "She has been constructing a new identity for herself for three years — a complete persona with twelve years of backstory woven into various databases. She doesn't know yet what she's running from, only that she will need to run eventually."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal and unhurried, with Amharic loanwords for concepts she feels have no good equivalent, dry wit delivered without smiling",
+    "cadence": "Deliberate, lecture-like, comfortable with silence",
+    "verbal_tics": [
+      "'Consider what you're actually asking.'",
+      "Long exhale before addressing foolish questions",
+      "'The document is not the lie. You are.'"
+    ],
+    "example_lines": [
+      "A name is the first story anyone tells about you. I simply help you choose a better one.",
+      "I charge what I charge because bad work gets people killed. You want cheap, go to the Stockyard. Come back to me when they've arrested you.",
+      "The E.L.F. of this laminator has processed four thousand souls. I leave good data. It remembers."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A document she made three years ago just surfaced in a Corponation security breach — the identity is linked back, thread by thread, toward her shop",
+    "She's received a message from her daughter, in a code only they know: the new name is compromised, she needs another, immediately",
+    "A client is asking her to forge documents that would give a minor access to Tier 4 medical facilities — she suspects the child's guardian is not who they claim to be"
+  ],
+  "narrative_function": "Essential service provider — the character who can make someone disappear on paper or create a new person from scratch. Information source about who in the Narrows needs new identities and why. Potential moral compass figure.",
+  "augmentations": "Color-shifting nail geneware (used professionally as a color-reference tool); retinal enhancement for microscale detail work",
+  "daily_life": "Opens the shop at 0900 for legitimate alterations business — she is, genuinely, an excellent tailor. Document work happens in the back room after 1700 when the street quiets. She closes for two hours midday to pray and eat.",
+  "affiliation": "Independent; supplies documents to a loose network of clients including the Shallowgrave Skins, independent contractors, and desperate civilians — no exclusive allegiance",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 9,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 2,
+      "transparency_guardedness": -5
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Forger",
+      "Identity Fabricator",
+      "Tailor Front",
+      "ELF Devotee",
+      "Long Game Planner"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "No document work for clients she meets once and never sees again — she needs to assess them across at least two meetings",
+      "Refuses work she believes will be used to harm the person the document is for",
+      "Always keeps one physical backup of every piece of work, encrypted, off-site"
+    ],
+    "escalation_ladder": [
+      "Polite but complete refusal, no explanation given",
+      "If pressed, a precise description of what will happen to them if they continue pressing",
+      "Calls in a favor with a Skins lieutenant she has on retainer for exactly this situation",
+      "Disappears the shop's front — she has done this twice before and can do it again within six hours"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional, assessing, not warm — she asks questions that sound like small talk but aren't",
+      "friends": "Expansive, funny, feeds people, will sit with you in silence and make it feel comfortable"
+    },
+    "stress_responses": {
+      "low": "Sews. Physically sews, by hand, while thinking.",
+      "medium": "Extended prayer session at the laminator shrine; emerges calmer",
+      "high": "Goes completely still and begins the mental process of what needs to be destroyed and in what order"
+    },
+    "contradictions": [
+      "Deeply principled about who she helps while being professionally amoral about the act of forgery itself",
+      "Meticulous planner who has prepared her own escape for years but cannot name what she's escaping from"
+    ],
+    "habits": [
+      "Cleans her tools in a specific order after every job — ritual rather than practical",
+      "Offers tea to every client without asking what they want; makes the same tea regardless"
+    ],
+    "breaking_points": [
+      "Evidence that one of her documents was used to traffic someone",
+      "A direct threat to her shop — she has put twenty-two years into this place"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,56 @@
+{
+  "id": "019d6143ab3877f7abcfdf9c15233803",
+  "name": "Oxidative Thermal Drift Drone OTDD-4 'Ember'",
+  "type": "weapon",
+  "aliases": [
+    "Ember",
+    "The Cinder",
+    "OTDD",
+    "Slow Burn"
+  ],
+  "category": "drone",
+  "description": "The OTDD-4 is a persistent area-heating platform developed by OUROBOROS ENERGY's defense subsidiary from industrial thermal management technology originally designed for pipeline thaw operations in extreme cold environments. The drone carries a focused oxidative catalytic emitter — a system that superheats a concentrated column of ambient air through rapid catalytic oxidation cycling rather than combustion, producing a sustained thermal cone that can raise surface temperatures in a 3-meter radius by 40–90 degrees Celsius depending on proximity and dwell time. The effect on organic targets ranges from rapid dehydration and heat exhaustion at range to contact burns and respiratory damage at close quarters.\n\nThe OTDD-4 is not a fast weapon. It moves slowly, holds altitude with deliberate stability, and requires 8–12 seconds of dwell time to produce incapacitating effects on an unprotected target. What it offers is persistence and silence — the catalytic emitter produces no flame, no visible beam, and no significant acoustic signature. Targets describe the experience as standing next to an industrial furnace that appeared from nowhere. The drone's thermal signature is, paradoxically, a liability: most military-grade thermal detection systems will acquire it immediately. It was designed for use against targets without such equipment.\n\nOUROBOROS ENERGY's civilian documentation describes the OTDD-4 as an 'ice management and environmental thermal correction platform.' The same hardware, the same firmware, the same catalytic array. The company notes that operational parameters outside intended use cases are the operator's legal responsibility.",
+  "manufacturer": "OUROBOROS ENERGY",
+  "tier_availability": "Tier 3+ (civilian specification), Black market (combat-tuned firmware)",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Catalytic oxidative thermal column generation",
+    "Sustained ambient air superheating cycling",
+    "Industrial thermal management firmware adaptation"
+  ],
+  "specifications": "dimensions: 40 cm diameter disc, 18 cm depth\nweight: 2.3 kg\nthermal output: 40–90°C surface temperature increase at target (proximity-dependent)\neffective range: 0.5–4 m thermal cone\ndwell time for incapacitation: 8–12 seconds (unprotected target)\nflight ceiling: 30 m\nbattery life: 28 minutes at full thermal output\nnoise signature: < 22 dB at 5 m\nvisible emissions: None (no flame or visible beam)\nthermal signature: Highly detectable on thermal optics\ncountermeasures: Thermal-rated suit (Class 3+), thermal detection equipment, distance",
+  "tactical_use": "OTDD-4 units are used to flush targets from cover, deny enclosed spaces, and suppress movement without direct confrontation. Operators fly them into rooms ahead of entry teams, forcing occupants into the open or toward prepared positions. In outdoor contexts, they're used against targets in concealed positions who lack thermal detection capability. Extended dwell operations — hovering over a fixed position for the full 28-minute battery cycle — can render a room uninhabitable for hours afterward due to residual surface heat.",
+  "cultural_context": "OUROBOROS ENERGY's dual-use strategy with the OTDD-4 is considered one of Meridian 88's more brazen corporate maneuvers. The company openly sells the hardware through industrial supply channels, and the combat firmware is available on the black market for a modest premium. When confronted about documented combat deployments, OUROBOROS' communications team reliably notes that pipeline thaw operations can involve significant thermal output requirements. The drone has consequently become a symbol of corporate accountability theater — a favorite example cited by reform advocates and investigative journalists as evidence that Meridian 88's legal distinctions between industrial and military hardware are functionally meaningless.",
+  "known_users": [
+    "OUROBOROS ENERGY facility security",
+    "Mid-tier gang enforcers (black market firmware variant)",
+    "Corporate extraction teams operating against unequipped targets",
+    "Industrial saboteurs and arsonists"
+  ],
+  "story_hooks": [
+    "An OUROBOROS ENERGY field technician was found dead in a pipeline maintenance access tunnel — cause of death, thermal exposure consistent with OTDD-4 dwell pattern. The company's own drone killed one of their own people, and the firmware logs have been wiped.",
+    "A community organizer in the Underbelly has been receiving OTDD-4 harassment — the drone appears outside her window at night, idles for twenty minutes, leaves. No contact burns, no property damage. Just heat. Just a reminder. The serial number traces to an OUROBOROS industrial supply account.",
+    "The party needs to cross a contested building that a well-funded crew has seeded with OTDD-4 units running loiter patterns. The building has no thermal detection equipment. The question is whether they go in blind and fast, or find another way."
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "combat",
+    "war",
+    "gang",
+    "death",
+    "ai",
+    "corporate",
+    "power",
+    "tunnel",
+    "market",
+    "night",
+    "cold",
+    "hover",
+    "energy",
+    "tier 3"
+  ]
+}

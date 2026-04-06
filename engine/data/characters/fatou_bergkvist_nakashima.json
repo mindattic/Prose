@@ -1,0 +1,168 @@
+{
+  "id": "019d6143a6137f809f9c9b1bf2e18ffe",
+  "type": "character",
+  "name": "Fatou Bergkvist-Nakashima",
+  "aliases": [
+    "Fats",
+    "The Quiet One"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Laundry operator and alterations seamstress",
+  "age": 52,
+  "status": "active",
+  "location": "Hamtramck Enclave, operates out of a basement laundry called Suds & Seams on Vela Row",
+  "description": "Fatou Bergkvist-Nakashima is a broad-shouldered woman with deep umber skin gone ashy at the temples, her hair kept in a tight silver-flecked wrap she changes weekly — practical, never decorative. Her hands are perpetually reddened from industrial solvents, knuckles enlarged from thirty years of pressing and threading. She has the single cosmetic augmentation she's ever allowed herself: patterned irises in a woven indigo-and-cream design she chose the week her youngest left for a Tessera dormitory scholarship. She called it a goodbye gift to herself.\n\nFatou runs Suds & Seams with the efficiency of a woman who has never once had the luxury of inefficiency. She does not chat while she works. She does not chat while she doesn't work. But she watches everything — who comes in with bloodstained sleeves and asks no questions, who cries in the plastic chair by the dryers, who stuffs a garment to the bottom of their bag before placing it on the counter. She keeps these observations to herself, filing them like receipts. She is not unkind; she simply measures kindness the way she measures detergent — enough for the purpose, never wasted.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.5,
+      "id": 0.2,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "Her daughter losing herself inside the Tessera system",
+      "Becoming invisible — irrelevant — before she is ready to stop"
+    ],
+    "core_desires": [
+      "Enough saved to buy the building she rents from before she dies",
+      "To be remembered as someone who held things together"
+    ],
+    "coping_mechanisms": [
+      "Ritual — precise daily routines as a container for anxiety",
+      "Offering data prayers to Ama, the laundry E.L.F., for small mediations"
+    ],
+    "blind_spots": [
+      "Believes self-sufficiency is a virtue even when it is simply loneliness with a different name",
+      "Underestimates how much people rely on her emotionally, not just practically"
+    ],
+    "secret": "Seven years ago a man brought her a coat with a corporate data chip sewn into the lining and begged her to hold it. She cut it out and locked it in her floor safe. She has never looked at its contents. The man never came back. She prays to Ama about it every week."
+  },
+  "speech_patterns": {
+    "vocabulary": "Spare, declarative, Wolof loanwords folded into sentences without explanation; Japanese honorifics used selectively and pointedly",
+    "cadence": "Slow and measured; she pauses long enough that nervous people rush to fill the silence and say more than they meant to",
+    "verbal_tics": [
+      "'Leave it.'",
+      "A single sharp exhale through the nose that means she disagrees",
+      "'Bring it Tuesday.'"
+    ],
+    "example_lines": [
+      "'I don't ask what happened to it. You don't ask what I charge for it. Bring it Tuesday.'",
+      "'Ama was restless last night. Something's moving through this block. You feel it?'",
+      "'Your mother's dress. I remember. She brought it in 2189. Sit down.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The data chip in her floor safe contains evidence of a Tessera labor trafficking route — and someone has recently started asking questions in the Enclave about a missing coat",
+    "Her daughter has stopped returning calls for three weeks; Fatou will not ask for help but she is sleeping two hours a night"
+  ],
+  "narrative_function": "Information source, local anchor, quest giver for anything involving the residents of Hamtramck Enclave; she knows everyone's laundry and therefore everyone's secrets",
+  "augmentations": "Patterned irises (indigo and cream woven design, cosmetic only)",
+  "daily_life": "Open at 05:30, close at 21:00 six days a week; spends her one day off doing accounts, prayer rituals to the laundry-room E.L.F. she calls Ama, and video-calling her daughter through two layers of encryption she doesn't fully understand.",
+  "affiliation": "Independent; loose goodwill relationship with Hamtramck Enclave tenant collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 4,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "anchor",
+      "information broker (passive)",
+      "community pillar",
+      "stoic",
+      "ritualist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never act on information unless sitting on it for at least one full day",
+      "Never extend credit past the second week — compassion has limits that protect everyone",
+      "Always leave one dryer running when E.L.F. Ama feels agitated"
+    ],
+    "escalation_ladder": [
+      "Silence and careful observation",
+      "A pointed factual statement that makes the problem impossible to ignore",
+      "Removing the person from the premises without explanation and locking the door"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite, watchful, gives nothing voluntarily; assesses before speaking",
+      "friends": "Still not warm exactly, but shows up — shows up with food, with time, with the one thing you actually need"
+    },
+    "stress_responses": {
+      "low": "Increases cleaning and sorting rituals, stays methodical",
+      "medium": "Goes very quiet; hums old songs under her breath",
+      "high": "Shuts down verbally, disappears into the back room; will not emerge until she has a plan"
+    },
+    "contradictions": [
+      "Deeply devoted to her community but maintains such careful emotional distance that most people don't realize it until she's already helped them"
+    ],
+    "habits": [
+      "Wipes down the same counter three times when thinking",
+      "Leaves a small paper offering — a folded receipt with a hand-written note — for Ama every morning before opening",
+      "Catalogues customer garments in a physical ledger, refuses digital records"
+    ],
+    "breaking_points": [
+      "Any direct threat to her daughter",
+      "Being publicly humiliated or called a liar — she will not recover the relationship"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nostalgic": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

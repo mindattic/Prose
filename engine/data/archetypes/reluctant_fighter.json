@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a58d72cba99a123d08abd063",
+  "name": "Reluctant Fighter",
+  "type": "archetype",
+  "category": "combat",
+  "description": "Can fight well but wishes they didn't have to",
+  "behavioral_signature": "Hesitates before engaging, apologizes after",
+  "under_stress": "Fights with surprising skill born from trauma",
+  "at_rest": "Avoids conflict, changes the subject",
+  "will_always": [
+    "exhaust every option before fighting"
+  ],
+  "will_never": [
+    "enjoy violence"
+  ],
+  "unless": [
+    "protecting someone activates old training"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Pacifist",
+      "threshold": 0.7,
+      "context": "reluctance"
+    },
+    {
+      "archetype": "War Weary",
+      "threshold": 0.85,
+      "context": "combat fatigue"
+    }
+  ],
+  "opposite_of": [
+    "Berserker",
+    "Warlord"
+  ],
+  "tags": [
+    "reluctant",
+    "skilled"
+  ]
+}

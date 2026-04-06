@@ -1,0 +1,55 @@
+{
+  "id": "019d6143a7bc7a40b05e93aa5196b4c4",
+  "name": "Helix Biosystems Peristaltic Load Distributor",
+  "brand_name": "Helix",
+  "product_name": "Helix Biosystems Peristaltic Load Distributor",
+  "type": "cyberware",
+  "aliases": [
+    "The Second Stomach",
+    "The Mule's Gut",
+    "Stowage"
+  ],
+  "category": "augmentation",
+  "body_location": "",
+  "description": "The Peristaltic Load Distributor is a subcutaneous cargo implant — a series of flexible, biocompatible polymer pouches networked by a peristaltic micro-pump system and installed within the abdominal and thoracic body cavity margins, between the skin and the fascial layer. Each pouch is independently sealed and can be loaded or unloaded via a small valve port concealed within a natural body fold. The pump system allows contents to be redistributed between pouches to balance weight or optimize concealment, controlled by a small subdermal toggle. Standard configuration provides approximately 1.4 liters of distributed cargo volume invisible to surface pat-down and undetectable by standard millimeter-wave scanning due to the polymer's radar-transparent composite construction.\n\nHelix markets the PLD as a medical device — specifically as a pharmaceutical management system for patients requiring continuous access to medications in hostile or resource-poor environments. The framing is not entirely dishonest. Field medics in contested zones use it to carry sterile supplies without external bags that mark them as targets. But the device's obvious secondary application has made it the preferred internal carry solution for smugglers, couriers, and anyone who needs to move through checkpoints with cargo that cannot be declared. The polymer pouches can carry liquids, powders, small solid objects, and — in a use case Helix's warranty explicitly disclaims — folded flexible data media.\n\nThe street name 'The Second Stomach' reflects both its location and its function: a hidden digestive tract for things that can't be shown in public. Experienced users develop an almost proprioceptive awareness of their pouch loads, able to feel weight distribution and remaining capacity the way an unaugmented person feels hunger. Long-term carriers report the implant becoming psychologically integrated — a sense of being incomplete, somehow lighter than they should be, on the rare days they run empty.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Restricted",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"total_cargo_volume\":\"1.4 liters (standard 6-pouch configuration)\",\"pouch_material\":\"Radar-transparent biocompatible polymer composite\",\"detection_resistance\":\"Undetectable by standard MMW and capacitive pat-down scanners\",\"load_balancing\":\"Automated peristaltic redistribution via subdermal toggle\",\"access_method\":\"Concealed valve port at natural body fold sites\",\"compatible_cargo\":\"Liquids, powders, small solids, flexible media (max single item: 8cm x 5cm)\",\"implant_site\":\"Subcutaneous abdominal and lateral thoracic margins\",\"surgical_grade\":\"Class I outpatient implant\",\"power_draw\":\"Bioelectric harvest, 0.2W sustained\"}",
+  "side_effects": [],
+  "cultural_context": "In Meridian 88's checkpoint-saturated lower tiers, the PLD has become a quiet necessity rather than a luxury. The difference between a courier with a PLD and one without is the difference between a reliable professional and someone who gets caught. Among the Sump Tier's underground economy, having 'the gut' is assumed for anyone doing serious work. Helix's medical framing gives it a degree of legal cover that purely black-market implants lack, and licensed PLD carriers can produce documentation claiming pharmaceutical necessity — documentation that Helix's gray-market partners supply freely for a fee.",
+  "known_users": [
+    "Meridian Sump-tier couriers and data runners",
+    "Field medics operating in contested Tier 2 zones",
+    "Contraband distributors on the Corridor smuggling routes",
+    "Corporate intelligence assets running deniable drops",
+    "Tomás Rek — veteran courier who has never been successfully searched"
+  ],
+  "story_hooks": [
+    "A courier is found dead with their PLD surgically removed post-mortem. Whatever they were carrying was important enough to kill for and careful enough to cut out cleanly. The players need to find what it was before whoever took it uses it.",
+    "A Helix field medic in a contested zone has been using their PLD to carry something they won't show anyone. They're keeping people alive. They're also clearly terrified. The two facts are connected.",
+    "Checkpoint security in Tier 3 has suddenly upgraded to deep-tissue ultrasound scanning — something that will see right through the PLD's radar-transparent shielding. Someone told them what to look for. The courier network needs to know who.",
+    "The players are hired to deliver a PLD implant to someone who can't safely visit a surgeon — which means doing a field installation in a location with no sterile environment, no anesthesia, and people looking for the recipient."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "augmentation",
+    "cyberware",
+    "war",
+    "smuggle",
+    "augment",
+    "ai",
+    "corporate",
+    "control",
+    "power",
+    "ubc",
+    "medical",
+    "market",
+    "hunger",
+    "tier 1"
+  ]
+}

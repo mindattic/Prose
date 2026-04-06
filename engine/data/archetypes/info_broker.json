@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5777c26aa08fa63c5d4fda8",
+  "name": "Info Broker",
+  "type": "archetype",
+  "category": "intellectual",
+  "description": "Trades in secrets and knowledge",
+  "behavioral_signature": "Collects, verifies, and sells information",
+  "under_stress": "Trades faster, verification drops",
+  "at_rest": "Networking, listening, filing",
+  "will_always": [
+    "know something others don't"
+  ],
+  "will_never": [
+    "share information for free"
+  ],
+  "unless": [
+    "withholding info will kill someone innocent"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Networker",
+      "threshold": 0.7,
+      "context": "information networks"
+    },
+    {
+      "archetype": "Knowledge Hoarder",
+      "threshold": 0.75,
+      "context": "information control"
+    }
+  ],
+  "opposite_of": [
+    "Teacher"
+  ],
+  "tags": [
+    "connected",
+    "mercenary"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "019d6143a9d571078d7172b76095dd69",
+  "name": "Adaptex-RM",
+  "brand_name": "Adaptex",
+  "product_name": "Adaptex-RM",
+  "type": "substrate",
+  "aliases": [
+    "rigid-flex",
+    "command-stiff",
+    "RM-plate"
+  ],
+  "category": "smart_material",
+  "description": "Adaptex-RM is a magneto-rheological composite textile developed by Tessera Materials in collaboration with Veilweave Textiles, consisting of iron-rich particle chains suspended in a polymer matrix that transitions from supple fabric-like flexibility to near-rigid plate hardness within 40 milliseconds when an embedded micro-coil network generates a directed magnetic field. The material can be tuned to any stiffness point along its range — not just two states — allowing gradual or dynamic stiffness profiling across different zones of a garment or panel simultaneously. Powered by inductive charging, the system holds a charge sufficient for 6 hours of active stiffness cycling.",
+  "properties": [
+    "programmable_stiffness",
+    "magneto_rheological",
+    "zone_addressable",
+    "fast_response_40ms",
+    "flexible_when_unpowered",
+    "moderate_impact_resistance_when_rigid",
+    "inductive_charging",
+    "lightweight"
+  ],
+  "developers": [
+    "Tessera Materials",
+    "Veilweave Textiles"
+  ],
+  "applications": [
+    "Adaptive body armor that softens for movement and hardens on impact",
+    "Medical exoskeleton liners for joint stabilization",
+    "Stunt and hazard-work protective suits",
+    "Deployable field splints and stretchers",
+    "Smart industrial gloves for precision-to-power-grip transitions"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ 780 per sq meter (controller unit: Φ 290)",
+  "story_hooks": [
+    "A runner's Adaptex-RM suit has been remotely compromised — someone can lock it rigid at will, turning their protection into a prison mid-operation.",
+    "A Tier 2 knockoff version of Adaptex-RM has hit the street market with a dangerous flaw: the stiffness transition is uncontrolled, snapping rigid without warning and breaking the bones of the people it's supposed to protect.",
+    "A street medic has jury-rigged salvaged Adaptex-RM panels into improvised traction splints for a trauma clinic in the Shelf — but Tessera's IP enforcement drones are scanning for unlicensed activation signatures."
+  ],
+  "tags": [
+    "smartmaterial",
+    "substrate",
+    "war",
+    "love",
+    "ai",
+    "elf",
+    "control",
+    "power",
+    "medical",
+    "clinic",
+    "market",
+    "armor",
+    "drone",
+    "shelf",
+    "tier 3",
+    "tier 4"
+  ]
+}

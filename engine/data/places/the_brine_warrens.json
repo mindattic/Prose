@@ -1,0 +1,131 @@
+{
+  "id": "019d6143a9357b2a931e64f67ba7aa85",
+  "type": "place",
+  "name": "The Brine Warrens",
+  "aliases": [
+    "The Warrens",
+    "Saltdown",
+    "The Wet Levels",
+    "Brinemouth"
+  ],
+  "description": "Carved into the sediment beneath the old lakefront infrastructure, the Brine Warrens are a sprawling subterranean neighborhood formed by the slow collapse and flooding of pre-Meridian municipal tunnels, drainage systems, and the basements of buildings long since swallowed by the city's expansion westward. Seawater — or rather the chemical cocktail that passes for lake water this far into the industrial corridor — has seeped through every crack, leaving white salt crystals and rust blooms on every surface. The residents who call this place home have learned to live with perpetual damp, building upward on platforms and catwalks to stay above the tidal fluctuations that shift the water table twice daily.",
+  "atmosphere": {
+    "sights": [
+      "salt crystal formations glowing faintly under UV grow-lights",
+      "platforms and rope bridges strung between half-submerged concrete pillars",
+      "bioluminescent algae cultivated in open troughs lining walkways",
+      "waterlogged market stalls on floating pontoons",
+      "corroded pipes sweating condensation",
+      "children fishing through grates into flooded lower chambers"
+    ],
+    "sounds": [
+      "constant drip and trickle of seeping water",
+      "hollow echo of footsteps on metal grating",
+      "low mechanical groan of pressure equalizers",
+      "muffled arguments bouncing off wet stone",
+      "distant hum of illegal pump stations",
+      "the slap of small waves against pontoon edges"
+    ],
+    "smells": [
+      "salt and mineral tang",
+      "mildew and wet concrete",
+      "algae cultivation vats",
+      "cooking oil from platform kitchens",
+      "rust and stagnant water"
+    ],
+    "feel": "Claustrophobic but strangely intimate — a place where everyone knows which platform creak means a stranger is coming, and survival depends on cooperation with neighbors you might otherwise despise.",
+    "tags": []
+  },
+  "demographics": "Predominantly displaced workers from collapsed industrial sectors, undocumented migrants, people hiding from corporate debt collectors, and multi-generational families too poor or too stubborn to relocate. A significant Hmong diaspora community occupies the deeper eastern chambers. Population estimated at 12,000–18,000, deliberately uncounted.",
+  "economy": "Subsistence aquaculture, salt harvesting and processing, black-market water filtration services, salvage diving into the fully flooded lower levels, and a thriving trade in chemical-resistant materials. Several unlicensed clinics operate here, funded through community contribution rather than currency.",
+  "power_structure": "Governed loosely by a council of Platform Elders — one representative per major platform cluster — who mediate disputes and coordinate infrastructure maintenance. Real enforcement falls to the Tidewatchers, a volunteer patrol that doubles as a smuggling operation, funding community services through selective contraband passage.",
+  "dangers": [
+    "sudden tidal surges flooding lower walkways with little warning",
+    "structural collapse of degraded pre-Meridian concrete supports",
+    "corporate retrieval teams hunting debt-fugitives",
+    "methane pockets in sealed lower chambers",
+    "waterborne pathogens resistant to common antibiotics",
+    "territorial conflicts over salvage rights in flooded zones",
+    "Tidewatcher extortion when their 'protection' becomes mandatory"
+  ],
+  "opportunities": [
+    "access to pre-Meridian infrastructure maps held by elder residents",
+    "bioluminescent algae strains with undocumented pharmaceutical properties",
+    "flooded lower levels contain intact pre-collapse data vaults",
+    "off-grid medical services with no corporate reporting",
+    "smuggling routes connecting to Old Harbor and The Shelf",
+    "communities willing to hide individuals from corporate surveillance"
+  ],
+  "story_hooks": [
+    "A salvage diver hasn't surfaced from a deep dive three days ago — their family is offering everything they own for a recovery team",
+    "Something in the flooded sub-level has started tampering with the pump systems from the inside",
+    "A corporate water utility is buying out Tidewatcher leadership to gain access to the Warrens' undocumented aquifer connections",
+    "A child born in the Warrens has never registered with any city system — and someone very powerful has just learned she exists",
+    "The salt crystals in the deepest dry chambers have begun forming patterns that repeat across every surface simultaneously"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Old Harbor",
+      "The Shelf",
+      "Substation Null"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "salvage divers and aquaculture workers",
+    "debt fugitives and undocumented residents",
+    "black-market medics and unlicensed pharmacists",
+    "smugglers using the water routes",
+    "journalists seeking off-record sources",
+    "Tidewatcher enforcers",
+    "corporate retrieval contractors"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Salt Cathedral",
+      "description": "A vast natural chamber where salt crystal formations have grown over decades into towering columns and vaulted ceilings. Used as a communal gathering space and de facto temple for multiple religious communities who each claim separate sections. The acoustics make whispers audible across the entire space.",
+      "tags": []
+    },
+    {
+      "name": "Pontoon Row",
+      "description": "The main commercial strip of the Warrens, a half-kilometer chain of floating platforms connected by gangplanks that rise and fall with the tidal cycle. Food stalls, repair shops, a rumored unlicensed cybernetics shop, and the Tidewatcher's public-facing headquarters all occupy this stretch.",
+      "tags": []
+    },
+    {
+      "name": "The Drowned Archive",
+      "description": "A partially flooded city records office from the pre-Meridian era, accessible only by diving through two submerged corridors. The filing cabinets are ruined, but the server room's raised flooring kept its hardware above the waterline — and residents claim it still partially powers on.",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.858,
+    "lng": -87.615,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "gun",
+    "war",
+    "smuggle",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "power",
+    "debt",
+    "medical",
+    "clinic",
+    "tunnel",
+    "harbor",
+    "market",
+    "rain",
+    "rights",
+    "train",
+    "water",
+    "lake",
+    "shelf",
+    "old harbor"
+  ]
+}

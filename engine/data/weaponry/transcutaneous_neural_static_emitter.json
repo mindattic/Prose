@@ -1,0 +1,57 @@
+{
+  "id": "019d6143ab5779a7a738786338e00424",
+  "name": "Transcutaneous Neural Static Emitter",
+  "type": "weapon",
+  "aliases": [
+    "TNSE-5",
+    "Whitenoise",
+    "The Veil"
+  ],
+  "category": "exotic",
+  "description": "The TNSE-5 projects a dense, skin-penetrating field of low-amplitude electromagnetic interference precisely tuned to the conduction velocity range of myelinated peripheral nerve fibers. Targets within the emission cone experience a sudden, total interruption of voluntary motor signals below the neck — the effect is not pain, not unconsciousness, but a clean, terrifying paralysis while the subject remains fully alert. The field does not affect the autonomic nervous system, so breathing and cardiac function continue normally.\n\nThe weapon's engineering achievement lies in its frequency-hopping emission architecture, which cycles through seventeen discrete interference bands per second to prevent nerve conduction from adapting or routing around the disruption. Earlier prototypes produced only transient effects as the nervous system compensated within seconds; the TNSE-5's cycling maintains paralysis consistently for the duration of continuous emission plus a residual window of two to four minutes after the field is removed. The emitter cone covers approximately a thirty-degree arc and can be swept across multiple targets.\n\nArcturus Defense Solutions designed the TNSE-5 for hostage extraction scenarios where a clean, non-lethal area-denial option was required in close proximity to protected personnel. The weapon never entered standard military procurement due to ethical review complications — specifically, the finding that sustained exposure beyond ninety seconds produced measurable long-term nerve conduction deficits in test subjects. Arcturus disputes this finding publicly and continues to sell to private clients under a confidential licensing structure.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Military only",
+  "legality": "Prohibited (active military licensing exemption for contracted operators)",
+  "base_technologies": [
+    "Transcutaneous electromagnetic interference",
+    "Frequency-hopping neural disruption",
+    "Peripheral nerve conduction suppression"
+  ],
+  "specifications": "effective range: 3–18 meters\nemission cone: 30 degrees\npower source: Modular high-frequency oscillator pack, 9 minutes continuous emission\nparalysis onset: 0.3–0.8 seconds\nresidual effect duration: 2–4 minutes post-emission\nweight: 4.4 kg\nform factor: Shoulder-braced emitter with pivoting head and integral targeting display\nlong term risk: Nerve conduction deficit with exposures exceeding 90 seconds (contested by manufacturer)",
+  "tactical_use": "Extraction teams use the TNSE-5 to freeze a room while principals are moved — one operator holds the emitter on target while others execute the extraction, then the emitter is withdrawn and the team is clear before the paralysis fades. Counter-kidnapping units favor it for rescues where target identification is uncertain and lethal force is not authorized. The weapon requires a stable firing position and is not suited to mobile engagements. Operators note that aware targets who know the effect is temporary can remain combative immediately upon recovery, requiring secondary restraint measures.",
+  "cultural_context": "The TNSE-5 is a weapon of power in a very specific sense: it does not harm, it simply removes agency entirely, and the subject knows it. Among Meridian 88's underground networks, rumors of 'the veil' circulate as a near-mythological threat — something that can take you without a mark, without a sound. Survivors of TNSE-5 deployments frequently report the experience as psychologically scarring in ways that conventional violence is not. The weapon has also found use in a small, disturbing black-market context that authorities have been reluctant to document formally.",
+  "known_users": [
+    "Arcturus-contracted extraction teams",
+    "High-value corporate security details",
+    "A known fixer collective operating in Sector 2 who acquired a unit through a military surplus diversion",
+    "At least one documented criminal organization using it for abduction operations"
+  ],
+  "story_hooks": [
+    "A series of abductions in an upscale district share a common forensic signature — no struggle, no evidence, just missing people — and a medical examiner has quietly flagged the nerve profile.",
+    "An Arcturus contractor goes off-reservation with a TNSE-5 unit and the company needs it recovered before the licensing structure is exposed in a criminal investigation.",
+    "A survivor of a TNSE-5 deployment is offering significant payment to anyone who can acquire one for a purpose they won't specify.",
+    "Arcturus's internal research files on long-term nerve damage are for sale — someone inside the company wants the truth out, but the data is heavily encrypted and the seller is already being followed."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "violence",
+    "combat",
+    "war",
+    "consciousness",
+    "neural",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "medical",
+    "pain",
+    "market",
+    "rain",
+    "train",
+    "energy"
+  ]
+}

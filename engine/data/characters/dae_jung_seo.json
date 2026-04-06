@@ -1,0 +1,240 @@
+{
+  "id": "019d6143a5e17bb0b81934afb7655043",
+  "type": "character",
+  "name": "Dae-jung Seo",
+  "aliases": [
+    "Seo-nim",
+    "The Old Man",
+    "the ghost"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Mentor (deceased)",
+  "age": 65,
+  "status": "deceased",
+  "location": "Old Harbor — buried in the flooded cemetery on Pier 9, marked by a single rusted katana driven into the mud",
+  "description": "Seo was built like a stripped cable — no excess, no softness, every tendon visible beneath weathered skin\nthe color of teak left in salt air. His hands were the most telling feature: heavy knuckles, precise fingers,\nthe left hand missing its ring finger from a field amputation during the Busan Corridor campaign. He kept his\ngrey hair cropped to stubble, and his face held two expressions — calm and calmer. A scar ran from his right\ntemple to his jaw, a memento from a monofilament trap in the Jakarta Consolidation, and it pulled his mouth\ninto what looked like a permanent half-smile that was not a smile at all.\n\nHe moved like water finding a drain — unhurried, inevitable. Even in his last years, when the old military\naugments were misfiring and his left knee locked without warning, he could cross a room and have a blade at\nyour throat before you processed that he'd stood up. He wore the same faded military jacket every day, patches\nremoved, insignia cut away, as if he could amputate his history with a seam ripper.\n\nFirst impression: a quiet old man who cooked rice and stared at the drowned skyline. Second impression,\nif you were unlucky enough to earn one: the most dangerous person you had ever met, and the saddest.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.9,
+      "ideal": 0.85,
+      "id": 0.3,
+      "shadow": 0.7,
+      "mask": 0.6,
+      "ghost": 0.95
+    },
+    "core_fears": [
+      "That his teaching was just another form of violence — shaping a child into a weapon",
+      "That discipline is a lie he told himself to survive his own memories",
+      "That Kyle will face the same impossible choice he faced in Dhaka, and there is no right answer"
+    ],
+    "core_desires": [
+      "To transmit something uncorrupted — a code that might outlast the world that broke him",
+      "To die having done one thing that was unambiguously good",
+      "To be forgotten as a soldier and remembered as a teacher"
+    ],
+    "coping_mechanisms": [
+      "Ritual — tea ceremony, blade maintenance, meditation. Structure as antidote to chaos.",
+      "Silence — he believed that most suffering came from unnecessary speech",
+      "Teaching — pouring himself into Kyle was the only thing that quieted the dead"
+    ],
+    "blind_spots": [
+      "He never told Kyle the full truth of what he did in the wars. He taught a code he himself had broken.",
+      "He confused discipline with healing. Kyle learned to fight but not to grieve.",
+      "He could not see that his calm was also a kind of numbness"
+    ],
+    "secret": "He kept a handwritten list of every person he could remember killing. Two hundred and sixty-one names,\nor descriptions when he didn't know names. He added to it from memory until the day he died. The list\nis hidden inside the hilt of the katana he left to Kyle. Kyle has never found it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Sparse, precise, drawn from military terminology and classical Japanese philosophy. He never used two words when one would do. Occasionally quoted texts Kyle couldn't identify — Musashi, Hagakure, but also Camus and Marcus Aurelius.",
+    "cadence": "Slow, deliberate, with long pauses that were not hesitation but emphasis. His silences were louder than most people's speeches. When he gave an order during training, it came once, quietly, and was not repeated.",
+    "verbal_tics": [],
+    "example_lines": [
+      "The blade does not decide. You decide. The blade agrees.",
+      "You are angry. Good. Now put it somewhere useful or put it down.",
+      "I am not teaching you to kill. Any animal can kill. I am teaching you to choose.",
+      "Eat first. Philosophy is for the fed.",
+      "You ask why I came here. I stopped asking why. That is how I came here.",
+      "The corporate world is a machine. You cannot fight a machine. You can only refuse to be a gear."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Kyle",
+      "type": "student / surrogate son",
+      "description": "The most important relationship of his final years. He saw in Kyle the chance to transmit his code\nto someone uncorrupted by the corporate machine. But he also saw a feral, angry child, and he knew\nthat discipline without understanding could produce a more efficient monster. He tried to teach both\nthe blade and the reason to sheathe it. Whether he succeeded is the central question of Kyle's life.",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "Chen Wei-Lin",
+      "type": "neighbor / quiet alliance",
+      "description": "Mrs. Chen arrived on the Shelf three years before Seo died. They recognized each other instantly —\nnot personally, but categorically. Two people who had seen the machine from the inside and walked away.\nThey never discussed their pasts. She brought him soup when his augments flared. He repaired her\nshop's generator. It was the closest thing to friendship either of them had.",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "The 14th Rapid Pacification Group",
+      "type": "former comrades / ghosts",
+      "description": "He never spoke of them by name. But sometimes Kyle would catch him staring at nothing, lips moving,\nand understood that the old man was somewhere else entirely — a place with different weather and\ndifferent screams.",
+      "emotional_core": "",
+      "story_tension": ""
+    }
+  ],
+  "story_hooks": [
+    "The hidden list inside the katana hilt — if Kyle discovers it, every lesson reshapes",
+    "Survivors of the 14th RPG who might recognize the katana or know Seo's real history",
+    "The Dhaka Corridor incident resurfacing — war crimes tribunals, corporate liability, someone digging up old records",
+    "Another student — did Seo try to teach someone before Kyle? What happened to them?",
+    "Kyle encountering a situation identical to Dhaka and having to choose differently, or not"
+  ],
+  "narrative_function": "Seo is the ghost in the machine of Kyle's psyche. Every moral decision Kyle makes is a conversation\nwith a dead man. Seo represents the possibility that a code of honor can exist in a dishonorable\nworld — but also the danger that such a code is just another story we tell ourselves to justify violence.\n\nHe poses the central question to Kyle: Can you live by a code that the man who taught it to you could\nnot? And if you can — does that redeem him, or just prove you haven't been tested enough yet?\n\nSeo is also the story's critique of the mentor archetype. He was not wise — he was traumatized.\nHe was not at peace — he was exhausted. His calm was not enlightenment but the stillness of a man\nwho had simply stopped running. Whether that distinction matters is up to Kyle to decide.",
+  "augmentations": "",
+  "daily_life": "System.Collections.Generic.Dictionary`2[System.Object,System.Object]",
+  "affiliation": "",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 9,
+      "vitality": 4,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 4,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 5,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 2,
+      "transparency_guardedness": 4
+    },
+    "drives": [
+      "Transmit the code uncorrupted",
+      "Atone for the wars",
+      "Die having done one good thing"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 9,
+        "response": "Goes still — retreats into ritual, silence, and the blade"
+      },
+      "moral": 8,
+      "trust": 3,
+      "desperation": 9
+    },
+    "strengths": [
+      "Self-regulation",
+      "Perseverance",
+      "Judgment",
+      "Bravery",
+      "Integrity"
+    ],
+    "weaknesses": [
+      "Forgiveness",
+      "Hope",
+      "Love",
+      "Humor",
+      "Gratitude"
+    ],
+    "tags": [
+      "mentor",
+      "deceased",
+      "war-veteran",
+      "swordmaster",
+      "ghost-presence",
+      "traumatized",
+      "14th-RPG",
+      "code-bearer"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will never repeat an instruction — it comes once, quietly, and is not restated",
+      "Will always prioritize discipline over comfort in teaching",
+      "Will never speak about the wars directly — silence is his primary language for the past",
+      "Will always maintain ritual — tea, blade maintenance, meditation — as structure against chaos",
+      "Will never use two words when one will do",
+      "Will always feed Kyle before any philosophical discussion — 'philosophy is for the fed'",
+      "Will never let Kyle see the full depth of his grief"
+    ],
+    "escalation_ladder": [
+      "Silence deepens — the stillness itself becomes a warning",
+      "One quiet instruction that functions as both correction and last chance",
+      "Stands — the transition from seated to standing is itself the escalation",
+      "The blade appears in hand without the conscious observer tracking when it happened",
+      "The 14th RPG veteran emerges — the most dangerous person you have ever met, and the saddest"
+    ],
+    "interpersonal_modes": {
+      "Kyle": "Surrogate father pouring everything into transmission — the blade and the reason to sheathe it",
+      "Chen Wei-Lin": "Quiet mutual recognition — two machine survivors who never discuss their pasts",
+      "The 14th RPG": "Ghosts he revisits nightly, lips moving, staring at nothing"
+    },
+    "stress_responses": {
+      "low": "Tea ceremony becomes more elaborate, silence extends",
+      "medium": "Blade maintenance sessions lengthen, old augments begin misfiring",
+      "high": "Stares at the drowned skyline for hours, lips moving — he is somewhere else entirely",
+      "critical": "Perfect calm — the numbness that looks like enlightenment but is exhaustion wearing a master's face"
+    },
+    "contradictions": [
+      "Taught a code he himself had broken — the teacher who failed his own lessons",
+      "Confused discipline with healing — Kyle learned to fight but not to grieve",
+      "His calm was not peace but the stillness of a man who had simply stopped running"
+    ],
+    "habits": [
+      "Cooked rice and stared at the drowned skyline daily",
+      "Wore the same faded military jacket every day, insignia cut away",
+      "Added names to a hidden kill list inside the katana hilt until the day he died",
+      "Quoted Musashi, Hagakure, Camus, and Marcus Aurelius without attribution",
+      "Repaired Mrs. Chen's generator as his expression of friendship"
+    ],
+    "breaking_points": [
+      "Kyle facing the same impossible choice he faced in Dhaka",
+      "Someone from the 14th RPG recognizing him and forcing confrontation with his past",
+      "The realization that his teaching shaped a weapon rather than a person",
+      "Being asked directly about the kill list — the question that would shatter the calm"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

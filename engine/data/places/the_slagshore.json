@@ -1,0 +1,95 @@
+{
+  "id": "019d6143a94e7ce5aa7e2f7dc4f69e6b",
+  "type": "place",
+  "name": "The Slagshore",
+  "aliases": [
+    "Gary Lakeshore",
+    "Slag Beach",
+    "The Crust"
+  ],
+  "description": "Gary was dying before the corponations finished it off. The steel mills had already hollowed the city by the mid-22nd century, leaving behind a skeletal industrial landscape that the lake was slowly digesting. Then Axiom Industries acquired the lakeshore in the Corporate Reclamation Act of 2158, not for the land but for the water rights -- Lake Michigan access for their automated cargo platform network. What they got was six miles of toxic shoreline, a hundred years of industrial sediment, and the people who still lived in it.\n\nThe Slagshore is what remains. The old U.S. Steel lakefront has been converted into Axiom's Southern Cargo Terminal -- a fully automated port where container ships are loaded and unloaded by mechanical arms the size of apartment buildings, operating around the clock without a single human worker on the dock floor. The terminal generates enormous wealth. None of it accrues to Gary. The Axiom sovereign territory boundary runs along the old shoreline road, and everything south of that line is someone else's problem. That someone else is nobody.\n\nSouth of the boundary, the old Gary neighborhoods exist in a state that urban planners call 'managed decline' and residents call 'abandonment with extra steps.' The housing stock is a mix of crumbling 20th-century construction and emergency prefab blocks installed during the Gulf Coast Displacement and never upgraded. The air quality regularly exceeds hazardous thresholds -- the cargo terminal's operations kick up legacy contaminants from the lakebed sediment, and Axiom's environmental monitors conveniently face the other direction. The residents are predominantly Tier 1 and excluded populations who cannot afford to leave and have nowhere to go if they could. They survive on the gray economy, on scavenging from the terminal's waste stream, and on a stubbornness that the corporations consistently underestimate.",
+  "atmosphere": {
+    "sights": [
+      "Axiom's cargo terminal -- mechanical arms moving containers in synchronized patterns, lit by industrial floods that turn the lakeshore into permanent daylight",
+      "The boundary wall separating Axiom sovereign territory from the residential zones -- three meters of smart-concrete with embedded sensors",
+      "Abandoned steel mill structures rusting into abstract sculpture, slowly being reclaimed by aggressive invasive vegetation",
+      "Prefab housing blocks with jury-rigged solar panels and unauthorized mesh network antennas",
+      "The lake itself, visible through gaps in the terminal infrastructure -- grey-brown water with an oily sheen that catches the industrial light"
+    ],
+    "sounds": [
+      "The cargo terminal's mechanical orchestra -- grinding, clanking, hydraulic hissing -- never stops, never pauses, never acknowledges that people are trying to sleep",
+      "Wind off the lake carrying particulate matter that you can hear hitting surfaces",
+      "Mesh network chatter from improvised comm systems",
+      "The low hum of the boundary wall's sensor array",
+      "Silence where there should be traffic -- Gary doesn't have enough functioning vehicles to make noise"
+    ],
+    "smells": [
+      "Industrial particulate -- a metallic, chemical taste that coats the back of your throat",
+      "Lake rot intensified by decades of sediment disturbance from terminal operations",
+      "Burning scrap from informal recycling operations",
+      "Ozone from the boundary wall's deterrence systems"
+    ],
+    "feel": "A place that exists to be extracted from. Every valuable thing -- the water, the shoreline, the labor -- has been pulled out and processed somewhere else. What remains is the residue, human and material. The Slagshore doesn't feel abandoned; it feels consumed.",
+    "tags": []
+  },
+  "demographics": "Approximately 28,000 residents in the non-Axiom zones, predominantly excluded populations and Tier 1. Significant Gulf Coast refugee community. Axiom terminal employs zero local residents -- the automation is complete and the maintenance crews commute from Meridian 88.",
+  "economy": "Formal economy is effectively zero. The gray economy runs on terminal scavenging -- recovering usable materials from the cargo waste stream -- and on informal services for the checkpoint traffic flowing through the Gatemouth to the east. Some residents work as unlicensed guides for people trying to reach the GLM without going through official border processing.",
+  "power_structure": "Axiom Industries holds sovereign authority over the terminal and shoreline. The residential zones have no formal governance. A community council of long-term residents makes decisions by consensus, but their authority extends exactly as far as their neighbors' willingness to listen. A scavenger collective called the Reclaimers organizes the terminal waste stream economy with surprising efficiency.",
+  "dangers": [
+    "Air quality -- prolonged exposure to Slagshore particulate causes respiratory damage that the local clinics cannot treat",
+    "Axiom boundary security -- automated deterrence systems on the wall do not distinguish between threats and trespassers",
+    "Contaminated water supply -- the municipal filtration infrastructure failed in 2181 and was never repaired",
+    "Exploitation by transit smugglers who use Slagshore residents as expendable labor",
+    "Structural collapse -- the old mill buildings are not stable and people live in them anyway"
+  ],
+  "opportunities": [
+    "The terminal waste stream contains recoverable tech, metals, and occasionally mislabeled cargo worth significant money",
+    "Axiom's automated systems have exploitable patterns -- the Reclaimers have mapped most of them",
+    "The Slagshore's lack of surveillance makes it useful for anyone who needs to move unseen",
+    "Community networks here are tight and loyal -- earn trust and you have allies who understand survival"
+  ],
+  "story_hooks": [
+    "The Reclaimers have found something in the waste stream that Axiom is now actively trying to recover -- and they're willing to kill the automated systems' zero-casualty protocol to get it back",
+    "A class-action health claim against Axiom for the air quality is being organized, but the lawyer keeps having accidents",
+    "Someone is building something in the old steel mill foundations -- something large, something powered, something that draws more electricity than the entire residential grid"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Gatemouth (Michigan City, east along the lakeshore)",
+      "Meridian 88 southern districts (north, via cargo routes)",
+      "Indiana Exclusion Territories (south)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Reclaimers working the terminal waste stream",
+    "Transit smugglers moving people around the official border checkpoints",
+    "Axiom maintenance crews (inside the terminal only, never crossing the boundary)",
+    "Journalists and documentarians who come to record poverty and leave without changing anything"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.6033,
+    "lng": -87.3362,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "smuggle",
+    "trust",
+    "ai",
+    "corporate",
+    "surveillance",
+    "power",
+    "money",
+    "poverty",
+    "wealth",
+    "clinic",
+    "rights",
+    "survival",
+    "refugee",
+    "water",
+    "lake"
+  ]
+}

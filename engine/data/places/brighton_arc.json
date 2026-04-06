@@ -1,0 +1,99 @@
+{
+  "id": "019d6143a9117a22a2a625e27012c735",
+  "type": "place",
+  "name": "Brighton Arc",
+  "aliases": [
+    "Brighton Park",
+    "The Arc",
+    "Little Meridian",
+    "La Curva"
+  ],
+  "description": "Brighton Arc is what happens when density meets determination. Packed tight along the old Archer Avenue commercial corridor, this is one of the most densely populated districts in Meridian's Southwest quadrant -- a compressed urban layer cake of residential blocks stacked above commercial strips stacked above utility infrastructure, all of it built out rather than up because the Southwest never got the arcology investment the northern districts received. The result is a neighborhood that sprawls horizontally, block after block of three-to-five story buildings connected by covered walkways, shared courtyards, and a commercial strip so long and so continuous that locals navigate by vendor rather than address. You don't live at Block 4700. You live above the carnitas place past the neural repair shop.\n\nThe Latino community that defined Brighton Park didn't just survive the Meridian transition -- it absorbed it. Spanish is the operating language of the Arc. The commercial corridor runs on family businesses that have been adapting to whatever the economy throws at them for three generations: butcher shops that now sell synthetic protein alongside real meat, electronics stalls that pivoted from cell phone repair to neural interface maintenance, bakeries where the conchas are made from heritage recipes and the ovens are powered by diverted industrial current. The entrepreneurial energy is genuine and relentless. The Arc's economic output per capita exceeds several Tier 3 districts, a statistic that has never resulted in a tier reclassification because the output is informal, untaxed, and therefore invisible to the system that assigns tiers.\n\nWhat makes the Arc volatile is the gap between its vitality and its designation. This is a Tier 1 neighborhood with Tier 3 ambition and no institutional pathway between the two. The frustration expresses itself in a political culture that is louder and more confrontational than anywhere else in the Southwest -- community assemblies that fill gymnasium-sized halls, protest marches that shut down the commercial corridor, and a youth population that has discovered that neural interface networks can organize faster than Axiom Security can respond. The Arc isn't desperate. It's angry, which is more dangerous.",
+  "atmosphere": {
+    "sights": [
+      "An unbroken commercial corridor stretching for kilometers -- stalls, shops, and vendors in continuous procession",
+      "Residential blocks with laundry lines and signal boosters competing for rooftop space",
+      "Hand-painted murals depicting community heroes, labor rights imagery, and the occasional satirical portrait of a corporate executive",
+      "Community assembly halls with standing-room crowds visible through open doors",
+      "Neural mesh nodes jury-rigged onto existing infrastructure -- the Arc upgrades itself",
+      "Street vendors with holographic price displays competing with hand-lettered cardboard signs"
+    ],
+    "sounds": [
+      "Spanish in every register -- shouting, singing, arguing, selling, praying",
+      "The commercial corridor's composite soundtrack: sizzling grills, calibration tones, regional music, barking dogs",
+      "Community assembly debates echoing from open windows -- passionate, organized, and loud",
+      "Neural mesh traffic spikes during organizing events, audible as a faint harmonic whine in older hardware"
+    ],
+    "smells": [
+      "Grilling meat and chili peppers -- the Arc's commercial corridor is one long kitchen",
+      "Fresh bread from bakeries that haven't changed recipes in a century",
+      "Ozone from overloaded neural mesh nodes -- the Arc's network runs hot",
+      "Paint from fresh murals -- the walls are never quite finished"
+    ],
+    "feel": "Electric with purpose. The Arc has the energy of a place that knows exactly what it deserves and is tired of not getting it. It's warm, loud, crowded, and unashamed -- a neighborhood that treats its own density as strength rather than affliction. Walking through the Arc feels like being inside an argument that might also be a party.",
+    "tags": []
+  },
+  "demographics": "Approximately 55,000 residents, overwhelmingly Latino, predominantly Tier 1 with an aspirational working class that the tier system refuses to reclassify. Multi-generational families share residential blocks. Youth population is large, networked, and politically active.",
+  "economy": "The commercial corridor is the Arc's lifeblood -- thousands of family businesses generating substantial economic activity that exists almost entirely outside the formal corporate economy. Remittance networks, informal lending circles, and community investment pools provide financial infrastructure the banks don't.",
+  "power_structure": "Community assemblies function as direct democracy, with elected block representatives coordinating neighborhood affairs. The commercial corridor's vendor association controls market access and resolves disputes. Axiom governance is present on paper and absent in practice.",
+  "dangers": [
+    "Overcrowding and infrastructure strain -- the Arc's density exceeds its designed capacity",
+    "Axiom Security crackdowns on organized political activity, categorized as 'civil instability'",
+    "The informal economy's vulnerability to supply chain disruption",
+    "Youth organizing that occasionally escalates beyond what the community assemblies can control",
+    "Fire risk in densely packed residential blocks with improvised electrical systems"
+  ],
+  "opportunities": [
+    "The most vibrant commercial economy in the Southwest -- goods and services unavailable anywhere else",
+    "Community organizing networks that can mobilize thousands within hours",
+    "Family business connections spanning Meridian's entire Latino diaspora",
+    "Street-level intelligence from a population that watches everything and talks to each other constantly",
+    "Neural mesh expertise -- the Arc's self-taught engineers rival Circuit technicians"
+  ],
+  "story_hooks": [
+    "The community assemblies are debating a formal declaration of economic autonomy that would challenge Axiom's tax jurisdiction -- and the vote is next week",
+    "A youth organizer from the Arc has developed a neural mesh exploit that can temporarily blind Axiom surveillance nodes, and they're planning to use it during the next protest march",
+    "The commercial corridor's oldest vendor has been keeping records of every informal transaction for forty years -- a dataset that would rewrite the economic narrative of the Southwest"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Archer's Line",
+      "McKinley Flats",
+      "New Stockton",
+      "Gage Circuit"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Commercial corridor vendors and their multi-generational customer base",
+    "Community organizers and assembly delegates from across the Southwest",
+    "Neural mesh engineers maintaining the Arc's self-built network infrastructure",
+    "Youth activists coordinating through encrypted channels",
+    "Anyone in the Southwest who needs something the corporate supply chain doesn't carry"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.819,
+    "lng": -87.69,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "neural",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "surveillance",
+    "control",
+    "power",
+    "market",
+    "rain",
+    "train",
+    "desperate",
+    "energy",
+    "fire",
+    "circuit"
+  ]
+}

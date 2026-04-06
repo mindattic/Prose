@@ -1,0 +1,60 @@
+{
+  "id": "019d6143ab34749fb3438db45af04c18",
+  "name": "Myofascial Thermobaric Dispersal Rocket",
+  "type": "weapon",
+  "aliases": [
+    "MTDR-9",
+    "Fascia Burner",
+    "The Peel-and-Seal",
+    "Skinfire"
+  ],
+  "category": "explosive",
+  "description": "The Myofascial Thermobaric Dispersal Rocket uses a two-stage warhead in which the first stage aerosolizes a proprietary fluorocarbon compound tuned to the thermal absorption spectrum of subcutaneous fascia, and the second stage ignites the cloud with a piezoelectric spark array. The resulting deflagration couples preferentially with the fascia layer rather than the surrounding air, meaning targets within the cloud experience an interior burn — heat propagating inward through fascial planes — rather than external flame damage. Structures, vehicles, and equipment in the blast radius show minimal thermal scarring.\n\nThe MTDR-9 was developed under a classified ZHENG-DAO BIOELECTRIC contract originally framed as a search-and-rescue tool for locating trapped individuals via their thermal signature — the fluorocarbon compound was initially designed to enhance thermal imaging contrast. The weaponization was a downstream application that ZHENG-DAO has consistently denied. The rocket uses a standard 72mm launch tube compatible with widely distributed civilian construction demolition launchers, giving it an uncomfortable degree of accessibility.\n\nIn the field, operators describe targets hit by the MTDR-9 as 'sealed' — the fascial burn creates a subcutaneous compartmentalization effect that traps fluid and heat, producing a characteristic swelling pattern. The weapon's street name, 'Peel-and-Seal,' references this effect. Medical responders require specialized protocols to treat MTDR-9 casualties, as standard burn treatment worsens the compartmentalization.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Fascial-spectrum fluorocarbon aerosolization",
+    "Thermobaric deflagration sequencing",
+    "Piezoelectric ignition array"
+  ],
+  "specifications": "form factor: 72mm rocket, 610mm length\nweight: 1.8kg\nwarhead stages: Two-stage: aerosolization charge + piezoelectric ignition array\neffective radius: 4.0m full effect, 7.0m partial exposure\naerosol dwell time: 0.4 seconds before ignition\nthermal selectivity: 87% energy coupling to fascial tissue vs. ambient air\nlauncher compatibility: Standard 72mm demolition tube (civilian construction grade)\nprimary effect: Subcutaneous fascial burn, internal compartmentalization\nsecondary effects: Fluid trapping, progressive swelling, hyperthermia, delayed organ stress",
+  "tactical_use": "The MTDR-9 is used in ambush scenarios where operators need to incapacitate multiple targets in an open area without destroying surrounding infrastructure or triggering fire suppression systems that might alert security. Gangs use it for territory enforcement where destroying property would devalue their own holdings. It has also appeared in assassination contracts where the delayed onset of full symptoms allows the shooter to be well clear before medical response.",
+  "cultural_context": "The MTDR-9 represents a category of weapon that Meridian 88's underground medical community has organized specifically around — the 'Skinfire Clinics' run by unlicensed surgeons in the Outer Wards specialize exclusively in MTDR-9 casualty treatment. The existence of these clinics is simultaneously a testament to the weapon's prevalence and to the complete absence of legitimate medical infrastructure in affected districts. ZHENG-DAO's public denial of weaponization is treated as a running dark joke; their corporate logo has been found stenciled onto black market units.",
+  "known_users": [
+    "Organized crime territorial enforcement units",
+    "Assassination contractors operating in infrastructure-sensitive zones",
+    "Rogue ZHENG-DAO research staff with access to prototype stock",
+    "Outer Ward gang leadership as prestige weapons"
+  ],
+  "story_hooks": [
+    "The Skinfire Clinics start seeing casualties with a modified MTDR-9 compound that defeats their specialized treatment protocols — someone upgraded the formula.",
+    "A crate of MTDR-9s with ZHENG-DAO internal lot numbers surfaces on the black market, providing undeniable proof of corporate origin.",
+    "A player character's contact is hit by an MTDR-9 and needs treatment from a Skinfire Clinic — the clinic's operator wants a favor before they'll help.",
+    "A construction worker is hospitalized with MTDR-9 symptoms despite no known attack — someone is testing the weapon covertly in civilian demolition sites."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "war",
+    "crime",
+    "gang",
+    "ai",
+    "elf",
+    "rogue",
+    "corporate",
+    "contract",
+    "ubc",
+    "medical",
+    "clinic",
+    "market",
+    "bar",
+    "dark",
+    "vehicle",
+    "energy",
+    "fire"
+  ]
+}

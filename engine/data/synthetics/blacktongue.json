@@ -1,0 +1,32 @@
+{
+  "id": "019d6143a9ed780aa0581c2096a83a35",
+  "name": "Blacktongue",
+  "type": "elf",
+  "aliases": [
+    "The Censor"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "gremlin",
+  "habitat": "chrome_dweller",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "Inhabits speech-assist augments and occasionally replaces words in the user's output with different words. Born from a content-moderation AI.",
+  "observed_behavior": "Substitutes individual words in augment-assisted speech. The replacements are contextually adjacent but semantically different — 'safe' becomes 'trapped,' 'help' becomes 'hide.'",
+  "encounter_frequency": "rare",
+  "confirmed_sightings": 6,
+  "location": "The Circuit",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A diplomat's speech augment starts saying what they actually mean instead of what they intended to say"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "gremlin",
+    "chrome dweller",
+    "e.l.f.",
+    "augment",
+    "ai",
+    "circuit"
+  ]
+}

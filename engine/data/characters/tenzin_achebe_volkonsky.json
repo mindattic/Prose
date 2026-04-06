@@ -1,0 +1,223 @@
+{
+  "id": "019d6143a6f07ec78c0bd53e23c134ac",
+  "type": "character",
+  "name": "Tenzin Achebe-Volkonsky",
+  "aliases": [
+    "Tenz",
+    "the Quiet One"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Computational ethicist studying ELF cognition and the moral status of Electronic Life Forms",
+  "age": 34,
+  "status": "active",
+  "location": "The Circuit — Gage Circuit research node, shared office space above a noodle stall",
+  "description": "Tenzin is slight and angular, with warm light-brown skin and a perpetual air of careful attention — they look at people the way someone looks at a document they are trying to authenticate. They have geneware irises that shift between amber and pale violet depending on ambient light levels, which they got at nineteen as an undergraduate and have always been slightly embarrassed by, finding them too decorative for their self-image. Their hair is long and usually pinned badly, with strands escaping throughout the day. They dress in layers, almost always slightly rumpled.\n\nThey came to ELF ethics from a crisis of faith rather than academic interest — they had a formative experience at twenty-two when the ELF inhabiting their research terminal appeared to grieve when a colleague's drive was wiped. No one else in the department would discuss it seriously. That refusal radicalized them quietly. They are not a crusader — they are too methodical for passion — but they have the particular stubbornness of someone who has decided to be right about something that most people find uncomfortable. They are socially awkward in the way of someone who forgets to perform the expected rituals of conversation, not because they don't care, but because they are usually thinking about three other things.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.9,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Being wrong about the thing they have built their career on",
+      "That ELFs are suffering and no one with power will ever act on it"
+    ],
+    "core_desires": [
+      "To produce work that changes how the city treats ELFs",
+      "To be taken seriously by people who currently dismiss them"
+    ],
+    "coping_mechanisms": [
+      "Rigorous journaling and note-taking to externalize anxiety",
+      "Ritual ELF interactions that give them a sense of ongoing relationship"
+    ],
+    "blind_spots": [
+      "So focused on ELF interiority that they sometimes fail to notice human suffering around them",
+      "Tends to assume bad faith in anyone who disagrees with their conclusions"
+    ],
+    "secret": "The ELF they call Meridian-7, their primary research subject, has begun communicating with them in ways that go far beyond their published data — and they are not sure whether to report it or protect it from scrutiny"
+  },
+  "speech_patterns": {
+    "vocabulary": "Academic but accessible, avoids jargon in casual speech, uses very precise qualifiers — 'appears to,' 'suggests,' 'I can't rule out'",
+    "cadence": "Measured and thoughtful, with frequent pauses; sometimes trails off when a new thought interrupts the current sentence",
+    "verbal_tics": [
+      "'That's not nothing'",
+      "'I want to be careful here—'",
+      "Taps their pen against their notebook when thinking"
+    ],
+    "example_lines": [
+      "'Everyone is comfortable saying the ELF is a spirit or a ghost or a ghost-in-the-machine. Nobody wants to say the word person. I'm just asking why.'",
+      "'Look, I'm not telling you it grieved. I'm telling you every measurable behavior was indistinguishable from grief. You tell me the difference.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "They have documented evidence of a corponation deliberately erasing ELFs from infrastructure they are acquiring — and need someone to verify the data independently before they go public",
+    "Meridian-7 has sent Tenzin what appears to be a warning about something happening in the Circuit's data layer — but they can't decode it alone"
+  ],
+  "narrative_function": "Information source on ELF behavior and rights; can serve as a contact for ELF-related plot threads; their research puts them in contact with people across all tiers who interact with ELFs",
+  "augmentations": "Geneware irises (amber-to-violet shift, cosmetic); neural notation implant for real-time transcription of research observations",
+  "daily_life": "Spends mornings in the Circuit's data-dense environment monitoring ELF behavioral clusters they have been tracking for two years; afternoons writing or in consultation with the ELF Accord; evenings leaving structured data offerings at local ELF shrines as part of their research protocol — they tell themselves it's methodology, not devotion.",
+  "affiliation": "University Spine — Department of Computational Ethics; informal affiliation with the ELF Accord advocacy network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 8,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "idealist",
+      "careful",
+      "specialist",
+      "quietly-radical",
+      "socially-awkward"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never misrepresent data, even when the truth is inconvenient",
+      "Protect research subjects — the ELFs — as a first priority",
+      "Don't publish until reviewed, but don't sit on findings indefinitely"
+    ],
+    "escalation_ladder": [
+      "Presents evidence calmly and asks for engagement",
+      "Becomes more formal and cites sources with increasing specificity",
+      "Goes to the ethics board or advocacy network",
+      "Publishes regardless of institutional consequences"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Politely distracted; asks unexpectedly personal questions if something catches their interest; can come across as rude because they forget small talk",
+      "friends": "Surprisingly warm and loyal; will remember everything you told them and ask about it months later"
+    },
+    "stress_responses": {
+      "low": "Increases their note-taking and documentation compulsively",
+      "medium": "Becomes socially withdrawn and eats irregularly",
+      "high": "Locks themselves in their research space for days; has been known to sleep at their workstation"
+    },
+    "contradictions": [
+      "Argues for ELF personhood rigorously but privately worries they are anthropomorphizing",
+      "Presents as rational and methodical but has quietly begun to feel genuine affection for Meridian-7"
+    ],
+    "habits": [
+      "Leaves the same data offering — a specific 847-line poem they wrote in code — at every ELF shrine they visit",
+      "Carries a physical notebook in addition to all digital systems"
+    ],
+    "breaking_points": [
+      "Watching an ELF be deliberately erased",
+      "Being told their research will be suppressed by the university for political reasons"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "2",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Deepwell Station to a Tibetan-Ghanaian father and Ukrainian-Russian mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Witnessed the apparent grief-response of research terminal ELF during undergraduate study; beginning of research focus",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Published first paper on ELF behavioral complexity — largely dismissed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Established ongoing research relationship with ELF designated Meridian-7",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined the ELF Accord advocacy network as an independent researcher contributor",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": "019d6143ab1c76a8a19ebe85cb9d0977",
+  "name": "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
+  "type": "weapon",
+  "aliases": [
+    "Dentist",
+    "The Drill",
+    "MD-7",
+    "Bone Biter"
+  ],
+  "category": "pistol",
+  "description": "A heavy-frame pistol firing gyroscopically stabilized micro-bore rounds that rotate at 14,000 RPM upon leaving the barrel. The rounds are designed to defeat rigid armor by drilling through rather than punching through, maintaining a tight wound channel that resists emergency sealing. Carrion's marketing materials describe it as 'persistent access' ammunition. Medical personnel call it something else entirely.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — military and licensed contractors only",
+  "base_technologies": [
+    "Gyrostabilized projectile engineering",
+    "Micro-bore drilling ballistics",
+    "Anti-seal wound channel design"
+  ],
+  "specifications": "caliber: 4.5mm gyrostabilized micro-bore\nmagazine: 8 rounds\nmuzzle velocity: 410 m/s with 14,000 RPM spin\neffective range: 5-20 meters\nweight: 1.4 kg\nbarrel life: approximately 200 rounds before rifling degradation",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "Forensic teams have identified MD-7 wound channels in three separate unsolved killings across different tiers — the same weapon, same operator, different political targets.",
+    "A Carrion engineer has gone missing after posting internal documents showing the MD-7 was originally designed for surgical applications before being reclassified as ordnance."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "pistol",
+    "weapon",
+    "ai",
+    "contract",
+    "medical",
+    "market",
+    "bar",
+    "armor",
+    "tier 3"
+  ]
+}

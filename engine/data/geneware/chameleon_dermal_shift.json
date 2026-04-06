@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a8a17af28c90bb972dc47985",
+  "name": "Chameleon Dermal Shift",
+  "brand_name": "Chameleon",
+  "product_name": "Chameleon Dermal Shift",
+  "type": "geneware",
+  "aliases": [
+    "Mood Skin",
+    "The Blush"
+  ],
+  "category": "cosmetic",
+  "target_system": "integumentary (skin pigmentation)",
+  "description": "Splices cuttlefish chromatophore genes into human dermal cells, allowing voluntary color-shifting across the visible spectrum. The baseline installation covers the face and hands; full-body coverage costs three times as much. Street-level clinics offer a budget version that only shifts between two or three preset colors. High-end Helix Biosystems packages include emotional reactivity — the skin changes hue in response to mood unless the user consciously overrides it. In the Shelf, mood-reactive skin is considered honest. In corporate towers, it's a liability. Most users learn to suppress the emotional bleed within a few weeks, but stress, alcohol, and strong emotion can break through the override. Children born to two chromatophore-positive parents sometimes express the trait naturally, without installation.",
+  "source_organism": "Sepia officinalis (common cuttlefish)",
+  "manufacturer": "Helix Biosystems",
+  "tier_availability": "Tier 2+ (budget versions available Tier 1)",
+  "legality": "Unrestricted",
+  "procedure": "Retroviral dermal injection series, 3 sessions over 2 weeks",
+  "expression_time": "4–6 weeks for full pigment integration",
+  "reversibility": "Partially reversible with gene suppression therapy; full reversal leaves permanent mottling",
+  "side_effects": [
+    "Emotional bleed-through during stress",
+    "Uneven color patches if sessions are rushed",
+    "Budget versions may lock into a single color during illness"
+  ],
+  "social_perception": "Ubiquitous in Tiers 1–3. Fashion statements cycle through preferred palettes seasonally. Considered mundane in the Shelf, gauche if overdone in corporate settings.",
+  "story_hooks": [
+    "A witness to a crime is identified by an involuntary stress-blush their skin displayed during the event",
+    "A black-market clinic's batch produces chromatophores that shift to colors outside human visual range — visible only to UV-enhanced eyes"
+  ],
+  "tags": [
+    "cosmetic",
+    "geneware",
+    "war",
+    "crime",
+    "ai",
+    "elf",
+    "corporate",
+    "clinic",
+    "market",
+    "alcohol",
+    "fashion",
+    "shelf",
+    "tier 1",
+    "tier 2"
+  ]
+}

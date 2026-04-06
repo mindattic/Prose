@@ -18,7 +18,7 @@ public class LoggingService
         this.paths = paths;
     }
 
-    public string LogDirectory => Path.Combine(paths.DataRoot, "logs");
+    public string LogDirectory => paths.LogDir;
 
     /// <summary>
     /// Search log entries across daily log files.

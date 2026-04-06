@@ -1,5 +1,8 @@
 @inherits LayoutComponentBase
 @inject SettingsService SettingsSvc
+@inject NavigationManager Nav
+@inject IJSRuntime JS
+@implements IDisposable
 
 <style>
     html, body { font-family: '@SettingsSvc.FontFamily', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
@@ -15,3 +18,29 @@
         </main>
     </div>
 </div>
+
+@code {
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            Nav.LocationChanged += OnLocationChanged;
+            Nav.RegisterLocationChangingHandler(OnLocationChanging);
+        }
+    }
+
+    private async ValueTask OnLocationChanging(LocationChangingContext ctx)
+    {
+        try { await JS.InvokeVoidAsync("__loaderShow", 500); } catch { }
+    }
+
+    private async void OnLocationChanged(object? sender, Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs e)
+    {
+        try { await JS.InvokeVoidAsync("__loaderHide"); } catch { }
+    }
+
+    public void Dispose()
+    {
+        Nav.LocationChanged -= OnLocationChanged;
+    }
+}

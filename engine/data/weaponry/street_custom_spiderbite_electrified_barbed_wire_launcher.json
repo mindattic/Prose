@@ -1,0 +1,41 @@
+{
+  "id": "019d6143ab4a7f3dac5b4c218dc2b788",
+  "name": "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher",
+  "type": "weapon",
+  "aliases": [
+    "Spiderbite",
+    "Wire Tosser",
+    "Tangle Gun",
+    "Barb Launcher"
+  ],
+  "category": "improvised",
+  "description": "A spring-loaded tube launcher that fires a compressed bundle of electrified barbed wire that expands on release, creating a 3-meter tangle of sharp, shocking wire that wraps around anything in its path. The wire is standard concertina barbed wire crimped to a battery-powered electrode that delivers repeated electrical shocks through the barbs. The weapon is designed to entangle and incapacitate — targets wrapped in electrified barbed wire cannot move without driving barbs deeper into their skin while receiving continuous shocks. Extraction requires cutting the wire, which itself is dangerous due to the live electrical charge. It is a weapon of cruelty more than lethality, and its use is a statement of intent.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — electrified entanglement weapon",
+  "base_technologies": [
+    "Spring-launched wire bundle deployment",
+    "Electrified barbed wire fabrication"
+  ],
+  "specifications": "wire length: 5 meters compressed, 3-meter tangle deployed\nlaunch range: 3-8 meters\nbarb spacing: 5 cm\nelectrical charge: 400V through wire barbs\nbattery life: 10 minutes of continuous discharge\nweight: 2.5 kg launcher, 1.2 kg per wire bundle\nreload: 15 seconds per bundle\nextraction time: 5-15 minutes with wire cutters, if you can touch it",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "Spiderbite launchers have been deployed as perimeter defense around a Tier 1 refugee camp — the wire tangles are keeping threats out, but they are also keeping people in.",
+    "A serial attacker is targeting corporate security patrols with Spiderbites, wrapping individual officers in electrified wire and leaving them for hours before anyone finds them."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "improvised",
+    "weapon",
+    "gun",
+    "elf",
+    "corporate",
+    "power",
+    "bar",
+    "refugee",
+    "fire",
+    "tier 1"
+  ]
+}

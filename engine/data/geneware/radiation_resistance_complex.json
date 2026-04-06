@@ -1,0 +1,43 @@
+{
+  "id": "019d6143a8b07f758ef610311cec83f0",
+  "name": "Radiation Resistance Complex",
+  "brand_name": "Radiation",
+  "product_name": "Radiation Resistance Complex",
+  "type": "geneware",
+  "aliases": [
+    "Radshield",
+    "Tardigrade Blood",
+    "Atomic Skin"
+  ],
+  "category": "medical",
+  "target_system": "systemic (DNA repair and radiation shielding)",
+  "description": "Introduces tardigrade Dsup protein (Damage Suppressor) and Deinococcus radiodurans DNA repair mechanisms into all cell types, providing extraordinary resistance to ionizing radiation. The user can withstand radiation doses 50–100 times the lethal threshold for unmodified humans. The modification was developed for workers in Meridian 88's nuclear infrastructure — the city's power grid includes aging fission plants and experimental fusion facilities where radiation exposure is an occupational hazard. The Dsup protein physically shields DNA from radiation damage while the enhanced repair mechanisms fix whatever damage gets through. The modification is invisible — there are no external signs — but radiation-resistant individuals are identifiable through medical screening by their anomalous radiation exposure readings.",
+  "source_organism": "Ramazzottius varieornatus (tardigrade), Deinococcus radiodurans (radiation-resistant bacterium)",
+  "manufacturer": "Crucible Genomics",
+  "tier_availability": "Tier 3+ (industrial-grade Tier 4+)",
+  "legality": "Licensed (required for nuclear facility workers)",
+  "procedure": "Systemic retroviral rewrite, 8 sessions over 4 months",
+  "expression_time": "4–6 months for full expression",
+  "reversibility": "Irreversible",
+  "side_effects": [
+    "Enhanced DNA repair occasionally repairs mutations that were beneficial, causing unexpected trait reversions",
+    "Slightly increased baseline body temperature from repair enzyme activity",
+    "Reduced effectiveness of radiation-based medical treatments (imaging, cancer therapy)",
+    "Rare: repair mechanisms over-correct, introducing novel mutations"
+  ],
+  "social_perception": "Respected as a professional necessity. Radiation workers without it are considered reckless. Outside the nuclear industry, it's viewed as an expensive precaution that most people don't need.",
+  "story_hooks": [
+    "A radiation-resistant worker discovers they're being sent into zones far more contaminated than reported — the corporation is using their modification to hide the true extent of a radiation leak",
+    "A Radshield user survives an explosion that should have killed everyone in the building, and now they're the only witness to what was really happening inside"
+  ],
+  "tags": [
+    "medical",
+    "geneware",
+    "war",
+    "mutation",
+    "ai",
+    "power",
+    "tier 3",
+    "tier 4"
+  ]
+}

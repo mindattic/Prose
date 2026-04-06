@@ -1,0 +1,56 @@
+{
+  "id": "019d6143ab35776db63319d0240069f8",
+  "name": "Neural Resonance Surveillance and Suppression Drone NRSSD-1 'Shepherd'",
+  "type": "weapon",
+  "aliases": [
+    "Shepherd",
+    "The Watcher",
+    "Mindkeeper",
+    "Bluelight"
+  ],
+  "category": "drone",
+  "description": "The NRSSD-1 is a medium-altitude surveillance and non-lethal suppression drone developed by Ringo Corponation's contested-space management division. At 90 centimeters in rotor diameter, the Shepherd is larger than most urban drones, designed to loiter visibly above crowds, transit zones, and public gatherings. Its primary sensor suite combines optical, thermal, and a low-power neural resonance scanner that can detect elevated stress hormones, rapid heartrate, and adrenaline-response biomarkers in individuals within a 15-meter radius — effectively identifying agitated, frightened, or aggressive people in a crowd before any physical action occurs.\n\nWhen the onboard threat-assessment algorithm flags a target, the Shepherd deploys one of two responses. The first is the 'Calm' mode: a focused neural feedback emitter directs low-frequency electromagnetic pulses at the target's prefrontal cortex, inducing a sensation of drowsiness, reduced urgency, and mild euphoria. The effect is temporary and non-damaging — subjects typically describe it as 'suddenly feeling tired' without understanding why. The second mode, 'Herd,' activates a directed acoustic discomfort emitter targeting the flagged individual specifically, producing a sensation of pressure and low-grade pain that instinctively drives the subject away from the drone's position — effectively steering people through a space without physical contact.\n\nRingo Corponation markets the Shepherd as a 'crowd harmony platform' and holds contracts with three of Meridian 88's transit authorities and one stadium management corporation. The drone's visible presence is deliberately designed — its blue running lights and rounded profile are intended to read as benign surveillance rather than weaponized intervention. Civil liberties researchers who have documented the Shepherd's neural feedback capabilities argue that the distinction is meaningless, and that the drone constitutes unconsented neurological intervention at population scale. Ringo Corponation's public affairs division has not formally responded to this characterization.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 2+ (licensed operators) / Government contract",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Neural feedback loops",
+    "Bioelectric signature detection",
+    "Directed acoustic discomfort emission"
+  ],
+  "specifications": "rotor diameter: 90cm\nmass: 6.4kg\noperational altitude: 8–40 meters\nneural scanner range: 15 meters radius\nneural scanner biomarkers: Cortisol, epinephrine, heart rate variability (passive detection)\ncalm mode range: 12 meters targeted\ncalm mode effect duration: 4–9 minutes post-exposure\nherd mode range: 18 meters directed\nacoustic frequency: 18–22 Hz (infrasonic discomfort band)\nbattery life: 6 hours loiter\nvisual identifier: Blue running lights, rounded white profile chassis\ncommunication: Encrypted uplink to Ringo Corponation Command Platform",
+  "tactical_use": "Deployed in advance of or during public gatherings, transit congestion events, and corporate facility approaches. Operators at a remote command station monitor flagged individuals in real time and authorize Calm or Herd responses. In practice, the threshold for intervention is set by the contracting authority — transit agencies typically flag only extreme agitation, while private corporate clients have been documented setting thresholds low enough to target anyone moving with urgency through a space. Multiple Shepherds operating in coordinated patterns can effectively channel crowd movement through desired pathways without any physical barrier or personnel.",
+  "cultural_context": "The Shepherd is one of the most politically charged weapons platforms in Meridian 88, precisely because it does not look like a weapon. Its blue lights have become a symbol of what activists call 'soft architecture' — the invisible shaping of behavior through systems people cannot see or consent to. In the Brackwater and outer transit districts, people have developed reflexive responses to the drone's presence: moving quickly, covering their necks, wearing foil-lined hoods. The hood practice has no actual protective effect against the neural emitter but has become a cultural signifier of resistance. Ringo Corponation's 'Shepherd Awareness' public relations campaign, which positions the drones as 'partners in public safety,' has been defaced in every district where it has been posted.",
+  "known_users": [
+    "Ringo Corponation crowd management contractors",
+    "Meridian 88 Transit Authority (Zones 2, 4, and 7)",
+    "Corporate campus perimeter security teams",
+    "Stadium and event management corporations",
+    "A known political operative who has used Shepherd data logs to identify and track protest organizers"
+  ],
+  "story_hooks": [
+    "The party has been hired to extract someone from a transit hub blanketed by Shepherd coverage — the drones will flag and Herd anyone moving with the urgency of a rescue team.",
+    "A Ringo Corponation data analyst is willing to sell archived Shepherd neural-scan logs from a specific date — the logs would identify everyone who was in a particular location, including a client's missing person.",
+    "Someone has hacked three Shepherd units in the commercial district and set the Calm mode to continuous maximum output — the area has become eerily quiet, with residents sitting down in the street, unable to remember why they were going anywhere.",
+    "A civil liberties researcher has documented that Shepherd units deployed near a specific political candidate's rallies are set to Herd threshold ten times lower than standard — someone in the transit authority is suppressing turnout on behalf of a corporate interest."
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "war",
+    "neural",
+    "ai",
+    "corporate",
+    "contract",
+    "surveillance",
+    "power",
+    "pain",
+    "market",
+    "bar",
+    "water",
+    "tier 2"
+  ]
+}

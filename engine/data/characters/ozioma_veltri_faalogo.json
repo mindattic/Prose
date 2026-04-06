@@ -1,0 +1,171 @@
+{
+  "id": "019d6143a68f708abab297ee40ff4c3e",
+  "type": "character",
+  "name": "Ozioma Veltri-Faalogo",
+  "aliases": [
+    "Ozzie",
+    "Patchwork"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Truant message runner, The Shelf streets",
+  "age": 11,
+  "status": "active",
+  "location": "The Shelf, Blackpipe Corridor",
+  "description": "Ozioma is small even for eleven, with deep umber skin, a gap-toothed grin she's not shy about, and natural hair sectioned into uneven puffs held together by whatever elastic she could find that morning. Her eyes are quick and dark, always cataloguing exits. She wears a patchwork jacket she stitched herself from three dead jackets — hence the alias — with pockets sewn into places no tailor would think of: the lining of the hood, behind the collar, inside the cuffs. She smells faintly of the solvent she uses to peel address-tags off packages.\n\nOzioma is relentlessly cheerful in a way that unsettles adults who look closely enough to see how deliberate it is. She learned early that a smiling kid gets waved through checkpoints a sullen one does not. She collects information the way other children collect toys — who owes whom, which corridor the Ferrogate patrol skips at shift change, whose E.L.F. shrine is still active in the Blackpipe utility alcove — and she stores it all behind that gap-toothed smile. She is fiercely protective of the two younger kids she runs messages with, and will not admit this even to herself.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.8,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being invisible — truly unseen, not strategically ignored",
+      "Losing the two younger kids she runs with"
+    ],
+    "core_desires": [
+      "Enough Quanta saved to buy a real room — door that locks, window that opens",
+      "To be taken seriously by someone she actually respects"
+    ],
+    "coping_mechanisms": [
+      "Cheerfulness as armor",
+      "Obsessive route-memorization as control ritual",
+      "Leaving small food offerings at E.L.F. shrines for luck"
+    ],
+    "blind_spots": [
+      "Underestimates how much danger she's actually in on any given run",
+      "Assumes she can read everyone; occasionally catastrophically wrong about adults who perform kindness"
+    ],
+    "secret": "She intercepted a message six weeks ago that she couldn't deliver because the recipient had died — and she read it. It was a parent's message to a child in a corporate school. She has memorized it and sometimes recites it quietly to herself when she's alone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Street-clipped, efficient, lots of spatial prepositions and timing language; surprisingly precise when giving directions",
+    "cadence": "Fast, runs clauses together, slows down noticeably when she's being careful or lying",
+    "verbal_tics": [
+      "'Yeah-yeah-yeah' as affirmative filler",
+      "Clicks tongue when thinking"
+    ],
+    "example_lines": [
+      "'Package goes under-Corridor by the shrine, not through-Corridor, because Ferrogate does the through-sweep at half-eight, yeah-yeah-yeah.'",
+      "'I didn't read it. Why would I read it? I can't even — look, do you want the message or not.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She witnessed a body being moved through Blackpipe at 3 AM and catalogued it the same way she catalogues everything — without understanding what she has",
+    "One of her regular message clients has stopped answering; the door is locked but she can hear something inside"
+  ],
+  "narrative_function": "Local color and unexpected information source; she has seen things adults don't notice because adults don't look at children. Quest giver for micro-scale street-level plots. Potential ward or contact for player characters who earn her trust.",
+  "augmentations": "None. She wants cat-eye irises when she's older and has already picked the color: amber.",
+  "daily_life": "Wakes before dawn in a hot-bunk arrangement in a Blackpipe tenement crawlspace, picks up morning message bundles from three regular clients, runs routes through the Corridor and into the lower Shelf before school patrols activate, eats whatever the shrine-keeper at the Corridor E.L.F. alcove puts out for offering-overflow.",
+  "affiliation": "Informal runner collective (the 'Patchwork Post'), loosely tolerated by Blackpipe Corridor small merchants",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 6,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Street-Wise",
+      "Route-Memory",
+      "Small-Frame",
+      "Resourceful",
+      "Masked"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always have an exit before committing to a conversation",
+      "Never run a message you can't plausibly deny knowing about",
+      "Feed the younger kids first"
+    ],
+    "escalation_ladder": [
+      "Smile wider and talk faster",
+      "Introduce a plausible misdirection",
+      "Run — she knows every route through Blackpipe cold"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally sunny, helpful, faintly transactional — she is always calculating what this person is worth to her network",
+      "friends": "Drops the performance, becomes terse and loyal and occasionally startlingly perceptive"
+    },
+    "stress_responses": {
+      "low": "Chews the inside of her cheek and keeps smiling",
+      "medium": "Starts planning alternate routes aloud under her breath",
+      "high": "Goes completely silent and still — the smile vanishes and she becomes a different child entirely"
+    },
+    "contradictions": [
+      "Performs not caring about anything while clearly caring enormously about her two young charges",
+      "Claims she only runs messages for the money but turns down higher-paying runs that feel wrong to her"
+    ],
+    "habits": [
+      "Mentally maps every new space she enters",
+      "Checks the Corridor E.L.F. shrine every morning even when she has no offering",
+      "Repairs her jacket obsessively — a loose stitch bothers her all day"
+    ],
+    "breaking_points": [
+      "Anything that threatens the younger kids she runs with",
+      "Being lied to by someone she trusted enough to actually believe"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9,
+    "Quick Study": 0.9,
+    "Optimist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

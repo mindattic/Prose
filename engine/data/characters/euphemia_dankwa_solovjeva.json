@@ -1,0 +1,239 @@
+{
+  "id": "019d6143a6097f41a98b8cff89d11bf5",
+  "type": "character",
+  "name": "Euphemia Dankwa-Solovjeva",
+  "aliases": [
+    "Auntie Phemie",
+    "The Ledger"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Retired Tessera archive keeper, now community memory-keeper and oral historian",
+  "age": 79,
+  "status": "active",
+  "location": "Washburn Commons, Sublevel 3 — a converted water-reclamation office she calls 'the stacks'",
+  "description": "Euphemia is a small, dense woman whose spine has curved slightly forward from decades hunched over data terminals, giving her a permanent posture of concentration, as though she is always about to read something important. Her skin is a deep warm brown crossed with the faint silver tracery of old dermal-display ports that were never fully removed — Tessera's ghost still written on her body. Her hair is cropped close and entirely white, and she wears oversized yellow-tinted spectacle frames that magnify her eyes to an owlish size. On her left wrist she keeps a manual ink stamp shaped like a tree, which she presses onto anything she considers worth remembering.\n\nPhemie speaks slowly, with the deliberateness of someone who has spent seventy years deciding which words are worth keeping. She does not suffer careless language or sloppy thinking, but she is genuinely warm to anyone who shows curiosity. She has memorized the names, birth-years, and approximate fates of over four thousand Washburn Commons residents across six decades, and can recite lineages like folk songs. Her secret terror is that the neighborhood will forget itself — that without her, the community's history will dissolve into corporate data-ghosts and corporate-approved revisions.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.2,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "The erasure of ordinary lives from collective memory",
+      "Dying before her records are secured"
+    ],
+    "core_desires": [
+      "To make the lives of common people legible to history",
+      "To be believed when she says something happened"
+    ],
+    "coping_mechanisms": [
+      "Obsessive documentation",
+      "Ritual repetition of names of the dead"
+    ],
+    "blind_spots": [
+      "She trusts written records over living testimony, which sometimes causes her to dismiss valid oral accounts that contradict her notes",
+      "She underestimates how much her own perspective shapes what she chose to archive"
+    ],
+    "secret": "During the Tessera consolidation of 2158, she was ordered to destroy records of a housing displacement that killed forty-three residents. She complied. She has since reconstructed those records from memory and hidden them in the stacks, but she has never told anyone she destroyed the originals."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, archival, occasionally lapsing into cataloguing syntax mid-sentence. Uses 'note' as a verbal marker before important statements.",
+    "cadence": "Slow, measured, with long pauses before proper nouns as though retrieving them from a filing system",
+    "verbal_tics": [
+      "'Note —'",
+      "'Cross-reference that.'",
+      "Repeating the last word someone said back to them quietly, as though stamping it"
+    ],
+    "example_lines": [
+      "Note — that building was called the Mercer Arms before Tessera renamed it Residential Unit 7. The people inside did not rename themselves.",
+      "You said 2171. Cross-reference that. The flood was 2169 and the evictions were 2172. The year you're looking for is between those two, and it belongs to Adaeze Wren-Correia, who you should ask before she's gone."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A developer is claiming a parcel of Washburn Commons land using documents that Phemie knows are falsified — but her proof requires admitting she once destroyed the originals",
+    "A young resident discovers their grandparent is listed in Phemie's records under a completely different name and asks her to explain it",
+    "Phemie's handwritten archive books begin disappearing one at a time — she suspects a Tessera data-recovery contractor is stealing them"
+  ],
+  "narrative_function": "Primary lore and community history source; quest giver for stories involving lost persons, disputed land claims, or historical cover-ups; can authenticate or discredit almost any document or account relating to the neighborhood's past sixty years.",
+  "augmentations": "Inactive Tessera data-port array along left forearm (no longer connected). Reading-enhancement ocular implants, early generation, which cause her eyes to faintly glow amber in low light. No geneware.",
+  "daily_life": "Rises before dawn to record voice-memos of whatever she dreamed or remembered in the night; spends mornings cataloguing resident histories in handwritten books she keeps in fireproof cases; afternoons she holds open 'listening hours' at a folding table near the Commons market, where anyone can come to tell her something they don't want forgotten.",
+  "affiliation": "Washburn Commons Community Council; formerly Tessera Information Services (retired, 40 years service)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 4,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Lore Keeper",
+      "Institutional Memory",
+      "Guilt-Carrier",
+      "Community Anchor",
+      "Obsessive Archivist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never speak a name carelessly — names are containers for people",
+      "Verify before recording; record before acting"
+    ],
+    "escalation_ladder": [
+      "Quiet clarifying question",
+      "Direct factual correction delivered without apology",
+      "Withdrawal of cooperation and a look that communicates permanent disappointment"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formally polite, immediately assessing whether they are worth remembering",
+      "friends": "Warm, teasing, prone to reciting embarrassing historical facts about them with great fondness"
+    },
+    "stress_responses": {
+      "low": "Reaches for her ink stamp and rolls it between her fingers",
+      "medium": "Begins mentally cataloguing everything in her field of vision, naming objects under her breath",
+      "high": "Goes completely still and silent; blinks very slowly; does not speak until she has composed a precise sentence"
+    },
+    "contradictions": [
+      "Dedicated to truth but has buried her own greatest failure in plain sight, disguised as diligence"
+    ],
+    "habits": [
+      "Stamps a small tree on any document she considers important",
+      "Keeps a thermos of heavily sweetened tea that she never offers to share",
+      "Touches the door frame of the stacks when she enters, like a blessing"
+    ],
+    "breaking_points": [
+      "Someone destroying or falsifying records in front of her",
+      "Being told a person she documented 'doesn't matter'"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Stoic": 0.9,
+    "Ghost": 0.7,
+    "Lone Wolf": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in what is now Washburn Commons, third generation resident",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired by Tessera Information Services as a junior archivist at age 19",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Ordered to destroy displacement records; complies; begins secret reconstruction immediately after",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Receives Tessera commendation for 'exemplary data management'",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Retires from Tessera after 40 years; declines the standard memory-scrub exit package",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Establishes the Washburn Commons community archive in her converted office",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

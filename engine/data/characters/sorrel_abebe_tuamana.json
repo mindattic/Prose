@@ -1,0 +1,240 @@
+{
+  "id": "019d6143a6db7c39b89aa86f3359d12e",
+  "type": "character",
+  "name": "Sorrel Abebe-Tuamana",
+  "aliases": [
+    "Dustfoot",
+    "The Wick"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Hyperlane migrant and seasonal agricultural worker",
+  "age": 34,
+  "status": "active",
+  "location": "Kenosha Crossing transit depot, sleeping in the secondary overflow shelter",
+  "description": "Sorrel is built like someone who has been compressed by hard weather — short, dense, with calloused hands that crack at the knuckles in winter and never quite heal before summer comes again. Her skin is deep umber-brown and her natural hair has been shorn close to her skull on one side, the other grown out into a lopsided cloud she pins back with whatever she finds. A faded geometric tattoo in the Amharic-inflected style of the Addis agri-collectives covers her left shoulder and collarbone — she got it at seventeen when she thought she was staying. She has color-changing pupils, a cheap cosmetic mod she bought secondhand; they cycle slowly between amber and grey-green without her controlling it, which embarrasses her and amuses everyone else.\n\nSorrel is methodical and difficult to rattle, which makes her seem colder than she is. She has a gift for reading weather systems — real weather, not the synthetic climate management Meridian pushes — and she sells this skill to caravan leads who want to know if the hyperlane north will ice. She prays hard to the ELF she calls the Dry Tongue, a harvest spirit she insists inhabits every broken irrigation sensor in every agricultural zone from Escanaba to the Indiana shelf. She doesn't talk much about where she came from but she notices everything, and the things she chooses not to say are always the most important ones.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Being permanently fixed in one place and finding it still isn't home",
+      "Losing the one skill that makes her worth keeping alive"
+    ],
+    "core_desires": [
+      "A single season where the harvest actually pays what was promised",
+      "To feel like the road is a choice, not a sentence"
+    ],
+    "coping_mechanisms": [
+      "Routine — she performs the same small rituals every morning regardless of where she slept",
+      "Talking to the Dry Tongue ELF when things get bad"
+    ],
+    "blind_spots": [
+      "Assumes everyone she works with will eventually betray her financially, so she misses genuine offers of partnership",
+      "Underestimates how much her weather-reading is worth"
+    ],
+    "secret": "She was expelled from the Escanaba Gateway agricultural zone three years ago — not for poor work but because she reported a foreman to the zone authority for withholding wages. The zone authority did nothing. The foreman had her access credentials revoked and blacklisted her from the formal ag network. She travels under a slightly altered name and hasn't told the Greenbelt Collective the full story."
+  },
+  "speech_patterns": {
+    "vocabulary": "Sparse and practical. Uses agricultural and meteorological jargon naturally. Speaks three languages and intersperses them without noticing — Amharic-derived patois, standard Meridian Creole, and a clipped Polynesian-inflected trade dialect.",
+    "cadence": "Slow and considered. Never rushes. Pauses before answering as if she is checking the pressure reading first.",
+    "verbal_tics": [
+      "'The Tongue says—' before any weather prediction",
+      "'That's not how it tallied' instead of calling someone a liar",
+      "Trails off mid-sentence when she decides something isn't worth finishing"
+    ],
+    "example_lines": [
+      "The Tongue says north lane ices by Thursday. You can push it to Friday if you run light. I wouldn't.",
+      "That's not how it tallied. You said half upfront. I remember numbers.",
+      "I'm not from anywhere specific. I'm from the work."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She witnessed something on the northern hyperlane three weeks ago — a convoy that disappeared between checkpoints — and she's been quietly asking questions that are starting to get her followed.",
+    "The Greenbelt Collective wants her to carry an unauthorized data package north; she doesn't know what's in it and she's starting to wonder if she should."
+  ],
+  "narrative_function": "Route information broker for northern hyperlane travel; can point players toward specific caravan camps, ag zones, or crossing points; provides ground-level intelligence about what is actually moving through the transit corridors.",
+  "augmentations": "Cosmetic color-shifting pupils (secondhand, malfunctioning). Subcutaneous weather sensor array in her forearms — a practical mod, no-frills, lets her read barometric pressure and UV index directly.",
+  "daily_life": "Wakes before the depot lights come on, checks the hyperlane weather boards and cross-references with her own sensor readings, then hires herself out as a route consultant to small caravans staging out of Kenosha before heading north to find seasonal harvest work when the ag zones open.",
+  "affiliation": "Loosely affiliated with the Greenbelt Seasonal Collective, an informal network of ag workers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 6,
+      "expression": 4,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -1,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Weatherwise",
+      "Reliable",
+      "Scarred Worker",
+      "Quietly Faithful",
+      "Blacklisted"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never move without checking the route first — metaphorically and literally",
+      "Don't take work she can't complete; her reputation is the only credential she has"
+    ],
+    "escalation_ladder": [
+      "Quiet withdrawal and watchfulness",
+      "Flat refusal with no explanation offered",
+      "She leaves. Completely. Mid-conversation if necessary."
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite and minimally informative. Gives accurate small information freely to build trust before deciding whether to give anything real.",
+      "friends": "Still quiet but physically present — she shows up, she helps without being asked, she remembers what you said three weeks ago."
+    },
+    "stress_responses": {
+      "low": "Increases her morning ritual complexity. Spends more time at the weather boards.",
+      "medium": "Goes silent and starts moving — takes on more work, stays on her feet.",
+      "high": "Prays out loud to the Dry Tongue ELF in the middle of conversations, which disturbs people. She doesn't notice."
+    },
+    "contradictions": [
+      "She preaches mobility and rootlessness as survival philosophy but keeps a small pressed flower from the Escanaba ag zone in a sealed pouch she has never opened since the day she was expelled"
+    ],
+    "habits": [
+      "Checks barometric readings in her forearms every hour on the hour",
+      "Eats the same meal whenever she can source the ingredients — a specific lentil preparation her grandmother made",
+      "Sleeps facing the door"
+    ],
+    "breaking_points": [
+      "Watching someone else get cheated the same way she was and having no power to intervene"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "malfunctioning",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Opportunist": 0.9,
+    "Info Broker": 0.9,
+    "Pragmatist": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in a mobile ag-worker settlement in what used to be central Ethiopia, now part of the Sahel Reclamation Zone",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Arrived at Escanaba Gateway with a work visa, began seasonal agricultural circuit",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Got the Amharic harvest tattoo, believing she would stay",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Purchased the iris mod from a depot stall",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Reported wage theft; was blacklisted and expelled from the formal ag zone network",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined the Greenbelt Collective informally, began working as a route consultant",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

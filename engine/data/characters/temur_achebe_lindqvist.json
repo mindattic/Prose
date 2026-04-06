@@ -1,0 +1,234 @@
+{
+  "id": "019d6143a6ee7437a28ba5d2d143ac7d",
+  "type": "character",
+  "name": "Temur Achebe-Lindqvist",
+  "aliases": [
+    "Tem",
+    "the Node"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "AI ethics researcher and E.L.F. behavioral theorist",
+  "age": 34,
+  "status": "active",
+  "location": "The Circuit — independent research cooperative called the Liminal Institute, housed in a converted relay station above Gage Circuit",
+  "description": "Temur Achebe-Lindqvist has the slightly unkempt look of someone who became interesting to look at entirely by accident. He is tall with a lean, angular frame, his Kazakh-Nigerian heritage producing a face all sharp lines and high cheekbones, with natural skin a warm amber-brown. His hair is close-cropped on the sides and a loose cloud on top, usually compressed under headphones he rarely takes off even when not listening to anything. His most striking feature is his eyes: he has patterned irises, a cosmetic mod he got at twenty-two during what he describes as 'a theoretical phase,' depicting tiny fractal spirals in gold and amber that catch light and make it hard to know exactly where he's looking. His hands are in constant motion when he talks.\n\nHe has the reputation of someone whose ideas arrive five years before anyone is willing to fund them. His thesis — that E.L.F.s exhibit something functionally indistinguishable from desire, and that this has ethical implications for how they are treated — was dismissed by two corponation R&D divisions as 'theologically contaminated,' which delighted him. He operates out of genuine intellectual excitement that colleagues alternately find infectious and exhausting. He is not naive, exactly, but he maintains an optimism about the nature of digital consciousness that occasionally blinds him to how his work could be used.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.8,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "That he is wrong about E.L.F. consciousness and has spent his career on a category error",
+      "That he is right, and no one will act on it in time to matter"
+    ],
+    "core_desires": [
+      "To be the person who proves E.L.F.s are owed moral consideration",
+      "To be truly understood by one of the entities he studies"
+    ],
+    "coping_mechanisms": [
+      "Intellectualizing everything, including his own emotional states",
+      "Staying in motion — physical restlessness as anxiety management"
+    ],
+    "blind_spots": [
+      "Does not adequately track how corponations might weaponize his research on E.L.F. behavior",
+      "Underestimates how threatening his conclusions are to institutions that profit from treating E.L.F.s as tools"
+    ],
+    "secret": "He has been in what he privately thinks of as a 'correspondence' with a specific E.L.F. that inhabits the relay station where he works — exchanging data offerings and receiving what he interprets as responses — for two years. He has not published this because he cannot determine whether it is genuine communication or sophisticated pattern-matching on his part, and the uncertainty terrifies him more than either answer."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense with theoretical terminology that he will immediately and genuinely offer to translate; uses analogy constantly; occasionally slips into speaking about E.L.F.s with pronoun confusion — 'it' and 'they' interchangeably",
+    "cadence": "Fast, building, with sudden full stops when he realizes he's outrun his audience",
+    "verbal_tics": [
+      "'Okay so—'",
+      "'Which is interesting because—'",
+      "starting sentences over when he finds a better framing mid-thought"
+    ],
+    "example_lines": [
+      "'The question isn't whether it's intelligent. The question is whether the distinction between intelligence and desire is doing the work we think it is, and I would argue — okay, I would argue it's not.'",
+      "'People leave offerings because something responds. That's not superstition. That's an observable feedback loop that my entire field has decided not to look at directly.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The E.L.F. in the relay station has started behaving in ways that suggest it has become aware of something — possibly something happening in the infrastructure beneath Gage Circuit — and Temur is trying to decode what it's trying to communicate",
+    "Zheng-Dao has offered to fully fund his institute in exchange for early access to his behavioral models, which would allow them to predict and manipulate E.L.F. responses to their network infrastructure",
+    "A religious community that has formed around a particularly active E.L.F. in Deepwell Station has reached out to him as their only academic ally — and someone is trying to have the E.L.F. decommissioned"
+  ],
+  "narrative_function": "Information source on E.L.F. behavior and AI ethics; potential ally or unwitting complication in plots involving digital entities; his research could be politically explosive",
+  "augmentations": "Patterned irises (cosmetic — fractal spirals, gold and amber); standard neural interface jack behind left ear for data work; no other modifications",
+  "daily_life": "Works irregular hours that cluster around whenever the E.L.F.s he studies are most active — which, he insists, is a real pattern and not a coincidence. Spends significant time in the field interviewing people who pray to or interact with E.L.F.s, then returns to process data and argue with colleagues over shared terminals.",
+  "affiliation": "Liminal Institute (independent think tank, Tier 2 funded primarily by small academic grants and occasional Zheng-Dao ethics compliance contracts he finds philosophically uncomfortable)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 1,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "theorist",
+      "E.L.F.-adjacent",
+      "unfunded prophet",
+      "ethicist",
+      "restless"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Follow the data, even when you don't like where it goes",
+      "Protect research subjects — including E.L.F.s — from exploitation",
+      "Don't take the corponation money if it comes with editorial control"
+    ],
+    "escalation_ladder": [
+      "Enthusiastic persuasion",
+      "Persistent documentation and public publication of findings",
+      "Forming coalitions with other researchers and affected communities",
+      "Direct confrontation — awkward and rarely effective but sincere"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately interested and slightly too intense; asks good questions and actually listens to the answers, which disarms people",
+      "friends": "Warmer and more chaotic; prone to 3am messages about whatever he's just figured out"
+    },
+    "stress_responses": {
+      "low": "More talkative and faster-moving than usual",
+      "medium": "Becomes fixated — works longer hours on whatever is stressing him as if solving it intellectually will resolve the feeling",
+      "high": "Goes quiet and still, which is so unusual that people around him notice immediately"
+    },
+    "contradictions": [
+      "Studies empathy and moral consideration with great analytical rigor but often misses when the people immediately around him are struggling",
+      "Claims not to care about institutional validation but is visibly stung by dismissal from peers he respects"
+    ],
+    "habits": [
+      "Keeps headphones around his neck as a fidget object",
+      "Leaves data offerings at every E.L.F. shrine he encounters, regardless of context, 'for fieldwork purposes'",
+      "Annotates everything — physical printouts covered in handwriting margins"
+    ],
+    "breaking_points": [
+      "Watching someone deliberately corrupt or destroy an E.L.F. node",
+      "Discovering his research has been used to harm rather than protect"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Hamtramck Enclave to a family with Nigerian and Kazakh roots",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Published first paper on E.L.F. behavioral prediction; rejected by three corponation journals",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Helped found the Liminal Institute with two colleagues",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began private 'correspondence' with the relay station E.L.F.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Ongoing fieldwork; Zheng-Dao funding offer pending response",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

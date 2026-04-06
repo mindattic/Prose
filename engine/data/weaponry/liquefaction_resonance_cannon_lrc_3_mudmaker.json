@@ -1,0 +1,55 @@
+{
+  "id": "019d6143ab30779b9e97b7cbec12523f",
+  "name": "Liquefaction Resonance Cannon LRC-3 'Mudmaker'",
+  "type": "weapon",
+  "aliases": [
+    "The Softener",
+    "Slurry Cannon",
+    "Mudgun"
+  ],
+  "category": "exotic",
+  "description": "The LRC-3 'Mudmaker' is a heavy crew-served weapon that generates a sustained resonance field capable of inducing thixotropic liquefaction in granular and semi-solid substrates — effectively turning compacted soil, concrete aggregate, sand, gravel, and certain composite construction materials into a viscous slurry state for as long as the field is maintained. The weapon operates by broadcasting layered mechanical resonance waves from a parabolic emitter array, overwhelming the cohesive friction bonds between substrate particles and causing the material to behave as a liquid under applied stress. The effect is temporary — substrates re-solidify within sixty to ninety seconds of field termination — but the tactical implications of turning a floor, embankment, or fortified position into quicksand are considerable.",
+  "manufacturer": "PALLADIAN CONSTRUCTION",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Thixotropic resonance induction",
+    "Layered mechanical wave broadcasting",
+    "Substrate cohesion disruption"
+  ],
+  "specifications": "weight: 28 kg (emitter array + crew frame), 18 kg (capacitor backpack)\ncrew: 2 (operator + power manager)\neffective range: 35 m (liquefaction field projection)\nfield diameter: 4 m at maximum range (adjustable 1–4 m)\nliquefaction depth: Up to 1.2 m substrate penetration\nfield maintenance duration: Continuous while powered; capacitor supports 40 seconds sustained operation\nre-solidification time: 60–90 seconds post-field termination\ncompatible substrates: Compacted soil, sand, gravel, concrete aggregate, clay, certain composite materials\nincompatible substrates: Solid rock, reinforced synthcrete panels, metal decking\npower source: Dedicated resonance capacitor backpack (single-charge, field-rechargeable)",
+  "tactical_use": "The 'Mudmaker' excels in siege and denial scenarios in earthwork or mixed-construction environments. Standard doctrine calls for liquefying approach corridors to immobilize advancing forces, collapsing tunnel sections to cut off retreat, or destabilizing the foundation substrate beneath fortified positions. The 'casting' effect — trapping targets in re-solidified material — is used deliberately in capture operations when targets need to be taken alive and immobile. Operators must account for the weapon's own weight and the risk of liquefying substrate beneath their own position; field accidents involving crew sinkage are common enough to have generated their own safety protocols.",
+  "cultural_context": "The 'Mudmaker' has a cult following among Meridian 88's tunnel-runner and underground infrastructure communities, where it is seen as a symbol of the blurred line between construction and destruction that defines the city's lower districts. Palladian Construction's involvement in its creation is considered an open secret — the company's logo appears on early-production emitter arrays, poorly obscured by aftermarket paint. Workers in Meridian 88's extensive below-grade maintenance network tell stories about 'Mudmaker accidents' that are widely understood to be deliberate acts of labor sabotage against corporate infrastructure teams. The weapon is rarely seen above ground.",
+  "known_users": [
+    "Meridian 88 underground territorial gangs",
+    "Palladian Construction off-books security contractors",
+    "Tunnel-runner smuggling network enforcers",
+    "Corporate sabotage specialists targeting competitor infrastructure",
+    "Ouroboros Energy subsurface security teams (pipeline protection)"
+  ],
+  "story_hooks": [
+    "A section of Meridian 88's primary transit tunnel has collapsed — official reports cite structural failure, but the substrate shows signs of resonance liquefaction. Someone used a 'Mudmaker' on a load-bearing section, and the city wants answers before more tunnels go down.",
+    "A Palladian Construction executive is trying to quietly buy back all existing 'Mudmaker' units on the black market before a regulatory audit connects the weapon's design to the company. They're paying well — but they're also eliminating sellers after the transaction.",
+    "The players need to breach a fortified underground compound. A contact offers them access to a 'Mudmaker' — but the power capacitor is damaged, and the only person who can repair it is currently trapped inside the compound they need to breach.",
+    "A 'Mudmaker' has been modified to operate at a resonance frequency that affects reinforced synthcrete — something Palladian Construction claimed was impossible. Someone has solved the incompatibility problem, and the implications for Meridian 88's infrastructure are catastrophic."
+  ],
+  "ammunition_type": [
+    "Ouroboros OE-Heavy Power Cell OE-H7"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "gun",
+    "gang",
+    "secret",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "pain",
+    "tunnel",
+    "market",
+    "explosive",
+    "energy"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a583782189fc851350549652",
+  "name": "Optimist",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Believes things will work out despite all evidence",
+  "behavioral_signature": "Sees possibility where others see dead ends",
+  "under_stress": "Clings to hope more desperately",
+  "at_rest": "Smiling, encouraging, planning for the good",
+  "will_always": [
+    "find the silver lining"
+  ],
+  "will_never": [
+    "accept defeat as final"
+  ],
+  "unless": [
+    "optimism gives false hope that gets people killed"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Dreamer",
+      "threshold": 0.75,
+      "context": "hope"
+    },
+    {
+      "archetype": "Light Finder",
+      "threshold": 0.8,
+      "context": "seeking good"
+    }
+  ],
+  "opposite_of": [
+    "Pessimist",
+    "Fatalist"
+  ],
+  "tags": [
+    "hopeful",
+    "bright"
+  ]
+}

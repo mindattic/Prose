@@ -1,0 +1,41 @@
+{
+  "id": "019d6143ab177de4a52ad59e65340a65",
+  "name": "Axiom Systems Neural Disruptor ND-2 'Migraine'",
+  "type": "weapon",
+  "aliases": [
+    "Migraine",
+    "ND-2",
+    "Brain Zapper",
+    "Thought Killer"
+  ],
+  "category": "electromagnetic",
+  "description": "A directed electromagnetic weapon specifically tuned to interfere with neural interface frequencies. The ND-2 projects a modulated electromagnetic field that induces cascading errors in neural implant firmware, causing effects ranging from sensory hallucination to complete motor shutdown depending on the target's implant architecture and shielding. Against unaugmented targets, the weapon has minimal effect — a mild headache at most. Against heavily augmented targets, it can be incapacitating or lethal if the neural interface manages autonomous functions like cardiac regulation.",
+  "manufacturer": "AXIOM SYSTEMS",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited — anti-augmentation weapon",
+  "base_technologies": [
+    "Neural frequency electromagnetic modulation",
+    "Interface firmware disruption targeting",
+    "Augmentation-selective field projection"
+  ],
+  "specifications": "field type: Modulated neural-frequency electromagnetic pulse\neffective range: 5-15 meters directional\ntarget discrimination: Neural interface signatures only\npower source: Dedicated capacitor pack, 15 pulses per charge\nrecharge: 4 seconds between pulses\nweight: 2.1 kg\neffect duration: 10-60 seconds depending on target shielding",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "Axiom officially denies the ND-2 exists, but units keep appearing in the hands of anti-augmentation extremist groups — someone inside Axiom is arming the movement.",
+    "A player character's neural interface begins experiencing intermittent glitches consistent with low-level ND-2 exposure — someone nearby is carrying one, but who?"
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "electromagnetic",
+    "weapon",
+    "war",
+    "augment",
+    "neural",
+    "ai",
+    "power",
+    "rain",
+    "tier 4"
+  ]
+}

@@ -2,7 +2,7 @@ namespace StreetSamurai.Core.Models;
 
 public record Scene
 {
-    public string Id { get; init; } = Guid.NewGuid().ToString("N")[..8];
+    public string Id { get; init; } = Guid.CreateVersion7().ToString("N")[..8];
     public string Goal { get; init; } = "";
     public string? Location { get; init; }
     public List<string> Entities { get; init; } = [];

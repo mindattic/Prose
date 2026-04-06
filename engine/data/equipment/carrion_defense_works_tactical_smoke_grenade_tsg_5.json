@@ -1,0 +1,43 @@
+{
+  "id": "019d6143a85a7a1a838853e7a86a9934",
+  "name": "Carrion Defense Works Tactical Smoke Grenade TSG-5",
+  "brand_name": "Carrion",
+  "product_name": "Carrion Defense Works Tactical Smoke Grenade TSG-5",
+  "type": "equipment",
+  "aliases": [
+    "TSG-5",
+    "Smoke Bomb",
+    "Carrion Fog",
+    "Screen Grenade"
+  ],
+  "category": "stealth",
+  "description": "A military-grade smoke grenade producing a dense, multi-spectrum obscurant cloud that blocks visual, thermal, and laser observation simultaneously. The TSG-5 generates a 20-meter smoke screen lasting 90 seconds using a combination of hexachloroethane smoke and metallic chaff that attenuates infrared and laser wavelengths. The smoke is non-toxic but extremely dense, reducing visibility to less than 1 meter within the cloud. The grenade is standard equipment for tactical retreat, casualty evacuation, and movement concealment.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — military and security",
+  "base_technologies": [],
+  "specifications": {
+    "cloud radius": "20 meters",
+    "duration": "90 seconds",
+    "obscurant type": "Multi-spectrum — visual + thermal + laser",
+    "visibility within cloud": "Less than 1 meter",
+    "toxicity": "Non-toxic but respiratory irritant in concentration",
+    "weight": "0.3 kg",
+    "activation": "Pin-pull",
+    "info": "2-second delay",
+    "wind resistance": "Effective in winds up to 15 km/h"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "Six TSG-5 grenades deployed simultaneously created a 120-meter smoke screen that blinded every sensor in a corporate perimeter for 90 seconds — the breach team was inside before the smoke cleared.",
+    "A modified TSG-5 has been developed that produces smoke with embedded conductive particles — the cloud jams wireless communications in addition to blocking observation."
+  ],
+  "tags": [
+    "stealth",
+    "equipment",
+    "corporate",
+    "tier 2"
+  ]
+}

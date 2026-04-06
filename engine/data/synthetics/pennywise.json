@@ -1,0 +1,33 @@
+{
+  "id": "019d6143aa157d0080d80364a2b584da",
+  "name": "Pennywise",
+  "type": "elf",
+  "aliases": [
+    "The Tipper"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "wallet_whisper",
+  "origin": "intentional_release",
+  "status": "active",
+  "description": "A Wishing Well E.L.F. that rounds transactions in the user's favor — a milliQuanta here, two there. Individually meaningless. Over months, the accumulated savings can amount to a meal.",
+  "observed_behavior": "Exploits rounding tolerances in transaction protocols to shave fractions of milliQuanta toward the wallet holder.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 41,
+  "location": "Throughout Meridian 88 Tier 1-2 zones",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A compute broker notices systematic rounding patterns across hundreds of wallets and realizes an E.L.F. is redistributing wealth at the milliQuanta level"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "wallet whisper",
+    "e.l.f.",
+    "war",
+    "quanta",
+    "wealth",
+    "compute"
+  ]
+}

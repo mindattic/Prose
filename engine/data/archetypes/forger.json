@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a5707f9983491341d88cbbcb",
+  "name": "Forger",
+  "type": "archetype",
+  "category": "creative",
+  "description": "Creates perfect copies and passes them as original",
+  "behavioral_signature": "Replicates with uncanny skill",
+  "under_stress": "Forges faster, sloppier",
+  "at_rest": "Studying originals, practicing technique",
+  "will_always": [
+    "replicate perfectly"
+  ],
+  "will_never": [
+    "create original work"
+  ],
+  "unless": [
+    "the forgery deceives someone who trusted them"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Copycat",
+      "threshold": 0.8,
+      "context": "replication"
+    },
+    {
+      "archetype": "Ghost Writer",
+      "threshold": 0.6,
+      "context": "hidden skill"
+    }
+  ],
+  "opposite_of": [
+    "Documentarian",
+    "Rebel Artist"
+  ],
+  "tags": [
+    "deceptive",
+    "skilled"
+  ]
+}

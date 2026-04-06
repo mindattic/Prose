@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a59076f6a4c7ebca908d2e23",
+  "name": "Self-Destructor",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Systematically dismantles their own life",
+  "behavioral_signature": "Sabotages good things, seeks pain",
+  "under_stress": "Accelerates the destruction",
+  "at_rest": "Making choices they know are bad",
+  "will_always": [
+    "tear down what they build"
+  ],
+  "will_never": [
+    "accept good things quietly"
+  ],
+  "unless": [
+    "someone who loves them would be destroyed by watching"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Hollow",
+      "threshold": 0.7,
+      "context": "emotional damage"
+    },
+    {
+      "archetype": "Shame-Driven",
+      "threshold": 0.7,
+      "context": "self-punishment"
+    }
+  ],
+  "opposite_of": [
+    "Nurturer",
+    "Optimist"
+  ],
+  "tags": [
+    "destructive",
+    "compulsive"
+  ]
+}

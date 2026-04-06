@@ -1,0 +1,56 @@
+{
+  "id": "019d6143ab397dbabf94f2e3ccded717",
+  "name": "Periosteal Galvanic Stress Fracture Emitter",
+  "type": "weapon",
+  "aliases": [
+    "PGSFE-3",
+    "Crackerjack",
+    "The Splitter"
+  ],
+  "category": "cyber",
+  "description": "The Periosteal Galvanic Stress Fracture Emitter directs a focused beam of low-frequency alternating electrical current through the target's skeletal structure using transcutaneous capacitive coupling — no physical contact required. The current is modulated to exploit the piezoelectric properties of bone mineral, inducing microscopic oscillatory stress at the crystalline level of hydroxyapatite within cortical bone. Over a sustained engagement of thirty to ninety seconds, this mechanical fatigue accumulates until spontaneous stress fractures propagate through weight-bearing bones. The tibia and femur are primary targets at standard settings; the weapon can be retargeted to the spinal column with a firmware adjustment.\n\nThe PGSFE-3 differs from earlier galvanic bone-disruption concepts in its use of a resonance feedback loop: onboard sensors detect the acoustic signature of the target's bone structure through the return signal, allowing the emitter to continuously tune its frequency to the target's specific bone density and mineral composition. This means the weapon is self-optimizing — it gets more efficient the longer it is applied. An operator who holds a target in the beam for the full ninety-second cycle will typically induce complete bilateral tibial fracture, dropping the target without any surface wound, blood, or external sign of cause.\n\nThe emitter requires line-of-sight but penetrates most civilian clothing without attenuation. Thick metal plating — the kind found in high-end combat chassis augmentations — can shield the underlying biological bone, but few civilian-grade augments include full skeletal shielding. The weapon's power draw is substantial, and the emitter head generates significant waste heat, requiring a thirty-second cooling cycle between full engagements.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Military only",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Transcutaneous capacitive galvanic coupling",
+    "Bone piezoelectric resonance induction",
+    "Acoustic feedback-driven frequency optimization"
+  ],
+  "specifications": "effective range: 3–20 meters\nminimum engagement time: 30 seconds (hairline fracture)\nfull effect engagement time: 90 seconds (complete fracture)\nresonance feedback update rate: 40 Hz\ncooling cycle: 30 seconds between full engagements\npower source: High-draw galvanic cell, 4 full engagements per charge\nweight: 5.8 kg with power cell\nform factor: Heavy carbine with large-diameter emitter head\ncountermeasure: Full skeletal metal plating (military-grade augmentation only)",
+  "tactical_use": "Deployed in situations requiring incapacitation without lethality — hostage scenarios, high-value capture operations, or crowd control where the political cost of deaths is unacceptable but permanent injury is tolerable. Military units use it to collapse enemy combatants in fortified positions without entering the kill zone. The weapon's weight and cooling requirement make it a two-operator weapon in field doctrine — one holds the emitter, one provides security during the cooling cycle. Some operators use sub-threshold pulses to induce bone pain and fracture risk as a psychological pressure tool without committing to a full engagement.",
+  "cultural_context": "Among Meridian 88's military and paramilitary contractors, the PGSFE-3 is regarded with a particular dread reserved for weapons that produce suffering without death. Soldiers who have been 'crackerjacked' and survived with multiple spontaneous fractures describe the experience as uniquely dehumanizing — bones break from the inside while the skin remains intact. Veterans' advocacy groups in the city have been pushing for the weapon's classification as a torture device under Meridian 88's internal security codes, so far without success. Tessera Corponation maintains the PGSFE-3 is a 'minimum force compliance tool.'",
+  "known_users": [
+    "Tessera Corponation military contractors",
+    "Special enforcement units",
+    "Anti-augmentation paramilitary groups",
+    "Meridian 88 detention facility operators"
+  ],
+  "story_hooks": [
+    "A mass casualty event in a transit hub shows forty-seven people with spontaneous bilateral leg fractures and no external wounds — someone used a PGSFE-3 on a crowd, and the only footage shows a maintenance worker with an oversized equipment bag.",
+    "A Tessera Corponation engineer who worked on the PGSFE-3's resonance feedback system is trying to defect — she claims the weapon has a classified setting that targets spinal vertebrae and was used in an undisclosed operation.",
+    "A fixer is hired to retrieve a stolen PGSFE-3 from a gang that has figured out how to bypass the cooling cycle — making it continuous — but has already used it on two neighborhoods.",
+    "The resonance feedback system of a captured PGSFE-3 contains logged bone density profiles from dozens of previous targets — a forensic record of every person the weapon was used on, including several who were reported as natural deaths."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "cyber",
+    "weapon",
+    "combat",
+    "war",
+    "gang",
+    "death",
+    "augment",
+    "ai",
+    "elf",
+    "contract",
+    "control",
+    "power",
+    "injury",
+    "pain",
+    "clothing",
+    "energy"
+  ]
+}

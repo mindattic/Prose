@@ -1,0 +1,54 @@
+{
+  "id": "019d6143ab4c7e709df6976319fd758c",
+  "name": "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
+  "type": "weapon",
+  "aliases": [
+    "Tilt",
+    "The Wobbler",
+    "Labyrinth Drone",
+    "Vertigo"
+  ],
+  "category": "drone",
+  "description": "The SVCD-1 is a compact, agile drone platform built around a single, highly specialized function: the generation of precisely calibrated subacoustic waveforms tuned to the resonant frequencies of the human vestibular system. Developed by TESSERA CORPONATION's non-lethal compliance division, the drone produces infrasound pulses in the 0.5–4 Hz range directed through a focused parabolic emitter array at its ventral surface. When these waveforms intersect with a target's inner ear structures, they induce a rapid and total loss of spatial orientation — targets cannot determine up from down, cannot maintain balance, and experience severe nausea within seconds of sustained exposure.\n\nThe SVCD-1's engineering challenge was directionality: infrasound at these frequencies is notoriously difficult to focus, and early prototypes affected entire rooms rather than individual targets. TESSERA's solution was a multi-emitter phased array system that uses destructive interference to cancel the waveform outside a narrow 15-degree cone, concentrating the full effect on a single target while leaving adjacent individuals largely unaffected. The system requires continuous tracking to maintain this cone alignment, which is handled by the drone's onboard inertial targeting processor — a TESSERA proprietary unit derived from their precision manufacturing alignment systems.\n\nBeyond immediate incapacitation, repeated or prolonged exposure has been documented to cause lasting vestibular sensitization, where affected individuals experience spontaneous vertigo episodes for weeks afterward when exposed to ordinary low-frequency vibration — engines, heavy machinery, certain music. This residual effect is not listed in TESSERA's official product documentation.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Phased-array infrasound focusing",
+    "Vestibular resonance induction",
+    "Inertial precision target tracking"
+  ],
+  "specifications": "dimensions: 24cm x 20cm x 8cm\ninfrasound frequency range: 0.5–4 Hz\nemission cone angle: 15 degrees\neffective range: 4m–20m\ntime to incapacitation: 3–8 seconds sustained exposure\ntargeting system: TESSERA inertial precision tracking processor\npower source: High-output polymer capacitor array\nbattery life: 35 minutes continuous operation\nweight: 1.6kg\ndocumented residual effect: Vestibular sensitization, duration 1–4 weeks post-exposure",
+  "tactical_use": "The SVCD-1 is used primarily to neutralize high-mobility targets — runners, combat-augmented individuals, anyone whose primary defensive asset is speed and agility. A target that cannot stand cannot run. Operators typically deploy the SVCD-1 ahead of a ground team's advance, using the drone to drop a target in place for easy approach and restraint. It is also used in vertical environments — stairwells, scaffolding, elevated platforms — where induced loss of balance carries additional fall hazard. Security teams protecting fixed positions use it as a perimeter drone, set to intercept approach vectors and trigger on any confirmed human signature.",
+  "cultural_context": "The SVCD-1 is one of the few drone weapons in common circulation that its manufacturer actively markets by name in public-facing security trade publications, positioning it as a 'precision human compliance instrument.' This visibility has made it a symbol of TESSERA CORPONATION's aggressive normalization of non-lethal weaponry in civilian security contexts. The undocumented residual sensitization effect has become a source of legal action from several advocacy groups, with plaintiffs describing a life altered by vertigo they cannot explain — a condition colloquially called 'Tilt sickness' in affected communities.",
+  "known_users": [
+    "TESSERA CORPONATION contracted building security",
+    "Meridian 88 Transit Authority enforcement units",
+    "Private residential tower security teams (upper district)",
+    "Freelance crowd management operators with Tier 3 licensing"
+  ],
+  "story_hooks": [
+    "A support group for 'Tilt sickness' sufferers has started quietly collecting evidence of undocumented SVCD-1 residual effects — and their meeting space has just been broken into, with all their records taken.",
+    "The players need to cross a TESSERA-secured facility whose SVCD-1 perimeter drones are networked to a central inertial processor — if they can spoof one drone's tracking data, the entire perimeter may be compromised.",
+    "A former TESSERA compliance division engineer is auctioning off documentation proving the residual sensitization effect was known before the SVCD-1 went to market — the bidders include journalists, lawyers, and at least one corporate cleanup crew."
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "combat",
+    "war",
+    "loss",
+    "augment",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "market",
+    "rain",
+    "train",
+    "tier 3"
+  ]
+}

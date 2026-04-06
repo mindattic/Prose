@@ -1,0 +1,274 @@
+{
+  "id": "019d6143a5e77fe7ba915b4c95ed9fe6",
+  "type": "character",
+  "name": "Dato Vikstrom-Asiedu",
+  "aliases": [
+    "Arc",
+    "The Contractor"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Field trauma surgeon and combat support — combat medic",
+  "age": 42,
+  "status": "active",
+  "location": "Dockside — Lake Michigan waterfront, smuggler territory",
+  "description": "Dato Vikstrom-Asiedu is lean and angular, all sharp edges and visible tension. At 42, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a combat medic out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Dato Vikstrom-Asiedu agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.51,
+      "id": 0.62,
+      "shadow": 0.44,
+      "mask": 0.78,
+      "ghost": 0.56
+    },
+    "core_fears": [
+      "Being captured alive — death is preferable to corporate interrogation",
+      "Being replaced — younger, faster, cheaper runners coming up behind them",
+      "Going cyberpsycho — losing the boundary between human and machine"
+    ],
+    "core_desires": [
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Control — over their body, their schedule, their future",
+      "To protect the people in their district who can't protect themselves"
+    ],
+    "coping_mechanisms": [
+      "Exercises compulsively — the body must be ready, always",
+      "Ritual — follows the same pre-job routine every time, superstition as structure",
+      "Violence — hits something when they can't process emotions, preferably something that deserves it"
+    ],
+    "blind_spots": [
+      "Overestimates their own abilities in situations outside their specialty",
+      "Cannot distinguish between caution and cowardice in themselves or others",
+      "Assumes everyone has an angle because they always have an angle"
+    ],
+    "secret": "Dato Vikstrom-Asiedu is slowly going chrome-sick — rejection symptoms are manageable now but getting worse. Has maybe two years before it becomes visible."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+    "cadence": "Staccato bursts separated by calculating silences.",
+    "verbal_tics": [
+      "Ends statements with 'yeah?' — not a question, a dare",
+      "Calls everyone 'friend' — the warmth varies from genuine to threatening"
+    ],
+    "example_lines": [
+      "\"Hold still. This is going to hurt and I don't care.\"",
+      "\"I can keep you alive through almost anything. What I can't do is make you grateful.\"",
+      "\"Blood type? No, I don't need your blood type. I need you to stop moving.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Dato Vikstrom-Asiedu is offered a contract that would clear all their debts — the target is someone they respect",
+    "A high-paying contract turns out to target someone Dato Vikstrom-Asiedu owes a personal debt to",
+    "Dato Vikstrom-Asiedu discovers a job they completed last year was a setup for something much larger and much worse"
+  ],
+  "narrative_function": "As a combat medic, Dato Vikstrom-Asiedu embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces. Eye replacement — one organic, one cybernetic with recording capability and zoom",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Unaffiliated — too volatile for permanent crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 10
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 6
+      },
+      "reflexes": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 8
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 5
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 9
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 9
+      },
+      "technical": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 4
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 4
+      },
+      "intimidation": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 7
+      },
+      "deception": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 5
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 4
+      }
+    },
+    "personality": {
+      "aggression": 0.25,
+      "caution": 0.65,
+      "loyalty": 0.71,
+      "greed": 0.34,
+      "empathy": 0.7
+    },
+    "drives": [
+      "reputation",
+      "loyalty",
+      "justice"
+    ],
+    "thresholds": {
+      "pain": 4,
+      "stress": 3,
+      "loyalty_break": 7
+    },
+    "strengths": [
+      "exceptional close-quarters combat",
+      "technical expertise with augmentation systems"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "trust issues that limit crew effectiveness",
+      "physical limitation from incomplete augmentation"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "combat medic",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Will not betray a client who paid in full, regardless of better offers"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Presents as emotionless professional but is deeply affected by collateral damage",
+      "Advocates caution to others but takes insane risks personally — double standard they can't see",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+    ],
+    "habits": [
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space"
+    ],
+    "breaking_points": [
+      "Losing their primary augmentation — the one that defines their professional identity",
+      "Learning that a job they completed resulted in mass casualties they weren't told about",
+      "Watching someone they trained or mentored die on a job they recommended"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Gecko-grip fingertip implants and toe pads",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
+      "replaces": ""
+    },
+    {
+      "name": "Eye replacement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Eye replacement — one organic, one cybernetic with recording capability and zoom",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Brawler": 0.7,
+    "Berserker": 0.7,
+    "Tactician": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

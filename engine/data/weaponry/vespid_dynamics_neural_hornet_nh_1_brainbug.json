@@ -1,0 +1,45 @@
+{
+  "id": "019d6143ab5972bd981ec02178f161e1",
+  "name": "Vespid Dynamics Neural Hornet NH-1 'Brainbug'",
+  "type": "weapon",
+  "aliases": [
+    "Brainbug",
+    "NH-1",
+    "Neural Wasp",
+    "The Crawler"
+  ],
+  "category": "drone-mounted",
+  "description": "A micro-drone the size of a large insect that autonomously navigates to a target's head and delivers a neural disruption payload through a penetrating proboscis. The NH-1 uses thermal and pheromone tracking to identify and approach a specific individual, then lands on exposed skin — typically the neck or behind the ear — and inserts a 2mm probe that delivers a concentrated electromagnetic pulse directly to the neural interface hardware. The target experiences immediate sensory overload, disorientation, and temporary loss of motor control. The drone then self-destructs, leaving minimal forensic evidence. Vespid does not acknowledge the NH-1's existence in any product catalog.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 5",
+  "legality": "Does not officially exist — no legal classification",
+  "base_technologies": [
+    "Insect-scale autonomous drone engineering",
+    "Pheromone-guided target acquisition",
+    "Micro-EMP neural disruption payload"
+  ],
+  "specifications": "drone size: 3 cm wingspan\nflight time: 8 minutes\ntracking: Thermal signature + pheromone profile matching\nproboscis penetration: 2mm subcutaneous\npayload: Focused micro-EMP to neural interface\nself-destruct: Thermite micro-charge, 2 seconds post-delivery\nweight: 4 grams\noperating range: 200 meters from launch point",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A corporate executive collapsed during a public speech with symptoms consistent with neural interface overload — a dead insect-sized drone was found crushed on their collar.",
+    "Someone has obtained NH-1 pheromone tracking data and is selling target-locked drones to anyone with the money — assassination as a subscription service."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "dronemounted",
+    "war",
+    "loss",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "control",
+    "money",
+    "ubc",
+    "rain",
+    "drone",
+    "tier 5"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "019d6143ab4d7f21929c8e7c240bd82b",
+  "name": "Submersible Cavity Interdiction Drone SCID-2 'Lamprey'",
+  "type": "weapon",
+  "aliases": [
+    "Lamprey",
+    "The Swimmer",
+    "Drainfish",
+    "Pipeline Ghost"
+  ],
+  "category": "drone",
+  "description": "The SCID-2 is a narrow-profile autonomous drone designed to navigate fluid-filled or flooded infrastructure — drainage systems, cooling pipelines, flooded basements, sewage networks, and submerged tunnel sections. At 34 centimeters in length and 6 centimeters in diameter, the Lamprey moves through pipes and conduits inaccessible to conventional platforms. It is propelled by a peristaltic pump drive that mimics biological fluid movement, producing almost no acoustic signature and no visible wake in slow-moving water. Navigation is handled by a combination of sonar mapping and a pre-loaded infrastructure dataset that Helix Biosystems licenses from municipal engineering contractors.\n\nThe Lamprey's primary payload is a hydrostatic pressure charge — a compressed liquid charge that the drone positions against a target surface before detonating. In pipe environments, the blast is directional and catastrophic, capable of rupturing reinforced conduit or breaching basement walls from the waterside. In open flooded environments, the drone can operate as a guided mine, positioning itself beneath a target and detonating on proximity trigger. A secondary payload option replaces the hydrostatic charge with a neurochemical dispersal package, releasing a water-soluble incapacitant into a connected fluid system — a capability that regulatory bodies have flagged as a potential mass-casualty tool.\n\nThe Lamprey occupies a unique tactical niche in Meridian 88 because the city's infrastructure is extensively flooded and interconnected. The lower districts — particularly the Brackwater and Sump neighborhoods — sit atop a vast network of partially submerged tunnels and service corridors that Lamprey units navigate freely. Helix Biosystems markets the SCID-2 as an infrastructure inspection and repair platform with 'optional security configurations,' a framing that regulators have repeatedly challenged without success.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 3+ (inspection variant) / Black market (armed variant)",
+  "legality": "Licensed (inspection) / Prohibited (armed neurochemical variant) / Restricted (hydrostatic variant)",
+  "base_technologies": [
+    "Peristaltic pump drive",
+    "Hydrostatic pressure charge",
+    "Sonar-assisted autonomous navigation"
+  ],
+  "specifications": "dimensions: 34cm length x 6cm diameter\nmass: 1.8kg\npropulsion: Peristaltic fluid pump, 8 chamber segments\nmaximum speed: 3.2 m/s in open water, 1.8 m/s in pipe flow\noperational depth: Up to 40 meters\nacoustic signature: Less than 28dB at 2 meters\npayload capacity: 400g\nstandard payload: Hydrostatic pressure charge, 380g equivalent\nalternate payload: Neurochemical dispersal capsule (regulated)\nnavigation dataset: Helix Biosystems Municipal Infrastructure License v4.2\nbattery life: 6 hours active navigation\ncommunication: Low-frequency acoustic pulse, 400m range in water",
+  "tactical_use": "Operators deploy Lampreys through storm drains, toilet connections, flooded access hatches, or any opening exceeding 7 centimeters in diameter. A pre-loaded target coordinate or manual guidance via acoustic pulse directs the drone to its destination. In offensive operations, it is used to breach walls from the unseen waterside, creating entry points or destroying infrastructure nodes. Defensive operators seed flooded tunnel networks with dormant Lampreys set to proximity triggers. The neurochemical variant, though prohibited, is reportedly used by certain factions to contaminate water supplies in targeted buildings — a slow-onset incapacitation method that is difficult to attribute.",
+  "cultural_context": "In Meridian 88's flooded lower districts, the Lamprey has become a symbol of the city's infrastructure being used as a weapon against its own residents. The Brackwater community has a tradition of 'pipe listening' — pressing ears to drainage pipes to detect the faint peristaltic hum of an approaching unit. Community defense networks have developed acoustic sensors from repurposed audio equipment to monitor local pipe networks. The fact that Helix Biosystems holds the municipal infrastructure data license — meaning their drones navigate the city more accurately than emergency services — is a point of significant political anger.",
+  "known_users": [
+    "Helix Biosystems contracted infrastructure security teams",
+    "Brackwater territorial defense collectives (defensive proximity mine use)",
+    "Corporate sabotage units targeting rival facility infrastructure",
+    "A known smuggling operation using deactivated Lampreys as sealed waterproof cargo carriers",
+    "Municipal engineering contractors (inspection variant only, officially)"
+  ],
+  "story_hooks": [
+    "A Brackwater community leader hires the party to clear a section of drainage tunnels seeded with dormant Lampreys — someone wants the neighborhood flooded and trapped.",
+    "A Helix Biosystems engineer has gone missing after raising internal concerns about the neurochemical dispersal variant being sold through a front company.",
+    "The party's safehouse has a basement connection to the Sump network — at 3am, something peristaltic is moving through the pipes toward them.",
+    "Someone has been using Lampreys loaded with neurochemical payloads to contaminate the water supply of a specific residential tower — residents are presenting with unexplained neurological symptoms and no one is connecting the cause."
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "war",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "tunnel",
+    "market",
+    "rain",
+    "storm",
+    "water",
+    "tier 3"
+  ]
+}

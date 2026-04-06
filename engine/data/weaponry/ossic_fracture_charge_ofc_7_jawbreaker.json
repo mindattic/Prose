@@ -1,0 +1,50 @@
+{
+  "id": "019d6143ab377117a8550e27fc86d4cc",
+  "name": "Ossic Fracture Charge OFC-7 'Jawbreaker'",
+  "type": "weapon",
+  "aliases": [
+    "Jawbreaker",
+    "OFC-7",
+    "The Dentist",
+    "Bone Bell"
+  ],
+  "category": "explosive",
+  "description": "The OFC-7 is a proximity-triggered blast device engineered around a narrow-band resonant frequency array embedded in its casing. Rather than relying on fragmentation or raw overpressure, the charge detonates with a precisely shaped acoustic shockwave tuned to the resonant frequency of human bone — specifically the skull, jaw, and orbital structures. The initial concussive blast is comparatively mild; it is the secondary resonant pulse lasting 0.08 seconds that causes the characteristic bilateral temporal fractures and sinus cavity collapse that give the weapon its street name.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Ossic resonance targeting",
+    "Piezoelectric disruption",
+    "Shaped acoustic pulse architecture"
+  ],
+  "specifications": "weight: 0.6 kg\ndiameter: 9 cm\ntrigger modes: Proximity (adjustable 0.5–3 m), Remote detonation, Timer (1–30 seconds)\neffective kill radius: 2.5 m\neffective injury radius: 6 m\nresonant frequency: Classified — estimated 210–240 Hz burst sweep\ncasing: Low-radar-return polymer composite",
+  "tactical_use": "Used almost exclusively in assassination and targeted elimination operations where collateral structural damage must be minimized — the OFC-7 kills people in a room while leaving the room largely intact. Security contractors plant them under chairs, inside door frames, or beneath flooring panels. The injury radius produces immediate incapacitation through vertigo, tinnitus, and jaw dislocation, which makes it useful for capture operations when set to low-yield mode.",
+  "cultural_context": "In Meridian 88's corporate espionage circles, receiving an OFC-7 in a parcel — unarmed, as a message — is a well-understood death threat. The weapon's clinical precision has made it a status symbol among high-end fixers who want to signal they can afford surgical solutions. ZHENG-DAO officially denies manufacturing it, though their component signatures are unmistakable to anyone with a spectral analyzer.",
+  "known_users": [
+    "Corporate assassins on retainer",
+    "High-end fixers operating in executive districts",
+    "ZHENG-DAO internal security (unacknowledged)",
+    "Counter-intelligence operatives from rival megacorps"
+  ],
+  "story_hooks": [
+    "A city councilor survives an OFC-7 detonation that should have been fatal — someone swapped the resonance array for a dummy, and the councilor wants to know who saved them and why.",
+    "A fixer's safe house is swept and three OFC-7 charges are found inside the walls, already armed. The fixer has no idea who planted them or how long they've been there.",
+    "ZHENG-DAO's denial of the OFC-7's existence becomes legally complicated when a forensics team recovers an intact unit with a factory serial number still etched on the internal housing."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "death",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "clinic",
+    "injury",
+    "market"
+  ]
+}

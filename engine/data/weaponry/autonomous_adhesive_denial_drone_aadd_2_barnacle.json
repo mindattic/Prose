@@ -1,0 +1,61 @@
+{
+  "id": "019d6143ab157d4c821f551cd3ee948c",
+  "name": "Autonomous Adhesive Denial Drone AADD-2 'Barnacle'",
+  "type": "weapon",
+  "aliases": [
+    "The Glue Gun",
+    "Sticker",
+    "Limpet Drone",
+    "Barnacle"
+  ],
+  "category": "drone",
+  "description": "The AADD-2 is a small-chassis autonomous drone designed for non-lethal physical incapacitation through the deployment of a rapid-cure polyurethane-silicate adhesive compound. The drone, approximately the size of a grapefruit, homes on personnel targets using thermal and motion tracking, closes to within 1.5 meters, and discharges a 400ml pressurized canister of compound that expands on contact to cover a 0.6-square-meter area. The compound achieves 80% cure strength within 4 seconds, effectively binding limbs, sealing joints, and adhering targets to surfaces. A single hit to the lower extremities is sufficient to prevent locomotion; a hit to the torso can immobilize the arms and compromise breathing if coverage is sufficient. RINGO CORPONATION markets the AADD-2 as the flagship product of their 'humane enforcement' line.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted — licensed for use by registered security contractors; solvent supply chain regulated under Meridian Chemical Control Act",
+  "base_technologies": [
+    "Rapid-cure polyurethane-silicate adhesive deployment",
+    "Thermal-motion fusion targeting",
+    "Biometric telemetry tagging (post-deployment)"
+  ],
+  "specifications": "dimensions: 148mm diameter (spherical chassis)\nmass: 890 grams (loaded)\nadhesive payload: 400ml StayLock 7 compound, expands to cover 0.6 sq meters\ncure time: 4 seconds to 80% strength; full cure at 90 seconds\ncoverage effect: Lower body hit: locomotion prevented; torso hit: arm mobility severely restricted, potential respiratory compromise at >40% torso coverage\npost-deployment mode: Attaches to target; transmits GPS + biometrics until solvent-released\ntelemetry range: 1.2km encrypted uplink\nflight endurance: 22 minutes (pre-deployment); indefinite (post-deployment, parasitic power draw from target body heat via thermoelectric cell)\nsolvent requirement: RINGO CORPONATION StayLock Enzymatic Release Solution (proprietary, licensed distribution)\noperator capacity: Single operator can monitor 40 simultaneously tagged targets via RINGO management suite",
+  "tactical_use": "Event security, crowd management, fugitive recovery, and debt enforcement. The AADD-2 is widely used by corporate HR security for 'employee retention incidents'—a euphemism for physically preventing workers from leaving a facility during labor actions. Bounty hunters favor it for live-capture contracts where target condition affects payment. Security contractors use it for crowd control, deploying multiple units to selectively immobilize identified individuals within a larger group. The drone's autonomous homing removes the operator from physical confrontation entirely, a feature RINGO CORPONATION emphasizes heavily in liability-conscious marketing materials.",
+  "cultural_context": "The Barnacle has become a symbol of a specific kind of corporate control—not the dramatic violence of a Locust swarm or the cold threat of a Shepherd, but the mundane, administrative violence of being stuck, tagged, and processed. In labor-organizing communities, being 'barnacled' during a strike action is a common experience, and the AADD-2's design—where the company controls access to your own release—has become a widely-cited example of how RINGO CORPONATION has found ways to generate recurring revenue from physical coercion. The phrase 'they own the solvent' has entered broader political discourse as a shorthand for structural dependency and corporate capture of essential services.",
+  "known_users": [
+    "RINGO CORPONATION corporate security (facility and event)",
+    "Licensed bounty extraction contractors",
+    "Meridian 88 PD crowd control (limited deployment)",
+    "Corporate HR security ('employee retention' operations)",
+    "Private debt enforcement agencies"
+  ],
+  "story_hooks": [
+    "A labor organizer has been barnacled during a strike action and the operator has gone dark—no one is responding to release requests. The StayLock compound is at 18 hours and the organizer is beginning to show circulation problems. Finding an unauthorized solvent source before tissue damage sets in means navigating RINGO CORPONATION's distribution lockdown.",
+    "A player character has a RINGO CORPONATION AADD-2 attached to their back—deployed by an unknown operator—transmitting their location continuously. The telemetry is going somewhere unusual: not a corporate server, not a bounty registry. Somewhere private.",
+    "A black-market chemist claims to have synthesized a StayLock-equivalent solvent that breaks RINGO's distribution monopoly. RINGO's legal enforcement division wants the formula destroyed and the chemist discredited. Someone else wants to fund her production at scale. The chemist wants protection while she figures out who to trust.",
+    "Forty-one people were barnacled during a corporate eviction action six months ago. Forty were released using licensed solvent. One was not. The management software still shows them as active—GPS coordinates unchanged, biometrics still transmitting. The coordinates are inside a sealed sub-basement. No one from RINGO will authorize entry."
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "violence",
+    "gun",
+    "war",
+    "trust",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "debt",
+    "injury",
+    "market",
+    "bar",
+    "dark",
+    "cold",
+    "tier 2"
+  ]
+}

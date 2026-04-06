@@ -1,0 +1,56 @@
+{
+  "id": "019d6143a7c878548761d483ad808989",
+  "name": "Tessera Corponation OcularNet Weave — 'Prisma'",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Corponation OcularNet Weave — 'Prisma'",
+  "type": "cyberware",
+  "aliases": [
+    "Prisma",
+    "The Weave",
+    "Glass Eyes",
+    "Tessera Optics"
+  ],
+  "category": "augmentation",
+  "body_location": "",
+  "description": "The Tessera OcularNet Weave is a full retinal replacement system that installs a layered photonic mesh directly onto the retinal surface, preserving the organic eye's external appearance while replacing its internal imaging function with a multi-spectrum sensor array. Unlike total ocular replacement — which removes the eye entirely — the Prisma procedure preserves the sclera, iris, and lens, threading the photonic weave through a series of micro-incisions invisible to the naked eye. The result is an augmented eye that reads as biological on casual inspection, infrared scan, and most corporate security biometric checks, while providing the operator with a full suite of enhanced visual processing.\n\nPrisma's core capability set includes low-light amplification across a 200-meter effective range, passive electromagnetic field visualization, real-time facial recognition against local cached databases, and a HUD overlay layer that can receive encrypted data feeds from paired Tessera hardware. The weave also supports a 'record and buffer' function, storing up to 72 hours of visual data in compressed format within an onboard microdrive accessible via a behind-the-ear port. What makes Prisma culturally distinctive is Tessera's aesthetic design philosophy — the weave introduces an almost imperceptible iridescent quality to the iris under direct light, which has become a recognized status marker in corporate and creative circles, worn as an intentional tell by those who can afford to be subtle about their augmentation.\n\nTessera Corponation markets Prisma primarily through its corporate wellness divisions and licensed cosmetic augmentation clinics, positioning it as much as a luxury product as a tactical one. However, the same units sold to corporate executives for 'enhanced visual wellness' are worn by intelligence operatives, surveillance specialists, and high-value corporate espionage contractors. Tessera maintains studied ignorance about the gap between marketed use and actual deployment.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"installation_method\":\"Retinal surface overlay — organic eye preserved externally\",\"visual_spectrum\":\"Standard visible, low-light (IR-assisted), passive EM field\",\"low_light_range\":\"Effective enhancement to 200m\",\"facial_recognition\":\"Local cache up to 50,000 entries; network sync via Tessera Whisperline\",\"HUD_overlay\":\"Compatible with Tessera hardware ecosystem; third-party integration possible with aftermarket firmware\",\"recording_capacity\":\"72 hours compressed; accessible via micro-port behind ear (right side default)\",\"external_appearance\":\"Biological — passes visual and standard biometric inspection; iridescent iris shimmer under direct light\",\"detection\":\"Detected by medical-grade retinal scanner or Tier 3+ biometric hardware\",\"power_source\":\"Bioelectric harvest from orbital musculature\",\"maintenance\":\"Firmware update annually; physical recalibration every 2 years\"}",
+  "side_effects": [],
+  "cultural_context": "The iridescent iris shimmer of a Prisma weave has become a recognizable aesthetic in Meridian 88's upper-tier social spaces — corporate lounges, high-end entertainment venues, and certain exclusive creative circles. Wearing Prisma without trying to hide it signals wealth, Tessera affiliation, and a particular kind of curated sophistication. Among intelligence professionals, the same shimmer is read differently: as a reminder that everything you say and do in front of those eyes may be stored and transmitted. Among the lower tiers, Prisma is aspirational hardware — the 'real eyes' of someone who has made it.",
+  "known_users": [
+    "Tessera Corponation corporate liaisons and executives",
+    "Corporate espionage contractors",
+    "High-end surveillance specialists and information brokers",
+    "Wealthy creative professionals using Prisma as aesthetic augmentation",
+    "Intelligence operatives requiring low-profile visual enhancement"
+  ],
+  "story_hooks": [
+    "A player discovers that all Prisma units sold in a specific Tessera clinic batch contain a secondary transmission layer — a silent uplink sending visual buffer data to a Tessera server flagged to a black-site department that officially doesn't exist.",
+    "An information broker is selling access to 'Prisma feeds' — real-time visual streams from Prisma wearers who don't know they're being watched. The players need to find the tap and shut it down before their own contact's meeting is compromised.",
+    "A corporate executive with Prisma dies under ambiguous circumstances. Their 72-hour visual buffer is the only record of what happened — and three different factions want it first.",
+    "A Prisma unit is malfunctioning, overlaying ghost facial recognition matches onto strangers — but the faces it's flagging are all people who died in a corporate incident five years ago that was officially ruled an accident."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "augmentation",
+    "cyberware",
+    "war",
+    "augment",
+    "ai",
+    "corporate",
+    "contract",
+    "surveillance",
+    "power",
+    "wealth",
+    "medical",
+    "clinic",
+    "market",
+    "tier 2"
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "id": "019d6143a5aa7a9a8f96346cbbf159cc",
+  "type": "character",
+  "name": "Altan Magnusson-Camara",
+  "aliases": [
+    "Pulse",
+    "The Operator"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Counter-surveillance and mole detection — counterintelligence specialist",
+  "age": 59,
+  "status": "active",
+  "location": "Kessler Row — arms dealers and augmentation clinics",
+  "description": "Altan Magnusson-Camara is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 59, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and he makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a counterintelligence specialist out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Altan Magnusson-Camara describe him as a precision instrument — point him at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.43,
+      "ideal": 0.23,
+      "id": 0.42,
+      "shadow": 0.52,
+      "mask": 0.36,
+      "ghost": 0.58
+    },
+    "core_fears": [
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Being identified by corporate facial recognition — living off-grid is survival",
+      "Dying alone in some alley and nobody noticing for weeks"
+    ],
+    "core_desires": [
+      "Freedom from augmentation debt — the interest compounds like a tumor",
+      "To matter to someone for who they are, not what they can do",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+    ],
+    "coping_mechanisms": [
+      "Violence — hits something when they can't process emotions, preferably something that deserves it",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Compartmentalization — work feelings and personal feelings exist in separate boxes"
+    ],
+    "blind_spots": [
+      "Fails to notice when their own behavior mirrors the people they despise",
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
+      "Trusts technology more than people — machines don't betray"
+    ],
+    "secret": "Altan Magnusson-Camara betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in Meridian 88 knows this."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
+    "cadence": "Low and even — the vocal equivalent of still water.",
+    "verbal_tics": [
+      "Uses technical jargon for everything, including emotions",
+      "Speaks in clipped fragments when stressed — drops pronouns, articles, pleasantries"
+    ],
+    "example_lines": [
+      "\"Everyone in this room is lying. My job is knowing who's lying about what.\"",
+      "\"Paranoia isn't a disorder in this profession. It's a job requirement.\"",
+      "\"I find the leak. What happens to the leak after that isn't my department.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Altan Magnusson-Camara is offered a contract that would clear all their debts — the target is someone they respect",
+    "Someone is impersonating Altan Magnusson-Camara on jobs, and the impersonator is better at the work than the original",
+    "Altan Magnusson-Camara's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
+  ],
+  "narrative_function": "Altan Magnusson-Camara is a pressure point — the kind of character whose choices ripple outward. When he makes a decision, other people's lives change. That weight is the engine of his stories.",
+  "augmentations": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster. Thermal masking system — body heat signature can be suppressed or spoofed",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Independent — operates through reputation only",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 6
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 4
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 9
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 6
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 10
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 10
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 6
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 6
+      },
+      "deception": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 6
+      },
+      "empathy": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 10
+      }
+    },
+    "personality": {
+      "aggression": 0.34,
+      "caution": 0.32,
+      "loyalty": 0.81,
+      "greed": 0.35,
+      "empathy": 0.46
+    },
+    "drives": [
+      "freedom",
+      "reputation",
+      "knowledge"
+    ],
+    "thresholds": {
+      "pain": 4,
+      "stress": 8,
+      "loyalty_break": 6
+    },
+    "strengths": [
+      "technical expertise with augmentation systems",
+      "photographic memory for faces and layouts",
+      "exceptional close-quarters combat"
+    ],
+    "weaknesses": [
+      "poor impulse control in specific triggers",
+      "grudge-holding that compromises rational decision-making"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "counterintelligence specialist",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Always has an exit route planned before agreeing to any meeting"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Presents as emotionless professional but is deeply affected by collateral damage"
+    ],
+    "habits": [
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+      "Maintains a dead drop with emergency supplies in three separate districts",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle"
+    ],
+    "breaking_points": [
+      "Being publicly exposed — name, face, address, all of it blown",
+      "Discovering their employer deliberately sent them into a death trap"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Synthetic blood with oxygen-carrying nanites",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
+      "replaces": ""
+    },
+    {
+      "name": "Thermal masking system",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Thermal masking system — body heat signature can be suppressed or spoofed",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Networker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

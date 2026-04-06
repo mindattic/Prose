@@ -1,0 +1,44 @@
+{
+  "id": "019d6143ab5f7ff48cd62cae264d6bb4",
+  "name": "Zheng-Dao Heavy Industries Plasma Cutter PC-X1 'Dragon's Breath'",
+  "type": "weapon",
+  "aliases": [
+    "Dragon's Breath",
+    "PC-X1",
+    "Plasma Gun",
+    "The Torch"
+  ],
+  "category": "energy",
+  "description": "An experimental weapon that fires a bolt of superheated plasma contained within a magnetic bottle that maintains cohesion for approximately 40 meters before dissipating. The PC-X1 generates plasma by ionizing a hydrogen gas cartridge with an intense electrical arc, then magnetically accelerating the plasma bolt through a shaped barrel. On impact, the magnetic containment fails and the plasma expands explosively, producing a burst of thermal energy sufficient to melt through composite armor and ignite anything flammable within a 1-meter radius. The weapon is loud, visually spectacular, and tactically impractical at anything beyond close-medium range — but within that envelope, nothing survives a direct hit.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 5",
+  "legality": "Experimental — not classified",
+  "base_technologies": [
+    "Magnetically contained plasma generation",
+    "Plasma bolt magnetic acceleration",
+    "Hydrogen ionization arc technology"
+  ],
+  "specifications": "plasma temperature: approximately 15,000°C at generation\neffective range: 5-40 meters before containment dissipation\npower source: Hydrogen gas cartridge + electrical arc generator\nshots per cartridge: 4\nrecharge between shots: 8 seconds\nweight: 7.5 kg\nthermal bloom on impact: 1-meter radius\nacoustic signature: 165 dB at muzzle — extremely loud\nprototypes: 6 units in field testing",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An armored convoy was destroyed by what witnesses describe as a bolt of fire that melted through the lead vehicle — the plasma impact signature on the wreckage is unmistakable.",
+    "One of the six PC-X1 prototypes has gone missing from Zheng-Dao's weapons lab and the security footage for that night has been erased — someone inside the company walked it out."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "energy",
+    "weapon",
+    "gun",
+    "ai",
+    "power",
+    "bar",
+    "night",
+    "vehicle",
+    "armor",
+    "explosive",
+    "fire",
+    "tier 5"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5767228a587603bda0e68fe",
+  "name": "Hypocrite",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Holds others to standards they don't meet themselves",
+  "behavioral_signature": "Preaches one thing, does another",
+  "under_stress": "The gap between words and actions widens",
+  "at_rest": "Genuinely believes their own contradictions",
+  "will_always": [
+    "demand standards of others"
+  ],
+  "will_never": [
+    "apply those same standards to themselves"
+  ],
+  "unless": [
+    "someone mirrors their hypocrisy back at them perfectly"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Self-Righteous",
+      "threshold": 0.8,
+      "context": "moral blindness"
+    },
+    {
+      "archetype": "Enabler",
+      "threshold": 0.6,
+      "context": "self-deception"
+    }
+  ],
+  "opposite_of": [
+    "Code Keeper"
+  ],
+  "tags": [
+    "contradictory",
+    "blind"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "019d6143a86c7dbb8c1d8429442897cb",
+  "name": "Sterling-Nakamura Executive Medical Kit EMK-3",
+  "brand_name": "Sterling",
+  "product_name": "Sterling-Nakamura Executive Medical Kit EMK-3",
+  "type": "equipment",
+  "aliases": [
+    "EMK-3",
+    "Gold Kit",
+    "Sterling Med",
+    "Boardroom Medic"
+  ],
+  "category": "medical",
+  "description": "A compact medical kit designed for corporate executive protection details, containing automated diagnostic tools, rapid wound closure compounds, hemorrhage control agents, and three doses of broad-spectrum antitoxin. The EMK-3's centerpiece is its diagnostic scanner — a handheld device that performs a 30-second full-body assessment including blood chemistry, toxicology, and internal injury detection using ultrasound and bioimpedance sensing. The kit includes Lazarus Pharmaceuticals' Rapid Wound Closure Nanite injectors, military-grade hemostatic foam, and a neural interface crash kit for stabilizing augmentation failures.",
+  "manufacturer": "STERLING-NAKAMURA",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — medical professionals and authorized security",
+  "base_technologies": [],
+  "specifications": {
+    "diagnostic scanner": "30-second full body assessment",
+    "wound closure": "3x RWCNS nanite injectors",
+    "hemorrhage control": "4x hemostatic foam canisters",
+    "antitoxin": "3x broad-spectrum doses",
+    "neural crash kit": "Interface stabilizer + emergency shutdown module",
+    "weight": "2.1 kg",
+    "form factor": "Rigid case",
+    "info": "25x15x8 cm",
+    "shelf life": "18 months before compound degradation"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An EMK-3's diagnostic scanner has been modified to transmit the results of every scan to a third party — someone has been collecting medical data on every executive the kit has treated.",
+    "A counterfeit EMK-3 has surfaced with expired nanite injectors and diluted antitoxin — the counterfeits are packaged identically to genuine kits and have been distributed through legitimate supply chains."
+  ],
+  "tags": [
+    "medical",
+    "equipment",
+    "augment",
+    "neural",
+    "ai",
+    "corporate",
+    "control",
+    "injury",
+    "tier 3"
+  ]
+}

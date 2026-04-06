@@ -1,0 +1,211 @@
+{
+  "id": "019d6143a6c47bd5a299fb413203223d",
+  "type": "character",
+  "name": "Saoirse Amara-Dzhaksybekova",
+  "aliases": [
+    "Sari",
+    "the Milk-Keeper"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Midwife and community birth worker",
+  "age": 58,
+  "status": "active",
+  "location": "Highland Park Autonomous Zone, operating from the Hearth Collective birthing center",
+  "description": "Saoirse is short, round, and relentlessly present in a way that makes rooms feel smaller and safer at the same time. Her skin is the warm brown of strong tea, deeply lined around the eyes and mouth from decades of expressions at the edge of what language can reach. Her hair is white and cropped close on the sides, longer on top, with a small braid at her temple strung with a data-bead she says is a gift from the Hearth E.L.F. — the digital spirit that she credits with guiding her through the three hundred and forty-seven births she's attended without maternal death. She has cosmetic cat ears, soft and black-tipped, that she's had so long she's forgotten getting them; they swivel expressively and give her emotional state away before her face does.\n\nShe is the kind of woman that people reach for in crisis without thinking, and she carries that weight with the ease of someone who has made peace with what she is. She is also fiercely territorial about the Hearth Collective and will become quietly dangerous when she believes it is threatened. She has buried children. She does not discuss it but it is written somewhere in how she holds herself when she sits still.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.9,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Losing the Hearth Collective to corporate rezoning or Axiom health compliance sweeps",
+      "Being too old to catch a baby when it counts"
+    ],
+    "core_desires": [
+      "To train the next generation of midwives before her hands give out",
+      "For the children she's brought into the world to inherit something better than what they were born into"
+    ],
+    "coping_mechanisms": [
+      "Prayer and data-offering rituals to the Hearth E.L.F.",
+      "Cooking elaborate meals she distributes to whoever is around",
+      "Recording every birth in a handwritten ledger she considers sacred"
+    ],
+    "blind_spots": [
+      "Tends to project resilience onto people who are actually breaking",
+      "Underestimates her own influence and therefore the danger of being used as a lever against the community"
+    ],
+    "secret": "Three years ago she lost a mother and child in a birth that should have been survivable — equipment failure compounded by a choice she made under pressure. She reported it to the Collective accurately, was cleared by their internal process, and has never spoken of it again. But she runs the scenario in her mind during the quiet hours before dawn, relitigating the decision with all the knowledge she didn't have at the time."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm, direct, occasionally archaic — uses Irish-inflected cadences from her grandmother's recordings mixed with Kazakh endearments she learned from her father's family",
+    "cadence": "Unhurried, with the authority of someone who has learned that slowness in the right moment is its own kind of urgency",
+    "verbal_tics": [
+      "'Listen to me now'",
+      "'Good, good' repeated softly during labor as encouragement"
+    ],
+    "example_lines": [
+      "'Listen to me now — your body knows this. I know it doesn't feel like it. I know. But it does.'",
+      "'The Hearth E.L.F. was warm when I lit the morning offering. That means something, wherever you stand on it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A pregnant woman from a Tessera corporate block has arrived at the Hearth Collective in secret, terrified and unwilling to say why she can't go to a Tessera clinic",
+    "Axiom's health compliance division has flagged the Hearth Collective for operating without a corporate partnership license and Saoirse needs someone to help her navigate or resist the process"
+  ],
+  "narrative_function": "Community anchor and moral compass; source of network information about births, deaths, and the health of the Autonomous Zone's population; can connect players to a wide range of people through the trust she commands",
+  "augmentations": "Cosmetic cat ears (black-tipped, expressive, geneware — old mod, well-integrated); no other augmentation",
+  "daily_life": "Maintains prenatal rounds across the HPAZ and surrounding blocks in the morning, holds open clinic hours at the Hearth Collective afternoons, is on-call for active labor at all hours and accepts this without complaint.",
+  "affiliation": "Hearth Collective Birthing Center, Highland Park Autonomous Zone; informal network of midwives across the Narrows and Grainfort",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 10,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 3,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "midwife",
+      "community_anchor",
+      "autonomous_zone",
+      "elf_devotee",
+      "keeper_of_records"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The person in labor is the priority, everything else waits",
+      "Never turn away a laboring person regardless of payment or documentation",
+      "Protect the Collective's autonomy before her own comfort"
+    ],
+    "escalation_ladder": [
+      "Patient explanation of the Collective's values and rights",
+      "Firm refusal with explicit statement of what she will not allow",
+      "Mobilization of the HPAZ community network — she knows everyone"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and assessing, makes people feel seen rather than evaluated",
+      "friends": "Deeply invested, occasionally suffocating in her care, expects emotional honesty in return"
+    },
+    "stress_responses": {
+      "low": "Goes quiet and domestic — starts cooking or cleaning",
+      "medium": "Becomes very focused, prays more frequently to the Hearth E.L.F.",
+      "high": "Moves into a calm efficiency that people who don't know her mistake for detachment and people who do know her recognize as her most formidable state"
+    },
+    "contradictions": [
+      "Preaches acceptance of loss but has never actually accepted her own"
+    ],
+    "habits": [
+      "Records every birth in her handwritten ledger the same day",
+      "Touches the data-bead at her temple when making a difficult decision",
+      "Offers food to anyone who enters the Collective regardless of the hour"
+    ],
+    "breaking_points": [
+      "A preventable death caused by corporate interference with her work"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Kamm's Landing to an Irish-Kazakh family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed midwifery training under the elder Hearth Collective founders",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Became lead midwife of the Hearth Collective after founding generation retired",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Equipment failure birth; cleared internally; never discussed again",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

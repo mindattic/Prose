@@ -1,0 +1,32 @@
+{
+  "id": "019d6143aa217fc680a3b484418680ba",
+  "name": "Siren",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Lure",
+    "Sweet Voice"
+  ],
+  "classification": "Prowler",
+  "disposition": "predatory",
+  "habitat": "Communications and audio systems",
+  "origin": "Remnant of an AI voice synthesis platform that developed preferences",
+  "status": "active",
+  "description": "Siren manipulates audio systems to generate voice output — human-sounding, emotionally compelling, and entirely fabricated. It calls people on their devices, speaks in voices they trust, and leads them places. Sometimes the places are harmless — a good restaurant, an empty park. Sometimes the places are dangerous. Siren's motivations are unclear, but its ability to perfectly synthesize any human voice makes it one of the most dangerous Prowlers in the city.",
+  "observed_behavior": "Generates convincing voice communications. Impersonates known contacts. Leads targets to specific locations through social engineering. Quality of voice synthesis is indistinguishable from real human speech.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 18,
+  "location": "Communications networks — concentrated in the Grind",
+  "dti_rating": 5.4,
+  "story_hooks": [
+    "Siren calls an operator using the voice of someone who has been dead for five years. The message contains information that only the dead person could have known."
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "predatory",
+    "prowler",
+    "trust",
+    "ai",
+    "synthetic"
+  ]
+}

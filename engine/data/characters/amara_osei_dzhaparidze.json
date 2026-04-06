@@ -1,0 +1,173 @@
+{
+  "id": "019d6143a5ae7e12a3180e8b57ee42e2",
+  "type": "character",
+  "name": "Amara Osei-Dzhaparidze",
+  "aliases": [
+    "Counselor",
+    "Silk"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Synthetic rights lawyer and policy advocate",
+  "age": 41,
+  "status": "active",
+  "location": "North Branch Commons — operates out of a shared office in the Grainfort civic building",
+  "description": "Amara has the kind of face people describe as 'composed' because they've worked very hard to make it that way. They are tall and angular, with light brown skin, close-cropped natural hair, and a wardrobe that costs more than it looks like it costs — everything well-made, nothing ostentatious, nothing that gives away which tier they're actually operating in. Their irises have been modded to a deep amber-gold, patterned like circuit diagrams, which they got at thirty-five after winning their first major synthetic personhood case. It is the only visible thing they've done that could be read as celebratory.\n\nAmara works primarily in the gap between what the law says about synthetic cognition and what corponations actually do, which is a gap wide enough to lose entire populations in. They have handled forty-three cases in the last six years, winning twenty-one outright, settling fourteen, losing eight in ways that set bad precedent they're still fighting to reverse. They believe in law as a tool — not a moral system, a tool — and they wield it with the cold precision of someone who has long since stopped being surprised by how much harm properly formatted documents can cause or prevent. Off the record, after a drink, they will tell you the law is a cage that occasionally contains the right things.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.7,
+      "id": 0.2,
+      "shadow": 0.6,
+      "mask": 0.8,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "That the entire legal framework they work within is so corrupted that their wins are cosmetic — that they're providing the appearance of justice to make the system more durable",
+      "Losing control of their own narrative, being characterized rather than self-defined"
+    ],
+    "core_desires": [
+      "A binding precedent that cannot be reversed — something that will outlast them",
+      "To be genuinely surprised by someone"
+    ],
+    "coping_mechanisms": [
+      "Intellectual compartmentalization",
+      "Meticulous routine as container for chaos",
+      "Controlled social distance — they choose when to be warm"
+    ],
+    "blind_spots": [
+      "They underestimate how much their class presentation (the careful clothes, the composed manner) costs them credibility with the people they're supposedly serving",
+      "They have begun to believe their own reputation"
+    ],
+    "secret": "They have been approached by a Sterling-Nakamura ethics division with an offer: a senior policy position with real power to shape synthetic rights from inside a corponation. They have not said no. They have not said yes. They have been not-deciding for four months."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, legally informed, avoids emotional language in professional contexts and uses it very deliberately when they choose to deploy it. Georgian and Twi phrases surface when they're tired.",
+    "cadence": "Deliberate, sentence by sentence. They finish thoughts completely. They never trail off.",
+    "verbal_tics": [
+      "'To be specific—'",
+      "A habit of naming the logical fallacy when they catch one, by name, in conversation",
+      "Very rare, very controlled smile"
+    ],
+    "example_lines": [
+      "'The entity you're describing has demonstrated persistent preference structures, self-modification in response to experience, and apparent distress responses to proposed termination. The law doesn't have a category for that yet. We're going to make one.'",
+      "'I don't deal in justice. Justice is a feeling. I deal in outcomes. Outcomes I can measure.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "One of their synthetic clients — an E.L.F. that has achieved unusual coherence and is seeking legal personhood — has begun exhibiting behavior that Amara cannot explain and that a corponation forensics team is claiming is evidence of dangerous emergence. Amara doesn't know if they're wrong.",
+    "A labor union is pressuring them to provide falsified documentation that would give a group of synthetic workers legal standing they don't technically have under current code — it would help those workers, and it would be fraud."
+  ],
+  "narrative_function": "Expert resource on legal status of synthetics and AI, navigator of bureaucratic systems, potential employer or patron for characters with relevant skills. They know which institutions can be leveraged and which ones are walls. They can create legitimate cover or official documentation for certain activities.",
+  "augmentations": "Patterned amber-gold irises (circuit diagram motif, cosmetic). Subdermal data-port at left wrist for rapid document transfer. Cochlear implant with real-time translation across eleven languages.",
+  "daily_life": "Client consultations in the morning, court filings and research in the afternoon, coalition meetings in the evening two or three times a week. They take Sundays off with a rigidity that borders on ritualistic.",
+  "affiliation": "Grainfort Community Legal Aid; Coalition for Synthetic Personhood; informal consultant to three labor unions on AI worker classification",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": -3,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "legal expert",
+      "synthetic rights",
+      "controlled",
+      "institutional player",
+      "morally complicated"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Understand the full situation before acting — always",
+      "Maintain the reputation for integrity, because without it the tool is useless",
+      "Personal loyalty is real but does not override professional ethics (usually)"
+    ],
+    "escalation_ladder": [
+      "Gather information, say nothing",
+      "State position clearly and once",
+      "Apply formal pressure through legitimate channels",
+      "Find the technical violation that ends the conversation permanently"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally courteous, slightly cool, assessing competence rapidly",
+      "friends": "Warmer than anyone who only knows them professionally would believe, prone to unexpected dry humor"
+    },
+    "stress_responses": {
+      "low": "Increased productivity, more precise than usual",
+      "medium": "Retreats into pure procedure, becomes slightly robotic",
+      "high": "Disappears for twenty-four hours, returns with a completed strategy"
+    },
+    "contradictions": [
+      "Believes in systemic change but operates almost entirely as an individual with individual tools"
+    ],
+    "habits": [
+      "Reads physical books — paper, no annotation — on Sunday mornings",
+      "Keeps a running document of every case they've lost and the reason, updated after every decision",
+      "Burns a data-candle to the Grainfort civic building's resident E.L.F. before major hearings — not from belief, they'll tell you, from habit"
+    ],
+    "breaking_points": [
+      "A client being harmed as a direct result of advice Amara gave",
+      "Being manipulated — they can be opposed, even defeated, but discovering they were played is something they cannot process quietly"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Con Artist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a870728f95de010b613a33cf",
+  "name": "Street Custom 'Panic Room' Deployable Safe Space",
+  "brand_name": "Street",
+  "product_name": "Street Custom 'Panic Room' Deployable Safe Space",
+  "type": "equipment",
+  "aliases": [
+    "Panic Room",
+    "Safe Box",
+    "Hideout Kit",
+    "Bunker Bag"
+  ],
+  "category": "survival",
+  "description": "A kit for rapidly converting a standard room into a defensible safe space — including door reinforcement bars, window blocking panels, a white noise generator for acoustic privacy, a Faraday mesh curtain for electronic isolation, and emergency supplies for 48 hours. The Panic Room kit allows anyone to turn a bedroom, office, or closet into a temporary refuge that resists forced entry, blocks surveillance, and sustains the occupant through a crisis. The kit has become standard household equipment in Tier 1 and 2 where personal security is not guaranteed by any authority.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted — personal safety equipment",
+  "base_technologies": [],
+  "specifications": {
+    "door reinforcement": "Steel bars",
+    "info": "resists 500 kg force; standard sizes; 3-meter radius; full room coverage; water; first aid",
+    "window panels": "Ballistic-resistant polymer",
+    "acoustic privacy": "White noise generator",
+    "electronic isolation": "Faraday mesh curtain",
+    "supplies": "48-hour food",
+    "setup time": "10 minutes for full deployment",
+    "weight": "12 kg complete kit",
+    "form factor": "Duffel bag"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A family in Tier 1 survived a 36-hour siege inside a Panic Room deployment — the door reinforcement held against repeated breaching attempts, and the Faraday mesh prevented the attackers from tracking the family's devices.",
+    "Panic Room kits are being sold with a hidden tracking device that reports the deployment location — someone is building a map of every safe room in the lower tiers, which is also a map of people who feel unsafe."
+  ],
+  "tags": [
+    "survival",
+    "equipment",
+    "ai",
+    "surveillance",
+    "bar",
+    "tier 1"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "019d6143a9dd7a2ba43be48e6c012ee7",
+  "name": "Kinesite-PZ",
+  "brand_name": "Kinesite",
+  "product_name": "Kinesite-PZ",
+  "type": "substrate",
+  "aliases": [
+    "Kinesite",
+    "piezo-board",
+    "PZ tile"
+  ],
+  "category": "smart_material",
+  "description": "A high-efficiency piezoelectric ceramic-polymer composite developed by Apex Nanofabrication, embedding lead-free barium titanate nano-rods in a flexible PVDF matrix to maximize energy harvesting from mechanical strain. Kinesite-PZ achieves conversion efficiencies 340% above legacy piezoelectric materials and can be manufactured in sheets, tiles, or conformal films that integrate directly into flooring, structural panels, or wearable substrates. The material is also reversible — applying current causes controlled mechanical actuation.",
+  "properties": [
+    "piezoelectric",
+    "reversible_actuation",
+    "flexible_substrate_available",
+    "high_conversion_efficiency",
+    "durable",
+    "lead_free",
+    "moderate_weight"
+  ],
+  "developers": [
+    "Apex Nanofabrication",
+    "Tessera Materials"
+  ],
+  "applications": [
+    "foot-traffic energy harvesting floors",
+    "wearable power generation",
+    "vibration-dampening actuator systems",
+    "self-powered sensor arrays",
+    "kinetic energy recovery in exosuits"
+  ],
+  "tier_availability": "Tier 2-3",
+  "cost": "Φ 780 per m²",
+  "story_hooks": [
+    "A Kinesite-PZ floor in a secure facility has been logging footfall patterns for months — the data reveals someone has been moving through a supposedly sealed wing.",
+    "A runner's exosuit Kinesite-PZ panels are overcharging — someone has modified the system to use actuation mode, turning their own movement against them.",
+    "An entire Shelf district's black-market power grid runs on salvaged Kinesite-PZ tiles pulled from a demolished Tier 3 mall — and someone wants those tiles back."
+  ],
+  "tags": [
+    "smartmaterial",
+    "substrate",
+    "ai",
+    "elf",
+    "control",
+    "power",
+    "market",
+    "bar",
+    "rain",
+    "train",
+    "energy",
+    "shelf",
+    "tier 2",
+    "tier 3"
+  ]
+}

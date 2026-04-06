@@ -1,0 +1,55 @@
+{
+  "id": "019d6143a9de799e8faeec5ac70b53f7",
+  "name": "Nervalloy-SX",
+  "brand_name": "Nervalloy",
+  "product_name": "Nervalloy-SX",
+  "type": "substrate",
+  "aliases": [
+    "signal steel",
+    "nervemetal",
+    "SX wire"
+  ],
+  "category": "bio_hybrid",
+  "description": "Nervalloy-SX is a palladium-copper alloy threaded with continuous SNT-derived neural filament pathways that are grown in situ during fabrication, producing a structural metal capable of transmitting electrochemical signals at biological speeds alongside conventional electrical current. The neural pathways integrate bidirectionally with host nervous tissue at implant interfaces, allowing augment systems built from Nervalloy-SX to communicate with the body's proprioceptive and motor networks without external signal converters. Apex Nanofabrication holds the manufacturing patent, though BioForge Labs supplies the SNT filament stock that makes the material viable.",
+  "properties": [
+    "neural_signal_transmission",
+    "electrical_conductivity",
+    "moderate_tensile_strength",
+    "biocompatible_at_interface",
+    "SNT_dependent",
+    "moderate_weight",
+    "precision_signal_routing",
+    "thermal_sensitive"
+  ],
+  "developers": [
+    "Apex Nanofabrication",
+    "BioForge Labs"
+  ],
+  "applications": [
+    "neural bridge wiring in high-fidelity prosthetic limbs",
+    "sensory feedback lattices in combat augments",
+    "spinal cord bypass conduits",
+    "direct neural interface housings",
+    "reflex-loop integration in performance augments"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ 11,500 per kg",
+  "story_hooks": [
+    "Nervalloy-SX carries signals — but in rare cases of deep neural integration, it has also carried something else, with multiple recipients reporting shared phantom sensations and fragmented memories that don't belong to them",
+    "A corporate espionage operation discovers that Nervalloy-SX implants can be remotely stimulated with the right frequency burst, turning a person's own augments into a torture device or a means of covert control",
+    "The SNT filaments in Nervalloy-SX are technically alive, and a radical bioethics movement is filing legal challenges arguing that every implant constitutes unlicensed imprisonment of a neural organism"
+  ],
+  "tags": [
+    "biohybrid",
+    "substrate",
+    "combat",
+    "augment",
+    "prosthetic",
+    "neural",
+    "corporate",
+    "control",
+    "ethics",
+    "tier 3",
+    "tier 4"
+  ]
+}

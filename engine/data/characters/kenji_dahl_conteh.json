@@ -1,0 +1,268 @@
+{
+  "id": "019d6143a6427989bed829725404ed08",
+  "type": "character",
+  "name": "Kenji Dahl-Conteh",
+  "aliases": [
+    "Zirconia",
+    "The Specialist"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "High-speed vehicle operations specialist — wheelman",
+  "age": 43,
+  "status": "active",
+  "location": "The Circuit — neon-lit entertainment and vice district",
+  "description": "Kenji Dahl-Conteh is lean and angular, all sharp edges and visible tension. At 43, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and she makes no effort to hide it.\n\nShe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a wheelman out of The Circuit, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nKenji Dahl-Conteh is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.87,
+      "ideal": 0.64,
+      "id": 0.34,
+      "shadow": 0.69,
+      "mask": 0.46,
+      "ghost": 0.82
+    },
+    "core_fears": [
+      "Betrayal by someone they trust — the only currency that matters",
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "Losing their edge to age — the body slows before the mind accepts it"
+    ],
+    "core_desires": [
+      "Power — enough leverage that nobody ever threatens them again",
+      "To build something that outlasts the next contract cycle",
+      "Justice — the corporate kind, where the punishment fits the profit margin"
+    ],
+    "coping_mechanisms": [
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+      "Ritual — follows the same pre-job routine every time, superstition as structure",
+      "Overwork — takes every contract offered because idleness invites thinking"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Cannot accept help without interpreting it as leverage",
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care"
+    ],
+    "secret": "Kenji Dahl-Conteh has a child in another city, being raised by someone else. Sends Φ2,000 monthly under an alias. Has never visited."
+  },
+  "speech_patterns": {
+    "vocabulary": "Educated vocabulary wrapped in street delivery — the contrast is deliberate.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Whispers when angry — the quieter the voice, the worse the situation",
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
+    ],
+    "example_lines": [
+      "\"Get in, sit down, hold on. Questions can wait until we're not being shot at.\"",
+      "\"This vehicle has been modified for speed, armor, and my personal comfort. Two of those help you.\"",
+      "\"I know every street in this district the way you know your own face.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Tier 4 executive offers Kenji Dahl-Conteh a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "A crew member from Kenji Dahl-Conteh's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "Kenji Dahl-Conteh's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
+  ],
+  "narrative_function": "As a wheelman, Kenji Dahl-Conteh embodies the tension between independence and isolation. She is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces. Dermal camouflage — chromatic skin pigment cells, limited active camouflage",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+  "affiliation": "Independent — Lattice territory specialist",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 6
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 7
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 8
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 8
+      },
+      "perception": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 9
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 6
+      },
+      "technical": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 9
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 7
+      },
+      "deception": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 5
+      }
+    },
+    "personality": {
+      "aggression": 0.18,
+      "caution": 0.17,
+      "loyalty": 0.22,
+      "greed": 0.81,
+      "empathy": 0.37
+    },
+    "drives": [
+      "justice",
+      "survival",
+      "reputation"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 7,
+      "loyalty_break": 10
+    },
+    "strengths": [
+      "strategic thinking under pressure",
+      "ability to remain calm under fire"
+    ],
+    "weaknesses": [
+      "old injury that flares under specific conditions",
+      "inability to delegate — must control everything personally"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "wheelman",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Will not betray a client who paid in full, regardless of better offers"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Projects confidence but makes decisions from a foundation of fear they've never examined",
+      "Preaches independence but is desperate for approval from people they respect"
+    ],
+    "habits": [
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore"
+    ],
+    "breaking_points": [
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Gecko-grip fingertip implants and toe pads",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
+      "replaces": ""
+    },
+    {
+      "name": "Dermal camouflage",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Dermal camouflage — chromatic skin pigment cells, limited active camouflage",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Improviser": 0.7,
+    "Risk Taker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

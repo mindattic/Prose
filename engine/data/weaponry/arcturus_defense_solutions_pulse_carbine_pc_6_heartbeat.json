@@ -1,0 +1,47 @@
+{
+  "id": "019d6143ab1475e5955c36a68484c531",
+  "name": "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
+  "type": "weapon",
+  "aliases": [
+    "Heartbeat",
+    "PC-6",
+    "Pulse Gun",
+    "Thumper"
+  ],
+  "category": "electromagnetic",
+  "description": "A compact electromagnetic pulse weapon that fires focused EMP bursts capable of disabling unshielded electronics within a targeted cone. The PC-6 generates a shaped electromagnetic wavefront through a series of rapidly discharged capacitor banks, creating a pulse that induces catastrophic current surges in electronic circuits. Against cyberware, the effect ranges from temporary shutdown to permanent damage depending on the target's shielding grade. Arcturus designed it for anti-drone and counter-electronics operations, but its effectiveness against augmented personnel has made it a weapon of terror in aug-heavy communities.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — military and authorized security",
+  "base_technologies": [
+    "Shaped EMP wavefront generation",
+    "Rapid capacitor bank cycling",
+    "Focused electromagnetic projection"
+  ],
+  "specifications": "pulse type: Shaped electromagnetic wavefront\neffective range: 5-25 meters cone\ncapacitor recharge: 6 seconds between pulses\npulses per charge: 8\nweight: 3.2 kg\nelectronics kill radius: Unshielded systems within 15m cone\ncyberware effect: Temporary shutdown (shielded) to permanent damage (unshielded)",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An underground movement is using stolen PC-6 units to disable surveillance networks in liberated neighborhoods — but the pulses are also frying residents' medical cyberware.",
+    "Someone has modified a PC-6 to emit a specific frequency that only affects Axiom-manufactured neural interfaces — this is targeted corporate warfare."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "electromagnetic",
+    "weapon",
+    "gun",
+    "war",
+    "augment",
+    "cyberware",
+    "neural",
+    "ai",
+    "corporate",
+    "surveillance",
+    "medical",
+    "drone",
+    "fire",
+    "circuit",
+    "tier 3"
+  ]
+}

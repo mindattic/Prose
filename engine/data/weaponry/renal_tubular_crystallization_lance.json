@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab407f2aa3d72dd0876557df",
+  "name": "Renal Tubular Crystallization Lance",
+  "type": "weapon",
+  "aliases": [
+    "RTCL-1",
+    "Stonecutter",
+    "The Gravel Gun"
+  ],
+  "category": "cyber",
+  "description": "The Renal Tubular Crystallization Lance delivers a sustained beam of targeted ultrasonic energy modulated to excite calcium oxalate precursor molecules already present in the bloodstream, driving rapid nucleation and crystal growth within the renal tubules. Within ninety seconds of sustained exposure, a target develops acute obstructive nephrolithiasis of catastrophic severity — kidney stones forming simultaneously throughout both kidneys at a rate and scale that no biological system can pass or tolerate. The resulting pain is clinically described as among the most severe a human nervous system can register, and internal tubular rupture follows within minutes if the beam is maintained.\n\nThe Lance's genius is its exploitation of endogenous chemistry. It does not introduce any foreign substance — it merely accelerates a process the body is already capable of performing. This makes it extraordinarily difficult to counter with standard bioweapon filters or blood-agent scrubbers. The weapon's targeting head uses a focused ultrasonic lens array combined with a millimeter-wave kidney-localizing scanner, allowing operators to engage targets through light cover and most civilian clothing. The beam must be held on target for at least forty-five seconds for reliable crystal induction, meaning it is not a snap-fire weapon — it rewards patience.\n\nZheng-Dao markets a civilian-grade version of the underlying lens technology as a non-destructive kidney stone treatment device, which has provided convenient legal cover for the weapon's development history. The Lance's power pack is famously efficient, offering up to six sustained engagements before recharge, and the weapon runs nearly silent apart from a faint ultrasonic hiss audible only at close range.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Focused ultrasonic crystallization induction",
+    "Millimeter-wave organ localization",
+    "Endogenous mineral nucleation acceleration"
+  ],
+  "specifications": "effective range: 5–45 meters\nminimum dwell time: 45 seconds for reliable induction\nlethal dwell time: 90–120 seconds\ntargeting system: MMW kidney-localizing scanner with ±2cm accuracy\npower source: High-efficiency ultrasonic driver cell, 6 full engagements per charge\nweight: 4.7 kg with power pack\nform factor: Long-arm configuration, collapsible stock\ncountermeasure resistance: Ineffective against standard biofilters and blood scrubbers",
+  "tactical_use": "Used primarily in siege and surveillance situations where an operator can hold a position and engage a stationary or slow-moving target — executive protection failures, guarded safe houses, perimeter containment. The weapon's long dwell time makes it unsuitable for mobile engagements but extraordinarily effective for patient operators. Some interrogators use sub-lethal settings to induce severe pain without permanent organ damage as a compliance tool. The fact that it leaves no external wound and mimics a naturally occurring medical condition makes it prized for deniable operations.",
+  "cultural_context": "The RTCL-1 has a grim reputation in Meridian 88's corporate assassination ecosystem as the 'patience weapon' — only operators who are disciplined and methodical choose it. It is associated with a certain old-school professionalism, as opposed to the flashier drone-based or injectable weapons favored by newer contractors. Among medical examiners and forensic specialists, a victim found with bilateral renal crystal damage triggers a specific investigative protocol now informally called a 'Zheng-Dao workup.' Zheng-Dao Bioelectric officially and strenuously denies any connection to the weapon.",
+  "known_users": [
+    "Long-range corporate contractors",
+    "Interrogation specialists",
+    "Rival biotech saboteurs",
+    "Meridian 88 organized crime enforcement arms"
+  ],
+  "story_hooks": [
+    "A renowned forensic pathologist is found dead of apparent kidney failure — but a colleague notices the crystal distribution pattern matches RTCL-1 exposure, suggesting someone used the weapon to silence her before she could publish a damning report.",
+    "A Zheng-Dao executive quietly approaches fixers to recover a stolen RTCL-1 prototype that has a firmware flaw allowing it to be traced back to an internal product line — before regulators find it.",
+    "A vigilante group has acquired an RTCL-1 and is systematically targeting known human traffickers, always at range, always untraceable — law enforcement is divided on whether to pursue them.",
+    "A fixer discovers that the 'kidney stone treatment clinic' they visited last month was a front — and the ultrasonic equipment used on them was a modified RTCL-1 that deposited dormant crystal seeds that can be remotely activated."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "cyber",
+    "weapon",
+    "gun",
+    "war",
+    "crime",
+    "ai",
+    "corporate",
+    "contract",
+    "surveillance",
+    "power",
+    "medical",
+    "clinic",
+    "pain",
+    "market",
+    "clothing",
+    "drone",
+    "energy",
+    "fire"
+  ]
+}

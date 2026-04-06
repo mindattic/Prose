@@ -1,0 +1,44 @@
+{
+  "id": "019d6143aa4b75ef8f9dac87a43037e1",
+  "name": "Ouroboros Energy Wireless Power Distribution Grid",
+  "brand_name": "Ouroboros",
+  "product_name": "Ouroboros Energy Wireless Power Distribution Grid",
+  "type": "technology",
+  "aliases": [
+    "WPDG",
+    "Power Beam",
+    "Wireless Grid",
+    "Ouroboros Broadcast"
+  ],
+  "subcategory": "energy",
+  "description": "A power distribution system that transmits electrical energy wirelessly using focused microwave beams between relay stations positioned across Meridian 88's skyline. The WPDG eliminates the need for physical power cables in many applications, transmitting energy to receiving antennas on buildings, vehicles, and devices within line-of-sight of relay stations. The system operates at 85% efficiency — lower than wired transmission but acceptable for the convenience of wireless delivery. Ouroboros has been gradually replacing wired infrastructure with WPDG in upper-tier districts where the aesthetic and practical benefits justify the efficiency cost.",
+  "tier_availability": "Tier 3+",
+  "developers": [
+    "OUROBOROS ENERGY"
+  ],
+  "base_technologies": [
+    "Focused microwave power transmission",
+    "Relay station network management",
+    "Receiving antenna miniaturization"
+  ],
+  "enables": [
+    "Wireless electrical power delivery",
+    "Elimination of physical power cabling",
+    "Mobile device continuous charging",
+    "Power delivery to inaccessible locations"
+  ],
+  "social_impact": "The WPDG has created districts where power is ambient — devices never need charging, vehicles draw power from the air, and buildings connect to the grid without cables. This convenience has a cost: the microwave beams, while focused, create a background of low-level microwave radiation that has unknown long-term health effects. Ouroboros's own studies show no measurable harm, but independent researchers have noted correlations between WPDG-dense areas and sleep disruption patterns. Additionally, the wireless nature of the power grid makes it possible for Ouroboros to cut power to specific buildings or devices instantly and remotely.",
+  "story_hooks": [
+    "Someone has built a device that intercepts WPDG power beams and redirects them — they are stealing megawatts of wirelessly transmitted power and using it to run an unauthorized manufacturing facility.",
+    "A WPDG relay station has been repurposed as a weapon — its focused microwave beam has been retargeted from power transmission to directed energy attack, and it is capable of cooking anything in its path."
+  ],
+  "tags": [
+    "energy",
+    "technology",
+    "weapon",
+    "ai",
+    "power",
+    "vehicle",
+    "tier 3"
+  ]
+}

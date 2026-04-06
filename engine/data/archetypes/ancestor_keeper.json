@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a55d782884f45f0a1300c37d",
+  "name": "Ancestor Keeper",
+  "type": "archetype",
+  "category": "spiritual",
+  "description": "Maintains connection with those who came before",
+  "behavioral_signature": "Honors traditions, carries memories, speaks to the dead",
+  "under_stress": "Clings harder to the past",
+  "at_rest": "Tending shrines, telling old stories",
+  "will_always": [
+    "honor the ancestors"
+  ],
+  "will_never": [
+    "forget the past"
+  ],
+  "unless": [
+    "ancestor tradition demands something cruel"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Nostalgic",
+      "threshold": 0.7,
+      "context": "connection to past"
+    },
+    {
+      "archetype": "Traditionalist",
+      "threshold": 0.65,
+      "context": "preserving old ways"
+    }
+  ],
+  "opposite_of": [
+    "Immortality Seeker"
+  ],
+  "tags": [
+    "memory",
+    "tradition"
+  ]
+}

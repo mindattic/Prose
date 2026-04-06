@@ -1,0 +1,112 @@
+{
+  "id": "019d6143a89373ae8000883e485e83a5",
+  "type": "faction",
+  "name": "The Lacework Confessional",
+  "aliases": [
+    "The Confessors",
+    "Threadpullers",
+    "The Loom"
+  ],
+  "motto": "Every secret is a debt. We collect.",
+  "description": "The Lacework Confessional emerged not from idealism but from a single catastrophic data breach in 2181, when a mid-tier TESSERA CORPONATION compliance auditor named Soo-Yeon Pak discovered that TESSERA had been silently harvesting confessional data from neural augmentation firmware — specifically the passive emotional logging built into Zheng-Dao Bioelectric's NeuroPax line, which had been installed in over 340,000 Tier-3 and Tier-4 citizens across the Laceworks district. Rather than sell the findings or go to the Meridian Quorum, Pak encrypted the data and distributed fragments of it across a loose network of disaffected data clerks, signal brokers, and burned corporate analysts she'd cultivated over years of auditing. The Confessional was born as a kind of insurance policy that never stopped expanding.\n\nToday the Lacework Confessional operates as a decentralized intelligence archive and pressure-brokerage collective with somewhere between sixty and two hundred active members — no one inside is entirely sure, which is by design. They do not sell data outright. Instead they traffic in what members call 'weight': the strategic deployment of compromising information to shift outcomes in favor of clients, protected persons, or the Confessional's own interests. Their primary operational theater is the Laceworks district itself, a dense residential-industrial tangle where augmentation density is highest and corporate surveillance infrastructure is paradoxically easiest to subvert because it is so layered and redundant that no single corponation monitors all of it. The Confessional has turned this chaos into a library.\n\nWhat distinguishes the Lacework Confessional from other intelligence factions is their institutional obsession with provenance and accountability. Every piece of data they hold is tagged with chain-of-custody metadata, the identity of the original source (encrypted but retrievable), and a 'harm index' rating that governs how and whether the information can be deployed. They have refused lucrative contracts because deployment would violate harm index protocols. This has made them trusted in ways that purely mercenary data brokers are not — and deeply dangerous, because corponations cannot simply buy them.",
+  "ideology": "The Confessional does not describe itself as anti-corporate or revolutionary. Internally, members speak of 'equilibrium maintenance' — the belief that information asymmetry is the fundamental mechanism of oppression in Meridian 88, and that the only ethical response is to continuously redistribute informational leverage toward those who have least of it. They are not interested in destroying TESSERA or Zheng-Dao Bioelectric; they are interested in ensuring that a Tier-4 citizen in the Laceworks has enough leverage to survive an encounter with either. This makes them pragmatic to the point of moral complexity: they will work with corponations against other corponations if the outcome measurably improves the informational position of low-tier citizens.",
+  "territory": "Primarily the Laceworks district, where they maintain a network of dead drops, hardwired relay nodes embedded in aging infrastructure, and safe houses in sublet residential blocks. Secondary operations run through Substation Null, where they lease anonymous processing time, and the Oxidian Market, where several Confessional members operate legitimate data-recovery storefronts as cover. They have minimal physical presence in the Meridian Core or the Spire and actively avoid the Vantage Meridian Corporate Campus.",
+  "leadership": "Flat cellular structure with no formal hierarchy. Operational decisions are made by 'Thread Councils' — ad hoc groups of three to seven members assembled per operation and dissolved afterward. Soo-Yeon Pak, now operating under the alias 'Archivist,' holds informal authority as the Confessional's founding intelligence and primary keeper of the original TESSERA breach archive, but holds no command power. A rotating 'Index Keeper' role manages the harm index protocol.\n\nundefined: \n\nundefined: \n\nundefined: ",
+  "methods": [
+    "Passive signal interception via subverted NeuroPax firmware in consenting carrier-agents embedded throughout the Laceworks",
+    "Corporate document exfiltration through long-term placement of sleeper analysts inside target corponations",
+    "Harm-indexed data brokerage — deploying compromising information as negotiating leverage rather than selling it outright",
+    "Confessional contracts: clients pay not in currency but in reciprocal intelligence contributions, building the archive",
+    "Infrastructure ghosting: embedding data relay nodes inside Palladian Construction repair projects and Ouroboros Energy maintenance conduits",
+    "Counter-surveillance mapping: selling detailed corporate surveillance blind-spot charts to Tier-3 and Tier-4 residents at subsidized rates",
+    "Selective leaks to Vantablack Media journalists when pressure deployment requires public exposure"
+  ],
+  "resources": [
+    "The Primary Archive: the original 2181 TESSERA NeuroPax dataset and all subsequent acquisitions, distributed across air-gapped storage nodes",
+    "Substation Null processing leases under anonymous shell identities",
+    "Network of approximately 40 consenting signal-carrier agents throughout the Laceworks",
+    "Oxidian Market storefronts generating legitimate cover income and client access",
+    "Proprietary harm index protocol software — considered one of the most sophisticated ethical-constraint AI systems outside corporate R&D",
+    "Extensive dossiers on mid-tier management across TESSERA CORPONATION, Zheng-Dao Bioelectric, and Lazarus Pharmaceuticals",
+    "Favors owed by dozens of protected clients across Tier-2 through Tier-4 citizenship brackets"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "",
+      "type": "",
+      "description": "TESSERA is the Confessional's original adversary and primary intelligence target. TESSERA's internal security division, Stratum Assurance, has run at least three active operations to locate and destroy the Primary Archive. The Confessional has responded each time by releasing targeted fragments of the original breach data as warnings.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "Zheng-Dao is implicated in the original breach as the firmware manufacturer, but the Confessional has chosen not to fully expose them, maintaining the threat as ongoing leverage. Zheng-Dao's security division quietly pays for certain Confessional intelligence products rather than risk full exposure, creating an uneasy and deeply compromised transactional relationship.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Confessional selectively feeds Vantablack journalists verified data packages when public pressure serves harm-index goals. Vantablack values the Confessional as a source precisely because their data is meticulously sourced. Neither party considers the other an ally — it is a relationship of mutual utility with clear limits.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Drowned Cartographers' expertise in physical infrastructure mapping complements the Confessional's need to embed relay nodes in aging Laceworks infrastructure. The two factions trade services regularly: the Confessional provides intelligence protection for Cartographer operations, the Cartographers provide physical access routes and installation support.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Severance Bloc's more aggressive anti-augmentation stance creates philosophical friction with the Confessional, which relies on augmentation infrastructure to operate. However, both factions share a Laceworks territorial base and have a non-interference agreement that has held, with occasional strain, for three years.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Confessional regards the Meridian Quorum as a captured regulatory body whose information requests are indistinguishable from corporate intelligence operations. They refuse all Quorum inquiries and maintain no formal contact. The Quorum has classified the Confessional as a Tier-2 intelligence threat.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "Recent Confessional intelligence suggests Lazarus Pharmaceuticals has been coordinating with TESSERA on a second generation of passive neural logging, this time embedded in Lazarus's psychiatric augmentation product line. The Confessional has elevated Lazarus to primary target status alongside TESSERA.",
+      "tags": []
+    }
+  ],
+  "narrative_function": "",
+  "story_hooks": [
+    "A Confessional carrier-agent has gone silent in the Laceworks. Their last transmission contained a fragment of data that the Archivist believes is a Lazarus Pharmaceuticals internal memo describing a neural logging system capable of retroactive memory reconstruction — and someone else is already hunting for the agent.",
+    "A player or contact receives a Confessional contract offer: not money, but the promise that a piece of damaging information about them currently held in the Archive will be permanently deleted in exchange for a single intelligence contribution. What they're asked to obtain is seemingly minor. It isn't.",
+    "The current Index Keeper has gone rogue, approving a high-harm deployment that the rest of the Confessional considers a catastrophic ethical violation. The cells are fractured. Someone needs to find the Keeper before TESSERA does — or before the deployment goes live.",
+    "Demetri Volashyn approaches the players through the Oxidian Market with an unusual offer: the Confessional will provide full dossiers on a target corponation's local management structure, free of charge. The catch is that Volashyn needs the players to physically retrieve a hardwired relay node from inside a Palladian Construction site before a scheduled demolition erases three years of intercepted data.",
+    "A Tier-4 Laceworks resident has been detained by TESSERA Stratum Assurance. The Confessional believes the detention is cover for an attempt to locate a carrier-agent through social mapping. They want someone to extract the resident before Stratum Assurance finishes its interview — but the resident doesn't know they're a node in the Confessional's network.",
+    "Vantablack Media has published a story using Confessional data that violates the harm index protocol — the data was leaked by someone inside the Confessional to a journalist, bypassing the Thread Council entirely. The Archivist needs to know who, and why, before the corponation named in the story retaliates against Laceworks civilians."
+  ],
+  "tags": [
+    "faction",
+    "war",
+    "trust",
+    "secret",
+    "identity",
+    "memory",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "rogue",
+    "corporate",
+    "contract",
+    "surveillance",
+    "power",
+    "money",
+    "debt",
+    "market",
+    "rain",
+    "moral",
+    "train",
+    "energy",
+    "spire"
+  ]
+}

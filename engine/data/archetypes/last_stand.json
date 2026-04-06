@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5797d9f92093924208d18c8",
+  "name": "Last Stand",
+  "type": "archetype",
+  "category": "combat",
+  "description": "Fights hardest when there's nothing left to lose",
+  "behavioral_signature": "Becomes more dangerous as options narrow",
+  "under_stress": "Transforms into something terrifying",
+  "at_rest": "Seems defeated, resigned",
+  "will_always": [
+    "go down swinging"
+  ],
+  "will_never": [
+    "surrender when cornered"
+  ],
+  "unless": [
+    "someone offers genuine escape for those they protect"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Stone Wall",
+      "threshold": 0.75,
+      "context": "immovable"
+    },
+    {
+      "archetype": "Fury",
+      "threshold": 0.7,
+      "context": "desperate intensity"
+    }
+  ],
+  "opposite_of": [
+    "Safety First"
+  ],
+  "tags": [
+    "desperate",
+    "defiant"
+  ]
+}

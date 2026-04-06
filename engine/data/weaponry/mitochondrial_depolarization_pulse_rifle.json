@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab327383a79e185a5ea18450",
+  "name": "Mitochondrial Depolarization Pulse Rifle",
+  "type": "weapon",
+  "aliases": [
+    "MDPR-2",
+    "Brownout",
+    "The Dimmer"
+  ],
+  "category": "firearm",
+  "description": "The Mitochondrial Depolarization Pulse Rifle operates by projecting a tightly focused beam of modulated electromagnetic radiation tuned to the resonant frequency of cytochrome c oxidase — the terminal enzyme in the mitochondrial electron transport chain. On contact, the beam disrupts proton gradient maintenance across the inner mitochondrial membrane, causing a cascading cellular energy failure in targeted tissue within seconds. The effect is not thermal; cells simply cease producing ATP at the required rate, and motor function collapses from the inside out.\n\nWhat distinguishes the MDPR-2 from comparable disabling weapons is its selectivity and depth of penetration. The beam attenuates predictably through soft tissue but loses minimal energy through non-biological materials, allowing it to affect targets through light cover such as clothing, padding, or standard-grade ballistic weave. Operators describe the effect on unprotected targets as a progressive 'shutdown' — first peripheral muscle groups, then respiratory muscles if exposure is sustained beyond two seconds. Death is possible but requires deliberate extended trigger hold, which gives the weapon plausible deniability as a compliance tool.\n\nArcturis Defense Solutions markets the MDPR-2 as a 'non-lethal escalation platform,' though this classification is widely contested by independent biomedical researchers and three separate municipal oversight bodies. The weapon is heavy, requires a dedicated power cell rated for thirty shots, and produces a faint violet corona at the emitter aperture that experienced operators call 'the bruise.' Field technicians note that partial cyberware integration — particularly subdermal power cells — can create unpredictable secondary ionization in the target's implants.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — licensed to law enforcement and licensed private security contractors only",
+  "base_technologies": [
+    "Cytochrome resonance electromagnetic tuning",
+    "Focused mitochondrial depolarization beam",
+    "Tissue-selective frequency attenuation"
+  ],
+  "specifications": "effective range: 40 meters optimal, 70 meters degraded effect\nshots per cell: 30\ncharge time between shots: 2.1 seconds\nbeam duration for incapacitation: 1.5–2.5 seconds sustained contact\nweight: 4.8 kg loaded\nemitter aperture: Tunable — 8cm to 30cm beam spread at 40m\nsecondary hazard: Cyberware interference within 1.5m of beam path",
+  "tactical_use": "Used primarily for crowd incapacitation, high-value target capture, and facility lockdowns where lethal force creates legal or political liability. Operators are trained to sweep the beam across a target's torso for rapid effect. Extended trigger holds targeting the chest cavity are classified as lethal use and require separate authorization under most jurisdictions. Effective against unaugmented targets and those with organic musculature; heavily augmented individuals with synthetic muscle replacement show reduced susceptibility.",
+  "cultural_context": "The MDPR-2 has become a symbol of corporate overreach in Meridian 88's civil discourse. Footage of security contractors using 'Brownouts' on striking dock workers at the Palladian Construction yard circulated widely on the mesh three years ago, and the weapon is now visually associated with state-adjacent suppression. Activists wear stylized violet corona pins as protest symbols. Conversely, in private security circles, carrying an MDPR-2 signals professionalism and restraint — the idea being that you can stop someone without leaving marks.",
+  "known_users": [
+    "Arcturus Defense Solutions licensed contractors",
+    "Meridian 88 Municipal Compliance Division",
+    "Corporate extraction specialists",
+    "High-end private bodyguard details"
+  ],
+  "story_hooks": [
+    "A batch of MDPR-2s has gone missing from an Arcturus depot — the serial numbers filed off. Someone is planning to use them at a public event, but the party must determine whether the intent is suppression or assassination.",
+    "A character with subdermal power cells was hit by a Brownout and survived — but something in their implants is now cycling incorrectly, and they're experiencing micro-blackouts. The only technician who understands the interaction works for Arcturus.",
+    "A corporate whistleblower has evidence that Arcturus has been quietly shipping MDPR-2 units to a government with a documented record of disappearing dissidents. The weapon is legal. The sale is documented. Nothing is technically illegal. That's the problem."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "firearm",
+    "weapon",
+    "war",
+    "death",
+    "augment",
+    "cyberware",
+    "ai",
+    "synthetic",
+    "corporate",
+    "contract",
+    "power",
+    "medical",
+    "market",
+    "rain",
+    "train",
+    "clothing",
+    "energy",
+    "fire",
+    "tier 4"
+  ]
+}

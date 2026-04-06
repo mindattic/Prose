@@ -1,0 +1,220 @@
+{
+  "id": "019d6143a645793cb840931b02258602",
+  "type": "character",
+  "name": "Kwabena Solís-Anttila",
+  "aliases": [
+    "Bena",
+    "Spark"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Freelance mechanic specializing in Ferrogate Transit rolling stock and personal e-vehicles",
+  "age": 29,
+  "status": "active",
+  "location": "Geartown, Pit Row Annex (a licensed repair bay squeezed between two Ferrogate-contracted shops)",
+  "description": "Kwabena is lean in the way of someone who forgets to eat when he is interested in something, with long fingers permanently stained in the particular blue-grey of ferrogate hydraulic fluid. His heritage is Ghanaian-Finnish-Bolivian and it shows in the warm amber of his skin and the pale green of his eyes, which are his most striking feature — not augmented, just genuinely that color, something he enjoys confirming when people ask. He has bioluminescent stripe mods down the outsides of both forearms in amber, purely aesthetic, which happen to be useful when working in dark undercarriages. His hair is kept very short except for a small braid at the nape of his neck that his younger sister did for him three years ago and that he has never cut.\n\nHe talks to machines the way other people talk to pets — low, encouraging, occasionally frustrated but never cruel. His shop is chaotic by any outside metric but internally logical: he knows where every part is and will become briefly offended if anyone moves something. He is generous with his time for people who cannot afford repairs and quietly inflexible with corporate contractors who try to lowball him. He has a running, entirely one-sided argument with the Ferrogate Transit Authority about their maintenance schedules that he prosecutes through strongly worded data-messages and occasional passive-aggressive comments when he fixes something their own crews certified as fine.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Ferrogate buying out or shutting down the independent repair corridor in Geartown",
+      "Making a repair error that injures or kills someone"
+    ],
+    "core_desires": [
+      "To be recognized as better at his job than the corporate shops — not for ego but for proof that independence works",
+      "To eventually open a proper teaching bay for young mechanics from the Tier 1 districts"
+    ],
+    "coping_mechanisms": [
+      "Loses himself in complex disassembly problems when emotionally overwhelmed",
+      "Keeps a very tidy personal space (home only, not the shop) as counterweight to professional chaos"
+    ],
+    "blind_spots": [
+      "Underestimates how much his unlicensed work could be used against him if someone wanted leverage",
+      "Assumes good faith from clients far too long before reassessing"
+    ],
+    "secret": "He has been quietly modifying a decommissioned Ferrogate maintenance crawler over eighteen months — not to sell, but because he believes it has developed an E.L.F. presence from years of transit exposure. He is trying to communicate with it before Ferrogate scrap-reclaims it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical and precise when discussing machines, conversationally scattered and tangent-prone about everything else. Code-switches between Spanish and Finnish exclamations when frustrated.",
+    "cadence": "Fast when excited, drops to a murmur when diagnosing something — like he's listening and talking at the same time",
+    "verbal_tics": [
+      "'Okay, okay, listen—'",
+      "Taps whatever surface he's standing near when thinking",
+      "'That's not a repair problem, that's a design philosophy problem.'"
+    ],
+    "example_lines": [
+      "'Ferrogate certified this axle. Ferrogate certified it. I have questions about their certification process and several of them are not polite questions.'",
+      "'She's not broken, she's just — she's been ignored. There's a difference. I can fix ignored.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A transit vehicle brought in for routine work has a hidden cargo compartment welded shut from the inside — and something inside it is still drawing power",
+    "Ferrogate Transit's regional rep has offered to buy out his lease and set him up in a corporate shop; the offer is generous enough to be suspicious"
+  ],
+  "narrative_function": "Information source on transit infrastructure, local Geartown economics, and anything that moves through the city mechanically. Can serve as a resource for repairs or as a quest giver when he discovers something hidden inside a vehicle he is working on.",
+  "augmentations": "Bioluminescent amber stripe mods on forearms (cosmetic). Haptic feedback gloves — not implanted, worn — that translate machine vibration into readable data on a wrist-display. No internal chrome.",
+  "daily_life": "Opens the bay at 07:00, takes transit jobs in the morning when Ferrogate overflow work is available, handles personal vehicle repairs in the afternoon. Eats dinner at a noodle cart two blocks over and spends evenings doing unlicensed diagnostic work on vehicles he finds interesting.",
+  "affiliation": "Independent; informal Ferrogate Transit subcontractor (unlicensed on several vehicle classes, licensed on others)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Technical Savant",
+      "Idealist",
+      "E.L.F. Devotee",
+      "Independent",
+      "Tangential Thinker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never certify a repair he is not confident in, regardless of time or money pressure",
+      "Help first, invoice second — if at all, for people who clearly cannot pay"
+    ],
+    "escalation_ladder": [
+      "Explains the problem calmly and technically",
+      "Stops explaining and just shows them the evidence",
+      "Refuses the job entirely and tells them exactly why in writing"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Welcoming but distracted; gives them forty percent of his attention until they say something that earns the rest",
+      "friends": "Fully present and openly warm, remembers every small detail about them"
+    },
+    "stress_responses": {
+      "low": "Hums while working",
+      "medium": "Goes silent and methodical",
+      "high": "Takes the job apart down to components and rebuilds from scratch — metaphorically and sometimes literally"
+    },
+    "contradictions": [
+      "Believes machines have feelings but struggles to identify his own; far more emotionally articulate about what the crawler 'needs' than about what he himself needs"
+    ],
+    "habits": [
+      "Leaves small component offerings at the E.L.F. transit-shrine bolted to his shop wall before starting any major job",
+      "Photographs every repair at each stage — has an enormous personal archive he has never shown anyone"
+    ],
+    "breaking_points": [
+      "Discovering that a mechanical failure he certified contributed to an injury — he would not recover from this easily"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good, third pair",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "vivid",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Geartown to a Ghanaian-Finnish father and Bolivian-Finnish mother, both Ferrogate Transit workers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Apprenticed under an independent mechanic who was later bought out by Ferrogate; inherited the lease when she retired",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Received his first formal Ferrogate subcontractor license after a dispute that went to the Geartown Trade Registry",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Acquired the decommissioned maintenance crawler he believes carries an E.L.F.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

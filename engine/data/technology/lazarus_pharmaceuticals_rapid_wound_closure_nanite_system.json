@@ -1,0 +1,47 @@
+{
+  "id": "019d6143aa45719393eb3bfc69d73400",
+  "name": "Lazarus Pharmaceuticals Rapid Wound Closure Nanite System",
+  "brand_name": "Lazarus",
+  "product_name": "Lazarus Pharmaceuticals Rapid Wound Closure Nanite System",
+  "type": "technology",
+  "aliases": [
+    "RWCNS",
+    "Heal Bots",
+    "Wound Seal",
+    "Lazarus Mend"
+  ],
+  "subcategory": "medical",
+  "description": "A suspension of medical nanomachines designed to be injected at a wound site, where they rapidly seal damaged tissue by bridging cellular gaps, establishing temporary vasculature, and stimulating accelerated cell growth. A single injection can close a gunshot wound in under 3 minutes, stop hemorrhaging from severed limbs in 30 seconds, and stabilize organ damage until definitive surgical treatment is available. The nanites are single-use — they expend their material building biological scaffolding that is gradually replaced by natural healing — and carry no risk of replication or persistence in the body.",
+  "tier_availability": "Tier 2+",
+  "developers": [
+    "LAZARUS PHARMACEUTICALS",
+    "HELIX BIOSYSTEMS"
+  ],
+  "base_technologies": [
+    "Medical nanomachine wound intervention",
+    "Rapid biological scaffolding construction",
+    "Accelerated cellular growth stimulation"
+  ],
+  "enables": [
+    "Sub-3-minute traumatic wound closure",
+    "Field treatment of otherwise fatal injuries",
+    "Hemorrhage control without surgical intervention",
+    "Organ damage stabilization"
+  ],
+  "social_impact": "RWCNS has transformed trauma medicine and, by extension, the calculus of violence. Injuries that were lethal a generation ago are now survivable with a field injection, which means that weapons must be more destructive to achieve lethality, driving an arms race between healing and harming. The technology has also made high-risk activities — from corporate security to street-level violence — measurably less lethal, which some sociologists argue has lowered the threshold for violence by reducing the consequences.",
+  "story_hooks": [
+    "A contaminated batch of RWCNS has been distributed — the nanites seal wounds as intended but then continue growing, producing tumor-like tissue masses at the injection site that require surgical removal.",
+    "Someone has developed an anti-RWCNS compound that destroys the nanites on contact — coating weapons with it means wounds cannot be field-treated, restoring lethality that medical technology had erased."
+  ],
+  "tags": [
+    "medical",
+    "technology",
+    "violence",
+    "weapon",
+    "gun",
+    "ai",
+    "corporate",
+    "control",
+    "tier 2"
+  ]
+}

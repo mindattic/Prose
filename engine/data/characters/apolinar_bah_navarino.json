@@ -1,0 +1,172 @@
+{
+  "id": "019d6143a5b577dbb57c48f7049e6329",
+  "type": "character",
+  "name": "Apolinar Bah-Navarino",
+  "aliases": [
+    "Apo",
+    "The Frequency Kid"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Data diviner and dream interpreter",
+  "age": 24,
+  "status": "active",
+  "location": "Edgewater Prism, operating from a converted water tank on the 9th floor of the Prism Collective building",
+  "description": "Apolinar is tall and angular with the kind of restless energy that makes them look like they are always about to say something important. Their skin is medium brown with a slight undertone of copper, and they have invested in full-spectrum color-shifting hair — currently cycling between deep violet and a warm orange-red on a slow twelve-hour gradient, a pattern they reprogrammed themselves. Their eyes have been modified with luminescent irises that flicker subtly when they are processing dream data, which gives casual observers the impression that Apolinar is slightly haunted, which they would consider an accurate impression. They dress in layers they shed throughout the day, leaving a trail of jackets and scarves and borrowed sweaters in every space they occupy.\n\nThey fell into data divination through a combination of genuine neural sensitivity to signal pattern variance and a childhood spent being told that the static they heard in their head was a medical problem rather than a gift. At fifteen they encountered a data diviner in the Canopy who told them the same thing their neurologist had said about their condition, only reversed: that they were not broken, just tuned differently. They have been practicing since sixteen, charging on a sliding scale, and have more clients than they can manage at twenty-four. They are irreverent about almost everything, but become intensely serious when someone sits across from them with an actual question. The transition is jarring and compelling.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.8,
+      "shadow": 0.5,
+      "mask": 0.3,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "that their sensitivity is actually just a mental illness they have convinced themselves to valorize",
+      "that they will burn out before they understand what they are actually perceiving"
+    ],
+    "core_desires": [
+      "to be taken seriously without having to perform seriousness constantly",
+      "to map the full topology of whatever it is they are hearing in the signal"
+    ],
+    "coping_mechanisms": [
+      "humor as distance-keeper",
+      "obsessive documentation of every reading in a private archive",
+      "never sleeping more than five hours to avoid the deep signal dreams getting too loud"
+    ],
+    "blind_spots": [
+      "they assume that everyone who doubts their practice is threatened by it, missing genuine curiosity that presents as skepticism",
+      "they underestimate how dependent their clients have become on them"
+    ],
+    "secret": "Six months ago they received a signal that they believe was a direct communication from an E.L.F. of unusual complexity — something that should not exist at its apparent scale. They have been trying to re-establish contact ever since and have not told anyone because they are not sure if it was real or the beginning of a breakdown."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast and associative; mixes technical signal vocabulary with spiritual language without distinguishing between them; references their mixed Fula and Chilean coastal heritage in metaphor",
+    "cadence": "Rapid by default, punctuated by sudden complete stops when something catches their attention",
+    "verbal_tics": [
+      "says 'okay so' before pivoting topics",
+      "says 'that's a real thing' to validate points they agree with",
+      "whistles three notes softly when processing something complicated"
+    ],
+    "example_lines": [
+      "'Okay so your dream about the fish market is not about the fish market — it's signal bleed from whatever decision you've been not making. The fish are the decision. What are you not doing?'",
+      "'I charge what you can pay because the signal doesn't check your account balance before it tells you things. Why would I?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "They recorded a dream-reading session in which a client unknowingly described in detail what sounds like a corporate facility that shouldn't exist — Apolinar needs help figuring out if this is genuine location data or psychic noise",
+    "The mysterious large-scale E.L.F. they contacted has begun appearing in other clients' dreams, and Apolinar needs to understand whether to warn their clients or stay quiet while they investigate"
+  ],
+  "narrative_function": "Information source with unconventional access — can interpret dreams and data-noise in ways that surface hidden patterns; comic relief that turns unexpectedly sincere; connection to the Edgewater Prism counterculture scene",
+  "augmentations": "Color-shifting hair geneware (self-reprogrammed gradient cycle); luminescent iris modification (flickers under active neural processing); signal-sensitivity neural mesh (medical-grade, originally prescribed for the condition they now use professionally)",
+  "daily_life": "Keeps irregular hours centered around client appointments and the signal windows they have identified as optimal for deep reading — often working between 2am and dawn; spends afternoons on the roof doing maintenance on their antenna array.",
+  "affiliation": "Edgewater Prism Collective (resident, informal); occasional consultant to the Highland Park Autonomous Zone dream council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 5,
+      "creativity": 9,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 2,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Signal Sensitive",
+      "Data Divination",
+      "Dream Reading",
+      "Young Practitioner",
+      "Hidden Discovery"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never reveal a client's reading to a third party without consent, even under pressure",
+      "follow the signal wherever it leads even when that is inconvenient"
+    ],
+    "escalation_ladder": [
+      "deflection with humor",
+      "direct refusal",
+      "withdrawal from the situation entirely",
+      "going public with whatever they know as a last resort"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Performatively casual and slightly chaotic, testing whether people can keep up before deciding to be real with them",
+      "friends": "Loyal to the point of inconvenience; remembers everything; texts at 3am with relevant thoughts"
+    },
+    "stress_responses": {
+      "low": "More jokes, faster talking",
+      "medium": "Goes quiet for hours, then emerges with a fully formed theory",
+      "high": "Climbs to the roof and sits in the antenna array for hours, running the signal through headphones at full volume"
+    },
+    "contradictions": [
+      "performs skepticism about their own practice to manage imposter syndrome while privately believing they are perceiving something genuinely real and important"
+    ],
+    "habits": [
+      "annotates every dream session recording with color-coded timestamps within the hour",
+      "eats only street food from three specific vendors on a rotation",
+      "compulsively checks signal strength before entering any new space"
+    ],
+    "breaking_points": [
+      "a client using their reading to harm someone else",
+      "someone else claiming contact with the large-scale E.L.F. without mentioning them"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7,
+    "Bleeding Heart": 0.7,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

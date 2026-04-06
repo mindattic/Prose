@@ -1,0 +1,167 @@
+{
+  "id": "019d6143a6007623970fac76fad265b1",
+  "type": "character",
+  "name": "Ekundayo Vásárhelyi-Nkemdirim",
+  "aliases": [
+    "Dayo",
+    "Stack"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "corporate school scholarship student, junior hacker",
+  "age": 15,
+  "status": "active",
+  "location": "Grosse Pointe Enclosure — Tessera Academy Secondary Campus",
+  "description": "Ekundayo is lanky and angular, all sharp elbows and collarbones, with golden-brown skin and close-cropped hair he keeps meticulously lined because the rest of his life feels ragged. His eyes are standard brown except for patterned irises he saved three months of tutoring stipends for — concentric hexagons in amber, a deliberate Tessera aesthetic he thought would help him fit in and which he now privately finds embarrassing. He's always slightly overdressed in the Enclosure, wearing his scholarship uniform with an anxious precision that marks him as someone for whom the uniform is not casual.\n\nDayo grew up in Ironvein on a UBC stipend household and won a Tessera Academic Foundation scholarship at twelve. He's brilliantly capable with code architecture — legitimately gifted — but the social architecture of Grosse Pointe defeats him daily. He has two lives: the obedient scholarship student who files every assignment on time, and the kid who goes home on weekends to Ironvein and jacks into sub-level networks he has no business being in. He doesn't think of what he does as hacking. He thinks of it as listening.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.8,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "losing the scholarship and having to go back permanently without having changed anything",
+      "being found out and proving everyone who doubted him right"
+    ],
+    "core_desires": [
+      "to build something that matters, not just pass tests",
+      "to stop feeling like an impostor in both worlds"
+    ],
+    "coping_mechanisms": [
+      "hyper-competence performance — being demonstrably the best at visible tasks",
+      "disappearing into code-work for hours"
+    ],
+    "blind_spots": [
+      "doesn't recognize when corporate peers are using him for his skills without genuine friendship",
+      "overestimates how invisible his network activity is"
+    ],
+    "secret": "He's been quietly archiving internal Tessera Academy administrative communications he's accidentally intercepted through his firmware blind spot. He hasn't done anything with it. He doesn't know why he keeps it. He tells himself it's just interesting."
+  },
+  "speech_patterns": {
+    "vocabulary": "code-adjacent metaphors in casual speech; code-switches sharply between Tessera formal register and Ironvein vernacular depending on context",
+    "cadence": "measured and careful in corporate settings; looser and faster at home; pauses before answering questions he considers worth answering",
+    "verbal_tics": [
+      "'structurally speaking—' before any opinion",
+      "long silence before admitting he doesn't know something"
+    ],
+    "example_lines": [
+      "'Structurally speaking, that argument has three load-bearing assumptions and one of them is completely unsupported, but sure, go ahead.'",
+      "'Back home we call that Tuesday. Here they call it an incident.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The archived Tessera communications contain a reference to a scholarship candidate who was passed over — not for grades but because their family filed a Zheng-Dao labor complaint. Someone might want that information very much.",
+    "A classmate has figured out he goes to Ironvein on weekends and wants to hire him as a guide, which puts both his scholarship and his neighborhood relationships at risk."
+  ],
+  "narrative_function": "Bridge character between corporate and street worlds; information source for both sides; potential ally for anyone needing sub-net access with plausible deniability.",
+  "augmentations": "Patterned irises (amber hexagonal, cosmetic). Basic neural-link learning interface provided by Tessera scholarship program (read-only academic access, school-monitored). Personal black-market firmware patch that creates a blind spot in the monitoring — his only real secret tech.",
+  "daily_life": "Weekdays: classes at Tessera Academy, mandatory enrichment periods, supervised net-study. Weekends: transit back to Ironvein, evenings in a cramped bedroom with headphones on, exploring network layers.",
+  "affiliation": "Tessera Academic Foundation (scholarship); informal ties to Ironvein neighborhood network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": -2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "scholarship_student",
+      "junior_hacker",
+      "code_prodigy",
+      "two_worlds",
+      "corporate_adjacent"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "maintain plausible deniability at all costs",
+      "never use Tessera network infrastructure for personal work"
+    ],
+    "escalation_ladder": [
+      "deflect with academic language",
+      "change subject by volunteering useful information about something else",
+      "go completely silent and unreachable"
+    ],
+    "interpersonal_modes": {
+      "strangers": "politely formal, slightly stiff; volunteers little; observes heavily before committing to an opinion of someone",
+      "friends": "dry humor, unusually direct, will debug your problems — literal or metaphorical — without being asked"
+    },
+    "stress_responses": {
+      "low": "goes quiet and chews inner cheek",
+      "medium": "retreats to code-work, misses meals",
+      "high": "catastrophizes privately, outwardly becomes extremely formal and correct"
+    },
+    "contradictions": [
+      "believes in transparency as a value but is running multiple layers of concealment simultaneously"
+    ],
+    "habits": [
+      "re-laces shoes if anything feels off before a difficult day",
+      "sketches network topology diagrams in margins of paper notes by reflex"
+    ],
+    "breaking_points": [
+      "scholarship threatened",
+      "someone from Ironvein gets hurt because of his dual life"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Analyst": 0.9,
+    "Pattern Reader": 0.9,
+    "Problem Solver": 0.9,
+    "Lone Wolf": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

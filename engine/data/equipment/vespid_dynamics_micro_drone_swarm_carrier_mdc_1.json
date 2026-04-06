@@ -1,0 +1,48 @@
+{
+  "id": "019d6143a87e73768e29ba628c2c4614",
+  "name": "Vespid Dynamics Micro-Drone Swarm Carrier MDC-1",
+  "brand_name": "Vespid",
+  "product_name": "Vespid Dynamics Micro-Drone Swarm Carrier MDC-1",
+  "type": "equipment",
+  "aliases": [
+    "MDC-1",
+    "Hive Carrier",
+    "Bug Box",
+    "Swarm Pack"
+  ],
+  "category": "drones",
+  "description": "A hip-mounted carrier that houses, charges, and deploys up to 30 micro-drones for on-demand aerial reconnaissance, communications relay, and area surveillance. The MDC-1 serves as a mobile base station for Vespid's insect-scale drone platforms, providing charging cradles, data uplink, and deployment tubes that can launch drones individually or in coordinated bursts. The carrier's AI manages swarm deployment patterns, return-to-base protocols, and battery cycling to maintain continuous aerial coverage. A single operator with an MDC-1 can establish a persistent surveillance network over a 500-meter radius.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — authorized surveillance operations",
+  "base_technologies": [],
+  "specifications": {
+    "drone capacity": "30 micro-drones",
+    "charging": "10 cradles",
+    "info": "15 minutes per full charge",
+    "deployment": "Individual or burst (up to 10 simultaneous)",
+    "control": "Integrated AI swarm management",
+    "coverage radius": "500 meters persistent surveillance",
+    "data": "Real-time video/audio feed from all active drones",
+    "weight": "2.8 kg loaded",
+    "form factor": "Hip-mounted carrier",
+    "battery": "8-hour swarm management"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An MDC-1 carrier was stolen along with its full drone complement — 30 micro-drones are now operating in an uncontrolled urban environment, following their last programmed orders indefinitely.",
+    "A rival manufacturer has developed a micro-drone jammer disguised as an MDC-1 carrier — it appears to deploy drones but actually emits a signal that disables all micro-drones within range."
+  ],
+  "tags": [
+    "drones",
+    "equipment",
+    "war",
+    "ai",
+    "surveillance",
+    "control",
+    "drone",
+    "tier 3"
+  ]
+}

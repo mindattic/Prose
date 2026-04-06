@@ -1,0 +1,105 @@
+{
+  "id": "019d6143a9307d6cb5d52ac6fbb2cd39",
+  "type": "place",
+  "name": "Saltgrave Sublevel",
+  "aliases": [
+    "The Salt",
+    "Brine Deck",
+    "Old Sublevel Four",
+    "The Pickled Quarter"
+  ],
+  "description": "Saltgrave Sublevel occupies the drowned basement infrastructure of what was once Chicago's South Loop transit interchange — a labyrinth of flooded pedestrian tunnels and former parking structures sealed off after the 2147 Lake Surge and never properly reclaimed. Brine from Lake Michigan seeps through cracked concrete walls, leaving thick white salt deposits that encrust every surface like mineral frost. Salvagers broke through from below in the 2170s and have since carved out a thriving gray-market settlement across four interconnected levels, using repurposed buoyancy platforms to keep living quarters above the standing water.\n\nThe settlement is famous — or infamous — for its salt trade. Saltgrave's residents harvest the mineral deposits and process them for industrial use, food preservation, and certain chemical synthesis operations that corponations prefer not to conduct in their own facilities. Zheng-Dao Bioelectric maintains a quiet purchasing agreement with Saltgrave's council, though neither party acknowledges it publicly. The deeper levels, perpetually flooded and lit only by bioluminescent algae cultivated along the walls, serve as neutral meeting ground for parties who cannot afford to be seen in any official venue.",
+  "atmosphere": {
+    "sights": [
+      "Salt crystal formations bloom across every concrete pillar like white coral, some reaching half a meter long and catching the blue-green glow of cultivated algae.",
+      "Salvaged buoyancy platforms drift in loose clusters, connected by rope bridges and rusted gangplanks above black standing water.",
+      "Handmade lamps fashioned from repurposed BCI housing units cast warm amber pools across market stalls selling mineral blocks, preserved foods, and unregistered chem supplies.",
+      "Waterlines stain the walls in brown and gray bands, a geological record of every flood surge dating back decades."
+    ],
+    "sounds": [
+      "A constant low drip echoes from every direction, merging into white noise that muffles conversation and makes surveillance difficult.",
+      "The creak and slap of platform pontoons shifting underfoot follows every step through the upper market levels.",
+      "Voices carry strangely in the tunnels — a whisper fifty meters away can arrive clearer than someone standing beside you."
+    ],
+    "smells": [
+      "Sharp mineral brine dominates everything, a clean chemical smell undercut by the damp rot of old concrete.",
+      "Cooking fires on the upper platforms push woodsmoke and rendered fat down into the lower corridors where it pools and lingers.",
+      "Certain deep passages carry a faint sweet-chemical odor from unlicensed synthesis operations that the council officially denies."
+    ],
+    "feel": "Saltgrave feels like the city forgot it existed and the people inside decided that was fine. The dampness gets into your joints, and the acoustics keep you permanently uncertain of where sounds are coming from. There's a claustrophobic intimacy to the place — everyone knows everyone's business, but they've collectively agreed not to say so.",
+    "tags": []
+  },
+  "demographics": "Roughly 1,200 permanent residents, heavily weighted toward Shelf-tier salvagers, displaced transit workers, and a small population of unregistered synthetics who have found safety in the council's deliberate blindness toward legal identity. Turnover is low — people who find Saltgrave tend to stay.",
+  "economy": "Salt harvesting and processing form the economic backbone, supplemented by gray-market chemical synthesis, data brokering conducted in the acoustically scrambled deep levels, and a modest trade in recovered pre-Surge artifacts pulled from the flooded lower chambers.",
+  "power_structure": "The Saltgrave Council — seven elected platform-holders who control the buoyancy infrastructure — govern by consensus and collect a ten-percent tithe on all commerce. Ferrogate Security has no presence here; the council enforces its own order through platform access denial, the ultimate threat being eviction into the flooded tunnels below.",
+  "dangers": [
+    "Sudden flood surges from Lake Michigan pressure events can raise water levels in the lower passages by two meters in under an hour, with minimal warning.",
+    "The salt-saturated air aggressively corrodes unprotected electronics, including BCI hardware, causing glitches and data loss with extended exposure.",
+    "Unregulated synthesis operations in the deep levels occasionally produce toxic byproduct clouds that migrate through the tunnel system unpredictably.",
+    "The council's neutrality policy means rival factions meet here — and sometimes resolve their disputes violently in the dark water of the lower levels."
+  ],
+  "opportunities": [
+    "The flooded deep chambers contain intact pre-Surge transit infrastructure and data vaults that no one has fully mapped or salvaged.",
+    "Saltgrave's acoustic properties and council-enforced neutrality make it the premier location in the southern corridor for sensitive meetings that cannot be recorded.",
+    "Salt and mineral extraction contracts with industrial buyers like Zheng-Dao represent legitimate income streams for operators willing to work outside corponation oversight."
+  ],
+  "story_hooks": [
+    "A council member has gone missing in the deep levels — officially a flood accident, but her platform partner insists she had just discovered something in the pre-Surge vaults and is convinced the death was arranged. The council wants the matter handled quietly before it attracts outside attention.",
+    "An unregistered synthetic has been operating as Saltgrave's de facto doctor for three years, beloved by the community. A Helix Biosystems bounty hunter has tracked it here and is pressuring the council to hand it over. The synthetic claims to have information about illegal Helix experiments that would be worth far more than the bounty.",
+    "A new synthesis crew has moved into the deep levels and is producing something that isn't chem — the byproduct odors are wrong, the workers don't socialize, and two Saltgrave residents who got too curious have quietly disappeared."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Shelf",
+      "The Undertow",
+      "The Sluiceway"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Shelf-tier salvagers and mineral traders",
+    "Unregistered synthetic persons seeking unofficial asylum",
+    "Gray-market data brokers using the acoustic dead zones",
+    "Zheng-Dao Bioelectric procurement intermediaries operating off-manifest"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Brine Table",
+      "description": "The council's meeting platform, distinguished by an actual salvaged wood table encrusted with decades of salt crystal growth — sitting at it is considered a mark of significant trust.",
+      "tags": []
+    },
+    {
+      "name": "The Quiet Deep",
+      "description": "The permanently flooded fourth sublevel, accessible only by dive or submersible platform, where the most sensitive meetings and the most questionable operations take place.",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.868,
+    "lng": -87.624,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "loss",
+    "death",
+    "love",
+    "identity",
+    "bci",
+    "ai",
+    "synthetic",
+    "elf",
+    "contract",
+    "control",
+    "doctor",
+    "tunnel",
+    "market",
+    "dark",
+    "food",
+    "water",
+    "lake",
+    "shelf"
+  ]
+}

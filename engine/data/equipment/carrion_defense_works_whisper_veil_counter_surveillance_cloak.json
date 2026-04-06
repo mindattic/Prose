@@ -1,0 +1,48 @@
+{
+  "id": "019d6143a85a7aada59c75fd6a4a3064",
+  "name": "Carrion Defense Works Whisper Veil Counter-Surveillance Cloak",
+  "brand_name": "Carrion",
+  "product_name": "Carrion Defense Works Whisper Veil Counter-Surveillance Cloak",
+  "type": "equipment",
+  "aliases": [
+    "Whisper Veil",
+    "Anti-Spy Cloak",
+    "Carrion Veil",
+    "Silent Shroud"
+  ],
+  "category": "counter-surveillance",
+  "description": "A hooded cloak woven with active signal-jamming fibers that create a localized dead zone around the wearer, blocking all wireless signals within a 2-meter radius. The Whisper Veil disrupts WiFi, cellular, Diaspora connections, Bluetooth, RFID, and neural interface external communications, making the wearer invisible to wireless tracking while simultaneously preventing any electronic eavesdropping. The fabric contains embedded micro-batteries that power the jamming mesh for 6 hours before requiring recharge. The cloak's visual appearance is nondescript — a plain, dark hooded garment that draws no attention in urban environments.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 2+",
+  "legality": "Prohibited — signal jamming equipment",
+  "base_technologies": [],
+  "specifications": {
+    "jamming radius": "2 meters from wearer",
+    "frequency coverage": "All commercial wireless bands",
+    "effect": "Complete wireless signal suppression in radius",
+    "power source": "Embedded micro-batteries",
+    "info": "6-hour operation",
+    "recharge": "2 hours from standard power",
+    "weight": "1.2 kg",
+    "appearance": "Plain dark hooded cloak",
+    "side effect": "Wearer also loses all wireless connectivity"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A murder was committed within a Whisper Veil's jamming radius — no electronic evidence exists for the 2-meter zone around the killing, creating a perfect blind spot in total surveillance coverage.",
+    "Modified Whisper Veils with expanded 10-meter jamming radius have appeared on the market — one person wearing it can black out an entire room's communications."
+  ],
+  "tags": [
+    "countersurveillance",
+    "equipment",
+    "neural",
+    "ai",
+    "surveillance",
+    "power",
+    "market",
+    "dark",
+    "tier 2"
+  ]
+}

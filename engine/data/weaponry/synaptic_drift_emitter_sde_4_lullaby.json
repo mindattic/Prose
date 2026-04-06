@@ -1,0 +1,62 @@
+{
+  "id": "019d6143ab4f7302bf6be0f857d5b924",
+  "name": "Synaptic Drift Emitter SDE-4 'Lullaby'",
+  "type": "weapon",
+  "aliases": [
+    "The Lullaby",
+    "Drifter",
+    "Sleepwalker",
+    "The Quiet Gun"
+  ],
+  "category": "cyber",
+  "description": "The Synaptic Drift Emitter SDE-4 operates by broadcasting a precisely tuned electromagnetic envelope that interferes with the brain's default mode network — the cluster of regions responsible for maintaining baseline conscious orientation. Rather than inducing unconsciousness directly, it causes a cascading desynchronization of thalamic relay signals, producing a state of dissociative fugue in which targets remain physically mobile but mentally absent, wandering without volition or coherent threat response. The effect is reversible within minutes of exposure ending, leaving no detectable tissue damage.\n\nWhat makes the SDE-4 distinctive is its selectivity algorithm, developed by Zheng-Dao Bioelectric's neurological warfare division after seven years of contested research. The emitter can be calibrated to exclude individuals wearing certified neural dampeners or TESSERA-standard cortical implants, allowing operators to move through a drifted crowd unaffected. This selective broadcast footprint earned it the nickname 'Lullaby' — it puts everyone else to sleep while leaving the user wide awake.\n\nIn practice the weapon has a distinctive soft hum at 14 Hz, just below the threshold of conscious hearing, which experienced targets have learned to associate with sudden dissociation. Veteran soldiers operating in zones where SDE-4s are known to be deployed sometimes describe a Pavlovian dread response to low ambient drone sounds — a psychological legacy that persists long after exposure.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited — civilian use; Restricted — licensed security contractors",
+  "base_technologies": [
+    "Neural feedback loops",
+    "Thalamic electromagnetic desynchronization",
+    "Selective frequency broadcast modulation"
+  ],
+  "specifications": "effective range: 0–18 meters (cone), 0–9 meters (omnidirectional burst)\neffect duration: 40–90 seconds post-exposure\npower source: Dual-cell bioelectric capacitor pack\nweight: 2.1 kg\nrecharge cycle: 22 seconds between sustained bursts\ncollateral suppression radius: 12 meters standard, adjustable to 6 meters with exclusion calibration\nimplant compatibility: TESSERA Mark IV cortical shielding or equivalent required for operator immunity\nform factor: Compact sidearm with rotating aperture collar",
+  "tactical_use": "Favored by extraction teams who need to neutralize crowds without producing casualties that trigger political consequences. Operators typically lead with a burst mode sweep to disorient a room, then conduct their objective while targets mill aimlessly. Effective in hostage scenarios where distinguishing combatants from civilians is difficult. Requires operators to wear certified neural dampeners, which adds procurement overhead and creates a secondary black market for counterfeit shielding.",
+  "cultural_context": "The SDE-4 has become a symbol of sanitized corporate violence — the weapon of choice for entities that want deniability. In Meridian 88's political underclass, being 'lullabied' is slang for having your autonomy stripped without marks left behind, used broadly to describe bureaucratic manipulation, media sedation, and pharmaceutical compliance programs. Carrying one marks a person as either a well-resourced security professional or someone with deeply unsettling intentions. Street medics have started carrying portable EEG patches to diagnose drift exposure in alley clinics.",
+  "known_users": [
+    "TESSERA CORPONATION executive protection units",
+    "Corporate hostage negotiation teams",
+    "Black-site facility security personnel",
+    "'Shepherd' — a fixer known for bloodless contract resolutions",
+    "Undercover law enforcement in high-density civilian zones"
+  ],
+  "story_hooks": [
+    "A player character wakes up in an alley with two hours missing from memory and no visible injuries — someone used a Lullaby on them, but the question is what they were doing during those two hours.",
+    "A shipment of uncalibrated SDE-4 units with no exclusion filtering has hit the black market — meaning anyone using them will drift themselves alongside their targets.",
+    "A ZHENG-DAO whistleblower claims the exclusion algorithm has a backdoor that allows the manufacturer to remotely override it, potentially drifting the operators themselves.",
+    "A street preacher in the lower districts claims to be immune to Lullaby effects due to a spiritual practice — and the corporation wants to know if that's biologically true."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "cyber",
+    "weapon",
+    "violence",
+    "combat",
+    "gun",
+    "war",
+    "memory",
+    "consciousness",
+    "neural",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "clinic",
+    "alley",
+    "market",
+    "rain",
+    "drone",
+    "energy",
+    "tier 4"
+  ]
+}

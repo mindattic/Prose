@@ -1,0 +1,274 @@
+{
+  "id": "019d6143a71f705589e69f119ebd259a",
+  "type": "character",
+  "name": "Ximena Sjostrom-Kwarteng",
+  "aliases": [
+    "Dowel",
+    "The Operator"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Target acquisition and fugitive recovery — bounty hunter",
+  "age": 28,
+  "status": "active",
+  "location": "The Circuit — neon-lit entertainment and vice district",
+  "description": "Ximena Sjostrom-Kwarteng are average height but with a presence that fills more space than the body accounts for. At 28, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a bounty hunter out of The Circuit, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Ximena Sjostrom-Kwarteng lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.59,
+      "ideal": 0.85,
+      "id": 0.91,
+      "shadow": 0.28,
+      "mask": 0.22,
+      "ghost": 0.13
+    },
+    "core_fears": [
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Being replaced — younger, faster, cheaper runners coming up behind them",
+      "That their reputation is built on luck, not skill, and the luck is finite"
+    ],
+    "core_desires": [
+      "To prove everyone who dismissed them catastrophically wrong",
+      "A crew worth trusting — people who stay when the shooting starts",
+      "To matter to someone for who they are, not what they can do"
+    ],
+    "coping_mechanisms": [
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Connection — finds someone to talk to, even if it's a bartender or a cat",
+      "Ritual — follows the same pre-job routine every time, superstition as structure"
+    ],
+    "blind_spots": [
+      "Cannot distinguish between caution and cowardice in themselves or others",
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
+      "Thinks speed can substitute for planning because it's worked so far"
+    ],
+    "secret": "Ximena Sjostrom-Kwarteng witnessed a massacre during a corporate dispute and has evidence stored in a dead drop. Publishing it would expose powerful people. Keeping it is leverage and liability."
+  },
+  "speech_patterns": {
+    "vocabulary": "Shelf street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
+    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
+    "verbal_tics": [
+      "Never uses contractions when lying — 'I did not' instead of 'I didn't'",
+      "Ends statements with 'yeah?' — not a question, a dare"
+    ],
+    "example_lines": [
+      "\"Everyone has a pattern. Patterns are addresses waiting to be read.\"",
+      "\"I find people. Whether they're alive when I bring them back depends on their behavior.\"",
+      "\"You can run. It's cardiovascular exercise for both of us.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Tier 4 executive offers Ximena Sjostrom-Kwarteng a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "A crew member from Ximena Sjostrom-Kwarteng's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A corporate black site Ximena Sjostrom-Kwarteng once infiltrated is being reopened, and the people inside know their face"
+  ],
+  "narrative_function": "As a bounty hunter, Ximena Sjostrom-Kwarteng embodies the tension between independence and isolation. They are a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Cortical bomb (employer installed, removed by street doc, scar tissue remains). Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Unaffiliated — too volatile for permanent crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 4
+      },
+      "agility": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 5
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 5
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 5
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 8
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 4
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 5
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 4
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 6
+      },
+      "deception": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 6
+      },
+      "empathy": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 8
+      }
+    },
+    "personality": {
+      "aggression": 0.72,
+      "caution": 0.96,
+      "loyalty": 0.68,
+      "greed": 0.39,
+      "empathy": 0.43
+    },
+    "drives": [
+      "loyalty",
+      "protection",
+      "power"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 8,
+      "loyalty_break": 9
+    },
+    "strengths": [
+      "intimidating physical presence",
+      "expert marksman"
+    ],
+    "weaknesses": [
+      "old injury that flares under specific conditions",
+      "physical limitation from incomplete augmentation",
+      "substance dependency — functional but fragile"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "bounty hunter",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always verifies target identity independently before lethal contracts",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Refuses contracts that require operating inside The Spires — too much surveillance"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Presents as emotionless professional but is deeply affected by collateral damage",
+      "Values loyalty intensely but has betrayed someone in the past to survive"
+    ],
+    "habits": [
+      "Checks exits within 10 seconds of entering any room",
+      "Practices a kata or fighting form every morning regardless of circumstances",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore"
+    ],
+    "breaking_points": [
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
+      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture",
+      "Running out of options — no contacts, no money, no safe house, no way out"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+      "replaces": ""
+    },
+    {
+      "name": "Bioware adrenaline regulator",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Tactician": 0.7,
+    "Ambusher": 0.7,
+    "Grudge Holder": 0.7,
+    "Pragmatist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

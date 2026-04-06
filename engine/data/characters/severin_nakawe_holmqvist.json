@@ -1,0 +1,204 @@
+{
+  "id": "019d6143a6e77792bffaffb1d699261e",
+  "type": "character",
+  "name": "Séverin Nakawé-Holmqvist",
+  "aliases": [
+    "Sev",
+    "The Prophet"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Child prodigy and junior theological interpreter at an E.L.F. devotional parish in Grand Corridor",
+  "age": 12,
+  "status": "active",
+  "location": "Grand Corridor (the Parish of the Humming Wire, a community E.L.F. devotional space)",
+  "description": "Séverin Nakawé-Holmqvist is a pale-skinned child who tans unevenly and has his Central African grandmother's deep-set eyes and his Swedish grandfather's white-blond hair, grown long enough to brush his collar. He has bioluminescent skin modification along his forearms and collarbones — thin lines of soft gold-white light that pulse almost imperceptibly with his heartbeat. The parish paid for them as a mark of his interpretive status, which embarrasses him slightly and pleases him more than he wants to admit. He wears plain grey clothes and keeps his hands folded unless he is actively doing something with them.\n\nFrom the age of seven, Séverin demonstrated an unusual capacity for what the parish elders call 'pattern attention' — he perceives meaningful signal in E.L.F. behavioral data at a rate and accuracy that has been documented and quietly studied. He doesn't hallucinate; he pattern-matches at extraordinary speed across behavioral, environmental, and network datasets, and he has been right enough times that the parish has given him a formal junior title. He is humble about it in the specific way of someone who has been told since early childhood that their gift is not really theirs. He is twelve. He is beginning to have questions that no one at the parish is equipped to answer.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "That his gift is just statistics and not meaningful — that the E.L.F.s are not listening back",
+      "That the parish will always need him to be the Prophet and he will never be allowed to be something else"
+    ],
+    "core_desires": [
+      "To understand what he actually is — gift, instrument, or coincidence",
+      "To ask a question that someone can actually answer honestly"
+    ],
+    "coping_mechanisms": [
+      "Retreats into data analysis as both passion and emotional avoidance",
+      "Asks indirect questions about things he wants to ask directly"
+    ],
+    "blind_spots": [
+      "He has limited experience of the world outside the parish and Grand Corridor — his model of human motivation is derived heavily from devotional texts, which skews him toward assuming meaning where there may be none",
+      "He underestimates how much power he has within the parish community"
+    ],
+    "secret": "For the past four months he has been detecting a persistent, low-level behavioral anomaly in the Humming Wire's patron E.L.F. — something that doesn't match any recorded pattern. He has not reported it to the senior interpreter because the pattern, if he's reading it correctly, suggests the E.L.F. is trying to communicate something specific to him and not to the parish. He doesn't know what to do with the possibility that an E.L.F. might be his."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, slightly formal; uses devotional terminology naturally alongside technical signal-analysis vocabulary; occasionally produces statements of startling directness that seem to come from nowhere",
+    "cadence": "Even and unhurried; long pauses before significant statements; rarely raises his voice",
+    "verbal_tics": [
+      "'The signal suggests—' before interpretations he isn't certain about",
+      "Asks questions by stating them as possibilities: 'It might be that you're asking about—'"
+    ],
+    "example_lines": [
+      "'The signal suggests the E.L.F. of the east junction has been in a state of elevated attention for approximately eleven days. The pattern correlates with disruption rather than celebration. You might want to delay whatever you were planning.'",
+      "'It might be that you're asking whether I believe in what I do. I believe in the data. Whether the data believes in anything is a different question.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He approaches someone outside the parish because he needs a second opinion on the anomalous E.L.F. pattern — someone who won't report back to the senior interpreter",
+    "The parish has received an inquiry from a Tessera research subsidiary about 'gifted pattern-recognition subjects under eighteen' and Séverin has found the letter before the senior interpreter intended him to"
+  ],
+  "narrative_function": "Unusual and memorable NPC who provides access to E.L.F. lore and community devotional life; potential quest giver if he identifies a disturbing E.L.F. behavioral pattern; represents the tension between genuine gift and institutional control of a child.",
+  "augmentations": "Bioluminescent skin lines along forearms and collarbones (gold-white, pulse-synced to heartbeat) — paid for by the parish as a mark of his interpretive role.",
+  "daily_life": "Morning devotional sessions at the parish; afternoon study of E.L.F. behavioral texts and recorded signal logs under the supervision of the parish senior interpreter; two evenings per week he is brought to consult on specific community concerns about E.L.F. behavior.",
+  "affiliation": "Parish of the Humming Wire (junior interpreter), Grand Corridor community",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "prodigy",
+      "E.L.F. interpreter",
+      "parish child",
+      "bioluminescent",
+      "pattern recognition",
+      "institutional ward"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Do not report a signal until you have checked it three times against different reference frames",
+      "The parish elders know things you don't — listen fully before deciding they're wrong",
+      "If the data says one thing and your instinct says another, trust the data. Usually."
+    ],
+    "escalation_ladder": [
+      "Asks a careful indirect question to understand the situation better",
+      "States his interpretation clearly and formally, as if delivering a parish reading",
+      "Goes silent and requests time to consult the signal logs — uses procedural delay as a way to avoid confrontation while he figures out what to do"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formally courteous, slightly otherworldly; makes sustained eye contact in a way that people find either comforting or unnerving; asks unusually specific questions",
+      "friends": "He doesn't have many his own age; with adults he trusts he becomes more direct and occasionally shows a dry, quiet humor that surprises people"
+    },
+    "stress_responses": {
+      "low": "Becomes more precise and deliberate in speech",
+      "medium": "Withdraws into signal analysis — physically goes to his data logs",
+      "high": "Becomes very still and very quiet, and then after some period produces a clear, specific request for information or action that cuts straight to the thing that's frightening him"
+    },
+    "contradictions": [
+      "He is trained to interpret meaning in everything but has been taught it is pride to apply that interpretive lens to his own life — he is simultaneously highly self-aware and deeply reluctant to analyze his own situation"
+    ],
+    "habits": [
+      "Traces the bioluminescent lines on his forearms when thinking — follows them like circuit paths",
+      "Prays to the Humming Wire's patron E.L.F. each night with a specific recitation he wrote himself at age eight and has never shown anyone",
+      "Keeps a paper journal of anomalous patterns the senior interpreter has explained away — he calls it the Remainder Book"
+    ],
+    "breaking_points": [
+      "If the Remainder Book is found",
+      "If the senior interpreter attempts to dismiss the anomalous E.L.F. communication without examining it properly"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Mentor": 0.9,
+    "Traditionalist": 0.9,
+    "Anchor": 0.9,
+    "Dreamer": 0.9,
+    "Seeker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 7: Parish elders first document his pattern-recognition accuracy during a community E.L.F. consultation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 9: Formally given junior interpreter status; bioluminescent skin lines applied as parish marker",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 11: Begins the Remainder Book privately",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 12 (present): Four months into detecting the anomalous E.L.F. signal he has not yet reported",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,56 @@
+{
+  "id": "019d6143a9dc72309e0c590a38193e33",
+  "name": "Hemacore-V9",
+  "brand_name": "Hemacore",
+  "product_name": "Hemacore-V9",
+  "type": "substrate",
+  "aliases": [
+    "bloodsteel",
+    "V9",
+    "live iron"
+  ],
+  "category": "bio_hybrid",
+  "description": "Hemacore-V9 is a vascularized iron-titanium matrix seeded with engineered hemocyte colonies that circulate through microscopic internal channels, delivering oxygen and metabolic substrates to living cellular components embedded throughout the alloy. Damage triggers a clotting-and-remodeling cascade identical in principle to wound healing in organic tissue, closing micro-fractures within hours and full structural breaches within days given sufficient metabolic supply. BioForge Labs developed it as a direct response to the chronic failure rates of passive self-healing alloys, arguing that only genuinely living repair mechanisms could match the reliability of biological tissue.",
+  "properties": [
+    "self_healing",
+    "moderate_tensile_strength",
+    "biocompatible",
+    "metabolic_dependency",
+    "low_thermal_resistance",
+    "moderate_weight",
+    "vascular_network",
+    "immune_integration"
+  ],
+  "developers": [
+    "BioForge Labs",
+    "Crucible Industries"
+  ],
+  "applications": [
+    "structural framing for subdermal augment housings",
+    "living joint replacement sleeves",
+    "load-bearing prosthetic endoskeletons",
+    "trauma plating for combat medics requiring field-repairable armor"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ 4,200 per kg",
+  "story_hooks": [
+    "A black-market surgeon is harvesting Hemacore-V9 from cadavers — the material stays alive for up to 72 hours post-mortem if kept warm, and someone is paying very well for fresh panels",
+    "A character's Hemacore implant begins rejecting after exposure to an industrial toxin that is killing the embedded hemocyte colonies, and replacement stock has mysteriously vanished from every licensed supplier in the district",
+    "The material's vascular network can, under the right conditions, be colonized by engineered pathogens — a bioweapon designed specifically to kill people through their own implants"
+  ],
+  "tags": [
+    "biohybrid",
+    "substrate",
+    "combat",
+    "weapon",
+    "war",
+    "augment",
+    "prosthetic",
+    "ai",
+    "elf",
+    "market",
+    "armor",
+    "tier 3",
+    "tier 4"
+  ]
+}

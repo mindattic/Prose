@@ -1,0 +1,61 @@
+{
+  "id": "019d6143ab227731af6824abc11d2cd8",
+  "name": "Dermal Induction Flayer DIF-2 'Saltwater'",
+  "type": "weapon",
+  "aliases": [
+    "Saltwater",
+    "The Peel",
+    "Skinwriter"
+  ],
+  "category": "exotic",
+  "description": "The DIF-2 exploits the electrochemical conductivity differential between the outer epidermal layer and the subdermal tissue beneath it. By projecting a modulated galvanic induction field tuned specifically to the resistivity of keratin and melanin-dense skin cells, the Flayer induces rapid, uncontrolled ion migration across the dermal barrier — effectively causing the outer skin layer to experience electrochemical dissolution while deeper tissue remains unaffected. The result is an intensely painful surface-level effect that produces the sensation of being flayed alive without immediately life-threatening damage. Extended exposure causes genuine dermal separation.\n\nHelix Biosystems developed the DIF-2 originally as a dermatological instrument for accelerated wound debridement in field surgery — removing necrotic tissue via targeted induction rather than physical scraping. The weaponized variant was a modification that required minimal engineering effort: simply increasing field intensity and broadening the emission cone from surgical precision to area coverage. The weapon's emitter looks almost identical to a medical debridement wand, a fact that has been exploited extensively for smuggling.\n\nAt non-lethal settings the DIF-2 is one of the most effective interrogation and compliance tools available — subjects describe the sensation as fire being poured under their skin, and the psychological impact of watching their own skin begin to separate is significant even before serious physiological damage occurs. At maximum output sustained for more than four seconds, tissue damage becomes permanent and potentially fatal through shock and infection exposure.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Galvanic induction field projection",
+    "Electrochemical ion migration",
+    "Dermal conductivity differential targeting"
+  ],
+  "specifications": "effective range: Contact to 6 meters (cone emission)\nemission cone: 45 degrees at maximum spread\npower source: Helix BioCell Mk.2 (continuous 90-second operation per cell)\nweight: 0.9 kg\nlength: 34 cm (wand form factor)\nintensity settings: Variable dial, 1–10\nmedical certification: Carries forged Helix Biosystems surgical instrument certification\nthermal signature: Negligible — passes most scanner profiles as medical equipment",
+  "tactical_use": "The DIF-2 is primarily a compliance and interrogation weapon rather than a combat tool. Enforcement operators use it at low settings to rapidly clear confined spaces — the effect is too overwhelming for most subjects to push through. In interrogation contexts it is valued for leaving minimal lasting evidence at low settings while being psychologically catastrophic. Combat-trained operators occasionally use it as a close-range deterrent, sweeping the cone across a group to break formation.",
+  "cultural_context": "The DIF-2 occupies a specific place in Meridian 88's underground economy: it is the weapon most associated with private detention facilities, corporate black sites, and the interrogation wings of organized crime operations. Its medical origins give it a veneer of clinical detachment that many users find either reassuring or deeply disturbing depending on their perspective. Street medics who discover a DIF-2 in a patient's belongings know to ask very careful questions about where that patient has been.",
+  "known_users": [
+    "Corporate black site interrogators",
+    "Private security contractors specializing in asset recovery",
+    "Helix Biosystems internal compliance division (officially denied)",
+    "Underground debt enforcement operators"
+  ],
+  "story_hooks": [
+    "A street medic treating a patient with unusual dermal injuries recognizes them as DIF-2 exposure — the patient claims they've never been detained.",
+    "The party recovers a shipment of what appears to be Helix surgical equipment; half the 'debridement wands' are DIF-2s with the intensity limiters removed.",
+    "A whistleblower from a corporate black site wants to expose DIF-2 use but needs the party to retrieve physical evidence before it's sanitized.",
+    "Someone is using a DIF-2 at maximum setting as a murder weapon, targeting people with specific dermal augmentations — the conductivity differential is even more extreme in modded skin."
+  ],
+  "ammunition_type": [
+    "Helix Biosystems Compact Power Cell HB-3"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "combat",
+    "crime",
+    "augment",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "debt",
+    "medical",
+    "surgery",
+    "clinic",
+    "pain",
+    "market",
+    "bar",
+    "rain",
+    "train",
+    "fire",
+    "water"
+  ]
+}

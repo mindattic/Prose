@@ -1,0 +1,66 @@
+{
+  "id": "019d6143a8627c4cb2e6479706ec676e",
+  "name": "Ouroboros Energy Radiant Null Beacon",
+  "brand_name": "Ouroboros",
+  "product_name": "Ouroboros Energy Radiant Null Beacon",
+  "type": "equipment",
+  "aliases": [
+    "The Silence Egg",
+    "Null Pulse",
+    "Dead Star"
+  ],
+  "category": "comms",
+  "description": "The Radiant Null Beacon operates on a principle of controlled electromagnetic contradiction — it broadcasts a precisely tuned counter-signal across seventeen frequency bands simultaneously, creating a localized zone of communicative silence that reads to external scanners not as jamming but as natural dead air. At its core is a micro-fusion cell borrowed from Ouroboros Energy's industrial power regulation line, repurposed to sustain the counter-broadcast for up to seventy-two hours without recharge. The device is roughly the size of a flattened grenade and is typically magnetic-mounted to structural surfaces or dropped into ventilation systems.\n\nWhat distinguishes the Null Beacon from conventional jammers is its 'ghost signature' emulation layer — rather than creating a detectable wall of interference, it mimics the electromagnetic profile of an inactive urban node, making it nearly invisible to passive sweeps. This was originally developed for Ouroboros's pipeline survey teams operating in contested territories, where communications blackouts needed to appear organic rather than tactical. The result is a device that is terrifyingly effective at concealing coordinated action under the cover of apparent silence.\n\nThe Null Beacon has become a fixture in the toolkit of extraction teams, political dissidents, and anyone who needs a meeting to stay off the record. Corporate security divisions have developed specific counter-protocols for detecting them, but the cat-and-mouse cycle of firmware updates keeps the Beacon one step ahead in most civilian environments. Owning one without licensing paperwork is a prosecutable offense in six of Meridian 88's administrative districts.",
+  "manufacturer": "OUROBOROS ENERGY",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Counter-signal broadcasting",
+    "Ghost signature emulation",
+    "Micro-fusion cell regulation",
+    "Passive sweep evasion",
+    "Multi-band frequency suppression"
+  ],
+  "specifications": {
+    "dimensions": "11cm x 7cm x 4cm oblate form factor",
+    "weight": "340g",
+    "suppression_radius": "18–40 meters adjustable",
+    "frequency_coverage": "17 bands across 400MHz–28GHz",
+    "battery_life": "72 hours continuous at standard output",
+    "activation_method": "Proximity trigger, manual toggle, or remote detonation fob",
+    "detection_resistance": "Rated against Tier 1–3 passive sweep systems",
+    "mounting": "Integrated neodymium magnetic base, optional adhesive saddle"
+  },
+  "tactical_use": "Deployed prior to sensitive meetings, extractions, or ambushes where comm silence is required without alerting surveillance infrastructure. Teams typically place multiple units to overlap suppression radii, ensuring no gaps. The device's ghost signature makes it preferable to conventional jammers when stealth is paramount — a hard jam announces itself; a Null Beacon simply makes a neighborhood go quiet.",
+  "cultural_context": "In Meridian 88's lower districts, possession of a Null Beacon is an unspoken signal of serious intent. Street-level fixers who carry them are understood to operate in spaces where corporate oversight cannot follow. Among mid-tier corporate employees, they're a nervous status symbol — proof that someone has meetings worth hiding. Ouroboros Energy officially sells them only to licensed survey and infrastructure contractors, but the gray market is flooded with units that have had their serial burns chemically stripped.",
+  "known_users": [
+    "Pipeline extraction crews",
+    "Political cell organizers",
+    "Mid-tier corporate whistleblowers",
+    "Fixer Marisol Vente",
+    "Ouroboros Energy field surveyors",
+    "Black-site negotiators"
+  ],
+  "story_hooks": [
+    "A Null Beacon activates in a residential block with no obvious source — someone is having a meeting that half of Meridian 88's factions want to know about.",
+    "A licensed Null Beacon is found at a murder scene, its serial traced back to an Ouroboros Energy survey team that officially disbanded three years ago.",
+    "The players are hired to retrieve a Beacon that contains a ghost-signature profile so sophisticated it can fool Tier 5 corporate sweep systems — something that should not exist in a consumer device.",
+    "A dissident group has been using Null Beacons to coordinate across the city, but someone is slowly updating the counter-protocols to expose them — and they want to know who."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "war",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "control",
+    "power",
+    "market",
+    "stealth",
+    "energy",
+    "tier 2"
+  ]
+}

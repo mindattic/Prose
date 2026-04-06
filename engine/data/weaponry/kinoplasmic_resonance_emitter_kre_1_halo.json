@@ -1,0 +1,56 @@
+{
+  "id": "019d6143ab30710bb8df9a27df6fd159",
+  "name": "Kinoplasmic Resonance Emitter KRE-1 'Halo'",
+  "type": "weapon",
+  "aliases": [
+    "The Halo",
+    "Crown",
+    "Nimbus"
+  ],
+  "category": "energy",
+  "description": "The KRE-1 generates a toroidal field of kinoplasmic resonance — a phenomenon in which a sustained electromagnetic standing wave is shaped into a stable ring geometry by a superconducting coil array within the weapon's emitter head. This ring, roughly 90cm in diameter at standard calibration, propagates forward from the muzzle at approximately 180 meters per second and maintains its toroidal form for up to 22 meters before dissipating. Any matter intersecting the ring's plane during propagation is subjected to a violent shearing force as the standing wave collapses against it, transferring its entire energy load into the intersection point as a circular laceration.\n\nThe Halo's visual signature is unmistakable: the toroidal field is faintly luminescent in the violet-ultraviolet range, producing a glowing ring that hangs in the air for a fraction of a second before impact. This visibility is both a tactical liability and the source of the weapon's cultural identity — in Meridian 88's underground combat aesthetics, being killed by a Halo is considered a particularly dramatic exit. The ring's geometry means it can theoretically pass through cover — a Halo fired through a window opening will maintain coherence and deliver its energy to whatever occupies the ring's plane on the other side, provided the opening is larger than the ring diameter.\n\nTessera Corponation designed the KRE-1 for breach and clear operations, where the ability to deliver a cutting force through a doorway or window without exposing the operator to return fire has obvious value. The weapon is heavy and requires a two-second charge cycle between discharges, limiting its rate of fire significantly, but each shot's damage potential is severe — the circular shearing pattern severs limbs and penetrates vehicle windows with equal effectiveness.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Military only",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Toroidal electromagnetic field geometry",
+    "Kinoplasmic standing wave generation",
+    "Superconducting coil resonance"
+  ],
+  "specifications": "ring diameter: 90cm standard; 60–120cm adjustable\npropagation velocity: 180 m/s\nmaximum range: 22m before dissipation\nluminescence: Violet-UV, 380–420nm\ncharge cycle: 2.1 seconds between shots\npower cell: Tessera TC-20 superconducting cell, 12 discharges\nweight: 8.4kg\ndimensions: 78cm length, 31cm width at emitter head\ncover penetration: Passes through openings larger than ring diameter intact",
+  "tactical_use": "KRE-1 operators work in two-person teams: one operator handles the heavy weapon while a partner manages target acquisition and cover. The standard tactic is indirect fire — the operator positions outside a structure and fires through openings, delivering the Halo to interior targets without breaching. The ring diameter can be reduced to 60cm for narrow apertures, though this increases the energy concentration and correspondingly the damage at impact. The 2.1-second charge cycle means the weapon is never used as a primary firearm; operators carry sidearms for immediate threats.",
+  "cultural_context": "The KRE-1's prohibited status means it exists almost exclusively in military and paramilitary hands. Within military culture in Meridian 88, the Halo carries a reputation as an executioner's weapon — precise, deliberate, theatrical. Stories of Halos used in high-profile political assassinations are a staple of conspiracy culture, and the violet ring has become a symbol in underground media representing state violence and corporate enforcement. Anti-corporate graffiti frequently depicts the glowing ring. Among soldiers who have used the weapon in combat, there is a marked tendency toward either pride or deep discomfort — it does not produce indifferent reactions.",
+  "known_users": [
+    "Tessera Corponation special operations units",
+    "Government black-site enforcement teams",
+    "Military breach and clear specialists",
+    "Underground resistance groups (captured units)",
+    "High-tier mercenary companies with military contracts"
+  ],
+  "story_hooks": [
+    "A KRE-1 is used to assassinate a mid-district labor organizer — a target with no obvious military significance. The choice of weapon feels like a message. Someone wanted the death to look like official enforcement even if it wasn't.",
+    "A Tessera Corponation logistics manifest surfaces on the black market listing 40 KRE-1 units shipped to a destination that doesn't exist in any official registry. A fixer wants to know where those weapons actually went.",
+    "An operator who used the KRE-1 extensively during a corporate conflict is experiencing recurring nightmares of violet rings. A street-level psychtech thinks the superconducting coil's magnetic field may have caused subtle neural damage — and that Tessera knows."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "energy",
+    "weapon",
+    "violence",
+    "combat",
+    "war",
+    "death",
+    "identity",
+    "neural",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "market",
+    "night",
+    "vehicle",
+    "fire"
+  ]
+}

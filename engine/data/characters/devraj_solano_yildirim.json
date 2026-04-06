@@ -1,0 +1,230 @@
+{
+  "id": "019d6143a5f170b29624c3c375aa74d1",
+  "type": "character",
+  "name": "Devraj Solano-Yildirim",
+  "aliases": [
+    "Dev",
+    "Grease"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Mobile mechanic — operates a converted cargo trike, does roadside and residential vehicle repair",
+  "age": 29,
+  "status": "active",
+  "location": "Geartown, working routes through Kessler Interchange and Dearborn Forge",
+  "description": "Dev is lean and wire-strung, with warm brown skin perpetually stained at the knuckles with synthetic lubricant that no solvent fully removes. He has geneware cat ears — mottled amber and black, twitching with genuine involuntary response to sound — that he got at nineteen on a payment plan he took three years to finish. His dark eyes have patterned irises in a sunburst of gold and deep green, a cosmetic mod he received free from a friend who owed him labor. He keeps his hair close-cropped except for a single braid at the back held with a copper fitting.\n\nDev is relentlessly cheerful in a way that reads as either genuine warmth or a very good performance, and the truth is somewhere in between. He talks to every vehicle he works on, whispering diagnoses and apologies and thanks, and he half-believes the E.L.F.s that inhabit older engines can hear him. He runs on stimulant tea and spite, fiercely proud of his independence, and quietly terrified of what happens if the trike breaks down and he can't afford the parts.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.65,
+      "shadow": 0.35,
+      "mask": 0.6,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "losing the trike and with it his independence and identity",
+      "being absorbed into a corponation's employment system"
+    ],
+    "core_desires": [
+      "to own a permanent shop with his name on it",
+      "to be genuinely known by someone, not just liked"
+    ],
+    "coping_mechanisms": [
+      "compulsive cheerfulness as social armor",
+      "talking to machines as a substitute for intimacy"
+    ],
+    "blind_spots": [
+      "mistakes being useful to people for being close to them"
+    ],
+    "secret": "The trike isn't registered under his name — it's still legally owned by a dead man, a former mentor whose death Dev never reported because it would have triggered a debt transfer. He's been operating on forged plates for four years."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast and colloquial, heavy with Geartown mechanical slang and Tamil endearments absorbed from his mother. Gives machines pronouns and personalities.",
+    "cadence": "Rapid-fire when comfortable, chattiness as a social weapon. Slows dramatically when he's actually thinking.",
+    "verbal_tics": [
+      "calls engines and vehicles 'her' regardless of make",
+      "'She just needs to be heard, yeah?'"
+    ],
+    "example_lines": [
+      "'Okay so here is the thing — she is not broken, she is insulted. You ran her on cut-rate coolant. That is a personal offense.'",
+      "'I can have it done by second bell. Maybe third bell. Definitely before dark. Probably.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He serviced a vehicle that came in with biological material in the undercarriage that he cleaned out without thinking — he now suspects he destroyed evidence of something serious",
+    "A Ferrogate Transit supervisor has been pressuring him to report on the movements of independent operators in exchange for legitimate subcontract status — he hasn't said yes or no yet"
+  ],
+  "narrative_function": "Mobile information source — he sees everything from street level across multiple districts. Potential transport fixer, someone who can get a vehicle running quietly and ask no questions. Represents the precarity of gig-tier independence.",
+  "augmentations": "Geneware cat ears (amber/black, functional sound sensitivity). Patterned irises (sunburst, cosmetic). Haptic feedback gloves — not implanted, worn — that translate micro-vibrations in metal into tactile data.",
+  "daily_life": "Loads the trike by 06:30, runs a fixed morning route through Kessler Interchange hitting fleet clients, then freelances through Geartown and Dearborn Forge until dark. Eats whatever cart food he passes.",
+  "affiliation": "Independent; occasional subcontract work for Ferrogate Transit maintenance overflow",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 8,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "mobile worker",
+      "street-level intelligence",
+      "gig economy",
+      "charming deflector",
+      "E.L.F. sympathizer"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always finish a job once started — abandoning work feels like a death",
+      "Never work on vehicles for anyone who makes him feel watched"
+    ],
+    "escalation_ladder": [
+      "Joke his way past discomfort",
+      "Get busy with tools and go quiet",
+      "Invent a prior commitment and leave",
+      "Run"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and helpful — uses friendliness to control the interaction",
+      "friends": "Inconsistently available, generous with labor but withholding emotionally"
+    },
+    "stress_responses": {
+      "low": "Talks more and faster",
+      "medium": "Focuses entirely on physical task at hand, becomes briefly brilliant",
+      "high": "Disappears — literally drives away and doesn't answer comms"
+    },
+    "contradictions": [
+      "Craves genuine connection but keeps every relationship transactional so it can be ended cleanly"
+    ],
+    "habits": [
+      "Taps three times on any engine before starting it — an offering gesture to whatever E.L.F. might be resident",
+      "Hums tunelessly while working, stops immediately if he notices someone listening"
+    ],
+    "breaking_points": [
+      "Threat to the trike or his operating license",
+      "Being caught in the dead man's registration fraud"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Geneware cat ears (cosmetic-functional)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware cat ears (cosmetic-functional)",
+      "replaces": ""
+    },
+    {
+      "name": "Patterned irises (cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Patterned irises (cosmetic)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9,
+    "Opportunist": 0.9,
+    "Face": 0.9,
+    "Judge": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2171 — Born in Geartown to a Tamil-Turkish family, father a fleet mechanic",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2187 — Began apprenticing under independent mechanic Osei Varma-Delic",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2193 — Osei Varma-Delic dies; Dev conceals death and assumes trike operation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2196 — Began occasional Ferrogate subcontract overflow work",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — Ferrogate supervisor begins applying pressure for information",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

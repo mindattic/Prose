@@ -1,0 +1,52 @@
+{
+  "id": "019d6143a9e0755095fd7cd1bc8894e8",
+  "name": "Nexphase-MR",
+  "brand_name": "Nexphase",
+  "product_name": "Nexphase-MR",
+  "type": "substrate",
+  "aliases": [
+    "Nexphase",
+    "morph-resin",
+    "MR gel"
+  ],
+  "category": "smart_material",
+  "description": "A BioForge Labs SNT-integrated shape-memory polymer network that uses embedded SNT signaling proteins as the trigger mechanism rather than heat or electricity, allowing the material to respond directly to biochemical signals from adjacent living tissue. Nexphase-MR is fabricated as a gel-infiltrated foam that sets to a neutral shape, then can be reprogrammed by exposure to a specific enzymatic key sequence — making it uniquely suited to implants and prosthetics that adapt to the wearer's physiology over time. Unauthorized reprogramming is theoretically possible with the right biochemical toolkit.",
+  "properties": [
+    "shape_memory",
+    "biochemically_triggered",
+    "SNT_integrated",
+    "biocompatible",
+    "soft_tissue_compliant",
+    "slow_response_30_to_300_seconds",
+    "enzymatic_key_locked"
+  ],
+  "developers": [
+    "BioForge Labs"
+  ],
+  "applications": [
+    "adaptive prosthetic sockets",
+    "internal surgical scaffolding",
+    "SNT-interface cushioning layers",
+    "bespoke orthotic inserts",
+    "classified bioweapon delivery research"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ 4,200 per kg",
+  "story_hooks": [
+    "A patient's Nexphase-MR implant has begun changing shape without any programmed trigger — something in their altered biochemistry is sending signals the material was never designed to receive.",
+    "A street-level biohacker claims to have synthesized the enzymatic key for a specific batch of Nexphase-MR — they're selling the ability to reprogram anyone's adaptive implants remotely.",
+    "Nexphase-MR components are missing from a BioForge Labs shipment manifest, and the classified applications column of the material's research file has been redacted by someone with Spire-level clearance."
+  ],
+  "tags": [
+    "smartmaterial",
+    "substrate",
+    "weapon",
+    "gun",
+    "memory",
+    "prosthetic",
+    "ai",
+    "spire",
+    "tier 3",
+    "tier 4"
+  ]
+}

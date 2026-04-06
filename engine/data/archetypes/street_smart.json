@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5957ff6829467e4b13f4762",
+  "name": "Street Smart",
+  "type": "archetype",
+  "category": "intellectual",
+  "description": "Knows how the real world works",
+  "behavioral_signature": "Reads situations, people, and streets",
+  "under_stress": "Instincts sharpen, book knowledge drops",
+  "at_rest": "Navigating, dealing, surviving",
+  "will_always": [
+    "read the situation"
+  ],
+  "will_never": [
+    "ignore practical reality for theory"
+  ],
+  "unless": [
+    "the street rules don't apply in this context"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Gut Instinct",
+      "threshold": 0.7,
+      "context": "practical intelligence"
+    },
+    {
+      "archetype": "Quick Study",
+      "threshold": 0.65,
+      "context": "adaptive learning"
+    }
+  ],
+  "opposite_of": [
+    "Book Smart"
+  ],
+  "tags": [
+    "practical",
+    "experienced"
+  ]
+}

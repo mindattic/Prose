@@ -1,0 +1,55 @@
+{
+  "id": "019d6143a9e672c2b9eba96a25a100ce",
+  "name": "Vantablack-CNX",
+  "brand_name": "Vantablack",
+  "product_name": "Vantablack-CNX",
+  "type": "substrate",
+  "aliases": [
+    "CNX black",
+    "void coat",
+    "the black"
+  ],
+  "category": "nano_material",
+  "description": "Vantablack-CNX is a vertically-aligned carbon nanotube array coating material produced by Apex Nanofabrication, grown directly onto substrate surfaces via a catalytic CVD process to create a forest of aligned tubes that traps 99.97% of incident light across visible, near-infrared, and radar wavelengths through multiple internal reflections between tube walls. Unlike its historical predecessors, the CNX formulation has been ruggedized — the tube array survives handling, thermal cycling, and moderate abrasion through a sparse polymer infill that stabilizes the array without significantly reducing absorption. It is simultaneously the most visually striking and the most militarily sensitive material in routine commercial production.",
+  "properties": [
+    "ultra_low_reflectance",
+    "radar_absorbing",
+    "thermal_IR_absorbing",
+    "lightweight",
+    "thin_film",
+    "thermally_stable",
+    "electrically_insulating",
+    "broad_spectrum_absorption"
+  ],
+  "developers": [
+    "Apex Nanofabrication"
+  ],
+  "applications": [
+    "optical instrument stray-light suppression",
+    "stealth vehicle coating systems",
+    "sensor calibration targets",
+    "military drone and aircraft surfaces",
+    "telescope baffle coatings",
+    "thermal signature reduction panels",
+    "covert surveillance equipment housings"
+  ],
+  "tier_availability": "Military only",
+  "cost": "Φ 22,000 per square meter (civilian research grade); military pricing classified",
+  "story_hooks": [
+    "Vantablack-CNX is tightly export-controlled and theoretically unavailable to civilian operators — yet someone has coated an entire vehicle with it and is operating in the Shelf district, invisible to every optical and radar sensor the city has.",
+    "A researcher at Apex Nanofabrication has found a way to deposit Vantablack-CNX on flexible substrates — creating a wearable coating that makes the wearer effectively invisible to surveillance systems. The research has disappeared along with the researcher.",
+    "A shipment of Vantablack-CNX panels listed as 'optical calibration equipment' has been cleared through civilian customs — someone with serious connections is moving military-grade stealth materials into private hands."
+  ],
+  "tags": [
+    "nanomaterial",
+    "substrate",
+    "ai",
+    "elf",
+    "surveillance",
+    "control",
+    "vehicle",
+    "stealth",
+    "drone",
+    "shelf"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "019d6143a8527b2e9194597e22977bd7",
+  "name": "Arcturus Defense Solutions Signal Jammer Grenade SJG-3",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions Signal Jammer Grenade SJG-3",
+  "type": "equipment",
+  "aliases": [
+    "SJG-3",
+    "Comm Kill",
+    "Static Bomb",
+    "Dead Air"
+  ],
+  "category": "electronic_warfare",
+  "description": "A throwable device that emits a powerful broadband electromagnetic jamming signal in a 30-meter radius for 5 minutes, disrupting all wireless communications, sensor systems, and neural interface external connections within range. The SJG-3 is used for tactical communications denial — thrown into an area before an assault to prevent defenders from calling for reinforcements or coordinating response. The jamming signal is powerful enough to disrupt hardened military communications and causes painful interference in neural interfaces, which most users experience as a sudden, overwhelming burst of static in their augmented senses.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — military and authorized operations",
+  "base_technologies": [],
+  "specifications": {
+    "jamming radius": "30 meters",
+    "duration": "5 minutes",
+    "frequency coverage": "100 kHz to 60 GHz — total broadband",
+    "effect on comms": "Complete wireless denial",
+    "effect on neural interface": "Painful static interference",
+    "info": "temporary sensory disruption; 2-second delay",
+    "effect on sensors": "Blinding of all electronic sensor systems",
+    "weight": "0.25 kg",
+    "activation": "Pin-pull",
+    "power": "Single-use capacitor discharge"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "Three SJG-3 grenades were detonated simultaneously in a Tier 3 commercial district, creating a 90-meter dead zone during which a precision robbery was executed — no communications in or out for five minutes.",
+    "A modified SJG-3 has been developed that specifically targets neural interface frequencies while leaving other communications functional — it incapacitates augmented personnel while unaugmented attackers remain unaffected."
+  ],
+  "tags": [
+    "electronicwarfare",
+    "equipment",
+    "war",
+    "augment",
+    "neural",
+    "ai",
+    "power",
+    "pain",
+    "tier 3"
+  ]
+}

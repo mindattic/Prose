@@ -1,0 +1,97 @@
+{
+  "id": "019d6143a92a78c7a730ad85d55207c0",
+  "type": "place",
+  "name": "Norwood Quiet",
+  "aliases": [
+    "Norwood Park",
+    "The Quiet",
+    "Bungalow Belt",
+    "The Sleep"
+  ],
+  "description": "Norwood Quiet is the neighborhood that decided the best response to the end of the world was to pretend it hadn't happened. The old Norwood Park — Chicago's historic bungalow district, with its arts-and-crafts homes and tree-lined streets — has achieved something that shouldn't be possible in Meridian 88: it looks almost exactly the same as it did before the Corporate Reconstruction. The bungalows are still standing. The trees are still growing, maintained by a community arborist program that's been running for forty years. The streets are still quiet. And the residents — predominantly elderly, predominantly long-tenured, predominantly determined — maintain their neighborhood with the kind of stubborn attention to detail that makes reality bend around willpower.\n\nThe trick is simple and brilliant: Norwood Quiet is boring. Strategically, intentionally, aggressively boring. There's nothing here for the corporations to want. No commercial potential, no strategic infrastructure, no exploitable population. The residential stock is pre-collapse bungalows that are historically protected under a designation the old city government issued before it ceased to exist — a designation that Axiom has never formally recognized but has also never formally challenged, because challenging it would require acknowledging that pre-corporate law has standing, which opens legal doors that Axiom's attorneys would rather keep sealed. So the bungalows persist, legally ambiguous and physically immaculate, a quiet act of civil disobedience expressed through maintained gutters and painted trim.\n\nBeneath the suburban surface, Norwood Quiet serves a function that its residents would never publicly acknowledge: it's a safe house district. The combination of minimal surveillance, boring optics, and a community that minds its own business while maintaining total awareness of who enters and leaves makes the Quiet an ideal location for people who need to disappear temporarily. Not criminals — or not exclusively criminals. Whistleblowers, corporate defectors, witnesses under threat, families fleeing Iron Lotus debts. They arrive quietly, stay in guest rooms that several bungalow owners maintain for exactly this purpose, and leave when it's safe. No records. No questions. The neighborhood watch knows who belongs and who's visiting. They don't share that information with anyone outside the community.\n\nThe Quiet's greatest vulnerability is time. The population is old and getting older. The bungalows are maintained but cannot be maintained forever. The historic protection designation exists in a legal limbo that could be resolved at any moment by a corporate attorney with a motive. The trees, real trees in real soil, are irreplaceable if they die. Norwood Quiet is a time capsule with a slowly expiring seal, and its residents know it. They maintain the houses, tend the trees, and shelter the people who need sheltering, because that's what they've always done. When the last bungalow finally falls, they want it to fall clean.",
+  "atmosphere": {
+    "sights": [
+      "Pre-collapse bungalows in maintained condition — painted, repaired, landscaped, impossible",
+      "Real trees lining real streets, their canopy creating shade that feels like a memory of the old city",
+      "Elderly residents on porches, watching the street with the calm attention of people who notice everything",
+      "No corporate signage — none. Not a single Axiom logo, holographic ad, or branded surface",
+      "Garden plots in every yard — flowers in front, vegetables in back, a pattern that hasn't changed in decades",
+      "The neighborhood watch — not visible as a patrol, but visible in the way every window has a line of sight to the street"
+    ],
+    "sounds": [
+      "Birdsong — real birds in real trees, a sound that most of Meridian has forgotten",
+      "Wind through leaves — actual rustling, not atmospheric simulation",
+      "The near-total absence of electronic noise — no drone hum, no holographic buzz, no ambient corporate audio",
+      "Lawnmowers — hand-powered, maintained like heirlooms, used on Saturday mornings as a communal ritual",
+      "Screen doors closing — the most domestic sound in Meridian, preserved here like an artifact"
+    ],
+    "smells": [
+      "Cut grass and garden soil — the authentic versions, not the engineered scents of the Palisade",
+      "Baked goods from kitchens — the Quiet's residents bake, and the smells carry on the quiet air",
+      "Old wood and paint — the bungalows have their own scent profile, preserved materials breathing in the sun",
+      "Seasonal change — Norwood Quiet is one of the few places in Meridian where you can smell autumn arriving"
+    ],
+    "feel": "Ghostly. Norwood Quiet feels like visiting a place that time forgot, or more accurately, a place that time remembers and the present has abandoned. The peace is genuine — this is a calm, safe, beautiful neighborhood. But there's an unreality to it, the sense that you've stepped out of Meridian and into a memory. The residents' determination to maintain normalcy is admirable and heartbreaking in equal measure, because normalcy is exactly what the world they live in is no longer capable of providing.",
+    "tags": []
+  },
+  "demographics": "Approximately 6,000 residents, the majority over sixty. Long-tenured families, many in the same bungalows for three generations. Predominantly Tier 1 and Tier 2. The youngest demographic in the district is the rotating population of temporary residents in the safe-house rooms, who skew younger and more desperate.",
+  "economy": "Minimal — residential maintenance, small-scale gardening, and the invisible safe-house economy. The Quiet's residents are mostly retired or working in neighboring districts. The community is self-sustaining but not productive in any way that registers on economic metrics, which is part of the strategy.",
+  "power_structure": "The Norwood Homeowners Association — the oldest continuously operating civic organization in Meridian's northwest. Authority is exercised through consensus, social norms, and the quiet understanding that the community's survival depends on collective discipline. No one person is in charge. Everyone is in charge of their own house.",
+  "dangers": [
+    "Legal challenge to the historic protection designation — if Axiom decides the bungalows are worth more as rubble, the legal defense is thin",
+    "Aging infrastructure — the bungalows and community systems need maintenance that gets harder every year",
+    "Safe-house discovery — if corporate intelligence identifies the Quiet's shelter function, the consequences would be severe",
+    "Demographic collapse — the community is aging out with insufficient replacement, and the bungalows may outlast their owners",
+    "Complacency — the Quiet's strategy of being boring only works as long as no one decides boring is interesting"
+  ],
+  "opportunities": [
+    "Disappearance — the Quiet's safe-house network is one of the most discreet in Meridian",
+    "Real nature — trees, soil, birdsong, seasonal change. Therapeutic for people who've forgotten what the outdoors used to feel like",
+    "Historical knowledge — the Quiet's elderly residents remember the old city and maintain oral histories that have been lost elsewhere",
+    "Social camouflage — no one looks for anything in Norwood Quiet, which makes it ideal for hiding things in plain sight",
+    "Community model — the Homeowners Association's governance structure is studied by people interested in alternatives to corporate control"
+  ],
+  "story_hooks": [
+    "A corporate defector with critical information about Axiom's plans for the northern districts is sheltered in the Quiet — but the corporation's search is getting closer, and the community must decide whether to protect one stranger at the risk of exposing the entire safe-house network",
+    "One of the Quiet's oldest residents dies, and the contents of her bungalow reveal a hidden archive of pre-corporate city records — including documents that prove Axiom's original incorporation was built on forged municipal approvals",
+    "Kyle needs a place to recover after a job goes wrong. The Quiet takes him in — but the community's rules require him to contribute, which means helping with the mundane maintenance that keeps the bungalows standing. It's the most human work he's done in years."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Edison Grid",
+      "Jefferson Switch",
+      "Forest Hollow",
+      "Northwestern suburban wastelands"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Long-tenured elderly residents who maintain their bungalows with religious dedication",
+    "Temporary safe-house guests — whistleblowers, defectors, families in hiding — passing through quietly",
+    "Community arborists tending the last real urban tree canopy in northwest Meridian",
+    "Researchers and historians interested in pre-collapse urban preservation",
+    "Nobody else — and the Quiet prefers it that way"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.984,
+    "lng": -87.743,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "control",
+    "power",
+    "debt",
+    "pain",
+    "survival",
+    "shelter",
+    "desperate"
+  ]
+}

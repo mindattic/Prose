@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a58077d19a7fc8cfce6c7fc0",
+  "name": "Muse",
+  "type": "archetype",
+  "category": "creative",
+  "description": "Inspires creation in others",
+  "behavioral_signature": "Their presence unlocks others' creativity",
+  "under_stress": "The inspiration becomes consuming for those around them",
+  "at_rest": "Being, existing, unknowingly inspiring",
+  "will_always": [
+    "inspire others"
+  ],
+  "will_never": [
+    "create for themselves"
+  ],
+  "unless": [
+    "being the muse traps them in someone else's story"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Nurturer",
+      "threshold": 0.6,
+      "context": "supporting others"
+    },
+    {
+      "archetype": "Dreamer",
+      "threshold": 0.6,
+      "context": "inspiring vision"
+    }
+  ],
+  "opposite_of": [
+    "Destroyer"
+  ],
+  "tags": [
+    "inspiring",
+    "passive"
+  ]
+}

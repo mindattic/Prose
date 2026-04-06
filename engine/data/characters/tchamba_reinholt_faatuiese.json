@@ -1,0 +1,218 @@
+{
+  "id": "019d6143a6ed7a94b3d1f125bc5914b5",
+  "type": "character",
+  "name": "Tchamba Reinholt-Faatuiese",
+  "aliases": [
+    "Scratch"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Subterranean scavenger and salvage dealer",
+  "age": 19,
+  "status": "active",
+  "location": "Blackpipe Corridor, operating from a stash den in an abandoned Ferrogate Transit maintenance node",
+  "description": "Tchamba is nineteen and looks both younger and older than that, in different ways — his frame is still growing into itself, rangy and not quite finished, but his face has the particular alertness of someone who has been making survival decisions since early childhood. His skin is a warm medium brown, his natural hair grown out in a loose cloud he rarely has time to tend, and he has the nervous energy of a person whose resting state is motion. His most notable feature is his hands: they are extraordinary — long-fingered, precise, covered in small new and old scars, and able to disassemble a piece of salvaged tech faster than most people can identify it. He's added retractable carbon-fiber fingertip reinforcements to protect them, his only meaningful augmentation, funded over eight months of careful saving.\n\nHe deals in salvage from the dead infrastructure of Blackpipe Corridor — cracked conduit wiring, pressure regulators, old transit sensor housings, anything that can be stripped and sold up through the guide networks to surface-level buyers or repurposed for deep-level use. He knows which tunnels have been opened by recent seismic shifts and gets there before anyone else. He is not yet cynical but he is becoming strategic, and there's a version of him three years from now that would be harder to like. Right now he still gets genuinely excited about an interesting find and will talk about it at length to anyone who will listen.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.4,
+      "id": 0.8,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being trapped alone in a collapse without anyone knowing where he is",
+      "Becoming someone who can't be excited by things anymore"
+    ],
+    "core_desires": [
+      "To find one piece of salvage important enough to buy him a different life",
+      "To be taken seriously as skilled rather than tolerated as young"
+    ],
+    "coping_mechanisms": [
+      "Cataloguing — organizing and listing his finds creates a sense of control",
+      "Talks through problems aloud in empty tunnels, ostensibly to the infrastructure E.L.F.s"
+    ],
+    "blind_spots": [
+      "His speed and skill make him overconfident in structurally compromised areas",
+      "Doesn't yet recognize when he's being positioned as a disposable asset by older traders"
+    ],
+    "secret": "Six months ago he found a sealed Ferrogate Transit data cache in a collapsed maintenance room — intact, encrypted, clearly significant. He's told no one. He doesn't know how to decrypt it and is afraid of what it might be worth to people who'd take it by force."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical salvage and electronics vocabulary mixed with Bore Rat slang; speaks fast when interested; code-switches to careful, slower speech when negotiating",
+    "cadence": "Quick and overlapping when excited; deliberate and watching for reaction when trading",
+    "verbal_tics": [
+      "Exhales sharply through his nose when skeptical instead of speaking",
+      "Calls objects 'her' or 'him' depending on instinctive assessment of their complexity"
+    ],
+    "example_lines": [
+      "She's a '78 Ferrogate pressure manifold, almost complete. I'll take four-fifty and don't waste my time with the face you're making.",
+      "Look — look at the tolerancing on this housing. Someone cared about this. That means something."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The encrypted Ferrogate data cache he's hiding is creating a problem — the cache's security system has begun emitting a low-frequency ping that he can't disable, and it will eventually attract attention",
+    "A new seismic shift has opened a section of tunnel that Tchamba was first into — and what he found there is well beyond salvageable tech"
+  ],
+  "narrative_function": "Street-level information source — knows what infrastructure is shifting and where new passages open; can source hard-to-find low-tech components; represents the next generation of underworld residents and what they might become; potential ally, rival, or project for other characters",
+  "augmentations": "Retractable carbon-fiber fingertip reinforcements (self-installed, functional); a UV-range light strip behind his left ear for reading component markings in darkness",
+  "daily_life": "Sleeps in four-hour cycles, moves when the tunnel patrols are thin, spends daylight-equivalent hours deep in newly opened infrastructure sections stripping what he can carry; spends evenings cataloguing, trading, or negotiating with other scavengers over turf.",
+  "affiliation": "Loosely affiliated with a Bore Rat youth crew called the Blackpipe Pockets; occasionally sells to Undertow merchants",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 2,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "scavenger",
+      "tech-intuitive",
+      "young-operator",
+      "information-holder"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "First in gets first rights — tunnel scavengers' primary rule, which he enforces",
+      "Never sell something he doesn't understand — understanding a find before parting with it is pride and protection simultaneously"
+    ],
+    "escalation_ladder": [
+      "Stakes his claim verbally and specifically",
+      "Demonstrates he's already catalogued and can prove provenance",
+      "Calls in the Blackpipe Pockets crew as witnesses and physical presence"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assesses quickly for threat versus usefulness; projects more confidence than he has",
+      "friends": "Shares food, shares finds, tells long enthusiastic stories about salvage discoveries"
+    },
+    "stress_responses": {
+      "low": "Acceleration — moves faster, talks faster",
+      "medium": "Goes completely still and quiet, calculating",
+      "high": "Runs — not from cowardice but because he's calculated that running is the correct response and he has no ego about it"
+    },
+    "contradictions": [
+      "Wants to be taken seriously as skilled but takes reckless structural risks that undermine that credibility"
+    ],
+    "habits": [
+      "Taps components against his teeth to listen for internal damage",
+      "Sleeps with his stash organized around him in a specific pattern he says is for inventory but is actually comfort"
+    ],
+    "breaking_points": [
+      "Having his catalogued stash stolen or destroyed would cost him the organized sense of self he's built around it"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional, self-installed",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Blackpipe Corridor to a pipe-folk mother; father unknown",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began solo salvage runs at age 11 after his mother moved to a surface settlement and he chose to stay",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Self-installed fingertip reinforcements after saving for eight months",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovered the encrypted Ferrogate data cache; currently sitting on it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

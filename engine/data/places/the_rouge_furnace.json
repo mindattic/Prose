@@ -1,0 +1,107 @@
+{
+  "id": "019d6143a94d70909569db405bda6944",
+  "type": "place",
+  "name": "The Rouge Furnace",
+  "aliases": [
+    "Southwest Detroit",
+    "The Furnace",
+    "Rouge Country"
+  ],
+  "description": "The Rouge Furnace takes its name from the River Rouge industrial complex — once the largest integrated factory in the world, where Henry Ford turned iron ore into finished automobiles in a single facility. The complex is still there. It is still enormous. It no longer makes cars. What it makes now depends on who you ask and what level of security clearance they hold. The official designation is the Rouge Autonomous Manufacturing Campus, operated by a joint venture between Ford Meridian and Arcturus Defense Solutions. The campus produces autonomous vehicle chassis, military drone components, and — according to the workers who live in the surrounding blocks — things that arrive in sealed containers and leave in different sealed containers and nobody is encouraged to ask questions.\n\nSouthwest Detroit around the Rouge complex is a working district in the oldest sense: people here make things with their hands, maintain things that break, and go home tired. The population is predominantly Latino and Middle Eastern, communities that have lived in this area for over a century and survived every economic cycle the city threw at them. The housing stock is dense, practical, and aging. The air quality is managed by an Ouroboros Energy atmospheric processing station on Zug Island that does a reasonable job of filtering industrial particulates and an unreasonable job of charging residents for the privilege of breathing air that the factory contaminated in the first place.\n\nThe district's relationship with the Rouge campus is parasitic and mutual. The factory provides employment — roughly 6,000 jobs, mostly Tier 1 and Tier 2 maintenance and logistics positions. The neighborhood provides labor, proximity, and the kind of community infrastructure that keeps workers functional without the factory having to provide it. Schools, clinics, groceries, bars — the neighborhood handles the human maintenance so the factory doesn't have to. The arrangement has worked for a hundred and fifty years. It has never been fair for a single one of them.",
+  "atmosphere": {
+    "sights": [
+      "The Rouge complex's silhouette against the sky — massive, geometric, lit from within at all hours",
+      "Zug Island's atmospheric processor stacks venting filtered air in white plumes that look clean and might be",
+      "Workers in industrial exoskeletons walking home along Fort Street, still wearing their load-bearing rigs",
+      "Dense residential blocks where every third house has a rooftop garden and every fifth has a FOR SALE sign",
+      "The Detroit River curving past the complex, its surface carrying an iridescent chemical sheen on warm days"
+    ],
+    "sounds": [
+      "The Rouge complex — a low, continuous industrial chord that the neighborhood has absorbed into its definition of silence",
+      "Shift-change traffic — thousands of workers moving in synchronized waves, three times daily",
+      "The atmospheric processor's rhythmic cycling, a mechanical breathing that the neighborhood unconsciously synchronizes with",
+      "Music from the bars on Fort Street — where three shifts' worth of exhaustion gets processed nightly",
+      "River barges moving materials upstream to the factory docks, their navigation horns echoing off the complex walls"
+    ],
+    "smells": [
+      "Industrial process exhaust — filtered but present, a metallic tang that coats the back of your throat",
+      "Cooking from the residential blocks — the food is better here than in the Axis because it's made by people, not algorithms",
+      "The river — petroleum undertones near the factory, cleaner downstream, never fully clean"
+    ],
+    "feel": "Hardworking and resigned. The Rouge Furnace feels like a place that has been making things for other people's benefit for 150 years and has internalized the arrangement. There's pride here — in the work, in the community, in the survival — but it comes with the particular exhaustion of people who know they're essential and disposable at the same time.",
+    "tags": []
+  },
+  "demographics": "Approximately 52,000 residents. Predominantly Latino (60%) and Middle Eastern (25%) communities with deep generational roots. Tier 1 and Tier 2 workers make up 85% of the population. Income inequality within the district is low because everyone is equally underpaid.",
+  "economy": "The Rouge campus dominates — 6,000 direct jobs and approximately 18,000 in the supply chain and service economy that supports it. Average household income: Φ34,000. The informal economy adds roughly 30% to household income through unlicensed repair work, gray-market parts trading, and the kind of side jobs that keep families above the survival line.",
+  "power_structure": "Ford Meridian and Arcturus Defense Solutions jointly govern the Rouge campus through the Industrial Zone Authority. The surrounding neighborhood falls under nominal municipal governance, which in practice means Ford Meridian's community relations office handles disputes, approves construction permits, and funds the two schools. Labor organizing is technically legal and practically career-ending.",
+  "dangers": [
+    "Industrial exposure — the atmospheric processor handles most airborne contamination but soil and water exposure are cumulative",
+    "Arcturus military production — the sealed container operations create security risks for anyone who gets curious",
+    "Economic dependency — the Rouge campus is the single employer, and layoffs ripple through every household",
+    "River contamination — the chemical sheen is monitored but the monitoring reports are not public",
+    "Exoskeleton addiction — workers who spend shifts in load-bearing rigs develop dependency on the enhanced strength, and withdrawal is physical"
+  ],
+  "opportunities": [
+    "Industrial skills — the workers here can build, repair, and maintain anything mechanical or autonomous",
+    "Parts access — the gray-market parts economy moves military-grade components through neighborhood repair shops",
+    "The sealed container operations present intelligence-gathering opportunities for the right buyer",
+    "Labor organizing — the workforce is sympathetic to collective action if someone can navigate the risks"
+  ],
+  "story_hooks": [
+    "A Rouge worker opens a sealed container that was mis-routed to a civilian maintenance bay. What's inside is not a vehicle component. The worker has twelve hours before the inventory system flags the discrepancy.",
+    "Zug Island's atmospheric processor is scheduled for a firmware update that will reduce its filtration capacity by 15% — Ouroboros Energy calls it optimization, the neighborhood calls it a death sentence",
+    "An exoskeleton repair tech in the neighborhood has been modifying military-grade rigs for civilian use. Arcturus has noticed."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Mexicantown Libre",
+      "The Delray Sacrifice Zone",
+      "Geartown"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Rouge campus workers on three rotating shifts",
+    "Gray-market parts dealers",
+    "Arcturus Defense contractors who don't make eye contact",
+    "Labor organizers working carefully and quietly"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Rouge Autonomous Manufacturing Campus",
+      "description": "Henry Ford's cathedral of industry, reborn — autonomous vehicle chassis, military drones, and sealed operations that nobody discusses",
+      "tags": []
+    },
+    {
+      "name": "Zug Island Atmospheric Processor",
+      "description": "Ouroboros Energy's air filtration station — the mechanical lung that keeps the neighborhood breathing, at a price",
+      "tags": []
+    },
+    {
+      "name": "Fort Street Strip",
+      "description": "Six blocks of bars, repair shops, and the informal economy — where the real business of the neighborhood happens after shift change",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 42.2972,
+    "lng": -83.1145,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "death",
+    "ai",
+    "contract",
+    "clinic",
+    "market",
+    "bar",
+    "vehicle",
+    "survival",
+    "drone",
+    "energy",
+    "water"
+  ]
+}

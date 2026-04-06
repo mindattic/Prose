@@ -1,0 +1,59 @@
+{
+  "id": "019d6143aa337325858d2c37f48ee132",
+  "name": "Arcturus Defense Solutions TacMed StasisShell MSS-4 Metabolic Suspension Capsule",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions TacMed StasisShell MSS-4 Metabolic Suspension Capsule",
+  "type": "technology",
+  "aliases": [
+    "ColdShell",
+    "The Coffin",
+    "FrostPack",
+    "MSS-4"
+  ],
+  "subcategory": "medical",
+  "description": "The StasisShell MSS-4 is a single-occupancy emergency metabolic suspension unit developed by Arcturus Defense Solutions for military and high-risk corporate security applications, designed to preserve critically injured personnel in a state of suspended metabolic activity for up to 72 hours pending advanced surgical care. The capsule is a rigid thermally insulated shell approximately 2.1 meters long and 0.6 meters in diameter, deployable by two personnel. Upon sealing, it automatically administers the MSS-4 proprietary induction cocktail — a Lazarus Pharmaceuticals-formulated combination of suspended-animation barbiturates, metabolic suppressants, and oxygenated perfluorocarbon lung lavage fluid — reducing core body temperature to 18°C and metabolic rate to approximately 10% of baseline within 8 minutes.\n\nThe MSS-4's defining feature over earlier stasis technologies is its integrated physiological monitoring and adaptive dosing system: onboard sensors track cardiac electrical activity, intracranial pressure, and blood chemistry through transcutaneous probes, and the capsule's drug delivery system makes autonomous micro-adjustments to maintain suspension stability without physician oversight. An encrypted telemetry uplink broadcasts patient status and GPS coordinates to the nearest Arcturus-certified revival facility, and the capsule's power cell provides 80 hours of autonomous operation. Revival is a medically supervised process requiring approximately 45 minutes and a full surgical team — the MSS-4 is explicitly a transport and preservation device, not a treatment platform.\n\nAside from its intended military applications, the StasisShell MSS-4 has developed a significant secondary market among Meridian 88's ultra-wealthy as a personal insurance device — several Tier 1 executives maintain a capsule on-site at their residences or corporate suites, programmed for autonomous deployment if the occupant's biometrics indicate life-threatening trauma. Arcturus Defense Solutions officially sells only to credentialed security organizations, but a well-documented gray market exists, and at least three Tier 1 residential towers are known to have MSS-4 units installed in penthouse emergency cabinets.",
+  "tier_availability": "Military / Tier 1 (gray market Tier 2+)",
+  "developers": [
+    "ARCTURUS DEFENSE SOLUTIONS",
+    "LAZARUS PHARMACEUTICALS"
+  ],
+  "base_technologies": [
+    "Perfluorocarbon lung lavage oxygenation",
+    "Controlled therapeutic hypothermia induction",
+    "Autonomous closed-loop drug delivery systems",
+    "Transcutaneous physiological monitoring arrays"
+  ],
+  "enables": [
+    "Extended surgical transport window for catastrophic trauma",
+    "Remote battlefield personnel recovery operations",
+    "Long-duration medical transport across Meridian 88 infrastructure",
+    "Clandestine witness or asset preservation protocols"
+  ],
+  "social_impact": "The StasisShell MSS-4 has introduced a stark new dimension to the survival gap between tiers in Meridian 88: those with access to an MSS-4 can survive injuries that would be fatal given the transit time to a capable surgical facility, while those without it cannot. This has made the capsule a coveted object in corporate succession planning and security doctrine — kidnapping a protected executive becomes far more complicated when their bodyguards carry an MSS-4 deployment kit, and assassination attempts must now account for a 72-hour window during which a target might still be saved. Conversely, control over MSS-4 telemetry data gives Arcturus Defense Solutions real-time awareness of where high-value injured individuals are located throughout the megacity, a surveillance asset of enormous potential value.",
+  "story_hooks": [
+    "An MSS-4 capsule was deployed in a Tier 2 parking structure and its telemetry uplink was deliberately jammed — someone wanted to ensure the occupant didn't survive the 72-hour window, and the capsule's identity is encrypted",
+    "A corporate heir was placed in an MSS-4 following an assassination attempt three days ago; the revival team has been killed and the capsule is running out of power — someone needs to reach it before the suspension fails",
+    "Arcturus Defense Solutions' telemetry database contains the GPS deployment history of every MSS-4 unit ever activated — this data would reveal the locations of dozens of covered-up corporate violence incidents",
+    "A Tier 5 community organizer has somehow acquired an MSS-4 and is using it to keep critically injured residents alive long enough to reach care — Arcturus wants it back, and so does whoever sold it illegally"
+  ],
+  "tags": [
+    "medical",
+    "technology",
+    "violence",
+    "war",
+    "identity",
+    "ai",
+    "corporate",
+    "surveillance",
+    "control",
+    "power",
+    "wealth",
+    "market",
+    "bar",
+    "cold",
+    "survival",
+    "drug",
+    "tier 1",
+    "tier 2"
+  ]
+}

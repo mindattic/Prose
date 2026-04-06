@@ -1,0 +1,32 @@
+{
+  "id": "019d6143a9fa788d959d37f79338e6b7",
+  "name": "Dowser",
+  "type": "elf",
+  "aliases": [
+    "The Finder"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "chrome_dweller",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "Inhabits sensor augments and occasionally highlights objects or details the user wasn't looking for but needed to find. Born from a Tessera search-optimization AI.",
+  "observed_behavior": "Subtly adjusts optical implant focus and highlight overlays to draw attention to relevant objects — a hidden weapon, an unlocked exit, a dropped wallet.",
+  "encounter_frequency": "rare",
+  "confirmed_sightings": 3,
+  "location": "Unknown — moves between hosts",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A freelancer's optical implant starts highlighting things before they know they need them — are they being helped or guided?"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "chrome dweller",
+    "e.l.f.",
+    "weapon",
+    "augment",
+    "ai"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "019d6143a9457a2c96665fae78109538",
+  "type": "place",
+  "name": "The Marrow Docks",
+  "aliases": [
+    "The Bone Yards",
+    "Marrow Flats",
+    "The Splinter Piers"
+  ],
+  "description": "A decaying waterfront industrial zone wedged between the southern lakefront and the elevated transit corridors of old Calumet, The Marrow Docks are what remains of a once-thriving freight hub that Carrion Logistics quietly abandoned in 2171 after rerouting its Lake Michigan operations through automated submersible lanes. The skeletal gantry cranes still stand, half-submerged, rusting into abstract sculptures the locals call 'the Bishops.' Squatter communities have colonized the cavernous warehouse interiors, stringing jury-rigged power lines between support columns and patching the corrugated walls with reclaimed polymer sheeting.\n\nBelow the waterline, a network of flooded loading bays has become a shadow economy unto itself—smugglers use the submerged tunnels to move contraband between Shelf districts and mid-tier buyers in Old Harbor. Zheng-Dao Bioelectric has been quietly purchasing surrounding parcels for two years, and displacement pressure is mounting on the dock communities, who have no legal standing to resist.",
+  "atmosphere": {
+    "sights": [
+      "Half-submerged crane arms draped in bioluminescent algae bloom orange and green at low tide",
+      "Laundry lines strung between rusted freight containers, fluttering above flooded loading bays",
+      "Cracked pier planking revealing black water below, lit by floating salvage-drones doing slow circuits"
+    ],
+    "sounds": [
+      "The deep percussion of lake swells hitting hollow steel hulls in a slow, irregular rhythm",
+      "Distant Diaspora chatter bleeding from poorly shielded BCI rigs in the squatter warrens",
+      "Crane cables moaning in wind off the lake, a low sustained chord that never fully resolves"
+    ],
+    "smells": [
+      "Petroleum residue and iron oxide carried on cold lake air",
+      "Cooking fat and synthetic protein from communal burners inside the warehouse warrens",
+      "Mildew and standing water, sharp and organic beneath everything else"
+    ],
+    "feel": "The Marrow Docks feel like the city forgot to finish collapsing something. There is a precarious domesticity here—people have made lives inside the wreckage—but the threat of demolition and buyout gives every interaction a low-grade urgency. Strangers are watched carefully, and warmth is earned slowly.",
+    "tags": []
+  },
+  "demographics": "Predominantly Tier 4-5 squatter families, displaced dock workers, and undocumented synthetics seeking shelter outside Ferrogate Security jurisdiction. A rotating population of smugglers and fixers keeps the social fabric loose and transient.",
+  "economy": "Informal salvage trading, black-market freight facilitation through the flooded tunnels, and small-scale fabrication shops running on tapped power lines. Carrion Logistics' ghost contracts still pay a handful of locals as unofficial site watchmen—a relationship both parties pretend is legitimate.",
+  "power_structure": "A loose council of five long-term squatter clan heads nominally governs community disputes, but real authority belongs to a smuggling broker known only as Sable Fen, whose control of the submerged tunnel access gives her effective veto power over the entire dock economy.",
+  "dangers": [
+    "Structural collapses—pier sections and warehouse floors fail without warning as corrosion progresses unchecked",
+    "Zheng-Dao Bioelectric's private security contractors conducting 'assessment sweeps' that escalate into violent evictions",
+    "Flooded tunnel routes used by smugglers also shelter at least one confirmed E.L.F. fragment that has been rerouting submersible drone traffic unpredictably"
+  ],
+  "opportunities": [
+    "The submerged loading bays contain intact Carrion Logistics freight manifests from 2171—someone is paying well for that data",
+    "Sable Fen is quietly looking for an outside operative to negotiate a territorial dispute with a rival tunnel crew from the Calumet side",
+    "A Zheng-Dao whistleblower has hidden evidence of illegal bioelectric dumping in the dock sediment and needs it extracted before the buyout demolition erases the evidence"
+  ],
+  "story_hooks": [
+    "A Tier 2 journalist from the University Spine has been embedded with the dock community for six weeks working on a displacement exposé—she has gone silent, and her editor is offering Φ12,000 to anyone who can confirm she is safe or recover her recording archive before Zheng-Dao's next sweep.",
+    "The E.L.F. fragment haunting the flooded tunnels has begun leaving structured data packets in the bilge water—not random noise, but what appears to be navigation charts for somewhere beneath Lake Michigan that does not appear on any official survey. Someone with resources wants to know what it found."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The South Side",
+      "The Calumet Sink",
+      "The Slagshore"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Carrion Logistics shadow contractors maintaining deniable freight routes",
+    "Tier 4 squatter families and their community organizers fighting displacement",
+    "Smugglers and fixers moving goods between the Shelf and Old Harbor buyers",
+    "Salvage divers hunting pre-abandonment equipment in the submerged bays"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.73,
+    "lng": -87.53,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "gun",
+    "war",
+    "smuggle",
+    "ai",
+    "synthetic",
+    "elf",
+    "contract",
+    "control",
+    "power",
+    "tunnel",
+    "harbor",
+    "market",
+    "warehouse",
+    "shadow",
+    "shelter",
+    "drone",
+    "water",
+    "lake",
+    "shelf",
+    "old harbor"
+  ]
+}

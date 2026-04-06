@@ -1,0 +1,166 @@
+{
+  "id": "019d6143a676721b861cad92fa409063",
+  "type": "character",
+  "name": "Obinna Çakmak-Raivakadrau",
+  "aliases": [
+    "Knock"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "echo hunter — scavenger who locates and extracts valuable materials from collapsed or flooded tunnel sections",
+  "age": 29,
+  "status": "active",
+  "location": "Abyssal Threshold, ranging into Black Corridor spurs and pre-collapse Undertow sectors",
+  "description": "Knock is a compact, densely muscled man with deep brown skin and a face that would be handsome if it weren't always bruised somewhere. He has a retractable claw modification on both hands — not the delicate cosmetic kind, but a heavy-gauge industrial variant originally designed for pipe work, the chrome yellowed and scratched, the mechanism loud. His right eye is a replacement after a cave-in in 2196: matte black sclera, amber iris, depth-perception assist — he got it from a tunnel-market vendor and it's slightly misaligned, which gives him a permanent squint on that side. His hair is cut very close and he has a habit of pressing his palms flat against walls, feeling for vibration, that people find either impressive or unsettling depending on whether they understand what he's doing.\n\nEcho hunting is exactly what it sounds like: you go into places that have broken and you listen for what's still there. Structural resonance, water movement, the ping of metal under pressure — Knock reads these sounds the way others read text. He extracts ferrogate rail segments, copper bundling, intact conduit, old hardware sealed in collapsed rooms — anything the surface market will buy or the underground can use. It is extremely dangerous work with an average career length of about four years. Knock has been doing it for nine. He attributes this to skill. Everyone who knows him also attributes it to a specific kind of recklessness that looks like skill from the outside.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.3,
+      "id": 0.7,
+      "shadow": 0.6,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "a cave-in that is slow — he has made peace with fast death but not slow",
+      "becoming someone who can't read the sound anymore — losing the sense that defines his work and his identity"
+    ],
+    "core_desires": [
+      "to find the legendary pre-Meridian infrastructure layer — there are rumors of sealed transit tunnels from the 2050s that no one has accessed",
+      "to be done, eventually, on his own terms and not because the tunnels decided it"
+    ],
+    "coping_mechanisms": [
+      "converts anxiety into preparation — checks equipment compulsively",
+      "black humor, specifically about the ways one can die in tunnels"
+    ],
+    "blind_spots": [
+      "the recklessness he calls skill — he is genuinely skilled, and the skill is genuinely covering for something that isn't caution"
+    ],
+    "secret": "In a collapsed sector three months ago he found a sealed room containing eleven bodies in old Ferrogate Transit uniforms, arranged deliberately, with their access badges laid out in a pattern he recognized as a distress code. He marked the location, told no one, and hasn't gone back. He isn't sure what's stopping him."
+  },
+  "speech_patterns": {
+    "vocabulary": "sparse and physical — describes everything in terms of structural metaphors, load, pressure, give, hold",
+    "cadence": "short sentences with long gaps, like someone who talks in the rhythm of listening",
+    "verbal_tics": [
+      "'it'll hold' (his general assessment of both structures and situations)",
+      "'that's moving' (warning, said very quietly, means stop immediately)"
+    ],
+    "example_lines": [
+      "'The north spur's got three good rooms left before the pre-collapse section. Two have water, one doesn't. The dry one's where you want to go. I'll get you to the door.'",
+      "'It'll hold. Probably. Look, everything is probably — if you need certainty, stay surface.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He has finally decided to go back to the sealed room and wants someone with him — not for protection, but because he has realized he needs a witness",
+    "A tunnel section he certified as stable for a client's passage has collapsed — he doesn't know if it was his error or sabotage, and the answer matters to him in ways he doesn't fully articulate"
+  ],
+  "narrative_function": "Access character — can reach locations no one else can; source of found objects with unknown histories; demonstrates the physical reality of underground survival; can retrieve things or information from inaccessible places",
+  "augmentations": "heavy-gauge retractable claws (both hands, industrial, loud), replacement right eye (matte black sclera, amber iris, depth assist, slightly misaligned), impact-absorption plating across both forearms (secondhand, imperfect fit)",
+  "daily_life": "Studies old infrastructure maps in the morning, goes in mid-day when thermal shifts make echo-reading clearest, extracts and carries out by evening, sells or trades to market contacts; spends nights maintaining equipment and nursing whatever he's strained that day.",
+  "affiliation": "independent, sells to multiple underworld merchants, occasional contract work for The Undertow salvage operations",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 8,
+      "vitality": 7,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 5,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 5,
+      "expression": 3,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 2,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Echo Hunter",
+      "Scavenger",
+      "Physical Specialist",
+      "Tunnel Expert",
+      "Haunted"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never take a job without seeing the infrastructure maps first — going in blind is how people die",
+      "if something is moving that shouldn't be moving, you leave, immediately, no discussion"
+    ],
+    "escalation_ladder": [
+      "calm instruction (do this, don't do that)",
+      "physical repositioning of the other person without asking",
+      "leaving — he will abandon a job mid-extraction if the risk crosses a line"
+    ],
+    "interpersonal_modes": {
+      "strangers": "assesses load-bearing capacity immediately — what can they handle, where will they break",
+      "friends": "shows up when things are hard, doesn't say much, does the thing that needs doing"
+    },
+    "stress_responses": {
+      "low": "gets quieter and more deliberate",
+      "medium": "enters a state of pure mechanical focus — not calm, but functional",
+      "high": "moves to action immediately and processes everything else afterward"
+    },
+    "contradictions": [
+      "meticulous about safety procedures for others and cavalier about the same procedures for himself"
+    ],
+    "habits": [
+      "knocks on walls (hence the alias) — testing resonance constantly, even in safe spaces",
+      "catalogs every bruise and injury in a small notebook as if they're data points"
+    ],
+    "breaking_points": [
+      "a client dying in a location he certified as safe",
+      "the sealed room — he will eventually have to go back, and whatever he finds there"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Hustler": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

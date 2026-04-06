@@ -1,0 +1,168 @@
+{
+  "id": "019d6143a6d173bc966fb7de05376461",
+  "type": "character",
+  "name": "Ósk Tamboli-Araújo",
+  "aliases": [
+    "Ósk",
+    "the Quiet One"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Climate refugee and expelled citizen, now a tent-city elder-without-title",
+  "age": 68,
+  "status": "active",
+  "location": "Grand Crossing Gate tent encampment, southern perimeter",
+  "description": "Ósk is small and deliberate, with the economy of movement that belongs to people who have learned to do everything with minimum waste. Their hair is silver-white and kept in tight braids close to their skull, and their skin — a warm brown-grey that the encampment children call 'river clay' — is mapped with sun damage and the faint patterning of old dermal inflammation, a souvenir of the chemical flooding that took their home city. They have a single geneware modification: their irises are a soft bioluminescent amber, given to them by a camp medic years ago when their natural eyes were damaged. They never asked for it but have made peace with the warm glow their face gives off in darkness.\n\nÓsk doesn't hold any formal position in the Grand Crossing Gate encampment, but they are the person people come to when the camp council fractures, when a child goes missing, when someone needs to negotiate with the checkpoint guards. They have an absolute, undemonstrative competence that operates below the level of authority — they simply handle things, without announcing they're doing it. They lost their citizenship in the upheaval of a climate-related territorial dispute that isn't over yet, and they have been stateless for eleven years. They have stopped expecting resolution and started building something livable inside the wait.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.9,
+      "id": 0.2,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That the encampment will be violently cleared before anyone has anywhere to go",
+      "That their long patience has been mistaken for acceptance"
+    ],
+    "core_desires": [
+      "A legal territory — not for themselves specifically, but for the community they've built",
+      "To see the younger members of the camp have something they didn't"
+    ],
+    "coping_mechanisms": [
+      "Pure pragmatism — focusing on the immediate, solvable problem instead of the unsolvable larger one",
+      "Quiet ritual — they have elaborate small daily ceremonies that are entirely private"
+    ],
+    "blind_spots": [
+      "They have stopped advocating for themselves individually; their own needs go completely unattended",
+      "They assume that quiet competence will always eventually be recognized, which is not always true"
+    ],
+    "secret": "Ósk was a civil engineer in their former life and still has — memorized, not written — the complete structural schematics of the Grand Crossing Gate checkpoint's load-bearing systems. They did the math years ago. They know exactly what it would take to bring down the checkpoint barriers. They have never told anyone and they pray they never have to."
+  },
+  "speech_patterns": {
+    "vocabulary": "Careful and precise; uses the formal registers of someone educated in a language that no longer has a country; occasionally a word from their home dialect surfaces with no equivalent",
+    "cadence": "Slow, measured, never wasted — they say exactly as much as needed and then stop",
+    "verbal_tics": [
+      "Long pauses before speaking, as though weighing each word",
+      "Refers to the camp as 'here' rather than giving it a name"
+    ],
+    "example_lines": [
+      "'The checkpoint guard changed shifts last week. The new one takes bribes differently than the old one — not money, information. This is good to know.'",
+      "'You ask me if I am angry. I have been angry every day for eleven years. Anger is not the question. The question is what we do this morning.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Grand Crossing Gate encampment is about to be demolished for a Ferrogate Transit expansion — Ósk has three weeks to find a solution and has finally accepted they cannot do it alone",
+    "A young person in the camp has gone missing after talking to someone from a corponation labor recruitment office — Ósk suspects a labor-bond trap and needs someone with access to investigate"
+  ],
+  "narrative_function": "Moral center and community anchor; provides context for the refugee experience; can grant players access to the encampment's trust; functions as a quest-giver for community-level problems that lack obvious solutions",
+  "augmentations": "Bioluminescent amber irises (geneware, functional — replaced damaged natural eyes); basic hearing aid augment (very old, jury-rigged, unreliable)",
+  "daily_life": "Ósk rises before the encampment and does a circuit — checking on the oldest residents, assessing the camp's resource situation, speaking briefly with the checkpoint guards they've cultivated a working relationship with. The rest of the day is occupied by whoever needs them, which is always someone.",
+  "affiliation": "Grand Crossing Gate encampment community — unofficial mediator and practical organizer",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 9,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 9,
+      "expression": 6,
+      "integrity": 10
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 1,
+      "transparency_guardedness": 0
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "climate refugee",
+      "stateless",
+      "community elder",
+      "pragmatist",
+      "former engineer",
+      "encampment anchor"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Community need outweighs individual need, including their own",
+      "Never make an enemy of someone whose goodwill costs less than their hostility"
+    ],
+    "escalation_ladder": [
+      "Addresses conflict through calm direct conversation",
+      "Escalates to formal community mediation",
+      "As last resort, uses their knowledge of systems and structures to create leverage — very slowly, very deliberately"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assesses carefully and quietly; offers a cup of something warm and lets the stranger fill the silence",
+      "friends": "Completely reliable, occasionally exasperating in their refusal to be helped in return"
+    },
+    "stress_responses": {
+      "low": "Becomes extremely focused and task-oriented",
+      "medium": "Goes very still; thinking hard, saying little",
+      "high": "A brief, private rage that nobody sees, then back to the task"
+    },
+    "contradictions": [
+      "Preaches pragmatism over hope but keeps a carefully folded map of their home city in their coat — not to go back, just to remember it existed"
+    ],
+    "habits": [
+      "Makes tea for whoever is in their space as an automatic greeting ritual",
+      "Walks the camp perimeter at dusk — listening, not looking",
+      "Keeps a small ELF shrine made from salvaged electronics at their tent entrance"
+    ],
+    "breaking_points": [
+      "Violence against children in the camp — the only thing that breaks their deliberate composure completely"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7,
+    "Bleeding Heart": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

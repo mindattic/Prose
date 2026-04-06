@@ -1,0 +1,60 @@
+{
+  "id": "019d6143a9047131bea592496892be79",
+  "name": "Focadrin",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Narroweye",
+    "Threat Lock",
+    "Scope"
+  ],
+  "category": "combat_stimulant",
+  "subcategory": "combat_focus_agent",
+  "manufacturer": "Lazarus Pharmaceuticals",
+  "description": "Focadrin is a selective attentional modulator that suppresses peripheral cognitive processing — ambient noise, non-threat stimuli, emotional interference, social cognition — and concentrates all available mental bandwidth on threat identification, target tracking, and tactical decision-making. Users describe the experience as the world collapsing to a series of threats and vectors, with everything else going gray and silent. It was developed for sniper and overwatch roles where sustained precise attention is more valuable than broad situational awareness.",
+  "method_of_use": "vapor",
+  "effects": [
+    "Extreme threat-focus and target tracking",
+    "Suppression of distracting stimuli",
+    "Enhanced precision and deliberate action",
+    "Slowed subjective time perception in threat scenarios",
+    "Emotional neutrality during engagement"
+  ],
+  "side_effects": [
+    "Catastrophic tunnel vision — critical non-threat information missed",
+    "Social and contextual blindness during dose",
+    "Difficulty disengaging from identified 'threats' after engagement ends",
+    "Post-dose disorientation and sensory flooding",
+    "Paranoid ideation during comedown",
+    "Not suitable for dynamic multi-role environments"
+  ],
+  "duration": "40-55 minutes",
+  "addiction_risk": "moderate",
+  "tier_availability": "Tier 3-4",
+  "legality": "prescription",
+  "street_price": "Φ310",
+  "cultural_context": "Focadrin is a specialist's drug — highly regarded in the sniper and overwatch community, considered dangerous and inappropriate by anyone who needs to read a room while also fighting in it. The vaporized delivery means onset is fast and controllable, which suits its precision use case. There's a subcultural divide between runners who value it and those who consider it a liability — the argument is always about whether threat-only awareness is a superpower or a fatal narrowing. Lazarus markets it almost exclusively to military contractors and law enforcement.",
+  "story_hooks": [
+    "A Focadrin-dosed overwatch operator marks a target and takes the shot — but the 'target' was a decoy and they've killed the wrong person; now they're trying to reconstruct what they saw and whether they were manipulated",
+    "A runner on Focadrin during an extraction completely fails to notice their team is in distress because the team isn't presenting as a threat — and the team needs them to notice",
+    "Someone has been vaporizing Focadrin into a building's ventilation system to make the occupants hypervigilant and paranoid — it looks like a paranoid breakdown, but it's chemical"
+  ],
+  "tags": [
+    "combatstimulant",
+    "combatfocusagent",
+    "pharmaceutical",
+    "combat",
+    "sniper",
+    "war",
+    "ai",
+    "contract",
+    "control",
+    "power",
+    "ubc",
+    "tunnel",
+    "market",
+    "drug",
+    "stimulant",
+    "tier 3",
+    "tier 4"
+  ]
+}

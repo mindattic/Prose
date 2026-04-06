@@ -1,0 +1,116 @@
+{
+  "id": "019d6143a9437036a93cc99027b39594",
+  "type": "place",
+  "name": "The Laceworks",
+  "aliases": [
+    "The Lace",
+    "Threadtown",
+    "The Old Stitching"
+  ],
+  "description": "A sprawling industrial neighborhood built atop the skeletal remains of a 20th-century garment district, The Laceworks has been repurposed layer by layer into one of Meridian 88's most densely inhabited residential warrens. Converted textile factories now house thousands of mid-to-low income residents in stacked micro-apartments, their facades draped in a permanent tangle of laundry lines, fiber-optic cables, and handmade signage that gives the district its name. The original brick architecture survives beneath decades of patchwork renovation, visible in archways and loading docks now serving as storefronts, shrines, and impromptu community spaces.",
+  "atmosphere": {
+    "sights": [
+      "Cascading laundry lines strung between buildings like low-tech prayer flags",
+      "Neon signs in a dozen languages advertising tailors, noodle shops, and black-market chip clinics",
+      "Exposed brick faces tagged with hyperlocal gang markers and community murals",
+      "Residents leaning from narrow windows watching the street below",
+      "Repair drones weaving between fire escapes"
+    ],
+    "sounds": [
+      "Overlapping music from competing storefronts",
+      "Children shouting in Tagalog, Yoruba, and Mandarin",
+      "The distant mechanical thrum of legacy HVAC systems",
+      "Street vendors hawking printed food and counterfeit skins",
+      "Occasional bursts of feedback from illicit pirate radio broadcasts"
+    ],
+    "smells": [
+      "Frying oil and synthetic spices",
+      "Damp concrete and mildew from overcrowded plumbing",
+      "Cheap solvent from nearby repair shops",
+      "Incense burning at street-level shrines",
+      "Ozone from overloaded electrical conduits"
+    ],
+    "feel": "Claustrophobic and alive, a pressure-cooker community where everyone knows everyone and strangers are noted immediately. There is warmth here, but also exhaustion — people working too hard for too little, holding onto dignity through ritual and solidarity.",
+    "tags": []
+  },
+  "demographics": "Predominantly first- and second-generation migrant workers, service-sector laborers, and aging legacy residents who survived the district's earlier incarnations. A significant population of undocumented individuals with no official city registration. Mixed ages, heavily family-oriented.",
+  "economy": "Informal micro-economies dominate: street food, repair work, unlicensed clinics, textile recycling, and small-batch fabrication. Remittance transfers to outside the corridor are a major financial artery. Some residents work shifts in the adjacent corporate manufacturing zones but spend their wages locally.",
+  "power_structure": "No single entity controls The Laceworks. Block-level councils negotiate resource allocation and settle disputes. The Needle — a loose confederation of older residents and community organizers — holds informal authority, but enforcement depends on persuasion and reputation. Corporate security rarely enters without cause, which is considered a fragile blessing.",
+  "dangers": [
+    "Structural failures in poorly maintained converted buildings",
+    "Predatory lenders and organ-debt collectors operating openly",
+    "Occasional violent incursions by fringe gangs from bordering districts",
+    "City utilities are unreliable — power brownouts and water rationing are cyclical",
+    "Unlicensed chip clinics with substandard sterilization practices"
+  ],
+  "opportunities": [
+    "Access to a dense, tight-knit information network — locals know everything about their neighbors",
+    "Black-market fabrication services that ask no questions",
+    "Recruitment of skilled but desperate individuals with reason to stay off-grid",
+    "The Needle's community archives contain decades of unofficial city history",
+    "Safe houses available through trust-based networks for those who earn goodwill"
+  ],
+  "story_hooks": [
+    "A community elder has gone missing days before she was scheduled to testify before a city zoning tribunal about corporate encroachment",
+    "A series of fires in the district follow an unusual pattern — always near buildings whose residents recently refused buyout offers",
+    "A child found wandering the Laceworks speaks no known language and carries a neural implant of unidentified manufacture",
+    "The pirate radio signal that has broadcast for twenty years suddenly begins transmitting encrypted data packets no one can decode",
+    "A new lender has arrived offering impossibly favorable terms — and residents who accept begin behaving differently within weeks"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Shelf",
+      "The Circuit",
+      "Old Harbor"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Off-grid laborers and undocumented residents",
+    "Journalists looking for human-interest angles or whistleblowers",
+    "Fixers sourcing discreet local talent",
+    "Corporate scouts conducting unofficial demographic surveys",
+    "Social workers from both legitimate NGOs and front organizations"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Spool",
+      "description": "A converted textile warehouse that now functions as a community hall, night market, and informal courthouse. The original industrial spools still hang from the ceiling beams, rewound with fiber-optic cable that illuminates the space in shifting color. Disputes are settled here, weddings celebrated, and deals made under the tacit neutrality the space is understood to carry.",
+      "tags": []
+    },
+    {
+      "name": "Mama Osei's Clinic",
+      "description": "Three interconnected apartments on the fourth floor of a converted factory, operated by a former licensed surgeon who lost her credentials after publicly criticizing a corporate medical conglomerate. She performs legitimate medical care alongside necessary off-books procedures, and her waiting room is always full. Her files on corporate medical malpractice in the district are said to be extraordinarily comprehensive.",
+      "tags": []
+    },
+    {
+      "name": "The Underloft",
+      "description": "A subterranean level beneath the Laceworks' oldest block, accessible through a false utility closet. Originally a factory basement, it has become a rotating speakeasy, meeting space, and hideout maintained collectively by residents who refuse to formalize its existence. No cameras, no records, no questions.",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.875,
+    "lng": -87.617,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "gang",
+    "trust",
+    "neural",
+    "ai",
+    "corporate",
+    "control",
+    "power",
+    "debt",
+    "clinic",
+    "market",
+    "desperate",
+    "food",
+    "fire",
+    "water"
+  ]
+}

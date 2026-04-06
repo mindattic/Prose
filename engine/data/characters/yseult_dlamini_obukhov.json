@@ -1,0 +1,245 @@
+{
+  "id": "019d6143a72e71fdb16d8adc15972df4",
+  "type": "character",
+  "name": "Yseult Dlamini-Obukhov",
+  "aliases": [
+    "Yse",
+    "Four-Hands"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Ferrogate Transit tram operator, Line 9 (Geartown to Meridian Core)",
+  "age": 34,
+  "status": "active",
+  "location": "Deepwell Station — Line 9 operations hub",
+  "description": "Yseult is lean and angular, the kind of person who looks like she was built for efficiency rather than comfort — high cheekbones, close-set amber eyes with patterned irises she had done in a sunburst design in her twenties (the pattern has faded slightly at the edges but she has not refreshed it, which she considers a form of autobiography). Her skin is a warm medium brown and she keeps her locs pinned back under her operator's cap on shift; off shift they fall to her shoulders and she wears them down with the aggressive relief of someone who spends eight hours in a hat. She has a geneware tail — a slim, black-furred addition she got at twenty-two — that she has learned to keep disciplined and still while operating but which betrays her moods with embarrassing fidelity the moment she is off duty.\n\nYseult has the particular personality of someone who has driven the same route for nine years and has achieved a kind of zen mastery over the repetition — she finds the variation inside the sameness, the way a musician finds different things in a familiar song each time. She is sardonic in the way of someone who has heard every possible excuse for fare evasion and has developed a taxonomy of them. She is fiercely protective of her passengers in a detached, professional way that occasionally shocks people who expect indifference. She is a union rep for the Ferrogate Transit Workers Collective and takes that role with more seriousness than she takes almost anything else.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "The tram system being automated — her whole identity tied to the job disappearing",
+      "Being genuinely needed by someone and failing them"
+    ],
+    "core_desires": [
+      "Winning the collective bargaining agreement that has been stalled for three years",
+      "To feel like the route means something beyond moving bodies from A to B"
+    ],
+    "coping_mechanisms": [
+      "Sardonic humor as distance management",
+      "Physical training as emotional processing",
+      "Extremely detailed shift logs that function as a private journal"
+    ],
+    "blind_spots": [
+      "Her union work has become a displacement activity for a personal life she has quietly abandoned",
+      "She assumes competence in others more than is warranted"
+    ],
+    "secret": "Six months ago she saw something from the tram cab — a body disposal in a Ferrogate maintenance corridor at 0340 — and filed nothing. She told herself she was not certain. She is certain. She thinks about it on every night run."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, functional, professionally neutral on duty; off duty shifts to dryer and more expressive with flashes of Zulu-Russian slang inherited from her family",
+    "cadence": "Short declarative sentences, efficient — wastes no words; speeds up when passionate about union issues",
+    "verbal_tics": [
+      "'Next stop' as an ironic deflection when she doesn't want to answer something",
+      "Taps the steering column twice when thinking",
+      "Uses transit metaphors constantly without noticing"
+    ],
+    "example_lines": [
+      "'You want to know what I think? Next stop, friend. I'm on the clock.'",
+      "'The route doesn't care about your problems. That's actually what I like about it. It goes anyway.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She is sitting on evidence of a Ferrogate Transit cover-up and the guilt is beginning to affect her driving — she nearly missed a signal last week",
+    "The collective bargaining fight is escalating toward a strike that would shut down Line 9 and six others; someone is offering her money to sabotage the vote",
+    "A regular passenger who boarded at Geartown every morning for two years has not appeared in three weeks and she cannot stop noticing"
+  ],
+  "narrative_function": "Mobile information source and city-wide connector — she has seen every district on her line and knows the rhythms of who travels when and why; can be a reliable transit for players moving through the city, a union-related quest hook, or a witness to something she saw from the cab",
+  "augmentations": "Patterned irises (sunburst, faded); geneware tail (slim, black-furred); neural interface jack at the base of the skull for tram systems integration (occupational standard issue)",
+  "daily_life": "Runs two nine-hour shifts weekly plus three shorter supplemental shifts, uses layover time at Deepwell to handle union correspondence, spends days off at a sparring gym in Geartown and sleeping with dedicated intensity.",
+  "affiliation": "Ferrogate Transit; Ferrogate Transit Workers Collective (union rep)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 4,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "union rep",
+      "transit worker",
+      "witness",
+      "principled",
+      "emotionally armored"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Passengers get off the tram safely — everything else is negotiable",
+      "Never cross a union line, for any reason, any price",
+      "If someone is in danger on the vehicle, she stops the tram"
+    ],
+    "escalation_ladder": [
+      "Neutral professional warning",
+      "Formal documented warning",
+      "Stops the tram and calls transit authority",
+      "Physical intervention if someone is being hurt"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional, slightly flat, efficient — assesses threat level and need simultaneously",
+      "friends": "Dry, warm, will show up without being asked when things are bad"
+    },
+    "stress_responses": {
+      "low": "Goes very still — the tail goes rigid",
+      "medium": "Becomes clipped to the point of monosyllabic",
+      "high": "Takes the long route home on foot, hours of walking, processing in movement"
+    },
+    "contradictions": [
+      "Deeply committed to collective action and solidarity but profoundly solitary in her personal life",
+      "Claims she doesn't get attached to passengers and keeps a mental file on fifty of them"
+    ],
+    "habits": [
+      "Writes shift notes that are two to three times longer than required",
+      "Leaves a small data offering at the Line 9 terminal E.L.F. shrine before every shift",
+      "Eats the same lunch every working day — rice and groundnut stew from a sealed container"
+    ],
+    "breaking_points": [
+      "Someone hurting a child on her tram",
+      "Being ordered by Ferrogate management to break the strike"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Performer": 0.9,
+    "Artist": 0.9,
+    "Dreamer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Deepwell Station district to a Zulu-Russian family with two generations of transit workers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Qualifies as a Ferrogate tram operator; assigned to Line 9",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Elected as union rep for the Line 9 division of the Ferrogate Transit Workers Collective",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Collective bargaining agreement expires; stalled negotiations begin",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Witnesses body disposal in maintenance corridor; files nothing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

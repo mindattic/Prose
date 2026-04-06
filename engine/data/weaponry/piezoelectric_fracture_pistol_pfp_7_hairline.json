@@ -1,0 +1,62 @@
+{
+  "id": "019d6143ab3c77f7a3f2ff8c079ba035",
+  "name": "Piezoelectric Fracture Pistol PFP-7 'Hairline'",
+  "type": "weapon",
+  "aliases": [
+    "Hairline",
+    "The Cracker",
+    "Splinter",
+    "Faultline"
+  ],
+  "category": "firearm",
+  "description": "The PFP-7 fires a sub-caliber dart tipped with a dense array of piezoelectric crystal elements that, upon impact with a hard surface, generate a precisely timed voltage cascade. This cascade is not intended to harm through electrical discharge — the voltage is too low and too brief for that — but rather to exploit a target material's own structural resonance. The timing of the piezoelectric pulse is tuned to the natural frequency of common construction and armor materials, inducing micro-fractures that propagate outward from the impact point in characteristic spider-web patterns. A single dart will not destroy a reinforced door; three darts placed in a triangular pattern at the correct spacing will cause it to fail catastrophically under its own next load cycle.\n\nHelix Biosystems originally developed the piezoelectric cascade array for non-destructive testing of bone density in their orthopedic implant program — the same resonance-frequency principle used to assess structural integrity without breaking the material was, their weapons division noted, equally applicable to breaking it deliberately. The PFP-7 is the result of that pivot, a compact sidearm that looks deceptively like a low-powered dart pistol and is frequently misidentified as a tranquilizer weapon on first inspection. The dart body is inert and non-toxic; the danger is entirely in what happens to the structure it hits.\n\nOperators familiar with materials science can use the Hairline with extraordinary precision — pre-fracturing a vehicle chassis before a collision, weakening a support column before detonation, or, in the weapon's most disturbing documented application, pre-fracturing bone through light armor before engaging with conventional weapons. The latter use is the primary reason for its restricted classification, as it produces injuries that appear consistent with conventional trauma while concealing a premeditated structural attack.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — dual-use classification, licensed for structural engineering; prohibited for anti-personnel piezoelectric application",
+  "base_technologies": [
+    "Piezoelectric disruption",
+    "Resonant frequency targeting",
+    "Sub-caliber dart propulsion"
+  ],
+  "specifications": "projectile: 4mm sub-caliber piezoelectric crystal-array dart\npropulsion: Compressed gas, low-noise discharge\neffective range: 40m accurate dart placement\npiezo pulse timing: Adjustable 0.1–2.4 millisecond delay post-impact\nfrequency profiles: 12 pre-loaded material profiles (concrete, steel, composite armor, ceramic, bone, glass, etc.); custom profile upload via port\npower source: Helix HB-2 capacitor cell, 60 darts per charge\nweight: 0.9 kg\nmagazine: 20-dart rotary cassette\nintegrated systems: Material profile selector dial, pulse-timing display, structural resonance scanner (optional rail attachment)",
+  "tactical_use": "The Hairline rewards patience and technical knowledge over aggression. Entry teams use it to pre-weaken barriers before breaching, reducing the force and noise required for the breach itself. Saboteurs favor it for infrastructure attacks — a correctly placed sequence of darts can cause a load-bearing element to fail hours or days later under normal operational stress, providing the operator extensive deniability. In direct combat it is rarely used as a primary weapon; operators who employ it against personnel typically use it in conjunction with a follow-up arm, pre-fracturing armor or limbs before engaging with conventional rounds. The weapon's low noise signature makes it viable for quiet operations where suppressed firearms would still produce detectable sound.",
+  "cultural_context": "Among engineers and construction workers in Meridian 88, the PFP-7 is a known and semi-legitimate tool — PALLADIAN CONSTRUCTION licensed variants are used routinely in controlled demolition and structural assessment. The street version carries a much darker reputation. The weapon's association with slow, deniable structural failures has given it currency in the corporate sabotage market, and several high-profile building collapses in the Meridian 88 industrial district have been retroactively attributed to Hairline attacks after fracture-pattern analysis. It is also quietly feared in medical circles, as the anti-personnel bone-fracture application produces injuries indistinguishable from accidental trauma on standard imaging.",
+  "known_users": [
+    "PALLADIAN CONSTRUCTION licensed demolition teams",
+    "Corporate sabotage specialists",
+    "Helix Biosystems internal security (field-testing units)",
+    "Black market fixers specializing in infrastructure disruption",
+    "Forensic countermeasure operatives"
+  ],
+  "story_hooks": [
+    "Three workers are hospitalized with identical compound fracture patterns following a 'workplace accident' at a Palladian Construction site — a materials engineer recognizes the fracture propagation as PFP-7 work and brings the finding to a fixer before it can be buried.",
+    "A licensed Palladian demolition team reports their PFP-7 units were stolen during a job — but the theft was reported a week after the job completed, and the timeline doesn't add up.",
+    "A Helix Biosystems researcher is selling custom frequency profiles for the PFP-7 on the dark market — one of the profiles is calibrated for a specific alloy used exclusively in a new generation of ARCTURUS DEFENSE SOLUTIONS body armor.",
+    "A city infrastructure inspector discovers hairline fracture patterns on a critical transit bridge's support pylons — the patterns are consistent with PFP-7 pre-fracturing, and the bridge carries 40,000 people per day."
+  ],
+  "ammunition_type": [
+    "4mm Piezoelectric Crystal-Array Dart PCA-4",
+    "Standard CO2 Propulsion Cartridge SPC-12",
+    "Helix Biosystems Compact Power Cell HB-3"
+  ],
+  "tags": [
+    "firearm",
+    "weapon",
+    "combat",
+    "war",
+    "theft",
+    "ai",
+    "elf",
+    "corporate",
+    "control",
+    "power",
+    "medical",
+    "market",
+    "bar",
+    "dark",
+    "vehicle",
+    "armor",
+    "fire",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a87f7838973b2481fe55b2df",
+  "name": "Vespid Dynamics Perimeter Alert Micro-Drone Network PAMN-2",
+  "brand_name": "Vespid",
+  "product_name": "Vespid Dynamics Perimeter Alert Micro-Drone Network PAMN-2",
+  "type": "equipment",
+  "aliases": [
+    "PAMN-2",
+    "Watch Bugs",
+    "Perimeter Swarm",
+    "Alert Net"
+  ],
+  "category": "surveillance",
+  "description": "A set of 20 micro-drones that establish an automated perimeter surveillance network, orbiting a designated area and alerting the operator to any intrusion. The PAMN-2 drones are the size of large moths and operate silently at night, using thermal and motion sensors to detect human-sized movement within the perimeter. When an intrusion is detected, the nearest drone illuminates the target with IR for identification while transmitting an alert to the operator's neural interface. The network automatically repositions to maintain coverage if individual drones are lost.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted — authorized perimeter security",
+  "base_technologies": [],
+  "specifications": {
+    "drone count": "20",
+    "perimeter radius": "Up to 200 meters",
+    "sensors": "Thermal + motion per drone",
+    "alert": "Neural interface notification with IR illumination",
+    "flight time": "6 hours per drone",
+    "info": "staggered rotation",
+    "self-healing": "Automatic repositioning on drone loss",
+    "noise": "Sub-20 dB — effectively silent",
+    "weight": "1.5 kg for complete set with charger"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A PAMN-2 network detected an intrusion that the drones could not identify — the thermal signature was there but the shape was not human, and the movement pattern did not match any known animal.",
+    "Someone deployed PAMN-2 drones around a rival's home to monitor their daily patterns — the surveillance was detected when a neighbor noticed moths flying in perfect geometric circles at midnight."
+  ],
+  "tags": [
+    "surveillance",
+    "equipment",
+    "war",
+    "neural",
+    "ai",
+    "night",
+    "drone",
+    "tier 2"
+  ]
+}

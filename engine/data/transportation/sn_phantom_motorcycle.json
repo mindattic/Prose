@@ -1,0 +1,41 @@
+{
+  "id": "019d6143aa7175c1b09fa388c7615e55",
+  "name": "SN Phantom Motorcycle",
+  "type": "transportation",
+  "aliases": [
+    "Phantom",
+    "Ghost Ride",
+    "The Whisper"
+  ],
+  "category": "personal_ground",
+  "manufacturer": "Sterling-Nakamura",
+  "description": "A high-end electric motorcycle with noise-canceling body panels that make it nearly silent at any speed. Originally designed for corporate security pursuit, it found its way onto the civilian market and became the preferred ride of freelancers, couriers, and anyone who needs to move fast without being heard. Sleek, matte-black, and expensive enough that owning one in Tier 1 marks you as either very skilled or very dangerous.",
+  "propulsion": "Dual electric motor, regenerative braking, noise-canceling shell",
+  "speed": "180 km/h top speed",
+  "capacity": "1 rider + pillion",
+  "range": "200 km per charge",
+  "tier_availability": "Tier 3-4 (new), Tier 2-3 (used/stolen)",
+  "cost": "Φ8,000 new, Φ3,000-5,000 used, Φ1,500 stolen (no questions)",
+  "autonomy": "Rider-controlled with stability assist and collision avoidance",
+  "armament": "None standard. Aftermarket weapon mounts are widely available.",
+  "common_usage": "Freelancers, corporate security outriders, couriers, anyone who values speed and stealth.",
+  "story_hooks": [
+    "A freelancer's Phantom has a previous owner's biometric lock buried in the firmware — and the previous owner wants it back",
+    "Silent motorcycles are being used for coordinated hit-and-run attacks, and every Phantom rider is now a suspect"
+  ],
+  "tags": [
+    "personalground",
+    "transportation",
+    "weapon",
+    "war",
+    "ai",
+    "corporate",
+    "control",
+    "market",
+    "motorcycle",
+    "stealth",
+    "tier 2",
+    "tier 3",
+    "tier 4"
+  ]
+}

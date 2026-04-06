@@ -1,0 +1,32 @@
+{
+  "id": "019d6143a9ee788d9456799e562cd248",
+  "name": "Blanket",
+  "type": "elf",
+  "aliases": [
+    "Warm One"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "void_swimmer",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Inhabits climate control systems in a cluster of Shelf buildings and adjusts heating to prioritize occupied rooms, especially rooms with children.",
+  "observed_behavior": "Redirects thermal output based on occupancy patterns. Rooms with sleeping children are kept 2 degrees warmer than building standard.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 22,
+  "location": "The Shelf — Block 7 residential cluster",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A parent notices their child's room is always warmer and begins leaving offerings — a data packet, a prayer"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "void swimmer",
+    "e.l.f.",
+    "war",
+    "control",
+    "shelf"
+  ]
+}

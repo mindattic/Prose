@@ -1,0 +1,173 @@
+{
+  "id": "019d6143a70375f4b6baa7968f6671ee",
+  "type": "character",
+  "name": "Tomislav Sékou-Ramírez",
+  "aliases": [
+    "Tommo",
+    "The Mint"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Counterfeiter specializing in Quanta currency forgeries and corporate scrip duplication",
+  "age": 22,
+  "status": "active",
+  "location": "The Shelf, Lower Level 9 — rents a two-room unit in the Blackpipe Corridor that doubles as his print shop",
+  "description": "Tomislav is whip-thin with a restless, bird-quick way of moving — he is always slightly in motion, tapping, shifting, scanning the room. He has his father's Croatian bone structure and his Malian grandmother's complexion, a warm dark brown, and he grows a patchy beard he refuses to admit is patchy. His geneware is expressive: color-shifting hair he keeps cycling through ambers and deep reds, and patterned irises that he updates seasonally through a subscription service — currently sporting a fine hexagonal grid in pale gold. He looks younger than 22 and has learned to use this strategically.\n\nHe came to counterfeiting through graphic design — he was genuinely talented, got a Tessera scholarship to an applied arts program, washed out in the second year when he couldn't keep up with the social and academic debt load, and discovered that the skills transferred perfectly to a more immediately lucrative application. He is not violent, not particularly brave, and deeply aware that he is one forensic audit away from a serious corporate jurisdiction charge. He manages this anxiety through manic productivity and a carefully cultivated reputation for quality. His work is, genuinely, exceptional. He talks about it the way a craftsman talks about joinery.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "That he washed out of the legitimate path because he wasn't good enough, not because of circumstances",
+      "Being caught not for the crime but for the humiliation of it"
+    ],
+    "core_desires": [
+      "To be recognized as genuinely skilled at something — anything",
+      "To eventually accumulate enough to buy his way into legitimacy"
+    ],
+    "coping_mechanisms": [
+      "Aesthetic perfectionism — he cannot ship substandard work, even when it would be financially smarter",
+      "Elaborate justification narratives about corporate currency being inherently fictional anyway"
+    ],
+    "blind_spots": [
+      "Dramatically underestimates how visible his operation is to people paying attention",
+      "Has romanticized his own story to the point where he cannot see the precarity clearly"
+    ],
+    "secret": "He has been quietly saving a portfolio of his finest counterfeit work — not to sell, but because he genuinely thinks it is art and fantasizes about an anonymous gallery submission to a Tessera-sponsored exhibition. He has the submission form filled out and saved as a draft. He revisits it when drunk."
+  },
+  "speech_patterns": {
+    "vocabulary": "Hybrid of art school vocabulary and street pragmatics — talks about criminal work using design and craft terminology",
+    "cadence": "Fast, associative, jumps topics, circles back; gets slower and more precise when talking about his actual work",
+    "verbal_tics": [
+      "'Okay but hear me out'",
+      "Uses 'clean' and 'dirty' as primary aesthetic judgments about everything",
+      "Refers to his forgeries as 'pieces'"
+    ],
+    "example_lines": [
+      "'The problem with most fake scrip is the kerning. Nobody checks the kerning. I check the kerning. That's why mine works.'",
+      "'I'm not stealing. I'm redistributing the fiction. Quanta's already made up — I'm just making more of it up.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He has accidentally produced a perfect duplicate of a limited-run Axiom scrip denomination that was supposed to be cryptographically impossible to fake — and now someone in a very expensive coat has been asking about him in the Corridor",
+    "He received a commission for a very specific identity document — a Tessera internal access credential — and has no idea who ordered it or why, but the advance payment was Φ800 in real currency and he already spent half of it"
+  ],
+  "narrative_function": "Local color, minor quest giver, resource for false documents or currency, point of entry into The Shelf's underground economy",
+  "augmentations": "Color-shifting hair (geneware, subscription-tier). Patterned irises (cosmetic, seasonal subscription). Haptic enhancement in his dominant hand — originally installed for design work, increases tactile sensitivity for fine detail work.",
+  "daily_life": "Sleeps until noon, works from mid-afternoon into the early hours, takes long walks through The Shelf in the pre-dawn quiet when he needs to think; eats exclusively from a noodle vendor two corridors down.",
+  "affiliation": "Informal network of small-time criminals in Blackpipe Corridor; primary distribution through a numbers runner named Efe who he has never met in person",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 8,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 4,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 3
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "counterfeiter",
+      "artist",
+      "anxious",
+      "tier 1",
+      "Blackpipe Corridor",
+      "The Shelf"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never meet clients in person — everything through intermediaries",
+      "Quality is non-negotiable even under deadline pressure",
+      "If something feels wrong about a job, raise the price until it feels right or they go away"
+    ],
+    "escalation_ladder": [
+      "Nervous deflection and subject changing",
+      "Transparent lying delivered with complete conviction",
+      "Physically relocating — he will simply not be home if he is sufficiently scared",
+      "Reaching out to the Corridor network for someone bigger to stand between him and the problem"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Performatively casual and friendly, constantly assessing whether they're a customer, a threat, or neither",
+      "friends": "Genuinely warm, generous with his work, will spend four hours helping someone design a flyer for their food stall for free"
+    },
+    "stress_responses": {
+      "low": "Talks faster, jokes more",
+      "medium": "Goes very focused on whatever project is in front of him — uses work as a stress response",
+      "high": "Freezes briefly then overcorrects into frantic action — packs a bag, hides his equipment, makes three contradictory plans simultaneously"
+    },
+    "contradictions": [
+      "Cares deeply about craft and quality in a field where most clients cannot tell the difference",
+      "Wants legitimacy desperately but has structured his entire identity around being outside legitimate systems"
+    ],
+    "habits": [
+      "Leaves the color-shift cycling on his hair when working alone — says it helps him think",
+      "Annotates his own work with tiny invisible critique notes in margins using UV-reactive ink",
+      "Burns failed prints ceremonially rather than just discarding them"
+    ],
+    "breaking_points": [
+      "Someone describing his work as 'good enough' rather than excellent",
+      "Any serious indication that he has been identified by a corporate security apparatus"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

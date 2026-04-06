@@ -1,0 +1,189 @@
+{
+  "id": "019d6143a6337061bb15e9f513341a55",
+  "type": "character",
+  "name": "Ioana Mensah-Yakimoto",
+  "aliases": [
+    "Io"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Building cleaner and informal super, Lockhaven South residential block",
+  "age": 29,
+  "status": "active",
+  "location": "Lockhaven South, Block 14-C",
+  "description": "Ioana is lean and angular with Romanian-inflected cheekbones and their Ghanaian grandfather's wide, expressive mouth — usually pressed thin while they work, cracking open into a wide grin when something genuinely amuses them, which is more often than their expression suggests. Their hair is natural and dense, kept in a high puff during shifts, and they've spliced in color-changing geneware strands that cycle slowly through sunset colors when they're relaxed and go flat grey when they're stressed or focused. Both forearms are covered in cleaning product stains that won't fully wash out — pale ghost-marks on medium brown skin that they've stopped caring about. They move fast and efficiently through the block, cart rattling behind them, head down, headphones in.\n\nThey have lived in Block 14-C their whole life — born in apartment 7, now renting apartment 3 one floor down. They know every crack in every wall, every resident's schedule, which elevator makes the grinding sound at floor four that maintenance keeps marking as 'resolved' in the system. The building's management company, Palladian Property Subsidiaries, treats them as cleaning staff and nothing else. The residents treat them as the person you actually call when something breaks, someone floods the laundry floor, or a neighbor's gone quiet for three days. Ioana has mixed feelings about this. Mostly they do it anyway.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "being displaced — Palladian has twice proposed converting the block to short-term corporate housing",
+      "becoming so essential to others that they can never leave even if they want to"
+    ],
+    "core_desires": [
+      "to own something — any small thing — that can't be taken by a lease termination",
+      "genuine reciprocity, not just being needed"
+    ],
+    "coping_mechanisms": [
+      "physical labor as emotional regulation",
+      "dark humor, very dry",
+      "the rooftop garden as a place where they are accountable to nothing and no one"
+    ],
+    "blind_spots": [
+      "assumes competence = trustworthiness, leaves them vulnerable to capable liars",
+      "has no framework for accepting help gracefully; interprets it as obligation"
+    ],
+    "secret": "They have a master copy of every resident's unit keycode — not issued to them, built from watching and learning over years. They've used it twice: once to check on an elderly resident who stopped answering, and once, three years ago, to read a file on a resident's desk that they now wish they hadn't seen and can't unknow."
+  },
+  "speech_patterns": {
+    "vocabulary": "Economical. Doesn't use three words when two will do. Occasional Romanian interjections when frustrated. Surprisingly precise technical vocabulary about building systems.",
+    "cadence": "Quick, flat affect most of the time. Rhythm changes when they're genuinely engaged — becomes looser, quicker, more rhythm.",
+    "verbal_tics": [
+      "'Yeah, no' meaning 'absolutely not'",
+      "'The system says—' followed by contempt",
+      "long flat exhale before delivering bad news"
+    ],
+    "example_lines": [
+      "'The system says the elevator's fine. The system also said the boiler was fine in 2197 and seventeen people spent a week without heat. I fixed the elevator. You're welcome.'",
+      "'I don't want a tip. I want you to stop leaving wet mop heads in the utility closet. That's what I want.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Unit 12-F has been leased to a new resident who arrived with three large sealed cases and hasn't been seen since. Ioana hasn't said anything yet, but they've noticed that the corridor outside 12-F smells subtly wrong — chemical, clinical — and the door is never fully closed.",
+    "Palladian has sent an efficiency consultant to assess the block. Ioana knows the consultant's recommendations will end with them being replaced by an automated cleaning system — and that three elderly residents will lose the only consistent person who checks on them."
+  ],
+  "narrative_function": "Has access to every space in the building; knows every resident. Natural information source for anything happening in Lockhaven South. Can grant or deny physical access. Will get involved if residents are threatened.",
+  "augmentations": "Color-changing geneware hair strands (cosmetic); reinforced knee joints (practical, self-paid, second-hand grade — makes a faint click on stairs)",
+  "daily_life": "0600-1400 cleaning shift across three floors; afternoons spent doing informal maintenance work the building's actual management won't authorize. They eat lunch on the roof, which they've quietly cultivated into a small garden over eight years.",
+  "affiliation": "Palladian (contracted cleaner), de facto independent building super",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 7,
+      "expression": 4,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 0,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": 2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Territorial",
+      "Competent",
+      "Quietly Protective",
+      "Private",
+      "Place-Bonded"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "solve the actual problem, not the reported problem",
+      "protect the residents who can't protect themselves, even when management won't sanction it",
+      "never volunteer information to Palladian beyond what's contractually required"
+    ],
+    "escalation_ladder": [
+      "handles it themselves",
+      "asks a resident they trust to help",
+      "goes to whoever has actual power — usually the tenants' collective, not Palladian"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Cautious, clipped, assessing. Watches hands and eyes.",
+      "friends": "Self-deprecating warmth, shows up, will fix things for you without being asked and then never mention it"
+    },
+    "stress_responses": {
+      "low": "Works faster, more thorough",
+      "medium": "Goes quiet, hair turns grey-flat, works until the problem is solved or they collapse",
+      "high": "Decisive and cold, prioritizes the most vulnerable person in any situation"
+    },
+    "contradictions": [
+      "Claims not to care about the building while having memorized its entire system history going back fifteen years"
+    ],
+    "habits": [
+      "checks the roof garden before their shift and after",
+      "keeps a small notebook of actual building maintenance data that the official records don't capture",
+      "always knows what each resident's schedule is, passively, without trying"
+    ],
+    "breaking_points": [
+      "a resident being harmed through Palladian's negligence while the system marks the problem resolved",
+      "the roof garden being destroyed"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Reinforced knee joint implants (second-hand, medical-grade, slight audible click on stairs)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Reinforced knee joint implants (second-hand, medical-grade, slight audible click on stairs)",
+      "replaces": ""
+    },
+    {
+      "name": "Geneware color-reactive hair strands (cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware color-reactive hair strands (cosmetic)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Stoic": 0.9,
+    "Cleaner": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,424 @@
+2026-04-06 12:57:45AM [INF] StreetSamurai MAUI host started
+2026-04-06 12:58:07AM [INF] Export complete: mode=all, path=D:\Projects\MindAttic\StreetSamurai\engine\exports\index.htm
+2026-04-06 01:06:19AM [INF] StreetSamurai MAUI host started
+2026-04-06 01:11:32AM [INF] StreetSamurai MAUI host started
+2026-04-06 01:12:51AM [INF] StreetSamurai MAUI host started
+2026-04-06 01:15:10AM [INF] StreetSamurai MAUI host started
+2026-04-06 01:17:30AM [DBG] LlmRouter dispatching to provider=claude
+2026-04-06 01:17:30AM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=2048, temp=0.1, systemLen=525295, userLen=27121
+2026-04-06 01:18:17AM [INF] Claude response: model=claude-sonnet-4-6, responseLen=8431
+2026-04-06 01:18:17AM [WRN] Validation canon check failed, returning empty results
+System.Text.Json.JsonException: Expected end of string, but instead reached end of data. Path: $[3].alternatives[0] | LineNumber: 48 | BytePositionInLine: 290.
+ ---> System.Text.Json.JsonReaderException: Expected end of string, but instead reached end of data. LineNumber: 48 | BytePositionInLine: 290.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeString()
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.ValidationService.ValidateDeepAsync(String generatedText, String worldContext, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 140
+2026-04-06 01:18:17AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 01:20:01AM [DBG] LlmRouter dispatching to provider=claude
+2026-04-06 01:20:01AM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=2048, temp=0.3, systemLen=538056, userLen=35
+2026-04-06 01:20:08AM [INF] Claude response: model=claude-sonnet-4-6, responseLen=213
+2026-04-06 01:27:35AM [INF] StreetSamurai MAUI host started
+2026-04-06 01:27:59AM [INF] Export complete: mode=all, path=D:\Projects\MindAttic\StreetSamurai\engine\exports\index.htm
+2026-04-06 01:29:24AM [INF] Validation fanning out to 11 providers: Claude, ChatGPT, Gemini, DeepSeek, Mistral, Grok, Groq, Together, OpenRouter, Fireworks, Cohere
+2026-04-06 01:30:27AM [WRN] Validation parse failed for provider Claude
+System.Text.Json.JsonException: Expected end of string, but instead reached end of data. Path: $[2].alternatives[0] | LineNumber: 35 | BytePositionInLine: 52.
+ ---> System.Text.Json.JsonReaderException: Expected end of string, but instead reached end of data. LineNumber: 35 | BytePositionInLine: 52.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeString()
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.ValidationService.ParseValidationResponse(String response, String providerName) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 186
+2026-04-06 01:30:27AM [INF] Validation found 4 issues from 11 providers, 4 after dedup
+2026-04-06 01:43:50AM [INF] StreetSamurai MAUI host started
+2026-04-06 01:44:09AM [INF] Validation fanning out to 11 providers: Claude, ChatGPT, Gemini, DeepSeek, Mistral, Grok, Groq, Together, OpenRouter, Fireworks, Cohere
+2026-04-06 01:44:09AM [WRN] Validation failed for provider Cohere
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallCohere(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 233
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 60
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:44:09AM [WRN] Validation failed for provider Groq
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:44:10AM [WRN] Validation failed for provider Grok
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:44:10AM [WRN] Validation failed for provider OpenRouter
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:44:10AM [WRN] Validation failed for provider Mistral
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:44:10AM [WRN] Validation failed for provider Together
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 422 (Unprocessable Entity).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:44:10AM [WRN] Validation failed for provider Fireworks
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:44:12AM [WRN] Validation failed for provider DeepSeek
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:44:44AM [INF] Validation found 2 issues from 11 providers, 1 after dedup
+2026-04-06 01:44:44AM [DBG] LlmRouter dispatching to provider=claude
+2026-04-06 01:44:44AM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=512, temp=0.7, systemLen=1120, userLen=21
+2026-04-06 01:44:54AM [INF] Claude response: model=claude-sonnet-4-6, responseLen=1732
+2026-04-06 01:48:07AM [INF] StreetSamurai MAUI host started
+2026-04-06 01:48:31AM [INF] Validation fanning out to 11 providers: Claude, ChatGPT, Gemini, DeepSeek, Mistral, Grok, Groq, Together, OpenRouter, Fireworks, Cohere
+2026-04-06 01:48:31AM [WRN] Validation request failed for provider Cohere
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallCohere(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 233
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 60
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:48:31AM [WRN] Validation request failed for provider Grok
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:48:31AM [WRN] Validation request failed for provider OpenRouter
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:48:31AM [WRN] Validation request failed for provider Groq
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:48:32AM [WRN] Validation request failed for provider Mistral
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:48:32AM [WRN] Validation request failed for provider Fireworks
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:48:33AM [WRN] Validation request failed for provider Together
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 422 (Unprocessable Entity).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:48:34AM [WRN] Validation request failed for provider DeepSeek
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:49:01AM [INF] Validation found 2 issues from 11 providers, 1 after dedup
+2026-04-06 01:49:01AM [DBG] LlmRouter dispatching to provider=claude
+2026-04-06 01:49:01AM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=512, temp=0.7, systemLen=1162, userLen=21
+2026-04-06 01:49:11AM [INF] Claude response: model=claude-sonnet-4-6, responseLen=2391
+2026-04-06 01:50:29AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 01:50:36AM [INF] Validation fanning out to 11 providers: Claude, ChatGPT, Gemini, DeepSeek, Mistral, Grok, Groq, Together, OpenRouter, Fireworks, Cohere
+2026-04-06 01:50:36AM [WRN] Validation request failed for provider Cohere
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallCohere(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 233
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 60
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:50:36AM [WRN] Validation request failed for provider Grok
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:50:36AM [WRN] Validation request failed for provider Groq
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:50:37AM [WRN] Validation request failed for provider Mistral
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:50:37AM [WRN] Validation request failed for provider Together
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 422 (Unprocessable Entity).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:50:37AM [WRN] Validation request failed for provider Fireworks
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:50:39AM [WRN] Validation request failed for provider OpenRouter
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:50:39AM [WRN] Validation request failed for provider DeepSeek
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:51:34AM [WRN] Validation parse failed for provider Claude
+System.Text.Json.JsonException: 'L' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: 'L' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.ValidationService.ParseValidationResponse(String response, String providerName) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 242
+2026-04-06 01:51:34AM [INF] Validation found 1 issues from 11 providers, 1 after dedup
+2026-04-06 01:51:34AM [DBG] LlmRouter dispatching to provider=claude
+2026-04-06 01:51:34AM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=512, temp=0.7, systemLen=926, userLen=21
+2026-04-06 01:51:41AM [INF] Claude response: model=claude-sonnet-4-6, responseLen=1117
+2026-04-06 01:54:35AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 01:54:42AM [INF] Validation fanning out to 11 providers: Claude, ChatGPT, Gemini, DeepSeek, Mistral, Grok, Groq, Together, OpenRouter, Fireworks, Cohere
+2026-04-06 01:54:43AM [WRN] Validation request failed for provider Cohere
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallCohere(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 233
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 60
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:54:43AM [WRN] Validation request failed for provider Groq
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:54:43AM [WRN] Validation request failed for provider OpenRouter
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:54:43AM [WRN] Validation request failed for provider Grok
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:54:44AM [WRN] Validation request failed for provider Together
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 422 (Unprocessable Entity).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:54:44AM [WRN] Validation request failed for provider Mistral
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:54:44AM [WRN] Validation request failed for provider Fireworks
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:54:45AM [WRN] Validation request failed for provider DeepSeek
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:55:23AM [INF] Validation found 2 issues from 11 providers, 1 after dedup
+2026-04-06 01:55:23AM [DBG] LlmRouter dispatching to provider=claude
+2026-04-06 01:55:23AM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=512, temp=0.7, systemLen=1178, userLen=21
+2026-04-06 01:55:34AM [INF] Claude response: model=claude-sonnet-4-6, responseLen=2062
+2026-04-06 01:57:39AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 01:57:49AM [INF] Validation fanning out to 11 providers: Claude, ChatGPT, Gemini, DeepSeek, Mistral, Grok, Groq, Together, OpenRouter, Fireworks, Cohere
+2026-04-06 01:57:49AM [WRN] Validation request failed for provider Cohere
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallCohere(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 233
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 60
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:57:50AM [WRN] Validation request failed for provider Grok
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:57:50AM [WRN] Validation request failed for provider Groq
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:57:50AM [WRN] Validation request failed for provider Mistral
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:57:50AM [WRN] Validation request failed for provider Together
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 422 (Unprocessable Entity).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:57:51AM [WRN] Validation request failed for provider Fireworks
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:57:51AM [WRN] Validation request failed for provider OpenRouter
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:57:52AM [WRN] Validation request failed for provider DeepSeek
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 01:58:44AM [WRN] Validation parse failed for provider Claude
+System.Text.Json.JsonException: 'L' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: 'L' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.ValidationService.ParseValidationResponse(String response, String providerName) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 242
+2026-04-06 01:58:44AM [INF] Validation found 1 issues from 11 providers, 1 after dedup
+2026-04-06 01:58:44AM [DBG] LlmRouter dispatching to provider=claude
+2026-04-06 01:58:44AM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=512, temp=0.7, systemLen=1173, userLen=21
+2026-04-06 01:58:51AM [INF] Claude response: model=claude-sonnet-4-6, responseLen=1400
+2026-04-06 02:01:26AM [INF] Validation fanning out to 11 providers: Claude, ChatGPT, Gemini, DeepSeek, Mistral, Grok, Groq, Together, OpenRouter, Fireworks, Cohere
+2026-04-06 02:01:27AM [WRN] Validation request failed for provider Cohere
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallCohere(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 233
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 60
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 02:01:27AM [WRN] Validation request failed for provider Grok
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 02:01:27AM [WRN] Validation request failed for provider Groq
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 02:01:27AM [WRN] Validation request failed for provider OpenRouter
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 02:01:27AM [WRN] Validation request failed for provider Mistral
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 02:01:28AM [WRN] Validation request failed for provider Together
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 422 (Unprocessable Entity).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 02:01:28AM [WRN] Validation request failed for provider Fireworks
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 02:01:30AM [WRN] Validation request failed for provider DeepSeek
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.MultiLlmService.CallOpenAiCompatible(LlmProvider provider, String key, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 162
+   at StreetSamurai.Core.Services.MultiLlmService.CallProviderAsync(String providerId, String system, String user, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\MultiLlmService.cs:line 61
+   at StreetSamurai.Core.Services.ValidationService.<>c__DisplayClass9_1.<<ValidateDeepAsync>b__4>d.MoveNext() in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 158
+2026-04-06 02:02:34AM [WRN] Validation parse failed for provider Claude
+System.Text.Json.JsonException: 'L' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: 'L' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.ValidationService.ParseValidationResponse(String response, String providerName) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 242
+2026-04-06 02:02:34AM [INF] Validation found 1 issues from 11 providers, 1 after dedup
+2026-04-06 02:02:34AM [DBG] LlmRouter dispatching to provider=claude
+2026-04-06 02:02:34AM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=512, temp=0.7, systemLen=1213, userLen=21
+2026-04-06 02:02:40AM [INF] Claude response: model=claude-sonnet-4-6, responseLen=1082
+2026-04-06 02:07:18AM [DBG] Saving story project 019d6143ab627c8c8673ceb358e4f3bb to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\the_cartography_of_uncharted_interfaces.019d6143ab627c8c8673ceb358e4f3bb\story.json
+2026-04-06 02:07:18AM [DBG] LlmRouter dispatching to provider=claude
+2026-04-06 02:07:18AM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=4096, temp=0.2, systemLen=1815, userLen=33223
+2026-04-06 02:13:30AM [INF] StreetSamurai MAUI host started

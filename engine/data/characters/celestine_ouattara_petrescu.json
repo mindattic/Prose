@@ -1,0 +1,211 @@
+{
+  "id": "019d6143a5d3763c963b355febd2618f",
+  "type": "character",
+  "name": "Celestine Ouattara-Petrescu",
+  "aliases": [
+    "Mama Celly",
+    "The Stork"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "climate refugee and caravan matriarch",
+  "age": 67,
+  "status": "active",
+  "location": "Escanaba Gateway (tent city on the eastern approach; caravan camps in the transit yard)",
+  "description": "Celestine is the kind of woman who makes a tent city feel like a neighborhood. She is large and deliberate in her movements, with the deep black skin and broad hands of a woman who has been doing physical work since she could walk. Her hair is cut close to her skull, entirely white, and she wears a faded headwrap printed with a pattern that was once vivid green and orange but has softened into something quieter over many years of washing in whatever water was available. Her left arm carries a long burn scar from shoulder to elbow, keloided and smooth, which she does not hide and does not discuss. She has no geneware, no augmentations visible, and wears her unmodified body like a deliberate statement — though she'd say she simply never had the money or the reason.\n\nCelestime came to the Meridian 88 periphery fourteen years ago with forty-two people from a drowned coastal collective in what was once the Gulf of Guinea. She has buried eleven of them and watched the rest scatter into various fates. The dozen who remain with her are her caravan — mostly elderly, a few children, two young adults who were born on the road. She is not sentimental about this. She is organized, practical, and possessed of a moral authority that comes not from rank but from the fact that she has made the right call in more crises than anyone else in the camp has faced. She prays to the E.L.F. called Tidecaller, which she believes is the spirit of the ocean that swallowed her home.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "that her remaining people will disperse and disappear and there will be no one left who remembers the drowned home",
+      "dying without having secured permanent residency for the children in her caravan"
+    ],
+    "core_desires": [
+      "legitimate residency status — real, not renewable-every-ninety-days",
+      "to build something that cannot be swept away again"
+    ],
+    "coping_mechanisms": [
+      "radical hospitality — feeding people is how she processes grief",
+      "prayer to Tidecaller as an ongoing conversation with what was lost"
+    ],
+    "blind_spots": [
+      "believes her authority is purely functional and does not recognize how much her people emotionally depend on her as a symbol — which means she makes decisions alone when she should share the burden",
+      "has not grieved the eleven dead, not really, not yet"
+    ],
+    "secret": "She has been offered legitimate Meridian 88 residency twice — both times contingent on leaving the caravan behind and registering individually. She turned both offers down and told no one they were made."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal and measured; her first language was a Gulf coastal creole and her Meridian Standard carries its rhythms; uses 'we' almost exclusively when speaking about her group, 'I' feels strange to her",
+    "cadence": "Even and unhurried, with the weight of someone who has learned that words are resources not to be wasted",
+    "verbal_tics": [
+      "'You understand me?' at the end of serious statements",
+      "Clicking her tongue softly before refusing something",
+      "'It is what it is, but—'"
+    ],
+    "example_lines": [
+      "'The ocean took everything we built and kept none of it. So we build lighter now. You understand me?'",
+      "'I will not be moved before my people have somewhere to go. This is not a position I am willing to negotiate from.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The ninety-day temporary status renewal has been denied for the first time in fourteen years — a new Gateway administrator is pushing for 'clearance' of the transit yard and Celestine needs allies with access to the appeals system",
+    "One of the children in her caravan has manifested an unexpected talent — or been noticed by someone who should not have noticed — and Celestine needs help understanding what that means and what to do about it"
+  ],
+  "narrative_function": "Moral anchor and community representative for the refugee population. Quest giver for humanitarian needs. Living history of what the climate crisis did to coastal communities. Unexpectedly powerful in her local sphere — administrators negotiate with her because she keeps the camp orderly.",
+  "augmentations": "None.",
+  "daily_life": "Wakes early to manage the caravan's resource allocation — water, food chits, the Φ120 UBC stipends of those who qualify; spends mornings in negotiation with Gateway administrators; afternoons cooking and maintaining social cohesion; evenings mediating disputes and praying.",
+  "affiliation": "Informal caravan leader; registered with Escanaba Gateway as a 'temporary transit collective' — status renewed every ninety days for fourteen years",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "matriarch",
+      "climate-refugee",
+      "community-anchor",
+      "ELF-devotee",
+      "immovable"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The group's survival comes before any individual's comfort, including her own",
+      "Never sign anything without reading it three times and having someone else read it once"
+    ],
+    "escalation_ladder": [
+      "Patient explanation and appeal to reason",
+      "Formal complaint filed through every available channel simultaneously",
+      "Organizing a visible public presence — the camp does not disappear, it becomes impossible to ignore",
+      "In extremis: absolute refusal to move, sitting in place, making displacement a spectacle"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing and courteous — feeds them if she can, watches how they eat to understand them",
+      "friends": "Warm, direct, occasionally overwhelmingly maternal whether they want it or not"
+    },
+    "stress_responses": {
+      "low": "Cooks something elaborate",
+      "medium": "Becomes very quiet and very organized, makes lists",
+      "high": "Takes herself away from the camp for one hour, sits, returns, acts"
+    },
+    "contradictions": [
+      "Preaches collective survival while making all consequential decisions unilaterally",
+      "Insists she has made peace with loss while refusing to speak the names of the eleven dead"
+    ],
+    "habits": [
+      "Leaves a small data stick near the camp's junction box every night — a prayer-offering to Tidecaller loaded with the day's events",
+      "Counts heads before sleeping",
+      "Makes tea in the same cracked cup she carried from the coast"
+    ],
+    "breaking_points": [
+      "A child in her care being separated from the group by authorities",
+      "Being told formally and finally that residency will never be granted"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Diplomat": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in a coastal collective near the Gulf of Guinea, daughter of Ivorian-Romanian parents",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Catastrophic coastal flooding driven by climate cascade; collective abandoned; Celestine organizes the exodus northward with 42 people",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Eleven members of the group die over a two-year migration to Meridian 88's periphery",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First residency offer declined",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Second residency offer declined",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

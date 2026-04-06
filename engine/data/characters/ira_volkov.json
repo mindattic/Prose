@@ -1,0 +1,228 @@
+{
+  "id": "019d6143a63574b4b36be2b9f6c48427",
+  "type": "character",
+  "name": "Ira Volkov",
+  "aliases": [
+    "Voltage",
+    "Volts",
+    "Sparky"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Lower Dock Crew muscle — Prologue survivor. Both kneecaps destroyed.",
+  "age": 31,
+  "status": "active",
+  "location": "The Shelf — lower loading docks",
+  "description": "Ira Volkov was an electrical systems technician for the Shelf's grid maintenance before a contract dispute with the Meridian Grid Authority left him blacklisted. He joined Marcus's crew because unemployable electricians with combat implants have limited career options. He has a genuine talent for engineering that the Shelf has no legitimate use for.\n\nKyle shorted his forearm shock projectors on the first pass, then put the hand cannon through both kneecaps. Ira now rolls everywhere in a salvaged mobility chair that he has modified with the remains of his shock projectors — the armrests can tase people who get too close. He considers this an upgrade. He has also added a cup holder, a phone mount, and a retractable tool rack. The chair catches fire roughly once a month.\n\nHe has an ex-wife, Katya, who lives in the Meridian Core with their twin daughters, Anya and Lilia (age 8). Katya left when the blacklisting happened. Ira does not blame her. He sends what he can. The twins think their father is in a wheelchair because of a work accident, which is technically not a lie.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.2,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.1
+    },
+    "core_fears": [
+      "Stairs",
+      "The twins seeing him in the chair",
+      "Kyle finding his modifications amusing rather than threatening"
+    ],
+    "core_desires": [
+      "Knees that work",
+      "A chair that doesn't catch fire",
+      "To see the twins without Katya's new partner hovering"
+    ],
+    "coping_mechanisms": [
+      "Modifies everything — if it has wires, Ira will 'improve' it",
+      "Dark humor",
+      "Engineering as therapy"
+    ],
+    "blind_spots": [
+      "His modifications are as likely to hurt him as anyone else",
+      "He actually respects Kyle's technical precision and won't admit it"
+    ],
+    "secret": "He could probably get legitimate engineering work in the Circuit if he used a different name. He hasn't tried. He's afraid of finding out he's not good enough."
+  },
+  "speech_patterns": {
+    "vocabulary": "Engineering jargon mixed with profanity. Explains everything in electrical metaphors.",
+    "cadence": "Casual, self-deprecating. The humor of a man who has accepted his situation and decided to make it interesting.",
+    "verbal_tics": [
+      "Pats the chair like a pet",
+      "Says 'watch this' before things that don't work"
+    ],
+    "example_lines": [
+      "Watch this — *spark* *smoke* ...that's a feature, not a bug.",
+      "The twins video-called yesterday. Lilia asked if my chair can fly. I said 'not yet.' Anya said 'please don't.' Smart kid."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Anya and Lilia Volkov",
+      "type": "daughters",
+      "description": "Eight-year-old twins. Meridian Core. Think their father had a work accident. Call him every Thursday.",
+      "emotional_core": "Joy and guilt in equal measure",
+      "story_tension": "If the twins learn the truth, Katya cuts contact. Ira knows this."
+    },
+    {
+      "name": "Katya Volkov",
+      "type": "ex-wife",
+      "description": "Remarried. Allows Thursday calls. Ira is grateful and devastated.",
+      "emotional_core": "Loss accepted but not processed",
+      "story_tension": "Katya's new partner works for Meridian Grid — the company that blacklisted Ira."
+    }
+  ],
+  "story_hooks": [
+    "The taser chair escalates each appearance",
+    "His real engineering talent is wasted",
+    "Katya's new partner at Meridian Grid is a narrative thread waiting to pull",
+    "The twins are leverage"
+  ],
+  "narrative_function": "The tinkerer. Every appearance features a new modification to the chair that is more dangerous than the last. The crew's arms race with Kyle is played for dark comedy through Voltage's escalating and increasingly unstable upgrades.",
+  "augmentations": "Forearm shock projectors (shorted, partially salvaged into chair). Mobility chair with taser armrests. No knees.",
+  "daily_life": "Rolling around the docks. Modifying the chair. Starting small electrical fires.",
+  "affiliation": "Lower Dock Crew",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 3,
+      "vitality": 5,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 0,
+      "transparency_guardedness": -2
+    },
+    "drives": [
+      "Get functional knees",
+      "See the twins without conditions",
+      "Build something that works"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 5,
+        "response": "Modifies the chair, tinkers with anything electronic, starts small fires"
+      },
+      "moral": 4,
+      "trust": 5,
+      "desperation": 5
+    },
+    "strengths": [
+      "Creativity",
+      "Humor",
+      "Perseverance",
+      "Curiosity",
+      "Love"
+    ],
+    "weaknesses": [
+      "Prudence",
+      "Self-regulation",
+      "Bravery",
+      "Judgment",
+      "Integrity"
+    ],
+    "tags": [
+      "engineer",
+      "crew-member",
+      "wheelchair",
+      "tinkerer",
+      "blacklisted",
+      "taser-chair",
+      "father",
+      "ex-electrician"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will always modify anything with wires — improvement is compulsive",
+      "Will never admit he respects Kyle's technical precision",
+      "Will always say 'watch this' before demonstrating something that does not work",
+      "Will never miss the Thursday video call with the twins",
+      "Will always frame the wheelchair as an upgrade rather than a loss",
+      "Will never try for legitimate Circuit engineering work — afraid of learning he is not good enough"
+    ],
+    "escalation_ladder": [
+      "Dark humor — describes the situation in electrical metaphors",
+      "Pats the chair and deploys the taser armrests as a warning demonstration",
+      "Activates the repurposed shock projectors — the chair becomes a weapon",
+      "The chair catches fire — unclear if intentional or not, effective regardless",
+      "Goes quiet and stops joking — the engineer who could have been something else surfaces"
+    ],
+    "interpersonal_modes": {
+      "Anya and Lilia": "Joy and guilt in equal measure — performs normalcy on Thursday calls",
+      "Katya": "Grateful and devastated — accepts her conditions because the alternative is losing the twins",
+      "The Crew": "The funny one, the tinkerer — his humor and engineering keep him valuable"
+    },
+    "stress_responses": {
+      "low": "Modifies the chair, adds features nobody asked for",
+      "medium": "Modifications become more ambitious and less safe, humor sharpens",
+      "high": "The chair catches fire, Ira puts it out while explaining the theory behind the failure",
+      "critical": "Stops modifying — stares at the chair in silence — the engineer confronts what he has become"
+    },
+    "contradictions": [
+      "Frames the wheelchair as an upgrade while desperately wanting functional knees",
+      "Has genuine engineering talent wasted on taser armrests and cup holders",
+      "Secretly respects the technical precision of the man who destroyed his kneecaps"
+    ],
+    "habits": [
+      "Pats the chair like a pet during conversation",
+      "Says 'watch this' before every demonstration regardless of outcome",
+      "Explains everything in electrical metaphors",
+      "Adds a new modification to the chair roughly monthly",
+      "Calls the twins every Thursday without exception"
+    ],
+    "breaking_points": [
+      "The twins learning the truth about how he ended up in the chair",
+      "Katya cutting contact entirely — losing the Thursday calls",
+      "Discovering Katya's new partner works for Meridian Grid, the company that blacklisted him",
+      "Being offered legitimate engineering work that would mean leaving the crew and the Shelf"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Brawler": 0.9,
+    "Berserker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

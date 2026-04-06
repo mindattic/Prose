@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a8b374e18a7d6be531792974",
+  "name": "Tetrodotoxin Gland Implantation",
+  "brand_name": "Tetrodotoxin",
+  "product_name": "Tetrodotoxin Gland Implantation",
+  "type": "geneware",
+  "aliases": [
+    "Puffer Touch",
+    "Dead Hand",
+    "TTX Mod"
+  ],
+  "category": "defensive",
+  "target_system": "integumentary/glandular (venom production and delivery)",
+  "description": "Introduces pufferfish toxin-producing bacterial symbionts into modified sweat glands in the palms, creating a contact-delivery venom system. When activated voluntarily through a stress-hormone trigger, the palms secrete a thin film of tetrodotoxin — enough to cause numbness, paralysis, and potentially death through skin contact. The activation requires deliberate effort; accidental poisoning is rare but not impossible. The user is immune to their own toxin through co-expressed sodium channel modifications. Gravemoss Biofoundry's version includes a visible warning coloration — the palms flush bright orange when toxin is active, an aposematic signal borrowed from poison dart frogs. Black-market versions skip the warning coloration, creating invisible poisoners. The modification is the most legally restricted geneware in Meridian 88 after military-grade installations.",
+  "source_organism": "Takifugu rubripes (Japanese pufferfish), Vibrio alginolyticus (TTX-producing bacteria)",
+  "manufacturer": "Gravemoss Biofoundry",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted (requires defensive permit; unregistered installation is a felony-equivalent offense)",
+  "procedure": "Palmar gland implantation surgery with bacterial symbiont introduction, 2 sessions",
+  "expression_time": "4–6 weeks for gland maturation; toxin production reaches full potency at 3 months",
+  "reversibility": "Glands can be surgically removed; bacterial colonies must be eliminated with targeted antibiotics over 6 weeks",
+  "side_effects": [
+    "Palms tingle constantly when toxin reserves are full",
+    "Accidental activation during extreme stress or nightmares",
+    "Intimate contact requires conscious suppression — relationships are complicated",
+    "Toxin potency fluctuates with diet and health"
+  ],
+  "social_perception": "Feared and stigmatized. Registered TTX users must disclose their modification in many contexts. Unregistered users face severe legal consequences. Some view it as a necessary self-defense tool; others see it as the mark of someone prepared to kill with a handshake.",
+  "story_hooks": [
+    "A TTX user is accused of a contact-poison murder, but their toxin profile doesn't match the one found on the victim — someone is synthesizing a copycat toxin to frame them",
+    "A black-market TTX installation goes wrong, producing toxin continuously without voluntary control — the user can't touch anyone without poisoning them"
+  ],
+  "tags": [
+    "defensive",
+    "geneware",
+    "war",
+    "secret",
+    "death",
+    "elf",
+    "control",
+    "surgery",
+    "market",
+    "night",
+    "poison",
+    "tier 4"
+  ]
+}

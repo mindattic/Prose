@@ -1,0 +1,48 @@
+{
+  "id": "019d6143a8a67bbaa329f910a78ca1b6",
+  "name": "Enhanced Proprioceptive Mapping",
+  "brand_name": "Enhanced",
+  "product_name": "Enhanced Proprioceptive Mapping",
+  "type": "geneware",
+  "aliases": [
+    "Body Sense",
+    "Perfect Balance",
+    "Spatial Self"
+  ],
+  "category": "cognitive",
+  "target_system": "neural/vestibular (proprioceptive and vestibular enhancement)",
+  "description": "Enhances the proprioceptive system — the body's awareness of its own position in space — to extraordinary precision. The user knows exactly where every part of their body is at all times, with a spatial accuracy that approaches millimeter precision. Combined with enhanced vestibular function, the result is perfect balance, extraordinary body control, and the ability to perform physical feats that require precise spatial awareness — threading needles while walking, navigating complex environments blindfolded, or maintaining balance on surfaces too narrow for unmodified humans. The modification is invisible but its effects are immediately apparent in the user's movement — they move with an uncanny precision and grace that borders on inhuman. Surgeons, acrobats, martial artists, and pickpockets all value the modification.",
+  "source_organism": "Synthetic proprioceptive enhancement factors, Aquila chrysaetos (golden eagle, spatial processing genes)",
+  "manufacturer": "Zheng-Dao Bioelectric",
+  "tier_availability": "Tier 3+",
+  "legality": "Unrestricted",
+  "procedure": "Neural retroviral treatment targeting proprioceptive processing centers, 3 sessions",
+  "expression_time": "4–6 weeks; full integration 3 months",
+  "reversibility": "Partially reversible; baseline proprioception never returns to pre-modification normal",
+  "side_effects": [
+    "Hypersensitivity to body position changes — even slight misalignment (a bad mattress, a shifted shoe sole) becomes acutely noticeable and irritating",
+    "Disorientation in environments that disrupt proprioception (zero gravity, sensory deprivation, heavy intoxication)",
+    "Other people's physical clumsiness becomes almost painful to watch",
+    "Rare: proprioceptive feedback loop causing freezing when the system detects impossible body positions (tangled limbs, confined spaces)"
+  ],
+  "social_perception": "Admired for its effects, invisible in its implementation. People notice that the user moves beautifully but may not know why. In physical disciplines (dance, martial arts, surgery), the modification is an open secret that everyone has and nobody admits to.",
+  "story_hooks": [
+    "A Body Sense user detects that the floor they're standing on is vibrating at a frequency that indicates structural failure — their feet feel what instruments miss",
+    "A pickpocket with Perfect Balance steals an object so precisely that the victim doesn't feel a thing — but the pickpocket discovers the object was bait, and the theft was allowed to track them"
+  ],
+  "tags": [
+    "cognitive",
+    "geneware",
+    "war",
+    "theft",
+    "secret",
+    "neural",
+    "ai",
+    "synthetic",
+    "elf",
+    "control",
+    "surgery",
+    "pain",
+    "tier 3"
+  ]
+}

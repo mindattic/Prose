@@ -1,0 +1,109 @@
+{
+  "id": "019d6143a94375f5b0fc456b5d33d631",
+  "type": "place",
+  "name": "The I-90 Vein",
+  "aliases": [
+    "The Vein",
+    "The Corridor Artery",
+    "Lake Road",
+    "Interstate Ninety"
+  ],
+  "description": "Interstate 90 was built in the 1950s as part of the Eisenhower interstate system — a Cold War infrastructure project that was also, accidentally, the most significant American public works achievement since the transcontinental railroad. The stretch from Cleveland to Buffalo follows the Lake Erie shoreline for roughly 300 kilometers, passing through Erie, Pennsylvania on its way. In the corridor era, I-90 has been converted from a public highway into Ferrogate Transit Sovereign Corponation's most strategically important eastern asset: a dual-use corridor that carries both the high-speed rail line connecting Cleveland to Buffalo and an autonomous vehicle roadway that handles the cargo traffic too large, too heavy, or too hazardous for rail.\n\nThe Vein — as everyone except Ferrogate's legal department calls it — is a sovereign right-of-way strip averaging 200 meters wide that cuts through the landscape between the three major population centers of the Lake Erie shore. Within that strip, Ferrogate's jurisdiction is absolute. The Rail Hounds — autonomous patrol vehicles capable of 280 km/h — run continuous security sweeps. The Ferrogate Line Authority maintains an 18,000-officer paramilitary presence across the full corridor. Unauthorized access to the right-of-way is met with lethal force, a policy Ferrogate does not publicize but does not conceal.\n\nWhat makes the Vein strategically critical is not just what moves along it but what it connects. Every community along the Lake Erie shore — from Toledo's Glass Yards to Buffalo's Dive Yards — depends on the Vein for supply chain connectivity, passenger transit, and communication relay (Ferrogate piggybacks Saltmarsh signal infrastructure on its rail corridor). Cutting the Vein at any point would isolate population centers within hours. Ferrogate knows this. Everyone who depends on Ferrogate knows this. The corponation has never needed to make the threat explicit because the infrastructure makes the threat self-evident. The Vein is not just a road. It is a leash, and every community it touches can feel the tension.",
+  "atmosphere": {
+    "sights": [
+      "The rail line — maglev track running ruler-straight along the lakeshore, trains visible as silver streaks covering the Cleveland-Buffalo distance in under 90 minutes",
+      "The autonomous vehicle roadway — cargo haulers in continuous convoy, their formations computer-coordinated and eerily uniform",
+      "Ferrogate sovereign markers every 500 meters — illuminated pylons marking the right-of-way boundary with the subtlety of a fence made of light",
+      "Rail Hound patrols — autonomous vehicles screaming along the corridor at 280 km/h, visible as blurs that resolve into armored platforms for a fraction of a second",
+      "The landscape between the sovereign strip and the lake — a narrow band of terrain that is technically outside Ferrogate jurisdiction and serves as an informal transit route for people who can't or won't use the official corridor"
+    ],
+    "sounds": [
+      "Maglev passage — not a train sound but a pressure wave, a sudden displacement of air followed by silence that feels compressed",
+      "Rail Hound engines — a high-pitched scream that Doppler-shifts from approaching to departing in seconds, the audio signature of Ferrogate's enforcement model",
+      "Cargo convoy coordination — the mechanical precision of a hundred autonomous vehicles maintaining formation, their systems communicating in radio frequencies audible as static to unshielded ears",
+      "Wind — the corridor's 200-meter cleared strip creates a wind tunnel effect, especially near the lakeshore segments",
+      "Saltmarsh signal relay — a faint electromagnetic buzz from the communication equipment piggybacking on Ferrogate's rail infrastructure"
+    ],
+    "smells": [
+      "Ozone from the maglev rail — the corridor's constant atmospheric contribution, stronger near the rail line itself",
+      "Cargo hauler exhaust — the autonomous vehicle fleet is predominantly electric but the older units and emergency generators still run on synthetic diesel",
+      "Lake Erie — present whenever the corridor runs close to the shoreline, the mineral-and-algae scent of the lake cutting through the industrial atmosphere"
+    ],
+    "feel": "The Vein feels like velocity. Everything moves — trains, cargo, patrol vehicles, information — and the stationary human is an anomaly in a system designed for throughput. Standing near the corridor and watching a Rail Hound pass at 280 km/h is a visceral reminder that this infrastructure was built for machines and tolerated for humans. The communities along the Vein depend on it the way a patient depends on an IV line: it sustains them, and the entity controlling the flow can adjust the dosage at will.",
+    "tags": []
+  },
+  "demographics": "The Vein itself has no permanent residential population — it is infrastructure, not habitat. The communities along its 300-kilometer length house approximately 350,000 people who depend on the corridor for economic connectivity. Ferrogate's Line Authority personnel — 18,000 strong — are distributed along the corridor in fortified stations every 30 kilometers.",
+  "economy": "Transit tariffs. Every physical good moving between Cleveland and Buffalo — and every passenger — pays Ferrogate's sovereign transit tariff. These tariffs are the Vein's economic product, and they are non-negotiable. Ferrogate has never lost an arbitration dispute over its tariff schedule. The corridor also generates secondary revenue through Saltmarsh signal relay fees and Tollgate infrastructure usage charges. The total economic throughput of the I-90 Vein is estimated at Φ890 billion annually.",
+  "power_structure": "Ferrogate sovereign authority within the right-of-way strip. Saltmarsh signal sovereignty over the communication infrastructure. Tollgate collects infrastructure fees at connection points. No civilian governance exists within the corridor itself. The communities along its length have no formal relationship with Ferrogate beyond the tariff schedule and whatever leverage their strategic position (as chokepoints or maintenance bases) provides.",
+  "dangers": [
+    "Rail Hound lethality — unauthorized entry into the right-of-way is met with autonomous enforcement that does not warn, hesitate, or discriminate",
+    "Supply chain dependency — communities that anger Ferrogate risk service reduction, tariff increases, or scheduling 'adjustments' that accomplish the same result as a blockade",
+    "High-speed transit risk — the maglev trains operate at speeds that make any mechanical failure, sabotage, or obstruction catastrophic",
+    "Surveillance — Ferrogate's monitoring of the corridor extends beyond the right-of-way strip, and the company shares intelligence with Saltmarsh under their signal relay agreement",
+    "The narrows — several points where the corridor passes through terrain that forces the right-of-way, the lake, and the civilian zone into close proximity, creating chokepoints vulnerable to natural disaster, sabotage, or military action"
+  ],
+  "opportunities": [
+    "Transit intelligence — knowing what moves along the Vein and when is among the most valuable information in the eastern corridor",
+    "The informal path — the narrow band between the Ferrogate right-of-way and the lakeshore is technically outside corporate jurisdiction and serves as an alternative transit route for those willing to travel slowly and carefully",
+    "Chokepoint leverage — communities located at the Vein's narrow points have disproportionate strategic value and can extract concessions from Ferrogate that other communities cannot",
+    "Ferrogate's Line Authority officers are well-paid, well-informed, and occasionally corruptible — the right approach to the right officer at the right station can open access to the corridor's information flow"
+  ],
+  "story_hooks": [
+    "A maglev train has stopped between stations — the first unscheduled stop in the corridor's history — and Ferrogate is not explaining why. The Rail Hounds have established a perimeter. Something is on that train.",
+    "The informal lakeshore path between Ferrogate's right-of-way and the waterline has been discovered to follow the route of a pre-corridor fiber optic cable that is still active — carrying data that doesn't belong to any known network",
+    "A Ferrogate Line Authority officer at the Erie station has been feeding information to an unknown party about military-grade cargo moving through the corridor — cargo that Ferrogate's public manifest doesn't list"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Gate (Downtown Cleveland) — western anchor",
+      "Presque Anchorage (Erie PA) — midpoint",
+      "The Dive Yards (Buffalo) — eastern terminus",
+      "Every lakeside community along its 300-kilometer route"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Ferrogate Line Authority personnel — 18,000 officers distributed across the corridor",
+    "Transit passengers — everyone who travels between Cleveland and Buffalo",
+    "Cargo operators — everything that moves between the corridor's eastern population centers",
+    "Rail Hounds — Ferrogate's autonomous enforcement, always present, always moving, always watching"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Narrows",
+      "description": "Three points where terrain forces the corridor, the lake, and civilian territory into close proximity — the Vein's most vulnerable and most strategically valuable chokepoints",
+      "tags": []
+    },
+    {
+      "name": "Ferrogate Erie Station",
+      "description": "The corridor's midpoint hub — where eastbound and westbound traffic is logged, sorted, and occasionally redirected in ways that the manifest doesn't reflect",
+      "tags": []
+    },
+    {
+      "name": "The Lakeshore Path",
+      "description": "The informal transit route between the right-of-way and the waterline — technically nobody's jurisdiction, practically the only way to move along the shore without Ferrogate's permission",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 42.01,
+    "lng": -80.3,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "rain",
+    "cold",
+    "vehicle",
+    "train",
+    "water",
+    "lake",
+    "narrows"
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "id": "019d6143a6497c20891b383ebca497ee",
+  "type": "character",
+  "name": "Leilani Adjei-Szczepańska",
+  "aliases": [
+    "Lei",
+    "Lani"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Ferrogate Transit operator, deep-line overnight driver on the Blackpipe Corridor route",
+  "age": 27,
+  "status": "active",
+  "location": "Deepwell Station, Blackpipe Corridor terminal",
+  "description": "Leilani has the particular quality of alertness that comes from years of watching dark tunnel walls for anomalies at speed — she tracks movement in her peripheral vision before she has consciously registered it, and her eyes, which are a modified shifting amber-to-silver gradient (a cheap iris job she got at twenty-two), are always slightly wider than the situation seems to require. She is of medium height with a broad-shouldered Polynesian build softened by her mother's Ghanaian and her father's Polish lines — she inherited cheekbones that catch light and hands that are disproportionately large and capable. She wears her black hair in two long braids that she tucks into her uniform jacket while on duty.\n\nShe drives the Blackpipe Corridor overnight run, which means she sees Meridian 88 in its most honest hours — the 02:00 cargo shifts, the exhausted nurses heading home, the people who ride the deep lines because they have nowhere to sleep that isn't moving. She has a quiet protectiveness toward her passengers that she would not call protectiveness if asked. She would say she is just doing the job. She has a small secondhand speaker mounted against her operator partition that plays low, humming instrumentals during quiet stretches, and she has never been cited for it because none of her supervisors take the overnight inspection tour.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.4,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "something going wrong on the line that she could have prevented",
+      "being made invisible by the system she works for"
+    ],
+    "core_desires": [
+      "to be genuinely trusted rather than tolerated",
+      "to afford a move out of transit housing before she is thirty"
+    ],
+    "coping_mechanisms": [
+      "maintaining rigid routine as a buffer against chaos",
+      "music as emotional regulation during high-stress stretches"
+    ],
+    "blind_spots": [
+      "her hyper-vigilance reads as suspicion and puts people off before she means to",
+      "she underreports maintenance issues to avoid the paperwork and this is slowly accumulating into a real problem"
+    ],
+    "secret": "Six months ago she witnessed a body being loaded off her train at a dead stop between stations — two people in Axiom contractor vests, professional and unhurried. She made no report. She has been trying to forget it and cannot."
+  },
+  "speech_patterns": {
+    "vocabulary": "Pragmatic and economical, Ferrogate transit jargon woven throughout, occasional Hawaiian Pidgin phrases from her grandmother's influence",
+    "cadence": "Even and measured, the voice of someone trained to stay calm on the PA system regardless of what is happening",
+    "verbal_tics": [
+      "'copy that' even in casual conversation",
+      "long pauses before answering anything she finds uncomfortable"
+    ],
+    "example_lines": [
+      "Blackpipe runs clean tonight. Mostly. You see anything strange near the Ironvein junction you tell me before you tell anyone else, yeah?",
+      "I don't ask what people are carrying. I'm not paid to ask. I'm paid to get them there."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She is the only witness to whatever happened at the dead stop six months ago and is clearly carrying it; the right approach could crack her open",
+    "A regular overnight passenger — an elderly waste handler she has known for two years — has suddenly stopped appearing on the route; she is worried and does not know who to ask"
+  ],
+  "narrative_function": "Mobile information source who has witnessed dozens of incidents on the overnight lines without reporting them; access point to the deep transit network and its unofficial rhythms; potential witness or reluctant ally for anything that happens on or near the Blackpipe Corridor",
+  "augmentations": "Gradient iris modification (amber-to-silver, cosmetic). Fatigue-suppression implant in the brainstem, standard-issue Ferrogate Transit operator equipment — she distrusts it and uses it less than regulation requires.",
+  "daily_life": "Reports to Deepwell Station at 22:00, drives the Blackpipe Corridor loop four times before dawn, logs maintenance flags on the route, and is off the platform by 06:30. She sleeps from 08:00 to 15:00 in a transit worker's residential block near Jefferson Switch, then spends her evenings at a gym or reading physical-format books she collects from the Burnished Market.",
+  "affiliation": "Ferrogate Transit (employee, Tier 2 wage bracket)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 4,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 0,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "night creature",
+      "quiet protector",
+      "reluctant witness",
+      "transit system insider"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "the train runs on schedule unless someone is going to die — those are the only two conditions",
+      "never discusses what she sees on the line with anyone in a Ferrogate supervisory position"
+    ],
+    "escalation_ladder": [
+      "flat denial and subject redirect",
+      "invoking Ferrogate policy as a shield",
+      "shutting the operator partition and calling it in as a safety issue"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional politeness with a layer of assessment underneath — she is categorizing you before you finish your first sentence",
+      "friends": "Dry, warm, deeply loyal, will drive out of her way for you without mentioning it"
+    },
+    "stress_responses": {
+      "low": "Becomes very still and very precise",
+      "medium": "Voice goes flat and controlled, PA-calm",
+      "high": "Acts first and processes later, has good instincts under pressure"
+    },
+    "contradictions": [
+      "Chose a job that puts her in contact with hundreds of people every night because she finds crowds easier than intimacy"
+    ],
+    "habits": [
+      "checks the left rear camera three times before every departure even though it is redundant",
+      "keeps a physical notebook of route anomalies she never submits"
+    ],
+    "breaking_points": [
+      "a passenger being harmed while she is present and unable to act",
+      "being ordered to run a route she has flagged as unsafe"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "standard issue, Ferrogate Transit spec, underused",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "cosmetic, good condition",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired by Ferrogate Transit at age 22 after washing out of a Zheng-Dao logistics apprenticeship",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Voluntarily transferred to overnight Blackpipe Corridor after a pay dispute about day-shift seniority",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Witnessed the incident at the Ironvein dead stop; filed no report",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

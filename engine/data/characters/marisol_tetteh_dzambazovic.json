@@ -1,0 +1,169 @@
+{
+  "id": "019d6143a656704c84e48c33acb9e70e",
+  "type": "character",
+  "name": "Marisol Tetteh-Dzambazović",
+  "aliases": [
+    "Sola",
+    "The Seamstress"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Clothing and fashion vendor — custom alterations, identity-adjacent styling, and discreet wearable concealment work",
+  "age": 44,
+  "status": "active",
+  "location": "The Alban Souk, permanent stall near the fabric arcade's north entrance",
+  "description": "Marisol occupies a stall that smells of hot fiber, machine oil, and something faintly floral she burns in a small ceramic dish as an offering to the E.L.F. she believes inhabits her sewing machine — a spirit she calls 'the Thread' and addresses in murmured Bosnian before beginning any complex job. She is a heavyset woman with dark ochre skin, silver-streaked locs pinned elaborately with copper wire and glass beads, and hands that are in constant motion: measuring, smoothing, pinning, assessing. Her geneware includes a tail — a long, articulated thing covered in fine iridescent scales that shifts from teal to bronze depending on her mood — that she uses as a third hand when her actual hands are occupied.\n\nHer official business is alterations, custom garments, and fashion consulting for the Alban Souk's working-class clientele. Her unofficial business is the same, just with pockets that don't show up on scanner sweeps, hidden carries woven into lining structure, and the occasional garment commissioned for someone who needs to look like someone else. She does not ask questions about why. She charges by complexity of the problem, not by what it is, and has a strict personal rule: nothing she makes gets used to hurt someone who hasn't hurt them first. How she enforces this is largely a matter of intuition and the Thread's counsel.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.6,
+      "id": 0.4,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Making something that becomes the instrument of an innocent person's death",
+      "The Thread going silent — her machine breaking beyond repair and taking the spirit with it"
+    ],
+    "core_desires": [
+      "To create something so beautiful it outlives her",
+      "To know, with certainty, that her judgment about people is trustworthy"
+    ],
+    "coping_mechanisms": [
+      "Ritual — the offerings, the prayers, the precise opening and closing routines of the stall",
+      "Making things: when distressed she sews small, intricate, purposeless beautiful objects"
+    ],
+    "blind_spots": [
+      "Her belief in the Thread's guidance makes her occasionally reckless — she trusts her gut more than evidence",
+      "Has a pattern of taking in apprentices with obvious talent and then finding reasons to push them away before they outgrow her"
+    ],
+    "secret": "She once made a concealment garment for a client who she later realized had used it to commit a targeted killing. She told herself the Thread had failed to warn her, but the truth is she had a doubt she chose not to follow. She has not taken concealment-commission work for Corponation-adjacent clients since, but she has never confessed this to anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and sensory — describes everything in terms of texture, weight, and fit. Quotes the Thread as if it speaks in proverbs.",
+    "cadence": "Measured and deliberate, with sudden warmth that arrives without warning.",
+    "verbal_tics": [
+      "'The Thread says—' before any piece of advice",
+      "Touching fabric while thinking, even if it's just her own sleeve"
+    ],
+    "example_lines": [
+      "'Come here. Let me look at you. No — not at your face. Let me look at how you carry yourself.'",
+      "'The Thread says a person who can't stand being altered doesn't trust who they are underneath.'",
+      "'I can make you look like anyone. I charge extra if I don't believe you deserve to.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client returned a garment she made for concealment work — returned it folded, perfectly, with a note that says only 'Thank you for the seam.' She doesn't recognize the handwriting and the client has been dead for two months.",
+    "She has been commissioned anonymously for a set of twelve identical garments with complex internal structure — enough for a group to move through a checkpoint undetected. She wants to know who they are before she finishes the work.",
+    "Her sewing machine has begun stitching patterns she hasn't programmed — the Thread is trying to tell her something and she can't interpret it alone"
+  ],
+  "narrative_function": "Costume and disguise resource, social network connector, moral compass character. Her broad client base makes her aware of who's moving through the Souk and why. Can serve as a quest giver when a garment she made comes back to her as evidence of something wrong.",
+  "augmentations": "Iridescent scale-covered articulated tail (mood-reactive, prehensile — used as a work tool). Micro-optic enhancement in both eyes, optimized for close thread work and color accuracy. Subdermal pattern-memory in her fingertips — can 'record' a fabric's texture and retrieve a precise match from memory.",
+  "daily_life": "Opens at nine, takes no appointments before noon so she can do her uninterrupted creative work in the morning, runs client consultations and fittings through late afternoon. Closes the stall but often works until midnight on complex jobs, with the Thread's presence for company and small offerings of knotted thread left on the machine's housing.",
+  "affiliation": "Independent. Member of the Alban Souk Traders Association. Informal professional relationship with two separate fake-ID networks she sews document-concealment garments for.",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Skilled Artisan",
+      "ELF Devotee",
+      "Discreet Operator",
+      "Community Pillar",
+      "Intuitive Judge"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not work for anyone who treats her stall staff (a rotating apprentice) with contempt",
+      "Always leaves a garment with one small imperfection that only she can identify — a signature she can prove"
+    ],
+    "escalation_ladder": [
+      "Refuses the commission politely and cites a full schedule",
+      "Calls in a debt from the Traders Association to have the person escorted from the Souk",
+      "Contacts one of her ID-network associates with a description and a warning",
+      "Goes to the Thread in extended silence and waits for guidance"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and evaluating — sizes them up literally and figuratively before engaging personally",
+      "friends": "Warm, irreverent, prone to affectionate insults and unsolicited alterations to their outfits"
+    },
+    "stress_responses": {
+      "low": "Sews something small and intricate that serves no purpose",
+      "medium": "Speaks to the Thread directly and openly, regardless of who's watching",
+      "high": "Goes very still, closes the stall, and does not speak for a long time"
+    },
+    "contradictions": [
+      "Deeply religious about the Thread's will, but makes fundamentally pragmatic moral calculations that she then attributes to spiritual guidance"
+    ],
+    "habits": [
+      "Leaves a knotted thread on her machine's housing every morning and evening",
+      "Hums an old Ghanaian lullaby while cutting fabric — always the same one"
+    ],
+    "breaking_points": [
+      "Discovering that something she made was used to harm someone innocent",
+      "Someone treating the Thread with open mockery in her stall"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "People Pleaser": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

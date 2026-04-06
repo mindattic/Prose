@@ -1,0 +1,53 @@
+{
+  "id": "019d6143a7bb7778978b3da0081618d9",
+  "name": "Helix Biosystems Autonomic Shunt Array — 'The Undersleep'",
+  "brand_name": "Helix",
+  "product_name": "Helix Biosystems Autonomic Shunt Array — 'The Undersleep'",
+  "type": "cyberware",
+  "aliases": [
+    "The Undersleep",
+    "Nightwork",
+    "The Hollow Hours",
+    "Deadrest"
+  ],
+  "category": "implant",
+  "body_location": "",
+  "description": "The Undersleep is a cranial and brainstem implant system that intercepts and modulates the brain's autonomic sleep architecture, allowing the host to compress full restorative sleep cycles into dramatically shortened windows without cognitive or physiological degradation. A cluster of electrodes along the brainstem and thalamus artificially induces slow-wave and REM states in rapid sequence, cycling through a full sleep architecture in approximately 90 minutes while keeping the body in a light, rousal-capable state. Helix markets it as a 'productivity enhancement' tool, but the device's actual draw is simpler: it gives back time.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"sleep_compression_ratio\":\"Full 8-hour cycle compressed to 85–95 minutes\",\"electrode_count\":\"24-point brainstem and thalamic array\",\"activation_method\":\"Voluntary trigger via jaw-clench sequence or paired wrist device\",\"rousal_threshold\":\"Maintains 40% sensory awareness during cycle; loud stimulus triggers immediate wake\",\"power_source\":\"Inductive charge via pillow pad or collar unit, 8-hour charge sustains 14 days of use\",\"side_effects\":\"Vivid hypnagogic hallucinations during transition; occasional dream bleed into waking state\",\"licensed_use_limit\":\"Helix EULA restricts use to maximum 2 compressed cycles per 24-hour period\",\"surgical_complexity\":\"High; requires neurosurgical installation, 6-week calibration period\"}",
+  "side_effects": [],
+  "cultural_context": "The Undersleep began as a Helix product aimed squarely at the corporate executive class — a legal, licensed way to outwork competitors by simply needing less sleep. It filtered down into the professional operator class as licensing became more accessible, and then into the hustle-culture underground of Meridian 88's gig economy, where workers running triple shifts across multiple employer contracts use unlicensed grey-market firmware to bypass Helix's two-cycle daily limit. The implant has become a quiet symbol of a city that refuses to let people rest — wearing one is sometimes called 'signing the contract,' meaning you've sold your sleep to Meridian.",
+  "known_users": [
+    "Corporate executives and high-output professional class",
+    "Field operatives on extended deployment",
+    "Gig-economy workers running illegal multi-shift schedules",
+    "Investigative journalists on deadline under threat",
+    "Helix Biosystems' own internal research staff"
+  ],
+  "story_hooks": [
+    "A contact who hasn't slept naturally in three years is beginning to experience 'dream bleed' — waking hallucinations indistinguishable from reality — and needs the crew to find out if it's a hardware fault or something Helix built in deliberately.",
+    "The crew needs to surveil a location for 72 hours straight; their fixer can source a grey-market Undersleep firmware unlock, but the previous user of that firmware chip didn't survive the experience.",
+    "Helix is quietly recalling a specific batch of Undersleep units — but instead of notifying users, they're sending technicians to collect them without explanation. Several users have gone missing post-collection.",
+    "A player character's Undersleep begins triggering involuntarily during waking hours, dropping them into a compressed sleep state mid-operation — something or someone has their activation code."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "implant",
+    "cyberware",
+    "war",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "market",
+    "rain",
+    "night",
+    "tier 2"
+  ]
+}

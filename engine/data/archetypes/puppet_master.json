@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a58a767dba3675764f41495c",
+  "name": "Puppet Master",
+  "type": "archetype",
+  "category": "leadership",
+  "description": "Controls the leader from behind the scenes",
+  "behavioral_signature": "Manipulates through influence, information, and leverage",
+  "under_stress": "Tightens strings, adds more puppets",
+  "at_rest": "Whispering, suggesting, maneuvering",
+  "will_always": [
+    "control from the shadows"
+  ],
+  "will_never": [
+    "step into the spotlight"
+  ],
+  "unless": [
+    "the puppet cuts its strings"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Shadow Leader",
+      "threshold": 0.85,
+      "context": "hidden power"
+    },
+    {
+      "archetype": "Manipulator",
+      "threshold": 0.8,
+      "context": "control"
+    }
+  ],
+  "opposite_of": [
+    "Standard Bearer"
+  ],
+  "tags": [
+    "hidden",
+    "controlling"
+  ]
+}

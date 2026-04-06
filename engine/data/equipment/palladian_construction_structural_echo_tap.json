@@ -1,0 +1,59 @@
+{
+  "id": "019d6143a86671cab7dca921fbe05093",
+  "name": "Palladian Construction Structural Echo Tap",
+  "brand_name": "Palladian",
+  "product_name": "Palladian Construction Structural Echo Tap",
+  "type": "equipment",
+  "aliases": [
+    "Stone Ear",
+    "The Tap",
+    "Rebar Ghost"
+  ],
+  "category": "comms",
+  "description": "Developed ostensibly as a structural integrity monitoring tool, the Structural Echo Tap transmits data by inducing precisely calibrated micro-vibrations into load-bearing concrete, rebar, and steel superstructures — the bones of Meridian 88's perpetually under-construction cityscape. Receiving units detect and decode these vibrations using contact piezoelectric sensors pressed against the same structural members, reconstructing the signal from what appears to any passive observer as ordinary building settlement noise. The system was designed for Palladian Construction's own site supervisors to maintain covert communication channels in environments too electromagnetically hostile for conventional radio, but units have since proliferated well beyond authorized hands.",
+  "manufacturer": "PALLADIAN CONSTRUCTION",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Piezoelectric transduction",
+    "Structural vibration encoding",
+    "Low-frequency acoustic modulation",
+    "Contact signal reception"
+  ],
+  "specifications": {
+    "dimensions": "Transmitter unit: 9cm x 5cm x 3cm flat plate with adhesive mounting surface; Receiver unit: 6cm x 4cm contact pad",
+    "weight": "Transmitter 180g, Receiver 90g",
+    "range": "Up to 400m through continuous structural material; degraded at material joins",
+    "bandwidth": "4 kbps maximum",
+    "encryption": "AES-256 with pre-shared key exchange",
+    "power_source": "Integrated lithium cell, 72-hour continuous operation",
+    "signal_frequency": "8–40 Hz vibration band",
+    "detectability": "Undetectable by RF spectrum analysis; requires contact seismic sensors to identify"
+  },
+  "tactical_use": "The Tap is affixed to walls, floors, support columns, or pipe runs — any surface in continuous material contact with the target receive point. Because the signal travels through solid matter rather than air, it passes through Faraday cages, RF shielding, and signal-suppressed environments without attenuation. This makes it invaluable for communicating into or out of hardened secure facilities, holding cells, corporate black sites, and bunkers. Operators have developed a practice of mapping structural paths in advance — identifying which columns and beams connect which rooms — to plot reliable signal routes through complex buildings. Voice transmission is possible but degraded; short coded text bursts are the standard protocol.",
+  "cultural_context": "Palladian Construction's near-monopoly on major civil construction in Meridian 88 means their rebar and poured concrete is in virtually every significant structure in the city. This ubiquity is not lost on those who use the Tap — there is dark humor in the fact that the city's physical skeleton has become a covert communications network. Among incarcerated fixers, political prisoners, and corporate detainees, the Tap is sometimes the only link to the outside world, passed in through bribed guards or concealed in personal effects. Palladian has never officially acknowledged the non-construction uses of the device, maintaining that all licensed units are for site management only.",
+  "known_users": [
+    "Palladian Construction site supervisors (licensed)",
+    "Incarcerated operatives maintaining outside contact",
+    "Corporate extraction teams breaching shielded facilities",
+    "Resistance cells operating in signal-suppressed districts",
+    "Black-market security consultants"
+  ],
+  "story_hooks": [
+    "A player receives an unexpected tap-signal through the floor of a safehouse — someone in the structure below is trying to make contact, but the message is partially corrupted and the sender's identity is unknown.",
+    "Palladian Construction quietly revokes the licenses of every Tap unit in a specific district just before a major demolition project begins — and someone suspects the demolition isn't about urban renewal.",
+    "A corporate prisoner has been tapping coded messages through her cell wall for six months. Someone has been answering. Neither party knows who the other is.",
+    "The players need to communicate with an asset inside a Faraday-shielded black site. Their only option is to find a structural contact point — which means going somewhere very dangerous to place the transmitter."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "identity",
+    "ai",
+    "corporate",
+    "market",
+    "bar",
+    "dark",
+    "tier 2"
+  ]
+}

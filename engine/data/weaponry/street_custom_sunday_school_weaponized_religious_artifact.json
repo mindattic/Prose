@@ -1,0 +1,40 @@
+{
+  "id": "019d6143ab4b75b1bdb3c856d11c924b",
+  "name": "Street Custom 'Sunday School' Weaponized Religious Artifact",
+  "type": "weapon",
+  "aliases": [
+    "Sunday School",
+    "Holy Weapon",
+    "Blessed Hardware",
+    "The Sermon"
+  ],
+  "category": "improvised",
+  "description": "A broad category of improvised weapons concealed within or fabricated from religious objects — crucifixes with hidden blades, prayer beads strung with ball bearings for use as a flail, hollowed scripture books containing pistols, incense burners filled with chemical agents, and ceremonial staffs weighted with lead cores. Sunday School weapons have proliferated in Meridian 88's religious communities where faith and survival intersect. The weapons exploit a cultural reluctance to search religious items at checkpoints and social gatherings, turning devotional objects into a delivery system for violence. The practice is controversial within the communities that produce it — some see it as sacrilege, others as the ultimate expression of a faith tested by circumstance.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — concealed weapon",
+  "base_technologies": [
+    "Concealment within cultural artifacts",
+    "Improvised weapon integration"
+  ],
+  "specifications": "type: Variable — bladed crucifixes, weighted prayer beads, gun-books, chemical incense\nconcealment: Within culturally protected religious objects\neffectiveness: Variable by specific build\ndetection: Low — cultural reluctance to search religious items\ncost: Φ20-500 depending on complexity\nconstruction: Ranges from crude modifications to skilled craft work",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A religious leader was assassinated with a blade concealed in a ceremonial cross — the weapon was handed to them by a congregant during a ritual and the killing was committed in front of hundreds.",
+    "A checkpoint security team has begun searching religious items, provoking a community uprising over cultural desecration — but they keep finding weapons, validating the searches they should not be performing."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "improvised",
+    "violence",
+    "weapon",
+    "gun",
+    "blade",
+    "war",
+    "ai",
+    "survival",
+    "tier 1"
+  ]
+}

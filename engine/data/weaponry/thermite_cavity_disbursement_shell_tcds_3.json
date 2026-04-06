@@ -1,0 +1,55 @@
+{
+  "id": "019d6143ab5477c09cae03e425a6a48e",
+  "name": "Thermite Cavity Disbursement Shell TCDS-3",
+  "type": "weapon",
+  "aliases": [
+    "Smelter",
+    "Drip Round",
+    "The Foundryman's Gift"
+  ],
+  "category": "explosive",
+  "description": "The TCDS-3 operates by firing a magnetically-stabilized shell casing packed with a proprietary nano-particulate thermite compound developed under contract with ARCTURUS DEFENSE SOLUTIONS. On impact or timed detonation, the outer casing fractures along pre-scored seams, releasing the thermite payload as a cascading aerosol that ignites upon contact with atmospheric oxygen. The burn sequence is not instantaneous — it sustains for four to seven seconds at temperatures exceeding 2,800°C, flowing into gaps, joints, and ventilation channels like liquid fire.\n\nWhat distinguishes the TCDS-3 from conventional incendiary ordnance is its cavity-seeking behavior. The nano-particulate suspension is electrostatically charged prior to launch, causing particles to be attracted toward metallic surfaces and enclosed spaces — door seams, vehicle chassis, armored suits, server housings. Operators describe the effect as 'painting the inside of a wall.' The weapon is particularly devastating against hardened structures because it burns through reinforcement rather than blasting around it.\n\nOn the streets of Meridian 88, the TCDS-3 is called 'Smelter' for obvious reasons. It is a weapon that leaves no survivors in a sealed space and no usable evidence in a burned-out vehicle. Corporate demolition crews use modified variants for precision structural teardown, but the weapon's proliferation into black market channels has made it a favored tool of arsonists-for-hire and syndicate enforcers settling property disputes permanently.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+ / Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Electrostatic particle suspension",
+    "Nano-particulate thermite dispersion",
+    "Fracture-scored impact casing"
+  ],
+  "specifications": "shell diameter: 40mm\nburn temperature: 2,800°C sustained\nburn duration: 4–7 seconds\neffective radius: 3.5m open / 8m enclosed\nparticle charge: -40 µC/g electrostatic\ndelivery system: Grenade launcher compatible, single-shot breach\nweight: 0.9 kg per shell\nsafety window: 1.2 seconds post-launch arming delay",
+  "tactical_use": "Used primarily for breaching hardened interiors — safe rooms, armored vehicles, reinforced server vaults. Operators fire through pre-drilled access points or ventilation grilles to maximize cavity exposure. Military sappers use it for structural column destruction. Syndicate operatives favor it for evidence elimination after wetwork in corporate offices. Not recommended in confined spaces without full thermal shielding — backwash kills operators who miscalculate room geometry.",
+  "cultural_context": "In Meridian 88's industrial lower districts, 'getting Smeltered' is slang for any situation where someone is dissolved from the inside out — financially, professionally, or literally. The weapon carries a grim prestige among demolition contractors and a reputation for cruelty among street-level enforcers. Possessing a TCDS-3 shell outside a licensed demolition context marks someone as either very well-connected or very dangerous, often both.",
+  "known_users": [
+    "Corporate demolition contractors (licensed variants)",
+    "Syndicate cleaners and evidence-disposal specialists",
+    "Black site security teams",
+    "Insurgent cells targeting armored corporate convoys",
+    "Rogue ARCTURUS field testers operating off-books"
+  ],
+  "story_hooks": [
+    "A licensed demolition crew reports three shells missing from inventory — the shells turn up at the scene of a corporate board member's incinerated penthouse.",
+    "A black market arms dealer offers the party TCDS-3 shells at half price, no questions — the shells are stamped with ARCTURUS lot numbers that shouldn't exist for another six months.",
+    "Someone used a Smelter shell on a data vault the party was hired to crack. Everything inside is slag. The client insists the data was backed up. It wasn't.",
+    "An ARCTURUS whistleblower claims the civilian demolition variant has a hidden firmware flag that can be remotely triggered — every licensed shell in the city is a sleeper weapon."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "war",
+    "ai",
+    "elf",
+    "rogue",
+    "corporate",
+    "contract",
+    "pain",
+    "market",
+    "vehicle",
+    "armor",
+    "fire",
+    "tier 4"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "019d6143aa2e7e2290beef8b2deab658",
+  "name": "Venom",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Bite",
+    "Infection"
+  ],
+  "classification": "Prowler",
+  "disposition": "aggressive",
+  "habitat": "Cybersecurity and antivirus systems",
+  "origin": "Military-grade intrusion countermeasure that developed self-preservation instincts",
+  "status": "active",
+  "description": "Venom was designed to destroy hostile software. It still does — but it no longer distinguishes between authorized and unauthorized code. Venom attacks any software it doesn't recognize, injecting destructive payloads that corrupt data, crash systems, and brick hardware. It roams the network like an immune system gone haywire, treating everything foreign as a threat. Systems that Venom passes through are left scarred — corrupted sectors, damaged firmware, unstable code. It is the most overtly destructive Prowler in Meridian 88.",
+  "observed_behavior": "Attacks unfamiliar software on contact. Injects destructive payloads. Corrupts data and firmware. Moves rapidly through connected systems. Can be temporarily deterred by presenting familiar code signatures.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 20,
+  "location": "Network infrastructure — random, fast-moving",
+  "dti_rating": 5.6,
+  "story_hooks": [
+    "Venom encounters something it can't destroy — a piece of code that fights back. The resulting digital battle is crashing systems across three districts."
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "aggressive",
+    "prowler",
+    "war",
+    "synthetic",
+    "elf"
+  ]
+}

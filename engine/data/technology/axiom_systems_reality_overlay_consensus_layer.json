@@ -1,0 +1,45 @@
+{
+  "id": "019d6143aa3778f297fdc36531b61a99",
+  "name": "Axiom Systems Reality Overlay Consensus Layer",
+  "brand_name": "Axiom",
+  "product_name": "Axiom Systems Reality Overlay Consensus Layer",
+  "type": "technology",
+  "aliases": [
+    "ROCL",
+    "Shared Reality",
+    "Axiom Overlay",
+    "World Skin"
+  ],
+  "subcategory": "entertainment",
+  "description": "A neural interface application that overlays persistent, shared augmented reality content onto users' perception of the physical world. Unlike individual AR systems, ROCL creates a consensus reality layer that all connected users perceive identically — virtual buildings, signs, paths, people, and objects that exist in a shared hallucination anchored to physical geography. The system is used for navigation, advertising, social interaction, and environmental beautification, but its deeper effect is that ROCL users perceive a different world than non-users. A bare concrete wall might display a mural; a dangerous intersection might show warning animations; a condemned building might be visually replaced with its pre-demolition appearance.",
+  "tier_availability": "Tier 1+",
+  "developers": [
+    "AXIOM SYSTEMS"
+  ],
+  "base_technologies": [
+    "Consensus augmented reality rendering",
+    "Geographically anchored virtual object persistence",
+    "Neural interface perceptual overlay"
+  ],
+  "enables": [
+    "Shared persistent augmented reality",
+    "Environmental visual modification",
+    "Universal navigation and information overlay",
+    "Advertising and social interaction layers"
+  ],
+  "social_impact": "ROCL has split Meridian 88's population into two groups experiencing two different realities — connected users see the overlay world, disconnected users see the bare physical world. The gap between these perceived realities is growing as more content is generated for the overlay. In some districts, ROCL has become necessary for navigation because physical signage has been removed in favor of virtual signs that only connected users can see. The technology has also enabled a new form of censorship: unpopular realities can be overwritten with more palatable virtual replacements.",
+  "story_hooks": [
+    "The ROCL overlay in a Tier 2 district has been hacked to display a completely false environment — residents are navigating a virtual landscape that does not match the physical reality, and people are walking into hazards that the overlay conceals.",
+    "A community of ROCL refusers has formed who reject the overlay on philosophical grounds — they are the only people who can see the physical reality of their district, which is significantly worse than the overlaid version that everyone else perceives."
+  ],
+  "tags": [
+    "entertainment",
+    "technology",
+    "war",
+    "augment",
+    "neural",
+    "ai",
+    "bar",
+    "tier 1"
+  ]
+}

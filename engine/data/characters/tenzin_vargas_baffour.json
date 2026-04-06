@@ -1,0 +1,274 @@
+{
+  "id": "019d6143a6f27fc38bfade1e97ba49b3",
+  "type": "character",
+  "name": "Tenzin Vargas-Baffour",
+  "aliases": [
+    "Undertow",
+    "The Machine"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Remote drone and vehicle operations specialist — rigger",
+  "age": 30,
+  "status": "active",
+  "location": "Geartown — industrial district of chop shops and fabricators",
+  "description": "Tenzin Vargas-Baffour is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 30, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a rigger out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Tenzin Vargas-Baffour describe her as a precision instrument — point her at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.39,
+      "id": 0.24,
+      "shadow": 0.57,
+      "mask": 0.43,
+      "ghost": 0.21
+    },
+    "core_fears": [
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Being identified by corporate facial recognition — living off-grid is survival",
+      "That their reputation is built on luck, not skill, and the luck is finite"
+    ],
+    "core_desires": [
+      "To find the person who burned them and make it educational",
+      "A crew worth trusting — people who stay when the shooting starts",
+      "Power — enough leverage that nobody ever threatens them again"
+    ],
+    "coping_mechanisms": [
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Maintains weapons obsessively — cleaning guns is meditation",
+      "Exercises compulsively — the body must be ready, always"
+    ],
+    "blind_spots": [
+      "Cannot distinguish between caution and cowardice in themselves or others",
+      "Thinks speed can substitute for planning because it's worked so far",
+      "Believes their trauma makes them special instead of recognizing it as damage to manage"
+    ],
+    "secret": "Tenzin Vargas-Baffour is addicted to combat stims. Functions fine on them, can't function without them. The dependency is invisible to everyone except their street doc."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks",
+      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'"
+    ],
+    "example_lines": [
+      "\"I have eyes in every district. Most of them are on wings.\"",
+      "\"The drone doesn't care about your feelings. Neither do I.\"",
+      "\"Remote operation means I'm everywhere and nowhere. It's very convenient.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Tenzin Vargas-Baffour is offered a contract that would clear all their debts — the target is someone they respect",
+    "A Tier 4 executive offers Tenzin Vargas-Baffour a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "A former associate resurfaces with evidence that could destroy Tenzin Vargas-Baffour's reputation — and a price for silence"
+  ],
+  "narrative_function": "As a rigger, Tenzin Vargas-Baffour embodies the tension between independence and isolation. She is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Neural interface jack at base of skull — standard runner-grade, allows direct net access. Geneware muscle density treatment — looks natural, hits like chrome",
+  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+  "affiliation": "Independent — known in Old Harbor circles",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 5
+      },
+      "agility": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 9
+      },
+      "reflexes": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 6
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 10
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 9
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 10
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 7
+      },
+      "deception": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 9
+      },
+      "empathy": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 7
+      }
+    },
+    "personality": {
+      "aggression": 0.53,
+      "caution": 0.31,
+      "loyalty": 0.51,
+      "greed": 0.85,
+      "empathy": 0.89
+    },
+    "drives": [
+      "survival",
+      "protection",
+      "money"
+    ],
+    "thresholds": {
+      "pain": 4,
+      "stress": 3,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "pain tolerance beyond normal limits",
+      "photographic memory for faces and layouts"
+    ],
+    "weaknesses": [
+      "physical limitation from incomplete augmentation",
+      "grudge-holding that compromises rational decision-making"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "rigger",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Always has an exit route planned before agreeing to any meeting",
+      "Never discusses active contracts with anyone not directly involved"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Projects confidence but makes decisions from a foundation of fear they've never examined",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+    ],
+    "habits": [
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Checks exits within 10 seconds of entering any room",
+      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say",
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again"
+    ],
+    "breaking_points": [
+      "Watching someone they trained or mentored die on a job they recommended",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Neural interface jack at base of skull",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
+      "replaces": ""
+    },
+    {
+      "name": "Geneware muscle density treatment",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Geneware muscle density treatment — looks natural, hits like chrome",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Networker": 0.7,
+    "Manipulator": 0.7,
+    "Opportunist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

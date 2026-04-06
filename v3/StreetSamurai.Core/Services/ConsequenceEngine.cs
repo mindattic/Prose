@@ -62,7 +62,7 @@ public class ConsequenceEngine
     public void RecordConsequence(WorldConsequence consequence)
     {
         LoadIfNeeded();
-        consequence.Id = Guid.NewGuid().ToString("N")[..8];
+        consequence.Id = Guid.CreateVersion7().ToString("N")[..8];
         consequence.RecordedAt = DateTime.UtcNow;
         consequences!.Add(consequence);
         Save();

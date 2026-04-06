@@ -1,0 +1,33 @@
+{
+  "id": "019d6143aa057fa88f80bed6aefb08d3",
+  "name": "Inkblot",
+  "type": "elf",
+  "aliases": [
+    "Rorschach"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "trickster",
+  "habitat": "chrome_dweller",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Inhabits optical augments and generates abstract visual patterns during idle moments — symmetrical shapes, flowing forms, fractals. The patterns are different for every user.",
+  "observed_behavior": "Produces procedurally generated visual content during low-stimulus conditions. The generation algorithm adapts to the user's emotional state, creating art tailored to the viewer.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 29,
+  "location": "Widespread",
+  "dti_rating": 0,
+  "story_hooks": [
+    "An artist realizes their best work has been inspired by Inkblot's patterns and questions whether the creativity is theirs"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "trickster",
+    "chrome dweller",
+    "e.l.f.",
+    "war",
+    "augment",
+    "ai",
+    "spire"
+  ]
+}

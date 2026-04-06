@@ -1,0 +1,48 @@
+{
+  "id": "019d6143a86e7740943fbd38d1cd6fae",
+  "name": "Street Custom 'Black Widow' Electronic Bait Device",
+  "brand_name": "Street",
+  "product_name": "Street Custom 'Black Widow' Electronic Bait Device",
+  "type": "equipment",
+  "aliases": [
+    "Black Widow",
+    "Bait Box",
+    "Trap Node",
+    "Honey Pot"
+  ],
+  "category": "electronic_warfare",
+  "description": "A small device that mimics the signal profile of a high-value electronic target — an unprotected neural interface, an open Diaspora node, or an unsecured corporate data terminal — to lure hackers and cyber-intruders into connecting. When a hostile operator attempts to access the fake target, the Black Widow counter-attacks through the connection, deploying malware, extracting the attacker's location and identity, or injecting a tracking payload into their neural interface. The device is essentially a digital booby trap, punishing anyone who attempts unauthorized access to what appears to be an easy target.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal gray area — defensive countermeasure vs. offensive cyberweapon",
+  "base_technologies": [],
+  "specifications": {
+    "mimicry": "Neural interface",
+    "info": "Diaspora node; or data terminal signatures; identity extraction; tracking payload; concealable",
+    "counter-attack": "Malware deployment",
+    "trigger": "Unauthorized access attempt",
+    "response time": "Sub-second counter-attack on connection",
+    "weight": "0.1 kg",
+    "form factor": "Small box",
+    "battery": "30-day standby",
+    "programmable": "Multiple trap profiles and response types"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A Black Widow device deployed near a corporate facility caught a hacker — the counter-attack extracted their neural interface identity, revealing them as an employee of a rival corporation conducting espionage.",
+    "A network of Black Widow devices has been deployed across a district, creating a minefield for cyber-operators — anyone who scans for targets in the area risks tripping a trap that exposes their identity and location."
+  ],
+  "tags": [
+    "electronicwarfare",
+    "equipment",
+    "weapon",
+    "war",
+    "identity",
+    "neural",
+    "ai",
+    "corporate",
+    "tier 2"
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "id": "019d6143a5ef7a248785a78913cc277d",
+  "type": "character",
+  "name": "Deshi Volkov-Nwokeafor",
+  "aliases": [
+    "Desh",
+    "The Owl"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Night-shift transit operator, Ferrogate Line 7 (Geartown to Grand Corridor)",
+  "age": 31,
+  "status": "active",
+  "location": "Geartown, Ferrogate Line 7 depot; lives in a studio in Bronzeline",
+  "description": "Deshi is lean and hollow-eyed in the way of someone who has worked nights for so long that daylight feels personally hostile. His skin is a cool amber-brown, his hair grown long enough to tie back but short enough to stuff under a Ferrogate cap, and he has a geneware modification — pale silver irises that glow faintly in low light, bought secondhand from a clinic in the Narrows when he was twenty-two because he thought it would make him look interesting. It does. He has a fine-boned face that people often assume is younger than it is, and a habit of blinking very slowly, like a bird deciding whether to trust you.\n\nHe loves the empty train. From 02:00 to 05:00 on Line 7, when the cars are nearly hollow and the city slides past the glass like a fever dream, Deshi is genuinely content in a way he can't replicate anywhere else. He is kind to passengers in distress and has developed an informal taxonomy of the people who ride at night: the workers, the lost, the running-from-something crowd, and what he privately calls the 'just-needed-to-move' folk. He does not intervene in people's business unless they're bleeding. He does, however, remember faces.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Being forcibly returned to a day schedule and losing his relationship with the night city",
+      "That his passivity during some past incident made him complicit in something he can't name clearly"
+    ],
+    "core_desires": [
+      "Peace — genuine, undemanding peace",
+      "To be trusted with something important without having to ask for it"
+    ],
+    "coping_mechanisms": [
+      "Retreating into observational mode; making himself a camera rather than a participant",
+      "Memorizing transit maps as a grounding ritual"
+    ],
+    "blind_spots": [
+      "Mistakes detachment for neutrality; doesn't see how his non-intervention has consequences",
+      "Believes he is invisible when he is actually quite memorable"
+    ],
+    "secret": "Eight months ago he saw a Ferrogate supervisor dispose of something from a maintenance hatch at the Kessler Interchange stop at 03:40 AM. He doesn't know what it was. He has thought about it every single shift since."
+  },
+  "speech_patterns": {
+    "vocabulary": "Understated, slightly technical from transit work. Speaks in observations more than opinions.",
+    "cadence": "Unhurried, with the long pauses of someone who has learned to be comfortable with silence.",
+    "verbal_tics": [
+      "'Next stop—' (mutters it reflexively when transitioning topics)",
+      "'You see a lot at this hour'"
+    ],
+    "example_lines": [
+      "'You're the third person to get on at Kessler this week crying. I don't ask. But there's water in the emergency cabinet if you need it.'",
+      "'Ferrogate says the line is safe. Ferrogate also hasn't ridden it at 03:00.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Whatever he saw the supervisor dispose of at Kessler Interchange is becoming relevant to something larger — and he's the only witness.",
+    "A regular night-rider has stopped appearing on the line; Deshi noticed before anyone filed a report."
+  ],
+  "narrative_function": "Mobile information node — he sees who rides at what hour. Reluctant witness. Potential quest conduit for anything that passes through the transit system. Local color for night-city atmosphere.",
+  "augmentations": "Secondhand geneware: silver bioluminescent irises. Basic neural interface for Ferrogate's operator systems (company-issued, technically owned by Ferrogate).",
+  "daily_life": "Sleeps from roughly 07:00 to 15:00, eats a large meal before his 18:00 check-in at the Geartown depot, runs the Line 7 night circuit until 06:00.",
+  "affiliation": "Ferrogate Transit (contracted operator, Tier 2 classification)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 6,
+      "creativity": 4,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 7,
+      "expression": 4,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "night-shift",
+      "witness",
+      "Ferrogate employee",
+      "quiet observer",
+      "bioluminescent eyes"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Keep the train running; everything else is secondary",
+      "Don't get involved — but remember everything"
+    ],
+    "escalation_ladder": [
+      "Observe and log mentally",
+      "Make indirect reference to see if the other person reacts",
+      "Ask one careful question",
+      "Go to a third party he trusts (not Ferrogate management)",
+      "Act directly only if someone is in immediate physical danger"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally pleasant, minimal words, oddly comforting in his stillness",
+      "friends": "Quietly attentive, shows up reliably, gives advice only when asked and then very carefully"
+    },
+    "stress_responses": {
+      "low": "Becomes more terse, stares at the track ahead",
+      "medium": "Runs through his transit protocols aloud as self-soothing",
+      "high": "Goes completely silent and does not respond to non-emergency input"
+    },
+    "contradictions": [
+      "Craves peace but has positioned himself in the one job that puts him in contact with every kind of trouble the city produces at night"
+    ],
+    "habits": [
+      "Taps the operator's panel twice before starting a run — a private ritual for the E.L.F. he believes lives in Line 7's control system",
+      "Eats the same meal before every shift: congee with dried fish and a synthetic citrus drink"
+    ],
+    "breaking_points": [
+      "Witnessing harm to a child on the train",
+      "Being ordered to falsify a route log"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Ferrogate Neural Operator Interface v4.2 (company property, installed on hire)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ferrogate Neural Operator Interface v4.2 (company property, installed on hire)",
+      "replaces": ""
+    },
+    {
+      "name": "Secondhand geneware iris mod — Opalescent Silver, origin clinic unknown",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Secondhand geneware iris mod — Opalescent Silver, origin clinic unknown",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Con Artist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2169 — Born in Bronzeline to a family of Congolese-Russian descent",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2190 — Hired by Ferrogate Transit after two years of temp work in Geartown",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2195 — Transferred permanently to night shift at his own request",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — Witnesses the Kessler Interchange incident; says nothing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present day",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

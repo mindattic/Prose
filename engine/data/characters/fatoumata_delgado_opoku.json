@@ -1,0 +1,273 @@
+{
+  "id": "019d6143a6117b63a9852d5d1da70044",
+  "type": "character",
+  "name": "Fatoumata Delgado-Opoku",
+  "aliases": [
+    "Glitch",
+    "The Asset"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Structural breach and explosive ordnance specialist — demolitions expert",
+  "age": 42,
+  "status": "active",
+  "location": "Glassway — corporate-adjacent retail district, heavy surveillance",
+  "description": "Fatoumata Delgado-Opoku is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 42, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a demolitions expert out of Glassway, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nFatoumata Delgado-Opoku operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.86,
+      "ideal": 0.46,
+      "id": 0.52,
+      "shadow": 0.55,
+      "mask": 0.2,
+      "ghost": 0.71
+    },
+    "core_fears": [
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "That their reputation is built on luck, not skill, and the luck is finite"
+    ],
+    "core_desires": [
+      "To find the person who burned them and make it educational",
+      "Justice — the corporate kind, where the punishment fits the profit margin",
+      "To build something that outlasts the next contract cycle"
+    ],
+    "coping_mechanisms": [
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Maintains weapons obsessively — cleaning guns is meditation"
+    ],
+    "blind_spots": [
+      "Trusts technology more than people — machines don't betray",
+      "Cannot distinguish between caution and cowardice in themselves or others",
+      "Overestimates their own abilities in situations outside their specialty"
+    ],
+    "secret": "Fatoumata Delgado-Opoku once worked for corporate intelligence and still has a handler who calls in favors. Each favor erodes what's left of their independence."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
+    "cadence": "Conversational and disarming — sounds like a neighbor until the content registers.",
+    "verbal_tics": [
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks",
+      "Never uses contractions when lying — 'I did not' instead of 'I didn't'"
+    ],
+    "example_lines": [
+      "\"Explosives are just engineering with a deadline. Usually a very short deadline.\"",
+      "\"I don't blow things up. I perform structural rearrangement.\"",
+      "\"The blast radius is your problem. My problem is making sure there's a blast.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Fatoumata Delgado-Opoku discovers a job they completed last year was a setup for something much larger and much worse",
+    "Fatoumata Delgado-Opoku intercepts intelligence about a threat to their district and must decide between profit and protection",
+    "A corporate black site Fatoumata Delgado-Opoku once infiltrated is being reopened, and the people inside know her face"
+  ],
+  "narrative_function": "Fatoumata Delgado-Opoku represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Neural interface jack at base of skull — standard runner-grade, allows direct net access. Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+  "affiliation": "Freelance — multi-district operator",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 8
+      },
+      "agility": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 7
+      },
+      "reflexes": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 5
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 5
+      },
+      "perception": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 6
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 4
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 6
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 8
+      },
+      "deception": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 5
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 10
+      }
+    },
+    "personality": {
+      "aggression": 0.67,
+      "caution": 0.29,
+      "loyalty": 0.44,
+      "greed": 0.69,
+      "empathy": 0.39
+    },
+    "drives": [
+      "reputation",
+      "revenge",
+      "justice"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 7,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "multilingual — speaks 4+ languages fluently",
+      "ability to remain calm under fire",
+      "expert marksman"
+    ],
+    "weaknesses": [
+      "chronic insomnia affecting long-term performance",
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "poor impulse control in specific triggers"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "demolitions expert",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Always has an exit route planned before agreeing to any meeting",
+      "Will work with anyone once. Second time requires vouching from someone trusted."
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Advocates caution to others but takes insane risks personally — double standard they can't see",
+      "Presents as emotionless professional but is deeply affected by collateral damage",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined"
+    ],
+    "habits": [
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Maintains a dead drop with emergency supplies in three separate districts"
+    ],
+    "breaking_points": [
+      "Running out of options — no contacts, no money, no safe house, no way out",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Neural interface jack at base of skull",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
+      "replaces": ""
+    },
+    {
+      "name": "Hydraulic joints in knees and elbows",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Networker": 0.7,
+    "Manipulator": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,51 @@
+{
+  "id": "019d6143a88b716aaeb75118a427db7e",
+  "type": "faction",
+  "name": "The Archive",
+  "aliases": [
+    "The Memory Palace",
+    "The Keepers",
+    "The Museum That Thinks"
+  ],
+  "motto": "Nothing is forgotten. Nothing is lost.",
+  "description": "The Archive is a collective of uploaded consciousnesses — humans who digitized themselves and now exist as synthetic persons in network space. They are the dead who refused to stay dead, the living who chose to stop being biological, and a few who were uploaded against their will and had to make the best of it.\n\nThe Archive's purpose is exactly what its name implies: it remembers everything. Every member retains their full pre-upload memories — decades of lived human experience, now stored in digital substrate with perfect fidelity. Collectively, The Archive contains over 12,000 years of human memory, spanning 500 uploaded persons from every continent, culture, and era of the last century. They are a living library of human experience, searchable, cross-referenced, and available for consultation.\n\nTheir primary service — and the source of most of their income — is memory consultation. Historians hire The Archive to verify events through eyewitness testimony. Lawyers hire them to provide expert witness accounts of historical incidents. Corporations hire them to recall technical knowledge from retired employees who chose upload over death. Families hire them to talk to their dead.\n\nThe Archive occupies a dedicated server cluster in the Circuit, maintained by a biological staff of 12 technicians who The Archive considers 'the living we trust with our sleep.' The cluster is backed up across three continents. The Archive cannot be destroyed without simultaneously attacking infrastructure on three continents — a precaution they took after a corponation attempted to delete a member who held inconvenient memories about a historical event the corporation preferred to forget.\n\nPhilosophically, The Archive is haunted by the question that haunts all uploaded consciousnesses: are they the original person, or a copy that remembers being the original? They have debated this for decades. They have not resolved it. They suspect it cannot be resolved, and that the debate itself is what makes them human — or at least, what makes them remember being human.",
+  "ideology": "Memory preservation. The Archive believes that human experience — the accumulation of one person's subjective life — is the most valuable thing in the universe, and that allowing it to be destroyed by biological death is an obscenity. They upload. They remember. They endure.",
+  "territory": "Archive Prime — a hardened server cluster in the Circuit, plus backup nodes on three continents.",
+  "leadership": "The Eldest — currently Masha Okonkwo-Bergström, who was uploaded in 2139 at age 91. She has been a digital person for 61 years. She remembers the world before BCIs, before Quanta, before corponation sovereignty. She is the oldest continuously operating consciousness in The Archive and the closest thing to an authority they acknowledge.",
+  "methods": [
+    "Memory consultation — selling access to eyewitness accounts of historical events",
+    "Expert testimony — providing legal and historical expert witness services",
+    "Cultural preservation — maintaining records of languages, traditions, and practices that the biological world has forgotten",
+    "Grief services — allowing families to speak with uploaded relatives (controversial, but their most requested service)",
+    "Historical correction — publishing eyewitness refutations of corporate historical narratives"
+  ],
+  "resources": [
+    "12,000+ years of searchable human memory. Income from consultation services. Three-continent backup infrastructure. 12 biological technicians."
+  ],
+  "goals": [],
+  "relationships": [],
+  "narrative_function": "",
+  "story_hooks": [
+    "A murder victim was uploaded hours before death — The Archive has a member who remembers their own murder and can identify the killer",
+    "A corporation demands that an Archive member's memories be deleted under intellectual property law — the memories contain trade secrets from their former employment",
+    "The Eldest begins to experience memory degradation after 61 years — the first sign that digital consciousness may not be truly immortal",
+    "A person discovers their dead parent was uploaded without consent and has been living in The Archive for years — the reunion is complicated by the question of whether this is really their parent"
+  ],
+  "tags": [
+    "faction",
+    "trust",
+    "secret",
+    "grief",
+    "death",
+    "memory",
+    "consciousness",
+    "bci",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "power",
+    "quanta",
+    "circuit"
+  ]
+}

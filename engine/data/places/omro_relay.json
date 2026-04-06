@@ -1,0 +1,94 @@
+{
+  "id": "019d6143a92b7ca4b1f483debcdf8b78",
+  "type": "place",
+  "name": "Omro Relay",
+  "aliases": [
+    "Omro",
+    "The Relay",
+    "Pipe Town",
+    "Nexus Runoff"
+  ],
+  "description": "Omro died the way most Fox River towns died — not with a bang but with a purchase order. When the Fox Cities Nexus began its second expansion phase in 2161, Cinderblock AI and Saltmarsh Telecom needed coolant infrastructure that the Nexus proper couldn't support. The Fox River, already chemically lobotomized by a century of paper mill runoff, turned out to be the perfect thermal sink for secondary data processing nodes. Omro's 3,500 residents were offered relocation packages by Cinderblock's legal team — packages that were technically voluntary in the same way that breathing is technically optional. By 2165, the town had been converted into a coolant relay station: massive heat exchangers lining both banks of the Fox, connected by buried fiber to the Nexus twenty kilometers east. The original town grid still exists beneath the infrastructure, like bones under chrome.\n\nThe town came back, in a way. Not as a town — as a parasite on the infrastructure it had been replaced by. Relay technicians needed housing. Housing attracted food vendors. Food vendors attracted people who couldn't afford the Nexus. Within a decade, Omro Relay had a population of twelve thousand, most of them Tier 1 and Tier 2 coolant workers, data janitors, and the families they'd dragged west from Meridian hoping the air would be better. The air is not better. The heat exchangers pump thermal waste into the atmosphere twenty-four hours a day, creating a permanent microclimate — Omro Relay is eight degrees warmer than surrounding terrain year-round, and the humidity makes your skin feel like it's wearing a second skin. In winter, the town steams. Locals call it living inside a mouth.\n\nBut the data pipes are here, and where data pipes go, gray market follows. Omro Relay has become the Fox Cities Nexus's unofficial back door — a place where Collective-affiliated data miners tap the fiber lines, where unlicensed technicians sell Nexus processing time to anyone with Quanta, and where Saltmarsh Signal Guard patrols end at the town boundary because the jurisdictional agreements were written by lawyers who assumed nobody would ever want to live here. The town's economy runs on two things: legitimate coolant maintenance for Cinderblock, and illegitimate everything else for everyone who needs Nexus access without Nexus surveillance. It's a company town that learned to pick the company's pockets.",
+  "atmosphere": {
+    "sights": [
+      "Massive heat exchanger arrays lining the Fox River, venting steam clouds that never fully dissipate",
+      "Fiber optic conduits thick as tree trunks running along every street, pulsing with data traffic visible through diagnostic panels",
+      "Makeshift housing built between and on top of coolant infrastructure — shanties welded to relay housings",
+      "The Fox River glowing faintly at night from thermal waste, a sickly amber ribbon cutting through the steam",
+      "Cinderblock AI maintenance drones moving in silent formation overhead, ignoring the human settlement beneath them"
+    ],
+    "sounds": [
+      "The constant bass thrum of heat exchangers cycling — felt in the chest more than heard",
+      "Coolant pumps surging on irregular schedules, the town's mechanical heartbeat",
+      "Data traffic hum from the fiber conduits — technicians claim they can hear bandwidth fluctuations",
+      "Steam venting from pressure relief valves, sudden hisses that punctuate every conversation",
+      "The Fox River, flowing warmer than it should, making sounds water shouldn't make"
+    ],
+    "smells": [
+      "Hot metal and coolant fluid — the permanent baseline smell of Omro Relay",
+      "The Fox River's chemical-organic stew, heated to emphasize its worst notes",
+      "Ozone from data processing equipment bleeding through imperfect seals",
+      "Cooking smells from food stalls — aggressive spices fighting the industrial baseline"
+    ],
+    "feel": "Oppressively warm and humid year-round, like the inside of a machine that's running too hot. The air feels thick, heavy, used. There's an energy to the place despite the discomfort — the energy of people who've figured out how to survive in a space that wasn't designed for survival, extracting value from infrastructure that was never meant to benefit them.",
+    "tags": []
+  },
+  "demographics": "Approximately 12,000 residents, predominantly Tier 1 and Tier 2. A mix of coolant relay technicians, data janitors, gray-market operators, and climate refugees who migrated west from the denser Nexus zones. Small but growing Collective presence among the technically literate population.",
+  "economy": "Legitimate: coolant system maintenance contracts from Cinderblock AI, with some Saltmarsh signal relay work. Illegitimate: gray-market Nexus processing time resale, data tapping, unlicensed tech repair, and a thriving trade in salvaged Cinderblock components that 'fell off the relay.'",
+  "power_structure": "Cinderblock AI owns the infrastructure and employs about 30% of the workforce directly. A relay station supervisor named the Town Manager handles day-to-day logistics, but actual power belongs to whoever controls access to the fiber taps. Currently that's a loose consortium of Collective-affiliated technicians who call themselves the Siphon.",
+  "dangers": [
+    "Heat exposure — the microclimate causes chronic health issues, and coolant system failures can create lethal thermal events",
+    "Cinderblock AI crackdowns — periodic sweeps to find and seal unauthorized fiber taps, with collateral damage to the surrounding settlement",
+    "Toxic river contact — the Fox River's chemical load is concentrated by thermal processing, and the riverbank is not a safe place to be",
+    "Jurisdictional void — Omro Relay exists in a gap between Cinderblock sovereign territory and whatever remains of county governance, meaning nobody is coming to help",
+    "Signal Guard overreach — Saltmarsh occasionally extends DEADBAND protocols into Omro to flush unauthorized transmissions, blacking out the entire town"
+  ],
+  "opportunities": [
+    "Nexus back door — access to Fox Cities Nexus processing power without Nexus-level surveillance, if you know the right people",
+    "Salvage economy — decommissioned Cinderblock components have significant resale value in the Circuit and other gray markets",
+    "Recruitment ground — skilled technicians who maintain the relay are in demand by every faction that needs infrastructure expertise",
+    "Information laundering — data routed through Omro Relay's tapped lines can be anonymized before reaching its destination"
+  ],
+  "story_hooks": [
+    "The Siphon discovers anomalous traffic in the fiber lines — something is being routed through Omro Relay that Cinderblock's own systems don't seem to know about, and it's coming from the direction of the Nexus",
+    "A coolant system failure threatens to cook the entire settlement, and the Cinderblock maintenance AI won't authorize repairs because the affected infrastructure is 'non-essential' — meaning the human habitation built around it",
+    "Someone is buying up gray-market Nexus processing time in bulk through Omro Relay, and the volume suggests they're building something that requires more computational power than most corponations possess"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Fox Cities Nexus (east)",
+      "Ironhide Berlin (southwest)",
+      "Red Granite Pit (west)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Cinderblock AI maintenance crews rotating through on relay service schedules",
+    "Collective data miners exploiting the fiber taps for intelligence gathering",
+    "Gray-market tech brokers buying and selling Nexus processing time",
+    "Fox Cities Nexus workers who can't afford Nexus housing and commute from the margins"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 44.0394,
+    "lng": -88.7443,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "ai",
+    "contract",
+    "surveillance",
+    "control",
+    "power",
+    "quanta",
+    "market",
+    "rain",
+    "refugee",
+    "chase",
+    "food",
+    "circuit"
+  ]
+}

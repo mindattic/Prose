@@ -1,0 +1,38 @@
+{
+  "id": "019d6143aa7376f7994670f63f2a0564",
+  "name": "Tessera Data Courier Van",
+  "type": "transportation",
+  "aliases": [
+    "Data Van",
+    "The Vault",
+    "Cold Run"
+  ],
+  "category": "commercial_ground",
+  "manufacturer": "Tessera",
+  "description": "A heavily shielded van designed to transport physical data storage — servers, drives, quantum storage units — between facilities. In a world where electronic transmission can be intercepted, sometimes the most secure way to move data is to put it in a box and drive it there. The Data Van is a Faraday cage on wheels, electromagnetically sealed, temperature controlled, and escorted by security that takes their job very seriously. The irony of a tech company moving data by truck is not lost on anyone.",
+  "propulsion": "Electric, armored drive train",
+  "speed": "100 km/h",
+  "capacity": "4,000 kg data storage equipment",
+  "range": "300 km",
+  "tier_availability": "Tessera logistics only",
+  "cost": "Φ80,000 per unit (custom build)",
+  "autonomy": "Human driver + security escort, electronic countermeasure suite",
+  "armament": "EMP shielding, signal jamming, tamper-triggered data destruction, escort integration.",
+  "common_usage": "Physical data transfer between secure facilities, quantum storage transport, air-gapped data movement.",
+  "story_hooks": [
+    "A Data Van is hijacked and the thieves discover the storage units contain something other than corporate data — medical records of people who don't exist",
+    "The Data Van routes through the city form a pattern that, when mapped, reveals the locations of Tessera's hidden facilities"
+  ],
+  "tags": [
+    "commercialground",
+    "transportation",
+    "ai",
+    "corporate",
+    "control",
+    "medical",
+    "rain",
+    "cold",
+    "train",
+    "armor"
+  ]
+}

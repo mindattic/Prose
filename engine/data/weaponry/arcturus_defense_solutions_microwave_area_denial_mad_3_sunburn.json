@@ -1,0 +1,45 @@
+{
+  "id": "019d6143ab147c46b0075fd85a5f8cce",
+  "name": "Arcturus Defense Solutions Microwave Area Denial MAD-3 'Sunburn'",
+  "type": "weapon",
+  "aliases": [
+    "Sunburn",
+    "MAD-3",
+    "Microwave Gun",
+    "The Cooker"
+  ],
+  "category": "energy",
+  "description": "A tripod-mounted directed microwave emitter designed for area denial and crowd control. The MAD-3 projects a focused beam of millimeter-wave radiation that penetrates clothing and heats the water molecules in the top 1/64th of an inch of skin, creating an intensely painful burning sensation without causing visible injury at standard power settings. At elevated power levels — accessible through a field override that Arcturus officially states does not exist — the beam can cause second-degree burns, ignite flammable materials, and cook electronics. The weapon's psychological effectiveness relies on the invisible, inescapable nature of the pain — targets cannot see what is hurting them and cannot shield themselves with conventional cover.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed — military and authorized security installations",
+  "base_technologies": [
+    "Millimeter-wave directed energy",
+    "Focused microwave beam steering",
+    "Subcutaneous thermal induction"
+  ],
+  "specifications": "beam type: 95 GHz millimeter wave\neffective range: 20-200 meters\nbeam width: 2 meter diameter at 100 meters\npower output: 100kW standard, field override to 250kW\nweight: 85 kg on tripod\npower source: Vehicle power feed or dedicated generator\ntime to pain threshold: 2 seconds at standard power",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A MAD-3 at elevated power was used to cook the electronics in an entire server farm through the building's walls — the data destruction was total and untraceable to any conventional weapon.",
+    "Reports of invisible burning pain in a residential area have been dismissed as mass hysteria — but someone has set up a concealed MAD-3 and is slowly making an entire block uninhabitable."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "energy",
+    "weapon",
+    "gun",
+    "ai",
+    "control",
+    "power",
+    "ubc",
+    "injury",
+    "pain",
+    "vehicle",
+    "clothing",
+    "water",
+    "tier 4"
+  ]
+}

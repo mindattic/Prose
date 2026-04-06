@@ -1,0 +1,61 @@
+{
+  "id": "019d6143aa317ef895d0b4d435437555",
+  "name": "Arcturus Defense Solutions IronGait MK-6 Tactical Exo-Carrier Platform",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions IronGait MK-6 Tactical Exo-Carrier Platform",
+  "type": "technology",
+  "aliases": [
+    "Ironwalkers",
+    "MK-sixes",
+    "Gaiters",
+    "Striders"
+  ],
+  "subcategory": "transportation",
+  "description": "The IronGait MK-6 is a bipedal heavy transport exoskeleton manufactured by Arcturus Defense Solutions, designed to carry personnel, equipment, or modular cargo frames across terrain that is impassable to wheeled or tracked vehicles — including the rubble fields, flooded sub-basements, collapsed highway sections, and active construction debris zones that characterize Meridian 88's outer and contested districts. The platform stands 3.4 meters tall and is rated for 800 kg of payload beyond the operator's own mass. A single operator sits in a central torso cockpit with full limb-feedback servo controls; the Cinderblock AI co-pilot system handles dynamic balance, obstacle negotiation, and route optimization autonomously while the human operator manages navigation intent and cargo security. The MK-6's legs use a hydraulic-pneumatic hybrid actuation system with energy recovery at each footfall — partially supplemented by Ouroboros PiezoCore-derived ground-contact harvesting plates embedded in the foot pads.\n\nArcturus markets the MK-6 primarily to corporate security divisions, Meridian 88's fragmented municipal enforcement bodies, and licensed private logistics contractors operating in red-zone terrain. A civilian freight variant — the IronGait MK-6C — strips the armored cab and weapons hardpoints in exchange for expanded cargo frame attachment points and a simplified Cinderblock AI interface. The MK-6C has found significant uptake among independent logistics operators in the outer districts as a means of moving goods through terrain where neither Kelpline's AquaSpine infrastructure nor standard road vehicles can operate. Both variants share a distinctive ground-shaking gait signature that residents of outer-ring districts have learned to read: a regular rhythmic impact means a contractor on a job; an irregular, accelerating cadence means something has gone wrong.",
+  "tier_availability": "Tier 2+ (Civilian variant); Military/Corporate Security (Tactical variant)",
+  "developers": [
+    "ARCTURUS DEFENSE SOLUTIONS",
+    "CINDERBLOCK AI",
+    "OUROBOROS ENERGY"
+  ],
+  "base_technologies": [
+    "Arcturus Defense Solutions RamJet CV-9 Armored Personnel Carrier",
+    "Ouroboros Energy PiezoCore LD-5 Pedestrian Kinetic Harvesting Grid",
+    "Ringo Corponation EchoLimb PR-9 Proprioceptive Feedback Prosthetic Interface"
+  ],
+  "enables": [
+    "Rubble-zone and flood-terrain heavy cargo transit",
+    "Tactical personnel insertion in denied terrain",
+    "Modular exo-platform weapons and sensor integration",
+    "Independent logistics operations in infrastructure-dead zones"
+  ],
+  "social_impact": "The IronGait MK-6 has become the physical symbol of corporate enforcement presence in Meridian 88's outer districts — the sound of its footfall cadence triggers practiced responses in communities that have learned what different gaits mean. Arcturus leases tactical MK-6s to corporate security divisions for 'asset protection' operations that amount to economic intimidation of non-compliant districts, and the platform's sheer physical scale relative to the humans around it is understood by all parties to be part of the message. The MK-6C civilian variant has simultaneously become a tool of community resilience — outer-ring logistics cooperatives use them to move food, medicine, and materials through terrain the city refuses to maintain, creating an ironic situation where the same platform serves both as instrument of corporate coercion and symbol of outer-ring self-sufficiency.",
+  "story_hooks": [
+    "An MK-6C operator running a community food route has been offered a very large sum to 'lose' a cargo frame in a specific rubble zone — and the frame's manifest says it contains medical supplies",
+    "A decommissioned tactical MK-6 is walking a fixed route through a contested district every night at 2 AM — no operator in the cockpit, Cinderblock AI logs show it was wiped six months ago",
+    "Arcturus is rolling out a firmware update that adds remote-override capability to all MK-6 units, including the civilian MK-6C variants already owned by independent operators",
+    "A community in a flood-zone outer district has collectively purchased three MK-6C units and is operating them as a cooperative transit service — Arcturus's lawyers are arguing this violates the single-operator licensing agreement"
+  ],
+  "tags": [
+    "transportation",
+    "technology",
+    "weapon",
+    "war",
+    "prosthetic",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "medical",
+    "market",
+    "rain",
+    "night",
+    "vehicle",
+    "chase",
+    "food",
+    "armor",
+    "energy",
+    "tier 2"
+  ]
+}

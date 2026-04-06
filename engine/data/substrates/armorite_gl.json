@@ -1,0 +1,59 @@
+{
+  "id": "019d6143a9d5760daa86150545118974",
+  "name": "Armorite-GL",
+  "brand_name": "Armorite",
+  "product_name": "Armorite-GL",
+  "type": "substrate",
+  "aliases": [
+    "GL laminate",
+    "Armorite",
+    "green-lam"
+  ],
+  "category": "composite",
+  "description": "A multi-layer graphene-polymer armor laminate developed by Crucible Industries through a co-development agreement with Tessera Materials, combining alternating graphene fabric plies with a shear-thickening polymer matrix. On ballistic impact, the polymer matrix instantaneously stiffens while graphene plies distribute and absorb kinetic energy across a wide area, preventing penetration while managing blunt trauma. Armorite-GL is produced in flexible sheet stock that can be cut and formed into garment liners, vehicle panels, or rigid plate inserts.",
+  "properties": [
+    "ballistic resistance",
+    "stab resistance",
+    "shear-thickening response",
+    "flexibility at rest",
+    "low weight",
+    "trauma distribution",
+    "chemical resistance",
+    "EMI shielding"
+  ],
+  "developers": [
+    "Crucible Industries",
+    "Tessera Materials"
+  ],
+  "applications": [
+    "personal armor vest liners and plate carriers",
+    "armored vehicle door panels",
+    "VIP transport cabin lining",
+    "law enforcement tactical gear",
+    "private security body armor"
+  ],
+  "tier_availability": "Tier 2-3",
+  "cost": "Φ890 per kg",
+  "story_hooks": [
+    "Armorite-GL panels rated for standard ballistics are failing against a new generation of flechette ammunition appearing in Shelf gang conflicts — someone is either selling downgraded stock or the threat environment has escalated faster than the armor spec.",
+    "A Tier 2 black-market tailor is producing Armorite-GL garments indistinguishable from ordinary clothing, creating invisible personal armor that is technically legal to own but deeply unsettling to enforcement agencies.",
+    "A shipment of Armorite-GL destined for a private security contractor is intercepted — it's stamped with Crucible Industries markings but the material composition doesn't match any registered formulation in the corporate database."
+  ],
+  "tags": [
+    "composite",
+    "substrate",
+    "gang",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "market",
+    "vehicle",
+    "clothing",
+    "armor",
+    "energy",
+    "shelf",
+    "tier 2",
+    "tier 3"
+  ]
+}

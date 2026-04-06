@@ -1,0 +1,39 @@
+{
+  "id": "019d6143aa717614a5aa3fbb8994ff6d",
+  "name": "SN Tempest Air Racer",
+  "type": "transportation",
+  "aliases": [
+    "Tempest",
+    "Sky Knife",
+    "The Screamer"
+  ],
+  "category": "personal_air",
+  "manufacturer": "Sterling-Nakamura (Sport Division)",
+  "description": "A single-seat air racing vehicle built for the Meridian 88 Air Grand Prix — a semi-legal racing circuit through the city's airspace that draws massive crowds and even bigger betting pools. The Tempest is pure speed: anti-grav lift, hydrogen turbine, minimal safety systems, and an aerodynamic profile that looks like a knife blade with a cockpit. Pilots experience G-forces that require augmented physiology to survive. The Air Grand Prix has a 4% fatality rate per race. Tickets sell out in minutes.",
+  "propulsion": "Anti-grav lift, hydrogen turbine thrust, vectored nozzles",
+  "speed": "500 km/h racing speed, 600+ km/h straightaway",
+  "capacity": "1 pilot",
+  "range": "Race distance — approximately 80 km circuit",
+  "tier_availability": "Tier 4-5 (racing teams/owners)",
+  "cost": "Φ800,000 per unit",
+  "autonomy": "Manual pilot with G-force management AI",
+  "armament": "None. Racing regulations prohibit weapons. Regulations are loosely enforced.",
+  "common_usage": "Air racing, speed records, corporate sponsorship vehicle, pilot ego.",
+  "story_hooks": [
+    "A Tempest pilot discovers their racer's AI is subtly adjusting their course during races — steering them away from a specific area of airspace",
+    "A racing team's Tempest disappears during a race and isn't found for three days — the pilot insists only minutes passed"
+  ],
+  "tags": [
+    "personalair",
+    "transportation",
+    "weapon",
+    "blade",
+    "augment",
+    "ai",
+    "corporate",
+    "vehicle",
+    "circuit",
+    "tier 4",
+    "tier 5"
+  ]
+}

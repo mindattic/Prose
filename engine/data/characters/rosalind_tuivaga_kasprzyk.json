@@ -1,0 +1,238 @@
+{
+  "id": "019d6143a6b678ed89580c96839e1db5",
+  "type": "character",
+  "name": "Rosalind Tuivaga-Kasprzyk",
+  "aliases": [
+    "Roz",
+    "Madam Tuivaga"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Retired union leader, Tier 3, community council chair, grandmother raising two grandchildren",
+  "age": 68,
+  "status": "active",
+  "location": "Montclare Quiet, a corner flat above a laundromat she technically still owns half of",
+  "description": "Rosalind is the kind of woman whose presence in a room shifts the acoustics ��� people speak differently, sit straighter, choose their words more carefully. She is not tall but carries herself with the posture of someone who spent thirty years at the front of rooms demanding to be heard. Her heritage is Fijian-Polish, which expresses itself in wide cheekbones, a generous build, and warm brown skin that she has decorated with an elaborate bioluminescent tattoo pattern along both arms — traditional Fijian knotwork rendered in soft gold light, a gift she gave herself on her sixtieth birthday when Tessera's transit workers finally won the pension reform she'd fought for through three contract cycles. Her hair is silver-black, worn in a thick braid, and she has cat ears — small, rounded, dark-furred — a geneware mod she got to match her grandchildren when they wanted one, which she now considers non-negotiable to her identity.\n\nRosalind is formidable and knows it, which means she has spent decades learning to calibrate her formidableness carefully. She can be devastatingly charming when she chooses, withering when she must, and quietly exhausted in the rare moments when no one is looking. She is raising her two grandchildren, Kofi (9) and Mira (6), after her daughter's breakdown, and the exhaustion of simultaneous community leadership and primary caregiving is the thing she most carefully never shows.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.9,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Her grandchildren inheriting a worse world than the one she fought to improve",
+      "Becoming a figurehead — respected but no longer effective"
+    ],
+    "core_desires": [
+      "Genuine, durable protection for working people",
+      "To see Kofi and Mira grow up in a neighborhood that knows who they are"
+    ],
+    "coping_mechanisms": [
+      "Action — she processes stress by working",
+      "Ritual tea-making as a decompression tool she does not fully acknowledge as such"
+    ],
+    "blind_spots": [
+      "She has a tendency to assume that organizing and collective action can solve problems that require individual intervention, sometimes missing when someone needs help that is personal rather than political",
+      "She does not adequately account for how much her strength intimidates people who want to help her"
+    ],
+    "secret": "During the 2168 transit strike, she accepted a private side-agreement with a Ferrogate mid-level executive that ended the strike three weeks early. The workers got most of what they needed, but not everything, and the executive was protected from an internal Ferrogate investigation that would have exposed serious safety violations. Four workers were injured in an 'accident' on a line that the investigation would have flagged. She has rationalized this for fifteen years. She has not stopped."
+  },
+  "speech_patterns": {
+    "vocabulary": "Polished public speaker's vocabulary with an undercurrent of Fijian-inflected English rhythms and occasional Polish idioms inherited from her grandmother. Knows how to make formal language feel warm and warm language feel formal.",
+    "cadence": "Measured in public settings, faster and more direct in private. Pauses before key points with the precision of someone who learned pause as a rhetorical tool.",
+    "verbal_tics": [
+      "'Let me be plain with you —'",
+      "Uses 'we' when she means 'I' in political contexts, genuinely and not evasively",
+      "Ends difficult statements with a short exhale that is almost but not quite a laugh"
+    ],
+    "example_lines": [
+      "Let me be plain with you — this neighborhood does not need a developer's vision for what it could be. It needs to be left alone to be what it already is.",
+      "We didn't win that contract by asking nicely. We won it because we made it more expensive to deny us than to give us what we'd earned. That's not idealism. That's just arithmetic."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Ferrogate urban infrastructure project will route a new transit line directly through Montclare Quiet — the same executive she made the 2168 deal with is overseeing it, and he's been leaving her messages she hasn't answered",
+    "Her daughter attempts a surprise return to take custody of Kofi and Mira, and Rosalind must decide between her daughter's recovery and the children's stability — she needs someone neutral to help mediate",
+    "Former union members begin approaching her with evidence that Ferrogate has been systematically underpaying pension disbursements across the retired membership for years"
+  ],
+  "narrative_function": "Political and community power broker; can broker deals, gather community support, or apply legitimate pressure to local institutions; quest giver for stories about labor rights, housing disputes, or neighborhood protection; provides access to union networks and transit worker information channels.",
+  "augmentations": "Bioluminescent tattoo array, both arms (gold knotwork, geneware-integrated). Cat ears, dark-furred (geneware, cosmetic). Cochlear enhancement implant, left ear — an old injury from a corporate security clash during the 2168 transit strike left her with significant hearing loss on that side.",
+  "daily_life": "Up at 0600 to get the grandchildren fed and to school; council business consumes most mornings via comm-calls and in-person mediations; afternoons she tries to reserve for the laundromat's books and the council's actual paperwork; picks up Kofi and Mira at 1600 and considers that hour the best part of every day; evenings she reads old union documents, ostensibly for history but really because they calm her.",
+  "affiliation": "Ferrogate Transit Workers Union (retired president, 30-year member); Montclare Quiet Community Council (current chair); Tessera pension recipient",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 10,
+      "empathy": 7,
+      "expression": 9,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 4,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Union Leader",
+      "Community Anchor",
+      "Political Broker",
+      "Grandmother",
+      "Compromised Idealist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect the collective before the individual unless the individual is one of her grandchildren",
+      "Never negotiate from a position you haven't prepared; never enter a room without knowing what you'll accept and what you won't"
+    ],
+    "escalation_ladder": [
+      "Warm, reasonable inquiry that maps the situation",
+      "Clear articulation of interests and potential consequences",
+      "Formal collective response — council motions, union contacts, public statements",
+      "Direct personal confrontation, private, devastating"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm, assessing their relationship to power and to the community simultaneously",
+      "friends": "Genuinely funny, self-deprecating about her own formidableness, physically affectionate"
+    },
+    "stress_responses": {
+      "low": "Makes tea. Elaborate, time-consuming tea.",
+      "medium": "Becomes very still and structured in speech; agenda-driven even in personal conversations",
+      "high": "Withdraws entirely for 20-30 minutes, will not be reached; returns with a plan"
+    },
+    "contradictions": [
+      "Dedicated to collective good but made a private deal that prioritized expedience over full accountability",
+      "Projects inexhaustible strength while running on empty"
+    ],
+    "habits": [
+      "Touches her cat ears when thinking — an unconscious fidget she does not know she does",
+      "Reviews old union contract documents before sleeping",
+      "Never raises her voice in formal settings"
+    ],
+    "breaking_points": [
+      "One of her grandchildren being frightened or harmed",
+      "Being publicly exposed as having made the 2168 deal"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Opportunist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Montclare Quiet, third-generation Meridian 88 resident",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired by Ferrogate Transit as a maintenance scheduler",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Elected to local union steward position; begins rapid ascent through union structure",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Leads the major Ferrogate transit strike; negotiates private side-agreement to end it; partially regrets this immediately",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Elected president of Ferrogate Transit Workers Union; serves three terms",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Retires from union presidency; elected to Montclare Quiet Community Council almost immediately",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Takes custody of grandchildren Kofi and Mira following daughter's crisis",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

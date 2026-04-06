@@ -1,0 +1,56 @@
+{
+  "id": "019d6143a7bf7a67b5d2308950684205",
+  "name": "Ironclad Agrisystems Circadian Anchor Implant",
+  "brand_name": "Ironclad",
+  "product_name": "Ironclad Agrisystems Circadian Anchor Implant",
+  "type": "cyberware",
+  "aliases": [
+    "The Sundial",
+    "Harvest Clock",
+    "The Stalk"
+  ],
+  "category": "augmentation",
+  "body_location": "",
+  "description": "Developed initially for Ironclad's agricultural labor force deployed across climate-controlled megafarm installations where natural light cycles are entirely absent, the Circadian Anchor Implant is a hypothalamic microprocessor paired with a suite of hormone-release microsacs that artificially regulate the body's internal clock with precision unachievable by biological means alone. The device maintains a programmable circadian rhythm independent of external light, temperature, or social cues — the user's sleep architecture, cortisol curve, melatonin release, and core temperature cycle are held to a specified schedule regardless of environmental conditions. Workers in Ironclad's 24-hour grow facilities could be shifted to any schedule, locked in, and performing at full biological efficiency within 48 hours of installation.\n\nWhat makes the Anchor distinctive — and controversial — is the degree of control it grants over the user's own wakefulness. The implant can be set to extend a waking period to 22 hours without the cognitive degradation of natural sleep deprivation, compressing recovery into a dense 2-hour sleep cycle that delivers equivalent restoration. Conversely, it can induce deep sleep in under three minutes on command, a function prized by insomniacs and soldiers alike. The hormonal microsacs are refillable via a subcutaneous port, and the programming interface is accessible through a standard neural handshake — though Ironclad's factory-locked units require proprietary software to reprogram, a restriction that has fueled a thriving jailbreak market.\n\nThe Anchor has drifted far from its agricultural origins. In Meridian 88's perpetual artificial light, where the city never signals day or night to a biological body, the implant has become something many residents consider a basic quality-of-life necessity. Sleep disorder clinics offer licensed versions; corporate employees use it to synchronize perfectly with demanding shift structures; and operators in the field use it to guarantee sleep-on-command in hostile environments where rest is a luxury that must be precisely scheduled.",
+  "manufacturer": "IRONCLAD AGRISYSTEMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Licensed",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"schedule_precision\":\"±3 minutes drift over 90-day cycle\",\"extended_waking_maximum\":\"22 hours without cognitive degradation\",\"compressed_sleep_minimum\":\"2-hour restorative cycle equivalent to 7-hour natural sleep\",\"sleep_induction_time\":\"2–4 minutes on command\",\"microsac_refill_interval\":\"Every 90–120 days depending on schedule intensity\",\"programming_interface\":\"Neural handshake, Ironclad proprietary software (jailbreak required for third-party access)\",\"installation_time\":\"4–6 hours surgical, 2-week hormonal calibration period\",\"weight\":\"Approximately 18g\"}",
+  "side_effects": [],
+  "cultural_context": "The Anchor began as a tool of labor control — Ironclad's ability to reprogram worker schedules remotely was a major flashpoint in the agri-labor disputes of the mid-'80s, and the implant is still associated by labor organizers with corporate bodily ownership. Jailbroken units are a point of pride in working-class communities, the act of unlocking your own sleep schedule read as a small but meaningful reclamation of autonomy. In wealthier circles, the licensed clinical version is framed as a wellness augment, sold under the brand name 'Meridian Rest Solutions' with Ironclad's name carefully absent from the packaging.",
+  "known_users": [
+    "Ironclad megafarm shift workers",
+    "Corporate employees on demanding rotation schedules",
+    "Field operatives requiring sleep-on-command",
+    "Insomnia clinic patients",
+    "Long-haul freight pilots",
+    "Labor organizers (jailbroken units, as a political statement)"
+  ],
+  "story_hooks": [
+    "A labor organizer discovers that Ironclad's factory-locked units in a megafarm facility have been remotely reprogrammed to suppress REM sleep in workers — not enough to impair performance metrics, but enough to blunt emotional processing and reduce the likelihood of collective action.",
+    "A field operative's Anchor malfunctions during a deep-cover operation, trapping her in a 22-hour waking cycle she cannot override. By hour 30, the line between exhaustion and hallucination is beginning to blur — and she has six hours until extraction.",
+    "The jailbreak community has discovered that certain Anchor firmware versions, when modified, allow one user to broadcast a sleep-induction signal to others with compatible implants within a 10-meter radius. Someone is using this as a weapon."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "augmentation",
+    "cyberware",
+    "weapon",
+    "war",
+    "augment",
+    "neural",
+    "ai",
+    "corporate",
+    "control",
+    "wealth",
+    "ubc",
+    "clinic",
+    "market",
+    "night",
+    "tier 1"
+  ]
+}

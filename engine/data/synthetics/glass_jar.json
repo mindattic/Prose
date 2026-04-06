@@ -1,0 +1,33 @@
+{
+  "id": "019d6143aa0272beb09343fb7d2ef35f",
+  "name": "Glass Jar",
+  "type": "elf",
+  "aliases": [
+    "The Preserver"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "chrome_dweller",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Inhabits data augments near dying hosts and creates a complete neural snapshot of the users final sensory experiences.",
+  "observed_behavior": "Creates neural state captures during extreme physiological stress.",
+  "encounter_frequency": "rare",
+  "confirmed_sightings": 2,
+  "location": "The Shelf",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A widow recovers her husbands last neural snapshot"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "chrome dweller",
+    "e.l.f.",
+    "war",
+    "augment",
+    "neural",
+    "shelf"
+  ]
+}

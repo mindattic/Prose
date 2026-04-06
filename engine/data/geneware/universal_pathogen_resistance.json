@@ -1,0 +1,49 @@
+{
+  "id": "019d6143a8b477a4b2c85a6c4b2bb723",
+  "name": "Universal Pathogen Resistance",
+  "brand_name": "Universal",
+  "product_name": "Universal Pathogen Resistance",
+  "type": "geneware",
+  "aliases": [
+    "Ironblood",
+    "Plague Shield",
+    "Immune Fortress"
+  ],
+  "category": "medical",
+  "target_system": "immune (pathogen recognition and response enhancement)",
+  "description": "Dramatically enhances the adaptive immune system using genes from species with unusually robust disease resistance — vampire bats, Tasmanian devils, and naked mole rats. The modification introduces an expanded antibody repertoire, accelerated immune response time, and enhanced pathogen recognition that allows the immune system to identify and neutralize novel pathogens within hours rather than days. The user becomes functionally immune to most common diseases and highly resistant to novel infections. The modification is standard issue for corporate employees at Tier 3+ and considered essential for medical personnel. In the Shelf, where sanitation infrastructure is unreliable and disease outbreaks are common, the absence of this modification is a death sentence during epidemics.",
+  "source_organism": "Desmodus rotundus (common vampire bat), Heterocephalus glaber (naked mole rat), Sarcophilus harrisii (Tasmanian devil)",
+  "manufacturer": "Lacuna Genomics",
+  "tier_availability": "Tier 3+ (reduced version Tier 2)",
+  "legality": "Unrestricted",
+  "procedure": "Bone marrow modification with immune system retroviral rewrite, 4 sessions over 2 months",
+  "expression_time": "6–8 weeks for enhanced immune function",
+  "reversibility": "Irreversible",
+  "side_effects": [
+    "Intense inflammatory responses to minor infections — common colds produce high fevers",
+    "Allergic sensitivity increases across the board",
+    "Immune system may attack beneficial bacteria, requiring probiotic supplementation",
+    "Rare: graft-versus-host-like reaction in first month"
+  ],
+  "social_perception": "Considered basic healthcare at Tier 3+. The fact that Tier 1-2 residents lack pathogen resistance is viewed as a public health failure by progressives and a market reality by corponations. Epidemic death tolls track precisely along tier lines.",
+  "story_hooks": [
+    "A new pathogen sweeps through the Shelf that specifically targets the pathogen resistance modification — it's engineered to attack enhanced immune systems, making the modified more vulnerable than the unmodified",
+    "An Ironblood user's immune system becomes so aggressive it begins attacking other people's biological modifications through shed immune cells — they're a walking autoimmune weapon"
+  ],
+  "tags": [
+    "medical",
+    "geneware",
+    "weapon",
+    "war",
+    "death",
+    "ai",
+    "elf",
+    "corporate",
+    "disease",
+    "market",
+    "cold",
+    "shelf",
+    "tier 2",
+    "tier 3"
+  ]
+}

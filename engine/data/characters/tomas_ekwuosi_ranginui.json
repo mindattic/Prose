@@ -1,0 +1,170 @@
+{
+  "id": "019d6143a70378b88295094276460263",
+  "type": "character",
+  "name": "Tomáš Ekwuosi-Ranginui",
+  "aliases": [
+    "Tom-Tom",
+    "The Static"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Underground press operator and anti-corporate agitator",
+  "age": 27,
+  "status": "active",
+  "location": "The Shelf — specifically a rented storage unit in Brewer's Spine converted into a print shop",
+  "description": "Tomáš is lean and restless, with the kind of energy that makes people in small rooms want to lean away. He's mixed-heritage Māori-Czech-Igbo, with warm brown skin, deep-set dark eyes, and hair he keeps in short locs dyed a static-white that he touches up himself with cheap geneware pigment paste. His fingers are perpetually ink-stained despite the fact that most of what he produces is digital — he runs a physical broadsheet as a deliberate political statement, because 'data can be deleted and paper can be held.' He has a bioluminescent strip along his left forearm he got at nineteen, which pulses blue-white when his heart rate elevates, which is constantly.\n\nHe is brilliant and exhausting in roughly equal measure. His publication, Null Signal, has broken three genuine scandals in the past two years — a Ferrogate Transit rate manipulation scheme, an Axiom water quality suppression in Burnside Pocket, a Palladian pharmaceutical kickback network operating through a Highland Park clinic. He is also paranoid, inconsistent about source protection, prone to publishing things before they're fully verified, and genuinely unable to tell the difference between being brave and being reckless. He loves the cause with a purity that people with more experience find either inspiring or alarming depending on the day.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Being irrelevant — producing work that doesn't matter, that nobody reads, that changes nothing",
+      "That his father (a mid-tier Tessera data analyst who cut contact) was right that this is all performance"
+    ],
+    "core_desires": [
+      "One story that actually brings someone powerful down permanently",
+      "To be taken seriously by the people he respects most"
+    ],
+    "coping_mechanisms": [
+      "Constant motion and output",
+      "Ideological framing that makes every personal failure a political one"
+    ],
+    "blind_spots": [
+      "He is far more visible than he believes — several corponation security contractors know exactly who he is and have chosen to let him run because he's more useful as a monitored node than a martyr",
+      "He mistakes his sources' trust in him for safety"
+    ],
+    "secret": "He fabricated a minor data point in the Ferrogate story — not the core finding, which was real, but a specific number he couldn't verify that made the piece hit harder. It hasn't been caught. He thinks about it every time someone cites that story."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense, fast, mixes technical jargon with street slang fluidly. Prone to rhetorical questions. Uses the word 'actually' like punctuation.",
+    "cadence": "Rapid-fire with occasional full stops when he's making a point he wants to land. Interrupts himself to clarify.",
+    "verbal_tics": [
+      "'Actually—'",
+      "Tapping his ink-stained fingers on whatever surface is near when thinking",
+      "Starting sentences with 'No, but—' even when agreeing"
+    ],
+    "example_lines": [
+      "'No, but — here's what they don't want you to notice. The rate hike and the maintenance shutdown happen the same quarter. Every quarter. That's not coincidence, that's a policy.'",
+      "'I'm not saying I have proof. I'm saying I have enough to print and let the denial tell us the rest.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He has raw data from a source inside Zheng-Dao that could prove systematic wage theft across the Shelf district — but the source has gone silent and he doesn't know if they're dead, compromised, or just scared.",
+    "A legitimate journalist from a licensed media outlet is trying to kill his Palladian story before it breaks — and he doesn't know if she's protecting a source they share or protecting Palladian."
+  ],
+  "narrative_function": "Information source and story catalyst. He knows things — sometimes accurate things. He can point toward scandals, introduce contacts, and create narrative pressure through publication. He can also get people killed by publishing too fast. He's a resource with a significant liability attached.",
+  "augmentations": "Bioluminescent subdermal strip on left forearm (cosmetic, secondhand, slightly glitchy). Neural mesh for rapid text composition — installed in a gray-market clinic, works at about 70% spec. Retinal overlay for AR document annotation.",
+  "daily_life": "Sleeps four to six hours on a cot behind the press. Spends mornings chasing leads through encrypted networks and in-person contacts, afternoons writing and laying out, nights printing or distributing through a network of trusted couriers. Eats badly.",
+  "affiliation": "Null Signal Independent Press (self-founded); loose association with the Brewer's Spine Tenants' Coalition",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 9,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": -3,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "press operator",
+      "agitator",
+      "partially reckless",
+      "idealist",
+      "liability"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Publish first, correct later — silence is always worse than imperfection",
+      "Protect sources above everything except when the story is big enough (a line he draws inconsistently)",
+      "Trust no institution, only individuals"
+    ],
+    "escalation_ladder": [
+      "Probe with questions, stay casual",
+      "Demand directly",
+      "Threaten publication",
+      "Publish and burn the bridge — he's done this twice"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately assessing for story value or source potential — not cynically, he just can't turn it off",
+      "friends": "Intense, loyal, sometimes appropriating — he'll use your story if it's important enough and justify it afterward"
+    },
+    "stress_responses": {
+      "low": "Productive — stress is fuel",
+      "medium": "Paranoid, double-checks everything, changes communication channels obsessively",
+      "high": "Freezes for 24 hours then acts impulsively"
+    },
+    "contradictions": [
+      "Crusades for transparency while maintaining significant personal opacity about his methods and finances"
+    ],
+    "habits": [
+      "Writes headers before he writes articles",
+      "Keeps physical photographs of every source he's burned, in a locked box, as penance he doesn't quite call penance",
+      "Leaves small data offerings at the E.L.F. shrine his neighbor maintains, though he publicly claims not to believe in them"
+    ],
+    "breaking_points": [
+      "Discovering that a story he ran hurt someone he was trying to help",
+      "Being offered money to kill a story — even once, even if he refuses"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

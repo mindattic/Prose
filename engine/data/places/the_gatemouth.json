@@ -1,0 +1,95 @@
+{
+  "id": "019d6143a93f747b9a2533e1baa35ffb",
+  "type": "place",
+  "name": "The Gatemouth",
+  "aliases": [
+    "Michigan City",
+    "MC Checkpoint",
+    "The Mouth"
+  ],
+  "description": "Michigan City was a beach town once. The kind of place where Chicago families drove ninety minutes to eat overpriced ice cream and complain about sand. That was before the Indiana-GLM Border Compact of 2171, which designated the town as the primary ground-transit checkpoint between the Indiana Exclusion Territories and the southern edge of the Great Lakes Metropolitan Area. Now Michigan City is a throat -- a narrow passage through which everything heading north must be swallowed, scanned, and either admitted or expelled.\n\nThe checkpoint infrastructure dominates the lakeshore like a brutalist cathedral. Three kilometers of reinforced inspection lanes, biometric gates, cargo scanners capable of detecting a single unregistered neural implant in a shipping container of ten thousand. The old beaches still exist on the east side, technically public, but the sand is grey with industrial runoff and the water carries enough heavy metals to set off a Geiger counter's more anxious cousin. Ringo Systems holds the border security contract, and their Sentinels patrol the inspection lanes with the relaxed confidence of people who know that everyone passing through needs them more than they need anyone passing through.\n\nThe town itself has stratified around the checkpoint economy. The north side -- the admitted side -- is a service district for transit workers, truckers waiting on cargo clearance, and the small army of lawyers who specialize in border disputes. The south side is where you go when you've been denied entry. It's a limbo district of temporary housing blocks, unlicensed medical clinics, and fixers who sell forged transit papers for prices that climb every time the border protocols tighten. The locals call the south side the Waiting Room. Some people have been waiting for years.",
+  "atmosphere": {
+    "sights": [
+      "Three kilometers of inspection lanes lit by sodium-yellow security floods, visible from ten miles out",
+      "Ringo Sentinel units in matte-black exoskeletons, scanning everything that moves",
+      "The old lighthouse on the east pier, repurposed as a communications relay, its light replaced by a slowly rotating sensor array",
+      "Cargo drones stacked in holding patterns above the inspection zone, waiting for clearance like mechanical vultures",
+      "The Waiting Room's improvised architecture -- shipping containers stacked three high, connected by catwalks and hope"
+    ],
+    "sounds": [
+      "The constant low grind of cargo vehicles inching through inspection lanes",
+      "Border PA announcements in English, Spanish, and machine-code shorthand",
+      "Ringo security drones -- a distinctive high-pitched whine that residents learn to sleep through",
+      "The lake, still audible beneath everything, waves hitting contaminated sand",
+      "Arguments at the inspection gates -- the sound of desperation meeting bureaucracy"
+    ],
+    "smells": [
+      "Diesel exhaust from the older cargo vehicles that can't afford electric conversion",
+      "Lake water -- metallic, wrong, carrying chemical signatures from Gary's industrial runoff",
+      "Synth-food from the transit worker cafeterias, institutional and joyless",
+      "Ozone from the biometric scanning arrays"
+    ],
+    "feel": "A place defined entirely by the act of passing through it. Nobody comes to the Gatemouth to stay, which means everyone who stays here has failed at leaving. There's a particular desperation to limbo towns -- the energy of people who are neither here nor there, suspended between the place they fled and the place that won't have them.",
+    "tags": []
+  },
+  "demographics": "Approximately 45,000 permanent residents, split roughly between checkpoint workers and service economy on the north side and denied-entry populations on the south. Heavy Gulf Coast climate refugee presence. Tier 1-2 predominate, with Ringo security personnel at Tier 3-4.",
+  "economy": "Border processing fees generate Φ2.1 billion annually, almost none of which stays local. The real economy is the gray market in transit papers, biometric spoofing, and cargo reclassification. A competent fixer can get a denied individual across the checkpoint for Φ8,000-15,000 depending on how many flags they're carrying.",
+  "power_structure": "Ringo Systems holds the border contract and is the de facto government. The municipal authority exists on paper and processes permits. A fixers' consortium called the Passage Guild operates the south side's gray economy with enough discipline to prevent the chaos that would invite a Ringo crackdown.",
+  "dangers": [
+    "Ringo security -- thorough, professional, and empowered to use lethal force at the checkpoint",
+    "Biometric flags -- one bad scan and you're in the Waiting Room indefinitely",
+    "South side scams -- not every fixer delivers what they sell",
+    "Lake contamination -- the water and shoreline are genuinely toxic",
+    "Human trafficking operations disguised as transit services"
+  ],
+  "opportunities": [
+    "Steady work for anyone willing to run cargo or people through gray channels",
+    "The Passage Guild pays well for technical skills -- biometric spoofing, document fabrication, drone interdiction",
+    "Information flows through border towns; the Gatemouth knows who's moving and why",
+    "Ringo occasionally subcontracts to freelancers for operations they don't want on the books"
+  ],
+  "story_hooks": [
+    "A Passage Guild fixer has been disappearing clients instead of moving them north -- and someone's paying for the bodies",
+    "Ringo is testing a new neural-scan protocol at the checkpoint that can read intent, not just identity -- and the false positive rate is classified",
+    "A cargo shipment from the Indiana Exclusion Territories is flagged for inspection but someone very powerful wants it through untouched"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Slagshore (Gary industrial lakeshore, west along the coast)",
+      "Benton Divide (north along the lake road)",
+      "Indiana Exclusion Territories (south, beyond the checkpoint)",
+      "Lake Michigan cargo lanes (offshore)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Transit workers and cargo operators waiting on clearance",
+    "Denied-entry refugees cycling through the Waiting Room",
+    "Fixers and document fabricators operating in the gray economy",
+    "Ringo Sentinel personnel on rotating border duty"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.7075,
+    "lng": -86.895,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "identity",
+    "neural",
+    "ai",
+    "elf",
+    "contract",
+    "power",
+    "ubc",
+    "medical",
+    "clinic",
+    "market",
+    "refugee",
+    "drone",
+    "water",
+    "lake"
+  ]
+}

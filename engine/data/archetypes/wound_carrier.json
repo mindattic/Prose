@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a59c7ab0a78719fe85ac448c",
+  "name": "Wound Carrier",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Carries old wounds that never healed",
+  "behavioral_signature": "Every new pain lands on old scars",
+  "under_stress": "Old wounds reopen under stress",
+  "at_rest": "Tender, careful, guarded around triggers",
+  "will_always": [
+    "carry the old pain"
+  ],
+  "will_never": [
+    "let the wounds heal"
+  ],
+  "unless": [
+    "carrying the wound is poisoning everyone around them"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Griever",
+      "threshold": 0.8,
+      "context": "carrying pain"
+    },
+    {
+      "archetype": "Guilt Carrier",
+      "threshold": 0.7,
+      "context": "emotional burden"
+    }
+  ],
+  "opposite_of": [
+    "Phoenix"
+  ],
+  "tags": [
+    "scarred",
+    "heavy"
+  ]
+}

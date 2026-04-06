@@ -1,0 +1,44 @@
+{
+  "id": "019d6143aa54714c8532bd70c18cbc5a",
+  "name": "Tessera Industries Quantum Tunneling Data Storage",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Industries Quantum Tunneling Data Storage",
+  "type": "technology",
+  "aliases": [
+    "QTDS",
+    "Quantum Vault",
+    "Tunnel Store",
+    "Tessera Vault"
+  ],
+  "subcategory": "computing",
+  "description": "A data storage system that encodes information in quantum states of electrons held in potential wells, using quantum tunneling effects to read and write data. QTDS achieves storage densities that exceed conventional systems by a factor of 10,000, encoding a petabyte of data in a chip the size of a fingernail. The quantum encoding also provides inherent security — reading the data requires knowledge of the quantum state configuration, and unauthorized measurement collapses the data, destroying it. Information stored in QTDS is either accessible to authorized users or destroyed — there is no middle ground.",
+  "tier_availability": "Tier 4+",
+  "developers": [
+    "TESSERA INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Quantum state electron encoding",
+    "Tunneling-based read/write mechanisms",
+    "Measurement-collapse data security"
+  ],
+  "enables": [
+    "Extreme-density data storage",
+    "Self-destroying information security",
+    "Petabyte-scale portable storage",
+    "Physically tamper-proof data containers"
+  ],
+  "social_impact": "QTDS has made information simultaneously more portable and more secure than ever before. An entire corporation's data archive fits on a chip that can be swallowed, and that data will destroy itself if anyone without the quantum configuration key attempts to access it. This has changed the dynamics of espionage — stealing data requires stealing the key as well as the medium, and brute-force approaches to breaking the encryption result in total data loss. QTDS has also enabled new forms of dead drops and information smuggling that are virtually undetectable.",
+  "story_hooks": [
+    "A QTDS chip containing a complete copy of a corporation's financial records has been found with its quantum configuration key intact — someone had total access to both the data and the key, and they wanted it found.",
+    "A QTDS storage system has exhibited a phenomenon where data appears to exist in the quantum wells that was never written there — the chip is storing information from an unknown source, as if the quantum states are receiving data through the tunneling mechanism from elsewhere."
+  ],
+  "tags": [
+    "computing",
+    "technology",
+    "loss",
+    "ai",
+    "elf",
+    "tunnel",
+    "tier 4"
+  ]
+}

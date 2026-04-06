@@ -217,7 +217,7 @@ public class KnowledgeMapService
     }
 
     private string GetPath(string projectId) =>
-        Path.Combine(paths.DataRoot, "story_blocks", $"{projectId}.knowledge.json");
+        StoryFolderHelper.GetFilePath(paths.StoriesDir, projectId, "knowledge.json");
 }
 
 public class KnowledgeMap

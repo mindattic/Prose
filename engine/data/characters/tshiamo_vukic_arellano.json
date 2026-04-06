@@ -1,0 +1,230 @@
+{
+  "id": "019d6143a7077cde8855b09cfcbddf97",
+  "type": "character",
+  "name": "Tshiamo Vukić-Arellano",
+  "aliases": [
+    "Chip",
+    "The Butcher's Boy"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "street-level organ harvester and black-market tissue broker",
+  "age": 28,
+  "status": "active",
+  "location": "The Undertow, operating out of a submerged-level cold storage unit beneath the Menomonee Gulch flood barriers",
+  "description": "Tshiamo is lean in the way people get when they've been hungry enough times that the body learns to run efficient. His Tswana-Botswanan heritage shows in his cheekbones and dark complexion; his Croatian-Mexican grandmother gave him an incongruous surname and a slight curl to his black hair, worn short and without product. He has bioluminescent striping across his collarbones — a cheap modification he got at sixteen from a back-alley geneware parlor, blue-white lines that glow faintly through the neckline of his shirts. He keeps his hands very clean. This is the thing people notice: immaculate nails, no blood under them, even when he's come directly from work.\n\nTshiamo did not choose this profession romantically or willingly. He slid into it at nineteen when a hospital orderly job at the Aurochs Medical Complex auxiliary was his only income and a mid-level harvesting crew offered him Φ200 to look the other way on a body that came through post-mortem. Now he is the one sourcing, and he maintains a tight internal logic about it: he doesn't harvest from the living, he doesn't touch people who haven't already been declared dead by someone else first, and he tells himself that line is the only one that matters. He is wrong about how solid that line is, and some part of him knows it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.6,
+      "mask": 0.4,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "crossing the line he has drawn about the living and discovering he is capable of it",
+      "being seen clearly by someone he respects"
+    ],
+    "core_desires": [
+      "enough money to leave the Undertow and take his younger sister with him",
+      "to believe that what he does causes net less harm than the corponation hospitals"
+    ],
+    "coping_mechanisms": [
+      "obsessive hand-washing ritual",
+      "building elaborate moral justifications that stop just short of scrutiny"
+    ],
+    "blind_spots": [
+      "cannot see that his 'dead only' rule has already been bent twice under pressure",
+      "does not recognize that his handlers are grooming him toward live harvesting"
+    ],
+    "secret": "He has a standing altar to E.L.F. Corpus — a spirit associated with the dead and medical systems — and prays every night for the people whose organs he moves. He has memorized as many of their names as he could find. There are forty-one."
+  },
+  "speech_patterns": {
+    "vocabulary": "Medical terminology used casually and correctly, mixed with Undertow slang; avoids euphemisms in private but uses them compulsively in public",
+    "cadence": "Quick and clipped when nervous, slow and deliberate when he's trying to sound calm — the switch is a tell",
+    "verbal_tics": [
+      "'It's already done' (meaning the person is already dead)",
+      "'Clean work' as the highest compliment"
+    ],
+    "example_lines": [
+      "'I don't touch runners. I don't touch people who are breathing. That's my rule and I don't move on it.'",
+      "'The Enclosure clinics pay for Grade A tissue, Aurochs dumps it in biowaste, and I am apparently the only person in this city who finds that obscene.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Meridian Marrow Exchange has started pressuring him to expand into live procurement and he's looking for a way out that doesn't involve the bottom of Lake Michigan",
+    "One of the names on his memorial list belonged to someone whose family is actively looking for answers about their death — and they're getting close to Tshiamo"
+  ],
+  "narrative_function": "Morally complex information source on the Undertow's medical black market; potential reluctant ally if players need access to grey-market biological materials; represents the organ trafficking ecosystem at its working-class end",
+  "augmentations": "Bioluminescent subdermal striping (cosmetic, blue-white, chest and collarbones); basic neural cooling implant to regulate body temperature in cold storage environments",
+  "daily_life": "Spends most nights monitoring hospital discharge data feeds he shouldn't have access to, sleeps through late morning, makes supply runs in the afternoon, and handles 'acquisition logistics' — which is a euphemism — two to three times a week.",
+  "affiliation": "Loosely connected to a tissue-brokering network called the Meridian Marrow Exchange — four operators who share cold storage and a buyer contact at a private clinic in the Grosse Pointe Enclosure",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 7,
+      "expression": 4,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": -2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "medical knowledge",
+      "guilt-haunted",
+      "functional ethics",
+      "protective",
+      "quietly devout"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never acquire from anyone who is still breathing — this is the rule he will defend violently",
+      "Always verify the buyer before delivery; one sting operation is all it takes"
+    ],
+    "escalation_ladder": [
+      "Polite refusal with plausible excuse",
+      "Firm refusal with eye contact — no explanation offered",
+      "Disappears from contact for 48 hours until pressure passes",
+      "Reaches out to the only runner-adjacent contact he has to ask about exit options",
+      "Becomes dangerous if cornered — he is lean but fast and has a ceramic scalpel he keeps in his left boot"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Watchful and quiet, gives away nothing, assesses for threat vectors",
+      "friends": "Unexpectedly warm, has a dry humor that surfaces when he feels safe, loyal to a fault"
+    },
+    "stress_responses": {
+      "low": "Washes hands repeatedly, checks his cold storage temperatures three times",
+      "medium": "Goes silent and still — mistaken for calm by people who don't know him",
+      "high": "Prays to E.L.F. Corpus aloud in the dark of the storage unit, then makes a decision and acts on it without second-guessing"
+    },
+    "contradictions": [
+      "Considers himself ethical while operating in a system that makes ethics structurally impossible",
+      "Genuinely gentle with living people even as his work requires him to think of the dead as commodity"
+    ],
+    "habits": [
+      "Checks his fingernails before and after every work session",
+      "Keeps a small handwritten list of names folded inside his left shoe at all times"
+    ],
+    "breaking_points": [
+      "If anyone threatens his sister Kemi, every rule he has goes out immediately"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Undertow to a Botswanan-Tswana father and a Croatian-Mexican mother, both Ferrogate Transit laborers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Took orderly job at Aurochs Medical Complex auxiliary at age 16",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First organ diversion job — looked away on a post-mortem body for Φ200",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Became primary sourcing contact for the Meridian Marrow Exchange",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began the memorial list after recognizing a name on a body's tag as a neighbor's father",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "019d6143aa1070aebedb969f42528406",
+  "name": "Nesting Doll",
+  "type": "elf",
+  "aliases": [
+    "Matryoshka",
+    "Layers"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "trickster",
+  "habitat": "chrome_dweller",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "An E.L.F. that contains smaller E.L.F.s — a code assemblage that periodically sheds fragments of itself, creating new wisps. A self-replicating trickster.",
+  "observed_behavior": "Generates new minimal code entities from its own structure at irregular intervals. The 'children' are simpler than the parent and typically become wisps.",
+  "encounter_frequency": "rare",
+  "confirmed_sightings": 3,
+  "location": "Unknown — migrates",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A researcher studying Nesting Doll realizes it's not reproducing — it's dying. Each shed fragment is a piece it's losing. The children are its obituary."
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "trickster",
+    "chrome dweller",
+    "e.l.f.",
+    "ai"
+  ]
+}

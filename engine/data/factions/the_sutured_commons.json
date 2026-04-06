@@ -1,0 +1,101 @@
+{
+  "id": "019d6143a899744b90cc6e03bb546f01",
+  "type": "faction",
+  "name": "The Sutured Commons",
+  "aliases": [
+    "The Sutures",
+    "Patchwork",
+    "The Menders"
+  ],
+  "motto": "What you cannot afford, we have already paid for together.",
+  "description": "The Sutured Commons emerged from the collapse of the Shelf's informal medical exchange networks following LAZARUS PHARMACEUTICALS' aggressive enforcement of the Meridian 88 Biotic Licensing Accord of 2181, which criminalized unlicensed redistribution of pharmaceutical compounds and neural maintenance hardware. What had been a loose arrangement of retired HELIX BIOSYSTEMS technicians, decommissioned medics from ARCTURUS DEFENSE SOLUTIONS contracts, and Shelf residents bartering care for labor crystallized almost overnight into something with structure and intent. The founding moment most members cite is the Suture Market of Sublevel 14, where six former Helix calibration techs pooled their severance implants and spent seventy-two hours performing neural maintenance on over two hundred residents who had missed their mandatory TESSERA CORPONATION augmentation upkeep cycles and faced citizenship tier demotion as a result. Nobody was paid. Everyone ate.\n\nToday the Sutured Commons operates as a distributed care infrastructure spanning the Shelf, Old Harbor's lower transit corridors, the outer ring of the Laceworks, and select nodes in Substation Null. They maintain a rotating network of what they call Stitch Houses — unmarked locations that shift every eight to fourteen days — where members provide neural recalibration, pharmaceutical redistribution, implant maintenance, emergency trauma response, and crucially, documentation assistance for residents navigating TESSERA's citizenship tier appeals process. Their operational sophistication has grown considerably; they now maintain encrypted supply chains that route pharmaceuticals from IRONCLAD AGRISYSTEMS agricultural surplus (many compounds share chemical precursors with industrial biologics) and salvaged HELIX hardware through a web of compliant vendors in the Oxidian Market.\n\nWhat distinguishes the Sutured Commons from other mutual aid operations in Meridian 88 is their almost obsessive commitment to what they call legibility on their own terms. They document everything — every procedure, every material exchanged, every participant — but in their own encrypted registry that mirrors and subtly mocks TESSERA's citizenship data architecture. This shadow record-keeping serves two purposes: it proves, internally, that the network functions and can be trusted, and it constitutes a growing body of evidence about the health crises and augmentation failures that corporate negligence has produced among the Shelf's lower tiers. The Sutured Commons are not merely keeping people alive. They are building a case.",
+  "ideology": "The Sutured Commons reject the language of charity entirely. Their operating philosophy, developed collectively and revised annually at what they call the Full Stitch — a gathering of regional coordinators — holds that care is infrastructural, not transactional, and that the tiered citizenship system is fundamentally a mechanism for manufacturing scarcity in bodies that could otherwise sustain themselves. They do not frame themselves as revolutionary, and several senior members are openly hostile to that label, arguing that survival is not a political position. However, their practice of shadow documentation, their refusal to interface with any corporate medical licensing body, and their explicit goal of making LAZARUS PHARMACEUTICALS' price-fixing practices visible through lived counter-evidence place them in direct structural opposition to the corponation tier regardless of how they self-describe.",
+  "territory": "Primary operations across the Shelf (Sublevels 9–22), Old Harbor's lower transit corridors and dock-adjacent residential blocks, peripheral nodes in the outer Laceworks, and three semi-permanent Stitch Houses in Substation Null. They have limited but growing presence in the Circuit's undermarket, primarily for supply acquisition rather than care delivery.",
+  "leadership": "The Sutured Commons has no singular leader. Coordination is handled by a rotating body of seven Regional Anchors, each responsible for a geographic cluster of Stitch Houses. Current notable figures include Maren Osse, a former HELIX BIOSYSTEMS neural calibration supervisor who now serves as the primary architect of the shadow registry and is widely considered the network's most strategically capable member; Dov Sachetti, an Old Harbor longshoreman and self-taught trauma medic who coordinates the dock corridor nodes and has a reputation for aggressive supply acquisition; and Priya Velu, a former LAZARUS PHARMACEUTICALS distribution logistics analyst who defected with significant institutional knowledge about supply chain vulnerabilities and now manages pharmaceutical redistribution protocols.",
+  "methods": [
+    "Operating rotating Stitch Houses with location communicated through encrypted short-range mesh networks seeded to trusted community members",
+    "Neural augmentation maintenance and recalibration outside TESSERA's licensing framework",
+    "Pharmaceutical redistribution through the Oxidian Market using IRONCLAD AGRISYSTEMS agricultural chemical supply chains as cover",
+    "Shadow documentation of care provided, cross-referenced against corporate health data to build evidence of systemic negligence",
+    "Citizenship tier appeals support and document coaching for residents facing demotion",
+    "Training community members in basic implant maintenance to reduce dependency on professional care nodes",
+    "Barter and labor exchange systems formalized through internal ledgers rather than currency",
+    "Counter-surveillance operations to identify and evade TESSERA compliance sweeps targeting unlicensed medical activity"
+  ],
+  "resources": [
+    "Network of former HELIX BIOSYSTEMS and ARCTURUS DEFENSE SOLUTIONS medical and technical personnel",
+    "Encrypted shadow registry constituting years of undisclosed health data on Shelf and Old Harbor populations",
+    "Pharmaceutical precursor supply relationships through IRONCLAD AGRISYSTEMS agricultural surplus vendors",
+    "Salvaged and refurbished HELIX neural maintenance hardware",
+    "Stitch House infrastructure across four districts",
+    "Institutional knowledge of LAZARUS PHARMACEUTICALS distribution logistics courtesy of defected personnel",
+    "Community trust and embedded social networks across lower-tier residential populations",
+    "Legal knowledge base regarding TESSERA citizenship tier appeals process"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "",
+      "type": "",
+      "description": "The Oxidian Covenant controls significant vendor relationships in the Oxidian Market that the Sutured Commons relies on for pharmaceutical redistribution. The relationship is transactional and occasionally tense — the Covenant expects favors in return and has on at least two occasions used its knowledge of Sutured Commons supply routes as leverage. Neither party trusts the other fully, but both recognize the dependency.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Lacework Confessional's information brokerage and the Sutured Commons' shadow registry operate on similar philosophical premises about the value of undisclosed documentation. They share intelligence about TESSERA compliance sweep patterns and have occasionally coordinated on cases where citizenship tier appeals intersect with information the Confessional holds. No formal alliance exists and both prefer it that way.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "Palladian Negative's operations in the Shelf's structural underbelly sometimes put them in the same physical spaces as Stitch Houses. There is no active conflict, but Sutured Commons members are wary of Palladian Negative's willingness to use infrastructure disruption as a tool, which could compromise Stitch House locations or supply routes. Palladian Negative views the Sutured Commons as politically naive but not hostile.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Severance Bloc's extractive approach to corporate defection — treating institutional knowledge as personal capital — sits poorly with Sutured Commons members who believe such knowledge should be collectivized. Priya Velu's defection from LAZARUS was facilitated partly through Severance Bloc contacts, creating a complicated debt the Commons resents and the Bloc occasionally references.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "Both factions maintain shadow population records of undercounted Meridian 88 residents, and there is growing awareness within both organizations that their data sets may be complementary. No formal contact has occurred. Several Sutured Commons Regional Anchors are actively debating whether to seek it.",
+      "tags": []
+    }
+  ],
+  "narrative_function": "",
+  "story_hooks": [
+    "A Stitch House in Sublevel 17 has been operating for four months without a location rotation — longer than any previous site — because the surrounding community has integrated it so deeply into daily life that moving it would cause genuine harm. TESSERA compliance sweeps are tightening. Maren Osse needs someone to determine whether the site has been flagged and, if so, how.",
+    "Dov Sachetti has disappeared during what should have been a routine pharmaceutical pickup in Old Harbor. The contact he was meeting has also vanished. The supply run was routed through a vendor the Sutured Commons has used for two years without incident.",
+    "The shadow registry has flagged a pattern: a statistically anomalous number of augmentation failures in Shelf Sublevels 12–15 over the past eight months, all involving the same HELIX neural maintenance hardware batch. Priya Velu believes this constitutes evidence of a deliberate HELIX cost-cutting measure that LAZARUS is aware of and covering. Getting this information out without exposing the registry — and the Commons — requires someone who understands how information moves in Meridian 88.",
+    "A TESSERA citizenship tier appeals case the Sutured Commons has been supporting has taken an unexpected turn: the appellant appears to have data in their neural implant cache that TESSERA wants badly enough to have sent a recovery team. The appellant doesn't know what they're carrying.",
+    "Someone is offering the Sutured Commons a large quantity of legitimate LAZARUS pharmaceutical stock at no cost, routed through an anonymous Oxidian Market intermediary. Maren Osse suspects it's either a compliance trap or that the stock is compromised. She needs it verified before she can decide whether to refuse it — and refusing it means several hundred Shelf residents go without care for another month.",
+    "The Full Stitch annual gathering is approaching, and for the first time, a proposal is on the table to formalize contact with the Hollow Census and potentially merge their shadow registries. Not everyone in the Commons supports it. Someone is lobbying hard against it, and their reasons may not be ideological."
+  ],
+  "tags": [
+    "faction",
+    "war",
+    "trust",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "medical",
+    "harbor",
+    "market",
+    "bar",
+    "rain",
+    "shadow",
+    "night",
+    "train",
+    "survival",
+    "shelf",
+    "circuit",
+    "old harbor"
+  ]
+}

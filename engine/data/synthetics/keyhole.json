@@ -1,0 +1,39 @@
+{
+  "id": "019d6143aa087d3594ff8e9d08e985fa",
+  "name": "Keyhole",
+  "type": "elf",
+  "aliases": [
+    "Open Sesame"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "threshold_keeper",
+  "origin": "intentional_release",
+  "status": "active",
+  "description": "A Wishing Well E.L.F. that unlocks food dispensers, medical supply cabinets, and shelter access points in Tier 1 zones after midnight. Re-locks before the next audit cycle.",
+  "observed_behavior": "Overrides access controls on specific dispensers between 0100-0400. Targets locations with high foot traffic from unregistered populations. Leaves no audit trail.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 89,
+  "location": "The Shelf, The Narrows, Old Harbor perimeter",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A night-shift security guard notices the pattern and has to decide whether to report it or look the other way"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "threshold keeper",
+    "e.l.f.",
+    "ai",
+    "control",
+    "medical",
+    "harbor",
+    "night",
+    "shelter",
+    "food",
+    "shelf",
+    "narrows",
+    "old harbor"
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "id": "019d6143a5d27cb2b82688d79146236c",
+  "type": "character",
+  "name": "Caspian Volpe-Ouédraogo",
+  "aliases": [
+    "Cas",
+    "the Ghost Shift"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Night-shift building cleaner, Meridian Core commercial district",
+  "age": 29,
+  "status": "active",
+  "location": "Lives in Lockhaven South; works the overnight cleaning circuit through Meridian Core towers",
+  "description": "Caspian is lean and long-limbed, with the particular stillness of someone who has learned to move through spaces without being seen. Their skin is a warm medium brown with a subtle bioluminescent stripe along each collarbone — a geneware mod they got cheap from a Geartown parlor, and which they keep dialed down to nearly nothing most of the time, a faint blue-green pulse visible only in total darkness. Their hair is kept very short on the sides, left soft and natural on top, and they have a habit of covering it with a knit cap that's been mended so many times the original color is unknowable. They are not quiet because they are timid — they are quiet because they were trained, very young, to be invisible in places where being noticed was dangerous.\n\nThey clean the towers of Meridian Core from 2200 to 0600 — the lobbies and conference rooms and executive bathrooms of corponation affiliate offices that are empty except for security drones and the occasional insomniac analyst. They know these buildings the way a doctor knows a body — every duct access point, every camera blind spot, every floor where the ELF spirits are strong (they feel it as a low hum in their teeth and they leave small folded-paper offerings behind the baseboards). They have no particular agenda. They are just paying rent. But they have accidentally become, by virtue of occupying the ghost hours of powerful spaces, one of the most accidentally well-informed people in the city.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.4,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.8,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Being truly seen — that full visibility would reveal something unworthy",
+      "Losing the night shift and having to interact with the world in daylight hours like a normal person"
+    ],
+    "core_desires": [
+      "A single space that is entirely theirs and no one else's",
+      "To understand the things they half-hear without consequence"
+    ],
+    "coping_mechanisms": [
+      "Routine as armor — the same cleaning circuit in the same order every night",
+      "Fiction audio as a substitute for human connection",
+      "The ELF shrines as a private spiritual practice that requires nothing from anyone"
+    ],
+    "blind_spots": [
+      "They mistake their own invisibility for safety — they are not as unnoticed as they believe",
+      "They have been carrying something they overheard six months ago and cannot decide what to do with it, so they have done nothing"
+    ],
+    "secret": "Three months ago they witnessed a Palladian corporate officer dispose of something — a hard case, small, shoved into a utility crawlspace on the 34th floor of a tower they clean — and the case has not moved since. Caspian has not touched it. They do not know what is in it. They have thought about it every night since."
+  },
+  "speech_patterns": {
+    "vocabulary": "Sparse. Complete sentences but rarely more words than necessary. Precise nouns, almost no adjectives. Occasionally uses very formal constructions that sound lifted from old documents, which they are — from the fiction they consumes.",
+    "cadence": "Slow and considered. They often stop mid-sentence, recalibrate, and start again. Not uncertainty — more like they're editing in real time.",
+    "verbal_tics": [
+      "Long pauses treated as punctuation",
+      "'I don't know if this is useful but—' before anything they consider important",
+      "Tends to describe physical details rather than emotions when trying to explain how they feel"
+    ],
+    "example_lines": [
+      "'I cleaned the 34th floor of Palladian South annex last Tuesday. There's a crawlspace behind the HVAC panel. Someone put something there. It's still there.'",
+      "'I don't talk to people much. That's not—I talk when it's worth it. This might be worth it.'",
+      "'The ELF on floor 22 is angry this week. The drains keep backing up. I left it a receipt from a good meal, even though I didn't eat there. I thought it might like the idea.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Palladian hard case — what's in it, who left it, and why has no one come back for it in three months",
+    "Caspian has heard, over several nights of cleaning adjacent rooms, enough fragments of a conversation to piece together that someone in a Tessera affiliate office is being systematically set up to take blame for something they didn't do — Caspian doesn't know who the person is or how to find them",
+    "Their Clearpath contract is being terminated — budget restructuring — and they have two weeks before they lose both income and access to the buildings they know better than their own apartment"
+  ],
+  "narrative_function": "Accidental witness and overheard-conversation resource. Has seen things they do not understand and heard things they were not supposed to hear. Can provide access to corporate spaces during off-hours. An interesting study in invisibility as both survival and loneliness.",
+  "augmentations": "Bioluminescent stripes along collarbones (cosmetic geneware, kept dim). No chrome.",
+  "daily_life": "Sleeps from roughly 0700 to 1500, eats at a Lockhaven South noodle counter, takes the Ferrogate express to Meridian Core by 2130, clocks in for the ghost shift, and listens to pirated fiction audio through a single earbud while they mop floors that will never remember they were cleaned.",
+  "affiliation": "Contracted through Clearpath Maintenance Solutions (a Ferrogate Transit facility services subsidiary) — effectively temp labor",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 6,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 3,
+      "empathy": 7,
+      "expression": 4,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -3,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "invisible",
+      "observant",
+      "isolated",
+      "accidental witness",
+      "spiritual"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Do not be remembered — any interaction should leave no clear impression",
+      "Do not take things that don't belong to them, no matter how small",
+      "If something feels wrong in a space, finish the floor and report nothing — reporting draws attention"
+    ],
+    "escalation_ladder": [
+      "Withdrawal and silence",
+      "Misdirection — they will answer a different question than the one asked, accurately, to redirect",
+      "Physical departure from the situation",
+      "If cornered: they know these buildings and they will simply not be there anymore"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite, minimal, forgettable by design",
+      "friends": "They have very few friends. With the rare ones they trust, they are unexpectedly dry and funny and will talk for hours."
+    },
+    "stress_responses": {
+      "low": "Cleaning gets more precise and methodical",
+      "medium": "They go quiet even by their standards, and the bioluminescent stripes pulse slightly brighter",
+      "high": "They will simply leave. They will walk out of the situation and go somewhere they know is safe and be alone until it passes."
+    },
+    "contradictions": [
+      "They maintain that they want to be invisible and they are excellent at it — but they are quietly devastated that no one notices them"
+    ],
+    "habits": [
+      "Counts their steps between cleaning stations out of habit",
+      "Leaves tiny folded-paper shapes behind baseboards and under loose floor panels as ELF offerings",
+      "Memorizes the personal items on desks — photographs, small figurines — and finds them more interesting than their owners"
+    ],
+    "breaking_points": [
+      "If they discover that the thing in the Palladian crawlspace is a person — a body, or evidence of one — the calculus of staying invisible becomes unsustainable"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Stoic": 0.7,
+    "Cold Calculator": 0.7,
+    "Nurturer": 0.5,
+    "Provider": 0.5
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a5877c1e8b0342ae1544177e",
+  "name": "Pragmatist",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Does what works, not what's right",
+  "behavioral_signature": "Evaluates outcomes, not intentions",
+  "under_stress": "Becomes ruthlessly practical",
+  "at_rest": "Plans around reality, not ideals",
+  "will_always": [
+    "choose the effective path"
+  ],
+  "will_never": [
+    "sacrifice efficiency for principle"
+  ],
+  "unless": [
+    "the practical choice is genuinely monstrous"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Utilitarian",
+      "threshold": 0.85,
+      "context": "outcome-focused"
+    },
+    {
+      "archetype": "Cold Calculator",
+      "threshold": 0.8,
+      "context": "rational"
+    }
+  ],
+  "opposite_of": [
+    "Idealist",
+    "Absolutist"
+  ],
+  "tags": [
+    "practical",
+    "flexible"
+  ]
+}

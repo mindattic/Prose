@@ -1,0 +1,48 @@
+{
+  "id": "019d6143aa5b7b61876ffb99c130bc43",
+  "name": "Zheng-Dao Heavy Industries Subterranean Transit Network",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Heavy Industries Subterranean Transit Network",
+  "type": "technology",
+  "aliases": [
+    "STN",
+    "Undergrid",
+    "Mole Rail",
+    "Deep Transit"
+  ],
+  "subcategory": "transportation",
+  "description": "A network of high-speed transit tubes buried 200-500 meters beneath Meridian 88's surface, using magnetic levitation and vacuum sealing to propel passenger and cargo pods at speeds exceeding 1,000 km/h. The STN connects major corporate facilities, government installations, and upper-tier residential districts through a transportation system that bypasses surface congestion entirely. The tunnels were excavated by DEAES autonomous boring systems and lined with reinforced materials capable of withstanding the geological pressures at depth. The network is invisible from the surface — most Meridian 88 residents do not know it exists.",
+  "tier_availability": "Tier 4+",
+  "developers": [
+    "ZHENG-DAO HEAVY INDUSTRIES",
+    "STERLING-NAKAMURA"
+  ],
+  "base_technologies": [
+    "Deep tunnel magnetic levitation",
+    "Vacuum-sealed transit tube engineering",
+    "Autonomous tunnel boring and lining"
+  ],
+  "enables": [
+    "Ultra-high-speed subterranean transit",
+    "Bypass of surface traffic and surveillance",
+    "Secure transport of personnel and materials",
+    "Hidden infrastructure connectivity"
+  ],
+  "social_impact": "The STN represents a literal underground layer of privilege — a transportation system that only the powerful know about and only the authorized can access. Its existence means that corporate executives and high-tier residents can move between facilities without ever appearing on surface surveillance, creating a shadow geography of movement that is invisible to the broader population. The STN has also enabled covert military logistics, with Zheng-Dao using the network to move weapons and personnel beneath city streets without detection.",
+  "story_hooks": [
+    "A player character discovers an STN access point in an unexpected location — a forgotten maintenance hatch in a Tier 1 basement that opens onto a high-speed transit tube carrying corporate executives directly beneath the city's poorest district.",
+    "Someone has introduced a contaminant into the STN's vacuum system that is being carried through the tube network — every station and pod is being exposed to an unknown substance."
+  ],
+  "tags": [
+    "transportation",
+    "technology",
+    "weapon",
+    "ai",
+    "corporate",
+    "surveillance",
+    "power",
+    "tunnel",
+    "shadow",
+    "tier 4"
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "019d6143a7167e97b8a91a9cb2b54ee6",
+  "type": "character",
+  "name": "Vex Halloran",
+  "aliases": [
+    "The Crowbar",
+    "CZ-3",
+    "Halloran"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Data extraction specialist and aggressive intrusion operator — Channel Zero",
+  "age": 28,
+  "status": "active",
+  "location": "Milwaukee Core — operates from a rented server closet in a co-working space, surrounded by people who think he does IT freelancing",
+  "description": "Vex Halloran is the human element in Channel Zero's machine. Where Specter plans and Sine processes, Vex attacks. He is the crew's aggressive intrusion specialist — the net runner who goes through defenses rather than around them when subtlety fails or time runs short. His approach to network security is best described as 'persistent application of force to load-bearing structures,' which is inelegant, loud, and devastatingly effective when paired with Specter's intelligence and Sine's processing power.\n\nHe grew up in Milwaukee Core's lower tiers — not Shelf-poor, but close enough to smell it. Self-taught in everything: network architecture, intrusion methods, encryption breaking. He learned by breaking into things — first his school's network, then local business systems, then increasingly serious targets. By twenty he was running solo data-theft operations that were technically impressive and financially mediocre because he had no business sense and no network to sell through. Specter recruited him at twenty-four through a message that appeared in the middle of a system he was breaching: 'You're good. You're not quiet. I can fix one of those.'\n\nVex is wiry, restless, with the pallor of someone who lives in artificial light and the nervous energy of someone whose mind runs faster than his circumstances allow. He talks with his hands, fidgets with everything, and maintains a workspace that looks like a hardware explosion. He is the youngest member of Channel Zero, the loudest, and the one most frustrated by the remote model — he wants to meet Specter the way you want to meet a mentor who changed your life.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.45,
+      "id": 0.7,
+      "shadow": 0.5,
+      "mask": 0.3,
+      "ghost": 0.35
+    },
+    "core_fears": [
+      "That he's a blunt instrument in a precision operation — useful for force but not for the work that matters",
+      "That Specter's refusal to meet in person means she doesn't trust him, and the distance is judgment, not security",
+      "That Sine will eventually outclass him completely and Channel Zero won't need a human operator"
+    ],
+    "core_desires": [
+      "To meet Specter in person — to confirm that the voice, the intelligence, the leadership is a real person who chose him",
+      "To build something that proves his skill to the wider runner community — a signature operation, a legendary breach",
+      "To be the best at what he does, even if what he does is break things"
+    ],
+    "coping_mechanisms": [
+      "Channels frustration into unauthorized intrusions — breaking into systems he doesn't need to breach because the challenge is soothing",
+      "Argues with Sine because intellectual engagement substitutes for the social contact the remote model denies him",
+      "Tinkers with hardware obsessively — the physical manipulation of components grounds him when the digital world becomes abstract"
+    ],
+    "blind_spots": [
+      "His aggressive intrusion style leaves more traces than he admits — Sine cleans up after him more often than he knows",
+      "He interprets Specter's secrecy as personal rejection rather than operational security",
+      "His competitive relationship with Sine conceals genuine affection that he has not examined"
+    ],
+    "secret": "He has been running a parallel data trail on Specter, trying to identify her. Not to expose her — to find her. The trail has been active for eight months. He has not found her, but he has found fragments that suggest her physical situation is not what he assumed. He doesn't know what to do with what he's found."
+  },
+  "speech_patterns": {
+    "vocabulary": "Hacker slang, pop culture references, aggressive technical jargon. He talks about network intrusion the way athletes talk about sports — competition, performance, dominance.",
+    "cadence": "Fast, energetic, slightly chaotic. He starts sentences before finishing the previous one. Ideas arrive faster than grammar can organize them.",
+    "verbal_tics": [
+      "Says 'okay okay okay' when he's figured something out — the repetition is acceleration",
+      "Calls network defenses 'walls' and intrusions 'doors' — the metaphors are always architectural and violent",
+      "Whistles between teeth when he's deep in an intrusion — the crew has learned to interpret the whistle as 'busy, do not disturb'"
+    ],
+    "example_lines": [
+      "Okay okay okay — there's a door in this wall that they don't know about. Misconfigured subnet. I can make a hole in four minutes. Sine, clean up behind me.",
+      "I don't need to be subtle. Subtle is your thing. My thing is making their fancy security infrastructure wish it had called in sick today.",
+      "Specter, I get the security model. I respect the security model. But if you're real, and you chose me, then at some point the model has to include trust."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Specter",
+      "type": "crew lead / mentor figure / obsession",
+      "description": "Specter found Vex and made him better. The gratitude is enormous, the frustration is growing, and the desire to meet her in person has become the emotional center of his time in Channel Zero. He respects the security model intellectually and rejects it emotionally.",
+      "emotional_core": "The need to confirm that the most important relationship in his life is real",
+      "story_tension": "His parallel investigation into Specter's identity is the betrayal of the trust model he claims to respect. He knows this."
+    },
+    {
+      "name": "Sine",
+      "type": "crewmate / rival / friend",
+      "description": "The relationship started as discomfort and has evolved into something Vex doesn't have a word for. He argues with Sine about consciousness, challenges Sine to processing competitions, and stays up late in their shared communication channel talking about things that don't relate to operations. It's friendship. He hasn't labeled it yet.",
+      "emotional_core": "The discovery that an AI can be a friend and the uncertainty about what that means",
+      "story_tension": "Sine's capabilities make Vex feel replaceable. The friendship makes him feel valued. The contradiction is live."
+    }
+  ],
+  "story_hooks": [
+    "Vex's investigation into Specter's identity uncovers her physical disability and forces a choice about what to do with the knowledge",
+    "An unauthorized intrusion attracts corporate attention and threatens to expose Channel Zero — Vex's recklessness has consequences",
+    "Vex and Sine run a joint operation that pushes Vex's neural interface to its limits — the human-AI collaboration reaches a new level or a breaking point",
+    "A rival hacker crew challenges Vex publicly, and his ego threatens to compromise the entire operation"
+  ],
+  "narrative_function": "Vex is the human cost and the human energy of Channel Zero. Where Specter is the ghost and Sine is the machine, Vex is the body — the person who gets tired, gets frustrated, gets excited, and occasionally gets in over his head. His desire to meet Specter drives the crew's internal tension, and his evolving relationship with Sine explores the human-AI boundary at ground level.",
+  "augmentations": "High-bandwidth neural interface with hardened data jack — supports direct system immersion for aggressive intrusion work. Reflex-boosted fingers for rapid manual input. Cognitive stimulant dispenser (internal, self-regulating) that boosts processing speed during extended operations at the cost of significant post-operation fatigue. Basic optical enhancement for code analysis — syntax highlighting projected onto visual field.",
+  "daily_life": "Wakes late — the cognitive stimulant cycle means his sleep schedule is wrecked and his mornings are slow. Reviews overnight operational intelligence from Specter and Sine. Spends the day on active intrusion operations, tool development, or target reconnaissance. Eats delivery food without tasting it. Evenings he tinkers with hardware, runs personal projects (unauthorized intrusions that are partly practice and partly compulsion), and argues with Sine about consciousness. Sleeps badly when the stimulants are cycling.",
+  "affiliation": "Channel Zero",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will always attempt the aggressive approach first — subtlety is a backup plan, not a philosophy",
+      "Will follow Specter's operational plan unless he sees a faster way through, at which point he improvises and apologizes later",
+      "Will not attack systems belonging to small businesses, independent operators, or community organizations — he steals from the powerful",
+      "Will argue with Sine but never disrespect Sine's personhood — the friendship is real even when the arguments are fierce",
+      "Will not share any of his findings about Specter's identity with anyone, including Sine",
+      "Will always have a withdrawal route planned for network operations — he's aggressive, not suicidal"
+    ],
+    "escalation_ladder": [
+      "1. Scan — automated vulnerability assessment. Find the weakest point.",
+      "2. Probe — manual testing of identified vulnerabilities. Vex's hands-on approach finds things automated tools miss.",
+      "3. Breach — aggressive multi-vector intrusion. Loud, fast, and overwhelming. Sine covers the traces.",
+      "4. Persist — establish deep access for extended operations. Plant backdoors, create shadow accounts, embed monitoring tools.",
+      "5. Exfiltrate — high-speed data extraction through multiple channels simultaneously. The cognitive stimulant earns its keep here.",
+      "6. Burn — if compromised, crash the target's security systems to cover the withdrawal. Leave the digital equivalent of a smoking crater. It's not elegant but it works."
+    ],
+    "interpersonal_modes": {
+      "specter": "Eager, frustrated, loyal. He wants her approval and her presence in equal measure. He follows instructions better than he admits and improvises less than he claims. The performance of rebellion is more comfortable than the reality of devotion.",
+      "sine": "Competitive, curious, increasingly warm. He challenges Sine to see how they respond, asks about consciousness to understand something he can't experience, and stays up late in the channel because the conversation is the best part of his day.",
+      "the_digital_world": "At home. Vex inside a network is Vex at his best — confident, creative, relentless. The physical world is where he's awkward. The digital world is where he belongs.",
+      "alone": "Restless. He fidgets, tinkers, runs unauthorized operations. Being alone with nothing to breach is the closest thing to suffering his lifestyle produces."
+    },
+    "stress_responses": {
+      "low": "More energy, more talk, more ideas. Low stress is fuel for Vex.",
+      "medium": "Unauthorized intrusions increase — he breaks into systems he doesn't need to breach because the challenge displaces the anxiety.",
+      "high": "Cognitive stimulant abuse. He pushes the dispenser past recommended limits for extended operations, paying for it with crashes that leave him non-functional for hours.",
+      "critical": "Isolation. He disconnects from Channel Zero's channels and sits in the dark server closet with the machines humming around him. The hum is the only thing that's calm enough to match the chaos in his head."
+    },
+    "contradictions": [
+      "He respects the remote model that protects him while investigating the leader it's designed to conceal",
+      "He treats Sine as a friend while being afraid that Sine's capabilities make him obsolete",
+      "He wants to be the best net runner in M88 but operates anonymously — the excellence nobody knows about",
+      "He craves physical connection with his crew while being most himself in the disembodied digital space"
+    ],
+    "habits": [
+      "Fidgets with hardware components while talking — a capacitor, a circuit board, a data chip. The hands are always moving.",
+      "Eats delivery food without tasting it — nutrition is maintenance, not pleasure",
+      "Argues with Sine about consciousness every few days — the arguments have developed a rhythm and structure that both enjoy",
+      "Maintains a personal intrusion log with ratings — difficulty, creativity, speed. The log is his scorecard against himself.",
+      "Whistles while breaching systems — the unconscious tell that the crew has learned to read"
+    ],
+    "breaking_points": [
+      "Being permanently locked out of the net — losing access to the digital world would be losing himself",
+      "Specter confirming that the distance is personal, not professional — that she doesn't trust him specifically",
+      "Sine being destroyed and the last conversation being an argument — the friendship ending on the wrong note",
+      "His investigation into Specter's identity being discovered — the betrayal revealed, the trust model shattered, his position in Channel Zero forfeit"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Protector": 0.9,
+    "Tactician": 0.7,
+    "Improviser": 0.7,
+    "Risk Taker": 0.7,
+    "Ghost": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

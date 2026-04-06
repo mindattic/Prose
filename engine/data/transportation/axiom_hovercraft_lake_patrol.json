@@ -1,0 +1,36 @@
+{
+  "id": "019d6143aa607f13a79e64691cb71134",
+  "name": "Axiom Hovercraft (Lake Patrol)",
+  "type": "transportation",
+  "aliases": [
+    "Skirt",
+    "Lake Hawk",
+    "Ice Runner"
+  ],
+  "category": "military_security",
+  "manufacturer": "Axiom",
+  "description": "A military hovercraft used by Axiom security for year-round Great Lakes patrol, capable of operating on water, ice, and shoreline with equal ease. The hovercraft's skirt throws up a wall of spray that announces its approach from a kilometer away. Armed, fast, and able to pursue targets from open water onto land without stopping. During winter, when the lake freezes and conventional boats are useless, the hovercraft is the only thing maintaining Axiom's lakefront security perimeter — and the only thing chasing the smugglers who use the ice.",
+  "propulsion": "Gas turbine driving lift fans and thrust propellers",
+  "speed": "120 km/h on water/ice, 80 km/h on land",
+  "capacity": "4 crew + 8 security personnel",
+  "range": "400 km",
+  "tier_availability": "Axiom Security only",
+  "cost": "Φ300,000 per unit",
+  "autonomy": "Human-operated, AI navigation assist for ice conditions",
+  "armament": "Forward-mounted stun cannon, spotlight array, boarding ramp, depth charges (ice-breaking variant).",
+  "common_usage": "Lakefront security patrol, winter enforcement, anti-smuggling operations, ice rescue.",
+  "story_hooks": [
+    "An Axiom hovercraft pursues a target onto the frozen lake and the ice gives way — not from the weight, but from something breaking through from below",
+    "Hovercraft patrols are being diverted by false distress signals that lure them away from specific sections of shoreline at specific times"
+  ],
+  "tags": [
+    "militarysecurity",
+    "transportation",
+    "war",
+    "smuggle",
+    "ai",
+    "hover",
+    "water",
+    "lake"
+  ]
+}

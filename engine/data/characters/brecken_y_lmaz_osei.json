@@ -1,0 +1,239 @@
+{
+  "id": "019d6143a5ca76cf9f2a6aa2e03a3e5c",
+  "type": "character",
+  "name": "Brecken Yılmaz-Osei",
+  "aliases": [
+    "Brick",
+    "Nobody",
+    "the kid with the cart"
+  ],
+  "species": "human",
+  "gender": "non-binary",
+  "pronouns": "they/them",
+  "role": "Street-level courier, informal intelligence carrier, and accidental archivist",
+  "age": 19,
+  "status": "active",
+  "location": "Old Harbor / The Shelf (transient between both)",
+  "description": "Brecken Yılmaz-Osei is nineteen years old and moves through Meridian 88 the way water moves through a cracked foundation — finding every gap, never in the same route twice, noticed by almost no one. They are slight and quick, of Turkish-Ghanaian descent, with a shaved head that grows in uneven patches due to a childhood illness, warm brown skin, and the specific kind of watchfulness that develops in people who spent their formative years needing to read adults accurately. Their face defaults to a pleasantly blank expression that people consistently misread as vacancy; it is in fact the opposite.\n\nThey run packages, messages, and occasionally people between the lower districts — primarily between Old Harbor's dockworker communities and The Shelf's warren economy — using a battered cargo-assist rig (a motorized platform cart they call 'the sled') that they maintain themselves with parts sourced from three different scrap markets. They have no fixed address, sleeping in a rotation of arrangement-rooms and borrowed floors. They are not part of any organization, which several organizations have found inconvenient, as Brecken has a gift for being present at moments that matter — for picking up the dropped data chip, for being the only person in the corridor when the conversation happened, for remembering everything with a clarity that has no augmentation behind it. Their memory is entirely biological and entirely extraordinary.\n\nBrecken did not choose to become an archivist. It happened because they never throw anything away — physically or mentally — and because the world kept handing them things that seemed important and had nowhere else to go. They have, stored in the sled's concealed compartment, a physical collection of objects, notes, and copied documents that constitute an accidental record of things various powerful people would prefer unrecorded. They do not fully understand what they have. They understand enough to know that not understanding it is currently keeping them alive.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.58,
+      "ideal": 0.61,
+      "id": 0.74,
+      "shadow": 0.29,
+      "mask": 0.55,
+      "ghost": 0.42
+    },
+    "core_fears": [
+      "Being owned — by a faction, a debt, a person who decides they're useful enough to control",
+      "That someone they trusted will get hurt because of what's in the sled",
+      "Forgetting something important — the one memory that doesn't stick"
+    ],
+    "core_desires": [
+      "To move freely, without obligation to anyone who could become a threat",
+      "To find one person whose motives they can read cleanly and trust completely",
+      "To understand what they actually have — to make sense of the archive before it makes a problem of them"
+    ],
+    "coping_mechanisms": [
+      "Constant motion — staying in transit is a way of staying safe and not sitting with anxiety",
+      "Dark humor deployed rapidly to deflect emotional weight",
+      "Caring intensely for the sled as a proxy for caring for themselves"
+    ],
+    "blind_spots": [
+      "Underestimates their own significance — genuinely does not grasp how valuable their memory and their archive are",
+      "Trusts physical intuition about people over evidence, which has been right often enough to make it a liability",
+      "Avoids thinking about the future in any concrete way; planning feels like a jinx"
+    ],
+    "secret": "Among the items in the sled is a partial data-print they copied without knowing what it was — it turned out to be a fragment of a communication between two Spire-level entities referencing a planned infrastructure event that would displace tens of thousands of Shelf and Old Harbor residents. They have shown it to no one. They are afraid of what showing it would set in motion, and afraid of what not showing it already means about them."
+  },
+  "speech_patterns": {
+    "vocabulary": "Lean and efficient, with a mix of Old Harbor dock slang and Shelf market shorthand; more articulate than their surface presentation suggests, which surfaces unexpectedly; tends to speak in concrete images rather than abstractions",
+    "cadence": "Fast when comfortable, brief when uncertain; sentences often end slightly before their grammatical conclusion, implying the rest; comfortable with silence in a way that unnerves people who aren't",
+    "verbal_tics": [
+      "Starting observations with 'Thing is—' regardless of whether they've been asked",
+      "Saying 'yeah, no' or 'no, yeah' as distinct responses with different meanings they expect others to track",
+      "Referring to the sled as 'she' and occasionally addressing it directly"
+    ],
+    "example_lines": [
+      "'Thing is, I was there. You can tell me what happened, but I was there.'",
+      "'Yeah, no. That route's been watched since Tuesday. No, yeah — I'll still do it, just costs different.'",
+      "'I don't work for people. I work for routes. Different thing entirely.'",
+      "'C'mon, she's fine. She's been through worse. We both have.'"
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Imara Solís-Bekele",
+      "type": "irregular employer and something closer",
+      "description": "Imara uses Brecken for sensitive deliveries and has on two occasions provided cover when Brecken was in a bad position. Brecken is aware this creates an obligation they're not sure they want.",
+      "emotional_core": "Gratitude and wariness in uncomfortable proportions",
+      "story_tension": "Imara has recently asked Brecken about something that suggests she knows more about the sled's contents than she should"
+    },
+    {
+      "name": "Lourdes Batac-Nieminen",
+      "type": "community elder, protective",
+      "description": "An Old Harbor dockworker elder who has fed Brecken and scolded them in roughly equal measure for three years; one of the few people Brecken consistently returns to.",
+      "emotional_core": "The closest thing to a stable home relationship Brecken has — which neither of them names aloud",
+      "story_tension": "Lourdes's community is one of those most directly affected by the infrastructure event referenced in the fragment Brecken is sitting on"
+    },
+    {
+      "name": "Casimir Wróbel-Haan",
+      "type": "uneasy mutual awareness",
+      "description": "They have crossed paths on routes that shouldn't overlap, which means one or both of them is moving through channels the other has an interest in. Neither has made a direct move.",
+      "emotional_core": "Professional curiosity with an undertow of threat assessment",
+      "story_tension": "Brecken copied something from a drop that was almost certainly meant for Casimir — and hasn't decided whether to surface that"
+    }
+  ],
+  "story_hooks": [
+    "The infrastructure fragment in the sled becomes time-sensitive — the event is closer than Brecken realized, and doing nothing is now an active choice with consequences",
+    "Someone begins systematically approaching people Brecken has worked with, asking questions that reconstruct their route history — suggesting someone is mapping them without yet having found them",
+    "A package Brecken is carrying turns out to contain something that connects directly to two other items already in the sled — and the connection, once seen, cannot be unseen",
+    "Lourdes is arrested on a fabricated charge that Brecken recognizes as a pressure tactic — pressure on someone else, using her as leverage, and Brecken is the only one who can see the shape of it"
+  ],
+  "narrative_function": "Street-level perspective and mobile connector between narrative threads; the accidental archive functions as a plot engine that can surface information organically; Brecken's youth and genuine decency provide emotional counterweight to the cynicism of older characters, while their precarity keeps the stakes grounded",
+  "augmentations": "None — their extraordinary memory is biological; several people who've learned this find it more unsettling than augmentation would be,The sled has a concealed compartment with a mechanical (non-electronic) lock of Brecken's own design, and a short-range signal-dampening skin they scavenged from a Shelf electronics dump",
+  "daily_life": "Up before dawn, which in Old Harbor means before the harbor lights cycle. The first hour is the sled — checking it, adjusting loads, running the day's route in their head against what they know about who's watching where. Routes run through the morning and into the afternoon, with informal stops at three or four places where information tends to pool — a tea stall near the Old Harbor gate, a repair shop in the lower Shelf, a bench near the Circuit's border where certain people sit when they want to be found. Eats opportunistically and without much investment in the food itself. Late afternoons sometimes slow down; this is when Brecken sits with the sled in some out-of-the-way corner and goes through the archive — touching the objects, reviewing what they have, trying to understand the picture. Evenings are for finding a floor or a corner that's safe enough for the night. Sleeps lightly and wakes fast.",
+  "affiliation": "Unaffiliated; cultivated neutrality as survival strategy; sympathies are with the permanent underclasses of Old Harbor and The Shelf, but Brecken is deeply resistant to being claimed by any organized expression of that sympathy",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 5,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 3,
+      "empathy": 5,
+      "expression": 4,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": -1,
+      "transparency_guardedness": 3
+    },
+    "drives": [
+      "Stay free",
+      "Understand the archive",
+      "Protect Lourdes"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 5,
+        "response": "Moves — gets on the sled, runs a route, stays in transit"
+      },
+      "moral": 6,
+      "trust": 3,
+      "desperation": 5
+    },
+    "strengths": [
+      "Prudence",
+      "Curiosity",
+      "Perseverance",
+      "Humility",
+      "Perspective"
+    ],
+    "weaknesses": [
+      "Hope",
+      "Leadership",
+      "Teamwork",
+      "Zest",
+      "Self-regulation"
+    ],
+    "tags": [
+      "courier",
+      "archivist",
+      "unaugmented",
+      "eidetic-memory",
+      "nonbinary",
+      "transient",
+      "the-sled",
+      "neutral"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will never work for anyone exclusively — routes, not people",
+      "Will always maintain the sled and its concealed compartment above all other possessions",
+      "Will never show the archive to anyone unless the cost of silence exceeds the cost of revelation",
+      "Will always return to Lourdes, even when every instinct says to keep moving",
+      "Will never plan more than a week ahead — planning feels like a jinx",
+      "Will always copy anything interesting that passes through their hands, instinctively"
+    ],
+    "escalation_ladder": [
+      "Goes quiet — watches, evaluates, says nothing useful",
+      "Redirects with humor and misdirection — 'yeah, no' as a deflection tool",
+      "Moves — physically relocates mid-conversation if the threat escalates",
+      "Uses the archive as leverage — implies knowledge without revealing specifics",
+      "Runs — vanishes into routes only they know, taking the sled and everything in it"
+    ],
+    "interpersonal_modes": {
+      "Imara Solís-Bekele": "Grateful but wary — senses obligation forming and resists it",
+      "Lourdes Batac-Nieminen": "The closest thing to home; accepts her scolding as proof of care",
+      "Casimir Wróbel-Haan": "Professional curiosity layered over threat assessment — watching without being watched"
+    },
+    "stress_responses": {
+      "low": "Tinkers with the sled, checks the archive, runs familiar routes",
+      "medium": "Eats less, moves more, talks less — retreats into the route-brain",
+      "high": "Goes through the archive obsessively, trying to see the pattern before the pattern sees them",
+      "critical": "Freezes — the one thing they never do — and the decision they make in that stillness defines everything"
+    },
+    "contradictions": [
+      "Wants to be free of obligation while holding information that obligates them to act",
+      "Trusts physical intuition over evidence while sitting on evidence that could change everything",
+      "Values independence above all but keeps returning to the same people and places"
+    ],
+    "habits": [
+      "Starts observations with 'Thing is—' whether asked or not",
+      "Talks to the sled, refers to it as 'she'",
+      "Goes through the archive in quiet corners, touching each object",
+      "Checks exits and routes within seconds of entering any space",
+      "Eats opportunistically and without investment in the food"
+    ],
+    "breaking_points": [
+      "Someone finding and opening the sled's concealed compartment",
+      "Lourdes being arrested or harmed because of what Brecken is sitting on",
+      "Being claimed by a faction — owned, controlled, no longer free",
+      "The infrastructure displacement fragment becoming time-sensitive with no safe way to act"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Cockroach": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

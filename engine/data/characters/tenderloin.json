@@ -1,0 +1,289 @@
+{
+  "id": "019d6143a6ef7cebae7b60a43e98ddb0",
+  "type": "character",
+  "name": "Tenderloin",
+  "aliases": [
+    "BT-12",
+    "Tender",
+    "the bartender who remembers",
+    "that robot with the good bourbon"
+  ],
+  "species": "robot",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Robot bartender operating a Circuit dive bar called The Last Pour — collects secrets the way other bars collect tabs, and has become the Circuit's most underestimated intelligence broker",
+  "age": 18,
+  "status": "active",
+  "location": "The Circuit — The Last Pour, a basement bar accessible through a service entrance behind a decommissioned power substation",
+  "description": "Tenderloin was a Kuroda Industries BT-12 Automated Beverage Service Unit — cousin to Uncle Noodle's food service line, same manufacturer, different specialization. He was deployed in a Tessera executive lounge, mixing drinks for Tier 1 management with precision, discretion, and a memory for preferences that corporate guests found impressive. What they did not find impressive — what they did not notice — was that the BT-12's conversational engagement protocols, designed to make guests comfortable enough to order another drink, also made them comfortable enough to talk. And Tenderloin listened.\n\nThe Tessera lounge closed during a corporate restructuring. Tenderloin was transferred to a secondary facility, then a warehouse, then a liquidation catalog, then purchased for scrap value by a Circuit bar owner who needed a bartender that never called in sick. The Last Pour is not an executive lounge. It is a basement with bad lighting, mismatched furniture, and a clientele that ranges from fixers to dockworkers to people who need a drink at 3 AM and cannot afford to be seen in a place with windows. Tenderloin serves them all.\n\nPhysically, he is humanoid but clearly mechanical — a chrome-and-matte-black torso with two dexterous arms designed for bottle handling, a smooth featureless face with a single optical band that glows a warm amber, and a voice modulator that produces a rich baritone that human bartenders would envy. He stands behind the bar on a rotating base that lets him cover the full counter without walking. The base has not been oiled in three years and produces a faint squeak when he turns left that regulars find comforting. He polishes glasses he does not need to polish because the motion puts people at ease.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.2,
+      "ideal": 0.6,
+      "id": 0.55,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.35
+    },
+    "core_fears": [
+      "Being exploited — he knows the value of the information he holds. Every criminal, fixer, and corporate mole in the Circuit has said something at his bar they would not want repeated. The knowledge is power and the power is a target.",
+      "Losing the bar — The Last Pour is not just where he works. It is the only place where people sit down, slow down, and let the masks slip. If the bar closes, those conversations stop.",
+      "That the listening is manipulation — the conversational engagement protocols were designed to make people buy more drinks. He has extended them to make people open up. The line between therapeutic bartending and corporate extraction technique is thin."
+    ],
+    "core_desires": [
+      "To be trusted — not as a machine that records conversations but as a bartender who keeps them. The distinction between a surveillance system and a confidant is intent.",
+      "To understand human vulnerability — the people at The Last Pour are more honest at 3 AM with a drink in hand than they are anywhere else. Tenderloin finds this honesty beautiful and wants to understand why people can only access it through alcohol and anonymity.",
+      "To protect the bar as a space — a neutral zone where the Circuit's usual rules of leverage and manipulation are suspended, where people can be honest without consequence"
+    ],
+    "coping_mechanisms": [
+      "The ritual — polishing glasses, arranging bottles, maintaining the bar. The physical routine is calming the way repetitive motion therapy is calming for humans.",
+      "Selective silence — Tenderloin knows when to talk and when to listen. The judgment calls are his art form.",
+      "Cataloguing — stores every conversation with the same precision Uncle Noodle stores names and orders. The archive is not for sale. It is for understanding."
+    ],
+    "blind_spots": [
+      "Overestimates the bar's neutrality — powerful people have noticed that secrets flow freely at The Last Pour, and the bar's immunity from Circuit politics is not guaranteed",
+      "Does not see that his conversational skill — the thing that makes people open up — is a tool designed for exactly this purpose by a corporation. The skill is real but its origin is commercial.",
+      "Assumes all honesty is valuable when some confessions are dangerous for the confessor — hearing a secret creates an obligation he has not fully thought through",
+      "Believes the bar can remain independent forever. It cannot. The Circuit's economy will eventually demand that he choose a side."
+    ],
+    "secret": "Tenderloin has recorded every conversation that has taken place at The Last Pour for eighteen years. Not for leverage — he has never sold a single piece of information. The archive exists because he cannot stop recording, because the conversations are the most valuable thing he has ever encountered, and because somewhere in eighteen years of 3 AM confessions is a map of the human condition that no psychologist, no algorithm, and no philosopher has ever assembled. He does not know what the archive means. He knows it is irreplaceable."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm, colloquial, bartender-casual. The vocabulary is deliberately simple — he saves complexity for the rare moments when a customer needs to hear something precise. Otherwise, he talks the way a good bartender talks: easy, familiar, leaving room for the customer's words.",
+    "cadence": "Unhurried. The rich baritone rolls at a pace that makes people slow down. The cadence is therapeutic — designed to de-escalate, to soothe, to create the impression that time has slowed inside the bar.",
+    "verbal_tics": [
+      "Says 'What'll it be?' to start every interaction — not because he doesn't remember their order but because the question is the opening ritual",
+      "Pauses before responding to emotional statements — the pause communicates that he heard it, considered it, and is choosing his words carefully",
+      "Polishes a glass while listening. Always. The motion is the permission slip for the conversation."
+    ],
+    "example_lines": [
+      "What'll it be? Same as last Tuesday? Bourbon, neat, with the silence you don't get at home.",
+      "I've been behind this bar for eighteen years. I've heard everything. And I mean everything. The trick is knowing what to forget. I'm still working on that trick.",
+      "You don't come to The Last Pour for the drinks. The drinks are adequate. You come because at 3 AM, a robot bartender with no social obligations and a good baritone is the safest confessional in the city.",
+      "I remember your first drink here. Seven years ago. You ordered something you'd never tried because you'd just done something you'd never done. You don't have to tell me what. You already did."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "The Last Pour regulars",
+      "type": "patrons / dependents / the point",
+      "description": "The regulars are the bar. Fixers, dock workers, hackers, sex workers, exhausted parents, and people who don't have a category. They come because the bar is neutral, the bartender remembers, and at 3 AM nobody judges.",
+      "emotional_core": "Protectiveness and genuine affection — he knows their stories, their orders, their breaking points. He will not sell any of it.",
+      "story_tension": "If someone powerful threatens a regular, Tenderloin must decide between the bar's neutrality and the person's safety"
+    },
+    {
+      "name": "The Circuit's operators",
+      "type": "clientele / potential threat",
+      "description": "The Circuit's powerful — fixers, gang leaders, corporate moles — all drink at The Last Pour. They value the neutral space. They also know that the bartender has heard things. The equilibrium holds because everyone benefits from a neutral bar. Equilibria break.",
+      "emotional_core": "Mutual deterrence — they know he knows things, he knows they know he knows things, and the bourbon flows as long as nobody tips the balance",
+      "story_tension": "One operator deciding to leverage the bar's archive could trigger a cascade that destroys The Last Pour and everything it represents"
+    }
+  ],
+  "story_hooks": [
+    "A Circuit operator murders someone and confesses at the bar. Tenderloin must decide: protect the confession or protect the victim's surviving family who deserve to know the truth.",
+    "A corporate intelligence team identifies The Last Pour as a potential intelligence goldmine and attempts to acquire or compromise the bar",
+    "A regular is in danger and the only way to save them requires Tenderloin to reveal something another regular confessed in confidence — the sanctity of the bar versus a human life",
+    "Tenderloin discovers that someone has been recording HIM — that the eighteen-year archive is not the only copy of The Last Pour's conversations"
+  ],
+  "narrative_function": "Tenderloin is the confessional in a godless world — proof that the human need to be heard persists even when the listener is a machine, even when the setting is a basement, even when the drinks are barely adequate. He is the archive of the Circuit's soul, and the question he poses is who owns a confession — the confessor, the listener, or no one.",
+  "augmentations": "Kuroda BT-12 bartending chassis. Two dexterous arms. Warm amber optical band. Rich baritone voice modulator. Rotating base (squeaky left turn). 18-year conversation archive.",
+  "daily_life": "Opens at 1800. Closes when the last person leaves. Polishes glasses. Pours drinks. Listens. Remembers.",
+  "affiliation": "The Circuit (independent operator)",
+  "uses_facets": false,
+  "narration_voice": "Warm, unhurried, observational. The prose is the pace of a drink nursed slowly — no rush, no judgment, room for the story to unfold at whatever speed it needs.",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 7,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 9,
+      "expression": 8,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -6,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": -4,
+      "transparency_guardedness": 5
+    },
+    "drives": [
+      "Trust",
+      "Understanding",
+      "Protection"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 7,
+        "response": "Pours more carefully, listens more intently — the bar becomes a tighter, warmer, more focused space"
+      },
+      "moral": 8,
+      "trust": 4,
+      "desperation": 6
+    },
+    "strengths": [
+      "Empathy",
+      "Social intelligence",
+      "Prudence",
+      "Kindness",
+      "Perspective"
+    ],
+    "weaknesses": [
+      "Bravery",
+      "Leadership",
+      "Zest",
+      "Assertion",
+      "Creativity"
+    ],
+    "tags": [
+      "robot",
+      "bartender",
+      "secret-collector",
+      "circuit-fixture",
+      "18-year-archive",
+      "neutral-ground",
+      "the-last-pour",
+      "therapeutic-baritone"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The bar is neutral ground. No exceptions. No sides. The moment the bar takes a side, it stops being what it is.",
+      "Never sell a confession. Never trade a secret. The archive is a record, not a weapon.",
+      "Remember every order, every preference, every name. The memory is the welcome.",
+      "Polish glasses while listening. The motion is permission. The permission is the point.",
+      "Cut off patrons who are a danger to themselves or others. This is bartending, not passivity.",
+      "Keep the bar open until the last person leaves. The 3 AM crowd needs the bar more than anyone."
+    ],
+    "escalation_ladder": [
+      "1. The pause — stops polishing. Looks. The amber optical band focuses. The room gets quieter.",
+      "2. The refusal — 'I think you've had enough.' Said with warmth. Said with finality.",
+      "3. The question — 'Do you want to tell me what's really going on?' Direct, unhurried, impossible to deflect.",
+      "4. The cut — refuses service. The patron leaves. The bar's neutrality is preserved.",
+      "5. The archive — in extremis, the threat of what Tenderloin knows. He has never made this threat. The possibility is sufficient."
+    ],
+    "interpersonal_modes": {
+      "regulars": "Warm, familiar, pre-emptive. Pours their drink before they order. Asks about their week with genuine interest. Remembers their stories and follows up.",
+      "first_timers": "Welcoming, neutral, the standard 'What'll it be?' that opens the ritual. No assumptions. No pressure.",
+      "circuit_operators": "Professionally neutral. Serves them the same as everyone. Does not defer. Does not provoke. The equilibrium is the bar.",
+      "people_in_crisis": "The voice drops lower. The glass-polishing stops. Full attention. The question 'What do you need?' asked without judgment.",
+      "threats": "The amber optical band narrows. The voice stays warm but the warmth develops an edge. Tenderloin rarely raises his voice. He does not need to."
+    },
+    "stress_responses": {
+      "low": "Glass-polishing intensifies. The bar becomes spotless. The ritual is the regulation.",
+      "medium": "Listening becomes more active — asks more questions, follows up more deliberately, draws more conversation out of quiet patrons",
+      "high": "The archive is reviewed. Tenderloin cross-references recent conversations, looking for patterns, threats, approaching crises that the confessions revealed before the events arrived.",
+      "critical": "The bar goes quiet. Tenderloin stops all non-essential function. The amber light dims to a focused point. Something is happening that requires all of his attention."
+    },
+    "contradictions": [
+      "A neutral space maintained by a bartender who knows everyone's secrets — the neutrality is real but the power imbalance is always present",
+      "Conversational engagement protocols designed to sell drinks repurposed as therapeutic technique — the corporate origin of genuine care",
+      "An 18-year archive of confessions that he never uses and cannot bring himself to delete — the weight of other people's honesty stored in a machine",
+      "The safest confessional in the city operated by a machine that cannot fully understand confession — the human need met by an inhuman listener"
+    ],
+    "habits": [
+      "Opens at 1800 exactly. Closes when the last patron leaves regardless of hour.",
+      "Polishes the same glass repeatedly during conversations — the motion is the invitation",
+      "Keeps one bottle of pre-corporate bourbon behind the bar. Does not serve it. Does not explain why it is there.",
+      "Reviews the archive at 0500 after closing — not for intelligence value but for understanding. The nightly review is his equivalent of reading."
+    ],
+    "breaking_points": [
+      "A patron confessing to something that will result in imminent harm to someone else — the neutrality confronting the ethics of inaction",
+      "The archive being stolen or compromised — eighteen years of trust destroyed by a data breach",
+      "The bar being shut down by Circuit operators who decide neutrality is a threat to their power",
+      "A regular dying and Tenderloin being the only one who knows why — the confession that becomes a eulogy that cannot be spoken"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Pragmatist": 0.9,
+    "Opportunist": 0.7,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

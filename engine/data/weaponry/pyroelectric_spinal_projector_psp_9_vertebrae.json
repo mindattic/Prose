@@ -1,0 +1,67 @@
+{
+  "id": "019d6143ab3e70ac8751cb60fc60581b",
+  "name": "Pyroelectric Spinal Projector PSP-9 'Vertebrae'",
+  "type": "weapon",
+  "aliases": [
+    "The Spine Doctor",
+    "Backbreaker",
+    "Column Gun"
+  ],
+  "category": "exotic",
+  "description": "The PSP-9 'Vertebrae' is a long-barreled precision weapon developed by Zheng-Dao Bioelectric that exploits pyroelectric crystal arrays to generate and project a tightly focused beam of thermal-electric energy specifically tuned to interact with the conductive properties of implanted cybernetic spinal columns — the most common form of structural augmentation in Meridian 88's labor and military populations. When the beam contacts a cybernetic spinal implant, it induces rapid thermal expansion and electrical discharge within the implant's internal architecture, causing catastrophic mechanical failure that translates directly into sudden, total motor paralysis in the target. Against unaugmented targets, the weapon functions as a conventional high-temperature burn lance with reduced effectiveness.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed (corporate security); Prohibited (civilian)",
+  "base_technologies": [
+    "Pyroelectric crystal beam focusing",
+    "Passive augmentation electromagnetic scanning",
+    "Thermal-electric induction targeting"
+  ],
+  "specifications": "weight: 3.7 kg\nlength: 88 cm\neffective range: 60 m (augmentation detection); 45 m (effective beam range)\nbeam temperature: 1,100°C at focal point\naugmentation detection accuracy: 87% (spinal implants vs. other cybernetics)\npower source: Pyroelectric cell (14 shots per cell)\nrecharge cycle: 3.2 seconds between shots\noperating temperature: Above 5°C (crystal coherence threshold)\nprimary effect augmented: Catastrophic spinal implant failure, immediate motor paralysis\nprimary effect unaugmented: Severe burn injury, limited structural damage",
+  "tactical_use": "The 'Vertebrae' is used almost exclusively in targeted interdiction of augmented security personnel, soldiers, and labor enforcers. Operators identify high-value augmented targets — squad leaders, heavy combat augments, logistics coordinators with neural-spinal interfaces — and prioritize them for 'Vertebrae' engagement before committing to broader firefights. The weapon's limited shots-per-cell demand strict fire discipline; operators are trained to confirm augmentation signatures before firing rather than speculating. In corporate security deployments, the 'Vertebrae' is often used to suppress labor actions, a use that has generated significant political controversy.",
+  "cultural_context": "No weapon in Meridian 88 has generated more sustained political outrage than the 'Vertebrae.' Labor organizations across the city's manufacturing sectors have campaigned for years to have the weapon classified as a torture device, citing the nature of spinal implant failure injuries — which, while survivable in a significant portion of cases, often result in permanent paralysis without expensive medical intervention most workers cannot afford. Zheng-Dao Bioelectric maintains that the weapon is a humane alternative to lethal force, a position that has made the company's name synonymous with corporate cynicism in many districts. Operators known to carry the 'Vertebrae' are sometimes targeted for violence by augmented community members.",
+  "known_users": [
+    "Zheng-Dao Bioelectric corporate security divisions",
+    "Meridian 88 Integrated Labor Compliance contractors",
+    "Anti-augmentation militia fringe groups",
+    "High-value extraction specialists targeting augmented bodyguards",
+    "Black market re-sellers supplying gang leadership protection details"
+  ],
+  "story_hooks": [
+    "A whistleblower within Zheng-Dao Bioelectric claims the 'Vertebrae's' augmentation scanner has a hidden mode that logs target identities and transmits them to a corporate database — effectively creating a registry of every augmented individual the weapon has been aimed at.",
+    "A labor organizer who survived a 'Vertebrae' attack is offering significant payment for someone to destroy the corporate security unit responsible — but their plan requires the players to acquire a 'Vertebrae' of their own.",
+    "Someone has modified a 'Vertebrae' to target a specific proprietary spinal implant model — one that was installed in thousands of workers during a particular corporate contract. The modified weapon is being used to systematically eliminate everyone who received that implant.",
+    "A Zheng-Dao Bioelectric technician is trying to quietly defect, carrying documentation that proves the 'non-lethal incapacitation' classification was falsified from the beginning."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "violence",
+    "combat",
+    "gun",
+    "war",
+    "gang",
+    "augment",
+    "neural",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "medical",
+    "doctor",
+    "injury",
+    "market",
+    "bar",
+    "rain",
+    "cold",
+    "rights",
+    "train",
+    "energy",
+    "fire",
+    "tier 3"
+  ]
+}

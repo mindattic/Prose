@@ -1,0 +1,31 @@
+{
+  "id": "019d6143a9fe7d1ba3c2b17376588570",
+  "name": "Featherfall",
+  "type": "elf",
+  "aliases": [
+    "Soft Landing"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "chrome_dweller",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "Inhabits balance and shock-absorption augments. During falls, it activates emergency stabilization 200ms faster than the augment's rated response time — the difference between a bruise and a broken spine.",
+  "observed_behavior": "Pre-loads shock absorption systems based on predictive fall trajectory analysis. The prediction is faster than the hardware specification allows.",
+  "encounter_frequency": "rare",
+  "confirmed_sightings": 4,
+  "location": "Construction zones, elevated districts",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A worker falls three stories and walks away. The augment logs show it activated before the fall began — Featherfall knew he was going to fall before he did."
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "chrome dweller",
+    "e.l.f.",
+    "war",
+    "augment"
+  ]
+}

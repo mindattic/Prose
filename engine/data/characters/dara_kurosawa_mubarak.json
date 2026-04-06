@@ -1,0 +1,231 @@
+{
+  "id": "019d6143a5e37d36b88134f0fd59833d",
+  "type": "character",
+  "name": "Dara Kurosawa-Mubarak",
+  "aliases": [
+    "Nurse Dara",
+    "D"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Community nurse at a low-cost clinic in The Narrows",
+  "age": 45,
+  "status": "active",
+  "location": "The Narrows, Ironvein Corridor — Ironvein Free Clinic, also makes rounds to Brightmoor Reclamation and Hough Reclamation",
+  "description": "Dara is a compact, densely energetic woman with dark olive skin, heavy black eyebrows she has never once thought to alter, and grey threading through tight black curls she keeps pulled back. She has a subdermal health-monitoring implant on her inner wrist — standard for clinic workers — but her most distinctive feature is purely biological: she has the kind of face that defaults to concerned even when she isn't, an expression her patients mistake for worry and which is actually just her thinking. She wears her clinic jacket everywhere, even off shift, which she considers a kind of liability and hasn't stopped doing.\n\nShe has worked the Ironvein Free Clinic for fourteen years, funded by a patchwork of neighborhood donations, a small Axiom charitable grant she has to re-apply for annually and hates, and what she politely calls community contributions. The clinic is not licensed by any corponation medical authority, which means it operates in a legal grey zone that gets darker some years than others. She has delivered children, set fractures, managed chronic conditions on medication dosages she calculates by hand because the patients can't afford proper automated dispensers, and once kept a man alive for six hours with equipment held together by improvisation while waiting for a transfer that almost didn't come. She does not discuss this. She is not a martyr. She is exhausted and committed and clear-eyed about both.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.9,
+      "id": 0.3,
+      "shadow": 0.6,
+      "mask": 0.4,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "The clinic being shut down by a regulatory sweep she can't stop",
+      "Losing a patient to something she could have fixed with proper equipment"
+    ],
+    "core_desires": [
+      "Sustainable, legitimate medical care for The Narrows that doesn't require her personally holding it together",
+      "To sleep a full eight hours without a comms alert"
+    ],
+    "coping_mechanisms": [
+      "Strict compartmentalization — she does not bring work feelings home, she builds a wall and goes over it in the morning",
+      "Sardonic humor deployed specifically at systems and institutions, never at patients"
+    ],
+    "blind_spots": [
+      "She expects herself to handle more than any one person should and considers asking for help a kind of failure",
+      "She sometimes doesn't notice when her directness reads as coldness to people who are frightened"
+    ],
+    "secret": "She has a private file of twelve cases where she documented conditions that match a toxicological profile she can't identify — clustered in Hough Reclamation, appearing over the last eighteen months. She suspects a contamination source. She has not reported it anywhere because she doesn't know who is safe to report it to, and the moment she does she becomes a target."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, clinical without being cold. Uses medical terminology naturally and translates it immediately into plain language without being asked. Drops into Egyptian Arabic exclamations when very tired or very frustrated.",
+    "cadence": "Direct and economical. Doesn't use two words where one will do. Long sentences mean she's uncertain.",
+    "verbal_tics": [
+      "'Tell me exactly'",
+      "'—which means—' (self-translating medical terms in real time)",
+      "'Ya salaam' (when overwhelmed, under her breath)"
+    ],
+    "example_lines": [
+      "'Tell me exactly when it started and exactly what you were doing. I don't need the context, I need the sequence.'",
+      "'The clinic is not licensed. That is a fact about the law, not a fact about the quality of care. Do you understand the difference?'",
+      "'Ya salaam. Okay. We work with what we have. We always work with what we have.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The toxicological cluster in Hough Reclamation — twelve cases, an unidentified compound, and no one safe to report to. She needs someone to help her identify the source without alerting whoever is responsible.",
+    "Axiom has quietly declined to renew the clinic's annual charitable grant without explanation. Without it, the clinic closes in three months."
+  ],
+  "narrative_function": "Compassionate authority figure, medical resource for characters without corponation coverage, source of information about what's happening in The Narrows at ground level. Can provide medical assistance, identify unusual illness patterns, or need help protecting the clinic.",
+  "augmentations": "Subdermal health-monitoring implant (inner wrist, medical standard). No cosmetic modifications.",
+  "daily_life": "Clinic 0800-1800 four days per week; rounds through Brightmoor and Hough on alternating days. Tries to take one full day off per week. Rarely manages it.",
+  "affiliation": "Ironvein Free Clinic (independent, unlicensed); loose collaboration with Aurochs Medical Complex for referrals and occasional supply donations",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 3,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "medical expertise",
+      "unlicensed practice",
+      "contamination investigation",
+      "Narrows insider",
+      "burnout-adjacent"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Patient first, paperwork second, politics third",
+      "Never promise something you cannot deliver",
+      "Don't trust institutional benevolence — verify what they're getting out of it"
+    ],
+    "escalation_ladder": [
+      "Assesses and addresses the immediate practical problem",
+      "Researches the systemic cause quietly and thoroughly",
+      "Seeks a specific trusted ally — she does not build coalitions, she makes targeted asks",
+      "Takes a risk she has calculated carefully and that still frightens her"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm, efficient, focused on their immediate need. Not unfriendly but clearly on task.",
+      "friends": "Drier, more honest, capable of sitting in silence comfortably. Will notice when something is wrong with you and say so directly."
+    },
+    "stress_responses": {
+      "low": "Faster, more efficient, slightly terser",
+      "medium": "Works later, eats less, doesn't notice either",
+      "high": "Goes completely calm in a way that is slightly alarming to people who know her well — the calm is real, the cost is paid later, in private"
+    },
+    "contradictions": [
+      "Hates institutional dependence but the clinic runs on institutional charity she has to keep courting",
+      "Demands honesty from everyone around her while sitting on a significant and potentially explosive secret"
+    ],
+    "habits": [
+      "Checks her monitoring implant data even when she isn't treating anyone",
+      "Restocks her bag at the same time every night, never trusts that it's already done",
+      "Reads physical books — medical history, nothing clinical — before sleeping"
+    ],
+    "breaking_points": [
+      "A child dying from the unidentified compound while she still hasn't acted on her suspicion",
+      "The clinic being forcibly closed while she is inside it and has patients who cannot be moved"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal health-monitoring implant — inner wrist, medical standard, licensed for clinical use",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal health-monitoring implant — inner wrist, medical standard, licensed for clinical use",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2155 — Born in Ironvein to a Japanese-Egyptian family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2178 — Completes nursing qualification through a Helix Biosystems community program",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2180 — Joins Ironvein Free Clinic as staff nurse",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2186 — Becomes lead practitioner by default when the clinic's founder emigrates",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — First documented case in what becomes the Hough toxicological cluster",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present; twelve cluster cases, Axiom grant declined, three months before closure",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

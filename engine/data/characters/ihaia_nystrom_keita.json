@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a62c7574a6f773ee1dedc340",
+  "type": "character",
+  "name": "Ihaia Nystrom-Keita",
+  "aliases": [
+    "Fracture",
+    "The Problem"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Forced entry and close-quarters combat specialist — breacher",
+  "age": 63,
+  "status": "active",
+  "location": "The Underbelly — sub-street tunnels and maintenance corridors",
+  "description": "Ihaia Nystrom-Keita is average height but with a presence that fills more space than the body accounts for. At 63, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a breacher out of The Underbelly, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIhaia Nystrom-Keita has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.37,
+      "ideal": 0.3,
+      "id": 0.69,
+      "shadow": 0.88,
+      "mask": 0.11,
+      "ghost": 0.59
+    },
+    "core_fears": [
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
+      "Losing their edge to age — the body slows before the mind accepts it",
+      "That they're fundamentally alone and connection is just a vulnerability"
+    ],
+    "core_desires": [
+      "Freedom from augmentation debt — the interest compounds like a tumor",
+      "To find the person who burned them and make it educational",
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
+    ],
+    "coping_mechanisms": [
+      "Humor — deflects everything serious with jokes until the joke becomes the personality",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive"
+    ],
+    "blind_spots": [
+      "Assumes the worst in corporate people, missing the rare ones who could be allies",
+      "Cannot accept help without interpreting it as leverage",
+      "Fails to notice when their own behavior mirrors the people they despise"
+    ],
+    "secret": "Ihaia Nystrom-Keita murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, profane, and vivid. Speaks in images — everything is a metaphor for violence or weather.",
+    "cadence": "Staccato bursts separated by calculating silences.",
+    "verbal_tics": [
+      "Ends statements with 'yeah?' — not a question, a dare",
+      "Calls everyone 'friend' — the warmth varies from genuine to threatening"
+    ],
+    "example_lines": [
+      "\"Doors are polite suggestions. I'm not polite.\"",
+      "\"First through the door, last to flinch. That's the job description.\"",
+      "\"Close quarters is where plans go to die. I make sure it's their plans, not ours.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A former associate resurfaces with evidence that could destroy Ihaia Nystrom-Keita's reputation — and a price for silence",
+    "Ihaia Nystrom-Keita intercepts intelligence about a threat to their district and must decide between profit and protection",
+    "A high-paying contract turns out to target someone Ihaia Nystrom-Keita owes a personal debt to"
+  ],
+  "narrative_function": "Ihaia Nystrom-Keita is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
+  "augmentations": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters. Subdermal weapon mount — pop-out blade in each forearm",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Independent — loose crew affiliations",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 10
+      },
+      "agility": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 4
+      },
+      "reflexes": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 4
+      },
+      "perception": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 6
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 4
+      },
+      "technical": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 4
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 7
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 8
+      }
+    },
+    "personality": {
+      "aggression": 0.92,
+      "caution": 0.83,
+      "loyalty": 0.89,
+      "greed": 0.82,
+      "empathy": 0.14
+    },
+    "drives": [
+      "survival",
+      "reputation",
+      "revenge"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 4,
+      "loyalty_break": 10
+    },
+    "strengths": [
+      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "technical expertise with augmentation systems",
+      "exceptional close-quarters combat"
+    ],
+    "weaknesses": [
+      "inability to delegate — must control everything personally",
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "overconfidence in specialty areas leading to blind spots"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "breacher",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Always verifies target identity independently before lethal contracts",
+      "Will not take contracts against children or families — the line is hard and non-negotiable"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Insists they work alone but performs noticeably better in a team",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+    ],
+    "habits": [
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Keeps a physical paper notebook — no digital record of personal thoughts",
+      "Checks exits within 10 seconds of entering any room"
+    ],
+    "breaking_points": [
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Running out of options — no contacts, no money, no safe house, no way out",
+      "Losing their primary augmentation — the one that defines their professional identity"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cyberears with directional microphones and sound dampening",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal weapon mount",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Subdermal weapon mount — pop-out blade in each forearm",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Brawler": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

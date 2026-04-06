@@ -1,0 +1,50 @@
+{
+  "id": "019d6143a9e27eb2b9389f9aa4fea00b",
+  "name": "Pyranthex-S3",
+  "brand_name": "Pyranthex",
+  "product_name": "Pyranthex-S3",
+  "type": "substrate",
+  "aliases": [
+    "re-entry ceram",
+    "S3 tile",
+    "heat skin"
+  ],
+  "category": "ceramic",
+  "description": "An ultra-high-temperature ceramic composite based on hafnium diboride and zirconium carbide matrices reinforced with silicon carbide whiskers, capable of sustained operation at surface temperatures exceeding 3,000°C without structural degradation. The nano-assembled microstructure features deliberate thermal gradient channels that redirect heat flux away from structural load paths, preventing the catastrophic thermal shock failures that plagued earlier UHTC formulations. Pyranthex-S3 is the dominant material for atmospheric re-entry vehicle leading edges and industrial plasma containment.",
+  "properties": [
+    "ultra_high_temperature_resistance",
+    "thermal_shock_resistant",
+    "oxidation_resistant",
+    "high_emissivity",
+    "structural_at_extreme_temperatures",
+    "heavy_weight",
+    "non_conductive"
+  ],
+  "developers": [
+    "Tessera Materials",
+    "Apex Nanofabrication"
+  ],
+  "applications": [
+    "orbital re-entry vehicle heat shields",
+    "atmospheric insertion craft leading edges",
+    "industrial plasma furnace linings",
+    "hypersonic projectile nose cones",
+    "fusion reactor first-wall tiles",
+    "deep geothermal drill heads"
+  ],
+  "tier_availability": "Tier 4-5",
+  "cost": "Φ 12,500 per kg",
+  "story_hooks": [
+    "A salvager finds intact Pyranthex-S3 tiles among wreckage from an unregistered re-entry vehicle — the tiles are worth a fortune, but whatever came down in that craft is drawing serious attention.",
+    "Someone has been stealing Pyranthex-S3 tiles from a re-entry vehicle maintenance bay in small quantities — not enough for a vehicle, but exactly enough for something else entirely.",
+    "A Tier 5 engineer claims the latest Pyranthex-S3 batch has a thermal gradient flaw that will cause catastrophic failure at peak re-entry — and the next scheduled descent carries three hundred passengers."
+  ],
+  "tags": [
+    "ceramic",
+    "substrate",
+    "ai",
+    "vehicle",
+    "tier 4",
+    "tier 5"
+  ]
+}

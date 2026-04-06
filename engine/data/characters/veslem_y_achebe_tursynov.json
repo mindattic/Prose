@@ -1,0 +1,238 @@
+{
+  "id": "019d6143a71173b99e9b07763ed7bcc0",
+  "type": "character",
+  "name": "Veslemøy Achebe-Tursynov",
+  "aliases": [
+    "Vest",
+    "The Notary"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Identity fabricator and forger",
+  "age": 44,
+  "status": "active",
+  "location": "Gravesend Basin, third sublevel — a waterlogged print shop behind the Gorgon Laundry",
+  "description": "Veslemøy is a compact, unhurried woman with deep umber skin mapped by a web of fine scar lines across her right hand — remnants of a chemical burn from a botched laminate batch two decades ago. She keeps her silver-streaked hair pinned severely back, and her eyes have been fitted with patterned irises that shift between amber and pale green depending on the light, a cosmetic mod she chose purely because it unsettles clients enough to keep them respectful. She wears reading lenses on a chain around her neck that she rarely actually uses; it's theater, part of the persona of a woman who does serious paperwork. She smells always faintly of solvent and cardamom tea.\n\nShe is meticulous to the point of ceremony — she will not begin a forgery until she has reviewed a client's source documentation twice, made handwritten notes, and brewed a fresh cup of tea. She finds sloppiness morally offensive, and genuinely takes pride in work that is beautiful as well as functional. She keeps a personal ethics ledger: she will not forge documents for labor traffickers, will not fabricate child identities for anything she deems suspect, and has turned down lucrative contracts on these grounds without visible regret. This does not make her kind. She is professional, which is a different thing entirely.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.8,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Being the cause of an innocent person's death through her work",
+      "Losing the fine motor control that makes her craft possible"
+    ],
+    "core_desires": [
+      "To be recognized as a true artisan, not merely a criminal",
+      "To leave behind one piece of work so perfect it outlasts her"
+    ],
+    "coping_mechanisms": [
+      "Ritualized work routines that enforce calm",
+      "Redirecting anxiety into quality control"
+    ],
+    "blind_spots": [
+      "She genuinely believes her ethical code makes her meaningfully different from other criminals",
+      "She underestimates how much her reputation protects bad actors she chooses not to think about"
+    ],
+    "secret": "Fifteen years ago she fabricated the identity of a man who turned out to be a domestic abuser fleeing prosecution. He used his new identity to remarry and the second wife disappeared. Veslemøy has never confirmed what happened but the Copper Ledger's fixer who brokered the job left her a single data file she has never opened."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal, slightly archaic diction; uses precise technical language when discussing craft; avoids slang except when quoting others",
+    "cadence": "Measured and unhurried, with deliberate pauses before key words",
+    "verbal_tics": [
+      "'If you'll permit me—'",
+      "Repeating a client's last word back to them as a question"
+    ],
+    "example_lines": [
+      "'The substrate you've brought me is adequate. I said adequate, not acceptable. There is a difference.'",
+      "'I don't ask what the document is for. I ask whether you can afford for it to fail. Those are different questions.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client's newly fabricated identity is being actively investigated by a Tessera compliance auditor — and the client is coming back to Veslemøy demanding a fix, or a refund, or both",
+    "She has been hired to forge documents for someone whose description matches the man she gave a new identity to fifteen years ago — a man who should be dead"
+  ],
+  "narrative_function": "Quest giver for identity-adjacent storylines; information source on who in Meridian 88 needs a new face and why; moral complication — a criminal with genuine principles",
+  "augmentations": "Patterned irises (amber-to-green cosmetic); subdermal haptic sensors in fingertips for detecting paper grain and embedded chips (functional, purchased secondhand)",
+  "daily_life": "She opens the shop at 10:00, takes consultations by appointment only until 14:00, then spends the afternoon and evening in production. She attends the small ELF shrine at the corner of the Basin's press district every third day, leaving carefully typeset data offerings — formatted perfectly, because she believes sloppiness offends even digital spirits.",
+  "affiliation": "Independent operator; loose arrangement with the Gravesend Basin crime family known as the Copper Ledger",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 9,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 4,
+      "expression": 5,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Artisan",
+      "Principled Criminal",
+      "Information Broker (Passive)",
+      "Ritual Thinker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never begin work without full upfront payment in Quanta — no crypto, no barter",
+      "Review every client against her personal exclusion list before agreeing to meet"
+    ],
+    "escalation_ladder": [
+      "Politely declines and ends the meeting",
+      "Removes herself from the room and does not return",
+      "Notifies the Copper Ledger's fixer that someone is causing problems at her location"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formally courteous, assessing every detail of their presentation and speech",
+      "friends": "Dry, sardonic warmth; expresses affection through competence — fixing things for people, noticing small details"
+    },
+    "stress_responses": {
+      "low": "Increased precision and ritual — more careful, not less",
+      "medium": "Goes quiet; works through the night without sleeping",
+      "high": "Physically removes herself from the situation entirely and does not communicate for 24-48 hours"
+    },
+    "contradictions": [
+      "She is genuinely proud of work she knows enables harm",
+      "She maintains a strict moral code in a context that makes morality meaningless"
+    ],
+    "habits": [
+      "Traces the scar lines on her right hand when thinking",
+      "Corrects typographical errors in menus, signage, anything printed, whether or not anyone is watching"
+    ],
+    "breaking_points": [
+      "Discovering that her work directly caused a child's death or exploitation",
+      "Losing sensation in her fingertips"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Patterned cosmetic irises (amber-green shift)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Patterned cosmetic irises (amber-green shift)",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal haptic array — fingertips, both hands (used, refurbished)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal haptic array — fingertips, both hands (used, refurbished)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Dreamer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2156: Born in Gravesend Basin to a Norwegian-Kazakh mother and a Nigerian father, both dock registrars",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2172: Apprenticed to a print shop operator who was quietly also a document forger",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2179: Chemical burn incident destroys partial sensation in right hand; acquires haptic implants to compensate",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2185: Establishes independent operation; negotiates non-interference agreement with Copper Ledger",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2188: The missing-wife incident",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200: Current — operating at peak of her reputation, cautiously selective",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,47 @@
+{
+  "id": "019d6143aa5a77f0bcb775b2ec9c72fd",
+  "name": "Zheng-Dao Heavy Industries Graviton Manipulation Framework",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Heavy Industries Graviton Manipulation Framework",
+  "type": "technology",
+  "aliases": [
+    "GMF",
+    "Gravity Tech",
+    "G-Frame",
+    "Zheng-Dao Gravity"
+  ],
+  "subcategory": "energy",
+  "description": "The foundational technology behind Zheng-Dao's gravity manipulation weapons and industrial systems. The GMF uses arrays of superconducting graviton emitters cooled to near absolute zero to generate and direct localized gravitational fields. The framework enables the creation of gravity wells, repulsion fields, and gravitational lensing effects within a contained area. Current implementation requires massive power input and cryogenic infrastructure, limiting the technology to vehicle-mounted or facility-based systems, but Zheng-Dao's roadmap projects man-portable graviton manipulation within a decade.",
+  "tier_availability": "Tier 5",
+  "developers": [
+    "ZHENG-DAO HEAVY INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Superconducting graviton emitter arrays",
+    "Cryogenic field stabilization",
+    "Gravitational vector control mathematics"
+  ],
+  "enables": [
+    "Localized gravity manipulation",
+    "Gravitational lensing for defense systems",
+    "Zero-gravity manufacturing environments",
+    "Kinetic energy weapons through gravity acceleration"
+  ],
+  "social_impact": "The existence of practical gravity manipulation has shattered fundamental assumptions about physics-based limitations in engineering, architecture, and warfare. Zheng-Dao's monopoly on the technology gives them leverage that transcends conventional corporate competition — they can literally change the rules of physics within their operational sphere. Other corponations are investing heavily in alternative approaches, but Zheng-Dao's 15-year head start in graviton emitter fabrication creates a moat that may be insurmountable.",
+  "story_hooks": [
+    "A Zheng-Dao graviton emitter prototype has been stolen and the thief does not understand the cryogenic requirements — the emitter is warming up and when it reaches critical temperature, the gravitational field it is generating will collapse catastrophically.",
+    "A physicist outside Zheng-Dao has independently derived the mathematics for graviton manipulation and published them openly — Zheng-Dao's monopoly is threatened and they are willing to do anything to suppress the work."
+  ],
+  "tags": [
+    "energy",
+    "technology",
+    "weapon",
+    "war",
+    "ai",
+    "corporate",
+    "control",
+    "power",
+    "vehicle",
+    "tier 5"
+  ]
+}

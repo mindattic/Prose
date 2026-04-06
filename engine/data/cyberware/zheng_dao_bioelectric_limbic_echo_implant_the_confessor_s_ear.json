@@ -1,0 +1,61 @@
+{
+  "id": "019d6143a7cc700a98a6954825ac9c50",
+  "name": "Zheng-Dao Bioelectric Limbic Echo Implant — 'The Confessor's Ear'",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Bioelectric Limbic Echo Implant — 'The Confessor's Ear'",
+  "type": "cyberware",
+  "aliases": [
+    "The Confessor's Ear",
+    "Limbic Echo",
+    "Emotion Wire",
+    "The Empath Chip"
+  ],
+  "category": "augmentation",
+  "body_location": "",
+  "description": "The Confessor's Ear is a neurological augmentation developed by Zheng-Dao Bioelectric that grants the user heightened sensitivity to the involuntary physiological and micro-expressive signals that accompany human emotional states. The implant consists of a limbic interface node seated near the amygdala, a mesh of sub-dermal galvanic sensors across the palms and fingertips, and a micro-camera array embedded in the orbital ridge that tracks pupillary dilation, micro-saccades, and facial muscle movement at a resolution invisible to natural perception. The system synthesizes these inputs into a real-time emotional state assessment that is delivered not as a data readout but as a felt impression — a secondary emotional signal layered beneath the user's own affect, like hearing a conversation in another room.\n\nZheng-Dao's design philosophy with the Confessor's Ear was to create empathy as a tool rather than a simulation. The system doesn't tell the user what someone is feeling; it creates a faint resonant echo of that feeling within the user's own limbic system. A skilled operator learns to distinguish their own emotional state from the echo, reading the difference as signal. Interrogators use it to detect deception not by analyzing data but by feeling the dissonance between what a subject says and what their body broadcasts. Negotiators use it to gauge the precise emotional moment when an offer becomes acceptable. Therapists in corporate wellness programs use it to identify distress in clients who have been trained to suppress visible signs.\n\nThe implant's most significant side effect is cumulative limbic bleed — prolonged use without adequate psychological compartmentalization causes the user's own emotional baseline to drift toward the aggregate of everyone they've been reading. Long-term operators report difficulty identifying their own genuine feelings, a condition Zheng-Dao's literature euphemistically terms 'empathic saturation.' Street practitioners call it 'drowning in other people.' The implant has a small but devoted following among people who consider this dissolution of self not a side effect but the point.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"primary_implant_site\":\"Amygdala-adjacent limbic interface node\",\"sensor_coverage\":\"Palms, fingertips (galvanic), orbital ridge (optical — micro-camera array)\",\"subject_range\":\"Effective within 3m for full-spectrum read; galvanic contact extends precision\",\"output_modality\":\"Felt limbic impression (not visual/auditory overlay)\",\"detection_latency\":\"180ms from stimulus to user perception\",\"calibration_requirement\":\"48-hour baseline calibration period post-installation\",\"bleed_threshold\":\"Clinically significant limbic saturation documented after 18 months continuous use without compartmentalization protocol\",\"power_source\":\"Bioelectric harvesting from neural activity — self-sustaining under normal cognitive load\"}",
+  "side_effects": [],
+  "cultural_context": "The Confessor's Ear occupies an uncomfortable ethical space in Meridian 88. Licensed users — therapists, negotiators, certain law enforcement designations — are required to disclose the implant to subjects in therapeutic or legal contexts, a requirement that is widely flouted. Among corporate intelligence and fixer communities, the implant is considered a significant professional asset but also a social liability — people who know about it become guarded, aware that their emotional state is being read without consent. There is a small underground community of Confessor's Ear users who have leaned into limbic saturation deliberately, treating the dissolution of personal emotional boundaries as a form of radical connectivity. Zheng-Dao is aware of this use case and finds it commercially interesting.",
+  "known_users": [
+    "Corporate negotiation specialists",
+    "Zheng-Dao Bioelectric internal affairs division",
+    "Licensed interrogation contractors",
+    "Meridian 88 corporate wellness program therapists (disclosed and undisclosed)",
+    "'Sable Maren' — fixer renowned for reading clients and knowing their real bottom line before they do",
+    "Underground 'empathy collective' members pursuing voluntary limbic saturation"
+  ],
+  "story_hooks": [
+    "A Confessor's Ear operator has gone into full limbic saturation and can no longer distinguish their own identity from the aggregate of everyone they've read — they've become a kind of emotional archive, and someone wants to extract specific memories from that archive.",
+    "The party discovers that the therapist running the corporate wellness program for their employer is Confessor's Ear-equipped and has been feeding emotional intelligence to the employer's internal security division.",
+    "A negotiation goes catastrophically wrong when both parties are revealed to be Confessor's Ear users — each reading the other's echo, which creates a resonance loop neither can break out of.",
+    "A Confessor's Ear operator insists they felt genuine fear from a target at a moment that exonerates them of a crime — but the felt impression isn't admissible as evidence, and no one else believes them.",
+    "Zheng-Dao is recruiting voluntary participants for a study on extended limbic saturation, offering substantial compensation — the party needs to investigate what the study is actually measuring."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "augmentation",
+    "cyberware",
+    "war",
+    "crime",
+    "deception",
+    "identity",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "clinic",
+    "rain",
+    "train",
+    "tier 2"
+  ]
+}

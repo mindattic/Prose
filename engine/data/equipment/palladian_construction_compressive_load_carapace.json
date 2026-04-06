@@ -1,0 +1,68 @@
+{
+  "id": "019d6143a86574cabfbfdbb29e1fa405",
+  "name": "Palladian Construction Compressive Load Carapace",
+  "brand_name": "Palladian",
+  "product_name": "Palladian Construction Compressive Load Carapace",
+  "type": "equipment",
+  "aliases": [
+    "The Shell",
+    "Foreman's Plate",
+    "Load Skin"
+  ],
+  "category": "armor",
+  "description": "Originally engineered for workers operating in active demolition and controlled-collapse environments, the Compressive Load Carapace uses layered ceramic-polymer composite panels bonded to a semi-rigid undersuit reinforced with Palladian's proprietary stress-redistribution lattice. When subjected to blunt force or crushing pressure, the lattice micro-fractures in a controlled pattern, dissipating kinetic energy laterally across the suit's surface rather than transmitting it inward to the wearer's body. Replacement panel cartridges can be swapped in the field within minutes, making it a practical choice for prolonged operations.\n\nWhat distinguishes the Carapace from conventional construction PPE is the integrated pressure-sensing membrane woven into the undersuit's torso section. This membrane monitors structural load in real time and triggers passive bracing in the suit's shoulder and hip assemblies when threshold forces are detected, effectively pre-tensioning the wearer's posture before impact fully registers. The result is a suit that responds to its environment rather than simply absorbing it.\n\nOn the street, the Carapace has migrated from worksites into the hands of enforcers, debt collectors, and anyone who expects to be in a tight space when things go wrong. Its bulk reads as industrial rather than military, which lets wearers move through checkpoints that would flag tactical gear. Palladian officially sells it only to licensed contractors, but grey-market panel kits and secondhand full suits are common enough in the outer districts that the distinction has become largely ceremonial.",
+  "manufacturer": "PALLADIAN CONSTRUCTION",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Ceramic-polymer composite laminate",
+    "Stress-redistribution micro-fracture lattice",
+    "Passive kinetic bracing assembly",
+    "Pressure-sensing undersuit membrane",
+    "Field-swappable panel cartridge system"
+  ],
+  "specifications": {
+    "weight": "9.4 kg (full configuration)",
+    "panel_coverage": "Torso, shoulders, forearms, thighs",
+    "impact_dissipation_rating": "Class IV blunt force",
+    "panel_replacement_time": "Approximately 4 minutes per zone",
+    "bracing_trigger_threshold": "180 kg/cm² detected at membrane",
+    "undersuit_material": "Graphene-reinforced polyaramid weave",
+    "operating_temperature_range": "-20°C to 85°C"
+  },
+  "tactical_use": "Best suited for close-quarters engagements where melee, falling debris, or vehicle impacts are the primary threat. The pre-tensioning brace gives wearers a meaningful advantage in grappling situations. Operators typically remove the thigh panels when mobility is prioritized. The industrial appearance makes it ideal for infiltration of construction or industrial zones where tactical armor would attract scrutiny.",
+  "cultural_context": "In the outer ring districts, a worn Compressive Load Carapace is a working-class status symbol — it signals someone who has survived enough physical labor or street violence to justify the investment. Newer suits are associated with corporate enforcers and debt crews. Heavily patched or panel-mismatched suits mark experienced independents who have kept the same chassis running for years. Some wearers paint their panel cartridges in gang or crew colors, turning the modular design into a form of identity marking.",
+  "known_users": [
+    "Palladian site foremen operating in contested demolition zones",
+    "Outer district debt enforcement crews",
+    "Independent salvage operators working collapsed infrastructure",
+    "Underground pit fighters who want deniable protection",
+    "Smugglers moving through industrial checkpoints"
+  ],
+  "story_hooks": [
+    "A shipment of Carapace panel cartridges has been intercepted — the cartridges contain smuggled Palladian proprietary lattice data that could let a competitor replicate the stress-redistribution technology.",
+    "A debt enforcer wearing a heavily modified Carapace has gone missing in the construction zone surrounding the new Palladian tower; his crew believes the suit's pressure membrane recorded something it shouldn't have.",
+    "A street vendor in the outer ring is selling Carapace kits at a fraction of market price — the panels test as authentic, but the undersuit membrane has been replaced with something that transmits biometric data to an unknown receiver.",
+    "A pit fighting circuit has banned the Carapace after three consecutive championships — the promoter wants someone to quietly acquire the winning fighter's suit and confirm whether it's been illegally modified."
+  ],
+  "tags": [
+    "armor",
+    "equipment",
+    "violence",
+    "war",
+    "smuggle",
+    "gang",
+    "identity",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "debt",
+    "pain",
+    "market",
+    "vehicle",
+    "energy",
+    "circuit",
+    "tier 1"
+  ]
+}

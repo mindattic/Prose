@@ -1,0 +1,42 @@
+{
+  "id": "019d6143ab1b7cada3baab4fc6d292a1",
+  "name": "Carrion Defense Works Hemorrhage Rifle HR-6 'Bloodletter'",
+  "type": "weapon",
+  "aliases": [
+    "Bloodletter",
+    "HR-6",
+    "Bleed Gun",
+    "The Leech"
+  ],
+  "category": "rifle",
+  "description": "A precision rifle firing rounds containing a micro-encapsulated anticoagulant payload that releases into the wound channel upon penetration. The compound — Carrion's proprietary HemoDisrupt formula — prevents blood clotting at the wound site and in the surrounding vasculature for approximately 45 minutes, turning what would be a survivable gunshot wound into a potentially fatal hemorrhagic event. The round itself is a standard 7.62mm profile that performs normally in flight, with the anticoagulant capsule contained in a hollow cavity behind the penetrator tip. Carrion describes it as 'extended incapacitation ammunition' in internal documents.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited — chemical warfare ammunition",
+  "base_technologies": [
+    "Micro-encapsulated chemical payload rounds",
+    "Anticoagulant compound engineering",
+    "Precision ballistic delivery systems"
+  ],
+  "specifications": "caliber: 7.62mm with anticoagulant payload\nmagazine: 10 rounds\neffective range: 100-600 meters\nanticoagulant duration: 45 minutes at wound site\npayload: 0.3ml HemoDisrupt micro-encapsulated\nweight: 4.2 kg with optic\noptics: Variable 3-12x with environmental compensation\nbarrel: Free-floating match grade, 550mm",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A seemingly minor shooting wound killed a Tier 3 businessperson eighteen minutes after the injury — toxicology reveals HemoDisrupt in the wound channel, turning a misdemeanor assault into a chemical weapons case.",
+    "Carrion's HemoDisrupt formula has been reverse-engineered and someone is loading it into standard ammunition — any gun could now fire hemorrhage rounds."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "rifle",
+    "weapon",
+    "gun",
+    "war",
+    "ai",
+    "elf",
+    "injury",
+    "bar",
+    "fire",
+    "tier 4"
+  ]
+}

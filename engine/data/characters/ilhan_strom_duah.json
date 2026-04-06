@@ -1,0 +1,270 @@
+{
+  "id": "019d6143a62e7ad5b5ae65b3b9d0d6bb",
+  "type": "character",
+  "name": "Ilhan Strom-Duah",
+  "aliases": [
+    "Knell",
+    "The Contractor"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Network intrusion and digital warfare specialist — netrunner",
+  "age": 25,
+  "status": "active",
+  "location": "The Canopy — elevated walkway district above Geartown",
+  "description": "Ilhan Strom-Duah are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 25, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and they make no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — they have the city in their blood, its rhythms in their bones, its cruelty in their expectations. They work as a netrunner out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nEveryone who's worked with Ilhan Strom-Duah agrees on two things: they are worth the fee, and they are terrible company at dinner.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.74,
+      "ideal": 0.79,
+      "id": 0.57,
+      "shadow": 0.49,
+      "mask": 0.81,
+      "ghost": 0.53
+    },
+    "core_fears": [
+      "Being captured alive — death is preferable to corporate interrogation",
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "That their reputation is built on luck, not skill, and the luck is finite"
+    ],
+    "core_desires": [
+      "The perfect run — one job so clean it becomes legend",
+      "Knowledge — to understand the systems that grind people down",
+      "To build something that outlasts the next contract cycle"
+    ],
+    "coping_mechanisms": [
+      "Connection — finds someone to talk to, even if it's a bartender or a cat",
+      "Compartmentalization — work feelings and personal feelings exist in separate boxes",
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else"
+    ],
+    "blind_spots": [
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
+      "Thinks speed can substitute for planning because it's worked so far",
+      "Assumes their skill set is more transferable than it actually is"
+    ],
+    "secret": "Ilhan Strom-Duah killed someone who didn't deserve it on a job three years ago and has never told anyone. The face appears in dreams weekly."
+  },
+  "speech_patterns": {
+    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
+    "cadence": "Low and even — the vocal equivalent of still water.",
+    "verbal_tics": [
+      "Uses technical jargon for everything, including emotions",
+      "Hums tunelessly when planning — the team has learned to wait for the humming to stop"
+    ],
+    "example_lines": [
+      "\"Every system has a door. Most of them have a door the architect forgot about.\"",
+      "\"I don't hack networks. I have conversations with them. Most of them are lonely.\"",
+      "\"The ice they're running is military-grade. That means expensive, not impenetrable.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A former associate resurfaces with evidence that could destroy Ilhan Strom-Duah's reputation — and a price for silence",
+    "A high-paying contract turns out to target someone Ilhan Strom-Duah owes a personal debt to",
+    "Ilhan Strom-Duah intercepts intelligence about a threat to their district and must decide between profit and protection"
+  ],
+  "narrative_function": "Ilhan Strom-Duah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters. Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Semi-independent — recurring contracts with mid-tier fixers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 5
+      },
+      "agility": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 4
+      },
+      "reflexes": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 4
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 10
+      },
+      "perception": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 5
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 7
+      },
+      "technical": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 5
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 8
+      },
+      "intimidation": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 9
+      },
+      "deception": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 5
+      },
+      "empathy": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 6
+      }
+    },
+    "personality": {
+      "aggression": 0.74,
+      "caution": 0.18,
+      "loyalty": 0.41,
+      "greed": 0.89,
+      "empathy": 0.86
+    },
+    "drives": [
+      "protection",
+      "power",
+      "survival"
+    ],
+    "thresholds": {
+      "pain": 4,
+      "stress": 3,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "exceptional close-quarters combat",
+      "network of reliable contacts",
+      "expert marksman"
+    ],
+    "weaknesses": [
+      "risk-averse to the point of missed opportunities",
+      "inability to delegate — must control everything personally"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "netrunner",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always has an exit route planned before agreeing to any meeting",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Never discusses active contracts with anyone not directly involved",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Projects confidence but makes decisions from a foundation of fear they've never examined",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Values loyalty intensely but has betrayed someone in the past to survive"
+    ],
+    "habits": [
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Practices a kata or fighting form every morning regardless of circumstances"
+    ],
+    "breaking_points": [
+      "Losing their primary augmentation — the one that defines their professional identity",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Discovering their employer deliberately sent them into a death trap"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cyberears with directional microphones and sound dampening",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
+      "replaces": ""
+    },
+    {
+      "name": "Synthetic blood with oxygen-carrying nanites",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Analyst": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

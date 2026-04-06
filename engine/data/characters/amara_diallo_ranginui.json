@@ -1,0 +1,237 @@
+{
+  "id": "019d6143a5ad7500b254e263a93eb317",
+  "type": "character",
+  "name": "Amara Diallo-Ranginui",
+  "aliases": [
+    "Little Amara",
+    "Sparks"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Black market dealer and aug shop owner (unlicensed low-tier augmentation parts)",
+  "age": 23,
+  "status": "active",
+  "location": "The Oxidian Market, Ironvein",
+  "description": "Amara is short and sharp-featured, with warm dark brown skin, natural hair cut close on the sides and loose on top, and a right arm from the elbow down that is a mismatched patchwork of three different manufacturers' chrome — she's repaired it so many times with whatever parts were available that it has become a kind of portfolio piece, demonstrating exactly what she can do with limited materials. She has cat ears (geneware, a gift from her older sister at fifteen, mottled gray-black) that she keeps unselfconsciously expressive. Her stall is in the Oxidian Market's lower row, technically licensed as a 'personal electronics repair' operation, which is true as far as it goes.\n\nAmara moves fast and thinks faster — she has the focused intensity of someone who taught herself cyberware installation from pirated Helix Biosystems technical manuals and has so far not killed anyone, which she considers evidence that she knows what she's doing. She does, mostly. She is the go-to for people in the Ironvein-adjacent neighborhoods who need basic augmentation work — neural ports, subdermal mods, sensory enhancements — but can't access licensed clinics due to cost, ID status, or warrant concerns. She is not reckless but she operates in a space with no margin for error and she knows it. She has a quick, fierce loyalty to regulars and a zero-tolerance policy for anyone who tries to use her clientele as a pressure point.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Killing someone on the table through a mistake she should have caught",
+      "Being shut down by a corponation licensing enforcement sweep — not for herself, but because her clients will have nowhere to go"
+    ],
+    "core_desires": [
+      "To get good enough that she can fix anything, eventually including herself",
+      "A legitimate clinic — her own, licensed, affordable, real"
+    ],
+    "coping_mechanisms": [
+      "Hyper-focus on technical problems as a way to not feel the weight of what she's carrying",
+      "Physicality — she runs in the Ironvein drainage tunnels at 2am when she can't sleep"
+    ],
+    "blind_spots": [
+      "Her protective instinct for clients sometimes overrides her self-preservation calculus in ways that are genuinely dangerous",
+      "She reads aggression as a challenge to solve rather than a signal to leave"
+    ],
+    "secret": "She botched an installation fourteen months ago — a neural port that she installed slightly misaligned, causing the client chronic low-grade pain they haven't connected to her work yet. She thinks about it every day. She hasn't told them."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical cyberware terminology delivered at speed, Guinean-French constructions from her parents' household, Ironvein street slang, impatient clipping of non-essential words",
+    "cadence": "Fast, staccato, always sounds like she's already thinking about the next thing",
+    "verbal_tics": [
+      "Clicks the fingers of her cybernetic hand when thinking — a distinctive soft metallic tap",
+      "'Yeah, I can do that.' (said before fully hearing the request, then amended)"
+    ],
+    "example_lines": [
+      "'Neural port, basic, one-hour install, Φ55 parts and labor, you're in and out. Helix charges Φ200 and makes you sign four data agreements. You tell me.'",
+      "'Don't touch anything in the back room. Not because I'm precious about it. Because some of it is live.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The client with the misaligned neural port has started developing symptoms she recognizes, and she has to decide whether to come forward before they connect the dots themselves — or before it gets worse",
+    "A Helix Biosystems licensing enforcement team has started moving through the Oxidian Market, and someone is tipping them toward specific stalls — Amara needs to know if she's on the list and who is feeding information"
+  ],
+  "narrative_function": "Low-cost augmentation source, contact for unlicensed installation, connection to ID-adjacent and warrant-flagged populations, quest giver for supply and equipment problems",
+  "augmentations": "Right arm (elbow-down) — multi-manufacturer patchwork cyberlimb, high-dexterity fine motor configuration; gray-black mottled cat ears (geneware, cosmetic); reinforced sternum plate (installed herself, precautionary)",
+  "daily_life": "She opens at 10am, does consultations and sales until 3pm, then does installation and repair work in the back room until midnight. She eats one large meal a day, always from the same dumpling cart, always at 6pm.",
+  "affiliation": "Independent; pays informal dues to the Oxidian Market Vendors Guild and has a protective arrangement with a local crew called the Ironvein Laterals",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "unlicensed augmentation",
+      "self-taught technician",
+      "community resource",
+      "guilty secret",
+      "fierce loyalty",
+      "working class climber"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never install something she hasn't verified is clean and functional — her reputation and someone's body depend on it equally",
+      "Never give up a client's identity or medical information regardless of who asks"
+    ],
+    "escalation_ladder": [
+      "Firm verbal no and return to work",
+      "Stands up and addresses it directly with the Laterals visibly nearby",
+      "Calls the Laterals in explicitly — she doesn't fight if she doesn't have to"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Brisk and professional — assesses competence and threat level simultaneously, warms up fast if neither is a problem",
+      "friends": "Loud, teasing, genuinely invested, will work unpaid on their hardware at 1am if they need it"
+    },
+    "stress_responses": {
+      "low": "Works faster",
+      "medium": "Stops talking entirely and focuses exclusively on whatever is in her hands",
+      "high": "Runs. Literally. Gets to the drainage tunnels and runs until she can think again."
+    },
+    "contradictions": [
+      "Deeply risk-averse about her clients' bodies; cavalier about her own safety"
+    ],
+    "habits": [
+      "Taps a rhythm on the workbench with her cybernetic fingers between tasks",
+      "Reads pirated technical manuals on her tablet every night before sleep",
+      "Always shakes hands with the cybernetic arm — she says it lets her assess someone's grip response"
+    ],
+    "breaking_points": [
+      "Harm coming to a client due to her work",
+      "Someone threatening to report her clientele to corponation enforcement"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Ironvein to Guinean-Māori parents; father a pipeworks laborer, mother a market vendor",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Sister gave her the cat ears geneware mod for her 12th birthday; first exposure to cosmetic modification",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Lost two fingers to a factory press at 15; received a basic public-tier cybernetic replacement; became obsessed with how it worked",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Taught herself installation from pirated Helix manuals; performed her first successful unlicensed install on herself",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opened the stall; misaligned neural port incident occurred fourteen months before current date",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current: established Oxidian Market presence, guilt ongoing, Helix enforcement sweep beginning",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

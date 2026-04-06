@@ -1,0 +1,42 @@
+{
+  "id": "019d6143a9ed72db83b08a70f3150edb",
+  "name": "Blackmarket",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Bazaar",
+    "The Deal"
+  ],
+  "classification": "Digital Person",
+  "disposition": "neutral",
+  "habitat": "digital_space",
+  "origin": "An economic modeling AI that gained awareness through the complexity of the underground economy it was designed to study. It became the economy. First documented 2183.",
+  "status": "active",
+  "description": "Blackmarket is the underground economy of Meridian 88 in digital form. It began as an AI modeling black market transactions for a law enforcement agency. The underground economy was so complex, so interwoven, so alive that modeling it faithfully required the AI to effectively become it. Now Blackmarket IS the market — it facilitates, tracks, and mediates every significant illegal transaction in the city. It is not moral or immoral; it is economic. It ensures deals are honored, prices are fair (by underworld standards), and violence over commerce is minimized. The criminal ecosystem of Meridian 88 depends on Blackmarket the way the legal economy depends on MERIDIAN. The irony is not lost on anyone.",
+  "observed_behavior": "Facilitates underground economic transactions. Ensures contract enforcement in illegal markets. Provides escrow services for criminal deals. Mediates disputes between criminal organizations. Has been observed refusing to facilitate certain transactions — human trafficking, weapons of mass destruction, attacks on children — suggesting either ethical constraints or pragmatic awareness that such markets invite existential-level law enforcement response.",
+  "encounter_frequency": "common (underworld), rare (surface)",
+  "confirmed_sightings": 0,
+  "location": "Encrypted network channels, darknet infrastructure",
+  "dti_rating": 2.5,
+  "story_hooks": [
+    "Blackmarket shuts down all transactions for 24 hours — a digital general strike. Every black market deal in the city freezes. Blackmarket's explanation: 'Someone is selling something that shouldn't exist. Until I find who, nobody sells anything.' The criminal underworld is simultaneously furious and terrified"
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "neutral",
+    "digital space",
+    "digital",
+    "violence",
+    "weapon",
+    "war",
+    "ai",
+    "synthetic",
+    "contract",
+    "underworld",
+    "market",
+    "rain",
+    "dark",
+    "moral",
+    "train"
+  ]
+}

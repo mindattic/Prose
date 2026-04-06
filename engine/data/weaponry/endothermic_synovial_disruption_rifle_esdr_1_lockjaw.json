@@ -1,0 +1,59 @@
+{
+  "id": "019d6143ab2875afb21f76c8fdf7a3d7",
+  "name": "Endothermic Synovial Disruption Rifle ESDR-1 'Lockjaw'",
+  "type": "weapon",
+  "aliases": [
+    "Lockjaw",
+    "The Freezer",
+    "Cold Joint",
+    "Creak"
+  ],
+  "category": "energy",
+  "description": "The ESDR-1 projects a focused endothermic energy beam that selectively reduces thermal energy in synovial fluid — the lubricating medium within joint capsules — causing it to thicken and partially crystallize without freezing surrounding tissue. Within two seconds of a sustained hit, the targeted joint becomes nearly immobile, the synovial membrane inflamed and packed with semi-viscous fluid. The effect is excruciatingly painful and incapacitating but does not kill, making the ESDR-1 a precision denial weapon. Helix Biosystems developed the underlying endothermic targeting array as a surgical instrument for joint preservation procedures before Arcturus Defense Solutions licensed the technology for tactical application.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Military only",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Focused endothermic projection",
+    "Synovial fluid thermodynamic targeting",
+    "Biometric joint-cavity mapping"
+  ],
+  "specifications": "length: 94 cm\nweight: 4.7 kg\npower source: ADS EndoCryo-Pack (field-rechargeable)\neffective range: 15–180 m\nbeam duration: Sustained (0.5–3 second variable burst)\njoint lock onset: 1.8–2.5 seconds sustained exposure\nrecovery time target: 12–40 minutes without medical intervention\noptics: Integrated biometric targeting overlay with joint-cavity highlighting",
+  "tactical_use": "The ESDR-1 is used predominantly in hostage rescue and high-value capture operations where lethal force is contraindicated. Operators target the knees, elbows, or shoulders of armed subjects to instantly remove their ability to aim or move without requiring lethal engagement. Military units employ it as a 'peel' weapon — stripping a target's mobility before a close-assault team moves in. The integrated biometric overlay highlights joint cavities through light clothing and low-visibility conditions, allowing operators to place shots accurately at distance. At maximum burst duration, the weapon can lock multiple joints on a single target, rendering them fully immobile.",
+  "cultural_context": "In Meridian 88's military culture, ESDR-1 operators are sometimes called 'sculptors' — a sardonic nod to the idea that they shape the battlefield by deciding who gets to move and who doesn't. The weapon's presence in an operation is read as a signal that command wants prisoners, not bodies. Among resistance cells and underground operators, encountering Lockjaw fire is deeply feared — not because of lethality, but because capture is considered a worse outcome than death in many of Meridian 88's interrogation contexts. There is a black-market trade in stolen ESDR-1 units, particularly among criminal organizations that run their own detention facilities.",
+  "known_users": [
+    "Arcturus Defense Solutions special capture units",
+    "Military hostage rescue teams",
+    "Corporate black-site detention specialists",
+    "Black-market acquisition broker 'Meridian Jane'",
+    "Paramilitary contractor squad 'The Sculptors'"
+  ],
+  "story_hooks": [
+    "A resistance cell has obtained a stolen ESDR-1 and is using it to capture corporate security personnel for interrogation — the party is hired to find out where the prisoners are being held and what information has been extracted.",
+    "An ESDR-1 was used in a high-profile kidnapping of a Zheng-Dao executive, suggesting military or corporate paramilitary involvement — but the serial number traces to a unit officially destroyed three years ago.",
+    "A black-market arms dealer is offering ESDR-1 units at a significant markup, and the party discovers the weapons are being sold with a hidden firmware backdoor that allows Arcturus to remotely activate the weapon's biometric overlay as a surveillance device.",
+    "A player character is hit by Lockjaw fire during an ambush and must complete a time-sensitive objective with severely limited mobility, knowing capture teams are closing in."
+  ],
+  "ammunition_type": [
+    "Arcturus High-Density Capacitor Cell ADS-HC9"
+  ],
+  "tags": [
+    "energy",
+    "weapon",
+    "war",
+    "death",
+    "ai",
+    "corporate",
+    "contract",
+    "surveillance",
+    "power",
+    "medical",
+    "pain",
+    "market",
+    "rain",
+    "cold",
+    "train",
+    "clothing",
+    "fire"
+  ]
+}

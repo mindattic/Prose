@@ -1,0 +1,62 @@
+{
+  "id": "019d6143a9047cbf8af24ec551375ff4",
+  "name": "Hexadrine",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Hex",
+    "Sixkick",
+    "Shelf Thunder"
+  ],
+  "category": "combat_stimulant",
+  "subcategory": "adrenal_booster",
+  "manufacturer": "Unnamed Shelf chemist collective (the Cascade Labs)",
+  "description": "Hexadrine is an unlicensed adrenal stack produced in rotating Shelf laboratory locations by a distributed chemist network known only as the Cascade Labs. It combines six stimulant compounds — epinephrine analog, amphetamine derivative, synthetic cortisol blocker, crude SNT-reactive catalyst, vasoconstrictor, and a nootropic fragment — in a formulation that varies batch to batch because standardization requires resources the Cascade Labs don't have. When it works, it is brutally effective. When it doesn't, it causes cardiac arrest.",
+  "method_of_use": "injection",
+  "effects": [
+    "Intense adrenal surge — stronger than corporate equivalents at peak",
+    "Significant strength and aggression increase",
+    "Pain suppression (variable by batch)",
+    "SNT-reactive catalyst causes augmentation interaction effects in chrome-heavy users",
+    "Cheap and accessible adrenal boost for unaugmented Shelf combatants"
+  ],
+  "side_effects": [
+    "Cardiac arrest risk — estimated 3-8% per dose depending on batch purity",
+    "Severe hypertension causing hemorrhagic stroke in predisposed users",
+    "Unpredictable batch variation makes dosing unreliable",
+    "SNT catalyst can cause dangerous overclock in users with neural augments",
+    "Violent comedown with aggression rebound",
+    "Contamination risk — heavy metal traces documented in multiple batches"
+  ],
+  "duration": "12-20 minutes",
+  "addiction_risk": "high",
+  "tier_availability": "Tier 1 only",
+  "legality": "illegal",
+  "street_price": "Φ 35 per dose",
+  "cultural_context": "Hexadrine is what you take when you cannot afford anything better and you need to survive the next twenty minutes. It is the chemical reality of inequality in M88 — the Shelf's answer to Dravecor, produced without quality control, sold without warning labels, and used by people who have run the math and decided a 5% chance of dying from the drug is better than a 90% chance of dying from whoever is coming through the door. The Cascade Labs are an open secret; MCPD raids them periodically but new labs open within days.",
+  "story_hooks": [
+    "A bad Hexadrine batch has killed seventeen people in a Shelf district over one week — someone is deliberately adulterating the supply, and the Cascade Labs want a runner to find out who before they lose their market entirely.",
+    "The SNT-reactive catalyst in Hexadrine is causing augmented users to experience involuntary chrome activation — someone with high-end military augments took a dose of Hex and went completely out of control, and now three people are dead.",
+    "A Tier 3 journalist is investigating the Cascade Labs for a story on Shelf pharmaceutical inequality — she has found something in the chemist collective's funding trail that suggests they are not as grassroots as they appear."
+  ],
+  "tags": [
+    "combatstimulant",
+    "adrenalbooster",
+    "pharmaceutical",
+    "combat",
+    "war",
+    "secret",
+    "augment",
+    "neural",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "control",
+    "pain",
+    "market",
+    "drug",
+    "stimulant",
+    "shelf",
+    "tier 1"
+  ]
+}

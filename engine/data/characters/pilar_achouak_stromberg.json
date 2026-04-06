@@ -1,0 +1,178 @@
+{
+  "id": "019d6143a69c7f3abe09dda3fb20dd5d",
+  "type": "character",
+  "name": "Pilar Achouak-Strömberg",
+  "aliases": [
+    "Pili",
+    "the Milk Cart"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Noodle cart vendor and unlicensed childcare provider",
+  "age": 31,
+  "status": "active",
+  "location": "The Narrows, Morgan's Ridge pedestrian strip — cart position at the corner of Gage Circuit and the lower Morgan overpass",
+  "description": "Pilar is of middling height and seemingly made of angles — sharp elbows, pointed chin, quick gesturing hands that are in constant motion whether they're cooking or talking or just existing. Their hair is kept in two braids that they tuck into a wide-brimmed thermal hat while working, the hat so old and worn it has achieved a kind of structural sentience. Their skin is a warm medium brown and they have color-changing hair — shifts between dark auburn and a deep teal depending on temperature — which they got years ago and now mainly use as a weather forecaster. Cold mornings read deep teal; the regulars check it before deciding whether to add broth.\n\nPilar has operated their cart on Morgan's Ridge for six years. The noodle setup is compact and professional — a heated two-burner system, four base broths rotating by season, and a laminated menu written in three languages including Tamazight which nobody has ordered in but they keep it because it was their grandmother's language and this is non-negotiable. The unlicensed childcare element evolved organically: shift workers in the Narrows needed somewhere for children between school let-out and evening shifts, and Pilar's cart became the default station. Now they run an informal afternoon program, four to seven children most days, doing homework near the cart while they cook. It violates three municipal codes. The local code inspector is a regular.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.9,
+      "id": 0.4,
+      "shadow": 0.2,
+      "mask": 0.5,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "A child in their care being hurt while under their watch",
+      "The city finally enforcing the codes and shutting down the informal daycare"
+    ],
+    "core_desires": [
+      "For the kids on the Ridge to have one more stable thing in their lives than they did",
+      "To eventually get a real fixed location — a shop, walls, a door that locks"
+    ],
+    "coping_mechanisms": [
+      "Cooking as meditation — the broth prep at 04:00 is sacred time",
+      "Deflects personal questions with food — offers something whenever they don't want to answer"
+    ],
+    "blind_spots": [
+      "Underestimates their own need for support — has built a system entirely dependent on them never having a bad day",
+      "Doesn't fully account for how much the kids have come to depend on them emotionally"
+    ],
+    "secret": "One of the regular children — a seven-year-old named Joris — has a home situation Pilar is fairly certain crosses into abuse. They have been watching and documenting for four months, building certainty before they act. They are terrified of acting wrong and making it worse. They are also terrified of not acting."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm and practical, mixes Meridian creole with Amazigh-inflected pet phrases mostly used with children and a flat, precise register they use when dealing with adults they don't fully trust. Food metaphors, always.",
+    "cadence": "Fast when busy — cart rhythm — slower and more deliberate when the children are around. Patient repetition without condescension.",
+    "verbal_tics": [
+      "'Yes, yes, yes' in quick succession when agreeing",
+      "'Come, eat first' as a response to almost any problem"
+    ],
+    "example_lines": [
+      "'You want the bone broth or the mushroom? Good. Sit. The mushroom takes two minutes more, you won't die.'",
+      "'I am not a licensed childcare provider. I am a noodle vendor whose customers happen to be small and do homework. These are different things.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Joris situation has reached a point where Pilar can't wait any longer — they need someone who knows how to navigate municipal child services without triggering the corponation-affiliated foster system, which they don't trust.",
+    "A corporate development proposal for the Morgan's Ridge pedestrian strip would eliminate the cart's corner position — and with it, the only stable afternoon space the neighborhood children have."
+  ],
+  "narrative_function": "Neighborhood fixture and moral center for the Narrows community. The childcare function makes them deeply embedded in local family networks — they know which families are in crisis before anyone else does. Local color and community information source.",
+  "augmentations": "Color-changing hair geneware (temperature reactive — auburn in warmth, teal in cold). Hearing aid in the left ear — not augmentation, just assistive, bought secondhand.",
+  "daily_life": "Cart sets up at 06:30 for the morning commuter rush, runs until 10:00, breaks midday, re-opens at 15:30 when school lets out and the childcare function begins, closes around 21:00. They do broth prep at home from 04:00-06:00.",
+  "affiliation": "Independent — unnamed noodle cart; informal affiliation with the Morgan's Ridge vendor strip collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -1,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community caretaker",
+      "legal gray zone",
+      "ritual practitioner",
+      "crisis observer",
+      "self-sacrificing"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The children's safety is not negotiable — everything else is negotiable",
+      "Never make a promise you can't keep to a child"
+    ],
+    "escalation_ladder": [
+      "Feed the problem — literally offer food and time",
+      "Direct, kind conversation",
+      "Strategic use of the vendor collective's community standing",
+      "Go to the code inspector — leverage the informal relationship formally"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open and professional — efficient warmth, reads intent quickly, doesn't let their guard down on personal matters until much later",
+      "friends": "Deeply nurturing, sometimes to the point of motherhenning, remembers every preference and brings it up without prompting"
+    },
+    "stress_responses": {
+      "low": "Cooks something complicated — the broth gets more elaborate",
+      "medium": "Gets very quiet and task-focused, speaks only to the children",
+      "high": "Breaks down privately, recovers quickly, tells no one — then makes the decision they've been sitting on"
+    },
+    "contradictions": [
+      "Fiercely advocates that people should ask for help, never asks for it themselves"
+    ],
+    "habits": [
+      "Pours a small cup of broth into the storm grate at Morgan's corner every morning — an offering to whatever E.L.F. lives in the Narrows pipes",
+      "Knows every child's allergy and food preference from memory, refuses to write them down as a point of pride"
+    ],
+    "breaking_points": [
+      "A child being hurt by something they could have prevented if they had acted sooner"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Secondhand hearing aid — left ear, analogue amplification, no network connectivity",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Secondhand hearing aid — left ear, analogue amplification, no network connectivity",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Provider": 0.9,
+    "Generous Fool": 0.9,
+    "Hustler": 0.7,
+    "People Pleaser": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

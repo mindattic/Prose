@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5797fc4b0c8548554d93fc2",
+  "name": "Judge",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Weighs actions and delivers moral verdicts",
+  "behavioral_signature": "Evaluates others against a clear internal standard",
+  "under_stress": "Becomes harsher, less forgiving",
+  "at_rest": "Observes, assesses, categorizes",
+  "will_always": [
+    "render judgment"
+  ],
+  "will_never": [
+    "withhold an opinion on right and wrong"
+  ],
+  "unless": [
+    "they stand accused themselves"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Moral Compass",
+      "threshold": 0.75,
+      "context": "moral authority"
+    },
+    {
+      "archetype": "Self-Righteous",
+      "threshold": 0.7,
+      "context": "moral certainty"
+    }
+  ],
+  "opposite_of": [
+    "Forgiver"
+  ],
+  "tags": [
+    "authority",
+    "judgment"
+  ]
+}

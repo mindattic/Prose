@@ -1,0 +1,53 @@
+{
+  "id": "019d6143a8ae7356985befd89d43f9c2",
+  "name": "Photosynthetic Dermal Integration",
+  "brand_name": "Photosynthetic",
+  "product_name": "Photosynthetic Dermal Integration",
+  "type": "geneware",
+  "aliases": [
+    "Plant Skin",
+    "Chlorophyll Mod",
+    "Sun Eater"
+  ],
+  "category": "agricultural/industrial",
+  "target_system": "integumentary/metabolic (photosynthetic cellular integration)",
+  "description": "Introduces chloroplast-containing cells from Elysia chlorotica (the solar-powered sea slug that steals chloroplasts from algae) into the skin, creating photosynthetic patches that convert sunlight into supplementary metabolic energy. The patches are visible — green-tinted skin areas, usually on the shoulders, upper back, and forearms where sun exposure is greatest. In direct sunlight, the patches provide roughly 5–10% of the user's daily caloric needs. It's not enough to live on — it's a supplement, not a replacement for food. In the Shelf, where food insecurity is constant, even 5% fewer calories needed per day can be the difference between eating twice and eating once. Gravemoss Biofoundry markets it as a food-security modification for Tier 1 populations. Critics call it a band-aid on systemic poverty. Users call it one less meal to worry about.",
+  "source_organism": "Elysia chlorotica (eastern emerald sea slug), Vaucheria litorea (yellow-green alga, chloroplast donor)",
+  "manufacturer": "Gravemoss Biofoundry",
+  "tier_availability": "Tier 1+ (deliberately priced for accessibility)",
+  "legality": "Unrestricted",
+  "procedure": "Dermal injection matrix with chloroplast cell integration, single session",
+  "expression_time": "4–6 weeks; photosynthetic efficiency improves over 6 months",
+  "reversibility": "Reversible with chloroplast ablation; green tint fades over 2–3 months",
+  "side_effects": [
+    "Skin turns visibly green in photosynthetic areas",
+    "Requires significant sun exposure to function — useless in the Shelf's underlevels",
+    "Sunburn risk increases in treated areas",
+    "Itching during active photosynthesis in direct sun",
+    "Nutritional deficiency if user reduces food intake too much based on photosynthetic supplementation"
+  ],
+  "social_perception": "A poverty marker. Green-tinged skin says 'I can't afford to eat.' Higher tiers view it with pity or contempt. Among Tier 1 residents, it's a practical survival tool with no shame attached. Some wearers cultivate elaborate green patterns as defiant fashion.",
+  "story_hooks": [
+    "A Plant Skin user discovers their photosynthetic patches are producing more energy than the modification should allow — the chloroplasts are evolving, and Gravemoss Biofoundry is very interested in studying them",
+    "A community of Plant Skin users in the Shelf's upper levels has organized their living space around sun exposure, creating a rooftop greenhouse culture — until a corporate developer buys the building and plans to add overhead floors that will block the sun"
+  ],
+  "tags": [
+    "agriculturalindustrial",
+    "geneware",
+    "war",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "power",
+    "poverty",
+    "rooftop",
+    "market",
+    "survival",
+    "food",
+    "fashion",
+    "energy",
+    "shelf",
+    "tier 1"
+  ]
+}

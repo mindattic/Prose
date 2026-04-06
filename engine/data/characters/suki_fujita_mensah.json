@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a6df7b91a4ba4c0fd06b353a",
+  "type": "character",
+  "name": "Suki Fujita-Mensah",
+  "aliases": [
+    "Forge",
+    "The Problem"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Covert entry and social penetration specialist — infiltrator",
+  "age": 37,
+  "status": "active",
+  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling",
+  "description": "Suki Fujita-Mensah is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 37, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a infiltrator out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nSuki Fujita-Mensah is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.3,
+      "id": 0.81,
+      "shadow": 0.79,
+      "mask": 0.41,
+      "ghost": 0.42
+    },
+    "core_fears": [
+      "Their past catching up — debts, enemies, broken promises",
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Being identified by corporate facial recognition — living off-grid is survival"
+    ],
+    "core_desires": [
+      "To build something that outlasts the next contract cycle",
+      "To prove everyone who dismissed them catastrophically wrong",
+      "To protect the people in their district who can't protect themselves"
+    ],
+    "coping_mechanisms": [
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Planning — responds to chaos by making detailed contingency plans for everything",
+      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive"
+    ],
+    "blind_spots": [
+      "Cannot distinguish between caution and cowardice in themselves or others",
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
+      "Assumes their skill set is more transferable than it actually is"
+    ],
+    "secret": "Suki Fujita-Mensah maintains a second identity — a completely clean civilian persona with a lease, a job history, and a social profile. It's their exit strategy."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+    "cadence": "Conversational and disarming — sounds like a neighbor until the content registers.",
+    "verbal_tics": [
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks",
+      "Repeats the last thing someone said back to them before responding — processing or intimidation"
+    ],
+    "example_lines": [
+      "\"The best disguise is being exactly who they expect to see.\"",
+      "\"I was in the building for six hours before anyone realized I didn't work there.\"",
+      "\"Security is a story people tell themselves. I'm the plot twist.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Suki Fujita-Mensah discovers a job they completed last year was a setup for something much larger and much worse",
+    "A former associate resurfaces with evidence that could destroy Suki Fujita-Mensah's reputation — and a price for silence",
+    "Suki Fujita-Mensah intercepts intelligence about a threat to their district and must decide between profit and protection"
+  ],
+  "narrative_function": "As a infiltrator, Suki Fujita-Mensah embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes. Internal drug synthesizer — produces combat stims and medical compounds on demand",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+  "affiliation": "Semi-independent — has standing arrangements with several crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 10
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 9
+      },
+      "reflexes": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 5
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 5
+      },
+      "perception": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 5
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 9
+      },
+      "intimidation": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 7
+      },
+      "deception": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 4
+      },
+      "empathy": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 7
+      }
+    },
+    "personality": {
+      "aggression": 0.5,
+      "caution": 0.52,
+      "loyalty": 0.17,
+      "greed": 0.65,
+      "empathy": 0.28
+    },
+    "drives": [
+      "loyalty",
+      "protection",
+      "reputation"
+    ],
+    "thresholds": {
+      "pain": 4,
+      "stress": 8,
+      "loyalty_break": 9
+    },
+    "strengths": [
+      "social chameleon — adapts to any environment",
+      "pain tolerance beyond normal limits",
+      "encyclopedic knowledge of Meridian 88 infrastructure"
+    ],
+    "weaknesses": [
+      "old injury that flares under specific conditions",
+      "overconfidence in specialty areas leading to blind spots",
+      "inability to delegate — must control everything personally"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "infiltrator",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Never discusses active contracts with anyone not directly involved",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Presents as emotionless professional but is deeply affected by collateral damage",
+      "Values loyalty intensely but has betrayed someone in the past to survive"
+    ],
+    "habits": [
+      "Practices a kata or fighting form every morning regardless of circumstances",
+      "Never drinks anything they didn't see poured or open themselves",
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle"
+    ],
+    "breaking_points": [
+      "Being forced to choose between a crew member and the mission — and choosing wrong",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Losing their primary augmentation — the one that defines their professional identity"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Hydraulic joints in knees and elbows",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+      "replaces": ""
+    },
+    {
+      "name": "Internal drug synthesizer",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Internal drug synthesizer — produces combat stims and medical compounds on demand",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Social Chameleon": 0.9,
+    "Charmer": 0.9,
+    "Ghost": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

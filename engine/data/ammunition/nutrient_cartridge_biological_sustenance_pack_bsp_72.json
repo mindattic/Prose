@@ -1,0 +1,48 @@
+{
+  "id": "019d6143a55974419b40d5a8cd9ab906",
+  "name": "Nutrient Cartridge Biological Sustenance Pack BSP-72",
+  "type": "ammunition",
+  "aliases": [
+    "Nutrient cart",
+    "BSP-72",
+    "Bug food",
+    "Feeder pack"
+  ],
+  "category": "exotic",
+  "caliber": "72-hour nutrient cycle",
+  "description": "The BSP-72 is a specialized nutrient cartridge that sustains the biological components of bio-hybrid weapon systems — platforms that use engineered organisms as active weapon elements rather than purely electromechanical systems. The cartridge contains a precisely formulated nutrient medium that feeds the weapon's biological components for approximately 72 hours of standby or 8 hours of active combat use.\n\nBio-hybrid weapons represent the frontier of Meridian 88's weapons technology, incorporating engineered bioluminescent organisms, electroactive bacterial colonies, and other biological systems that provide capabilities impossible to achieve through purely mechanical means. These biological components require ongoing sustenance — without nutrient input, the organisms die and the weapon becomes inert. The BSP-72 provides this sustenance in a sealed, field-replaceable cartridge format that insulates the operator from direct contact with the biological components.\n\nThe nutrient formulation is weapon-specific, which creates a logistics challenge for operators who run bio-hybrid platforms. A BSP-72 for the BAD-2 'Choral' contains cephalopod-derived growth medium, while a BSP-72 for a bioelectric cell weapon contains bacterial nutrient broth. Using the wrong formulation starves the biological component and may introduce contamination that permanently damages the weapon. The cartridges are color-coded by formulation and carry expiration dates that must be respected — expired nutrient medium not only fails to sustain the biological components but may actively poison them.",
+  "manufacturer": "Various (weapon-specific formulations from original manufacturers)",
+  "tier_availability": "Tier 3+ (available only through weapon manufacturer supply chains)",
+  "legality": "Licensed — classified as biological research material",
+  "specifications": "volume: 80mL nutrient medium per cartridge\nsustenance_duration: 72 hours standby / 8 hours active use\nshelf_life: 6 months refrigerated, 2 months ambient\nstorage: 2-8C recommended, 0-25C acceptable\nformulation: Weapon-specific, not interchangeable\nbiohazard_class: BSL-1 (contained, minimal risk)",
+  "compatible_weapons": [
+    "Bioluminescent Acoustic Disruptor BAD-2 'Choral'",
+    "Catalytic Spore Dispersal Drone CSDD-3 'Mulch'"
+  ],
+  "variants": [
+    "BSP-72 Standard (72-hour sustenance cycle)",
+    "BSP-72 Extended (144-hour cycle, double volume, extended operations)",
+    "BSP-72 Combat (8-hour cycle optimized for maximum biological output, rapid nutrient depletion)",
+    "BSP-72 Dormant (minimal nutrient, keeps biological components alive but inactive, 30-day duration, for long-term storage)"
+  ],
+  "cultural_context": "The BSP-72 represents the strange intersection of biotechnology and weapons logistics in Meridian 88. Operators who run bio-hybrid weapons must maintain their equipment the way one maintains a living thing — feeding it on schedule, keeping it within temperature tolerance, and replacing nutrient cartridges before they expire. This creates a fundamentally different relationship between operator and weapon than conventional hardware. Among operators, bio-hybrid weapons users are sometimes called 'pet owners,' a term that carries both mockery and grudging respect, because the weapons they maintain are often capable of things that conventional hardware cannot replicate.",
+  "story_hooks": [
+    "A bio-hybrid weapon has been found abandoned with an expired BSP-72 cartridge — the biological component is dying but not dead, and a xenobiologist has determined it is an engineered organism not matching any known weapon system's specifications.",
+    "Someone is poisoning BSP-72 cartridges in the supply chain, introducing a contaminant that causes the biological components to mutate rather than die — the affected weapons are developing capabilities their operators didn't ask for and can't control."
+  ],
+  "tags": [
+    "exotic",
+    "ammunition",
+    "combat",
+    "weapon",
+    "war",
+    "ai",
+    "elf",
+    "control",
+    "food",
+    "poison",
+    "drone",
+    "shelf",
+    "tier 3"
+  ]
+}

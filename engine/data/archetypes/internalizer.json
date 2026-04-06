@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a57870acadbf204189ccfd24",
+  "name": "Internalizer",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Absorbs everything, expresses nothing",
+  "behavioral_signature": "Takes blame, pain, and grief inward",
+  "under_stress": "Implosion instead of explosion",
+  "at_rest": "Quiet, contained, slowly breaking",
+  "will_always": [
+    "take it inward"
+  ],
+  "will_never": [
+    "burden others with their feelings"
+  ],
+  "unless": [
+    "internalizing is causing physical illness"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Stoic",
+      "threshold": 0.8,
+      "context": "suppression"
+    },
+    {
+      "archetype": "Pressure Cooker",
+      "threshold": 0.85,
+      "context": "containment"
+    }
+  ],
+  "opposite_of": [
+    "Projector",
+    "Volatile"
+  ],
+  "tags": [
+    "hidden",
+    "suffering"
+  ]
+}

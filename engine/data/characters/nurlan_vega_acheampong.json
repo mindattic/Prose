@@ -1,0 +1,272 @@
+{
+  "id": "019d6143a671733f8849f322b0836714",
+  "type": "character",
+  "name": "Nurlan Vega-Acheampong",
+  "aliases": [
+    "Blight",
+    "The Problem"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Freelance combat specialist — street samurai",
+  "age": 33,
+  "status": "active",
+  "location": "Kessler Row — arms dealers and augmentation clinics",
+  "description": "Nurlan Vega-Acheampong is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 33, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a street samurai out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Nurlan Vega-Acheampong describe her as a precision instrument — point her at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.78,
+      "ideal": 0.11,
+      "id": 0.49,
+      "shadow": 0.67,
+      "mask": 0.15,
+      "ghost": 0.28
+    },
+    "core_fears": [
+      "The quiet — silence means something is about to go very wrong",
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Being replaced — younger, faster, cheaper runners coming up behind them"
+    ],
+    "core_desires": [
+      "To matter to someone for who they are, not what they can do",
+      "Knowledge — to understand the systems that grind people down",
+      "A crew worth trusting — people who stay when the shooting starts"
+    ],
+    "coping_mechanisms": [
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Overwork — takes every contract offered because idleness invites thinking",
+      "Connection — finds someone to talk to, even if it's a bartender or a cat"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Trusts technology more than people — machines don't betray",
+      "Cannot distinguish between caution and cowardice in themselves or others"
+    ],
+    "secret": "Nurlan Vega-Acheampong is slowly going chrome-sick — rejection symptoms are manageable now but getting worse. Has maybe two years before it becomes visible."
+  },
+  "speech_patterns": {
+    "vocabulary": "Shelf street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
+    "cadence": "Conversational and disarming — sounds like a neighbor until the content registers.",
+    "verbal_tics": [
+      "Uses technical jargon for everything, including emotions",
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
+    ],
+    "example_lines": [
+      "\"I don't get paid to have opinions about the target. I get paid to make them stop moving.\"",
+      "\"Chrome doesn't make you faster. Training makes you faster. Chrome just means you survive learning.\"",
+      "\"You want philosophy, hire a professor. You want someone dead by morning, hire me.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Nurlan Vega-Acheampong discovers a job they completed last year was a setup for something much larger and much worse",
+    "A former associate resurfaces with evidence that could destroy Nurlan Vega-Acheampong's reputation — and a price for silence",
+    "Nurlan Vega-Acheampong intercepts intelligence about a threat to their district and must decide between profit and protection"
+  ],
+  "narrative_function": "Nurlan Vega-Acheampong is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
+  "augmentations": "Dermal camouflage — chromatic skin pigment cells, limited active camouflage. Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Independent — loose crew affiliations",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 5
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 7
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 6
+      },
+      "perception": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 9
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 4
+      },
+      "technical": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 4
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 6
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 8
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 8
+      },
+      "empathy": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 6
+      }
+    },
+    "personality": {
+      "aggression": 0.94,
+      "caution": 0.41,
+      "loyalty": 0.54,
+      "greed": 0.58,
+      "empathy": 0.85
+    },
+    "drives": [
+      "knowledge",
+      "loyalty",
+      "power"
+    ],
+    "thresholds": {
+      "pain": 4,
+      "stress": 5,
+      "loyalty_break": 6
+    },
+    "strengths": [
+      "social chameleon — adapts to any environment",
+      "pain tolerance beyond normal limits",
+      "natural leadership presence"
+    ],
+    "weaknesses": [
+      "old injury that flares under specific conditions",
+      "inability to delegate — must control everything personally"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "street samurai",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Always verifies target identity independently before lethal contracts"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Advocates caution to others but takes insane risks personally — double standard they can't see",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined",
+      "Values loyalty intensely but has betrayed someone in the past to survive"
+    ],
+    "habits": [
+      "Maintains a dead drop with emergency supplies in three separate districts",
+      "Never drinks anything they didn't see poured or open themselves",
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Practices a kata or fighting form every morning regardless of circumstances"
+    ],
+    "breaking_points": [
+      "Losing their primary augmentation — the one that defines their professional identity",
+      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Dermal camouflage",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Dermal camouflage — chromatic skin pigment cells, limited active camouflage",
+      "replaces": ""
+    },
+    {
+      "name": "Cybernetic eyes with thermal overlay and low-light enhancement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Protector": 0.9,
+    "Duelist": 0.9,
+    "Code Keeper": 0.9,
+    "Stoic": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

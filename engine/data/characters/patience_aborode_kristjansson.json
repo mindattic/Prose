@@ -1,0 +1,243 @@
+{
+  "id": "019d6143a6927866b0645775a841a5f4",
+  "type": "character",
+  "name": "Patience Aborode-Kristjánsson",
+  "aliases": [
+    "Pati",
+    "the Sociologist"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Sociologist studying social stratification and community formation in the Shelf zones",
+  "age": 52,
+  "status": "active",
+  "location": "Primarily field-based in Auburn Grist and Chatham Flats; maintains a desk at the University Spine's Institute for Urban Social Research in the Meridian Core",
+  "description": "Patience Aborode-Kristjánsson looks like someone who has been places and come back changed by them in ways she wears openly. She is a large, broad-shouldered woman with deep black skin and grey natural hair cut close, with reading lines around her eyes and a scar along her left jawline from an incident in the Shelf she does not discuss. Her Yoruba-Icelandic heritage is everywhere in her face — the strong jaw, the wide forehead, the surprising pale hazel of her eyes, which are the thing people remember. She wears functional clothes that can survive a twelve-hour fieldwork day and carries a physical notebook alongside her data equipment, which her graduate students treat as an affectation and which she defends loudly and regularly.\n\nShe has spent the last two decades embedded in the lower-tier communities of Meridian 88's peripheral zones — Shelf communities, reclamation zones, the edges of the city that corponation sociology tends to treat as problems to model rather than people to know. Her work has produced four books that have made her genuinely influential in academic circles and genuinely respected in the communities she studies, a combination that is rarer than it should be. She is direct, large in presence, quick to laugh and quicker to call out what she considers intellectual dishonesty. She is also, under the professional armor, a person who has seen a great deal of suffering and carried it without adequate resources for processing it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.6,
+      "mask": 0.4,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "That her presence in communities, however careful, ultimately extracts more than it gives",
+      "Losing the clarity of purpose that has structured her adult life"
+    ],
+    "core_desires": [
+      "For her research to produce real change in resource allocation and policy — not just academic impact",
+      "To be genuinely trusted by the communities she works with, not just tolerated"
+    ],
+    "coping_mechanisms": [
+      "Physical presence in community as both work and emotional grounding",
+      "Controlled anger as motivation — she is rarely not angry, just channeling it"
+    ],
+    "blind_spots": [
+      "Sometimes so focused on structural analysis that she underweights individual agency and choice in her interpretations",
+      "Has difficulty accepting that some community members don't want an academic ally, just want to be left alone"
+    ],
+    "secret": "She has been approached by Tessera's social analytics division, who want to license her community trust network data to improve their 'community engagement' targeting. She has refused. But in refusing, she realized her data exists and could be subpoenaed or stolen — and that she has never told the communities she works with how thoroughly she has documented them. She is trying to figure out how to tell them without destroying twenty years of trust."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain language by default, with sudden precise academic formulation when she's making an argument she wants to stick; uses Yoruba phrases occasionally, naturally, without translation",
+    "cadence": "Deliberate and spacious; she lets silence sit after statements because she means them and isn't worried about filling the air",
+    "verbal_tics": [
+      "'Let me be clear about what I'm saying'",
+      "A specific short exhale before she disagrees with someone",
+      "Addressing people by name frequently in conversation"
+    ],
+    "example_lines": [
+      "'You want to know what the Shelf is? The Shelf is what the city decided to let happen to people it decided were acceptable losses. That's not metaphor. That's policy.'",
+      "'I don't do advocacy as a researcher. I do documentation. Those communities have their own advocates. What I do is make sure no one can claim they didn't know.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Her twenty years of Auburn Grist documentation has made her a target — someone wants that data, and they are not subtle about it",
+    "A new corponation urban redevelopment initiative in Chatham Flats uses language and metrics directly from her published work, repurposed in ways that will displace the communities she documented",
+    "A community elder she has worked with for fifteen years has asked her to help document and preserve their oral history before a planned demolition — off the record and outside her institutional role"
+  ],
+  "narrative_function": "Deep community knowledge source; introduction to Shelf communities for outsiders; potential advocate or complication when academic and community interests diverge; her research could be evidence for or against any number of political claims about the lower city",
+  "augmentations": "Subdermal audio recorder (passive, research tool, requires consent activation); color-changing hair pigment (she leaves it grey — the mod was installed at her community's insistence as a safety tool during fieldwork and she never uses the color function); no other modifications",
+  "daily_life": "Several days per week in the field — attending community meetings, conducting interviews, sitting in spaces and observing with the kind of attention that is its own form of respect. Administrative days at the university involve a great deal of arguing with the ethics board about fieldwork protocols she finds paternalistic, and mentoring graduate students she takes seriously.",
+  "affiliation": "University Spine — Institute for Urban Social Research (tenured, Tier 3 salary); board member of the Auburn Grist Community Advocacy Coalition in a personal capacity",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 8,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 4,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community embedded",
+      "tenured dissident",
+      "institutional friction",
+      "field-hardened",
+      "ethically compromised by her own standards"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Community interests before institutional interests, always",
+      "Document everything — the record matters",
+      "Don't publish anything that puts identifiable people at risk"
+    ],
+    "escalation_ladder": [
+      "Direct conversation, no performance of diplomacy she doesn't feel",
+      "Formal institutional challenge with documented evidence",
+      "Public advocacy — she has a platform and will use it",
+      "Burning the professional bridge if necessary — she has done it before"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm but assessing — she is taking in who you are and where you fit; she is not unkind but she is not naive",
+      "friends": "Fiercely loyal; the kind of person who shows up physically when things go wrong; holds grudges on behalf of people she cares about"
+    },
+    "stress_responses": {
+      "low": "Becomes more structured and methodical, more lists and protocols",
+      "medium": "Goes quiet in the wrong places and sharp in the wrong moments; catches herself",
+      "high": "Controlled fury — very clear, very direct, radiates dangerous stillness"
+    },
+    "contradictions": [
+      "Critiques extraction as a mode of research while sitting on twenty years of detailed community data that has never been shown to the people it documents",
+      "Insists she is not an advocate but has built community relationships that make neutrality structurally impossible"
+    ],
+    "habits": [
+      "Physical notebook — writes longhand, says it slows her down enough to think",
+      "Attends community E.L.F. prayer sessions in Auburn Grist as a participant, not an observer, even in her fieldwork notes",
+      "Sits with her back to the wall in any public space"
+    ],
+    "breaking_points": [
+      "Watching her documented findings be used to justify the opposite of their intent",
+      "A community member being harmed as a direct or indirect result of her research"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in a Yoruba-Icelandic household in the Calumet Rise district",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed doctoral research on Auburn Grist social stratification; embedded fieldwork began",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Published first major book; gained academic profile; community trust significantly pre-dated the book",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Jaw scar incident in the Shelf — she does not discuss the specifics",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Tessera approach and refusal; began grappling with data sovereignty problem",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Chatham Flats redevelopment initiative language flagged as derivative of her published framework",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Models.Canon;
 
@@ -7,8 +8,9 @@ namespace StreetSamurai.Core.Models.Canon;
 /// Equipment, gear, augmentations, implants, and devices in the Meridian 88 world.
 /// Distinct from weaponry — covers tools, augments, armor, and utility gear.
 /// </summary>
-public class EquipmentData
+public class EquipmentData : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("brand_name")] public string BrandName { get; set; } = "";
     [JsonPropertyName("product_name")] public string ProductName { get; set; } = "";

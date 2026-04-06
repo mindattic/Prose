@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a8807d5db220c023b58a15b0",
+  "name": "Vespid Dynamics Toxic Environment Navigation Drone TEND-3",
+  "brand_name": "Vespid",
+  "product_name": "Vespid Dynamics Toxic Environment Navigation Drone TEND-3",
+  "type": "equipment",
+  "aliases": [
+    "TEND-3",
+    "Hazard Scout",
+    "Poison Mapper",
+    "Safe Path"
+  ],
+  "category": "drones",
+  "description": "A ruggedized drone designed to navigate chemically, biologically, or radiologically contaminated environments and map safe passage routes for human operators. The TEND-3 carries a comprehensive CBRN sensor suite and projects its findings as a real-time 3D contamination map, highlighting lethal zones, marginal areas, and safe corridors. The drone can operate in environments that would kill an unprotected human — toxic gas concentrations, high radiation fields, and biological contamination zones — and its sealed construction prevents it from becoming a contamination vector on return. It has become essential equipment for operations in Meridian 88's legacy contamination zones.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted — safety equipment",
+  "base_technologies": [],
+  "specifications": {
+    "sensors": "Chemical",
+    "info": "biological; radiation; particulate",
+    "mapping": "Real-time 3D contamination model",
+    "environmental tolerance": "Chemical/biological/radiation environments",
+    "sealed construction": "Prevents cross-contamination",
+    "flight time": "45 minutes",
+    "operating range": "500 meters from controller",
+    "weight": "1.5 kg",
+    "decontamination": "UV + chemical wash protocol between missions"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A TEND-3 mapping a legacy contamination zone discovered a pocket of breathable air deep inside a toxic area — inside the pocket was a functioning habitat where someone has been living in the middle of a wasteland.",
+    "A TEND-3 sent into a suspected chemical attack site returned data showing a contaminant that does not match any known industrial or military compound — it is something new, and it is spreading."
+  ],
+  "tags": [
+    "drones",
+    "equipment",
+    "ai",
+    "poison",
+    "drone",
+    "tier 2"
+  ]
+}

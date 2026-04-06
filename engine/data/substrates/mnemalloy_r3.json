@@ -1,0 +1,55 @@
+{
+  "id": "019d6143a9dd7dac8961082d536e77a7",
+  "name": "Mnemalloy-R3",
+  "brand_name": "Mnemalloy",
+  "product_name": "Mnemalloy-R3",
+  "type": "substrate",
+  "aliases": [
+    "Mnemo",
+    "R3 wire",
+    "return metal"
+  ],
+  "category": "smart_material",
+  "description": "A nickel-titanium-vanadium shape-memory alloy manufactured by Crucible Industries using nano-grain alignment processes that allow up to 47 discrete 'remembered' configurations to be encoded at the quantum lattice level. When exposed to a specific thermal or electrical trigger, the alloy returns with near-perfect fidelity to its programmed form, tolerating millions of cycles without fatigue degradation. Used everywhere from surgical actuators to deployable architecture.",
+  "properties": [
+    "shape_memory",
+    "high_fatigue_resistance",
+    "moderate_tensile_strength",
+    "corrosion_resistant",
+    "electrically_triggerable",
+    "thermally_triggerable",
+    "biocompatible_grade_available"
+  ],
+  "developers": [
+    "Crucible Industries",
+    "Apex Nanofabrication"
+  ],
+  "applications": [
+    "deployable structural frames",
+    "self-reconfiguring medical implants",
+    "adaptive weapon components",
+    "collapsible habitat ribs",
+    "actuator wire in prosthetics"
+  ],
+  "tier_availability": "Tier 2-3",
+  "cost": "Φ 340 per kg",
+  "story_hooks": [
+    "A salvager finds coils of Mnemalloy-R3 with an unknown encoded configuration — heating it reveals the shape of something that shouldn't exist.",
+    "A prosthetic limb begins reverting to an old programmed shape at random, suggesting someone has remotely triggered an override signal.",
+    "Mnemalloy-R3 components in a collapsed building are being triggered by fire — the structure is slowly, terrifyingly reassembling itself around survivors."
+  ],
+  "tags": [
+    "smartmaterial",
+    "substrate",
+    "weapon",
+    "memory",
+    "prosthetic",
+    "ai",
+    "elf",
+    "medical",
+    "rain",
+    "fire",
+    "tier 2",
+    "tier 3"
+  ]
+}

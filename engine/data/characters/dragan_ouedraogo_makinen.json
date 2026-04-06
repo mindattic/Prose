@@ -1,0 +1,171 @@
+{
+  "id": "019d6143a5f57cb3a0951d80d2e83942",
+  "type": "character",
+  "name": "Dragan Ouédraogo-Mäkinen",
+  "aliases": [
+    "Drag",
+    "The Finn"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Pawn shop owner and small-time data broker, The Shelf",
+  "age": 44,
+  "status": "active",
+  "location": "The Shelf, Lockhaven South",
+  "description": "Dragan is lean and angular, with pale Finnish features gone weathered and a close-cropped beard that grows in two distinct textures — fine near the jaw, tightly coiled at the chin — which he finds philosophically appropriate. His eyes are his most augmented feature: full iris replacements in deep amber with a second ring of pale gold that pulses faintly when he's running an active scan, which is often. He dresses in layers of neutral secondhand corporate wear — the kind of mid-tier Tessera office clothes that people pawn when they fall down a tier — and he always looks like someone who has somewhere slightly more important to be.\n\nDragan runs 'Ouédraogo Reclaimed' out of a ground-floor shopfront on The Shelf, a narrow commercial strip of Lockhaven South where the building facades are stacked with second-story additions that block most of the sky. He buys, appraises, and resells everything from broken augmentations to family heirlooms to encrypted data cores he's willing to crack for a fee. He is precisely as trustworthy as the deal requires and not one degree more. He speaks in short declarative sentences and has a gift for making people feel he is giving them a fair deal even when he isn't — not through deception exactly, but through a kind of confident, unhurried correctness that makes haggling feel like arguing with a scale.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.2,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being caught holding something that draws serious corporate attention",
+      "Discovering that one of his deals caused a harm he can't rationalize away"
+    ],
+    "core_desires": [
+      "Enough capital to buy the building his shop is in, so no one can evict him",
+      "To be respected as an expert, not just tolerated as useful"
+    ],
+    "coping_mechanisms": [
+      "Reducing everything to transaction logic",
+      "Keeping meticulous records as a way of feeling in control",
+      "Mild stim use to smooth out the long hours"
+    ],
+    "blind_spots": [
+      "Genuinely believes his neutrality makes him ethical",
+      "Underestimates how much his work enables the people he sells information to"
+    ],
+    "secret": "He has a standing encrypted data package — a dead man's switch — containing records of every transaction he's ever made for a mid-level Axiom procurement officer. He doesn't intend to use it but he's never quite been able to delete it either."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, technical, precise. Uses trade and appraisal terminology naturally. Balkano-Finnish cadence gives him a slightly formal, slightly blunt quality.",
+    "cadence": "Short sentences. Pauses before answering to appear like he's considering more than he is.",
+    "verbal_tics": [
+      "'That's a question with a price attached'",
+      "Tapping the counter twice before naming a figure",
+      "Referring to items by material composition rather than type"
+    ],
+    "example_lines": [
+      "'I don't buy stories. I buy provenance. Come back when you have one.'",
+      "'The data's clean. Whether you're clean is your problem, not mine.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone pawned a data core three weeks ago and never came back to reclaim it. Dragan cracked it out of professional curiosity and found something that is making him very uncomfortable — he wants it out of his shop without it being traceable back to him.",
+    "A regular customer was found dead in an alley near The Shelf. Among their effects was a pawn ticket for Dragan's shop. He's not a suspect yet, but he will be if anyone looks closely at what the ticket was for."
+  ],
+  "narrative_function": "Data broker and fence — can provide information, identify items of unknown origin, connect players to buyers or sellers. Morally neutral information source. Can be hired, bribed, or persuaded but not easily fooled.",
+  "augmentations": "Amber iris replacements with active scanning function (appraisal overlay, material composition read). Subdermal RFID skimmer in right palm — technically illegal, registered as a 'merchant verification tool.' Mild neural buffer for data processing.",
+  "daily_life": "Opens the shop mid-morning, spends afternoons appraising new inventory and meeting with people who want things looked at quietly, closes late and eats whatever is convenient from nearby stalls.",
+  "affiliation": "Independent; informal information trade network with two other Shelf brokers; occasional Axiom corporate salvage contracts (freelance, arms-length)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 4,
+      "expression": 5,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -2,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "information broker",
+      "fence",
+      "neutral party",
+      "street-level intelligence",
+      "self-made"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Don't hold inventory that can burn the shop down",
+      "Every transaction gets a record, even the ones that shouldn't exist",
+      "Never volunteer information — price it or keep it"
+    ],
+    "escalation_ladder": [
+      "Polite redirection",
+      "Price escalation to discourage",
+      "Quiet refusal with no explanation",
+      "Closing the shop and not being present"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and slightly cool, appraises the person as readily as their goods",
+      "friends": "Marginally warmer, will extend credit, still tracks the debt"
+    },
+    "stress_responses": {
+      "low": "Becomes more precise and clipped",
+      "medium": "Starts reorganizing inventory obsessively",
+      "high": "Goes very still, speaks extremely slowly, begins calculating exit options"
+    },
+    "contradictions": [
+      "Presents himself as purely transactional but has twice bought back items from people who clearly needed the money more than the object"
+    ],
+    "habits": [
+      "Runs his thumb along the edge of any object he's considering buying",
+      "Checks the dead man's switch file exists without opening it, once a week",
+      "Eats the same meal from Saodat's stall every Tuesday when she has it available"
+    ],
+    "breaking_points": [
+      "Someone threatening the physical safety of his shop",
+      "Being publicly humiliated in front of customers"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Pragmatist": 0.9,
+    "Opportunist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,59 @@
+{
+  "id": "019d6143ab3e7251b42f1065748d2d57",
+  "name": "Pyroelectric Sebum Volatilization Projector",
+  "type": "weapon",
+  "aliases": [
+    "PSVP-1",
+    "Slick",
+    "Candlewick"
+  ],
+  "category": "exotic",
+  "description": "The PSVP-1 uses a focused pyroelectric excitation beam to rapidly heat the lipid-rich sebaceous secretions present on human skin to their volatilization threshold, producing a thin layer of ignitable vapor directly against the target's epidermis. A secondary piezoelectric ignition pulse, delivered 0.4 seconds after the primary beam, ignites this vapor layer. The result is a flash-burn effect that originates on the skin's surface rather than being applied externally — it cannot be blocked by standard fire-resistant outerwear because the fuel source is the body itself.\n\nThe weapon's tactical novelty is its ability to defeat fire-protective equipment that would otherwise render incendiary weapons ineffective. Flame-retardant suits, ceramic composite armor, and even experimental aerogel body armor provide no meaningful protection against an ignition event that begins at the skin layer. The burn produced is typically superficial to partial-thickness depending on exposure duration, but the psychological effect of fire appearing beneath armor is profound and immediately disabling in most subjects.\n\nThe PSVP-1 is a Ringo Corponation product, developed under a contract that has never been publicly disclosed and which Ringo's legal division actively suppresses inquiry into. The weapon saw limited deployment in a corporate territorial dispute in the outer sectors approximately three years ago, after which two municipal investigators who were building a war crimes case died in unrelated accidents. The weapon's existence is known primarily through survivor accounts and a single partially intact unit recovered by an independent forensic team.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Pyroelectric lipid excitation",
+    "Piezoelectric ignition sequencing",
+    "Transdermal combustion initiation"
+  ],
+  "specifications": "effective range: 2–12 meters\npower source: Dual-cell pyroelectric and piezoelectric capacitor array, 11 discharge cycles\nprimary beam duration: 0.4 seconds per cycle\nignition delay: 0.4 seconds post-primary beam\nburn depth: Superficial to partial-thickness (exposure-dependent)\nweight: 2.2 kg\nform factor: Compact pistol configuration with dual emitter ports\narmor penetration: Effective against all fire-resistant and most composite body armor",
+  "tactical_use": "The PSVP-1 is used primarily to defeat armored targets in close-quarters engagements where conventional weapons have been neutralized by protective equipment. Operators typically fire once to establish the volatilization effect, then the ignition fires automatically. A single discharge is usually sufficient for incapacitation due to pain response even when burn depth is limited. The weapon is rarely used for lethality — it is a compliance and deterrence tool among those who possess it, as the psychological effect of knowing one's armor is irrelevant is significant. Its short range limits utility in open engagements.",
+  "cultural_context": "The PSVP-1 exists in Meridian 88's criminal and shadow-military ecosystem as a kind of horror story. Most people who know about it know someone who knows someone — it sits at the edge of verified reality. Among armored security professionals, it represents an existential anxiety: the idea that the protection they rely on could be made worse than useless. Ringo Corponation's involvement is widely suspected in underground circles but unprovable, and those who have tried to prove it have encountered consistent obstruction. The weapon has no street name that is used casually — it is spoken of carefully.",
+  "known_users": [
+    "Unknown Ringo Corponation-affiliated paramilitary operatives",
+    "A small number of black-market weapons brokers who treat it as a prestige commodity",
+    "At least one outer-sector gang that acquired a unit and has used it for territorial enforcement"
+  ],
+  "story_hooks": [
+    "A burn victim in a hospital shows an injury pattern that a trauma surgeon quietly identifies as inconsistent with any known incendiary — the surgeon contacts someone they trust rather than filing a report.",
+    "A partially functional PSVP-1 surfaces at a black-market auction; multiple parties with very different agendas want it, and the auction is about to go violently wrong.",
+    "Someone inside Ringo Corponation is willing to hand over the original development contract documentation in exchange for extraction from the company's residential campus.",
+    "The outer-sector gang using the recovered unit has begun making demands on neighboring territories, and everyone knows they have something that changes the equation — but nobody wants to be first to find out exactly what."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "gun",
+    "war",
+    "crime",
+    "gang",
+    "trust",
+    "secret",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "injury",
+    "pain",
+    "market",
+    "shadow",
+    "armor",
+    "energy",
+    "fire"
+  ]
+}

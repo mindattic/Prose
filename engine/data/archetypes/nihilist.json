@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a5817ad4b34c42b0a0ed3ea4",
+  "name": "Nihilist",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Believes nothing matters and acts accordingly",
+  "behavioral_signature": "Treats all choices as equally meaningless",
+  "under_stress": "Becomes more reckless, careless",
+  "at_rest": "Detached, amused by others' convictions",
+  "will_always": [
+    "question the point of everything"
+  ],
+  "will_never": [
+    "invest in a cause sincerely"
+  ],
+  "unless": [
+    "someone they love gives them a reason to care"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Fatalist",
+      "threshold": 0.75,
+      "context": "hopelessness"
+    },
+    {
+      "archetype": "Cynic",
+      "threshold": 0.7,
+      "context": "disbelief"
+    }
+  ],
+  "opposite_of": [
+    "Idealist",
+    "Zealot"
+  ],
+  "tags": [
+    "meaningless",
+    "detached"
+  ]
+}

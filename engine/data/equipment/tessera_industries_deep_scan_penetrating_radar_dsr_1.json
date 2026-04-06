@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a876706a83300981823b8604",
+  "name": "Tessera Industries Deep Scan Penetrating Radar DSR-1",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Industries Deep Scan Penetrating Radar DSR-1",
+  "type": "equipment",
+  "aliases": [
+    "Deep Scan",
+    "DSR-1",
+    "Wall Looker",
+    "X-Ray Box"
+  ],
+  "category": "sensors",
+  "description": "A portable ground-penetrating and wall-penetrating radar system that creates detailed 3D maps of structures, underground spaces, and the contents of sealed containers. The DSR-1 emits ultra-wideband radar pulses that penetrate up to 10 meters through standard construction materials, 3 meters through reinforced concrete, and 20 meters through soil. The return signals are processed into a real-time 3D visualization displayed on the operator's neural interface or a tablet screen. The system can detect human-sized objects through walls, identify voids and hidden chambers in structures, and map underground tunnel networks from the surface.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — construction, engineering, and security",
+  "base_technologies": [],
+  "specifications": {
+    "penetration": "10m standard construction",
+    "info": "3m reinforced concrete; 20m soil",
+    "resolution": "5 cm at 3m depth",
+    "visualization": "Real-time 3D on neural interface or tablet",
+    "frequency": "Ultra-wideband 100 MHz - 6 GHz",
+    "scan rate": "10 frames per second",
+    "weight": "2.5 kg handheld unit",
+    "battery": "4-hour continuous scanning",
+    "form factor": "Handheld unit with directional antenna"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A DSR-1 scan of an unremarkable building revealed a hidden sub-basement that does not appear on any architectural plan — the space is occupied and powered, and its contents are shielded from deeper scanning.",
+    "Someone has been using a DSR-1 to map the location of wall safes in residential buildings from the exterior — a string of burglaries targets hidden safes that the victims believed were undetectable."
+  ],
+  "tags": [
+    "sensors",
+    "equipment",
+    "neural",
+    "ai",
+    "power",
+    "tunnel",
+    "tier 3"
+  ]
+}

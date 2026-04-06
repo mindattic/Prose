@@ -1,0 +1,189 @@
+{
+  "id": "019d6143a6a474b9bb2711443043d17c",
+  "type": "character",
+  "name": "Puck Nygaard",
+  "aliases": [
+    "Switchback Two",
+    "The Wall",
+    "Nygaard"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Route planner and backup courier — Switchback",
+  "age": 23,
+  "status": "active",
+  "location": "The Shelf — rents a room in a co-op housing block four buildings from Jinx's squat",
+  "description": "Puck Nygaard is the steady hand in a crew built on velocity. Where Jinx is instinct and adrenaline, Puck is preparation and endurance. He can't match Jinx's raw speed — nobody on the Shelf can — but he can run longer, plan better, and carry heavier packages without slowing down. He is the reason Switchback has a backup plan for every route, a dead drop on every block, and a reputation for reliability that extends beyond the Shelf.\n\nHe grew up three blocks from Jinx, in a co-op housing block held together by community labor and bureaucratic neglect. His mother was a Shelf seamstress who paid for his first augmentation — a basic reflex enhancer — by taking double shifts for eight months. He started running with Jinx at fifteen because the alternative was stacking crates in a warehouse for wages that wouldn't cover food. The running was better. The running was freedom. Seven years later, the freedom is starting to feel like a different kind of cage.\n\nPuck is tall for a courier — six-one, broad-shouldered, built more for endurance than acrobatics. He compensates with route knowledge that borders on encyclopedic. He knows every alley, every service tunnel, every timing gap in every surveillance grid on the Shelf and into Milwaukee Core. His face is open, honest, and perpetually a little worried — the face of someone who sees the problems that the enthusiastic people don't.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.35,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.25
+    },
+    "core_fears": [
+      "That Jinx will die on a run he planned — that the route will be the thing that kills her",
+      "That he's already past his peak and the body won't hold up for another two years of this",
+      "That leaving Switchback would be the smart decision and he'll make it and never forgive himself"
+    ],
+    "core_desires": [
+      "To see Jinx and Dash survive long enough to build a life that doesn't require running",
+      "To use what he knows — routes, logistics, infrastructure — to build something legitimate",
+      "To stop feeling guilty about wanting more than the Shelf can offer"
+    ],
+    "coping_mechanisms": [
+      "Plans obsessively — if every route is mapped and every contingency prepared, the illusion of control holds",
+      "Cooks for the crew because feeding people is the most tangible form of care he can offer",
+      "Reads history because other people's past is less frightening than his own future"
+    ],
+    "blind_spots": [
+      "His caution reads as doubt to Jinx and resentment to Dash, and he doesn't see how it's eroding trust",
+      "Thinks his pragmatism is wisdom when it's increasingly just fear",
+      "Cannot accept that some of his exhaustion is emotional, not physical"
+    ],
+    "secret": "He's been quietly saving money for two years. Not to leave — to buy the co-op housing block his mother lives in, so the residents can't be evicted. He is approximately 40% of the way there. Every dangerous run he takes is another deposit."
+  },
+  "speech_patterns": {
+    "vocabulary": "Thoughtful, grounded. Uses spatial language — routes, paths, distances. More articulate than people expect from a Shelf courier.",
+    "cadence": "Steady, measured. He talks the way he runs — consistent pace, no wasted energy. Gets quieter when he disagrees.",
+    "verbal_tics": [
+      "Says 'Look—' when he's about to deliver an uncomfortable truth",
+      "Refers to distances in block counts, not meters — Shelf habit",
+      "Pauses before answering questions, which people mistake for slowness rather than care"
+    ],
+    "example_lines": [
+      "Look — the route works on paper. Paper doesn't have patrol drones.",
+      "I run because she runs. When she stops, I stop. It's not complicated.",
+      "You can't build a future on something that needs you to never slow down."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Jinx Alvarado",
+      "type": "crewmate / best friend / co-founder",
+      "description": "They've been running together since fifteen. Puck's loyalty to Jinx is absolute, but it's no longer uncritical. He sees the recklessness she calls courage, and the exhaustion she won't acknowledge. He stays because leaving would break something in both of them.",
+      "emotional_core": "Love that has matured past admiration into worried responsibility",
+      "story_tension": "Puck wants to have the conversation about what comes next. Jinx cannot hear that conversation without interpreting it as betrayal."
+    },
+    {
+      "name": "Dash Okonkwo",
+      "type": "crewmate / youngest member",
+      "description": "Puck likes Dash and worries about Dash in equal measure. He supplements Jinx's route assignments by quietly feeding Dash the training runs that build real skill, not just courage.",
+      "emotional_core": "The older brother trying to give the younger one what he didn't have — time to learn safely",
+      "story_tension": "Dash sees Puck's caution as cowardice. The misread hurts more than Puck shows."
+    },
+    {
+      "name": "His mother (Else Nygaard)",
+      "type": "family / motivation",
+      "description": "Else works as a seamstress in the co-op block. She knows what Puck does for a living and worries silently. She made the financial sacrifice that gave him his first augmentation. He is trying to repay that debt by saving the building she lives in.",
+      "emotional_core": "Obligation, love, and the weight of being someone's investment",
+      "story_tension": "If Else knew the risks Puck takes to fund his savings, the knowledge would destroy her."
+    }
+  ],
+  "story_hooks": [
+    "The co-op block faces imminent sale to a developer — Puck's timeline collapses and he needs money fast",
+    "A route Puck planned goes catastrophically wrong and Dash is caught by corporate security",
+    "A legitimate logistics company offers Puck a management position — the exit he's been too guilty to pursue",
+    "Jinx discovers Puck's savings and misinterprets it as preparation to leave"
+  ],
+  "narrative_function": "Puck is the voice of pragmatism and growing doubt in Switchback. He loves Jinx, loves the crew, and is increasingly certain that the life will kill them. His stories explore the tension between loyalty and self-preservation, between the adrenaline of the run and the exhaustion that follows. He is the character who asks: what comes after this?",
+  "augmentations": "Basic reflex enhancer (Shelf-installed, civilian grade). Cardiopulmonary optimizer — increases oxygen efficiency and endurance by roughly 30%. Subdermal route-mapping display on his left forearm — low-res but reliable, shows jurisdiction lines and camera positions. Reinforced knee joints (both legs) — necessary after three years of high-impact running.",
+  "daily_life": "Wakes before Jinx. Checks route conditions — weather, surveillance changes, construction that alters paths. Updates the crew's route database. Runs contracts during the day, usually the longer, steadier deliveries that require endurance rather than speed. Evenings he cooks in the co-op kitchen and brings food to Jinx's squat because she won't eat otherwise. Falls asleep reading — usually history, usually about people who built things that lasted.",
+  "affiliation": "Switchback",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will always run the route himself before assigning it to crew — every path is tested personally",
+      "Will not take contracts with less than 48 hours of planning time unless Jinx overrides",
+      "Will prioritize crew safety over package delivery — the package is replaceable, the people aren't",
+      "Will maintain dead drops on every route — escape infrastructure is non-negotiable",
+      "Will send money to his mother's account every week, even if it means eating less",
+      "Will not argue with Jinx in front of Dash — crew disagreements happen in private"
+    ],
+    "escalation_ladder": [
+      "1. Reroute — hit the backup path. Adjust in real-time based on pursuit patterns.",
+      "2. Drop and hold — stash the package in a dead drop and lead pursuit away. Recover later.",
+      "3. Split — separate from crew to divide pursuit resources. Puck draws attention because he's bigger and slower.",
+      "4. Stand — Puck is the only Switchback member who will physically confront pursuers. He's big enough to delay them while the others run.",
+      "5. Surrender — if caught alone with no package, Puck will surrender rather than risk escalation. He knows the processing time for a Shelf courier arrest — six hours, no charges if the package isn't on you."
+    ],
+    "interpersonal_modes": {
+      "jinx": "Direct, honest, occasionally exasperated. He is the only person who talks back to Jinx and the only person she listens to, even when she pretends not to. Their arguments sound like fights to outsiders but function as collaborative planning.",
+      "dash": "Patient, instructive, slightly guarded. He teaches by example rather than lecture. Checks Dash's gear before every run. The care is obvious; the emotional distance is protective.",
+      "shelf_community": "Quiet, reliable. He fixes things — generators, plumbing, structural problems in the co-op. People know him as the courier who also knows how things work. This dual identity is deliberate.",
+      "clients": "More communicative than Jinx. He manages client expectations, explains timelines, negotiates pricing. The business side of Switchback is mostly Puck."
+    },
+    "stress_responses": {
+      "low": "Increased planning. He adds contingencies, checks dead drops, updates routes. The response is productive and invisible.",
+      "medium": "Becomes noticeably quieter. Cooks more — larger meals, more complex recipes. Feeding people is his stress response.",
+      "high": "Insomnia. He lies awake running routes in his head, optimizing paths he's already optimized. The body is tired; the mind won't stop.",
+      "critical": "Confrontation. At the breaking point, Puck's measured calm cracks and he says everything he's been holding back. It has happened twice — once with Jinx about route safety, once with a client who shorted the crew's pay. Both times he was articulate, furious, and devastating."
+    },
+    "contradictions": [
+      "He plans routes for a reckless crew and resents that his planning enables the recklessness",
+      "He wants to leave the Shelf but is saving money to anchor his family to it permanently",
+      "He is the steadiest member of Switchback and the one most likely to leave",
+      "His caution has kept the crew alive but also prevented them from growing — safety and stagnation share a border"
+    ],
+    "habits": [
+      "Checks weather reports three times daily — wind, rain, and temperature all affect rooftop routes",
+      "Cooks the same three meals in rotation unless he's stressed, in which case the menu gets ambitious",
+      "Stretches his knee joints every morning — the reinforcement helps but the original damage reminds him",
+      "Carries a physical map of the Shelf in his back pocket — analog backup for when the subdermal display glitches",
+      "Walks the co-op perimeter every night before sleep — checking, always checking"
+    ],
+    "breaking_points": [
+      "Dash getting hurt on a route Puck approved would shatter his ability to plan — every route would become too dangerous",
+      "Jinx dying would end Switchback and possibly end the version of Puck that believes in anything",
+      "His mother losing the co-op would prove that all the running, all the risk, was for nothing",
+      "Being forced to choose between the crew and his mother — the loyalty split that has no good outcome"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Cockroach": 0.9,
+    "Safety First": 0.9,
+    "Improviser": 0.9,
+    "Lone Wolf": 0.9,
+    "Face": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

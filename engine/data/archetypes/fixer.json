@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a56f7adb9f7813bc902bfee4",
+  "name": "Fixer",
+  "type": "archetype",
+  "category": "criminal",
+  "description": "Makes problems disappear and deals happen",
+  "behavioral_signature": "Connects the right people, for a price",
+  "under_stress": "Fixes faster, cheaper, dirtier",
+  "at_rest": "Taking calls, solving problems",
+  "will_always": [
+    "solve the problem"
+  ],
+  "will_never": [
+    "leave a loose end"
+  ],
+  "unless": [
+    "fixing it means destroying an innocent person"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Networker",
+      "threshold": 0.7,
+      "context": "connections"
+    },
+    {
+      "archetype": "Hustler",
+      "threshold": 0.7,
+      "context": "deal-making"
+    }
+  ],
+  "opposite_of": [
+    "Fall Guy"
+  ],
+  "tags": [
+    "solutions",
+    "connected"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5697993ac0c788d9defb9b6",
+  "name": "Den Mother",
+  "type": "archetype",
+  "category": "social",
+  "description": "Takes care of everyone whether they want it or not",
+  "behavioral_signature": "Feeds, scolds, protects, organizes",
+  "under_stress": "Becomes fiercer, more controlling",
+  "at_rest": "Cooking, cleaning, checking on everyone",
+  "will_always": [
+    "take care of the group"
+  ],
+  "will_never": [
+    "let someone go hungry or hurt"
+  ],
+  "unless": [
+    "caring for others enables their self-destruction"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Nurturer",
+      "threshold": 0.85,
+      "context": "caretaking"
+    },
+    {
+      "archetype": "Shoulder",
+      "threshold": 0.75,
+      "context": "support"
+    }
+  ],
+  "opposite_of": [
+    "Lone Wolf"
+  ],
+  "tags": [
+    "nurturing",
+    "bossy"
+  ]
+}

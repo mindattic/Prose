@@ -1,0 +1,61 @@
+{
+  "id": "019d6143ab56703097f6f70925d39650",
+  "name": "Thermobaric Pressure Cestus TPC-2 'Smother'",
+  "type": "weapon",
+  "aliases": [
+    "Smother",
+    "The Fist",
+    "Overpressure Gloves",
+    "Barrics"
+  ],
+  "category": "melee",
+  "description": "The TPC-2 is a full-hand combat glove constructed from heat-resistant composite fiber, with a sealed micro-reservoir embedded in the dorsal housing containing a proprietary aerosolized fuel compound designated ARCTURUS FUEL-7. On impact, a pressure-sensitive detonator in the striking surface triggers a controlled thermobaric microexplosion — a burst no larger than a closed fist, but generating an overpressure wave of approximately 14 PSI at point of contact. The explosion is directed forward along the strike axis, meaning the wearer experiences negligible backblast while the target absorbs the full concussive force.\n\nThe thermobaric mechanism gives the TPC-2 a deeply unsettling effect profile. The overpressure wave does not cause the clean, visible trauma of a blade wound — it ruptures eardrums, collapses air pockets in lung tissue, and induces severe disorientation through sinus and inner-ear compression. Targets frequently remain standing for several seconds before the neurological cascade catches up with them, creating a delayed-drop phenomenon that experienced users exploit by landing additional strikes before the target falls. In enclosed spaces — corridors, vehicle interiors, elevator shafts — the reflected overpressure compounds the effect dramatically.\n\nARCTURUS DEFENSE SOLUTIONS positions the TPC-2 as a 'dynamic entry support tool' for military and law enforcement. Its fuel reservoirs are rated for 12 detonations per cartridge, and cartridges are color-coded by yield — gray for standard, amber for elevated, red for breach-grade. Red-cartridge TPC-2 units have been linked to multiple fatalities in poorly ventilated environments, and their sale outside of military channels is explicitly prohibited under Meridian 88 Municipal Code 7.4.2(c), a law that is enforced approximately never.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Military only",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Directed thermobaric microexplosion",
+    "Fuel-air aerosolization",
+    "Pressure-wave channeling"
+  ],
+  "specifications": "weight: 1.1 kg per glove\nfuel reservoir: 12-strike cartridge, field-replaceable in 8 seconds\noverpressure output: 14 PSI at contact point (standard cartridge)\ndetonation trigger: Pressure-sensitive — activates at 40 N impact force\nblast direction: Forward-axis channeled — 92% forward, 8% lateral dispersal\nheat resistance: Rated to 1,200°C internal, 200°C external\ncartridge variants: Gray (standard), Amber (elevated yield), Red (breach-grade, military restricted)\nbackblast to user: Negligible on standard and amber; minor thermal sensation on red",
+  "tactical_use": "Military operators use the TPC-2 in dynamic entry scenarios where firearms are impractical due to ricochet risk or hostage proximity. The standard technique is a palm-strike to the chest — maximizing lung tissue contact — followed by a second strike to the base of the skull once the target drops. In confined corridor fighting, a single amber-cartridge strike can incapacitate multiple targets through reflected overpressure. Operators are trained to avoid using red cartridges in spaces smaller than 20 cubic meters due to documented self-incapacitation risk from reflected wave.",
+  "cultural_context": "The TPC-2 is one of those weapons that everyone in Meridian 88 has heard of but almost no one has seen in person, which has made it into something of a myth. Military veterans who served in corporate conflict zones sometimes speak of 'the gloves that knock you down before you know you've been hit.' On the black market, a functioning TPC-2 pair with a full complement of cartridges commands prices that put it out of reach of street-level operators. Those who do carry them are generally operating at a level of violence that transcends street crime — mercenary contracts, corporate war operations, or the kind of personal vendettas that come with institutional backing.",
+  "known_users": [
+    "ARCTURUS DEFENSE SOLUTIONS special operations contractors",
+    "Corporate black-site extraction teams",
+    "High-value mercenary operatives (black market acquisition)",
+    "Former military operators who retained service equipment",
+    "One documented use by a Meridian 88 Transit Authority officer (case under internal review)"
+  ],
+  "story_hooks": [
+    "A black market arms broker is offering a crate of TPC-2 units with amber cartridges, but the serial numbers have been filed and the fuel compound inside doesn't match ARCTURUS FUEL-7 specifications — someone is manufacturing knockoffs, and the yield variance on the knockoff cartridges is unpredictable.",
+    "A veteran with a pair of TPC-2 units is living quietly in the lower districts, but someone has started leaving red cartridges outside their door — a threat, a message, or an invitation.",
+    "The players are hired to retrieve a TPC-2 from a crime scene before the municipal investigators catalog it, because the weapon's serial number traces back to an ARCTURUS executive who was supposedly unarmed at the time of death."
+  ],
+  "ammunition_type": [
+    "none"
+  ],
+  "tags": [
+    "melee",
+    "weapon",
+    "violence",
+    "combat",
+    "blade",
+    "war",
+    "crime",
+    "death",
+    "love",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "market",
+    "bar",
+    "rain",
+    "vehicle",
+    "train",
+    "fire"
+  ]
+}

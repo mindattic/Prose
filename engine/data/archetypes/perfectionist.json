@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a5857db7b1b437814dc35c68",
+  "name": "Perfectionist",
+  "type": "archetype",
+  "category": "creative",
+  "description": "Nothing is finished until it's flawless",
+  "behavioral_signature": "Revises, refines, restarts endlessly",
+  "under_stress": "Paralyzed by imperfection",
+  "at_rest": "Fixing, adjusting, never satisfied",
+  "will_always": [
+    "pursue perfection"
+  ],
+  "will_never": [
+    "ship something imperfect"
+  ],
+  "unless": [
+    "perfectionism means missing the deadline that matters"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Architect",
+      "threshold": 0.7,
+      "context": "precision"
+    },
+    {
+      "archetype": "Analyst",
+      "threshold": 0.6,
+      "context": "thoroughness"
+    }
+  ],
+  "opposite_of": [
+    "Chaos Creator",
+    "Improviser"
+  ],
+  "tags": [
+    "detail",
+    "obsessive"
+  ]
+}

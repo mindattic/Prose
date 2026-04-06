@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a87775c7a470eb5b1a18ff56",
+  "name": "Tessera Industries Metamaterial Lock Pick Set MLP-1",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Industries Metamaterial Lock Pick Set MLP-1",
+  "type": "equipment",
+  "aliases": [
+    "MLP-1",
+    "Shape Picks",
+    "Tessera Keys",
+    "Universal Picks"
+  ],
+  "category": "tools",
+  "description": "A set of lockpicking tools fabricated from programmable matter that can dynamically reconfigure their shape to match any lock profile. The MLP-1 contains three programmable matter tools that can transform from standard tension wrenches and picks to specialized decoder tools, tubular lock picks, wafer picks, and any other configuration needed for a specific lock type. The tools are controlled through a neural interface that scans the lock's keyway and automatically shapes the tool to match. Where a conventional lockpick set requires 15+ individual tools and extensive practice, the MLP-1 provides a universal solution that adapts itself to the challenge.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited — universal lock bypass device",
+  "base_technologies": [],
+  "specifications": {
+    "tools": "3 programmable matter instruments",
+    "configurations": "Universal — any lock profile",
+    "control": "Neural interface scan and auto-shape",
+    "reconfiguration time": "2 seconds per tool",
+    "material": "Tessera programmable matter",
+    "weight": "0.08 kg total set",
+    "form factor": "Small case",
+    "info": "pen-sized tools",
+    "battery": "48-hour active use per tool",
+    "limitations": "Cannot bypass electronic locks — mechanical only"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A lock thought to be unpickable was defeated in under 10 seconds — the only tool capable of that feat is an MLP-1 with its auto-scan feature, and fewer than 100 units exist.",
+    "A Tessera insider has leaked the programmable matter blueprint for lock pick configurations — anyone with access to a programmable matter fabricator can now produce MLP-1 equivalent tools."
+  ],
+  "tags": [
+    "tools",
+    "equipment",
+    "neural",
+    "ai",
+    "elf",
+    "control",
+    "tier 4"
+  ]
+}

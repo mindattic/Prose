@@ -1,0 +1,64 @@
+{
+  "id": "019d6143aa597fc4b0698745fbf3bd32",
+  "name": "Zheng-Dao Bioelectric SynapseWeave NX-6 Cortical Mesh Implant",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Bioelectric SynapseWeave NX-6 Cortical Mesh Implant",
+  "type": "technology",
+  "aliases": [
+    "The Lace",
+    "Silkbrain",
+    "NX-Six",
+    "Zheng Threads"
+  ],
+  "subcategory": "augmentation",
+  "description": "The SynapseWeave NX-6 is a ultra-thin biocompatible neural mesh — roughly 40 microns thick — that is injected in a folded suspension state and self-deploys across the cortical surface over 72 hours, guided by Zheng-Dao's proprietary electrotrophic migration algorithm. Once seated, the mesh's 2.4 million electrode nodes interface with native cortical tissue, creating a dense bidirectional communication layer between organic neurons and external digital systems. Unlike earlier invasive drill-point implants, the NX-6 achieves full-surface coverage without cranial surgery, instead entering via a lumbar spinal injection and traveling the cerebrospinal fluid pathways to the brain. The NX-6 distinguishes itself from competitors through its adaptive impedance matching — the mesh continuously recalibrates each electrode node to compensate for glial scarring and neural plasticity changes, maintaining signal fidelity over years rather than degrading. It supports simultaneous sensory augmentation, memory indexing, and direct device control. The mesh also includes a passive bioelectric harvesting layer that siphons enough energy from neural firing patterns to maintain low-power operations without a dedicated battery. Primary users are Tier 2 and above corporate knowledge workers, Saltmarsh Telecom's licensed netrunner corps, and the wealthier end of the grey-market augmentation scene.",
+  "tier_availability": "Tier 2+",
+  "developers": [
+    "ZHENG-DAO BIOELECTRIC",
+    "SALTMARSH TELECOM"
+  ],
+  "base_technologies": [
+    "Biocompatible electrode array fabrication",
+    "Electrotrophic cellular migration signaling",
+    "Cerebrospinal fluid drug delivery adaptation",
+    "Neural impedance matching algorithms",
+    "Passive bioelectric energy harvesting"
+  ],
+  "enables": [
+    "Direct neural-to-network data uplink",
+    "Persistent memory indexing and recall augmentation",
+    "Sensory overlay and mixed-reality integration",
+    "Multi-device simultaneous neural control",
+    "Corporate cognitive monitoring compliance systems"
+  ],
+  "social_impact": "The NX-6 has created a visible cognitive class divide in Meridian 88's corporate districts — Lace-equipped workers process, retain, and transmit information at rates that make unaugmented employees functionally obsolete in most knowledge-economy roles, leading several Tier 1 corponations to quietly make SynapseWeave adoption a condition of advancement past entry-level contracts. In the lower tiers, grey-market NX-6 units pulled from medical waste or stolen from distribution chains circulate widely, but without Zheng-Dao's proprietary calibration software they frequently cause chronic focal seizures or what street medics call 'drift' — a dissociative state where the mesh begins overwriting short-term memory with cached network noise.",
+  "story_hooks": [
+    "A Tier 1 corporate whistleblower discovers their NX-6 mesh has been logging and transmitting private thoughts flagged by keyword filters to a Zheng-Dao subsidiary — and the data has already been sold",
+    "A street surgeon is offering NX-6 installs at a fraction of market price but the mesh units have a hidden firmware modification no one can identify",
+    "A Saltmarsh Telecom netrunner's SynapseWeave begins receiving transmissions from a mesh installed in someone who has been officially listed as deceased for three years",
+    "Corporate espionage: a fixer is hired to extract a specific memory index from an executive's NX-6 without the target ever knowing the intrusion occurred"
+  ],
+  "tags": [
+    "augmentation",
+    "technology",
+    "war",
+    "memory",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "wealth",
+    "medical",
+    "surgery",
+    "market",
+    "bar",
+    "rain",
+    "drug",
+    "energy",
+    "tier 2"
+  ]
+}

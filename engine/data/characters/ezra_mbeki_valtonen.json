@@ -1,0 +1,173 @@
+{
+  "id": "019d6143a60c7d9ca61d30312fbdb49f",
+  "type": "character",
+  "name": "Ezra Mbeki-Valtonen",
+  "aliases": [
+    "Old Ezra",
+    "The Ledger"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Whistleblower and community council member",
+  "age": 61,
+  "status": "active",
+  "location": "The Shelf",
+  "description": "Ezra is a retired Sterling-Nakamura logistics compliance officer who spent thirty-one years watching things get falsified and decided on year thirty-two that he was done. He is a heavyset man with the careful, deliberate physicality of someone who has learned not to take up space in ways that draw attention, a habit from corporate years that he has mostly unlearned. His skin is dark and dry at the elbows and knuckles, his hair cut close and almost entirely white. He has a single augmentation — a neural notation implant he uses compulsively to record everything, which he got for work and kept afterward. He has a cat's tail, ruddy amber, that he got on a whim at sixty and which his grandchildren love and which surprises everyone who meets him.\n\nEzra now serves on the Shelf Community Resource Council, a position he ran for mostly because he couldn't stop seeing the ways services were being misallocated and nobody with a ledger background was doing anything about it. He is methodical, patient, and genuinely humble in the way that people who have been wrong in consequential ways sometimes become. He spent three decades enabling a system he now spends his retirement opposing, and he carries that with a gravity that never quite lifts. He is not a firebrand. He is a man who has kept copies of everything.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.7,
+      "id": 0.2,
+      "shadow": 0.6,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "Dying before the documents he holds have served their purpose",
+      "Being used by people with agendas that harm the community he's trying to protect"
+    ],
+    "core_desires": [
+      "Accountability — not punishment, specifically, but acknowledgment that the harm happened",
+      "To be trusted by the Shelf community without the weight of what he used to be"
+    ],
+    "coping_mechanisms": [
+      "Recording and documentation as a substitute for action when action feels impossible",
+      "Cooking — specific and generative, unlike his past work"
+    ],
+    "blind_spots": [
+      "Overvalues documentation over lived testimony",
+      "Assumes good faith in institutional processes longer than is warranted"
+    ],
+    "secret": "He has a complete, authenticated copy of Sterling-Nakamura's internal models projecting displacement outcomes for Shelf residents from a planned infrastructure deal — projections that were made and then deliberately omitted from the public impact assessment. The deal hasn't been announced yet. He got the documents through a contact he burned to get them. He is waiting for the right moment to use them and is aware that waiting has costs he's paying in other people's security."
+  },
+  "speech_patterns": {
+    "vocabulary": "Corporate precision vocabulary that he actively works against — catches himself mid-sentence and simplifies; occasional Sotho phrases when reflective",
+    "cadence": "Unhurried and thorough; rarely leaves a thought incomplete; long silences treated as normal",
+    "verbal_tics": [
+      "'If I remember correctly—' (he always does)",
+      "Taps the neural implant site behind his ear when accessing records"
+    ],
+    "example_lines": [
+      "'I can tell you what the document says. What it means is a different question, and that one I've been wrong about before.'",
+      "'I spent thirty years being very good at making harm look like procedure. I know what it looks like from the inside. That's the only useful thing that time gave me.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Ezra needs someone to physically deliver a copy of the Sterling-Nakamura displacement projections to a city arbitration body before the infrastructure deal is quietly approved — the filing window is closing and he can't be seen doing it himself",
+    "A Sterling-Nakamura investigator has appeared in the Shelf asking questions about former employees; Ezra needs to know if they're looking for him and what they know",
+    "The council is deadlocked on a resource allocation decision and Ezra has data showing one faction is receiving payments from a Tessera subsidiary — he needs help deciding how and whether to surface it without destroying the council's function"
+  ],
+  "narrative_function": "Archive and institutional memory; can surface specific historical data points and documented corporate malfeasance; provides grounded credibility to activist actions; his past gives him access to corporate-facing contexts others cannot reach.",
+  "augmentations": "Neural notation implant (Sterling-Nakamura work model, retained after departure). Cosmetic cat tail — amber, voluntary and personal, not work-related.",
+  "daily_life": "Morning council work — budget review, service allocation tracking, resident appeals. Afternoons spent maintaining a meticulous personal archive of city resource data, council decisions, and corporate filings that touch Shelf territory. Cooks dinner for whoever is around.",
+  "affiliation": "The Shelf Community Resource Council; informal contact with Yewande Ostrčil-Falaniko's legal collective for document authentication",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "whistleblower",
+      "archivist",
+      "reformed insider",
+      "guilt-driven",
+      "slow but reliable"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never destroy a document — archive it, then act",
+      "Verify before sharing, always",
+      "Do not let the perfect use of information prevent a good use of it"
+    ],
+    "escalation_ladder": [
+      "Raising concerns through formal council process",
+      "Sharing documented evidence with trusted community members",
+      "Going to independent press with authentication",
+      "Releasing the full archive publicly as a last resort"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite and slightly formal; offers food quickly as a hospitality reflex; listens more than speaks",
+      "friends": "Warm, remembers everything, shows care through specificity — remembers the name of your sister, the thing you mentioned once"
+    },
+    "stress_responses": {
+      "low": "Increases documentation, starts new index files",
+      "medium": "Becomes quieter, spends more time alone with his archive",
+      "high": "Reaches out to people he trusts for counsel — one of the few situations where he asks instead of records"
+    },
+    "contradictions": [
+      "Claims to want accountability over punishment but has sat on documents that could trigger both",
+      "Values transparency as a principle while holding one of the most significant information asymmetries in the Shelf"
+    ],
+    "habits": [
+      "Records a verbal summary of each day into his neural implant before sleeping",
+      "His amber tail curls upward involuntarily when he's pleased about something",
+      "Maintains a printed and a digital copy of every significant document — he doesn't fully trust either medium"
+    ],
+    "breaking_points": [
+      "Shelf residents being displaced because he waited too long with the Sterling-Nakamura documents",
+      "Someone he trusted using his archive for personal gain"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

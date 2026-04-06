@@ -1,0 +1,108 @@
+{
+  "id": "019d6143a92e752794071e55cd3660db",
+  "type": "place",
+  "name": "Ridgeline Enclave",
+  "aliases": [
+    "West Ridge",
+    "The Ridge",
+    "Devon Corridor",
+    "Little Bangalore"
+  ],
+  "description": "Ridgeline Enclave is the district that refused to change its menu. When the corporations carved up Chicago's north side, most neighborhoods lost their identity to branding — renamed, rezoned, stripped of whatever made them specific. West Ridge held on, mostly because nobody wanted it badly enough to fight for it. The residential blocks were too dense for corporate campus development, too far from the lakefront for luxury conversion, and too stubbornly populated by families who'd been cooking the same recipes for three generations to be easily displaced. So the corps did what they do when brute force isn't cost-effective: they ignored it.\n\nThe Devon Avenue corridor — once Chicago's most vibrant South Asian commercial strip — has become Devon Corridor, a three-kilometer stretch of augmented commerce that operates in the gap between corporate retail and black market. The sari shops now sell adaptive fabric that changes pattern based on the wearer's neural state. The jewelry stores offer augment-compatible precious metals that interface with dermal implants. The restaurants still serve the same dishes, but the kitchens run on salvaged industrial heating elements and the spice supply chains route through six gray-market intermediaries to avoid Axiom's import tariffs. It's traditional commerce with cybernetic upgrades — the same family businesses, the same recipes, the same arguments about whose biryani is better, all running on infrastructure that a corporate compliance officer would have a stroke examining.\n\nBeneath the commercial surface, Ridgeline Enclave has become Meridian 88's unofficial neural interface repair district. The South Asian tech diaspora — engineers and programmers who were brought to old Chicago by the tech industry and then abandoned when the corps moved to in-house AI labor — turned their skills inward. The back rooms of Devon Corridor now house some of the most sophisticated neural interface clinics outside the Spire, operated by families whose grandparents wrote code for companies that no longer exist and whose parents learned to solder by necessity. The work is unlicensed, obviously, but the quality rivals Tier 4 clinics at a fraction of the price. Word of mouth is the only advertising. You get in by referral, and the referral network runs through the same aunties who run the neighborhood watch.\n\nRidgeline is quiet in a way that makes outsiders nervous. There are no neon signs, no holographic advertisements, no obvious markers of the gray economy humming beneath the residential surface. The buildings are old — pre-flood construction, maintained with a care that borders on devotion. Gardens grow on rooftops, real vegetables in real soil, tended by elderly residents who remember when this was just a neighborhood and not a survival strategy. The silence isn't emptiness. It's the sound of a community that learned to be invisible because visibility gets you noticed by the wrong people.",
+  "atmosphere": {
+    "sights": [
+      "Devon Corridor's shopfronts — adaptive fabric displays shifting colors beside hand-painted signage in Hindi, Urdu, and Gujarati",
+      "Rooftop gardens with actual soil and actual vegetables, tended by elderly residents in the early morning",
+      "Pre-flood residential buildings maintained with obsessive care, their brick facades cleaner than anything in the Core",
+      "Neural interface clinic entrances disguised as ordinary back rooms — you'd walk past them ten times without noticing",
+      "Augment-compatible jewelry glinting in shop windows, gold and chrome in equal measure",
+      "Children in school uniforms — the Enclave runs its own schools, and the uniforms are a point of pride"
+    ],
+    "sounds": [
+      "Bollywood soundtracks leaking from kitchen windows, mixed with contemporary Meridian synthwave",
+      "The rhythmic clatter of augment calibration tools from behind closed doors",
+      "Quiet conversation in four languages on the residential streets — nobody shouts in Ridgeline",
+      "Temple bells from the Sikh gurdwara, still ringing on schedule after sixty years",
+      "The hum of salvaged industrial heating elements in restaurant kitchens"
+    ],
+    "smells": [
+      "Turmeric, cumin, and frying ghee — Devon Corridor's permanent aromatic signature",
+      "Solder flux and isopropyl from the neural clinics, detectable only if you know what you're smelling for",
+      "Rooftop garden soil after rain — one of the few places in Meridian where dirt smells like dirt",
+      "Incense from the gurdwara and the Hindu temple, mixing in the corridor between them",
+      "Fresh naan from the tandoor ovens, which have been in continuous operation since before the flood"
+    ],
+    "feel": "Protected. Ridgeline Enclave feels like stepping inside someone's house — there are rules here, even if nobody states them. You speak quietly. You don't take pictures. You don't ask questions about the back rooms. In return, you're treated with a hospitality that is genuine and conditional: genuine because the culture demands it, conditional because trust is earned over years, not transactions. The Enclave feels like the last place in Meridian that remembers what a neighborhood is supposed to be.",
+    "tags": []
+  },
+  "demographics": "Approximately 18,000 residents, predominantly South Asian families with multi-generational roots. Significant Tier 1 and Tier 2 population with a handful of former Tier 3 tech workers who were displaced by AI labor replacement. One of the most demographically stable districts in Meridian — families don't leave the Ridge.",
+  "economy": "Devon Corridor retail and food service, unlicensed neural interface repair and calibration, adaptive fabric manufacturing, and augment-compatible jewelry crafting. The real economy runs on referral networks and reputation — cash and crypto both accepted, corporate credit not.",
+  "power_structure": "An informal council of family patriarchs and matriarchs who've held authority for generations. Disputes are resolved internally — calling in outside authorities is considered a betrayal worse than the original offense. The Devon Corridor Merchants Association functions as both trade union and neighborhood governance.",
+  "dangers": [
+    "Xenophobic hostility to outsiders who don't come with a referral",
+    "Corporate interest in the neural clinic network — Axiom would love to shut it down or absorb it",
+    "Internal community politics that can turn cold fast if you cross the wrong family",
+    "Counterfeit adaptive fabrics that malfunction against the wearer's skin — painful and occasionally dangerous",
+    "The quiet — it can mask genuine threats that you won't see coming until they're on top of you"
+  ],
+  "opportunities": [
+    "World-class neural interface repair at Shelf prices — if you can get a referral",
+    "Adaptive fabric that corporate retailers can't match for quality or customization",
+    "A trust network that, once you're inside it, opens doors across Meridian's South Asian diaspora",
+    "Real food — not nutrient paste, not synth-protein, actual spices cooked by people who learned from their grandmothers",
+    "Information — the aunties of Devon Corridor know everything about everyone, and they trade in gossip like currency"
+  ],
+  "story_hooks": [
+    "A Ridgeline neural clinic discovers a backdoor in a new generation of Axiom-manufactured neural interfaces — a kill switch that corporate hasn't disclosed to customers. The clinic matriarch wants the information distributed but knows that going public will bring Axiom's attention to the Enclave",
+    "Kyle needs delicate augment repair work that only one family in the Enclave can perform — but the family's patriarch remembers a job Kyle did years ago that hurt someone they care about",
+    "The Devon Corridor Merchants Association is being pressured by an unknown entity to allow a corporate retail outlet on the strip — the first in the Enclave's history. Someone is offering money that's hard to refuse and making threats that are harder to ignore"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Rogers Reef",
+      "Lincoln Fortress",
+      "Nordpark Sanctuary"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Local families who've lived here for generations and intend to keep doing so",
+    "Neural interface patients traveling from across Meridian for unlicensed but expert repair work",
+    "Food pilgrims from the Circuit and the Shelf seeking authentic South Asian cuisine",
+    "Adaptive fabric buyers — designers, fixers, and people who need clothes that do more than cover skin",
+    "Nobody from Axiom Security — and the community intends to keep it that way"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 42.004,
+    "lng": -87.662,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "betrayal",
+    "trust",
+    "love",
+    "identity",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "money",
+    "clinic",
+    "pain",
+    "rooftop",
+    "market",
+    "neon",
+    "cold",
+    "survival",
+    "food",
+    "lake",
+    "shelf",
+    "spire",
+    "circuit"
+  ]
+}

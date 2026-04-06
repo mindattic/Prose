@@ -1,0 +1,41 @@
+{
+  "id": "019d6143aa64755c89c9d4e0c92c1221",
+  "name": "Ferrogate Deep Line",
+  "type": "transportation",
+  "aliases": [
+    "The Deep Rail",
+    "The Drop",
+    "Underworld Express"
+  ],
+  "category": "underground",
+  "manufacturer": "Ferrogate Transit",
+  "description": "The subway lines that descend below the standard metro level into the Underworld. The first three levels are official Ferrogate routes with functioning stations and lighting. Below Level 3, the tunnels continue — unmaintained, unmapped, and officially nonexistent. The trains that run down there aren't on any schedule. Some say they're automated ghosts running loops from before the city was built. Others say someone is driving them.",
+  "propulsion": "Electromagnetic rail (upper levels), unknown (deep levels)",
+  "speed": "35 km/h on maintained track, variable below",
+  "capacity": "180 per car, 4-car trains standard",
+  "range": "Official: 3 underground levels. Actual: unknown",
+  "tier_availability": "Tier 1-2 (upper levels), Untiered (deep levels)",
+  "cost": "Φ3 per ride (upper levels), free if you can find the deep platforms",
+  "autonomy": "Automated dispatch on upper levels. Deep level trains operate independently.",
+  "armament": "None officially. Deep level trains have been observed with reinforced plating.",
+  "common_usage": "Upper levels: standard commute for underground district workers. Deep levels: smugglers, refugees, the desperate, and the curious who don't come back.",
+  "story_hooks": [
+    "A Deep Line train arrives at a Level 2 station covered in frost — the doors open and no one is inside",
+    "Someone maps the deep rail network and realizes the tunnels form a pattern that predates the city"
+  ],
+  "tags": [
+    "underground",
+    "transportation",
+    "smuggle",
+    "ai",
+    "underworld",
+    "tunnel",
+    "subway",
+    "rain",
+    "train",
+    "refugee",
+    "desperate",
+    "tier 1",
+    "tier 2"
+  ]
+}

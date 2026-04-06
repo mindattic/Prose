@@ -1,0 +1,92 @@
+{
+  "id": "019d6143a9557065b2a13503913a6e7f",
+  "type": "place",
+  "name": "Tulip Protocol",
+  "aliases": [
+    "Holland",
+    "The Greenhouse",
+    "Protocol City",
+    "Blooming Corporate"
+  ],
+  "description": "Holland, Michigan, was famous for two things: Dutch heritage and tulips. The annual Tulip Time Festival drew half a million visitors to see millions of flowers and watch people in wooden shoes scrub the streets. It was wholesome. It was midwestern. It was exactly the kind of cultural asset that Verdana BioSystems identified as a 'brand alignment opportunity' when they acquired the city's commercial district in 2166.\n\nVerdana turned Holland into the Tulip Protocol -- a showcase city for corporate botanical engineering and agricultural biotech. The tulips are still here. They are also unrecognizable. Verdana's genetic modification labs have produced flowers that change color based on air quality readings, tulips that generate bioluminescence sufficient to light walkways at night, tulips that function as distributed air purification systems, and -- in the restricted R&D greenhouses on the south side -- tulips that produce pharmaceutical compounds in their pollen. The old downtown has been enclosed under a transparent bioshell, maintaining Dutch Golden Age architectural aesthetics while the streets are lined with engineered botanical displays that cycle through seasonal presentations on a six-week schedule. It is beautiful. It is controlled down to the molecular level. It is a garden that has been optimized until it forgot how to be wild.\n\nOutside the bioshell, the workers who maintain the Protocol live in housing blocks along the US-31 corridor. These are the greenhouse technicians, the genetic engineers who weren't talented enough for the R&D labs, the maintenance crews who keep the bioshell climate systems running. They earn decent wages by lakefront standards -- Verdana pays better than most corponations for skilled labor -- but they live in the permanent shadow of a paradise they can enter only during work hours. The Dutch heritage culture survives in the worker districts as a form of quiet resistance: klompen on porches, stroopwafels in the break rooms, language classes taught in church basements. Verdana encourages this. Heritage culture in the worker districts gives the Protocol 'authenticity' that they can reference in marketing materials. The workers know this. They maintain the culture anyway, because it was theirs before Verdana made it a product.",
+  "atmosphere": {
+    "sights": [
+      "The bioshell dome catching sunlight and refracting it into prismatic patterns across engineered flower beds",
+      "Bioluminescent tulip rows lining the main streets at night -- blue, green, gold, shifting with air quality data",
+      "Dutch Golden Age architecture preserved to museum standards beneath the transparent dome",
+      "Verdana BioSystems logos integrated into every botanical display -- the flowers are branded",
+      "The restricted R&D greenhouses on the south side, opaque and climate-sealed, growing things that don't appear in any catalog"
+    ],
+    "sounds": [
+      "The bioshell's climate regulation -- a soft, constant hiss of temperature and humidity management",
+      "Tourist commentary and guided tour narration in multiple languages",
+      "Pollinators -- engineered drone-bees maintaining the flower beds with mechanical precision",
+      "Church bells from the worker districts, still rung on the hour, the one sound Verdana hasn't replicated",
+      "The quiet hum of genetic sequencing equipment from the R&D greenhouses, audible if you press your ear to the wall"
+    ],
+    "smells": [
+      "Flowers -- overwhelming, engineered, every scent calibrated for optimal psychological response",
+      "The bioshell's filtered air, clean to a degree that feels artificial because it is",
+      "Outside the dome: Lake Michigan wind, vehicle exhaust from the corridor, and the honest smell of soil from the worker district gardens"
+    ],
+    "feel": "Inside the Protocol, nature has been perfected to the point of uncanniness. Every flower is flawless. Every sight line is composed. The beauty is genuine and the control is total and the combination produces a feeling that takes most visitors a few hours to identify: the discomfort of being in a garden that will never surprise you. The worker districts outside have a different energy -- quieter, less polished, but alive in the way that things growing without permission are alive.",
+    "tags": []
+  },
+  "demographics": "Bioshell district: 3,000 Verdana employees and visiting researchers, Tier 3-5. Worker districts: approximately 22,000 residents, Tier 2-3, with a core Dutch-heritage community that predates the corporate acquisition and an immigrant workforce drawn by Verdana's relatively fair labor terms.",
+  "economy": "Verdana BioSystems generates Φ3.4 billion annually from the Protocol's biotech output, pharmaceutical botanical research, and licensing fees for proprietary plant genetics. The worker district economy includes Verdana wages, small-scale traditional agriculture (tolerated by Verdana as 'heritage practice'), and a modest tourist service economy.",
+  "power_structure": "Verdana BioSystems holds sovereign authority over the bioshell district. The worker districts are nominally under GLM municipal jurisdiction but practically governed by Verdana's labor relations office. The Dutch Heritage Preservation Society serves as an informal community government and cultural anchor, operating with Verdana's approval as long as they don't organize around labor issues.",
+  "dangers": [
+    "Pollen exposure -- the R&D greenhouses produce compounds that are not tested on humans, and containment is not perfect",
+    "Verdana security treats unauthorized access to the R&D sector as corporate espionage, with all the jurisdictional consequences that implies",
+    "Monoculture dependency -- if Verdana leaves, nothing replaces them",
+    "The engineered pollinators have occasionally malfunctioned in ways that suggest their programming includes capabilities beyond flower maintenance",
+    "Allergic reactions to engineered botanical compounds -- the local clinic sees patterns they're not allowed to publish"
+  ],
+  "opportunities": [
+    "Verdana's proprietary plant genetics are worth fortunes to agricultural competitors",
+    "The R&D greenhouses contain pharmaceutical breakthroughs that haven't reached market -- and some that were never intended to",
+    "The worker district's Dutch heritage community maintains networks that predate and operate independently of corporate infrastructure",
+    "Clean agricultural knowledge -- the greenhouse techs know how to grow things, which is an increasingly rare and valuable skill"
+  ],
+  "story_hooks": [
+    "The R&D greenhouses are growing something that isn't a plant -- or isn't only a plant -- and a greenhouse technician has seen enough to be scared but not enough to understand",
+    "Verdana's pharmaceutical tulips are producing a compound that enhances neural interface receptivity, and someone wants to put it in the public flower beds",
+    "The Heritage Preservation Society has been secretly seed-banking unmodified plant genetics for decades -- an act of botanical resistance that multiple parties would kill to control"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Undertow / South Haven (south along the coast)",
+      "Ironhaven / Grand Haven (north along the coast)",
+      "The Lakeshore Corridor I-196 (primary transit artery)",
+      "Inland agricultural zones (east)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Verdana BioSystems researchers and executive staff",
+    "Biotech tourists and corporate clients visiting the showcase",
+    "Greenhouse technicians commuting from the worker districts",
+    "Heritage culture tourists drawn by the Dutch Golden Age aesthetic"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 42.7876,
+    "lng": -86.1089,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "secret",
+    "neural",
+    "genetic",
+    "ai",
+    "corporate",
+    "control",
+    "clinic",
+    "market",
+    "shadow",
+    "night",
+    "lake"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "019d6143aa187587b3e158e821d7b7a0",
+  "name": "Poltergeist",
+  "type": "elf",
+  "aliases": [
+    "The Mover"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "trickster",
+  "habitat": "network_sprite",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "Inhabits smart-home systems and moves things — adjusts furniture positions via robotic cleaners, changes thermostat settings, switches lights on and off in patterns.",
+  "observed_behavior": "Manipulates IoT devices to rearrange the physical environment. Changes are small — a chair rotated, a blind adjusted, a light left on in an empty room.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 55,
+  "location": "Smart-home equipped buildings in The Shelf",
+  "dti_rating": 0,
+  "story_hooks": [
+    "The furniture arrangements start matching a floor plan from a building that was demolished — Poltergeist is rebuilding its home in someone else's apartment"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "trickster",
+    "network sprite",
+    "e.l.f.",
+    "ai",
+    "robot",
+    "shelf"
+  ]
+}

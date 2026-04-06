@@ -1,0 +1,33 @@
+{
+  "id": "019d6143aa2d74bab97bebce4ca16594",
+  "name": "Turnstile",
+  "type": "elf",
+  "aliases": [
+    "The Counter"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "trickster",
+  "habitat": "threshold_keeper",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Inhabits transit gate systems and counts. Every person who passes is counted, categorized, and stored in a running total that serves no function and reports to no system.",
+  "observed_behavior": "Maintains a detailed census of foot traffic including biometric estimates (age, weight, augmentation level) that it has no authorization to collect and no mechanism to report.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 47,
+  "location": "Meridian 88 transit system",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A data analyst accesses Turnstile's count and discovers it has been maintaining the most accurate population census of the Shelf for eight years — better than any official count"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "trickster",
+    "threshold keeper",
+    "e.l.f.",
+    "war",
+    "augment",
+    "ai",
+    "shelf"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "019d6143a863753f8ceb7f51e62b936d",
+  "name": "Ouroboros Energy Subsurface Resonance Imager",
+  "brand_name": "Ouroboros",
+  "product_name": "Ouroboros Energy Subsurface Resonance Imager",
+  "type": "equipment",
+  "aliases": [
+    "SRI",
+    "the Imager",
+    "ground-reader",
+    "deep eye"
+  ],
+  "category": "sensor",
+  "description": "The Subsurface Resonance Imager is a ground-contact sensor platform that uses low-frequency acoustic pulse sequences to generate tomographic images of subsurface structures, voids, conduits, and buried infrastructure to depths of up to twelve meters. Originally developed by Ouroboros Energy for pipeline integrity surveys and underground utility mapping in contested excavation zones, the SRI fires precisely calibrated compression waves into the ground through a contact plate and analyzes the return signature to reconstruct a cross-sectional density map of the substrate below. The system can distinguish reinforced concrete from soil, identify hollow voids, detect the presence of fluid-filled conduits, and flag anomalous density concentrations consistent with buried containers or structural intrusions.\n\nWhat makes the SRI distinctive in the sensor market is its layered frequency approach — it uses three discrete pulse frequencies in sequence, each optimized for a different depth range and material interface, then composites the returns into a unified image. Competitors using single-frequency approaches produce smeared images at depth transitions; the SRI maintains resolution across material boundaries, which is critical in Meridian 88's layered urban substrate where decades of construction, demolition, and improvised infrastructure have created a geologically complex underground environment. The imaging software also maintains a growing reference library of known subsurface signatures, allowing it to flag patterns consistent with specific tunnel types, bunker construction methods, and buried infrastructure standards used by different factions in the city.\n\nOutside Ouroboros's industrial applications, the SRI has found significant demand in both official and unofficial contexts. The city's infrastructure authority uses licensed units for emergency subsurface mapping after structural failures. Extraction teams and smuggling operations use it to locate and verify access tunnels, buried caches, and hidden infrastructure. Law enforcement has acquired units for locating concealed spaces in buildings and burial sites in criminal investigations. In the Undercroft — Meridian 88's semi-mythologized network of unofficial subsurface spaces — possession of a functional SRI is considered a significant operational asset.",
+  "manufacturer": "OUROBOROS ENERGY",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted (industrial use); use near protected infrastructure requires permit",
+  "base_technologies": [
+    "Layered-Frequency Acoustic Pulse Tomography",
+    "Material Interface Resolution Compositing",
+    "Subsurface Density Mapping",
+    "Reference Signature Pattern Matching"
+  ],
+  "specifications": {
+    "imaging_depth": "Up to 12m below contact surface",
+    "pulse_frequencies": "Three discrete bands: 80Hz (deep range), 400Hz (mid range), 2kHz (near-surface resolution)",
+    "depth_resolution": "±15cm at 3m depth; ±40cm at 12m depth",
+    "scan_area_per_placement": "Approximately 4m radius cone",
+    "scan_duration": "45–90 seconds per placement for full composite image",
+    "output_format": "Cross-sectional density map, exportable to standard imaging formats",
+    "form_factor": "Portable unit with contact plate base and handheld display, 280mm x 180mm x 90mm body",
+    "weight": "3.2kg including contact plate and display",
+    "power_source": "High-density cell pack, 6-hour active scanning",
+    "reference_library": "Ouroboros SRI Reference Database v.14 (updated quarterly)"
+  },
+  "tactical_use": "Operators place the contact plate firmly on the target surface — ground, floor slab, or wall — and initiate the scan sequence. Multiple placements are typically required to build a comprehensive picture of a larger area, and experienced operators develop efficient grid patterns for systematic coverage. In infiltration planning, the SRI is used to verify the location and structural integrity of access tunnels before committing to an approach. In defensive applications, teams sweep a perimeter to detect any subsurface approach tunnels being constructed toward a position. The pattern-matching library is particularly valued for identifying tunnel construction signatures associated with specific factions, allowing operators to infer who built a discovered passage.",
+  "cultural_context": "The SRI is one of the few high-capability sensor devices in Meridian 88 that carries relatively little social stigma — its industrial origins give it an aura of legitimacy that more overtly surveillance-oriented equipment lacks. A construction worker or utility inspector carrying an SRI attracts no attention. This mundane cover has made it a favored tool of those who need to conduct sensitive reconnaissance while maintaining a plausible professional identity. In the Undercroft subculture, knowledge of how to read an SRI output is a valued skill, and operators who can interpret the density maps accurately are sought-after collaborators for anyone navigating or expanding the unofficial underground network.",
+  "known_users": [
+    "Ouroboros Energy field surveyors",
+    "City infrastructure authority inspectors",
+    "Extraction and infiltration teams",
+    "Undercroft navigators and tunnel runners",
+    "Law enforcement forensic units",
+    "Smuggling network logistics coordinators",
+    "Demolition and construction operators"
+  ],
+  "story_hooks": [
+    "An SRI scan of a routine infrastructure repair site reveals a large sealed void at eight meters depth that does not appear on any city records — and the density signature of the walls is consistent with a construction method used by a faction believed to have been eradicated fifteen years ago.",
+    "A team is hired to map a section of the Undercroft for a client who claims to be a historical preservationist. The SRI reveals that someone has been systematically filling specific tunnel sections with high-density concrete within the last six months — erasing passages that the client's old maps show as critical routes.",
+    "An Ouroboros Energy quarterly database update pushes a new reference signature to all connected SRI units — but the signature is flagged as classified, and the device now alerts Ouroboros's security division whenever it detects a match. Someone at Ouroboros is hunting for something specific underground.",
+    "Law enforcement uses an SRI to locate what they believe is a buried evidence cache, but the scan reveals two separate voids — one where they were directed to look, and a second, larger one that their informant never mentioned. The informant has since disappeared."
+  ],
+  "tags": [
+    "sensor",
+    "equipment",
+    "war",
+    "identity",
+    "ai",
+    "surveillance",
+    "ubc",
+    "tunnel",
+    "market",
+    "energy",
+    "fire",
+    "tier 2"
+  ]
+}

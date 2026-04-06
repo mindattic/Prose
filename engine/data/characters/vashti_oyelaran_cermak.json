@@ -1,0 +1,177 @@
+{
+  "id": "019d6143a70f7c159be2fd53e5e9d887",
+  "type": "character",
+  "name": "Vashti Oyelaran-Čermák",
+  "aliases": [
+    "Vas",
+    "The Tooth"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Junk merchant and scrap reseller",
+  "age": 27,
+  "status": "active",
+  "location": "The Stockyard, Pier 4 overflow lot, Grainfort",
+  "description": "Vashti is lean and angular with the kind of wiry strength that comes from hauling scrap rather than any intentional exercise. Their skin is a deep warm brown, and they have geneware cat ears — dusty grey tabby-patterned, which they've never bothered to remove since getting them at nineteen on a dare — that flatten expressively when they're annoyed and perk forward when something catches their interest, which is often. A bioluminescent stripe runs down the back of each forearm, dim pale blue, activated by stress hormones; they've learned to read it as an early warning system for their own anxiety. Their work clothes are pragmatic catastrophes: safety-orange strapping over layered thermals, magnetic tool clips everywhere, boots with steel inserts they sourced from a Ferrogate Transit maintenance surplus sale.\n\nThey have the paradoxical quality of seeming both completely at ease in the chaos of the Stockyard lots and perpetually slightly amused by it, as though the entire enterprise of human commerce is a joke they're in on. Their actual eye for value is extraordinary — they can assess a pile of mixed scrap and name a fair price in under thirty seconds, and they're almost never wrong. They're known for being the only merchant in Grainfort who won't claim something works if it doesn't.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Being trapped in a role or place with no room to manoeuvre",
+      "Trusting someone who uses that trust as leverage"
+    ],
+    "core_desires": [
+      "Enough financial cushion to walk away from a bad situation",
+      "Work that feels honest — no pretending something is what it isn't"
+    ],
+    "coping_mechanisms": [
+      "Humour as deflection",
+      "Physical work — sorting and cataloguing to quiet the mind",
+      "Reading the bioluminescent stripes as a biofeedback tool"
+    ],
+    "blind_spots": [
+      "Their comfort with chaos means they sometimes miss when a situation has become genuinely dangerous rather than just messy",
+      "Undercharges people they like"
+    ],
+    "secret": "They've been documenting serial numbers on certain Ferrogate Transit parts coming through the Stockyard — parts that shouldn't exist on the secondary market. They don't know yet what they're going to do with the information, but the file is growing."
+  },
+  "speech_patterns": {
+    "vocabulary": "Casual, technically precise about anything mechanical, fond of dry asides; code-switches between Yoruba proverbs (from their grandmother) and Czech slang (from their father's neighbourhood) without noticing",
+    "cadence": "Easy and unhurried, with sudden bursts of rapid technical detail when something gets interesting",
+    "verbal_tics": [
+      "Clicks tongue when assessing something",
+      "'Honestly?' as a sentence opener for honest assessments"
+    ],
+    "example_lines": [
+      "Honestly? This actuator is cooked. I'll take it off you for Φ4 and strip the housing, which is actually fine. Offering you Φ4 for a dead actuator is me being charitable.",
+      "My baba used to say — well, he'd say it in Czech and I'd understand maybe half — something about how everything valuable is just something someone else stopped paying attention to. Seems right to me."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Ferrogate Transit serial number file becomes dangerous when one of the maintenance workers figures out Vashti has been documenting",
+    "A specific piece of scrap comes through the lot that is clearly not junk — it's a piece of something that should not exist on the open market at all, and the person who sold it is already dead"
+  ],
+  "narrative_function": "Scrap and salvage information source — knows what's being thrown away by whom; can source unusual components; potential lead on Ferrogate Transit's internal disposal practices; local colour with genuine warmth.",
+  "augmentations": "Geneware cat ears (grey tabby, cosmetic). Bioluminescent stripes on forearms (geneware, stress-reactive). Subdermal magnetic fingertips (functional — allows them to handle small metal components without dropping them).",
+  "daily_life": "Early morning scavenging runs to the Grainfort overflow before other pickers arrive, then sorting and pricing through midday, then open stall from noon to whenever the light goes.",
+  "affiliation": "Independent; trade relationship with three Ferrogate Transit maintenance workers who sell surplus parts off-manifest; loosely pays protection to the Stockyard crew",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 8,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 2,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "appraiser",
+      "scavenger",
+      "honest-dealer",
+      "geneware-casual",
+      "information-hoarder"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Don't lie about what something is — your reputation is the business",
+      "Keep one exit always mentally mapped"
+    ],
+    "escalation_ladder": [
+      "Dry humour and redirect",
+      "Direct refusal with clear explanation",
+      "Walking away entirely — no scene, no argument, just gone"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Cheerfully professional and slightly guarded — warm but watching",
+      "friends": "Relaxed, generous, teasing; will help quietly without making it a thing"
+    },
+    "stress_responses": {
+      "low": "Gets more talkative and jokes more",
+      "medium": "Goes quiet, watches the bioluminescent stripes, starts tidying the stall",
+      "high": "Leaves. Just leaves. Comes back when it's done."
+    },
+    "contradictions": [
+      "Values honesty above almost everything but is sitting on information that could burn several people"
+    ],
+    "habits": [
+      "Runs magnetic fingertips along metal surfaces when idle",
+      "Cat ears flatten when reading the bioluminescent stripes — focuses inward"
+    ],
+    "breaking_points": [
+      "Being deliberately deceived by someone they'd decided to trust"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "Opportunist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

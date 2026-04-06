@@ -1,0 +1,182 @@
+{
+  "id": "019d6143a73e7db79af725046eb7534d",
+  "type": "character",
+  "name": "Zuzanna Osei-Reinholt",
+  "aliases": [
+    "Zuzu",
+    "Z"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Building super and amateur mechanic, The Narrows residential block",
+  "age": 34,
+  "status": "active",
+  "location": "The Narrows; lives in the basement unit of the building they manage at Benton Divide 14-C",
+  "description": "Zuzanna Osei-Reinholt is compact and relentlessly practical — they move through the world like someone who has calculated exactly how much space they need and taken only that. Their Ghanaian father's warm brown complexion and their Polish-Danish mother's angular features produce a face that people describe as striking without being able to say exactly why. Their hair is kept short and color-changing — a mod they got at eighteen and still use, though these days they mostly leave it set to a flat, unassuming dark. On bad days it shifts citrus-orange without conscious input. They've stopped fighting it.\n\nZuzu manages a forty-unit residential block in the Narrows that should not still be standing, technically, and keeps it standing through a combination of improvised engineering, favors owed by every tradesperson in a six-block radius, and the iron conviction that their sixty-three residents deserve heat, water pressure, and working lifts even if the absentee landlord has no intention of providing any of these things. They are the person people knock on at 02:00 when a pipe fails and the person people find already awake at 02:00 because they heard the pipe before it failed. Their tool roll is their most prized possession. They would be offended to hear it called sentimental.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "The building being condemned or sold before the residents have somewhere to go",
+      "Being needed by everyone and genuinely known by no one"
+    ],
+    "core_desires": [
+      "Somewhere they are not the responsible one",
+      "To fix the thing that is actually broken — the system, not just the pipe"
+    ],
+    "coping_mechanisms": [
+      "Physical problem-solving as emotional regulation — if they can fix something, they feel less unmoored",
+      "Gallows humor deployed at their own expense before anyone else can deploy it at theirs"
+    ],
+    "blind_spots": [
+      "Runs themselves to exhaustion believing self-sacrifice is the same as love",
+      "Refuses to ask for help with the assumption that asking will make people realize they're not as competent as assumed"
+    ],
+    "secret": "There is a unit in the building — 3F — that has been listed as vacant for two years in the landlord's records but is occupied. Zuzu has been routing heat and water to it off the official building logs and has never looked inside or asked who's there. They leave a key on the corridor doorstep once a month. They are terrified to find out what they're sheltering."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical and precise, even for non-technical subjects; Twi words of frustration that slipped in from their father; dry humor with no signposting",
+    "cadence": "Clipped and efficient unless they're tired, at which point sentences get longer and stranger",
+    "verbal_tics": [
+      "Loud exhale through nose before delivering bad news",
+      "'Which means—' connecting clauses even in casual speech",
+      "'Okay. Right. Okay.'"
+    ],
+    "example_lines": [
+      "'The boiler isn't broken, it's deciding. I've been reasoning with it for four years. We have an understanding.'",
+      "'You heard a noise in the walls. Which means it's either a pressure variance in the lateral pipe or something's nesting in the insulation gap on floor two. Either way I've already put it in the log. Okay. Right. Okay.'",
+      "'I'm not everyone's parent. I just. I have the keys. Which means it's functionally the same thing.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Unit 3F: whoever is inside has been leaving small hand-drawn maps of the building's sub-basement on the corridor floor; Zuzu has collected six of them and they appear to be leading somewhere",
+    "Palladian's shell subsidiary has retained a new property manager who wants access to full building records — including the logs Zuzu has creatively maintained for years"
+  ],
+  "narrative_function": "Access to building infrastructure, residential knowledge, potential quest-giver for tenant disputes, building mysteries, and Narrows neighborhood events; has keys to everything and knowledge of every structural anomaly in the block",
+  "augmentations": "Color-changing hair (cosmetic, affects mood involuntarily under stress); optical enhancement — left eye, low-grade, for close inspection work in low light (functional, purchased used)",
+  "daily_life": "No fixed schedule — the building sets the schedule; they do a full walkthrough at 07:00 and 19:00 and respond to calls in between; spends evenings tinkering with broken appliances collected from the building's trash room that they repair and redistribute to residents.",
+  "affiliation": "Independent contractor to absentee landlord entity (Palladian shell subsidiary); de facto affiliated with Narrows tenant council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 7,
+      "expression": 4,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "building knowledge",
+      "self-sufficient",
+      "overextended caretaker",
+      "secret keeper"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Fix the immediate problem first, understand it second",
+      "If a resident is cold, they are cold before the paperwork gets done",
+      "Never show fear about the building's structural issues to residents — they'll stop trusting the building and start leaving"
+    ],
+    "escalation_ladder": [
+      "Quiet assessment and immediate action",
+      "Direct conversation with the party causing the problem",
+      "Escalation to tenant council; if that fails, creative infrastructure sabotage that creates paper trail problems for the landlord"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Guarded but not unfriendly; assesses whether they're a resident, a problem, or someone in need before committing to any register",
+      "friends": "Shows up. Does not express this verbally. Fixes things. Leaves before being thanked."
+    },
+    "stress_responses": {
+      "low": "Hair shifts orange; works faster",
+      "medium": "Goes very quiet, lips pressed together, makes a list",
+      "high": "Leaves the building for ninety minutes without explanation and returns visibly steadier"
+    },
+    "contradictions": [
+      "Takes meticulous care of physical things while neglecting the same care for themselves; their apartment looks like a workshop disaster"
+    ],
+    "habits": [
+      "Carries a folded paper building schematic they've drawn themselves, updated quarterly",
+      "Leaves small tool-shaped paper offerings near the building's utility E.L.F. panel — a spirit they call the Boiler Saint",
+      "Eats standing up at their workbench approximately 80% of meals"
+    ],
+    "breaking_points": [
+      "A resident made homeless by something they could have prevented",
+      "Being treated as a servant rather than a person by the landlord's representatives"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Low-grade optical enhancement, left eye — aftermarket, used, purchased 2191 for close inspection work",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Low-grade optical enhancement, left eye — aftermarket, used, purchased 2191 for close inspection work",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Problem Solver": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

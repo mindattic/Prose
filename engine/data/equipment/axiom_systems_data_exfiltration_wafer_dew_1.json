@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a85472ce9b8dcf495028772e",
+  "name": "Axiom Systems Data Exfiltration Wafer DEW-1",
+  "brand_name": "Axiom",
+  "product_name": "Axiom Systems Data Exfiltration Wafer DEW-1",
+  "type": "equipment",
+  "aliases": [
+    "DEW-1",
+    "Data Wafer",
+    "Steal Chip",
+    "Axiom Leech"
+  ],
+  "category": "hacking",
+  "description": "A paper-thin flexible circuit that adheres to any data port and silently copies all data passing through the connection. The DEW-1 is smaller than a postage stamp and can be applied to a data port in under 2 seconds, where it sits flush against the connector housing and is virtually undetectable without physical inspection. The wafer copies all data traffic bidirectionally — incoming and outgoing — to an encrypted micro-storage module that can be retrieved later, or transmits captured data via low-power burst to a nearby receiver. A single wafer can operate for 6 months on its integrated battery, silently capturing every byte that passes through its host port.",
+  "manufacturer": "AXIOM SYSTEMS",
+  "tier_availability": "Tier 3+",
+  "legality": "Prohibited — espionage device",
+  "base_technologies": [],
+  "specifications": {
+    "size": "15mm x 15mm x 0.3mm",
+    "application time": "Under 2 seconds",
+    "detectability": "Requires physical port inspection",
+    "data capture": "Bidirectional",
+    "info": "all traffic; 50m range",
+    "storage": "10 TB encrypted micro-storage",
+    "transmission": "Optional low-power burst",
+    "battery": "6-month operation",
+    "compatibility": "Universal data port adhesion"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A routine IT maintenance check discovered a DEW-1 on a server room data port that had been capturing traffic for four months — the storage module contained complete copies of every transaction, communication, and security log.",
+    "A DEW-1 was found on the neural interface charging port of an executive's desk — it had been copying their neural interface backup data every night for three months."
+  ],
+  "tags": [
+    "hacking",
+    "equipment",
+    "neural",
+    "ai",
+    "power",
+    "night",
+    "circuit",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab407a85b5c82a3175811e86",
+  "name": "Resonant Microwave Denial System RMDS-4 'Crowdbreaker'",
+  "type": "weapon",
+  "aliases": [
+    "Crowdbreaker",
+    "The Oven",
+    "Skinburner",
+    "RMDS"
+  ],
+  "category": "energy",
+  "description": "The RMDS-4 is a directed-energy area denial platform that projects a diverging cone of millimeter-wave microwave radiation, tuned to the 94 GHz frequency band at which water molecules in the subcutaneous layer of human skin absorb energy most efficiently. The effect on exposed targets is an immediate, overwhelming burning sensation across all exposed skin surfaces — described universally by subjects as being 'cooked from the outside in.' The sensation is intense enough to trigger involuntary flight response in virtually all subjects within seconds, regardless of training or psychological preparation.\n\nDeveloped by Tessera Corponation's non-lethal security division, the RMDS-4 is explicitly designed not to cause permanent injury under standard exposure protocols. At rated power and exposure times under four seconds, the weapon produces no lasting tissue damage — the burning sensation ceases within seconds of leaving the beam. This has made it extraordinarily attractive to corporate security operations that need to control crowds or breach occupied spaces without generating the liability of lethal force. However, the weapon's power output can be adjusted beyond factory defaults, and modified units operating above rated parameters cause severe epidermal burns, corneal damage, and at extended high-power exposure, fatal hyperthermia.\n\nThe RMDS-4 is mounted on a shoulder-rig platform with a 120-degree horizontal sweep and a 30-degree vertical arc, controlled by a handle-mounted targeting interface. The emitter head is recognizable by its distinctive hexagonal radiating array — a design that has become visually synonymous with corporate crowd control in Meridian 88's visual culture, appearing in protest art and propaganda with striking frequency.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Millimeter-wave microwave projection",
+    "Subcutaneous resonant absorption tuning",
+    "Diverging cone beam shaping"
+  ],
+  "specifications": "platform: Shoulder-rig mounted, single-operator\nweight: 11.4kg (rig and emitter)\npower source: Tessera Type-6 high-capacity cell, 40 minutes continuous at rated power\nfrequency: 94 GHz primary, 77 GHz secondary (penetrates light cover)\neffective range: 0–50m (primary denial), 50–120m (reduced intensity)\nbeam spread: 120-degree horizontal sweep, 30-degree vertical arc\nrated exposure limit: 4 seconds at standard power (non-injurious)\noverride capability: Factory-limited; modified units documented at 340% rated output",
+  "tactical_use": "Standard deployment places the RMDS-4 operator behind a defensive line, using the wide beam spread to push crowds or groups away from a defined perimeter. In breach scenarios, it is used to clear rooms before entry — the beam passes through standard interior walls at reduced intensity, causing enough discomfort to drive occupants toward exits where entry teams are positioned. Corporate security teams typically deploy one RMDS-4 per four-person unit as a force multiplier. The weapon's main tactical vulnerability is its shoulder-rig format — the operator is relatively immobile during sustained use, and the emitter array is bulky enough to be a targeting priority for hostile snipers.",
+  "cultural_context": "The Crowdbreaker is one of the most politically loaded weapons in Meridian 88. Its official designation as a non-lethal system has allowed corporations to deploy it against labor protests, housing disputes, and unauthorized gatherings with legal impunity. The hexagonal emitter array has become a symbol of corporate repression in activist communities — it appears spray-painted on walls, incorporated into protest banners, and tattooed on the bodies of people who survived its use. The existence of modified high-output units is an open secret that Tessera Corponation disputes aggressively, and several journalists who documented RMDS-4 burn injuries in excess of rated parameters have subsequently faced significant legal pressure.",
+  "known_users": [
+    "Tessera Corponation security divisions",
+    "Licensed corporate crowd control contractors",
+    "Municipal security forces in corporate-administered districts",
+    "Underground modification specialists (modified units resold to private buyers)"
+  ],
+  "story_hooks": [
+    "A protest group has acquired a modified RMDS-4 running at 340% output and is planning to use it — not for crowd control, but as retaliation against a corporate event. The players are asked to stop them, but the client turns out to be the corporation that deployed RMDS-4s against the protesters' community in the first place.",
+    "A journalist has documented fatal hyperthermia cases from an RMDS-4 incident and needs the evidence extracted from a Tessera-controlled server before the legal team buries it. The data is real, the risk is real, and Tessera knows someone is looking.",
+    "A modified RMDS-4 is being auctioned through a black market channel. Several buyers want it badly enough to kill for it. The players are either protecting the auction, robbing it, or have been hired to ensure a specific buyer doesn't win."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "energy",
+    "weapon",
+    "sniper",
+    "war",
+    "secret",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "ubc",
+    "injury",
+    "pain",
+    "market",
+    "rain",
+    "train",
+    "water",
+    "tier 2"
+  ]
+}

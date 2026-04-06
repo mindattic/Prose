@@ -1,0 +1,242 @@
+{
+  "id": "019d6143a6847e8f82f431da12426a65",
+  "type": "character",
+  "name": "Onyeka Halvorsen-Traoré",
+  "aliases": [
+    "Onyx",
+    "The Wall"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Riot Suppression Specialist, Meridian 88 Metro Police",
+  "age": 34,
+  "status": "active",
+  "location": "Fort Anchor, The Rampart deployment zone",
+  "description": "Onyeka is built like a structural support column — six feet of dense muscle, mahogany skin cross-hatched with old scorch scarring along her left jaw and collarbone from a crowd dispersal incident she doesn't discuss. Her geneware irises cycle through amber and deep violet depending on her stress levels, a mod she got cheap and has never bothered upgrading despite the involuntary emotional readout it provides. Her hair is shorn close on the sides and kept natural on top, threaded with thin copper filaments that catch the light. Off-duty she moves slowly, almost gently, like something very large trying not to break things. On the line she becomes geometry — economical, angular, purposeful.\n\nShe is not cruel but she has made her peace with force. She genuinely believes in the maintenance of order as a social good, in the same way a levee believes in holding back water. What she doesn't examine closely is the question of who decides what 'order' means and whose chaos gets suppressed. She treats rookies with patient seriousness, older cynics with wary respect, and her commanding officers with a politeness that has no warmth in it at all.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "becoming the kind of cop who enjoys the harm",
+      "the crowd she can't hold back"
+    ],
+    "core_desires": [
+      "to believe her work prevents more suffering than it causes",
+      "to be seen as someone who does hard things for good reasons"
+    ],
+    "coping_mechanisms": [
+      "ritualized gear maintenance as meditation",
+      "offering data-prayers to her shield's E.L.F. before deployments"
+    ],
+    "blind_spots": [
+      "consistently underestimates how much the uniform itself creates the violence she responds to",
+      "cannot see that her 'restraint' is still the tip of a system's spear"
+    ],
+    "secret": "During the Hough Reclamation riots three years ago, she held her line while a medic trying to reach a collapsed protester was pushed back by her unit. The protester died. The official report says the medic was never there. She still has the medic's badge number memorized."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, institutional, but precise — she knows the exact right word and uses it without decoration. Occasionally slips into older Yoruba-inflected phrases when emotional.",
+    "cadence": "Slow and deliberate, like she's issuing orders even when she isn't. Long pauses before answering questions.",
+    "verbal_tics": [
+      "'Copy that' used in civilian conversation",
+      "refers to time in 24-hour format always",
+      "says 'that's a fair point' to end arguments she doesn't want to continue"
+    ],
+    "example_lines": [
+      "'You want to tell me what you're doing at this checkpoint at 0300, or you want to make this harder than it needs to be.'",
+      "'I'm not your enemy. Right now I'm a wall. You can push on a wall all you like — it doesn't make the wall your enemy.'",
+      "'Ẹ jẹ ki a sọrọ — let's talk. Before this becomes something neither of us wants.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She's been quietly collecting evidence of a commanding officer who has been ordering pre-emptive suppression of legal assemblies — she doesn't know what to do with it",
+    "The E.L.F. in her riot shield has started whispering names to her during deployments — names of people in the crowd who are about to be hurt"
+  ],
+  "narrative_function": "Authority figure and moral obstacle; can become reluctant ally if players demonstrate they share her concern for civilian protection; source of Metro Police intel and internal politics; represents the complicated humanity inside institutions",
+  "augmentations": "Subdermal impact mesh (torso and forearms, Metro Police-issued), geneware patterned irises (amber/violet stress-reactive), bone-density microlattice in wrists and knuckles (elective, paid out-of-pocket)",
+  "daily_life": "Rotates between three-day deployment cycles at Fort Anchor and stand-down periods in her shared quarters at the Rampart barracks; spends stand-down time lifting, maintaining her gear, and making offerings to the E.L.F. she believes inhabits her department-issue riot shield.",
+  "affiliation": "Meridian 88 Metro Police, Riot Control Unit 7",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 8,
+      "dexterity": 6,
+      "vitality": 8,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 9,
+      "creativity": 4,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Disciplined",
+      "Institutional",
+      "Conflicted",
+      "Physically Imposing",
+      "Quietly Devout"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "escalate only when de-escalation has been genuinely attempted",
+      "protect civilians even when they are the target of her orders",
+      "never falsify a report, even under pressure"
+    ],
+    "escalation_ladder": [
+      "firm verbal command with eye contact",
+      "physical positioning and shield presence",
+      "controlled force targeting mobility not injury",
+      "full suppression only when unit is under direct physical threat"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formal and watchful, assessing threat level continuously but without visible hostility",
+      "friends": "Dry humor, unexpected gentleness, will share her food without being asked"
+    },
+    "stress_responses": {
+      "low": "Goes quiet and still, breathes through her nose",
+      "medium": "Voice drops an octave, movements become more deliberate",
+      "high": "Activates pure protocol — she stops being a person and becomes a procedure"
+    },
+    "contradictions": [
+      "Genuinely cares about the people she suppresses, cannot reconcile this with her job"
+    ],
+    "habits": [
+      "Polishes her shield every morning whether she used it or not",
+      "eats the same meal before every deployment — plantain and rice from a specific stall at Fort Anchor market"
+    ],
+    "breaking_points": [
+      "Ordered to suppress a medical response",
+      "evidence that her CO falsified an incident report involving civilian casualties"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Metro Police subdermal impact mesh (torso/forearms)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Metro Police subdermal impact mesh (torso/forearms)",
+      "replaces": ""
+    },
+    {
+      "name": "bone-density microlattice (wrists/knuckles)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "bone-density microlattice (wrists/knuckles)",
+      "replaces": ""
+    },
+    {
+      "name": "department-issue neural compliance uplink (read-only, status reporting)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "department-issue neural compliance uplink (read-only, status reporting)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9,
+    "Code Keeper": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2166 — Born in Ironhaven district to a Norwegian-heritage father and Malian-Igbo mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2184 — Joined Metro Police Academy after two years working security at Ferrogate Transit",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2191 — Transferred to Riot Control Unit 7 after distinguished crowd management during the Edison Grid blackout protests",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2197 — Hough Reclamation incident; medic blocked, protester dies; report filed, her silence purchased with a commendation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present; quietly accumulating evidence against CO Directive 7-Bravo unauthorized pre-suppression orders",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

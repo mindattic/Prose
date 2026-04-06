@@ -1,0 +1,220 @@
+{
+  "id": "019d6143a5a37d13aeb2158e149f8dec",
+  "type": "character",
+  "name": "Adaure Sigríðardóttir-Bekele",
+  "aliases": [
+    "Ada",
+    "Addie"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Childcare worker at a community crèche in the Narrows",
+  "age": 22,
+  "status": "active",
+  "location": "The Thistle Crèche, a basement-level community childcare cooperative in the Narrows, off Archer's Line",
+  "description": "Adaure is small and quick, with the kind of energy that fills a room without dominating it — a particular skill honed by spending forty hours a week managing eight children under six. She has Igbo-Icelandic-Ethiopian heritage that shows in her light-olive complexion, dark wide-set eyes, and loosely curled hair she wears loose to her shoulders on good days and pinned chaotically on all other days. She has patterned irises — rings of amber and pale gold that she was born with and which have been imitated by a popular cosmetic mod, which delights her. She has a small retractable claw on her right index finger, not geneware but a cheap press-on she bought at a Burnished Market stall and decided was a personality. She loses it constantly.\n\nAdaure is twenty-two and in the process of becoming something but isn't sure what. She is excellent with children in a way that has nothing to do with sentimentality — she is honest with them, takes their concerns seriously, and has a talent for improvised problem-solving that the crèche's patched-together resources demand daily. She is also young enough to be furious about the structural conditions of her work: the pay (near-UBC), the space (borrowed), the respect (absent). She talks about this often. She is still figuring out if she wants to fix it from inside or from outside or from somewhere no one has told her exists yet.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.8,
+      "id": 0.7,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.1
+    },
+    "core_fears": [
+      "That care work is structurally set up to exhaust the people who are good at it until they leave",
+      "That she'll look up in twenty years and realize she played it too safe"
+    ],
+    "core_desires": [
+      "For the children in her care to have more structural safety than she can provide through effort alone",
+      "To be taken seriously as someone with something to say about how the city works"
+    ],
+    "coping_mechanisms": [
+      "Anger as fuel rather than paralysis — converts injustice into tasks",
+      "Tight friendships with the other young workers in the organizer network"
+    ],
+    "blind_spots": [
+      "Conflates being right about a problem with having a viable solution to it",
+      "Doesn't pace herself — burns hot and hard and hasn't yet hit the wall she's building toward"
+    ],
+    "secret": "The Ringo Corporation grant that funds part of the crèche comes through a community liaison named Ovid Ndubuisi-Falk, who has recently started asking Adaure for small informational favors — names of families in the building, who's in arrears, whether anyone has been having unusual visitors. She's given him a little, told herself it was harmless, and is now deeply uneasy about how the ask has been escalating."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct and colloquial with flashes of surprising precision — has read more than her circumstances would predict. Code-switches freely.",
+    "cadence": "Fast with bursts of deliberate slowness when she wants something to land. Runs long when she's angry, short when she's tired.",
+    "verbal_tics": [
+      "'No but listen—' as a reframe",
+      "Repeats the last word of a sentence once when emphasizing: 'That's the actual problem. Actual.'"
+    ],
+    "example_lines": [
+      "'I love these kids. I love them. The city does not love them and I do not think that's a coincidence.'",
+      "'No but listen — you're asking me about the grant like I don't know what Ringo wants from a neighborhood grant. I know what they want.'",
+      "'Marisol cried for forty minutes this morning. I don't know why. I sat with her for all forty. That's the whole job and also somehow not the job anyone pays for.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The informational favors Ovid Ndubuisi-Falk is asking for have crossed a line Adaure can feel but hasn't named yet. She needs someone to either validate her concern or explain why she's wrong.",
+    "One of the crèche children has started showing up with unexplained bruising. Adaure has been documenting it quietly because she doesn't know who the right authority to report to is — she doesn't trust the corporate-adjacent social services that cover the Narrows.",
+    "The community organizer network she's joined is planning something more public than she understood when she signed up. She has to decide what she's actually prepared to do."
+  ],
+  "narrative_function": "Ground-level view of how poverty and community survive each other. Window into the Narrows' social fabric — who the families are, what they're worried about, how the neighborhood is changing under corporate development pressure. Also functions as a moral compass character: someone without resources or power who is still, quietly, doing the work. Can connect players to families, neighborhood issues, or the organizer network.",
+  "augmentations": "Natural patterned irises (amber and gold rings — not a mod). Cheap press-on retractable claw, right index finger (non-cyberware, replaced frequently). No installed augmentations — can't afford them and has complicated feelings about whether she'd want them.",
+  "daily_life": "Arrives at 0730, starts the crèche day at 0800. Eight children, two workers (herself and a part-timer who comes Tuesdays and Thursdays). Feeds them, teaches them, adjudicates their conflicts, patches their scrapes, sings to the ones who need it. Out by 1800. Two nights a week she attends a community organizer's meeting in the Narrows that she initially joined for the free food and now attends because she's angry about the right things.",
+  "affiliation": "The Thistle Crèche — community cooperative, partially funded by a Ringo Corporation neighborhood grant that everyone knows comes with expectations attached",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 9,
+      "expression": 8,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 5,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 3,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Care Worker",
+      "Community Organizer Adjacent",
+      "Moral Compass",
+      "Compromised Unknowingly"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Children's safety is a non-negotiable — will break protocol, social rules, and her own comfort before she lets a child come to harm",
+      "Won't lie to the children in her care, even about hard things — adapts her vocabulary but not the truth"
+    ],
+    "escalation_ladder": [
+      "First: asks the direct question, gives a chance to explain",
+      "Second: states clearly what she's seen and what she thinks it means",
+      "Third: acts unilaterally on behalf of the most vulnerable person in the situation"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open and direct, reads them fast, gives them slightly less than she seems to — she's learned to hold a little back",
+      "friends": "Loud and affectionate, shares her anger, asks for and offers real help, physically demonstrative"
+    },
+    "stress_responses": {
+      "low": "Talks faster, picks up extra tasks to feel in control",
+      "medium": "Gets very still with the children, processes the anger somewhere it won't land on them, takes it to a friend later",
+      "high": "Cries in the supply closet, comes back out. This is not a breakdown. This is maintenance."
+    },
+    "contradictions": [
+      "Believes in collective action and organizer networks but keeps the Ringo situation private out of embarrassment at her own complicity",
+      "Is building toward burning out without believing it will happen to her because she cares enough"
+    ],
+    "habits": [
+      "Checks all the exits when she enters a space with children, always, without knowing she's doing it",
+      "Names problems out loud to herself before anyone else can — 'that's a problem, here's what kind'"
+    ],
+    "breaking_points": [
+      "Any direct harm to a child in her care",
+      "Being told to stop asking questions by someone with power over the crèche's funding"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "Currently missing, she lost it yesterday",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9,
+    "Quick Study": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Narrows to an Icelandic-Igbo mother and Ethiopian-Icelandic father",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Finished secondary education; took a gap placement at the Thistle Crèche as a provisional measure",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Became a full-time worker after the previous lead carer left",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined the Narrows community organizer network",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Ringo grant liaison Ovid Ndubuisi-Falk began requesting informational favors",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

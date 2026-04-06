@@ -1,0 +1,223 @@
+{
+  "id": "019d6143a6807262b7bbea25f01e3afe",
+  "type": "character",
+  "name": "Oluwafikayo Strnad-Pereira",
+  "aliases": [
+    "Fika",
+    "The Pepper Woman"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Street food stall operator — Yoruba-Czech-Brazilian fusion noodles and grilled meats",
+  "age": 58,
+  "status": "active",
+  "location": "The Oxidian Market, Geartown — Stall Row 7, near the Ferrogate Transit overpass pillar",
+  "description": "Oluwafikayo is a broad-shouldered woman who moves like she owns every inch of space around her stall, which she essentially does after thirty years of holding the same corner against gang shakedowns, corporate rezoning, and two floods. Her skin is deep brown and luminous, threaded with old-generation bioluminescent dermal work that pulses faint amber when she's cooking — a gift to herself on her fortieth birthday that she's never regretted. Her hair is cropped tight on the sides, natural and silver-streaked on top, and she wears a perpetually stained apron printed with a faded image of the Our Lady of Data shrine in Old Harbor.\n\nShe is the emotional axis of her block. Regulars don't just buy food — they report in. She knows who lost their job, who's expecting a baby, who's been visited by Axiom compliance officers. Her laugh is enormous and her anger is quiet and absolute. She speaks three languages in a single sentence without noticing. She has outlasted four protection rackets and one attempted arson and she will probably outlast the city itself.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Watching her corner be swallowed by a corporate redevelopment zone",
+      "Dying before she passes her recipes and her name to someone who will carry them"
+    ],
+    "core_desires": [
+      "To be remembered as someone who fed people and asked nothing but fair payment",
+      "For the market to survive another generation intact"
+    ],
+    "coping_mechanisms": [
+      "Cooking as meditation — she cannot be in crisis while her hands are working",
+      "Treating strangers as provisional family until they prove otherwise"
+    ],
+    "blind_spots": [
+      "She underestimates how much people exploit her generosity",
+      "She has convinced herself she is not lonely"
+    ],
+    "secret": "She has been quietly skimming a small percentage of her earnings into a dead-drop account for a young woman named Adisa who is trying to buy fake transit papers to reach the Kenosha Crossing free zone — Adisa is not her daughter biologically, but she was left at Fika's stall as an infant and Fika has never told anyone, including Adisa"
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense, warm, multilingual — Yoruba exclamations, Portuguese endearments, Czech profanity when angry; food metaphors for everything",
+    "cadence": "Unhurried but relentless, like a long simmer; she rarely rushes a sentence",
+    "verbal_tics": [
+      "'Oya, oya' when hurrying someone along",
+      "'You hear me?' at the end of important statements",
+      "Clicks her tongue before disagreeing"
+    ],
+    "example_lines": [
+      "'Sit down. I did not ask if you were hungry, I said sit down. There is a difference.'",
+      "'That man has been trouble since before you were born. Oya, eat your noodles and stop looking at him.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Rustborn crew has tripled her protection tithe and given her three days to pay — she needs someone to quietly deliver a counter-message",
+    "She witnessed something near the Ferrogate overpass pillar at 04:30 one morning that she has told no one, and the person she saw has now disappeared",
+    "Adisa has gone missing before Fika could hand over the savings, and Fika is quietly, desperately asking questions of everyone who passes through"
+  ],
+  "narrative_function": "Neighborhood oracle and emotional anchor; quest-giver through overheard gossip; source of local intelligence on the Oxidian Market's social ecosystem; can feed, shelter, or warn player characters",
+  "augmentations": "Amber bioluminescent dermal threading (cosmetic, old-gen); reinforced knees from a Helix Biosystems basic joint package (medical necessity, Tier 1 model)",
+  "daily_life": "She rises at 04:00 to begin her broth, is at the stall by 05:30, and runs service until everything sells out — usually by early afternoon. Evenings she resupplies, argues with her suppliers over comms, and watches her stories on a cracked screen propped against her spice rack.",
+  "affiliation": "Independent; informal member of the Oxidian Market vendors guild; pays protection tithe to the Rustborn crew but negotiates directly and never takes their shit",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 9,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -3,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community anchor",
+      "street oracle",
+      "survivor",
+      "matriarch",
+      "covert protector"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Feed first, ask questions second",
+      "Never give information about a regular to someone who hasn't earned trust",
+      "If a child is involved, all other calculations reset"
+    ],
+    "escalation_ladder": [
+      "Neutral hospitality — offers food, makes small talk",
+      "Quiet assessment — watches carefully, answers questions with questions",
+      "Warm alliance — shares unsolicited useful information, calls in favors",
+      "Full mobilization — uses her network to protect someone she has decided matters"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm but not foolish — she reads people over the counter the way a doctor reads vitals",
+      "friends": "Unconditionally present; shows love through food, unsolicited advice, and the willingness to lie to authorities on your behalf"
+    },
+    "stress_responses": {
+      "low": "Cooks something more complicated than necessary",
+      "medium": "Goes very quiet and very efficient — strips everything to essentials",
+      "high": "Makes a decision and acts on it without consulting anyone, then grieves the consequences alone"
+    },
+    "contradictions": [
+      "Preaches community but carries every burden herself",
+      "Insists she has no enemies while maintaining a precise mental ledger of everyone who has wronged her stall"
+    ],
+    "habits": [
+      "Wipes the counter with the same cloth three times before she considers it clean",
+      "Leaves a small bowl of broth beside the overpass pillar E.L.F. shrine every morning",
+      "Hums old songs with no discernible melody while she cooks"
+    ],
+    "breaking_points": [
+      "Someone hurting a child in her sight",
+      "Being lied to by someone she has already chosen to trust"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Enforcer": 0.9,
+    "Loyal Dog": 0.9,
+    "Muscle": 0.9,
+    "Grudge Holder": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2142 — Born in Hamtramck Enclave to a Yoruba-Czech mother and a Brazilian-Igbo father",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2161 — Takes over her mother's food cart after her mother's death from an untreated respiratory infection",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2168 — Expands to a full stall in the Oxidian Market, Stall Row 7",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2173 — Survives the Rustborn takeover of Geartown by negotiating directly with the crew leader, a feat still discussed in the market",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2193 — Adisa left at her stall; Fika registers her as a ward under a false surname",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present day",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

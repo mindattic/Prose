@@ -1,0 +1,36 @@
+{
+  "id": "019d6143aa737dd8b93a447579ecb9d7",
+  "name": "Tessera Logistics Van",
+  "type": "transportation",
+  "aliases": [
+    "T-Van",
+    "White Box",
+    "Delivery Coffin"
+  ],
+  "category": "commercial_ground",
+  "manufacturer": "Tessera",
+  "description": "A mid-size autonomous delivery van that handles last-mile logistics in Tier 2-4 districts. White, featureless, ubiquitous. There are so many T-Vans on the road that they've become effectively invisible — the perfect anonymous vehicle. Criminal organizations have taken notice. An unmarked white van identical to ten thousand others is the best disguise in Meridian 88.",
+  "propulsion": "Electric, all-wheel drive",
+  "speed": "80 km/h",
+  "capacity": "2,000 kg payload, climate-controlled cargo bay",
+  "range": "250 km",
+  "tier_availability": "Commercial fleet, Tier 2-4 streets",
+  "cost": "Φ18,000 new, Φ6,000-10,000 used",
+  "autonomy": "Fully autonomous with remote human oversight",
+  "armament": "None. Cargo bay locks and tracking.",
+  "common_usage": "Package delivery, supply restocking, medical transport, and a disturbingly high percentage of criminal operations.",
+  "story_hooks": [
+    "A Tessera Van has been making deliveries to an address that doesn't exist — same time every week for three years",
+    "Someone is using decommissioned T-Vans as mobile data centers, parking them in different locations each night"
+  ],
+  "tags": [
+    "commercialground",
+    "transportation",
+    "control",
+    "medical",
+    "night",
+    "vehicle",
+    "tier 2",
+    "tier 4"
+  ]
+}

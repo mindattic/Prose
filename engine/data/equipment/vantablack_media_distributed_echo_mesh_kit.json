@@ -1,0 +1,67 @@
+{
+  "id": "019d6143a87a7f4b8d48b25479b1d3b0",
+  "name": "Vantablack Media Distributed Echo Mesh Kit",
+  "brand_name": "Vantablack",
+  "product_name": "Vantablack Media Distributed Echo Mesh Kit",
+  "type": "equipment",
+  "aliases": [
+    "Echo Mesh",
+    "The Scatter Kit",
+    "Breadcrumbs"
+  ],
+  "category": "comms",
+  "description": "The Distributed Echo Mesh Kit is a field-deployable mesh networking system packaged as a set of twelve adhesive node discs, each approximately the diameter of a coin and 4mm thick. When placed on surfaces throughout a building, tunnel system, or urban block, the nodes self-organize into a low-power mesh network within ninety seconds, creating a private encrypted communications backbone entirely independent of any existing infrastructure. The mesh operates on frequency-hopping spread spectrum in the sub-GHz band, prioritizing wall penetration and range over bandwidth. The resulting network supports voice, text, and low-resolution positional data for up to eight simultaneous users.\n\nVantablack Media developed the Echo Mesh Kit ostensibly for their field journalism teams operating in communications-denied environments — protest zones, disaster areas, and regions where corporate or state actors have seized control of local networks. The kit's civilian packaging and media-company branding have allowed it to circulate with relatively light regulatory scrutiny despite capabilities that make it extremely useful for operations that have nothing to do with journalism. Each node is designed to be nearly invisible once placed, with a matte surface that accepts paint, dust, and grime naturally.\n\nThe mesh has no central node — if any individual disc is found and destroyed, the network reroutes automatically. Full network collapse requires removal of nine or more of the twelve nodes. The discs are designed to be left behind: they are cheap enough to be considered disposable, and they self-wipe after a factory-set duration between 24 hours and 30 days depending on the configuration selected before deployment.",
+  "manufacturer": "VANTABLACK MEDIA",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Self-organizing mesh network protocol",
+    "Frequency-hopping spread spectrum (sub-GHz)",
+    "Adhesive passive-mount node housing",
+    "Distributed routing with automatic failover",
+    "Timed cryptographic self-wipe"
+  ],
+  "specifications": {
+    "node_count": "12 per kit",
+    "node_dimensions": "28mm diameter, 4mm thick disc",
+    "node_weight": "4g each",
+    "network_setup_time": "90 seconds from first node placement",
+    "range_per_node_hop": "Up to 120m in open space; 40m through reinforced concrete",
+    "max_simultaneous_users": "8",
+    "data_types_supported": "Voice, text, compressed positional data",
+    "self-wipe_timer": "Configurable 24h to 30 days",
+    "power_source": "Integrated micro-battery per node; non-rechargeable, single-use",
+    "battery_life": "72 hours active; 30 days standby"
+  },
+  "tactical_use": "Teams deploy the Echo Mesh Kit before entering a target building or zone, scattering nodes as they move through the space. Once the mesh is live, the team operates on a private network that exists entirely within the physical bounds of the deployment — no signal leaves the mesh perimeter in any meaningful form, and no external network access is required. This makes it invaluable in environments where the local network infrastructure has been compromised or is actively monitored. Nodes are placed in inconspicuous locations: inside ventilation grilles, under furniture, on the backs of doors. A standard sweep by corporate security rarely finds more than two or three before the team has completed its objective.",
+  "cultural_context": "The Echo Mesh Kit is ubiquitous enough to have become mundane in certain circles — protest organizers, squatter communities, and underground venue operators all use it to maintain communications during events they expect authorities to disrupt. Vantablack's branding has given the kit a kind of countercultural legitimacy; owning one signals that you operate in spaces where the official network cannot be trusted. More sophisticated users treat the disposable nodes as a philosophy as much as a tool: build what you need, use it, leave it behind. Nothing you create has to be permanent.",
+  "known_users": [
+    "Field journalists in contested zones",
+    "Protest organizers and activist networks",
+    "Infiltration teams and corporate espionage operatives",
+    "Underground venue and event coordinators",
+    "Squatter community infrastructure volunteers"
+  ],
+  "story_hooks": [
+    "A mesh network left behind after a job is still active weeks later — someone is using the nodes the team left behind, and they are transmitting something the team was never supposed to see.",
+    "A pattern emerges: every major incident in the Undercroft district over the past year has been preceded by an Echo Mesh deployment in the same three-block radius.",
+    "A character finds a single Echo Mesh node in their apartment that they did not place — the self-wipe timer has been disabled, and it has been active for six months.",
+    "Vantablack Media issues a firmware update that reduces the self-wipe window to a maximum of 48 hours, citing 'environmental responsibility.' The real reason is considerably more sinister.",
+    "A derelict building slated for demolition turns out to be the center of an ancient Echo Mesh network still running on the last of its battery reserves — the transmissions contain records of something that was never meant to be found."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "war",
+    "trust",
+    "love",
+    "ai",
+    "elf",
+    "corporate",
+    "control",
+    "power",
+    "pain",
+    "tunnel",
+    "tier 1"
+  ]
+}

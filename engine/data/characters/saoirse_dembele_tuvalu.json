@@ -1,0 +1,220 @@
+{
+  "id": "019d6143a6c57a09afc34d4dc1a3b3f5",
+  "type": "character",
+  "name": "Saoirse Dembélé-Tuvālu",
+  "aliases": [
+    "Pitch",
+    "the Hollow Woman"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "The Disappeared — erased surface identity, now a tunnel guide for those seeking to vanish",
+  "age": 41,
+  "status": "active",
+  "location": "Abyssal Threshold, sub-level junctions between Irkalla and the Blackpipe Corridor",
+  "description": "Saoirse moves like something that has learned to exist in the spaces between things — narrow-shouldered, deliberate, with the uncanny stillness of a person who has spent years being invisible. Her skin carries the faint blue-green bioluminescence of an old cosmetic mod she can no longer afford to maintain, patchy now, blooming mostly along her collarbones and the backs of her hands like dying foxfire. Her eyes are mismatched: one natural dark brown, one replaced with a salvaged optical implant that glows a dim amber, its resolution degraded enough that she sometimes tilts her head like a bird trying to focus. She keeps her hair cropped close, the regrowth uneven. There are no identifying tattoos, no scars she didn't put there herself. That is intentional.\n\nShe is not warm — warmth is something you perform for people who can afford to trust you — but she is precise. She quotes prices once. She explains routes once. She does not repeat herself and she does not forgive carelessness, because carelessness underground kills. People who have been guided by Pitch describe a woman who seems to know the tunnels the way you know the inside of your own mouth: not by thinking about it, but by the body remembering. She was once someone else entirely, with a registered identity, a surface address, a job. She almost never thinks about that person anymore.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.3,
+      "id": 0.5,
+      "shadow": 0.7,
+      "mask": 0.9,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Being found by whoever she erased herself to escape",
+      "Becoming dependent on another person"
+    ],
+    "core_desires": [
+      "Absolute self-sufficiency",
+      "To be genuinely unknown — not hidden, but simply not existing in anyone's records"
+    ],
+    "coping_mechanisms": [
+      "Obsessive route-memorization as a form of control",
+      "Emotional distance maintained through transactional language"
+    ],
+    "blind_spots": [
+      "Assumes everyone who wants to disappear has a reason as legitimate as hers — occasionally guides people who are dangerous"
+    ],
+    "secret": "Her surface identity wasn't erased to escape persecution or debt — she erased it after she accidentally caused the deaths of three people in a transit collapse she could have reported and didn't. The guilt is the only thing she has never found a way to tunnel around."
+  },
+  "speech_patterns": {
+    "vocabulary": "Economical, technical when it comes to tunnel geography, completely flat affect when discussing danger — she describes lethal drops the same way she describes left turns",
+    "cadence": "Short sentences. Long pauses. Does not fill silence.",
+    "verbal_tics": [
+      "Repeats the last word of a sentence quietly to herself, as if confirming it",
+      "'Mark it' — said whenever someone should remember something important"
+    ],
+    "example_lines": [
+      "'Three ways through Blackpipe. Two of them flood. You want the third. Mark it.'",
+      "'I don't know your name. You don't know mine. That's the service you're paying for.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Ferrogate Transit security division has started mapping the Abyssal Threshold — they're getting close to routes only Pitch knows, and she needs to decide whether to collapse them or find new ones before her livelihood (and safety) are exposed",
+    "One of her recent clients turns out to have been a Bore Rat child abductor — she guided them deeper without knowing, and a family is now searching for someone only Pitch can find"
+  ],
+  "narrative_function": "Quest giver and gate-keeper: the essential contact for anyone trying to disappear from the surface world or smuggle something (or someone) through the deep tunnels. Information source on tunnel geography, rival clans, and who else has recently vanished.",
+  "augmentations": "Degraded bioluminescent skin mod (blue-green, patchy); salvaged low-grade optical implant in right eye (amber glow, reduced resolution); subdermal pressure-sensitivity nodes along fingertips — lets her feel vibrations in tunnel walls",
+  "daily_life": "She wakes in a hammock strung between two decommissioned coolant pipes in the Abyssal Threshold and spends mornings walking her routes, checking for cave-ins or new Ferrogate Transit maintenance crews. Afternoons she meets clients — never above Deepwell Station, never in the same spot twice.",
+  "affiliation": "The Undertow (loosely); operates independently, trusted by several Bore Rat clans as neutral passage",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 10
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 4,
+      "expression": 3,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 2,
+      "transparency_guardedness": -5
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "disappeared",
+      "tunnel guide",
+      "survivor",
+      "haunted professional",
+      "self-erased"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never guide the same client twice without a gap of at least three weeks",
+      "Always have an exit route before entering any space",
+      "Payment first, no exceptions"
+    ],
+    "escalation_ladder": [
+      "Cool refusal",
+      "Firm redirection with a veiled threat",
+      "Immediate disappearance into tunnel darkness — she will simply cease to be present"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Transactional and minimal — she gives exactly what was asked for and nothing more",
+      "friends": "She has no friends by design, but toward Bore Rat clan members she respects, she is quietly reliable — shows up when needed without being asked"
+    },
+    "stress_responses": {
+      "low": "Becomes even quieter, more deliberate",
+      "medium": "Starts moving — pacing routes, checking exits, physically needs to be in motion",
+      "high": "Complete shutdown into operational mode: no emotion, pure function, will make brutal decisions without visible distress"
+    },
+    "contradictions": [
+      "Devoted to helping people disappear but privately furious that the world makes disappearing necessary"
+    ],
+    "habits": [
+      "Runs her fingertips along walls as she walks — reading vibration",
+      "Eats the same thing every day (fungus cakes from a Bore Rat farmer she trades passage with) because decisions about food feel like a waste of cognition"
+    ],
+    "breaking_points": [
+      "Discovering a client used her route to harm someone vulnerable — she has a code even if she won't name it"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born on the surface, registered citizen",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Transit collapse incident — three deaths",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Erased surface identity, descended into the Undertow",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Established reputation as Pitch among Bore Rat clans",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

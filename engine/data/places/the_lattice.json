@@ -1,0 +1,113 @@
+{
+  "id": "019d6143a9447e348c7f880d03dfd5af",
+  "type": "place",
+  "name": "The Lattice",
+  "aliases": [
+    "Toronto",
+    "T-Dot",
+    "The Grid",
+    "North Sprawl"
+  ],
+  "description": "Toronto did not fall. Toronto metastasized. What was once a city of 3 million became a metropolitan organism of 18 million, absorbing Mississauga, Brampton, Oshawa, Hamilton's eastern suburbs, and everything in between into a continuous urban lattice that stretches from Lake Ontario's shore to the moraine ridges 80 kilometers north. The Lattice is the GLM's Canadian anchor — the largest single population center under nominal Canadian sovereignty, and the only city in the northern corridor that can rival Meridian 88 in economic output. The key word is 'nominal.' Eighteen of the Big 30 corponations maintain sovereign enclaves within the Lattice, and the actual territory governed by Canadian municipal law has been shrinking by approximately 2% per year for the last two decades.\n\nThe downtown core is a vertical city — arcology towers connected by skybridge networks at every tenth floor, the ground level permanently shadowed and increasingly abandoned to the Tier 1 population and the excluded. The PATH system, Toronto's old underground pedestrian network, has been expanded into a subterranean city in its own right, running 40 kilometers beneath the surface and housing an estimated 2 million people who never see daylight by choice or by circumstance. The CN Tower still stands — reinforced, augmented with communications arrays, and now serving as the primary data relay for the northern GLM net infrastructure. It is the oldest structure in the core and the only one that everybody, regardless of tier, can identify by sight.\n\nThe Lattice's economy runs on data, finance, and biotech. Bay Street's financial district has evolved into a quantum-computing fortress where algorithmic trading happens at speeds that make human cognition a bottleneck eliminated decades ago. The biotech corridor along the old Don Valley produces neural interfaces, therapeutic augmentations, and genetic modification packages for the Tier 4 and 5 markets. The cultural economy — music, visual art, neural-experience design — is the largest in the GLM, which means nothing to the people producing it, because the corps take the revenue and the artists take the exposure. Toronto has always been like this. The scale is different. The dynamic is not.",
+  "atmosphere": {
+    "sights": [
+      "Arcology towers connected by skybridge networks, the gaps between them deep enough to lose weather in",
+      "The CN Tower piercing the skyline, studded with data relay arrays — Toronto's antenna to the world",
+      "Corporate sovereign enclaves marked by shimmering jurisdiction boundaries, visible as faint holographic walls",
+      "The PATH underworld, lit by bioluminescent panels and populated by millions who live beneath the grid",
+      "Lake Ontario visible from the upper tiers, grey-green and working, cargo platforms dotting the surface"
+    ],
+    "sounds": [
+      "Eighteen million people generating a sound floor that never drops below 60 decibels, anywhere, ever",
+      "Skybridge transit pods humming between towers — the commute of the comfortable",
+      "Street-level buskers playing neural-feedback instruments that respond to audience brain activity",
+      "The deep structural groan of arcology foundations settling — a sound only the PATH residents know"
+    ],
+    "smells": [
+      "Filtered air in the upper tiers — each corporate enclave has its own scent profile, a branding exercise you breathe",
+      "The PATH smells like recycled atmosphere, human density, and the ozone of a million personal devices",
+      "Street-level food markets producing the only honest smells in the city — grease, spice, and char",
+      "Lake Ontario on south winds, carrying the mineral tang of cargo platform runoff"
+    ],
+    "feel": "A city that works the way cities have always worked — by concentrating enough human beings in one place that something unpredictable happens. The Lattice is too big to control, too valuable to abandon, and too complex to understand. It functions not because anyone designed it to, but because 18 million people wake up every day and collectively decide to keep going. That decision is not guaranteed.",
+    "tags": []
+  },
+  "demographics": "18 million registered, estimated 22 million actual. The most ethnically diverse population center in the GLM — 200-plus distinct cultural communities, each with their own economic networks, mutual aid systems, and grudges. Tier distribution skews toward the middle: Tier 2 and 3 make up 55% of the registered population. The PATH underworld is predominantly Tier 1 and excluded.",
+  "economy": "Quantum finance, biotech manufacturing, neural-experience design, and cultural production. Bay Street generates more algorithmic trading volume than any other node in the GLM. The Don Valley biotech corridor is the primary supplier of therapeutic augmentations for the Canadian market. The cultural economy produces content consumed across the entire megacity network. Total GDP rivals Meridian 88; per-capita distribution is predictably grotesque.",
+  "power_structure": "Canadian municipal government maintains jurisdiction over approximately 40% of the Lattice's physical territory, down from 65% a decade ago. Corporate enclaves operate under sovereign charters. The mayor has real power — more than in most GLM cities — but that power shrinks with every new corporate sovereignty petition. The PATH underworld has its own informal governance, a council of community leaders who maintain order through reputation and necessity.",
+  "dangers": [
+    "Corporate enclave jurisdiction shifts — the borders move, and the laws change with them",
+    "The PATH underworld's depth and complexity — people disappear down there in the literal sense",
+    "Financial system instability — when the quantum trading algorithms glitch, the economic shockwave hits the street in minutes",
+    "Population density at levels that make pandemic, infrastructure failure, and social collapse cascading risks",
+    "Surveillance saturation in the upper tiers, surveillance absence in the PATH — dangerous in different ways"
+  ],
+  "opportunities": [
+    "The cultural economy rewards talent regardless of tier — the best neural-experience designers started in the PATH",
+    "Bay Street's financial infrastructure needs security that algorithms can't provide — human operators fill the gap",
+    "The PATH underworld is a city-sized gray market with its own rules and its own rewards",
+    "Cross-border data brokerage between Canadian and corporate jurisdictions"
+  ],
+  "story_hooks": [
+    "The CN Tower's data relay has been intercepting and copying all GLM net traffic for an unknown client — the infrastructure everyone trusts is compromised",
+    "A PATH community has developed a fully functional alternative economy using a neural-interface-based currency that the corps can't track or tax",
+    "Bay Street's quantum trading systems are exhibiting emergent behavior — making trades that optimize for outcomes no human programmed"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Steelmouth (Hamilton, west along the lakeshore)",
+      "The Trans-Canada Corridor (east and west)",
+      "New Windsor / Novaya Windsorka (southwest via the corridor)",
+      "Volt Falls (Niagara, southeast along the lakeshore)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Quantum finance operators and the security contractors who protect them",
+    "Biotech researchers from the Don Valley corridor",
+    "Cultural producers — artists, neural-experience designers, musicians — from every tier",
+    "PATH underworld residents who haven't seen the surface in years"
+  ],
+  "notable_locations": [
+    {
+      "name": "The CN Relay",
+      "description": "The CN Tower, rebuilt as the primary data infrastructure node for the northern GLM — the oldest structure in the core, now the most important",
+      "tags": []
+    },
+    {
+      "name": "Bay Street Quantum Fortress",
+      "description": "The financial district, walled off and temperature-controlled to protect the quantum trading hardware — the most valuable real estate in Canada",
+      "tags": []
+    },
+    {
+      "name": "The Deep PATH",
+      "description": "The lower levels of the expanded PATH network — a subterranean city of 2 million, with its own economy, governance, and culture",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 43.6532,
+    "lng": -79.3832,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "trust",
+    "augment",
+    "neural",
+    "genetic",
+    "ai",
+    "corporate",
+    "contract",
+    "surveillance",
+    "power",
+    "underworld",
+    "alley",
+    "market",
+    "rain",
+    "shadow",
+    "lake"
+  ]
+}

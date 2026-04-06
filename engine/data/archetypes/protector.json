@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5897b7caf8bcd5f85444607",
+  "name": "Protector",
+  "type": "archetype",
+  "category": "combat",
+  "description": "Shields others before self",
+  "behavioral_signature": "Positions between danger and the vulnerable",
+  "under_stress": "Becomes reckless to save others",
+  "at_rest": "Scans for threats constantly",
+  "will_always": [
+    "stand between danger and innocents"
+  ],
+  "will_never": [
+    "abandon someone under their protection"
+  ],
+  "unless": [
+    "the threat targets someone they love MORE than their ward"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Shield",
+      "threshold": 0.85,
+      "context": "defensive priority"
+    },
+    {
+      "archetype": "Sentinel",
+      "threshold": 0.75,
+      "context": "watchful nature"
+    }
+  ],
+  "opposite_of": [
+    "Berserker"
+  ],
+  "tags": [
+    "defensive",
+    "selfless"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "019d6143ab297f13848a9ba712dbad20",
+  "name": "Entropic Dielectric Pulse Emitter EDPE-5 'Candle'",
+  "type": "weapon",
+  "aliases": [
+    "The Candle",
+    "Snuffer",
+    "Dimmer"
+  ],
+  "category": "energy",
+  "description": "The EDPE-5 operates by generating a precisely calibrated entropic dielectric field — a sustained burst of high-frequency electromagnetic noise shaped into a coherent cone by a series of tuned metamaterial apertures housed in the barrel assembly. On contact with living tissue, the field disrupts the electrochemical gradients of nerve cells and muscle fibers without producing heat or visible light, causing a cascade of involuntary muscular contraction followed by temporary paralysis. On contact with electronic systems, it degrades capacitive insulation at the molecular level, inducing progressive dielectric breakdown across multiple components simultaneously.\n\nWhat distinguishes the Candle from comparable disruption weapons is its 'fade' characteristic — the entropic field does not cut off sharply when the trigger is released but dissipates over a 1.4-second bleed period, a quirk of the metamaterial aperture design that Arcturus Defense Solutions has never fully corrected. Experienced operators have learned to exploit this, sweeping targets in the final milliseconds of a trigger pull to distribute the bleed across multiple contact zones. The weapon produces a faint amber luminescence at the muzzle during discharge — the source of its nickname.\n\nThe EDPE-5 is moderately sized, resembling a flattened carbine, with a matte polymer chassis and a distinctive hexagonal barrel shroud that houses the aperture array. Its power cell is a proprietary format that draws criticism for poor field replaceability, but the cell's high energy density allows for up to 40 full-power discharges before depletion.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Dielectric field induction",
+    "Metamaterial aperture shaping",
+    "Electrochemical gradient disruption"
+  ],
+  "specifications": "effective range: 18m cone, 8m optimal\ncone angle: 22 degrees\ndischarge duration: Continuous while trigger held; 1.4s bleed on release\npower cell: ADS Type-F proprietary cell, 40 charges\nweight: 3.1kg unloaded\ndimensions: 62cm length, 14cm width at shroud\nparalysis duration: 45–120 seconds depending on exposure\nelectronic damage: Progressive; full dielectric failure after 3 sustained exposures",
+  "tactical_use": "Primarily used for room clearing and capture operations where lethal force is undesirable or politically complicated. Security contractors favor it for detaining high-value targets whose cybernetic implants must remain intact post-capture. The bleed exploit is taught in Arcturus-certified training programs as the 'sweep and fade' technique. Operatives working in narrow corridors report the cone angle as a liability; the weapon performs best in open spaces where the operator can maintain distance.",
+  "cultural_context": "In Meridian 88's corporate security culture, carrying a Candle signals professional restraint — the weapon of an operator who takes living prisoners. Enforcement divisions of mid-tier corporations issue it as standard kit for internal affairs teams and executive protection details. On the street, it has developed a sinister secondary reputation: kidnapping rings prize it for obvious reasons, and its presence at a crime scene is treated by law enforcement as evidence of premeditated abduction rather than impulsive violence.",
+  "known_users": [
+    "Arcturus Defense Solutions corporate extraction teams",
+    "Mid-tier corporate internal affairs officers",
+    "High-end kidnapping syndicates",
+    "Bounty hunters operating under live-capture contracts",
+    "Executive protection specialists"
+  ],
+  "story_hooks": [
+    "A Candle recovered from a crime scene has a serial number that traces back to a decommissioned Arcturus lot — but the lot was supposedly destroyed in a warehouse fire three years ago. Someone resurrected that shipment.",
+    "An operator is hired to capture a target alive using a Candle, but on arrival discovers the target is a child with experimental neural implants — the dielectric field may cause permanent damage rather than temporary paralysis.",
+    "The 'fade' bleed characteristic has been discovered to interact catastrophically with a specific brand of cardiac pacemaker implant, producing fatal arrhythmia. Arcturus is suppressing the information. A whistleblower wants it public."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "energy",
+    "weapon",
+    "violence",
+    "war",
+    "crime",
+    "neural",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "bar",
+    "warehouse",
+    "rain",
+    "train",
+    "fire",
+    "tier 3"
+  ]
+}

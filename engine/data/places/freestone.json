@@ -1,0 +1,97 @@
+{
+  "id": "019d6143a91a7ffa93508ade84da0f57",
+  "type": "place",
+  "name": "Freestone",
+  "aliases": [
+    "The First Reef",
+    "Freestone Republic",
+    "The Raft",
+    "Michigan Free City"
+  ],
+  "description": "Freestone is the first and largest of the Great Lakes seacrete cities — a sovereign free nation grown from the body of Lake Michigan itself. It began in 2161, when a coalition of climate refugees, displaced academics, anarchist engineers, and people who had simply run out of continent built a wire-mesh framework twelve nautical miles off the Wisconsin shore, dropped it into the lake, and ran electrical current through it. The principle is electrodeposition: pass low-voltage direct current through a submerged conductive framework in mineral-rich water, and dissolved calcium and magnesium carbonates precipitate onto the mesh, building up layer by layer into a material harder than concrete. The pioneers called the process seacrete — mineral accretion, the same chemistry that builds coral reefs, accelerated by human engineering. Marshall T. Savage described it in 'The Millennial Project' as a way to colonize the oceans. The Freestone founders used it to escape the corponations.\n\nThe city grew the way coral grows: slowly, organically, and in every direction. The original framework was a flat platform roughly the size of a city block. Within five years, it had accreted into a multi-level structure with subsurface foundations reaching thirty meters down to the lakebed. New frameworks were attached to the edges and submerged; the current was extended; the reef expanded. Solar arrays and wave-energy converters powered the electrodeposition continuously. By 2180, Freestone was a floating reef-city of 340,000 people, roughly two kilometers in diameter, with docking platforms, desalination systems, hydroponic farms, workshop districts, and residential warrens grown directly from the lake's own minerals. The structures are rough-textured, organic, vaguely biological — walls that curve like bone, archways that look grown rather than built, surfaces encrusted with the mineral patterns of their own creation. It looks like someone taught a coral reef to be a city.\n\nFreestone's sovereignty is a legal accident that became a political fact. The original platform was anchored in water deep enough to be outside any state or corponation's territorial claim — the Great Lakes sovereignty framework, written by corporate lawyers for corporate purposes, never anticipated that anyone would build a nation in the middle of the lake. By the time M88's legal apparatus noticed Freestone, it had 50,000 residents, its own desalination infrastructure, a functional economy, and enough defensive capability to make forced removal expensive. The Corridor Council issued seventeen non-recognition declarations between 2168 and 2175. Freestone ignored all of them. The corponations tried economic blockade; Freestone traded with the other lake cities instead. They tried diplomatic pressure; Freestone's elected council responded with a one-sentence communique: 'We grew this from water. Come take it.' Nobody did.\n\nGovernance is direct democracy mediated by rotating councils. There are no corporations on Freestone — the founding charter prohibits sovereign corporate entities within its waters. The economy runs on a labor-credit system internally and trades in Q externally, primarily exporting seacrete construction expertise, desalinated water, aquaculture products, and a fierce independence that the shore-based population finds either inspiring or irritating depending on their tier. Freestone is not utopia. The housing is cramped, the infrastructure is perpetually strained, the mineral-accretion walls sometimes grow in directions nobody planned, and the democratic process is exactly as slow and frustrating as democracy always is. But nobody here answers to a board of directors, and that fact is worth more than comfort.",
+  "atmosphere": {
+    "sights": [
+      "Mineral-accretion architecture — walls and archways grown from the lake itself, rough-textured, organic, faintly luminescent where phosphorescent algae has colonized the surfaces",
+      "Solar arrays and wave-energy converters ringing the city's outer platforms like a mechanical reef",
+      "Hydroponic farms in transparent-roofed growing halls, green against the grey lake water",
+      "Fishing boats and trade vessels docked along the organic harbor formations — coral-like piers that grew into their current shape",
+      "The Anchor Stone — the original wire-mesh framework, now encrusted in decades of mineral growth, preserved as a monument at the city's center"
+    ],
+    "sounds": [
+      "Water — everywhere, always. The lap of waves against accreted walls, the rush through channel passages, the drip in lower-level corridors",
+      "The low electrical hum of the accretion current — the sound of the city growing",
+      "Market noise from the harbor platforms — trade in four languages plus the lakeside pidgin",
+      "Wind through the upper-level structures, which are more porous than planned and sing in storms"
+    ],
+    "smells": [
+      "Clean lake water — Freestone sits far enough from shore that the toxicity is manageable",
+      "Mineral deposits — a faintly chalky, calcium-rich scent that clings to everything",
+      "Hydroponic growth medium and fresh produce — the smell of food that wasn't synthesized",
+      "Salt-free brine from the desalination returns"
+    ],
+    "feel": "Alive. Freestone feels alive in a way that Meridian's steel-and-glass corridors do not. The walls are textured, irregular, warm to the touch where the accretion current runs. The city shifts subtly with the lake's movement. Nothing is straight, nothing is polished, nothing was designed in a boardroom. It feels handmade — because it was, molecule by molecule, pulled from the water by people who decided to build something that belonged to them. It also feels precarious. The lake is not gentle, and Freestone is a human settlement balanced on a reef that humans tricked into existence. The precariousness is part of the identity.",
+    "tags": []
+  },
+  "demographics": "Approximately 340,000 permanent residents. Ethnically and nationally diverse — the founding population was climate refugees, academics, and political dissidents from across the Great Lakes region and beyond. No tier system — Freestone rejected M88's citizenship framework entirely. Literacy rate: 97%. Average age skews young; people come to Freestone to build something.",
+  "economy": "Internal: labor-credit system where contribution to city infrastructure, food production, or public services earns credits exchangeable for housing, goods, and leisure. External: Freestone trades seacrete engineering expertise, desalinated water, aquaculture products (lake perch, engineered kelp, freshwater crustaceans), and artisanal goods. Imports include electronics, medical equipment, and raw metal stock for new accretion frameworks. Annual external trade volume estimated at Φ8.2 billion.",
+  "power_structure": "Direct democracy with rotating councils. The Reef Council — twelve members, term-limited to two years, selected by sortition — handles day-to-day governance. Major decisions go to general assembly vote. No corporate entities permitted. The military defense cooperative, the Breakwater, operates under civilian oversight and cannot initiate offensive action without assembly approval.",
+  "dangers": [
+    "Storm damage — Lake Michigan storms can be brutal, and seacrete structures, while strong, are not invulnerable",
+    "Cormorant Naval Systems patrols — Freestone exists in a legal grey zone and Cormorant occasionally tests boundaries",
+    "Infrastructure strain — 340,000 people on a structure that grows slowly; capacity is always being chased",
+    "Political tension with M88 — the Corridor Council has never formally recognized Freestone's sovereignty",
+    "Internal democratic gridlock — direct democracy means every major decision is a fight"
+  ],
+  "opportunities": [
+    "Seacrete construction expertise — Freestone's engineers are the best in the world at mineral accretion building",
+    "A genuine alternative to corporate life — Freestone proves it's possible to live outside the tier system",
+    "Trade connections with all seven lake cities and several shore communities",
+    "The Breakwater's intelligence network — they know what moves on the lake"
+  ],
+  "story_hooks": [
+    "Freestone's Reef Council offers Kyle asylum — a life outside the tier system, if he can get there and if he's willing to leave everything on shore behind",
+    "A Cormorant Naval Systems operation targets Freestone's water supply infrastructure. The city needs someone shore-side to disrupt the operation before it launches.",
+    "Freestone's founding charter is being challenged from within — a faction argues that prohibiting corporate entities is holding the city back. The debate threatens to split the republic."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Open Lake Michigan (12 nautical miles from Wisconsin shore)",
+      "Deepwell Station (Lake Superior — trade route via the Straits of Mackinac)",
+      "The Vagrant (mobile platform — regular docking partner)",
+      "Meridian 88 (shore-based trade via independent freighters)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Freestone citizens — engineers, farmers, fishers, democratic idealists",
+    "Independent traders running goods between shore and lake",
+    "Political refugees from M88's tier system",
+    "Researchers studying seacrete construction and alternative governance"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 43.5,
+    "lng": -87,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "ai",
+    "elf",
+    "corporate",
+    "power",
+    "medical",
+    "rain",
+    "storm",
+    "train",
+    "refugee",
+    "escape",
+    "chase",
+    "food",
+    "energy",
+    "water",
+    "lake"
+  ]
+}

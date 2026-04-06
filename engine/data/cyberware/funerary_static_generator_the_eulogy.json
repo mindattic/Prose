@@ -1,0 +1,54 @@
+{
+  "id": "019d6143a7bb726ca1b9665c2ac48c60",
+  "name": "Funerary Static Generator — 'The Eulogy'",
+  "brand_name": "Funerary",
+  "product_name": "Funerary Static Generator — 'The Eulogy'",
+  "type": "cyberware",
+  "aliases": [
+    "Eulogy Box",
+    "White Noise Coffin",
+    "The Preacher"
+  ],
+  "category": "comms",
+  "body_location": "",
+  "description": "The Funerary Static Generator, colloquially known as 'The Eulogy,' is a targeted signal suppression device designed not to block all communications in an area — a crude approach that announces its own presence — but to selectively kill specific frequency bands and communication protocols while leaving others untouched. The operator programs a suppression profile before deployment: a precise fingerprint of the signals they want to silence, whether that's a specific encrypted corporate channel, a local security team's radio frequency, or the neural-link handshake protocol used by a target's cybernetic implants. Everything outside the profile continues to function normally.\n\nThe Eulogy's suppression mechanism works through a technique called 'resonant nullification' — generating an inverse-phase signal that precisely mirrors and cancels the target transmission at the source rather than flooding the environment with broadband noise. The result is a targeted communications blackout that is extraordinarily difficult to detect: affected parties experience their signals simply failing to connect, with no indication that active jamming is occurring. Standard counter-jamming diagnostics return clean results. The device is roughly the size of a hardback book and can be concealed in a bag, built into furniture, or mounted covertly in a target location.\n\nThe Eulogy is manufactured by Zheng-Dao Bioelectric's covert systems division and is among the most sophisticated signal suppression tools available outside of military-grade hardware. It sees heavy use in corporate sabotage operations — silencing a competitor's security comms during a raid — and in high-stakes negotiations where one party wants to guarantee the other cannot call for help or transmit information to an outside handler. The name 'Eulogy' emerged from street usage: operators say you're 'reading the eulogy' for a target's communications when you activate it.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"suppression_method\":\"Resonant nullification (inverse-phase cancellation)\",\"target_profile_slots\":\"Up to 8 simultaneous suppression profiles\",\"effective_radius\":\"Up to 150 meters per active profile\",\"detection_resistance\":\"Passes standard counter-jamming sweeps as ambient interference\",\"frequency_targeting_precision\":\"±0.003 MHz\",\"neural_link_suppression\":\"Compatible with Zheng-Dao, Helix, and Tessera neural-link standards\",\"power_source\":\"Proprietary ZDB cell, 10-hour continuous operation\",\"dimensions\":\"22 cm x 15 cm x 6 cm\",\"weight\":\"1.1 kg\",\"programming_interface\":\"Encrypted touchscreen, air-gapped from external networks\"}",
+  "side_effects": [],
+  "cultural_context": "The Eulogy carries a grim reputation in Meridian 88's underworld — its use is associated with operations that are planned to leave no survivors or witnesses, because the kind of operational precision it requires suggests pre-meditated intent at a level beyond opportunistic crime. Finding an Eulogy Box at a scene is treated by law enforcement as evidence of a professional, well-resourced actor, and its presence tends to move cases up the priority chain immediately. Among corporate black-ops circles, deploying an Eulogy is considered a mark of sophistication — it separates serious operators from amateurs who rely on crude broadband jammers.",
+  "known_users": [
+    "Corporate black-ops extraction teams",
+    "High-tier assassins and cleaners",
+    "Zheng-Dao Bioelectric internal security division",
+    "Negotiation specialists in hostile deal environments",
+    "Daevan Rhys — a corporate cleaner known for leaving no forensic trace",
+    "The Meridian 88 Organized Crime Syndicate's enforcement arm"
+  ],
+  "story_hooks": [
+    "An Eulogy Box is discovered planted behind a false panel in the conference room where a major inter-corporate peace negotiation is scheduled to take place in 48 hours. Someone intends to silence the room — but for what purpose, and on whose behalf?",
+    "A fixer contacts the players after their entire crew went dark during an operation — no distress signal, no check-ins, nothing. A recovered Eulogy Box from the scene was programmed with their exact comm profiles. Someone knew their frequencies before the job even started.",
+    "Zheng-Dao Bioelectric has quietly reported a theft from one of their secure storage facilities: twelve Eulogy units, pre-programmed with suppression profiles targeting Meridian 88 emergency services frequencies. Someone is planning something large enough to need a city-wide comms blackout.",
+    "The players acquire an Eulogy Box only to discover its profile library contains a pre-loaded suppression fingerprint for a frequency they've never encountered — one that, upon investigation, matches a classified communications channel used by a Meridian 88 government intelligence unit."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "comms",
+    "cyberware",
+    "war",
+    "crime",
+    "theft",
+    "neural",
+    "ai",
+    "corporate",
+    "power",
+    "underworld",
+    "dark",
+    "tier 4"
+  ]
+}

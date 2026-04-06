@@ -1,0 +1,61 @@
+{
+  "id": "019d6143ab2e722391e82266238bff6d",
+  "name": "Hydrostatic Nerve Cradle HNC-3 'Swaddling'",
+  "type": "weapon",
+  "aliases": [
+    "The Cradle",
+    "Swaddling",
+    "Softlock",
+    "Nurse's Arms"
+  ],
+  "category": "exotic",
+  "description": "The Hydrostatic Nerve Cradle operates by projecting a precisely tuned hydrostatic field envelope around a target's body — a near-invisible shell of pressurized aqueous microparticles suspended in a charged ionic matrix. Once the envelope seals, internal pressure differentials are manipulated in real time, selectively compressing nerve clusters and vascular pathways without breaking skin. The effect is described by survivors as being 'held very tightly by something that knows exactly where to squeeze.' Victims remain conscious, mobile in theory, but functionally paralyzed as the cradle prioritizes motor pathway suppression over pain centers.\n\nWhat distinguishes the HNC-3 from cruder pressure weapons is its neural feedback architecture, which reads bioelectric fluctuations through the ionic envelope and dynamically adjusts the pressure map. The weapon does not simply crush — it listens, and corrects. Targets who struggle or spike cortisol experience a tightening feedback loop. Calm targets are held in stasis. HELIX BIOSYSTEMS designed it nominally as a non-lethal restraint platform for high-value capture operations, though field reports consistently note that operators who hold the lock for more than forty seconds begin causing irreversible vascular damage.\n\nThe HNC-3 is shoulder-mounted with a wrist-linked targeting interface, requiring the operator to maintain line-of-sight within eighteen meters. It has a distinctive low hum during active lock — operators call it 'the lullaby's older sibling,' a reference to the SDE-4 that HELIX publicly denies. The weapon's cultural notoriety stems from its association with corporate extraction teams: it is the preferred tool of those who need someone alive but not resistant.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted — Licensed to certified extraction contractors and licensed medical security firms only",
+  "base_technologies": [
+    "Hydrostatic field projection",
+    "Neural feedback loops",
+    "Ionic suspension matrix"
+  ],
+  "specifications": "effective range: 4–18 meters\nlock duration: Continuous while powered; safe threshold 40 seconds\npower source: Dual HELIX BioCell 9V cartridges\nweight: 3.8 kg (mount) + 0.6 kg (wrist interface)\nenvelope diameter: Adjustable 0.4–2.1 meters\ntarget capacity: Single-target lock; experimental multi-lock firmware exists on black market\ncooldown: 90 seconds between deployments",
+  "tactical_use": "Primarily used for live capture operations where target must arrive undamaged. Extraction teams deploy HNC-3 as a closer — entry breached by conventional means, HNC-3 operator hangs back and locks the primary target while teammates neutralize escorts. Interrogation units use it as a coercion tool without leaving forensic marks. Some corporate security details use it for 'polite' detentions of executives suspected of defection.",
+  "cultural_context": "The Cradle has become a symbol of corporate overreach in Meridian 88's activist communities — the idea that a corporation has built a weapon specifically designed to hold you alive and helpless for its own purposes. Street art depicting a swaddled figure suspended in a corporate logo is common in contested districts. Ironically, high-end private security for the ultra-wealthy also uses it, rebranded as 'non-lethal executive protection.' Its dual identity — oppressor's tool and luxury service — makes it a flashpoint in class-politics discourse.",
+  "known_users": [
+    "HELIX BIOSYSTEMS extraction specialists",
+    "Corporate counterintelligence units",
+    "Licensed bounty contractors (Tier 4 certification required)",
+    "Black-market 'collectors' who run unlicensed interrogation services",
+    "Rogue former HELIX field operatives"
+  ],
+  "story_hooks": [
+    "A target who was held in a Cradle for over three minutes reports that they can still 'feel' the pressure at night — HELIX's neural feedback may have left a persistent imprint on their nervous system, and they want answers.",
+    "A stolen HNC-3 with a cracked firmware lock is circulating in the underground — the multi-target experimental build. Someone is testing it on crowds.",
+    "An extraction contractor refuses a job mid-operation and abandons the Cradle with the target still locked inside. The operator has 40 seconds to find the release key before permanent damage sets in.",
+    "HELIX BIOSYSTEMS is quietly recalling HNC-3 units, citing 'calibration variance.' Operators who've used them extensively are being offered suspiciously generous buyback rates."
+  ],
+  "ammunition_type": [
+    "Compressed Hydraulic Fluid Canister CHF-400",
+    "Helix Biosystems Compact Power Cell HB-3"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "war",
+    "identity",
+    "neural",
+    "ai",
+    "rogue",
+    "corporate",
+    "contract",
+    "power",
+    "wealth",
+    "medical",
+    "pain",
+    "market",
+    "rain",
+    "night",
+    "train",
+    "tier 4"
+  ]
+}

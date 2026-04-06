@@ -1,0 +1,95 @@
+{
+  "id": "019d6143a6567683876b62a9f10e7ef3",
+  "type": "character",
+  "name": "Mazhar Diallo-Kovac",
+  "aliases": [
+    "Tunnel King"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Bore Rat elder",
+  "age": 67,
+  "status": "active",
+  "location": "The Underworld - B3",
+  "description": "Mazhar has navigated the tunnels beneath Meridian 88 for forty years. His augmented sonar implant maps passages in real-time. He lost his left leg to a cave-in and uses a hand-carved crutch from a pre-collapse beam.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.4,
+      "ghost": 0.5
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Bore Rats",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Mentor": 0.9,
+    "Traditionalist": 0.9,
+    "Anchor": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

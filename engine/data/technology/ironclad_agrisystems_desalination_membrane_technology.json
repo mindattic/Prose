@@ -1,0 +1,48 @@
+{
+  "id": "019d6143aa4176cb9d347821d1f92c20",
+  "name": "Ironclad Agrisystems Desalination Membrane Technology",
+  "brand_name": "Ironclad",
+  "product_name": "Ironclad Agrisystems Desalination Membrane Technology",
+  "type": "technology",
+  "aliases": [
+    "DMT",
+    "Salt Killer",
+    "Fresh Maker",
+    "Ironclad Water"
+  ],
+  "subcategory": "environmental",
+  "description": "An advanced reverse osmosis membrane that desalinates seawater at 95% energy efficiency — dramatically better than previous generation systems — using graphene-oxide membranes with precisely engineered nanopores. The membranes allow water molecules to pass while rejecting salt ions with near-perfect selectivity, and they resist the fouling and degradation that limits conventional desalination membranes. Ironclad deploys the technology in coastal desalination facilities that supplement Meridian 88's freshwater supply, producing potable water from ocean sources at costs approaching freshwater extraction.",
+  "tier_availability": "Tier 2+",
+  "developers": [
+    "IRONCLAD AGRISYSTEMS",
+    "TESSERA INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Graphene-oxide nanopore membranes",
+    "High-efficiency reverse osmosis",
+    "Anti-fouling membrane surface treatment"
+  ],
+  "enables": [
+    "Energy-efficient seawater desalination",
+    "Coastal freshwater production",
+    "Drought-independent water supply",
+    "Near-freshwater-cost desalinated water"
+  ],
+  "social_impact": "DMT has made ocean water a practical freshwater source, reducing Meridian 88's dependence on increasingly unreliable freshwater infrastructure. Ironclad's coastal desalination facilities produce a significant fraction of the city's water supply, giving them another essential-service leverage point alongside their food production monopoly. The technology has also enabled floating and coastal settlements that were previously impractical due to freshwater constraints.",
+  "story_hooks": [
+    "An Ironclad desalination facility has detected biological contamination in its intake water that does not match any known marine organism — something is growing in the ocean near the intake that should not be there.",
+    "Ironclad is pricing desalinated water below cost to undermine competing water suppliers, creating a monopoly that will allow them to control both food and water supply — the endgame of their essential services strategy."
+  ],
+  "tags": [
+    "environmental",
+    "technology",
+    "ai",
+    "control",
+    "rain",
+    "train",
+    "food",
+    "energy",
+    "water",
+    "tier 2"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "019d6143a8757a5bb53fe765469ec2fe",
+  "name": "Tessera Corponation Stochastic Blind Ledger",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Corponation Stochastic Blind Ledger",
+  "type": "equipment",
+  "aliases": [
+    "the Ledger",
+    "Scatter Box",
+    "Tessera Noise Book"
+  ],
+  "category": "comms",
+  "description": "The Stochastic Blind Ledger is a signal-layer encryption device that operates on a principle Tessera calls 'communicative deniability through noise parity' — in plain terms, it transmits real messages by hiding them inside statistically indistinguishable synthetic noise, making the channel appear to carry nothing but ambient electromagnetic garbage. The Ledger generates a rolling stochastic key synchronized between paired units, allowing both endpoints to extract meaningful data from what looks, to any intercepting party, like random spectrum bleed from aging infrastructure. It requires no dedicated frequency and can ride parasitically on existing signal pollution in Meridian 88's notoriously cluttered electromagnetic environment.\n\nThe physical unit is a matte-black rectangular device slightly larger than a deck of cards, with no visible inputs beyond a single recessed pairing port. Operation is intentionally opaque: there are no indicators, no screens, no confirmation signals. Users simply trust the synchronized key or they don't. Tessera designed this as a feature — an interceptor who captures a Ledger unit gains nothing without the paired device and the synchronization seed, which is burned to a one-time substrate during initial pairing and cannot be reconstructed.\n\nThe Ledger occupies a peculiar legal space. Tessera sells it openly to licensed corporate communications teams as an anti-industrial-espionage tool, but the same properties that make it attractive to corporations make it equally attractive to everyone else. Meridian 88's corporate security apparatus has been lobbying for stricter licensing requirements for years, so far without success — partly because several of the lobbying corps quietly use Ledgers themselves for communications they'd prefer regulators not see.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Stochastic noise-parity encoding",
+    "Rolling synchronization cryptography",
+    "Parasitic spectrum transmission",
+    "One-time pairing substrate",
+    "Electromagnetic camouflage modulation"
+  ],
+  "specifications": {
+    "transmission_range": "Up to 2km direct; unlimited via relay infrastructure",
+    "bandwidth": "Low — optimized for text and compressed audio; video transmission not supported",
+    "key_synchronization": "Rolling 256-bit stochastic key, re-seeded every 90 seconds",
+    "pairing_method": "Physical contact pairing via recessed port; one-time substrate burned on pairing",
+    "detection_resistance": "Transmissions statistically indistinguishable from ambient EM noise at standard analysis depth; deep-spectrum forensic analysis can identify pattern anomalies with sustained effort",
+    "dimensions": "9cm x 6cm x 1.8cm",
+    "power": "Micro-cell, 72-hour active use; trickle-charges from ambient EM in standby"
+  },
+  "tactical_use": "Used for secure point-to-point communication in environments under active signals intelligence monitoring. The Ledger's strength is in contested urban areas where the existing EM noise floor is high — Meridian 88's older industrial districts are ideal operating environments. Operatives use paired units to pass instructions, coordinates, and intelligence without generating any detectable secure-channel traffic. The absence of confirmation signals requires disciplined communication protocols to avoid misalignment.",
+  "cultural_context": "Among Meridian 88's professional intelligence community — corporate, governmental, and freelance — the Ledger has become a marker of serious tradecraft. Receiving one from a handler signals that the operation is being run at a level where even the existence of communication must be deniable. There is a dark humor in the community around the device's silence: 'You'll know it's working when nothing happens.'",
+  "known_users": [
+    "Tessera corporate counter-intelligence teams",
+    "Freelance intelligence brokers",
+    "Senior fixers running sensitive operations",
+    "Regulatory-adjacent officials engaged in undisclosed communications",
+    "Deep-cover operatives with long-term placement"
+  ],
+  "story_hooks": [
+    "A player receives a Ledger in a package with no sender information — it's already paired to something, and it's already receiving.",
+    "Two Ledger units from the same pairing batch turn up in the possession of people on opposite sides of a corporate conflict; someone sold them both to rivals.",
+    "Tessera's licensing division contacts the players: a Ledger was used in connection with a political assassination and they need it recovered quietly before regulators use it as leverage to mandate backdoors in the product line.",
+    "A player's Ledger stops producing output mid-operation — either the paired unit was destroyed, or someone found a way to jam the synchronization seed remotely, which shouldn't be possible."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "trust",
+    "ai",
+    "synthetic",
+    "corporate",
+    "dark",
+    "tier 2"
+  ]
+}

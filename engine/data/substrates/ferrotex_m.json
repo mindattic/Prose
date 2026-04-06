@@ -1,0 +1,53 @@
+{
+  "id": "019d6143a9da7aae80eee5f3b2cbadeb",
+  "name": "Ferrotex-M",
+  "brand_name": "Ferrotex",
+  "product_name": "Ferrotex-M",
+  "type": "substrate",
+  "aliases": [
+    "ferro-nanotube",
+    "magnetic weave",
+    "M-tex"
+  ],
+  "category": "nano_material",
+  "description": "Ferrotex-M is a CNT composite material produced by Crucible Industries in which iron-nickel magnetic nanoparticles are uniformly distributed along and within multi-wall carbon nanotube walls during a chemical vapor deposition process, creating a material with both structural CNT properties and tunable magnetic behavior. The magnetic response can be set during manufacture to produce soft-magnetic, hard-magnetic, or magnetically-shielding variants from the same base feedstock. Ferrotex-M is the material of choice wherever structural components must also manage magnetic fields — motors, generators, and electromagnetic containment systems.",
+  "properties": [
+    "magnetic",
+    "high_tensile_strength",
+    "electrically_conductive",
+    "tunable_permeability",
+    "heat_resistant",
+    "corrosion_resistant",
+    "high_density",
+    "EMI_shielding"
+  ],
+  "developers": [
+    "Crucible Industries"
+  ],
+  "applications": [
+    "electric motor rotor and stator components",
+    "electromagnetic containment vessel liners",
+    "magnetic bearing components",
+    "MRI shielding structures",
+    "rail gun barrel reinforcement",
+    "magnetically-actuated smart structures"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ 3,600 per kg",
+  "story_hooks": [
+    "Ferrotex-M's magnetic shielding variant is being used to line a hidden facility — nothing electronic can detect what's inside, and that's exactly the point.",
+    "Crucible Industries has a monopoly on the iron-nickel nanoparticle feedstock; a competitor is trying to break that monopoly through means that aren't entirely legal.",
+    "A shipment of Ferrotex-M intended for medical MRI shielding has been diverted — the material would make an excellent liner for a room where augmented individuals can't be scanned or tracked."
+  ],
+  "tags": [
+    "nanomaterial",
+    "substrate",
+    "gun",
+    "augment",
+    "ai",
+    "medical",
+    "bar",
+    "tier 3",
+    "tier 4"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a56e73339cc654746485faca",
+  "name": "Fall Guy",
+  "type": "archetype",
+  "category": "criminal",
+  "description": "Takes the blame so others walk free",
+  "behavioral_signature": "Absorbs consequences meant for the group",
+  "under_stress": "Accepts the fall with resignation",
+  "at_rest": "Preparing for the inevitable",
+  "will_always": [
+    "take the fall"
+  ],
+  "will_never": [
+    "rat out the crew"
+  ],
+  "unless": [
+    "the fall means life in prison and they have children"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Martyr",
+      "threshold": 0.7,
+      "context": "self-sacrifice"
+    },
+    {
+      "archetype": "Loyal Dog",
+      "threshold": 0.65,
+      "context": "devotion"
+    }
+  ],
+  "opposite_of": [
+    "Snitch"
+  ],
+  "tags": [
+    "sacrifice",
+    "loyalty"
+  ]
+}

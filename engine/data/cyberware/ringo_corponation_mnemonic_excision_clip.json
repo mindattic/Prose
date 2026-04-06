@@ -1,0 +1,62 @@
+{
+  "id": "019d6143a7c4789684676c05da558735",
+  "name": "Ringo Corponation Mnemonic Excision Clip",
+  "brand_name": "Ringo",
+  "product_name": "Ringo Corponation Mnemonic Excision Clip",
+  "type": "cyberware",
+  "aliases": [
+    "The Scissors",
+    "The Redactor",
+    "Clipper"
+  ],
+  "category": "augmentation",
+  "body_location": "",
+  "description": "The Mnemonic Excision Clip is a minimally invasive neural implant seated against the hippocampal formation via a transcranial micro-anchor, designed to perform targeted suppression of episodic memory consolidation on demand. Using focused low-frequency magnetic pulse bursts delivered through a subcutaneous coil array behind the ear, the Clip interrupts the synaptic consolidation window — the critical 6-to-8-hour period during which short-term experiences are transferred into long-term storage. Activated immediately after an event, it effectively prevents that event from ever being fully remembered, leaving only a vague temporal gap the carrier's brain fills with plausible noise.\n\nRingo Corponation markets the Clip under its 'Professional Discretion' product line, positioning it as a liability management tool for corporate operatives who routinely handle sensitive information they are not meant to retain. The pitch is clean: do the job, clip the memory, report only what you're authorized to report. The implant's activation is logged to a Ringo compliance server, giving employers a timestamped record of what their contractors have chosen to forget — which is itself a form of leverage that Ringo's legal department has never been compelled to explain publicly.\n\nOn the street, the Scissors has a darker reputation. Fixers use it to protect sources. Couriers use it so they genuinely cannot be tortured for information they no longer possess. Some users activate it prophylactically before operations they suspect will go wrong, ensuring no confession extracted afterward will be coherent. There is a growing underground of people who have clipped so frequently their autobiographical memory has become a patchwork of authenticated gaps — functional, professional, and quietly hollowed out.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"consolidation_window_targeting\":\"Effective within 0–90 minutes post-event\",\"suppression_fidelity\":\"87–94% episodic erasure of target window\",\"activation_method\":\"Subdermal pressure switch or paired Ringo device command\",\"pulse_duration\":\"11-second suppression burst\",\"compliance_logging\":\"Automatic timestamp to Ringo corporate server (licensed units)\",\"implant_site\":\"Transcranial anchor, retroauricular coil array\",\"power_source\":\"Capacitor charged via bioelectric harvest, single-use charge per 6 hours\",\"side_effects\":\"Mild temporal disorientation, occasional false memory insertion in gap zone\"}",
+  "side_effects": [],
+  "cultural_context": "The Scissors occupies a morally uncomfortable space in Meridian 88's underground economy. It is simultaneously a tool of professional survival and a slow form of self-erasure. Users who clip frequently develop a reputation for reliability precisely because they cannot be compromised — but also a quiet social stigma, a sense that they are not entirely present, that conversations with them are disposable by design. Some corporate tiers have begun requiring proof of a licensed Clip implant as a condition of employment for certain roles, which civil liberties groups have loudly and ineffectually protested.",
+  "known_users": [
+    "Ringo Corponation contracted couriers and fixers",
+    "Corporate legal operatives handling deniable negotiations",
+    "Underground identity brokers in the Meridian Sump",
+    "Interrogation-resistant smugglers on the Corridor routes",
+    "Dessa Vane — fixer known for never having been successfully debriefed"
+  ],
+  "story_hooks": [
+    "A witness to a corporate atrocity has a Scissors implant and no memory of what they saw — but their body remembers. Trauma responses, autonomic flinches, a route they refuse to walk. The players have to reconstruct the event from behavioral ghosts.",
+    "Someone is selling unlicensed Clips that don't log to Ringo's server — and Ringo wants to know who, badly enough to be violent about it. The seller may be a Ringo engineer.",
+    "A fixer the players rely on has been clipping so frequently their personality has begun to drift. Old contacts. Old loyalties. Gone. They're still competent. They're just not the same person anymore.",
+    "The players are hired to retrieve a memory that was clipped — which means finding the Ringo compliance log, which means getting into a server that Ringo has never admitted exists."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "augmentation",
+    "cyberware",
+    "gun",
+    "war",
+    "smuggle",
+    "identity",
+    "memory",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "ubc",
+    "market",
+    "rain",
+    "dark",
+    "moral",
+    "survival",
+    "tier 2"
+  ]
+}

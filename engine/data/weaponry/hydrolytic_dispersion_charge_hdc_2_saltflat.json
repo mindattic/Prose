@@ -1,0 +1,50 @@
+{
+  "id": "019d6143ab2e720fb1089584198cf222",
+  "name": "Hydrolytic Dispersion Charge HDC-2 'Saltflat'",
+  "type": "weapon",
+  "aliases": [
+    "Saltflat",
+    "HDC-2",
+    "The Bleacher",
+    "Whitewash"
+  ],
+  "category": "explosive",
+  "description": "The HDC-2 is a two-stage chemical-explosive device designed for data infrastructure denial. The outer shell contains a conventional shaped charge that ruptures a pressurized inner reservoir filled with a superheated hydrolytic solution — a proprietary TESSERA CORPONATION compound that aggressively attacks organic polymers, fiber-optic cladding, and unshielded circuit substrates on contact. The blast itself is modest; the real damage is the dispersed chemical payload that coats surfaces in a 5-meter radius with a compound that continues reacting for up to 40 minutes after detonation.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Hydrolytic suspension chemistry",
+    "Shaped charge reservoir rupture",
+    "Reactive polymer degradation"
+  ],
+  "specifications": "weight: 1.2 kg\ndimensions: 14 cm x 8 cm cylindrical\nblast radius: 5 m primary, 9 m chemical drift\nchemical active duration: 35–45 minutes post-detonation\ntrigger modes: Remote detonation, Timer, Tamper-triggered\nneutralization agent: TESSERA proprietary NeutraFlush compound (sold separately)\ncasing material: Corrosion-resistant ceramic-alloy shell",
+  "tactical_use": "Deployed in corporate sabotage operations targeting server farms, communication hubs, and fabrication lines. Teams plant HDC-2 units inside conduit junctions or cable management systems where the chemical dispersal maximizes contact with sensitive infrastructure. Anti-personnel use is considered secondary — the hydrolytic compound causes severe chemical burns, but the weapon is rarely chosen for its human lethality. It is exceptionally effective at making a location digitally dead for hours.",
+  "cultural_context": "The HDC-2 is the calling card of data-warfare crews and anti-corporate saboteurs in Meridian 88. Finding one at a crime scene tells investigators less about who planted it and more about what the target was — if someone used a Saltflat, they wanted the data gone more than they wanted people dead. TESSERA markets a civilian variant for 'industrial equipment decommissioning,' which fools no one.",
+  "known_users": [
+    "Data-warfare mercenary crews",
+    "Anti-corporate saboteur cells",
+    "TESSERA CORPONATION infrastructure denial teams",
+    "Insurance fraud operators targeting competitor facilities"
+  ],
+  "story_hooks": [
+    "A runner is hired to plant an HDC-2 in a competitor's server room, only to find the room already destroyed by an identical charge — someone got there first, and the data the runner was supposed to destroy is already gone.",
+    "A TESSERA 'decommissioning' team is found dead in an industrial district, their own HDC-2 units detonated around them. The chemical burns suggest the charges were triggered remotely — from inside TESSERA's own network.",
+    "The NeutraFlush neutralization compound has been pulled from the market without explanation, and three active HDC-2 sites in the city are now impossible to safely contain."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "war",
+    "crime",
+    "ai",
+    "elf",
+    "corporate",
+    "market",
+    "circuit",
+    "tier 3"
+  ]
+}

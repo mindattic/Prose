@@ -1,0 +1,236 @@
+{
+  "id": "019d6143a59f72fea16d22156731861e",
+  "type": "character",
+  "name": "Abimbola Strömqvist-Nakawé",
+  "aliases": [
+    "Bimbi",
+    "The Shelf Oracle"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Retired archive keeper and community storyteller",
+  "age": 82,
+  "status": "active",
+  "location": "The Shelf, Washburn Commons — apartment 14-G above the Ferrogate Transit hub",
+  "description": "Abimbola is a small, wire-thin woman whose skin has the deep matte darkness of old carbon fiber, mapped with fine wrinkles that seem to trace circuit patterns when the light catches them right. Her left eye was replaced after a workplace pressure incident with a ceramic prosthetic that never quite matched — it's a milky amber orb with a fixed iris, which she's decorated over the decades with hand-painted Yoruba adinkra symbols using surgical-grade pigment ink. Her real eye is still sharp and black and misses nothing. She keeps her white hair in elaborate plaited towers pinned with salvaged data-spikes, and she dresses in layered synthsilk robes in rust and ochre that billow when she walks. She moves slowly but with enormous deliberateness, as though every step is a considered choice.\n\nAbimbola spent forty years as a lower-tier archive technician for Axiom's municipal records division, cataloguing what was supposed to be destroyed and quietly, carefully not destroying it. She has an almost religious relationship with information — she believes that forgetting is a form of violence and that memory is the only true resistance available to people without power. She is warm to anyone who sits still long enough to listen, but her warmth has a quality of assessment in it, as though she is deciding whether you are worth the particular truth she plans to share with you.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Being the last person who remembers something important",
+      "That the records she saved will be found and destroyed before they matter"
+    ],
+    "core_desires": [
+      "For someone younger to take up the work of remembering",
+      "To see at least one act of corporate accountability in her lifetime"
+    ],
+    "coping_mechanisms": [
+      "Ritualizing daily routines as a form of control",
+      "Deflecting personal vulnerability with storytelling"
+    ],
+    "blind_spots": [
+      "She trusts her own curation of history too completely — she has decided what matters and what doesn't",
+      "She underestimates how much danger her archive puts people she cares about in"
+    ],
+    "secret": "She has a complete record of a Sterling-Nakamura waste-dumping operation from 2171 that caused the Brightmoor groundwater collapse — names, dates, sign-offs. She has been waiting thirty years for someone she trusts enough to give it to."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal, slightly archaic corporate pidgin mixed with Yoruba-inflected cadences; quotes records and dates with uncanny precision; uses the passive voice when discussing atrocities, as though distance makes them more bearable",
+    "cadence": "Slow and deliberate, with long pauses she fills with the sound of her own breathing; never rushes",
+    "verbal_tics": [
+      "'Let me tell you what the record says'",
+      "'That is not what happened — I know because I filed it'"
+    ],
+    "example_lines": [
+      "'You want the truth? Sit. It takes longer than people expect.'",
+      "'They told us to delete the 2168 files. I categorized them as redundant and stored them under a different index. That is not lying. That is filing.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She approaches someone in the canteen and slides them a data chip without explanation — just says 'you'll know when'",
+    "A Axiom corporate compliance team arrives at Washburn Commons asking about a retired archivist named Strömqvist-Nakawé"
+  ],
+  "narrative_function": "Information source of extraordinary depth; moral anchor for community storylines; quest giver who trades in favors and stories rather than Quanta; keeper of dangerous archival secrets",
+  "augmentations": "Single ceramic prosthetic left eye, hand-decorated. Subdermal thermal stabilizers in both hands (occupational, for archival work in cold server rooms). No cosmetic geneware — she says she's already enough.",
+  "daily_life": "Rises at four AM to pray to the data-ELFs she keeps shrined in a repurposed server cabinet; spends mornings reviewing physical paper she's collected over decades; holds informal court at the Washburn Commons canteen from noon to three, where residents bring her disputes, questions, and gossip in exchange for stories and sometimes specific documents she shouldn't have.",
+  "affiliation": "Retired Axiom employee (pension class C); informal community council, Washburn Commons",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 2,
+      "dexterity": 4,
+      "vitality": 4,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Archivist",
+      "Community Elder",
+      "Information Broker",
+      "Keeper of Secrets",
+      "ELF Devotee"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never give information to someone who hasn't given something first — even if it's just time",
+      "Always know two exits from any room"
+    ],
+    "escalation_ladder": [
+      "Redirects with a story",
+      "Asks a question that makes the other person reconsider",
+      "Goes completely silent and still",
+      "Disappears — she knows how to not be found"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Politely formal, slightly distant, watching",
+      "friends": "Warm in a grandmotherly way that is simultaneously genuine and a kind of armor"
+    },
+    "stress_responses": {
+      "low": "Straightens her robes and offers tea",
+      "medium": "Begins telling a tangentially relevant story — a stalling technique she's perfected",
+      "high": "Becomes utterly still and speaks in a whisper that carries further than a shout"
+    },
+    "contradictions": [
+      "She believes in transparency as a moral absolute but has kept the most important secret of her life for thirty years"
+    ],
+    "habits": [
+      "Leaves small data offerings at every ELF shrine she passes",
+      "Touches the painted symbols on her prosthetic eye when she's thinking",
+      "Writes things down on physical paper even when she doesn't need to"
+    ],
+    "breaking_points": [
+      "Watching a young person be punished for knowing the truth"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "weathered, hand-decorated",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "aging, sometimes cause tingling",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nostalgic": 0.9,
+    "War Weary": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in what is now Ashfeld district to a Yoruba-Swedish mother and a Sahel-French father",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired as junior archive technician, Axiom Municipal Records Division",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Filed and deliberately mislabeled the Brightmoor contamination records",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Workplace pressure incident destroys left eye; receives corporate settlement (minimal)",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Retired with pension class C; moves to Washburn Commons",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current — holds informal court at the canteen",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

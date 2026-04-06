@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab5872c8bc30ca5c27bf4d1a",
+  "name": "Variable Impedance Rifle VIR-9 'Switchback'",
+  "type": "weapon",
+  "aliases": [
+    "Switchback",
+    "VIR-9",
+    "The Tuner",
+    "Variable"
+  ],
+  "category": "firearm",
+  "description": "The VIR-9 is a linear magnetically accelerated rifle that distinguishes itself through its real-time impedance modulation system. Conventional gauss rifles fix their magnetic coil parameters at manufacture, producing a consistent velocity and terminal profile. The Switchback instead allows the operator to adjust coil impedance across a 12-stage spectrum between shots, changing the projectile's exit velocity, spin rate, and electromagnetic emission profile on the fly. A low-impedance shot exits at subsonic velocity with minimal EM signature, functioning as a near-silent precision round. Maximum impedance produces a hypervelocity dart capable of defeating most structural barriers short of military-grade composite plating.\n\nTessera Corponation developed the VIR-9 for private security forces that operate across highly variable threat environments where carrying multiple weapon systems is impractical. The 12-stage impedance selector is mounted as a rotating collar around the trigger guard, operable with the firing hand without breaking grip — a deliberate ergonomic priority that took four design iterations to achieve. The rifle feeds from a 15-round magazine of ferromagnetic tungsten darts, each identical; the variation in terminal effect is produced entirely by the electromagnetic system rather than by different projectile types.\n\nThe weapon's primary limitation is thermal management. Running sustained fire at high-impedance settings causes the coil array to overheat, and the VIR-9 includes an automatic throttle that forces a 4-second cooling interval after three consecutive maximum-impedance shots. Operators who try to bypass this limiter have destroyed the coil array, rendering the weapon inert. The black market offers bypass chips, but their reliability is disputed and their installation voids what little warranty the weapon carries.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Linear magnetic acceleration",
+    "Variable impedance coil modulation",
+    "Ferromagnetic projectile stabilization"
+  ],
+  "specifications": "projectile: 3.2mm ferromagnetic tungsten dart\nimpedance stages: 12 selectable stages (subsonic to hypervelocity)\neffective range: 40m (low impedance) / 600m (maximum impedance)\nrate of fire: Semi-automatic\nweight: 3.4 kg loaded\nmagazine capacity: 15 darts\nthermal throttle: Forced 4-second cooling after 3 consecutive max-impedance shots\nsound signature: Variable — near-silent at Stage 1, loud crack at Stage 12\npower source: Integrated coil battery, 90 shots per charge at mixed impedance",
+  "tactical_use": "Operators train with the VIR-9 across its full impedance range, developing the muscle memory to adjust the collar selector instinctively. Standard engagement doctrine opens at low impedance for target acquisition and confirmation, then adjusts upward based on the target's apparent armor profile. In urban environments, the ability to reduce sound signature dramatically without swapping weapons makes the VIR-9 extremely valuable for mobile operations. Military users value it for the flexibility it provides in asymmetric engagements where threat profiles change rapidly.",
+  "cultural_context": "The VIR-9 is associated with serious professional operators who can afford expensive, complex equipment and have the training to use it effectively. It is not a weapon for the desperate or the untrained — the impedance selector is useless without proper calibration knowledge, and an operator who doesn't understand the thermal throttle will find themselves with a cooling rifle at exactly the wrong moment. Among Tessera Corponation's private security divisions, carrying a VIR-9 is a mark of senior field status. On the open market, its restricted classification means legitimate purchasers are vetted; black market copies often have degraded coil arrays from overuse.",
+  "known_users": [
+    "Tessera Corponation senior field security",
+    "Independent high-tier operators and fixers",
+    "Corporate counter-intelligence units",
+    "Military special operations units (licensed procurement)"
+  ],
+  "story_hooks": [
+    "A forensic investigator has recovered dart fragments from three separate crime scenes across different districts. The EM burn signature on each fragment indicates the same VIR-9 unit was used at each location — but the scenes span six weeks and the targets have no obvious connection. Someone is using a Switchback to work through a list, and no one knows whose list it is.",
+    "Tessera Corponation has quietly recalled a batch of VIR-9 units — serial numbers 9400 through 9650 — citing a 'coil calibration anomaly.' The recall notice went only to licensed retailers. The actual problem is that this batch was manufactured with a firmware error that causes the impedance selector to randomly spike to Stage 12 regardless of setting. Two operators have already been killed by the recoil. Tessera wants the units back before this becomes public.",
+    "A player acquires a VIR-9 and discovers its serial number has been filed down — but the coil battery's charge log still contains usage records from 47 previous engagements. Someone used this weapon extensively and then wanted it to disappear. The usage timestamps and impedance profiles tell a story if someone knows how to read them."
+  ],
+  "ammunition_type": [
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3"
+  ],
+  "tags": [
+    "firearm",
+    "weapon",
+    "war",
+    "crime",
+    "memory",
+    "ai",
+    "elf",
+    "corporate",
+    "power",
+    "market",
+    "bar",
+    "rain",
+    "train",
+    "chase",
+    "desperate",
+    "armor",
+    "fire",
+    "tier 3"
+  ]
+}

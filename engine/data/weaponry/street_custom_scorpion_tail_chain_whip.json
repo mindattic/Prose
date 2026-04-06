@@ -1,0 +1,42 @@
+{
+  "id": "019d6143ab4a7b02b6365cc83b204866",
+  "name": "Street Custom 'Scorpion Tail' Chain Whip",
+  "type": "weapon",
+  "aliases": [
+    "Scorpion Tail",
+    "Chain Whip",
+    "Rattler",
+    "The Stinger"
+  ],
+  "category": "melee",
+  "description": "A weapon constructed from salvaged motorcycle chain weighted at the tip with a sharpened steel slug, often augmented with welded barbs or razor wire wrapping. The Scorpion Tail has a 1.5-meter reach and can be swung with enough force to crack bone through light armor, while the weighted tip and barbs tear flesh on contact. It folds compact for concealment along a belt or inside a coat sleeve and deploys instantly with a flick of the wrist. The weapon has deep roots in Tier 1 street culture where it serves as both a personal defense weapon and a status symbol — the condition, decoration, and customization of a fighter's chain tells their history.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — concealed bladed weapon",
+  "base_technologies": [
+    "Weighted chain dynamics",
+    "Improvised barbed melee construction"
+  ],
+  "specifications": "chain length: 1.5 meters\ntip weight: 200-400g sharpened steel slug\nbarb configuration: Variable — razor wire, welded spikes, or hooked links\nfolded length: 20 cm coiled\nweight: 0.8-1.5 kg depending on chain gauge\nmaterial: Salvaged motorcycle or industrial chain",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A fighting tournament in Tier 1 exclusively uses Scorpion Tails and has become a major gambling draw — the prize pool has attracted corporate attention and the fighters are being scouted as assets.",
+    "A specific chain whip style with distinctive link markings has appeared across three unrelated crime scenes — the markings indicate a single forge source that someone wants found."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "melee",
+    "weapon",
+    "blade",
+    "crime",
+    "augment",
+    "ai",
+    "corporate",
+    "bar",
+    "motorcycle",
+    "armor",
+    "tier 1"
+  ]
+}

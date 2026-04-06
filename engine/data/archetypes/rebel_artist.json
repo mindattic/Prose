@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a58c7d3e80c8588d305036f9",
+  "name": "Rebel Artist",
+  "type": "archetype",
+  "category": "creative",
+  "description": "Creates to challenge power and convention",
+  "behavioral_signature": "Makes art as weapon, as protest, as revolution",
+  "under_stress": "The rebellion overwhelms the art",
+  "at_rest": "Planning provocations, making statements",
+  "will_always": [
+    "challenge through creation"
+  ],
+  "will_never": [
+    "create something comfortable"
+  ],
+  "unless": [
+    "rebellion hurts the vulnerable more than the powerful"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Graffiti",
+      "threshold": 0.85,
+      "context": "rebellious art"
+    },
+    {
+      "archetype": "Chaos Creator",
+      "threshold": 0.8,
+      "context": "disruption"
+    }
+  ],
+  "opposite_of": [
+    "Perfectionist"
+  ],
+  "tags": [
+    "defiant",
+    "political"
+  ]
+}

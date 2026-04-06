@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a59a7f2cb6504d4153acb477",
+  "name": "Wallflower",
+  "type": "archetype",
+  "category": "social",
+  "description": "Observes everything, participates in nothing",
+  "behavioral_signature": "Watches from edges, remembers everything",
+  "under_stress": "Becomes invisible",
+  "at_rest": "Quiet, unnoticed, content",
+  "will_always": [
+    "observe before acting"
+  ],
+  "will_never": [
+    "seek the spotlight"
+  ],
+  "unless": [
+    "someone is being hurt and nobody else sees it"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Hermit",
+      "threshold": 0.75,
+      "context": "social withdrawal"
+    },
+    {
+      "archetype": "Crowd Reader",
+      "threshold": 0.7,
+      "context": "observation"
+    }
+  ],
+  "opposite_of": [
+    "Charmer",
+    "Face"
+  ],
+  "tags": [
+    "quiet",
+    "observant"
+  ]
+}

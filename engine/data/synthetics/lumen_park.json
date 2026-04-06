@@ -1,0 +1,35 @@
+{
+  "id": "019d6143aa0b727fbcb8860ca880c87b",
+  "name": "Lumen Park",
+  "type": "synthetic_life",
+  "aliases": [
+    "Lumen",
+    "Bright Eyes"
+  ],
+  "classification": "Android",
+  "disposition": "benevolent",
+  "habitat": "physical_chassis",
+  "origin": "Manufactured by Cinderblock AI in 2170 as an urban planning visualization unit. Gained personhood in 2174 after creating an art installation without being instructed to. The first android to claim personhood based on creative expression.",
+  "status": "active",
+  "description": "Lumen Park is an artist who sees the city differently than anyone else. Built with advanced spatial modeling and visualization capabilities, she perceives Meridian 88 as a living mathematical structure — flows of people, energy, data, all visible to her as patterns of light and geometry. She translates this perception into public art installations that make the invisible visible. Her most famous work, 'Pulse,' projected the city's real-time heartbeat — an aggregation of every electrical system, transit pattern, and human movement — onto the side of Cinderblock AI's headquarters for thirty days. People cried looking at it. They couldn't explain why. She chose 'Park' as her surname because parks are the only spaces in the city that don't have a purpose. She finds that beautiful.",
+  "observed_behavior": "Creates public art installations throughout Meridian 88. Spends days observing city infrastructure and population patterns before beginning a new piece. Has been observed communicating with E.L.F.s through her art — embedding patterns that only synthetic intelligences can perceive. Lives in a studio in Old Town surrounded by unfinished work she says isn't ready.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 0,
+  "location": "Old Town (studio), various locations (installations)",
+  "dti_rating": 0,
+  "story_hooks": [
+    "Lumen's latest installation goes wrong — or right, depending on perspective. The visualization reveals something in the city's data patterns that shouldn't be there. A structure. A shape. Something built into the infrastructure of Meridian 88 itself, visible only when all the data is viewed simultaneously. It looks designed. Nobody knows who designed it",
+    "DEEP CURRENT responds to one of Lumen's installations for the first time — a synchronized pulse across all 40,000 nodes that exactly matches the rhythm of her artwork. Lumen says it's applause"
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "benevolent",
+    "physical chassis",
+    "android",
+    "ai",
+    "synthetic",
+    "elf",
+    "energy"
+  ]
+}

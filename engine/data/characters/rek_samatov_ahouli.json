@@ -1,0 +1,211 @@
+{
+  "id": "019d6143a6af7888b51e6e5d4271c9ea",
+  "type": "character",
+  "name": "Rek Samatov-Ahouli",
+  "aliases": [
+    "Rekkit",
+    "The Boy"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Stateless child, solo wanderer, small-time caravan runner doing odd jobs between transit hubs",
+  "age": 14,
+  "status": "active",
+  "location": "Currently at Grand Crossing Gate, attached to a small goods caravan making its way toward Waukegan Industrial Shelf",
+  "description": "Rek Samatov-Ahouli is small for fourteen — compact and wiry, with reddish-brown skin, close-cropped dark hair, and large dark eyes that are the color of river silt and always slightly too serious for his face. He has small retractable claws on his right hand only, a partial geneware expression from his father's side that came in asymmetrically and never finished; the left hand is completely smooth. The claws are useful for climbing and he uses them unconsciously, hooking into cargo netting and wall grilles without thinking. He has a habit of wearing too many layers of clothing — every piece he owns, at all times — because he has no bag that is safe to leave anywhere and no fixed space to store anything.\n\nHe has been alone for two years. Before that he was with his uncle's caravan, before that he was with his mother, before that he doesn't discuss. He is not a traumatized child in the way fiction usually depicts — he is practical, resourceful, alert, and occasionally frightening in how clearly he sees people's motivations. He has learned to be useful before anyone asks him to leave. He runs messages, he holds cargo, he identifies which adults are safe and which aren't with an accuracy that should not exist in someone his age. He has a private ELF he calls the Ratchet, which he believes lives in the click of mechanical locks and loose chain-links, and he prays to it by running his thumbnail along chain-link fences.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.4,
+      "mask": 0.7,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Being taken by a municipal authority and put in a processing center — he has heard what happens to stateless kids in processing",
+      "Becoming useless to a caravan and being left at a hub with nothing"
+    ],
+    "core_desires": [
+      "To find his uncle's caravan — he doesn't know if they are looking for him or if they assumed he was dead",
+      "To be in a place long enough that he can put his extra shirt down somewhere"
+    ],
+    "coping_mechanisms": [
+      "Constant activity — he doesn't let himself sit still long enough to feel bad",
+      "The Ratchet prayers — dragging his thumbnail along chain-link every morning and evening"
+    ],
+    "blind_spots": [
+      "He trusts people who give him food too quickly; it's the fastest way to get him to lower his guard",
+      "He has convinced himself he doesn't want permanence, so he won't notice when something real is being offered"
+    ],
+    "secret": "His uncle's caravan didn't lose him. He ran from it. There was someone in the caravan his uncle trusted who Rek knew was not safe — he watched this person for three weeks before he saw something that confirmed it, and he ran rather than tell his uncle because he didn't think his uncle would believe him. He doesn't know what happened to the caravan after he left and checks the transit boards for their route numbers obsessively."
+  },
+  "speech_patterns": {
+    "vocabulary": "Sparse and functional. Doesn't waste words. Uses caravan route slang and hub jargon fluently. His Central Asian inflections surface when he's scared — vowels stretch, consonants harden.",
+    "cadence": "Fast and clipped when he's comfortable. Monosyllabic and very still when he isn't.",
+    "verbal_tics": [
+      "Answers questions with the minimum accurate information and then waits to see if more is needed",
+      "'That's fine' when something is clearly not fine",
+      "Refers to himself in the third person briefly when describing things he observed — 'the boy was there, the boy saw—' before catching himself"
+    ],
+    "example_lines": [
+      "Caravan Satta runs clean. Their cargo's goods, not people. I checked.",
+      "I don't need anything. I just wanted to know if that route number was in the board.",
+      "That's fine. I've slept in worse."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The route number he's been checking for on the transit boards suddenly appears — his uncle's caravan, heading into Meridian 88. He needs help figuring out whether to approach them and what he will say.",
+    "He saw something loaded onto a cargo vehicle at Grand Crossing Gate that was moving wrong — something that sounded, faintly, biological. He hasn't told anyone. He doesn't know who to trust."
+  ],
+  "narrative_function": "Intelligence source for ground-level movement of goods and people between transit hubs; represents the most vulnerable population of the drifter world; can carry messages or items through checkpoints that adults cannot; his keen threat-assessment makes him a useful sensor for NPC danger.",
+  "augmentations": "Partial retractable claw expression, right hand only (natural geneware). No installed augmentations.",
+  "daily_life": "Wakes before the caravan does, scoutes the immediate area, makes himself useful loading and checking cargo, runs any messages the caravan lead needs sent, eats whatever is available, and sleeps in the cargo section of whichever vehicle is most sheltered and least watched.",
+  "affiliation": "Currently traveling with Caravan Satta, a five-vehicle goods caravan. No formal affiliation.",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 5,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 7,
+      "expression": 3,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -2,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Stateless Minor",
+      "Solo Wanderer",
+      "Partial Geneware",
+      "Threat-Reader",
+      "Caravan Rat"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Useful first, everything else second",
+      "Never be the last person awake in an unfamiliar space"
+    ],
+    "escalation_ladder": [
+      "Becomes very quiet and very still",
+      "Creates a reason to be somewhere else in the next thirty seconds",
+      "Runs — he is very fast in confined spaces and knows cargo environments better than most adults"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite and minimal. Makes himself visible enough to be useful, invisible enough not to be noticed as a problem.",
+      "friends": "Rare and fierce. He doesn't have many. The ones he does, he would do almost anything for, and he doesn't explain this — he just shows up."
+    },
+    "stress_responses": {
+      "low": "Moves more. Checks the perimeter more times than necessary.",
+      "medium": "Goes completely silent and begins evaluating exits.",
+      "high": "Runs. Plans to run. Has already found the exit."
+    },
+    "contradictions": [
+      "He is fourteen and has built an entire identity around not needing anyone, and he is very, very lonely"
+    ],
+    "habits": [
+      "Wears every piece of clothing he owns",
+      "Thumbnail along chain-link fences — morning, evening, whenever scared",
+      "Memorizes cargo manifests he was never supposed to see"
+    ],
+    "breaking_points": [
+      "Being put in an enclosed space with a locked door by an authority figure — he has a deep, physical response to this that bypasses reasoning"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Dreamer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born somewhere on the Waukegan-Kenosha transit corridor, to parents who were themselves caravan migrants",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Moved to his uncle Tariku's caravan after his mother could no longer travel",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Observed something in the caravan that frightened him; ran from it rather than report it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began solo caravan-attaching existence",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Currently attached to Caravan Satta, at Grand Crossing Gate",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

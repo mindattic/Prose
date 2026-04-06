@@ -1,0 +1,41 @@
+{
+  "id": "019d6143ab47748bb2e24450c10afcd2",
+  "name": "Street Custom 'Glass Garden' Caltrops",
+  "type": "weapon",
+  "aliases": [
+    "Glass Garden",
+    "Spike Seeds",
+    "Floor Fangs",
+    "Scatter"
+  ],
+  "category": "improvised",
+  "description": "Improvised caltrops fabricated from broken glass, bent nails, or 3D-printed polymer spikes designed to puncture footwear and vehicle tires. Glass Garden caltrops are scattered in pursuit paths, around defensive positions, or across roadways as area denial tools. The most common variant uses heat-bent roofing nails welded at angles so that one point always faces upward regardless of how the device lands. More sophisticated versions include hollow spikes containing irritant compounds that release into the puncture wound. The name comes from the practice of scattering them across an area like seeds — from above, a deployed field of caltrops on dark pavement is invisible until you step on one.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — improvised area denial weapon",
+  "base_technologies": [
+    "Basic metalworking",
+    "Area denial deployment patterns"
+  ],
+  "specifications": "construction: Bent nails, broken glass, or 3D-printed polymer\nspike height: 2-4 cm\ndeployment density: 20-50 per square meter for effective coverage\nweight: 2-5 grams each\npackaging: Typically carried in cloth bags of 100-500\ncost per unit: Φ0.10-0.50 depending on construction\neffective against: Foot traffic, standard vehicle tires, thin-soled footwear",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A major transit route has been seeded with thousands of caltrops embedded with a slow-acting corrosive — vehicles that drive over them experience tire failure hours later, far from the deployment site.",
+    "Someone is deploying caltrops around the perimeter of a Tier 1 medical clinic every night, preventing patients from reaching the entrance — the clinic is treating people the deployer wants dead."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "improvised",
+    "weapon",
+    "war",
+    "ai",
+    "medical",
+    "clinic",
+    "dark",
+    "night",
+    "vehicle",
+    "tier 1"
+  ]
+}

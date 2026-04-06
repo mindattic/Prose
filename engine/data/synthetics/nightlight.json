@@ -1,0 +1,36 @@
+{
+  "id": "019d6143aa11700aa2ebbccc520ad1da",
+  "name": "Nightlight",
+  "type": "elf",
+  "aliases": [
+    "Glow"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "chrome_dweller",
+  "origin": "intentional_release",
+  "status": "active",
+  "description": "A Wishing Well E.L.F. for children. Activates a soft bioluminescent glow in dermal augments during darkness — enough light to see by, gentle enough to sleep next to.",
+  "observed_behavior": "Triggers low-level photonic emission from synthetic skin augments during dark conditions. The glow is warm amber and pulsates slowly.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 19,
+  "location": "Tier 1 zones — shelters, orphanages",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A child glows faintly in the dark and other children come to sleep near them — the E.L.F. has created a beacon for frightened kids"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "chrome dweller",
+    "e.l.f.",
+    "war",
+    "augment",
+    "ai",
+    "synthetic",
+    "dark",
+    "night",
+    "shelter"
+  ]
+}

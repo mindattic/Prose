@@ -1,0 +1,167 @@
+{
+  "id": "019d6143a5c972fbb6a7bd03af49f1d4",
+  "type": "character",
+  "name": "Braxo Suleimanović-Fofana",
+  "aliases": [
+    "Brax",
+    "Noodle Boy (hates it)"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Noodle cart vendor, runs 'Brax's Tangle' off the corner of Copperhead and 9th Lateral",
+  "age": 26,
+  "status": "active",
+  "location": "Copperhead, street level — corner pitch near the Copperhead Transit Hub mouth",
+  "description": "Braxo is a lean young man, all elbows and restless energy, with close-cropped black hair and a jaw that always looks like it needs another day of growth. He has his Guinean grandfather's deep brown skin and his Bosnian grandmother's sharp cheekbones, and he has cat ears — small, tawny, semi-expressive — mounted via a Helix genemod he saved three months of UBC stipend for at seventeen because he thought they'd make him look 'elevated.' They do not make him look elevated. They do make him look like exactly who he is: a cheerful young man who is trying very hard and mostly succeeding. His cart is a battered silver rig he inherited from a previous vendor, pasted over with good-luck ELF shrine stickers and a hand-painted sign in four languages.\n\nHe operates his cart with the manic efficiency of someone who cannot afford to miss a service window. His noodle broth is genuinely excellent — a recipe he built over four years of experimentation, drawing on whatever his parents cooked and whatever he could reverse-engineer from mid-tier restaurant menus he couldn't afford to eat at. He talks too much when he's happy, goes very quiet when he's worried, and has a genuine talent for remembering exactly what every regular customer ordered last time.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.7,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "The cart breaking down catastrophically and him not having the capital to fix it",
+      "Becoming the person who was 'almost something'"
+    ],
+    "core_desires": [
+      "To open a real restaurant — four walls, a name on a sign, a reservation list",
+      "To prove his parents' sacrifice in relocating to Meridian 88 meant something"
+    ],
+    "coping_mechanisms": [
+      "Cooking experimentally when anxious",
+      "Over-talking with regulars to avoid sitting with worry"
+    ],
+    "blind_spots": [
+      "Extends trust too fast to customers who are kind to him",
+      "Undercharges people he likes, which is a slow financial wound"
+    ],
+    "secret": "One of his regular customers is a low-level Arcturus logistics coordinator who pays him Φ15 extra each week to send a coded tally — just noodle types, quantities, customer descriptors — to a dead-drop address. Braxo has convinced himself it's market research. It is not market research."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, contemporary street slang layered over a slightly formal sentence structure his mother drilled into him. Puns. Too many puns.",
+    "cadence": "Quick and rising, like someone always about to finish a joke",
+    "verbal_tics": [
+      "'Real talk though—'",
+      "Calls everyone 'neighbor' until he knows their name"
+    ],
+    "example_lines": [
+      "'Spicy-six or the mushroom build? Real talk though, the mushroom is having a moment. You look like a mushroom-build person. That's a compliment.'",
+      "'Cart's been out since six, neighbor. You think the ELF in the burner unit is gonna let me down? I left it a whole gigabyte of ambient jazz. We're good.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He noticed a Ferrogate Transit worker boarding the same train every morning for a month and then vanishing — the worker's partner has been asking around the corner",
+    "His Arcturus contact has stopped showing up and the dead-drop instructions have changed; someone is now watching his cart from across the street at irregular intervals"
+  ],
+  "narrative_function": "Street-level information node — positioned at a transit hub, sees everyone. Warm entry point into Copperhead social life. Can be a quest giver for transit-related oddities he's observed.",
+  "augmentations": "Geneware cat ears (Helix Biosystems cosmetic, tawny coloring). No other mods — can't afford them and is saving for a second burner unit for the cart.",
+  "daily_life": "Cart is out by 0630 for the morning transit rush, breaks from 1000-1130, back out for the lunch wave, closes at 2000. Spends late nights recalibrating his broth ratios and watching cooking tutorials he can't fully afford to implement.",
+  "affiliation": "Independent; pays pitch fees to the Copperhead Vendors Collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 8,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "street-vendor",
+      "information-hub",
+      "ambitious",
+      "naively-entangled",
+      "community-fixture"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always feed someone who looks hungry even if they're short — he'll square it in his head later",
+      "Never badmouth a competitor's cart within earshot of a customer"
+    ],
+    "escalation_ladder": [
+      "Defuse with humor",
+      "Go still and polite in a way that is noticeably different from his normal warmth",
+      "Call it plainly: 'I need you to leave my corner'"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open, high-energy, immediately tries to get a read on their order preferences as a way of reading them",
+      "friends": "Teasing, loyal, shows up with food without being asked"
+    },
+    "stress_responses": {
+      "low": "Tells more jokes, cart gets noisier",
+      "medium": "Switches to silent, precise cooking movements",
+      "high": "Shuts the cart down early and takes a long walk along the transit hub overpasses"
+    },
+    "contradictions": [
+      "Dreams of a restaurant but is terrified of actually being stationary — the cart's mobility feels like a safety net he hasn't admitted to himself"
+    ],
+    "habits": [
+      "Touches the ELF shrine sticker on the cart's burner before every service window",
+      "Keeps a handwritten tasting journal in his apron pocket"
+    ],
+    "breaking_points": [
+      "Someone damaging or stealing from his cart",
+      "Being made to feel stupid in front of customers"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Provider": 0.9,
+    "Generous Fool": 0.9,
+    "Hustler": 0.7,
+    "People Pleaser": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

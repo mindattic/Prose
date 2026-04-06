@@ -1,0 +1,104 @@
+{
+  "id": "019d6143a8957409bf4b0e911198daae",
+  "type": "faction",
+  "name": "The Oxidian Covenant",
+  "aliases": [
+    "The Covenants",
+    "Market Saints",
+    "Oxidian Priests"
+  ],
+  "motto": "The price is the prayer. The exchange is the covenant.",
+  "description": "The Oxidian Covenant did not begin as a political movement—it began as a mutual aid network operating out of the grey-market stalls of the Oxidian Market, organized around the informal credit and barter systems that Tier 5 and 6 residents had developed to survive gaps in OUROBOROS ENERGY's power rationing and IRONCLAD AGRISYSTEMS' tiered food distribution. The Market's long-term vendors had, over decades, developed something that functioned like a commons economy: reputation-based credit, shared storage, collective negotiation with supply chains. When PALLADIAN CONSTRUCTION announced a redevelopment initiative in 2168 that would have absorbed the Oxidian Market into a managed corporate retail corridor, the vendors organized—not to protest, but to formally incorporate their existing informal systems as a legally recognized economic entity. The political movement grew from that act of institutional self-definition.\n\nThe Covenant now functions as both the de facto civic government of the Oxidian Market district and a broader political entity advocating for what they call 'commons sovereignty'—the legal recognition of informal economic systems as legitimate civic infrastructure with rights of continuity and self-governance. They have developed a surprisingly sophisticated theoretical framework for this, drawing on pre-corporate municipal law, surviving fragments of cooperative legal doctrine, and the practical jurisprudence accumulated over thirty years of market dispute resolution. Their legal scholars—mostly self-trained, operating out of a building they call the Ledger—have produced work that has been cited in three Meridian 88 arbitration proceedings, all of which they lost, but narrowly enough to constitute meaningful precedent.\n\nWhat makes the Covenant genuinely strange in Meridian 88's political landscape is their insistence on operating the thing they are advocating for. The Market is not a headquarters for a political movement; the political movement is a secondary expression of the Market's ongoing existence. Their governance structures, their dispute resolution processes, their credit systems—these are not proposals or models. They are the actual functioning infrastructure of approximately 12,000 people's daily economic life. This gives them a material weight that purely ideological movements lack, and it means that destroying the Covenant requires destroying something that people depend on to eat.",
+  "ideology": "The Oxidian Covenant holds that economic commons—shared systems of exchange, credit, and resource management built through sustained collective practice—constitute a form of civic infrastructure with moral and legal standing equivalent to corporate-owned infrastructure. They argue that Meridian 88's tiered citizenship framework is predicated on the fiction that all legitimate economic activity flows from licensed corporate entities, and that this fiction is maintained by the active legal suppression of commons-based economies that predate and outperform corporate alternatives in resilience and equity. They are not anti-corporate in principle; they are anti-monopoly on the definition of legitimate economy. Their political program centers on commons recognition legislation, informal credit system legal protection, and the establishment of a Meridian 88 Commons Registry with the same legal standing as the corporate charter framework.",
+  "territory": "Centered entirely on the Oxidian Market and its immediate surrounding blocks. The Covenant claims no territory outside the Market district but maintains relationships with similar informal market networks in Old Harbor's dock economy and scattered through The Laceworks. They are conspicuously absent from The Circuit, The Shelf, and anywhere with significant TESSERA or IRONCLAD AGRISYSTEMS infrastructure presence.",
+  "leadership": "Governed by the Market Assembly, a body of 40 elected delegates representing vendor guilds, residential blocks, and specialist trade associations within the Market district. Day-to-day executive authority rests with the Keeper's Council, a five-person body elected annually by the Assembly. Current Keeper-Prime is Sable Okonkwo, a third-generation Market vendor and self-taught legal theorist who has become the Covenant's most visible public voice. The Ledger—the Covenant's legal and archival institution—operates semi-autonomously under a hereditary archivist position currently held by Maren Tse, whose family has maintained Market records for four decades.",
+  "methods": [
+    "Formal legal incorporation of Market economic practices as protected commons infrastructure under obscure Meridian 88 municipal continuity statutes",
+    "Maintaining and expanding the Market's internal credit and dispute resolution systems as a demonstration alternative to corporate financial infrastructure",
+    "Strategic documentation of IRONCLAD AGRISYSTEMS and OUROBOROS ENERGY service failures in the Market district to build the commons sovereignty legal case",
+    "Hosting open legal workshops at the Ledger to spread commons incorporation methodology to other informal economic communities",
+    "Coordinated vendor-guild economic pressure on suppliers who support the PALLADIAN redevelopment agenda",
+    "Cultivating relationships with Meridian 88 civic arbitrators through decades of good-faith participation in formal dispute resolution",
+    "Publishing the Market's economic performance data—stability, resilience, equity metrics—as counter-evidence to corporate efficiency arguments"
+  ],
+  "resources": [
+    "The Oxidian Market itself—12,000 residents' worth of active economic infrastructure and physical territory",
+    "A 40-year archive of Market transaction records, dispute resolutions, and credit histories maintained by the Ledger",
+    "A functioning internal currency system (the Oxidian Marker) with significant local liquidity",
+    "Deep supply chain relationships with independent distributors who prefer Market terms to IRONCLAD AGRISYSTEMS contracts",
+    "The Covenant's legal corpus—30 years of commons law theory and arbitration precedent developed by Ledger scholars",
+    "A network of allied informal market communities in Old Harbor and The Laceworks",
+    "A building stock of collectively owned Market infrastructure that PALLADIAN CONSTRUCTION cannot legally acquire without the Covenant's consent under the incorporation statutes"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "",
+      "type": "",
+      "description": "PALLADIAN's redevelopment initiative has been stalled for seven years by the Covenant's legal incorporation strategy. PALLADIAN considers this a temporary obstacle and continues to acquire surrounding property, applying gradual economic pressure. The Covenant considers PALLADIAN's patience a sign of respect they intend to exhaust. Both parties are waiting for the other to make a mistake.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Market's independent food distribution networks directly undercut IRONCLAD's tiered distribution monopoly in the district. IRONCLAD has responded with supply chain pressure on Market vendors, selective enforcement of food safety licensing against Market stalls, and lobbying for the Covenant's deregistration. The Covenant documents every action meticulously.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Covenant has leverage OUROBOROS did not expect: the Market's collective energy commons—a patchwork of shared generation and storage infrastructure built over decades—means the district can partially survive OUROBOROS power rationing. OUROBOROS wants the infrastructure absorbed into their grid. The Covenant wants a guaranteed supply contract at non-tiered rates. Negotiations have been ongoing for three years.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Covenant and the Compact share legal methodology and mutual respect but operate in deliberately separate spheres. The Compact focuses on citizenship tier reform; the Covenant focuses on economic commons recognition. They have agreed not to formally ally because each fears that association would allow their respective enemies to treat them as a unified target.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Cartographers' mapping work has been essential to the Covenant's legal case—precise documentation of Market infrastructure predating PALLADIAN's claims. In exchange, the Covenant provides the Cartographers with operational cover and access to the Market's supply networks. Neither party discusses this arrangement publicly.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "ZHENG-DAO has made quiet inquiries about the Covenant's internal credit system as a potential model for a proprietary neural-linked micro-transaction platform. The Covenant finds this interest alarming but has not yet determined whether it represents a threat, an opportunity, or both.",
+      "tags": []
+    }
+  ],
+  "narrative_function": "",
+  "story_hooks": [
+    "A PALLADIAN CONSTRUCTION surveyor has gone missing inside the Oxidian Market three days before a critical arbitration hearing on the redevelopment claim. The Covenant had nothing to do with it, but the timing is catastrophic and someone clearly knows that.",
+    "The Ledger's 40-year archive has been partially corrupted—not by accident, but by a targeted neural intrusion that specifically erased records from a 6-month window in 2159. Maren Tse believes those records contained the original commons incorporation documents that would settle the PALLADIAN case permanently, and she believes someone inside the Covenant provided access.",
+    "OUROBOROS ENERGY has offered the Covenant a supply contract that meets all their terms—but one clause, buried in the technical appendices, would reclassify the Market's internal energy commons as OUROBOROS infrastructure under a maintenance agreement, effectively ending their energy independence in 10 years.",
+    "Sable Okonkwo has received a private communication from a TESSERA CORPONATION executive suggesting that TESSERA would support commons recognition legislation in exchange for the Covenant's support of a specific Tiered Reform Act amendment that the Franchise Compact is actively opposing.",
+    "A new vendor has been operating in the Market for four months, building significant credit and community relationships, and Maren Tse has discovered that their identity documents are fabricated—but the Ledger's records show they've been a legitimate Market participant for the entire time, which should be impossible.",
+    "The Oxidian Marker—the Market's internal currency—has begun appearing in transactions outside the Market district, including in The Laceworks and Old Harbor, in volumes that suggest someone is systematically expanding its circulation without the Assembly's authorization. The economic implications are either revolutionary or a sophisticated attack on the Covenant's legal standing."
+  ],
+  "tags": [
+    "faction",
+    "gun",
+    "identity",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "harbor",
+    "market",
+    "bar",
+    "rain",
+    "moral",
+    "rights",
+    "train",
+    "food",
+    "energy",
+    "shelf",
+    "circuit",
+    "old harbor"
+  ]
+}

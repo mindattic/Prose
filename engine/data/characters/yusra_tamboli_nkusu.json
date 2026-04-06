@@ -1,0 +1,255 @@
+{
+  "id": "019d6143a7317d7c8ab965b7b771c1dd",
+  "type": "character",
+  "name": "Yusra Tamboli-Nkusu",
+  "aliases": [
+    "Yus",
+    "The Wall"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Riot Suppression Specialist, Meridian 88 Metro Police",
+  "age": 34,
+  "status": "active",
+  "location": "Fort Anchor",
+  "description": "Yusra is built like a load-bearing column — broad-shouldered, thick-necked, with the kind of deliberate stillness that makes crowds unconsciously part around her. Her skin is a deep warm brown, cropped natural hair faded at the sides, and her left forearm carries a geometric tattoo in Amazigh style from a grandmother she never met. She has subdermal armor plating along her forearms and collar that gives her silhouette a slightly unnatural angularity. Her eyes are standard-issue grey with Metro Police LIDAR rings — rings that glow faint amber when she's actively scanning. Off-duty she has a surprisingly gentle voice and laughs easily, but on the line she goes perfectly, eerie quiet.\n\nShe believes in the idea of Metro Police more than its current reality, which is a distinction she holds onto by her fingernails. After eleven years of crowd control in the Shelf and the Circuit she has developed a precise internal calibration for when a crowd is curious, when it is afraid, and when it is about to become something else entirely. She treats rookie officers with patient firmness and street kids with cautious kindness. She is very good at her job and she knows it, which is the only thing keeping her from questioning why her job so often lands her between hungry people and corporate property.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.75,
+      "id": 0.35,
+      "shadow": 0.4,
+      "mask": 0.55,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Being complicit in something she cannot rationalize away",
+      "Losing the distinction between enforcing law and enforcing power"
+    ],
+    "core_desires": [
+      "To do this job in a way she can be proud of",
+      "To protect her mother from the economic slide without abandoning her principles"
+    ],
+    "coping_mechanisms": [
+      "Hyper-focus on procedure and craft",
+      "Compartmentalization — she does not think about the big picture during a shift",
+      "Cooking elaborate meals on days off"
+    ],
+    "blind_spots": [
+      "She underestimates how much her presence alone intimidates people who've been hurt by Metro before",
+      "She has convinced herself the system is reformable from inside because the alternative is unbearable"
+    ],
+    "secret": "Three years ago during the Hough Reclamation protests she destroyed body-cam footage of a fellow officer striking a restrained teenager. She told herself the kid was fine. She still checks the community boards to see if that name ever appears."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, professional on-duty. Off-duty she relaxes into Meridian street creole with Maghrebi-inflected phrasing inherited from her father's side — elongated vowels, occasional Arabic loan-words.",
+    "cadence": "On-duty: measured, slow, deliberate. Off-duty: warm, faster, punctuated by genuine laughter.",
+    "verbal_tics": [
+      "'Clear?' at the end of instructions",
+      "Long pause before she says something she doesn't want to say",
+      "Refers to the crowd as 'people' rather than 'civilians' or 'targets' — a deliberate habit"
+    ],
+    "example_lines": [
+      "'I'm going to ask you once. Step back from the line. Clear?'",
+      "'You want to know what I actually think? You sure? Because once I tell you, I can't un-tell you.'",
+      "'She's a good kid. Scared kid. That's not the same thing as a dangerous one.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She has evidence of ongoing evidence tampering by a superior officer and is running out of reasons not to act on it.",
+    "A teenager she arrested twice is now missing — officially listed as relocated, but no relocation order exists in the system."
+  ],
+  "narrative_function": "Recurring authority figure who is neither villain nor pushover — a moral friction point. Can be a reluctant information source, a character who arrests PCs for things that are technically illegal, or someone who quietly looks the other way when she decides it matters.",
+  "augmentations": "Subdermal forearm and clavicle plating (standard Metro issue). LIDAR-ring ocular overlay. Bone-density reinforcement in knees and shins. No geneware — she considers it a personal line she hasn't crossed yet.",
+  "daily_life": "Shifts at Fort Anchor start at 0500 — gear check, briefing, deployment to whatever district is running hot. Evenings she trains in Metro's combat gym or visits her mother in Ironvein, bringing groceries and pretending not to notice the UBC stipend notices on the counter.",
+  "affiliation": "Meridian 88 Metro Police, Riot Suppression Unit 7",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 8,
+      "dexterity": 6,
+      "vitality": 8,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 4,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "riot-trained",
+      "veteran",
+      "moral-friction",
+      "community-roots",
+      "compromised-integrity"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Exhaust de-escalation options before using force — always",
+      "Do not lie to civilians directly; omit when necessary, never fabricate",
+      "Protect her unit even when she disagrees with them, up to a hard line she hasn't clearly defined"
+    ],
+    "escalation_ladder": [
+      "Verbal warning, calm and unambiguous",
+      "Physical positioning — body block, not touch",
+      "Single firm physical directive",
+      "Restraint only as last resort"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally neutral, assessing, gives people the benefit of the doubt for about sixty seconds",
+      "friends": "Warm, loyal, occasionally blunt to the point of rudeness — she doesn't coddle people she respects"
+    },
+    "stress_responses": {
+      "low": "Goes quiet, jaw tightens, zones in",
+      "medium": "Becomes hyper-procedural, almost robotic",
+      "high": "A terrifying stillness — then either decisive action or a controlled retreat to regroup"
+    },
+    "contradictions": [
+      "Believes deeply in community and simultaneously enforces systems that extract from it",
+      "Prides herself on honesty while carrying a secret that would end her career"
+    ],
+    "habits": [
+      "Checks her gear three times before every shift",
+      "Leaves small data-offerings at the Fort Anchor ELF shrine before night deployments",
+      "Buys coffee from the same Ironvein cart every morning and knows the vendor's kids' names"
+    ],
+    "breaking_points": [
+      "Watching a child get hurt by police action she could have stopped",
+      "Being ordered to suppress a protest she privately believes is justified"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal forearm plating (Metro Standard)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal forearm plating (Metro Standard)",
+      "replaces": ""
+    },
+    {
+      "name": "Clavicle reinforcement (Metro Standard)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Clavicle reinforcement (Metro Standard)",
+      "replaces": ""
+    },
+    {
+      "name": "LIDAR ocular overlay (Metro Standard)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "LIDAR ocular overlay (Metro Standard)",
+      "replaces": ""
+    },
+    {
+      "name": "Tibia/knee bone-density scaffold (Metro Standard)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Tibia/knee bone-density scaffold (Metro Standard)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2166: Born, Ironvein district, to a Moroccan-Cameroonian father and a Congolese-Norwegian mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2184: Graduated Metro Police Academy, top quarter of her class",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2189: Promoted to Riot Suppression Unit 7 after the Edison Grid disturbances",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2197: Destroyed body-cam footage of a fellow officer's assault — her secret",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200: Present day, eleven-year veteran, quietly watching her unit change around her",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

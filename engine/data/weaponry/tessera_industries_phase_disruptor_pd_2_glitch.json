@@ -1,0 +1,40 @@
+{
+  "id": "019d6143ab527ec88ba85a83b3ca4071",
+  "name": "Tessera Industries Phase Disruptor PD-2 'Glitch'",
+  "type": "weapon",
+  "aliases": [
+    "Glitch",
+    "PD-2",
+    "Phase Gun",
+    "Reality Hiccup"
+  ],
+  "category": "exotic",
+  "description": "An experimental weapon that generates a localized spatial distortion field at a targeted point, causing matter within the field to briefly phase between states in a way that current physics cannot fully explain. The practical effect is that solid objects within the 1-meter field radius experience a momentary loss of structural integrity — molecular bonds flicker, materials briefly become permeable, and anything caught in the transition snaps back to solidity with catastrophic misalignment. The effect lasts less than a tenth of a second but the material damage is permanent: metal crystallizes along new fault lines, biological tissue suffers cellular disruption, and electronics experience cascading component failure. Tessera's R&D team reportedly does not fully understand why the device works.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 5",
+  "legality": "Experimental — Tessera internal only",
+  "base_technologies": [
+    "Localized spatial distortion generation",
+    "Molecular bond phase disruption",
+    "Experimental spatial physics applications"
+  ],
+  "specifications": "effect radius: 1 meter at target point\neffect duration: 0.08 seconds\neffective range: 5-20 meters\npower source: Experimental spatial distortion generator\nweight: 12 kg with power unit\nrecharge: 120 seconds between activations\nactivations per power cell: 3\nprototypes: 2 confirmed",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A crime scene shows damage consistent with Phase Disruptor exposure — materials aged and crystallized in a perfect sphere — but only two prototypes exist and both are supposedly locked in Tessera's vault.",
+    "A Tessera physicist involved in the PD-2 project has disappeared after claiming the device does not distort space — it briefly opens a window to somewhere else, and something on the other side is looking back."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "exotic",
+    "weapon",
+    "gun",
+    "crime",
+    "loss",
+    "ai",
+    "power",
+    "tier 5"
+  ]
+}

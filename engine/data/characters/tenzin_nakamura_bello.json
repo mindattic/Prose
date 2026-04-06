@@ -1,0 +1,272 @@
+{
+  "id": "019d6143a6f17f0384031cc711d78adf",
+  "type": "character",
+  "name": "Tenzin Nakamura-Bello",
+  "aliases": [
+    "Onyx",
+    "The Ghost"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Personnel recovery and hostile extraction — extraction specialist",
+  "age": 41,
+  "status": "active",
+  "location": "The Spires — mid-level corporate residential towers",
+  "description": "Tenzin Nakamura-Bello is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 41, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a extraction specialist out of The Spires, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Tenzin Nakamura-Bello is one of the ones who actually does it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.25,
+      "ideal": 0.42,
+      "id": 0.56,
+      "shadow": 0.52,
+      "mask": 0.46,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "The quiet — silence means something is about to go very wrong",
+      "Being identified by corporate facial recognition — living off-grid is survival"
+    ],
+    "core_desires": [
+      "Control — over their body, their schedule, their future",
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
+      "Knowledge — to understand the systems that grind people down"
+    ],
+    "coping_mechanisms": [
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+      "Compartmentalization — work feelings and personal feelings exist in separate boxes",
+      "Overwork — takes every contract offered because idleness invites thinking"
+    ],
+    "blind_spots": [
+      "Cannot accept help without interpreting it as leverage",
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
+      "Trusts technology more than people — machines don't betray"
+    ],
+    "secret": "Tenzin Nakamura-Bello has a terminal condition — geneware degradation — with an estimated five years. They haven't changed their lifestyle. They haven't told anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Uses technical jargon for everything, including emotions",
+      "Ends statements with 'yeah?' — not a question, a dare"
+    ],
+    "example_lines": [
+      "\"We go in, we get the asset, we leave. Everything else is improvisation.\"",
+      "\"The extraction window is four minutes. I've done it in three.\"",
+      "\"I don't rescue people. I relocate them aggressively.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Tenzin Nakamura-Bello intercepts intelligence about a threat to their district and must decide between profit and protection",
+    "A Tier 4 executive offers Tenzin Nakamura-Bello a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "A corporate black site Tenzin Nakamura-Bello once infiltrated is being reopened, and the people inside know her face"
+  ],
+  "narrative_function": "Tenzin Nakamura-Bello is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
+  "augmentations": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks. Bone lacing — titanium mesh throughout skeleton, increases durability and striking power",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Unaffiliated — too volatile for permanent crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 5
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 5
+      },
+      "endurance": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 4
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 5
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 10
+      },
+      "perception": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 10
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 6
+      },
+      "technical": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 5
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 8
+      },
+      "intimidation": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 7
+      },
+      "deception": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 9
+      },
+      "empathy": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 9
+      }
+    },
+    "personality": {
+      "aggression": 0.3,
+      "caution": 0.23,
+      "loyalty": 0.18,
+      "greed": 0.97,
+      "empathy": 0.62
+    },
+    "drives": [
+      "revenge",
+      "money",
+      "loyalty"
+    ],
+    "thresholds": {
+      "pain": 5,
+      "stress": 5,
+      "loyalty_break": 7
+    },
+    "strengths": [
+      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "technical expertise with augmentation systems"
+    ],
+    "weaknesses": [
+      "emotional volatility under extreme stress",
+      "trust issues that limit crew effectiveness",
+      "grudge-holding that compromises rational decision-making"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "extraction specialist",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Claims not to care about reputation but monitors what people say about them obsessively",
+      "Presents as emotionless professional but is deeply affected by collateral damage"
+    ],
+    "habits": [
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Checks exits within 10 seconds of entering any room",
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again"
+    ],
+    "breaking_points": [
+      "Discovering their employer deliberately sent them into a death trap",
+      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture",
+      "Losing their primary augmentation — the one that defines their professional identity"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Internal air filtration system",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
+      "replaces": ""
+    },
+    {
+      "name": "Bone lacing",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Bone lacing — titanium mesh throughout skeleton, increases durability and striking power",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Tactician": 0.9,
+    "Protector": 0.9,
+    "Improviser": 0.9,
+    "Risk Taker": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

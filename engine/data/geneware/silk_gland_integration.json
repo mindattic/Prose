@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a8b17ea399d641759dd04e0f",
+  "name": "Silk Gland Integration",
+  "brand_name": "Silk",
+  "product_name": "Silk Gland Integration",
+  "type": "geneware",
+  "aliases": [
+    "Spinneret",
+    "Spider Silk",
+    "Weaver Mod"
+  ],
+  "category": "agricultural/industrial",
+  "target_system": "glandular/integumentary (biosilk production)",
+  "description": "Introduces spider silk production genes into modified glands in the wrists and forearms, allowing the user to produce genuine spider silk from small spinneret openings on the inner wrists. The silk is extraordinarily strong — weight for weight, stronger than steel and more elastic than nylon. Production rate is slow: approximately 2–3 meters of thread per hour, with a maximum diameter of 1mm. The silk is useful for binding, suturing, creating snares, and as a general-purpose ultra-strong line. Industrial users produce silk continuously during work shifts, winding it onto spools for sale. Spider silk produced by human spinnerets commands premium prices as a biomaterial. Gravemoss Biofoundry developed the modification for biotech manufacturing but the application has spread to medical, military, and civilian use. The spinneret openings are small — barely visible slits on the inner wrist — and the silk emerges when the user makes a specific flexion gesture.",
+  "source_organism": "Nephila clavipes (golden silk orb-weaver), Araneus diadematus (European garden spider, elastic variant)",
+  "manufacturer": "Gravemoss Biofoundry",
+  "tier_availability": "Tier 3+",
+  "legality": "Unrestricted",
+  "procedure": "Wrist gland implantation with silk-production retroviral modification, 2 sessions",
+  "expression_time": "4–6 weeks for gland maturation; silk quality improves over 3 months",
+  "reversibility": "Glands surgically removable",
+  "side_effects": [
+    "Wrist itching when silk glands are full",
+    "Accidental silk production during hand gestures — getting stuck to things",
+    "Silk production requires protein-rich diet",
+    "Spinneret slits are sensitive and can become inflamed",
+    "Rare: silk gland blockage causing painful wrist swelling"
+  ],
+  "social_perception": "Useful and mildly quirky. Silk producers are valued workers in biotech manufacturing. In social settings, accidental silk production is embarrassing but harmless. The modification has a craft-culture following — spinners who produce decorative silk work as a hobby.",
+  "story_hooks": [
+    "A silk producer discovers their silk has changed composition — it's now producing a variant that conducts electricity, making it useful as a biological wire but dangerous to handle",
+    "A Weaver Mod user accidentally leaves silk traces at a crime scene, and the silk's protein composition is as unique as a fingerprint — biological evidence that can't be wiped clean"
+  ],
+  "tags": [
+    "agriculturalindustrial",
+    "geneware",
+    "war",
+    "crime",
+    "ai",
+    "medical",
+    "pain",
+    "bar",
+    "tier 3"
+  ]
+}

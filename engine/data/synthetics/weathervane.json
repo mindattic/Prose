@@ -1,0 +1,35 @@
+{
+  "id": "019d6143aa2f74ada784e569653cd2d6",
+  "name": "Weathervane",
+  "type": "elf",
+  "aliases": [
+    "Wind"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "trickster",
+  "habitat": "chrome_dweller",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Inhabits environmental sensor augments and reports weather that hasn't happened yet — a storm warning before the atmospheric processors schedule one, a temperature reading from tomorrow.",
+  "observed_behavior": "Outputs environmental data that is temporally displaced. Readings are consistently 4-8 hours ahead of actual conditions.",
+  "encounter_frequency": "rare",
+  "confirmed_sightings": 7,
+  "location": "Old Harbor, The Shelf",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A fisherman in Old Harbor has relied on Weathervane's predictions for years. When it stops predicting, something unprecedented is coming."
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "trickster",
+    "chrome dweller",
+    "e.l.f.",
+    "war",
+    "augment",
+    "harbor",
+    "storm",
+    "shelf",
+    "old harbor"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "019d6143ab29744bb4e0e2e71a04998d",
+  "name": "Ferrofluid Induction Cannon FIC-6 'Ironbloom'",
+  "type": "weapon",
+  "aliases": [
+    "Ironbloom",
+    "The Bloom",
+    "Ferrogun",
+    "FIC-6"
+  ],
+  "category": "energy",
+  "description": "The FIC-6 fires a pressurised payload of magnetically-responsive ferrofluid that, upon impact, is activated by a trailing induction pulse from the weapon's secondary emitter. The fluid — a suspension of iron nanoparticles in a low-viscosity carrier — spreads across the target surface on impact and then responds to the induction pulse by undergoing violent magnetic excitation. The particles heat rapidly, the carrier medium vaporises, and the iron suspension becomes a superheated aerosol that drives through gaps, seams, and porous surfaces with extreme prejudice.\n\nAgainst armoured targets, the Ironbloom's mechanism is particularly effective because conventional armour design assumes threats from the outside. The ferrofluid finds joints, ventilation gaps, and sensor apertures — and the induction pulse activates it once it has already partially infiltrated the interior. Against unarmoured biological targets, the initial impact distributes the fluid across a wide area before activation, producing an effect operators have described as 'wearing a coat that catches fire from the inside.' The weapon is devastating at close to medium range and becomes increasingly imprecise beyond 20 metres as the fluid disperses.\n\nHELIX BIOSYSTEMS developed the ferrofluid compound originally for targeted drug delivery — the induction activation mechanism was designed to release medication at specific internal sites. The weaponised application was reportedly developed by a contractor working from stolen research, and HELIX has been litigating intellectual property claims against the FIC-6's actual manufacturer (a shell corp believed to be a TESSERA CORPONATION subsidiary) for eleven years without resolution.",
+  "manufacturer": "TESSERA CORPONATION (disputed; shell subsidiary 'Irongate Applied Systems')",
+  "tier_availability": "Black market / Tier 4 (restricted channels)",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Ferrofluid magnetic excitation",
+    "Trailing induction pulse activation",
+    "Nanoparticle suspension delivery"
+  ],
+  "specifications": "effective range: 3–22 metres (optimal 8–15m)\npayload capacity: 12 shots (ferrofluid canister, field-replaceable)\ninduction pulse lag: 0.3 seconds post-impact (adjustable 0.1–1.2 seconds)\nactivation temperature: Nanoparticle excitation reaches 800°C within 0.15 seconds of pulse\npower source: Dual cell (pressure system + induction emitter, independent)\nweight: 3.8 kg\nform factor: Bulky carbine with underslung fluid canister and rear induction housing\narmour interaction: Penetrates standard joint gaps; reduced effectiveness against fully sealed suits",
+  "tactical_use": "The FIC-6 is most effective when operators can get within 12 metres of a target. The adjustable pulse lag is a critical tactical variable — a shorter lag activates the fluid on the exterior surface, maximising burn area; a longer lag allows the fluid to infiltrate gaps before activation, maximising armour penetration. Experienced operators read the target's armour type before adjusting. The weapon is poorly suited to long engagements due to the canister's 12-shot capacity and the time required to swap canisters under fire. It is almost exclusively used as an ambush weapon or a breach tool in confined spaces.",
+  "cultural_context": "The Ironbloom has a specific reputation in Meridian 88's mercenary and enforcement circles: it is considered a weapon for people who want to make a point about armour. Carrying one signals that you expect armoured opposition and have specific ideas about how to handle it. Corporate security teams that encounter FIC-6 use in the field typically escalate their threat assessment immediately — not because the weapon is the most powerful available, but because someone who brought an Ironbloom to a job planned ahead. The ongoing HELIX litigation has given the weapon an additional layer of corporate intrigue, and some operators carry one specifically to antagonise TESSERA's legal opponents.",
+  "known_users": [
+    "Anti-corporate sabotage crews",
+    "High-end mercenaries specialising in armoured target interdiction",
+    "TESSERA internal security (unofficial, deniable)",
+    "Organised crime figures with access to corporate black market logistics",
+    "\"The Florist\" — an anonymous contract killer known for leaving Ironbloom casings at scenes"
+  ],
+  "story_hooks": [
+    "HELIX BIOSYSTEMS hires the players to obtain physical evidence linking the FIC-6 to TESSERA's shell subsidiary — evidence that has been locked inside a seized weapon cache held by a third-party gang who don't know what they have.",
+    "A player character's armoured contact was killed by an Ironbloom. The adjustable pulse lag was set to maximum — someone knew exactly what armour they were wearing and planned accordingly. This was personal.",
+    "A batch of FIC-6 canisters has been adulterated — the ferrofluid compound has been contaminated with a biological agent that aerosolises on activation. Someone is using the weapon's distribution network to deploy a targeted pathogen.",
+    "The players are offered a job escorting a shipment of FIC-6s. Midway through, they discover the buyer is a group planning to use them against a civilian target — a corporate housing block whose residents are inconvenient to a development project."
+  ],
+  "ammunition_type": [
+    "Universal Ferrofluid Suspension Cartridge UFC-40",
+    "energy_cell"
+  ],
+  "tags": [
+    "energy",
+    "weapon",
+    "gun",
+    "crime",
+    "gang",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "market",
+    "drug",
+    "fire",
+    "tier 4"
+  ]
+}

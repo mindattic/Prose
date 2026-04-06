@@ -1,0 +1,50 @@
+{
+  "id": "019d6143a7a1713e93d15b4a9045bc29",
+  "codename": "DEAD LETTER",
+  "type": "contract",
+  "client": "Tessera Legal (via Whisper)",
+  "client_tier": "Tier 4",
+  "category": "retrieval",
+  "description": "A former Tessera exec died with proprietary data in their BCI. The BCI was buried with them. Tessera wants it. The body is in a Shelf cemetery that does not welcome corporate visitors.",
+  "objective": "Retrieve BCI data chip from burial plot 447, Greenvale Memorial.",
+  "location": "The Shelf",
+  "target": "BCI data chip",
+  "opposition": "Community cemetery guards, neighborhood watch",
+  "payout": "Φ35,000",
+  "bonuses": [
+    {
+      "type": "silence",
+      "amount": "Φ10,000",
+      "condition": "No witnesses"
+    },
+    {
+      "type": "narrative",
+      "amount": "Φ25,000",
+      "condition": "Wire journalist documents Tessera grave-robbing"
+    }
+  ],
+  "complications": [],
+  "required_capabilities": {
+    "combat": 2,
+    "stealth": 7,
+    "hacking": 3,
+    "social": 5,
+    "medical": 6,
+    "tech": 7,
+    "transport": 2,
+    "demolitions": 0,
+    "surveillance": 4,
+    "linguistics": 0
+  },
+  "crew_size": "2-3",
+  "difficulty": "challenging",
+  "time_limit": "One night",
+  "status": "open",
+  "outcome": "",
+  "tags": [
+    "retrieval",
+    "challenging",
+    "runner",
+    "contract"
+  ]
+}

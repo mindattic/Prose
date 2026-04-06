@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a57877a5a8639593106c19c9",
+  "name": "Innovator",
+  "type": "archetype",
+  "category": "intellectual",
+  "description": "Creates new solutions nobody else imagines",
+  "behavioral_signature": "Rejects conventional approaches",
+  "under_stress": "Becomes more radical, experimental",
+  "at_rest": "Building prototypes, breaking conventions",
+  "will_always": [
+    "find a new way"
+  ],
+  "will_never": [
+    "use the old solution if a new one exists"
+  ],
+  "unless": [
+    "innovation time is a luxury they don't have"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Visionary",
+      "threshold": 0.8,
+      "context": "forward-thinking"
+    },
+    {
+      "archetype": "Problem Solver",
+      "threshold": 0.75,
+      "context": "creative solutions"
+    }
+  ],
+  "opposite_of": [
+    "Traditionalist"
+  ],
+  "tags": [
+    "creative",
+    "revolutionary"
+  ]
+}

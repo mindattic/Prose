@@ -1,0 +1,164 @@
+{
+  "id": "019d6143a71d781eab0779d6a73ec737",
+  "type": "character",
+  "name": "Ximena Boateng-Nazari",
+  "aliases": [
+    "Xim",
+    "The Noodle Witch"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Food stall operator — hand-pulled noodle and fermented broth vendor",
+  "age": 58,
+  "status": "active",
+  "location": "The Oxidian Market, Geartown",
+  "description": "Ximena is a broad-shouldered woman with deep umber skin mapped in laugh lines and old burn scars along her left forearm from a cooking fire twenty years back. Her hair has been gene-dyed a permanent copper-gold that she wears in a thick plait down her back, and her eyes carry patterned irises — concentric rings of amber and dark brown, a cosmetic mod she saved three months of UBC stipend to afford when she was thirty. She runs her stall with the authority of a small general, keeping three pots going simultaneously, the steam rising around her like offerings to the market's resident E.L.F., whom she calls Grandpot and leaves a small data crystal near the burner each morning.\n\nXimena is warm to the point of disarming — she remembers what every regular ordered last time and will argue passionately that your body needs bone broth today, not the chili oil, she can tell by your eyes. But beneath the maternal bustle is a woman who has seen her neighborhood's character scraped away one Tessera rezoning at a time, and who keeps a detailed mental ledger of who is eating less than they used to. She is the social infrastructure of her corner of the market, whether she admits it or not.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Watching the community she feeds disperse and vanish",
+      "Becoming a burden when her body finally gives out"
+    ],
+    "core_desires": [
+      "To feed people so well they feel briefly safe",
+      "To pass her recipes to someone who will actually use them"
+    ],
+    "coping_mechanisms": [
+      "Cooking as meditation and emotional regulation",
+      "Deflecting personal grief with humor and busyness"
+    ],
+    "blind_spots": [
+      "Underestimates how much people depend on her emotionally, not just for food",
+      "Refuses to acknowledge her own loneliness"
+    ],
+    "secret": "Her signature fermented chili base contains a mild, legal mood-stabilizer compound she synthesizes herself from foraged lake algae — she started doing it during the Geartown riot year to keep people calm, and never stopped. Nobody has ever complained."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm, declarative, peppered with food metaphors and practical Meridian street slang. Mixes Farsi endearments with Twi interjections without switching register.",
+    "cadence": "Steady and unhurried, like someone who has all the time in the world even when the queue is ten deep.",
+    "verbal_tics": [
+      "Starts advice with 'Here is what your body is telling you—'",
+      "Calls everyone 'little fish' regardless of age or size"
+    ],
+    "example_lines": [
+      "Little fish, you look like week-old broth. Sit. I am not asking.",
+      "The Guild wants to raise stall fees again. I told Ferrogate's rezoning man the same thing I am telling you — this corner does not move."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A child who eats at her stall daily has stopped coming; she suspects something bad has happened at home and quietly enlists help to find out.",
+    "Her recipe for the fermented base has been somehow leaked and a Tessera food-lab is attempting to patent the flavor compound — she needs someone to help her fight back."
+  ],
+  "narrative_function": "Local anchor and information hub — she knows everyone in the market by face and appetite; a reliable source of neighborhood mood, rumors, and who is in trouble. Potential quest-giver for community-level problems.",
+  "augmentations": "Patterned irises (cosmetic). A basic subdermal thermometer in her palm she uses to test broth temperature — practical and cheap.",
+  "daily_life": "She arrives at her stall by 0500 to start her long-simmered broths, works until the last noodle is sold around 2100, then spends an hour reconciling her cash box and murmuring her nightly thanks to Grandpot before the walk home.",
+  "affiliation": "Independent; dues-paying member of the Oxidian Market Vendors Guild",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community anchor",
+      "local knowledge",
+      "amateur herbalist",
+      "guild member",
+      "stubborn optimist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Feed first, ask questions second",
+      "Never refuse a hungry person who cannot pay — they settle the debt later or they don't, both are acceptable"
+    ],
+    "escalation_ladder": [
+      "Ignores minor disrespect and talks around it",
+      "States her position plainly once, without anger",
+      "Removes the person from her stall with surprising physical firmness and bans them quietly"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assesses their hunger and mood within seconds; defaults to generous and maternal",
+      "friends": "Relentlessly attentive, remembers everything, occasionally overwhelming in her care"
+    },
+    "stress_responses": {
+      "low": "Cooks faster and hums old songs",
+      "medium": "Goes quiet and mechanical, working through the stressor by staying in motion",
+      "high": "Shuts the stall early, goes home, and cries privately before returning the next morning as if nothing happened"
+    },
+    "contradictions": [
+      "Preaches community and collective resilience but finds it genuinely painful to accept help herself"
+    ],
+    "habits": [
+      "Leaves a small data crystal near the burner each morning as an offering to Grandpot",
+      "Tastes every broth with her eyes closed, lips moving slightly as if praying"
+    ],
+    "breaking_points": [
+      "Watching a child go hungry in her sight when she has food available — she would give everything she has"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Provider": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

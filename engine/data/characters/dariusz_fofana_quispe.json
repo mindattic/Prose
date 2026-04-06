@@ -1,0 +1,173 @@
+{
+  "id": "019d6143a5e4756297f0df72c8e930df",
+  "type": "character",
+  "name": "Dariusz Fofana-Quispe",
+  "aliases": [
+    "Dari",
+    "The Eel"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Underground press operator and anti-corporate agitator",
+  "age": 27,
+  "status": "active",
+  "location": "Hamtramck Enclave",
+  "description": "Dariusz is lean and slightly too tall for the cramped print spaces he works in, with the kind of posture that suggests he's spent years ducking under doorframes and corporate surveillance arches both. His skin is a warm medium brown, his eyes have aftermarket fractal irises — amber and black geometric spirals he bought secondhand — and he keeps his hair in short twists that he dyes different colors based on which burner identity he's running that week. He has ink-stained fingers that no amount of solvent fully clears and a laugh that arrives without warning and disappears just as fast. He is charming in the way a distraction is charming — you enjoy it until you realize your attention was supposed to be somewhere else.\n\nDariusz runs a print-and-signal operation called Salvo out of a basement in the Hamtramck Enclave that produces physical broadsheets, mesh broadcasts, and occasional data-spike packages that end up in corporate employee feeds. He considers himself a journalist in the classical sense and will argue this at length. People who have to clean up after his more ambitious operations might use other words. He is genuinely brave and genuinely reckless and has so far survived the combination through luck, speed, and an extraordinary talent for not being where he said he'd be.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.8,
+      "id": 0.7,
+      "shadow": 0.5,
+      "mask": 0.6,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being disappeared quietly, with no one noticing or publishing it",
+      "Discovering that the truth he publishes doesn't actually change anything"
+    ],
+    "core_desires": [
+      "To break the story that finally matters",
+      "To be taken seriously as a journalist, not just an agitator"
+    ],
+    "coping_mechanisms": [
+      "Humor as deflection",
+      "Constant motion — staying busy prevents reflection"
+    ],
+    "blind_spots": [
+      "Underweights danger to sources in pursuit of the story",
+      "Mistakes provocation for impact"
+    ],
+    "secret": "Three months ago he received documents from an anonymous source implicating a Zheng-Dao subsidiary in falsified water safety data affecting the Enclave. He hasn't published them. He is afraid they are too large, that publishing will get him killed before anyone reads it. He tells himself he's still verifying."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, associative, mixes press slang with street Hamtramck creole; quotes things and rarely cites the source correctly",
+    "cadence": "Rapid and overlapping; trails off when uncomfortable; restarts sentences from the middle",
+    "verbal_tics": [
+      "'Look—'",
+      "'That's the thing, right?'",
+      "Whistles softly when surprised"
+    ],
+    "example_lines": [
+      "'Look, I'm not saying they killed him, I'm saying the timing is — look, you do the math, I just publish.'",
+      "'Every story is true. Some of them are also accurate. Those are the ones that get you killed.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Dariusz asks for help verifying the Zheng-Dao water data documents — he needs someone who can access corporate infrastructure without leaving a trail he can't cover",
+    "One of his sources has gone silent and he suspects they've been detained; he needs discreet inquiries made without tipping off whoever took them",
+    "A broadsheet he published has caused a neighborhood dispute to escalate badly — he needs help managing the fallout without recanting"
+  ],
+  "narrative_function": "Information broker and rumor engine; can surface corporate dirt or community intelligence; creates story hooks through the consequences of his publications; potential liability as a contact due to his heat level.",
+  "augmentations": "Fractal aftermarket irises. Subdermal data cache in left palm, low-grade model. Cosmetic color-cycling hair follicle treatment.",
+  "daily_life": "Sleeps irregular hours in the Salvo basement or at rotating safe locations; mornings are for source meetings in public transit corridors; afternoons for writing and layout; night runs for physical distribution drops.",
+  "affiliation": "Salvo Underground Press (self-operated); loose contact network with Mexicantown Libre media collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 9,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 9,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": -2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "press operator",
+      "urban runner",
+      "information hazard",
+      "high heat",
+      "idealist with bad habits"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Publish unless it will directly get a named source killed",
+      "Never stay in one place long enough to become a target",
+      "Trust instinct over procedure"
+    ],
+    "escalation_ladder": [
+      "Deflection and humor",
+      "Physical relocation",
+      "Burning the current identity and going dark",
+      "Publishing everything as a dead man's switch"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and curious, asks a lot of questions; hard to tell if it's genuine or tactical",
+      "friends": "Loyal in crisis, unreliable in daily life; forgets appointments, shows up when it matters"
+    },
+    "stress_responses": {
+      "low": "Increases output and becomes more prolific",
+      "medium": "Becomes flippant and deflective in conversation",
+      "high": "Goes completely silent and disappears for days"
+    },
+    "contradictions": [
+      "Believes in transparency as a principle but is personally opaque about his own motivations",
+      "Values his sources' safety but consistently makes choices that compromise it"
+    ],
+    "habits": [
+      "Keeps a physical notebook in addition to all digital backups — paranoia habit",
+      "Names his print runs after old Earth storms",
+      "Leaves small queries in public mesh nodes for E.L.F.s he calls 'the Archivists'"
+    ],
+    "breaking_points": [
+      "A source being killed due to his publication",
+      "The Salvo press being physically destroyed"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Networker": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

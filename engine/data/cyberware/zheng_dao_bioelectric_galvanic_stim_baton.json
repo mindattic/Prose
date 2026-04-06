@@ -1,0 +1,55 @@
+{
+  "id": "019d6143a7cc775d9abc3a7e161efd8f",
+  "name": "Zheng-Dao Bioelectric Galvanic Stim Baton",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Bioelectric Galvanic Stim Baton",
+  "type": "cyberware",
+  "aliases": [
+    "Shock Doc",
+    "The Wand",
+    "Galvanic Stick",
+    "ZD Jolt"
+  ],
+  "category": "medical",
+  "body_location": "",
+  "description": "The Galvanic Stim Baton is a handheld bioelectric stimulation device developed by Zheng-Dao Bioelectric for emergency cardiac and neuromuscular intervention. At its core is a precision galvanic delivery system capable of administering controlled electrical pulses ranging from micro-current therapeutic stimulation to full defibrillation-level discharge, all within a form factor that fits inside a standard field kit. The device reads cardiac rhythm through its contact tip before each discharge, calculating the precise waveform and joule output needed to restore normal function without causing secondary damage to surrounding tissue.\n\nWhat separates the Stim Baton from legacy defibrillation technology is its neuromuscular application range. Beyond cardiac intervention, calibrated low-current settings allow the device to stimulate paralyzed or shock-suppressed muscle groups back to function — a capability that sees heavy use in cases of neural toxin exposure, spinal shock, or the neuromuscular suppression caused by certain electronic warfare systems. Zheng-Dao's proprietary WaveForm Mapping algorithm continuously adjusts pulse character during extended stimulation sessions, adapting to the patient's real-time bioelectric response. The baton's handle contains a small charge reservoir that reloads via standard power cell and supports approximately thirty therapeutic-level uses or three full defibrillation discharges per charge.\n\nThe Galvanic Stim Baton is standard equipment in Zheng-Dao Bioelectric's own facility emergency response teams and is widely distributed to licensed emergency medical contractors throughout Meridian 88. Its secondary neuromuscular stimulation capability has attracted significant interest from less legitimate operators — the same settings that restore function can be inverted, technically, to cause incapacitating muscle spasm, a fact Zheng-Dao's legal division is aggressively litigating against several aftermarket firmware modification vendors.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"dimensions\":\"28cm length, 4cm diameter grip\",\"weight\":\"310g with standard charge cell\",\"output_range\":\"0.1mA (micro-therapeutic) to 360J (full defibrillation)\",\"rhythm_analysis_time\":\"1.2 seconds pre-discharge\",\"therapeutic_uses_per_charge\":\"30\",\"defibrillation_uses_per_charge\":\"3\",\"recharge_time\":\"45 minutes via standard power cell\",\"operating_modes\":\"Cardiac restoration, Neuromuscular stimulation, Neural toxin counter-stimulation, Defibrillation\",\"firmware_version\":\"ZD-WFM 4.1\"}",
+  "side_effects": [],
+  "cultural_context": "The Stim Baton's dual-use potential has made it a flashpoint in Meridian 88's ongoing regulatory debates about bioelectric medical tools. Zheng-Dao lobbies heavily for strict licensing requirements that, critics note, conveniently price out smaller competitors. In the Underbelly, a working Stim Baton in a street medic's kit commands enormous respect — and the firmware modification community around the device is thriving despite legal pressure. Some combat medics display the baton prominently as a professional credential; others keep it hidden to avoid becoming a target.",
+  "known_users": [
+    "Zheng-Dao Bioelectric facility emergency teams",
+    "Licensed emergency medical contractors",
+    "Combat medics in mercenary units",
+    "Neural toxin specialists",
+    "Firmware modification dealers",
+    "Medic-archetype 'Patchdocs' operating in the Underbelly",
+    "Kessa Orin (Zheng-Dao field medic, known for gray-market firmware use)"
+  ],
+  "story_hooks": [
+    "A series of assaults in the Corporate Ring have been carried out using Stim Batons with modified firmware — victims are left alive but with severe neuromuscular trauma. Zheng-Dao is quietly trying to identify the firmware source before regulators connect the attacks to their product.",
+    "A street medic has a Stim Baton that pre-dates Zheng-Dao's WaveForm Mapping update and runs a legacy algorithm — it's the only device that can safely interact with a rare cyberware implant that the newer firmware actively rejects. Someone very powerful needs that specific baton.",
+    "Zheng-Dao Bioelectric is pushing a mandatory remote firmware update that will lock out all unlicensed Stim Batons in Meridian 88. The Underbelly's medical community has 48 hours to find a workaround before hundreds of street medics lose their primary resuscitation tool."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "medical",
+    "cyberware",
+    "combat",
+    "war",
+    "neural",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "market",
+    "tier 2"
+  ]
+}

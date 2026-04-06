@@ -1,0 +1,51 @@
+{
+  "id": "019d6143a84f70d085341e1fc30b3b39",
+  "name": "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
+  "type": "equipment",
+  "aliases": [
+    "CEL-3",
+    "Light Frame",
+    "Boost Rig",
+    "Skeleton"
+  ],
+  "category": "armor",
+  "description": "A lightweight partial exoskeleton that augments the wearer's lower body and core strength without the bulk of a full tactical exoskeleton. The CEL-3 consists of articulated leg braces, a hip frame, and a spinal support strut that multiply lower body strength by a factor of 3 and increase sprint speed by 60%. The system is powered by a waist-mounted battery and controlled by neural interface or manual input, allowing the wearer to run at 45 km/h, jump 3 meters vertically, and carry loads up to 200 kg without fatigue. The CEL-3 fits under loose clothing, making it the preferred mobility enhancement for operators who need augmented physicality without visible hardware.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — mobility augmentation device",
+  "base_technologies": [],
+  "specifications": {
+    "strength multiplication": "3x lower body",
+    "sprint speed": "Up to 45 km/h",
+    "vertical jump": "3 meters",
+    "load capacity": "200 kg without fatigue",
+    "coverage": "Legs",
+    "info": "hips; spine; waist-mounted",
+    "weight": "4.5 kg",
+    "power": "6-hour battery",
+    "control": "Neural interface or manual input",
+    "concealment": "Fits under loose clothing"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "Security footage shows a suspect running at 45 km/h through a commercial district — far beyond human capability, but no visible augmentation. The CEL-3's concealed profile means witnesses describe an impossibly fast human.",
+    "A CEL-3 wearer experienced a servo lockup mid-stride at full speed — the resulting fall at 45 km/h was not survivable, and the manufacturer's logs show the lockup was triggered by an external signal."
+  ],
+  "tags": [
+    "armor",
+    "equipment",
+    "combat",
+    "war",
+    "augment",
+    "neural",
+    "ai",
+    "control",
+    "power",
+    "clothing",
+    "tier 3"
+  ]
+}

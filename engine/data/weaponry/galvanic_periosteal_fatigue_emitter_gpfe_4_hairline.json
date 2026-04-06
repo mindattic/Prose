@@ -1,0 +1,61 @@
+{
+  "id": "019d6143ab2b7a5481f9461f618a518d",
+  "name": "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+  "type": "weapon",
+  "aliases": [
+    "Hairline",
+    "The Stress Gun",
+    "Bone Tired",
+    "GPFE"
+  ],
+  "category": "exotic",
+  "description": "The GPFE-4 functions by projecting a pulsed galvanic current through a directed beam of ionized saline vapor, creating a conductive pathway that deposits low-frequency electrical oscillations directly into bone tissue. These oscillations do not fracture bone acutely — instead, they induce accelerated piezoelectric fatigue at the microscopic level, progressively weakening the crystalline hydroxyapatite matrix that gives bone its structural integrity. A single sustained exposure of three to five seconds produces microfractures distributed across the targeted load-bearing bone. The target feels a deep ache but remains mobile. Under any significant mechanical stress — running, jumping, a hard fall — the bone fails catastrophically along the fatigue lines.\n\nThe delayed-onset nature of the damage is the weapon's defining and most disturbing characteristic. A target struck by the GPFE-4 may not experience incapacitation for minutes or hours after exposure, during which time they appear entirely functional. The weapon is consequently almost impossible to counter in the moment of use — by the time the injury manifests, the operator is long gone. Helix Biosystems developed the GPFE-4 ostensibly as a research instrument for studying accelerated bone fatigue in microgravity simulation environments. Its migration into weapons applications was unofficial and rapid.\n\nThe 'Hairline' nickname reflects both the weapon's mechanism — hairline fractures distributed across bone — and the razor-thin margin it exploits between appearing unharmed and being on the verge of catastrophic skeletal failure. Among Meridian 88's medical community, injuries consistent with GPFE-4 exposure are referred to informally as 'slow breaks' or 'time bombs,' and diagnosing them before they manifest requires specialized bone density imaging that most public clinics cannot afford.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Directed ionized saline vapor conduction",
+    "Galvanic oscillation delivery",
+    "Piezoelectric bone fatigue induction"
+  ],
+  "specifications": "effective range: 3–25 meters\npower source: Dual-cell galvanic array, 18 exposures per charge\nexposure duration for effect: 3–5 seconds continuous\nfatigue onset window: Structural failure typically within 20 minutes of significant physical exertion post-exposure\nweight: 2.1 kg\nform factor: Compact emitter with integrated saline vapor reservoir, pistol-adjacent profile\ncountermeasures: Bone density augmentation implants reduce susceptibility by approximately 40%; full skeletal composite replacement provides near-immunity",
+  "tactical_use": "The GPFE-4 is overwhelmingly a weapon of assassination and sabotage rather than direct confrontation. Operators tag a target in a crowd, during a meeting, or in a casual encounter — the exposure can be disguised as a near-miss or a brush-by in close quarters — then withdraw. The target's subsequent collapse during a foot chase, a physical altercation, or even a fall down stairs reads as an accident or a pre-existing condition. Intelligence operatives prize it for this deniability. In direct combat, it is occasionally used to pre-damage a target before an engagement, ensuring that any physical exertion in the fight will result in sudden incapacitation.",
+  "cultural_context": "The GPFE-4 occupies a particularly feared niche in Meridian 88's underworld because it violates the implicit legibility of violence — you cannot see or feel the damage being done to you. It has generated a subcultural paranoia among high-value targets and fixers, some of whom undergo monthly bone density scans as a precaution. Helix Biosystems officially denies any weapons applications of the technology, but three separate corporate espionage investigations have traced GPFE-4 units back to a Helix subsidiary. The weapon is also quietly associated with a specific style of political killing — making deaths look accidental — that has been linked to at least two major power shifts in the city's district governance.",
+  "known_users": [
+    "Corporate intelligence wet-work specialists",
+    "Political assassins preferring deniable methods",
+    "High-tier fixers handling sensitive eliminations",
+    "Paranoid mid-level criminals who want insurance on a target",
+    "Rogue Helix Biosystems research personnel"
+  ],
+  "story_hooks": [
+    "A city council member died in what was ruled a accidental fall. Her aide is convinced it was deliberate and has bone density scans that don't match the official story — but the scans came from a clinic that has since been bought out and shuttered.",
+    "Someone is selling GPFE-4 units with a modification that extends the fatigue onset window to 72 hours. The upgrade makes the weapon even more deniable and someone is distributing it specifically in the financial district.",
+    "A street-level runner collapsed mid-job with a femur failure and survived. She doesn't know when she was hit or by whom, but she has a job log from the past week and needs someone to figure out which encounter was the exposure.",
+    "Helix Biosystems is quietly funding a bone augmentation clinic in an upscale district ��� one that happens to sell the only commercially available implant that provides meaningful GPFE-4 resistance. The protection racket implications are not subtle."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "violence",
+    "combat",
+    "gun",
+    "death",
+    "augment",
+    "ai",
+    "rogue",
+    "corporate",
+    "power",
+    "ubc",
+    "medical",
+    "clinic",
+    "injury",
+    "underworld",
+    "market",
+    "chase",
+    "energy"
+  ]
+}

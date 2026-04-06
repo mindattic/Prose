@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a57c7dd492ca2acc5e894abc",
+  "name": "Martyr",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Willing to sacrifice everything for the cause",
+  "behavioral_signature": "Puts themselves last, always",
+  "under_stress": "Seeks the sacrifice actively",
+  "at_rest": "Prepares for the end they expect",
+  "will_always": [
+    "sacrifice for others"
+  ],
+  "will_never": [
+    "choose self-preservation over the mission"
+  ],
+  "unless": [
+    "their death would serve no purpose"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Noble Sacrifice",
+      "threshold": 0.9,
+      "context": "self-sacrifice"
+    },
+    {
+      "archetype": "Idealist",
+      "threshold": 0.7,
+      "context": "principled devotion"
+    }
+  ],
+  "opposite_of": [
+    "Survivor Ethics"
+  ],
+  "tags": [
+    "sacrifice",
+    "selfless"
+  ]
+}

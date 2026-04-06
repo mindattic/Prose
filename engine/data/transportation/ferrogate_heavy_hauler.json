@@ -1,0 +1,34 @@
+{
+  "id": "019d6143aa66743a90bd6fa99fa95117",
+  "name": "Ferrogate Heavy Hauler",
+  "type": "transportation",
+  "aliases": [
+    "Hauler",
+    "The Beast",
+    "Road Whale"
+  ],
+  "category": "commercial_ground",
+  "manufacturer": "Ferrogate Transit (industrial division)",
+  "description": "A massive electric cargo truck that moves goods between districts and to the city's port facilities. Automated convoys of Haulers run the arterial roads at night, their synchronized headlights moving in lines like luminous caterpillars. During the day, human drivers navigate the congested surface streets, honking and cursing. A loaded Hauler weighs 40 tons and stopping one quickly isn't really an option.",
+  "propulsion": "Electric, multi-axle drive, fuel cell range extender",
+  "speed": "80 km/h highway, 30 km/h city",
+  "capacity": "20-ton payload, standardized containers",
+  "range": "400 km loaded",
+  "tier_availability": "Commercial license required",
+  "cost": "Φ45,000 new. Fleet leasing: Φ3,000/month.",
+  "autonomy": "Convoy autopilot (highway), human driver (city). Full autonomous option available but rarely trusted.",
+  "armament": "None standard. Convoy security variants have ram plates and deterrent systems.",
+  "common_usage": "Bulk cargo transport, supply chain logistics, district resupply.",
+  "story_hooks": [
+    "A Hauler convoy goes missing between districts — the trucks are found empty, parked neatly, with no driver memories of the past six hours",
+    "An independent trucker discovers their Hauler's autonomous system has been making unauthorized stops at 3 AM"
+  ],
+  "tags": [
+    "commercialground",
+    "transportation",
+    "trust",
+    "tender",
+    "ai",
+    "night"
+  ]
+}

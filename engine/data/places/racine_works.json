@@ -1,0 +1,94 @@
+{
+  "id": "019d6143a92e7674b08856d24102fccf",
+  "type": "place",
+  "name": "Racine Works",
+  "aliases": [
+    "Racine",
+    "The Works",
+    "Case Town",
+    "Wax City"
+  ],
+  "description": "Racine was a manufacturing city that made things: tractors, floor wax, malted milk. The factories are still here. What they make has changed. The Case Corporation campus — which built agricultural equipment for a world that still had agriculture — was acquired by Zheng-Dao Bioelectric in 2167 and converted into the largest neural mesh component fabrication facility in the western hemisphere. Twelve thousand workers assemble the microscopic electrode arrays that form the basis of Zheng-Dao's CortexLink product line. The work requires human hands because the components are too delicate for current automation and too cheap to justify developing better automation. This is the sweet spot of human labor in 2200: you're employed because replacing you costs slightly more than paying you. The margin narrows every year.\n\nThe Johnson Wax campus — Frank Lloyd Wright's architectural masterpiece, the building that made corporate headquarters an art form — still stands. It has been designated a Zheng-Dao Heritage Site, which means it's maintained as a museum and executive retreat, its famous lily-pad columns now supporting a roof that generates more solar power than the original building consumed in a year. Tours are available for Tier 3 and above. The workers in the fabrication facility across town have never been inside. The irony of a building celebrating the dignity of work being closed to the people who do the work is not ironic to anyone who lives in Racine. It's just architecture.\n\nThe residential city wraps around the two campuses like scar tissue around an implant. Worker housing is Zheng-Dao standard: modular, efficient, maintained to specifications that meet the charter's minimum habitability requirements and not one lumen above them. The older neighborhoods — the ones that predate the acquisition — are better built and worse maintained, their century-old structures slowly losing the battle against deferred maintenance and rising lake levels. The lakefront, once Racine's pride, is a working waterfront now: intake pipes for the fabrication facility's cooling systems, effluent outflows that meet discharge standards no one audits, and a beach that technically exists but that no one visits because the water makes your skin itch.\n\nRacine's identity is the identity of every company town: the company is the economy, the economy is survival, and survival means not asking too many questions about what the company does with the things you build. The neural mesh components assembled here end up in CortexLink implants worldwide. Some of those implants are installed with informed consent in licensed surgical centers. Some of them are installed under other circumstances. The workers in Racine don't know the difference, and the pay is the same either way.",
+  "atmosphere": {
+    "sights": [
+      "The Zheng-Dao fabrication campus — a modernist sprawl of clean rooms visible through transparent walls, workers in white suits bent over microscopic assemblies",
+      "The Johnson Wax Heritage Site — Wright's lily-pad columns glowing warm through original windows, beautiful and inaccessible",
+      "Worker housing blocks — Zheng-Dao modular standard, identical facades stretching for blocks, differentiated only by what residents have hung in windows",
+      "The working lakefront — industrial intake pipes, warning markers, and the remains of what was once a public beach",
+      "Shift change — 12,000 workers flowing between the fabrication campus and the surrounding neighborhoods, a human tide regulated by factory scheduling"
+    ],
+    "sounds": [
+      "The fabrication facility's clean room ventilation — a constant, pervasive white noise that carries for blocks",
+      "Shift whistles — Zheng-Dao uses an actual whistle, a deliberate retro affectation that the workers find either charming or insulting depending on the day",
+      "Lake waves against industrial infrastructure — a sound that used to be peaceful and now sounds like plumbing",
+      "Worker conversation during shift changes — gossip, complaints, union talk that everyone participates in and no one organizes",
+      "The Heritage Site's audio tour, audible from the perimeter fence — a recorded voice explaining Frank Lloyd Wright's vision of the American workplace to tourists who will never work a shift"
+    ],
+    "smells": [
+      "Clean room chemical — the fabrication facility's filtered exhaust has a distinctive antiseptic sweetness",
+      "Lake water — not the chemical assault of Waukegan, but a persistent organic smell that suggests the lake is alive and not happy about it",
+      "Worker housing cooking — shift-meal preparation starting in the late afternoon, a neighborhood rhythm unchanged by a century of corporate turnover"
+    ],
+    "feel": "Honest in the way that company towns are honest: the transaction is visible. You work, you get paid, you live in company housing, and the company's name is on everything including the horizon. There's a dignity to the work and an indignity to the conditions, and the workers carry both without pretending either isn't real. Racine doesn't have the energy of the border or the desperation of the Shelf. It has the patience of people who get up and go to work, and the anger of people who know exactly what their work is worth and what they're paid for it.",
+    "tags": []
+  },
+  "demographics": "Approximately 120,000 residents. Predominantly Tier 2, with Tier 1 in the older neighborhoods. The fabrication workforce is approximately 60% Latino, 20% white, 10% Black, 10% mixed — a demographic profile that reflects Racine's pre-acquisition population plus Zheng-Dao recruitment from M88's lower tiers. Management is imported from Zheng-Dao's global executive pipeline and lives in a gated section of the lakefront that workers call 'Little Shenzhen.'",
+  "economy": "Zheng-Dao fabrication is the economy. Approximately 70% of Racine's economic activity is directly or indirectly connected to the fabrication campus. The remaining 30% is service economy: food, housing, medical, and the particular kind of entertainment that exists in towns where people work hard and need to stop thinking about it.",
+  "power_structure": "Zheng-Dao Plant Director holds effective authority over the district through economic leverage. Municipal government exists and processes permits. A workers' council operates with Zheng-Dao's permission and within boundaries Zheng-Dao defines. Labor organizing beyond those boundaries is technically legal under Wisconsin charter and practically career-ending under Zheng-Dao employment contracts.",
+  "dangers": [
+    "Zheng-Dao employment dependency — losing your job means losing your housing, your medical access, and your tier status simultaneously",
+    "Fabrication exposure — the neural mesh components are assembled using chemicals whose long-term health effects are 'under ongoing study' per Zheng-Dao's annual report",
+    "Lake contamination — the effluent outflows meet standards, but the standards were written by the industry that meets them",
+    "Labor suppression — organizing beyond the sanctioned workers' council brings attention from Zheng-Dao's internal security division",
+    "Identity as product — Zheng-Dao's employment contract includes a neural monitoring clause that tracks cognitive performance metrics during and after shifts"
+  ],
+  "opportunities": [
+    "Zheng-Dao supply chain access — the fabrication facility handles components that are worth more on the gray market than the workers who assemble them earn in a year",
+    "Labor intelligence — 12,000 workers who know how CortexLink components are built is a significant knowledge base",
+    "The Heritage Site — Zheng-Dao executives use it for meetings, and the security is designed for tourists, not operators",
+    "Worker solidarity — the community's cohesion is genuine, and genuine community is a resource the corps consistently undervalue"
+  ],
+  "story_hooks": [
+    "A fabrication worker has noticed that certain component batches are being assembled to different specifications — specifications that don't match any known CortexLink product line — and routed to an unlisted shipping destination",
+    "The workers' council election has been won by a candidate Zheng-Dao didn't approve, and the company's response will reveal how much autonomy the council actually has",
+    "The Heritage Site is being prepared for a private event — security has been tripled, and the guest list includes names from three competing corponations. Whatever's being discussed, it's not architecture."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Kenosha Crossing (south)",
+      "Bay View (north, part of Milwaukee sprawl)",
+      "Lake Michigan working waterfront (east)",
+      "Western Wisconsin agricultural zone (west)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Zheng-Dao fabrication workers — the 12,000-person workforce that is Racine's population center",
+    "Company management from Zheng-Dao's global pipeline — rotating through on 2-3 year assignments",
+    "Labor organizers who operate carefully within and occasionally beyond the sanctioned boundaries",
+    "Supply chain operators — legitimate and otherwise — who move components between the facility and the broader market"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 42.7261,
+    "lng": -87.7829,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "identity",
+    "neural",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "medical",
+    "market",
+    "survival",
+    "food",
+    "water",
+    "lake",
+    "narrows"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab4e72aa9980aeb2efc5fdb9",
+  "name": "Subsonic Cavity Charge",
+  "type": "weapon",
+  "aliases": [
+    "SCC-9",
+    "Gutterpunch",
+    "The Hollow",
+    "Resonance Mine"
+  ],
+  "category": "explosive",
+  "description": "The SCC-9 is a proximity-triggered area-denial charge that functions not through fragmentation or overpressure but through the generation of precisely tuned subsonic acoustic pulses at the moment of detonation. Rather than a single explosive event, the SCC-9 produces a rapid sequence of 14 discrete pressure pulses within a 200-millisecond window, each calibrated to a frequency between 7Hz and 19Hz — the range most effective at inducing resonance in human thoracic and abdominal cavities. The result is severe internal trauma, disorientation, nausea, and in close proximity, rupture of air-filled organs without external visible injury.\n\nThe charge body contains a layered piezoelectric pulse generator surrounding a small conventional explosive core. The explosive initiates the sequence, but the piezoelectric stack shapes and amplifies the output waveform, converting raw blast energy into the structured subsonic pulse train. This conversion is approximately 60% efficient, meaning the SCC-9 produces significantly less structural damage than a comparable conventional charge — walls remain intact, infrastructure is undamaged — while maximizing biological effect. ZHENG-DAO BIOELECTRIC developed the underlying pulse architecture for industrial vibration dampening before the application was weaponized.\n\nThe SCC-9 is triggered by a passive acoustic sensor that detects footfall vibration, making it one of the few charges in Meridian 88's black market that cannot be defeated by optical or thermal countermeasures. It is also extraordinarily difficult to detect passively — it emits no EM signature, no chemical trace, and its housing is ceramic composite that defeats standard metal detection. Clearance teams in the city's lower tiers have learned to treat any unidentified object on a floor as a potential SCC-9.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Black market / Military only",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Piezoelectric disruption",
+    "Subsonic acoustic pulse generation",
+    "Passive acoustic proximity sensing"
+  ],
+  "specifications": "weight: 420g\ndimensions: 110mm diameter, 45mm height\npulse sequence: 14 pulses over 200ms\nfrequency range: 7–19Hz subsonic\neffective radius: 4m lethal, 8m incapacitation\ntrigger: Passive acoustic footfall sensor (threshold-adjustable)\nhousing: Ceramic composite — defeats metal detection\nEM signature: None\nstructural damage: Minimal — optimized for biological effect",
+  "tactical_use": "Deployed as a denial mine in corridors, stairwells, and access points where structural preservation is required — server rooms, occupied buildings, vehicles. The lack of structural damage makes post-detonation forensics difficult; victims appear to have collapsed from internal causes. Operators use SCC-9s to defend exfiltration routes, knowing pursuers will encounter the charge without visual warning. Some operators place them beneath floor panels or inside wall cavities where they are effectively undetectable without physical demolition of the surface.",
+  "cultural_context": "The SCC-9's invisibility and the nature of its injuries — internal, with no external trauma — have given it a disturbing reputation in Meridian 88's underworld. Victims are found dead or incapacitated with no apparent cause, and the ceramic housing means the charge itself is rarely recovered intact. In districts where ZHENG-DAO BIOELECTRIC has significant presence, the SCC-9 has become associated with their corporate security apparatus — a tool for making problems disappear without obvious violence. The phrase 'hollow kill' in street parlance refers to any death that leaves no obvious trace.",
+  "known_users": [
+    "ZHENG-DAO BIOELECTRIC corporate security",
+    "Black-market clearance and denial specialists",
+    "Assassins requiring untraceable methods",
+    "Insurgent cells targeting occupied corporate facilities",
+    "Military EOD units (for analysis and disposal)"
+  ],
+  "story_hooks": [
+    "Three bodies are found in a ZHENG-DAO server facility with no external injuries and no obvious cause of death. The investigating team finds no device — because it's still in the wall, unarmed, waiting.",
+    "A player is tasked with clearing a building that has been booby-trapped with SCC-9s by an unknown party. Standard sweeps find nothing. The only way to detect them may be to trigger one.",
+    "ZHENG-DAO BIOELECTRIC is suing a competitor for patent violation — claiming the competitor's new 'industrial vibration tool' is a barely disguised SCC-9. The lawsuit is a cover; ZHENG-DAO wants the competitor's research, not justice."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "violence",
+    "war",
+    "death",
+    "ai",
+    "elf",
+    "corporate",
+    "injury",
+    "underworld",
+    "market",
+    "bar",
+    "rain",
+    "justice",
+    "vehicle",
+    "train",
+    "energy"
+  ]
+}

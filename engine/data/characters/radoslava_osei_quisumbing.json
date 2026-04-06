@@ -1,0 +1,249 @@
+{
+  "id": "019d6143a6a57ed1b8e9ed45a4cf684b",
+  "type": "character",
+  "name": "Radoslava Osei-Quisumbing",
+  "aliases": [
+    "Rada",
+    "The Undertaker"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Forensic Technician, Meridian 88 Metro Police",
+  "age": 52,
+  "status": "active",
+  "location": "Deepwell Station, Metro Police Forensic Sciences Division, Sub-Level 3",
+  "description": "Radoslava has the kind of face that has settled into itself — strong-boned, Balkan-Filipino features framed by silver-streaked hair kept in a tight braid she hasn't changed in fifteen years, not for vanity but because she has found the optimal solution and sees no reason to revisit it. She wears magnification rigs over her eyes during work hours, giving her the appearance of a very patient owl. Her hands are the most expressive part of her — long-fingered, precise, and in constant motion even when she's still, running over surfaces, testing textures. She smells faintly of the preservative compounds she works with daily, a smell she is no longer aware of.\n\nShe is the most competent person in most rooms and behaves as if this is simply the baseline condition of existing rather than something to be proud of. Her emotional register is narrow but not absent — she is moved by injustice in a cold, slow way that burns long, and her entire career has been animated by the conviction that the dead deserve the same quality of attention as the living. She has an extremely dry sense of humor that only emerges after midnight when she's on long evidence processing runs. She does not pray to E.L.F.s herself but maintains ritual respect for the one that inhabits the refrigeration units, because she believes in not antagonizing the unknowable.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "that the evidence she produces is being used to justify predetermined conclusions",
+      "dying before a particular unsolved case is resolved"
+    ],
+    "core_desires": [
+      "for the truth of a death to be the thing that determines what happens next",
+      "to train someone worthy to continue her work"
+    ],
+    "coping_mechanisms": [
+      "total immersion in technical process as emotional distance",
+      "the long-burn anger she keeps separate from her work, which she thinks of as 'the file'"
+    ],
+    "blind_spots": [
+      "trusts evidence completely and distrusts human testimony almost absolutely, missing important contextual truths that people carry",
+      "underestimates how much the institution shapes what questions are even asked of the evidence"
+    ],
+    "secret": "She has a private encrypted archive containing forensic irregularities she's documented over twenty-two years — cases where evidence was clearly altered or findings overridden before trial. She has never shown it to anyone. She is waiting for a reason that feels sufficient."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and technical, with occasional Tagalog or Serbian expressions when emotional, which she doesn't notice she uses. Rarely wastes words.",
+    "cadence": "Even and measured; sounds the same whether describing lunch or a murder. Goes very quiet rather than louder when making an important point.",
+    "verbal_tics": [
+      "'Specifically' used where others would say 'really' or 'very'",
+      "long silences before answering that she is unaware of",
+      "addresses the dead in her evidence bay by case number as a form of respect"
+    ],
+    "example_lines": [
+      "'This is not a fall. Falls produce a specific distribution of injury. Whoever wrote this report has not looked at a fall victim in some time, or they have looked at one very carefully and written the opposite of what they saw.'",
+      "'I don't speculate. I can tell you what the evidence says. What you do with that is your problem.'",
+      "'Maingat. Be careful with that. She was someone.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A recent intake has evidence that matches a pattern in her private archive — same method, same forensic erasure signatures — for the first time in years",
+    "A junior Metro cop has been quietly bringing her cases flagged 'closed' and asking her to look again; she's started to wonder if they're testing her or genuinely asking for help"
+  ],
+  "narrative_function": "Expert information source on cause of death, trace evidence, and forensic anomalies; can identify inconsistencies in official reports; one of the few truly honest people in the justice system; represents institutional memory and quiet resistance",
+  "augmentations": "Neural-optical forensic integration suite (Metro-issued, enhanced tissue and compound analysis), subdermal chemical hazard sensors in fingertips (Metro-issued), elective memory compression implant (personal, allows perfect evidence recall)",
+  "daily_life": "Arrives at Deepwell Station before first shift, checks the overnight intake, processes evidence with methodical precision across ten-to-fourteen-hour days; eats one real meal a day; speaks to the refrigeration unit E.L.F. before locking up.",
+  "affiliation": "Meridian 88 Metro Police, Forensic Sciences Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 10
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 4,
+      "integrity": 10
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Expert",
+      "Incorruptible",
+      "Cold-Burning",
+      "Institutional Memory",
+      "Dangerous Archive"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "document everything, always, even findings she isn't asked for",
+      "never alter or omit evidence regardless of instruction source",
+      "share findings only with the person officially assigned to the case — unless the pattern is too important"
+    ],
+    "escalation_ladder": [
+      "passive resistance via meticulous documentation",
+      "formal objection through official channels with full expectation of being ignored",
+      "anonymous data release to parties with investigative capacity",
+      "direct confrontation only when the archived evidence reaches a threshold she's defined and refuses to share"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Courteous, minimal, assessing competence rapidly and calibrating detail level accordingly",
+      "friends": "Almost no different, but will make dark jokes and occasionally bring food"
+    },
+    "stress_responses": {
+      "low": "Works faster and more quietly",
+      "medium": "Becomes laser-focused to the exclusion of everything else",
+      "high": "Goes completely still and silent for several minutes, then acts with absolute precision"
+    },
+    "contradictions": [
+      "Believes in the truth above institutions but continues to operate inside the institution that distorts the truth she believes in"
+    ],
+    "habits": [
+      "leaves a small data chip with a random piece of music inside on the refrigeration unit each morning as offering",
+      "reads the case file before looking at evidence so she knows what she's supposed to find — better to know the bias you're working against"
+    ],
+    "breaking_points": [
+      "being directly ordered to alter findings",
+      "discovering that the junior cop bringing her cases is Internal Affairs running a loyalty test"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Metro-issued neural-optical forensic integration suite (multi-spectrum tissue analysis)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Metro-issued neural-optical forensic integration suite (multi-spectrum tissue analysis)",
+      "replaces": ""
+    },
+    {
+      "name": "subdermal chemical hazard sensors (fingertips, both hands)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "subdermal chemical hazard sensors (fingertips, both hands)",
+      "replaces": ""
+    },
+    {
+      "name": "Helix Biosystems memory compression implant (personal purchase, 2189)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Helix Biosystems memory compression implant (personal purchase, 2189)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2148 — Born in Glenville Sound, Serbian-heritage father, Filipina mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2169 — Completed forensic sciences certification, hired immediately by Metro Police",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2178 — First documented case of altered evidence in her private archive",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2186 — Offered a promotion to lab director; declined; the position would have taken her away from direct evidence work",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2194 — Archive reaches one hundred cases; she creates a redundant encrypted backup in a location she will not specify",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present; the new pattern case sitting in the intake bay, matching something from fifteen years ago",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

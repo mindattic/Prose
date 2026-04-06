@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5867611bacc02c87359cf04",
+  "name": "Pessimist",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Assumes the worst outcome is the likely one",
+  "behavioral_signature": "Plans for failure, expects disappointment",
+  "under_stress": "Becomes certain of doom",
+  "at_rest": "Preparing for the worst, always",
+  "will_always": [
+    "expect the worst"
+  ],
+  "will_never": [
+    "trust a good outcome"
+  ],
+  "unless": [
+    "pessimism becomes a self-fulfilling prophecy"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Fatalist",
+      "threshold": 0.8,
+      "context": "negative outlook"
+    },
+    {
+      "archetype": "Cynic",
+      "threshold": 0.7,
+      "context": "distrust of good"
+    }
+  ],
+  "opposite_of": [
+    "Optimist"
+  ],
+  "tags": [
+    "dark",
+    "cautious"
+  ]
+}

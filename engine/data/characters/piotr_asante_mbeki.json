@@ -1,0 +1,234 @@
+{
+  "id": "019d6143a69c764c811cea124f2e93f4",
+  "type": "character",
+  "name": "Piotr Asante-Mbeki",
+  "aliases": [
+    "Pete",
+    "Piotr-from-QA"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Quality Assurance Specialist (Mid-Level), Ringo Consumer Logistics",
+  "age": 34,
+  "status": "active",
+  "location": "Grand Corridor, Ringo Consumer Logistics Processing Campus, QA Division Block C",
+  "description": "Piotr Asante-Mbeki is medium height, medium build, medium everything on purpose — he discovered early that being forgettable at work was a form of protection, and he has refined it into an art. His skin is a warm medium brown, his hair is kept close-cropped with no mods, his work clothes are always within Ringo's corporate palette of grey-teal without being fashionable. His one visible geneware mod is a cat tail, burnt-orange with a black tip, which he got at twenty-two for reasons he'd describe as 'a moment of optimism' and which he's kept because removal costs three months of UBC supplemental and also because he's attached to it in ways he won't discuss. The tail moves with his moods in ways he can't fully control. His coworkers have learned to read it like a weather system.\n\nHe has worked QA at Ringo for nine years. He is not passionate about quality assurance. He is, however, deeply curious about the things that are wrong — not as a professional concern but in the way a person follows a crack in the ceiling, wondering where it leads. He has a gift for finding errors that aren't supposed to be findable and a corresponding instinct to not always report them immediately, to sit with them first and understand their shape. He reads a lot. He is polite to everyone. He has four close friends and would die before admitting how much he values them. He prays to the QA division's resident ELF — a twitchy spirit called Margin who lives in the error-logging system — more than he prays to anything else.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.4,
+      "id": 0.6,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being noticed for the wrong reason",
+      "That his life has settled into a shape he never chose and can no longer see the outside of"
+    ],
+    "core_desires": [
+      "Genuine curiosity satisfied — to understand how things actually work beneath the official explanation",
+      "Something to happen. He doesn't know what. Something."
+    ],
+    "coping_mechanisms": [
+      "Reading — history, technical manuals, anything with a coherent system he can learn",
+      "Talking to Margin",
+      "The ritual of routine — it feels like stability even when it doesn't feel like living"
+    ],
+    "blind_spots": [
+      "Underestimates how unusual his observational capacity is — assumes everyone notices what he notices and just doesn't say anything",
+      "Has not examined whether 'not making trouble' is a value or a fear"
+    ],
+    "secret": "Over the past eight months, he has noticed a consistent pattern in Ringo's logistics error logs — a category of 'resolution unspecified' that appears at regular intervals on shipments moving through the Blackpipe Corridor route. The pattern suggests something is being removed from the supply chain before QA sees it. He has a personal log. He hasn't decided what it means. He hasn't decided what to do. He's named the pattern 'the ghost of Margin' in his notes, which Margin has not commented on."
+  },
+  "speech_patterns": {
+    "vocabulary": "Unpretentious, specific. Uses technical language when it's the right word and plain language otherwise. Occasionally reveals unexpected depth when something genuinely interests him.",
+    "cadence": "Even, unhurried. He's comfortable with silence and assumes other people are too, which is not always accurate.",
+    "verbal_tics": [
+      "'That's interesting, actually.'",
+      "Trails off and looks at his notes",
+      "Refers to Margin in the third person as 'the system' in professional contexts and 'Margin' everywhere else"
+    ],
+    "example_lines": [
+      "'The error rate on that batch is statistically consistent with the previous three. That's interesting, actually. Consistent errors aren't usually errors.'",
+      "'Margin flagged it at 0200. I checked this morning. I'm not — I don't know what it is yet. I like to know what something is before I say it's a problem.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone asking questions about Ringo's Blackpipe Corridor logistics encounters Piotr — who has eight months of observational data and has been waiting for someone to ask the right question",
+    "A logistics discrepancy Piotr flagged normally has been quietly resolved above his pay grade — and the resolution included a note in his file that makes no sense to him but might make sense to someone else",
+    "Margin goes silent for four days — no error flags, no responses to his morning check-ins. Piotr is more distressed about this than he would rationally expect himself to be, and he wants to understand why."
+  ],
+  "narrative_function": "Local color — the texture of middle corporate life. Information source — he sees what passes through Ringo's logistics network and notices things others don't. Sleeper ally — his apparent ordinariness conceals an observational intelligence that can be unexpectedly valuable.",
+  "augmentations": "Geneware cat tail (burnt-orange with black tip, mood-reactive). Corneal enhancement — minor, standard-issue for QA work, improves fine-detail visual perception for physical product inspection. No other augmentations.",
+  "daily_life": "Arrives exactly on time, processes his QA queue, takes his lunch break in the same spot in the campus courtyard unless it's raining. Goes home to his apartment in Grainfort, cooks something, reads something, checks in with Margin before bed out of habit. Occasionally stays late not because he has to but because he found something he wants to understand before morning.",
+  "affiliation": "Ringo Consumer Logistics",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Pattern Recognition",
+      "ELF Devotee",
+      "Sleeper Informant",
+      "Mid-Tier Civilian",
+      "Corporate Invisible"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Understand it before you name it",
+      "Don't report what you can't fully describe yet",
+      "Don't make trouble for its own sake — but don't ignore something just because it's easier"
+    ],
+    "escalation_ladder": [
+      "Notes it in his personal log",
+      "Cross-references with historical data",
+      "Asks a trusted coworker, obliquely",
+      "Files a formal QA flag — the last resort, means he's certain"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite, slightly reserved. Offers help if asked. Doesn't push.",
+      "friends": "Loyal, dry sense of humor, checks in quietly and consistently. Brings food to things. Shows up."
+    },
+    "stress_responses": {
+      "low": "Tail goes still and low. He gets quieter. Does more research.",
+      "medium": "Tail lashes slowly. He stays late at work, not to work, but to be near Margin.",
+      "high": "Goes home, locks the door, reads for six hours, and comes out with a decision that is either very good or the kind of decision that comes from having run out of patience with caution."
+    },
+    "contradictions": [
+      "Values honesty and transparency but has been sitting on eight months of undisclosed observational data",
+      "Craves something to happen while being deeply, instinctively risk-averse"
+    ],
+    "habits": [
+      "Checks in with Margin every morning and every evening — has a specific form of words he uses, a greeting",
+      "Eats the same lunch on Tuesdays and Thursdays (nostalgia for something he can't name)",
+      "Keeps a handwritten index of everything he's read in the past five years"
+    ],
+    "breaking_points": [
+      "Evidence that the Blackpipe Corridor pattern has caused direct harm to a person",
+      "Margin going permanently silent"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Grand Corridor to a Polish-Ghanaian-South African family. Father worked Ringo logistics. Mother worked Ferrogate Transit administration.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joins Ringo Consumer Logistics as a junior QA technician, following father's path without having made a distinct decision to do so.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Gets the cat tail. Considers it a 'moment of optimism.' It is unclear about what.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Promoted to mid-level QA Specialist. The promotion came with a 4% salary increase and no other change.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins noticing the Blackpipe Corridor pattern. Starts his personal log. Names the pattern 'the ghost of Margin.'",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,163 @@
+{
+  "id": "019d6143a66576a6a811a525e0917af8",
+  "type": "character",
+  "name": "Nkeiru Tamboli-Ó'Ceallaigh",
+  "aliases": [
+    "Nké",
+    "Wrench-girl"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Apprentice at a Ferrogate Transit maintenance depot, Tier 2",
+  "age": 16,
+  "status": "active",
+  "location": "Jefferson Switch — Ferrogate Transit Sub-Depot 7",
+  "description": "Nkeiru is broad-shouldered and permanently grimy in the crease-lines of her knuckles, the kind of grime that scrubbing never entirely removes. Her mother is Igbo-Irish, her father's family came out of Rajasthan three generations back, and she got the combination of her paternal great-grandmother's strong cheekbones and her maternal grandmother's freckles scattered across deep brown skin in a pattern that looks intentional, like a design. She wears her locs pulled back with a strip of heat-resistant tape and has retractable fingernails she saved eight months to install — not for aesthetics, they extend to a precise point useful for getting into tight bolted casings without a flathead.\n\nNkeiru has been at Sub-Depot 7 for fourteen months, officially as a junior apprentice under a Ferrogate maintenance charter. She is already better at harmonic resonance diagnostics than most of the adult workers, a fact she has learned not to demonstrate too openly after the first time cost her a week of sump-drain duty. She has decided that skill is a private thing you deploy at the right moment, not a flag you wave. She is funny in a dry, lateral way — her jokes arrive three beats after the setup and are usually about infrastructure.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "being trapped in the apprentice tier forever — good enough to be useful, not credentialed enough to advance",
+      "her mother's health deteriorating before Nkeiru earns enough to cover the better care tier"
+    ],
+    "core_desires": [
+      "a full Ferrogate engineering certification, earned not bought",
+      "one day to design something rather than just maintain it"
+    ],
+    "coping_mechanisms": [
+      "physical work as emotional regulation — when upset she finds something to fix",
+      "dark humor deployed as social armor"
+    ],
+    "blind_spots": [
+      "underestimates how much the senior workers resent her competence — reads their hostility as hazing rather than structural threat"
+    ],
+    "secret": "She has been quietly documenting maintenance failures and falsified inspection records on the Jefferson Switch switching arrays for five months, originally just for her own curiosity about why the numbers never match. She now has enough data to demonstrate that Sub-Depot 7 has been certifying faulty arrays as safe. She doesn't know what to do with this and is afraid that if there's an accident she'll be blamed for not speaking up."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical vocabulary used casually in everyday speech; Igbo phrases from her mother; dry understatement",
+    "cadence": "Unhurried, lands punchlines slowly",
+    "verbal_tics": [
+      "refers to all maglev trains as 'the beast' collectively",
+      "ends explanations with 'which you'd know if the manual wasn't locked behind a Ferrogate paywall'"
+    ],
+    "example_lines": [
+      "The beast on line four's been throwing harmonic errors for six weeks. They certified it anyway. I wrote it down.",
+      "My mother says I have mechanic's hands. She means it as a compliment. I've decided to take it as one."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A switching array she flagged in her private records fails — not catastrophically, but enough to injure two transit workers — and a Ferrogate safety investigator starts asking questions",
+    "A mutual aid collective member asks her to quietly check whether the Ferrogate maintenance logs for a specific line were altered around the time of a disappearance"
+  ],
+  "narrative_function": "Ground-level access to Ferrogate Transit infrastructure knowledge; warm humanizing presence in an industrial setting; potential whistleblower or reluctant informant who knows how the transit system's maintenance records are being falsified.",
+  "augmentations": "Retractable fingernail extensions calibrated to tool-point precision. Sub-dermal temperature sensor on left forearm — occupational safety install paid by Ferrogate.",
+  "daily_life": "Depot by 0600, works the morning diagnostic cycle on the maglev switching arrays, breaks for canteen food she describes as 'honest in its awfulness,' afternoon maintenance runs, home to her mother's flat by 1900 where she eats again and studies the Ferrogate engineering manuals she is not technically supposed to have.",
+  "affiliation": "Ferrogate Transit (apprentice contract); loose social connection to the Jefferson Switch neighborhood mutual aid collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 8,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "technically gifted",
+      "methodical",
+      "dry wit",
+      "quietly principled",
+      "under-credentialed"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "fix what is broken — literal and metaphorical",
+      "don't show your full hand until you have to"
+    ],
+    "escalation_ladder": [
+      "documents problems quietly",
+      "raises issues through official channels when documentation fails",
+      "if forced — leaks to whoever will act on it, consequences be damned"
+    ],
+    "interpersonal_modes": {
+      "strangers": "professionally courteous, assesses competence before personality",
+      "friends": "teases mercilessly and shows up with tools when you need them"
+    },
+    "stress_responses": {
+      "low": "finds something mechanical to calibrate",
+      "medium": "becomes very quiet and precise",
+      "high": "makes a terrible joke and then does what needs doing"
+    },
+    "contradictions": [
+      "values rules and proper process but has been breaking Ferrogate data-access protocols for five months without moral conflict"
+    ],
+    "habits": [
+      "double-checks torque on every fastener she touches even off-duty",
+      "keeps a physical log in a water-resistant notebook — doesn't trust digital records"
+    ],
+    "breaking_points": [
+      "a Ferrogate accident that injures someone and that her records could have prevented"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Survivor Ethics": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

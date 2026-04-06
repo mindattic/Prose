@@ -1,0 +1,116 @@
+{
+  "id": "019d6143a93c77fabdf696c397d47d64",
+  "type": "place",
+  "name": "The Dive Yards",
+  "aliases": [
+    "Buffalo",
+    "The Yards",
+    "Eastern Terminus",
+    "Niagara Gate"
+  ],
+  "description": "Buffalo was the eastern terminus of Lake Erie and the western gateway to the Erie Canal, a geographic position that made it one of America's most important cities in the 19th century and an increasingly forgotten one in the 20th and 21st. The grain elevators that once defined Buffalo's skyline — massive concrete silos that received wheat from the Great Lakes shipping routes and sent it east by rail — still stand, their brutalist geometry too massive and too expensive to demolish. They have become the infrastructure of a new industry. Cormorant Naval Systems claimed a 14-kilometer strip of Buffalo's shoreline in 2152, designating it the Dive Yards, and the grain elevators became the structural framework for the corridor's dominant freshwater naval construction and maintenance operation.\n\nThe Dive Yards are where Cormorant builds, repairs, and deploys the freshwater navy that controls Lake Erie's surface and subsurface. The grain elevators have been reinforced and converted into vertical dry-dock facilities, their interiors gutted to accommodate patrol vessels, submersibles, and the Loon-class autonomous underwater drones that enforce Cormorant's sovereignty across the lake. The scale is industrial and the security is total — the 14-kilometer shoreline strip is walled, monitored, and patrolled by the Cormorant Maritime Guard, whose standing policy of intercepting any unregistered vessel in Lake Erie begins at the Dive Yards' perimeter.\n\nAdjacent to the Dive Yards, Pelican Drift Aquatics operates Crestfall Station — a fortified aquafarm processing city that handles the output of Pelican Drift's 1,100-square-kilometer aquafarm network in Lake Erie's eastern basin. The combination of Cormorant's naval presence and Pelican Drift's food production makes Buffalo the eastern corridor's most strategically significant location — the place where military power and food supply intersect. The civilian population lives between and around these sovereign installations in neighborhoods that carry the names and the architectural bones of the old Buffalo — the East Side, the West Side, Allentown, Black Rock — but whose character has been shaped by the economic gravity of the two corponations. Niagara Falls is thirty minutes north, and its hydroelectric output has been claimed by a consortium of corponations that routes the power south to Buffalo's industrial installations before any civilian meter sees a watt.",
+  "atmosphere": {
+    "sights": [
+      "The grain elevators — concrete monoliths converted to vertical dry-docks, Cormorant Naval Systems insignia replacing the original grain company logos",
+      "The Dive Yards perimeter wall — 14 kilometers of fortified shoreline, patrol boats visible in the water beyond, the Cormorant Maritime Guard's presence unmistakable",
+      "Crestfall Station — Pelican Drift's processing city, a complex of refrigeration towers and automated handling facilities where the lake's harvest becomes the corridor's food supply",
+      "The civilian neighborhoods between the installations — old Buffalo architecture pressed between sovereign zones, their residents living in the shadow of power they don't control",
+      "Niagara's mist visible to the north on clear days — a natural wonder whose output has been captured and redirected entirely to corporate consumers"
+    ],
+    "sounds": [
+      "The Dive Yards — industrial naval construction: hull plating, engine testing, the deep resonance of submarine systems being calibrated in the converted grain elevators",
+      "Cormorant Maritime Guard communications — encrypted but audible as burst patterns, a constant reminder that the lake is monitored",
+      "Crestfall Station's refrigeration systems — a low drone that carries across the adjacent neighborhoods, cold air escaping in visible plumes from the processing buildings",
+      "The Niagara River — audible from Buffalo's northern neighborhoods, the sound of the most powerful hydroelectric resource in the eastern corridor flowing toward corporate turbines",
+      "Civilian Buffalo — the sounds of a working city compressed between sovereign zones: traffic, commerce, the particular noise of a population that has learned to live loudly in small spaces"
+    ],
+    "smells": [
+      "Fish processing from Crestfall Station — protein at industrial scale, the clean-sharp smell of automated refrigeration and the underlying organic reality of millions of kilograms of aquaculture product",
+      "Maritime industrial — diesel, paint, saltwater-treatment chemicals from the Dive Yards, carried by the prevailing wind across the civilian neighborhoods",
+      "The Niagara River — cold, mineral-rich water smell distinct from the lake, carrying Niagara's hydroelectric ozone downstream"
+    ],
+    "feel": "The Dive Yards feels like a city that exists because two corponations needed it to. Buffalo's civilian population provides the labor, consumes the secondary output, and occupies the spaces that Cormorant and Pelican Drift don't need. The grain elevators — those concrete monuments to a different economic era — stand as a reminder that Buffalo has always been defined by what passes through it rather than what stays. The current arrangements are just the latest iteration. The civilians know this. They've known it for two centuries.",
+    "tags": []
+  },
+  "demographics": "Approximately 95,000 residents in the civilian zones. Cormorant employs approximately 12,000 directly and 20,000 through contractors. Pelican Drift employs approximately 8,000 at Crestfall Station. Tier 1-2 civilian population, Tier 2-3 corporate employees. Buffalo's historically significant Black community on the East Side persists, its cultural institutions intact but its economic autonomy constrained by the dual corporate presence.",
+  "economy": "Naval construction and maintenance (Cormorant) and aquaculture processing (Pelican Drift) dominate. The civilian economy services both — food, housing, entertainment, and the small-business infrastructure that a working population requires. The Niagara hydroelectric output, while generated locally, is consumed by the corporate installations before reaching civilian distribution. Black market electricity trade — tapping the Niagara feed — is one of Buffalo's most lucrative informal industries.",
+  "power_structure": "Cormorant Naval Systems holds sovereign authority over the Dive Yards and the shoreline strip. Pelican Drift holds sovereign authority over Crestfall Station. Tollgate maintains civilian infrastructure. The Buffalo Civic Federation, a coalition of neighborhood organizations, manages civilian governance with less autonomy than Erie's municipal council but more organizational capacity than most corridor civic bodies. The East Side Community Council, representing Buffalo's Black community, operates as an independent political force with historical roots that predate the corridor.",
+  "dangers": [
+    "Cormorant security — the Maritime Guard's interception policy extends to the harbor and adjacent waterfront, and their definition of 'unregistered vessel' is broad enough to include a canoe",
+    "Strategic target — Buffalo's combination of naval assets and food processing makes it the highest-value military target in the eastern corridor, and everyone who lives here understands the implication",
+    "Niagara power dependence — the civilian population receives electricity after the corporate installations, and during peak demand periods, civilian supply is rationed or interrupted",
+    "East Side displacement — Cormorant's periodic expansion of the Dive Yards has consumed East Side neighborhoods twice since 2160, and the next expansion plan is already filed",
+    "Crestfall Station contamination — aquaculture processing at this scale generates biological waste that Pelican Drift's systems handle imperfectly, and the adjacent civilian neighborhoods bear the runoff"
+  ],
+  "opportunities": [
+    "Cormorant's naval construction workforce has skills that transfer directly to any maritime operation in the corridor — trained workers are recruited aggressively",
+    "Niagara power tapping is dangerous but lucrative — the hydroelectric feed runs through infrastructure that predates the corridor's control systems, and the old access points still exist",
+    "Crestfall Station's aquaculture processing handles the eastern corridor's primary protein supply — information about that supply chain is strategically valuable",
+    "Buffalo's position as the eastern terminus gives it leverage as a gateway — everything entering or leaving the corridor by land passes through here, and the Buffalo Civic Federation is learning to tax that access"
+  ],
+  "story_hooks": [
+    "Cormorant has launched a vessel from the Dive Yards that doesn't match any class in their published fleet — it's larger, it's armed differently, and it left the harbor at night under communications blackout",
+    "The Niagara hydroelectric consortium has discovered that someone has been siphoning power from the feed — not the small-scale civilian tapping, but industrial-scale diversion to a destination that doesn't appear on any grid map",
+    "The East Side Community Council has obtained documents showing that Cormorant's next Dive Yards expansion will consume six more blocks of residential neighborhood — and they're looking for allies who can help them fight a corponation with a navy"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The I-90 Vein — highway corridor connecting to Erie and Cleveland",
+      "Niagara Falls — 30 minutes north, hydroelectric resource captured by corporate consortium",
+      "Lake Erie — Cormorant naval operations and Pelican Drift aquafarm network",
+      "Ferrogate transit corridor — eastern terminus of the Cleveland-Buffalo rail line"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Cormorant Naval Systems personnel — construction workers, Maritime Guard, and the administrative staff that runs the corridor's freshwater navy",
+    "Pelican Drift Aquatics workers — Crestfall Station's processing and logistics workforce",
+    "Transit passengers and cargo at the corridor's eastern terminus",
+    "East Side Community Council organizers and the broader Black community's cultural institutions"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Grain Elevators",
+      "description": "Buffalo's concrete monuments — converted from grain storage to vertical dry-docks for Cormorant's naval construction, their brutalist geometry now serving the corridor's military-industrial needs",
+      "tags": []
+    },
+    {
+      "name": "Crestfall Station",
+      "description": "Pelican Drift's aquaculture processing city — where the eastern corridor's protein supply is landed, processed, and distributed",
+      "tags": []
+    },
+    {
+      "name": "The East Side",
+      "description": "Buffalo's historically Black community — culturally resilient, economically constrained, and facing the next round of Cormorant expansion with the determined resistance of a community that has survived worse",
+      "tags": []
+    },
+    {
+      "name": "Niagara Feed",
+      "description": "The hydroelectric transmission infrastructure running from the Falls to Buffalo's corporate installations — publicly owned in name, corporate-consumed in practice, and tapped by an informal economy that risks electrocution for independence",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 42.8864,
+    "lng": -78.8784,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "harbor",
+    "market",
+    "rain",
+    "night",
+    "train",
+    "food",
+    "drone",
+    "water",
+    "lake"
+  ]
+}

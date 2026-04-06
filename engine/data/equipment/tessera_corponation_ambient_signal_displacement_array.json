@@ -1,0 +1,64 @@
+{
+  "id": "019d6143a8727eaf80a743f2e401a514",
+  "name": "Tessera Corponation Ambient Signal Displacement Array",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Corponation Ambient Signal Displacement Array",
+  "type": "equipment",
+  "aliases": [
+    "The Fog Engine",
+    "Ghost Halo",
+    "The Scatter"
+  ],
+  "category": "stealth",
+  "description": "The Ambient Signal Displacement Array is a palm-sized device worn on the body or placed as a static field emitter that generates a calibrated bubble of electromagnetic interference designed not to block signals — which would itself be detectable — but to displace and scatter them in ways that mimic natural environmental noise. Where crude jammers create a dead zone that passive monitoring systems immediately flag as an anomaly, the Array samples the ambient signal environment within its operational radius and synthesizes a layered output of false signals, reflections, and interference patterns that make the area appear, to any external monitoring system, as a region of ordinary urban electromagnetic clutter.\n\nTessera developed the Array's core displacement architecture from research into urban signal mapping — specifically, the problem of predicting how dense city infrastructure affects wireless propagation. The same models that predict signal behavior can be run in reverse to generate convincing synthetic scatter. The Array updates its output profile every 200 milliseconds, adapting to changes in the ambient signal environment to maintain the illusion of naturalness. This makes it effective not only against real-time monitoring but against retrospective signal forensics, since the Array's emissions blend into baseline environmental noise in recorded data.\n\nThe device has a secondary function that its documentation quietly omits: at close range, it disrupts the short-range biometric handshake protocols that many corporate access and identification systems use to passively scan nearby individuals. This means that personnel within the Array's radius may fail to register on proximity-based attendance or identity logging systems — a function that makes the Array quietly indispensable for anyone who needs to be somewhere without their presence being logged, without the overt aggression of a full signal jam.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Ambient Electromagnetic Sampling",
+    "Synthetic Signal Scatter Generation",
+    "Urban Propagation Modeling",
+    "Biometric Handshake Disruption",
+    "Adaptive Output Profiling"
+  ],
+  "specifications": {
+    "operational_radius": "Standard mode: 8m; extended mode: 22m (reduced update frequency, higher detection risk)",
+    "update_cycle": "200ms ambient resample and output adaptation",
+    "signal_range_coverage": "Effective across 400MHz–28GHz spectrum",
+    "biometric_handshake_disruption": "Reliable disruption of proximity ID systems within 3m of device center",
+    "power_source": "High-density micro-cell; 6 hours standard mode, 3.5 hours extended mode",
+    "weight": "210g",
+    "form_factor": "Worn unit (vest clip or underarm mount) or static placement unit (adhesive base)",
+    "detection_risk": "Standard mode: low; extended mode: moderate against Tier 4+ monitoring infrastructure"
+  },
+  "tactical_use": "Deployed in environments where the operative must move through or operate within signal-monitored spaces without triggering passive detection systems. Particularly effective in corporate office environments, transit hubs, and mid-tier residential zones where monitoring relies on signal analysis rather than dedicated active scanning. The biometric handshake disruption function makes the Array valuable for attendance spoofing — an operative can be physically present in a location while appearing absent from all passive logging systems. Multiple Arrays can be networked for coordinated field deployment, though signal bleed between units requires careful spacing to avoid artifacts that advanced monitoring systems may flag.",
+  "cultural_context": "The Array's restricted rather than prohibited status is widely attributed to Tessera's regulatory relationships — the technology exists in a grey space that Tessera has carefully maintained by marketing civilian variants as 'signal hygiene devices' for privacy-conscious consumers. This civilian framing has given the Array a dual identity: it is simultaneously a serious operational tool used by professionals and a consumer privacy statement adopted by anti-surveillance activists and individuals who simply object to being passively scanned on their commute. The activist use has been invaluable to Tessera, as it makes blanket prohibition politically difficult. Operatives appreciate the cover but resent sharing shelf space with consumer grade units that perform at a fraction of the specification.",
+  "known_users": [
+    "Corporate infiltration and intelligence operatives",
+    "Anti-surveillance activists and privacy advocates",
+    "Fixers managing sensitive meeting logistics",
+    "Priya Chandrasekhar — Tessera's internal security consultant who moonlights as an independent",
+    "Transit couriers moving high-value packages through logged corridors"
+  ],
+  "story_hooks": [
+    "A meeting location was supposed to be Array-shielded, meaning no one's presence would be logged — but someone has footage of the meeting anyway, suggesting either a leak or a monitoring technology that defeats the Array's displacement profile.",
+    "Tessera's latest Array firmware update contains a hidden secondary reporting function that logs device locations to a Tessera internal server — a discovery that has enormous implications for anyone who trusted the device for operational security.",
+    "An Array left in static placement mode in a corporate building has been running for an unknown period, creating a persistent dead zone in the building's passive monitoring coverage that someone has been exploiting for months.",
+    "A contact wants the players to acquire a specific Array unit that was used during a high-profile incident — the device's ambient sampling logs contain a unique acoustic-electromagnetic fingerprint of the environment that can place specific individuals at the scene."
+  ],
+  "tags": [
+    "stealth",
+    "equipment",
+    "war",
+    "trust",
+    "identity",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "surveillance",
+    "market",
+    "shelf",
+    "tier 2"
+  ]
+}

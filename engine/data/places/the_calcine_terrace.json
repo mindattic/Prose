@@ -1,0 +1,101 @@
+{
+  "id": "019d6143a93679d5b79eb8b76ff11bda",
+  "type": "place",
+  "name": "The Calcine Terrace",
+  "aliases": [
+    "Calcine",
+    "The Burn Shelf",
+    "Whitewall",
+    "The Ledge"
+  ],
+  "description": "A sprawling industrial plateau perched at the southern lip of the Waukegan transitional zone, The Calcine Terrace is the remnant of a mid-21st-century lime-processing complex that was never properly decommissioned. Decades of calcium dust and chemical runoff have bleached every surface a ghostly, chalky white — walls, railings, even the scrub vegetation that clings to cracked expansion joints glows pale under UV lighting at night. Squatters and Tier 2 laborers converted the upper processing levels into a dense residential warren in the 2150s, threading hab-pods and tension-cable walkways between the old kilns.\n\nThe lower kiln chambers still radiate ambient heat year-round, making The Calcine Terrace a coveted refuge during brutal Great Lakes winters but a slow suffocation risk in summer. Ferrogate Security holds a nominal contract here but rarely sends patrols deeper than the outer access ramp. The real authority belongs to a loose confederation of kiln-block bosses who tax passage, utilities, and water ration drops with ruthless consistency.",
+  "atmosphere": {
+    "sights": [
+      "Every horizontal surface is coated in pale mineral dust that catches the sodium glow of jury-rigged lamp strips, making the whole terrace look lit from within.",
+      "Hab-pods are stacked four and five high against the old kiln towers, connected by swaying rope-and-rebar bridges draped in laundry and signal-mesh tarps.",
+      "Chalky handprints and territorial tags streak the white walls in every color, accumulating in dense palimpsests near communal water spigots.",
+      "Steam vents from the still-warm kiln interiors rise through grate floors, giving residents a permanently hazy, fog-wrapped lower level."
+    ],
+    "sounds": [
+      "A deep, low thrumming resonates through the kiln walls at all hours — the residual heat cycling through old ceramic chambers.",
+      "Children's voices bounce strangely off the bleached concrete, arriving slightly too late and from the wrong direction.",
+      "The clank and groan of the tension-cable bridges under foot traffic creates a rhythmic percussion that long-timers learn to read like weather."
+    ],
+    "smells": [
+      "A sharp alkaline bite underlies everything, like the air after lightning — the permanent ghost of lime-processing chemistry.",
+      "Communal cookfires burn repurposed biofuel pellets, layering a fatty, slightly sweet smoke over the mineral baseline.",
+      "Near the lower kilns, a dry mineral heat rises that smells faintly of baked earth and old ceramic, oddly comforting."
+    ],
+    "feel": "The Calcine Terrace has the dense, pressurized intimacy of a place where too many people have learned to survive in too little space. Residents are wary of strangers but fiercely communal among themselves. The white dust settles on your clothes within minutes and marks you as someone who has been here, long after you leave.",
+    "tags": []
+  },
+  "demographics": "Primarily Tier 2 and borderline Tier 1 laborers, many employed in Waukegan's adjacent industrial operations, alongside a growing population of unregistered workers and a small enclave of Synthetic persons denied housing elsewhere.",
+  "economy": "Cash-and-barter economy centered on water ration resale, secondhand BCI hardware, heat-access fees charged by kiln-block bosses, and a brisk trade in counterfeit Ferrogate security clearance chits.",
+  "power_structure": "Authority is divided among roughly seven kiln-block bosses, who maintain an uneasy council called the Whiteboard — disputes are settled by negotiation or, when that fails, by controlled access to water and heat.",
+  "dangers": [
+    "Calcium dust accumulation in respiratory systems causes a progressive condition locals call 'chalk lung,' for which treatment is expensive and rarely sought in time.",
+    "Kiln-chamber collapses are a documented hazard — three partial failures in the last decade have each killed between two and nine residents.",
+    "The Whiteboard bosses enforce their tax collections through hired muscle that operates with no external oversight or accountability.",
+    "Ferrogate Security uses The Calcine Terrace as an informal detention staging area, periodically sweeping residents for outstanding warrants or Synthetic registration violations."
+  ],
+  "opportunities": [
+    "The kiln-block boss network provides a ready-made distribution infrastructure for anyone needing to move goods discreetly through the Waukegan transitional zone.",
+    "Several former lime-processing sub-levels remain unmapped and unsecured, potentially containing salvageable industrial equipment or sealed chemical stores.",
+    "The Synthetic enclave maintains quiet connections to underground civil rights networks and can provide forged identity credentials for the right price."
+  ],
+  "story_hooks": [
+    "A Whiteboard boss has gone missing two days before a scheduled water ration delivery negotiation, and the other bosses are quietly panicking — someone needs to find her before a power vacuum turns violent, and the trail leads into the unmapped sub-levels.",
+    "A Zheng-Dao Bioelectric field agent is offering Φ8,000 for a soil and air sample kit retrieved from the deepest kiln chamber — the company claims it's an environmental liability survey, but the payment is absurdly high for routine compliance work.",
+    "A child from the Synthetic enclave has developed anomalous BCI feedback symptoms that no local medic can explain, and her caretakers believe she may have stumbled onto a buried data cache beneath the kiln floors that is actively broadcasting."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Waukegan Industrial Shelf",
+      "The Northwest Sprawl",
+      "The Steel Shore"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Kiln-block muscle and Whiteboard enforcers",
+    "Off-shift Waukegan industrial laborers",
+    "Unregistered Synthetic persons seeking community",
+    "Scavengers and salvage prospectors working the unmapped sub-levels"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Whiteboard",
+      "description": "A stripped former foreman's office on the terrace's highest accessible level where the kiln-block bosses hold council — named for the ancient dry-erase board still bolted to one wall, now covered in territorial maps drawn in chalk dust.",
+      "tags": []
+    },
+    {
+      "name": "The Warm Below",
+      "description": "The lowest habitable kiln level, where heat is most intense and residents sleep in rotating shifts on ceramic-block platforms — considered both the most desirable and most dangerous address on the terrace.",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 42.36,
+    "lng": -87.87,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "identity",
+    "bci",
+    "ai",
+    "synthetic",
+    "elf",
+    "contract",
+    "control",
+    "power",
+    "bar",
+    "night",
+    "rights",
+    "water",
+    "lake",
+    "shelf"
+  ]
+}

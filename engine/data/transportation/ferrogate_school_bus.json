@@ -1,0 +1,40 @@
+{
+  "id": "019d6143aa677db988eb2d61b4a9aba0",
+  "name": "Ferrogate School Bus",
+  "type": "transportation",
+  "aliases": [
+    "Yellow Coffin",
+    "Kid Hauler",
+    "The Morning Dread"
+  ],
+  "category": "public_transit",
+  "manufacturer": "Ferrogate Transit",
+  "description": "An armored school bus that transports children through Tier 1-3 districts to educational facilities. The armor is not decorative — school buses in Meridian 88 have been targeted by everyone from desperate carjackers to corporate recruiters scouting for augmentation-compatible children. The buses are old, yellow (tradition dies hard), and driven by people who are either deeply committed to protecting children or deeply committed to the hazard pay. The morning and afternoon runs are the most heavily armed convoys most Tier 1 residents will ever see that aren't military.",
+  "propulsion": "Electric, reinforced drivetrain",
+  "speed": "60 km/h (limited by safety governor)",
+  "capacity": "40 children + 2 adult monitors",
+  "range": "200 km",
+  "tier_availability": "Tier 1-3 (school districts)",
+  "cost": "Φ30,000 per unit (municipal education funding)",
+  "autonomy": "Human driver, monitored route with GPS tracking and emergency alert",
+  "armament": "Armor plating, anti-boarding deterrent, emergency lockdown, direct line to Ferrogate security.",
+  "common_usage": "School transit, the daily miracle of getting children through dangerous districts alive.",
+  "story_hooks": [
+    "A school bus driver has been taking an unauthorized detour through a condemned district every morning — picking up children who aren't enrolled anywhere",
+    "The armored school buses are the most heavily fortified vehicles in Tier 1, and someone wants to repurpose that armor for a different kind of convoy"
+  ],
+  "tags": [
+    "publictransit",
+    "transportation",
+    "augment",
+    "ai",
+    "corporate",
+    "rain",
+    "vehicle",
+    "train",
+    "desperate",
+    "armor",
+    "tier 1",
+    "tier 3"
+  ]
+}

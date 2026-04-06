@@ -1,0 +1,273 @@
+{
+  "id": "019d6143a675765a9e063f777da8a4fe",
+  "type": "character",
+  "name": "Obed Belov-Ntim",
+  "aliases": [
+    "Nexus",
+    "The Problem"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Cross-district contraband specialist — smuggler",
+  "age": 31,
+  "status": "active",
+  "location": "The Circuit — neon-lit entertainment and vice district",
+  "description": "Obed Belov-Ntim is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 31, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a smuggler out of The Circuit, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Obed Belov-Ntim is one of the ones who actually does it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.79,
+      "id": 0.15,
+      "shadow": 0.85,
+      "mask": 0.87,
+      "ghost": 0.64
+    },
+    "core_fears": [
+      "Losing their edge to age — the body slows before the mind accepts it",
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
+      "That the work they do makes the city worse, not better"
+    ],
+    "core_desires": [
+      "Freedom from augmentation debt — the interest compounds like a tumor",
+      "To protect the people in their district who can't protect themselves",
+      "To prove everyone who dismissed them catastrophically wrong"
+    ],
+    "coping_mechanisms": [
+      "Compartmentalization — work feelings and personal feelings exist in separate boxes",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Overwork — takes every contract offered because idleness invites thinking"
+    ],
+    "blind_spots": [
+      "Trusts technology more than people — machines don't betray",
+      "Assumes everyone has an angle because they always have an angle",
+      "Cannot accept help without interpreting it as leverage"
+    ],
+    "secret": "Obed Belov-Ntim killed someone who didn't deserve it on a job three years ago and has never told anyone. The face appears in dreams weekly."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Whispers when angry — the quieter the voice, the worse the situation",
+      "Refers to killing as 'solving' — clinical detachment as coping mechanism"
+    ],
+    "example_lines": [
+      "\"Contraband is just cargo that hasn't been properly introduced to the right people.\"",
+      "\"Every border is a suggestion. Every checkpoint is a negotiation.\"",
+      "\"I move things from where they are to where they need to be. The legality is your problem.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A crew member from Obed Belov-Ntim's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A former associate resurfaces with evidence that could destroy Obed Belov-Ntim's reputation — and a price for silence",
+    "Someone is impersonating Obed Belov-Ntim on jobs, and the impersonator is better at the work than the original"
+  ],
+  "narrative_function": "Obed Belov-Ntim represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes. Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Independent — operates through reputation only",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 9
+      },
+      "agility": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 6
+      },
+      "reflexes": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 4
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 8
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 6
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 6
+      },
+      "intimidation": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 5
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 8
+      },
+      "empathy": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 7
+      }
+    },
+    "personality": {
+      "aggression": 0.75,
+      "caution": 0.78,
+      "loyalty": 0.33,
+      "greed": 0.38,
+      "empathy": 0.12
+    },
+    "drives": [
+      "survival",
+      "money",
+      "justice"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 7,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "mechanical aptitude — can repair or modify almost anything",
+      "technical expertise with augmentation systems"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "emotional volatility under extreme stress"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "smuggler",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always has an exit route planned before agreeing to any meeting",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Advocates caution to others but takes insane risks personally — double standard they can't see",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+    ],
+    "habits": [
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Keeps a physical paper notebook — no digital record of personal thoughts"
+    ],
+    "breaking_points": [
+      "Running out of options — no contacts, no money, no safe house, no way out",
+      "Losing their primary augmentation — the one that defines their professional identity"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Hydraulic joints in knees and elbows",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+      "replaces": ""
+    },
+    {
+      "name": "Synthetic muscle fiber replacement in legs",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Smuggler": 0.9,
+    "Risk Taker": 0.9,
+    "Improviser": 0.9,
+    "Cockroach": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

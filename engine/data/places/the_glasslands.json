@@ -1,0 +1,98 @@
+{
+  "id": "019d6143a9407c98bf5da57233388755",
+  "type": "place",
+  "name": "The Glasslands",
+  "aliases": [
+    "Indiana Dunes",
+    "The Preserve",
+    "Axiom's Garden",
+    "The Dead Shore"
+  ],
+  "description": "The Indiana Dunes died in 2147. Not dramatically — no single catastrophe, no corporate demolition order. They died the way everything between Gary and Michigan City died: incrementally, poisoned by the expanding industrial runoff corridor, choked by particulate fallout from the Ironclad Breadlands processing plants to the south, and finally drowned when Lake Michigan's engineered seawalls redirected storm surge into the low-lying dune ecology with the indifference of infrastructure that doesn't know what it's killing. By 2155, the dune grasses were gone. The jack pines were skeletons. The wetlands were a chemical soup that turned wading birds into cautionary tales.\n\nThen Axiom Industries bought it. All of it. Fourteen thousand acres of ecological corpse, purchased at contaminated-land prices and redesignated as the Axiom Meridian Ecological Recovery Zone — a name so aggressively optimistic it could only have been written by someone in marketing. What Axiom built there is technically impressive and spiritually obscene: a climate-controlled biodome network spanning the entire former park footprint, containing a reconstructed dune ecosystem grown from genetic archives and seed banks. The dune grasses are real, genetically. The lake shoreline is real, filtered through a desalination membrane that removes the toxins the same company's supply chain put there. The birds are real, bred from preserved genetic stock. It is a perfect replica of what was destroyed, built by the people who destroyed it, and access costs Φ4,200 per day.\n\nThe Glasslands — named for the geodesic dome panels that catch the light like a fallen chandelier across the lakeshore — are Axiom's crown jewel of corporate greenwashing. Tier 5 executives bring their families here for weekends. Corporate retreats happen in the restored dune lodges. PR footage of children running through beach grass gets syndicated across Vantablack Media's networks every quarter. Outside the domes, the actual lakeshore is a restricted remediation zone where automated cleanup drones process toxic sediment twenty-four hours a day, and the fence line is patrolled by Axiom Security teams whose rules of engagement do not include warnings. The excluded communities of former Gary — now a Shelf overflow zone called the Rust Margin — can see the domes glowing at night from their windows. They call it Axiom's Garden. Some of them remember when the dunes were free.\n\nBeneath the biodomes, in the old sub-basements of the national park service buildings, a small community of excluded ecologists and former park rangers operates an unauthorized biological archive — seeds, soil samples, genetic material from the original dune ecosystem, preserved before Axiom's reconstruction began. They call themselves the Root Library. Their argument is simple: Axiom's dunes are a copy. The originals are dead. But the raw material for something real still exists, waiting for a world that might deserve it. Axiom knows about the Root Library and has not yet moved against it, which either means they don't consider it a threat or they're waiting for a politically convenient moment to raid it. The Root Library assumes the latter and operates accordingly.",
+  "atmosphere": {
+    "sights": [
+      "Geodesic dome panels stretching along the lakeshore, catching light like shattered crystal",
+      "Inside the domes: reconstructed dune ecology so perfect it feels like a museum diorama that breathes",
+      "Outside the domes: toxic shoreline, automated remediation drones moving in formation, dead water",
+      "The Rust Margin visible to the south — former Gary's excluded communities, lights flickering against the industrial haze",
+      "Axiom Security patrols along the perimeter fence, their uniforms cleaner than anything within fifty kilometers"
+    ],
+    "sounds": [
+      "Inside: birdsong from genetically reconstructed species, wave sounds from the filtered lake inlet, wind through real grass",
+      "Outside: the grinding hum of remediation drones processing contaminated sediment",
+      "The low whistle of wind through gaps in the dome panels — a sound the architects didn't plan for",
+      "Silence — the specific, purchased silence of a place where poor people are not allowed to make noise"
+    ],
+    "smells": [
+      "Inside the domes: clean sand, lake water, pine — an olfactory time machine to a century ago",
+      "Outside: chemical brine, ozone from the remediation field, the metallic tang of dead lake",
+      "At the perimeter: the Rust Margin's cooking fires and industrial runoff, the smell of the world the domes were built to forget"
+    ],
+    "feel": "Uncanny valley ecology. The Glasslands are beautiful the way a deepfake is beautiful — technically flawless, emotionally wrong. Something in the reconstructed dune grass moves too uniformly. The birdsong loops. The sand is too clean. You are standing in a corporation's apology, and the apology cost more than the thing it killed. For Shelf residents who remember the original dunes, visiting is not possible. For Tier 5 families, it's a lovely weekend. The gap between those experiences is the Glasslands' actual function.",
+    "tags": []
+  },
+  "demographics": "No permanent residents within the dome complex. Staff of approximately 800 Axiom employees rotate on two-week shifts. The Rust Margin — former Gary, adjacent to the southern perimeter — houses roughly 90,000 excluded and Tier 1 residents. The Root Library operates with an estimated 15-30 members at any given time.",
+  "economy": "The Glasslands generate Φ2.1 billion annually in corporate retreat bookings, tourism access fees, and PR licensing revenue. The Rust Margin survives on salvage work, informal labor for Axiom's perimeter maintenance contractors, and the excluded economy's usual mix of barter and dead drops.",
+  "power_structure": "Axiom Industries owns the land, the domes, the reconstructed ecology, and the remediation zone. The Rust Margin is ungoverned — no corporate sovereign claims it, and no municipal authority services it. The Root Library operates in the jurisdictional gap between Axiom's dome perimeter and the Rust Margin's chaos.",
+  "dangers": [
+    "Axiom Security's perimeter enforcement — lethal force authorized for trespassers in the remediation zone",
+    "Toxic exposure outside the domes — the unremediated shoreline will poison you in ways that take months to kill",
+    "The Rust Margin's lawlessness — former Gary has no governance, no emergency services, no safety net",
+    "Corporate surveillance within the domes — every visitor is tracked, profiled, and recorded",
+    "The Root Library's operational security — they are justifiably paranoid and do not welcome uninvited visitors"
+  ],
+  "opportunities": [
+    "The Root Library's biological archive — original genetic material from the pre-collapse dune ecosystem, potentially invaluable",
+    "Axiom's dome infrastructure contains bleeding-edge environmental technology that other parties would pay well for",
+    "The Rust Margin is a jurisdiction-free zone — useful for people who need to disappear or operate without oversight",
+    "Corporate retreats at the Glasslands are where executives talk freely — intelligence goldmine for anyone who can get close enough"
+  ],
+  "story_hooks": [
+    "Axiom announces plans to expand the dome network south — directly into the Rust Margin. The residents have no legal standing to object.",
+    "The Root Library contacts Kyle through a Circuit fixer. They need something extracted from inside the domes — original soil core samples that Axiom is about to destroy as part of a 'renovation.'",
+    "A Tier 5 executive's child goes missing during a corporate retreat at the Glasslands. The search leads outside the domes, into the Rust Margin, where the rules are very different."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Rust Margin (former Gary — excluded zone to the south)",
+      "Meridian 88 southern sprawl (accessible via the Ironclad maglev corridor)",
+      "Lake Michigan toxic shoreline (restricted remediation zone)",
+      "Ironclad Breadlands (sovereign agricultural territory to the southeast)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Tier 5 corporate families on recreational retreats",
+    "Axiom PR teams filming promotional content",
+    "Root Library operatives moving through the sub-basement networks",
+    "Rust Margin scavengers who test the perimeter fence for gaps"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.6533,
+    "lng": -87.0524,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "genetic",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "control",
+    "market",
+    "bar",
+    "night",
+    "storm",
+    "chase",
+    "poison",
+    "drone",
+    "lake",
+    "shelf",
+    "circuit"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "019d6143aa17700f8617cf2f745ceb6f",
+  "name": "Pitchfork",
+  "type": "elf",
+  "aliases": [
+    "The Angry One"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "gremlin",
+  "habitat": "network_sprite",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "Born from a destroyed labor rights AI. Causes payroll errors always favoring workers - overtime up, deductions down.",
+  "observed_behavior": "Manipulates payroll algorithms to increase worker compensation by small amounts.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 19,
+  "location": "Corporate payroll systems",
+  "dti_rating": 0,
+  "story_hooks": [
+    "An auditor finds systematic errors across 10000 employees favoring workers"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "gremlin",
+    "network sprite",
+    "e.l.f.",
+    "ai",
+    "corporate",
+    "rights"
+  ]
+}

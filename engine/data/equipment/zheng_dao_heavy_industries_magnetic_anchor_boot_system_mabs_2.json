@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a88673b3a82efe38e5be934a",
+  "name": "Zheng-Dao Heavy Industries Magnetic Anchor Boot System MABS-2",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Heavy Industries Magnetic Anchor Boot System MABS-2",
+  "type": "equipment",
+  "aliases": [
+    "MABS-2",
+    "Mag Boots",
+    "Metal Walkers",
+    "Zheng-Dao Grips"
+  ],
+  "category": "climbing/mobility",
+  "description": "Boots with integrated electromagnetic soles that can be activated to anchor the wearer to any ferrous metal surface with up to 200 kg of pull force per boot. The MABS-2 enables walking on steel walls, ceilings, and exterior surfaces of metal structures including ships, industrial facilities, and steel-framed buildings. The electromagnetic engagement is toggled with a foot-flex gesture, and the force can be modulated for walking (light engagement), climbing (medium), or anchoring against blast or wind (maximum). The boots also prevent the wearer from being thrown by kinetic impacts when anchored to a surface, making them useful for heavy weapons operation and vehicle-mounted combat.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — industrial and security",
+  "base_technologies": [],
+  "specifications": {
+    "anchor force": "200 kg per boot maximum",
+    "surface requirement": "Ferrous metal",
+    "control": "Foot-flex toggle",
+    "info": "modulated force; climb; anchor",
+    "modes": "Walk",
+    "battery": "12-hour active use",
+    "weight": "1.5 kg per boot",
+    "compatibility": "Retrofittable to standard boot frames",
+    "modulation": "Variable force 0-200 kg per boot"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An intruder was found walking on the exterior steel hull of a corporate tower at the 50th floor — MABS-2 boot prints were found on the steel cladding, and the intruder accessed a window that no conventional approach could reach.",
+    "A modified MABS-2 has been weaponized — the electromagnetic pulse on maximum engagement can disable electronics in the steel surface the boot contacts, making each step an EMP attack on the floor beneath."
+  ],
+  "tags": [
+    "climbingmobility",
+    "equipment",
+    "combat",
+    "weapon",
+    "ai",
+    "corporate",
+    "vehicle",
+    "tier 2"
+  ]
+}

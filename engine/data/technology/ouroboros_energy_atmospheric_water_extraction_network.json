@@ -1,0 +1,45 @@
+{
+  "id": "019d6143aa487f729595dd6531143e9c",
+  "name": "Ouroboros Energy Atmospheric Water Extraction Network",
+  "brand_name": "Ouroboros",
+  "product_name": "Ouroboros Energy Atmospheric Water Extraction Network",
+  "type": "technology",
+  "aliases": [
+    "AWEN",
+    "Sky Well",
+    "Air Water",
+    "Ouroboros Tap"
+  ],
+  "subcategory": "environmental",
+  "description": "A distributed network of atmospheric condensation units that extract potable water from ambient air humidity, even in relatively dry conditions. Each unit uses thermoelectric cooling to chill surfaces below the dew point, collecting condensation that is filtered and mineralized for consumption. The network scales from building-mounted units producing hundreds of liters daily to district-scale installations that supplement conventional water infrastructure. Ouroboros deploys the system as a complement to their energy infrastructure, since the condensation units require significant power.",
+  "tier_availability": "Tier 2+",
+  "developers": [
+    "OUROBOROS ENERGY"
+  ],
+  "base_technologies": [
+    "Thermoelectric atmospheric condensation",
+    "Condensate filtration and mineralization",
+    "Distributed water production networking"
+  ],
+  "enables": [
+    "Decentralized potable water production",
+    "Water independence from centralized infrastructure",
+    "Drought-resistant water supply",
+    "Building-level water self-sufficiency"
+  ],
+  "social_impact": "AWEN has made water access a function of energy access — any building connected to the power grid can produce its own water. This has reduced dependence on Meridian 88's aging water infrastructure, but it has also created incentive for Ouroboros to neglect conventional water systems in favor of their proprietary atmospheric solution. Districts that cannot afford AWEN units or their power consumption remain dependent on deteriorating pipe networks, creating a water quality divide that maps precisely onto economic inequality.",
+  "story_hooks": [
+    "Ouroboros has been quietly decommissioning conventional water treatment facilities while promoting AWEN adoption — when a power outage hit three districts simultaneously, 200,000 people lost both power and water.",
+    "AWEN units in a Tier 3 district have been producing water with unusual mineral content — analysis reveals trace compounds consistent with an industrial contaminant that should not be present in atmospheric condensation."
+  ],
+  "tags": [
+    "environmental",
+    "technology",
+    "ai",
+    "elf",
+    "power",
+    "energy",
+    "water",
+    "tier 2"
+  ]
+}

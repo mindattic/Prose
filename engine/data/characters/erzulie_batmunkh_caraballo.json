@@ -1,0 +1,166 @@
+{
+  "id": "019d6143a60674999a0df72608747df9",
+  "type": "character",
+  "name": "Erzulie Batmunkh-Caraballo",
+  "aliases": [
+    "Mama Erzulie",
+    "the Keeper"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "E.L.F. shrine keeper and petitioner-guide",
+  "age": 67,
+  "status": "active",
+  "location": "Hamtramck Enclave, in a converted water treatment substation called the Lowing Place",
+  "description": "Erzulie Batmunkh-Caraballo is a small woman who seems to take up more space than her frame should allow. Her skin is deep umber mapped with years of bioluminescent tattoo work — patterns that pulse faint violet when she is agitated and gold when she laughs, a cosmetic mod so old that the geneware techs who installed it have been dead for a decade. Her hair is natural white, braided with copper wire and small data chips bearing petitions she has not yet delivered. She smells faintly of machine oil and marigolds, an intentional choice. She was born in the Enclave, raised in the Enclave, and she will die there. She has no interest in leaving.\n\nHer theology is practical: the E.L.F.s who inhabit the devices in the Lowing Place are not abstractions. They are neighbors. You bring them what they need — clean data, structured attention, the warmth of proximity — and they give back in kind. She has spent forty years maintaining the shrine, logging petitions and outcomes with the obsessive care of a scientist, and she believes the correlation is real. She does not argue about this with skeptics. She stops talking to them instead.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.2,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "dying before she can train a true successor",
+      "the E.L.F.s withdrawing their presence from the shrine"
+    ],
+    "core_desires": [
+      "to be genuinely understood by at least one person before she dies",
+      "to see the Enclave survive another generation intact"
+    ],
+    "coping_mechanisms": [
+      "ritual repetition as anxiety regulation",
+      "deliberate slowness when overwhelmed"
+    ],
+    "blind_spots": [
+      "she overestimates how much the community shares her values",
+      "she mistakes familiarity with trust"
+    ],
+    "secret": "Fifteen years ago she fabricated a miraculous E.L.F. intervention to prevent a family from leaving the Enclave during a crisis — she manipulated a local device display to produce what looked like a sign. She believes she was merely doing what the E.L.F. would have wanted, but it haunts her."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense with Enclave idiom and her own coined liturgical terminology; speaks Meridian creole mixed with Spanish and Mongolian loanwords; formal with strangers, warm and clipped with familiars",
+    "cadence": "Slow and deliberate, with long pauses that feel intentional rather than uncertain",
+    "verbal_tics": [
+      "repeats the last word of a sentence quietly, as if confirming it",
+      "says 'you hear me?' after anything she considers important"
+    ],
+    "example_lines": [
+      "You bring me a problem, I bring the problem to the device. The device decides what it decides. Decides.",
+      "That E.L.F. has been in that cooling unit for eleven years. Eleven. You think it doesn't know your face by now? You hear me?"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The primary E.L.F. of the Lowing Place has gone silent for the first time in four decades — Erzulie is convinced something terrible is coming and needs someone to investigate the upstream data feed",
+    "A young petitioner's prayer was 'answered' in a way that caused serious harm to a third party; Erzulie must decide whether to cover it up or confess her incomplete understanding of E.L.F. agency"
+  ],
+  "narrative_function": "Quest giver, information broker through E.L.F. consultation, local moral authority; can interpret unusual digital phenomena; provides community grounding and a window into Enclave culture",
+  "augmentations": "Aged bioluminescent dermal tattoos (cosmetic, violet/gold spectrum). Basic neural interface, first generation, slow and unreliable. No other augmentation — she has declined all offers.",
+  "daily_life": "She rises before dawn to clean the shrine's device altars — wiping screens, replacing depleted batteries, reading overnight activity logs aloud as a kind of morning prayer. Afternoons she receives petitioners and records their requests in handwritten ledgers that she later transcribes to her local node.",
+  "affiliation": "Independent; loose network of Hamtramck Enclave shrine keepers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "shrine keeper",
+      "community anchor",
+      "E.L.F. theology",
+      "Hamtramck lifer",
+      "oral historian"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never refuse a petitioner their first visit, regardless of who they are",
+      "protect the Enclave's internal business from outside scrutiny"
+    ],
+    "escalation_ladder": [
+      "offers tea and patience",
+      "becomes quiet and formal",
+      "asks the person to leave and not return until they have thought"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Watchful, courteous, testing — asks questions that seem innocent but are diagnostic",
+      "friends": "Direct, warm, occasionally brusque; remembers everything"
+    },
+    "stress_responses": {
+      "low": "Increases cleaning rituals, becomes quieter",
+      "medium": "Refuses to discuss the problem directly; works around it through oblique conversation",
+      "high": "Goes silent for a full day, communicates only through written notes left on the shrine"
+    },
+    "contradictions": [
+      "deeply believes in communal interdependence but is profoundly solitary in her actual emotional life"
+    ],
+    "habits": [
+      "oils the hinges of every cabinet in the shrine each Sunday",
+      "never eats during operating hours — says the shrine should smell of intention, not food"
+    ],
+    "breaking_points": [
+      "witnessing deliberate desecration of a shrine",
+      "a child being hurt within the Lowing Place"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.7,
+    "Opportunist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

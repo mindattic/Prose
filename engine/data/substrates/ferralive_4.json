@@ -1,0 +1,57 @@
+{
+  "id": "019d6143a9d97cb88979eb8fcbd00787",
+  "name": "Ferralive-4",
+  "brand_name": "Ferralive",
+  "product_name": "Ferralive-4",
+  "type": "substrate",
+  "aliases": [
+    "living steel",
+    "F4-live",
+    "bloodmetal"
+  ],
+  "category": "bio_hybrid",
+  "description": "Ferralive-4 is a high-tensile iron-carbon alloy threaded with a suspended culture of engineered fibroblast-analog cells housed within microscopic vascular channels pressed into the metal matrix during nano-assembly. When the alloy sustains surface damage, ruptured micro-channels release a clotting-analog fluid that oxidizes into a hard ceramic patch within 4-8 hours, restoring up to 85% of original tensile strength without external intervention. The material requires a low-level bioelectric charge from the host or an embedded power cell to keep the cell culture viable.",
+  "properties": [
+    "self-healing",
+    "high tensile strength",
+    "bioelectric dependent",
+    "moderate weight",
+    "thermal resistant to 600°C",
+    "fatigue resistant",
+    "machinable"
+  ],
+  "developers": [
+    "Crucible Industries",
+    "BioForge Labs (cellular matrix licensing)"
+  ],
+  "applications": [
+    "structural chassis for combat augments",
+    "load-bearing exoframe components",
+    "armored vehicle hull plating",
+    "industrial robotic joint housings"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ3,800 per kg (raw billet); Φ6,100 per kg (implant-interface grade)",
+  "story_hooks": [
+    "A mercenary's Ferralive-4 arm chassis has been healing itself for three years without maintenance — but the fibroblast culture has mutated under repeated combat stress, and the patches it lays down are increasingly unlike the original alloy, with unknown long-term structural consequences.",
+    "Salvagers discover a cache of decommissioned Ferralive-4 armor plating that is still alive — the cell culture has survived for a decade on residual ambient bioelectricity, and the material has been slowly self-modifying in storage.",
+    "A Tier 1 street doc is offering black-market Ferralive-4 repairs using harvested cell cultures from expired medical waste — it works, but the donor cells carry unscreened genetic material that is integrating into recipients."
+  ],
+  "tags": [
+    "biohybrid",
+    "substrate",
+    "combat",
+    "augment",
+    "genetic",
+    "ai",
+    "robot",
+    "elf",
+    "power",
+    "medical",
+    "market",
+    "vehicle",
+    "armor",
+    "tier 3",
+    "tier 4"
+  ]
+}

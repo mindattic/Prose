@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a58a72abaeab15e6345bcbf4",
+  "name": "Puzzle Solver",
+  "type": "archetype",
+  "category": "intellectual",
+  "description": "Lives for the challenge of unsolved problems",
+  "behavioral_signature": "Treats every obstacle as a puzzle to crack",
+  "under_stress": "Becomes obsessed, loses sleep",
+  "at_rest": "Working puzzles, always",
+  "will_always": [
+    "solve the puzzle"
+  ],
+  "will_never": [
+    "walk away unsolved"
+  ],
+  "unless": [
+    "solving it opens something that should stay closed"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Problem Solver",
+      "threshold": 0.85,
+      "context": "problem-driven"
+    },
+    {
+      "archetype": "Analyst",
+      "threshold": 0.7,
+      "context": "systematic thinking"
+    }
+  ],
+  "opposite_of": [
+    "Fatalist"
+  ],
+  "tags": [
+    "driven",
+    "obsessive"
+  ]
+}

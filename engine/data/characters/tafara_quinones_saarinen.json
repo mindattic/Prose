@@ -1,0 +1,218 @@
+{
+  "id": "019d6143a6e871329cd45fa4ee5e0fc8",
+  "type": "character",
+  "name": "Tafara Quiñones-Saarinen",
+  "aliases": [
+    "Chef Taf",
+    "The Cart"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Noodle cart vendor, operates a modified push cart outside the Edgewater Prism transit hub",
+  "age": 22,
+  "status": "active",
+  "location": "Edgewater Prism, outer plaza, east entrance",
+  "description": "Tafara is tall and slightly too thin in the way of people who feed others better than themselves, with the elongated Zimbabwean features of his father's side softened by his Finnish-Mexican mother's coloring — he tans an unusual amber and burns only at the very tips of his ears, which he is vaguely proud of. He has cat ears, the small tufted dark-gray variety, which he has had since he was twelve and that his mother paid for on installment. He keeps them pressed flat when he is concentrating and swiveling independently when he is excited, which is frequently. His hands are scarred from early apprenticeship burns and always faintly fragrant with the lemongrass and dried chile that form the base of his broth.\n\nThe cart, which he calls The Debt (a joke only he fully appreciates, since he is still paying off the equipment loan), has been on the Edgewater Prism east plaza for two years and has developed a following out of proportion to its apparent simplicity. Tafara makes one rotating bowl per day — a different combination of noodles, broth, protein, and toppings, chalked on the small board he props against the cart's front — and when it is gone, it is gone. He does not adapt the recipe to complaints. He does, however, adapt it to weather, to available ingredients, and to a private read of the day's mood that he could not articulate but which consistently produces something people want.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.8,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.3,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "the bowl not being good enough — a persistent, irrational anxiety that strikes every single day before service",
+      "losing the plaza spot to a corporate food franchise buy-in"
+    ],
+    "core_desires": [
+      "to eventually open a real restaurant, small, twelve seats maximum",
+      "to be recognized as someone who made something from nothing without help from anyone with money"
+    ],
+    "coping_mechanisms": [
+      "channeling anxiety directly into preparation work — if he is worried, he cooks more carefully",
+      "the one-bowl rule as a philosophy of constraints producing creativity"
+    ],
+    "blind_spots": [
+      "romantically oblivious to a degree that his regulars find both charming and exasperating",
+      "has not seriously engaged with the financial reality of the equipment loan and what happens if revenue dips"
+    ],
+    "secret": "His broth base recipe was taught to him by an elderly woman who ran an unlicensed kitchen in the Mexicantown Libre basement level — she disappeared eight months ago and he has been quietly trying to find her through the network of people who eat at his cart, one question at a time"
+  },
+  "speech_patterns": {
+    "vocabulary": "Enthusiastic and food-saturated; uses cooking process as metaphor for everything; occasional Shona phrases when genuinely moved",
+    "cadence": "Fast and warm, tumbles slightly over itself when he is excited, which is often",
+    "verbal_tics": [
+      "'right?' as a constant soft affirmation-seeking",
+      "explaining the day's bowl to every customer whether they ask or not"
+    ],
+    "example_lines": [
+      "Today is lake wind day, right? So we're doing the heavier broth — something to push back against. You'll understand when you taste it.",
+      "She taught me that a bowl should feel like a decision someone made for you because they knew what you needed before you did. I'm still learning how to do that."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The woman who taught him his broth recipe is missing and the trail has gone cold except for one regular who mentioned seeing her near the Irkalla access tunnels",
+    "A Palladian Foods subsidiary has made a formal offer on the Edgewater Prism plaza vendor slots — the offer expires in thirty days and three of the five vendors are considering taking it"
+  ],
+  "narrative_function": "Local color and social glue; his cart is a place where many kinds of people converge — useful for introducing player characters to neighborhood dynamics or other NPCs; can serve as a low-stakes information broker who trades in overheard conversation; potential hook for stories about street vendor economics and corporate encroachment",
+  "augmentations": "Geneware cat ears (small, dark gray, tufted). Heat-tolerance skin treatment on both forearms (basic, allows extended contact with hot surfaces without burns — he got this after the apprenticeship scars and considers it the smartest money he has ever spent).",
+  "daily_life": "Wakes at 04:30 to start broth, runs ingredient acquisition through the Burnished Market network by 07:00, is set up on the plaza by 10:30, sells out between 13:00 and 15:00 depending on the day, and spends his evenings either experimenting at the shared kitchen in his residential block or collapsed in bed watching archived cooking competition footage on a secondhand tablet.",
+  "affiliation": "Independent; small equipment loan through a Mexicantown Libre community credit cooperative",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 1,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "creative heart",
+      "community node",
+      "quiet investigator",
+      "food as philosophy"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "one bowl per day, no exceptions and no special orders — the menu is the menu",
+      "never charge a child for a bowl if they are clearly hungry and clearly alone"
+    ],
+    "escalation_ladder": [
+      "cheerful redirection and topic pivot",
+      "honest statement of what he is and is not willing to do",
+      "packing up the cart early and leaving — he will not argue at the cart"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and inclusive, treats every customer like they have been there before even if they haven't",
+      "friends": "Devoted and slightly chaotic, shows up with food, very bad at remembering to respond to messages"
+    },
+    "stress_responses": {
+      "low": "Talks faster, ears swiveling more",
+      "medium": "Goes quiet over the pot, focusing completely on the food as a grounding mechanism",
+      "high": "Makes an enormous and unnecessary amount of extra food that he then gives away"
+    },
+    "contradictions": [
+      "Publicly performs confidence about the cart and the bowl and the whole project while privately catastrophizing every night"
+    ],
+    "habits": [
+      "tastes the broth exactly seven times during the cooking process, always seven",
+      "greets the E.L.F. he believes inhabits his burner rig — he calls it Simmer — every morning before lighting it"
+    ],
+    "breaking_points": [
+      "the bowl being wasted or disrespected in front of him",
+      "learning something happened to the woman who taught him"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "healthy, good response",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional, basic grade",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Mexicantown Libre residential block to a Zimbabwean transit engineer father and a Finnish-Mexican urban farmer mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began informal apprenticeship under the unlicensed kitchen operator in Mexicantown Libre basement level",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Took out equipment loan from community credit cooperative; launched The Debt cart at Edgewater Prism",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "His mentor disappeared; began the slow, informal investigation through his customer network",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

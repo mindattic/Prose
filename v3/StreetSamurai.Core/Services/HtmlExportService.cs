@@ -20,7 +20,7 @@ public class HtmlExportService
         this.settings = settings;
     }
 
-    public string ExportDir => Path.Combine(paths.DataRoot, "exports");
+    public string ExportDir => paths.ExportDir;
 
     /// <summary>Export a single JSON entity as a standalone .htm file.</summary>
     public string ExportEntry(string repoName, string entryName, string jsonContent)

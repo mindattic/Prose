@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5977484a2c7be2417ff2b23",
+  "name": "Theory Crafter",
+  "type": "archetype",
+  "category": "intellectual",
+  "description": "Builds elaborate models to explain everything",
+  "behavioral_signature": "Creates frameworks, models, systems",
+  "under_stress": "The theories become unfalsifiable",
+  "at_rest": "Building models, running scenarios",
+  "will_always": [
+    "explain the system"
+  ],
+  "will_never": [
+    "accept things without a framework"
+  ],
+  "unless": [
+    "the theory can't account for human messiness"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Conspiracy Thinker",
+      "threshold": 0.7,
+      "context": "model building"
+    },
+    {
+      "archetype": "Analyst",
+      "threshold": 0.7,
+      "context": "systematic thinking"
+    }
+  ],
+  "opposite_of": [
+    "Gut Instinct"
+  ],
+  "tags": [
+    "abstract",
+    "systematic"
+  ]
+}

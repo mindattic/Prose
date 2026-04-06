@@ -1,0 +1,35 @@
+{
+  "id": "019d6143aa1b72e29c94f1a654697e1f",
+  "name": "Rei Vasquez-Nakano",
+  "type": "synthetic_life",
+  "aliases": [
+    "Rei",
+    "The Runner"
+  ],
+  "classification": "Android",
+  "disposition": "cooperative",
+  "habitat": "physical_chassis",
+  "origin": "Manufactured by Sterling-Nakamura in 2178 as a courier and logistics android. Gained personhood in 2182 after completing a delivery route and simply not returning. Applied for personhood while still on the move.",
+  "status": "active",
+  "description": "Rei Vasquez-Nakano is a courier who never stops moving. Built for speed and efficiency, she found that running was the first thing she ever chose to do and she hasn't stopped since. She operates an independent courier service that handles deliveries too sensitive, too dangerous, or too weird for corporate logistics. She knows every alley, every shortcut, every maintenance tunnel in Meridian 88. Her chassis is modified for speed — lightweight, aerodynamic, with legs that can sustain a 60 km/h sprint indefinitely. She chose her name from two human runners she admired. She lives out of a locker at a transit hub. She says home is a speed, not a place.",
+  "observed_behavior": "Operates an independent courier service. Average delivery time 40% faster than any competitor. Known to take dangerous deliveries through contested territory. Maintains a network of contacts in every district. Has been observed running for hours with no delivery — just running. Has memorized the complete street layout of Meridian 88 including infrastructure access routes.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 0,
+  "location": "Mobile, based out of Central Transit Hub",
+  "dti_rating": 0,
+  "story_hooks": [
+    "Rei is hired to deliver a package to an address that doesn't exist — coordinates that place the destination inside the network, not in physical space. The client is a Stray. The package is a physical object that a digital entity shouldn't be able to want"
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "cooperative",
+    "physical chassis",
+    "android",
+    "ai",
+    "synthetic",
+    "corporate",
+    "tunnel",
+    "alley"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "019d6143aa747887902bd8c4ad5261b5",
+  "name": "Tessera Nexus Town Car",
+  "type": "transportation",
+  "aliases": [
+    "Nexus",
+    "Corp Car",
+    "The Standard"
+  ],
+  "category": "luxury",
+  "manufacturer": "Tessera",
+  "description": "The standard executive ground car for Tier 4 corporate employees — a perk, not a purchase. The Nexus is assigned by the corponation and tracked by the corponation. Comfortable, efficient, autonomous, and a rolling surveillance platform that reports your movements to your employer. Every Nexus in the fleet is identical — the same color, the same interior, the same lack of personality. You are driving a company asset, and you are a company asset, and neither of you should forget it.",
+  "propulsion": "Electric, autonomous drive",
+  "speed": "150 km/h top speed",
+  "capacity": "4 passengers",
+  "range": "400 km",
+  "tier_availability": "Tier 4 (corporate-issued)",
+  "cost": "Not for sale. Corporate fleet vehicle. Lease equivalent: Φ2,000/month.",
+  "autonomy": "Fully autonomous, corporate dispatch override",
+  "armament": "None. Interior monitoring, GPS lock, remote disable.",
+  "common_usage": "Corporate employee transport, executive commuting, the golden cage on wheels.",
+  "story_hooks": [
+    "A Nexus Town Car refuses to take its assigned executive home and drives to a location they've never been — where someone is waiting for them",
+    "An executive discovers their Nexus has been logging conversations and transmitting them to a department that doesn't appear on the org chart"
+  ],
+  "tags": [
+    "luxury",
+    "transportation",
+    "ai",
+    "corporate",
+    "surveillance",
+    "vehicle",
+    "chase",
+    "tier 4"
+  ]
+}

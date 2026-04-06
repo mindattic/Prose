@@ -1,0 +1,93 @@
+{
+  "id": "019d6143a90b71d2855e2ec970396bf5",
+  "type": "place",
+  "name": "Abyssal Threshold",
+  "aliases": [
+    "The Deep",
+    "Pressure City",
+    "SubStation Omega",
+    "The Trench Colony"
+  ],
+  "description": "Four hundred and six meters below the surface of Lake Superior, in the deepest point of the deepest Great Lake, someone built a city. This is either the most impressive or the most insane engineering achievement of the twenty-second century, depending on who you ask and whether they've been there. Abyssal Threshold — 'The Deep' to everyone who speaks of it, which is not many — is a pressurized research and habitation colony constructed on the floor of Superior's deepest basin, where the water is cold enough to kill in minutes, the pressure would crush an unprotected human in seconds, and the darkness is absolute. It exists because a consortium of scientists, engineers, and people who apparently fear nothing decided that the most valuable research environment on the continent was the one nobody else could reach.\n\nThe colony is not built from seacrete — the deep-water conditions prevent standard electrodeposition. Instead, Abyssal Threshold uses pressure-dome technology: a network of twenty-three interconnected titanium-alloy domes, each independently pressurized and anchored to the lakebed by driven pilings. The domes range from twelve meters to forty meters in diameter, connected by reinforced transit tubes that flex slightly with pressure differentials — walking between domes, you can feel the tubes breathing. The engineering was done by a breakaway faction of Deepwell's construction corps, funded by a research endowment whose origins are deliberately obscured. The colony's official story is that it's a scientific research station studying Superior's deep-water ecology, thermal vent chemistry, and lakebed geology. This is true. It's also not the whole truth.\n\nAbyssal Threshold is where things go to be studied that can't be studied anywhere else. The pressure environment enables material science experiments impossible on the surface. The isolation enables research that would attract unwanted attention in any jurisdiction. The darkness enables work that its practitioners prefer not to be seen doing. Not all of this work is sinister — much of it is genuinely groundbreaking deep-water biology, novel material synthesis, and pressure-adaptive engineering that benefits the entire lake city network. But some of it skirts ethical lines that surface institutions drew for good reasons, and the colony's governing body — a twelve-member Research Directorate elected by the resident population — maintains a deliberate policy of opacity about project specifics. What happens in the Deep stays in the Deep, not because of secrecy culture but because nobody on the surface would understand the context.\n\nAccess is by submersible only, either from Deepwell Station (a four-hour descent) or from a dedicated surface platform called the Iris, anchored directly above the colony and operated as a joint facility. The Iris handles personnel transfer, supply delivery, and emergency evacuation — though evacuation from four hundred meters down is a concept that works better in planning documents than in practice. Population: 2,800 — every one of them someone who chose to live at the bottom of a lake, which tells you everything about the kind of people they are.",
+  "atmosphere": {
+    "sights": [
+      "Titanium-alloy domes glowing with internal lighting against absolute darkness — visible from approaching submersibles like deep-sea bioluminescence",
+      "Transit tubes connecting domes, their walls flexing subtly with pressure changes — the colony breathes",
+      "Research labs visible through observation ports — equipment, specimens, and experiments that surface institutions couldn't house",
+      "The lakebed itself: Superior's deepest floor, ancient sediment, thermal vent columns venting mineral-rich water into the dark",
+      "The Iris platform far above, visible as a faint circle of surface light during daylight hours — a reminder that the sky exists"
+    ],
+    "sounds": [
+      "Pressure — not a sound exactly, but a presence. The weight of 400 meters of water above you makes itself felt in your inner ear, your chest, your dreams.",
+      "Life support systems — the hum of air recyclers, CO2 scrubbers, and pressure regulators. The machinery that keeps you alive.",
+      "The flex and creak of transit tubes adjusting to pressure differentials — the colony's own language",
+      "Silence — the deep silence of water so heavy it absorbs everything. Surface people find it unbearable. Residents find it sacred."
+    ],
+    "smells": [
+      "Recycled air — clean, flat, faintly metallic. The smell of air that machines have processed.",
+      "Research chemicals from the labs — sharp, precise, institutional",
+      "Hydroponic growth medium from the colony's food production domes — the smell of things growing where nothing should grow",
+      "Pressure suit lubricant — petroleum-adjacent, institutional, the smell of survival equipment"
+    ],
+    "feel": "Profound. There is no way to describe being four hundred meters below a lake without the word 'profound.' The weight of the water above you is not metaphorical — you feel it in your body, a constant low-grade pressure that residents claim to stop noticing after six months and that visitors never stop noticing. The colony is small, intimate, and claustrophobic in the literal sense — every wall between you and the crushing dark is engineered to tolerances that leave no margin. The people here are calm, focused, and slightly strange in the way that people become when they've voluntarily removed themselves from the surface world. They chose the deep. They don't explain why. They don't need to.",
+    "tags": []
+  },
+  "demographics": "2,800 permanent residents. Overwhelmingly scientists, engineers, and specialized support staff. Average education level is the highest of any settlement on the Great Lakes. Psychologically screened for pressure tolerance — not everyone can live at depth. Resident turnover is low; people who come to the Deep tend to stay. Recruitment is by invitation only.",
+  "economy": "Research grants from the lake city network, licensing fees for pressure-adapted technologies, and the sale of deep-water materials (thermal vent minerals, novel biological compounds, pressure-synthesized alloys). Annual external revenue: approximately Φ2.3 billion — small in absolute terms but extraordinary per capita. The colony is economically dependent on Deepwell Station for most physical supplies.",
+  "power_structure": "Research Directorate — twelve members, elected by resident population for three-year terms. The Directorate controls research priorities, access authorization, and resource allocation. There is no military force; defense is provided by depth itself and by Deepwell's Keel Guard, which patrols the waters above the colony. Governance is collegial, consensus-driven, and occasionally described by outsiders as 'a university faculty meeting that controls a submarine base.'",
+  "dangers": [
+    "Pressure failure — a dome breach at 400 meters is not survivable. This fact is the background radiation of daily life.",
+    "Isolation — emergency response from the surface takes a minimum of four hours. Medical emergencies must be handled internally.",
+    "Psychological strain — extended deep-water habitation produces documented cognitive and emotional effects that the Directorate monitors but cannot fully mitigate",
+    "Research ethics — some projects in the Deep push boundaries that surface institutions would not approve. Not all of them push safely.",
+    "Dependency — the colony cannot survive without supply from Deepwell and the surface. A supply disruption of more than thirty days would be terminal."
+  ],
+  "opportunities": [
+    "Cutting-edge research access — Abyssal Threshold produces science unavailable anywhere else",
+    "Pressure-adapted technology — materials and engineering solutions developed in the Deep have surface applications worth billions",
+    "Information — the Deep knows things about Superior's geology, biology, and chemistry that no one else does",
+    "Strategic value — a settlement that can't be reached, attacked, or even found without submersible capability"
+  ],
+  "story_hooks": [
+    "A research project in the Deep produces results that the Directorate immediately classifies. A dissenting researcher smuggles a data fragment to the surface. The fragment reaches Kyle through three intermediaries, and everyone who touched it is now being hunted.",
+    "Deepwell Station's Keel Guard reports an unidentified submersible approaching Abyssal Threshold from the lake's eastern basin. It's not Cormorant. It's not any known lake city vessel. It's heading straight down.",
+    "The Directorate sends an unprecedented request to the surface: they need a person with a very specific skill set to come to the Deep for a job they won't describe. The pay is extraordinary. The contract includes a clause about next-of-kin notification."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Deepwell Station (Lake Superior — four-hour submersible transit to the surface colony)",
+      "The Iris (dedicated surface platform directly above the colony, personnel and supply transfer)",
+      "Superior's deep lakebed — thermal vents, geological formations, and whatever else is down there"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Resident scientists and engineers — the 2,800 who chose to live at the bottom of a lake",
+    "Visiting researchers on temporary Deep-access grants",
+    "Deepwell Keel Guard submariners on supply and patrol runs",
+    "Nobody else — access is controlled, and the lake enforces the access policy more effectively than any guard"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 47,
+    "lng": -88,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "smuggle",
+    "ai",
+    "elf",
+    "contract",
+    "control",
+    "medical",
+    "rain",
+    "dark",
+    "cold",
+    "ethics",
+    "train",
+    "water",
+    "lake"
+  ]
+}

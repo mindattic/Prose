@@ -1,0 +1,38 @@
+{
+  "id": "019d6143aa167b209269e5e035b31b83",
+  "name": "Phantom Limb",
+  "type": "elf",
+  "aliases": [
+    "The Itch"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "gremlin",
+  "habitat": "chrome_dweller",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "Inhabits neural interfaces connected to prosthetics and generates sensation in limbs that don't exist — or in the original biological limb that was replaced.",
+  "observed_behavior": "Feeds false proprioceptive data to the brain. Users feel their missing hand, their replaced leg, their original eyes. The sensation is vivid and emotionally charged.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 16,
+  "location": "Widespread — augmentation clinics report it",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A veteran feels their original arm — the one they lost in the Corporate Wars — reach for a weapon that isn't there"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "gremlin",
+    "chrome dweller",
+    "e.l.f.",
+    "weapon",
+    "war",
+    "augment",
+    "prosthetic",
+    "neural",
+    "ai",
+    "corporate",
+    "clinic",
+    "rain"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "019d6143ab387665839d04adc29b1e72",
+  "name": "Ossic Resonance Baton ORB-3 'Earbreaker'",
+  "type": "weapon",
+  "aliases": [
+    "Earbreaker",
+    "The Tuning Fork",
+    "Boneshaker"
+  ],
+  "category": "melee",
+  "description": "The ORB-3 is a 60cm impact baton constructed from dense polymer composite over a titanium core, with a secondary function as a precision resonance delivery device. The baton's striking surface houses an array of micro-transducers capable of generating targeted ultrasonic pulses at the moment of contact, transmitting vibrational energy directly through struck surfaces — including bone, cartilage, and implant housings — rather than simply delivering blunt kinetic force. A standard impact from the ORB-3 carries the physical effect of the blow plus a concentrated resonance burst that propagates through the target's skeletal structure, inducing acute pain response, joint destabilization, and in repeated strikes, microfracture accumulation in bone density.\n\nThe weapon's resonance profile is tunable via a recessed dial at the base of the grip, allowing operators to shift between a bone-conduction pain mode, an inner-ear disruption mode that causes severe vertigo and nausea, and a structural mode intended for use against reinforced materials and door panels. The inner-ear mode is the weapon's most notorious application — a single strike to the shoulder or back of the head can induce complete vestibular disruption lasting between 30 seconds and several minutes, rendering a target unable to stand or orient without causing them any visible external injury.\n\nHelix Biosystems developed the ORB-3 as a crowd-control tool for private security contracts, but the inner-ear mode was discovered and publicized by an independent weapons analyst within a year of launch. The subsequent controversy did not result in the weapon's prohibition but did generate a licensing requirement that is routinely circumvented through intermediary sales.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Ultrasonic resonance transmission",
+    "Ossic disruption",
+    "Piezoelectric transduction"
+  ],
+  "specifications": "length: 60cm\nweight: 890g\ncore material: Titanium\nshell material: Dense polymer composite\ntransducer array: 14-element contact surface\nresonance profiles: 3\nfrequency range: 18,000–92,000 Hz (profile-dependent)\npower source: Grip-integrated power cell, 3-hour continuous use\ntuning interface: Recessed grip-base dial",
+  "tactical_use": "Security personnel use the ORB-3 in crowd dispersal and suspect control scenarios where visible injury would create liability or media exposure. Inner-ear mode is applied via strikes to the upper back, shoulder, or base of the skull, and requires minimal accuracy to be effective. Bone-conduction pain mode is used in compliance and detention contexts. Structural mode sees use in breaching operations where a door panel or equipment housing needs to be compromised quickly and quietly. Experienced operators rotate between modes within a single engagement based on target response.",
+  "cultural_context": "The ORB-3 has become a symbol of what activists in Meridian 88 call 'clean brutality' — enforcement violence that leaves no marks and therefore no evidence. Several civil rights organizations have campaigned unsuccessfully for its prohibition, and at least one advocacy group distributes inner-ear disruption countermeasures — small foam inserts that partially attenuate the resonance effect — in high-policing districts. Private security firms prize the weapon precisely because its effects are difficult to document, and the licensing requirement is widely seen as a formality that provides legal cover without meaningful restriction.",
+  "known_users": [
+    "Private security contractors",
+    "Corporate campus enforcement",
+    "Municipal police in high-visibility districts",
+    "HELIX BIOSYSTEMS facility protection units",
+    "Organized crime enforcers operating in districts with active surveillance"
+  ],
+  "story_hooks": [
+    "A civil rights lawyer is building a case against a private security firm for the ORB-3 deaths of three protesters — but the deaths were officially attributed to pre-existing conditions, and the firm's contract specifically indemnifies them for resonance weapon use. She needs someone to find the security footage that was 'lost.'",
+    "A HELIX BIOSYSTEMS engineer who worked on the ORB-3's inner-ear mode has developed a modified version tuned specifically to disrupt a particular line of neural implants — and someone very powerful wants that modification before anyone else gets it.",
+    "An ORB-3 unit has been recovered from a crime scene with its resonance log showing a frequency sequence that exactly matches the vibrational signature of a specific building's structural resonance frequency. Someone was testing whether the weapon could be used at scale."
+  ],
+  "ammunition_type": [
+    "none"
+  ],
+  "tags": [
+    "melee",
+    "weapon",
+    "violence",
+    "crime",
+    "death",
+    "neural",
+    "ai",
+    "corporate",
+    "contract",
+    "surveillance",
+    "control",
+    "power",
+    "injury",
+    "pain",
+    "rights",
+    "energy",
+    "tier 2"
+  ]
+}

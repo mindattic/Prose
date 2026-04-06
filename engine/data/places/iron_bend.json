@@ -1,0 +1,111 @@
+{
+  "id": "019d6143a9217821bb73c2ac2f281256",
+  "type": "place",
+  "name": "Iron Bend",
+  "aliases": [
+    "The Flats",
+    "The Bend",
+    "Cuyahoga Industrial"
+  ],
+  "description": "The Cuyahoga River caught fire in 1969. That fact became a punchline, a rallying cry for the environmental movement, and eventually the origin story of an entertainment district when Cleveland turned the Flats into bars and restaurants in the 1990s. A century later, the river is burning again — not with pollution, but with the concentrated industrial output of a corridor that has turned the Cuyahoga valley into one of the most productive manufacturing zones east of the Meridian Core.\n\nIron Bend is the Flats stripped of pretense. The entertainment district lasted about thirty years. The breweries and dance clubs were displaced first by the economic collapse of the 2020s and then by the corridor's industrialization, which recognized the Cuyahoga valley's natural geography — a steep-walled river valley cutting through the city center — as an ideal containment zone for heavy manufacturing, chemical processing, and the kind of industrial activity that you want to keep below sightline from the neighborhoods above. The valley walls serve as natural sound barriers. The river provides cooling water and waste transport. The old rail bridges that cross the valley have been reinforced and integrated into Ferrogate's sovereign transit corridor, carrying raw materials in and finished products out on a 24-hour cycle.\n\nThe valley floor is a landscape of manufacturing facilities, chemical storage, and automated fabrication plants operated by a rotating cast of corponations. Palladian Construction runs the largest single facility — a biofoam and structural materials plant that feeds the corridor's insatiable construction appetite. Zheng-Dao Bioelectric operates an augment component manufacturing line. Ferrogate maintains its Cleveland transit hub on the east bank. The workers who operate and maintain these facilities live on the valley rim, commuting down via cargo elevators that were designed for materials and retrofitted for humans with minimal concern for comfort or safety. At night, the valley glows — furnace light, chemical fluorescence, the running lights of automated transport — and the effect from the rim neighborhoods is genuinely beautiful in the way that all industrial landscapes are beautiful when you're far enough away to forget what they cost.",
+  "atmosphere": {
+    "sights": [
+      "The Cuyahoga valley at night — furnace light reflecting off the river, chemical fluorescence in blues and greens, automated transport running like luminous veins",
+      "Old rail bridges reinforced with Ferrogate sovereign infrastructure, trains crossing the valley on schedules that haven't paused in decades",
+      "Palladian's biofoam plant — the largest structure in the valley, its exhaust stacks releasing vapor that catches the light in prismatic patterns",
+      "Cargo elevators descending the valley walls, carrying workers down in modified freight cars",
+      "The river itself — clean enough to not catch fire, dirty enough that nothing lives in it"
+    ],
+    "sounds": [
+      "Industrial baseline — the combined output of every manufacturing facility in the valley creates a sound that residents call the Drone, a low-frequency presence that never stops",
+      "Ferrogate transit — trains crossing the valley bridges produce a rhythmic percussion that the factory schedules have unconsciously synchronized with",
+      "Cargo elevator machinery — the grind and clank of systems designed for materials, protesting the weight of human passengers",
+      "The river — moving faster than you'd expect through engineered channels, its sound masked by the factories but present if you listen",
+      "Shift change horns — different frequencies for different facilities, creating an industrial chord at 0600, 1400, and 2200"
+    ],
+    "smells": [
+      "Chemical processing — a cocktail of industrial outputs that changes composition hourly depending on which facilities are running which processes",
+      "Biofoam manufacturing — the distinctive sweet-chemical tang of Gravemoss-derived construction materials being produced at scale",
+      "Hot metal from Zheng-Dao's augment component line — a clean, sharp scent that augmented workers claim they can taste"
+    ],
+    "feel": "Iron Bend feels like the inside of a machine — because it is one. The valley has been optimized for production the way a body is optimized for breathing: every space serves a function, every rhythm exists for a reason, and human presence is tolerated as a necessary inefficiency that automation hasn't fully resolved yet. The beauty of the valley at night is real, and it is the beauty of a furnace — warm, bright, and not meant for you.",
+    "tags": []
+  },
+  "demographics": "The valley floor has no permanent residential population — workers commute from the rim. The working population across all shifts is approximately 8,000, predominantly Tier 1-2 industrial laborers. The rim neighborhoods (Tremont side and downtown side) house the workforce in conditions that range from adequate to marginal depending on which employer provides the housing.",
+  "economy": "Heavy manufacturing, chemical processing, and component fabrication. Palladian's biofoam plant is the largest single employer. Zheng-Dao's augment line is the highest-value operation. Ferrogate's transit hub processes cargo that connects the Cleveland sprawl to the wider corridor. The combined economic output of Iron Bend exceeds Φ12 billion annually — none of which is spent in the valley itself.",
+  "power_structure": "No single sovereign. The valley floor is divided between Palladian, Zheng-Dao, Ferrogate, and four smaller corponation leaseholders, each operating under their own proprietary jurisdiction within their facility boundaries. The spaces between facilities — the access roads, the river banks, the maintenance corridors — fall under no jurisdiction at all. Tollgate theoretically maintains infrastructure, but the valley's systems are so heavily modified by the resident corponations that Tollgate's standard protocols don't apply.",
+  "dangers": [
+    "Industrial hazard — the valley's manufacturing processes produce chemical, thermal, and electromagnetic exposure risks that are within corporate safety standards and well above what anyone would choose for themselves",
+    "Jurisdiction gaps — the spaces between facilities are ungoverned, unmonitored, and used by people whose business requires both qualities",
+    "Cargo elevator failure — the retrofitted freight systems that transport workers into the valley have a maintenance record that the workers prefer not to discuss",
+    "River flooding — the Cuyahoga's engineered channels can overflow during heavy rain events, and the valley floor's drainage was designed for industrial runoff, not flash floods",
+    "The Drone — prolonged exposure to the valley's combined industrial frequencies causes hearing damage, sleep disruption, and neurological effects that the corponations classify as 'occupational adaptation'"
+  ],
+  "opportunities": [
+    "The jurisdiction gaps between facilities are the valley's most valuable real estate — for operations that require ungoverned space in the heart of the Cleveland sprawl",
+    "The manufacturing facilities produce components and materials that are valuable on the gray market — and security between shifts is thinner than the corponations admit",
+    "Ferrogate's transit hub is a nexus point — controlling information about what moves through Iron Bend means controlling information about the eastern corridor's supply chain",
+    "The valley's industrial infrastructure can be repurposed — someone with the right skills can manufacture almost anything in the gaps between corporate production runs"
+  ],
+  "story_hooks": [
+    "The Cuyahoga's chemical composition has changed — something in the river is dissolving the biofoam foundations of Palladian's plant, and Palladian doesn't know what it is or where it's coming from",
+    "A worker in Zheng-Dao's augment line has discovered that every third production run includes components that don't match any augment in the commercial catalog — military-grade hardware being manufactured under commercial cover",
+    "The ungoverned spaces between facilities have developed their own economy, their own governance, and their own protection — a micro-community that both the corponations and the excluded population pretend doesn't exist"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Gate (Downtown Cleveland)",
+      "Ashfield (Tremont)",
+      "The Burnished Market (Ohio City)",
+      "Kamm's Landing (Kamm's Corners)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Industrial workers commuting from the rim neighborhoods",
+    "Ferrogate transit personnel and cargo logistics operators",
+    "Operators who use the jurisdiction gaps for meetings, storage, and manufacturing",
+    "The valley floor's own ungoverned population — people who live in the gaps and maintain them"
+  ],
+  "notable_locations": [
+    {
+      "name": "Palladian Biofoam Plant",
+      "description": "The largest manufacturing facility in the valley — producing the structural materials that half the corridor is built from",
+      "tags": []
+    },
+    {
+      "name": "Ferrogate Cleveland Hub",
+      "description": "The eastern corridor's primary cargo transit nexus — where the rail network meets the river and everything moving through Cleveland passes through",
+      "tags": []
+    },
+    {
+      "name": "The Gaps",
+      "description": "The ungoverned spaces between corporate facilities — no jurisdiction, no surveillance, no rules, and a micro-community that has learned to thrive in the margins",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.4849,
+    "lng": -81.7031,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "augment",
+    "ai",
+    "elf",
+    "corporate",
+    "control",
+    "alley",
+    "market",
+    "club",
+    "bar",
+    "rain",
+    "night",
+    "drone",
+    "fire",
+    "water"
+  ]
+}

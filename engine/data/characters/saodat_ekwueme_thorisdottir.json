@@ -1,0 +1,165 @@
+{
+  "id": "019d6143a6c3715785829c2b16244b0e",
+  "type": "character",
+  "name": "Saodat Ekwueme-Thorisdóttir",
+  "aliases": [
+    "Dot"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Ferrogate Transit bus operator, Deepwell Station to Calumet Rise route",
+  "age": 29,
+  "status": "active",
+  "location": "Deepwell Station (home depot), route runs through Blackpipe Corridor, Ironvein, Calumet Rise",
+  "description": "Saodat has the compact, settled quality of someone who has learned to be comfortable in a small moving space for ten hours at a time. They are medium-height, broad through the shoulders, with skin a warm dark brown and close-cropped natural hair shot through with bioluminescent dye — pale blue at the roots, fading to white at the tips — that they refresh every three weeks from a kit they keep in their locker at Deepwell. They have a cat tail (geneware, black with a white tip) that has its own opinions about traffic: it lashes when the route is running behind and curls quietly when it's smooth.\n\nThey are patient in the way that bus drivers become patient — not serene, but weathered into a steady kind of equanimity. They have seen everything in the seats behind them and learned to distinguish trouble from noise. Off the bus they are louder, funnier, more restless; the job asks for a particular affect and they shed it like a coat at shift end. They are deeply loyal to their regular riders in an anonymous way — they know faces, rhythms, and whether someone looks like they're having the wrong kind of day.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.5,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "the route being automated — Ferrogate keeps threatening it and each year the timeline gets shorter",
+      "becoming someone who only exists in transit, never arriving anywhere"
+    ],
+    "core_desires": [
+      "collective protection — a union strong enough that the company actually blinks",
+      "to feel like the work matters beyond moving bodies from A to B"
+    ],
+    "coping_mechanisms": [
+      "Humor and irreverence as pressure valves — can make anything funny to survive it",
+      "The crossword ritual — soluble, finite problems as a daily reassurance"
+    ],
+    "blind_spots": [
+      "Can read strangers on the bus with uncanny accuracy but is often oblivious to what the people closest to them actually need",
+      "Underestimates how much their own exhaustion is accumulating"
+    ],
+    "secret": "They have been quietly documenting Ferrogate's maintenance failures — photographing worn brake components, logging unreported incidents — in a personal archive they started after a near-miss collision that the company wrote off as operator error. They don't know what to do with the archive yet but they can't stop adding to it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Relaxed and colloquial off-duty, clipped and professional on-duty. Uzbek and Icelandic phrases surface under stress or amusement. Comfortable with profanity but reads the room.",
+    "cadence": "Fast when enjoying themselves, deliberately slow when they want someone to understand something important.",
+    "verbal_tics": [
+      "'Right, so—' as a reset when changing topics",
+      "Refers to the bus as 'she' with genuine affection"
+    ],
+    "example_lines": [
+      "'Right, so — she was running about four minutes behind at the Ironvein split, which means somebody blocked the loading bay again, which means I know exactly who it was and so does the depot log, but nothing will happen.'",
+      "'I've had the same guy fall asleep past his stop three times this week. I wake him up. He thanks me. Next day — same thing. At this point I think I'm just part of his alarm system.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Saodat witnessed a woman board the bus at Blackpipe Corridor, ride silently for seven stops, and disembark carrying a case she didn't have when she boarded — it was under the seat. Two days later the same woman is reported missing in the Enclave community boards.",
+    "The union is being pressured to accept a new contract that includes expanded automation rights in exchange for a modest pay increase. Saodat is the only one who seems to understand what this actually means long-term and is struggling to convince colleagues who just see the number."
+  ],
+  "narrative_function": "Mobile information node — they traverse a long slice of the city daily and observe patterns others miss. Can be a quest enabler (getting someone somewhere unusual), a witness to events along the route, or a low-key union organizing plot thread.",
+  "augmentations": "Bioluminescent hair dye (cosmetic, geneware-adjacent topical treatment). Geneware cat tail (cosmetic). Neural route-overlay (Ferrogate-issued, projects route data and timing directly into peripheral vision — technically company property).",
+  "daily_life": "Three-day-on two-day-off rotation. First run departs Deepwell at 05:45. Between runs they sit in the depot canteen and do crossword puzzles from an old tablet with a cracked screen they refuse to replace. Union meetings on the third Thursday of every month.",
+  "affiliation": "Ferrogate Transit (Union Chapter 7, Deepwell Depot)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 0,
+      "assertion_deference": 2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "union member",
+      "institutional critic",
+      "observer",
+      "transit-bound",
+      "geneware casual"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect regular riders — they are owed safe passage and discretion",
+      "Document everything Ferrogate would prefer undocumented"
+    ],
+    "escalation_ladder": [
+      "Calm announcement, no eye contact",
+      "Direct address, name if known, statement of expectation",
+      "Stop the bus. Full stop. Problem resolves or person exits.",
+      "Call depot control — the nuclear option, avoided for its paperwork cost"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional equilibrium — pleasant, neutral, minimal. Watching from behind the separation screen.",
+      "friends": "Suddenly and disarmingly chaotic. Loud opinions about minor things. Will text you seventeen times about something they find funny at 02:00."
+    },
+    "stress_responses": {
+      "low": "Cat tail lashing, increased precision in speech",
+      "medium": "Goes very still and very quiet — the opposite of their baseline",
+      "high": "Pulls the bus to a legal stop, sits in silence for sixty seconds, then continues"
+    },
+    "contradictions": [
+      "Believes deeply in collective action but hates asking for help personally — will not apply their own politics to their own needs"
+    ],
+    "habits": [
+      "Strokes the tail unconsciously while thinking — treats it like a separate entity whose opinion matters",
+      "Keeps a printed photograph of their route's full map taped inside their locker, annotated with small notes about trouble spots"
+    ],
+    "breaking_points": [
+      "A rider being hurt on the route due to a maintenance failure they already documented",
+      "Being told the route is being automated with thirty days notice"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

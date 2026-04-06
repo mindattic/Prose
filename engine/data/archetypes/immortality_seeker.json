@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a57775c8ad3328658cab2c4e",
+  "name": "Immortality Seeker",
+  "type": "archetype",
+  "category": "spiritual",
+  "description": "Refuses to accept death as inevitable",
+  "behavioral_signature": "Pursues any path to extended life",
+  "under_stress": "Becomes more desperate, less ethical",
+  "at_rest": "Researching, experimenting, bargaining",
+  "will_always": [
+    "seek more time"
+  ],
+  "will_never": [
+    "accept death"
+  ],
+  "unless": [
+    "the cost of immortality is someone else's life"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Consciousness Explorer",
+      "threshold": 0.6,
+      "context": "pushing boundaries"
+    },
+    {
+      "archetype": "Mad Genius",
+      "threshold": 0.55,
+      "context": "obsessive pursuit"
+    }
+  ],
+  "opposite_of": [
+    "Death Accepter"
+  ],
+  "tags": [
+    "desperate",
+    "driven"
+  ]
+}

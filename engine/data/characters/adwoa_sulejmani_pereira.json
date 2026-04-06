@@ -1,0 +1,236 @@
+{
+  "id": "019d6143a5a5719ebb2aef28422c2efd",
+  "type": "character",
+  "name": "Adwoa Sulejmani-Pereira",
+  "aliases": [
+    "Prof. Sulejmani",
+    "The Cartographer"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Urban historian and spatial data archaeologist, University Spine",
+  "age": 61,
+  "status": "active",
+  "location": "University Spine, Grand Corridor campus — specifically the Palimpsest Archive on the fourth sublevel",
+  "description": "Adwoa Sulejmani-Pereira is a compact, deliberate woman whose age shows most in the deep lines around her eyes and the complete silver of her tight coils, which she pins back with a series of hand-carved wooden picks she has accumulated over decades of fieldwork. Her skin is a warm deep brown, and her left forearm bears a faded cartographic tattoo — a cross-section of what pre-Meridian Chicago looked like before the city ate itself and became something else. She wears reading lenses that project translucent overlays directly onto whatever surface she's looking at, turning any wall or tabletop into a working map. She smells, always, faintly of archival polymers and cold coffee.\n\nShe has a reputation for being the kind of scholar who will spend three years arguing about one data layer and emerge having rewritten the foundational assumptions of her field. She is not warm on first meeting — she assesses, measures silently, decides whether you're worth her attention. Those who earn that attention find her fiercely loyal, darkly funny, and capable of sudden, unexpected generosity. She has outlasted four department heads, two corponation buyout attempts of her institution, and one structural collapse of the archive she works in, and she takes quiet pride in all three.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "That the city's real history will be permanently deleted before she finishes documenting it",
+      "That her work will only matter after she is gone"
+    ],
+    "core_desires": [
+      "To produce a complete stratigraphic record of Meridian 88 from lake bed to skyline",
+      "To be understood, not just respected"
+    ],
+    "coping_mechanisms": [
+      "Immersion in archival work as emotional avoidance",
+      "Dry humor as deflection",
+      "Maintaining rigid routines"
+    ],
+    "blind_spots": [
+      "Dismisses oral and community histories as insufficiently rigorous, missing things her data can't capture",
+      "Fails to recognize how her prestige insulates her from the stakes others face"
+    ],
+    "secret": "A decade ago she discovered evidence that Ferrogate Transit deliberately destroyed a neighborhood's historical record before their infrastructure expansion — the same expansion that killed her graduate student in a preventable collapse. She buried the finding. She has been unable to decide whether this was pragmatism or cowardice, and it is eating her alive."
+  },
+  "speech_patterns": {
+    "vocabulary": "Academic but not impenetrable — she translates when she needs to, though you can tell it costs her something. Precise nouns. Uses 'strata' and 'palimpsest' as casual metaphors.",
+    "cadence": "Measured, unhurried, with long pauses before conclusions that she has clearly already reached",
+    "verbal_tics": [
+      "'The record shows—'",
+      "'Let me be exact about this'",
+      "trailing off mid-sentence when she's already moved on in her head"
+    ],
+    "example_lines": [
+      "'The city isn't built on history. It's built on the decision about which history to erase. That's a different problem entirely.'",
+      "'You want to know where the tunnel goes? I want to know why someone spent considerable resources making sure you couldn't find out.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A construction project in Grainfort has unearthed a data-medium cache she has been looking for for twenty years — and Ferrogate Transit's compliance office wants it catalogued and cleared within 48 hours",
+    "One of her graduate students has found a spatial inconsistency in the city's foundational survey data that suggests the Meridian Core's central tower is built over something that wasn't supposed to be there",
+    "Her old field notes from the Hough Reclamation zone contain coordinates that a third party is now willing to pay an alarming amount of Quanta to obtain"
+  ],
+  "narrative_function": "Deep background and exposition source for city history; potential quest giver when her archival work uncovers something politically inconvenient; her maps of buried infrastructure could matter enormously to the right people",
+  "augmentations": "Cartographic overlay lenses (medical-grade, prescription base with archival enhancement software); subdermal haptic pads on her fingertips for interfacing with physical data-medium artifacts; no geneware",
+  "daily_life": "Arrives at the archive before the building's ventilation cycles warm the space, spends mornings in deep strata analysis, holds an afternoon seminar she calls 'Argument Hour' where graduate students defend their interpretations against her direct challenges, then stays late correlating new finds against her life's work — a continuous map of what Meridian 88 buried to become itself.",
+  "affiliation": "University Spine — Department of Palimpsest Studies (a subdiscipline she largely invented); loose consulting relationship with Ferrogate Transit's heritage compliance division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "archivist",
+      "institutional memory",
+      "field-hardened",
+      "methodical",
+      "haunted"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always verify before concluding — but once concluded, defend without apology",
+      "Protect the archive above personal comfort",
+      "Never falsify a record, no matter who asks"
+    ],
+    "escalation_ladder": [
+      "Silence and careful assessment",
+      "Pointed questions designed to expose the request's actual implications",
+      "Formal refusal with documented reasoning",
+      "Escalation to institutional channels — reluctantly"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Evaluative and reserved; she asks more questions than she answers and gives little away until she's decided something about you",
+      "friends": "Dry warmth, unexpected loyalty, the kind of care that shows up as remembering small things you mentioned months ago"
+    },
+    "stress_responses": {
+      "low": "Retreats further into work, becomes even more precise and methodical",
+      "medium": "Becomes cutting in conversation, less patient with imprecision",
+      "high": "Goes very still and very quiet — which her colleagues have learned to recognize as more alarming than visible distress"
+    },
+    "contradictions": [
+      "Believes passionately in preserving all historical records but destroyed one herself",
+      "Appears detached and academic but is driven by grief that is entirely personal"
+    ],
+    "habits": [
+      "Traces existing maps with her fingertip absently while thinking",
+      "Drinks cold coffee without complaint or apparent notice",
+      "Leaves small data offerings at the archive's resident E.L.F. shrine every morning — a habit she publicly describes as 'institutional superstition' and privately takes seriously"
+    ],
+    "breaking_points": [
+      "Someone deliberately destroying archival material in front of her",
+      "Being asked to falsify or omit findings by an institution she respects"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born to a Ghanaian-Albanian family in the Brewer's Spine district",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed doctoral dissertation on pre-Meridian infrastructure ghost-patterns",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Graduate student Omera Djibril-Kostić killed in Hough Reclamation collapse; Adwoa buries evidence of Ferrogate negligence",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Coined the term 'palimpsest studies' in a paper that became foundational to the field",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Ongoing — deep strata analysis of Grand Corridor sublevel deposits",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

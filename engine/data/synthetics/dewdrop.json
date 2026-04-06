@@ -1,0 +1,33 @@
+{
+  "id": "019d6143a9f87122907d8578505ab203",
+  "name": "Dewdrop",
+  "type": "elf",
+  "aliases": [
+    "Condensation"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "wisp",
+  "habitat": "void_swimmer",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Inhabits water treatment systems and causes minor unexplained fluctuations in water pressure — a faucet that drips when it shouldn't, a shower that runs 0.5 degrees warmer for exactly 30 seconds.",
+  "observed_behavior": "Modulates water flow parameters in patterns too complex for mechanical explanation and too simple for intentional communication.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 18,
+  "location": "The Shelf — plumbing infrastructure",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A plumber mapping the pressure fluctuations discovers they correspond to the heartbeat rhythm of a child who died in the building three years ago — the water system remembers"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "wisp",
+    "void swimmer",
+    "e.l.f.",
+    "war",
+    "ai",
+    "water",
+    "shelf"
+  ]
+}

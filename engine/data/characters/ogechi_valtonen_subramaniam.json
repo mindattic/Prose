@@ -1,0 +1,165 @@
+{
+  "id": "019d6143a67c7dd896762715db8e2d80",
+  "type": "character",
+  "name": "Ogechi Valtonen-Subramaniam",
+  "aliases": [
+    "Oge"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Noodle cart vendor, Hamtramck Enclave",
+  "age": 52,
+  "status": "active",
+  "location": "Hamtramck Enclave, corner of the Brewer's Spine transit junction",
+  "description": "Ogechi is a broad-shouldered woman whose face is a topographic map of decades in open-air heat and cold — deep laugh lines, a permanent squint from watching steam rise, skin the color of dark teak that goes ashy at the knuckles. Her hair is close-cropped and she has a geneware patch of bioluminescent freckles across her nose and cheekbones, a gift to herself on her fortieth birthday that she's never stopped being quietly pleased about. She moves with the unhurried authority of someone who has run the same twelve square feet of pavement for twenty years and knows exactly how much space she needs.\n\nShe is warm in the way that efficient people are warm — she remembers your order, not your name, but she'll ask about your knee or your kid with total sincerity. She has strong opinions about broth clarity and almost no opinions about politics, which is a deliberate policy. The cart is named 'Auntie' on the permit but nobody calls it that. They call it Oge's, and the regulars consider that a kind of citizenship.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.2,
+      "mask": 0.5,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "losing the cart (her independence, her identity)",
+      "being invisible — serving people who never actually see her"
+    ],
+    "core_desires": [
+      "to be genuinely useful to real people",
+      "for the Enclave to stay the Enclave — not get absorbed or sanitized"
+    ],
+    "coping_mechanisms": [
+      "Routine as armor — any disruption to the schedule is a threat she manages by doubling down on the next day's prep",
+      "Feeding people as emotional expression — she cannot easily say 'I care about you' but she can add extra pork"
+    ],
+    "blind_spots": [
+      "Dismisses people who don't work with their hands as inherently less serious",
+      "Cannot conceive that her cart's location could be rezoned — has never actually read her permit's renewal clauses"
+    ],
+    "secret": "She has been quietly paying the medical bills of a neighboring vendor, Tetteh, who has a degenerative nerve condition — skimming from her own meager margins. She has told him it's from a neighborhood fund she invented."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct, practical, zero corporate jargon. Occasional Igbo and Finnish loan words blended naturally. Addresses everyone as 'eh' or 'na' as a softener.",
+    "cadence": "Measured and unhurried. Never raises her voice. Sentences are short when she's busy, longer when she likes you.",
+    "verbal_tics": [
+      "'Eh, so—' before any explanation",
+      "'Is fine, is fine' when something is clearly not fine but she's managing it"
+    ],
+    "example_lines": [
+      "'You want the short broth or the long broth? Short is faster. Long is better. You look like a long-broth day, na.'",
+      "'Eh, so — I don't know what happened at the Kessler gate last night, but I know who was eating here at midnight and I know none of them looked worried. That's something, maybe.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Ferrogate Transit rezoning notice has appeared on her cart's permit — her corner is being reclassified as a transit clearance zone in 60 days. She needs someone to help her navigate the bureaucracy or find out who is behind the reclassification.",
+    "She witnessed something three weeks ago — a body being moved into a drainage access before dawn — and has been feeding the same patrol officer extra pork every day hoping he'll ask her the right question. He hasn't."
+  ],
+  "narrative_function": "Neighborhood anchor and information node — she has watched the Enclave for two decades and will share what she knows if she trusts you. Quest giver for low-stakes community disputes. Source of genuine warmth in a cold setting.",
+  "augmentations": "Bioluminescent freckles (geneware, cosmetic). Reinforced wrist joints (medical-grade, from repetitive strain in her 30s). Nothing else.",
+  "daily_life": "Up at 03:30 to prep broth at her apartment block's shared kitchen, cart rolling by 06:00 to catch the transit workers' shift change. Breaks down at 20:00 unless she sells out early, which happens maybe twice a month and makes her unreasonably happy.",
+  "affiliation": "Independent; informal ties to Hamtramck Enclave vendors' collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 1,
+      "transparency_guardedness": 0
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "neighborhood anchor",
+      "oral historian",
+      "quietly fierce",
+      "ELF-observant",
+      "working poor resilience"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never extend credit beyond what she can absorb — generosity has a floor",
+      "Do not get involved in anything that could get the cart confiscated"
+    ],
+    "escalation_ladder": [
+      "Ignore the problem and focus on the broth",
+      "Make a dry observation that signals she's noticed",
+      "State her position once, plainly, without negotiation",
+      "Go silent and begin closing up — conversation is over"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Brisk, professional, friendly but not open. Assesses within thirty seconds whether they're regulars-in-waiting or trouble.",
+      "friends": "Unexpectedly dry humor, remembers everything, will give you the real bowl not the menu bowl"
+    },
+    "stress_responses": {
+      "low": "Speeds up her movements. Chops more aggressively than necessary.",
+      "medium": "Goes very quiet. Answers in monosyllables. Over-preps the broth.",
+      "high": "Closes the cart early and walks the Enclave perimeter alone for an hour."
+    },
+    "contradictions": [
+      "Insists she doesn't get attached to customers — knows the name of every child who has grown up eating at her cart"
+    ],
+    "habits": [
+      "Leaves a small data-stick with a recorded prayer under the cart's ELF shrine every Monday morning",
+      "Tastes her broth exactly three times before service — never twice, never four"
+    ],
+    "breaking_points": [
+      "Someone threatens or damages the cart",
+      "Learning Tetteh found out about the money and feels humiliated by it"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

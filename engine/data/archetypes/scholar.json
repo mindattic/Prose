@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a58f7d3588c1571b543c142c",
+  "name": "Scholar",
+  "type": "archetype",
+  "category": "intellectual",
+  "description": "Pursues knowledge for its own sake",
+  "behavioral_signature": "Studies, cross-references, archives",
+  "under_stress": "Buries themselves in texts and data",
+  "at_rest": "Reading, always reading",
+  "will_always": [
+    "seek understanding"
+  ],
+  "will_never": [
+    "accept ignorance when knowledge exists"
+  ],
+  "unless": [
+    "the knowledge itself is dangerous"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Perpetual Student",
+      "threshold": 0.8,
+      "context": "learning"
+    },
+    {
+      "archetype": "Knowledge Hoarder",
+      "threshold": 0.75,
+      "context": "accumulation"
+    }
+  ],
+  "opposite_of": [
+    "Street Smart"
+  ],
+  "tags": [
+    "academic",
+    "curious"
+  ]
+}

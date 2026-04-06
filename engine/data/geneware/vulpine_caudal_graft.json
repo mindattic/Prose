@@ -1,0 +1,51 @@
+{
+  "id": "019d6143a8b571d388e8e679177f5af6",
+  "name": "Vulpine Caudal Graft",
+  "brand_name": "Vulpine",
+  "product_name": "Vulpine Caudal Graft",
+  "type": "geneware",
+  "aliases": [
+    "Fox Tail",
+    "Brushfire",
+    "Kitsune Mod"
+  ],
+  "category": "cosmetic",
+  "target_system": "skeletal/integumentary (caudal vertebrae with dense fur follicles)",
+  "description": "A specialized variant of the prehensile tail graft that produces a large, bushy fox-style tail covered in dense, soft fur. Unlike the standard prehensile tail, the fox tail prioritizes aesthetics over grip strength — it's fluffy, expressive, and dramatic rather than functional. The tail is fully articulated with limited prehensile ability (can curl around objects but not grip firmly). It's covered in dense vulpine fur that comes in natural fox colors (red, silver, arctic white, cross-pattern) or can be combined with chromatophore mods for color-shifting fur. The fox tail is the second most popular tail variant after the standard skin tail, and in some Shelf districts it's the most popular. Tail grooming is a social activity — friends brush each other's tails. Tail salons do seasonal fur treatments. The fur is real, warm, and requires genuine maintenance.",
+  "source_organism": "Vulpes vulpes (red fox), Vulpes lagopus (arctic fox, white variant)",
+  "manufacturer": "Helix Biosystems, Crucible Genomics",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted",
+  "procedure": "Spinal extension surgery with vulpine follicle integration, 1 procedure + 2 follow-ups",
+  "expression_time": "4–6 months for tail growth, additional 2 months for full fur density",
+  "reversibility": "Surgically removable; reversal is more complex than skin-tail removal due to follicle integration",
+  "side_effects": [
+    "Tail fur sheds constantly — clothing, furniture, everything",
+    "Fur matting in humid weather",
+    "Tail droops visibly when user is sad or exhausted, broadcasting emotional state",
+    "Seasonal thickness changes require wardrobe adjustment"
+  ],
+  "social_perception": "Adored. Fox tails are considered glamorous and expressive. Tail-grooming cafes are a social institution. Some corporate environments embrace fox tails as power accessories; others ban them as distracting.",
+  "story_hooks": [
+    "A fox-tail user discovers their fur is growing in a pattern that matches a Lacuna Genomics proprietary watermark — their black-market clinic used stolen gene stock",
+    "A tail-grooming salon discovers trace chemicals in a client's fur that indicate exposure to a restricted bioweapon — the tail is acting as a passive environmental sampler"
+  ],
+  "tags": [
+    "cosmetic",
+    "geneware",
+    "weapon",
+    "war",
+    "ai",
+    "elf",
+    "corporate",
+    "power",
+    "surgery",
+    "clinic",
+    "market",
+    "clothing",
+    "fire",
+    "water",
+    "shelf",
+    "tier 2"
+  ]
+}

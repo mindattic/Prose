@@ -1,0 +1,38 @@
+{
+  "id": "019d6143aa5d7080b7bf8695bc9c7b18",
+  "name": "Arcturus Raptor Gunship",
+  "type": "transportation",
+  "aliases": [
+    "Raptor",
+    "Death Bird",
+    "Corporate Hammer"
+  ],
+  "category": "military_security",
+  "manufacturer": "Arcturus Defense",
+  "description": "An attack VTOL gunship that serves as the heavy enforcement arm of corporate security forces. The Raptor is what happens when a corponation decides a problem requires deletion rather than management. Twin turbofan engines, articulated weapon pods, sensor suite that can track a running person from five kilometers away. When a Raptor lights up its searchlight, you stop. You kneel. You hope you're not the target.",
+  "propulsion": "Twin hydrogen turbofan, anti-grav hover capability",
+  "speed": "350 km/h cruise, 450 km/h maximum",
+  "capacity": "2 crew + 6 tactical operators",
+  "range": "800 km",
+  "tier_availability": "Military/corporate security only",
+  "cost": "Φ4,000,000 per unit (restricted sale)",
+  "autonomy": "Crew-operated, AI co-pilot, autonomous emergency return",
+  "armament": "Chin-mounted rotary cannon, wing hardpoints for missiles/rockets, EMP pod, crowd suppression array.",
+  "common_usage": "High-threat security operations, aerial superiority, corporate warfare, intimidation.",
+  "story_hooks": [
+    "A Raptor gunship fires on a target in a Tier 1 district — the collateral damage is enormous and the corponation claims it was a malfunction",
+    "A grounded Raptor is found in the industrial district with its IFF transponder removed — someone has a gunship and no one knows who"
+  ],
+  "tags": [
+    "militarysecurity",
+    "transportation",
+    "weapon",
+    "gun",
+    "war",
+    "death",
+    "ai",
+    "corporate",
+    "hover",
+    "fire"
+  ]
+}

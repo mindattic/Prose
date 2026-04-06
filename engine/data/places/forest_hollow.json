@@ -1,0 +1,99 @@
+{
+  "id": "019d6143a91979d0af70099c7d8e7e82",
+  "type": "place",
+  "name": "Forest Hollow",
+  "aliases": [
+    "Forest Glen",
+    "The Hollow",
+    "The Blind Spot",
+    "Ghost Grid"
+  ],
+  "description": "Forest Hollow is the district that Meridian forgot, and that's exactly how its residents like it. The old Forest Glen was always Chicago's least densely populated community area — winding streets, large lots, a suburban feel that made no sense inside city limits. When the Corporate Reconstruction mapped Meridian 88's zones, Forest Glen's low population density, minimal commercial value, and confusing street layout caused it to fall through the cracks of multiple corporate planning algorithms. It was assigned to no sovereign territory. It appeared on no development plan. It was, in the language of corporate logistics, a null zone — a place that existed in geographic space but not in administrative space. By the time anyone noticed the oversight, the residents had adapted to their invisible status and had no intention of being noticed.\n\nThe Hollow's winding streets — originally a product of the neighborhood following the contours of the North Branch river and the forest preserves — now serve as a natural labyrinth. Drone navigation struggles with the irregular grid. Surveillance coverage is patchy because the camera placement algorithms were designed for Meridian's standard block structure, not Forest Glen's organic curves. The tree canopy — maintained by residents who understand that overhead cover defeats satellite imaging — creates a green ceiling that makes the Hollow invisible from above. The forest preserve land, never developed and never formally acquired by any corporation, has grown wild, its paths known only to the Hollow's residents and the animals that have moved in as Meridian's development pushed wildlife to the margins.\n\nWhat Forest Hollow does with its invisibility is a matter of some speculation among the few outsiders who know it exists. The truth is less dramatic than the rumors suggest: the Hollow is a community of roughly 3,000 people who live off the grid in the most literal sense. Power comes from solar panels hidden under tree cover. Water comes from wells tapping the old aquifer. Communication uses mesh networks that don't route through Axiom's infrastructure. The residents grow food, maintain their homes, educate their children, and ignore Meridian with the comprehensive commitment of people who've decided that the city's problems are not their problems. It's not paradise — the medical resources are primitive, the winters are brutal without corporate climate control, and the isolation can eat at you. But it's free, in a way that nowhere else in Meridian can claim to be.\n\nThe Hollow's relationship with the outside world is managed through a single controlled point of contact: a resident designated as the Interface, who handles all necessary interactions with neighboring districts and ensures that nothing about Forest Hollow enters any database, manifest, or conversation that corporate systems might parse. The current Interface is a woman in her fifties who worked for Axiom's surveillance division before she disappeared — officially dead, actually living in a bungalow surrounded by oak trees, making sure that the community that took her in stays invisible. She is very good at her job.",
+  "atmosphere": {
+    "sights": [
+      "Winding streets under a full tree canopy — green overhead, dappled light, the visual signature of a place that hides",
+      "Solar panels concealed beneath leaf cover, visible only from the right angle",
+      "Wild forest preserve land — overgrown paths, animal tracks, the unmanaged beauty of nature left alone",
+      "Homes that blend into the landscape — maintained but not conspicuous, designed to not be seen from any distance",
+      "The absence of corporate signage, surveillance cameras, or any evidence that Meridian 88 exists here",
+      "Deer. Actual deer, standing in yards, unbothered by human presence."
+    ],
+    "sounds": [
+      "Forest sounds — rustling leaves, birdsong, animal movement in the underbrush. Sounds Meridian has forgotten.",
+      "Wind through the tree canopy — a continuous, layered sound that masks other noise naturally",
+      "The absence of electronic ambient noise — no drone hum, no maglev whine, no corporate audio. Profound silence by Meridian standards.",
+      "Children's voices from somewhere in the trees — the Hollow's kids play in the forest like children from another century",
+      "Well pumps and hand tools — the analog sounds of a community that maintains itself manually"
+    ],
+    "smells": [
+      "Forest floor — decomposing leaves, damp earth, mushrooms, the rich biological smell of land that hasn't been paved",
+      "Woodsmoke from heating fires in winter — the Hollow doesn't have corporate climate control",
+      "Growing things — vegetable gardens, fruit trees, herbs. The smell of food being produced, not manufactured.",
+      "Clean air — genuinely clean, not filtered or processed, just air that's been through a forest and nothing else"
+    ],
+    "feel": "Hidden. Forest Hollow feels like stepping through a door in a wall you didn't know had a door. The transition from Meridian's constant electronic presence to the Hollow's analog silence is physically disorienting — your neural interface gets quieter, your augments find fewer signals to process, and your senses recalibrate to an environment that hasn't been optimized for human comfort but hasn't been stripped of natural comfort either. It feels like trespassing in a place that chose to leave the world, which is exactly what it is.",
+    "tags": []
+  },
+  "demographics": "Approximately 3,000 residents, officially zero. No tier assignments — the Hollow doesn't exist in Axiom's population databases. A mix of original Forest Glen families, corporate defectors, off-grid idealists, and people who needed to stop existing on paper. All ages, but skewing toward adults who made a deliberate choice to disappear.",
+  "economy": "Subsistence — the Hollow grows its own food, generates its own power, and maintains its own infrastructure. Trade with the outside world is minimal and conducted through the Interface. The Hollow's only export is invisibility, offered selectively to people who need it.",
+  "power_structure": "Consensus governance among household heads. The Interface holds unique authority over external relations. No formal hierarchy — the community is small enough for direct negotiation. Disagreements are resolved face-to-face because there's nowhere to hide from your neighbors in a community of 3,000.",
+  "dangers": [
+    "Discovery — if Axiom's planning systems correct the null-zone oversight, the Hollow's independence ends",
+    "Medical emergencies — the Hollow's healthcare is pre-corporate level, and serious injuries or illnesses require breaking cover to access outside facilities",
+    "Internal conflict — in a community this small and isolated, personal disputes can become existential threats",
+    "Winter — without corporate climate control, the Great Lakes winter is a survival challenge that claims lives in bad years",
+    "The forest itself — the wild preserve contains animals, terrain, and weather that an urbanized population isn't always prepared for"
+  ],
+  "opportunities": [
+    "Total invisibility — Forest Hollow is the only place in Meridian that genuinely doesn't exist in any database",
+    "The Interface — a former Axiom surveillance specialist whose knowledge of corporate monitoring systems is invaluable",
+    "Off-grid infrastructure knowledge — the Hollow's residents know how to build and maintain systems without corporate supply chains",
+    "Forest preserve resources — medicinal plants, clean water, building materials, and wildlife that the rest of Meridian has lost access to",
+    "Perspective — time in the Hollow reminds you what human life looked like before the optimization"
+  ],
+  "story_hooks": [
+    "The Interface intercepts a corporate survey drone that's been programmed with Forest Hollow's coordinates — someone inside Axiom has noticed the null zone, and the Hollow has weeks, maybe days, before a planning team arrives to fill the gap on the map",
+    "A critically injured person is brought to the Hollow's border by someone who shouldn't know the community exists. The injury requires medical resources the Hollow doesn't have. Saving this person means exposing the community to outside contact. Not saving them means letting someone die.",
+    "Kyle discovers that Forest Hollow exists during a job that takes him through the northwest. The community's existence — proof that opting out of Meridian is possible — changes his understanding of what his life could be. The Interface offers him a choice he's not ready to make."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Jefferson Switch",
+      "Norwood Quiet",
+      "Nordpark Sanctuary",
+      "The forest preserves and ungoverned wilderness"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Nobody — that's the point. The Hollow is frequented by its own residents and, very occasionally, by people the Interface has approved for temporary shelter.",
+    "Wildlife — deer, foxes, coyotes, and birds that have been pushed out of every other part of Meridian",
+    "The Interface — moving between the Hollow and the outside world, the only person who regularly crosses the boundary"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.976,
+    "lng": -87.725,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "control",
+    "power",
+    "medical",
+    "injury",
+    "rain",
+    "survival",
+    "shelter",
+    "food",
+    "drone",
+    "water",
+    "lake"
+  ]
+}

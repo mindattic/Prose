@@ -1,0 +1,60 @@
+{
+  "id": "019d6143a7cb7b32b1865ca08e5f5bca",
+  "name": "Zheng-Dao Bioelectric Galvanic Dermis Overlay",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Bioelectric Galvanic Dermis Overlay",
+  "type": "cyberware",
+  "aliases": [
+    "Galvanic Skin",
+    "The Veil",
+    "Shockwrap"
+  ],
+  "category": "armor",
+  "body_location": "",
+  "description": "The Galvanic Dermis Overlay is a form-fitting bioelectric suit designed to interface directly with the wearer's skin conductivity, using the body's own galvanic response as a power source for its defensive systems. The suit consists of a thin conductive mesh embedded in a breathable polymer substrate that adheres to the skin like a second epidermis. Under normal conditions it monitors the wearer's galvanic skin response — a byproduct of sweat gland activity — and harvests the resulting micro-current to maintain a low-level electric field across the suit's surface. This field is imperceptible under clothing and does not register on standard electromagnetic scans calibrated for powered armor.\n\nWhen the suit detects contact from a conductive threat — a blade, a stun device, or an uninsulated hand — it routes the harvested charge into a reactive discharge at the contact point. The discharge is calibrated to be debilitating rather than lethal for unaugmented humans, though Zheng-Dao's documentation includes extensive disclaimers regarding interactions with cardiac implants and neural interfaces. A secondary function uses the electric field to harden the polymer substrate in a localized area, providing momentary stiffening against puncture in the fractions of a second before a blade fully penetrates.\n\nZheng-Dao developed the Overlay as an extension of their bioelectric implant research, and it shows — the suit requires a short calibration period during which it maps the wearer's baseline galvanic patterns to avoid false activations triggered by stress responses or physical exertion. Users who skip calibration report occasional discharges during high-adrenaline moments that were not contact-initiated. This quirk has generated a small but devoted community of users who deliberately miscalibrate the suit, treating the stress-triggered discharge as a deterrent against grappling in its own right.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"weight\":\"0.6 kg (full body coverage)\",\"coverage\":\"Full body surface (modular partial configurations available)\",\"discharge_output\":\"35–80 mA at point of contact (calibrated to wearer's harvest rate)\",\"substrate_hardening_response_time\":\"0.18 milliseconds\",\"calibration_period\":\"20–40 minutes (full body)\",\"power_source\":\"Wearer galvanic skin response (no external power required)\",\"EM_signature\":\"Below standard powered-armor detection threshold\",\"recharge_cycle\":\"Passive, continuous during wear\"}",
+  "side_effects": [],
+  "cultural_context": "The Galvanic Dermis Overlay carries a clinical, almost intimate quality that sets it apart from conventional armor — it is worn against the skin, powered by the body, and responds to touch. In Meridian 88's bioelectric subculture, wearing the Overlay is understood as a statement about the body as infrastructure. Zheng-Dao markets it primarily to corporate security and authorized medical personnel in high-risk environments, but it has found a second life among body modification communities who appreciate its integration with biological systems. The restricted classification means visible ownership implies either institutional backing or meaningful underworld connections.",
+  "known_users": [
+    "Zheng-Dao corporate security operatives in close-protection roles",
+    "Infiltration specialists requiring electromagnetically silent protection",
+    "Underground close-combat fighters using miscalibrated configurations",
+    "High-risk medical extraction personnel operating in hostile zones",
+    "Bioelectric modification enthusiasts treating the suit as an extension of implant culture"
+  ],
+  "story_hooks": [
+    "A Zheng-Dao researcher has gone missing — her calibration data, which contains a detailed bioelectric map of her nervous system, was transmitted to an unknown endpoint twelve hours before she disappeared.",
+    "A string of deaths in the financial district has been attributed to cardiac events, but a coroner has quietly noted that all victims had neural implants and all show micro-burn patterns consistent with galvanic discharge — someone is running deliberately miscalibrated Overlays as assassination tools.",
+    "A black-market vendor is selling uncalibrated Overlays stripped from Zheng-Dao's own security personnel; the source of the suits suggests an inside operation, and Zheng-Dao wants it closed quietly.",
+    "A close-combat champion in an underground circuit has become unbeatable since a Zheng-Dao affiliation appeared in his financial records — the other fighters want someone to prove he's wearing the Overlay against circuit rules."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "armor",
+    "cyberware",
+    "combat",
+    "blade",
+    "war",
+    "death",
+    "augment",
+    "neural",
+    "ai",
+    "corporate",
+    "power",
+    "ubc",
+    "medical",
+    "clinic",
+    "underworld",
+    "market",
+    "clothing",
+    "circuit",
+    "tier 3"
+  ]
+}

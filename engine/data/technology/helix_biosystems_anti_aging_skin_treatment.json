@@ -1,0 +1,45 @@
+{
+  "id": "019d6143aa3d720d97cd5be356af717d",
+  "name": "Helix Biosystems Anti-Aging Skin Treatment",
+  "brand_name": "Helix",
+  "product_name": "Helix Biosystems Anti-Aging Skin Treatment",
+  "type": "technology",
+  "aliases": [
+    "AAST",
+    "Youth Cream",
+    "Helix Glow",
+    "Age Eraser"
+  ],
+  "subcategory": "medical",
+  "description": "A topical treatment containing engineered stem cells and growth factors that reverses visible skin aging — wrinkles, age spots, loss of elasticity, and sun damage — over a 30-day treatment cycle. The treatment stimulates the skin's natural regenerative processes at an accelerated rate, replacing damaged cells with fresh ones and rebuilding the collagen matrix to restore youthful appearance. Unlike cosmetic surgery, the AAST produces results that are biologically genuine — the treated skin is not stretched or filled, it is actually younger at the cellular level. The treatment must be repeated every 2-3 years to maintain results.",
+  "tier_availability": "Tier 2+",
+  "developers": [
+    "HELIX BIOSYSTEMS",
+    "LAZARUS PHARMACEUTICALS"
+  ],
+  "base_technologies": [
+    "Topical stem cell therapy delivery",
+    "Growth factor skin regeneration",
+    "Collagen matrix reconstruction stimulation"
+  ],
+  "enables": [
+    "Non-surgical skin age reversal",
+    "Cellular-level skin rejuvenation",
+    "Visible aging marker elimination",
+    "Repeated treatment maintenance protocol"
+  ],
+  "social_impact": "AAST has made visible aging optional for anyone above Tier 2, creating a society where age is no longer readable from appearance. A 70-year-old with AAST-treated skin looks 30, and the disconnect between appearance and experience creates social dynamics where wisdom and authority must be communicated through means other than physical gravitas. The treatment has also created a new aesthetic divide — those with treated skin have an uncanny smoothness that sharp observers can identify as artificial, a 'too-young' quality that paradoxically signals aging rather than youth.",
+  "story_hooks": [
+    "An AAST treatment has interacted with an unknown compound in a patient's bloodstream, causing their skin to regenerate continuously and uncontrollably — the patient's face is changing day by day as new skin layers form faster than the old ones shed.",
+    "Counterfeit AAST products are causing severe allergic reactions — the stem cells in the fake treatments are not properly matched to the patients, and the resulting immune response is causing disfiguring inflammation."
+  ],
+  "tags": [
+    "medical",
+    "technology",
+    "loss",
+    "ai",
+    "control",
+    "surgery",
+    "tier 2"
+  ]
+}

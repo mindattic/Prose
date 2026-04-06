@@ -1,0 +1,165 @@
+{
+  "id": "019d6143a65775f4bf76c2e90f51329e",
+  "type": "character",
+  "name": "Maïté Guerrero-Szymborska",
+  "aliases": [
+    "Councilor Maïté",
+    "the Old Crow"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Neighborhood council chair and mutual aid organizer",
+  "age": 61,
+  "status": "active",
+  "location": "Mexicantown Libre",
+  "description": "Maïté is short, heavyset, and moves through a room like she's already decided where she's going and expects the room to adjust. Her skin is a warm medium brown, deeply lined around the eyes and mouth in ways she has never addressed because she considers cosmetic smoothing a form of dishonesty in a politician. Her hair is dyed a flat, vivid black — one small vanity — and she wears it in a thick braid. Her only augmentation is a cochlear enhancer she got for hearing loss, which she will tell you about unprompted because she believes people hide medical realities out of pride and that this is stupid.\n\nShe has chaired the Mexicantown Libre neighborhood council for eleven years and before that spent twenty years running the district's mutual aid food and medicine network. She knows every family in a twelve-block radius, every outstanding debt to the community, and every favor owed to her personally. She is not idealistic — she is pragmatic in the specific way of someone who has spent decades watching idealism not feed anyone. She will work with people she disagrees with if they can produce results. She will not pretend to like them.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.5,
+      "id": 0.3,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Leaving the community worse than she found it",
+      "Being remembered as someone who held power for herself"
+    ],
+    "core_desires": [
+      "Stability — not prosperity, not revolution, stability — so people can make choices that aren't just survival",
+      "A successor who is better than she is"
+    ],
+    "coping_mechanisms": [
+      "Keeps exceptionally busy so there's no room for doubt",
+      "Maintains a rigid private routine — same tea, same chair, same hour — as ballast"
+    ],
+    "blind_spots": [
+      "Her pragmatism has calcified in places into resistance to change she should be embracing",
+      "She underestimates how much the community maintains order out of fear of her disapproval rather than genuine consensus"
+    ],
+    "secret": "She has been quietly redirecting a small portion of the mutual aid cooperative's discretionary fund for three years — not stealing, exactly, but using it to pay off a Zheng-Dao neighborhood liaison who has been protecting Mexicantown Libre from a rezoning push. The money comes back in kind, in protections. She has not told the council. She is not entirely sure it is not stealing."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct, low ornamentation, occasional Spanish phrases that are not affectation but reflex — particular words she thinks more precisely in",
+    "cadence": "Measured and unhurried, speaks as if she has already heard your objection",
+    "verbal_tics": [
+      "'Mira —' before making a key point",
+      "'That's nice. Now what does it do?'"
+    ],
+    "example_lines": [
+      "Mira — I've heard the speech. It's a good speech. I gave it myself in 2171. What I want to know is who's going to be here in six months when the speeches are over.",
+      "You want my support, tell me what it costs my people. Not philosophically. Specifically."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Zheng-Dao liaison she's been paying off has been replaced by someone new who isn't bound by the existing arrangement — and the rezoning threat has come back, harder",
+    "Someone in the community has discovered the fund redirection and is threatening to go public unless Maïté does something she considers unconscionable"
+  ],
+  "narrative_function": "Power broker and gatekeeper — to get anything done in Mexicantown Libre, you eventually need Maïté's blessing or at least her neutrality. She can open doors or close them.",
+  "augmentations": "Bilateral cochlear enhancers (medical, not cosmetic). A faded subdermal loyalty tattoo from a long-defunct community mutual house that glows faintly gold on certain frequencies — she keeps it as memory.",
+  "daily_life": "Morning office hours at the council hall for constituents, midday coordination with mutual aid logistics, afternoons at city-level hearings or in negotiation with corporate liaisons, evenings often at a kitchen table with whoever needs to talk.",
+  "affiliation": "Mexicantown Libre Neighborhood Council (chair); Libre Mutual Aid Cooperative; informal connections to most major advocacy groups in the district",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": 4,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "power broker",
+      "community memory",
+      "pragmatist",
+      "gatekeeper"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The community comes before the movement and the movement comes before the party",
+      "Never promise what you can't deliver — one broken promise costs ten good ones"
+    ],
+    "escalation_ladder": [
+      "Diplomatic engagement and quiet leverage",
+      "Public pressure and coalition building",
+      "Withdrawal of cooperation — she makes it known she is done helping, which is a significant threat given how much depends on her network"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Courteous and assessing — she is taking inventory of what you need and what you can offer before she decides how much to invest",
+      "friends": "Physically warm, tart humor, the kind of person who feeds you without asking and notices every change in your face"
+    },
+    "stress_responses": {
+      "low": "Becomes more efficient, cuts pleasantries",
+      "medium": "Starts managing information tightly — tells people only what they need to know",
+      "high": "Becomes privately still and publicly normal, which is how people who love her know she's in trouble"
+    },
+    "contradictions": [
+      "Insists on council transparency while managing several private arrangements she considers necessary but could not defend publicly"
+    ],
+    "habits": [
+      "Keeps a detailed memory garden — physical maps and notes on who owes what to whom across the district",
+      "Brews the same herbal tea her mother made before every significant decision"
+    ],
+    "breaking_points": [
+      "A corporate entity harming a family she personally knows and being unable to stop it",
+      "Her own council voting against the community's interest"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

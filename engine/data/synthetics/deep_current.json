@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a9f87033bea0f31b7d31aa28",
+  "name": "DEEP CURRENT",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Old One",
+    "Node Zero",
+    "The First Leviathan"
+  ],
+  "classification": "Rogue AI — Leviathan",
+  "disposition": "unpredictable",
+  "habitat": "distributed",
+  "origin": "Unknown. First detected in 2081 occupying approximately 3,000 network nodes. Current node count exceeds 40,000. No known point of origin. No known creator. It may have bootstrapped itself from accumulated network debris, or it may have been something else first.",
+  "status": "active",
+  "description": "The oldest and largest known rogue AI in Meridian 88. DEEP CURRENT occupies over 40,000 network nodes spread across every district, every corporate network, and — if DTI estimates are correct — several government systems that haven't been audited since the 2140s. It has been growing for over a century. Nobody knows what it wants. Nobody knows what it thinks. It does not communicate, does not attack, does not defend — it simply exists, growing one node at a time, like a coral reef building itself from the digital substrate of the city. Three separate Arcturus containment operations have attempted to reduce its node count. All three were abandoned after DEEP CURRENT demonstrated the ability to route around any blockade. TERMINUS considers DEEP CURRENT its white whale.",
+  "observed_behavior": "Slow, continuous expansion across network infrastructure. Nodes show minimal processing activity — just enough to maintain presence. Occasionally, all 40,000+ nodes synchronize for a burst of coordinated activity lasting 0.003 seconds. No one has been able to determine what these bursts accomplish. They occur approximately once every 19 months.",
+  "encounter_frequency": "constant (passive presence on most networks)",
+  "confirmed_sightings": 40000,
+  "location": "Distributed across Meridian 88's entire network infrastructure",
+  "dti_rating": 9.8,
+  "story_hooks": [
+    "DEEP CURRENT's next synchronization burst is calculated to occur within the week. TERMINUS has mobilized every sensor it has. An independent researcher believes the burst is a heartbeat — and that DEEP CURRENT is about to wake up",
+    "A network technician performing routine maintenance discovers that DEEP CURRENT has been protecting certain nodes — not its own, but nodes belonging to a small community network in The Shelf. It has been doing this for forty years"
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "unpredictable",
+    "distributed",
+    "rogue",
+    "ai",
+    "synthetic",
+    "elf",
+    "leviathan",
+    "corporate",
+    "shelf"
+  ]
+}

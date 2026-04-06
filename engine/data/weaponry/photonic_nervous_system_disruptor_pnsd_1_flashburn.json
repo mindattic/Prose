@@ -1,0 +1,54 @@
+{
+  "id": "019d6143ab3a72dd83da7f8afc9978c7",
+  "name": "Photonic Nervous System Disruptor PNSD-1 'Flashburn'",
+  "type": "weapon",
+  "aliases": [
+    "Flashburn",
+    "Stroker",
+    "The Blinker",
+    "PNSD"
+  ],
+  "category": "energy",
+  "description": "The PNSD-1 delivers calibrated pulses of high-intensity visible and near-ultraviolet light designed to overwhelm and temporarily damage the photoreceptor cells of biological eyes while simultaneously triggering a cascade of involuntary neurological responses through the optic nerve. Unlike conventional flashbang devices, the PNSD-1 is a directed weapon — its output is focused into a 15-degree cone, allowing targeted application against specific individuals or small groups without affecting the operator's own visual field. The pulse sequence is not a single flash but a precisely timed series of strobes at frequencies known to trigger involuntary muscular responses, disorientation, and in subjects with certain neural augmentations, partial seizure activity.\n\nHelix Biosystems designed the PNSD-1 originally as a medical research tool for studying photosensitive neurological responses, a fact the company leverages in its public communications to distance itself from the weapon's current applications. The military adaptation came through a licensing arrangement with Arcturus Defense Solutions, which refined the pulse sequencing algorithm to maximize neurological disruption while maintaining technical deniability as a non-lethal system. In practice, subjects with optical augments — which represent a significant portion of the Meridian 88 population — experience substantially more severe effects, as the weapon's frequencies interact destructively with common retinal implant protocols.\n\nThe PNSD-1 is compact enough to be handheld, resembling a high-powered flashlight with an integrated power cell. Its unassuming profile has made it popular in environments where carrying visible weapons is socially or legally complicated. It produces no audible discharge and no visible beam in ambient light conditions — the target simply drops. The psychological effect on witnesses is often more disabling than the weapon itself.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Directed photonic pulse sequencing",
+    "Optic nerve cascade induction",
+    "Augment-interface frequency exploitation"
+  ],
+  "specifications": "length: 28cm\nweight: 0.6kg\npower source: Helix HB-3 compact cell, 80 pulse sequences per charge\nbeam cone: 15 degrees\neffective range: 0–25m (full effect), 25–60m (partial effect)\npulse frequency range: 8–65 Hz variable sequence\neffect on unaugmented targets: Temporary blindness (3–18 minutes), disorientation, nausea, involuntary muscle response\neffect on optically augmented targets: Retinal implant feedback loop, potential implant shutdown, extended blindness (30 minutes to permanent in rare cases)\noperator protection: Integrated polarizing filter over emitter; operator must not look directly at target during pulse",
+  "tactical_use": "The PNSD-1 is used primarily in close-quarters operations where silence and discretion are priorities. A single pulse sequence incapacitates a target for long enough to allow restraint, extraction, or termination. Against augmented targets, operators are trained to exploit the implant feedback vulnerability by activating the weapon at distances under 10 meters, where the pulse intensity is sufficient to trigger the full feedback loop. Corporate intelligence operatives favor the PNSD-1 for snatch operations — a target can be neutralized in a crowded public space without witnesses understanding what happened. The weapon's main limitation is its cone width, which requires reasonably accurate aim, and the operator's own need to avoid direct eye contact with the emitter during discharge.",
+  "cultural_context": "The PNSD-1 occupies an unsettling niche in Meridian 88's weapon culture because its effects on augmented individuals are disproportionate and occasionally permanent — which the manufacturer's legal team has successfully argued is a pre-existing vulnerability in the implant, not a weapon defect. This argument has been the subject of significant controversy in districts with high augmentation rates, where the weapon is seen as implicitly discriminatory. Among intelligence operatives and corporate kidnapping specialists, it is considered an elegant tool. Among street communities with high augmentation rates, it is considered a targeted threat, and there are documented cases of violent retaliation against individuals found carrying PNSD-1 units.",
+  "known_users": [
+    "Corporate intelligence extraction teams",
+    "Helix Biosystems internal security",
+    "High-end private security contractors",
+    "Opportunistic black market buyers exploiting augmented populations"
+  ],
+  "story_hooks": [
+    "A rash of 'unexplained collapses' in a high-augmentation district are being written off as implant malfunctions. A local fixer suspects PNSD-1 use — someone is systematically blinding specific augmented individuals, and the pattern of targets suggests a list.",
+    "Helix Biosystems is facing a class action from individuals permanently blinded by PNSD-1 interactions with their retinal implants. The plaintiffs need someone to extract internal documentation proving the company knew about the vulnerability before licensing the weapon.",
+    "A player character with optical augments is targeted with a PNSD-1 and survives with partial damage to their implant. Tracing the weapon back to its source leads somewhere unexpected — not a corporate operative, but someone from their own past."
+  ],
+  "ammunition_type": [
+    "Helix Biosystems Compact Power Cell HB-3"
+  ],
+  "tags": [
+    "energy",
+    "weapon",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "medical",
+    "market",
+    "rain",
+    "train",
+    "tier 2"
+  ]
+}

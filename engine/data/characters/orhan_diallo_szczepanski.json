@@ -1,0 +1,184 @@
+{
+  "id": "019d6143a6857baea4dd82c7a81e5bad",
+  "type": "character",
+  "name": "Orhan Diallo-Szczepański",
+  "aliases": [
+    "O",
+    "The Pole"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Ferrogate Transit operator, Lake Loop elevated rail",
+  "age": 34,
+  "status": "active",
+  "location": "Deepwell Station, operates the L-7 Lake Loop elevated line",
+  "description": "Orhan is a lean, angular man of middling height with a Sahel-boned face, his mother's warm brown complexion, and his father's flat Polish nose that he has always been vaguely self-conscious about. He keeps his head shaved to faint stubble and has a single cosmetic mod — a patterned iris modification that renders his pupils as slowly rotating geometric rings, a gift from a former partner he never got around to reversing. He wears his Ferrogate Transit uniform with the collar folded exactly one centimeter down, a minor unauthorized alteration he has maintained for six years without a single supervisor catching it. His cab smells of synthetic cardamom from the little flavor-diffuser clipped to his instrument panel, beside which sits a paper E.L.F. shrine — a folded transit map on which he has drawn the face of the Rail Spirit and which he taps three times at the start of every shift.\n\nOrhan runs the same eighty-kilometer elevated loop eleven hours a day, five days a week, and has developed the unsettling ability to recognize regular passengers by the sound of their footsteps on the boarding platform. He is not unhappy — he finds the repetition genuinely meditative — but he is quietly, persistently lonely in a way he cannot quite name. He reads on his secondary screen during station dwells, always history or urban geography, and has an encyclopedic knowledge of Meridian 88's infrastructure that he has never found occasion to use. He is patient with passengers to a near-inhuman degree, only revealing irritation through a single slow blink.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.4,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.7,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Being indefinitely replaceable — that his particular presence on the loop means nothing",
+      "Missing something important happening outside the windows he can never stop to investigate"
+    ],
+    "core_desires": [
+      "A relationship that outlasts a rail season",
+      "To be asked, just once, what he actually knows"
+    ],
+    "coping_mechanisms": [
+      "Reading history as a way of feeling like events have shape and meaning",
+      "The shrine ritual at shift start",
+      "Counting station stops when anxious"
+    ],
+    "blind_spots": [
+      "Assumes people who seem calm are fine — misses distress that doesn't announce itself",
+      "Undervalues his own expertise because it was acquired passively"
+    ],
+    "secret": "Three years ago he watched, through his cab window, a Tessera executive being pushed off a platform at Lakeview Neon Station. He filed no report. The death was ruled a fall. He has the timestamp and cab-log footage auto-saved to a private drive he has never opened since."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and measured, gravitates toward technical and geographic terminology, occasionally drops into unexpectedly poetic observation",
+    "cadence": "Even and unhurried, long comfortable pauses, never interrupts",
+    "verbal_tics": [
+      "'Mm' as a full sentence of acknowledgment",
+      "Refers to stations by their old pre-Ferrogate names",
+      "Prefixes uncertain statements with 'Somewhere around—'"
+    ],
+    "example_lines": [
+      "'Somewhere around the Grainfort curve, maybe 08:40 — I saw her. Same blue coat she wore every Thursday. That day she was running.'",
+      "'The loop doesn't lie. Every delay has a reason. You just have to know what you're looking at.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A regular passenger stopped appearing six weeks ago; Orhan has quietly noted the exact date and the last thing she carried",
+    "His cab log from the night of the executive's death has been remotely accessed — and he can see in his system that someone knows he kept it"
+  ],
+  "narrative_function": "Mobile information source — he sees everything that moves through the city at rail level; accidental witness; conduit for moving characters between districts; represents the invisible labor holding the city together",
+  "augmentations": "Patterned iris mod (geometric rotating pupils, cosmetic only); standard Ferrogate neural link for cab integration (mandatory, employer-issued)",
+  "daily_life": "Reports to Deepwell Station at 06:00, runs his loop until 17:00, eats a pressed sandwich from the platform vendor, attends union meetings on Tuesdays, goes home to a single-room apartment in Copperhead where he reads until he falls asleep",
+  "affiliation": "Ferrogate Transit (Union Local 19)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 4,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 6,
+      "expression": 4,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "observant",
+      "solitary",
+      "methodical",
+      "union man",
+      "accidental witness"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Do not deviate from schedule unless someone will die",
+      "Never volunteer what you know — wait to be asked",
+      "Protect union members before protecting the company"
+    ],
+    "escalation_ladder": [
+      "Polite, neutral response",
+      "Increasing precision — he starts citing times, dates, exact details as a warning that he is paying attention",
+      "Silence and a single slow blink",
+      "Formal union grievance or, in extremis, the cab-log drive"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional, perfectly courteous, genuinely impersonal — not unkind, just not present",
+      "friends": "Surprisingly warm, dry humor, asks careful thoughtful questions, remembers everything"
+    },
+    "stress_responses": {
+      "low": "Counts stations under his breath",
+      "medium": "Goes to strict procedural mode — speaks only in protocol language",
+      "high": "Completes his shift. Falls apart afterward, alone, precisely and quietly"
+    },
+    "contradictions": [
+      "Longs for connection but has perfected the art of making himself invisible to the people he sees every day"
+    ],
+    "habits": [
+      "Taps the Rail Spirit shrine three times at shift start and end",
+      "Eats the same pressed sandwich from the same vendor every workday",
+      "Mentally logs the names of regulars though he never uses them aloud"
+    ],
+    "breaking_points": [
+      "A child in danger on the platform",
+      "Being ordered to override a safety stop by management"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Ferrogate neural cab-link (employer-issued, mandatory integration for cab control and safety systems)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ferrogate neural cab-link (employer-issued, mandatory integration for cab control and safety systems)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Con Artist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

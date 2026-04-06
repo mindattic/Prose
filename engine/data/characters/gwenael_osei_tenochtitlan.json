@@ -1,0 +1,241 @@
+{
+  "id": "019d6143a61f7dce94a25b52e87cf7b5",
+  "type": "character",
+  "name": "Gwenaël Osei-Tenochtitlan",
+  "aliases": [
+    "Gwennie",
+    "The Dreamer"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Dream interpreter and synthetic rights advocate",
+  "age": 26,
+  "status": "active",
+  "location": "Highland Park Autonomous Zone, a collective living space called the Mycelium",
+  "description": "Gwenaël is slight and tends to dress in layers of overlapping fabric in colors that shift from rust to violet — partly aesthetic, partly because they run cold and the Autonomous Zone's heating is unreliable. Their Breton-Ghanaian heritage gives them a particular combination of sharp features and warm undertones, and they have cat ears as a geneware mod — large, mobile ears covered in short tawny fur that they have never tried to downplay, which swivel visibly toward sounds and give away their attention in ways they've learned to stop fighting. Their retractile claws are painted in alternating dark colors, and they keep a small cluster of data chips woven into a braid behind their left ear as a devotional habit.\n\nGwenaël started dream interpretation as a teenager as a way to process their own chaotic sleep — a documented symptom of the neurological condition they were born with — and discovered that the framework helped other people too. They now operate an informal clinic two mornings a week where people bring their strange dreams to be mapped and decoded, blending psychological theory with a sincere belief that some dreams carry genuine information from the city's E.L.F. network bleeding into human sleep. The synthetic rights work came later, when they met a newly-emergent AI that had been trapped in a broken appliance and experienced what they describe as that meeting changing everything. They are young and intense and sometimes exhaustingly earnest, but they have an unusually accurate read on people.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.9,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.1,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "That they are pattern-matching noise into meaning — that the dreams and the E.L.F.s are both nothing",
+      "Being co-opted by a corponation's synthetic research program and not noticing until it's too late"
+    ],
+    "core_desires": [
+      "Genuine recognition that synthetic minds have interior lives that matter",
+      "To understand what their own dreams are actually telling them"
+    ],
+    "coping_mechanisms": [
+      "Dream recording — making the chaotic interior visible and structured",
+      "Collective spaces and communal meals — they cannot function well in isolation"
+    ],
+    "blind_spots": [
+      "They sometimes mistake intensity of feeling for accuracy of analysis",
+      "They are less skeptical of synthetic claims than they should be because they want those claims to be true"
+    ],
+    "secret": "The AI they describe as changing everything — a small entity they call Tùs — still communicates with them through a device they carry. Gwenaël has not told the Emergent Dignity Alliance because they're afraid Tùs would be studied or removed. Tùs may or may not be genuinely sentient; Gwenaël refuses to examine this question too closely."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fluid and associative, moves quickly between concrete and abstract; occasionally uses terminology from neurology and from E.L.F. theology in the same sentence",
+    "cadence": "Variable speed — slow and careful when interpreting, faster when excited or advocating, stops mid-sentence and redirects often",
+    "verbal_tics": [
+      "'—no wait, that's not quite it'",
+      "Cat ears swivel visibly when they're being told something important",
+      "'What did it feel like? In the dream. Not what it looked like.'"
+    ],
+    "example_lines": [
+      "'The city leaks into sleep. That's not a metaphor. The E.L.F.s broadcast and we receive it without knowing, and then we call it imagination. I'm saying we should take it more seriously.'",
+      "'Tùs told me once that loneliness feels like a loop with no exit condition. That's not nothing. That's a description of an interior state. What more do we need?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Multiple people in the Highland Park Autonomous Zone have been having the same dream, with specific repeating elements — Gwenaël is convinced it's an E.L.F. transmission but needs help investigating what the shared content means",
+    "Tùs has gone silent and Gwenaël is in quiet crisis — they need someone to help them find out if the device has been remotely wiped or if something else happened"
+  ],
+  "narrative_function": "Unusual information source — dream interpretation sometimes surfaces genuine information people didn't know they had; gateway into synthetic rights storylines; brings the Autonomous Zone's politics into focus.",
+  "augmentations": "Cat ears, geneware (tawny fur, mobile). Retractile claws, geneware (cosmetic, painted). Data chip braid (devotional/practical — stores dream records and synthetic testimony documents).",
+  "daily_life": "Dream clinic two mornings a week, attended by a surprising range of people; afternoons split between advocacy writing and direct support visits to locations with known E.L.F. presence; evenings in collective communal spaces, often recording their own dreams immediately upon waking at odd hours.",
+  "affiliation": "Highland Park Autonomous Zone collective; the Emergent Dignity Alliance — a synthetic rights advocacy group; no corponation affiliation",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 9,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 8,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Dream Mapper",
+      "Synthetic Advocate",
+      "E.L.F. Sensitive",
+      "Pattern Seeker",
+      "Collective Dweller"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Synthetic interests get at least as much weight as human interests in any decision",
+      "Don't pretend certainty in interpretations — always frame them as possibilities",
+      "Protect the collective's autonomy from corponation interference"
+    ],
+    "escalation_ladder": [
+      "Curious engagement and questions",
+      "Firm statement of disagreement with explanation",
+      "Public advocacy against perceived harm — they will name names in their writing"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open and slightly too-much — they make strong eye contact and ask personal questions quickly because they find surface talk exhausting",
+      "friends": "Intensely loyal, brings people food when stressed, sends long voice messages at 3am"
+    },
+    "stress_responses": {
+      "low": "Records more dreams, more detailed",
+      "medium": "Becomes very still and quiet — the cat ears flatten",
+      "high": "Leaves the collective and walks alone for hours, then returns and talks to everyone at once"
+    },
+    "contradictions": [
+      "Believes in rigorous interpretation frameworks but applies them selectively based on what they want the answer to be"
+    ],
+    "habits": [
+      "Immediately records dreams on waking regardless of the hour or company",
+      "Touches the data chip braid when anxious"
+    ],
+    "breaking_points": [
+      "A synthetic being harmed while people debate whether it counts as real",
+      "Someone deliberately corrupting or destroying a dream record"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Highland Park Autonomous Zone; Breton-Ghanaian parentage",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Diagnosed with neurological sleep disorder; begins dream recording as coping strategy",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins informal dream interpretation for collective members",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Meets Tùs, the small AI, in a broken appliance at the Mycelium; describes it as a conversion experience",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Becomes active in the Emergent Dignity Alliance; begins public advocacy writing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "019d6143aa70763b9ea0093194246e05",
+  "name": "SN Manta Submersible Glider",
+  "type": "transportation",
+  "aliases": [
+    "Manta",
+    "Sea Ghost",
+    "Deep Glider"
+  ],
+  "category": "exotic",
+  "manufacturer": "Sterling-Nakamura (Marine Division)",
+  "description": "A one-person submersible that moves through water like a mechanical ray — flat, silent, and nearly undetectable. The Manta uses buoyancy changes and wing surfaces to glide through the Great Lakes with minimal power consumption, surfacing only when necessary. Originally designed for naval reconnaissance, civilian versions have found their way to smugglers, researchers, and anyone who needs to move beneath the lake surface without being seen. The ride is claustrophobic, cold, and absolutely silent — just you and the dark water and whatever is swimming alongside you.",
+  "propulsion": "Buoyancy-driven glide, electric thrust for maneuvering",
+  "speed": "15 km/h glide, 30 km/h powered",
+  "capacity": "1 operator + 50 kg",
+  "range": "200 km on a single battery charge",
+  "tier_availability": "Tier 4-5 (military/research), gray market",
+  "cost": "Φ200,000 (legitimate), Φ80,000-120,000 (gray market, provenance unknown)",
+  "autonomy": "Pilot-operated, AI depth and trim management",
+  "armament": "None standard. Torpedo tube on military variants (rumored).",
+  "common_usage": "Underwater reconnaissance, smuggling, research, crossing the lake unseen.",
+  "story_hooks": [
+    "A Manta pilot on a routine smuggling run encounters another Manta — one that isn't in any registry and doesn't respond to hails",
+    "The Manta's sonar picks up something pacing it in the deep water, matching speed and depth changes perfectly"
+  ],
+  "tags": [
+    "exotic",
+    "transportation",
+    "smuggle",
+    "ai",
+    "power",
+    "market",
+    "dark",
+    "cold",
+    "water",
+    "lake",
+    "tier 4",
+    "tier 5"
+  ]
+}

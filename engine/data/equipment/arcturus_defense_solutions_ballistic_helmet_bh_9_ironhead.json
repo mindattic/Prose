@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a84e74b680aedff6649d81a5",
+  "name": "Arcturus Defense Solutions Ballistic Helmet BH-9 'Ironhead'",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions Ballistic Helmet BH-9 'Ironhead'",
+  "type": "equipment",
+  "aliases": [
+    "Ironhead",
+    "BH-9",
+    "ADS Helmet",
+    "Hard Hat"
+  ],
+  "category": "armor",
+  "description": "A full-coverage tactical helmet with integrated comms, HUD visor, NBC filter, and NIJ Level IV ballistic protection. The BH-9 uses a composite of boron carbide ceramic and ultra-high-molecular-weight polyethylene to defeat rifle-caliber threats while remaining under 2 kg. The integrated visor provides thermal, low-light, and AR overlay modes, and the helmet's padded interior includes impact-absorbing gel that reduces concussive force transmission by 80%. It has become the standard-issue helmet for corporate security forces across Meridian 88.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — security and military",
+  "base_technologies": [],
+  "specifications": {
+    "protection": "NIJ Level IV — rifle rated",
+    "weight": "1.8 kg",
+    "visor": "Thermal + low-light + AR overlay",
+    "comms": "Encrypted",
+    "info": "bone-conduction speaker; face; and neck",
+    "NBC filter": "Integrated rebreather port",
+    "concussion reduction": "80% force attenuation gel",
+    "coverage": "Full head",
+    "HUD": "Neural interface compatible"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A BH-9's HUD recorded the wearer's final moments during an ambush — the footage has become evidence in a corporate liability case.",
+    "Modified BH-9 helmets with removed IFF transponders are being sold to non-aligned combatants who want the protection without the corporate tracking."
+  ],
+  "tags": [
+    "armor",
+    "equipment",
+    "combat",
+    "ai",
+    "corporate",
+    "tier 2"
+  ]
+}

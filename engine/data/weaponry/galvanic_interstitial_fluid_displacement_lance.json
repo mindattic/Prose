@@ -1,0 +1,57 @@
+{
+  "id": "019d6143ab2a77638aeb0a7d9d0b8f0c",
+  "name": "Galvanic Interstitial Fluid Displacement Lance",
+  "type": "weapon",
+  "aliases": [
+    "GIFDL-2",
+    "Bloat",
+    "The Swell"
+  ],
+  "category": "exotic",
+  "description": "The GIFDL-2 delivers a precisely calibrated galvanic current payload through a focused electrolytic carrier beam, driving rapid osmotic imbalance in the interstitial fluid of exposed soft tissue. The effect is a sudden, painful redistribution of fluid across cellular membranes in the targeted region — subcutaneous swelling, intense pressure sensation, and temporary loss of fine motor control as nerves compress against distended tissue. At high settings, capillary rupture produces visible bruising within minutes of exposure.\n\nThe lance's distinctive feature is its dual-mode emitter: a narrow 'focal' mode that concentrates the effect on a single limb or joint, and a wide 'flood' mode that distributes a milder osmotic disruption across the upper torso. Focal mode is the preferred surgical option for restraint operations — a single discharge to the hand renders grip impossible for up to forty minutes. Flood mode is used for area denial and crowd compliance, producing widespread discomfort without targeting specific anatomy.\n\nHelix Biosystems developed the GIFDL-2 ostensibly for advanced surgical irrigation research, and the cover story has worn increasingly thin over the years. The weapon's design files were subpoenaed in two separate municipal investigations before Helix successfully argued proprietary protection. It remains technically legal in four of Meridian 88's administrative sectors under a medical research exemption that no independent body has reviewed in over a decade.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Black market",
+  "legality": "Prohibited (medical exemption loophole in Sectors 4, 7, 9, 11)",
+  "base_technologies": [
+    "Galvanic electrolytic projection",
+    "Osmotic membrane disruption",
+    "Focused carrier beam collimation"
+  ],
+  "specifications": "effective range: 4–22 meters (focal), 2–8 meters (flood)\npower source: Saline electrolyte capacitor pack, 14 focal or 6 flood discharges\nonset time: Immediate pressure sensation; full effect within 8–12 seconds\nduration of effect: 25–45 minutes depending on target hydration\nweight: 2.7 kg\nform factor: Long pistol with swappable emitter head\nvisible signature: Faint blue-white corona at emitter tip during discharge",
+  "tactical_use": "Restraint operatives favor focal mode for clean disarmament — a single shot to the weapon hand ends a confrontation without fatality or loud report. Interrogation contractors use it to produce sustained discomfort for compliance purposes, a use Helix officially denies supporting. Flood mode sees use in tight corridor breaches where multiple targets must be suppressed simultaneously. The weapon's main tactical limitation is its short flood range and the visible swelling it produces, which makes concealment of its use difficult after the fact.",
+  "cultural_context": "The GIFDL-2 is deeply associated with Meridian 88's private detention industry — corporate holding facilities, black-site compliance centers, and the euphemistically named 'resolution suites' operated by high-end legal firms. Victims who have been subjected to it often describe the experience in terms of shame as much as pain, a bodily betrayal they find difficult to articulate. Among resistance and labor organizer circles, 'getting bloated' has become shorthand for any encounter with corporate enforcement that leaves no visible evidence for a legal complaint.",
+  "known_users": [
+    "Corporate compliance officers",
+    "Private detention facility staff",
+    "Black-market interrogation contractors",
+    "A small number of high-end personal protection operators who use focal mode as a non-lethal deterrent"
+  ],
+  "story_hooks": [
+    "A detainee released from a corporate holding facility shows inexplicable internal bruising that no standard weapon accounts for — a medic who recognizes the pattern knows exactly what it means.",
+    "Someone is using a stolen GIFDL-2 in a series of targeted attacks on mid-level corporate managers, leaving them incapacitated but alive with no conventional forensic evidence.",
+    "Helix Biosystems is quietly recalling all registered GIFDL-2 units — the reason given is a 'firmware update,' but sources inside the company suggest a catastrophic failure mode has been discovered at high power settings.",
+    "A fixer needs a GIFDL-2 sourced quietly for a job that requires a target to appear to have a sudden medical episode rather than an assault."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "war",
+    "betrayal",
+    "loss",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "ubc",
+    "medical",
+    "pain",
+    "market",
+    "rain",
+    "train",
+    "energy"
+  ]
+}

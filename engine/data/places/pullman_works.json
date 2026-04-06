@@ -1,0 +1,96 @@
+{
+  "id": "019d6143a92d7fdaa2d97ed2ca96fde4",
+  "type": "place",
+  "name": "Pullman Works",
+  "aliases": [
+    "Pullman",
+    "The Works",
+    "The Model",
+    "Company Town"
+  ],
+  "description": "Pullman Works is the cruelest district in Meridian 88, not because of what was done to it but because of how perfectly it predicted everything that came after. George Pullman built his company town in the 1880s with a simple proposition: the company provides everything — housing, shops, utilities, recreation — and the worker provides labor. The town was beautiful, planned, and totally controlled. When the workers struck in 1894 because Pullman cut wages without cutting rents, the federal government sent troops. The lesson was clear then and remains clear now: a company town is a company town, and the aesthetics are irrelevant.\n\nWhen the tier system was implemented, a mid-level Axiom executive with a sense of irony — or perhaps no sense of irony at all — designated Pullman as a model corporate residential zone. The original row houses, designated a National Monument in the old United States, were restored to their 1880s specifications with modern infrastructure hidden behind the period facades. New residential units were built in the same architectural style, extending the original grid. The result is a district that looks like a museum and functions like a labor camp. Tier 2 workers are assigned housing in Pullman Works through their employment contracts — live here, work at the assigned facility, shop at the company store (rebranded as an Axiom Essentials outlet), and maintain your tier status through continued employment. Leave the job, lose the house. The parallels to the original Pullman are exact, and Axiom's promotional materials describe this as heritage preservation.\n\nThe residents live in genuine architectural beauty. The row houses have real brick facades, restored ornamental ironwork, and interior spaces designed with a proportion and care that modern construction doesn't attempt. The Hotel Florence — George Pullman's showcase guesthouse — has been restored as an Axiom executive retreat, its bar serving drinks to visiting managers who admire the craftsmanship while reviewing workforce productivity reports. The Greenstone Church still stands, its green serpentine stone exterior cleaned and lit, holding services that are technically nondenominational and practically company-sponsored. The clock tower keeps perfect time, which is appropriate for a district where time belongs to someone else.\n\nBut Pullman has always produced resistance proportional to its control, and the current iteration is no different. The workers here understand their situation with a clarity that comes from living inside a metaphor — they know they are the 21st-century version of the Pullman porters, and they know how that story ended. Underground organizing happens in the spaces between the heritage surveillance cameras, in the row houses whose restored walls hide conversations that Axiom's microphones can't reach because the original brickwork is too dense for standard audio penetration. The organizers study the 1894 strike not as history but as a playbook, noting what worked, what failed, and what's different now. What's different now is the neural interface network, which allows communication that doesn't require physical meetings. What's the same is everything else.",
+  "atmosphere": {
+    "sights": [
+      "Restored 1880s row houses in perfect condition — red brick, ornamental iron, a beauty that is also a cage",
+      "The Pullman clock tower keeping time for a workforce that doesn't own its own hours",
+      "The Hotel Florence glowing with warm light, its windows showing Axiom executives at leisure in a building built by a man who crushed a strike",
+      "Workers walking the planned grid in company-issued clothing, the uniformity deliberate and enforced",
+      "Heritage surveillance cameras mounted in period-appropriate housings — the aesthetic commitment extends to the panopticon",
+      "The Greenstone Church, lit green at night, its beauty so precise it feels like a threat"
+    ],
+    "sounds": [
+      "The clock tower marking each hour — a sound that structures every day and belongs to the company",
+      "Company announcements through period-styled speakers, their brass housings containing modern surveillance equipment",
+      "The quiet of a planned community where noise is a deviation from the plan",
+      "Workers' boots on original paving stones, a rhythm that hasn't changed in 140 years",
+      "Neural interface whispers — subvocalized conversations in the spaces where audio surveillance can't reach"
+    ],
+    "smells": [
+      "Restored brick and mortar — the smell of heritage preservation applied to a labor system",
+      "Axiom Essentials outlets — the standardized scent of corporate retail, identical in every company store",
+      "The Hotel Florence's kitchen, preparing meals for executives that the workers can smell from the row houses",
+      "Old wood and iron from the original structures, a material honesty that the corporate overlay can't quite suppress"
+    ],
+    "feel": "Pullman Works feels like living inside a museum exhibit about your own exploitation. The beauty is real — the architecture is genuinely magnificent — and the control is real, and the combination produces a cognitive dissonance that is the district's defining emotional texture. You can admire the brickwork and resent the system simultaneously, and in Pullman, everyone does.",
+    "tags": []
+  },
+  "demographics": "Approximately 8,000 residents, all Tier 2, all housed through Axiom employment contracts. Workforce composition reflects Axiom's hiring patterns — diverse in origin, uniform in status. Turnover is low because leaving employment means leaving housing, and the housing is better than anything Tier 2 can access elsewhere.",
+  "economy": "Fully corporate. Employment, housing, retail, and services are all provided through Axiom's integrated residential-labor system. There is no independent economy — by design. Workers receive wages that are sufficient to cover company-store prices with a small remainder, a ratio that George Pullman himself would recognize.",
+  "power_structure": "Axiom Industries holds total sovereign authority. The district manager reports directly to Axiom's workforce optimization division. Resident input is solicited through a heritage council that has advisory status and no decision-making power. Underground organizing exists but has not yet produced a visible structure.",
+  "dangers": [
+    "Employment termination results in immediate housing loss and tier demotion — the ultimate leverage",
+    "Heritage surveillance is comprehensive — cameras, audio, neural interface monitoring in public spaces",
+    "The planned grid offers no hiding places — every sightline was designed for observation",
+    "Corporate social engineering includes managed recreation, managed socialization, and managed discontent — Axiom studies Pullman's mistakes and tries not to repeat them",
+    "Organizers face the same risk the 1894 strikers faced: overwhelming institutional response",
+    "The beauty of the environment creates psychological dependency — leaving means losing the best living conditions most Tier 2 workers will ever have"
+  ],
+  "opportunities": [
+    "The original brickwork blocks standard audio surveillance — a material advantage the organizers use",
+    "Neural interface communication allows organizing without physical meetings",
+    "Axiom's commitment to heritage aesthetics creates maintenance requirements that provide cover for unauthorized activities",
+    "Workers with inside access to Axiom's workforce systems have data that labor organizers across Meridian would value",
+    "The Hotel Florence hosts Axiom executives who discuss things they shouldn't in a building they feel safe in — the walls have ears that Axiom didn't install"
+  ],
+  "story_hooks": [
+    "The underground organizers have identified a date for action — the anniversary of the 1894 Pullman Strike. The symbolism is deliberate. The plan requires disabling the heritage surveillance network for forty-five minutes, and they need outside technical support.",
+    "An Axiom executive staying at the Hotel Florence has been overheard discussing a workforce optimization initiative called Project Renewal that involves Pullman Works. The details suggest something worse than the current system. A worker in the hotel's service staff has partial recordings.",
+    "A row house renovation uncovered a sealed room behind the original brickwork containing documents from the 1894 strike — personal letters, organizing plans, names. The historical value is immense. So is the contemporary relevance, because some of the organizing tactics described have no modern countermeasure."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Roseland Drift",
+      "South Deering Sump",
+      "The Woodline"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Axiom contract workers living in assigned housing, maintaining heritage architecture they don't own",
+    "Axiom executives visiting the Hotel Florence for retreats in a building that flatters their self-image",
+    "Underground organizers communicating through neural interfaces and dense brickwork",
+    "Heritage maintenance crews with access to every structure in the district",
+    "Historians and journalists who visit the public-facing museum sections and miss everything important"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.694,
+    "lng": -87.608,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "loss",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "control",
+    "power",
+    "bar",
+    "drink"
+  ]
+}

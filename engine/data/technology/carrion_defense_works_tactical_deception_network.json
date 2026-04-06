@@ -1,0 +1,48 @@
+{
+  "id": "019d6143aa397cf3b72d4593154d45e1",
+  "name": "Carrion Defense Works Tactical Deception Network",
+  "brand_name": "Carrion",
+  "product_name": "Carrion Defense Works Tactical Deception Network",
+  "type": "technology",
+  "aliases": [
+    "TDN",
+    "Lie Grid",
+    "Carrion Mirage",
+    "False Front"
+  ],
+  "subcategory": "defense",
+  "description": "An integrated electronic warfare system that creates false sensor signatures, spoofed communications, and simulated force dispositions to deceive enemy intelligence systems. The TDN deploys a network of emitters that generate the electromagnetic, thermal, acoustic, and visual signatures of military assets that do not exist — fake vehicles, phantom troop formations, simulated communications traffic, and holographic equipment. The system can make an empty field look like a military base to every sensor modality simultaneously, creating a comprehensive deception that is indistinguishable from reality at the electronic level.",
+  "tier_availability": "Tier 4+",
+  "developers": [
+    "CARRION DEFENSE WORKS",
+    "ARCTURUS DEFENSE SOLUTIONS"
+  ],
+  "base_technologies": [
+    "Multi-spectrum signature generation",
+    "Coordinated deception emitter networks",
+    "Simulated communications traffic generation"
+  ],
+  "enables": [
+    "Complete multi-sensor environmental deception",
+    "False force disposition projection",
+    "Simulated military asset signatures",
+    "Comprehensive electronic warfare deception"
+  ],
+  "social_impact": "TDN has made electronic intelligence unreliable — if any observation could be a deception, then no observation can be fully trusted without physical verification. The technology has forced a return to human intelligence and physical reconnaissance that electronic systems were supposed to make obsolete. In corporate conflicts, TDN deployments have created situations where both sides are responding to the other's deceptions rather than reality, fighting phantom enemies while the real forces maneuver unobserved.",
+  "story_hooks": [
+    "A TDN deployment simulated an attacking force so convincingly that the defending corporation launched a preemptive strike against empty terrain — the political fallout of attacking nothing is potentially worse than the cost of the deception.",
+    "A TDN has been left running after its operators withdrew, creating a permanent phantom military presence that is deterring all activity in the area — no one knows the base is fake, and no one is willing to test it."
+  ],
+  "tags": [
+    "defense",
+    "technology",
+    "war",
+    "trust",
+    "deception",
+    "ai",
+    "corporate",
+    "rain",
+    "vehicle",
+    "tier 4"
+  ]
+}

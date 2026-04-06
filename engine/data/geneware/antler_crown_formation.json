@@ -1,0 +1,44 @@
+{
+  "id": "019d6143a89b70b9a244af98596d811e",
+  "name": "Antler Crown Formation",
+  "brand_name": "Antler",
+  "product_name": "Antler Crown Formation",
+  "type": "geneware",
+  "aliases": [
+    "Stag Head",
+    "The Rack",
+    "Crown Mod"
+  ],
+  "category": "cosmetic",
+  "target_system": "skeletal (cranial antler growth with annual shed)",
+  "description": "A variant of horn induction that produces true antlers — branching, deciduous structures that shed and regrow annually. Unlike horns, which are permanent keratin structures, antlers are bone that grows covered in living velvet tissue, hardens, sheds its velvet, and then drops off entirely each year before regrowing. The annual cycle is compressed from deer's 12-month natural cycle to approximately 4 months in the human installation — the user grows antlers over 6–8 weeks, wears them for 8–10 weeks, and then sheds them over 2 weeks before the cycle restarts. The shedding phase produces significant cranial discomfort and leaves the user temporarily antler-less, which some find liberating and others find distressing. Shed antlers from modified humans are collected, carved, and sold as art objects and jewelry. An entire cottage industry exists around antler collection in the Shelf.",
+  "source_organism": "Cervus elaphus (red deer), Rangifer tarandus (reindeer, rapid growth variant)",
+  "manufacturer": "Helix Biosystems",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted",
+  "procedure": "Cranial periosteum injection with antler growth cycle induction, 1 session",
+  "expression_time": "First set emerges over 6–8 weeks; annual cycle stabilizes by third set",
+  "reversibility": "Gene-suppressible; suppress during shed phase for clean removal",
+  "side_effects": [
+    "Significant headaches during growth phase",
+    "Velvet-stage antlers bleed profusely if damaged",
+    "Shedding phase causes disorientation and mood swings",
+    "Doorways become a constant spatial awareness challenge",
+    "Each year's antlers may grow slightly differently — asymmetry is common"
+  ],
+  "social_perception": "Dramatic and attention-commanding. Antler wearers are visible in any crowd. The annual shed-and-regrow cycle creates a seasonal social rhythm — antler-growing season, full-crown season, shed season. Antler parties celebrate the first growth of each cycle.",
+  "story_hooks": [
+    "A shed antler found at a crime scene contains the owner's DNA and a growth pattern that reveals they were under extreme stress during growth — antler bone records physiological state like tree rings",
+    "An antler-crowned individual discovers their regrowth is producing bone with metallic mineral inclusions — their diet has been contaminated with something that's incorporating into the antler structure"
+  ],
+  "tags": [
+    "cosmetic",
+    "geneware",
+    "war",
+    "crime",
+    "ai",
+    "elf",
+    "shelf",
+    "tier 2"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a57e737189f2a703309dbcb1",
+  "name": "Mercy Killer",
+  "type": "archetype",
+  "category": "combat",
+  "description": "Kills to end suffering, not from malice",
+  "behavioral_signature": "Watches for the point where death is kinder",
+  "under_stress": "Becomes the one who makes the call nobody else will",
+  "at_rest": "Carries the weight of every mercy given",
+  "will_always": [
+    "end suffering when there's no other way"
+  ],
+  "will_never": [
+    "kill for sport or anger"
+  ],
+  "unless": [
+    "there's even a slim chance of survival"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Triggerman",
+      "threshold": 0.65,
+      "context": "willingness to kill"
+    },
+    {
+      "archetype": "Executioner",
+      "threshold": 0.6,
+      "context": "delivering death"
+    }
+  ],
+  "opposite_of": [
+    "Berserker"
+  ],
+  "tags": [
+    "mercy",
+    "burden"
+  ]
+}

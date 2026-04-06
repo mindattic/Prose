@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Models.Canon;
 
@@ -6,8 +7,9 @@ namespace StreetSamurai.Core.Models.Canon;
 /// A weapon or weapon system in the Meridian 88 world.
 /// Links back to base technologies that enable it.
 /// </summary>
-public class WeaponryData
+public class WeaponryData : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("type")] public string Type { get; set; } = "weapon";
     [JsonPropertyName("aliases")] public List<string> Aliases { get; set; } = [];

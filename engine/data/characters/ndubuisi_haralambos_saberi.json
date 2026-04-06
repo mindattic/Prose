@@ -1,0 +1,173 @@
+{
+  "id": "019d6143a6607f41a40f5030c3523519",
+  "type": "character",
+  "name": "Ndubuisi Haralambos-Saberi",
+  "aliases": [
+    "Bisi",
+    "The Professor"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Compute broker and data fence operating from the Stockyard's tech bazaar",
+  "age": 38,
+  "status": "active",
+  "location": "The Stockyard — stall 114 in the Harrowgate Industrial Plateau overflow market, known locally as the Cracker Barrel",
+  "description": "Ndubuisi is a rangy, precise man with Nigerian-Greek-Iranian features — angular face, heavy brows, skin a warm teak-brown, and round eyes whose irises he's modded with slowly rotating mandala patterns in blue and copper that give him an air of perpetual thoughtfulness. He keeps his head shaved close and his clothes exactly one tier above what the Stockyard expects: pressed shirt, clean trousers, quality coat, the whole ensemble waterproofed and subtly armored. He wears a battered Axiom university lanyard — he was a student there for two semesters, a decade ago — that he has never returned.\n\nThe nickname 'Professor' started as mockery and calcified into respect. Ndubuisi has a genuine gift for making complex technical explanations feel like revelations, and he uses this constantly — explaining to buyers exactly what they're getting, exactly why it's valuable, and exactly what it would cost them to try to get it cheaper elsewhere. He's not wrong. He moves stolen datasets, pirated processing time, cracked software licenses, and occasionally darker algorithmic goods with the cheerful confidence of a man who has decided that information wants to be free and has also decided he should be compensated for its liberation.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.8,
+      "id": 0.6,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "being proven intellectually wrong — permanently, publicly, irrefutably",
+      "that the thing he's become is not the thing he meant to become"
+    ],
+    "core_desires": [
+      "to be recognized as genuinely brilliant rather than clever",
+      "to complete the research project he abandoned when he left Axiom"
+    ],
+    "coping_mechanisms": [
+      "intellectualizing everything, including his own moral choices",
+      "maintaining the fiction that brokering data is a form of information activism"
+    ],
+    "blind_spots": [
+      "does not adequately assess physical danger — it registers as an abstraction",
+      "consistently overestimates how much his clients share his ethical framework"
+    ],
+    "secret": "The dataset he's most proud of fencing — a trove of Axiom biomedical research he sold to six different parties — contained suppressed safety trial data. People may have died because Axiom kept using the flawed compound. He hasn't confirmed this. He's not looking."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical, precise, prone to analogies and parenthetical qualifications; code-switches into warmer register when he wants something",
+    "cadence": "Lecture pacing — builds to points, loves a rhetorical question",
+    "verbal_tics": [
+      "'Here's the thing about that—'",
+      "Repeats the last word of your sentence quietly before responding",
+      "'Definitionally speaking'"
+    ],
+    "example_lines": [
+      "Here's the thing about that dataset — it's not worth what you think it's worth, it's worth what I'm telling you it's worth, and those are the same number for reasons I'm going to explain.",
+      "Definitionally speaking, I'm not selling stolen goods. I'm selling access to information that was improperly withheld from the market.",
+      "You could go cheaper. You could also eat from the recyc-bins. Both are options. I'm merely describing the available options."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A piece of data he brokered six months ago has been traced — not to him yet, but one link away; someone is methodically following the chain",
+    "He has come into possession of a dataset he cannot price because he cannot identify what it is, only that two separate parties have already approached him about it and he suspects a third is watching the stall",
+    "An old Axiom classmate has shown up asking for help accessing something inside Axiom's internal network — and Ndubuisi owes her"
+  ],
+  "narrative_function": "Information marketplace — he doesn't run or fight but he knows things, sells things, and can connect people to what they need digitally. Quest giver for data-related problems. Exposition source dressed as commerce.",
+  "augmentations": "Mandala-patterned modded irises; cortical co-processor (legitimate, registered, but running unlicensed partition software); subvocal comms implant",
+  "daily_life": "At the stall by 0800, ostensibly selling refurbished hardware and licensed software. Conducts brokerage business through an encrypted side-channel between 1100 and 1600 when the market is loudest. Spends evenings cataloguing new inventory and reading technical papers he accesses through an anonymized academic mirror.",
+  "affiliation": "Independent broker; has standing relationships with three different data theft crews he doesn't work directly with and maintains strict operational separation from",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 5,
+      "expression": 9,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 4,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Data Fence",
+      "Compute Broker",
+      "Tech Bazaar",
+      "Intellectual Criminal",
+      "Axiom Dropout"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never handle biological data — organs, genetics, medical records — it creates legal exposure he's calculated as prohibitive",
+      "Always meets new clients twice before transacting; the second meeting is to see if their story changed",
+      "Prices everything 15% above floor to leave room to be negotiated down — the negotiation builds trust"
+    ],
+    "escalation_ladder": [
+      "Declines with detailed explanation of why the request doesn't fit his inventory",
+      "If threatened intellectually (rival claims to have better product), demolishes their claim with data",
+      "If threatened physically, immediately becomes extremely agreeable and starts planning how to burn the relationship later",
+      "Has a Stockyard security contact on retainer — an off-books arrangement he's never had to fully activate"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm and professorial — performs accessibility to put clients at ease while evaluating them thoroughly",
+      "friends": "Argumentative, competitive, deeply loyal in ways he expresses through doing favors rather than saying things"
+    },
+    "stress_responses": {
+      "low": "Research mode — pulls technical documentation and reads until the problem clarifies",
+      "medium": "Verbose and over-explaining — talks too much, hears too little",
+      "high": "Shuts completely down, retreats to his stall's back partition, needs two hours alone before he can function"
+    },
+    "contradictions": [
+      "Believes passionately in information freedom while keeping his own operation aggressively opaque",
+      "Brilliant at assessing data risk; poor at assessing human risk"
+    ],
+    "habits": [
+      "Handles every piece of hardware he sells with deliberate care — unconscious performance of quality",
+      "Takes handwritten notes during every client meeting, in his own shorthand, which he burns weekly"
+    ],
+    "breaking_points": [
+      "Being held responsible for downstream harm from data he brokered — he has built elaborate psychological defenses against this and they would shatter badly",
+      "Having his intelligence genuinely, humiliatingly underestimated by someone who then proves to be right"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

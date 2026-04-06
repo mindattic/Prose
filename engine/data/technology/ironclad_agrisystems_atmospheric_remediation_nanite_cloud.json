@@ -1,0 +1,48 @@
+{
+  "id": "019d6143aa407642974169fd56266f05",
+  "name": "Ironclad Agrisystems Atmospheric Remediation Nanite Cloud",
+  "brand_name": "Ironclad",
+  "product_name": "Ironclad Agrisystems Atmospheric Remediation Nanite Cloud",
+  "type": "technology",
+  "aliases": [
+    "ARNC",
+    "Air Cleaners",
+    "Nanite Cloud",
+    "Ironclad Scrubbers"
+  ],
+  "subcategory": "environmental",
+  "description": "Self-replicating nanoscale machines deployed in atmospheric suspension that catalyze the breakdown of airborne industrial pollutants, heavy metals, and toxic compounds. The nanites are solar-powered, drawing energy from ambient light to fuel their catalytic processes, and they reproduce at a controlled rate to maintain effective atmospheric concentration. Ironclad deploys ARNC over contaminated zones by aerial dispersal, and within weeks, measurable air quality improvements appear. The nanites have a programmed 90-day lifespan to prevent uncontrolled replication, requiring periodic redeployment.",
+  "tier_availability": "Tier 3+",
+  "developers": [
+    "IRONCLAD AGRISYSTEMS",
+    "OUROBOROS ENERGY"
+  ],
+  "base_technologies": [
+    "Self-replicating nanoscale fabrication",
+    "Solar-powered catalytic chemistry",
+    "Atmospheric suspension maintenance"
+  ],
+  "enables": [
+    "Large-scale atmospheric decontamination",
+    "Reduction of industrial pollution health effects",
+    "Remediation of legacy contamination zones",
+    "Breathable air restoration in toxic environments"
+  ],
+  "social_impact": "ARNC deployment has become a political tool — districts that cooperate with Ironclad receive nanite clouds and clean air; districts that resist see their atmospheric quality visibly degrade by comparison. The technology's 90-day lifespan means communities are permanently dependent on Ironclad for re-deployment, creating a subscription model for breathable air. Environmental activists point out that ARNC treats symptoms while allowing the industrial processes causing contamination to continue unchecked.",
+  "story_hooks": [
+    "Ironclad's nanite cloud over a Tier 2 district has stopped self-replicating — air quality is rapidly deteriorating and Ironclad is demanding an exclusive remediation contract before they redeploy, essentially holding a district's air hostage.",
+    "Someone has modified ARNC nanites to catalyze the opposite reaction — instead of breaking down pollutants, they are synthesizing toxic compounds from atmospheric gases, poisoning the air they were meant to clean."
+  ],
+  "tags": [
+    "environmental",
+    "technology",
+    "ai",
+    "elf",
+    "contract",
+    "control",
+    "power",
+    "poison",
+    "energy",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "019d6143ab2c7beabe9484b7ee395247",
+  "name": "Gravimetric Collapse Charge GCC-9",
+  "type": "weapon",
+  "aliases": [
+    "Sinkhole",
+    "The Folding",
+    "Dense"
+  ],
+  "category": "explosive",
+  "description": "The GCC-9 represents OUROBOROS ENERGY's most aggressive weaponization of their gravimetric induction research — a technology platform the company officially licenses only for industrial compression and materials processing. The device generates an extremely short-duration gravimetric field spike, collapsing a roughly spherical volume of approximately 2 meters in diameter to a transient gravitational pressure roughly 400 times standard. The collapse event lasts approximately 40 milliseconds before field coherence fails and the compressed material is explosively rebounded outward. The inward collapse and outward rebound together constitute the weapon's kill mechanism.\n\nThe inward phase crushes everything within the primary radius — biological tissue, structural components, armor plating — into a dense, briefly coherent mass. The rebound phase then expels this compressed material at velocities sufficient to cause catastrophic fragmentation damage out to 15 meters. The resulting debris field is unusual: instead of conventional shrapnel, the rebound produces hyperdense compressed fragments of whatever was caught in the primary collapse, including bone, metal, and polymer fused together under the brief high-gravity event. Forensic investigators describe GCC-9 wound profiles as 'impossible' — fragmentation wounds containing materials from multiple sources compressed into single projectiles.\n\nOUROBOROS ENERGY has invested significant legal resources in suppressing public knowledge of the GCC-9, arguing that the device is a classified industrial tool and that its appearance on the black market represents theft rather than distribution. Field operators who have used the weapon describe a profound psychological effect — the brief visual distortion of the collapse event, a moment where light bends visibly around the detonation point, has led to the name 'The Folding.' There are unverified reports that targets caught at the edge of the primary radius survive with gravitational trauma to dense-tissue organs that manifests days after exposure.",
+  "manufacturer": "OUROBOROS ENERGY",
+  "tier_availability": "Black market / Military prototype",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Gravimetric field induction",
+    "Transient high-gravity compression",
+    "Rebound fragmentation dispersal"
+  ],
+  "specifications": "primary collapse radius: 2m diameter sphere\ncompression factor: ~400x standard gravity\ncollapse duration: 40ms\nrebound fragment velocity: Up to 1,800 m/s\nfragmentation radius: 15m effective\nfield coherence power: Capacitive discharge, 8.4 MJ\nweight: 3.2 kg\nform factor: Spherical casing, 18cm diameter\ndetonation: Timed fuse, impact, or remote signal\nvisual signature: Visible light-lensing distortion at detonation point",
+  "tactical_use": "Used as a primary breach-and-clear weapon against hardened defensive positions — the collapse phase eliminates cover and fortification simultaneously with personnel. Military applications include destroying small armored emplacements without air support. The unusual fragmentation profile means conventional ballistic shields provide minimal protection against the rebound phase. Teams deploying the GCC-9 maintain minimum 20-meter standoff distance. The weapon is rarely used in urban environments due to structural collateral damage — it will compromise load-bearing columns within the collapse radius.",
+  "cultural_context": "The GCC-9 occupies a mythological space in Meridian 88's weapons underground — most operators have heard of it but few have seen one. OUROBOROS ENERGY's aggressive suppression of information about the device has paradoxically inflated its mystique, and inflated price. Possessing one signals either military-grade connections or extraordinary black-market resources. Among the city's mercenary elite, 'carrying a Sinkhole' is a mark of status as much as capability. The visible light-bending effect at detonation has made the weapon a subject of street-level urban legend — witnesses who don't know what they're seeing describe the detonation as 'the world folding in half.'",
+  "known_users": [
+    "OUROBOROS ENERGY black operations recovery teams",
+    "Elite mercenary units with tier-5 procurement access",
+    "Military special operations forces (prototype evaluation units)",
+    "High-value arms collectors and brokers",
+    "Insurgent cells with corporate-espionage funding sources"
+  ],
+  "story_hooks": [
+    "A GCC-9 detonates in a residential tower district, collapsing three floors — OUROBOROS ENERGY arrives before city authorities and begins 'securing the site.' What are they covering up?",
+    "The party is offered a contract to transport a GCC-9 across three corporate-controlled districts — the client won't say who the buyer is or what it's for.",
+    "A forensic investigator contacts the party after recognizing the impossible wound profiles from a crime scene — she thinks the weapon used was a GCC-9, which means someone with serious resources is operating in the city, and she needs to know who before they use it again.",
+    "OUROBOROS ENERGY's internal R&D logs, leaked by a dying whistleblower, suggest the GCC-9 was not developed for industrial use — it was developed to destroy specific types of gravimetric infrastructure, and there is exactly one such installation in Meridian 88."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "war",
+    "crime",
+    "theft",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "market",
+    "armor",
+    "energy"
+  ]
+}

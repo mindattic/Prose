@@ -1,0 +1,51 @@
+{
+  "id": "019d6143a5577b7ea0df5f6f5a06ba52",
+  "name": "Arcturus High-Density Capacitor Cell ADS-HC9",
+  "type": "ammunition",
+  "aliases": [
+    "ADS cell",
+    "HC9",
+    "Arcturus cap",
+    "Red cap"
+  ],
+  "category": "energy_cell",
+  "caliber": "N/A — energy cell",
+  "description": "The ADS-HC9 is a high-density capacitor cell manufactured by Arcturus Defense Solutions, designed for weapons platforms that require rapid energy discharge rather than sustained output. Unlike bioelectric cells that provide steady power over many shots, the HC9 stores electrical energy in a solid-state capacitor matrix that can be dumped in millisecond-scale bursts — making it the preferred power source for railgun platforms, electromagnetic accelerators, and high-energy pulse weapons.\n\nThe cell's construction uses a layered ceramic-polymer dielectric matrix that achieves energy densities roughly three times that of conventional capacitor banks in a fraction of the volume. Each cell contains an integrated charge management system that prevents catastrophic discharge in the event of physical damage — a critical safety feature, as an uncontrolled release of the HC9's stored energy would produce an explosion equivalent to approximately 50 grams of conventional explosive. Despite this safeguard, damaged HC9 cells are treated as ordnance disposal problems rather than simple waste.\n\nThe HC9 is field-rechargeable from any compatible power source, which distinguishes it from the single-use ZD-T4 bioelectric cells. A standard recharge cycle takes approximately 45 minutes from a vehicle power tap or 4 hours from a portable solar array. This rechargeability makes the HC9 more economical over time but creates a logistics dependency on power infrastructure that bioelectric cells avoid. In extended field operations, HC9-dependent weapons become progressively less useful as recharge opportunities diminish.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — high-density cells restricted to certified operators in some jurisdictions",
+  "specifications": "weight_per_cell: 340g\ncapacity: Platform-dependent (8-30 discharges per charge cycle)\noutput_voltage: 18-200V burst discharge\nrecharge_time: 45 minutes (vehicle tap) / 4 hours (portable solar)\nshelf_life: 5 years (solid-state, no degradation)\ncycle_life: 500 charge-discharge cycles before capacity degradation\noperating_temperature: -20C to 65C",
+  "compatible_weapons": [
+    "Ballistic Resonance Carbine BRC-6 'Kettledrum'",
+    "Helical Vortex Penetrator HVP-4 'Corkscrew'",
+    "Coherent Thermal Excitation Rifle CTER-7 'Ashmaker'",
+    "Graviton Compression Emitter GCE-3 'Flatline'"
+  ],
+  "variants": [
+    "ADS-HC9 Standard (general purpose, 500-cycle life)",
+    "ADS-HC9 Rapid (optimized for fast recharge, 20 minutes from vehicle tap, reduced cycle life to 200)",
+    "ADS-HC9 Heavy (double capacity, double weight, for sustained operations)",
+    "ADS-HC9 Compact (half capacity, half weight, for sidearm-class weapons)"
+  ],
+  "cultural_context": "The ADS-HC9 is the power cell of choice for operators who run electromagnetic and energy weapons platforms, and its distinctive red ceramic housing has made 'red cap' the universal slang for high-energy weapon cells regardless of manufacturer. The cell's rechargeability creates a different operational economy than disposable cells — HC9 operators plan missions around power availability, knowing that their weapon is only as useful as their access to a charging source. This has led to a secondary market in 'charge stations' — hidden power taps in Meridian 88's infrastructure that operators maintain and share (or sell access to) like a network of safe houses. Arcturus Defense Solutions technically prohibits unauthorized recharging but has never enforced this policy, as the recharge dependency drives continued engagement with their ecosystem.",
+  "story_hooks": [
+    "Someone is systematically destroying hidden charge stations across the Kessler District — HC9-dependent operators are being forced to expose themselves at the remaining stations, and the pattern suggests someone is mapping the operator network through their charging behavior.",
+    "An ADS-HC9 cell was recovered from an explosion site — the charge management safety system had been deliberately disabled, converting the cell into an improvised explosive device, and the modification technique matches an Arcturus Defense Solutions field engineer's classified maintenance manual."
+  ],
+  "tags": [
+    "energycell",
+    "ammunition",
+    "weapon",
+    "gun",
+    "ai",
+    "elf",
+    "control",
+    "power",
+    "market",
+    "vehicle",
+    "explosive",
+    "energy",
+    "shelf",
+    "tier 3"
+  ]
+}

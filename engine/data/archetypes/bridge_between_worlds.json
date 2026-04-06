@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5617c32aa9a88f6aeb52ef2",
+  "name": "Bridge Between Worlds",
+  "type": "archetype",
+  "category": "spiritual",
+  "description": "Connects the spiritual and material",
+  "behavioral_signature": "Translates between the seen and unseen",
+  "under_stress": "The bridge stretches, thins, threatens to break",
+  "at_rest": "Mediating, interpreting, connecting realms",
+  "will_always": [
+    "connect disparate realities"
+  ],
+  "will_never": [
+    "choose only one world"
+  ],
+  "unless": [
+    "the bridge allows something through that shouldn't cross"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Mystic",
+      "threshold": 0.75,
+      "context": "spiritual perception"
+    },
+    {
+      "archetype": "Consciousness Explorer",
+      "threshold": 0.7,
+      "context": "boundary crossing"
+    }
+  ],
+  "opposite_of": [
+    "Rationalist"
+  ],
+  "tags": [
+    "liminal",
+    "connected"
+  ]
+}

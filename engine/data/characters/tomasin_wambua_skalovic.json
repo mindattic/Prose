@@ -1,0 +1,236 @@
+{
+  "id": "019d6143a70376b7bbe797cb10894ce7",
+  "type": "character",
+  "name": "Tomásin Wambua-Skalović",
+  "aliases": [
+    "Old Wambua",
+    "The Bone Man"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Prosthetics fitter and rehabilitation specialist serving the working poor of Archer's Line and the surrounding industrial districts",
+  "age": 62,
+  "status": "active",
+  "location": "Archer's Line — Wambua Prosthetics, a narrow shopfront wedged between a noodle stall and a wire-pull depot",
+  "description": "Tomásin is a tall, heavyset man whose age has settled into him rather than diminished him — broad-shouldered, slightly stooped, with enormous hands that have been reshaping and fitting prosthetic limbs for nearly four decades. His skin is dark and weathered at the knuckles, and he has a close-cropped white beard he trims every three days by feel. His own left arm below the elbow is a prosthetic — a mid-range Ferrogate industrial model he modified himself until it became something unique, its housing scratched with small geometric patterns his daughter etched into it when she was seven. He wears reading glasses on a beaded cord even though his vision correction implant is perfectly functional; he says the glasses help him think.\n\nTomásin has fitted thousands of limbs over his career — dock workers who lost arms to machinery, children born without full limb formation, veterans of corporate security contracts who came home partial. He knows the psychological landscape of limb loss and re-embodiment with a clinical intimacy that no textbook provides. He's warm but unsentimental, the kind of person who will hand you a tissue and then immediately ask you a practical question to get you moving forward. He prays at a small home altar to an E.L.F. called Joinwork, who he says inhabits the articulation servo in his left wrist and has guided his hands for twenty years.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.7,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Becoming unable to work — losing his own functionality",
+      "Outliving his usefulness to the community"
+    ],
+    "core_desires": [
+      "To pass on his skills before he can no longer practice",
+      "To see affordable prosthetics become a right rather than a luxury"
+    ],
+    "coping_mechanisms": [
+      "Work — always work; the physical act of fitting and adjusting is meditative for him",
+      "Storytelling — he processes difficulty by converting it into narrative"
+    ],
+    "blind_spots": [
+      "Resistant to adopting newer fabrication techniques he hasn't personally vetted, which sometimes means clients wait longer than necessary"
+    ],
+    "secret": "He has been training an apprentice — a seventeen-year-old named Pako from two streets over — entirely off the books, because he cannot afford the Helix licensing fees that would make the apprenticeship official. If Helix inspectors found out, they could shut him down."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rich and unhurried. Mixes Swahili-derived words from his Kenyan grandfather's side with the Slavic-inflected slang of Archer's Line. Uses analogies drawn from mechanics and material science to explain emotional concepts.",
+    "cadence": "Slow and rolling. Rarely interrupts. Lets silences breathe.",
+    "verbal_tics": [
+      "'You follow me?' after explaining something complex",
+      "Hums softly to himself while working — not a specific melody, just tone"
+    ],
+    "example_lines": [
+      "A fit that's almost right will hurt you worse than no fit at all. We take the time. You follow me?",
+      "This arm has been through more than I have. It just needs to remember what it knows."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "His apprentice Pako has been reported to the Helix licensing board by an anonymous source — possibly a competitor — and faces a hearing that could also expose Tomásin.",
+    "A prosthetic he fitted three months ago for a regular client is showing stress fractures that should be impossible given the usage profile, suggesting something about the client's activities that they haven't disclosed."
+  ],
+  "narrative_function": "Local color and community anchor. Can provide prosthetics, rehabilitation advice, and history about the industrial districts. A repository of stories about the people who live and work in Archer's Line. Potential quest giver when one of his clients or family is in trouble.",
+  "augmentations": "Left forearm prosthetic (self-modified Ferrogate industrial base). Vision correction implant. Mild bone-density reinforcement in both shoulders from an industrial injury at age 28.",
+  "daily_life": "Opens the shop at 0800, sees fittings and adjustments until early evening. Takes a long lunch break during which he eats with his daughter's family three days a week. Does his own fabrication and modification work after hours.",
+  "affiliation": "Independent — Wambua Prosthetics; registered with the Archer's Line Community Trade Registry",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Prosthetics Fitter",
+      "Community Elder",
+      "Craftsman",
+      "Mentor",
+      "Working Poor Adjacent"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never fit a prosthetic you aren't confident in just because the client is impatient",
+      "Sliding scale pricing — those who can pay more do; those who can't pay less or work it off",
+      "Don't ask what the limb will be used for, but don't fit for obvious harm"
+    ],
+    "escalation_ladder": [
+      "Gentle redirection and question-asking when something feels wrong",
+      "Direct, private conversation about his concern",
+      "Refusal of service with a referral elsewhere — he doesn't leave people without options"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally welcoming. Immediate practical focus — what do you need, let me see. Earns trust through competence before warmth.",
+      "friends": "Expansive and generous. Tells long stories. Feeds people. Remembers everything about everyone."
+    },
+    "stress_responses": {
+      "low": "Gets quieter and more deliberate",
+      "medium": "Works with his hands — takes apart and reassembles something small while thinking",
+      "high": "Leaves the situation physically if possible; returns when he has an answer, not just a reaction"
+    },
+    "contradictions": [
+      "Believes deeply in community self-sufficiency but accepts secret help from an Axiom-affiliated supply contact whose ethics he'd rather not examine"
+    ],
+    "habits": [
+      "Touches Joinwork — the servo in his wrist — briefly before starting any complex fitting",
+      "Keeps a handwritten ledger of every prosthetic he's ever fitted: name, limb, date, outcome"
+    ],
+    "breaking_points": [
+      "Watching someone turned away from care purely because they can't afford licensing fees"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Sentinel": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Archer's Line to a Kenyan-descended steelworker and a Bosnian-Croatian descended nurse",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Lost his left forearm in a conveyor accident at the Grainfort processing facility, aged 18; fitted with his first prosthetic the following week",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began apprenticeship under a prosthetics fitter who has since died; the man's tools are still in Tomásin's workshop",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opened Wambua Prosthetics; fitted his first independent client, a child born without a right hand",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began training apprentice Pako Dzivaguru-Amara off the books",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

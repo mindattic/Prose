@@ -1,0 +1,228 @@
+{
+  "id": "019d6143a7207ac59858ea56ae59669b",
+  "type": "character",
+  "name": "Yannick Asomaning-Pribilof",
+  "aliases": [
+    "Yanni",
+    "The Mouth"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Numbers runner and bookmaker",
+  "age": 19,
+  "status": "active",
+  "location": "Shallowgrave, working the Copperhead market blocks and the Burnside Pocket transit stops",
+  "description": "Yannick is all edges and nervous energy — lean and fast-moving, skin a warm medium brown with scattered vitiligo patches across his jaw and neck that he has chosen to emphasize rather than treat, coloring the edges of the patches with a faint bioluminescent ink that glows a soft blue-white in low light. He has his mother's Aleut cheekbones and his father's Ghanaian forehead and the specific wiry build of someone who has been running since childhood — literally running, routes and errands and collections, since he was eleven. His hair is grown out and unstyled, which is unusual enough in Shallowgrave's carefully cultivated aesthetic economy to read as either carelessness or confidence.\n\nHe is irrepressibly, exhaustingly verbal — he takes numbers, places bets, explains odds, and manages four different customer disputes simultaneously while eating a fried plantain from a street stall and telling a joke whose punchline he delivers to a different person than the one he started it with. He has a gift for mental arithmetic that would have made him a strong candidate for a Tessera data processing apprenticeship if his school records weren't spotty and his neighborhood weren't Shallowgrave. He knows this. He thinks about it more than he admits. He is nineteen and has not yet decided whether ambition is something that applies to him.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.8,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being trapped in Shallowgrave with no door out — becoming his uncle, who ran the same route twenty years ago and is still running it",
+      "Being wrong in a way that costs someone else something they can't recover"
+    ],
+    "core_desires": [
+      "To find a use for his mind that doesn't require lying about where he's from",
+      "To make enough to get his mother off the UBC stipend before she stops being able to work"
+    ],
+    "coping_mechanisms": [
+      "Constant movement — physical and social; he is rarely still long enough to feel bad about anything",
+      "Converting anxiety into calculation — turns worries into odds, which makes them feel manageable"
+    ],
+    "blind_spots": [
+      "He is significantly more visible and memorable than he believes, which is a liability in criminal work",
+      "He has genuine loyalty to Hafsah that she does not fully reciprocate and would not in a crisis"
+    ],
+    "secret": "He has been quietly skimming Φ3-5 per transaction across three months — not enough to trigger a single-incident audit, but enough accumulated that if Hafsah reconciles the full ledger he is in serious trouble. He started doing it to pay for his mother's medication and has not stopped because he doesn't know how to stop."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense Shallowgrave Creole mixed with street slang and sudden precise mathematical language; switches registers mid-sentence without noticing",
+    "cadence": "Fast, layered, frequently running two conversational threads simultaneously",
+    "verbal_tics": [
+      "'Ninety-three percent, easy—' as an enthusiastic overconfidence signal",
+      "'You hearing me?' when he wants confirmation without slowing down"
+    ],
+    "example_lines": [
+      "'Payout's forty-eight, minus the six-point spread, minus what you owe from the Tuesday slip — so call it thirty-one and change, you want it in my hand right now or you want me to come back, because I got six more stops before the market closes, you hearing me?'",
+      "'The odds on the Escanaba line being twelve minutes late today are, honest, seventy-two percent in your favor. That's not me selling you something, that's me doing you a favor that I'm not allowed to do, so.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He has accidentally overheard a conversation between two of Hafsah's upper clients that contains information about something significantly larger than a numbers operation, and he has no idea what to do with it",
+    "The accumulated skimming is about to be discovered — and he needs either a way to replace the money before reconciliation day or a very fast exit from his current arrangement"
+  ],
+  "narrative_function": "Street-level information node — he hears everything in Copperhead and Burnside; local color; potential quest giver for small-stakes storylines; the character who knows everyone by name and can connect players to almost any Shallowgrave resident",
+  "augmentations": "Bioluminescent edge-ink on vitiligo patches (cosmetic, applied locally by a Shallowgrave tattoo artist); no implants — he cannot afford them",
+  "daily_life": "He starts the morning circuit at 07:00, collecting overnight results and delivering payouts or marking debts. Mid-morning he sets odds for the day's events — factory shift accident rates, transit delays, Ferrogate schedule variance — a local informal betting market. Evenings he runs collections and social intelligence for Hafsah.",
+  "affiliation": "Works under a mid-level Shallowgrave bookie named Hafsah (informal, not detailed here); loosely connected to the Copperhead Boys street collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 3,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Information Node",
+      "Street Math",
+      "Impulsive Loyalty",
+      "Ticking Clock"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always deliver bad news about a payout in a public place — safer for everyone",
+      "Never extend credit he isn't authorized to extend, no matter how much he likes the person"
+    ],
+    "escalation_ladder": [
+      "Apologizes sincerely and at length and does not fix the problem",
+      "Goes to Hafsah and reports the situation, which he finds genuinely distressing",
+      "Runs — he is very fast and knows Shallowgrave's alley topology better than anyone"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and slightly overwhelming; assumes familiarity faster than most people are comfortable with",
+      "friends": "Fiercely loyal to the point of poor judgment; will do things for friends he knows are bad ideas"
+    },
+    "stress_responses": {
+      "low": "Talks faster and makes more jokes",
+      "medium": "Goes briefly, unusually quiet; the absence of chatter is alarming to people who know him",
+      "high": "Panics visibly, then pivots to desperate improvisation that is sometimes brilliant"
+    },
+    "contradictions": [
+      "He is an information specialist who is himself extremely leaky — he shares things impulsively that he should protect",
+      "He has a genuine mathematical gift and absolutely no long-term financial discipline"
+    ],
+    "habits": [
+      "Counts steps between transit stops automatically; has memorized the step-count of every route he runs",
+      "Eats while working constantly — always has something from a market stall; considers it multitasking"
+    ],
+    "breaking_points": [
+      "Hafsah discovering the skimming and responding with violence rather than anger",
+      "His mother asking him directly what he does for money"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Bioluminescent vitiligo edge-ink (cosmetic, tattoo-applied, not geneware)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent vitiligo edge-ink (cosmetic, tattoo-applied, not geneware)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9,
+    "Code Keeper": 0.9,
+    "Pragmatist": 0.9,
+    "Dreamer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2181: Born in Shallowgrave to a Ghanaian father (absent) and Aleut-Russian mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2189: Begins running informal errands for neighborhood bookmakers at age 8",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2192: Formally taken on by Hafsah as a numbers runner",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2197: Promoted to managing his own route and setting odds for local informal markets",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199: Begins skimming",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200: Current — fast, visible, and running out of time before reconciliation day",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

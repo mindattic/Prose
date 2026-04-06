@@ -1,0 +1,268 @@
+{
+  "id": "019d6143a670725fad842cf61963bf04",
+  "type": "character",
+  "name": "Nurlan Holmberg-Dembele",
+  "aliases": [
+    "Grim",
+    "The Specialist"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Forced entry and close-quarters combat specialist — breacher",
+  "age": 45,
+  "status": "active",
+  "location": "The Narrows — cramped residential corridors between megastructures",
+  "description": "Nurlan Holmberg-Dembele is average height but with a presence that fills more space than the body accounts for. At 45, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a breacher out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Nurlan Holmberg-Dembele describe him as a precision instrument — point him at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.33,
+      "ideal": 0.65,
+      "id": 0.61,
+      "shadow": 0.48,
+      "mask": 0.21,
+      "ghost": 0.48
+    },
+    "core_fears": [
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "That their reputation is built on luck, not skill, and the luck is finite"
+    ],
+    "core_desires": [
+      "To find the person who burned them and make it educational",
+      "Stability — a place to sleep that's the same place two nights running",
+      "To build something that outlasts the next contract cycle"
+    ],
+    "coping_mechanisms": [
+      "Maintains weapons obsessively — cleaning guns is meditation",
+      "Connection — finds someone to talk to, even if it's a bartender or a cat",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Cannot accept help without interpreting it as leverage",
+      "Trusts technology more than people — machines don't betray"
+    ],
+    "secret": "Nurlan Holmberg-Dembele has been doubling fees to clients and pocketing the difference. The fixer who handles their contracts doesn't know. Yet."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Whispers when angry — the quieter the voice, the worse the situation",
+      "Uses old pre-collapse slang that nobody else remembers"
+    ],
+    "example_lines": [
+      "\"Doors are polite suggestions. I'm not polite.\"",
+      "\"First through the door, last to flinch. That's the job description.\"",
+      "\"Close quarters is where plans go to die. I make sure it's their plans, not ours.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Nurlan Holmberg-Dembele is offered a contract that would clear all their debts — the target is someone they respect",
+    "A crew member from Nurlan Holmberg-Dembele's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A dead drop Nurlan Holmberg-Dembele maintains is found and cleaned out — whoever did it now has leverage"
+  ],
+  "narrative_function": "Nurlan Holmberg-Dembele is a pressure point — the kind of character whose choices ripple outward. When he makes a decision, other people's lives change. That weight is the engine of his stories.",
+  "augmentations": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces. Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Semi-independent — has standing arrangements with several crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 7
+      },
+      "agility": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 9
+      },
+      "reflexes": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 8
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 4
+      },
+      "perception": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 8
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 5
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 8
+      },
+      "intimidation": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 6
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 8
+      },
+      "empathy": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 9
+      }
+    },
+    "personality": {
+      "aggression": 0.84,
+      "caution": 0.77,
+      "loyalty": 0.52,
+      "greed": 0.5,
+      "empathy": 0.48
+    },
+    "drives": [
+      "power",
+      "money",
+      "reputation"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 8,
+      "loyalty_break": 10
+    },
+    "strengths": [
+      "pain tolerance beyond normal limits",
+      "mechanical aptitude — can repair or modify almost anything"
+    ],
+    "weaknesses": [
+      "emotional volatility under extreme stress",
+      "chronic insomnia affecting long-term performance"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "breacher",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Refuses contracts that require operating inside The Spires — too much surveillance"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Advocates caution to others but takes insane risks personally — double standard they can't see",
+      "Values loyalty intensely but has betrayed someone in the past to survive"
+    ],
+    "habits": [
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore"
+    ],
+    "breaking_points": [
+      "Watching someone they trained or mentored die on a job they recommended",
+      "Running out of options — no contacts, no money, no safe house, no way out",
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Gecko-grip fingertip implants and toe pads",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
+      "replaces": ""
+    },
+    {
+      "name": "Bioware adrenaline regulator",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

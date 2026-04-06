@@ -1,0 +1,166 @@
+{
+  "id": "019d6143a67e7ae9a80179605bb4f5a4",
+  "type": "character",
+  "name": "Olabisi Ferreira-Dzambazović",
+  "aliases": [
+    "Bisi",
+    "The Frequency"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "sound sculptor and DJ, Ferment Quarter fixture",
+  "age": 41,
+  "status": "active",
+  "location": "The Ferment Quarter — permanent residency at the venue called 'Slag'",
+  "description": "Olabisi is a big man going soft at the middle in the way of someone who was once physically imposing and no longer cares to maintain it. His skin is a deep umber, his head shaved close except for a strip of silver-threaded locs he keeps pulled back. His eyes carry patterned irises — a Helix Biosystems cosmetic mod from his Tier 3 days, concentric rings of gold and charcoal — that he chose to keep even after the money ran out, because he thinks they make him look like a prophet and he finds this privately amusing. His hands are enormous and dexterous, always moving, tapping rhythms on whatever surface is near.\n\nHe is warm in the manner of a man who has made peace with most of his disappointments, which makes him either genuinely wise or dangerously comfortable depending on who you ask. He builds sound sculptures — physical installations of salvaged materials that produce music when air, heat, or electrical current moves through them — and he DJs the late sets at Slag three nights a week, mixing generative compositions with field recordings he collects obsessively from across the city. He is the unofficial historian of the Ferment Quarter's sound scene, having watched it transform from genuine underground to semi-curated Palladian 'authenticity experience' with the sad clarity of someone who remembers the original thing.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.4,
+      "shadow": 0.7,
+      "mask": 0.3,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "that the scene he loves is already dead and he's just playing in the corpse",
+      "that he took the Palladian money because he was tired, not because it was right"
+    ],
+    "core_desires": [
+      "one perfect sound — something completely unrepeatable that he captured",
+      "to see one of his protégés make something he couldn't have imagined"
+    ],
+    "coping_mechanisms": [
+      "deflects emotional confrontation with humor and generosity",
+      "compulsive field recording — collecting the city's sounds feels like archiving something precious"
+    ],
+    "blind_spots": [
+      "has convinced himself he can take corporate money without being shaped by it",
+      "enables younger artists' self-destruction by being too understanding"
+    ],
+    "secret": "He has been secretly recording every conversation in Slag for eight years — not for surveillance, but because he believes the Quarter's social fabric is an art form that deserves to be archived. He has 8,000 hours of other people's lives stored on an encrypted drive he's never shared with anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rich and unhurried — mixes Yoruba proverbs (slightly misremembered), Bosnian expressions from his grandfather's side, and the dense technical vocabulary of acoustic engineering.",
+    "cadence": "Slow, deliberate, with long pauses that feel comfortable rather than awkward. Never rushes.",
+    "verbal_tics": [
+      "'you hear what I'm saying?' (not rhetorical — he actually wants to know)",
+      "hums a fragment of whatever he's been working on when thinking"
+    ],
+    "example_lines": [
+      "'Palladian wants to sell the Quarter's soul back to people who can afford it. I am aware. I am also aware that the lights need to stay on.'",
+      "'The city makes a sound when it's afraid. I've been recording it for years. It's getting louder.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "His archive of 8,000 hours of Slag recordings contains something he doesn't know is there — a conversation that implicates someone powerful in something serious.",
+    "A sound sculpture he installed outside Slag three years ago has started producing a frequency that wasn't in its design — something is broadcasting through it, and he's starting to think it might be an E.L.F. trying to communicate."
+  ],
+  "narrative_function": "Information source and community anchor — he has heard everything that has happened in the Ferment Quarter for fifteen years; quest giver for lost art, missing persons, venue-related trouble; moral compass character who asks uncomfortable questions gently.",
+  "augmentations": "Patterned irises (gold/charcoal concentric rings, Helix Biosystems cosmetic). Sub-dermal vibration sensors in his palms — allows him to feel sound frequencies physically, purchased secondhand and imperfectly calibrated.",
+  "daily_life": "Arrives at Slag by mid-afternoon to tend his sound installations, accepts whoever wanders in to talk, sets up for the night's performance, DJs until the early hours, takes the long walk home through Ferment Quarter recording ambient sound on his personal rig.",
+  "affiliation": "Independent; informal mentor to dozens of younger artists; Palladian Corporation pays him a venue subsidy he rationalizes constantly",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": -1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community-anchor",
+      "compromised-idealist",
+      "oral-historian",
+      "perceptive",
+      "warm"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never refuse someone a place to sit and a glass of water",
+      "will not play music that dehumanizes — has walked off a set over this"
+    ],
+    "escalation_ladder": [
+      "warm deflection",
+      "calm direct statement of position",
+      "absolute immovable silence — he goes very still and says nothing more"
+    ],
+    "interpersonal_modes": {
+      "strangers": "immediately welcoming, asks good questions, makes people feel seen",
+      "friends": "deeply loyal, occasionally enabling, remembers everything"
+    },
+    "stress_responses": {
+      "low": "makes tea and works slowly",
+      "medium": "disappears into the back with headphones for an hour",
+      "high": "becomes absolutely calm in a way that unsettles people who know him"
+    },
+    "contradictions": [
+      "preaches integrity but has quietly compromised in ways he lectures others against"
+    ],
+    "habits": [
+      "always has a recording device running",
+      "touches the sub-dermal sensors in his palms when listening to something — an unconscious check"
+    ],
+    "breaking_points": [
+      "watching someone destroy another artist's work or livelihood out of greed",
+      "being told his archive 'belongs' to Palladian because of the venue subsidy clause he didn't read carefully"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

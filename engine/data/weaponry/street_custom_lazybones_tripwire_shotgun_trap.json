@@ -1,0 +1,39 @@
+{
+  "id": "019d6143ab4873a7a28a95130054af3f",
+  "name": "Street Custom 'Lazybones' Tripwire Shotgun Trap",
+  "type": "weapon",
+  "aliases": [
+    "Lazybones",
+    "Door Blaster",
+    "Welcome Mat",
+    "Hello Goodbye"
+  ],
+  "category": "improvised",
+  "description": "A sawed-off shotgun fixed to a stationary mount with its trigger connected to a tripwire or door-opening mechanism, aimed at a kill zone. The Lazybones is the simplest possible automated weapon — a gun pointed at where someone will be, rigged to fire when they arrive. The design requires no electronics, no sensors, and no maintenance — it will wait indefinitely until the wire is pulled. They are deployed in doorways, stairwells, crawlspaces, and any chokepoint where the first person through is guaranteed to be in the line of fire. The weapons are indiscriminate by nature and have killed more unintended targets — children, emergency workers, scavengers — than intended ones.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — indiscriminate booby trap",
+  "base_technologies": [
+    "Mechanical tripwire trigger systems",
+    "Fixed-position weapon mounting"
+  ],
+  "specifications": "firearm: Sawed-off shotgun, typically 12-gauge\ntrigger: Monofilament tripwire or door mechanism linkage\nfiring arc: Fixed — wherever the gun is pointed\neffective range: 2-8 meters\nsetup time: 10-20 minutes\nweight: 3-4 kg including mount\npower source: None — purely mechanical\nindiscriminate: Yes — fires on any trigger activation",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An emergency response team lost a member to a Lazybones trap while responding to a medical call — the building had been abandoned for months but the trap was fresh, suggesting someone set it specifically to kill first responders.",
+    "A Tier 1 building has been systematically trapped with dozens of Lazybones devices, turning it into a fortress that nobody can enter without triggering multiple shotgun blasts — the occupant inside has not been seen in weeks."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "improvised",
+    "weapon",
+    "gun",
+    "ai",
+    "power",
+    "medical",
+    "fire",
+    "tier 1"
+  ]
+}

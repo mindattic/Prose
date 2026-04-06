@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Models.Canon;
 
@@ -45,8 +46,9 @@ public class FacetRulesData
     [JsonPropertyName("rotation")] public string Rotation { get; set; } = "";
 }
 
-public class MotifData
+public class MotifData : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("description")] public string Description { get; set; } = "";
     [JsonPropertyName("appearances")] public List<MotifAppearanceData> Appearances { get; set; } = [];
@@ -78,8 +80,9 @@ public class CharacterProfileData
 /// The body text is preserved as-is (it's literature, not data).
 /// Metadata is extracted and strongly typed.
 /// </summary>
-public class WorldbuildingDocument
+public class WorldbuildingDocument : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("file_name")] public string FileName { get; set; } = "";
     [JsonPropertyName("title")] public string Title { get; set; } = "";
     [JsonPropertyName("category")] public string Category { get; set; } = "";
@@ -91,8 +94,9 @@ public class WorldbuildingDocument
 /// <summary>
 /// Corponation — fully structured from markdown.
 /// </summary>
-public class CorponationData
+public class CorponationData : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("number")] public int Number { get; set; }
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("full_legal_name")] public string FullLegalName { get; set; } = "";

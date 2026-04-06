@@ -1,0 +1,236 @@
+{
+  "id": "019d6143a5c1716bbdc545101864c591",
+  "type": "character",
+  "name": "Benedikt Oyelaran-Tsetsegmaa",
+  "aliases": [
+    "Benny O",
+    "Checkpoint Benny"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Ferrogate Transit Security checkpoint operator, Deepwell Station",
+  "age": 55,
+  "status": "active",
+  "location": "Deepwell Station",
+  "description": "Benedikt Oyelaran-Tsetsegmaa has worked the Deepwell Station transit checkpoint for eleven years and has achieved a kind of architectural permanence — people plan around him the way they plan around a pillar. He is a large man running toward stout, with dark mahogany skin and a white-streaked beard he keeps neatly shaped, and the Ferrogate Transit Security uniform has been let out at the seams twice and still fits like a compromise. His eyes are dark and deeply patient, with irises that have a cosmetic starburst pattern he got twenty years ago for a partner who liked them and has never removed.\n\nHe is not a man of action and has never wanted to be. His role is documentation, verification, and the particular human skill of reading a crowd for the one person who is about to do something that will require paperwork. He is extraordinarily good at this. He knows the names of at least three hundred regular commuters and the names of their children and pets. He knows which merchants are running slightly over load limit and which ones are struggling enough that flagging them would destroy them. He makes these calls dozens of times a day, which is a kind of power he thinks about more than he lets on.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.4,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.3,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "being made irrelevant by automation",
+      "realizing that the judgment calls he's proud of were actually just favoritism"
+    ],
+    "core_desires": [
+      "to be remembered as someone who was fair",
+      "for Deepwell Station to feel safe to people who have reason to fear checkpoints"
+    ],
+    "coping_mechanisms": [
+      "routine as ritual",
+      "investing genuinely in knowing people's names and stories",
+      "leaving tea offerings to the Deepwell Station E.L.F., which he considers a professional peer"
+    ],
+    "blind_spots": [
+      "his 'reading' of people is partially pattern-matching that replicates biases he's never examined",
+      "believes he is more independent of Ferrogate pressure than he actually is"
+    ],
+    "secret": "Ferrogate has been quietly sending him the biometric flags of specific individuals — labor organizers, debt defaulters — with instructions to detain-and-hold under transit security code. He's done it four times. He told himself each time it was legitimate. He's stopped sleeping well."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm, conversational, institutional — uses official transit language naturally blended with personal warmth",
+    "cadence": "Unhurried, low register, the rhythm of someone who knows you're not going anywhere yet",
+    "verbal_tics": [
+      "'There it is'",
+      "addressing people as 'friend' when he likes them, 'citizen' when he doesn't"
+    ],
+    "example_lines": [
+      "'Chidi's girl, right? She's getting big. Now — documentation, please. Just for the record.'",
+      "'Listen, friend, I've been at this gate since before that train line was built. You can try whatever you're thinking, or you can save us both the morning. Your call.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He's been given a biometric flag for someone the players know is not a criminal — and is visibly uncomfortable about it",
+    "He has noticed a pattern of specific cargo moving through Deepwell on the overnight shift that doesn't match the manifests, and has been told not to look closer"
+  ],
+  "narrative_function": "Invaluable local information source; gatekeeper NPC who controls access; moral weight character who shows what accumulated small compromises look like over a career; can be obstacle or ally",
+  "augmentations": "Cosmetic starburst iris mod; standard Ferrogate biometric scanner uplink (wrist-mounted, issued); hearing aid (right ear, non-cyber, old injury)",
+  "daily_life": "Day shift, same gate, same stool, same thermos of tea from home. Reads transit law updates at lunch with the same focused attention he gives nothing else. Takes the long route home to walk.",
+  "affiliation": "Ferrogate Transit Security, Deepwell Station post",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 4,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 0,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community fixture",
+      "morally compromised",
+      "institutional",
+      "warm",
+      "slowly eroding"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Defuse before escalate — always",
+      "Know the rule before bending it, so you know what you're bending",
+      "Don't flag someone for poverty if you can flag them for something else or nothing at all"
+    ],
+    "escalation_ladder": [
+      "Friendly greeting and routine document check",
+      "Second check with more specific questions",
+      "Flagging for supervisor review",
+      "Physical hold under transit security code — hates this step",
+      "Calling Metro Police backup — has done this once in eleven years"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm professional neutrality — makes everyone feel briefly seen",
+      "friends": "Genuinely interested, asks follow-up questions weeks later, remembers everything"
+    },
+    "stress_responses": {
+      "low": "Gets more talkative",
+      "medium": "Reverts to pure procedure, becomes politely robotic",
+      "high": "Goes very quiet, moves slowly and carefully, makes no jokes"
+    },
+    "contradictions": [
+      "Prides himself on fairness while executing instructions he knows are unfair"
+    ],
+    "habits": [
+      "Pours tea from his thermos at exactly the same time each shift",
+      "leaves a data chip at the Deepwell E.L.F. shrine every Monday",
+      "keeps a handwritten log of 'unusual incidents' in a personal notebook Ferrogate doesn't know about"
+    ],
+    "breaking_points": [
+      "Being ordered to flag someone he personally knows is innocent and doing it anyway — the fourth time broke something"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "well-maintained",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Hustler": 0.7,
+    "Provider": 0.7,
+    "Opportunist": 0.7,
+    "Sentinel": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born, Collinwood Docks district",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined Ferrogate Transit Security after decade in warehouse logistics",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Assigned to Deepwell Station — has not moved since",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Received first biometric-flag detention instruction; complied",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

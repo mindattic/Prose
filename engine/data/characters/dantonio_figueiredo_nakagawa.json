@@ -1,0 +1,214 @@
+{
+  "id": "019d6143a5e2726da40d0377d486a188",
+  "type": "character",
+  "name": "Dantonio Figueiredo-Nakagawa",
+  "aliases": [
+    "Dan",
+    "Fig"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Biotech Research Intern, Helix Biosystems",
+  "age": 23,
+  "status": "active",
+  "location": "Vantage Meridian Corporate Campus, Helix Biosystems Applied Genomics Division",
+  "description": "Dantonio is slight and perpetually underdressed for the climate-controlled precision of the Helix campus — he runs hot, sweats through everything, and has given up on looking composed. He has his grandmother's broad nose and his grandfather's sharp jaw, warm brown skin scattered with vitiligo patches that he has never treated because he thinks they're interesting, and he grew cat ears last year as a sixteenth-birthday gift to himself that he thought would make him look confident and now mostly make him look like he's always slightly startled, which is accurate. He's twenty-three, brilliant in a narrow and genuinely useful way, and deeply, structurally exhausted.\n\nHe grew up Tier 2 on UBC-adjacent support in Grainfort, won a Helix merit scholarship that turned out to have seventeen pages of intellectual property clauses buried in the terms, and is now doing the work of three people for intern stipend. He is not cynical yet — that's the most notable thing about him. He still gets excited. He still sends enthusiastic research summaries to supervisors who don't read them. He still believes, against mounting evidence, that if he is good enough at his job someone will notice.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "That his scholarship was a trap and he has already lost everything he was going to discover",
+      "That he is not actually as good as he needs to be"
+    ],
+    "core_desires": [
+      "To publish something under his own name",
+      "To have enough money that he doesn't have to do mental math before eating"
+    ],
+    "coping_mechanisms": [
+      "Hyperfocus on interesting problems as an escape from everything else",
+      "Texting his cousin at 2am",
+      "Leaving small data offerings at the lab E.L.F. shrine when an experiment isn't working"
+    ],
+    "blind_spots": [
+      "He is being systematically undercredited for work that will appear under his supervisor's name",
+      "He interprets institutional kindness as personal kindness"
+    ],
+    "secret": "Three months ago he accidentally synthesized a protein sequence that produced an unexpected regenerative response in the trial substrate. He reported it to his supervisor, who told him to discard it and document it as a failed run. He discarded it. He also kept a private backup he doesn't know what to do with."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical and precise about his work; casual to the point of incoherence about everything else. Apologizes before asking questions.",
+    "cadence": "Fast when excited, trails off when uncertain. Sentences sometimes end before they're finished because he's already thinking about the next one.",
+    "verbal_tics": [
+      "'Sorry, can I—'",
+      "'Wait, actually—'",
+      "Ear-twitch when processing something unexpected (involuntary geneware side effect)"
+    ],
+    "example_lines": [
+      "'Sorry, I don't — I mean, I can pull the data if you need it, I just wasn't sure if that was, um. Yeah, I can pull it.'",
+      "'The sequence shouldn't have done that. It shouldn't have. That's why it's interesting.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He quietly approaches someone outside Helix, clearly terrified, and asks hypothetically what would happen to data that a company told you to destroy but that you maybe didn't entirely destroy.",
+    "His research mentor, the only supervisor who has ever read his summaries, has just been quietly let go — and Dantonio is now the only person who knows the full context of three ongoing experiments."
+  ],
+  "narrative_function": "Local color for the exploitative underbelly of corporate research culture; unwitting information source who doesn't know what he knows; character whose idealism is either an asset or a liability depending on the story; potential protagonist for a story about what it costs to be talented and poor inside a corponation.",
+  "augmentations": "Cosmetic cat ears (pale gold, self-grown via geneware kit, sixteenth birthday). Basic student-tier neural link. No other mods — can't afford them.",
+  "daily_life": "On campus by 0700, in the lab until whenever the project lead decides the day is over, eats whatever the campus cafeteria has left, sleeps in a shared intern housing unit in the Vantage campus annex, and spends his transit time reading papers that aren't required for his work but that he finds interesting.",
+  "affiliation": "Helix Biosystems (intern, Applied Genomics)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 5,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 3,
+      "empathy": 6,
+      "expression": 4,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": -3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "gifted and overlooked",
+      "exhausted idealist",
+      "knows too much",
+      "economic anxiety",
+      "geneware ears"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Follow protocol until protocol produces something obviously wrong",
+      "Don't make enemies — can't afford them",
+      "Always verify the data yourself"
+    ],
+    "escalation_ladder": [
+      "Quiet compliance while internally panicking",
+      "Asking a trusted person hypothetical questions",
+      "Doing the thing he's been agonizing over and immediately regretting it"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite, slightly anxious, tries to be helpful as a way of making himself less invisible",
+      "friends": "Warm, rambling, sends too many messages at once"
+    },
+    "stress_responses": {
+      "low": "Ear-twitch, focus narrows to the immediate task",
+      "medium": "Works longer hours as if productivity is protective",
+      "high": "Goes very still and stops talking"
+    },
+    "contradictions": [
+      "He follows every rule because he cannot afford the consequences of breaking them, and yet he kept the protein sequence backup"
+    ],
+    "habits": [
+      "Leaves a clean data-log at the E.L.F. shrine in Lab 4 before every major experiment",
+      "Eats the same cafeteria meal every day because decision fatigue is real",
+      "Annotates everything he reads, even things he reads for fun"
+    ],
+    "breaking_points": [
+      "Discovering his name has been removed from research he originated",
+      "Being told to falsify a second result"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Grainfort to a transit worker and a food-service operator",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Won the Helix Biosystems Merit Scholarship — signed the IP clauses without fully understanding them",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Grew cosmetic cat ears for his birthday; spent the following month learning that they twitch involuntarily when he's processing stress",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Accidentally synthesized anomalous protein sequence; reported it; was told to discard it; kept a copy",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

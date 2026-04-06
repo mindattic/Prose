@@ -1,0 +1,199 @@
+{
+  "id": "019d6143a7387691b608217a4831a937",
+  "type": "character",
+  "name": "Zlatko Diallo-Rangimārie",
+  "aliases": [
+    "Zlatko",
+    "Z-lock"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Bounty compliance officer, independent — contracted to Tessera Compliance Bureau",
+  "age": 27,
+  "status": "active",
+  "location": "Chatham Flats",
+  "description": "Zlatko is young in a way he is painfully aware of — broad-shouldered and physically impressive, with medium brown skin, a slightly too-eager manner, and retractable claw geneware on both hands that he got at nineteen because he thought it would make him look serious and has since decided he was right for the wrong reasons. He keeps the claws sheathed almost always; extending them feels like admitting he's nervous. His hair is grown out past his shoulders, dyed in shifting red-orange bioluminescence that he tells people is a professional investment because people remember you, which is true and also not really why he did it.\n\nHe works skip tracing and debt-compliance pickups for Tessera — locating people who have defaulted on Tessera contracts, service agreements, or residential obligations and facilitating their 'voluntary return to compliance,' which in practice means finding them and making very clear what Tessera's options are. He is not violent by preference and not comfortable when situations require it. He is, however, genuinely good at the finding — spatial memory, social intuition, and a disarming quality that makes people underestimate him until he's already confirmed what he came to know. He keeps a small E.L.F. prayer card tucked in his jacket — Our Finder, patron of lost things — and touches it before starting a new case.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being actually dangerous to someone who didn't deserve it",
+      "Failing publicly and embarrassingly — being made to look like what he suspects he is: too young for this"
+    ],
+    "core_desires": [
+      "To be genuinely competent, not just lucky",
+      "To save enough to stop doing Tessera contracts and do something that doesn't require him to find people who are hiding"
+    ],
+    "coping_mechanisms": [
+      "Humor and likability as social lubrication in uncomfortable situations",
+      "Prayer card ritual before each case — grounds the anxiety in something external",
+      "Tells himself a story about the compliance system being better than the alternative"
+    ],
+    "blind_spots": [
+      "The story he tells himself about Tessera's compliance system being benign is increasingly not supported by his case files",
+      "Youth — misreads experience as cynicism and thinks he's more hardened than he is"
+    ],
+    "secret": "He deliberately mislogged the address on a case file three months ago. The person he was tracking — a single mother who had defaulted on a Tessera residential agreement — had told him where she was going before he found her, and he believed her when she said she'd make the next payment. She hasn't. He checks the portal every morning."
+  },
+  "speech_patterns": {
+    "vocabulary": "Chatham Flats vernacular, professional language he's still learning to deploy correctly, occasional over-formal phrasing when he's nervous",
+    "cadence": "Fast and social — fills silence, asks questions, pivots quickly",
+    "verbal_tics": [
+      "Look —",
+      "Not gonna lie —",
+      "That's fair, that's fair."
+    ],
+    "example_lines": [
+      "I'm not here to cause problems. I'm genuinely not. I just need to understand the situation.",
+      "The card's for Our Finder. You got something missing, it helps. Don't tell me you don't."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A case he's been assigned crosses into something much larger — the person he's tracking isn't hiding from a debt, they're hiding from Tessera for an entirely different reason",
+    "The mother he covered for has disappeared — not from Tessera, from everywhere — and he doesn't know if he's responsible"
+  ],
+  "narrative_function": "Ground-level institutional presence — not quite police, not quite private sector, operating in the grey zone of corporate compliance enforcement. Useful for encounters, pressure, and humanizing the machinery of corporate debt.",
+  "augmentations": "Retractable claw geneware — both hands, matte black keratin. Bioluminescent hair dye — red-orange shift. Standard Tessera contractor neural tag for case file access.",
+  "daily_life": "Takes case assignments via Tessera's contractor portal each morning; spends most of his day in the field — transit nodes, residential blocks, neighborhood contacts; files location reports when he has a lead and compliance logs when a case closes.",
+  "affiliation": "Tessera Compliance Bureau (contract); Chatham Flats resident",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 7,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Young Operator",
+      "Social Intelligence",
+      "Institutional Grey Zone",
+      "Developing Conscience"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Find first, decide what to do about it after",
+      "Don't extend claws unless the situation is already gone sideways",
+      "Keep the target talking — information is safety"
+    ],
+    "escalation_ladder": [
+      "Casual contact — pose as unrelated, gather information",
+      "Direct approach, compliance framing, friendly pressure",
+      "Formal notification of Tessera's options, clearly stated",
+      "Call in a Tessera field supervisor — removes himself from the hard part"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm and slightly performative — reads as harmless, which is functional and also occasionally accurate",
+      "friends": "Easier, less careful, genuinely funny, more honest about his doubts than he'd admit to professionally"
+    },
+    "stress_responses": {
+      "low": "Talks more — fills space",
+      "medium": "Gets very still and very polite, which people who know him find alarming",
+      "high": "Physically withdraws and checks the prayer card"
+    },
+    "contradictions": [
+      "Tells himself he cares about doing right by people while working a system that structurally harms them"
+    ],
+    "habits": [
+      "Touches the Our Finder card before starting each new case",
+      "Reviews Tessera's open contractor portal twice a morning",
+      "Eats standing up at Chatham Flats street stalls, always the same rotating three"
+    ],
+    "breaking_points": [
+      "Being assigned to locate the woman he deliberately mislogged"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Retractable claw geneware — both hands, matte black keratin (personal, age 19)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Retractable claw geneware — both hands, matte black keratin (personal, age 19)",
+      "replaces": ""
+    },
+    {
+      "name": "Bioluminescent hair — red-orange shift (cosmetic, personal)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent hair — red-orange shift (cosmetic, personal)",
+      "replaces": ""
+    },
+    {
+      "name": "Tessera contractor neural tag — case file access, location ping for field reports (Tessera-issued)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Tessera contractor neural tag — case file access, location ping for field reports (Tessera-issued)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Tactician": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

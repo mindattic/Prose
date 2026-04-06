@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a870762cace27c4504e33bc9",
+  "name": "Street Custom 'Rathole' Portable Cutting Kit",
+  "brand_name": "Street",
+  "product_name": "Street Custom 'Rathole' Portable Cutting Kit",
+  "type": "equipment",
+  "aliases": [
+    "Rathole",
+    "Cut Kit",
+    "Wall Opener",
+    "Entry Tools"
+  ],
+  "category": "tools",
+  "description": "A compact toolkit containing a plasma cutting wand, pry bars, lock manipulation tools, and hinge pin extractors — everything needed to gain unauthorized entry through walls, doors, floors, or ceilings. The centerpiece is a miniaturized plasma cutter powered by a belt-mounted battery that can cut through standard construction materials including drywall, wood, light steel, and concrete block. The complete kit fits in a messenger bag and allows a single operator to create a human-sized opening through a standard interior wall in under 3 minutes. The kit has become standard equipment for urban exploration, burglary, and tactical entry operations across the lower tiers.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal as tools — illegal as burglary kit depending on context",
+  "base_technologies": [],
+  "specifications": {
+    "plasma cutter": "Miniaturized",
+    "info": "cuts construction steel up to 5mm; 15 minutes cutting time; 3 sizes",
+    "battery": "Belt-mounted",
+    "pry bars": "Titanium",
+    "lock tools": "Manipulation picks + bypass tools",
+    "hinge extractors": "Universal pin removal",
+    "cutting speed": "Human-sized wall opening in 3 minutes",
+    "total weight": "3.2 kg complete kit",
+    "form factor": "Messenger bag carrier"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A series of burglaries show identical Rathole entry patterns — the same tool kit, the same cutting technique, and the same operator based on the plasma arc characteristics.",
+    "A Rathole kit has been modified with a silent plasma cutter that operates below 30 dB — entry can be made through a wall while people on the other side of the room do not hear it."
+  ],
+  "tags": [
+    "tools",
+    "equipment",
+    "ai",
+    "power",
+    "bar",
+    "tier 1"
+  ]
+}

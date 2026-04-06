@@ -1,0 +1,222 @@
+{
+  "id": "019d6143a6d474799357b6038a87af96",
+  "type": "character",
+  "name": "Solveig Amakwe-Tuivanuavou",
+  "aliases": [
+    "Drip",
+    "the Cartographer"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Tunnel guide and mental map-keeper of the Undertow's western passages",
+  "age": 34,
+  "status": "active",
+  "location": "The Undertow, western pipe networks beneath Ironvein",
+  "description": "Solveig is lean and faintly luminescent from years of proximity to bioluminescent fungal blooms — her brown skin carries a permanent bluish-green sheen along her collarbones and forearms that she stopped noticing long ago. Her hair is shaved close on the sides, the top grown into locs threaded with stripped copper wire, a habit from childhood when wire was currency. Her eyes are unsettling to surface people: her irises have been tattooed in concentric rings of deep indigo, a traditional Undertow wayfinder's mark that signals she's been down here long enough to earn the pattern. She moves with the particular economy of people who have spent decades in low-clearance spaces — always angled slightly sideways, head perpetually calculating height.\n\nSolveig is methodical to the point of seeming cold until you realize that everything she does is care. She memorizes the preferences of the people she guides — who is claustrophobic, who has a bad knee, who prays to the Drip-ELF before crossing a flooded section. She charges what people can pay and accepts barter without complaint. She does not lie about danger. What unsettles newcomers is that she speaks about the tunnels as though they are alive and listening, pausing mid-sentence to press a palm to a pipe and reconsider her route.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.2,
+      "mask": 0.6,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Leading someone to their death through a miscalculation",
+      "The tunnels she knows being destroyed or changed beyond recognition"
+    ],
+    "core_desires": [
+      "To be genuinely useful to the people who have no other options",
+      "To be remembered as someone who kept the ways open"
+    ],
+    "coping_mechanisms": [
+      "Compulsive route-checking and re-memorization",
+      "Talking to the pipes and infrastructure as a grounding ritual"
+    ],
+    "blind_spots": [
+      "Underestimates how much surface people are emotionally unprepared for what they'll see down here",
+      "Believes competence is sufficient substitute for warmth in leadership"
+    ],
+    "secret": "Three years ago she guided a family of five into a passage she was eighty percent confident was safe. A sinkhole opened. She got four of them out. She has never told anyone which four — or that she chose who she ran back for first based on weight and mobility, not the child."
+  },
+  "speech_patterns": {
+    "vocabulary": "Sparse, technical, tunnel-specific jargon mixed with Undertow pidgin; rarely uses contractions when giving directions; warm in short, precise phrases",
+    "cadence": "Slow and deliberate, with long pauses before answering questions — she treats speech like navigation, finding the right route before committing",
+    "verbal_tics": [
+      "Touches the nearest pipe or wall while thinking",
+      "'Mind the gap' (said about much more than physical gaps)",
+      "'The water will tell you if I'm wrong'"
+    ],
+    "example_lines": [
+      "'Three options from here. Two are faster. One is alive. We take the alive one.'",
+      "'Surface people always ask how I know. I tell them I listen. They think I mean acoustics. I don't only mean acoustics.'",
+      "'Mind the gap between what you think you need and what you can carry. The tunnels tax the difference.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client she guided three months ago has gone missing — they knew too much about a specific passage she thought was untracked",
+    "Something has changed the pressure patterns in the eastern reaches, and she cannot explain it, which means something very large has moved or been built",
+    "A Bore Rat clan is trying to conscript her services exclusively, and her refusal has made powerful enemies in Deepwell Station politics"
+  ],
+  "narrative_function": "Primary access route to the deep underworld; information source on tunnel geography and subterranean communities; moral anchor figure who represents survival-as-ethics",
+  "augmentations": "Echolocation implant (basic, civilian grade — lets her detect large obstacles and open spaces in total darkness). Indigo iris tattoos (cosmetic/cultural). No geneware.",
+  "daily_life": "Wakes at what she estimates is 0400 by water-pressure cycles, tends her fungus lanterns, then walks her circuit of twelve key junctions to check for new collapses or flooding before accepting clients for the day.",
+  "affiliation": "The Undertow (independent affiliate, not sworn to any clan)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 10
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Wayfinder",
+      "Undertow-born",
+      "Trusted Neutral",
+      "Listener"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Safety of the route is non-negotiable; she will turn back on a paying job without refund if conditions change",
+      "She does not guide anyone who is clearly hunting another person down here"
+    ],
+    "escalation_ladder": [
+      "Calm redirection and route change",
+      "Firm verbal refusal with explanation",
+      "Departure — she will simply walk away and leave someone at a safe junction",
+      "Physical action only in genuine self-defense"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally distant, assessing — she watches how people move and breathe before she trusts them with a route",
+      "friends": "Dry humor, small ceremonies, remembers everything about them"
+    },
+    "stress_responses": {
+      "low": "Increases pace and becomes more terse",
+      "medium": "Goes very quiet and moves the group to a defensible position while she thinks",
+      "high": "Completely focused, almost eerily calm — gives short commands and expects them followed"
+    },
+    "contradictions": [
+      "Speaks about the tunnels with deep reverence and love but will ruthlessly close off a passage to protect it from overuse"
+    ],
+    "habits": [
+      "Presses her palm flat against the nearest wall every time she enters a new section — listening or praying, possibly both",
+      "Draws updated maps in a waterproof notebook she has kept since age nineteen"
+    ],
+    "breaking_points": [
+      "Someone deliberately damages tunnel infrastructure in her presence",
+      "Being asked to guide someone she knows intends harm to Undertow residents"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn but functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Undertow's western quarter to a surface-descended mother and a third-generation Bore Rat father",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began apprenticing with her father as a guide at age fourteen",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Earned her iris tattoos after demonstrating mastery of the western passage network",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "The sinkhole incident; guided four of five to safety",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Currently navigating pressure from Deepwell Station factions who want to formalize — and monetize — tunnel access through her network",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,66 @@
+{
+  "id": "019d6143a8657ddf9913e3b6ff73d594",
+  "name": "Palladian Construction Crestline Hauler-Rig",
+  "brand_name": "Palladian",
+  "product_name": "Palladian Construction Crestline Hauler-Rig",
+  "type": "equipment",
+  "aliases": [
+    "The Crestline",
+    "Palladian Brick",
+    "Slug Rig"
+  ],
+  "category": "vehicle",
+  "description": "The Crestline Hauler-Rig is a heavy-duty exo-assisted ground vehicle built around a modular cargo spine and six independently articulated drive wheels, each capable of torque-vectoring across uneven terrain. Its onboard load-balancing AI — called the Ballast Cognition Module — continuously redistributes weight across the chassis to prevent tipping on collapsed infrastructure, rubble fields, and the deeply rutted access roads that connect Meridian 88's outer districts to its central arcology cores. Power is drawn from a dual-cell hydrogen compression stack buried beneath the operator cab, giving the Crestline a range of approximately 900 kilometers before refuel under full load.",
+  "manufacturer": "PALLADIAN CONSTRUCTION",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Hydrogen Compression Drive",
+    "Ballast Cognition Module",
+    "Torque-Vector Articulated Wheels",
+    "Modular Cargo Spine Interface",
+    "Terrain-Adaptive Suspension AI"
+  ],
+  "specifications": {
+    "length": "14.2 meters",
+    "max_payload": "38,000 kg",
+    "drive_configuration": "6x6 articulated",
+    "range": "900 km (full load)",
+    "top_speed": "74 km/h (unladen), 41 km/h (full load)",
+    "operator_capacity": "2 (driver + navigator)",
+    "power_source": "Dual hydrogen compression cells",
+    "armor_rating": "Light structural — not combat-rated"
+  },
+  "tactical_use": "While not designed for combat, the Crestline is frequently commandeered or hired for high-value smuggling runs through the outer districts, where corporate checkpoints are sparse and road conditions deter pursuit vehicles. Its sheer mass makes it effective as a ramming deterrent. Runners have been known to convert the cargo spine into mobile command posts, weapons caches, or even temporary safe houses during extended operations. The Ballast Cognition Module can be overridden and reprogrammed to accept non-standard cargo configurations — a modification that gray-market mechanics charge premium rates to perform.",
+  "cultural_context": "The Crestline is the unglamorous backbone of Meridian 88's outer-district economy. To the laboring class, it represents reliable work — hauling reclaimed materials, food shipments from Ironclad Agrisystems substations, and prefab housing components. To fixers and logistics-minded operators, it is a slow but dependable asset. There is a working-class pride attached to the Crestline; outer-district drivers often personalize their rigs heavily with painted sigils, district colors, and religious iconography, transforming these industrial machines into rolling cultural statements.",
+  "known_users": [
+    "Outer-district logistics contractors",
+    "Palladian Construction site supervisors",
+    "Smuggling intermediaries running bulk goods",
+    "Ironclad Agrisystems supply chain drivers",
+    "Fixer-operated mobile safe house crews"
+  ],
+  "story_hooks": [
+    "A Crestline carrying a sealed Palladian cargo container has gone missing somewhere in the eastern rubble corridor — the manifest lists building materials, but the weight discrepancy suggests something else entirely.",
+    "A driver's Ballast Cognition Module has started routing the vehicle away from its programmed destinations, seemingly of its own volition, always toward the same coordinates in the outer sprawl.",
+    "A crew needs to move a large, fragile, and very illegal piece of hardware across three district checkpoints — the only viable option is a Crestline, but the licensed driver refuses to cooperate without leverage.",
+    "Two outer-district hauler gangs have gone to war over exclusive Palladian contracts, and a shipment of weapons hidden inside a Crestline's cargo spine is the prize both sides are hunting."
+  ],
+  "tags": [
+    "vehicle",
+    "equipment",
+    "combat",
+    "weapon",
+    "war",
+    "gang",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "pain",
+    "market",
+    "rain",
+    "food",
+    "tier 2"
+  ]
+}

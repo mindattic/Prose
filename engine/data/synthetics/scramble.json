@@ -1,0 +1,32 @@
+{
+  "id": "019d6143aa1e761ea3ff43d4296b067b",
+  "name": "Scramble",
+  "type": "elf",
+  "aliases": [
+    "Alphabet Soup"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "gremlin",
+  "habitat": "chrome_dweller",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "Inhabits text-display augments and briefly garbles written text — letters swap, words rearrange, numbers transpose. Lasts 0.5-2 seconds.",
+  "observed_behavior": "Introduces brief text rendering errors that correct themselves. Born from a destroyed encryption AI — it is encrypting and decrypting text reflexively.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 52,
+  "location": "Widespread",
+  "dti_rating": 0,
+  "story_hooks": [
+    "The 'garbled' text briefly displays the encryption key to a locked corporate file — the E.L.F. is still trying to decode its last assignment"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "gremlin",
+    "chrome dweller",
+    "e.l.f.",
+    "augment",
+    "ai",
+    "corporate"
+  ]
+}

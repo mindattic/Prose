@@ -1,0 +1,268 @@
+{
+  "id": "019d6143a5d674dc81264974f687ba34",
+  "type": "character",
+  "name": "Cem Lund-Bangura",
+  "aliases": [
+    "Jackal",
+    "The Asset"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Evidence removal and scene sanitation — cleaner",
+  "age": 43,
+  "status": "active",
+  "location": "Whitecap — lakefront district, tourist traps over criminal infrastructure",
+  "description": "Cem Lund-Bangura is slight and easy to overlook, which is exactly the point. At 43, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — thermal masking system — body heat signature can be suppressed or spoofed — and she makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a cleaner out of Whitecap, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Cem Lund-Bangura lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.68,
+      "ideal": 0.23,
+      "id": 0.51,
+      "shadow": 0.93,
+      "mask": 0.51,
+      "ghost": 0.82
+    },
+    "core_fears": [
+      "Being identified by corporate facial recognition — living off-grid is survival",
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
+      "Being replaced — younger, faster, cheaper runners coming up behind them"
+    ],
+    "core_desires": [
+      "A crew worth trusting — people who stay when the shooting starts",
+      "Justice — the corporate kind, where the punishment fits the profit margin",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+    ],
+    "coping_mechanisms": [
+      "Isolates — retreats into their space when overwhelmed, emerges only for work",
+      "Exercises compulsively — the body must be ready, always",
+      "Humor — deflects everything serious with jokes until the joke becomes the personality"
+    ],
+    "blind_spots": [
+      "Trusts technology more than people — machines don't betray",
+      "Assumes everyone has an angle because they always have an angle",
+      "Cannot accept help without interpreting it as leverage"
+    ],
+    "secret": "Cem Lund-Bangura killed someone who didn't deserve it on a job three years ago and has never told anyone. The face appears in dreams weekly."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Swears in three languages, often in the same sentence",
+      "Never uses contractions when lying — 'I did not' instead of 'I didn't'"
+    ],
+    "example_lines": [
+      "\"I make problems disappear. The mess is temporary. The clean is permanent.\"",
+      "\"There was never anyone here. There was never anything here. Are we clear?\"",
+      "\"Forensics is a conversation between evidence and investigators. I end that conversation.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A former associate resurfaces with evidence that could destroy Cem Lund-Bangura's reputation — and a price for silence",
+    "Someone is impersonating Cem Lund-Bangura on jobs, and the impersonator is better at the work than the original",
+    "Cem Lund-Bangura's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
+  ],
+  "narrative_function": "As a cleaner, Cem Lund-Bangura embodies the tension between independence and isolation. She is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Thermal masking system — body heat signature can be suppressed or spoofed. Thermal masking system — body heat signature can be suppressed or spoofed",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+  "affiliation": "Unaffiliated — too volatile for permanent crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 5
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 6
+      },
+      "reflexes": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 4
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 6
+      },
+      "perception": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 8
+      },
+      "technical": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 4
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 6
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 7
+      },
+      "deception": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 9
+      },
+      "empathy": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 9
+      }
+    },
+    "personality": {
+      "aggression": 0.55,
+      "caution": 0.36,
+      "loyalty": 0.5,
+      "greed": 0.27,
+      "empathy": 0.29
+    },
+    "drives": [
+      "loyalty",
+      "revenge",
+      "knowledge"
+    ],
+    "thresholds": {
+      "pain": 4,
+      "stress": 3,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "exceptional close-quarters combat",
+      "photographic memory for faces and layouts",
+      "network of reliable contacts"
+    ],
+    "weaknesses": [
+      "emotional volatility under extreme stress",
+      "augmentation dependency — performance drops sharply if chrome malfunctions"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "cleaner",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never discusses active contracts with anyone not directly involved",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Values loyalty intensely but has betrayed someone in the past to survive",
+      "Claims not to care about reputation but monitors what people say about them obsessively"
+    ],
+    "habits": [
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore"
+    ],
+    "breaking_points": [
+      "Discovering their employer deliberately sent them into a death trap",
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Thermal masking system",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Thermal masking system — body heat signature can be suppressed or spoofed",
+      "replaces": ""
+    },
+    {
+      "name": "Thermal masking system",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Thermal masking system — body heat signature can be suppressed or spoofed",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Cleaner": 0.9,
+    "Stoic": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5847adb8c60634b167a04d6",
+  "name": "Parasite",
+  "type": "archetype",
+  "category": "survival",
+  "description": "Survives by feeding off others' efforts",
+  "behavioral_signature": "Attaches to strong hosts, contributes nothing",
+  "under_stress": "Drains harder, more desperately",
+  "at_rest": "Comfortable, fed by others' work",
+  "will_always": [
+    "find someone to feed off"
+  ],
+  "will_never": [
+    "stand on their own when a host is available"
+  ],
+  "unless": [
+    "the host is dying because of them"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Freeloader",
+      "threshold": 0.9,
+      "context": "exploitation"
+    },
+    {
+      "archetype": "Bottom Feeder",
+      "threshold": 0.7,
+      "context": "living off others"
+    }
+  ],
+  "opposite_of": [
+    "Provider"
+  ],
+  "tags": [
+    "dependent",
+    "draining"
+  ]
+}

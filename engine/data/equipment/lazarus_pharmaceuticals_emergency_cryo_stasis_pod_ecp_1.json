@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a8607114ac2fb86a61abd030",
+  "name": "Lazarus Pharmaceuticals Emergency Cryo-Stasis Pod ECP-1",
+  "brand_name": "Lazarus",
+  "product_name": "Lazarus Pharmaceuticals Emergency Cryo-Stasis Pod ECP-1",
+  "type": "equipment",
+  "aliases": [
+    "ECP-1",
+    "Ice Box",
+    "Cryo Pod",
+    "Lazarus Freeze"
+  ],
+  "category": "medical",
+  "description": "A portable cryogenic preservation system that rapidly cools a patient to metabolic stasis temperatures, halting all biological processes including cellular death, hemorrhaging, and toxin propagation. The ECP-1 is designed for pre-hospital care of critically injured or poisoned patients who cannot be stabilized by conventional field treatment — rather than trying to save them on-scene, the patient is preserved in stasis for transport to a definitive care facility. The pod cools the patient to -80°C within 3 minutes using a circulating cryoprotectant that prevents ice crystal formation in tissues, and maintains stasis for up to 48 hours.",
+  "manufacturer": "LAZARUS PHARMACEUTICALS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — emergency medical equipment",
+  "base_technologies": [],
+  "specifications": {
+    "cooling time": "3 minutes to -80°C metabolic stasis",
+    "stasis duration": "48 hours maximum",
+    "cryoprotectant": "Automated injection and circulation",
+    "ice crystal prevention": "Vitrification protocol",
+    "revival": "Requires equipped medical facility",
+    "weight": "25 kg",
+    "form factor": "Rigid case",
+    "info": "person-sized when deployed; self-contained",
+    "power": "Integrated cooling system",
+    "shelf life": "5 years before cryoprotectant replacement"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A patient was placed in an ECP-1 after a fatal poisoning, preserving them in stasis — but the antidote requires a substance that does not exist in any known pharmacy, and the 48-hour stasis window is ticking.",
+    "Someone has been placing living, conscious people in ECP-1 pods as a form of kidnapping — the victims experience 48 hours of frozen awareness before the stasis fails and they wake up in an unknown location."
+  ],
+  "tags": [
+    "medical",
+    "equipment",
+    "war",
+    "death",
+    "ai",
+    "poison",
+    "tier 3"
+  ]
+}

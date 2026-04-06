@@ -1,0 +1,42 @@
+{
+  "id": "019d6143aa5a7251b4bee4e4f28d5669",
+  "name": "Zheng-Dao Heavy Industries Directed Seismic Control Array",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Heavy Industries Directed Seismic Control Array",
+  "type": "technology",
+  "aliases": [
+    "DSCA",
+    "Quake Box",
+    "Earth Mover",
+    "Zheng-Dao Tremor"
+  ],
+  "subcategory": "defense",
+  "description": "A system of deep-buried resonance generators that can create, dampen, or redirect seismic activity within a controlled area. The DSCA uses phased arrays of underground acoustic emitters to generate constructive or destructive interference patterns in geological strata, either amplifying natural seismic activity into damaging earthquakes or canceling incoming seismic waves to protect structures. Zheng-Dao developed the technology for earthquake defense but its offensive applications — the ability to cause earthquakes on demand — have obvious military implications.",
+  "tier_availability": "Tier 5",
+  "developers": [
+    "ZHENG-DAO HEAVY INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Phased seismic wave generation",
+    "Geological resonance manipulation",
+    "Constructive/destructive seismic interference"
+  ],
+  "enables": [
+    "Artificial earthquake generation",
+    "Seismic wave cancellation for structure protection",
+    "Directed geological disruption",
+    "Underground structure destruction through resonance"
+  ],
+  "social_impact": "The DSCA has given Zheng-Dao the ability to control earthquakes — to cause them, prevent them, or redirect them. This capability is a strategic deterrent comparable to nuclear weapons in its implications: the threat of seismic destruction can be used to coerce compliance without ever being deployed. Meridian 88's population lives on ground that Zheng-Dao can, theoretically, shake apart at will.",
+  "story_hooks": [
+    "A series of minor earthquakes in a Tier 2 district match the resonance signature of DSCA activity — someone is using seismic control to send a message or test the system's capabilities in an urban area.",
+    "A DSCA installation has been discovered to be counteracting natural seismic activity that would otherwise have caused a major earthquake — Zheng-Dao has been quietly preventing natural disasters and not telling anyone, building leverage for future negotiations."
+  ],
+  "tags": [
+    "defense",
+    "technology",
+    "weapon",
+    "control",
+    "tier 5"
+  ]
+}

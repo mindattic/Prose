@@ -1,0 +1,63 @@
+{
+  "id": "019d6143a902709e98fb9fd5b70e1b2e",
+  "name": "Calydrin",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Calyx",
+    "Cold",
+    "Flatline (emotional)"
+  ],
+  "category": "combat_stimulant",
+  "subcategory": "fear_inhibitor",
+  "manufacturer": "Lazarus Pharmaceuticals",
+  "description": "Calydrin is a targeted amygdala suppression compound delivered via neural-direct interface, specifically designed to chemically blunt the fear response without impairing threat recognition or rational decision-making. Where berserker compounds flood users with aggression, Calydrin simply removes the emotional static of fear — users remain fully rational and tactically aware but experience no anxiety, no panic, and no instinctive threat-avoidance behavior. Lazarus developed it for high-stakes negotiators and executive protection teams before it became indispensable in combat applications.",
+  "method_of_use": "neural_direct",
+  "effects": [
+    "Suppression of amygdala fear response",
+    "Elimination of panic and anxiety under threat",
+    "Preservation of full cognitive function and tactical reasoning",
+    "Steadied fine motor control under fire",
+    "Reduced physiological stress response (controlled heart rate, steady hands)",
+    "Emotional flatness across negative emotion spectrum"
+  ],
+  "side_effects": [
+    "Suppression extends to all negative emotions, including appropriate caution",
+    "Users frequently take risks they would otherwise correctly identify as suicidal",
+    "Extended use causes persistent emotional blunting between doses",
+    "Reported cases of users developing long-term inability to feel fear naturally",
+    "Dissociative episodes in high-stress situations",
+    "Neural-direct delivery carries interface infection risk"
+  ],
+  "duration": "40-55 minutes",
+  "addiction_risk": "moderate",
+  "tier_availability": "Tier 3-4",
+  "legality": "prescription",
+  "street_price": "Φ 400 per dose",
+  "cultural_context": "Calydrin is the combat drug of choice for professionals who need to think clearly under fire — it is the stimulant that corporate operators, high-end fixers, and Tier 4 security consultants use rather than the blunt instruments of the Shelf. There is a cultural divide in M88 combat culture between those who take Calydrin (controlled, professional, expensive) and those who take Vorrathine (cheap, chaotic, desperate). The drug's emotional blunting side effect has created a small but notable population of ex-military users who find they can no longer feel much of anything.",
+  "story_hooks": [
+    "A Lazarus executive has been on Calydrin continuously for six months — she is running the company with eerie precision but her colleagues are beginning to realize she cannot be reasoned with emotionally, making her unpredictable in a different way.",
+    "A runner who uses Calydrin regularly realizes during a quiet moment that she has not felt genuine fear in over a year — and that this might mean she can no longer recognize when she should run.",
+    "Someone is distributing Calydrin without prescriptions in Tier 2, targeting workers in dangerous industrial jobs — the supplier has a humanitarian justification, but the funding trail goes somewhere darker."
+  ],
+  "tags": [
+    "combatstimulant",
+    "fearinhibitor",
+    "pharmaceutical",
+    "combat",
+    "war",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "control",
+    "dark",
+    "cold",
+    "desperate",
+    "drug",
+    "stimulant",
+    "fire",
+    "shelf",
+    "tier 3",
+    "tier 4"
+  ]
+}

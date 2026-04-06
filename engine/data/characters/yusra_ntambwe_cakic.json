@@ -1,0 +1,193 @@
+{
+  "id": "019d6143a7317836a8b7eb75c5dea9f7",
+  "type": "character",
+  "name": "Yusra Ntambwe-Cakić",
+  "aliases": [
+    "Yusra Blink",
+    "the Runner"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Numbers runner and bookmaker's courier for an illegal betting operation in Shallowgrave",
+  "age": 19,
+  "status": "active",
+  "location": "Shallowgrave — lives in a bunk hostel on Carrion Alley, works the market corridors between the Sump and Ironvein",
+  "description": "Yusra is nineteen years old and moves like she expects the ground to give way. She's thin in the way of someone whose calories are unreliable, with close-cropped natural hair dyed in two bands — natural black at the roots, then a vivid synthetic orange at the tips — and a set of geneware cat ears she bought secondhand with three months of saved wages; they're tawny gold and slightly too large for her head, which she is sensitive about. Her skin is a warm dark brown, her eyes quick and dark, her grin infectious and slightly desperate. She has a long scar across her left shin from a close call with a Ferrogate transit barrier she vaulted at full speed.\n\nShe is fast — genuinely, almost recklessly fast — and has built her entire professional identity around it. She runs bets and payouts for a bookmaker named Sołtys Kowalczyk-Fanuanuu who she calls 'the Old Man,' carrying chips, physical slips, and occasionally small packages she's been told not to think about through the market crowds. She is saving money for something she hasn't named yet but pictures vaguely as 'away.' She is not cynical about this. She still believes in the vagueness of away.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.8,
+      "shadow": 0.2,
+      "mask": 0.5,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being caught and processed into the Ferrogate labor pool — she's heard what happens",
+      "That 'away' doesn't exist, that everywhere is Shallowgrave"
+    ],
+    "core_desires": [
+      "Enough money to stop running",
+      "To be genuinely fast enough that nothing can catch her — metaphorically and literally"
+    ],
+    "coping_mechanisms": [
+      "Physical exertion — she runs even when she doesn't have to",
+      "Humor as deflection; she makes everything a joke before it can make her feel something"
+    ],
+    "blind_spots": [
+      "Believes she can exit this life cleanly when she has enough saved; doesn't understand how networks make that complicated",
+      "Trusts the Old Man more than she should because he's been kind to her"
+    ],
+    "secret": "She memorizes every slip she carries — bet amounts, account codes, client identifiers — and has been quietly building a mental ledger of the operation's full financial structure. She doesn't know why yet. It feels like insurance. It is also incredibly dangerous."
+  },
+  "speech_patterns": {
+    "vocabulary": "Shallowgrave Creole mixed with market slang; fast, clipped, word-economical",
+    "cadence": "Rapid and skipping, sentences often abandoned halfway and restarted",
+    "verbal_tics": [
+      "'Right?'",
+      "Refers to bad situations as 'tight'",
+      "Laughs before delivering bad news"
+    ],
+    "example_lines": [
+      "'Okay so — listen, right? I'm not saying it's a problem. I'm saying it's a situation. Tight situation. But I've run tighter, yeah?'",
+      "'The Old Man's good for it. He's always good for it. He likes me. Right, okay, everyone likes me until they don't, but — he actually does.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Yusra picked up a slip-pack that contained something that absolutely was not a betting slip — and now someone is following her and the Old Man isn't answering",
+    "She's been offered triple her rate to make one delivery to a location in Ironvein that all her instincts say is wrong, and she's trying to decide if 'away' is worth it"
+  ],
+  "narrative_function": "Street-level information source — she sees everything and everyone moving money in Shallowgrave; useful contact, sympathetic viewpoint character, person who can be in danger or can witness something she shouldn't have",
+  "augmentations": "Secondhand geneware cat ears (tawny gold, cosmetic); a cheap adrenal spike implant in her left arm that she activates before difficult runs (low-grade, sketchy provenance)",
+  "daily_life": "She picks up her slip-pack from a dead-drop in a drainage grate at 0800, runs the circuit through three market sectors until midday, breaks for whatever food she can afford, runs the afternoon payout circuit, and returns to the hostel by 2100 unless something goes wrong.",
+  "affiliation": "Works for Sołtys Kowalczyk-Fanuanuu's illegal bookmaking operation; no gang loyalty",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": 1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "courier",
+      "street-quick",
+      "optimist",
+      "observer",
+      "running from stillness"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Move first, think while moving",
+      "Don't open the packages — she's repeated this to herself so many times it's become a kind of prayer she's starting to doubt",
+      "If something feels wrong, find an exit before confirming it's wrong"
+    ],
+    "escalation_ladder": [
+      "Jokey deflection",
+      "Physical distance — literally moves away from the source of stress",
+      "Runs",
+      "Disappears for days; resurfaces when she thinks it's blown over"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Bright, fast, slightly manic friendliness that functions as a screen",
+      "friends": "Still fast and bright but with real warmth underneath; will give her last meal to someone she trusts"
+    },
+    "stress_responses": {
+      "low": "More jokes, faster talking",
+      "medium": "Goes quiet suddenly, which people who know her recognize as alarming",
+      "high": "Physically runs — not metaphorically"
+    },
+    "contradictions": [
+      "Claims not to care about anyone in Shallowgrave while knowing every vendor's name, every sick kid, every new face",
+      "Insists the cat ears are 'just a look' but visibly brightens when someone compliments them"
+    ],
+    "habits": [
+      "Traces her scar when thinking",
+      "Checks exit routes when entering any space, automatically",
+      "Leaves a found object — bottle cap, wire scrap — at a storm-drain E.L.F. shrine she calls 'the Under-Saint' before difficult runs"
+    ],
+    "breaking_points": [
+      "Learning the Old Man knowingly sent her into a dangerous situation without warning",
+      "Being trapped somewhere with no exits — triggers full panic"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Geneware cat ears (secondhand, tawny gold, cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware cat ears (secondhand, tawny gold, cosmetic)",
+      "replaces": ""
+    },
+    {
+      "name": "Adrenal spike implant (left arm, low-grade)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Adrenal spike implant (left arm, low-grade)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Cockroach": 0.9,
+    "Safety First": 0.9,
+    "Improviser": 0.9,
+    "Lone Wolf": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

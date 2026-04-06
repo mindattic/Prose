@@ -1,0 +1,243 @@
+{
+  "id": "019d6143a5c5790bbab366b9a6b26cf8",
+  "type": "character",
+  "name": "Blessing Oduya-Magnússon",
+  "aliases": [
+    "The Ledger"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Union organizer and mutual aid coordinator for Ferrogate Transit workers",
+  "age": 44,
+  "status": "active",
+  "location": "Hamtramck Enclave, operating out of a converted transit depot called the Carriage House",
+  "description": "Blessing is a broad-shouldered woman with deep umber skin, close-cropped natural hair shot through with threads of silver she refuses to dye, and hands that show thirty years of physical work before she moved into organizing full-time. Her left eye is a basic-model optical aug — the iris replaced with a fixed amber ring, a reminder of the Ferrogate line collapse of 2184 that took her depth perception and gave her a cause. She dresses in layers of salvaged workwear, always with a Ferrogate transit badge pinned upside-down on her chest — the traditional gesture of solidarity among workers who refuse to 'clock in to a system that clocks out on you.'\n\nBlessing is methodical to the point of stubbornness. She keeps physical ledgers — actual paper notebooks — of every grievance filed, every promise broken, every quanta owed to injured workers and their families. She is not charismatic in the traditional sense; she does not rouse crowds with fire. She wins people over by knowing their names, their children's names, their shift rotations, and every clause of their employment contract. The nickname 'The Ledger' is both tribute and warning: she remembers everything.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.9,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "watching the movement collapse into factionalism and ego",
+      "dying before the next generation is ready to carry it forward"
+    ],
+    "core_desires": [
+      "a binding contract that actually holds — one Ferrogate cannot buy its way out of",
+      "to see the workers she organized enjoy something she never had: rest"
+    ],
+    "coping_mechanisms": [
+      "retreating into paperwork and documentation when emotionally overwhelmed",
+      "cooking large communal meals for enclave members as a grounding ritual"
+    ],
+    "blind_spots": [
+      "assumes good faith from anyone who speaks the language of labor solidarity, even when their motives are self-serving",
+      "dismisses direct action tactics she hasn't personally vetted as reckless, sometimes missing their value"
+    ],
+    "secret": "The 2184 collapse that injured her was not purely accidental — she found evidence of a falsified maintenance report filed by a Ferrogate mid-manager who is now a regional director. She has sat on this for years because going public would destroy the fragile current contract negotiations, and she still hasn't decided if that calculation is wisdom or cowardice."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, precise working-class diction; union procedural language mixed with Yoruba proverbs; avoids jargon except when citing contract clauses, which she quotes verbatim",
+    "cadence": "Slow, deliberate, with long pauses before important points — she learned that silence makes people lean in",
+    "verbal_tics": [
+      "'Write that down'",
+      "'What does the contract say?'",
+      "clicking her tongue before disagreeing with someone"
+    ],
+    "example_lines": [
+      "'I'm not asking you to be brave. I'm asking you to show up at six and stand next to someone who is.'",
+      "'Ferrogate has lawyers. We have each other and this ledger. Don't make me the only one keeping score.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She approaches the players with the falsified maintenance report — not to use it, but to find someone who can authenticate it without triggering Ferrogate's legal team.",
+    "A promising young organizer she mentored has gone missing after trying to infiltrate a Ferrogate management meeting; Blessing refuses to contact authorities and needs outside help."
+  ],
+  "narrative_function": "Quest giver for labor-related storylines; information source on Ferrogate Transit's internal corruption; moral anchor character who forces players to consider the cost of their shortcuts on ordinary workers; potential ally who asks for something concrete in return.",
+  "augmentations": "Basic optical implant (left eye, amber iris, fixed-focus, no enhancements beyond corrective vision); rudimentary haptic data-sleeve on her right forearm for filing union documents — second-hand, frequently glitching",
+  "daily_life": "Rises before the early shift change to catch workers at the depot gates, distributes mutual aid vouchers and listens to grievances; spends evenings in the Carriage House cross-referencing incident reports with her paper ledgers and coordinating with allied organizers across the Enclave.",
+  "affiliation": "Ferrogate Transit Workers' Solidarity Front; loosely networked with the Hamtramck Enclave neighborhood council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 8,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "union veteran",
+      "documentation obsessive",
+      "moral authority",
+      "slow burner",
+      "community pillar"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always document before acting — if it isn't written down it didn't happen",
+      "Never ask someone to take a risk she wouldn't take herself",
+      "Protect the movement over any individual, including herself"
+    ],
+    "escalation_ladder": [
+      "Listens carefully and asks clarifying questions",
+      "Cites contract language or precedent to de-escalate",
+      "Makes a formal written complaint or public statement",
+      "Calls for collective action — picket, work slowdown, boycott",
+      "Withdraws cooperation entirely and goes to allied press"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Reserved and assessing — she waits to see if they respect the workers around them before investing anything",
+      "friends": "Warm, direct, and intensely loyal; shows care through practical help rather than words"
+    },
+    "stress_responses": {
+      "low": "Becomes quieter and more methodical, retreats into her ledgers",
+      "medium": "Short, clipped sentences; starts organizing tasks obsessively",
+      "high": "Goes completely silent for minutes at a time, then delivers a single devastating, precisely chosen sentence"
+    },
+    "contradictions": [
+      "Preaches collective action but carries the movement's burdens almost entirely alone",
+      "Deeply suspicious of corporate institutions yet trusts the legal system of contracts more than any other tool"
+    ],
+    "habits": [
+      "Checks her paper ledger before checking any digital device in the morning",
+      "Folds and unfolds the corner of whatever page she's reading when anxious",
+      "Refers to Ferrogate by its old pre-merger name 'Irongate' as a deliberate historical insult"
+    ],
+    "breaking_points": [
+      "Learning that someone she vouched for sold information to Ferrogate management",
+      "A worker she failed to protect being permanently injured or killed in a preventable incident"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional, worn",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "second-hand, intermittent glitches",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9,
+    "Quick Study": 0.9,
+    "Optimist": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Hamtramck Enclave to a Ferrogate maintenance worker family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins work as a Ferrogate line inspector at age 16",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Injured in the Kessler Interchange line collapse; loses natural vision in left eye",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovers falsified maintenance records; begins covert documentation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Founds the Ferrogate Transit Workers' Solidarity Front with four colleagues",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Negotiates the Enclave Safety Accord — Ferrogate's first binding injury compensation agreement in the zone",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

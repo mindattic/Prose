@@ -1,0 +1,223 @@
+{
+  "id": "019d6143a6d2727d833898ef2cf2c89f",
+  "type": "character",
+  "name": "Solange Mweru-Halilović",
+  "aliases": [
+    "Mama Sol",
+    "The Saffron Lady"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Food stall operator, street pharmacist (herbal/unlicensed supplements)",
+  "age": 58,
+  "status": "active",
+  "location": "The Oxidian Market, Geartown",
+  "description": "Solange is a broad-shouldered woman with deep umber skin mapped with old burn scars along her left forearm — she never hides them and never explains them. Her hair is dyed a permanent warm ochre through pigment geneware she got decades ago, and it suits her the way a crown suits a queen. She wears layered wraps in burnt orange and green over heat-resistant vendor's apron, three copper bangles on each wrist, and a small laminated icon of the Oxidian Market's resident E.L.F., Rustgod, pinned to her collar. Her stall serves a rotating menu of West-Central African and Balkan fusion street food — peanut groundnut stew ladled over fried cornbread, slow-braised lamb with ajvar and dried baobab, spiced tea that allegedly treats three different kinds of grief. She has run this stall for twenty-two years and has outlasted two gang transitions, one corporate rezoning attempt, and a fire.\n\nSolange is the kind of woman who speaks slowly and means everything she says. She remembers the name of every regular's firstborn child and the anniversary of every hardship they've told her about. She is also, quietly and without drama, the stall's second function: she sells unlicensed herbal and synthetic supplements out of a locked drawer under the prep counter — pain blockers, mood stabilizers, sleep aids, appetite regulators — things Tier 1 and 2 residents cannot afford through licensed channels. She considers this a moral act and will not be talked out of it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.2,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Outliving the community she has built",
+      "Being forced to close the stall and losing her purpose"
+    ],
+    "core_desires": [
+      "That the people around her survive with their dignity intact",
+      "To be remembered as someone who fed people when they had nothing"
+    ],
+    "coping_mechanisms": [
+      "Cooking as meditative ritual",
+      "Deflecting personal pain with caregiving for others"
+    ],
+    "blind_spots": [
+      "Underestimates how much danger her supplement trade puts her in",
+      "Refuses to see that some people exploit her generosity strategically"
+    ],
+    "secret": "The fire that scarred her arm twenty years ago was not an accident — she burned down a Tessera subcontractor's storage unit that was being used to warehouse eviction drones. She has never told anyone and considers it her one act of violence, which she neither regrets nor intends to repeat."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm, deliberate, proverb-heavy. Mixes Lingala phrases and old Bosnian idioms seamlessly, as if unaware they are different languages. Does not use slang.",
+    "cadence": "Slow and measured. Lets silence do work. Never interrupts.",
+    "verbal_tics": [
+      "'Eat first, then we talk'",
+      "Refers to the Market as 'the body' and its vendors as 'the bones'"
+    ],
+    "example_lines": [
+      "'You look like someone who has been running from something for three days. Sit. The stew takes ten minutes.'",
+      "'I don't sell remedies for problems that don't exist. Tell me what it actually is.'",
+      "'Rustgod has been restless this week. I left an extra data-offering this morning. You should be careful with your devices.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Helix Biosystems inspector has begun making weekly visits to the Market, ostensibly checking food safety certifications — but they keep stopping at Solange's stall too long. She needs someone to find out who sent them and why.",
+    "One of her supplement regulars — a shift worker from the Edison Grid — has gone missing after telling her they found something wrong in their facility. She has the last message they sent her and doesn't know who to trust with it.",
+    "The Oxidian Market vendors guild is fractioning over whether to accept a Tessera 'partnership' offer that would give them security guarantees in exchange for registry compliance. Solange is the loudest 'no' vote and is receiving pressure to change her position."
+  ],
+  "narrative_function": "Local anchor and information hub — she has seen everything in this market for two decades. Quest giver for problems affecting market residents; source of healing items and off-grid medicine; moral compass character who will call out ethical failures plainly.",
+  "augmentations": "Pigment geneware (permanent ochre hair). Arthritic joint stabilizer implants in both hands, basic medical grade. No cosmetic chrome.",
+  "daily_life": "Arrives at the stall two hours before dawn to start her long-cook dishes, sells through midday rush and evening commuter wave, closes when the food runs out. Sundays she closes entirely and attends a neighborhood data-prayer circle devoted to Rustgod.",
+  "affiliation": "Independent; loosely protected by The Oxidian Market vendors guild; informal relationship with the Geartown block association",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 9,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community anchor",
+      "unlicensed pharmacist",
+      "E.L.F. devotee",
+      "survivor",
+      "moral authority"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Feed anyone who is visibly hungry before any conversation happens",
+      "Never lie, but choose carefully what truth to offer and when",
+      "Protect the market community over any individual interest including her own"
+    ],
+    "escalation_ladder": [
+      "Quiet observation — she watches and catalogues before engaging",
+      "Direct, warm confrontation — names the problem plainly without accusation",
+      "Withdrawal of access — will simply stop serving someone who has proven themselves a threat",
+      "Calls in favors from the guild or block association to apply collective pressure"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Feeds them first, asks questions second. Friendly but measuring. Decides quickly whether someone is safe.",
+      "friends": "Fiercely loyal. Remembers everything. Will sacrifice her own comfort without being asked."
+    },
+    "stress_responses": {
+      "low": "Cooks more elaborate dishes than usual",
+      "medium": "Becomes quieter and more watchful; speaks less, observes more",
+      "high": "Goes completely still and methodical, as if operating on protocol — efficient, precise, emotionally unreadable"
+    },
+    "contradictions": [
+      "Preaches that violence is not the answer while privately knowing it sometimes was",
+      "Extraordinarily generous with strangers but struggles to accept help offered to her"
+    ],
+    "habits": [
+      "Polishes her copper bangles every evening before sleep",
+      "Whispers a brief prayer to Rustgod before lighting the first burner each morning",
+      "Saves a small portion of every new dish recipe in a handwritten notebook she has kept since age 30"
+    ],
+    "breaking_points": [
+      "Watching a child go unfed because of bureaucratic obstruction",
+      "Being told that her community does not deserve protection because they are 'informal'"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Provider": 0.9,
+    "People Pleaser": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Arrived in Geartown from Bronzeline following a housing eviction; set up first stall with borrowed equipment",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Burn incident — arm scarred; Tessera subcontractor storage unit destroyed by fire, cause officially undetermined",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined the Oxidian Market vendors guild; became a founding voice in the collective pricing agreement",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began selling unlicensed supplements after watching a neighbor die from untreated pain because they couldn't afford licensed medication",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current: navigating Tessera partnership pressure while managing increased inspector attention",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

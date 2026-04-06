@@ -1,0 +1,41 @@
+{
+  "id": "019d6143aa6a79a5b382e0703cff93f2",
+  "name": "Meridian Monorail",
+  "type": "transportation",
+  "aliases": [
+    "The Ribbon",
+    "Sky Thread",
+    "Corporate Express"
+  ],
+  "category": "public_transit",
+  "manufacturer": "Tessera",
+  "description": "A sleek elevated monorail connecting Tier 3-5 districts — the corporate spires, the financial center, the upscale residential towers. Clean, climate-controlled, biometric boarding. It runs above the L-train both literally and socially. You need a registered identity and a minimum Φ500 wallet balance to board. The cars are quiet. The seats are padded. It is everything the L-train is not, and that is the point.",
+  "propulsion": "Magnetic levitation, dedicated power rail",
+  "speed": "120 km/h average, 200 km/h express segments",
+  "capacity": "80 per car, never crowded",
+  "range": "Corporate district loop: 42 km",
+  "tier_availability": "Tier 3-5",
+  "cost": "Φ15 per ride, Φ400 monthly pass, Φ500 minimum wallet balance required",
+  "autonomy": "Fully automated, Tessera AI dispatch",
+  "armament": "None visible. Integrated crowd suppression system (classified).",
+  "common_usage": "Corporate commuters, executive transport, anyone who can afford to avoid the L-train.",
+  "story_hooks": [
+    "A glitch in the biometric gate lets a Tier 1 resident board — they ride the entire loop and see a city they never knew existed",
+    "The monorail runs through a sealed section of track between two towers where it goes dark for eleven seconds and no one talks about why"
+  ],
+  "tags": [
+    "publictransit",
+    "transportation",
+    "identity",
+    "ai",
+    "corporate",
+    "control",
+    "power",
+    "rain",
+    "dark",
+    "train",
+    "spire",
+    "tier 3",
+    "tier 5"
+  ]
+}

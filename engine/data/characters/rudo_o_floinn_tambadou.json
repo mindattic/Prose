@@ -1,0 +1,170 @@
+{
+  "id": "019d6143a6b979898d4ed633bbe4b36c",
+  "type": "character",
+  "name": "Rudo Ó'Floinn-Tambadou",
+  "aliases": [
+    "Rudo the Loud",
+    "Councilor Rudo (sarcastically used by opponents)"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Union organizer and protest coordinator",
+  "age": 24,
+  "status": "active",
+  "location": "Mexicantown Libre — sleeps in the back of the Ferrogate Transit Workers' Local 9 hall",
+  "description": "Rudo is compact and kinetic, rarely fully still, with medium-brown skin and a geneware tail — a long, expressive black cat tail they got at seventeen — that broadcasts their mood with embarrassing accuracy. Their hair is dyed in shifting bands of amber and copper, and they have the kind of face that looks younger than it is, which they've learned to use strategically: people underestimate them exactly once. There are calluses on their hands from six months working actual transit maintenance before they moved into organizing full-time, and they consider those calluses a credential.\n\nRudo has been with Transit Workers' Local 9 for three years and is, depending on who you ask, either the most effective junior organizer the local has seen in a decade or an absolute disaster waiting to happen. Both assessments are probably true. They have an instinct for crowd dynamics and an appetite for confrontation that their more experienced colleagues find alternately inspiring and terrifying. They believe completely in the workers they represent and are only beginning to understand the gap between belief and strategy.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.8,
+      "shadow": 0.2,
+      "mask": 0.3,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Getting someone hurt because they moved too fast",
+      "Becoming the kind of leader who talks about workers instead of to them"
+    ],
+    "core_desires": [
+      "A genuine strike win — not a settlement, a win",
+      "To be taken seriously without having to perform seriousness"
+    ],
+    "coping_mechanisms": [
+      "Movement — physical activity, walking, pacing",
+      "Talking it out loud even when no one is there",
+      "Spending time with the E.L.F. of the union hall's old PA system, which they treat as a confidant"
+    ],
+    "blind_spots": [
+      "They read momentum as mandate",
+      "They can't always tell when they've inspired someone versus exhausted them"
+    ],
+    "secret": "During a wildcat action eighteen months ago that went wrong — a blockade that got three workers cited and fined — Rudo had been warned it was premature by their mentor and proceeded anyway. They've never told anyone this. The official union account blames miscommunication. The workers who were fined don't know Rudo knew."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct, concrete, collective 'we' constantly. Quotes union history with genuine enthusiasm. Uses profanity as punctuation, not emphasis.",
+    "cadence": "Fast and building, with a rhetorical rhythm they've learned from watching older organizers — sets up a beat and carries people along it.",
+    "verbal_tics": [
+      "'We don't ask, we build power.'",
+      "Physical — the tail flicks sharply when they're making a point they're unsure of"
+    ],
+    "example_lines": [
+      "'Ferrogate runs the trains on our labor and they want to reclassify the night crew as contractors. I don't care if it's legal. I care if we let them.'",
+      "'I've been wrong before. I'll be wrong again. The question is whether we're wrong together or right alone, and I know which one wins.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A secret vote is scheduled within Local 9 on whether to affiliate with a larger corponation-adjacent 'workers' advocacy group that Rudo believes is a co-optation attempt — and they don't have the votes yet.",
+    "The three workers fined during the wildcat action eighteen months ago have begun asking questions about who knew what and when."
+  ],
+  "narrative_function": "Local color and action catalyst. They can mobilize people fast and are the character most likely to turn a situation from a conversation into an event. They're also a mentorship opportunity and a liability — their energy is useful and their judgment is developing.",
+  "augmentations": "Geneware cat tail (cosmetic, expressive). Cheap subvocal mic implant for hands-free comms during actions.",
+  "daily_life": "Moves constantly between the union hall, worksites, and community meetings. Eats whatever's available whenever someone puts it in front of them. Attends every public meeting of the Ferrogate Transit corponation they can access, usually in the back row.",
+  "affiliation": "Ferrogate Transit Workers' Local 9; loose network of Mexicantown Libre community organizers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 7,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": -4,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "crowd catalyst",
+      "developing leader",
+      "guilty conscience",
+      "genuine belief",
+      "lovable liability"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Ask the workers first, always",
+      "Don't call an action you can't see the exit from — a rule they're still learning to follow",
+      "Protect your relationships because they're your infrastructure"
+    ],
+    "escalation_ladder": [
+      "Organizing conversation",
+      "Petition and formal grievance",
+      "Public visibility action",
+      "Work-to-rule",
+      "Strike authorization vote",
+      "Strike"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and assessing — are you a worker, a boss, or neither? Moves fast to establish which.",
+      "friends": "Fiercely present, also occasionally suffocating. Texts at 2am with organizing ideas."
+    },
+    "stress_responses": {
+      "low": "Paces. Talks to the PA system E.L.F.",
+      "medium": "Calls a meeting, real or informal, needs to be in motion with other people.",
+      "high": "Goes very quiet and still, which alarmed people who know them — the tail stops moving entirely."
+    },
+    "contradictions": [
+      "Believes in collective process deeply, but makes unilateral decisions when they're scared"
+    ],
+    "habits": [
+      "Leaves transit tokens as offerings at the union hall PA shrine",
+      "Counts exits and sight lines in every room — a habit they picked up from an older organizer and can't explain why they've kept"
+    ],
+    "breaking_points": [
+      "Being directly confronted with evidence of the wildcat action deception",
+      "Watching someone get badly hurt at an action they called"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

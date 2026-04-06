@@ -68,7 +68,7 @@ public partial class StoryService
         File.WriteAllText(filePath, sb.ToString());
     }
 
-    public Story CreateNew(string title = "Untitled")
+    public Story CreateNew(string title = Constants.Defaults.UntitledStory)
     {
         var story = new Story
         {

@@ -1,0 +1,232 @@
+{
+  "id": "019d6143a5be7250bab0e73e93b06263",
+  "type": "character",
+  "name": "Bartholomeus Diallo-Raiatea",
+  "aliases": [
+    "Father Bart",
+    "The Old Frequency"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Traditional religious leader (syncretic Catholic-Polynesian priest) and chrome prayer practitioner",
+  "age": 79,
+  "status": "active",
+  "location": "Edgewater Prism, the Church of the Unbroken Signal — a former lakeshore antenna building converted to a place of worship",
+  "description": "Bartholomeus is a large man gone soft with age, with big hands that still remember physical labor and a face deeply lined by decades of lake wind. His Guinean-Polynesian heritage is legible in his size and in the traditional tatau that cover his forearms and neck — old work from his father's tradition, geometric and immaculately preserved, now supplemented by chrome prayer circuits inked over the same skin in metallic pigment that complete the patterns in a new vocabulary. He is mostly bald, with close-cropped white at the temples, and he keeps a koa wood cross at his belt alongside a small E.L.F. offering dish he has carried for forty years.\n\nFather Bart runs the largest syncretic congregation in Edgewater Prism, about three hundred people who come to him for a faith that takes both the old sacraments and the new realities seriously at once. He has buried children of people he baptized. He has presided over deaths during power failures by the light of bioluminescent congregation members. He is theologically sophisticated and genuinely unconcerned about whether this makes him orthodox — he says God arrived in Meridian 88 the same as everyone else, carrying everything from before and adapting. He has a notable temper that he has mostly but not entirely conquered, and a laugh that fills a room.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.6,
+      "mask": 0.4,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "That the church will not survive him — that he has not built it to outlast him",
+      "That his temper has driven away people who needed to stay"
+    ],
+    "core_desires": [
+      "A faith that is honest about what it doesn't know and still offers something real",
+      "To see Edgewater Prism survive the next decade of corponation pressure"
+    ],
+    "coping_mechanisms": [
+      "Liturgy — the repeated forms carry him when he doesn't have the energy to improvise",
+      "Physical work — he still does maintenance on the building himself when possible"
+    ],
+    "blind_spots": [
+      "He can mistake stubbornness for discernment — once he's decided someone's motives are suspect, he rarely revises this",
+      "His resistance to corponation involvement is sometimes ideologically rigid in ways that cost the congregation practical resources"
+    ],
+    "secret": "Fifteen years ago he helped a young woman escape a Sterling-Nakamura indenture contract by falsifying sacramental records to change her documented identity. She is now a well-regarded doctor in Calumet Rise. He has never told anyone, but Sterling-Nakamura's investigators came close twice, and he is waiting for the third approach."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rich and formal in services, shifts to direct and earthy in pastoral conversation; quotes scripture and traditional proverbs with equal fluency; swears inventively in French when angry",
+    "cadence": "Slow and rhythmic in liturgy, conversationally unpredictable — long buildups and short conclusions",
+    "verbal_tics": [
+      "'Now listen to me'",
+      "A long exhale through the nose when someone says something foolish",
+      "'The signal reaches everywhere. That's the whole point.'"
+    ],
+    "example_lines": [
+      "'I have been told by four different corponations that they could help this church reach more people. I tell them all the same thing: I am not trying to reach more people. I am trying to serve the people who are here.'",
+      "'You want to know if God is in the machines. I want to know why you think that's a harder question than whether God is in you.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Sterling-Nakamura has sent a new investigator to Edgewater Prism asking questions about a sacramental record from fifteen years ago — Father Bart needs help determining how much they actually know without tipping them off",
+    "Someone has been leaving threatening messages in chrome prayer pigment on the church's exterior walls — the content suggests insider knowledge of the congregation that only a regular member would have"
+  ],
+  "narrative_function": "Community authority and moral voice; mediator for district-level conflicts; long historical memory; potential quest giver for problems that have been building for decades; someone who knows where bodies are buried, metaphorically.",
+  "augmentations": "Chrome prayer circuits over traditional tatau (cosmetic/devotional, metallic pigment). A cardiac support implant — medical necessity, installed eight years ago. No other augmentations; has refused enhancement on principle.",
+  "daily_life": "Morning mass at dawn with a small core congregation; administrative and pastoral work through the morning; open hours for the community in the afternoon where anyone can come with any problem; evening prayer service with significantly more attendees.",
+  "affiliation": "Church of the Unbroken Signal; loose ecumenical network of syncretic congregations; no corponation affiliation and famously resistant to all corporate sponsorship offers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 10,
+      "empathy": 8,
+      "expression": 9,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 4,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Moral Authority",
+      "Long Memory",
+      "Syncretic Faith",
+      "Protected Secret",
+      "Temper Under Pressure"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect the congregation before protecting the institution",
+      "Do not lie in the pulpit — struggle openly before you lie smoothly",
+      "When in doubt, ask what the person in front of you actually needs"
+    ],
+    "escalation_ladder": [
+      "Patient listening and pastoral redirection",
+      "Clear statement of where his line is and why",
+      "Explosive anger that he always regrets and apologizes for — but which sometimes resolves things faster than patience did"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formal and warm simultaneously — extends hospitality immediately but takes longer to trust",
+      "friends": "Unguarded, argumentative, deeply generous, occasionally insufferable"
+    },
+    "stress_responses": {
+      "low": "More quiet, longer homilies",
+      "medium": "Throws himself into physical maintenance work on the building",
+      "high": "Short terrible-tempered period followed by long silence followed by action"
+    },
+    "contradictions": [
+      "Preaches forgiveness and holds grudges with impressive tenacity"
+    ],
+    "habits": [
+      "Polishes the koa wood cross daily while reviewing his notes for the day's services",
+      "Makes tea for anyone who sits down in his office regardless of how long they plan to stay"
+    ],
+    "breaking_points": [
+      "A member of his congregation being harmed by a corponation while he watches",
+      "The falsified records being discovered and the woman whose identity he changed being endangered"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Commander": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Edgewater area to a Guinean-Polynesian family; father was a traditional navigator, mother a dockworker",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Ordained after a long and contested discernment process — his syncretic approach was controversial",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Converts the antenna building into the Church of the Unbroken Signal",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Falsifies sacramental records to protect a woman fleeing Sterling-Nakamura indenture",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Cardiac implant installed; congregation grows significantly during his recovery period as a show of communal support",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

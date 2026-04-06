@@ -1,0 +1,38 @@
+{
+  "id": "019d6143ab1c7595983e7968aa322487",
+  "name": "Carrion Defense Works Nerve Agent Micro-Dart System NAMDS-1 'Whisper'",
+  "type": "weapon",
+  "aliases": [
+    "Whisper",
+    "NAMDS-1",
+    "Silent Needle",
+    "The Kiss"
+  ],
+  "category": "exotic",
+  "description": "A wrist-mounted micro-dart launcher that fires a near-invisible carbon-fiber dart loaded with a fast-acting nerve agent. The dart is 8mm long, thinner than a human hair at its widest point, and delivered by a compressed gas micro-charge that is nearly silent. The nerve agent — Carrion's proprietary NeuroHalt-7 — causes rapid paralysis of the respiratory system within 90 seconds of injection, and the dart is small enough that most targets do not feel the impact. The NAMDS-1 is the weapon of choice for operators who need a target to die quietly, in public, with no apparent cause of death until a very thorough autopsy finds a carbon-fiber splinter smaller than an eyelash.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 5",
+  "legality": "Does not officially exist",
+  "base_technologies": [
+    "Carbon-fiber micro-dart fabrication",
+    "Near-silent compressed gas propulsion",
+    "Fast-acting respiratory paralytic compounds"
+  ],
+  "specifications": "dart size: 8mm length, 0.1mm diameter carbon fiber\npropulsion: Compressed gas micro-charge, 28 dB acoustic signature\neffective range: 1-5 meters\ntoxin: NeuroHalt-7 fast-acting respiratory paralytic\ntime to effect: 60-90 seconds\nmagazine: 3 darts\nweight: 0.05 kg total wrist unit\ndetectability: Dart is undetectable without microscopic examination",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "Three high-profile deaths in one month, all attributed to sudden respiratory failure, all in public settings — the connection is invisible without knowing what to look for.",
+    "A retired Carrion operative is selling their personal NAMDS-1 along with detailed operational logs of every target they ever hit with it — the buyer gets the weapon and the blackmail material."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "exotic",
+    "weapon",
+    "death",
+    "ai",
+    "fire",
+    "tier 5"
+  ]
+}

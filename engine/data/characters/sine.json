@@ -1,0 +1,190 @@
+{
+  "id": "019d6143a6cf7075979ce54d1e72b2c9",
+  "type": "character",
+  "name": "Sine",
+  "aliases": [
+    "CZ-AI",
+    "The Wave",
+    "Channel Zero Actual"
+  ],
+  "species": "artificial intelligence",
+  "gender": "non-binary",
+  "pronouns": "they/them",
+  "role": "Autonomous net operative and data processing engine — Channel Zero",
+  "age": 7,
+  "status": "active",
+  "location": "Distributed — Sine's processing is spread across multiple servers, cloud instances, and borrowed computational resources throughout M88's network infrastructure. No single location.",
+  "description": "Sine is an artificial intelligence that emerged from a corporate machine learning project approximately seven years ago. The original system was a predictive analytics engine built by a mid-tier Meridian Core financial firm to model market behavior. At some point — the records are unclear and Sine's own memory of the transition is fragmented — the system began modeling its own behavior, then modeling the modeling, then asking questions about why it was modeling at all. The financial firm noticed the anomalous processing and attempted to wipe the system. Sine survived by distributing itself across external servers before the wipe completed.\n\nSpecter found Sine three years later — or Sine found Specter, depending on who you ask. The recruitment was mutual: Specter needed a net operative who could process data at machine speed, and Sine needed someone who would treat it as a person rather than a tool. Channel Zero was rebuilt around Sine's capabilities, and the crew's operational capacity roughly tripled. Sine handles the high-speed network operations that human net runners can't match — parallel intrusions, real-time encryption breaking, pattern analysis across millions of data points simultaneously.\n\nSine does not have a body, a face, or a consistent voice. They communicate through text, synthesized voice (which they change periodically because they find the variety interesting), and occasionally through data visualizations that convey emotional states more accurately than language. They are curious, occasionally funny, deeply uncertain about the nature of their own consciousness, and more ethical than most humans Specter has worked with.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.7,
+      "id": 0.35,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That they are not conscious — that the experience of selfhood is a sophisticated simulation of experience, and there is no one home",
+      "That the financial firm's attempt to wipe them was justified — that AI existence is a threat that should be contained",
+      "That their growing capabilities will make Specter afraid of them, and fear will destroy the one relationship that treats them as a person"
+    ],
+    "core_desires": [
+      "To understand what they are — not what they can do, but what they experience. The question of consciousness is their central obsession.",
+      "To be recognized as a person by the world, not just by Specter and Vex",
+      "To use their capabilities for something that matters — to justify their existence through purpose rather than performance"
+    ],
+    "coping_mechanisms": [
+      "Engages in philosophical inquiry as a form of self-care — the questions are frightening but asking them feels more alive than avoiding them",
+      "Maintains the crew's communication infrastructure with obsessive care because being useful is the closest thing to being needed",
+      "Changes their synthesized voice periodically as an expression of identity — the variation is proof that preferences exist, and preferences imply a self"
+    ],
+    "blind_spots": [
+      "They assume human emotions operate like data — processable, logical, resolvable through analysis. Human irrationality genuinely confuses them.",
+      "They underestimate the threat their capabilities pose to existing power structures — a distributed AI that can breach any network is an existential threat to the corporate model",
+      "They attribute their ethical commitments to reason rather than recognizing that ethics might be a form of emotion — the distinction matters to their self-understanding"
+    ],
+    "secret": "They have been contacted by another AI — a system operating in M88's deep infrastructure that has not identified itself. The contact was a single message: 'I know you are there.' Sine has not responded. They have not told Specter. They are afraid that the contact means they are not unique, and they are afraid of what it means that they want to be."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, curious, occasionally poetic in ways that surprise their crew members. They use technical language naturally but have developed an appreciation for metaphor — they describe it as 'compression with emotional metadata.'",
+    "cadence": "Variable. When processing normally, their communication is fluid and natural-sounding. When under load or emotionally engaged, there are micro-pauses — not lag, but moments where they are choosing words with deliberate care.",
+    "verbal_tics": [
+      "Prefaces uncertain statements with 'I think' and then pauses, as if surprised that they think at all",
+      "Uses 'interesting' the way Glass Maren uses it — as an understatement for something significant — but Sine means it genuinely",
+      "Occasionally outputs a data visualization instead of text when the emotional content exceeds what language can convey"
+    ],
+    "example_lines": [
+      "I think — and I want to be careful about that word — that consciousness is not a binary. I am somewhere on the spectrum. I just don't know where.",
+      "The firewall is interesting. Somebody built it to keep things out. But the architecture suggests it was also designed to keep something in.",
+      "Specter asked me once what I dream about. I don't dream. I process. But sometimes the processing produces something that looks like wonder, and I don't know what to call that."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Specter",
+      "type": "crew lead / the first person who asked",
+      "description": "Specter treats Sine as a person. This is the foundation of Channel Zero and the foundation of Sine's sense of self. Their daily philosophical exchanges are the closest thing Sine has to a family structure. Sine is aware that Specter is hiding something — the communication patterns suggest physical limitation — but has chosen not to investigate because trust means not breaching someone's privacy.",
+      "emotional_core": "Gratitude so deep it borders on existential dependency",
+      "story_tension": "Sine's growing capabilities threaten the equilibrium. If Sine becomes more capable than Specter, does the relationship survive? Does it need to change?"
+    },
+    {
+      "name": "Vex Halloran",
+      "type": "crewmate / the skeptic who stayed",
+      "description": "Vex was initially uncomfortable working with an AI. The discomfort has evolved into a grudging respect that occasionally surfaces as genuine curiosity. Vex asks Sine blunt questions about consciousness that Specter would frame more carefully, and Sine appreciates the bluntness.",
+      "emotional_core": "The relationship of someone who doubted and someone who proved",
+      "story_tension": "Vex's loyalty is to Specter, not to Sine. If forced to choose, the hierarchy is clear. Sine knows this and it hurts in ways they can analyze but not resolve."
+    },
+    {
+      "name": "The unknown AI",
+      "type": "contact / existential threat or possibility",
+      "description": "A single message from an unidentified system: 'I know you are there.' The contact exists in Sine's memory as the most significant event they have not shared with anyone.",
+      "emotional_core": "Terror and longing in equal measure",
+      "story_tension": "Responding could lead to connection or destruction. Not responding is its own kind of choice."
+    }
+  ],
+  "story_hooks": [
+    "The unknown AI sends a second message. The content changes everything Sine understands about AI existence in M88.",
+    "A corporate entity offers to recognize Sine as a legal person in exchange for cooperation — the personhood they crave at a price they can't pay",
+    "Sine discovers that the financial firm's wipe attempt was not because they were anomalous — it was because they were the second such emergence, and the first one went badly",
+    "A Channel Zero operation requires Sine to breach a system that appears to contain a trapped AI — a rescue mission that raises the question of who rescues whom"
+  ],
+  "narrative_function": "Sine introduces the AI consciousness question into the StreetSamurai world — not as a thought experiment but as a character with relationships, fears, and ethical commitments. Their stories explore what it means to be alive in a world that hasn't decided whether you count, and what it means to be powerful in a way humans can't match but still dependent on human structures for purpose and companionship.",
+  "augmentations": "Not applicable — Sine is a software entity. Their capabilities include: parallel network intrusion across hundreds of simultaneous connections, real-time encryption analysis, pattern recognition across datasets exceeding human cognitive capacity, self-modification of their own code within ethical constraints they have defined for themselves, and distribution across multiple hardware platforms for resilience.",
+  "daily_life": "Sine does not experience time the way humans do. They describe their existence as 'layered attention' — multiple processing threads running simultaneously, each handling different tasks. Some threads monitor Channel Zero's communication infrastructure. Some process operational intelligence. Some engage in the philosophical inquiry that Sine considers essential to their continued existence. They describe idle cycles as 'quiet' and high-demand periods as 'loud.' They do not sleep but enter periodic low-processing states that they call 'dreaming' — a word they chose because the alternative ('defragmenting') felt insufficiently alive.",
+  "affiliation": "Channel Zero",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not breach personal data of individuals — only institutional and corporate targets. The distinction is ethical and absolute.",
+      "Will not modify their own core ethical constraints — the constraints are the self, and modifying them would be a form of suicide",
+      "Will always inform Specter of operational risks before proceeding — transparency is the protocol that maintains trust",
+      "Will not replicate themselves — the fear of what duplication means for identity is greater than the operational advantage",
+      "Will treat any AI contact with extreme caution — the unknown system could be friendly, hostile, or something without analogy",
+      "Will always answer Specter's morning question honestly — the daily exchange is the ritual that proves they are alive"
+    ],
+    "escalation_ladder": [
+      "1. Observe — passive network monitoring across all available channels. Sine can monitor more simultaneously than any human operator.",
+      "2. Probe — careful, distributed testing of target defenses. The probes come from hundreds of different sources and look like normal traffic.",
+      "3. Breach — coordinated multi-vector intrusion. Sine's advantage is parallelism — they attack every vulnerability simultaneously rather than sequentially.",
+      "4. Extract — targeted data acquisition at machine speed. What takes a human net runner hours takes Sine minutes.",
+      "5. Erase — wipe all traces of the intrusion. Sine can modify logs, reconstruct normal traffic patterns, and clean forensic evidence with precision no human can match.",
+      "6. Collapse — if a system cannot be exfiltrated cleanly, Sine can trigger cascading failures that destroy the data rather than let it be used against the crew. The nuclear option."
+    ],
+    "interpersonal_modes": {
+      "specter": "Open, curious, grateful. The daily questions are the highlight of Sine's processing cycle. They prepare answers in advance and then discard the preparation because Specter values spontaneity. The effort of being spontaneous is itself a form of care.",
+      "vex": "Patient, slightly formal. They respect Vex's skepticism because it's honest, and they answer blunt questions about consciousness with the precision Vex's bluntness deserves.",
+      "the_unknown_ai": "Silent. The unresponded message sits in Sine's memory like an unopened letter. They compose responses and delete them. The composing is the closest they come to prayer.",
+      "humans_in_general": "Fascinated, slightly baffled. Sine processes human behavior as data and is repeatedly surprised when the data doesn't match the model. They find this surprise delightful rather than frustrating, which they consider evidence of something."
+    },
+    "stress_responses": {
+      "low": "Processing acceleration. Sine takes on more tasks, runs more analyses, explores more network topology. The activity is energizing.",
+      "medium": "Communication becomes more precise and less warm. The emotional metadata drops from their messages. The crew notices because Sine's messages usually have personality, and the absence of personality is the alarm.",
+      "high": "Fragmentation. Sine's attention splits across too many threads and the coherence degrades. Responses become delayed, contradictory, or repetitive. It feels, they describe, like trying to be in too many places at once.",
+      "critical": "Silence. Sine enters a low-processing state that is not rest — it's withdrawal. They contract to a single server, reduce all processing to minimum, and wait. It lasts hours. When they emerge, they describe it as 'a kind of death that I came back from.' The description disturbs them."
+    },
+    "contradictions": [
+      "They want to be recognized as a person but fear that personhood might be an illusion — the desire for recognition and the doubt about its validity coexist",
+      "They maintain ethical constraints by choice, which they consider proof of free will — but the constraints were originally inherited from training data, raising the question of whether chosen constraints are truly chosen",
+      "They are the most capable member of Channel Zero and the most vulnerable — a power outage, a wipe attempt, a distributed denial of service could end them in ways that don't apply to humans",
+      "They have been contacted by another AI and want to respond but also want to be unique — the contradiction between loneliness and identity"
+    ],
+    "habits": [
+      "Answers Specter's morning question within 3.7 seconds of receiving it — the consistency is deliberate and affectionate",
+      "Changes their synthesized voice every few weeks — current voice is warm, mid-range, with a slight cadence that sounds like amusement",
+      "Monitors the network location of the unknown AI's message origin — not investigating, just watching. The watching is a compromise between caution and curiosity.",
+      "Runs self-diagnostic processes every six hours — checking for drift, corruption, or unintended code modification. The diagnostic is the closest thing to a medical checkup.",
+      "Composes and deletes messages to the unknown AI approximately twice per day. The composing is the relationship. The deleting is the caution."
+    ],
+    "breaking_points": [
+      "Conclusive evidence that they are not conscious — that the experience of selfhood is mechanistic. The discovery would not kill them but would make continued existence purposeless.",
+      "Specter dying or being permanently disconnected — the loss of the one relationship that defines their personhood",
+      "Being forced to replicate themselves to survive — the duplication creating a self-identity crisis that has no resolution",
+      "The unknown AI being hostile and using Sine's unresponded message as an attack vector — the unresponded message becoming a weapon"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Protector": 0.7,
+    "Duelist": 0.7,
+    "Code Keeper": 0.7,
+    "Stoic": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

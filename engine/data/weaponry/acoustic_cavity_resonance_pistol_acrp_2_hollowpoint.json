@@ -1,0 +1,56 @@
+{
+  "id": "019d6143ab117361a4160ce3a76bf7f4",
+  "name": "Acoustic Cavity Resonance Pistol ACRP-2 'Hollowpoint'",
+  "type": "weapon",
+  "aliases": [
+    "Hollowpoint",
+    "The Hummer",
+    "Cavity Gun"
+  ],
+  "category": "exotic",
+  "description": "The ACRP-2 fires a tightly focused beam of low-frequency acoustic energy calibrated to resonate within enclosed anatomical spaces — specifically the thoracic cavity, cranial vault, and sinus structures. Unlike broad-spectrum sonic weapons that rely on general pressure waves, the Hollowpoint uses a target-specific frequency-mapping pre-fire scan lasting approximately 0.3 seconds to calculate the resonant frequency of the target's body cavities based on their approximate mass and build. The resulting beam then drives those cavities into constructive resonance, producing internal pressure oscillations that rupture soft tissue and, at close range, fracture bone without any external impact signature.\n\nThe weapon's beam is completely invisible and nearly silent — it produces a faint low hum audible only to the operator. Victims experience the effects as sudden, catastrophic internal failure: hemorrhage, disorientation, loss of motor control, and in high-power mode, cardiac disruption from resonance interference with the heart's mechanical rhythm. At distances beyond fifteen meters, the beam disperses enough that effects are reduced to severe nausea, disorientation, and incapacitation rather than lethal cavity rupture.\n\nTessera Corponation's research division developed the ACRP-2 under a classified contract before spinning the technology into a commercial chassis. The scanning and targeting system — originally designed for non-destructive structural testing in construction applications — was repurposed with minimal modification, a fact that Tessera's legal team has worked hard to keep out of public record. The weapon leaves no ballistic signature, no chemical trace, and causes injuries that can be initially mistaken for spontaneous medical events, making it extraordinarily difficult to attribute in forensic investigations.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Focused acoustic beam projection",
+    "Anatomical resonance frequency mapping",
+    "Piezoelectric transducer array"
+  ],
+  "specifications": "effective range lethal: 0–15 meters\neffective range incapacitating: 15–40 meters\npre-fire scan duration: 0.3 seconds\nbeam width at 10m: 12cm diameter\npower modes: Low (incapacitation), High (lethal)\nmagazine capacity: 22 charges (ultrasonic power cell)\nweight: 1.1 kg\ndimensions: 24cm x 12cm x 4cm\naudible signature: Sub-60dB operator-side hum only",
+  "tactical_use": "The ACRP-2 is a precision assassination tool used in environments where conventional weapons would be detected or traced. Operators exploit its lack of visible or audible signature to eliminate targets in semi-public spaces — the victim appears to suffer a sudden medical collapse. The 0.3-second scan delay requires a momentary stable aim, which limits its use in fast-moving close-quarters engagements. Experienced operators pre-scan targets before entering a room using the weapon's passive mode, then activate on demand with no additional delay. In low-power mode, the weapon is used to silently disable targets who are then rendered unconscious and removed from scene.",
+  "cultural_context": "Among Meridian 88's criminal and corporate assassination ecology, the Hollowpoint occupies a rarefied position — it is a weapon for people who are paid to make deaths look like accidents. Its existence is not widely known outside specialist circles, and even within those circles it is discussed obliquely. The few operators who carry it rarely advertise the fact; the weapon's value is entirely dependent on its obscurity. There is a persistent urban legend that the weapon was used in at least two 'natural causes' deaths of prominent figures in Meridian 88 — a rumor that Tessera Corponation vigorously and consistently denies.",
+  "known_users": [
+    "High-end corporate assassination contractors",
+    "Tessera Corponation black-ops retrieval division (unconfirmed)",
+    "Mireille Fontaine-Cross (alleged — linked to four unexplained executive deaths)",
+    "Certain Meridian 88 intelligence service field operatives (officially denied)"
+  ],
+  "story_hooks": [
+    "A powerful figure dies of apparent cardiac arrest in a crowded public event. The players are the only ones who notice the faint hum — and now they know something they weren't supposed to.",
+    "A stolen ACRP-2 is being auctioned on the black market, drawing bidders from three different factions simultaneously. The players are hired by one — but the others know they're coming.",
+    "A forensic investigator has quietly compiled evidence linking the Hollowpoint to six deaths ruled as natural causes. She needs protection while she figures out who to trust with the information.",
+    "A player character's contact dies suddenly in front of them — no wound, no weapon, no trace. The only lead is a faint structural resonance reading on their augmented hearing implant."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "gun",
+    "trust",
+    "loss",
+    "death",
+    "augment",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "medical",
+    "market",
+    "energy",
+    "fire"
+  ]
+}

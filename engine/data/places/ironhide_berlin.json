@@ -1,0 +1,89 @@
+{
+  "id": "019d6143a920798282e5401d0689abf9",
+  "type": "place",
+  "name": "Ironhide Berlin",
+  "aliases": [
+    "Berlin",
+    "Ironhide",
+    "The Tannery",
+    "Leatherworks"
+  ],
+  "description": "Berlin's transformation was agricultural, which means it was Ironclad's. When the Soil Collapse of 2138 destroyed conventional farming across the Midwest, the Fox River corridor through Berlin became one of the few surviving riparian zones capable of supporting modified crop production. Ironclad Agrisystems moved in before the dust settled — literally, in some cases — and converted Berlin's tanning district into a bioprocessing hub for synthetic protein production. The leather tanning infrastructure, it turned out, was chemically adjacent to what Ironclad needed: vats, chemical handling systems, water processing, and a workforce already accustomed to biological material that smelled terrible. By 2150, Berlin was producing forty percent of the synthetic protein paste consumed in the Fox Cities Nexus, and Ironclad had signed Nutrition Work Covenants with most of the population.\n\nThe town is bifurcated. North of the river is Ironclad sovereign territory — the bioprocessing facility, worker housing, the Harrow garrison, and the distribution hub where protein shipments are loaded for transport east to the Nexus. South of the river is what locals call Freebank — the remnant of old Berlin that Ironclad never formally claimed, inhabited by the people who refused Covenants, the families who aged out of them, and the small community of Ho-Chunk descendants who've maintained continuous presence in the area since before European contact. Freebank has no corporate services, no grid connection, and no legal standing. It survives on subsistence agriculture using pre-Collapse seed stock that the Ho-Chunk community preserved, supplemented by whatever falls off Ironclad's trucks — sometimes literally, sometimes with help.\n\nThe Native American mound sites south of the river have become something unexpected: sacred ground in a world that forgot what sacred meant. The Ho-Chunk community guards them, and the mounds have become a pilgrimage site for people seeking something the corridor's optimized, branded, surveilled existence can't provide — meaning, history, connection to land that wasn't manufactured. Ironclad has made three attempts to survey the mound sites for potential bioprocessing expansion. Each attempt was turned back by a combination of Ho-Chunk resistance, Freebank solidarity, and the inconvenient fact that the Harrow garrison commander's grandmother was Ho-Chunk and he keeps finding reasons to delay enforcement orders.",
+  "atmosphere": {
+    "sights": [
+      "Ironclad bioprocessing towers rising from the old tannery district, their bioreactor vats visible through translucent walls, churning with synthetic protein cultures",
+      "The Fox River dividing the town — industrial north bank versus the wild, overgrown south bank of Freebank",
+      "Harrow patrol vehicles on the bridge, monitoring cross-river traffic with agricultural enforcement scanners",
+      "The mound sites on the southern bluffs — ancient earthworks now surrounded by hand-tended gardens, conspicuously unbranded in a branded world",
+      "Protein shipment convoys heading east on the automated highway, sealed containers marked with Ironclad's wheat-and-gear logo"
+    ],
+    "sounds": [
+      "Bioprocessing fermentation — a wet, bubbling undertone that permeates the north bank like a living thing digesting",
+      "Harrow drones overhead, their modified crop-duster airframes repurposed for surveillance in a region that used to grow actual crops",
+      "South bank quiet — birdsong, river sounds, the conspicuous absence of machinery that makes Freebank feel like another century",
+      "The shift horn from the Ironclad facility, calling Covenant workers to production rotations",
+      "Drumming from the mound sites on ceremonial nights, carrying across the river into the bioprocessing district"
+    ],
+    "smells": [
+      "Synthetic protein fermentation — a heavy, yeasty, vaguely biological smell that clings to clothing and hair",
+      "Chemical precursors from the bioprocessing facility, sharp enough to taste",
+      "South bank: actual soil, actual vegetation, actual organic decay — smells that have become exotic",
+      "The Fox River itself, carrying the combined chemical legacy of two centuries of industrial abuse"
+    ],
+    "feel": "A town at war with itself across a river. The north bank feels like the inside of an organ — functional, biological, purposeful, and deeply uncomfortable. The south bank feels like a memory of something that was lost, preserved by people too stubborn to let it die. Crossing the bridge between them is like walking between centuries.",
+    "tags": []
+  },
+  "demographics": "North bank: approximately 5,000 Covenant workers and Ironclad personnel (Tier 1-2, though Covenant workers' tier status is effectively meaningless). South bank (Freebank): approximately 2,000, including the Ho-Chunk community (~400), former Covenant workers, and subsistence farmers. No corporate census has been conducted on Freebank since 2165.",
+  "economy": "North bank: synthetic protein production under Ironclad sovereign authority, accounting for 40% of Fox Cities Nexus protein supply. South bank: subsistence agriculture, barter economy, and a small but significant trade in pre-Collapse heritage seeds that command extraordinary prices among corridor food purists.",
+  "power_structure": "North bank: Ironclad Agrisystems, administered by a Facility Director with sovereign authority. The Harrow maintains a garrison of approximately 200. South bank: the Ho-Chunk community council is the closest thing to governance, operating by consensus and deriving authority from cultural continuity rather than corporate charter. An uneasy detente exists between the two sides, maintained by mutual dependence and one conflicted garrison commander.",
+  "dangers": [
+    "Ironclad Covenant enforcement — workers who attempt to leave or organize are subject to corporate detention, and the Harrow is not gentle about it",
+    "Bioprocessing contamination — protein culture spills into the Fox River occur regularly and the downstream effects are cumulative",
+    "Freebank vulnerability — with no legal standing, the south bank community could be claimed by Ironclad at any time with a single filing",
+    "Cultural erasure — the mound sites are protected only by social pressure and one garrison commander's conscience, both of which have limits",
+    "Food dependency — even Freebank's subsistence agriculture can't fully feed its population, creating quiet leverage for Ironclad"
+  ],
+  "opportunities": [
+    "Heritage seed access — pre-Collapse genetic material is invaluable to anyone trying to break Ironclad's food monopoly",
+    "Cultural intelligence — the Ho-Chunk community's oral histories contain pre-corporate knowledge about the land that has practical applications",
+    "Covenant worker solidarity — an organized labor action at Berlin's bioprocessing facility would threaten 40% of the Nexus's protein supply",
+    "The garrison commander — a conflicted authority figure with the power to delay or enable significant actions on either side of the river"
+  ],
+  "story_hooks": [
+    "Ironclad files for sovereign expansion over the mound sites, and the Ho-Chunk community reaches out to external networks for help — they need someone who can fight a legal battle and a physical one simultaneously",
+    "A contamination event in the protein cultures produces something unexpected — not a toxin but a novel organism, something the bioprocessing system created by accident that Helix BioSystems is very interested in acquiring",
+    "The heritage seed vault beneath the mound sites is larger than anyone outside the Ho-Chunk community knows — it contains genetic material that could break Ironclad's agricultural monopoly across the entire corridor, and someone has leaked its existence"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Omro Relay (northeast)",
+      "Neshkoro Verdant (southwest)",
+      "Red Granite Pit (northwest)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Ironclad Agrisystems Covenant workers and Harrow enforcement personnel",
+    "Protein shipment convoy operators running the Berlin-Nexus route",
+    "Heritage seed buyers making discreet visits to Freebank",
+    "Ho-Chunk cultural pilgrims visiting the mound sites from across the corridor"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 43.968,
+    "lng": -88.9434,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "genetic",
+    "ai",
+    "synthetic",
+    "corporate",
+    "power",
+    "bar",
+    "food",
+    "water"
+  ]
+}

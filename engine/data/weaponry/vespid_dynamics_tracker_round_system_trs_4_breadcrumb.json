@@ -1,0 +1,43 @@
+{
+  "id": "019d6143ab5c73aea90a55f2a464735f",
+  "name": "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
+  "type": "weapon",
+  "aliases": [
+    "Breadcrumb",
+    "TRS-4",
+    "Tracker Bullet",
+    "Tag Round"
+  ],
+  "category": "rifle",
+  "description": "A modified rifle system that fires rounds containing a micro-transmitter that embeds in the target on impact and broadcasts location data for up to 72 hours. The TRS-4 round is a low-velocity subsonic projectile designed to penetrate clothing and embed in subcutaneous tissue without causing significant injury — the goal is tagging, not killing. The embedded transmitter is smaller than a grain of rice and broadcasts on a frequency detectable by Vespid's proprietary tracking receivers at ranges up to 5 kilometers. The round's low velocity means it feels like a hard punch rather than a gunshot, and many targets do not realize they have been tagged until the transmitter is discovered during medical examination.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — authorized surveillance operations",
+  "base_technologies": [
+    "Micro-transmitter projectile embedding",
+    "Low-velocity subcutaneous delivery",
+    "Long-range location broadcast technology"
+  ],
+  "specifications": "caliber: 8mm subsonic tracker round\nmuzzle velocity: 90 m/s — subcutaneous embedding velocity\neffective range: 10-40 meters\ntransmitter size: 2mm x 1mm micro-chip\nbroadcast duration: 72 hours\ntracking range: 5 kilometers with Vespid receiver\nmagazine: 6 rounds\nweight: 2.5 kg rifle\ninjury profile: Minimal — subcutaneous embedding with bruising",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A player character discovers a micro-transmitter embedded in their shoulder that they do not remember receiving — someone tagged them with a TRS-4 and has been tracking their movements for days.",
+    "A modified TRS-4 round has been developed that delivers a micro-dose of sedative along with the transmitter — targets fall asleep within minutes and wake up tagged."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "rifle",
+    "gun",
+    "ai",
+    "surveillance",
+    "ubc",
+    "medical",
+    "injury",
+    "rain",
+    "clothing",
+    "fire",
+    "tier 3"
+  ]
+}

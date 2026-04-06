@@ -573,17 +573,7 @@
     private int GetEdgeCount(string nodeId) =>
         allEdges.Count(e => e.Source == nodeId || e.Target == nodeId);
 
-    private static string GetTypeBadgeClass(string type) => type switch
-    {
-        "character" => "bg-info",
-        "organization" => "bg-warning text-dark",
-        "place" => "bg-success",
-        "faction" => "bg-purple",
-        "weapon" => "bg-danger",
-        "equipment" => "bg-primary",
-        "technology" => "bg-cyan",
-        _ => "bg-secondary",
-    };
+    private static string GetTypeBadgeClass(string type) => Constants.TypeBadge.For(type);
 
     private static string GetRelBadgeClass(string relType) => relType?.ToLowerInvariant() switch
     {

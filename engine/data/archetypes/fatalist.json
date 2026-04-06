@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a56e7573a21665e5d7784a65",
+  "name": "Fatalist",
+  "type": "archetype",
+  "category": "emotional",
+  "description": "Believes the outcome is already decided",
+  "behavioral_signature": "Accepts what comes without resistance",
+  "under_stress": "Total surrender to fate",
+  "at_rest": "Calm, resigned, waiting",
+  "will_always": [
+    "accept what comes"
+  ],
+  "will_never": [
+    "fight destiny"
+  ],
+  "unless": [
+    "someone they love is fated to die and they could prevent it"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Pessimist",
+      "threshold": 0.75,
+      "context": "acceptance of bad"
+    },
+    {
+      "archetype": "Determinist",
+      "threshold": 0.8,
+      "context": "inevitability"
+    }
+  ],
+  "opposite_of": [
+    "Free Will Champion"
+  ],
+  "tags": [
+    "resigned",
+    "calm"
+  ]
+}

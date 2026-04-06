@@ -131,7 +131,7 @@ public class ContractGenerator
             var contract = JsonSerializer.Deserialize<Contract>(json.Trim(),
                 JsonDefaults.LlmParsing) ?? new();
 
-            contract.Id = Guid.NewGuid().ToString("N")[..8];
+            contract.Id = Guid.CreateVersion7().ToString("N")[..8];
             contract.GeneratedAt = DateTime.UtcNow;
             return contract;
         }
@@ -140,7 +140,7 @@ public class ContractGenerator
             Serilog.Log.Warning(ex, "Contract generation failed, returning fallback contract");
             return new Contract
             {
-                Id = Guid.NewGuid().ToString("N")[..8],
+                Id = Guid.CreateVersion7().ToString("N")[..8],
                 Title = $"Dead Drop at {randomDistrict}",
                 JobType = jobType,
                 Briefing = $"Simple {jobType} job. {payout} on completion. Don't ask questions.",
@@ -162,7 +162,7 @@ public class ContractGenerator
 
         return new Contract
         {
-            Id = Guid.NewGuid().ToString("N")[..8],
+            Id = Guid.CreateVersion7().ToString("N")[..8],
             Title = $"{jobType.Replace('_', ' ')} — {location}",
             JobType = jobType,
             TargetLocation = location,

@@ -1,0 +1,48 @@
+{
+  "id": "019d6143a8a87c27a6f6163f6d60fa17",
+  "name": "Hepatic Regeneration Complex",
+  "brand_name": "Hepatic",
+  "product_name": "Hepatic Regeneration Complex",
+  "type": "geneware",
+  "aliases": [
+    "Liver Forever",
+    "Prometheus Mod",
+    "Second Chance Organ"
+  ],
+  "category": "medical",
+  "target_system": "hepatic (liver regeneration enhancement)",
+  "description": "Enhances the liver's natural regenerative capacity using zebrafish organ regeneration genes and axolotl dedifferentiation factors. The modified liver can regenerate from as little as 15% of its original mass within 4–6 weeks — compared to the 6–12 months an unmodified liver requires for partial regeneration. The modification also enhances the liver's detoxification capacity, allowing the user to process toxins, alcohol, and drug compounds with dramatically improved efficiency. A user with the Prometheus Mod can drink amounts that would kill an unmodified person and wake up feeling fine. This has made the modification popular far beyond its medical applications — recreational substance users, people who work with industrial chemicals, and anyone who wants to abuse their body without immediate consequences. Lacuna Genomics markets it as life-saving medicine. The street knows it as the party organ.",
+  "source_organism": "Danio rerio (zebrafish), Ambystoma mexicanum (axolotl)",
+  "manufacturer": "Lacuna Genomics",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted",
+  "procedure": "Hepatic retroviral injection under imaging guidance, 2 sessions",
+  "expression_time": "4–6 weeks",
+  "reversibility": "Irreversible",
+  "side_effects": [
+    "Enhanced detoxification reduces effectiveness of many medications — dosing must be adjusted",
+    "Increased appetite due to liver metabolic demands",
+    "Liver enzyme levels permanently elevated — triggers false positives on health screenings",
+    "Users tend to underestimate toxin exposure risks, leading to long-term organ damage despite enhanced regeneration"
+  ],
+  "social_perception": "Dual reputation: medical lifesaver and party accessory. Doctors recommend it; bars market to it. The Prometheus Mod has created a culture of chemical excess in Meridian 88's nightlife that would be lethal without it.",
+  "story_hooks": [
+    "A Prometheus Mod user is being slowly poisoned with something their enhanced liver can't process — the toxin is specifically engineered to exploit a gap in the zebrafish regeneration pathway",
+    "A street clinic's batch of Liver Forever produces a liver that regenerates too aggressively, growing beyond normal size and crowding other organs"
+  ],
+  "tags": [
+    "medical",
+    "geneware",
+    "war",
+    "clinic",
+    "doctor",
+    "market",
+    "bar",
+    "night",
+    "drink",
+    "drug",
+    "alcohol",
+    "poison",
+    "tier 2"
+  ]
+}

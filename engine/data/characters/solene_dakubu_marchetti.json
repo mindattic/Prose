@@ -1,0 +1,218 @@
+{
+  "id": "019d6143a6d672498bd4cba1290a62b3",
+  "type": "character",
+  "name": "Solène Dakubu-Marchetti",
+  "aliases": [
+    "Sol",
+    "Solène-with-the-comb"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Barber and hair sculptor",
+  "age": 29,
+  "status": "active",
+  "location": "The Burnished Market, Stall 44 — Solène's Edgework",
+  "description": "Solène is a compact, precise woman with light brown skin, a shaved head that she freshens every third day with geometric razor work along the sides, and a galaxy of tiny bioluminescent freckles across her cheeks and nose that pulse faintly blue-white when she laughs. Her fingers are extraordinary — long, quick, and steady — and she keeps her nails cut short and lacquered black. She has a cat tail, rust-red and white, that she got at seventeen because she liked the way it communicated mood without her having to talk; it swishes with professional concentration and lashes with irritation. Her stall in the Burnished Market is barely four meters of booth but she's made it immaculate: folded black draping, a cracked leather chair she reupholstered herself, and a wall-mounted grid of reference images that she updates weekly.\n\nSolène is young but operates with the confidence of someone who decided early that her craft was her authority. She's playful and gossipy with clients she likes, and scrupulously professional with ones she doesn't — nobody gets a bad cut because she dislikes you, but she won't make conversation either. She has strong opinions about everything from corponation aesthetics colonizing street culture to the correct way to pray to a data E.L.F., and she expresses these opinions freely while her hands are in your hair, knowing you can't really leave.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.7,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "losing the fine motor control in her hands to injury or age",
+      "being absorbed into someone else's vision — a corponation salon, a franchise, anything that would standardize her"
+    ],
+    "core_desires": [
+      "to be recognized as an artist, not just a service worker",
+      "a real shop, with a door and a sign she painted herself"
+    ],
+    "coping_mechanisms": [
+      "channeling anxiety into technique refinement",
+      "an extremely curated personal aesthetic that she controls completely"
+    ],
+    "blind_spots": [
+      "reads people quickly and accurately but sometimes closes the file too soon — she's wrong about people who don't signal obviously"
+    ],
+    "secret": "Six months ago she gave a very specific haircut to a client who paid double and asked her not to log the appointment. Two weeks later she saw the same haircut on a wanted-data broadcast. She kept the money, told no one, and has been waiting for consequences ever since."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quick, layered, market vernacular with French-inflected Ghanaian cadences from her grandmother's speech patterns; trades between warm teasing and sharp critique without warning",
+    "cadence": "Fast when excited, pointed slow when making a judgment",
+    "verbal_tics": [
+      "'Okay but listen—'",
+      "a short exhale through her nose when something amuses her that she won't admit amuses her"
+    ],
+    "example_lines": [
+      "'Okay but listen — you've been wearing this same shape since 2196. Your face changed. The cut didn't notice.'",
+      "'I don't do bad work for people I don't like. That's a me problem, not a you problem. Sit still.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The client whose wanted-data haircut Solène made appears at her stall again — not to get a cut, but to ask her to do the same for three other people, same money, same no-log policy.",
+    "A Tessera corporate talent scout approaches Solène about a head stylist position for a Tessera media production — genuinely good money, benefits, and the creative death of everything she's built."
+  ],
+  "narrative_function": "Social information nexus — she hears everything from a cross-section of Burnished Market society; local color; source of neighborhood gossip; can provide a cover identity through physical transformation.",
+  "augmentations": "Geneware: bioluminescent freckle underlays (blue-white), rust-and-white cat tail. No functional augmentations — she's philosophically opposed to anything that might affect her hand sensitivity.",
+  "daily_life": "Sets up her stall at the Burnished Market by 09:00, works a full book of appointments until 19:00, then spends an hour doing deliberate practice on mannequin heads before packing down.",
+  "affiliation": "Independent, Burnished Market vendor collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 10,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": -3,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "artisan",
+      "market figure",
+      "gossip network node",
+      "geneware visible",
+      "tier 2"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "protect the quality of her work before anything else",
+      "money matters but she won't take work that makes her feel like a machine"
+    ],
+    "escalation_ladder": [
+      "polite professional redirection",
+      "direct and unambiguous refusal",
+      "stopping work mid-service and returning any payment"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm, asks good intake questions, reads them through the first appointment before deciding how much of herself to give",
+      "friends": "Loudly affectionate, will absolutely talk about you behind your back in a way that is somehow also loving"
+    },
+    "stress_responses": {
+      "low": "Works faster, tail starts flicking",
+      "medium": "Becomes very quiet and technically precise — the work gets better as she gets more scared",
+      "high": "Closes the stall early without explanation, goes to an E.L.F. data shrine in the Burnished Market's lower arcade and sits there for an hour"
+    },
+    "contradictions": [
+      "publicly contemptuous of vanity, privately devastated by a bad photo of herself"
+    ],
+    "habits": [
+      "redraws her own head razor work in a slightly different pattern every three days, never the same twice",
+      "keeps a physical sketchbook of every notable cut she's done"
+    ],
+    "breaking_points": [
+      "her hands being threatened or damaged",
+      "being publicly accused of the wanted-data incident"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Burnished Market district to a Ghanaian-Italian family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Got her cat tail at seventeen; began apprenticing under a market barber",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Took over Stall 44 when her mentor retired to the Orchard",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Cut the hair of a person later flagged on a wanted-data broadcast; kept money, told no one",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

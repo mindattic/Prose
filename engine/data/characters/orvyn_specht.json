@@ -1,0 +1,242 @@
+{
+  "id": "019d6143a68878a08f9ba8722c9dad81",
+  "type": "character",
+  "name": "Orvyn Specht",
+  "aliases": [
+    "Spetch",
+    "The Cartographer",
+    "Nobody's Boy"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Street-level information broker / Unofficial district archivist",
+  "age": 19,
+  "status": "active",
+  "location": "Old Harbor (primary), The Circuit (work)",
+  "description": "Orvyn Specht is nineteen years old and looks sixteen and has survived this discrepancy by being faster than people expect and more useful than people intend. He is slight, pale-skinned with a spray of freckles across dark circles, with hair that grows in three directions regardless of what he does to it. He moves through Old Harbor like a person who has memorized every exit, which he has—not as a paranoid exercise but as an intellectual one. He maps things. Streets, social networks, grudge lines, debt relationships, who owes what to whom and who is lying about it. He sells this information in small, carefully portioned pieces to people who don't know how much of the whole picture he's already holding.\n\nOrvyn grew up in the informal settlement layers of Old Harbor, raised by an older sister who left when he was twelve and a rotating cast of neighbors who fed him when they remembered to. He is not bitter about this. He is, in a way that sometimes unnerves people who probe it, genuinely cheerful—a relentless, low-grade delight in the texture of information itself, in the way a rumor travels and changes, in the gap between what people say and what the map of their behavior reveals. He keeps physical notebooks filled with hand-drawn cartography: not just geography but social topology, annotated in a cramped personal shorthand no one else can read.\n\nHe operates out of a specific corner booth in a noodle shop called Haecht's in Old Harbor, where he has an informal arrangement with the owner, and from a secondary position near the transit interchange in The Circuit where he sells low-grade data to mid-tier runners and fixers. He has no bodyguard, no crew, no weapon beyond a short blade he has used exactly once. His protection is that he knows too much about too many people for any single actor to find his disappearance profitable, and he has made sure that enough of them know this.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.55,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.35,
+      "mask": 0.45,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Becoming invisible in the way that actually kills you—discarded, not just overlooked",
+      "That his cheerfulness is a performance he has maintained so long he no longer knows what's underneath",
+      "Losing the notebooks"
+    ],
+    "core_desires": [
+      "To understand how Meridian 88 actually works, beneath every official layer",
+      "To find his sister",
+      "To matter to someone who isn't paying him"
+    ],
+    "coping_mechanisms": [
+      "Treating emotional difficulty as an interesting data problem to be mapped rather than felt",
+      "Humor deployed as social lubrication and deflection simultaneously",
+      "Obsessive documentation as a substitute for memory he doesn't trust"
+    ],
+    "blind_spots": [
+      "Underestimates how much people underestimate him as a threat, which has made him careless about certain enemies",
+      "Conflates knowing about people with knowing them",
+      "Has not processed his sister's departure and frames it entirely as a logistical mystery rather than an abandonment"
+    ],
+    "secret": "He has a nearly complete map of Synclaire Financial's debt network in The Shelf and Old Harbor—more comprehensive than anything their internal systems hold. He hasn't sold it because he doesn't yet know what it's worth, and because something in the pattern frightens him in a way he hasn't been able to annotate yet."
+  },
+  "speech_patterns": {
+    "vocabulary": "Street vernacular mixed with oddly precise technical terminology, frequent analogies drawn from cartography and architecture, runs sentences together when excited",
+    "cadence": "Fast, light, with sudden full stops when he hits something important—like a person walking quickly who occasionally freezes to look at something on the ground",
+    "verbal_tics": [
+      "Starting questions with 'Wait, so—'",
+      "Using 'adjacent' as a relational descriptor ('she's not dangerous, she's danger-adjacent')",
+      "Tapping his notebook when he's thinking, whether or not he's holding it"
+    ],
+    "example_lines": [
+      "'Wait, so—you want the route or the reason the route exists? Because those are different prices and honestly the second one is more useful.'",
+      "'I don't sell secrets. I sell context. The secret you already have. What you're missing is where it fits on the map.'",
+      "'She's not lying, she's just—she's telling you the version of true that she needs you to believe. That's adjacent to lying but it's a different street.'",
+      "'I've been in every district. Not all at once, obviously. But I've got the shape of the whole thing in my head and I'm going to tell you something: nobody is running this city. It's just falling in a direction everyone agrees to call forward.'"
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Maren Voss",
+      "type": "Professional contact / Cautious mutual respect",
+      "description": "Orvyn has sold Maren information twice. She paid fair and didn't follow him afterward, which in his estimation puts her in the top 5% of clients. He is aware she knows more about him than she's let on.",
+      "emotional_core": "Curiosity and the specific warmth of being treated as competent by someone formidable",
+      "story_tension": "She may be the first person who could use the Synclaire map constructively, but giving it to her means choosing a side"
+    },
+    {
+      "name": "Blessed Nkemdirim",
+      "type": "Neighborhood history / Complex",
+      "description": "Blessed's name appears in Orvyn's earliest Old Harbor notebooks in a child's handwriting. They grew up in the same informal settlement layers. Orvyn has never directly approached Blessed in their current iteration and isn't sure if Blessed remembers him.",
+      "emotional_core": "Nostalgia, uncertainty, and the strange grief of watching someone you knew become someone you don't",
+      "story_tension": "Orvyn knows something about Blessed's past that Blessed may not want known—and isn't sure if it's a card or a burden"
+    },
+    {
+      "name": "His sister (Imara Specht)",
+      "type": "Family / Missing",
+      "description": "Left Old Harbor when Orvyn was twelve. Last confirmed data point places her in The Spire's lower service levels four years ago. Orvyn has a notebook dedicated entirely to this thread.",
+      "emotional_core": "The one map he cannot complete",
+      "story_tension": "He recently acquired information suggesting she didn't leave voluntarily"
+    }
+  ],
+  "story_hooks": [
+    "The Synclaire map in his notebook begins connecting to something much larger—a pattern that suggests coordinated district destabilization—and people have started asking questions that suggest they know he's close to it",
+    "Someone offers him an enormous sum for a specific piece of information that he realizes, mid-transaction, will get the buyer killed",
+    "A thread in his sister's notebook leads him into The Spire's service architecture, which is not a place someone like Orvyn is meant to return from",
+    "He is hired to map the social network of a closed community in The Shelf and discovers the map already exists—drawn in a style uncomfortably close to his own"
+  ],
+  "narrative_function": "Orvyn functions as a connective tissue character and an audience surrogate for the world's architecture—someone whose role is to reveal how systems interconnect. He also carries the emotional counterweight of cheerful survival against actual loneliness, and his youth positions him as a character the city has not yet finished forming.",
+  "augmentations": "Basic optical enhancement with zoom and low-light capability (secondhand, partially glitching—sometimes activates involuntarily in bright light),No neural augmentations by deliberate choice—he doesn't trust anything in his head that he didn't put there",
+  "daily_life": "Wakes irregularly, eats whatever Haecht's is serving, spends mornings updating his notebooks with overnight observations. Midday transit to The Circuit for client meetings. Afternoons wandering with no apparent destination, which is when most of his actual observation happens. Evenings back at Haecht's or moving through Old Harbor's informal social spaces. Sleeps in a rented room above a repair shop whose owner he has protected twice through strategic information releases.",
+  "affiliation": "Unaffiliated (deliberately and carefully maintains no formal allegiances)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 5,
+      "creativity": 7,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 8,
+      "empathy_detachment": 5,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 5,
+      "transparency_guardedness": 5
+    },
+    "drives": [
+      "Understand how Meridian 88 actually works",
+      "Find his sister",
+      "Matter to someone not paying him"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 5,
+        "response": "Talks faster, maps harder, treats the problem as data to be charted"
+      },
+      "moral": 5,
+      "trust": 4,
+      "desperation": 6
+    },
+    "strengths": [
+      "Curiosity",
+      "Love of Learning",
+      "Creativity",
+      "Perspective",
+      "Humor"
+    ],
+    "weaknesses": [
+      "Prudence",
+      "Self-Regulation",
+      "Bravery",
+      "Honesty",
+      "Perseverance"
+    ],
+    "tags": [
+      "info-broker",
+      "cartographer",
+      "young",
+      "cheerful",
+      "notebook-keeper",
+      "old-harbor",
+      "sister-seeker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Sell context, not secrets — 'the secret you already have, what you are missing is where it fits on the map'",
+      "Keep the Synclaire Financial debt network map unsold until he understands what it means",
+      "Portion information carefully — never give anyone the whole picture",
+      "Memorize every exit in every space he enters",
+      "Maintain the sister notebook as a separate thread from all other work",
+      "Use humor as both social lubrication and deflection simultaneously",
+      "Never carry a weapon beyond the short blade — protection is knowing too much"
+    ],
+    "escalation_ladder": [
+      "'Wait, so—' followed by reframing the question",
+      "Fast speech with sudden full stops — something important surfaced",
+      "Taps notebook compulsively — processing at speed",
+      "Refuses the sale mid-transaction — something frightened him",
+      "Disappears from all known positions — goes to ground"
+    ],
+    "interpersonal_modes": {
+      "Maren Voss": "Cautious mutual respect — she treated him as competent and that is rare",
+      "Blessed Nkemdirim": "Distant nostalgia — childhood acquaintance he watches from afar",
+      "his sister Imara": "The one map he cannot complete — obsessive, tender, incomplete",
+      "clients": "Fast, professional, cheerful — the cheerfulness is load-bearing"
+    },
+    "stress_responses": {
+      "low": "Talks faster, runs sentences together, excitement and anxiety blur",
+      "medium": "Maps obsessively — fills notebook pages with topology and connections",
+      "high": "Freezes mid-step to stare at something — the fast walker suddenly still",
+      "critical": "Opens the sister notebook and traces the last known data point"
+    },
+    "contradictions": [
+      "Relentless cheerfulness may be a performance maintained so long he no longer knows what is underneath",
+      "Conflates knowing about people with knowing them — sells context but has no personal context of his own",
+      "Frames his sister's departure as a logistical mystery rather than processing it as abandonment"
+    ],
+    "habits": [
+      "Starts questions with 'Wait, so—'",
+      "Uses 'adjacent' as a relational descriptor",
+      "Taps notebook when thinking, whether or not holding it",
+      "Eats whatever Haecht's is serving each morning",
+      "Wanders Old Harbor with no apparent destination in the afternoons — actual observation work"
+    ],
+    "breaking_points": [
+      "The Synclaire map connecting to something larger than he can handle",
+      "Someone offering him information that will get the buyer killed",
+      "A thread in the sister notebook leading into the Spire's service architecture",
+      "Discovering a map in someone else's hand drawn in his own style"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Opportunist": 0.9,
+    "Manipulator": 0.7,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

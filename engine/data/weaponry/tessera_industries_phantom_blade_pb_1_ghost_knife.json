@@ -1,0 +1,41 @@
+{
+  "id": "019d6143ab527d9ab3e2753508be43a4",
+  "name": "Tessera Industries Phantom Blade PB-1 'Ghost Knife'",
+  "type": "weapon",
+  "aliases": [
+    "Ghost Knife",
+    "PB-1",
+    "Tessera Blade",
+    "Null Edge"
+  ],
+  "category": "melee",
+  "description": "A combat knife with a blade forged from Tessera's proprietary metamaterial composite that absorbs electromagnetic radiation across the visible and near-infrared spectrum, rendering it functionally invisible to optical and thermal sensors. The blade appears as a void — a knife-shaped absence of light that the eye struggles to track. The metamaterial construction also gives the blade unusual physical properties: it is extremely hard but brittle, capable of penetrating body armor through sheer material hardness but prone to shattering if used to pry or lever. Each blade is individually manufactured and serial-coded, making them traceable — which has not stopped them from becoming prestige assassination tools.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited — sensor-defeating weapon",
+  "base_technologies": [
+    "Electromagnetic radiation absorbing metamaterials",
+    "Ultra-hard brittle composite forging",
+    "Optical stealth material science"
+  ],
+  "specifications": "blade length: 18 cm\nblade material: Tessera EM-absorbing metamaterial composite\nhardness: Exceeds tungsten carbide\noptical signature: Absorbs 99.7% of visible and near-IR light\nthermal signature: Undetectable to standard thermal imaging\nweight: 0.15 kg\nfragility: Shatters under lateral stress exceeding 40 Nm",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A Ghost Knife was recovered from a crime scene with its serial code intact — tracing the sale leads to a Tessera executive who reported it stolen six months ago, or claims to have.",
+    "A forger is selling counterfeit Ghost Knives made from conventional metamaterial that degrades after weeks — buyers are finding their 'invisible' blades becoming visible at the worst possible moments."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "melee",
+    "combat",
+    "weapon",
+    "blade",
+    "crime",
+    "ai",
+    "armor",
+    "stealth",
+    "tier 4"
+  ]
+}

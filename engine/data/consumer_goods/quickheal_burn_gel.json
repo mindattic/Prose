@@ -1,0 +1,31 @@
+{
+  "id": "019d6143a7817ab2b8693e4b0a713d77",
+  "name": "QuickHeal Burn Gel",
+  "brand_name": "QuickHeal",
+  "product_name": "QuickHeal Burn Gel",
+  "type": "consumer_good",
+  "category": "medicine_otc",
+  "subcategory": "first aid",
+  "manufacturer": "MedReady Consumer",
+  "description": "Cooling gel for thermal burns — common in a world of self-heating food packets, overheating augments, and industrial work. Apply immediately, the gel creates a cooling barrier and delivers pain relief and healing accelerant.",
+  "flavor_profile": "Ice-cold on contact, clear gel, pain relief within seconds, dries to a protective film",
+  "tier_availability": "Tier 1-4",
+  "price": "Φ3.50",
+  "popularity_rank": 10,
+  "slogan": "Cool it. Heal it.",
+  "cultural_context": "Burns from overheating augments are common enough that QuickHeal specifically lists 'chrome burns' on its packaging. The gel is in every workshop, every kitchen, and every augment maintenance area.",
+  "story_hooks": [
+    "QuickHeal's healing accelerant uses a nano-compound that may interfere with synth-skin grafts — causing the graft to detach at the burn site."
+  ],
+  "tags": [
+    "medicine_otc",
+    "first_aid",
+    "consumer_good",
+    "burn",
+    "cooling",
+    "tier_1",
+    "tier_2",
+    "tier_3",
+    "tier_4"
+  ]
+}

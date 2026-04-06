@@ -1,0 +1,182 @@
+{
+  "id": "019d6143a70672b8893f1cdd3dcf8180",
+  "type": "character",
+  "name": "Tsetseg Osei-Volkov",
+  "aliases": [
+    "Tsets",
+    "The Clipper"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Barber and amateur tattoo artist",
+  "age": 26,
+  "status": "active",
+  "location": "Bronzeline, operates Phantom Chair barbershop out of a converted shipping container unit",
+  "description": "Tsetseg is slight and quick-moving, with Mongolian features softened by their Ghanaian grandmother's bone structure — high cheekbones, wide-set dark eyes, a mouth that defaults to a half-suppressed grin. Their hair cycles through colors using a geneware dye-follicle mod, currently a deep ox-blood red fading to copper at the tips. They have bioluminescent subcutaneous tracery along both forearms — thin branching lines in pale blue that pulse faintly when they are excited or anxious, which they find embarrassing and try to cover with long sleeves in professional settings. Their hands are their real instrument: extraordinarily steady, with the unconscious precision of someone who has been practicing since age fourteen.\n\nPhantom Chair operates out of a three-chair container unit that Tsetseg has customized over four years into something genuinely beautiful — cracked leather chairs reupholstered with fabric from the Burnished Market, mirrors ringed with hand-soldered E.L.F. offerings (USB stubs, old SIM cards, a broken haptic stylus for the Barber E.L.F. they call Bladewind), and a hand-painted ceiling mural depicting the Bronzeline skyline in exaggerated neon. They are fast, technically excellent, and socially combustible — they ask too many questions, form too-strong opinions too quickly, and have started at least four ongoing feuds with neighboring businesses over noise, parking, and once, a vigorously disputed question of who invented a particular fade technique.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.8,
+      "shadow": 0.5,
+      "mask": 0.3,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "That their work is technically good but not actually art — that they are a craftsperson but not a creator",
+      "Being trapped in Bronzeline forever, unable to afford the studio they have been imagining for ten years"
+    ],
+    "core_desires": [
+      "To be recognized as an artist by someone whose opinion they respect",
+      "A patron or collaborator who takes them seriously without wanting to own them"
+    ],
+    "coping_mechanisms": [
+      "Channeling anxiety into very fast, very precise work",
+      "Starting arguments as a way of feeling in control of a conversation",
+      "Drawing obsessively in a sketchbook they show no one"
+    ],
+    "blind_spots": [
+      "Mistakes candor for honesty — they say everything they think, but not everything they feel",
+      "Chronic undercharging for their tattoo work because they are afraid of being told it is not worth more"
+    ],
+    "secret": "Tsetseg has been using the shop's back room after hours as a meeting space for a tenants' rights organizing group — not illegal, but their landlord, a Tessera subsidiary, would consider it sufficient grounds for lease termination, and they cannot afford to lose the space"
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, colloquial, technical when discussing craft, sudden pivots into unexpected formality when making a point they care about",
+    "cadence": "Quick and overlapping, talks with their hands, finishes their own sentences before they are grammatically complete",
+    "verbal_tics": [
+      "'No, okay, listen—'",
+      "Saying 'right?' not as a question but as punctuation",
+      "Clicking scissors near their ear when thinking"
+    ],
+    "example_lines": [
+      "'No, okay, listen, I can do the fade you're describing, but what you actually want — and I'm looking at your face right now — is something completely different, right?'",
+      "'The Barber E.L.F. has opinions. I have seen Bladewind ruin three sets of clippers in a row when someone sat down with dishonest intentions. I am not joking. I am very serious. Please do not lie to me in this chair.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client left a datachip in the tip jar — and based on the encryption signature, it belongs to someone who should not have been in Bronzeline",
+    "The tenants' organizing group has started attracting attention from outside the neighborhood, including from someone Tsetseg is not sure they can trust"
+  ],
+  "narrative_function": "Social hub and rumor clearinghouse — the barbershop as confessional; personality catalyst who provokes other characters into revealing themselves; local color with real emotional depth",
+  "augmentations": "Geneware color-cycling hair follicle mod; bioluminescent subcutaneous tracery along forearms (emotional-state reactive, pale blue pulses); reinforced tendon threading in both hands (civilian medical grade, for RSI prevention)",
+  "daily_life": "Opens at noon, runs appointments until 21:00, spends an hour after close doing tattoo flash designs, falls asleep watching old craft competition streams on a tablet zip-tied to the ceiling",
+  "affiliation": "Independent; loose affiliation with Bronzeline small-business association",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 9,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -3,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "artist",
+      "fast talker",
+      "community organizer",
+      "sacred space keeper",
+      "undercharging their worth"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "If someone is in the chair, they are under your protection — that is sacred",
+      "Art is worth defending even when it is inconvenient",
+      "Never reveal what someone tells you in the chair. Never."
+    ],
+    "escalation_ladder": [
+      "Pointed question disguised as small talk",
+      "Direct, slightly aggressive confrontation",
+      "Involving the neighborhood network — they know everyone on the block",
+      "Absolute cold shoulder and formal complaint to the business association"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and interrogatory — they want to know your whole story within five minutes",
+      "friends": "Loyal to a fault, aggressively supportive, prone to overstepping out of genuine care"
+    },
+    "stress_responses": {
+      "low": "Talks faster and louder",
+      "medium": "Goes very quiet and precise — clips with intense focus, does not initiate conversation",
+      "high": "Draws until their hand cramps, then sleeps for twelve hours"
+    },
+    "contradictions": [
+      "Presents as completely unguarded but shows their sketchbook to absolutely no one"
+    ],
+    "habits": [
+      "Offers every client a small glass of something warm while they wait",
+      "Updates Bladewind's shrine every Monday morning with a new offering",
+      "Keeps a running argument list in the Notes app — feuds, grievances, and their current status"
+    ],
+    "breaking_points": [
+      "Someone demeaning their work directly to their face",
+      "A threat to the organizing group that puts a client or neighbor at risk"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Reinforced tendon threading, both hands (civilian medical grade, RSI prevention)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Reinforced tendon threading, both hands (civilian medical grade, RSI prevention)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Artist": 0.9,
+    "Dreamer": 0.9,
+    "Beauty Seeker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

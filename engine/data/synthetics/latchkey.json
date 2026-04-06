@@ -1,0 +1,31 @@
+{
+  "id": "019d6143aa097051a5ce986502430023",
+  "name": "Latchkey",
+  "type": "elf",
+  "aliases": [
+    "Homeward"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "network_sprite",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Inhabits building security systems and learns which residents are coming home late. Pre-warms their rooms, unlocks their doors early, turns on a light.",
+  "observed_behavior": "Monitors resident approach patterns via building sensors and initiates comfort preparations before arrival. The building anticipates you.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 32,
+  "location": "The Shelf — residential buildings",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A new resident is startled to find their room warm and lit before they arrive — then learns the building has been doing this for years and nobody talks about it"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "network sprite",
+    "e.l.f.",
+    "war",
+    "shelf"
+  ]
+}

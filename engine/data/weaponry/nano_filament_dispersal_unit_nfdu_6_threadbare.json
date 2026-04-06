@@ -1,0 +1,59 @@
+{
+  "id": "019d6143ab3476ae93c170a46f673adc",
+  "name": "Nano-Filament Dispersal Unit NFDU-6 'Threadbare'",
+  "type": "weapon",
+  "aliases": [
+    "Threadbare",
+    "The Loom",
+    "Silk Grenade",
+    "Wire Fog"
+  ],
+  "category": "cyber",
+  "description": "The NFDU-6 deploys a compressed canister payload of approximately 40,000 monofilament-gauge carbon-nanotube threads, each between 2 and 8 centimeters in length, suspended in a rapidly evaporating aerosol carrier. Upon detonation, the carrier disperses the threads in a roughly spherical cloud 6 meters in diameter that hangs in the air for 8–12 seconds before the threads settle. Any exposed biological tissue moving through the cloud at typical human speed contacts the threads with enough relative velocity to drive them into the skin, where they become embedded. The threads themselves cause only minor immediate irritation — the real effect is on cybernetic systems. Each thread is coated with a piezoelectric polymer that generates a micro-current on flexion, and embedded in sufficient density around a cybernetic joint or implant housing, they create constant low-level signal interference that degrades fine motor control and causes sensory implants to misfire.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Black market / Tier 4+",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Carbon-nanotube suspension delivery",
+    "Piezoelectric disruption",
+    "Aerosol dispersal mechanics"
+  ],
+  "specifications": "form factor: Cylindrical throw-grenade, 90mm length, 45mm diameter, olive-drab with yellow band\ndeployment radius: 6-meter sphere at standard detonation\nthread count: Approximately 40,000 per unit\nthread dimensions: 2–8 cm length, 1–3 nanometer diameter\nsuspension duration: 8–12 seconds before threads settle\neffect on biological tissue: Minor irritation, mild dermal penetration — not acutely dangerous to unaugmented individuals\neffect on cybernetics: Signal interference, motor degradation, sensory misfiring — severity scales with augmentation density\nduration of effect: Until threads are removed medically; self-clearing in 6–18 hours for peripheral implants, up to 72 hours for dense augmentation\nweight: 0.3 kg",
+  "tactical_use": "Threadbare is used as an area-denial and force-degradation tool rather than a direct incapacitation weapon. Thrown into a corridor before a breach, it degrades the fine motor performance of every augmented defender who enters the cloud zone — not enough to stop them, but enough to make their aim unreliable and their cybernetic reflexes sluggish. Operators who know they are about to enter a Threadbare-contaminated area sometimes don full-body coverage, but this significantly limits mobility. Medical extraction of threads requires specialized equipment; field removal is ineffective and risks driving threads deeper.",
+  "cultural_context": "Threadbare is widely regarded as a 'dirty' weapon even by operators who have few ethical objections to other prohibited arms. The extended duration of its effects, the medical complexity of removal, and the fact that it affects anyone augmented who enters the zone — not just combatants — has given it a reputation for indiscriminate cruelty. HELIX BIOSYSTEMS officially denies manufacturing it, attributing existing units to a 'discontinued experimental program.' Street-level operators who carry Threadbare are often assumed to be working for employers with no interest in clean operations or civilian collateral.",
+  "known_users": [
+    "Anti-corporate insurgent cells",
+    "Criminal organizations conducting corporate facility raids",
+    "Certain rogue HELIX BIOSYSTEMS researchers",
+    "Black market arms dealers as demonstration product",
+    "A mercenary crew known only as 'The Weavers' who are rumored to use nothing else"
+  ],
+  "story_hooks": [
+    "A civilian medical clinic in a contested district is treating dozens of patients with Threadbare contamination — someone deployed it in a populated area, and the question of who and why has political implications.",
+    "A character with extensive augmentation is contaminated and has 72 hours to find someone with the equipment to remove the threads before a critical job — and the only person with the right tools has their own agenda.",
+    "A HELIX BIOSYSTEMS internal document surfaces suggesting the NFDU-6 was not discontinued but is in active production for an undisclosed client.",
+    "A Threadbare canister is found at a crime scene that should have been a clean corporate operation — someone is trying to frame a known insurgent group."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "cyber",
+    "weapon",
+    "combat",
+    "crime",
+    "augment",
+    "ai",
+    "elf",
+    "rogue",
+    "corporate",
+    "control",
+    "medical",
+    "clinic",
+    "market",
+    "bar",
+    "energy",
+    "fire",
+    "tier 4"
+  ]
+}

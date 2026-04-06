@@ -1,0 +1,193 @@
+{
+  "id": "019d6143a5d577c29d67d08d2dd874ba",
+  "type": "character",
+  "name": "Celestin Achkar-Nwofor",
+  "aliases": [
+    "Cel",
+    "The Cartographer"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "VR experience designer and holographic artist",
+  "age": 38,
+  "status": "active",
+  "location": "Grand Corridor, studio-apartment in the Gage Circuit transition zone",
+  "description": "Celestin is a medium-height man with the slightly abstracted quality of someone who spends significant portions of his waking life inside spatial constructions he builds himself. He has warm brown skin, close-cut hair, and a neatly trimmed beard going early-grey at the edges. His eyes carry retinal projection overlays — custom, top-tier, not cosmetic but functional, allowing him to see his own builds overlaid on physical space without a headset. He dresses in muted technical clothing that he treats as irrelevant to his existence, but always wears one specific item: a length of hand-woven fabric from his grandmother's household worn as a shoulder wrap, which he claims is for the texture reference and which everyone suspects is simply love.\n\nHe works on commission for Tier 3-4 clients — corporate lobbies, private collectors, memorial installations — and privately on a long-running personal project he calls the Lakeform Archive: a fully navigable VR reconstruction of Meridian 88's shoreline as it existed in ten-year intervals from 2050 to present, built entirely from oral histories, degraded footage, and his own spatial intuition. He is meticulous, slightly obsessive, and becomes a completely different person when talking about the Archive — looser, faster, visibly joyful in a way his professional mode never quite permits.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.5,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "That the Archive will be incomplete when he dies — that the thing he is trying to preserve will be lost anyway",
+      "That his commercial work is slowly colonizing the part of his mind that makes the Archive possible"
+    ],
+    "core_desires": [
+      "To finish the Archive and make it publicly accessible, permanently, in a way no corponation can take down",
+      "To find the oral history he's missing — his grandmother's account of the 2089 shoreline displacement, which she refused to give him before she died"
+    ],
+    "coping_mechanisms": [
+      "Immersing in the Archive when reality becomes too much — a literal alternative space to retreat to",
+      "Tactile grounding — the fabric wrap, physical materials, the haptic gloves"
+    ],
+    "blind_spots": [
+      "Rationalizes the Axiom relationship as 'funding the real work' without examining what he's giving them access to",
+      "Treats his grief about his grandmother as a design problem — something to be solved through completion of the project — rather than something to be felt"
+    ],
+    "secret": "The Archive's 2089 segment, which he built from other people's accounts because he couldn't get his grandmother's, is wrong in a specific way he can't identify. Recently, navigating it, he found a spatial error — a doorway to a building that shouldn't have existed in that location in 2089. He has since found seven more impossible architectures buried in data he knows he didn't build."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical and precise in professional mode; becomes narrative and emotional when discussing the Archive or memory. Uses spatial metaphors for emotional states.",
+    "cadence": "Measured, organized — speaks in structured paragraphs. Speeds up and loses structure when excited.",
+    "verbal_tics": [
+      "'The shape of it is—' when trying to articulate something complex",
+      "Long considered pauses that aren't awkward, just occupied",
+      "'In the Archive—' as a conversational shorthand that assumes people know what he means"
+    ],
+    "example_lines": [
+      "'In the Archive, the 2091 section of the Lakeview approach has this quality of — I don't know how to say this outside the medium — of ending. Like the people who gave me those accounts knew they were standing at the edge of something. The shape of it is grief, but also this very specific civic grief, which is different.'",
+      "'The commission is fine. It pays for the real work. I know how that sounds. I've been trying to find a sentence that doesn't sound like that for four years and there isn't one.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The impossible architectures in the Archive's 2089 section are not errors — they are real buildings that were erased from public record, and at least one of them contains something someone very powerful wants to remain unlocatable",
+    "Axiom's technical partnership for his retinal overlays comes with an access provision he buried in the contract without reading — they can query his visual feed during 'calibration windows.' He is about to find this out.",
+    "A woman contacts him claiming to have his grandmother's oral history account, recorded without his grandmother's knowledge — and wants something from him in exchange"
+  ],
+  "narrative_function": "Information source about Grand Corridor's social and economic topology; the Archive itself is a narrative resource — it contains spatial and contextual data about the city's transformation that certain parties would find threatening or valuable; connection point between Tier 2-3 community members and Tier 4 client world.",
+  "augmentations": "Retinal projection overlays (custom build, Axiom technical partnership — not publicly acknowledged); haptic feedback gloves for spatial design work (wearable, not implanted); no geneware",
+  "daily_life": "Mornings on client work — precise, deadline-driven; afternoons on the Archive; refuses to schedule meetings after seven PM because that time belongs to the project.",
+  "affiliation": "Independent contractor; client roster includes Axiom Interiors Division and two Palladian-affiliated private collectors; cultural affiliation with Grand Corridor arts advisory circuit",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 9,
+      "spatial": 10
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 0,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Visionary",
+      "Meticulous",
+      "Grief-Driven",
+      "Compromised",
+      "Archivist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The Archive is never for sale, never licensed, never shown incomplete",
+      "Commercial work must not use Archive material or methodology — the firewall between them is absolute in theory",
+      "Never enter a commission without reading the full contract — a rule he follows imperfectly under deadline pressure"
+    ],
+    "escalation_ladder": [
+      "Careful, documented disagreement",
+      "Formal written objection",
+      "Contract review and termination if possible",
+      "In extremis: burning the client relationship entirely and absorbing the financial damage"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite and somewhat formal; tries to quickly determine whether the person is commercially relevant or personally interesting, then shifts register accordingly",
+      "friends": "Opens up into the Archive person — warm, curious, talks for hours, makes elaborate meals and insists people stay"
+    },
+    "stress_responses": {
+      "low": "Works longer hours on the Archive as counterbalance",
+      "medium": "Becomes over-precise in communication — emails become formally structured documents",
+      "high": "Enters the Archive and stays too long — has lost track of time for 12+ hours twice"
+    },
+    "contradictions": [
+      "Dedicated to preserving public memory of spaces while his commercial work helps corporations redesign those same spaces",
+      "Claims the Archive is for everyone but hasn't let a single person fully navigate it yet"
+    ],
+    "habits": [
+      "Runs his fingers over the fabric wrap when thinking — always the same motion, left to right along the weft",
+      "Burns a specific incense at the ELF shrine in his studio before beginning Archive sessions",
+      "Annotates everything — his own builds, client files, even casual messages get metadata tags"
+    ],
+    "breaking_points": [
+      "Discovering that Axiom has been accessing his visual feed and thus his Archive through the retinal overlay partnership",
+      "The Archive being damaged, corrupted, or stolen"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Custom retinal projection overlays — bilateral (Axiom technical partnership, proprietary build; contains undisclosed query-access provision)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Custom retinal projection overlays — bilateral (Axiom technical partnership, proprietary build; contains undisclosed query-access provision)",
+      "replaces": ""
+    },
+    {
+      "name": "Haptic feedback design gloves (wearable, non-implanted, high-end professional grade)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Haptic feedback design gloves (wearable, non-implanted, high-end professional grade)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Artist": 0.9,
+    "Dreamer": 0.9,
+    "Beauty Seeker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

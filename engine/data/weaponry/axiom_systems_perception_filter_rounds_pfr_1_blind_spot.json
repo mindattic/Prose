@@ -1,0 +1,40 @@
+{
+  "id": "019d6143ab177165b2a126003ed5104b",
+  "name": "Axiom Systems Perception Filter Rounds PFR-1 'Blind Spot'",
+  "type": "weapon",
+  "aliases": [
+    "Blind Spot",
+    "PFR-1",
+    "Ghost Rounds",
+    "Memory Holes"
+  ],
+  "category": "exotic",
+  "description": "Ammunition containing a micro-payload of Axiom's experimental neural perception inhibitor compound, which upon detonation releases an aerosol that temporarily disrupts the brain's ability to form new memories and process visual information within a 5-meter radius. Targets within the cloud can see, move, and act, but they cannot form coherent memories of the experience and their visual processing is scrambled — faces become unrecognizable, text becomes illegible, spatial relationships distort. The effect lasts approximately 3 minutes and leaves no lasting damage, but during that window the affected individuals are functionally blind to identity and detail. Axiom developed it for covert operations where witness elimination is undesirable but witness testimony must be neutralized.",
+  "manufacturer": "AXIOM SYSTEMS",
+  "tier_availability": "Tier 5",
+  "legality": "Does not officially exist",
+  "base_technologies": [
+    "Neural perception inhibitor aerosolization",
+    "Targeted anterograde amnesia induction",
+    "Visual processing disruption compounds"
+  ],
+  "specifications": "delivery: 40mm grenade launcher compatible\naerosal radius: 5 meters from detonation point\neffect onset: 2 seconds after inhalation\neffect duration: 2-4 minutes\nmemory disruption: Complete anterograde amnesia during exposure\nvisual disruption: Face/text/spatial recognition failure\nweight per round: 0.22 kg\ncountermeasure: Sealed respiratory system prevents inhalation",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "Witnesses to a Tier 3 corporate raid all report the same experience — they were there, they saw things happen, but they cannot describe a single face, read a single badge, or recall a single detail.",
+    "Axiom's perception inhibitor compound has been synthesized by an independent chemist who is threatening to release the formula publicly — the implications for witness testimony and legal proceedings are catastrophic."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "exotic",
+    "identity",
+    "memory",
+    "neural",
+    "ai",
+    "corporate",
+    "rain",
+    "tier 5"
+  ]
+}

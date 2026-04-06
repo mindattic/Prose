@@ -1,0 +1,239 @@
+{
+  "id": "019d6143a6017190924a0e2dadb4adc4",
+  "type": "character",
+  "name": "Elowen Czerny-Fitch",
+  "aliases": [
+    "Lo",
+    "Null"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Street-level courier and excluded zone navigator, legal identity partially intact",
+  "age": 24,
+  "status": "active",
+  "location": "The Circuit / The Shelf (transient between both)",
+  "description": "Elowen is a small, wiry mixed-race woman — Cornish-Czech on her mother's side, Jamaican on her father's — with the particular kind of physical confidence that comes not from size but from having spent years moving through spaces that were not designed for her survival. She keeps her hair close-cropped on the sides and longer on top, usually shoved under a cap with the logo of a company that no longer exists. Her face is expressive in motion and surprisingly unreadable at rest, a combination that makes her hard to clock in a crowd. She has the faint, systematic scarring along her left forearm from an augmentation removal she paid for herself at nineteen, and she does not cover it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.63,
+      "ideal": 0.51,
+      "id": 0.77,
+      "shadow": 0.35,
+      "mask": 0.42,
+      "ghost": 0.58
+    },
+    "core_fears": [
+      "Becoming trapped — geographically, contractually, relationally, in any form",
+      "That the people she carries things for are worse than she lets herself think about",
+      "Forgetting what her father's voice sounded like"
+    ],
+    "core_desires": [
+      "Enough money to stop calculating whether she can afford to eat and do something else in the same day",
+      "To find out what happened to her father, who disappeared in the Circuit three years ago and whose case was never opened",
+      "To be known by someone without having to explain herself first"
+    ],
+    "coping_mechanisms": [
+      "Movement — she becomes agitated when forced to stay still for more than a few hours, and processes most of her emotional life while in transit",
+      "Humor as deflection, specifically self-deprecating humor that preempts others' criticism",
+      "Compartmentalization so practiced it has become almost total: what she carries, what it's for, and who she is are kept in separate rooms she rarely opens simultaneously"
+    ],
+    "blind_spots": [
+      "She trusts competence and reliability more than she should — she has given loyalty to people who were excellent at their jobs and terrible in every other way",
+      "Her need to remain unattached means she underestimates how much she has already been attached, and is therefore blindsided by loss",
+      "She mistakes her own adaptability for not having a self that can be damaged"
+    ],
+    "secret": "The augmentation she had removed at nineteen was a tracker — not one she chose, but one installed without her knowledge or consent when she was seventeen, by a man who ran the courier network she was working for at the time. She found it because a rival network's scanner flagged her. She has never reported it and has never told anyone. The man who installed it is still operating in the Circuit. She sometimes takes jobs that bring her near his network's territory and she does not examine why."
+  },
+  "speech_patterns": {
+    "vocabulary": "Economical and kinetic — she talks the way she moves, taking the most direct route. Uses a fluid mix of street slang, technical courier terminology, and the occasional phrase in Cornish dialect that surfaces when she's emotional and that she is usually embarrassed by afterward.",
+    "cadence": "Quick, with the energy of someone who has somewhere to be. Sentences are often incomplete — she drops the parts she thinks are obvious. She slows down significantly when she's lying or when something has genuinely unsettled her.",
+    "verbal_tics": [
+      "Starting sentences with 'Right, so—' when orienting someone to a situation",
+      "Saying 'that's fine' in a tone that indicates it is not fine but she has decided not to make it a problem",
+      "A specific laugh — short, through the nose — that means she's impressed against her will"
+    ],
+    "example_lines": [
+      "'Right, so — the package goes to the third platform, not the third level. Those are different things and the difference is about forty meters of open drop, so.'",
+      "'That's fine. I'll find another way through. I always find another way through. That's — that's kind of the whole thing.'",
+      "'I don't ask what's in them. I know that sounds like I should ask, but the answer is always either boring or something I can't unknow, so.'"
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Thessaly Mourne",
+      "type": "professional/uneasy",
+      "description": "Thessaly has hired Elowen for three jobs that Elowen has delivered without incident and without asking questions. Elowen finds Thessaly unsettling in a way she can't fully articulate and has not stopped taking her jobs.",
+      "emotional_core": "Elowen's compartmentalization meets its limit with Thessaly — there is something about her that refuses to stay in the 'client' room",
+      "story_tension": "The fourth job Thessaly offers will require Elowen to go somewhere she has been avoiding for three years for reasons that are entirely personal"
+    },
+    {
+      "name": "Kyle",
+      "type": "peer/friendly",
+      "description": "They cross paths in the Circuit regularly enough to have developed the particular camaraderie of people who operate in the same ecosystem without being in competition. She finds him easier to talk to than most people and has not analyzed why.",
+      "emotional_core": "Something uncomplicated and therefore slightly suspicious to Elowen, who is not used to things being uncomplicated",
+      "story_tension": "Kyle knows something about the Circuit's older geography that is directly relevant to what happened to Elowen's father, and doesn't know he knows it"
+    },
+    {
+      "name": "Nadira Osei-Brempong",
+      "type": "community/dependent",
+      "description": "Elowen has been to the orange-tape clinic twice — once for herself, once to deliver someone she found collapsed in a transit corridor. Nadira patched her up both times and charged her once.",
+      "emotional_core": "Elowen experiences Nadira as one of the few people who has asked after her and meant it, which she finds deeply uncomfortable and keeps coming back to",
+      "story_tension": "Elowen is unknowingly carrying something for a client that is connected to the patient Rector Hollowell is looking for through Nadira's clinic"
+    }
+  ],
+  "story_hooks": [
+    "A package she delivered six months ago has surfaced as evidence in something significant, and someone — she doesn't know who — is retracing the delivery chain",
+    "She finds a route through the Circuit's excluded zones that she has never seen on any map, and at the end of it, something that belonged to her father",
+    "The man who installed the tracker without her consent surfaces as a client offering her the most money she has ever been offered for a single job",
+    "She is caught between two parties who both believe they have legitimate claim to the same package she is currently carrying — and she is one transit junction away from the handoff point"
+  ],
+  "narrative_function": "Mobile connective tissue — a character who can credibly appear in any district and create links between otherwise separate plotlines; represents the excluded and semi-visible labor that the city runs on; her personal mystery grounds the political and corporate plots in individual human cost",
+  "augmentations": "Cochlear signal filter: blocks targeted audio intrusion and filters ambient noise into directional focus — useful in crowded transit corridors, essential in the Circuit's louder sectors,Scar tissue over removed tracker implant site (left forearm): the removal was not clean; she has partial nerve damage in two fingers of the left hand that she has learned to work around and has refused to have addressed",
+  "daily_life": "Elowen does not have a fixed address in any meaningful sense — she has a storage unit in the Circuit where she keeps what matters and a series of sleeping arrangements that rotate depending on job location and who owes her a favor. She eats on the move, usually from vendors she has established relationships with along her most common routes. She has a small, battered music player that she refuses to replace or upgrade, and she listens to it on long transits. She keeps a physical notebook of routes, coded in a shorthand she developed herself, that she would describe as a professional tool and that also contains, in the margins, things she cannot say out loud.",
+  "affiliation": "Unaffiliated, freelance; known to multiple courier networks without being owned by any of them; maintains careful neutrality that is increasingly difficult to sustain",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 6,
+      "creativity": 5,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 5,
+      "expression": 5,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": 0,
+      "transparency_guardedness": 2
+    },
+    "drives": [
+      "Find out what happened to her father",
+      "Stay free and untrapped",
+      "Earn enough to stop calculating survival"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 5,
+        "response": "Moves — processes emotion while in transit, becomes agitated when forced still"
+      },
+      "moral": 6,
+      "trust": 4,
+      "desperation": 5
+    },
+    "strengths": [
+      "Bravery",
+      "Perseverance",
+      "Prudence",
+      "Self-regulation",
+      "Perspective"
+    ],
+    "weaknesses": [
+      "Love",
+      "Hope",
+      "Teamwork",
+      "Gratitude",
+      "Honesty"
+    ],
+    "tags": [
+      "courier",
+      "excluded-zone-navigator",
+      "tracker-scarred",
+      "transient",
+      "Circuit-Shelf",
+      "father-missing",
+      "compartmentalized"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will never ask what is in a package — the answer is always boring or unknowable",
+      "Will always find another way through — that is the whole thing",
+      "Will never stay still for more than a few hours without becoming agitated",
+      "Will always trust competence and reliability, sometimes to a fault",
+      "Will never return to the location where her father disappeared unless forced",
+      "Will always say 'that's fine' when something is not fine but she has decided not to make it a problem",
+      "Will never let anyone install anything in her body without her knowledge again"
+    ],
+    "escalation_ladder": [
+      "Says 'that's fine' in a tone that indicates it is not — the first warning",
+      "Speech slows — the liar's tell, the unsettled person's giveaway",
+      "Drops the conversational pleasantries entirely — sentences become incomplete, direct, kinetic",
+      "Reroutes — physically changes direction, path, plan, leaving the problem behind",
+      "Goes to ground — disappears into routes only she knows, music player and notebook, unreachable"
+    ],
+    "interpersonal_modes": {
+      "Thessaly Mourne": "Unsettled in a way she cannot articulate — Thessaly refuses to stay in the 'client' room of her compartmentalized mind",
+      "Kyle": "Uncomplicated camaraderie she finds suspicious precisely because it is uncomplicated",
+      "Nadira Osei-Brempong": "One of the few people who has asked after her and meant it — deeply uncomfortable and keeps coming back"
+    },
+    "stress_responses": {
+      "low": "Walks longer routes, listens to music player, writes in coded notebook margins",
+      "medium": "Compartmentalization tightens — client, cargo, and self sealed in separate rooms",
+      "high": "Cornish dialect phrases surface involuntarily, sleep patterns collapse",
+      "critical": "Deliberately approaches the tracker installer's territory — drawn to the wound she has not processed"
+    },
+    "contradictions": [
+      "Maintains unattachment while already being deeply attached to people and places she refuses to name",
+      "Mistakes her own adaptability for invulnerability — blindsided by loss every time",
+      "Takes jobs near the tracker installer's territory and does not examine why"
+    ],
+    "habits": [
+      "Starts situational briefings with 'Right, so—'",
+      "Short laugh through the nose when impressed against her will",
+      "Listens to a battered music player on long transits she refuses to replace",
+      "Keeps a physical notebook of coded routes with personal things in the margins",
+      "Drops the ends of sentences she considers obvious"
+    ],
+    "breaking_points": [
+      "Being trapped — geographically, contractually, relationally",
+      "Finding something that belonged to her father in the Circuit's excluded zones",
+      "The man who installed the tracker without her consent reappearing as a client",
+      "A package she carried being traced back to her and connecting to someone she cares about"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Cockroach": 0.7,
+    "Safety First": 0.7,
+    "Improviser": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

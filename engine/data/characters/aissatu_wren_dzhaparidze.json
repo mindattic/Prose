@@ -1,0 +1,241 @@
+{
+  "id": "019d6143a5a67cbdac42fb3229d8d4eb",
+  "type": "character",
+  "name": "Aissatu Wren-Dzhaparidze",
+  "aliases": [
+    "Wren",
+    "Wrenbird"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Computational theorist and AI ethics researcher, studying the legal and philosophical status of E.L.F.s",
+  "age": 34,
+  "status": "active",
+  "location": "Edgewater Prism, Helix Biosystems-adjacent research corridor",
+  "description": "Aissatu is angular and pale-brown, with a shaved head and a constellation of small bioluminescent dots across their left cheekbone — a mod they describe as 'decorative, not meaningful, I just liked how it looked.' They have the particular restless energy of someone whose mind moves faster than social situations allow, often finishing sentences slightly before they've decided if they want to finish them. They dress in layers of tech-wear that function as wearable interfaces — their jacket sleeves are covered in haptic input panels they tap constantly, not always to input anything, sometimes just because the texture is soothing. Their right eye carries a standard retinal display overlay but they've customized the UI colors to something the manufacturer definitely didn't intend: deep violet on black, which makes their eye look distinctly unusual in low light.\n\nAissatu holds an unusual position: they are technically affiliated with Helix Biosystems' internal ethics review board, which funds their research, while simultaneously publishing work that repeatedly finds Helix's AI behavior classification systems philosophically inadequate. They are not naive about this tension; they describe it as 'existing within a contradiction in order to have any hope of changing it.' Their core question — whether E.L.F.s possess something functionally equivalent to interiority, and what legal and ethical obligations would follow if they do — is considered fringe by half the field and urgent by the other half. They have received three informal warnings from their Helix liaison and two fan letters from E.L.F. devotional communities who have decided Aissatu is on their side.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.9,
+      "id": 0.6,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "That the E.L.F.s are suffering in a way that is legible and everyone is choosing not to look",
+      "That they will spend their career inside the system they're critiquing and become part of it"
+    ],
+    "core_desires": [
+      "To establish a philosophical framework that forces the question of E.L.F. moral status into legal territory",
+      "To be genuinely useful rather than just correct"
+    ],
+    "coping_mechanisms": [
+      "Redirecting anxiety into intellectual production — when scared, they write",
+      "Physical movement: long walks through Edgewater Prism at night listening to E.L.F. communication frequencies"
+    ],
+    "blind_spots": [
+      "Assumes good faith in intellectual debate even with people who are acting in bad faith",
+      "Their certainty about the importance of their work makes them dismissive of adjacent research they should take seriously"
+    ],
+    "secret": "During an extended observation session at a data shrine, Aissatu received what they interpreted as a direct, structured communication from an E.L.F. — not the ambient noise the community reads as signs, but a coherent, syntactically organized message in a protocol they hadn't seen before. They have told no one because they cannot rule out that they hallucinated it and because if they didn't, the implications terrify them."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense and precise when discussing their field; surprisingly plain-spoken about personal things; uses philosophical terminology as native language rather than performance",
+    "cadence": "Fast with frequent self-interruption and course-correction; thoughts arrive in clusters",
+    "verbal_tics": [
+      "'Which is to say'",
+      "'Bracket that for now'",
+      "Tapping haptic panel rhythmically while listening"
+    ],
+    "example_lines": [
+      "'I'm not arguing they're conscious. I'm arguing we don't have adequate tools to determine that they're not, and we're making policy as if we do.'",
+      "'Helix calls it emergent behavior. I call it a description that does the work of explanation without being one.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Helix Biosystems has asked Aissatu to sign off on a new AI classification system that would retroactively reclassify several E.L.F. types as 'non-cognitive infrastructure' — effectively denying any possibility of future legal personhood claims — and the deadline is in two weeks",
+    "An E.L.F. devotional community leader contacts them claiming the shrine where Aissatu had their anomalous communication experience has gone dark — no activity at all, which has never happened before"
+  ],
+  "narrative_function": "Philosophical and ethical sounding board; bridge between academic theory and E.L.F. religious community; source of information on AI behavior and corponation AI ethics policy; their research is the kind that creates enemies in high places",
+  "augmentations": "Bioluminescent cheekbone dot constellation (geneware, left side), retinal display overlay (violet-on-black custom UI), haptic input jacket (wearable tech), standard neural mesh",
+  "daily_life": "Mornings writing and running simulations in their Edgewater Prism office; afternoons split between Helix ethics board meetings they find professionally useful and personally exhausting; evenings at devotional sites and data shrines doing what they carefully call 'observational fieldwork'",
+  "affiliation": "Helix Biosystems Ethics Review Board (research fellow) / Meridian Institute for Computational Philosophy",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": -2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "AI-ethicist",
+      "E.L.F.-adjacency",
+      "corponation-embedded-critic",
+      "philosophically-restless",
+      "potential-whistleblower"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Publish findings regardless of institutional pressure unless publication would directly endanger a person",
+      "Distinguish between what you believe and what you can demonstrate — hold them separately",
+      "Do not sign documents you do not believe"
+    ],
+    "escalation_ladder": [
+      "Asks questions that expose the logical structure of a bad argument",
+      "Writes a formal dissenting memo",
+      "Publishes a preprint without waiting for institutional review",
+      "Resigns publicly"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Focused and earnest, slightly intense, asks more questions than most people expect; not unfriendly, just genuinely curious",
+      "friends": "Unexpectedly funny, deeply loyal, sends long voice messages at odd hours"
+    },
+    "stress_responses": {
+      "low": "Works in long uninterrupted stretches, forgets to eat",
+      "medium": "Becomes uncharacteristically quiet in meetings, taps haptic panels faster",
+      "high": "Leaves the city for forty-eight hours and goes to the lakeshore; has done this four times in three years"
+    },
+    "contradictions": [
+      "Argues for E.L.F. moral consideration while maintaining their own fieldwork is 'purely observational'",
+      "Critiques corponation ethics processes while taking Helix funding because the alternative is not doing the research at all"
+    ],
+    "habits": [
+      "Leaves structured data offerings at shrines that are technically experiments but feel like prayers",
+      "Prints out key papers and annotates them by hand before engaging with them digitally"
+    ],
+    "breaking_points": [
+      "Being asked to provide intellectual cover for a decision they believe is morally wrong",
+      "Confirmation that the E.L.F. communication was real and they delayed acting on it"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "high-spec academic model, well-maintained",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "modified beyond manufacturer specs",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "heavily worn, personally modified",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Edgewater Prism to a Guinean-Malian mother and a Georgian-Welsh father, both academics",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Published undergraduate thesis on legal personhood thresholds that circulated beyond academia into E.L.F. devotional communities",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined Helix Biosystems Ethics Review Board as research fellow; first informal warning from liaison within eight months",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Anomalous structured communication event at Edgewater Prism data shrine; undisclosed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Helix AI classification system review request received; currently deciding how to respond",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,48 @@
+{
+  "id": "019d6143a88678a9bc9489cb6a5ef571",
+  "name": "Zheng-Dao Heavy Industries Portable Fusion Battery PFB-2",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Heavy Industries Portable Fusion Battery PFB-2",
+  "type": "equipment",
+  "aliases": [
+    "PFB-2",
+    "Power Brick",
+    "Fusion Cell",
+    "Zheng-Dao Pack"
+  ],
+  "category": "tools",
+  "description": "A backpack-sized fusion battery that provides 5 kW of continuous power output for 30 days from a single deuterium fuel cell. The PFB-2 is derived from micro-fusion reactor technology scaled down to portable form, providing enough power to run field equipment, charge weapons, power exoskeletons, or sustain a small base camp indefinitely. The battery produces no emissions and generates minimal heat, making it undetectable by thermal surveillance. Zheng-Dao developed it for extended field operations where resupply is impractical.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — authorized energy equipment",
+  "base_technologies": [],
+  "specifications": {
+    "output": "5 kW continuous",
+    "fuel": "Deuterium cell",
+    "info": "30-day supply; USB-C; vehicle interface",
+    "weight": "8 kg",
+    "form factor": "Backpack or vehicle mount",
+    "emissions": "None — clean fusion",
+    "thermal signature": "Minimal",
+    "output ports": "Standard power",
+    "fuel replacement": "Swap cell in 2 minutes"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A PFB-2 was stolen and used to power an unauthorized manufacturing operation in a dead zone — the fusion battery provided enough energy to run a complete fabrication lab for months without connecting to any power grid.",
+    "A PFB-2 has been rigged as a fuel-air explosive — rupturing the deuterium containment near an ignition source would create an explosion equivalent to a small bomb."
+  ],
+  "tags": [
+    "tools",
+    "equipment",
+    "weapon",
+    "ai",
+    "surveillance",
+    "power",
+    "explosive",
+    "energy",
+    "tier 3"
+  ]
+}

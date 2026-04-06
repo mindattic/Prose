@@ -42,6 +42,9 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<MotifRepository>();
         services.AddSingleton<ToneBibleRepository>();
 
+        // Daily trivia — pre-generates 100 facts from canon data, cached to disk
+        services.AddSingleton<TriviaService>();
+
         // Auto-register all directory repos as IExportableRepository for discovery
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<CharacterRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<CorponationRepository>());

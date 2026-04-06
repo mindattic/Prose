@@ -1,0 +1,270 @@
+{
+  "id": "019d6143a5ec7bbc95456b6f2710052d",
+  "type": "character",
+  "name": "Deniz Dahlberg-Boakye",
+  "aliases": [
+    "Rift",
+    "The Ghost"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Personnel recovery and hostile extraction — extraction specialist",
+  "age": 45,
+  "status": "active",
+  "location": "The Narrows — cramped residential corridors between megastructures",
+  "description": "Deniz Dahlberg-Boakye is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 45, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a extraction specialist out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Deniz Dahlberg-Boakye is one of the ones who actually does it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.66,
+      "ideal": 0.27,
+      "id": 0.44,
+      "shadow": 0.13,
+      "mask": 0.97,
+      "ghost": 0.39
+    },
+    "core_fears": [
+      "Losing their edge to age — the body slows before the mind accepts it",
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Being identified by corporate facial recognition — living off-grid is survival"
+    ],
+    "core_desires": [
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Freedom from augmentation debt — the interest compounds like a tumor",
+      "The perfect run — one job so clean it becomes legend"
+    ],
+    "coping_mechanisms": [
+      "Planning — responds to chaos by making detailed contingency plans for everything",
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive"
+    ],
+    "blind_spots": [
+      "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
+      "Cannot see that their independence is actually isolation wearing a better outfit",
+      "Trusts technology more than people — machines don't betray"
+    ],
+    "secret": "Deniz Dahlberg-Boakye has been doubling fees to clients and pocketing the difference. The fixer who handles their contracts doesn't know. Yet."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
+    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
+    "verbal_tics": [
+      "Ends statements with 'yeah?' — not a question, a dare",
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
+    ],
+    "example_lines": [
+      "\"We go in, we get the asset, we leave. Everything else is improvisation.\"",
+      "\"The extraction window is four minutes. I've done it in three.\"",
+      "\"I don't rescue people. I relocate them aggressively.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Tier 4 executive offers Deniz Dahlberg-Boakye a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "A crew member from Deniz Dahlberg-Boakye's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "Deniz Dahlberg-Boakye is offered a contract that would clear all their debts — the target is someone they respect"
+  ],
+  "narrative_function": "As a extraction specialist, Deniz Dahlberg-Boakye embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs. Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+  "affiliation": "Unaffiliated — too volatile for permanent crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 7
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 4
+      },
+      "reflexes": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 8
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 4
+      },
+      "perception": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 5
+      },
+      "willpower": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 9
+      },
+      "technical": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 9
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 8
+      },
+      "intimidation": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 9
+      },
+      "deception": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 6
+      }
+    },
+    "personality": {
+      "aggression": 0.23,
+      "caution": 0.95,
+      "loyalty": 0.83,
+      "greed": 0.7,
+      "empathy": 0.45
+    },
+    "drives": [
+      "revenge",
+      "survival",
+      "justice"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 5,
+      "loyalty_break": 9
+    },
+    "strengths": [
+      "ability to remain calm under fire",
+      "encyclopedic knowledge of Meridian 88 infrastructure"
+    ],
+    "weaknesses": [
+      "old injury that flares under specific conditions",
+      "trust issues that limit crew effectiveness"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "extraction specialist",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will work with anyone once. Second time requires vouching from someone trusted."
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Preaches independence but is desperate for approval from people they respect"
+    ],
+    "habits": [
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Checks exits within 10 seconds of entering any room",
+      "Keeps a physical paper notebook — no digital record of personal thoughts"
+    ],
+    "breaking_points": [
+      "Discovering their employer deliberately sent them into a death trap",
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Synthetic muscle fiber replacement in legs",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+      "replaces": ""
+    },
+    {
+      "name": "Cyberears with directional microphones and sound dampening",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Protector": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

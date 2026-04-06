@@ -1,0 +1,167 @@
+{
+  "id": "019d6143a72c7bc599a79dee0cbe07a3",
+  "type": "character",
+  "name": "Yolanda Dzhaksybekov-Ferreira",
+  "aliases": [
+    "Nana Yoli",
+    "The Last One"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Death midwife and traditional spiritual caregiver",
+  "age": 78,
+  "status": "active",
+  "location": "Ashfeld — runs a small care space out of her ground-floor apartment",
+  "description": "Yolanda is tiny and precise, barely reaching most people's shoulders, with the posture of a woman who decided decades ago that gravity was a suggestion. Her hair is completely white and worn loose, something she only allowed herself after her seventy-fifth birthday as a deliberate act of self-gift. Her face is extraordinarily lined — she calls her wrinkles her credentials — and her hands are the most notable thing about her: large for her frame, steady, warm even in cold weather. She has no augmentations except a basic cardiac monitor implant she resents and refers to as 'my nagging houseguest.' Her clothing is always natural fiber when she can afford it, always in dark green or grey.\n\nYolanda has attended over four hundred deaths in fifty years of practice, sitting with the dying across faith traditions, across tiers, across the spectrum of biological and synthetic life. She is one of the few death midwives who will sit with synthetics, arguing that the question of whether they have souls is above her pay grade and irrelevant to the work of accompanying. She is not soft about death — she finds euphemism dishonest and will use the word plainly — but she is ferociously tender. Families sometimes mistake her pragmatism for coldness until they watch her hold someone's hand for eleven hours without complaint.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.9,
+      "id": 0.2,
+      "shadow": 0.3,
+      "mask": 0.1,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Dying alone without a midwife present — the irony is not lost on her",
+      "Being rendered unnecessary by corporate medicalization that turns death into a procedure"
+    ],
+    "core_desires": [
+      "For every person to have a witnessed, unhurried death",
+      "To train enough successors before she can no longer do the work herself"
+    ],
+    "coping_mechanisms": [
+      "Radical acceptance as a daily practice — she genuinely means it, it isn't performance",
+      "Cooking elaborate meals between sittings as a life-affirmation ritual"
+    ],
+    "blind_spots": [
+      "Has difficulty recognizing when she herself is struggling — her competence is also her armor",
+      "Occasionally overrides family wishes in favor of what she assesses the dying person actually wanted"
+    ],
+    "secret": "The first death she attended, age 28, was her own mother, and she did it badly — panicked, left the room, was not present at the moment of death. Every sitting since has been quiet reparation. She has never told this to anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, specific, avoids metaphor except when deliberate — she chooses words like someone who knows their weight",
+    "cadence": "Unhurried even in urgent situations, which can feel alarming until you realize it's intentional de-escalation",
+    "verbal_tics": [
+      "'And that's all right.'",
+      "Uses first names immediately upon learning them"
+    ],
+    "example_lines": [
+      "'Your mother is dying. Not slipping away, not transitioning — dying. I say it plainly because I think you deserve to name what is happening. Now. What does she need from you in this room?'",
+      "'I've sat with four hundred people and not one of them died the wrong way. There is no wrong way. That is the only promise I make.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She is currently sitting with a dying Zheng-Dao middle manager whose whispered confessions may constitute knowledge of a serious crime — and she refuses to repeat anything said in her presence",
+    "She wants to formally train a successor but her current candidate is struggling with the emotional demands and may quit; she needs a way to support them she hasn't figured out yet"
+  ],
+  "narrative_function": "Moral weight, community knowledge, exposition through memory — she has been present at important deaths and knows what the dying say; also a humanizing presence for themes about synthetic consciousness",
+  "augmentations": "Basic cardiac monitor implant (medical necessity, resented)",
+  "daily_life": "Spends mornings responding to requests and doing administrative triage — she maintains a waiting list and must sometimes make painful decisions about capacity. Afternoons and nights she is present with the dying or their families, often not returning home for days at a stretch during busy periods.",
+  "affiliation": "Independent; loose network of death midwives across the Ashfeld-Chatham corridor; informally recognized by the Helix Biosystems palliative unit as a community liaison",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 10,
+      "creativity": 5,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 10,
+      "expression": 7,
+      "integrity": 10
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "death midwife",
+      "community elder",
+      "synthetic ally",
+      "moral authority",
+      "tier 1"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The dying person's stated wishes supersede family wishes, always",
+      "She does not leave until the family says she may — not until she judges it appropriate"
+    ],
+    "escalation_ladder": [
+      "Gentle plainspoken statement",
+      "Repetition without modification — she doesn't adjust her position under pressure",
+      "Physical presence as boundary — she has stood in doorways and simply refused to move"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm but not effusive — she makes eye contact and uses names",
+      "friends": "Teasing, occasionally bawdy humor, cooks aggressively for people she loves"
+    },
+    "stress_responses": {
+      "low": "Slightly quieter, eats more",
+      "medium": "Takes one hour alone before returning to work — no exceptions",
+      "high": "Has only been seen truly overwhelmed twice in fifty years; both times she wept openly and then continued"
+    },
+    "contradictions": [
+      "Completely at peace with others' deaths; privately terrified of her own despite decades of philosophy that should have resolved this"
+    ],
+    "habits": [
+      "Learns to say 'I'm with you' in whatever language is meaningful to the person she's sitting with",
+      "Always brings food for the family, never for herself",
+      "Keeps a small journal of names — just names, nothing else"
+    ],
+    "breaking_points": [
+      "Medical interference that strips dignity from a dying person",
+      "A family trying to exclude the dying person from decisions about their own death"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

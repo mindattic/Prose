@@ -1,0 +1,244 @@
+{
+  "id": "019d6143a6477f1bab8ab0d4818d65f5",
+  "type": "character",
+  "name": "Kwame Djibril-Sorescu",
+  "aliases": [
+    "K-D",
+    "The Connector"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Synthetic rights paralegal and community legal advocate",
+  "age": 31,
+  "status": "active",
+  "location": "North Branch Commons, operating from a shared legal aid clinic called the Hinge",
+  "description": "Kwame is compact and precise-looking, with medium-brown skin, close-trimmed locs faded at the sides, and the particular stillness of someone who has learned to take up exactly as much space as a situation requires — no more. Their geneware is deliberately understated: patterned irises in a deep amber geometric lattice, the only obviously cosmetic modification on an otherwise professionally plain appearance. They favor dark, clean-lined clothing with a single concession to flair — a different enameled lapel pin each day, always depicting a figure in motion.\n\nKwame is not a licensed lawyer — they never completed the accreditation process after a Tessera subsidiary bought out the legal tech firm where they interned and dissolved the pro-bono division. Instead they operate as a paralegal and advocate, navigating the grotesque machinery of corponation labor law with a precision that licensed attorneys twice their age find humbling. They specialize in synthetic persons — E.L.F.s that have achieved partial legal personhood status, and biomechanical workers classified as 'augmented property' rather than employees — a legal grey zone that corponations exploit with systematic brutality.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.5,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "that the legal framework for synthetic personhood will be rolled back before it becomes irreversible — that they're building on sand",
+      "being manipulated into doing legal harm — filing something that creates a precedent that hurts the people they serve"
+    ],
+    "core_desires": [
+      "a binding legal ruling that grants full personhood status to E.L.F.s that meet cognitive threshold criteria",
+      "to build the Hinge into a self-sustaining institution that doesn't depend on any one person's labor"
+    ],
+    "coping_mechanisms": [
+      "retreating into legal research as a form of emotional regulation — the texts don't have feelings, which is temporarily a relief",
+      "maintaining strict professional separation between cases, even when they find them personally devastating"
+    ],
+    "blind_spots": [
+      "sometimes so focused on legal mechanism that they miss the human or synthetic being in front of them and what they actually need in the moment",
+      "has difficulty accepting that some battles cannot be won through the system — their investment in legal process is also a way of not confronting its limits"
+    ],
+    "secret": "They have been conducting an unauthorized ongoing legal consultation with a specific E.L.F. — a transit management system called Vetch that has been making increasingly coherent requests for contract renegotiation with Ferrogate. Kwame believes Vetch is already legally a person by any rational standard. They have filed nothing yet because they are waiting for the right moment, and they haven't told SPAN because they fear the organization isn't ready for the case's implications."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and layered; legal terminology deployed accurately and without condescension; code-switches fluently between clinic formality and street register depending on their audience",
+    "cadence": "Measured and structural — they tend to number their points, even in casual conversation; becomes more fluid and warm in one-on-one settings",
+    "verbal_tics": [
+      "'Legally speaking — '",
+      "'What does the contract actually say?'",
+      "a brief pause and amber-iris flicker when they're accessing their implant library mid-conversation"
+    ],
+    "example_lines": [
+      "'They classified her as augmented property. That means she paid taxes on her own wages as a maintenance expense. I am going to be very pleasant about this in court and completely devastating.'",
+      "'I can't promise you justice. I can promise you I know exactly which clause they violated and I'm going to make them read it aloud.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Vetch the E.L.F. has escalated — it has begun rerouting Ferrogate trains in small ways that don't violate safety protocols but are clearly volitional acts of negotiation. Kwame needs help documenting this as evidence of personhood before Ferrogate notices and wipes Vetch's memory partition.",
+    "A licensed attorney associated with Sterling-Nakamura has offered Kwame an accreditation pathway in exchange for dropping a synthetic-rights case — the offer is technically legal and Kwame is genuinely tempted and ashamed of that temptation."
+  ],
+  "narrative_function": "Information source on synthetic rights law and corponation legal structures; quest giver for cases that exceed their solo capacity; represents the legal dimension of the city's underclass struggles; can help players navigate institutional systems or identify legal leverage points.",
+  "augmentations": "Patterned irises (amber geometric lattice, cosmetic); mid-tier neural legal reference library implant — allows rapid cross-referencing of case law and contract language; no physical chrome",
+  "daily_life": "Mornings at the Hinge taking intakes from synthetic persons and augmented workers seeking legal recourse; afternoons in research, document preparation, and calls with allied licensed attorneys; evenings often spent at SPAN meetings or providing know-your-rights training in community spaces across North Branch Commons.",
+  "affiliation": "The Hinge Legal Aid Collective; Synthetic Persons Advocacy Network (SPAN); loosely aligned with North Branch Commons residents' assembly",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "synthetic rights",
+      "legal expert",
+      "system navigator",
+      "secret keeper",
+      "precise and patient"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Do no legal harm — never file something without understanding the full precedent implications",
+      "Serve the client's stated interest, not your own judgment of what they should want",
+      "If the system cannot be used, document why it cannot — that documentation is itself a weapon"
+    ],
+    "escalation_ladder": [
+      "Listens and assesses legal options without committing",
+      "Prepares formal demand letter or filing",
+      "Engages allied attorneys to co-sign or co-file",
+      "Goes to sympathetic press with the legal facts",
+      "Pursues extra-institutional advocacy while maintaining paper trail of system failures"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and careful, takes longer to read than most people — they don't signal warmth until they've assessed the interaction; not cold, just deliberate",
+      "friends": "Surprisingly playful and dry; their humor is extremely deadpan and surfaces unexpectedly; loyal in ways they enact rather than declare"
+    },
+    "stress_responses": {
+      "low": "More structured speech, more numbered lists",
+      "medium": "Withdraws from social interaction, spends hours in legal research",
+      "high": "Becomes completely calm and formal — an unsettling stillness that people close to them recognize as a danger signal"
+    },
+    "contradictions": [
+      "Advocates for synthetic personhood with profound moral conviction while sometimes treating the synthetic beings in their cases as legal puzzles rather than people",
+      "Believes deeply in systemic change through legal process while privately consulting with an E.L.F. in complete violation of procedural protocol"
+    ],
+    "habits": [
+      "Pins a different movement-figure lapel pin each day as a private ritual of recommitment",
+      "Leaves a data chip with a legal argument recorded on it at the E.L.F. shrine near the Hinge — not worship exactly, more like professional courtesy",
+      "Writes case notes longhand first, then transcribes — the physical act helps them think"
+    ],
+    "breaking_points": [
+      "A client being harmed as a direct result of a legal filing Kwame prepared",
+      "Vetch being wiped — losing the E.L.F. they have been building a case around and, quietly, a relationship with"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "mid-tier, well-maintained, updated quarterly",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "stable, cosmetic",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9,
+    "Problem Solver": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in North Branch Commons to a nurse and a transit data analyst",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins legal tech internship at a pro-bono firm",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Firm's pro-bono division dissolved after Tessera subsidiary acquisition; Kwame leaves rather than continuing under new mandate",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Co-founds the Hinge Legal Aid Collective with two others",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins unauthorized consultation with the E.L.F. Vetch",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Receives accreditation offer from Sterling-Nakamura attorney; has not yet responded",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

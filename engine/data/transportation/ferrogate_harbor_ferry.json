@@ -1,0 +1,40 @@
+{
+  "id": "019d6143aa657e809e743acbeb19ebb8",
+  "name": "Ferrogate Harbor Ferry",
+  "type": "transportation",
+  "aliases": [
+    "The Float",
+    "Lake Liner",
+    "Rust Bucket"
+  ],
+  "category": "public_transit",
+  "manufacturer": "Ferrogate Transit",
+  "description": "Electric catamarans running routes across the harbor and along the lakefront. Slower than the L-train but scenic and surprisingly reliable. The ferry is one of the few public transit options that doesn't feel like punishment — lake air, open deck, room to breathe. The catch: routes only serve waterfront districts, and winter icing shuts down service for three months a year.",
+  "propulsion": "Electric turbine, solar-assist panels on upper deck",
+  "speed": "25 km/h cruising",
+  "capacity": "300 passengers, 20 cargo pallets",
+  "range": "Full harbor circuit: 38 km",
+  "tier_availability": "Tier 1-3",
+  "cost": "Φ3 per ride",
+  "autonomy": "Human captain with nav-assist AI",
+  "armament": "None. Emergency flares.",
+  "common_usage": "Waterfront commuters, Old Harbor workers, tourists. The only pleasant public transit experience in Meridian 88.",
+  "story_hooks": [
+    "A ferry captain reports seeing lights moving under the water — organized, deliberate, following the hull",
+    "The winter ferry shutdown creates a three-month isolation for island communities that someone is exploiting"
+  ],
+  "tags": [
+    "publictransit",
+    "transportation",
+    "ai",
+    "harbor",
+    "rain",
+    "train",
+    "water",
+    "lake",
+    "circuit",
+    "old harbor",
+    "tier 1",
+    "tier 3"
+  ]
+}

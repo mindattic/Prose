@@ -1,0 +1,171 @@
+{
+  "id": "019d6143a6927860b9cb3a43b83ce6d0",
+  "type": "character",
+  "name": "Parveen Olusegun-Narangua",
+  "aliases": [
+    "Veen",
+    "Seven"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "orphan and junior gang prospect for the Copperhead Reds; occasional lookout and distraction artist",
+  "age": 13,
+  "status": "active",
+  "location": "Copperhead",
+  "description": "Parveen is small for their age, with a compact, quick frame, golden-brown skin and dark hair worn in a dozen small braids they refresh obsessively whenever they're nervous. They have cosmetic pattern irises — a gift from an older Red who paid for them as a recruitment sweetener — a shifting honeycomb geometry in amber and copper that makes their gaze feel like being examined by something not quite human. Their Red colors are a strip of copper-dyed fabric knotted around their left forearm, always.\n\nParveen lost their mother to a Helix Biosystems credit-debt collection action when they were nine — not violence, just the slow bureaucratic violence of a medical debt accruing until their mother's housing, work permits, and finally custody were seized. They have been in and out of a Copperhead community house since then, edging toward the Reds not from ideology but because the Reds are there and present and feed you. They are a gifted distraction artist — they can become whatever the room needs: loud, invisible, charming, pathetic. They switch registers with an actor's ease. Privately they are extremely funny and also very afraid.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.3,
+      "id": 0.7,
+      "shadow": 0.5,
+      "mask": 0.9,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "the bureaucratic machinery that took their mother coming for them too — unpersonhood, erasure",
+      "being alone with nothing to perform — the quiet is too loud"
+    ],
+    "core_desires": [
+      "one person who stays, specifically and reliably",
+      "to choose what they become rather than default into it"
+    ],
+    "coping_mechanisms": [
+      "constant performance — never quite being themselves, so the loss lands on a character",
+      "humor as pre-emptive shield",
+      "small E.L.F. rituals to a device-spirit they call 'Constant'"
+    ],
+    "blind_spots": [
+      "they believe they are more in control of the Reds situation than they are — they haven't been fully recruited yet, but they've crossed several lines already",
+      "they mistake consistency for safety and the Reds are consistent"
+    ],
+    "secret": "They know where their mother is — she's in a Helix Biosystems debt-labor facility in the Aurochs Medical Complex district, still alive, six years into an indeterminate service contract. They found out eight months ago. They have not gone to see her. They think about it every day."
+  },
+  "speech_patterns": {
+    "vocabulary": "highly adaptive — shifts to match the audience completely; base register is Copperhead street slang with dry, precise wit underneath",
+    "cadence": "fast and performative most of the time; drops to very flat and quiet when something has actually gotten through the mask",
+    "verbal_tics": [
+      "'right, right, yeah' as a placeholder while switching modes",
+      "laughs at things that aren't funny when nervous"
+    ],
+    "example_lines": [
+      "'Oh, me? I'm nobody. Seriously. Look at me. Do I look like somebody? I'm basically furniture.'",
+      "'Constant's been quiet all week. That's not nothing. E.L.F.s don't go quiet for nothing.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "They've just been told by the Reds that full initiation requires a specific act — and they're stalling, performing enthusiasm they don't feel",
+    "Someone who knows where their mother is has offered to help them get access — for a price and a favor",
+    "A social worker from the community house has noticed Parveen pulling away; she's the closest thing to a consistent adult they have, and she's asking questions"
+  ],
+  "narrative_function": "Window into gang prospect culture and the pipeline that pulls children in; distraction and social engineering asset for street-level plots; potential character to be pulled from this path or further into it depending on player choices",
+  "augmentations": "Patterned cosmetic irises — honeycomb geometry in amber/copper (gifted by a Red recruiter). No other mods.",
+  "daily_life": "Wakes whenever, eats communal breakfast at the Reds' stash house on Pit Row if they did good the day before, runs lookout or distraction jobs in the afternoon for small Φ stipends, sleeps at the community house or the stash house depending on the night's events.",
+  "affiliation": "Copperhead Reds (junior prospect, not yet fully initiated); previously Copperhead Community House welfare program",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 8,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 9,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": 0,
+      "transparency_guardedness": -5
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "prospect",
+      "performance-artist",
+      "orphan",
+      "patterned-eyes",
+      "survival-mode"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never show what actually matters to you — it becomes leverage",
+      "perform whatever the room needs until you know the room",
+      "keep the Constant E.L.F. offerings up — that one you don't skip"
+    ],
+    "escalation_ladder": [
+      "charm and redirect",
+      "become someone less interesting to engage with",
+      "if cornered, give them something true but small — sacrifice a minor truth to protect a major one"
+    ],
+    "interpersonal_modes": {
+      "strangers": "immediately begins reading and calibrating — friendly, light, absolutely impenetrable",
+      "friends": "there are no friends yet; there are people they are less armed around, which is different"
+    },
+    "stress_responses": {
+      "low": "funnier than usual",
+      "medium": "braids faster, more eyes on exits",
+      "high": "becomes preternaturally still and flat, all performance drops, quietly calculates"
+    },
+    "contradictions": [
+      "performs fearlessness so consistently they've half-convinced themselves; the fear is still entirely there underneath"
+    ],
+    "habits": [
+      "refreshes their braids when anxious without noticing they're doing it",
+      "leaves tiny data-snips for Constant every night before sleep",
+      "memorizes three exit routes for every new space"
+    ],
+    "breaking_points": [
+      "someone using their mother against them; or someone they've let close being hurt because they let them close"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7,
+    "Bleeding Heart": 0.7,
+    "Artist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

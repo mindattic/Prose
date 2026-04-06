@@ -1,0 +1,54 @@
+{
+  "id": "019d6143ab3e7e508509d5eba1a5f071",
+  "name": "Pulmonary Surfactant Degradation Carbine",
+  "type": "weapon",
+  "aliases": [
+    "PSDC-2",
+    "Drowndry",
+    "The Deflater"
+  ],
+  "category": "firearm",
+  "description": "The Pulmonary Surfactant Degradation Carbine projects a narrow aerosol beam of catalytic nanoparticulate agents suspended in a pressurized carrier medium. When inhaled, the nanoparticulates bind to pulmonary surfactant molecules lining the alveolar surface of the lungs and initiate an enzymatic cascade that breaks down the surfactant's phospholipid structure. Surfactant prevents alveolar collapse during exhalation; without it, the lungs begin to fail in a manner clinically indistinguishable from acute respiratory distress syndrome — the alveoli collapse, gas exchange fails, and the target experiences progressive respiratory failure within four to twenty minutes of exposure depending on dose and individual lung capacity.\n\nThe PSDC-2 is unique among respiratory weapons in that it produces no visible external symptom until the target is already in critical condition. There is no coughing fit, no immediate throat burn, no obvious reaction at the moment of exposure. The target breathes in the carrier medium, experiences nothing unusual, and then — minutes later and potentially in an entirely different location — begins to feel short of breath. By the time they recognize the severity of their condition, they are far from the point of exposure and often far from help. This delay is the weapon's primary tactical feature and its primary atrocity.\n\nTessera Corponation's life sciences division holds the base nanoparticulate patents and licenses the formulation to Arcturus Defense Solutions for weapons integration, maintaining deniability through contractual separation. Surfactant replacement therapy administered within the first ten minutes of exposure can reverse the degradation process almost entirely; after fifteen minutes, the window closes rapidly. Street medics who operate in areas where the PSDC-2 has been used keep portable surfactant nebulizers on hand, and the presence of these devices in a medic's kit is sometimes used as informal evidence of what weapons are circulating in a given district.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS (nanoparticulate formulation licensed from TESSERA CORPONATION)",
+  "tier_availability": "Military only / Black market (rare)",
+  "legality": "Prohibited — classified as a chemical/biological weapon analog under Meridian 88 Municipal Code 91-B; international prohibition pending",
+  "base_technologies": [
+    "Catalytic nanoparticulate aerosol projection",
+    "Enzymatic phospholipid degradation cascade",
+    "Delayed-onset pulmonary surfactant depletion"
+  ],
+  "specifications": "effective range: 15 meters direct beam, disperses to 4-meter cloud at range\nonset of symptoms: 4–8 minutes post-exposure\ntime to critical respiratory failure: 12–20 minutes from exposure\nlethal without treatment: Yes — approximately 85% lethality without surfactant replacement therapy\ntreatment window: Effective reversal within 10 minutes; partial reversal to 15 minutes\nweight: 2.6 kg\nshots per canister: 15 single-target doses\ndetection: Aerosol is colorless and odorless; requires chemical sensor equipment to detect post-dispersal\ncountermeasures: Sealed respiratory systems; HEPA-equivalent filtration; surfactant nebulizer therapy",
+  "tactical_use": "Used in assassination and targeted elimination operations where the operator cannot remain at the scene and where delayed lethality provides an alibi window. The PSDC-2 is fired in crowded or transient environments — transit hubs, market floors, building lobbies — where the target will disperse naturally before symptom onset. Military applications include denial-of-space operations where personnel must be cleared from a location without visible engagement. Counter-operators carrying this weapon typically have surfactant antidote kits for self-administration in case of accidental exposure.",
+  "cultural_context": "The PSDC-2 is known in Meridian 88's medical community primarily through its victims — people who arrive at emergency facilities in respiratory crisis with no apparent cause, no trauma, no toxicology hit on standard panels, and lungs that look on imaging like they have been working without surfactant for fifteen minutes. Physicians who have seen the pattern call it 'dry drowning,' which became 'Drowndry' on the street. Tessera Corponation's involvement in the underlying patent is an open secret in the biomedical community and a source of ongoing tension with the company's public-facing pharmaceutical and healthcare divisions, which market themselves on the basis of 'preserving human vitality.'",
+  "known_users": [
+    "Military special operations units",
+    "Corporate assassination contractors",
+    "State intelligence wet-work operatives",
+    "High-end criminal elimination specialists"
+  ],
+  "story_hooks": [
+    "Three people died of apparent respiratory failure at a Tessera Corponation shareholder event last month. The official cause is listed as a ventilation malfunction. A whistleblower inside the company believes the deaths were targeted eliminations using the PSDC-2 — someone killed specific shareholders to shift a board vote — and wants the party to obtain the ventilation system's environmental sensor logs before they are purged.",
+    "A street medic has been quietly treating Drowndry survivors and keeping records. She's identified a geographic cluster of exposures that suggests someone is testing the weapon on the population of a specific district. She needs help getting her data to someone who will act on it — but Tessera Corponation's legal team has already been in contact with her building's landlord.",
+    "The party is contracted to escort a target to a secure location. Midway through the job, the target begins showing early respiratory distress. Someone dosed them before the party picked them up, and the treatment window is closing. The nearest medical facility is controlled by Lazarus Pharmaceuticals, which has a standing contract with Arcturus Defense Solutions."
+  ],
+  "ammunition_type": [
+    "Aerosol Chemical Payload Canister ACP-35",
+    "energy_cell"
+  ],
+  "tags": [
+    "firearm",
+    "weapon",
+    "secret",
+    "death",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "medical",
+    "clinic",
+    "market",
+    "energy",
+    "fire"
+  ]
+}

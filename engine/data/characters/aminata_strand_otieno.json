@@ -1,0 +1,273 @@
+{
+  "id": "019d6143a5b1746d991d4317617c5a63",
+  "type": "character",
+  "name": "Aminata Strand-Otieno",
+  "aliases": [
+    "Venom",
+    "The Problem"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Counter-surveillance and mole detection — counterintelligence specialist",
+  "age": 33,
+  "status": "active",
+  "location": "Kessler Row — arms dealers and augmentation clinics",
+  "description": "Aminata Strand-Otieno is compact and densely muscled, built low to the ground like something designed to survive impacts. At 33, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a counterintelligence specialist out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nAminata Strand-Otieno is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.41,
+      "ideal": 0.27,
+      "id": 0.37,
+      "shadow": 0.56,
+      "mask": 0.19,
+      "ghost": 0.76
+    },
+    "core_fears": [
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
+      "That they're fundamentally alone and connection is just a vulnerability",
+      "Losing their edge to age — the body slows before the mind accepts it"
+    ],
+    "core_desires": [
+      "To build something that outlasts the next contract cycle",
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+    ],
+    "coping_mechanisms": [
+      "Exercises compulsively — the body must be ready, always",
+      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
+      "Ritual — follows the same pre-job routine every time, superstition as structure"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
+      "Mistakes loyalty for weakness in others and cynicism for strength in themselves"
+    ],
+    "secret": "Aminata Strand-Otieno maintains a second identity — a completely clean civilian persona with a lease, a job history, and a social profile. It's their exit strategy."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, profane, and vivid. Speaks in images — everything is a metaphor for violence or weather.",
+    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
+    "verbal_tics": [
+      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
+      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'"
+    ],
+    "example_lines": [
+      "\"Everyone in this room is lying. My job is knowing who's lying about what.\"",
+      "\"Paranoia isn't a disorder in this profession. It's a job requirement.\"",
+      "\"I find the leak. What happens to the leak after that isn't my department.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Aminata Strand-Otieno discovers a job they completed last year was a setup for something much larger and much worse",
+    "A former associate resurfaces with evidence that could destroy Aminata Strand-Otieno's reputation — and a price for silence",
+    "The fixer who handles Aminata Strand-Otieno's contracts goes silent — dead, disappeared, or turned"
+  ],
+  "narrative_function": "As a counterintelligence specialist, Aminata Strand-Otieno embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Cortical bomb (employer installed, removed by street doc, scar tissue remains). Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Freelance — works the Shelf circuit exclusively",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 5
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 6
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 5
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 7
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 5
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 6
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 4
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 7
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 6
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 7
+      },
+      "deception": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 8
+      },
+      "empathy": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 9
+      }
+    },
+    "personality": {
+      "aggression": 0.96,
+      "caution": 0.67,
+      "loyalty": 0.64,
+      "greed": 0.57,
+      "empathy": 0.11
+    },
+    "drives": [
+      "knowledge",
+      "survival",
+      "protection"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 5,
+      "loyalty_break": 6
+    },
+    "strengths": [
+      "expert marksman",
+      "technical expertise with augmentation systems",
+      "social chameleon — adapts to any environment"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "chronic insomnia affecting long-term performance",
+      "difficulty with authority figures"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "counterintelligence specialist",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Insists they work alone but performs noticeably better in a team",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+    ],
+    "habits": [
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Eats the same meal before every job — superstition masquerading as preference"
+    ],
+    "breaking_points": [
+      "Being publicly exposed — name, face, address, all of it blown",
+      "Learning that a job they completed resulted in mass casualties they weren't told about",
+      "A child being put in danger as leverage against them"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+      "replaces": ""
+    },
+    {
+      "name": "Cybernetic eyes with thermal overlay and low-light enhancement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Analyst": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,65 @@
+{
+  "id": "019d6143a87379d0808e47126ddbd7e1",
+  "name": "Tessera Corponation Laminated Acoustic Stratum Probe",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Corponation Laminated Acoustic Stratum Probe",
+  "type": "equipment",
+  "aliases": [
+    "LASP",
+    "the Stratum",
+    "ear-layer",
+    "wall-ear"
+  ],
+  "category": "sensor",
+  "description": "The Laminated Acoustic Stratum Probe is a contact-based listening device engineered to isolate and reconstruct audio signals propagating through solid structural materials — concrete, reinforced polymer, steel plate, and composite building materials. It operates by pressing a laminated piezoelectric sensor array against a surface and applying a micro-vibration calibration pulse, which allows the device's signal processing core to map the acoustic transmission characteristics of that specific material. Once calibrated, it can separate target audio from structural noise, HVAC resonance, and deliberate jamming frequencies with unusual fidelity.\n\nTessera's core innovation is the stratification algorithm — rather than treating a wall as a single acoustic medium, the LASP models it as a stack of distinct material layers, each with its own transmission coefficient. A poured concrete wall with embedded rebar and a plasterboard interior finish is processed as three separate layers, and the algorithm reconstructs speech by reverse-modeling how sound waves degrade through each stratum. This allows the LASP to achieve intelligible audio recovery through walls up to 40cm of composite thickness that would defeat conventional contact microphones entirely.\n\nThe device is marketed to Tessera's corporate intelligence clients and licensed private investigators, but its real reputation was built in Meridian 88's legal gray zones — the towers of the Mid-Ring where corporate tenants conduct sensitive negotiations in conference rooms they believe are acoustically sealed. Counter-surveillance consultants routinely warn their clients about the LASP specifically by name. The device has also become a tool of necessity among political organizers and union coordinators who need to confirm whether a meeting space has been compromised before speaking freely.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Piezoelectric Contact Array",
+    "Material Acoustic Stratification Modeling",
+    "Multi-Layer Transmission Coefficient Analysis",
+    "Adaptive Noise Floor Subtraction"
+  ],
+  "specifications": {
+    "effective_penetration": "Up to 40cm composite material thickness",
+    "calibration_pulse": "Non-audible micro-vibration, 0.3-second sweep",
+    "material_compatibility": "Concrete, reinforced polymer, steel, composite laminates, standard drywall assemblies",
+    "audio_output": "Bone-conduction earpiece or encrypted data buffer",
+    "signal_processing": "Tessera LASP-4 Stratification Core",
+    "power_source": "Slim-cell battery, 12-hour active use",
+    "form_factor": "Handheld probe body with flexible sensor pad, 180mm x 60mm",
+    "weight": "290g",
+    "data_logging": "Encrypted 48-hour rolling buffer, local storage only"
+  },
+  "tactical_use": "Operators press the sensor pad flush against the target surface and run the calibration pulse before active listening. In the field, users frequently scout surfaces first by touch — looking for vibration nodes near structural supports, which transmit audio more efficiently. The LASP is most effective against interior partition walls rather than load-bearing exterior surfaces. Experienced users carry a small tube of acoustic coupling gel to improve sensor contact on rough or irregular surfaces. The device is used both offensively for intelligence gathering and defensively to sweep a room's perimeter before sensitive conversations.",
+  "cultural_context": "The LASP occupies an uncomfortable legal position — restricted but not prohibited, which means possession alone is not an offense, but use in unauthorized surveillance is. This ambiguity makes it a favorite tool of those who operate just below the threshold of criminal liability. Among corporate intelligence professionals, demonstrating familiarity with the LASP's capabilities (and its countermeasures) is a mark of sophistication. In activist and organizing circles, the device has taken on an almost talismanic quality — checking the walls before a meeting is a ritual of operational security that signals seriousness and experience.",
+  "known_users": [
+    "Corporate intelligence analysts",
+    "Licensed private investigators",
+    "Counter-surveillance consultants",
+    "Political organizers",
+    "Mid-Ring corporate espionage contractors",
+    "Investigative journalists operating in hostile environments"
+  ],
+  "story_hooks": [
+    "A corporate attorney is found dead, and the only evidence of foul play is a LASP left pressed against the wall of the conference room where she was last heard alive — the device's buffer contains 40 minutes of audio that someone clearly did not want recovered.",
+    "A counter-surveillance sweep of a union organizing space turns up a LASP that has been operating continuously for three weeks, but its local buffer has been remotely wiped — someone has been listening and covering their tracks.",
+    "Tessera quietly issues a firmware update that introduces a covert transmission channel, uploading audio fragments to a Tessera-controlled server. A whistleblower inside the company wants to get the information out before the update propagates to all active units.",
+    "A fixer offers the team a job: recover a LASP that was left behind during a botched extraction from a high-security tower. The problem is the device's buffer contains recordings that multiple powerful parties would kill to control."
+  ],
+  "tags": [
+    "sensor",
+    "equipment",
+    "war",
+    "ai",
+    "corporate",
+    "contract",
+    "surveillance",
+    "control",
+    "power",
+    "market",
+    "bar",
+    "tier 2"
+  ]
+}

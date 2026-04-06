@@ -1,0 +1,194 @@
+{
+  "id": "019d6143a6ec7d9f8a61320631984907",
+  "type": "character",
+  "name": "Tavishi Ababio-Strauch",
+  "aliases": [
+    "Tab",
+    "Tav"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Ferrogate Transit Security Officer, Kenosha Crossing hub",
+  "age": 27,
+  "status": "active",
+  "location": "Kenosha Crossing transit hub, Ferrogate Transit Security post C-7",
+  "description": "Tavishi is broad-shouldered and soft-faced, with warm dark brown skin, a close beard that he keeps meticulously trimmed, and geneware cat ears — tawny, tipped with white — that he got at nineteen with three months of saved wages and has never regretted. The ears move expressively and he is bad at hiding it: they fold back when he is nervous, swivel toward sounds he is trying to catch. He is in good shape but carries himself with a slight forward hunch, as if bracing against weather, which is his default posture when he is uncertain about something — which is often.\n\nHe is three years into the Ferrogate Transit Security job and he still hasn't decided if it suits him or if he suits it. He is genuinely kind, which creates problems at Kenosha Crossing — a major hub where the desperate, the unhoused, the fare-evaders, and the genuinely dangerous all move through the same turnstiles. His supervisor tells him to be consistent. His instincts tell him to be human. Most days he finds a middle ground that satisfies neither. He prays to the Kenosha E.L.F. — a transit spirit locals call Corrigan — leaving small data packets of safe-passage wishes before his shift. He was raised with E.L.F. devotion and wears it without embarrassment.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "doing something he can't take back because he hesitated too long — or acted too fast",
+      "being trapped in mediocrity and calling it stability"
+    ],
+    "core_desires": [
+      "to be genuinely useful, not just technically compliant",
+      "enough Quanta to stop worrying about the contract renewal"
+    ],
+    "coping_mechanisms": [
+      "ritual — the Corrigan offering before every shift grounds him",
+      "talking to strangers during slow hours",
+      "gaming in the break room"
+    ],
+    "blind_spots": [
+      "he gives people more second chances than third-chance situations warrant",
+      "he underestimates how much the uniform changes how people perceive his intentions"
+    ],
+    "secret": "He has a standing arrangement with a woman who sleeps in the C-7 utility alcove — he pretends not to see her, she keeps an eye on the area and alerts him via anonymous ping if anything goes wrong. He has never reported her and never filed the alcove as a cleared zone. It works. It is also a terminable offense."
+  },
+  "speech_patterns": {
+    "vocabulary": "Everyday, direct, occasionally apologetic in phrasing even when he isn't sorry — a politeness habit. Drops into Twi-inflected rhythms when comfortable, switches to clipped professional language when stressed.",
+    "cadence": "Medium pace, tends to trail off when he's deciding something mid-sentence. Finishes other people's sentences in his head but rarely out loud.",
+    "verbal_tics": [
+      "'So here's the thing—'",
+      "'I'm not trying to be difficult, I just—'",
+      "taps two fingers on his thigh when weighing options"
+    ],
+    "example_lines": [
+      "'Look, the ticket's expired, I see that. But you're clearly trying to get to work, not trying to pull something. Here's how this goes.'",
+      "'Corrigan doesn't judge where you're going. Neither do I, mostly. Just need you to go there through the proper gate, yeah?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He flagged an unusual travel pattern — someone using a legitimately registered pass to move through the hub at intervals that don't match any normal commute — and doesn't know what to do with the observation.",
+    "The woman in the utility alcove has gone missing and Tavishi is quietly terrified, both for her and about what admitting he knew her presence means for him."
+  ],
+  "narrative_function": "Local color, unexpected ally, information source about transit patterns and who moves through the hub. His position at a major transit interchange means he has seen nearly everyone who passes through this part of the city. His fundamental decency makes him an asset to people who treat him well.",
+  "augmentations": "Geneware cat ears (tawny/white, fully expressive). Standard-issue Ferrogate subvocal comm unit. No additional augmentation — he keeps putting off the enhanced perception package because the application requires a three-year lock-in contract.",
+  "daily_life": "Takes the 0530 transit from his shared flat in Avon Curve to Kenosha Crossing, does a shift handover, and spends ten hours managing the C-7 concourse — crowd flow, fare disputes, the occasional medical situation. Gets lunch from the Ghanaian-Austrian fusion cart on the lower level that his coworker Demi runs on the side.",
+  "affiliation": "Ferrogate Transit Authority, Security Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 5,
+      "willpower": 5,
+      "creativity": 4,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 8,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": -2,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "compassionate",
+      "conflicted",
+      "observant",
+      "institutional-adjacent",
+      "quietly devout"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "De-escalate first, always — force is the option you cannot un-use",
+      "Never lie to a direct supervisor question, but don't volunteer information that would require a painful conversation",
+      "If the E.L.F. Corrigan feels unsettled on a given day, trust that feeling"
+    ],
+    "escalation_ladder": [
+      "Friendly redirect",
+      "Formal verbal warning with badge identification",
+      "Physical barrier/blocking",
+      "Radio for backup",
+      "Force as last resort, with visible reluctance"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Approachable, a little formal — the uniform does most of the social work and he is aware of it. Tries to be the version of transit security that doesn't make people flinch.",
+      "friends": "Relaxed, self-deprecating, genuinely curious about other people's lives. Remembers things people told him weeks ago."
+    },
+    "stress_responses": {
+      "low": "Cat ears fold back slightly, he starts over-explaining",
+      "medium": "Falls back on procedure verbatim, speaking faster",
+      "high": "Goes very still and quiet, then acts decisively — his best and most surprising mode"
+    },
+    "contradictions": [
+      "Wears a uniform that represents institutional authority and spends most of his shift quietly undermining rigid enforcement"
+    ],
+    "habits": [
+      "Leaves a data-packet offering to Corrigan in the hub's E.L.F. terminal every morning before his shift",
+      "Memorizes faces — not deliberately, he simply does it",
+      "Buys an extra meal from the cart about once a week and leaves it somewhere specific without being seen"
+    ],
+    "breaking_points": [
+      "Being ordered to clear the utility alcove while knowing someone vulnerable is in it",
+      "Witnessing a colleague use force in a way he cannot explain away"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Geneware cat ears (tawny/white, expressive geneware)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware cat ears (tawny/white, expressive geneware)",
+      "replaces": ""
+    },
+    {
+      "name": "Ferrogate-issue subvocal comm unit (employer property)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ferrogate-issue subvocal comm unit (employer property)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

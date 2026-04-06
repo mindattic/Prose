@@ -1,0 +1,53 @@
+{
+  "id": "019d6143a8857a3a95d914ae2a262c42",
+  "name": "Zheng-Dao Heavy Industries Emergency Shelter Pod ESP-2",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Heavy Industries Emergency Shelter Pod ESP-2",
+  "type": "equipment",
+  "aliases": [
+    "ESP-2",
+    "Safe Pod",
+    "Shelter Ball",
+    "Zheng-Dao Bunker"
+  ],
+  "category": "survival",
+  "description": "A self-deploying emergency shelter that expands from a backpack-sized package into a rigid, sealed habitat capable of sustaining one person for 72 hours. The ESP-2 deploys in 10 seconds using a shape-memory alloy frame that springs into a 2-meter pod when released. The shelter includes atmospheric filtration, water recycling, emergency rations, basic medical supplies, and a distress beacon. The pod's shell provides ballistic protection against small arms fire and NBC protection against chemical and biological threats. It is designed for survival in hostile environments — natural disasters, combat zones, contaminated areas — where getting to safety is not possible and waiting for rescue is the only option.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted — emergency equipment",
+  "base_technologies": [],
+  "specifications": {
+    "deployment": "10 seconds from pack to shelter",
+    "occupancy": "1 person",
+    "life support": "72 hours atmospheric filtration + water recycling",
+    "rations": "72-hour emergency food supply",
+    "medical": "Basic first aid + 2x FTI-5 injectors",
+    "distress beacon": "Encrypted",
+    "info": "100 km range",
+    "ballistic protection": "Small arms resistant shell",
+    "NBC protection": "Sealed atmospheric filtration",
+    "weight packed": "8 kg",
+    "deployed size": "2m x 1m x 1m pod"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A deployed ESP-2 was found in an alley with its occupant dead inside — the shelter was sealed and functional but the occupant had been dead for days before anyone noticed the pod.",
+    "ESP-2 pods are being used as improvised housing in Tier 1 — clusters of deployed shelters form small communities where each pod provides better protection than the buildings they replaced."
+  ],
+  "tags": [
+    "survival",
+    "equipment",
+    "combat",
+    "memory",
+    "ai",
+    "elf",
+    "medical",
+    "alley",
+    "shelter",
+    "fire",
+    "water",
+    "tier 2"
+  ]
+}

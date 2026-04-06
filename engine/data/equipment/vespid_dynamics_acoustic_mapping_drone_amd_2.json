@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a87d7b31a6dfa0d6760bf10a",
+  "name": "Vespid Dynamics Acoustic Mapping Drone AMD-2",
+  "brand_name": "Vespid",
+  "product_name": "Vespid Dynamics Acoustic Mapping Drone AMD-2",
+  "type": "equipment",
+  "aliases": [
+    "AMD-2",
+    "Sound Mapper",
+    "Echo Drone",
+    "Bat Bot"
+  ],
+  "category": "drones",
+  "description": "A small drone equipped with an array of ultrasonic emitters and receivers that maps enclosed spaces using echolocation, creating detailed 3D maps of rooms, corridors, and structures without line-of-sight. The AMD-2 can be launched into a building through a ventilation grate or window and will autonomously navigate the interior using its acoustic mapping to build a complete floorplan, identifying occupants by their acoustic signatures, locating electronic devices by their operational sounds, and mapping structural elements including hidden rooms and passages that may not be visible.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted — authorized reconnaissance",
+  "base_technologies": [],
+  "specifications": {
+    "mapping method": "Ultrasonic echolocation",
+    "resolution": "2 cm structural detail",
+    "occupant detection": "Acoustic signature — heartbeat",
+    "info": "breathing; movement",
+    "device detection": "Operational sound identification",
+    "flight time": "30 minutes",
+    "map generation": "Real-time 3D construction",
+    "size": "15 cm rotor-to-rotor",
+    "weight": "0.25 kg",
+    "acoustic range": "30-meter radius mapping"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An AMD-2 acoustic map of a building revealed a hidden room that does not appear on any plans — the room is occupied, and the acoustic signatures suggest multiple people have been inside for days.",
+    "An AMD-2 was launched into an abandoned structure and its acoustic map revealed that the building is not abandoned — dozens of heartbeat signatures were detected across multiple floors."
+  ],
+  "tags": [
+    "drones",
+    "equipment",
+    "ai",
+    "drone",
+    "tier 2"
+  ]
+}

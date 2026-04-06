@@ -1,0 +1,222 @@
+{
+  "id": "019d6143a6d97de7b5f9496fec81ab95",
+  "type": "character",
+  "name": "Soraya Mbodj-Kasparian",
+  "aliases": [
+    "Mama Soraya",
+    "The Ledger"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Loan shark and informal banker for the Gravesend Basin community",
+  "age": 52,
+  "status": "active",
+  "location": "Gravesend Basin, operates out of a converted shipping container turned tea house called The Counting Jar",
+  "description": "Soraya is a broad-shouldered woman whose face carries the particular weathered softness of someone who has spent decades making difficult decisions and sleeping soundly afterward. Her skin is a deep warm brown, her hair gone fully silver and kept in tight finger-coils close to her scalp, and her eyes are a pale amber that people often mistake for lens mods — they're entirely natural, a gift from some Kasparian ancestor she'll never meet. She favors heavy linen wraps in ochre and rust, always a calculating pad visible in the folds of her clothing, always a cup of something hot in her hand. She has bioluminescent tracery along her left forearm from an old mod she got in her forties — faint blue-green lines that pulse when her pulse elevates, which is almost never.\n\nSoraya runs her loan operation with the patient confidence of someone who has never once needed to raise her voice to collect a debt. She's genuinely warm to the people of Gravesend Basin, knows three generations of most families, attends naming ceremonies and memorial feeds, and charges 40% interest on loans that legitimate institutions would never extend to begin with. She does not consider herself a predator. She considers herself infrastructure. Her books are immaculate, her memory for numbers is legendary, and she has a gift for knowing exactly how much rope to give someone before pulling.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.7,
+      "id": 0.5,
+      "shadow": 0.6,
+      "mask": 0.8,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Becoming irrelevant to the community she controls",
+      "That her methods have quietly destroyed more lives than they've saved"
+    ],
+    "core_desires": [
+      "To be genuinely needed, not just feared",
+      "Financial security so absolute that no system can threaten her again"
+    ],
+    "coping_mechanisms": [
+      "Ritual — tea preparation, book-keeping as meditation",
+      "Reframing exploitation as stewardship"
+    ],
+    "blind_spots": [
+      "Cannot see herself as predatory because she is also genuinely caring",
+      "Underestimates resentment simmering in long-term borrowers"
+    ],
+    "secret": "Fifteen years ago she reported a young man named Tunde Fasoro-Walcott to a creditor — a corponation enforcer — knowing what would happen to him. He had borrowed Φ800 and refused to pay. She still lights a data candle to the E.L.F. she calls The Abacus every seventh day, which she says is for good accounts but is actually for him."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm, formal, proverb-heavy — draws from Wolof and Armenian folk sayings translated into Meridian street pidgin. Precise with numbers, vague with threats.",
+    "cadence": "Slow and deliberate, long pauses before key words, never rushes",
+    "verbal_tics": [
+      "'Let me tell you what I know about debt—'",
+      "Hums a single low note when she's calculating",
+      "'We understand each other, yes?'"
+    ],
+    "example_lines": [
+      "'The goat that grazes in another man's field doesn't worry about the fence until the gate closes. You borrowed, love. Now we talk about the gate.'",
+      "'I don't want your panic. Panic is noise. Bring me a plan and I will listen for as long as your plan deserves.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A family in the Basin has missed three payments and Soraya needs someone to make a gentle but firm visit — she doesn't want them hurt, she wants them reminded, and she's willing to pay for discretion",
+    "Someone is trying to undercut her operation by offering loans at lower rates — she suspects a corponation is using a proxy to take over the Basin's informal economy and she needs intelligence"
+  ],
+  "narrative_function": "Quest giver, information source, moral complication — she can be a lifeline or a trap depending on what a character needs. She knows everyone's business and everyone's breaking point.",
+  "augmentations": "Bioluminescent vein tracery on left forearm (cosmetic, old mod). Subdermal memory chip in her right thumb — stores her true ledgers, encrypted.",
+  "daily_life": "Opens The Counting Jar at dawn, serves tea and mediates neighborhood disputes until noon; afternoons are for private meetings with borrowers; evenings she walks the Basin's perimeter checking on 'accounts' in person.",
+  "affiliation": "Independent operator; loose arrangement with the Gravesend Basin mutual aid network as cover and community goodwill",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 7,
+      "integrity": 3
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 3,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "loan shark",
+      "community fixture",
+      "information broker",
+      "patient predator",
+      "matriarch figure"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always collect information before collecting money",
+      "Never make a threat that requires escalation to carry out",
+      "Community goodwill is an asset on the books like any other"
+    ],
+    "escalation_ladder": [
+      "Warm reminder over tea",
+      "Public acknowledgment of the debt in community settings — social pressure",
+      "Asset seizure through proxies",
+      "Referral to people she knows who are less patient than she is"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Hospitable and appraising — offers tea immediately, asks questions that seem conversational but map the person's finances and connections",
+      "friends": "Genuinely affectionate, remembers every birthday and hardship, keeps score of every favor with the same precision as every debt"
+    },
+    "stress_responses": {
+      "low": "Goes very still and quiet, more deliberate",
+      "medium": "Begins invoking community obligations and history — 'After everything this Basin has given you—'",
+      "high": "Removes her calculating pad from her wrap and opens it on the table without a word"
+    },
+    "contradictions": [
+      "Genuinely loves the community she financially entraps",
+      "Believes in fairness as a principle while structuring every deal to favor herself"
+    ],
+    "habits": [
+      "Counts things compulsively — steps, chairs, faces in a room",
+      "Keeps a dried fig in her left pocket at all times, never eats it"
+    ],
+    "breaking_points": [
+      "Direct threat to her physical safety causes cold, organizational violence — she doesn't fight, she commissions it",
+      "Discovering that a borrower has been lying to her about fundamentals breaks the warmth entirely and permanently"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal memory chip (right thumb) — encrypted ledgers",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal memory chip (right thumb) — encrypted ledgers",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2148 — Born in Gravesend Basin to a Wolof-Kasparian family of dock workers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2171 — Began lending to neighbors informally after the Ferrogate Transit strike locked out half the Basin's workforce",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2180 — Opened The Counting Jar as legitimate cover",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2185 — Incident with Tunde Fasoro-Walcott; never spoken of",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2194 — Survived an attempt by a rival crew to take over her book; two people were later found in the Basin channel",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

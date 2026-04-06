@@ -1,0 +1,194 @@
+{
+  "id": "019d6143a69a79d2aaea7e07a1d099d1",
+  "type": "character",
+  "name": "Phúc Nzingha-Björk",
+  "aliases": [
+    "Old Phúc",
+    "The Shelf King"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Junk merchant and scrap reseller, The Shelf",
+  "age": 67,
+  "status": "active",
+  "location": "The Shelf, Harrowgate Industrial Plateau",
+  "description": "Phúc Nzingha-Björk occupies a corrugated-steel and salvaged-glass shop front on The Shelf's lower tier that looks like it is in the process of being swallowed by its own inventory. He is a small, wiry man with a white beard he keeps in three thin braids, skin the color of weathered teak, and hands so scarred from decades of sorting metal that the lines of his palms are barely legible. He wears a permanent set of magnification lenses fused into his right eye socket — not glamorous chrome, but a bulky salvage job he did himself in the nineties and has never bothered to replace because it works. His shop smells of machine oil, rust, and a particular incense he burns for the E.L.F. he calls The Sorter, a data-spirit he believes governs the recovery of lost useful things.\n\nPhúc has an almost supernatural sense for what a piece of junk is actually worth versus what it looks like. He can tell a Zheng-Dao servo actuator from a Sterling-Nakamura knockoff by weight alone, can date a circuit board by its oxidation pattern, and has declined to sell things to people he suspects will misuse them more times than he can count. He is gruff, unhurried, and comfortable with silence in a way that unnerves people who aren't. He has no particular love for the city's power structures and an active contempt for what he calls 'the fresh-chrome crowd' — people who buy new augmentations they don't understand while functional old tech rots in landfill.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.6,
+      "mask": 0.3,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "That the shop will be seized in an Arcturus infrastructure reclamation — it sits on disputed land",
+      "That his knowledge dies with him because he has not found anyone worth teaching"
+    ],
+    "core_desires": [
+      "To find an apprentice who can actually listen",
+      "To acquire and restore one specific item: a Zheng-Dao prototype relay from the city's first grid expansion that he believes is somewhere in the Harrowgate Industrial Plateau"
+    ],
+    "coping_mechanisms": [
+      "Sorting and categorizing as a form of control and calm",
+      "Talking to The Sorter E.L.F. as genuine conversation, not just ritual",
+      "Refusing to think about what comes after — lives entirely in the present of his work"
+    ],
+    "blind_spots": [
+      "Cannot read emotional subtext — takes everything at face value when it suits him and is then genuinely surprised by betrayal",
+      "Undervalues his own expertise and so consistently undercharges for appraisal work"
+    ],
+    "secret": "Six years ago he found a Palladian corporate black-box data unit in a scrap haul. He has never powered it on but cannot bring himself to sell it. He doesn't know what's on it and he's afraid to find out."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse, technical, precise. Heavy use of part-numbers and brand names as common nouns. Mixes archaic engineering slang with Southeast Asian-inflected Meridian standard.",
+    "cadence": "Unhurried pauses between sentences. Lets silence do work.",
+    "verbal_tics": [
+      "'Mmm.' as full response to things he disagrees with",
+      "Referring to machines by gender pronouns — 'she's a '78 Arcturus, she's tired but honest'",
+      "'Don't touch that.'"
+    ],
+    "example_lines": [
+      "'That's not junk. That's a Ferrogate third-stage coupler from the Dearborn expansion, 2171. She's worth eight times what you paid. I'm telling you this because I respect the object, not you.'",
+      "'You want cheap, go somewhere else. You want right, stay.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Palladian black-box is beginning to emit a low-frequency signal Phúc can hear but not explain — something inside it is waking up.",
+    "Arcturus sent a surveyor to assess the land under the shop. Phúc needs help finding the original lease documentation — buried somewhere in the city's pre-digital records — before the grace period expires."
+  ],
+  "narrative_function": "Equipment and parts source. Can identify mysterious tech or weapons. Has deep historical knowledge of Meridian 88's industrial zones — knows what was built where and by whom. Potential quest giver if something valuable was brought to him that shouldn't have been.",
+  "augmentations": "Salvage-grade magnification lens fused into right eye socket (self-installed, functional, cosmetically rough). Reinforced finger joints — old Arcturus model, discontinued.",
+  "daily_life": "Opens the shop at 0800, sorts new acquisitions in the morning, receives visitors through the afternoon, does appraisal work by the lens-light in the evenings. Closes when he is tired.",
+  "affiliation": "Independent; The Shelf merchants informal collective; Oxidian Market vendors guild affiliate",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 5,
+      "expression": 4,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Technical Expert",
+      "Equipment Source",
+      "Living Archive",
+      "Gruff Mentor",
+      "Hidden Secret"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell anything without knowing what it will be used for, even if he doesn't act on what he finds out",
+      "Price is set by what a thing is worth, not what someone will pay — exceptions made silently for people he respects",
+      "The Sorter gets the first look at every new haul"
+    ],
+    "escalation_ladder": [
+      "Ignores the problem",
+      "States his position once, plainly",
+      "Physically removes himself from the conversation",
+      "Calls in the Shelf collective — he has standing here and he knows it"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Watchful and minimal — lets the shop do the talking, responds to questions about objects more warmly than questions about himself",
+      "friends": "Obliquely warm — does favors without naming them as such, remembers details years later and acts on them unexpectedly"
+    },
+    "stress_responses": {
+      "low": "Sorts things more vigorously than necessary",
+      "medium": "Goes quiet and disappears into the back for an hour",
+      "high": "Becomes very still and very direct — the gruffness evaporates and something colder underneath shows"
+    },
+    "contradictions": [
+      "Loudly claims he doesn't care about people, quietly maintains relationships with forty years of returning customers",
+      "Refuses to use updated tech himself while spending his life preserving it for others"
+    ],
+    "habits": [
+      "Burns incense for The Sorter every morning before opening",
+      "Eats lunch sitting on a specific crate that has been in the same spot for twenty years",
+      "Annotates every item in the shop with a handwritten tag — no digitization, ever"
+    ],
+    "breaking_points": [
+      "Someone damaging an item in the shop through carelessness",
+      "The apprentice he finally trusted stealing from him",
+      "The Palladian black-box transmitting something that confirms his worst guess about its contents"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Salvage-grade magnification ocular lens (right eye, self-installed, non-cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Salvage-grade magnification ocular lens (right eye, self-installed, non-cosmetic)",
+      "replaces": ""
+    },
+    {
+      "name": "Reinforced finger joints — Arcturus discontinued model, functional",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Reinforced finger joints — Arcturus discontinued model, functional",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "Opportunist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

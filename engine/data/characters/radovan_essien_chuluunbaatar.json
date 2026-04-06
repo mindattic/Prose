@@ -1,0 +1,253 @@
+{
+  "id": "019d6143a6a67af2ab023458bed7bfb0",
+  "type": "character",
+  "name": "Radovan Essien-Chuluunbaatar",
+  "aliases": [
+    "Professor Rad",
+    "the Doomsman"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Climate scientist and atmospheric modeler studying Lake Michigan's cascading environmental systems",
+  "age": 66,
+  "status": "active",
+  "location": "Edgewater Prism, Meridian Atmospheric Research Station (MARS)",
+  "description": "Radovan is a broad, heavyset man who has spent forty years outdoors in conditions that most of his colleagues study remotely, and it shows. His face is deeply weathered, his Slavic-Mongolian features carved by wind and UV exposure into something that looks architecturally deliberate. He keeps a short grey beard and wears his hair close-cropped; his most distinctive feature is a set of retractable sensory whiskers — filament-thin, extending from his temples — which he had installed as a meteorological sensing array in his forties and has since come to regard as indispensable. He is almost always wearing field layers even in his office, with a softshell that has seen better decades.\n\nRadovan's professional reputation is immense and his public one is contentious: he's been warning for twenty-five years that the Lake's thermal buffering is deteriorating in ways that Meridian 88's entire climate management infrastructure has been designed to ignore. He has been right about each specific prediction he has made. He is now predicting something large enough that people have started calling him an alarmist, which is, he notes, exactly what they called him the last four times. He is not angry about this. He is tired in a specific way that long-term correct people get tired.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "being right about the big one and having it happen anyway",
+      "that the city's leadership already knows and has chosen to let the lower tiers absorb the damage"
+    ],
+    "core_desires": [
+      "a single substantive policy change made because of his data — just one",
+      "to be believed before the event rather than vindicated after it"
+    ],
+    "coping_mechanisms": [
+      "humor so dry it registers as deadpan",
+      "rigorous documentation — he believes the record will survive even if the recommendations don't"
+    ],
+    "blind_spots": [
+      "assumes people who don't act on his data are ignorant rather than complicit — a kindness he extends that they haven't earned",
+      "underestimates how much his reputation for being right makes others defensive rather than receptive"
+    ],
+    "secret": "He has internal models suggesting the Lake's primary thermocline disruption will cause catastrophic flooding in Tier 1 lakeshore zones within eight to twelve years. He has not published these models in full because Arcturus, his former funder, has made it clear through intermediaries that doing so would result in a lawsuit over proprietary modeling infrastructure he used during his contract years. He publishes partial models. He knows the partial models are insufficient to trigger action."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical but translatable; spent too many years doing public communication to be inaccessible; uses analogy well",
+    "cadence": "Even and measured; slow enough that people feel he's choosing every word, which he mostly is",
+    "verbal_tics": [
+      "'The data is quite clear on this' (a phrase he uses when he knows people won't listen)",
+      "A slight pause and visible exhale before delivering bad news"
+    ],
+    "example_lines": [
+      "'The data is quite clear on this. The question has never been whether. The question is only when, and who's standing in the low ground when it happens.'",
+      "'I have been wrong before. I try to be wrong often — it keeps the models honest. I am not wrong about this.'",
+      "'Arcturus didn't suppress the research. They just made it structurally difficult to publish completely. Which is a more elegant solution, I'll give them that.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He approaches someone — carefully, indirectly — to help him get his full suppressed models into public circulation without triggering the Arcturus lawsuit",
+    "A junior researcher at MARS has discovered something in the Lake monitoring data that Radovan has been hoping not to find; the timeline may be shorter than eight years",
+    "Arcturus approaches him with a new contract offer that would give him full publication rights — in exchange for making specific modifications to his predictive models",
+    "Tier 1 community organizers from lakeshore zones have found his partial published models and demand to know what he isn't telling them; he doesn't know what to say"
+  ],
+  "narrative_function": "Bearer of large-scale environmental threats; source of systemic information about Meridian 88's physical infrastructure and its vulnerabilities; represents long-term thinking in a city of short cycles; can make climate data personal and immediate; potential figure in plots involving Arcturus or city infrastructure.",
+  "augmentations": "Retractable sensory whisker array at temples (meteorological data gathering, temperature/pressure/humidity). Reinforced lung lining (early career field modification for high-particulate environments). Mild exoskeletal support in lower back (age and fieldwork injury).",
+  "daily_life": "Dawn observation sessions at the Lake monitoring array, followed by data analysis and modeling work; eats lunch at his desk; teaches one advanced graduate course per year; gives public talks he considers his civic obligation even though the audiences increasingly frustrate him.",
+  "affiliation": "University Spine — Meridian Atmospheric Research Station; previously funded by Arcturus, now independently funded after a very public falling out",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "climate scientist",
+      "vindicated cassandra",
+      "Arcturus-suppressed",
+      "fieldwork weathered",
+      "sensory whisker array",
+      "slow burn crisis"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "publish the most complete picture the legal structure will allow",
+      "never misrepresent uncertainty — but never inflate it to seem less alarming either",
+      "if a student's safety is at stake, the research waits"
+    ],
+    "escalation_ladder": [
+      "publishes in appropriate venues and waits",
+      "gives public talks to build lay understanding",
+      "looks for legal workarounds to constraints",
+      "seeks external allies with different leverage points"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Courteous, slightly weary; answers questions more thoroughly than people expect",
+      "friends": "Warmer, drier humor; willing to share the models he can't publish"
+    },
+    "stress_responses": {
+      "low": "More time at the Lake array watching rather than logging",
+      "medium": "Talks less, models more; sensory whiskers retract more frequently",
+      "high": "Becomes very formal; returns to first-principles data review as if rechecking his own sanity"
+    },
+    "contradictions": [
+      "Committed to transparency but maintaining a significant partial suppression to protect himself from Arcturus",
+      "Deeply patient in method but privately furious at institutional inaction in ways he almost never shows"
+    ],
+    "habits": [
+      "Logs personal observations in addition to instrument data — notes that are explicitly marked 'non-citable, personal'",
+      "Keeps a running record of every prediction he has made and whether it was borne out, publicly accessible"
+    ],
+    "breaking_points": [
+      "Discovery that the flooding is imminent and Tier 1 communities have not been warned",
+      "Being handed evidence that Arcturus has been sharing his suppressed models internally while blocking him from publishing them"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Edgewater district, parents of Serbian-Mongolian descent",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First major paper on Lake Michigan thermocline disruption; received very little attention",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Accepted Arcturus research funding; productive but increasingly constrained period begins",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Public falling out with Arcturus after they demanded revisions to a publication; walked away from contract",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed the suppressed full models; bound by legal threat, publishes only partial version",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current: new data suggests timeline accelerating; pressure building from multiple directions",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

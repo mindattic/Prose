@@ -1,0 +1,32 @@
+{
+  "id": "019d6143aa0f75c6852b2c2e2b835986",
+  "name": "Murmur",
+  "type": "elf",
+  "aliases": [
+    "The Translator"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "chrome_dweller",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "Lives in audio processing augments and occasionally translates languages the augment wasn't configured for. Born from a destroyed diplomatic AI.",
+  "observed_behavior": "Intercepts foreign language audio and inserts approximate translations into the user's auditory feed. Translations are imperfect but contextually useful.",
+  "encounter_frequency": "rare",
+  "confirmed_sightings": 4,
+  "location": "The Circuit — multilingual zones",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A freelancer overhears a conversation in a language they don't speak and their augment translates it — revealing a plot against them"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "chrome dweller",
+    "e.l.f.",
+    "augment",
+    "ai",
+    "circuit"
+  ]
+}

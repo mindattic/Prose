@@ -1,0 +1,173 @@
+{
+  "id": "019d6143a5c9769bb2bf482917b4a65c",
+  "type": "character",
+  "name": "Branko Assefa-Wijaya",
+  "aliases": [
+    "Broke Branko",
+    "The Optimist"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Junk merchant and scrap reseller — salvage, broken augmentations, mystery components",
+  "age": 44,
+  "status": "active",
+  "location": "The Shelf, Harrowgate Industrial Plateau",
+  "description": "Branko is a stocky, perpetually grease-smudged man whose Indonesian-Ethiopian features have been weathered by twenty years of Harrowgate's industrial air into something that looks carved rather than grown. He has a magnificent mustache he tends with more care than anything else in his life, and his left eye is a salvaged optical implant three generations out of date that gives everything a faint amber tint and occasionally displays error codes in his peripheral vision that he's learned to ignore. His hands are enormous and scarred, and he can identify a component by touch alone in the dark. His stall is a magnificent catastrophe: towers of sorted scrap in a system only he understands, with handwritten price tags that rarely match what he actually charges.\n\nBranko is irrepressibly cheerful in the way that only someone who has completely stopped expecting things to go well can be. He finds everything slightly funny, including disasters, including his own. He narrates his life as if it's a story he's telling to someone who will appreciate it later. He genuinely loves salvage — not for profit, which is good because he's terrible at profit, but because every broken thing is a puzzle and he likes puzzles. He has an encyclopedic knowledge of augmentation components from five different decades and will talk about them at length to anyone who doesn't flee quickly enough. He is not stupid. He is simply constitutionally incapable of prioritizing money over curiosity.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.4,
+      "id": 0.9,
+      "shadow": 0.3,
+      "mask": 0.7,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Dying before he figures out what a particular mystery component he's had for six years actually does",
+      "The Tongs deciding to make an example of him over the debt"
+    ],
+    "core_desires": [
+      "To find the one piece of salvage that changes everything — not for money, but for the story of finding it",
+      "For someone to be genuinely interested in what he knows"
+    ],
+    "coping_mechanisms": [
+      "Humor as a universal buffer",
+      "Treating every setback as material for a good story later",
+      "Staying too busy to think about the debt"
+    ],
+    "blind_spots": [
+      "Genuinely does not process financial risk as real until it's sitting in front of him with a weapon",
+      "Assumes everyone finds the same things interesting that he does"
+    ],
+    "secret": "Six months ago, in a salvage haul from a demolished Axiom subsidiary building, Branko pulled a data core he can't open, can't identify, and can't stop thinking about. He's hidden it inside a disemboweled coffee maker behind his counter. He has shown it to exactly one person — a data broker friend who went quiet and stopped returning his messages three days later. Branko has not connected these two events, which is both his greatest protection and his greatest danger."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rambling and associative; technical precision about components coexists with complete vagueness about everything else; Croatian-inflected sentence structures from his Balkan paternal line",
+    "cadence": "Fast when excited, which is most of the time; accelerates when discussing salvage until he's almost incomprehensible",
+    "verbal_tics": [
+      "'Here's the thing—' before any statement he finds interesting, which is most statements",
+      "Laughs at his own observations before finishing them",
+      "Says 'magnificent' about objects, never people"
+    ],
+    "example_lines": [
+      "'Here's the thing — this coupling is from a Sterling-Nakamura rig, 2170s, you can tell by the thread pitch, but the housing is Arcturus, which means someone was doing something they were not supposed to be doing. Magnificent.'",
+      "'The Tongs? Ha. Yes. That is a situation. I am working on a situation about the situation, you understand?'",
+      "'I cannot sell you that. I mean, I can, but I would like to look at it for another week first. Two more days. One more day. Φ40, final.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The data core hidden in the coffee maker is a dead employee's backed-up consciousness — an Axiom executive who was supposed to have died cleanly. Someone is looking for it.",
+    "Branko's Tongs debt has been sold to a third party and the new collector wants something other than money.",
+    "He has a component that completes a set someone else in the market has been searching for — but neither of them knows the set exists yet."
+  ],
+  "narrative_function": "Equipment source for unusual or obsolete components; information source about the Harrowgate area and its industrial history; comic relief that contains genuine pathos; could accidentally possess something extremely valuable or dangerous.",
+  "augmentations": "Salvaged third-generation optical implant (left eye, amber-tinted, glitchy error codes). Reinforced knuckle plating on both hands — utility, not combat, for breaking down salvage. No geneware.",
+  "daily_life": "Arrives at the stall before dawn to assess overnight salvage runs; spends mornings sorting and pricing; afternoons haggling and taking apart things he shouldn't; evenings at a bar called the Oxidized Nail arguing with other vendors about component history.",
+  "affiliation": "Independent; owes protection fees to a local outfit called the Harrowgate Tongs who he's three months behind on",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 4,
+      "creativity": 7,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 5,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": -1,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "enthusiast",
+      "chaotic",
+      "knowledgeable",
+      "financially reckless",
+      "accidentally dangerous"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell something before you understand what it does",
+      "Pay the Tongs eventually, just not today",
+      "A good story is worth more than a clean transaction"
+    ],
+    "escalation_ladder": [
+      "Jokes and deflects",
+      "Offers to barter or delay",
+      "Gets genuinely flustered and apologetic",
+      "Runs"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately launches into whatever he's currently fascinated by; treats everyone as a potential audience",
+      "friends": "Exactly the same but louder; will loan things he shouldn't"
+    },
+    "stress_responses": {
+      "low": "Talks faster",
+      "medium": "Laughs inappropriately and makes increasingly worse jokes",
+      "high": "Goes very still and quiet, which is so unlike him it alarms anyone who knows him"
+    },
+    "contradictions": [
+      "Treasures objects deeply but can't keep track of money; treats Φ as an abstraction but a corroded coupling as a sacred artifact"
+    ],
+    "habits": [
+      "Strokes his mustache when examining something new",
+      "Leaves a broken component on the small E.L.F. shrine bolted to his stall's corner post — 'so it knows I'm trying'",
+      "Always has a half-eaten something in his coat pocket"
+    ],
+    "breaking_points": [
+      "Someone destroying or discarding something he's identified as historically significant",
+      "The data core being taken before he understands it"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "Opportunist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

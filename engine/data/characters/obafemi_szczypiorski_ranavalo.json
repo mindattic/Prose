@@ -1,0 +1,169 @@
+{
+  "id": "019d6143a5ce72338f0fc9b3d211ca6b",
+  "type": "character",
+  "name": "Ọbáfẹmi Szczypiorski-Ranavalo",
+  "aliases": [
+    "Femi Static",
+    "The Static King"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Underground DJ and sound sculptor",
+  "age": 44,
+  "status": "active",
+  "location": "Pilsen Veil, back-room residency at a venue called The Underscore",
+  "description": "Femi is a tall man whose body has softened comfortably into middle age, broad through the shoulders and belly, moving through space with the unhurried certainty of someone who has never needed to perform urgency. His face is deeply lined around the eyes and mouth from decades of late nights and genuine laughter, dark brown skin pocked with the small silvery scars of an old electrical accident he considers formative. His hair is cut close except for a strip of white that runs from his left temple to the back of his skull — natural, not dyed, arrived when he was thirty-two and which he refused to touch. He wears functional clothes exclusively: work boots, cargo trousers, a rotating selection of worn linen shirts. His only concession to ornamentation is a pair of custom cochlear amplifiers threaded with copper wire that catch the light when he tilts his head.\n\nFemi does not play music so much as construct environments. His sets move over four to six hours through tidal cycles of sub-bass and silence, incorporating field recordings he makes throughout the city — the Ferrogate Transit harmonic at Deepwell Station, the hydraulic breath of the Kilimanjaro Mass Driver, rain on the lake filtration membranes. Audiences don't dance to Femi's sets so much as dissolve into them. He has turned down three Axiom-sponsored residencies and one Ringo content contract, a fact he mentions rarely but accurately.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.8,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.3,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Going deaf — not the loss of livelihood but the loss of the world as he experiences it",
+      "Becoming comfortable enough to compromise"
+    ],
+    "core_desires": [
+      "To make one piece of sound that outlives the city",
+      "To be loved without being managed"
+    ],
+    "coping_mechanisms": [
+      "Immersive solo recording walks that can last all day",
+      "Cooking elaborate meals for whoever is in his orbit"
+    ],
+    "blind_spots": [
+      "Romanticizes hardship as artistically generative; has trouble supporting younger artists who want both integrity and stability",
+      "Underestimates how much his reputation protects him from consequences he preaches against fearing"
+    ],
+    "secret": "The electrical accident that scarred him was not an accident — he deliberately touched an exposed transit rail at eighteen, a moment of despair he has reframed so many times he almost believes the revised version."
+  },
+  "speech_patterns": {
+    "vocabulary": "Conversational and warm, drops into technical acoustic language without warning, then pulls back out; generous with profanity used affectionately",
+    "cadence": "Unhurried, enjoys a good pause, never rushes to fill silence — he finds silence interesting",
+    "verbal_tics": [
+      "'You hear that?' (about something only he notices)",
+      "'No, but—' (gentle contradiction opener)"
+    ],
+    "example_lines": [
+      "'A Ringo contract means they own the silence between the notes. I'm not selling the silence.'",
+      "'Come by Thursday. I found this frequency under the Jefferson Switch that'll rearrange something in your chest, I promise you.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "One of Femi's field recordings contains audio evidence of something that should not have happened at the location where he recorded it",
+    "A young protégé has taken a corponation deal and Femi is quietly devastated — and the protégé is now in danger they don't understand"
+  ],
+  "narrative_function": "Local color and community anchor for the Pilsen Veil underground; information broker for the arts scene — he hears everything, literally; can provide access to venues, networks, and people who don't advertise their existence.",
+  "augmentations": "Custom cochlear amplifiers (medical-origin, modified for expanded frequency range); basic subdermal temp-mesh for studio climate control; no geneware",
+  "daily_life": "Spends mornings in the city with a portable recorder collecting sounds; afternoons composing and layering in his studio; three nights a week he plays The Underscore from midnight until the crowd thins, usually around five in the morning.",
+  "affiliation": "Independent; regular collaborator with the Pilsen Veil sound collective Barometric",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 10
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 1,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "sound-sculptor",
+      "community-anchor",
+      "principled",
+      "perceptive",
+      "nocturnal"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never play a set shorter than two hours — 'anything less is a sample'",
+      "Will not share a stage or bill with anyone who has an active Axiom or Sterling-Nakamura content contract"
+    ],
+    "escalation_ladder": [
+      "Warm deflection with a story",
+      "Direct and calm refusal",
+      "Withdrawal from the space",
+      "Public statement — rare but permanent"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Genuinely curious, asks about their lives with real attention",
+      "friends": "Loyal to a fault, shows up unannounced with food when he senses trouble"
+    },
+    "stress_responses": {
+      "low": "Records obsessively, sleeps less",
+      "medium": "Retreats into the studio for days, doesn't answer the mesh",
+      "high": "Goes completely quiet — no music, no recording, sits by the lake"
+    },
+    "contradictions": [
+      "Believes deeply in community but is fundamentally solitary in his process; groups exhaust him even as he nurtures them"
+    ],
+    "habits": [
+      "Hums a continuous low tone while thinking — unconscious, below most people's hearing threshold",
+      "Leaves data offerings at every E.L.F. shrine he passes on his morning walks"
+    ],
+    "breaking_points": [
+      "Hearing his work used in a corponation advertisement without permission",
+      "Someone he loves using his own arguments against him to justify a choice that will hurt them"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

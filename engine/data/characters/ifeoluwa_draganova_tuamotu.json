@@ -1,0 +1,234 @@
+{
+  "id": "019d6143a62a7f1a8499c023206aa6c3",
+  "type": "character",
+  "name": "Ifeoluwa Draganova-Tuamotu",
+  "aliases": [
+    "Dr. D",
+    "Ife"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Climate scientist and hydrological systems researcher, Lake Michigan monitoring station",
+  "age": 44,
+  "status": "active",
+  "location": "Edgewater Prism — the University Spine's lakeside Environmental Monitoring Station, a salt-fogged brutalist structure half-obscured by atmospheric scrubber scaffolding",
+  "description": "Ifeoluwa Draganova-Tuamotu has the body of someone who spends significant time outdoors in difficult conditions: weathered, practical, with strong hands and a slight permanent squint from years of looking at lake glare. Their Nigerian-Bulgarian-Polynesian lineage produces a striking combination — deep brown skin, high Slavic cheekbones, hair that grows in dense, salt-bleached coils they keep in a utilitarian braid. They have bioluminescent streaks along their clavicles and upper arms, a mod they got during a Polynesian cultural heritage ceremony in their thirties, which pulse a soft blue-green during elevated heart rate. In cold weather, which is most of the year at Edgewater Prism, they layer aggressively and always have a thermal flask of something that is definitely not just tea.\n\nThey are, professionally, one of the most respected voices on Lake Michigan's chemical and thermal dynamics — the lake that Meridian 88 is built around, over, and increasingly into. Their published findings are often the ones that make corponation environmental compliance offices sweat. They deliver these findings with a kind of weary, precise directness that has no theatrical edge to it — they are not performing alarm, they are reporting it. Off the clock they are unexpectedly tender — they keep a small shrine to the lake's resident E.L.F. network on their desk and speak about the lake itself with something that is clearly affection.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That the lake is already past the threshold and their work is documentation of failure rather than prevention",
+      "Being dismissed as alarmist until it is too late to matter"
+    ],
+    "core_desires": [
+      "Genuine regulatory action based on their findings",
+      "To see the lake survive the city that depends on it"
+    ],
+    "coping_mechanisms": [
+      "Ritual — the E.L.F. shrine, the morning sample runs, the precise documentation as a form of witness",
+      "Physical outdoor work as grounding"
+    ],
+    "blind_spots": [
+      "So focused on the macro-scale environmental threat that they sometimes miss interpersonal warning signs in their immediate community",
+      "Tends to assume institutions can be persuaded by better data, underestimating vested interest"
+    ],
+    "secret": "Their most recent deep-lake thermal models show a cascade threshold event within 8-12 years that would make significant portions of Meridian 88's lakeward infrastructure untenable. They have shared this with the Regulatory Secretariat. The Secretariat has asked them to revise the confidence intervals. They have not yet decided what to do."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical but not exclusionary — they shift register fluidly depending on audience; use precise quantifiers constantly ('roughly,' 'within a margin of,' 'statistically significant at')",
+    "cadence": "Even and measured with weight behind each sentence; they do not use more words than they need",
+    "verbal_tics": [
+      "'The data indicates—'",
+      "Long pauses before answering questions they consider important",
+      "Saying 'yes' once, quietly, as a full sentence when they've reached a conclusion"
+    ],
+    "example_lines": [
+      "'I've been measuring this for eleven years. It's not getting better. That's not an opinion.'",
+      "'The lake remembers. I know how that sounds. But the thermal record doesn't lie, and something down there responds to pattern in ways that aren't fully explained by the physics.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Their suppressed thermal cascade report has been leaked — not by them — and now both the Regulatory Secretariat and Axiom's environmental division are applying pressure to discredit them before the data becomes public",
+    "Strange chemical signatures in their latest deep samples don't match any known industrial discharge profile, suggesting something is happening in the lake's Abyssal Threshold zone that no one has disclosed",
+    "A community in Grindstone Shore is experiencing health events that match patterns they've seen in their contamination models, and the residents are asking for help they don't know whether they're allowed to give"
+  ],
+  "narrative_function": "Information source on environmental conditions affecting specific city zones; potential whistleblower or reluctant ally; their data could be critical to or weaponized in plots involving corponation environmental violations",
+  "augmentations": "Bioluminescent clavicle and arm streaks (cosmetic/cultural, pulse blue-green with elevated heart rate); subdermal temperature and chemical sensor array in both forearms for field sampling; no geneware otherwise",
+  "daily_life": "Dawn water sampling from the monitoring station's submersible launch; data analysis through mid-morning; afternoon spent in meetings with regulatory bodies or colleagues, usually arguing about what their own data means; evenings often back at the lake if conditions are interesting or alarming.",
+  "affiliation": "University Spine Environmental Sciences Division; contracted monitoring agreements with Meridian 88's Environmental Regulatory Secretariat (a body with advisory power but limited enforcement)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "field scientist",
+      "environmental witness",
+      "institutional friction",
+      "spiritually pragmatic",
+      "slow-burning alarm"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Report what the data shows, not what institutions want it to show",
+      "Protect community health information even when it creates professional friction",
+      "Do not revise findings for political convenience — but document carefully before going public"
+    ],
+    "escalation_ladder": [
+      "Internal reporting through proper channels",
+      "Quiet consultation with trusted regulatory contacts",
+      "Building a coalition of supporting scientists",
+      "Public disclosure — the option they have not yet used but are approaching"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally courteous, slightly reserved, evaluating whether this is someone who will actually listen or someone who wants to use their data selectively",
+      "friends": "Warmer than their professional demeanor suggests; prone to humor about the absurdity of their situation; the lake-shrine visits are something they share openly with people they trust"
+    },
+    "stress_responses": {
+      "low": "More methodical than usual, more time on lake runs",
+      "medium": "Becomes very quiet in meetings, stops volunteering opinions unless directly asked",
+      "high": "Blunt to the point of career-damaging directness; they stop managing anyone else's comfort"
+    },
+    "contradictions": [
+      "Documents everything with scientific rigor but also privately believes the lake has a spirit and acts accordingly",
+      "Professionally committed to measured, institutional change while increasingly convinced institutions will not move fast enough"
+    ],
+    "habits": [
+      "Morning water sample regardless of weather or personal schedule",
+      "Touches the E.L.F. shrine data crystal before beginning any major analysis",
+      "Keeps a running ledger of every time their findings have been delayed, revised, or buried"
+    ],
+    "breaking_points": [
+      "Being ordered to falsify or suppress data that has public health implications",
+      "A contamination event they predicted and reported occurring in a community they warned about"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Scholar": 0.9,
+    "Analyst": 0.9,
+    "Skeptic": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in a community with Nigerian, Bulgarian, and Polynesian heritage roots on the city's northwest side",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined University Spine Environmental Sciences; began long-term Lake Michigan monitoring program",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Received bioluminescent mod during Polynesian heritage ceremony — a meaningful personal marker",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First internal report on thermal cascade risk filed with Regulatory Secretariat; no action taken",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Suppressed cascade report leaked by unknown party; under institutional pressure",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

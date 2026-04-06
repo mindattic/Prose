@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Models.Canon;
 
@@ -8,8 +9,9 @@ namespace StreetSamurai.Core.Models.Canon;
 /// A runner in a tailored coat is working a face job. A corporate in
 /// Shelf-cut jeans is slumming or undercover. Clothing is communication.
 /// </summary>
-public class ApparelData
+public class ApparelData : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("type")] public string Type { get; set; } = "apparel";
     [JsonPropertyName("category")] public string Category { get; set; } = "";

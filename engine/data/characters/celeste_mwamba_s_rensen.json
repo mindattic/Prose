@@ -1,0 +1,232 @@
+{
+  "id": "019d6143a5e17892821ace3acbeb1d45",
+  "type": "character",
+  "name": "Céleste Mwamba-Sørensen",
+  "aliases": [
+    "Cece"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Childcare worker, Hamtramck Enclave community crèche",
+  "age": 28,
+  "status": "active",
+  "location": "Hamtramck Enclave, Sunspot Crèche (Level 3, Residency Block 7)",
+  "description": "Céleste is compact and soft-featured with warm medium-brown skin, natural hair kept in large twisted sections pinned up during work hours, and cat ears — a geneware mod chosen at seventeen that they have never regretted for a single day. The ears are dark at the base, fading to a sandy cream at the tips, and they rotate independently, which the children find endlessly entertaining. They have color-shifting irises that cycle slowly through green and amber depending on light and mood, and small, precise hands that are somehow always in motion — braiding a child's hair, mending a torn fabric toy, writing incident reports.\n\nCéleste is genuinely good at this job in a way that is hard to fake: they hold attention without demanding it, de-escalate without humiliating, and remember every child's particular fear and comfort. Off the clock, they are wry and easily overwhelmed by adult socializing after a day of managing thirty small humans. They have strong opinions about UBC stipend policy, childcare worker wages, and the specific way that Palladian's creche management software misclassifies emotional labor as 'supplementary service.' They write long complaint threads on local community meshes that get more engagement than they expect.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Burning out and losing the ability to actually care — becoming someone who just goes through the motions",
+      "A child in their care being seriously harmed on their watch"
+    ],
+    "core_desires": [
+      "Childcare workers to be treated as the skilled professionals they are",
+      "To have enough energy left at the end of the day to also have a personal life"
+    ],
+    "coping_mechanisms": [
+      "Cooking — complex recipes require full attention and crowd out intrusive thoughts",
+      "Community organizing — channeling helplessness into action"
+    ],
+    "blind_spots": [
+      "They assume people who challenge the system are acting in good faith the way they are",
+      "They sometimes project competence onto struggling parents because they need to believe the children are okay at home"
+    ],
+    "secret": "One of the children in their care — a four-year-old named Sefa — has been showing signs of stress consistent with an unstable home environment. Céleste has filed two informal notes but hasn't escalated to a formal report because they don't trust what the system will do to the family. They are sitting with this knowledge and it is getting heavier."
+  },
+  "speech_patterns": {
+    "vocabulary": "Code-switches fluidly — simple and warm with children, quick and technical when discussing policy, dry and sharp with close friends.",
+    "cadence": "Fast when animated, deliberately slow and clear when explaining something important. Never talks down.",
+    "verbal_tics": [
+      "'Okay, so—' (thought organizer)",
+      "Ears visibly swiveling toward whoever is speaking — not a verbal tic but a noticeable physical tell",
+      "'Which is not nothing.' (affirmation closer)"
+    ],
+    "example_lines": [
+      "'He's been biting again, and I'm not judging the home situation but I am flagging it, which is different, which is not nothing.'",
+      "'The software counts story time as recreational overhead. Not curriculum. Not developmental support. Overhead. I have written four thousand words about this.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Sefa's home situation has crossed a line Céleste can no longer ignore. They need someone to help them figure out what to do without triggering a system response that makes things worse.",
+    "A parent of a child at the crèche approaches Céleste with a story about something their child witnessed — something the child described to the parent but won't repeat to adults they don't trust. The child trusts Céleste.",
+    "The crèche's Palladian facility lease is up for review and the new terms would price the community service out. Céleste is organizing resistance and needs people with different skill sets."
+  ],
+  "narrative_function": "Community connection point — knows virtually every family in the enclave with young children. Provides ground-level social intelligence. Can become a quest giver around missing children, family crises, or community organizing efforts.",
+  "augmentations": "Cat ears (geneware, cosmetic — dark-to-cream gradient, independently articulating). Color-shifting irises (geneware, cosmetic). No chrome.",
+  "daily_life": "They arrive at 07:30 for handoff from the overnight worker, run the morning routine with twenty-eight children aged two to seven, and leave at 17:00 — usually forty minutes late. They spend evenings cooking elaborate meals for themselves as a form of decompression and writing mesh posts they sometimes regret.",
+  "affiliation": "Hamtramck Enclave Community Services (nominally, though the crèche operates on a mixed funding model including UBC allocation and Palladian facility lease)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Deeply Empathic",
+      "Politically Engaged",
+      "Burnout Risk",
+      "Community Anchor",
+      "Perceptive"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The child's immediate safety is the first consideration, always",
+      "Don't escalate to systems you don't trust unless you've exhausted other options",
+      "Be honest with parents even when it's uncomfortable"
+    ],
+    "escalation_ladder": [
+      "Document and monitor",
+      "Discuss directly with the person involved (parent, coworker, administrator)",
+      "Go public — mesh posts, community meeting, formal complaint"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm but calibrated — reads the person before deciding how much to offer",
+      "friends": "Unguarded, funny, and sometimes unexpectedly sharp-tongued"
+    },
+    "stress_responses": {
+      "low": "Ears flatten slightly, becomes more efficient and less conversational",
+      "medium": "Comes home and cooks for two hours in silence",
+      "high": "Writes very long, very detailed mesh posts at 02:00 that they sometimes delete before morning"
+    },
+    "contradictions": [
+      "Advocates loudly for worker boundaries and routinely violates their own",
+      "Distrusts systems but is meticulous about documentation within those systems"
+    ],
+    "habits": [
+      "Greets every child by name and with their preferred greeting (fist bump, wave, hug) — a different ritual for each",
+      "Leaves small data offerings at the building's E.L.F. shrine every Friday — usually a recording of the children laughing"
+    ],
+    "breaking_points": [
+      "A child being harmed while bureaucratic process delays action",
+      "Being told to falsify a report or overlook something for administrative convenience"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9,
+    "Quick Study": 0.9,
+    "Optimist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Hamtramck Enclave, second of three children",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Gets cat ear geneware mod at seventeen",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins working at Sunspot Crèche",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Starts community mesh advocacy for childcare worker wage reform",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Identifies concerning signs in young Sefa's behavior; begins internal struggle over whether and how to escalate",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

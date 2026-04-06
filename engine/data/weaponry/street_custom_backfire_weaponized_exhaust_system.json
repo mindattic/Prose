@@ -1,0 +1,41 @@
+{
+  "id": "019d6143ab4578d6af942951fa6a5838",
+  "name": "Street Custom 'Backfire' Weaponized Exhaust System",
+  "type": "weapon",
+  "aliases": [
+    "Backfire",
+    "Flame Pipe",
+    "Dragon Tail",
+    "Hot Exit"
+  ],
+  "category": "improvised",
+  "description": "A vehicle-mounted improvised weapon created by modifying a motorcycle or small vehicle's exhaust system to inject raw fuel into the exhaust manifold on command, producing a jet of flame from the tailpipe that extends 3-5 meters behind the vehicle. The modification is simple — a secondary fuel injector spliced into the exhaust pipe with a dashboard trigger — and has become common enough in Tier 1 and 2 vehicle culture that mechanics advertise the conversion openly. It is primarily a pursuit deterrent, used to discourage tailgating vehicles and on-foot pursuers, but the flame output is sufficient to cause severe burns and ignite clothing or fuel leaks.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — vehicular weapon modification",
+  "base_technologies": [
+    "Exhaust fuel injection modification",
+    "Manual ignition trigger systems"
+  ],
+  "specifications": "flame range: 3-5 meters behind vehicle\nfuel consumption: 2 liters per 10-second burst\nignition: Spark plug in exhaust manifold\ninstallation time: 2-3 hours with basic tools\nweight: 3 kg additional hardware\nfuel source: Vehicle's primary fuel tank or auxiliary reservoir\nfire duration: Limited by fuel supply",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A street racing fatality involved a Backfire system that was remotely triggered — someone hacked the driver's ignition circuit and cooked the rider behind them.",
+    "A convoy of modified vehicles with Backfire systems has been running protection for smuggling routes — the wall of fire behind the convoy makes pursuit effectively impossible."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "improvised",
+    "weapon",
+    "war",
+    "ai",
+    "vehicle",
+    "motorcycle",
+    "clothing",
+    "fire",
+    "circuit",
+    "tier 1"
+  ]
+}

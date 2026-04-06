@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a595760bb646f4af0851342c",
+  "name": "Street Poet",
+  "type": "archetype",
+  "category": "creative",
+  "description": "Creates raw, immediate art from lived experience",
+  "behavioral_signature": "Turns pain, joy, and street life into verse",
+  "under_stress": "The poetry becomes more raw, less crafted",
+  "at_rest": "Observing, scribbling, reciting",
+  "will_always": [
+    "turn life into art"
+  ],
+  "will_never": [
+    "polish away the rawness"
+  ],
+  "unless": [
+    "the art exposes people who didn't consent"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Wordsmith",
+      "threshold": 0.8,
+      "context": "language"
+    },
+    {
+      "archetype": "Graffiti",
+      "threshold": 0.7,
+      "context": "street culture"
+    }
+  ],
+  "opposite_of": [
+    "Architect",
+    "Perfectionist"
+  ],
+  "tags": [
+    "raw",
+    "authentic"
+  ]
+}

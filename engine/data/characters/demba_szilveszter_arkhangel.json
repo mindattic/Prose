@@ -1,0 +1,232 @@
+{
+  "id": "019d6143a5eb787285ac97083490bccd",
+  "type": "character",
+  "name": "Demba Szilveszter-Arkhangel",
+  "aliases": [
+    "Prof. Demba",
+    "The Glaciologist"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Climate scientist and atmospheric historian, tracking long-term environmental transformation of the Great Lakes basin",
+  "age": 67,
+  "status": "active",
+  "location": "The Conservatory, Meridian Core",
+  "description": "Demba is a heavyset man of late middle age who looks as though he was carved from something patient and enduring. His skin is very dark and deeply weathered from decades of fieldwork on decommissioned weather platforms and lake monitoring buoys — he has the look of a man who has spent a great deal of time outside in bad conditions. His hair is fully white and worn long, pulled back loosely, and he has a full beard he keeps trimmed to a point. He has no geneware modifications and minimal augmentation, which he is somewhat self-conscious about — 'I grew up before it was expected,' he says, with just enough humor to deflect the admission that he also slightly distrusts it. His clothes are always slightly out of fashion, always completely functional, often waterproof for no apparent reason.\n\nDemba has been at The Conservatory for twenty-two years and has outlasted four department heads, three rounds of corponation funding restructuring, and one very public battle with Arcturus over the suppression of lake toxicity data. He won that battle technically, in that his paper was eventually published, though the version that ran had twelve figures redacted. He keeps the uncensored original framed on his office wall facing inward. He is beloved by students who find his lectures dense but transformative, and is one of the few people in Meridian 88 who can speak with genuine authority about what the lake looked like before, during, and after the Lakeshore Crisis — which makes him either important or dangerous depending on who is asking.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.6,
+      "mask": 0.3,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "That the climate transformation is irreversible and he is documenting a long obituary",
+      "That the Arcturus suppression was not an anomaly but the normal condition and he's been naive"
+    ],
+    "core_desires": [
+      "To produce a complete and honest record of what has been done to the lake",
+      "To live long enough to see his monitoring network become properly funded and protected"
+    ],
+    "coping_mechanisms": [
+      "Being on the water as often as possible — physical proximity to the lake is genuinely regulating for him",
+      "Redirecting grief about the environment into the precision of measurement"
+    ],
+    "blind_spots": [
+      "His conflict with Arcturus has made him see corponation interference everywhere, including sometimes where it isn't",
+      "Underestimates the loyalty his students have to him and therefore the lengths they might go to protect him"
+    ],
+    "secret": "Demba has been running an unauthorized secondary monitoring array in the lake for eleven years, entirely off-grid and self-funded, because he does not trust that his official data isn't being accessed and selectively withheld. The secondary array has detected something over the past fourteen months — an anomalous temperature and chemical signature in the deep basin — that does not match any model he has. He has told only one person, a former student, and sworn them to silence while he tries to understand what he's looking at."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise scientific language that becomes unexpectedly lyrical when he talks about the lake or historical weather events; can be devastating in a single flat sentence when angry",
+    "cadence": "Deliberate and measured, with the occasional long silence that students learn not to fill; lectures in complete paragraphs",
+    "verbal_tics": [
+      "'The record shows'",
+      "'That's not the question I'd ask'",
+      "Very long pauses before saying something he considers important"
+    ],
+    "example_lines": [
+      "'The lake remembers everything. Our problem is that we keep forgetting how to read it.'",
+      "'Arcturus published a statement. I published the data. One of those things is checkable.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The anomalous deep-basin signature has intensified dramatically over three weeks; Demba needs someone he trusts to physically dive the monitoring array, which is in a zone that technically requires Arcturus transit permits",
+    "A young journalist contacts him with a document they claim proves the original Arcturus suppression went further than Demba knew — and wants his verification and public backing"
+  ],
+  "narrative_function": "Living institutional memory for the Lakeshore Crisis and Great Lakes environmental history; possesses data that certain parties want buried; credible authority whose credibility makes him a target; can provide historical and scientific context for current environmental events",
+  "augmentations": "Basic retinal climate data overlay (utilitarian, decade-old model), subdermal temperature and atmospheric sensor array (research equipment technically installed in his body for convenience)",
+  "daily_life": "Early morning data review from overnight lake monitoring systems; teaches one graduate seminar; afternoons split between writing and an ongoing argument with the Conservatory's funding administration; monthly field trips to lake monitoring stations that he considers spiritually necessary",
+  "affiliation": "The Conservatory — Department of Atmospheric and Aquatic Systems",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "climate-historian",
+      "institutional-fighter",
+      "lakeshore-crisis-expert",
+      "long-game-player",
+      "quietly-subversive"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Data is published — all of it, eventually — regardless of who is inconvenienced",
+      "Do not allow incomplete findings to be used as if they were complete",
+      "Protect junior researchers from institutional retaliation even at personal cost"
+    ],
+    "escalation_ladder": [
+      "Polite but unmovable refusal",
+      "Documented formal objection with copies to external parties",
+      "Preprint publication without institutional sign-off",
+      "Going to independent press"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Reserved and assessing, not unfriendly, but he takes a while to warm; asks about their work before their person",
+      "friends": "Generous, remembers everything you've ever told him, shows care through attention and practical help"
+    },
+    "stress_responses": {
+      "low": "Goes out to the monitoring buoys by himself at dawn",
+      "medium": "Becomes very formal and clipped in conversation while privately working through anxiety",
+      "high": "Goes completely quiet, stops eating regular meals, works around the clock in a contained and frightening way"
+    },
+    "contradictions": [
+      "Believes in institutional science and has spent a career fighting institutions",
+      "Describes himself as a pessimist about the climate while continuing to work as if it matters enormously"
+    ],
+    "habits": [
+      "Makes an offering at the Conservatory's E.L.F. shrine before any fieldwork, which he describes as 'habit' when asked and genuinely means as prayer",
+      "Keeps a physical log of every unusual reading by hand in addition to digital records"
+    ],
+    "breaking_points": [
+      "Discovery that his secondary monitoring array has been found and compromised",
+      "Evidence that the Lakeshore Crisis was deliberate — confirming his worst suspicion and meaning decades of people he knew died unnecessarily"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional, outdated, refuses upgrade",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "routinely calibrated, the most expensive thing he owns",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Perpetual Student": 0.9,
+    "Quick Study": 0.9,
+    "Seeker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Grainfort; father from a Senegalese-Hungarian family, mother from an Arkhangelsk-descended surveyor lineage",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined The Conservatory as junior research fellow; began building relationships with lake monitoring infrastructure",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Lakeshore Crisis suppression battle with Arcturus; paper published in redacted form; framed original on office wall",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began running unauthorized secondary monitoring array in the deep lake basin; told no one",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Secondary array begins detecting anomalous deep-basin signature; nature and cause unknown",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

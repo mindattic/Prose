@@ -1,0 +1,168 @@
+{
+  "id": "019d6143a6dd7ad889ca5d682e6a1bbe",
+  "type": "character",
+  "name": "Sovann Quispe-Ndiaye",
+  "aliases": [
+    "Sov",
+    "Static"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Underground DJ and sound sculptor, curates illegal rave events in the flood-level tunnels beneath Deepwell Station",
+  "age": 24,
+  "status": "active",
+  "location": "Deepwell Station (surface apartment) / sub-level tunnel network below Deepwell (performance venues)",
+  "description": "Sovann is compact and perpetually in motion, with quick dark eyes and a grin that appears suddenly and fully, like a door flung open. Their heritage traces a line from the Cambodian plateau through the Andean highlands to the Sahel coast, and their features carry that long migration in the planes of their face — high cheekbones, a broad nose, skin the color of weathered teak. They've had color-shift hair installed, currently running through a slow amber-to-blue cycle that completes every six hours, and they wear the same battered canvas jacket every day regardless of weather, its back covered in hand-stitched patches from every illegal venue they've played.\n\nSovann's art is tactile — they design sound that you feel in your sternum before you hear it with your ears, building frequencies that interact with the biological resonance of a crowd. In the tunnel spaces below Deepwell, where the old transit infrastructure creates natural acoustic chambers, their sets have reportedly made people hallucinate colors or weep without knowing why. They are not a philosophical person about this; they find discussions of art theory excruciating and will physically walk away from them mid-sentence. What drives them is pure, inarticulate appetite — for the moment when a crowd stops being separate people and becomes a single breathing thing. They collect sounds obsessively, carrying a modified audio recorder everywhere and harvesting the acoustic signatures of spaces, machines, and weather systems.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.5,
+      "id": 0.9,
+      "shadow": 0.4,
+      "mask": 0.2,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Silence — genuine, total silence, which they experience as annihilation of self",
+      "That what they make is just noise and the moments of connection are chemical coincidence"
+    ],
+    "core_desires": [
+      "To dissolve the boundaries between individual people, even temporarily",
+      "To find and record the specific frequency that the city itself produces when no one is listening"
+    ],
+    "coping_mechanisms": [
+      "Constant external sound — they sleep with ambient track running",
+      "Displacement into work when emotional processing is required"
+    ],
+    "blind_spots": [
+      "They are genuinely unable to read when they are exhausting or overwhelming someone",
+      "They conflate physical/sonic intimacy with actual connection and are often surprised when relationships feel hollow afterward"
+    ],
+    "secret": "They once used their knowledge of crowd-resonance frequencies to deliberately induce a panic response in a venue whose owner had cheated a friend — three people were injured in the stampede. Sovann tells themselves it was an accident but knows exactly which frequency did it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Informal, quick, drops pronouns and articles in casual speech; suddenly precise and specific when discussing sound",
+    "cadence": "Fast in excitement, then long silences when thinking — no comfortable middle ground",
+    "verbal_tics": [
+      "'Yeah yeah yeah' as a filler when processing",
+      "Hums fragments of current projects mid-conversation without noticing"
+    ],
+    "example_lines": [
+      "'You want to find Breaux? Come to the Collective's next drop. He always shows. Everyone shows eventually, if the set's right — sound pulls people like a tide, yeah yeah yeah.'",
+      "'That junction below the third stanchion? She sings in E-flat when the pressure drops before a storm. Been recording her for eight months. Almost have the whole phrase.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Sovann has been recording what they believe is a coherent musical phrase being produced by the tunnel infrastructure — it's getting longer, more complex, and they are becoming obsessed with the possibility that it is a message from a vast, station-dwelling ELF",
+    "Ferrogate Transit has been quietly sealing off tunnel sections that host Deepwell Collective events, and someone has been tipping them off — Sovann needs to find the informant before the next event is raided"
+  ],
+  "narrative_function": "Access point to underground networks and tunnel geography; can locate people who don't want to be found if they attend underground events; their events are neutral ground where different factions mix; source of information about Deepwell's sub-level infrastructure",
+  "augmentations": "Color-shift hair (amber-to-blue cycle); subdermal haptic receiver arrays along both forearms and palms (allows direct tactile interface with audio equipment); minor cochlear enhancement for extended frequency range",
+  "daily_life": "Sleeps until mid-afternoon, spends evenings in the tunnels setting up or performing, spends the small hours after events walking the city with their recorder harvesting sounds. Eats irregularly from street stalls and has a specific Ferrogate Transit junction box they have been leaving rice paper offerings at for two years.",
+  "affiliation": "Independent; connected to an informal network of tunnel-rave organizers called the Deepwell Sound Collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 9,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 4,
+      "expression": 8,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 5,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": 2,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "night creature",
+      "tunnel-walker",
+      "ELF devotee",
+      "crowd-reader",
+      "compulsive collector"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always share sound files freely — information about spaces and acoustics should be common property",
+      "Never play a venue that has dealt with Ferrogate Transit security willingly",
+      "Say yes to anything that involves going somewhere new"
+    ],
+    "escalation_ladder": [
+      "Deflection through humor and subject change",
+      "Blunt honesty delivered without tact",
+      "Physical departure from the situation",
+      "Sabotage — they think in terms of systems and know how to break them"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open and immediately tactile — will grab someone's arm to make a point within sixty seconds of meeting them",
+      "friends": "Intensely present but unpredictably absent; disappears for days without explanation and returns as though no time passed"
+    },
+    "stress_responses": {
+      "low": "Longer, more intense work sessions",
+      "medium": "Goes into the tunnels alone and plays for no audience for hours",
+      "high": "Complete shutdown — goes nonverbal and sits somewhere loud until they can process"
+    },
+    "contradictions": [
+      "Craves deep human connection but is genuinely bad at the ordinary maintenance of relationships; prefers the crowd to the individual"
+    ],
+    "habits": [
+      "Records at least one new sound every day without exception",
+      "Leaves rice paper slips with handwritten frequency notation at transit ELF shrines",
+      "Can identify most Deepwell-area tunnels by their ambient acoustic signature alone"
+    ],
+    "breaking_points": [
+      "Watching someone deliberately destroy a recording or a sound environment pushes them toward immediate, disproportionate rage"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Diplomat": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

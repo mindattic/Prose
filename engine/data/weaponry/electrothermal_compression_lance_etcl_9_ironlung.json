@@ -1,0 +1,56 @@
+{
+  "id": "019d6143ab277767aad40f6398cbf622",
+  "name": "Electrothermal Compression Lance ETCL-9 'Ironlung'",
+  "type": "weapon",
+  "aliases": [
+    "The Ironlung",
+    "Bellows",
+    "The Squeeze"
+  ],
+  "category": "energy",
+  "description": "The ETCL-9 operates by projecting a focused column of electrothermal plasma into an enclosed or semi-enclosed space — a room, a vehicle interior, a corridor — and then triggering a rapid compression wave by collapsing the plasma column's magnetic containment field in a controlled sequence. The result is a brief, violent atmospheric compression event within the target space: a pressure spike lasting approximately 80 milliseconds that is sufficient to rupture eardrums, cause pulmonary barotrauma, and collapse unsupported structural cavities. The plasma itself is secondary — it is the compression wave that constitutes the primary weapon effect. Living targets within the affected space experience the sensation of the air being forcibly removed from their lungs, which is where the nickname 'Ironlung' originates.\n\nRingo Corponation developed the ETCL-9 in response to a specific tactical problem: neutralizing threats inside armored vehicles and fortified rooms without destroying the structure itself. The weapon is fired at a surface — a wall, a door, a vehicle hull — and the plasma column penetrates through gaps, ventilation openings, or thin materials before the compression event occurs inside. The outer structure remains largely intact while the interior is devastated. This made the ETCL-9 extremely valuable for operations where the goal is to secure a location while preserving its contents, and correspondingly attractive to actors who do not want the evidence of what was inside destroyed.\n\nThe weapon is large and unwieldy, requiring a shoulder brace for stable operation. Its barrel is unusually long for an energy weapon — 94cm — because the plasma column requires distance to achieve the coherence necessary for effective penetration. Operators describe the firing experience as violent: the recoil from plasma projection is substantial, and the compression event produces a concussive wave that can affect the operator if they are too close to the target surface.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 4+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Electrothermal plasma projection",
+    "Magnetic containment field collapse",
+    "Atmospheric compression wave generation"
+  ],
+  "specifications": "effective range: Up to 25m to target surface\nplasma penetration: Gaps of 4cm or larger; materials up to 8mm steel equivalent\ncompression event duration: ~80ms\npressure spike: Up to 4.2 atmospheres within affected space\noperator safe distance: Minimum 6m from target surface\npower cell: Ringo RC-15 high-density cell, 8 discharges\nweight: 9.1kg with brace\ndimensions: 94cm barrel, 38cm brace extended\neffective volume: Spaces up to approximately 45 cubic meters",
+  "tactical_use": "The ETCL-9 is a specialist weapon for forced entry denial and vehicle interdiction. Operators use it to clear armored vehicles by firing at door seams or ventilation grilles, or to neutralize fortified rooms without breaching the wall. The 6m safe distance requires operators to work from cover. A common tactic involves two operators — one fires the ETCL-9, the other is positioned to breach the door immediately after the compression event, exploiting the incapacitation window. The weapon is not used in open environments where the compression wave has no enclosed space to reflect and amplify.",
+  "cultural_context": "In Meridian 88, the Ironlung is associated with corporate raid teams and debt enforcement — entities that need to neutralize people inside spaces without destroying the spaces themselves. The weapon appears in low-district horror stories about corporate collectors arriving to repossess equipment or extract debtors, clearing entire apartments without leaving a mark on the walls. Its restricted status means legitimate possession requires corporate affiliation, which reinforces its association with institutional power. Street-level operators occasionally acquire them for use against armored vehicles, accepting the weapon's bulk as the price of armor defeat.",
+  "known_users": [
+    "Ringo Corponation corporate raid and recovery teams",
+    "High-tier debt enforcement contractors",
+    "Anti-vehicle specialists in mercenary units",
+    "Ouroboros Energy pipeline security (for clearing sabotaged equipment vaults)",
+    "Black market weapons brokers (as trade goods, rarely used personally)"
+  ],
+  "story_hooks": [
+    "A residential block in the lower district has been hit by what forensics identifies as an ETCL-9 discharge — every unit on one floor shows internal barotrauma victims with no external damage to the building. The victims all worked for the same underground data brokerage. Someone wanted the servers intact.",
+    "Ringo Corponation is publicly denying that a batch of ETCL-9s sold to a licensed security contractor was diverted to a third party. A logistics worker at Ringo wants to sell evidence of the diversion — but they're asking for protection first.",
+    "An operator survives an ETCL-9 attack inside an armored vehicle because of a specific lung augmentation they received years ago. Now someone is trying to find out who has that augmentation — because the survivors of the attack can identify who ordered it."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "energy",
+    "weapon",
+    "augment",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "debt",
+    "market",
+    "bar",
+    "vehicle",
+    "armor",
+    "fire",
+    "tier 4"
+  ]
+}

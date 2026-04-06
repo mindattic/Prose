@@ -1,0 +1,97 @@
+{
+  "id": "019d6143a90c76e185a43403b9410b30",
+  "type": "place",
+  "name": "Archer's Line",
+  "aliases": [
+    "Archer Heights",
+    "The Line",
+    "Strelka",
+    "The Quiet Corridor"
+  ],
+  "description": "Archer's Line follows the old Archer Avenue diagonal like a scar that never healed straight. The avenue cuts through Meridian's Southwest grid at an angle, a legacy of pre-metropolitan road planning that the megacity's architects couldn't rationalize away, and the neighborhood grew along it like moss on a fallen branch. It's a residential corridor, quiet in the way that places are quiet when they've been overlooked long enough that silence becomes identity. The old Polish and Hispanic populations that defined Archer Heights persist here in a layered coexistence -- storefronts with signs in Polish Cyrillic alongside Mexican Spanish, pierogi shops next to taquerias, neural interface repair operated by a family that's been in the electronics business since the neighborhood sold televisions.\n\nThe Line's defining feature is its refusal to be interesting. In a megacity that runs on spectacle -- the Spire's architectural vanity, the Circuit's neon chaos, the Shelf's desperate energy -- Archer's Line offers nothing that would make a drone operator look twice. The buildings are residential blocks, four to six stories, with ground-floor commercial that serves the immediate community and no one else. The neural mesh coverage is adequate but unambitious. The streets are clean enough because the residents clean them, not because the city sends crews. It is a neighborhood that has perfected the art of not being noticed, and that invisibility is its most valuable asset.\n\nBecause underneath the quiet, Archer's Line is a corridor in the operational sense. The diagonal avenue provides a transit route that bypasses the grid-locked southern checkpoints, and people who need to move through the Southwest without being tracked have been using it for decades. The residents know. They've always known. The Polish grandmothers who sit on their balconies watching the street can identify a runner by gait and a cop by posture, and they don't talk to either. The Line takes care of itself by being the kind of place where everyone sees everything and no one says a word. It's the neighborhood equivalent of a closed fist in a coat pocket.",
+  "atmosphere": {
+    "sights": [
+      "The diagonal cut of the old avenue through the grid -- a geometric anomaly in Meridian's right angles",
+      "Bilingual signage in Polish and Spanish, weathered but maintained, refusing to be replaced by corporate standard",
+      "Residential balconies with watching eyes -- older residents who've been surveilling this street longer than any camera",
+      "Ground-floor shops with neural-opaque window film -- you can see out but the drones can't see in",
+      "Catholic church spires -- two of them, one Polish, one Mexican, still standing, still full on Sundays"
+    ],
+    "sounds": [
+      "Quiet -- remarkably, deliberately, suspiciously quiet for a Meridian neighborhood",
+      "The murmur of conversation in kitchens, audible through open windows but never above conversational volume",
+      "Church bells from both parishes, their schedules offset by fifteen minutes in a century-old scheduling dispute",
+      "Footsteps on the avenue -- the sound carries here, and the residents listen to it"
+    ],
+    "smells": [
+      "Pierogi and tamales from competing kitchens, the olfactory signature of the Line's dual heritage",
+      "Incense from the churches, drifting into the street on Sunday mornings",
+      "Clean concrete -- the residents scrub their stoops, and the habit is contagious"
+    ],
+    "feel": "Watchful. Archer's Line has the emotional texture of a neighborhood that knows exactly what it is and has decided that's enough. There's no aspiration here, no grievance, no performance -- just the steady weight of people living their lives in a place they've chosen not to leave, and the unspoken agreement that what happens on the Line stays on the Line.",
+    "tags": []
+  },
+  "demographics": "Approximately 15,000 residents, predominantly Tier 2 with pockets of Tier 3. The Polish and Hispanic communities maintain distinct cultural identities while sharing infrastructure and, increasingly, grandchildren. Aging population with enough young families to sustain the schools.",
+  "economy": "Small commercial enterprises serving the local community -- food, repair, medical, devotional goods. The informal economy centers on the avenue's value as an unmonitored transit corridor, though no one would describe it that way.",
+  "power_structure": "The two parish councils share informal governance, resolving disputes and coordinating community resources through a system that predates Meridian and has no intention of acknowledging its successor. Corporate presence is minimal -- there's nothing here worth extracting.",
+  "dangers": [
+    "The silence itself -- outsiders who draw attention to themselves are handled quietly and thoroughly",
+    "Corridor traffic that occasionally brings dangerous cargo or dangerous people through the neighborhood",
+    "The risk of being identified as a surveillance asset -- the community's detection instincts are excellent",
+    "Getting between the two parish councils during a jurisdictional disagreement"
+  ],
+  "opportunities": [
+    "An unmonitored transit corridor through the Southwest -- invaluable for movement operations",
+    "A community that keeps secrets professionally and has been doing it for generations",
+    "Cultural knowledge and connections to both the Polish and Latino networks across Meridian",
+    "A place to be invisible, which in this city is worth more than money"
+  ],
+  "story_hooks": [
+    "One of the parish priests has been running an underground railroad for untier-ed refugees, and the route passes through a basement the other parish doesn't know about -- or claims not to",
+    "Axiom has proposed installing upgraded surveillance nodes along the avenue as part of a 'community safety initiative,' and the Line's response is organizing with a precision that suggests they've rehearsed this",
+    "A runner collapsed on the avenue carrying something that both parish councils recognized and neither will discuss"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Garfield Rack",
+      "Brighton Arc",
+      "McKinley Flats"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Local residents who've been here long enough to remember what Chicago was",
+    "Runners using the diagonal avenue to bypass Southwest checkpoints",
+    "Parish council members managing the neighborhood's quiet affairs",
+    "Shop owners who know every face on the block and notice every new one",
+    "People who need a place where nobody asks questions"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.808,
+    "lng": -87.664,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "secret",
+    "identity",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "money",
+    "medical",
+    "neon",
+    "refugee",
+    "desperate",
+    "food",
+    "drone",
+    "energy",
+    "shelf",
+    "spire",
+    "circuit"
+  ]
+}

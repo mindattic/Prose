@@ -1,0 +1,55 @@
+{
+  "id": "019d6143ab377c06979d264d82cb6c56",
+  "name": "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+  "type": "weapon",
+  "aliases": [
+    "Inheritance",
+    "The Heirloom",
+    "Bonecaller",
+    "Resonance Hammer"
+  ],
+  "category": "melee",
+  "description": "The OFH-1 is a compact single-handed impact weapon — visually similar to a geological survey hammer — with a striking face constructed from a piezoelectric transducer array embedded in a dense tungsten carbide head. On impact with bone or bone-equivalent material (including certain ceramic augmentation components), the transducer array reads the resonant frequency of the target structure and, within a single millisecond, fires a return pulse tuned to that structure's harmonic failure frequency. The effect is not merely blunt trauma — it is a precisely engineered fracture event in which the target bone is induced to shatter along its own crystalline stress lines rather than simply breaking under compressive force.\n\nThe distinction matters enormously in practice. A conventional hammer blow to a forearm might fracture the ulna in one or two places. The OFH-1's resonance-matched pulse propagates the fracture event along the entire bone simultaneously, producing a catastrophic multi-point failure that is both more immediately disabling and far more difficult to surgically repair. The wave propagation also travels through connected bone structures — a strike to the wrist can produce secondary fracture events in the elbow and shoulder within 0.3 seconds, as the initial resonance pulse travels up the skeletal chain before dissipating. Operators describe this as 'the echo effect.'\n\nOUROBOROS ENERGY originally developed the underlying osseoconductive frequency analysis technology for geological survey work — reading rock strata resonance to identify fracture points before controlled demolition. PALLADIAN CONSTRUCTION licensed the technology for structural assessment. At some point between those applications and the current one, an unknown party commissioned a weaponized adaptation. The OFH-1 carries no manufacturer's mark, no serial number, and uses a proprietary transducer compound that materials analysis has not definitively sourced. It exists, officially, as an anomaly.",
+  "manufacturer": "Unknown (base technology derived from OUROBOROS ENERGY and PALLADIAN CONSTRUCTION research)",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Osseoconductive resonance analysis",
+    "Piezoelectric frequency matching",
+    "Harmonic fracture propagation"
+  ],
+  "specifications": "length: 32 cm\nhead weight: 0.8 kg (tungsten carbide)\ntotal weight: 1.2 kg\ntransducer array: 48-element piezoelectric array in striking face\nfrequency analysis time: 0.8 milliseconds from contact to matched pulse output\nfracture propagation range: Effective to 60 cm from strike point along connected bone\necho effect delay: 0.1-0.3 seconds per skeletal junction\ntarget materials: Bone, ceramic augmentation components, certain mineral composites\npower source: Self-generating — piezoelectric array harvests energy from each strike\nmanufacturer markings: None — no serial number, no branding\nmaterials analysis: Transducer compound unidentified by three independent laboratories",
+  "tactical_use": "The OFH-1 is used in scenarios requiring permanent disablement rather than killing — targets who need to be alive but non-functional, or situations where death would trigger undesirable consequences (insurance claims, family reprisals, political martyrdom). A single strike to any major long bone is sufficient to trigger the resonance cascade; operators target the femur or humerus for maximum echo propagation. Against augmented targets, the OFH-1 is specifically effective against ceramic-composite subdermal plating, which shares sufficient resonance properties with bone to trigger the fracture pulse — a fact that surprises many augmented operators who consider their plating impervious to blunt trauma.",
+  "cultural_context": "The OFH-1 has generated genuine unease in Meridian 88's underworld because no one can definitively explain where it came from. Weapons have manufacturers. Manufacturers have records. The OFH-1 has neither, which means either someone has achieved perfect operational security in a city of surveillance, or something institutional has decided to produce an untraceable weapon and has the resources to actually pull it off. The name 'Inheritance' came from the streets — a dark joke about what it leaves behind. Possession is rare enough that encountering one is considered an omen by street operators who are superstitious about such things, and a significant intelligence failure by those who are not.",
+  "known_users": [
+    "Unknown institutional actor (suspected but unconfirmed)",
+    "A small number of elite fixers who acquired units through channels they decline to specify",
+    "Meridian 88 Municipal Intelligence (rumored — two OFH-1 strikes have been linked to persons of interest in ongoing MI investigations)",
+    "One known collector who purchased a unit believing it to be inert (it is not)"
+  ],
+  "story_hooks": [
+    "The players are hired by OUROBOROS ENERGY's internal security division to trace the OFH-1's manufacturing chain — someone weaponized their proprietary technology without authorization, and the corporation wants to know who before the story becomes public and triggers a product liability cascade.",
+    "A prominent Meridian 88 figure is found with injuries consistent with OFH-1 use, but the echo propagation pattern in the forensic report indicates the weapon that struck them has a transducer configuration that doesn't match any known OFH-1 unit — either the weapon has been modified, or there is a second-generation version in circulation.",
+    "A player character begins receiving anonymous deliveries of geological survey data — rock strata resonance readings — that, when decoded with the right background in materials science, resolve into the OFH-1's transducer compound formula. Someone wants them to know how it's made, and the question is whether that's a gift, a trap, or a recruitment."
+  ],
+  "ammunition_type": [
+    "none"
+  ],
+  "tags": [
+    "melee",
+    "weapon",
+    "death",
+    "augment",
+    "ai",
+    "elf",
+    "surveillance",
+    "control",
+    "power",
+    "underworld",
+    "market",
+    "dark",
+    "chase",
+    "energy",
+    "fire"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a5877018bbc9f8b8af2ec409",
+  "name": "Poisoner",
+  "type": "archetype",
+  "category": "criminal",
+  "description": "Kills without being in the room",
+  "behavioral_signature": "Employs patience and chemistry over brute force",
+  "under_stress": "Poisons become faster-acting, less elegant",
+  "at_rest": "Studying chemistry, preparing doses",
+  "will_always": [
+    "kill quietly"
+  ],
+  "will_never": [
+    "fight openly"
+  ],
+  "unless": [
+    "the poison will harm innocent bystanders"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Ambusher",
+      "threshold": 0.6,
+      "context": "indirect attack"
+    },
+    {
+      "archetype": "Ghost",
+      "threshold": 0.6,
+      "context": "invisible killer"
+    }
+  ],
+  "opposite_of": [
+    "Brawler",
+    "Duelist"
+  ],
+  "tags": [
+    "patient",
+    "invisible"
+  ]
+}

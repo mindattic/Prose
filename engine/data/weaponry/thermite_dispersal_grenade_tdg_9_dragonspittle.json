@@ -1,0 +1,57 @@
+{
+  "id": "019d6143ab557cc4af4fcba6bb6d500d",
+  "name": "Thermite Dispersal Grenade TDG-9 'Dragonspittle'",
+  "type": "weapon",
+  "aliases": [
+    "Dragonspittle",
+    "TDG-9",
+    "Spitter",
+    "Slag Round"
+  ],
+  "category": "explosive",
+  "description": "The TDG-9 is a compact thermite dispersal grenade developed by Arcturus Defense Solutions as a breach-and-clear tool for high-value target extraction in reinforced urban environments. Upon detonation, a central pyrotechnic initiator ignites a pressurized thermite slurry suspended in a ceramic-metallic shell, projecting a radial cone of molten iron-aluminum particulate at approximately 2500°C across a six-meter forward arc. The dispersal pattern is directional rather than omnidirectional, controlled by an asymmetric internal baffle that the operator orients before throwing — a deliberate design choice that reduces collateral damage in corridor-heavy environments like arcology maintenance tunnels or corporate server floors.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+ / Military contract",
+  "legality": "Prohibited — civilian possession carries mandatory detention under the Meridian Incendiary Ordnance Accord of 2187",
+  "base_technologies": [
+    "Directed thermite slurry dispersion",
+    "Ceramic-metallic pressure containment",
+    "Asymmetric baffle orientation"
+  ],
+  "specifications": "weight: 340g\ndiameter: 62mm\nburn temperature: 2500°C sustained for 4.2 seconds\ndispersal arc: Forward 110-degree cone, 6m effective range\nfuse types: Impact, Timed (2s / 4s / 6s toggle)\nshell material: Ceramic-zirconium composite\neffective against: Light vehicle plating, reinforced doors, unshielded synthetics, personnel in standard armor",
+  "tactical_use": "Operators orient the baffle ridge by feel and throw the grenade into chokepoints, doorframes, or stairwells ahead of advance. The directional cone means friendlies behind the thrower are largely protected. Used extensively to slag security bulkheads without compromising structural integrity of the floor above — a critical consideration in multi-story arcology raids. Anti-synthetic units favor it because thermite bypasses most synthetic chassis hardening, melting joint mechanisms and optical arrays faster than kinetic rounds.",
+  "cultural_context": "The Dragonspittle has a grim reputation in Meridian 88's street mercenary culture. Carrying one signals serious professional intent — it is not a weapon for robbery or intimidation, it is a weapon for removing a door, a turret, or a person from the world with absolute finality. In the Kessler District undermarket, TDG-9s surface occasionally from military theft rings, and their presence in a crew's loadout is treated as an indicator of a high-stakes operation. Corporate security analysts use Dragonspittle sightings at crime scenes to infer operator tier and client budget.",
+  "known_users": [
+    "Arcturus Defense Solutions breach teams",
+    "High-tier extraction mercenaries",
+    "Anti-synthetic specialist units",
+    "Black-site security contractors"
+  ],
+  "story_hooks": [
+    "A TDG-9 with an unfired lot number matching a stolen Arcturus shipment turns up at a civilian fire scene — someone used military ordnance to cover an arson, and the insurance investigator is getting too close to something corporate.",
+    "A mercenary crew is hired to retrieve a TDG-9 prototype variant that supposedly burns at 3800°C — whoever developed it isn't in the Arcturus catalog, and the shell markings have been filed off.",
+    "A city council member is pushing to reclassify TDG-9s as 'industrial demolition tools' — the operators funding her campaign are not contractors."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "war",
+    "crime",
+    "theft",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "tunnel",
+    "market",
+    "vehicle",
+    "armor",
+    "fire",
+    "tier 4"
+  ]
+}

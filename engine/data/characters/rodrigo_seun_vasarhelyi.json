@@ -1,0 +1,252 @@
+{
+  "id": "019d6143a6b2715dbf4955a7681d306d",
+  "type": "character",
+  "name": "Rodrigo Seun-Vasarhelyi",
+  "aliases": [
+    "Old Rod",
+    "Sarge"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Retired Corporate Wars veteran, pension-dependent resident and informal neighborhood watchman",
+  "age": 72,
+  "status": "active",
+  "location": "The Shelf — Block 14, Unit 7, near the Ferrogate Transit overpass",
+  "description": "Rodrigo Seun-Vasarhelyi is a big man who used to be bigger. He carries the memory of his former mass in the way he takes up space — a wide-legged stance, arms that hang a little away from his sides, a way of turning his whole torso instead of just his head that comes from decades of wearing combat plating. His dark brown skin is mapped with synthetic-graft patches along his neck and left arm where the original was burned away in the Menomonee Gulch campaign; the grafts are slightly lighter and have a different texture, which he doesn't bother to hide. His right eye is military-grade steel-grey augmetic, a stark contrast to his warm brown left. He keeps his head shaved and his grey-streaked beard precisely trimmed — two things he can still control.\n\nRodrigo served fourteen years in Arcturus Corporation's private military arm before being discharged when a nerve-suppression injury to his left leg made him operationally unviable. His pension is a Tier 1.5 embarrassment — enough to keep the unit heated, barely. He spends most of his days on the block: watching who comes and goes, intervening in disputes with the particular authority of a man who has seen what disputes can become, and maintaining an informal truce between three rival youth crews that he negotiates with the patience of a man who has nothing left to prove. He doesn't miss combat. He misses the clarity of knowing exactly who he was supposed to protect.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.6,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "Becoming useless — truly, physically unable to protect anyone",
+      "That the war he fought was entirely without meaning and the kids in his crew are going to repeat it"
+    ],
+    "core_desires": [
+      "To see one generation on this block escape the cycle",
+      "To feel like the years he gave to Arcturus bought something real"
+    ],
+    "coping_mechanisms": [
+      "Routine and physical discipline",
+      "Channeling anxiety into practical action for others",
+      "Deliberate humor about his own limitations"
+    ],
+    "blind_spots": [
+      "Attributes too much of what he survived to personal strength rather than luck",
+      "Has difficulty recognizing when he's intimidating people who need help instead of structure"
+    ],
+    "secret": "During the Menomonee Gulch campaign, he was ordered to clear a civilian shelter that Arcturus command had designated a hostile position. He didn't. He pulled his unit back and filed a falsified report. Seven of his soldiers were court-martialed for the mission failure. He was not — he was the one who wrote the report. Two of those soldiers are dead. One lives two blocks away on The Shelf and has never spoken to him since."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct and economical — military habit; uses neighborhood slang with younger residents to signal solidarity, drops it completely when something serious is happening",
+    "cadence": "Slow and even, with significant pauses; raises his voice rarely and to devastating effect",
+    "verbal_tics": [
+      "'Copy that'",
+      "'What's the actual situation here'",
+      "A long exhale before he says something difficult"
+    ],
+    "example_lines": [
+      "'I'm not going to tell you what to do. I'm going to tell you what happens, and then you can decide.'",
+      "'Copy that. Now tell me what you actually need, not what you think I want to hear.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The veteran who lives two blocks away has started talking — specifically to a journalist doing a piece on Arcturus corporate war crimes, and Rodrigo's falsified report is the thread that unravels everything",
+    "One of the youth crew members he's been mentoring has been recruited by a corponation subsidiary, and Rodrigo recognizes the recruitment pipeline for exactly what it is"
+  ],
+  "narrative_function": "Community anchor and low-key quest giver; knows everyone on The Shelf and most of the tensions beneath the surface. Can connect players to Shelf residents, provide military history of the Corporate Wars from the grunt's perspective, or serve as a morally weighted obstacle when the neighborhood's safety conflicts with outside agendas.",
+  "augmentations": "Military-grade right-eye augmetic (Arcturus model, unsupported since discharge — runs on patched firmware); synthetic skin grafts (burn replacement, left arm and neck); nerve-suppression damage in left leg (unaugmented, managed with medication he can't always afford). No geneware.",
+  "daily_life": "Up before dawn to walk the block perimeter — old habit. Morning coffee at the corner vendor with whoever's awake. Afternoons mediating disputes or sitting in on the veterans' mutual aid meetings. Evenings usually involve someone's kid coming to him with a problem they can't take to anyone official.",
+  "affiliation": "Arcturus Corporation (discharged, pension); Meridian Veterans Mutual Aid Society; The Shelf informal community watch",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 4,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 3,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "veteran",
+      "community protector",
+      "guilt-carrier",
+      "street authority",
+      "pension-dependent"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect the block first",
+      "Don't involve official channels unless there's no other option",
+      "Take responsibility for outcomes, even bad ones"
+    ],
+    "escalation_ladder": [
+      "Calm direct conversation",
+      "Positioning himself physically between parties",
+      "A single clear warning",
+      "Decisive physical intervention if someone is going to get hurt"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing and non-committal — watches before engaging, but not unfriendly once he's decided someone is worth talking to",
+      "friends": "Gruff affection, practical support, shows up without being asked"
+    },
+    "stress_responses": {
+      "low": "Goes quieter, more watchful",
+      "medium": "Becomes very task-focused and directive",
+      "high": "Controlled, cold, and extremely effective — the old professional surfaces"
+    },
+    "contradictions": [
+      "Preaches accountability but has never confessed his biggest failure",
+      "Distrusts corporations absolutely while living off corporate pension bureaucracy"
+    ],
+    "habits": [
+      "Checks all exits when entering a room",
+      "Keeps a small battered photograph of his former unit in his jacket — never looks at it, never throws it away",
+      "Offers food before conversation when someone comes to him with a problem"
+    ],
+    "breaking_points": [
+      "Watching someone be made to feel worthless for asking for help",
+      "Any corponation recruiter operating openly on his block"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded — patched firmware",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "stable",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Tactician": 0.9,
+    "Charmer": 0.9,
+    "War Weary": 0.9,
+    "Stoic": 0.9,
+    "Brawler": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Hamtramck Enclave",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Enlisted in Arcturus PMC",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Menomonee Gulch campaign — the incident with the civilian shelter",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discharged after nerve-suppression injury, Arcturus pension assigned",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Moved to The Shelf",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Became de facto mediator for Block 14 disputes",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Helped found Meridian Veterans Mutual Aid Society",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

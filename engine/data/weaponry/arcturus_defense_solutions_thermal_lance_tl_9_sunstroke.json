@@ -1,0 +1,43 @@
+{
+  "id": "019d6143ab1578ffa5379ec293a3747d",
+  "name": "Arcturus Defense Solutions Thermal Lance TL-9 'Sunstroke'",
+  "type": "weapon",
+  "aliases": [
+    "Sunstroke",
+    "TL-9",
+    "Heat Stick",
+    "The Brander"
+  ],
+  "category": "energy",
+  "description": "A shoulder-mounted directed thermal weapon that projects a focused infrared beam capable of raising surface temperatures to 1,800°C within a two-second exposure window. The TL-9 was designed for breaching reinforced structures and disabling armored vehicles, but its effectiveness against personnel has made it a feared anti-infantry weapon in corporate conflict zones. The beam is invisible to the naked eye — targets only know they have been hit when their equipment begins to glow.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+",
+  "legality": "Military restricted — active deployment authorization required",
+  "base_technologies": [
+    "High-power infrared laser focusing",
+    "Rapid capacitor discharge cycling",
+    "Thermal bloom containment optics"
+  ],
+  "specifications": "beam wavelength: 1064nm focused infrared\npower output: 45kW sustained\neffective range: 15-120 meters\nbeam duration: 2-second pulse, 4-second recharge\nweight: 8.2 kg with power pack\npower source: Dedicated dorsal capacitor pack, 12 pulses per charge",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A stolen TL-9 has been used to cut through the vault wall of a Tier 3 credit union — the theft was surgical, the beam pattern suggests military training.",
+    "Arcturus is recalling TL-9 units after discovering the capacitor pack can be overcharged to produce a single catastrophic pulse — essentially turning it into a one-shot building-killer."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "energy",
+    "weapon",
+    "theft",
+    "ai",
+    "corporate",
+    "power",
+    "rain",
+    "vehicle",
+    "train",
+    "armor",
+    "tier 4"
+  ]
+}

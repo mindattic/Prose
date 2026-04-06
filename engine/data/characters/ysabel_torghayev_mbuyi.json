@@ -1,0 +1,239 @@
+{
+  "id": "019d6143a72d7595b50bc63de7827e67",
+  "type": "character",
+  "name": "Ysabel Torghayev-Mbuyi",
+  "aliases": [
+    "Tía Ysa",
+    "The Widow"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Grandmother raising two grandchildren; former Axiom administrative coordinator, now pension-dependent",
+  "age": 63,
+  "status": "active",
+  "location": "Montclare Quiet, third-floor walkup apartment above a synthetic food cooperative",
+  "description": "Ysabel is a compact, kinetic woman who moves like someone with a permanent to-do list she is racing against. Her heritage is Kazakh and Congolese on one side, Basque and Filipina on the other, and she has inherited a particular combination of high cheekbones, deep-set dark eyes, and a complexion the color of strong tea that she has never once thought about because there has always been something more pressing to think about. Her hair is natural black with silver threading through it, worn in a practical knot held by whatever is nearby — today a stylus, yesterday a fork. She has a small blue bioluminescent patch on her left collarbone, a cosmetic genemod she got when her daughter was still alive and the two of them went together; she has never removed it.\n\nShe worked for Axiom Corp for twenty-one years as an administrative coordinator, which is a title that means she was the person who actually made things function while people with better titles collected the credit. She retired at 58 when her daughter and son-in-law were killed in a transit accident — the same Ferrogate collapse that took Dragomir Achebe-Qalashani's leg, though they have never met — and she became the primary caregiver for her grandchildren Kojo, now 11, and Amara, now 8. Her pension from Axiom is tier-2 and she is meticulous about budgeting it, but every time she gets a small surplus she spends it on the children's education supplements rather than herself. She is holding together so completely on the outside that almost no one has noticed she has not fully processed her daughter's death.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.6,
+      "id": 0.45,
+      "shadow": 0.35,
+      "mask": 0.7,
+      "ghost": 0.55
+    },
+    "core_fears": [
+      "That she will die before the children are old enough to manage without her",
+      "That she will eventually break in front of them and they will see how close to the edge she is"
+    ],
+    "core_desires": [
+      "To give Kojo and Amara a stable enough life that they don't inherit her scarcity",
+      "To understand what actually caused the Ferrogate collapse that killed her daughter"
+    ],
+    "coping_mechanisms": [
+      "Relentless activity that leaves no space for grief",
+      "Hypervigilant budgeting as a form of control over an uncontrollable situation",
+      "The bioluminescent patch — she touches it when overwhelmed, as if her daughter can feel it"
+    ],
+    "blind_spots": [
+      "Refuses to ask for help even when she desperately needs it; interprets offers of assistance as pity",
+      "So focused on the children's future she has not investigated the accident because investigating would mean feeling it"
+    ],
+    "secret": "She received a private settlement from Ferrogate after her daughter's death — significantly more than the standard accident settlement — with a non-disclosure clause attached. She signed it because she needed the money for the children. She thinks about it almost every day and has never told anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Efficient and practical; corporate administrative precision from her Axiom years mixed with the warm diminutives she uses with the children that leak into adult conversations",
+    "cadence": "Quick and organized; she speaks in list-structures; she is always slightly in a hurry",
+    "verbal_tics": [
+      "'Right, so—'",
+      "Uses children's names as anchors in her own sentences even when they're not present ('Kojo would say—')",
+      "Short exhale through the nose when she is suppressing something"
+    ],
+    "example_lines": [
+      "'I have forty-five minutes between pickup and when the cooperative closes its daily accounting, so tell me what you need and let's be specific.'",
+      "'She would have hated that I signed it. She was always braver than me. I keep telling myself I did it for the kids. I did do it for the kids. That's not the whole story.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Kojo, age 11, has started following an older kid into parts of Montclare Quiet that Ysabel knows are not safe, and she needs help she won't ask for directly",
+    "A journalist working on the Ferrogate collapse contacts her about the NDA settlement and she has to decide — for the first time — whether her daughter's story is worth more than her security"
+  ],
+  "narrative_function": "Humanizing civilian anchor; represents the generational cost of corporate accidents; potential quest giver when the children get into trouble or when she discovers something about the Ferrogate accident she was never meant to know; emotional touchstone",
+  "augmentations": "Small bioluminescent blue patch on left collarbone (cosmetic genemod, no longer wanted but kept for sentimental reasons); reading lens implant in left eye (corrective, basic model)",
+  "daily_life": "Gets the children ready and walks them to the local education node, then works a half-shift at the food cooperative downstairs in exchange for reduced meal costs, then collects the children, oversees homework, makes dinner, falls asleep over her budget spreadsheets.",
+  "affiliation": "Axiom Corp (pension); Montclare Quiet Parents' Cooperative; synthetic food co-op downstairs",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -2,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Grief-Masked",
+      "Caregiver Load",
+      "Bureaucratic Fluency",
+      "NDA Holder",
+      "Quietly Extraordinary"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Children's stability comes first in every calculation",
+      "Never let anyone see the budget is actually at breaking point",
+      "Accept help only when it is offered as exchange, not charity"
+    ],
+    "escalation_ladder": [
+      "Polite efficiency and redirection",
+      "Direct statement of what she needs and what she can offer in return",
+      "Controlled anger — she can be very precise about it when it comes",
+      "Full vulnerability — rare, destabilizing for her, and only for people who have truly earned it"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Brisk and pleasant; assesses within seconds whether they are a resource, neutral, or a drain; will be kind to all three but allocate differently",
+      "friends": "Warm in action rather than words; shows up; brings food; remembers what you need without asking again"
+    },
+    "stress_responses": {
+      "low": "Reorganizes the apartment; meal preps aggressively",
+      "medium": "Becomes very precise and slightly sharp in speech; the list-structures get longer",
+      "high": "Goes very still; touches the bioluminescent patch; goes through budget spreadsheets at 0200 as a form of catastrophe-modelling"
+    },
+    "contradictions": [
+      "She is the person everyone in Montclare Quiet goes to when they need to think through a problem clearly, but she cannot apply the same clarity to her own grief"
+    ],
+    "habits": [
+      "Checks the children's education node performance metrics every evening",
+      "Makes a small data offering to the building's E.L.F. shrine every Sunday — she is not sure she believes but her daughter did",
+      "Keeps the Ferrogate settlement documents in a physical lockbox she has not opened in two years"
+    ],
+    "breaking_points": [
+      "If either grandchild is seriously harmed, the NDA becomes meaningless to her immediately"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Montclare Quiet; mixed Kazakh-Congolese-Basque-Filipina family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired by Axiom Corp as administrative assistant; rises to coordinator over eight years",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Gets bioluminescent genemod with her daughter Adaora as a birthday ritual",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Daughter Adaora and son-in-law killed in Ferrogate tunnel collapse",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Signs Ferrogate NDA settlement; becomes primary caregiver for Kojo and Amara",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Retires from Axiom on pension; begins cooperative work downstairs",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

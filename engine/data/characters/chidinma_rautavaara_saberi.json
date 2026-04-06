@@ -1,0 +1,251 @@
+{
+  "id": "019d6143a5dc756598a690baa8d3d673",
+  "type": "character",
+  "name": "Chidinma Rautavaara-Saberi",
+  "aliases": [
+    "Dina",
+    "Dina the Pack"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "wandering trader and caravan member, deals in small luxuries and contraband comfort items",
+  "age": 34,
+  "status": "active",
+  "location": "Grand Crossing Gate market stalls, currently stall seven (temporary)",
+  "description": "Chidinma wears the caravan on her body like a second skin — she is draped in the layered evidence of ten years of wandering trade routes, and the effect is simultaneously chaotic and perfectly intentional. Her dark brown skin is warm and clear except for three thin ritual scars on her left cheekbone, and her hair grows in a massive natural cloud that she pins with whatever she has at hand: transit tokens, stylus caps, a single wing-shaped bone clasp that came from somewhere she won't specify. Her irises are modified to display a slow-spinning geometric pattern, amber and rust, which she uses as a distraction tool in negotiations more often than she admits. She is medium-height and stocky, with the particular physical confidence of someone accustomed to moving heavy loads.\n\nChidinma runs a one-woman mobile trade operation between the outer transit corridors, specializing in the categories of goods that regulated markets won't carry — not weapons or pharmaceuticals, but the strange soft contraband of a corponation city: unbranded food that doesn't carry a Zheng-Dao or Axiom nutritional stamp, books printed on actual paper, unlicensed music files, hand-made items that would violate Ringo manufacturing monopolies, and the occasional comfort object from somewhere far away that someone desperately needs to feel like themselves again. She is not sentimental about this. It is commerce. But she is extremely good at identifying what a person actually needs, which is the core of the business.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.3,
+      "id": 0.7,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "being locked into a single location permanently",
+      "her supplier network collapsing and leaving her with nothing to trade"
+    ],
+    "core_desires": [
+      "to accumulate enough capital to fund a full caravan of her own",
+      "to find the specific type of hand-carved wooden comb made in the village her grandmother came from — she has been looking for years and is not quite willing to admit why"
+    ],
+    "coping_mechanisms": [
+      "constant forward motion — she is uncomfortable when she stays in one place more than two weeks",
+      "humor that functions as deflection",
+      "obsessive inventory management"
+    ],
+    "blind_spots": [
+      "reads financial transactions with exceptional clarity but is genuinely blind to when people are attached to her emotionally, tends to interpret all relationship gestures as part of a transaction she doesn't understand"
+    ],
+    "secret": "The 'accounting dispute' that split her from her last caravan was actually a cover story. She witnessed caravan leadership broker a deal that would have handed transit route information to Ferrogate Transit in exchange for safe passage, which would have gotten several Q-zero families using the route captured. She sabotaged the deal and then had to leave before anyone figured out it was her. One of the caravan leaders is still looking for whoever did it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Mercantile precision mixed with warm market-trader patter; code-switches into Igbo when doing mental calculations she doesn't want overheard",
+    "cadence": "Energetic and rhythmic, like someone who has made the same pitch a thousand times and still believes in it",
+    "verbal_tics": [
+      "'Listen, here's the thing—'",
+      "repeating the last word of a question back to you with a slight upward tone before answering",
+      "'Exactly right, exactly right' (used whether or not the thing said is correct)"
+    ],
+    "example_lines": [
+      "'Listen, here's the thing — you want the Zheng-Dao stamp on your food, you can get it anywhere. You want food that actually tastes like something, you come to me.'",
+      "'Exactly right, exactly right. Now — are you buying or are we still in the part where you pretend you're not buying?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "One of Chidinma's regular customers — a Q-zero family she supplies with food and comfort goods — has gone missing from their usual location, and she is asking questions carefully because she can't ask officially",
+    "A Ferrogate Transit investigator has been watching her stall for three days and she knows it; she needs help determining whether this is about the caravan sabotage or something else entirely"
+  ],
+  "narrative_function": "Equipment and goods source for players operating outside official markets, information broker (she hears everything at the stall), quest giver for trade route problems and supplier disputes, window into the informal economy of Meridian 88.",
+  "augmentations": "Patterned irises, amber and rust geometric (cosmetic mod, installed age 24). Enhanced scent glands, subtle — helps her assess goods quality and detect synthetic substitutes. Sub-dermal storage pocket in left forearm (small, holds data chips and small valuables).",
+  "daily_life": "Sets up her stall at Grand Crossing Gate before first light to get a good position, trades until mid-afternoon, then walks the corridors with a pack to reach customers who can't come to her; evenings spent restocking, repairing, and managing her network of supplier contacts via encrypted message channels.",
+  "affiliation": "Loosely part of the Grand Crossing itinerant trader collective, no formal caravan affiliation currently (between caravans after a dispute she describes as 'a business disagreement about accounting')",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": -3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "wandering trader",
+      "informal economy",
+      "caravan member (independent)",
+      "patterned irises",
+      "sub-dermal storage"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never hold more inventory than you can carry in a single move",
+      "Information is a product; treat it accordingly",
+      "A deal is a deal — she will not break a completed transaction under any circumstances"
+    ],
+    "escalation_ladder": [
+      "Open with humor and price",
+      "Offer a better deal than they expected to disarm suspicion",
+      "Go completely businesslike and flat if threatened",
+      "Pack and relocate if the situation cannot be resolved commercially"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm, energetic, slightly performative — the market face; assessing them as customers from the first second",
+      "friends": "Drops the pitch energy, becomes genuinely curious and surprisingly direct about hard things"
+    },
+    "stress_responses": {
+      "low": "Becomes businesslike and efficient",
+      "medium": "Switches to Igbo calculations and goes very quiet",
+      "high": "Starts packing. Methodically. While still talking, as though nothing is happening."
+    },
+    "contradictions": [
+      "Claims she trades in goods, not relationships, but maintains supplier contacts with an almost personal loyalty that has cost her money more than once"
+    ],
+    "habits": [
+      "Touches every item in her pack in a specific order before sleeping as a stock-check ritual",
+      "Leaves a small payment at E.L.F. shrines near new stall locations — not devotion, she says, just professional courtesy",
+      "Eats the same meal every morning regardless of what she has available"
+    ],
+    "breaking_points": [
+      "Someone threatening to report a Q-zero supplier or customer to identity enforcement — she will burn a business relationship to prevent it without hesitation"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "patterned iris mod, amber-rust geometric (cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "patterned iris mod, amber-rust geometric (cosmetic)",
+      "replaces": ""
+    },
+    {
+      "name": "enhanced scent glands (subtle, commercial grade)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "enhanced scent glands (subtle, commercial grade)",
+      "replaces": ""
+    },
+    {
+      "name": "sub-dermal storage pocket, left forearm (small capacity)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "sub-dermal storage pocket, left forearm (small capacity)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Opportunist": 0.9,
+    "Info Broker": 0.9,
+    "Pragmatist": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 22: Joins first itinerant caravan at Grand Crossing Gate after losing transit housing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 24: Installs patterned iris mod with first significant trade profit",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 28: Achieves solo trade operation status, leaves caravan",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 31: Joins a larger caravan for the Escanaba-Kenosha winter circuit",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 33: Sabotages caravan's Ferrogate deal; leaves under cover of the 'accounting dispute' story",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 34: Present day — operating independently at Grand Crossing Gate",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

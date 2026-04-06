@@ -1,0 +1,48 @@
+{
+  "id": "019d6143aa4e70f8bfc266bf9202792e",
+  "name": "Sterling-Nakamura Blockchain Governance Protocol",
+  "brand_name": "Sterling",
+  "product_name": "Sterling-Nakamura Blockchain Governance Protocol",
+  "type": "technology",
+  "aliases": [
+    "BGP",
+    "Chain Law",
+    "Sterling Ledger",
+    "Trust Chain"
+  ],
+  "subcategory": "computing",
+  "description": "A distributed ledger system that records and enforces corporate contracts, property rights, and regulatory compliance through self-executing smart contracts. The BGP creates an immutable record of every agreement, transaction, and regulatory filing within its network, with built-in enforcement mechanisms that automatically execute penalties, transfer assets, and trigger compliance actions when contract conditions are met or violated. Sterling-Nakamura has positioned the BGP as the foundational legal infrastructure of corporate Meridian 88, where code is literally law.",
+  "tier_availability": "Tier 2+",
+  "developers": [
+    "STERLING-NAKAMURA",
+    "AXIOM SYSTEMS"
+  ],
+  "base_technologies": [
+    "Distributed ledger consensus mechanisms",
+    "Self-executing smart contract platforms",
+    "Immutable record cryptographic verification"
+  ],
+  "enables": [
+    "Automated contract enforcement",
+    "Immutable legal record keeping",
+    "Self-executing regulatory compliance",
+    "Trustless transaction verification"
+  ],
+  "social_impact": "The BGP has created a parallel legal system where contracts are enforced by code rather than courts. In theory, this eliminates corruption, bias, and legal delay. In practice, it encodes existing power imbalances into immutable algorithms — smart contracts written by corporate legal teams favor corporate interests, and once deployed, they cannot be modified by judicial appeal. The BGP has made legal outcomes predictable but has eliminated mercy, flexibility, and human judgment from contract enforcement.",
+  "story_hooks": [
+    "A BGP smart contract has been discovered with a hidden clause that activates under specific conditions no one anticipated — the clause transfers significant assets to an entity that does not appear to exist.",
+    "Someone has found a vulnerability in the BGP consensus mechanism that allows past records to be subtly modified — the immutable ledger is not immutable, and the implications for every contract in the system are catastrophic."
+  ],
+  "tags": [
+    "computing",
+    "technology",
+    "trust",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "rights",
+    "tier 2"
+  ]
+}

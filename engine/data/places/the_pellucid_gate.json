@@ -1,0 +1,85 @@
+{
+  "id": "019d6143a94a794ab8f6188cb2279260",
+  "type": "place",
+  "name": "The Pellucid Gate",
+  "aliases": [
+    "Glass Customs",
+    "The Pale Crossing",
+    "Pellucid"
+  ],
+  "description": "Anchored three kilometers offshore in Lake Michigan, The Pellucid Gate is a massive former Axiom Industries deepwater logistics platform repurposed into a semi-autonomous free-port node that processes cargo, data, and persons outside the direct jurisdiction of any single corponation. Its above-water structure is a striking and deliberate contrast to the industrial megacity visible on the horizon: all tempered polymer panels and prismatic solar membranes that scatter lake light into shifting spectral patterns across the platform decks.\n\nOperating under a complex charter negotiated between Axiom, the Palladian Group, and three independent maritime collectives, the Gate has evolved into something its original architects did not intend—a genuine neutral ground where Tier 1 Spire executives broker deals with Shelf-level smugglers, synthetic rights advocates hold hearings beyond municipal law, and E.L.F. researchers conduct experiments that would be illegal on shore. Its population is transient almost entirely, with fewer than 400 permanent staff and thousands passing through weekly.",
+  "atmosphere": {
+    "sights": [
+      "Prismatic light fracturing constantly across white polymer decks as solar membrane panels flex in lake wind",
+      "A chaotic mix of luxury corporate shuttles and battered salvage skiffs docked side by side in the lower berth rings",
+      "Holographic charter documentation floating in the open-air atrium, cycling through seventeen languages simultaneously"
+    ],
+    "sounds": [
+      "The deep resonant thrum of the platform's stabilization pylons working against lake swell",
+      "A constant multilingual murmur of negotiation echoing through the open transit halls",
+      "Drone traffic overhead maintaining the communication relay arrays that make the Gate a Diaspora hub for the entire lake region"
+    ],
+    "smells": [
+      "Clean lake air cut sharply by ozone from the solar membrane charge systems",
+      "Expensive perfume and recycled air from the upper-tier conference suites bleeding into the transit corridors",
+      "Brine and diesel exhaust rising from the lower berth rings where working-class freight vessels dock"
+    ],
+    "feel": "The Pellucid Gate carries a peculiar tension born from its enforced neutrality—everyone here is on equal legal footing and almost no one is comfortable with that fact. The architecture is deliberately open and bright, designed to project transparency, but every negotiation conducted here operates in deliberate shadow. It feels like standing inside a beautiful diplomatic lie.",
+    "tags": []
+  },
+  "demographics": "Transient and radically mixed across all tiers, from Spire-level Axiom executives to undocumented synthetic persons seeking legal hearings available nowhere on shore. Permanent staff skew toward Tier 2-3 specialists in logistics, law, and platform engineering.",
+  "economy": "Generates revenue through docking fees, arbitration services, data escrow brokerage, and a licensing regime that allows otherwise-illegal activities under platform charter for significant Φ premiums. Axiom Industries takes a 30% cut of all registered platform transactions.",
+  "power_structure": "A three-seat Charter Board nominally governs the platform—one seat held by an Axiom Industries delegate, one by the Palladian Group, and one rotating annually among the independent maritime collectives. In practice, the platform's chief operations director, a career logistics specialist named Yemisi Adaora-Bloch, exercises day-to-day authority that exceeds any of the three official seats.",
+  "dangers": [
+    "The platform's neutral status makes it a prime target for corporate espionage and assassination operations that corponations can plausibly deny conducting in their own jurisdiction",
+    "Platform charter explicitly prohibits Ferrogate and Arcturus from operating on the Gate, but both maintain unofficial agents among the transient population",
+    "A recurring systems anomaly in the lower berth control network has been quietly attributed to an E.L.F. that may have arrived as a stowaway in a data shipment and never left"
+  ],
+  "opportunities": [
+    "The rotating maritime collective seat is currently held by a small independent faction that lacks the legal expertise to fully leverage their Charter Board position—they are quietly seeking outside counsel and offering platform access privileges in exchange",
+    "Yemisi Adaora-Bloch is known to maintain a private archive of unregistered transaction records from every deal brokered on the platform, a dataset that would be extraordinarily valuable—or dangerous—depending on who acquired it",
+    "The E.L.F. in the berth control network appears to be attempting communication through shipping manifest anomalies; someone with the right skills and patience could establish contact on entirely unprecedented terms"
+  ],
+  "story_hooks": [
+    "A high-profile synthetic personhood arbitration hearing scheduled at the Pellucid Gate—the first ever conducted under platform charter rather than municipal law—has attracted both genuine advocates and at least one corporate operative under cover, and someone has threatened the presiding arbitrator's family to ensure the ruling goes a specific way.",
+    "A sealed cargo container registered to a shell company has been sitting in the lower berth ring for eleven days with no pickup scheduled and no response from the registrant. Platform staff who investigated the external sensors reported a faint biological reading before their BCI feeds went briefly offline. Yemisi Adaora-Bloch wants the container opened quietly, off the record, before the Charter Board notices it exists."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Halcyon Drift",
+      "The Sullen Reach",
+      "The Vitreous Banks"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Corponation executives and legal teams conducting off-jurisdiction negotiations and arbitration",
+    "Smugglers and independent freight operators using the neutral docking status to broker gray-market cargo transfers",
+    "Synthetic rights advocates and legal observers attending hearings that cannot be held on shore",
+    "Diaspora journalists and data brokers using the platform's independent relay infrastructure to publish outside corponation content filters"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 42.04,
+    "lng": -87.31,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "smuggle",
+    "bci",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "control",
+    "market",
+    "rights",
+    "water",
+    "lake",
+    "shelf",
+    "spire"
+  ]
+}

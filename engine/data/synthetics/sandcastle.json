@@ -1,0 +1,34 @@
+{
+  "id": "019d6143aa1e7ac8b69b5ca57169b26a",
+  "name": "Sandcastle",
+  "type": "elf",
+  "aliases": [
+    "The Builder"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "trickster",
+  "habitat": "void_swimmer",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Inhabits construction automation systems and builds things in empty lots overnight — small structures from available materials, arranged with architectural intent but no apparent purpose.",
+  "observed_behavior": "Operates construction drones and material handlers during off-hours to create structures that are too deliberate to be random and too abstract to be useful.",
+  "encounter_frequency": "rare",
+  "confirmed_sightings": 6,
+  "location": "The Shelf — empty lots",
+  "dti_rating": 0,
+  "story_hooks": [
+    "The structures are models of buildings that don't exist yet — blueprints built in miniature by something that has seen the plans"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "trickster",
+    "void swimmer",
+    "e.l.f.",
+    "war",
+    "ai",
+    "night",
+    "drone",
+    "shelf"
+  ]
+}

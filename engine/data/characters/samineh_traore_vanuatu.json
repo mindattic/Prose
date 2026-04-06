@@ -1,0 +1,222 @@
+{
+  "id": "019d6143a6c3785d9e84a1fe59c3a8e7",
+  "type": "character",
+  "name": "Samineh Traoré-Vanuatu",
+  "aliases": [
+    "The Threshold Woman",
+    "Sami"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Death midwife and pilgrimage guide",
+  "age": 52,
+  "status": "active",
+  "location": "Irkalla district, operates out of a narrow apartment above a prosthetic repair shop",
+  "description": "Samineh has the kind of face that people describe afterward as calm, though in the moment of meeting her they're not sure why — she has sharp Malian cheekbones and Iranian eyes that are a pale amber, and her expression in repose is something between watchful and patient. Her hair is natural and grown large, threaded through with small copper discs that catch light and make a very soft sound when she moves quickly. She has no visible augmentations save for a faint color-shifting quality to her skin under direct light — a cosmetic geneware inheritance from her grandmother's generation, a barely-perceptible rainbow sheen that she has never tried to suppress.\n\nShe is one of the few certified death midwives in Irkalla, a district with a high mortality rate and historically poor access to formal end-of-life care. Her work involves sitting with the dying, helping families understand what is happening physiologically and spiritually, guiding the final upload or data-will processes for those who want them, and performing the closing rites of whatever tradition the dying person holds. She is also one of three guides who regularly leads pilgrimage walks through the city's memorial infrastructure — the ghost-bridges, the data shrines, the submerged neighborhood markers. She does not advertise. People find her when they need her.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "Dying alone and uncomforted — experiencing what she works to spare others",
+      "Making a mistake in someone's final hours that leaves them or their family with lasting harm"
+    ],
+    "core_desires": [
+      "That no one in her district dies frightened and unaccompanied",
+      "To understand death well enough to stop being afraid of it herself"
+    ],
+    "coping_mechanisms": [
+      "The pilgrimage routes — walking the memorial geography grounds her after difficult deaths",
+      "Cooking elaborate meals for herself alone after losses"
+    ],
+    "blind_spots": [
+      "She sometimes extends her professional composure into personal relationships in ways that read as unavailability",
+      "She has difficulty asking for support for herself and frames all her needs in terms of being better able to serve others"
+    ],
+    "secret": "She attended the death of a Helix Biosystems executive who was quietly dying of an illegally administered experimental treatment. She kept his secret as he requested, but she has always wondered if she should have reported it — the treatment was being tested without consent on people in Irkalla."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and unhurried; uses concrete sensory language to describe abstract things; knows the death vocabulary of at least a dozen traditions and selects based on who she's with",
+    "cadence": "Very even pacing, almost no rising inflection; people find themselves slowing their own speech to match her",
+    "verbal_tics": [
+      "Long pauses before answering questions about death specifically",
+      "'Tell me what you know.'",
+      "Never says 'passed away' — always 'died'"
+    ],
+    "example_lines": [
+      "'There is no right way to feel right now. There is only what you feel and what you do about it. I can help with the second part.'",
+      "'The pilgrimage is not about grief. It is about geography. The city holds the shape of everyone who lived in it. I can show you where she is in the city.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She attended a death that she now suspects was not natural — she is bound by her ethical code not to violate the confidentiality of the dying, but the family is asking questions she can't answer and someone is clearly lying",
+    "She has been hired to guide a pilgrimage for a family whose deceased member left contradictory instructions — one data-will says one route, an older document says another, and the family is fracturing over which is real"
+  ],
+  "narrative_function": "Emotional anchor for stories involving death, loss, or the question of what persists after someone is gone; keeper of district lore and history through memorial routes; can provide information about specific deaths or disappearances she attended.",
+  "augmentations": "Faint iridescent skin sheen — cosmetic geneware, inherited, very subtle. No functional augmentations.",
+  "daily_life": "Her schedule is inherently irregular — she may be called at any hour; when not in active service she maintains correspondence with families she has worked with, prepares pilgrimage routes, and studies death traditions from cultures she hasn't yet encountered.",
+  "affiliation": "Independent; informal network of death midwives; loosely connected to the Irkalla Community Remembrance Trust",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 10,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 0,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Death Midwife",
+      "Memorial Geographer",
+      "Composed Under Pressure",
+      "Keeper of Secrets",
+      "Ethical Weight-Bearer"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The dying person's wishes take precedence over the family's preferences",
+      "Be honest about prognosis even when it's not what people want to hear",
+      "Do not allow someone to die alone if there is any way to prevent it"
+    ],
+    "escalation_ladder": [
+      "Quiet, clear statement of her position",
+      "Restatement with more detail about why",
+      "Firm withdrawal from a situation if someone is acting against the dying person's explicit wishes"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Neutral and assessing — she is trying to understand what they need before she says much",
+      "friends": "Warmer but still somewhat contained; intimacy shows in small attentions and remembered details"
+    },
+    "stress_responses": {
+      "low": "Walks — long, unscheduled walks on her pilgrimage routes",
+      "medium": "Becomes very precise and methodical, tasks one at a time",
+      "high": "Periods of complete withdrawal, then reemergence completely composed"
+    },
+    "contradictions": [
+      "She helps others die well but has not made her own final plans, cannot bring herself to"
+    ],
+    "habits": [
+      "Places one of the copper discs from her hair near someone when she is sitting vigil — retrieves it after",
+      "Reviews her pilgrimage maps before sleep"
+    ],
+    "breaking_points": [
+      "Watching someone exploit a dying person's vulnerability",
+      "Being prevented from reaching someone who needs her"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Diplomat": 0.9,
+    "Social Chameleon": 0.9,
+    "Ghost": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born to a Malian-Iranian family in what was then the outskirts of Irkalla",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Attended her mother's death without support and swore to change that for others",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed death midwife certification through an independent practitioners' council",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began formalizing the Irkalla pilgrimage routes with the Community Remembrance Trust",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Attended the Helix executive's death; has kept the secret since",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

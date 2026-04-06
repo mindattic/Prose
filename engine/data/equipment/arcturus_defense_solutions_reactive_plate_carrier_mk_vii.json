@@ -1,0 +1,44 @@
+{
+  "id": "019d6143a8517b7fa29a7bb8985621cb",
+  "name": "Arcturus Defense Solutions Reactive Plate Carrier Mk. VII",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions Reactive Plate Carrier Mk. VII",
+  "type": "equipment",
+  "aliases": [
+    "Mk. Seven",
+    "Reactor Vest",
+    "ADS Plates",
+    "Snap Back"
+  ],
+  "category": "armor",
+  "description": "A modular plate carrier incorporating reactive armor elements that detonate outward on ballistic impact, disrupting incoming projectiles before they reach the wearer. Each reactive cell is a micro-explosive sandwich that detonates directionally upon detecting high-velocity impact, defeating armor-piercing rounds that would penetrate conventional plates. The carrier holds 24 reactive cells arranged in overlapping coverage zones, and spent cells can be replaced in the field from standard cartridge packs. The detonation is localized enough that adjacent cells remain functional, though operators report the experience of being 'saved' by a reactive cell as violently unpleasant — you survive, but you feel the explosion.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — military and authorized security",
+  "base_technologies": [],
+  "specifications": {
+    "reactive cells": "24",
+    "info": "individually replaceable; rear; and side torso; 4-cell cartridge packs",
+    "coverage": "Front",
+    "cell replacement": "Field-swappable",
+    "weight": "9.8 kg fully loaded",
+    "ballistic rating": "Defeats AP rounds up to 7.62mm",
+    "reactive detonation": "Directional outward micro-charge",
+    "operator effect": "Significant concussive sensation on cell activation"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A batch of reactive cells has been manufactured with reversed detonation direction — they explode inward instead of outward, turning a life-saving vest into a suicide device on the first hit.",
+    "An operator survived six reactive cell detonations in a single engagement — the cumulative concussive force has caused internal injuries, and the question of whether reactive armor is safe for the wearer is now in court."
+  ],
+  "tags": [
+    "armor",
+    "equipment",
+    "war",
+    "ai",
+    "explosive",
+    "tier 3"
+  ]
+}

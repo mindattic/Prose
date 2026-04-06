@@ -1,0 +1,66 @@
+{
+  "id": "019d6143a8637231880f05458a64ba8f",
+  "name": "Ouroboros Energy Thermal Glider — 'The Lammergeier'",
+  "brand_name": "Ouroboros",
+  "product_name": "Ouroboros Energy Thermal Glider — 'The Lammergeier'",
+  "type": "equipment",
+  "aliases": [
+    "Lammergeier",
+    "Thermal Glider",
+    "Bone Kite",
+    "Ouroboros Wing"
+  ],
+  "category": "vehicle",
+  "description": "The Lammergeier is an unpowered thermal soaring platform developed by Ouroboros Energy as a byproduct of their atmospheric heat mapping research — the company needed a low-cost, long-endurance observation platform for monitoring thermal columns above their industrial energy installations, and the result was a vehicle that accidentally became one of the most capable covert aerial platforms in Meridian 88. The airframe is a swept-wing glider with a 9-meter wingspan built from aerogel-composite panels that are nearly invisible on radar and produce no heat signature because the vehicle carries no engine. Lift is generated entirely through exploitation of thermal columns — the rising heat plumes produced in abundance by Meridian 88's industrial density.\n\nThe Lammergeier's Thermal Navigation System is the vehicle's core intelligence — a suite of atmospheric pressure and temperature sensors linked to a predictive soaring algorithm that identifies and routes the glider between thermal columns with minimal operator input. An experienced pilot can fly indefinitely over the industrial districts, riding the city's waste heat as fuel. The vehicle seats one in a prone configuration, reducing frontal profile to under 0.4 square meters. Communication and sensor systems are passive-only by default — the glider listens and observes without transmitting, making it electronically silent during operations. Data is stored onboard and offloaded after landing.\n\nThe Lammergeier is used by Ouroboros for legitimate atmospheric monitoring, but the platform's properties — no engine, no emissions, no active transmissions, radar-near-invisible — make it extraordinarily attractive for surveillance, courier drops, and infiltration overwatch. It is not fast and it cannot operate in rain or low-thermal conditions, but over the right terrain and under the right atmospheric conditions, it is effectively undetectable. Operators who know Meridian 88's thermal geography can cross the entire city without touching the ground.",
+  "manufacturer": "OUROBOROS ENERGY",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Aerogel-Composite Airframe",
+    "Thermal Navigation System (TNS)",
+    "Passive Atmospheric Pressure/Temperature Array",
+    "Predictive Soaring Algorithm",
+    "Prone Single-Occupant Configuration",
+    "Passive-Only Sensor and Communication Suite"
+  ],
+  "specifications": {
+    "crew": "1 pilot (prone)",
+    "wingspan": "9.2m (foldable to 1.8m for transport)",
+    "propulsion": "None — thermal soaring only",
+    "glide_ratio": "48:1",
+    "cruise_altitude": "200m–1,800m operational band",
+    "endurance": "Indefinite over active thermal terrain; 90 minutes over cold terrain",
+    "radar_cross_section": "0.006 m² (comparable to large bird)",
+    "heat_signature": "Ambient — indistinguishable from atmospheric background",
+    "payload": "60 kg pilot + 20 kg cargo hardpoint",
+    "stall_speed": "42 km/h"
+  },
+  "tactical_use": "The Lammergeier is deployed for extended aerial surveillance, overwatch positioning, and courier drop operations where the use of a powered aircraft would trigger detection or licensing review. Intelligence operatives use it to observe target locations over multiple hours without generating any detectable signature. The cargo hardpoint accepts sensor pods, drop packages, or communication relay nodes. In infiltration operations, the glider serves as an insertion platform — a pilot can approach a target facility from altitude and land on rooftop access points with near-zero acoustic signature. Extraction by Lammergeier requires thermal conditions that allow takeoff, which limits its reliability as an exfil platform.",
+  "cultural_context": "The Lammergeier is named for a bone-eating vulture, a choice that reflects both the vehicle's soaring profile and Ouroboros Energy's habit of naming products after scavengers and cycles. Among the small community of operators who use the platform, there is a pronounced culture of atmospheric expertise — Lammergeier pilots develop detailed personal knowledge of Meridian 88's thermal geography, tracking how industrial output cycles affect soaring conditions at different times of day and season. This knowledge is considered proprietary and is rarely shared. The best Lammergeier pilots in the city are known by reputation only, identified by the cargo they've delivered and the things they've seen.",
+  "known_users": [
+    "Ouroboros Energy atmospheric monitoring teams",
+    "Intelligence and surveillance contractors",
+    "High-value courier specialists",
+    "Infiltration and overwatch operatives",
+    "Independent aerial scouts"
+  ],
+  "story_hooks": [
+    "A Lammergeier was found landed on the roof of a secure facility with no pilot aboard — the cargo hardpoint was empty, but the onboard sensor log captured twelve hours of data that someone clearly wanted.",
+    "Ouroboros Energy's atmospheric monitoring program has been producing reports that don't match public data — someone is using the Lammergeier fleet to observe things that have nothing to do with thermal columns.",
+    "The players need aerial overwatch for an operation in a district with active anti-air defenses. The only platform that can operate there undetected is a Lammergeier, and the one pilot who knows those thermals wants something in return.",
+    "A Lammergeier pilot has been missing for three days. Their last known position was directly above a corporate black site, and the onboard data recorder is somewhere in the facility below."
+  ],
+  "tags": [
+    "vehicle",
+    "equipment",
+    "ai",
+    "corporate",
+    "contract",
+    "surveillance",
+    "power",
+    "rooftop",
+    "rain",
+    "energy",
+    "tier 2"
+  ]
+}

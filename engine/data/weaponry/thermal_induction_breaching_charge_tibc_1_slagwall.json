@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab547a31af942256b4c1c220",
+  "name": "Thermal Induction Breaching Charge TIBC-1 'Slagwall'",
+  "type": "weapon",
+  "aliases": [
+    "Slagwall",
+    "TIBC-1",
+    "The Opener",
+    "Meltkey"
+  ],
+  "category": "explosive",
+  "description": "The TIBC-1 is a magnetically-attached breaching device that uses a staged linear magnetic acceleration system to drive a superheated copper plasma jet through structural barriers at velocities exceeding 2,400 meters per second. Unlike conventional shaped charges that rely on chemical explosive force alone, the Slagwall's magnetic acceleration stage adds a secondary kinetic component that allows it to defeat composite armor plating, reinforced corporate vault doors, and the layered ceramic-steel construction standard in Meridian 88's high-security facilities. The device adheres via four industrial-grade magnetic feet and arms automatically upon contact with ferrous surfaces.",
+  "manufacturer": "PALLADIAN CONSTRUCTION",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Linear magnetic acceleration",
+    "Shaped plasma jet formation",
+    "Magnetically augmented penetration"
+  ],
+  "specifications": "weight: 2.3 kg\ndimensions: 22 cm x 18 cm x 6 cm\npenetration rating: Up to 28 cm reinforced composite\nplasma jet velocity: ~2,400 m/s\ndetonation modes: Immediate (0.5 second arm), Delayed (5–60 seconds), Remote\nsafe standoff distance: 12 m minimum\nmagnetic adhesion rating: Holds on vertical ferrous surfaces up to 40 kg lateral load\nback-blast hazard: Severe — 4 m rear exclusion zone",
+  "tactical_use": "Purpose-built for breach operations against hardened facilities. Security contractors slap a TIBC-1 on a vault door, pull the pin, and move to standoff — the plasma jet burns a 30 cm entry hole through most barriers in under a second, allowing immediate follow-through. The magnetic auto-arm feature means it can be deployed on moving vehicles or in low-visibility conditions. PALLADIAN originally developed it for demolition and salvage operations; the security contracting market discovered it independently.",
+  "cultural_context": "The TIBC-1 is technically licensed for construction and demolition use in Meridian 88, which creates a persistent legal headache for law enforcement — it is functionally identical whether purchased by a salvage crew or a heist team. PALLADIAN CONSTRUCTION sells them openly at industrial supply depots, and the licensing requirement is enforced inconsistently enough that anyone with a fabricated contractor ID can walk out with one. It has become the definitive heist weapon in the city's criminal lexicon.",
+  "known_users": [
+    "Licensed demolition and salvage crews",
+    "Corporate vault breach teams",
+    "Heist crews and high-end burglars",
+    "PALLADIAN CONSTRUCTION internal security (ironic)",
+    "Infrastructure saboteurs targeting transit tunnels"
+  ],
+  "story_hooks": [
+    "A PALLADIAN depot reports a shipment of TIBC-1 units stolen — forty units, enough to breach every major corporate vault in the financial district simultaneously. The theft was inside the depot's own delivery schedule.",
+    "A runner is hired to plant a TIBC-1 on a specific wall in a corporate building, no questions asked. The wall's location, when mapped, sits directly adjacent to the building's primary life support control room.",
+    "A salvage crew using a legitimately licensed TIBC-1 accidentally breaches into a sealed sublevel that doesn't appear on any city plan — and what's inside has been sealed for twenty years."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "theft",
+    "heist",
+    "augment",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "tunnel",
+    "market",
+    "bar",
+    "vehicle",
+    "chase",
+    "armor",
+    "tier 3"
+  ]
+}

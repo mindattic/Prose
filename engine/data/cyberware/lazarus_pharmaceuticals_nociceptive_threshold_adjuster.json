@@ -1,0 +1,62 @@
+{
+  "id": "019d6143a7c17097b75f853d177e8d50",
+  "name": "Lazarus Pharmaceuticals Nociceptive Threshold Adjuster",
+  "brand_name": "Lazarus",
+  "product_name": "Lazarus Pharmaceuticals Nociceptive Threshold Adjuster",
+  "type": "cyberware",
+  "aliases": [
+    "The Mercy Switch",
+    "The Dial",
+    "Quietpain"
+  ],
+  "category": "augmentation",
+  "body_location": "",
+  "description": "The Nociceptive Threshold Adjuster is a spinal cord implant seated at the dorsal horn of the lumbar spine, where pain signals from the peripheral nervous system enter the central nervous system for processing and relay. A biocompatible electrode array wraps the relevant spinal segments and continuously monitors incoming nociceptive traffic — the raw signal load of pain — applying variable-frequency counter-current stimulation to modulate how much of that signal reaches conscious perception. At its lowest setting, the NTA provides mild analgesic relief comparable to pharmaceutical intervention. At its upper range, it can reduce the perceived intensity of severe traumatic injury to a manageable background discomfort, allowing a carrier to continue functioning through damage that would incapacitate an unaugmented person.\n\nLazarus positions the NTA as a compassionate medical device — a tool for chronic pain patients, combat trauma survivors, and workers in high-injury environments who cannot afford the recovery time that normal pain demands. The clinical framing is accurate. The NTA genuinely improves quality of life for people in persistent pain, and Lazarus's licensed surgical network has implanted tens of thousands of units in Meridian 88's labor tiers. But the device's tactical implications are equally obvious: a person who can choose how much pain they feel is a person who can keep fighting, keep working, keep moving through damage that should stop them. Lazarus's military distribution arm sells a hardened variant with a manual override lockout that prevents involuntary deactivation.\n\nThe danger the implant's own documentation acknowledges is deceptively simple: pain exists for reasons. It communicates tissue damage, organ failure, the body's need to stop. A carrier running the NTA at maximum suppression loses that communication entirely. They can sustain catastrophic internal injuries and feel only a dull pressure. Field medics across Meridian 88's conflict zones have a grim term for carriers they find after extended high-suppression operations: 'quiet casualties' — people who kept going until something that should have been survivable became fatal, because they never received the signal to stop.",
+  "manufacturer": "LAZARUS PHARMACEUTICALS",
+  "tier_availability": "Tier 1+",
+  "legality": "Licensed",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"implant_site\":\"Lumbar dorsal horn, L1–L5 spinal segments\",\"threshold_range\":\"10% suppression (mild analgesic) to 94% suppression (near-total block)\",\"adjustment_method\":\"Subdermal rotary dial (lower back) or paired Lazarus device\",\"response_latency\":\"Pain suppression onset: 0.8 seconds from adjustment\",\"power_draw\":\"Bioelectric harvest, 0.6W sustained at maximum suppression\",\"monitoring\":\"Nociceptive traffic load logging; optional alert threshold for signal spikes\",\"military_variant\":\"Hardened casing, manual override lockout, remote operator control\",\"contraindications\":\"Contraindicated with Helix Biosystems Autonomic Shunt Array (signal conflict)\"}",
+  "side_effects": [],
+  "cultural_context": "The NTA is ubiquitous in Meridian 88's labor and combat tiers — cheap enough to be accessible, useful enough to be nearly universal among anyone who does physical work in dangerous conditions. The cultural shorthand for someone running high suppression is 'dialed up,' and it carries a double meaning: functional and dangerous, capable and quietly self-destructive. There is a fatalistic pride among workers who wear their dial-setting as a badge — 'I work at eighty and I'll worry about it later' — and a corresponding grief among the people who watch them deteriorate. The Mercy Switch's nickname comes from its use in terminal care, where Lazarus markets a palliative configuration that its practitioners call the most humane thing the company has ever made.",
+  "known_users": [
+    "Meridian construction and salvage labor tier workers",
+    "Combat operatives in all Tier 2–4 conflict zones",
+    "Lazarus Pharmaceuticals clinical chronic pain patients",
+    "Field medics performing self-surgery in active zones",
+    "Brennan Ost — veteran breacher known for running 90% suppression and the visible damage it has done"
+  ],
+  "story_hooks": [
+    "A corporate operative was found dead of injuries that should have been survivable — except their NTA was locked at maximum suppression by a remote operator command, and they never felt the signal to stop. Someone with access to a Lazarus military command node is killing people cleanly and deniably.",
+    "A Lazarus clinical rep is quietly contacting NTA patients with a firmware update they're calling voluntary. The patients who take it report the dial no longer goes below 70%. No one at Lazarus will explain why.",
+    "The players need a contact to keep moving through an operation despite serious injury. The contact has an NTA. The question is not whether they can do it — it's whether they'll survive the debrief when the suppression comes off.",
+    "Someone is distributing unlicensed NTA units in the Sump Tier with no monitoring function and no upper limit on suppression. People are dying from injuries they never felt. The players have to find the source before the body count climbs further."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "augmentation",
+    "cyberware",
+    "combat",
+    "war",
+    "grief",
+    "augment",
+    "ai",
+    "elf",
+    "corporate",
+    "control",
+    "power",
+    "medical",
+    "surgery",
+    "clinic",
+    "injury",
+    "pain",
+    "market",
+    "bar",
+    "rain",
+    "train",
+    "tier 1"
+  ]
+}

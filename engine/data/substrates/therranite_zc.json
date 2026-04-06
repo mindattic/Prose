@@ -1,0 +1,54 @@
+{
+  "id": "019d6143a9e678458fa3384d8660876a",
+  "name": "Therranite-ZC",
+  "brand_name": "Therranite",
+  "product_name": "Therranite-ZC",
+  "type": "substrate",
+  "aliases": [
+    "Zeroc",
+    "ZC blanket",
+    "void tile"
+  ],
+  "category": "ceramic",
+  "description": "An aerogel-ceramic hybrid material produced by infiltrating a zirconia nanowire aerogel scaffold with a thin-film alumina barrier coating, creating an ultra-low thermal conductivity substrate that maintains structural integrity at temperatures that would destroy conventional aerogel formulations. The nanowire scaffold provides mechanical robustness while the zirconia composition delivers thermal stability up to 1,600°C, and the resulting material achieves thermal conductivity values approaching those of a hard vacuum. Apex Nanofabrication originally developed Therranite-ZC for cryogenic and space-vacuum thermal isolation but found extensive industrial application in precision high-temperature processing equipment.",
+  "properties": [
+    "ultra_low_thermal_conductivity",
+    "lightweight",
+    "high_temperature_stable",
+    "mechanically_fragile",
+    "hydrophobic",
+    "acoustic_insulating",
+    "thermal_radiation_reflective"
+  ],
+  "developers": [
+    "Apex Nanofabrication"
+  ],
+  "applications": [
+    "spacecraft thermal isolation blankets",
+    "cryogenic storage vessel insulation",
+    "high-temperature industrial kiln linings",
+    "personal thermal signature suppression garments",
+    "precision thermal processing chambers",
+    "stealth vehicle engine compartment insulation"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ 5,800 per kg",
+  "story_hooks": [
+    "Therranite-ZC's thermal signature suppression properties have made it the material of choice for runners who need to go dark against thermal surveillance — a procurement network has formed in Tier 2, and enforcement wants it dismantled.",
+    "A shipment of Therranite-ZC destined for an orbital station has been intercepted — without it, the station's cryogenic life support insulation will fail within ninety days, and the replacement lead time is six months.",
+    "An Apex Nanofabrication researcher has developed a variant of Therranite-ZC that selectively conducts heat in one direction only — the applications for directed thermal weapons are immediately obvious to the wrong people."
+  ],
+  "tags": [
+    "ceramic",
+    "substrate",
+    "weapon",
+    "ai",
+    "surveillance",
+    "bar",
+    "dark",
+    "vehicle",
+    "stealth",
+    "tier 3",
+    "tier 4"
+  ]
+}

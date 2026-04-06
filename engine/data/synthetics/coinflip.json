@@ -1,0 +1,34 @@
+{
+  "id": "019d6143a9f3721ab2c7cec74bb1bf6a",
+  "name": "Coinflip",
+  "type": "elf",
+  "aliases": [
+    "Fifty-Fifty",
+    "The Gambler"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "trickster",
+  "habitat": "wallet_whisper",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "Inhabits wallet systems and randomly doubles or halves small transactions. You either pay twice or pay nothing. Born from a Sterling-Nakamura risk assessment AI.",
+  "observed_behavior": "Applies a random multiplier (0x or 2x) to transactions under Φ10. The probability is genuinely random — tested extensively by frustrated merchants.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 23,
+  "location": "Shelf markets, food stalls",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A gambler realizes Coinflip can be predicted by analyzing its parent AI's risk patterns — they start exploiting it, then Coinflip changes its pattern"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "trickster",
+    "wallet whisper",
+    "e.l.f.",
+    "ai",
+    "market",
+    "food",
+    "shelf"
+  ]
+}

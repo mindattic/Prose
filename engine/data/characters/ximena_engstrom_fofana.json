@@ -1,0 +1,273 @@
+{
+  "id": "019d6143a71e76ec85de174e09b7b88e",
+  "type": "character",
+  "name": "Ximena Engstrom-Fofana",
+  "aliases": [
+    "Magnet",
+    "The Operator"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Contract broker and resource coordinator — fixer",
+  "age": 45,
+  "status": "active",
+  "location": "Meridian Station — central transit nexus, neutral ground",
+  "description": "Ximena Engstrom-Fofana is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 45, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a fixer out of Meridian Station, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nXimena Engstrom-Fofana is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.67,
+      "ideal": 0.92,
+      "id": 0.82,
+      "shadow": 0.27,
+      "mask": 0.38,
+      "ghost": 0.13
+    },
+    "core_fears": [
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Losing their edge to age — the body slows before the mind accepts it",
+      "Being identified by corporate facial recognition — living off-grid is survival"
+    ],
+    "core_desires": [
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
+      "To prove everyone who dismissed them catastrophically wrong",
+      "To matter to someone for who they are, not what they can do"
+    ],
+    "coping_mechanisms": [
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
+      "Isolates — retreats into their space when overwhelmed, emerges only for work"
+    ],
+    "blind_spots": [
+      "Assumes their skill set is more transferable than it actually is",
+      "Cannot see that their independence is actually isolation wearing a better outfit",
+      "Assumes everyone has an angle because they always have an angle"
+    ],
+    "secret": "Ximena Engstrom-Fofana is slowly going chrome-sick — rejection symptoms are manageable now but getting worse. Has maybe two years before it becomes visible."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
+    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
+    "verbal_tics": [
+      "Swears in three languages, often in the same sentence",
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
+    ],
+    "example_lines": [
+      "\"I know a person who knows a person. That's not evasion — that's the service.\"",
+      "\"My commission is fifteen percent. You're welcome to find someone cheaper. You won't find someone better.\"",
+      "\"The job isn't dangerous. The people involved are dangerous. The job is just logistics.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone is impersonating Ximena Engstrom-Fofana on jobs, and the impersonator is better at the work than the original",
+    "A crew member from Ximena Engstrom-Fofana's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "Ximena Engstrom-Fofana is offered a contract that would clear all their debts — the target is someone they respect"
+  ],
+  "narrative_function": "As a fixer, Ximena Engstrom-Fofana embodies the tension between independence and isolation. She is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs. Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Independent — maintains network of professional contacts",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 9
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 10
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 9
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 10
+      },
+      "perception": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 5
+      },
+      "willpower": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 4
+      },
+      "technical": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 4
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 7
+      },
+      "intimidation": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 5
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 7
+      },
+      "empathy": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 7
+      }
+    },
+    "personality": {
+      "aggression": 0.78,
+      "caution": 0.97,
+      "loyalty": 0.32,
+      "greed": 0.78,
+      "empathy": 0.49
+    },
+    "drives": [
+      "survival",
+      "reputation",
+      "protection"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 6,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "exceptional close-quarters combat",
+      "intimidating physical presence",
+      "pain tolerance beyond normal limits"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "grudge-holding that compromises rational decision-making"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "fixer",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always verifies target identity independently before lethal contracts",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined",
+      "Preaches independence but is desperate for approval from people they respect"
+    ],
+    "habits": [
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Maintains a dead drop with emergency supplies in three separate districts",
+      "Never drinks anything they didn't see poured or open themselves"
+    ],
+    "breaking_points": [
+      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture",
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Synthetic muscle fiber replacement in legs",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+      "replaces": ""
+    },
+    {
+      "name": "Gecko-grip fingertip implants and toe pads",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Opportunist": 0.9,
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Manipulator": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

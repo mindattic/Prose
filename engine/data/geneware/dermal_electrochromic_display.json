@@ -1,0 +1,49 @@
+{
+  "id": "019d6143a8a37fa9835415e51649c802",
+  "name": "Dermal Electrochromic Display",
+  "brand_name": "Dermal",
+  "product_name": "Dermal Electrochromic Display",
+  "type": "geneware",
+  "aliases": [
+    "Skin Screen",
+    "Flesh Display",
+    "Pixel Skin"
+  ],
+  "category": "cosmetic",
+  "target_system": "integumentary (high-resolution chromatophore display)",
+  "description": "The most advanced cosmetic chromatophore modification available — a dense array of individually addressable chromatophore cells that function as a biological display screen. The installation typically covers the inner forearm (a 'natural tablet') but can be placed anywhere on the body. The resolution is sufficient to display readable text, simple images, and low-frame-rate video. The display is controlled through a subdermal neural interface that accepts input from the user's thoughts or from external device connections. Common uses include displaying messages, showing maps, reading text, displaying caller ID during communications, and showing status information (time, health metrics, navigation). In the Shelf, forearm displays have replaced phones for many residents — the body IS the device. The display works by directing individual chromatophore cells to produce specific colors, creating a pixel grid in living skin.",
+  "source_organism": "Sepia officinalis (common cuttlefish, high-density chromatophore genes), synthetic neural display interface",
+  "manufacturer": "Zheng-Dao Bioelectric",
+  "tier_availability": "Tier 3+",
+  "legality": "Unrestricted",
+  "procedure": "Forearm dermal injection with chromatophore array and neural interface, 3 sessions",
+  "expression_time": "4–6 weeks for chromatophore array; neural interface calibration 2 months",
+  "reversibility": "Chromatophores removable; neural interface modifications persist",
+  "side_effects": [
+    "Display area skin is slightly raised and textured",
+    "Display flickers during illness or fatigue",
+    "Sunlight washes out the display — works best in indoor or low-light conditions",
+    "Neural interface can be hacked — unwanted content can be displayed on your skin",
+    "Rare: chromatophore array develops a stuck pixel — a single cell that won't change color"
+  ],
+  "social_perception": "Practical and increasingly mainstream. Forearm displays are replacing handheld devices among younger demographics. The modification blurs the line between geneware and cyberware — it's biological hardware. Fashion has adapted: sleeveless clothing showcases the display.",
+  "story_hooks": [
+    "A Skin Screen user's display begins showing content they didn't request — someone has hacked their neural interface and is using their arm as a billboard for messages they can't turn off",
+    "A dead body's forearm display is frozen on its last image — a map location that the victim was looking at when they died, pointing to wherever they were trying to go"
+  ],
+  "tags": [
+    "cosmetic",
+    "geneware",
+    "war",
+    "cyberware",
+    "neural",
+    "ai",
+    "synthetic",
+    "elf",
+    "control",
+    "fashion",
+    "clothing",
+    "shelf",
+    "tier 3"
+  ]
+}

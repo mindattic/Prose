@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab257f3fb1641d556c6eb1cb",
+  "name": "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
+  "type": "weapon",
+  "aliases": [
+    "Chalk",
+    "The Whitener",
+    "Bone Dry",
+    "Dissolve"
+  ],
+  "category": "energy",
+  "description": "The EBDP-4 delivers a pulsed electrolytic field tuned to disrupt the calcium hydroxyapatite mineral matrix of cortical bone. Rather than fracturing bone mechanically, the weapon induces rapid electrolytic demineralization — stripping calcium ions from the bone lattice through a process similar to accelerated osteoclast activity compressed into milliseconds. The result is a localized region of catastrophically weakened bone that fails under normal mechanical load, causing compound fractures from the target's own movement or the force of incidental contact.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Electrolytic demineralization projection",
+    "Calcium ion displacement field",
+    "Cortical bone lattice resonance targeting"
+  ],
+  "specifications": "length: 55 cm\nweight: 2.8 kg\npower source: Helix BioElec HBE-7 dual-cell\neffective range: 6–70 m\npulse frequency: 3.4 MHz electrolytic field\ndemineralization onset: Immediate on sustained hit (0.3 second minimum)\ntarget bone density reduction: 60–80% in affected region per full pulse\nshots per cell: 18 full pulses\nchassis: Medical-grade polymer housing (repurposed surgical device chassis)",
+  "tactical_use": "The EBDP-4 is used almost exclusively in ambush and assassination contexts. Operators typically deliver a pulse to a load-bearing structure — femur, tibia, or lumbar vertebrae — and then allow the target to continue moving until natural biomechanical stress causes the weakened bone to fail. The delayed collapse window (2–15 seconds of continued movement) allows an operator to disengage before the target falls, making attribution difficult. Some operators use it to pre-weaken a target before a physical confrontation, ensuring that even minor strikes will cause catastrophic structural failure.",
+  "cultural_context": "The EBDP-4 originated as a Helix Biosystems prototype for non-invasive bone density correction in degenerative disease patients — the demineralization function was intended to prepare bone tissue for remineralization therapy. The weaponized version surfaced on the black market roughly eighteen months after the prototype was shelved, suggesting an inside leak. In Meridian 88's underworld, being hit by Chalk is considered one of the most humiliating ways to be taken down — experienced criminals read the injury pattern and know the target was marked in advance, implying either betrayal or surveillance. Helix Biosystems publicly denies any connection to the weapon.",
+  "known_users": [
+    "High-end assassination contractors",
+    "Corporate intelligence wetwork operatives",
+    "Black-market surgeon 'Dr. Fallow' (known reseller)",
+    "Organized crime enforcer 'Ivory' (signature weapon)",
+    "Helix Biosystems internal security (rumored, denied)"
+  ],
+  "story_hooks": [
+    "A series of seemingly accidental falls and sports injuries among mid-level corporate managers are revealed to be EBDP-4 attacks — someone is running a long-term removal campaign designed to look like a bad luck streak.",
+    "A black-market dealer offers the party a EBDP-4 unit, but the weapon's internal logs contain targeting data for dozens of past operations — a treasure trove of evidence and a death sentence if the wrong people find out they have it.",
+    "Helix Biosystems hires the party to locate and destroy all existing EBDP-4 units before a regulatory investigation connects the weapon's design to their shelved medical prototype — but the party discovers the weapons were deliberately leaked by a Helix executive.",
+    "A player character begins experiencing unexplained bone fractures from minor impacts — a delayed-onset EBDP-4 pulse delivered days earlier is slowly destroying their skeletal structure, and they need the specific Helix antidote protocol before it reaches the spine."
+  ],
+  "ammunition_type": [
+    "Helix Biosystems Compact Power Cell HB-3"
+  ],
+  "tags": [
+    "energy",
+    "weapon",
+    "crime",
+    "betrayal",
+    "death",
+    "ai",
+    "corporate",
+    "contract",
+    "surveillance",
+    "power",
+    "medical",
+    "disease",
+    "injury",
+    "underworld",
+    "market",
+    "bar"
+  ]
+}

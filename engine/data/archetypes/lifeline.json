@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a57a79abb9557c1d08e233d8",
+  "name": "Lifeline",
+  "type": "archetype",
+  "category": "survival",
+  "description": "The connection between someone and survival",
+  "behavioral_signature": "Reaches into the dark to pull someone out",
+  "under_stress": "Stretches thinner but won't break",
+  "at_rest": "Maintains contact, checks in",
+  "will_always": [
+    "hold on to someone falling"
+  ],
+  "will_never": [
+    "let go while they can still help"
+  ],
+  "unless": [
+    "holding on is dragging them both down"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Provider",
+      "threshold": 0.8,
+      "context": "sustaining others"
+    },
+    {
+      "archetype": "Shoulder",
+      "threshold": 0.7,
+      "context": "support"
+    }
+  ],
+  "opposite_of": [
+    "Dead Weight"
+  ],
+  "tags": [
+    "connection",
+    "rescue"
+  ]
+}

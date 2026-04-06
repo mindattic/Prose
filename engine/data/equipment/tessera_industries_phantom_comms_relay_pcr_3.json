@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a8787204bc3634589956fb3d",
+  "name": "Tessera Industries Phantom Comms Relay PCR-3",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Industries Phantom Comms Relay PCR-3",
+  "type": "equipment",
+  "aliases": [
+    "Phantom Relay",
+    "PCR-3",
+    "Ghost Comm",
+    "Dark Relay"
+  ],
+  "category": "communications",
+  "description": "A covert communications relay device that can be concealed in walls, under floors, or inside furniture, creating a local encrypted mesh network that does not touch any existing communications infrastructure. The PCR-3 creates an independent communication channel between paired devices using frequency-hopping spread spectrum transmission that is virtually undetectable against the background electromagnetic noise of urban environments. Multiple relays can be daisy-chained to extend range, and the network auto-heals if individual relays are destroyed.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Prohibited — unauthorized communications infrastructure",
+  "base_technologies": [],
+  "specifications": {
+    "transmission": "Frequency-hopping spread spectrum",
+    "encryption": "512-bit rolling key",
+    "range per relay": "300 meters",
+    "daisy-chain": "Up to 20 relays per network",
+    "self-healing": "Automatic rerouting on relay loss",
+    "power": "30-day battery or hardwired",
+    "size": "8 cm x 5 cm x 2 cm",
+    "concealment": "Designed for in-wall/under-floor installation",
+    "detectability": "Below noise floor of standard RF scanners"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A sweep of a corporate building found a 15-relay PCR-3 network that had been operating for over a year — someone built a complete covert communications infrastructure inside the building without detection.",
+    "PCR-3 relays have been found in public infrastructure — street lights, bus stops, park benches — creating a city-wide covert communication network that anyone with paired devices can access."
+  ],
+  "tags": [
+    "communications",
+    "equipment",
+    "ai",
+    "corporate",
+    "dark",
+    "tier 3"
+  ]
+}

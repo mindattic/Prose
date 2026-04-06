@@ -17,12 +17,18 @@ public class FileSystemPathProvider : IPathProvider
     public string WorldbuildingDir => Path.Combine(Root, "worldbuilding");
     public string CharactersDir => Path.Combine(Root, "characters");
     public string EssencesDir => Path.Combine(Root, "essences");
-    public string StoriesDir => EnsureDir(Path.Combine(Root, "stories"));
-    public string EngineDataDir => EnsureDir(Path.Combine(Root, "engine_data"));
     public string NarrativeBiblePath => Path.Combine(Root, "narrative_bible.md");
     public string WorldDir => Path.Combine(Root, "world");
     public string FacetsDir => Path.Combine(Root, "character", "facets");
-    public string GraphDir => EnsureDir(Path.Combine(Root, "engine_data", "graph"));
+
+    // Everything under engine/
+    private string EngineRoot => Path.Combine(Root, Constants.Folders.Engine);
+    public string EngineDataDir => EnsureDir(Path.Combine(EngineRoot, "data"));
+    public string GraphDir => EnsureDir(Path.Combine(EngineRoot, "data", Constants.Folders.Graph));
+    public string StoriesDir => EnsureDir(Path.Combine(EngineRoot, "data", Constants.Folders.Stories));
+    public string LogDir => EnsureDir(Path.Combine(EngineRoot, Constants.Folders.Logs));
+    public string ExportDir => EnsureDir(Path.Combine(EngineRoot, Constants.Folders.Exports));
+    public string ArchiveDir => EnsureDir(Path.Combine(EngineRoot, Constants.Folders.Archives));
 
     private static string EnsureDir(string path)
     {

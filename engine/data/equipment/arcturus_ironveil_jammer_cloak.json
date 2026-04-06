@@ -1,0 +1,68 @@
+{
+  "id": "019d6143a8547de4bba39024abbb915e",
+  "name": "Arcturus Ironveil Jammer Cloak",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Ironveil Jammer Cloak",
+  "type": "equipment",
+  "aliases": [
+    "The Cloak",
+    "Ironveil",
+    "Faraday Ghost",
+    "Signal Coffin"
+  ],
+  "category": "comms",
+  "description": "The Arcturus Ironveil Jammer Cloak is a wearable signal suppression system built into a heavy-weave tactical coat lined with interlocking metamaterial panels that generate a localized electromagnetic interference field extending approximately three meters from the wearer in all directions. Unlike conventional jammers that broadcast disruptive noise across a spectrum, the Ironveil uses destructive wave interference — generating precise counter-signals that cancel incoming and outgoing transmissions at the wave level, producing a bubble of effective electromagnetic silence without the detectable jamming signature that draws security attention. Within the field, all wireless communication, remote detonation signals, tracking pings, and mesh-relay transmissions are suppressed.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Destructive wave interference cancellation",
+    "Metamaterial signal-absorbing fiber composite",
+    "Distributed micro-emitter array",
+    "Passive electromagnetic absorption lining",
+    "Tactile activation system"
+  ],
+  "specifications": {
+    "suppression_field_radius": "3 meters from wearer",
+    "suppression_method": "Active destructive wave interference; no detectable jamming broadcast signature",
+    "spectra_suppressed": "RF 300MHz–300GHz; standard mesh relay bands; remote detonation frequencies; GPS and positioning signals",
+    "battery_life": "4 hours continuous; replaceable cell, 90-second swap",
+    "activation": "Tactile pressure switch, left inner cuff",
+    "weight": "2.1kg including battery cell",
+    "appearance": "Tailored heavy-weave tactical coat; civilian styling, available in four colorways",
+    "detection": "Field itself is undetectable on standard sweeps; physical metamaterial lining detectable by advanced materials scan"
+  },
+  "tactical_use": "Operators use the Ironveil to create a communications blackout zone around a target, preventing distress signals, tracking pings, or automated emergency transmissions from escaping during an extraction or termination operation. Security teams walking point through the suppression field are effectively blind to mesh-relay intelligence, which creates tactical windows for ambush. Counter-use involves entering a building or secured area where electronic access systems rely on wireless authentication — the Ironveil renders these systems inoperable, forcing manual override or security escalation that can itself be exploited.",
+  "cultural_context": "The Ironveil's prohibited status has paradoxically elevated it to a kind of dark prestige item in Meridian 88's underworld. Owning one is a statement — it says you operate at a level where silencing a target's communications is a professional necessity rather than an incidental benefit. There is a grim shorthand in certain circles: if someone shows up wearing an Ironveil, the meeting was never meant to end with everyone walking away. Corporate security teams are trained to treat the identification of an active Ironveil field as an immediate lethal-threat escalation.",
+  "known_users": [
+    "Arcturus Defense Solutions extraction and termination contractors",
+    "High-tier assassins",
+    "Corporate kidnapping teams",
+    "Black-market arms dealers conducting sensitive transactions",
+    "Certain district-level crime bosses who wear one as a constant deterrent"
+  ],
+  "story_hooks": [
+    "The party is in a meeting when the room's mesh connectivity drops — someone nearby has activated an Ironveil, and no one at the table admits to owning one.",
+    "A witness the party is protecting disappears; their emergency beacon went silent at a precise moment that correlates with Ironveil field suppression, but the coat was never recovered at the scene.",
+    "An Arcturus Defense Solutions internal manifest lists twelve Ironveil units as 'field-destroyed' — but forensic analysis suggests they were resold to a private buyer through a shell procurement company.",
+    "A player character acquires an Ironveil only to discover its battery cell has been modified to transmit the field's activation timestamps to an unknown receiver — someone wants to know exactly when and where the coat is being used."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "war",
+    "crime",
+    "heist",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "underworld",
+    "market",
+    "rain",
+    "dark",
+    "train",
+    "tier 4"
+  ]
+}

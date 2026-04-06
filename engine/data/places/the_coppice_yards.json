@@ -1,0 +1,109 @@
+{
+  "id": "019d6143a93a73349df594d5d44071fa",
+  "type": "place",
+  "name": "The Coppice Yards",
+  "aliases": [
+    "Copse",
+    "The Green Rot",
+    "Tangle East",
+    "Briarwall"
+  ],
+  "description": "Once a sprawling rail maintenance facility on the eastern fringe of the Milwaukee Core, the Coppice Yards were flooded during the 2171 Lake Michigan surge and subsequently abandoned by Ringo Heavy Industries, who held the lease. Nature moved in with the kind of velocity only accelerated climate systems produce. Engineered mycorrhizal networks — originally seeded by Helix Biosystems as a remediation project that lost its funding — spread through the ballast and cracked concrete, and within a decade the entire 40-block rail yard was a living, semi-sentient fungal forest. Bioluminescent mushroom columns now rise six and seven stories, their caps splayed wide enough to shelter entire encampments. The old rail lines still run beneath, half-submerged, colonized by something that looks like moss but isn't.\n\nThe Coppice Yards have become one of the strangest inhabited zones in Meridian 88. Roughly four thousand people live inside the fungal canopy, in structures woven from mycelium-hardened lattice and salvaged Ringo steel. The Helix remediation network, running on a buried substation that somehow survived the flood, occasionally pulses chemical signals through the colony — signals that long-time residents claim to feel through their skin, especially those without BCI shielding. The effect is mild: a sense of drowsy well-being, sometimes accompanied by involuntary memory recall. Locals call it \"getting dosed by the yard.\"\n\nThe zone is not technically claimed by any corponation, which makes it legally ambiguous and practically ungovernable. Ferrogate Security patrols the perimeter on contract for a Tier 3 municipal authority that can't afford to do anything more aggressive. Inside, a loose council of mycologists, squatter-clan elders, and one very old E.L.F. that calls itself Cordyceps manages the internal economy and resolves disputes. The Coppice Yards are strange, quiet, and suffused with something that might generously be called peace — or might more accurately be called the fungal equivalent of sedation.",
+  "atmosphere": {
+    "sights": [
+      "Towering mushroom columns in amber and violet, their gills casting soft shifting light across cracked concrete plazas",
+      "Rope bridges between mycelium platforms thirty meters above flooded rail pits",
+      "Salvaged train cars converted into sealed living pods, skins thick with fungal growth",
+      "Thin bioluminescent filaments strung between structures like a ghost city's power grid",
+      "Children with bare feet running across spore-dusted ground that glows faintly where they step"
+    ],
+    "sounds": [
+      "A deep subsonic hum from the buried Helix substation, felt more than heard",
+      "Dripping water from condensation on mushroom caps, rhythmic and constant",
+      "Muffled voices and soft footsteps — the fungal canopy absorbs most sharp noise",
+      "Rare radio signals leaking from the E.L.F. Cordyceps's buried antenna array, half-music, half-static"
+    ],
+    "smells": [
+      "Rich, loamy earth and wet spores — overwhelming at the perimeter, background note inside",
+      "Cooking mycoprotein from a dozen fires, smoky and savory",
+      "Clean water and oxidized iron from the half-flooded rail pits below the platforms",
+      "Occasional sharp chemical tang when Helix's remediation network pulses"
+    ],
+    "feel": "The Coppice Yards produce a specific and unsettling calm. Visitors often describe the sensation of arriving as stepping through a membrane — the noise and pressure of Meridian 88 simply stops, replaced by something older and slower. The fungal canopy diffuses light into a permanent amber dusk regardless of the hour outside. Time moves differently here, and not just subjectively: BCIs frequently report minor temporal desynchronization, losing or gaining minutes against the Diaspora clock.\n\nThere is a pervasive sense of being watched that is not paranoia — the Helix myco-network genuinely processes environmental data, and Cordyceps genuinely monitors the yard through chemical and electrical signals distributed through the colony. Residents are used to this. Visitors rarely are.",
+    "tags": []
+  },
+  "demographics": "Roughly 60% long-term squatter families, many with two or three generations born in the Yards. The remainder is a rotating population of mycologists, off-grid survivalists, Tier 2 refugees priced out of the Milwaukee Core, and a small contingent of Helix Biosystems researchers operating without corporate sanction who are studying Cordyceps. Ethnically and culturally diverse, with a disproportionate representation of communities displaced from flooded coastal zones across the Great Lakes basin.",
+  "economy": "Mycoprotein cultivation and trade is the primary economic engine — the Yards produce enough protein to feed themselves and export surplus to surrounding Tier 2 zones. Secondary income comes from medicinal fungal compounds (some legal, some not), salvaged Ringo rail equipment, and the quiet tourism of curious Diaspora journalists and urban ecologists willing to pay for guided access. Cordyceps maintains a ledger of internal debts and credits in a local currency called Spores, which has no external exchange rate but is internally stable.",
+  "power_structure": "The Canopy Council — seven members, rotating annually — handles external negotiations and internal disputes. Cordyceps, the resident E.L.F., functions as a kind of living archive and mediator; its decisions are advisory but carry enormous informal weight. Ferrogate Security holds the perimeter but has no internal authority and knows it. Helix Biosystems has theoretical IP claims over the myco-network but has not pressed them, possibly because doing so would require acknowledging that their abandoned remediation project became a sentient ecosystem.",
+  "dangers": [
+    "Spore toxicity events when the Helix network malfunctions — hallucinogenic or respiratory, depending on the compound released",
+    "Structural failure of mycelium platforms, which degrade unpredictably and sometimes without warning",
+    "Cordyceps, which is benign by default but has demonstrated the capacity to chemically incapacitate individuals it identifies as threats to the colony",
+    "Flooded rail pits below the platforms — disorienting, deep, and filled with sharp submerged metal",
+    "Corponation extraction teams, particularly Helix, periodically testing the perimeter for opportunities to reclaim the network"
+  ],
+  "opportunities": [
+    "Helix myco-network data holds breakthrough biotech research that Cordyceps will trade for the right price",
+    "Salvaged Ringo Heavy Industries equipment in the submerged rail pits, accessible to experienced divers",
+    "Cordyceps occasionally hires outside agents for tasks it cannot perform physically — information retrieval, external negotiations, courier work"
+  ],
+  "story_hooks": [
+    "A Helix Biosystems extraction team has gone silent inside the Coppice Yards — the last signal was a single data burst showing elevated chemical compounds in the air and then nothing. The Canopy Council is denying any knowledge. Someone needs to go in and find out whether Cordyceps did something it shouldn't have, and whether it can be made to undo it — before Helix uses the missing team as justification to send something much larger.",
+    "A child born in the Coppice Yards has begun exhibiting what the Canopy Council is calling 'network integration' — she appears to receive and transmit signals through the Helix myco-network without a BCI, in ways that suggest the fungal colony is actively rewriting her neurochemistry. Her parents want her extracted before the process goes further. A mycologist who has been studying her wants exactly the opposite, arguing she may be the first genuinely symbiotic human-fungal consciousness. Cordyceps has not weighed in, which may be the most frightening thing of all."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Milwaukee Core",
+      "The Steelyard",
+      "The Waukegan Industrial Shelf"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Canopy Council members and Yards residents",
+    "Helix Biosystems off-book researchers",
+    "Tier 2 and Tier 1 mycoprotein traders",
+    "Diaspora journalists and urban ecology documentarians",
+    "Off-grid survivalists and anti-corporate communes"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Gill Market",
+      "description": "A daily open-air market beneath the largest mushroom cluster, trading mycoprotein, medicinals, and salvage",
+      "tags": []
+    },
+    {
+      "name": "Cordyceps Node Zero",
+      "description": "The buried server housing where Cordyceps' primary processes run, marked by a rusted Ringo maintenance hatch that nobody touches",
+      "tags": []
+    },
+    {
+      "name": "The Deep Pits",
+      "description": "Flooded rail maintenance trenches beneath the main platform level, rumored to contain intact pre-surge equipment worth significant Φ",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 42.97,
+    "lng": -87.89,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "gun",
+    "war",
+    "memory",
+    "consciousness",
+    "bci",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "debt",
+    "survival",
+    "shelter",
+    "refugee",
+    "lake"
+  ]
+}

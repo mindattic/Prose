@@ -1,0 +1,243 @@
+{
+  "id": "019d6143a65a7c06a816337e996740ab",
+  "type": "character",
+  "name": "Mireille Fontaine-Obi",
+  "aliases": [
+    "Mir",
+    "The Architect",
+    "Fontaine"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Senior urban systems designer, The Spire — infrastructure division",
+  "age": 38,
+  "status": "active",
+  "location": "The Spire",
+  "description": "Mireille Fontaine-Obi is the kind of person who has designed the systems that keep other people alive without ever having met those people. She is mixed French-Nigerian, lean and angular, with close-cropped natural hair and the particular stillness of someone whose mind is always several steps ahead of the room. She dresses in structured, expensive minimalism — the corporate elite aesthetic of someone who wants to signal power through restraint — and wears a full-forearm neural interface sleeve on her right arm that she rarely removes even in social settings. Her office on the forty-second floor of The Spire looks out over the entire city, a view she has described in internal documents as 'operationally useful' and has never once described as beautiful.\n\nMireille designs the infrastructure of Meridian 88 — water reclamation routing, power grid distribution, transit corridor optimization, environmental filtration zoning. She is extraordinarily good at this work. She is also the person who decides, through the dry mathematics of resource allocation, which districts receive redundant systems and which receive single points of failure. The Shelf has exactly one filtration node. Old Harbor's power grid has a designed load ceiling that ensures brownouts during peak demand. These are not accidents. They are her work, signed off with her credentials, rationalized through efficiency models she wrote herself.\n\nShe entered the corporate track from a scholarship program at seventeen, having grown up in a mid-tier Circuit neighborhood that has since been rezoned into a logistics hub. She has not been back. She has told herself many things about what that means. She has a partner she sees on weekends, a curated social life within The Spire's residential tier, and a locked private project folder on her workstation that she opens at 2 a.m. when she can't sleep, containing infrastructure redesigns for the city as it could exist — equitable, redundant, built for the people who actually live in it. She has never submitted any of it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.55,
+      "ideal": 0.75,
+      "id": 0.5,
+      "shadow": 0.8,
+      "mask": 0.85,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That she has become the thing that destroyed her original neighborhood",
+      "That her competence has been the primary instrument of harm",
+      "Being seen clearly by someone she respects"
+    ],
+    "core_desires": [
+      "To build something that will outlast her and actually serve people",
+      "To be told, credibly, that there was no better choice available to her",
+      "Genuine intimacy that doesn't require the mask"
+    ],
+    "coping_mechanisms": [
+      "Framing moral decisions as technical ones — converting ethics into optimization problems",
+      "Keeping the private redesign folder as a permission structure: she is still the person who cares, therefore she is not the villain",
+      "Working at extreme competence — if she is excellent enough, the work will eventually justify itself",
+      "Social compartmentalization: the Spire-Mireille and the 2 a.m.-Mireille do not speak to each other"
+    ],
+    "blind_spots": [
+      "Believes her insider position gives her more capacity for change than it actually does",
+      "Cannot see that the private folder has become a substitute for action rather than a preparation for it",
+      "Systematically underestimates how much people in the lower districts know about the deliberateness of their deprivation"
+    ],
+    "secret": "Three years ago, Mireille was approached by an internal whistleblower coalition within the Spire's infrastructure division who had compiled evidence of systematic resource denial as policy. She was invited to co-sign a regulatory filing. She declined and reported the contact to her division head, believing she was protecting herself. Two of the coalition members were subsequently reassigned to dead-end posts; one disappeared. She has never confirmed what happened to the third."
+  },
+  "speech_patterns": {
+    "vocabulary": "Systems language bleeding into personal speech — 'load-bearing,' 'redundancy,' 'cascade failure,' 'node' used metaphorically; precise, technical, occasionally lapsing into a more lyrical register when her guard is down",
+    "cadence": "Controlled and efficient in professional settings, with sentences that arrive fully formed. In rare unguarded moments, she speaks in longer, more searching clauses, as if thinking aloud for the first time.",
+    "verbal_tics": [
+      "Qualifies statements with 'In theory' or 'Operationally speaking' when the subject is actually personal",
+      "Pauses before using someone's name, as if confirming she has the right one",
+      "Says 'That's not the right question' when the question is exactly right"
+    ],
+    "example_lines": [
+      "'The grid works. Whether it works for everyone is a resource allocation question, not an engineering question. Those are different departments.'",
+      "'I didn't design the policy. I designed the system that implements the policy. That's — that's not the same thing.'",
+      "'In theory, you could reroute the Old Harbor filtration through the secondary circuit. In theory. The approval chain for that has fourteen nodes and six of them report to people who benefit from the current configuration.'",
+      "'I grew up in a neighborhood that looked exactly like the ones I'm describing to you right now. I know what that sentence sounds like. I don't have a better one.'"
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Tomás Arriaga-Venn",
+      "type": "professional contact, escalating tension",
+      "description": "Tomás has been pushing resource allocation questions into Mireille's orbit through channels she can't easily ignore. She doesn't know his full operation but she recognizes the shape of what he's doing and finds it both threatening and clarifying.",
+      "emotional_core": "Professional threat response masking suppressed recognition",
+      "story_tension": "Mireille holds infrastructure data that could make Tomás's work significantly more effective. She knows this. She has not acted on it in either direction."
+    },
+    {
+      "name": "Nadira Osei-Brempong",
+      "type": "unknown mutual awareness",
+      "description": "Nadira's investigative work has come close enough to Mireille's division that Mireille has flagged her name internally twice. She hasn't escalated. She isn't sure why.",
+      "emotional_core": "Recognition of a parallel conscience operating from a different position",
+      "story_tension": "If Nadira ever obtains the right infrastructure documents, Mireille's signature will be on them. What Mireille does at that moment is the question."
+    },
+    {
+      "name": "Rector Hollowell",
+      "type": "superior, source of institutional pressure",
+      "description": "Hollowell controls the approval chains Mireille navigates. He values her competence and considers her loyalty confirmed. He is not entirely wrong.",
+      "emotional_core": "Dependence structured as mentorship",
+      "story_tension": "Hollowell may know about Mireille's private folder. He has said nothing. The silence has its own grammar."
+    }
+  ],
+  "story_hooks": [
+    "The single filtration node serving The Shelf begins showing stress fractures in its load data — data that only Mireille can read correctly, and which suggests catastrophic failure within weeks unless rerouted through channels she would have to personally authorize",
+    "The disappeared whistleblower resurfaces, not dead but rebuilt — augmented, off-grid, and in possession of the original coalition documents with Mireille's non-signature conspicuously preserved",
+    "Mireille's private redesign folder is accessed from outside her credentials — someone inside The Spire has read everything she's built in secret, and has left no message, only a read receipt",
+    "A catastrophic infrastructure failure occurs in a district that Mireille's models predicted as safe — the failure pattern matches none of her designs, suggesting someone else has been modifying the system beneath her"
+  ],
+  "narrative_function": "Corporate conscience and systemic antagonist — Mireille embodies the banality of infrastructural violence and the specific paralysis of people who know better and have not yet chosen. She provides a corporate-tier perspective with genuine moral complexity, a potential ally or obstacle depending on when players encounter her, and a fulcrum point between institutional power and street-level consequence.",
+  "augmentations": "Full right-arm neural interface sleeve: direct haptic link to infrastructure modeling systems, allows real-time grid visualization and data manipulation (corporate-issued, maintained to spec),Cognitive load-balancing implant: regulates attention allocation and reduces decision fatigue during complex multi-variable analysis (standard Spire executive package)",
+  "daily_life": "Mireille's days are structured to the quarter-hour. She arrives at her office before most of her division, reviews overnight system reports with coffee she makes herself rather than ordering from the floor service, and spends the first ninety minutes in what she calls 'clean time' — unscheduled, uninterrupted analysis. Meetings occupy her afternoons. She eats at her desk. She exercises in The Spire's residential gym at 7 p.m. with the precision of someone managing a maintenance schedule. On weeknights she reviews her workload and sleeps efficiently. At 2 a.m., when she wakes — which is most nights — she opens the folder and works on the city that doesn't exist until she is tired enough to stop.",
+  "affiliation": "The Spire — Infrastructure Division (senior level); private, unaffiliated conscience operating in parallel",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 10
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 5,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 9,
+      "assertion_deference": 6,
+      "transparency_guardedness": 8
+    },
+    "drives": [
+      "Build something equitable",
+      "Justify her position",
+      "Genuine intimacy"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 6,
+        "response": "Retreats into systems language, converts ethics into optimization problems"
+      },
+      "moral": 5,
+      "trust": 3,
+      "desperation": 5
+    },
+    "strengths": [
+      "Creativity",
+      "Love of Learning",
+      "Perspective",
+      "Industry",
+      "Judgment"
+    ],
+    "weaknesses": [
+      "Bravery",
+      "Honesty",
+      "Kindness",
+      "Teamwork",
+      "Hope"
+    ],
+    "tags": [
+      "infrastructure-designer",
+      "spire-elite",
+      "complicit",
+      "secret-idealist",
+      "paralyzed-conscience",
+      "systems-thinker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Frame moral decisions as technical ones — ethics become optimization",
+      "Keep the private redesign folder updated as proof she still cares",
+      "Never submit the equitable designs — they exist as permission, not action",
+      "Maintain the 2 a.m. practice as a separate identity from Spire-Mireille",
+      "Say 'That's not the right question' when the question is exactly right",
+      "Use systems language in personal conversations to maintain distance",
+      "Do not return to the neighborhood she grew up in"
+    ],
+    "escalation_ladder": [
+      "'Operationally speaking' — deflection into technical register",
+      "'That's not the right question' — dismissal of uncomfortable truths",
+      "Longer, more searching sentences — the guard drops, thinking aloud",
+      "Opens the private folder during work hours — the wall between identities cracks",
+      "Authorizes a reroute or resource change that violates official policy — the act she has been preparing for or avoiding"
+    ],
+    "interpersonal_modes": {
+      "Tomás Arriaga-Venn": "Professional threat masking suppressed recognition — he represents the action she cannot take",
+      "Nadira Osei-Brempong": "Flagged internally twice, not escalated — parallel conscience she cannot afford to acknowledge",
+      "Rector Hollowell": "Dependent mentorship — he values her competence, she needs his approval chains",
+      "partner": "Weekend intimacy compartmentalized from everything else"
+    },
+    "stress_responses": {
+      "low": "Systems language bleeds further into personal speech",
+      "medium": "Works later, exercises with more rigid precision",
+      "high": "Wakes at 2 a.m. and works on the city that doesn't exist until exhausted",
+      "critical": "The two Mireilles begin to merge — the mask fails in a professional setting"
+    },
+    "contradictions": [
+      "Designs equitable cities at 2 a.m. while signing off on single-point-of-failure districts by day",
+      "Believes her insider position enables future change while using it as an excuse for present inaction",
+      "Reported the whistleblower coalition to protect herself — two people were reassigned, one disappeared"
+    ],
+    "habits": [
+      "Arrives at the office before the division, reviews reports with self-made coffee",
+      "First 90 minutes are 'clean time' — unscheduled, uninterrupted analysis",
+      "Exercises at exactly 7 p.m. with maintenance-schedule precision",
+      "Opens the private redesign folder at 2 a.m. most nights",
+      "Pauses before using someone's name, as if confirming the right file"
+    ],
+    "breaking_points": [
+      "The Shelf filtration node reaching catastrophic failure on her watch",
+      "The disappeared whistleblower resurfacing with the original documents",
+      "Her private folder being accessed by someone inside the Spire",
+      "Nadira obtaining infrastructure documents with Mireille's signature"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Pragmatist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

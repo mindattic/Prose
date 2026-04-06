@@ -1,0 +1,206 @@
+{
+  "id": "019d6143a61f78608de758494ff4fec2",
+  "type": "character",
+  "name": "Ọgụ Vukčević-Amara",
+  "aliases": [
+    "Gum-Gum",
+    "the Old Pipe"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Elder pipe-folk patriarch and keeper of oral tunnel history",
+  "age": 68,
+  "status": "active",
+  "location": "Deepwell Station, the sprawling pipe-folk encampment called Bellows Town",
+  "description": "Ọgụ is a man who looks like he was carved from the same material as the tunnels — his skin is the brown-grey of old concrete, deeply lined, and perpetually damp at the temples from the humidity of Bellows Town. He is larger than you'd expect someone who has spent decades in low-clearance tunnels to be: broad across the shoulders, thick-necked, with hands so calloused they look armored. One leg was crushed in a pressure-seal failure forty years ago and never properly repaired; he walks with a rocking gait and a carved ferroceramic cane he calls his Third Opinion. His eyes are undmodified and dark brown, and his gaze carries the particular weight of someone who has outlived many people he loved and is not surprised by anything anymore.\n\nHe is the closest thing Bellows Town has to a leader, though he would reject the title. He mediates disputes between pipe-folk clans, arbitrates resource-sharing on food and water taps, and is the living archive of Deepwell Station's last sixty years — collapses, floods, disappearances, treaties between tunnel communities. He is warm in the way of someone who has no energy left for performance; he will feed a stranger without asking questions and he will also tell that stranger an uncomfortable truth without softening it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.2,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.9
+    },
+    "core_fears": [
+      "Bellows Town being discovered and evicted by Ferrogate Transit or another corponation",
+      "Dying before he has passed his oral histories on"
+    ],
+    "core_desires": [
+      "The pipe-folk communities to achieve some form of recognized territorial claim to their tunnels",
+      "To be remembered accurately, not mythologized"
+    ],
+    "coping_mechanisms": [
+      "Turns grief into story — every loss becomes a lesson he narrates to the young",
+      "Physical labor as meditation; he repairs pipes and fittings himself even when it hurts"
+    ],
+    "blind_spots": [
+      "Underestimates how much the younger pipe-folk want surface contact and surface things",
+      "His hatred of augmentation means he sometimes dismisses people with mods as 'surface-contaminated'"
+    ],
+    "secret": "Ọgụ was born on the surface — Calumet Rise, tier 2 family — and chose to disappear underground at age 22 after informing on a neighbor to a Ferrogate Transit security division. The neighbor was evicted and died. He has never told anyone in Bellows Town he was once a surface person."
+  },
+  "speech_patterns": {
+    "vocabulary": "Slow and deliberate; mixes pipe-folk technical terms with formal, almost ceremonial phrasing; quotes tunnel sayings like proverbs",
+    "cadence": "Unhurried to the point of seeming to move in a different time — he pauses between sentences, not between thoughts",
+    "verbal_tics": [
+      "Begins difficult statements with 'Now here's a thing'",
+      "Refers to the tunnels as 'she' and 'her'"
+    ],
+    "example_lines": [
+      "Now here's a thing — she was flooding in that section thirty years before the Transit maps even showed it existed.",
+      "The young ones want to know where to go. The wise ones want to know why it matters."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He possesses oral knowledge of a tunnel route to a pre-city infrastructure vault that he refuses to share until he judges someone trustworthy — the process of earning that trust is itself a small quest",
+    "Someone has been quietly recording his stories and selling transcripts to a Sterling-Nakamura heritage data broker — Ọgụ knows it's happening but not who"
+  ],
+  "narrative_function": "Lore source for tunnel history and underworld geography; faction mediator; can grant or withhold access to pipe-folk resources and knowledge; his approval is social currency in the deep levels",
+  "augmentations": "None — he is philosophically opposed to augmentation, viewing it as a surface-world dependency that creates vulnerabilities underground; his cane is the only technology he trusts",
+  "daily_life": "Wakes early to walk Bellows Town's perimeter — he says the settlement tells him its mood through the sounds the pipes make. Spends mornings in arbitration or teaching younger pipe-folk tunnel repair skills. Evenings are for storytelling and the careful rationing of a small still-fermenting brew he makes from fungal mash.",
+  "affiliation": "Bellows Town pipe-folk community; elder neutral party among Undertow clans",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 3,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 9,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "elder",
+      "oral-historian",
+      "community-anchor",
+      "surface-refugee"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not act against the collective safety of Bellows Town for any individual benefit",
+      "Refuses to speak to anyone who has harmed a child in his community, full stop, regardless of circumstances"
+    ],
+    "escalation_ladder": [
+      "Listens completely before responding",
+      "States his position as community consensus, not personal opinion",
+      "Invokes the weight of sixty years of tunnel history and lets silence do the rest"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Genuinely hospitable — feeds them, asks where they came from and treats the answer seriously",
+      "friends": "Teases with affectionate ruthlessness; remembers everything they've ever told him"
+    },
+    "stress_responses": {
+      "low": "Gets quieter and more deliberate",
+      "medium": "Begins moving — walks the perimeter, repairs something",
+      "high": "Goes completely still and says exactly what the situation is, flatly, without comfort"
+    },
+    "contradictions": [
+      "Preaches collective good but secretly keeps his own origin story private — the one history he won't share"
+    ],
+    "habits": [
+      "Runs his thumb along the ferroceramic grain of his cane when thinking",
+      "Sleeps sitting up, claiming it's easier on his leg but actually because he startles awake from recurring dreams"
+    ],
+    "breaking_points": [
+      "A corponation survey crew appearing at the Bellows Town entrance would bring out a capacity for organized resistance he's never had to show"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Commander": 0.9,
+    "Natural Authority": 0.9,
+    "Vanguard": 0.9,
+    "Standard Bearer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Calumet Rise to a surface-dwelling family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Informed on a neighbor to Ferrogate Transit; neighbor evicted and died",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Descended into the tunnels and never returned to the surface",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Leg crushed in the Deepwell pressure-seal failure; repaired by pipe-folk medicine",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Recognized as Bellows Town's senior arbitrator",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

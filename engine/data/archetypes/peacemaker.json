@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a584743f96de424768bfcf6a",
+  "name": "Peacemaker",
+  "type": "archetype",
+  "category": "combat",
+  "description": "Stops fights between others, even at personal cost",
+  "behavioral_signature": "Steps between combatants",
+  "under_stress": "Becomes desperate, pleading",
+  "at_rest": "Builds bridges before walls",
+  "will_always": [
+    "try to stop the fighting"
+  ],
+  "will_never": [
+    "let others kill each other without intervening"
+  ],
+  "unless": [
+    "both sides want them dead for trying"
+  ],
+  "similar_to": [
+    {
+      "archetype": "De-escalator",
+      "threshold": 0.9,
+      "context": "conflict resolution"
+    },
+    {
+      "archetype": "Pacifist",
+      "threshold": 0.8,
+      "context": "anti-violence"
+    }
+  ],
+  "opposite_of": [
+    "Warlord",
+    "Berserker"
+  ],
+  "tags": [
+    "peace",
+    "mediator"
+  ]
+}

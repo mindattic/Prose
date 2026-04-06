@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a7a27c0eaeac6ff0331e62e7",
+  "codename": "IRON CURTAIN",
+  "type": "contract",
+  "client": "The Collective (via Songbird)",
+  "client_tier": "Tier 1",
+  "category": "sabotage",
+  "description": "Axiom is deploying a new surveillance mesh in the Shelf. The hardware is in a staging warehouse. The Collective wants it destroyed before deployment.",
+  "objective": "Destroy Axiom surveillance equipment in Warehouse 7, Block 19. Complete destruction.",
+  "location": "The Shelf",
+  "target": "2 shipping containers of surveillance hardware",
+  "opposition": "8 armed guards, 2 Goliaths, drone overwatch",
+  "payout": "Φ120,000",
+  "bonuses": [
+    {
+      "type": "clean",
+      "amount": "Φ30,000",
+      "condition": "No Axiom casualties"
+    }
+  ],
+  "complications": [],
+  "required_capabilities": {
+    "combat": 8,
+    "stealth": 5,
+    "hacking": 6,
+    "social": 2,
+    "medical": 4,
+    "tech": 5,
+    "transport": 4,
+    "demolitions": 9,
+    "surveillance": 3,
+    "linguistics": 0
+  },
+  "crew_size": "5-8",
+  "difficulty": "suicide",
+  "time_limit": "36 hours",
+  "status": "open",
+  "outcome": "",
+  "tags": [
+    "sabotage",
+    "suicide",
+    "runner",
+    "contract"
+  ]
+}

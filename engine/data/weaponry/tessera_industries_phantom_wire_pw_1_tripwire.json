@@ -1,0 +1,39 @@
+{
+  "id": "019d6143ab527e2f8762313d73da5aa7",
+  "name": "Tessera Industries Phantom Wire PW-1 'Tripwire'",
+  "type": "weapon",
+  "aliases": [
+    "Tripwire",
+    "PW-1",
+    "Ghost Line",
+    "Phantom"
+  ],
+  "category": "exotic",
+  "description": "A spool-deployed monofilament wire system designed for perimeter defense and anti-personnel applications. The wire is a single-molecule-thick carbon filament that is effectively invisible to the naked eye and most optical sensors. Once deployed between anchor points, the wire will sever anything that contacts it with sufficient force — limbs, cables, vehicle tires, drone rotors. Tessera packages it with a compact spool housing and magnetic anchor stakes, marketing it as a 'passive security perimeter system' despite its obvious offensive applications.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Prohibited — indiscriminate hazard weapon",
+  "base_technologies": [
+    "Monofilament carbon synthesis",
+    "Molecular-edge cutting geometry",
+    "Passive perimeter deployment systems"
+  ],
+  "specifications": "wire length: 200 meters per spool\nwire diameter: single-molecule carbon filament\ntensile strength: rated to 400 kg before deformation\ncutting threshold: 2 kg of lateral force\nanchor type: Magnetic stakes with 50 kg hold strength\nweight: 0.2 kg per spool assembly\nvisibility: Undetectable by standard optical systems",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "Monofilament lines have been found strung across a major transit corridor at neck height — someone is targeting a specific vehicle or person who uses that route.",
+    "A Tessera facility breach resulted in the theft of 200 spools of PW-1 wire — enough to turn an entire district into a kill zone."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "exotic",
+    "weapon",
+    "theft",
+    "market",
+    "vehicle",
+    "drone",
+    "tier 3"
+  ]
+}

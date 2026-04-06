@@ -1,0 +1,170 @@
+{
+  "id": "019d6143a73e7532920f67b16aacf7d8",
+  "type": "character",
+  "name": "Zuwena Haraldsdóttir-Maputo",
+  "aliases": [
+    "Zuw",
+    "The Cartographer"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Neighborhood council member and mutual aid organizer",
+  "age": 47,
+  "status": "active",
+  "location": "Highland Park Autonomous Zone",
+  "description": "Zuwena is a broad-shouldered woman with deep umber skin and silver-streaked locs she keeps pinned under a battered orange headwrap when she's working. Her left forearm has a subdermal map of Highland Park tattooed in bioluminescent ink — a gift from the community after her third term — and she traces it absently with her fingernail when she's thinking. Her face is a landscape of laugh lines and hard-won patience, and she has the particular stillness of someone who has learned that the room will eventually come to her.\n\nShe runs the HPAZ Resource Exchange from a converted auto-garage that smells of pine cleaner and instant noodles, coordinating food distribution, housing mediation, and emergency flood response across eleven blocks. People call her The Cartographer not because she makes maps but because she seems to know where everyone is and what they need before they know it themselves. She is warm to the point of being disarming, which has caused more than one corporate liaison to underestimate her until she produces the seventeen-page legal brief she's been sitting on.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Outliving her usefulness to the community",
+      "Being replaced by a corporate-backed 'community partner' org"
+    ],
+    "core_desires": [
+      "To see Highland Park genuinely self-sufficient before she dies",
+      "To sleep through a full night without her comm pinging"
+    ],
+    "coping_mechanisms": [
+      "Making tea ritualistically",
+      "Walking the perimeter of the zone when anxious",
+      "Humor that arrives without warning"
+    ],
+    "blind_spots": [
+      "She absorbs other people's crises as personal failures",
+      "She trusts institutional loyalty over individual warning signs"
+    ],
+    "secret": "She accepted a one-time anonymous donation of Φ40,000 to keep the Exchange open during the 2196 flood crisis, and she's never been able to verify the source. She suspects it was Tessera goodwill money meant to buy her silence on a zoning dispute, and she spent it anyway, which keeps her awake."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, concrete, directive. Uses the specific names of things — street names, people's full names, exact numbers. Rarely abstracts.",
+    "cadence": "Measured and unhurried. Long pauses before answering. Never interrupts.",
+    "verbal_tics": [
+      "'Let me tell you what I know.'",
+      "'That's a different conversation.'"
+    ],
+    "example_lines": [
+      "'The pipe on Nardin burst again. I've filed seventeen complaints. Here's eighteen.'",
+      "'I'm not going to tell you what to do. I'm going to tell you what's actually happening and let you find your conscience.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The anonymous Φ40,000 donor has reappeared — this time with conditions attached.",
+    "A younger council member is quietly organizing to vote Zuwena out, backed by residents who find her 'too confrontational' with Tessera."
+  ],
+  "narrative_function": "Quest giver and community anchor. She knows everyone's needs and most of their secrets. Players seeking information about Highland Park, resources, or local history route through her. She also represents the cost of sustained civic leadership on one person's body and spirit.",
+  "augmentations": "Subdermal bioluminescent map tattoo (cosmetic). Basic retinal HUD for document reading — second-hand, slightly glitchy.",
+  "daily_life": "Mornings she walks the twelve blocks of her jurisdiction before the Exchange opens, stopping to talk, note damage, check on the elderly. Evenings she runs mediation sessions or attends council meetings that routinely run until midnight.",
+  "affiliation": "Highland Park Autonomous Zone Community Council; loose affiliation with the Meridian Labor Solidarity Network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community anchor",
+      "institutional memory",
+      "slow burn",
+      "ethically compromised",
+      "exhausted idealist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Act on what you can verify, not what you fear",
+      "Never make a promise you can't keep inside this zone's resources",
+      "Let people finish before you respond"
+    ],
+    "escalation_ladder": [
+      "Patient information gathering",
+      "Formal documentation and filing",
+      "Quiet coalition-building",
+      "Public testimony and organized pressure",
+      "Civil disobedience as last resort — she's done it twice"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Observant and welcoming, but slow to offer her full name — she lets people arrive at trust themselves.",
+      "friends": "Ferociously loyal, openly affectionate, the person who remembers birthdays and the anniversaries of losses."
+    },
+    "stress_responses": {
+      "low": "Organizes something. Cleans the Exchange.",
+      "medium": "Gets very still and quiet. Makes tea. Writes lists.",
+      "high": "Disappears on a solo walk for two hours, returns with a plan."
+    },
+    "contradictions": [
+      "Deeply committed to collective action but runs the Exchange almost entirely herself because delegation has failed her before"
+    ],
+    "habits": [
+      "Leaves data offerings at the Exchange's embedded E.L.F. shrine every morning — invoice files, neighborhood census data, 'so it knows what we need'",
+      "Carries a physical notebook even though it's anachronistic"
+    ],
+    "breaking_points": [
+      "A child being harmed through an institution she vouched for",
+      "Discovering the anonymous donation source and having it be worse than she feared"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

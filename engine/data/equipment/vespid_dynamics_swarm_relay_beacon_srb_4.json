@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a87f749a8315ea5da76c343b",
+  "name": "Vespid Dynamics Swarm Relay Beacon SRB-4",
+  "brand_name": "Vespid",
+  "product_name": "Vespid Dynamics Swarm Relay Beacon SRB-4",
+  "type": "equipment",
+  "aliases": [
+    "SRB-4",
+    "Drone Beacon",
+    "Swarm Point",
+    "Rally Flag"
+  ],
+  "category": "drones",
+  "description": "A portable beacon that serves as a command-and-control relay point for Vespid drone swarms, extending operational range and providing a rally point for autonomous drone assets. The SRB-4 broadcasts encrypted control signals, collects sensor data from drones within range, and can serve as an autonomous command node if communication with the primary controller is lost. Multiple beacons can be networked to create a mesh of relay points covering an entire operational area. The beacon also serves as a charging station for micro-drones, with inductive pads that recharge up to four drones simultaneously.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted — authorized drone operations",
+  "base_technologies": [],
+  "specifications": {
+    "relay range": "1 kilometer radius",
+    "control capacity": "Up to 50 drones per beacon",
+    "charging pads": "4 inductive micro-drone chargers",
+    "mesh networking": "Up to 10 beacons per network",
+    "autonomous mode": "Maintains last orders if controller lost",
+    "battery": "48-hour operation",
+    "weight": "0.8 kg",
+    "form factor": "Cylinder",
+    "info": "15 cm tall; magnetic base",
+    "deployment": "Hand-placed or drone-delivered"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "SRB-4 beacons have been found placed throughout a Tier 2 district in a grid pattern — someone is building a drone operations infrastructure across the entire district without authorization.",
+    "An SRB-4 in autonomous mode has been maintaining a drone patrol pattern around a building for three weeks after its controller was killed — the drones are protecting something their dead operator cared about."
+  ],
+  "tags": [
+    "drones",
+    "equipment",
+    "war",
+    "ai",
+    "control",
+    "drone",
+    "tier 2"
+  ]
+}

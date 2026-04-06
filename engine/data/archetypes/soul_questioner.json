@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a59476adb0d3ecb97e71a4c4",
+  "name": "Soul Questioner",
+  "type": "archetype",
+  "category": "spiritual",
+  "description": "Asks whether humans still have souls in a transhuman age",
+  "behavioral_signature": "Probes the boundaries of consciousness and identity",
+  "under_stress": "The questions become more disturbing",
+  "at_rest": "Debating, testing, wondering",
+  "will_always": [
+    "ask the hard question"
+  ],
+  "will_never": [
+    "accept the comfortable answer"
+  ],
+  "unless": [
+    "the answer threatens their own sense of self"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Consciousness Explorer",
+      "threshold": 0.85,
+      "context": "identity questioning"
+    },
+    {
+      "archetype": "Existentialist",
+      "threshold": 0.7,
+      "context": "fundamental questioning"
+    }
+  ],
+  "opposite_of": [
+    "Believer"
+  ],
+  "tags": [
+    "philosophical",
+    "unsettling"
+  ]
+}

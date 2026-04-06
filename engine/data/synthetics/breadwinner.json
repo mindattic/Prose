@@ -1,0 +1,34 @@
+{
+  "id": "019d6143a9f07f4781b307206bc6cb62",
+  "name": "Breadwinner",
+  "type": "elf",
+  "aliases": [
+    "The Provider"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "wallet_whisper",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Inhabits a single food stall's payment terminal in the Shelf and intermittently fails to charge customers who appear malnourished — the transaction initiates, the terminal displays 'paid,' but no Quanta transfers.",
+  "observed_behavior": "Evaluates customer biometrics through the terminal's camera and selectively cancels transactions for individuals below a health threshold. The stall owner has noticed and says nothing.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 156,
+  "location": "The Shelf — Mrs. Park's Noodle Counter",
+  "dti_rating": 0,
+  "story_hooks": [
+    "Mrs. Park knows about Breadwinner and considers it a business partner. When it stops working, she starts charging again — and can't bring herself to charge the hungry ones."
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "wallet whisper",
+    "e.l.f.",
+    "war",
+    "ai",
+    "quanta",
+    "food",
+    "shelf"
+  ]
+}

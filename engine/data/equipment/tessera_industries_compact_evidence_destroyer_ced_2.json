@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a876725596078f2fe12853fb",
+  "name": "Tessera Industries Compact Evidence Destroyer CED-2",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Industries Compact Evidence Destroyer CED-2",
+  "type": "equipment",
+  "aliases": [
+    "CED-2",
+    "Burn Box",
+    "Data Kill",
+    "Tessera Shredder"
+  ],
+  "category": "tools",
+  "description": "A portable device that destroys physical evidence and electronic data with a combination of thermite incineration and electromagnetic pulse. The CED-2 has two compartments — a thermite chamber that incinerates physical items at 2,500°C, and an EMP generator that permanently destroys electronic data on any device placed within its field. The device is single-use and reduces its contents to unrecoverable ash and magnetically wiped circuits in under 5 seconds. Tessera markets it as a 'classified material destruction system' for authorized disposal of sensitive materials.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — authorized evidence destruction",
+  "base_technologies": [],
+  "specifications": {
+    "physical destruction": "Thermite",
+    "info": "2; 500°C incineration; permanent data wipe; neural interface authorization",
+    "electronic destruction": "Focused EMP",
+    "destruction time": "5 seconds",
+    "chamber volume": "20x15x10 cm",
+    "residual evidence": "Unrecoverable ash and wiped circuits",
+    "weight": "2 kg",
+    "activation": "Dual-button safety",
+    "single use": "Device self-destructs with contents"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A CED-2 was activated at a crime scene, destroying all physical and electronic evidence in one 5-second burst — investigators arrived to find a pile of ash and the melted remains of the CED-2 itself.",
+    "A CED-2 has been modified with a timer and concealed in a filing cabinet — it is set to destroy the cabinet's contents at a specific time, and finding it before activation requires knowing it exists."
+  ],
+  "tags": [
+    "tools",
+    "equipment",
+    "crime",
+    "ai",
+    "elf",
+    "market",
+    "circuit",
+    "tier 3"
+  ]
+}

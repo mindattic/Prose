@@ -1,0 +1,242 @@
+{
+  "id": "019d6143a5d17ada8562993bd8daa26c",
+  "type": "character",
+  "name": "Caspian Ngozi-Thorvaldsen",
+  "aliases": [
+    "Cas",
+    "The Tuner"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Neural calibrator specializing in augmentation synchronization and post-install psychological adjustment",
+  "age": 34,
+  "status": "active",
+  "location": "Geartown, Gage Circuit",
+  "description": "Caspian is lean in the way of someone who forgets to eat, with warm brown skin, close-cropped dark hair, and irises that cycle through amber-to-green gradient depending on his mod's mood-reading settings — a gift from a client who couldn't pay in quanta. He dresses in soft, unthreatening fabrics (the neural calibration chair is already stressful enough) and keeps his workspace warm-lit and quiet, with small potted moss installations along the walls that patients are encouraged to touch. He has an almost preternatural ability to make people feel safe within minutes of meeting him.\n\nHe trained under Helix Biosystems' neural integration division but went independent when he realized corporate calibration protocols optimized for hardware performance rather than patient wellbeing — they wanted efficient augments, not healthy people. Now he runs a small private practice in Geartown, catering to working-class clients who've had cheap installs go wrong: phantom limb feedback, dream-layer bleed from neural laces, identity drift after major cognitive augmentation. He's part technician, part therapist, part grief counselor for people who don't recognize themselves anymore.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Accidentally damaging someone's sense of self permanently during calibration",
+      "Being so good at reading people that no one ever reads him"
+    ],
+    "core_desires": [
+      "To prove that augmentation can be integrated without psychological cost",
+      "To be genuinely known by someone, not just professionally understood"
+    ],
+    "coping_mechanisms": [
+      "Meticulous case documentation as a way of processing his own feelings",
+      "Over-invests in client wellbeing to fill his own relational void"
+    ],
+    "blind_spots": [
+      "His therapeutic warmth is partly performed — he doesn't always feel what he projects, and this bothers him more than he admits",
+      "He avoids his own neural calibration checkups"
+    ],
+    "secret": "During his time at Helix Biosystems, he ran an unauthorized calibration on a teenage patient that went beyond his sanctioned parameters — he improved the kid's outcomes dramatically, but he accessed emotional memory architecture he had no clearance to touch. He knows what that teenager's worst memory feels like, and he's never told anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise but gentle. Uses second-person framing to give clients agency ('what you might be feeling' rather than 'you feel'). Avoids technical jargon in conversation, saves it for documentation.",
+    "cadence": "Unhurried. Comfortable with silence. Speaks in full sentences, rarely trails off.",
+    "verbal_tics": [
+      "'Take your time with that'",
+      "'That's a reasonable response to what your system is doing'",
+      "Small affirming sounds — 'mm' — when listening"
+    ],
+    "example_lines": [
+      "'The hardware's doing exactly what it should. What we're calibrating is the relationship between you and it.'",
+      "'Most people feel like strangers to themselves for the first few weeks. That's not a malfunction. That's adaptation.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client disclosed something during a session that sounds like witness testimony to a corporate crime — Caspian is legally and ethically bound by confidentiality, but the information could save lives",
+    "His mood-reading iris mod is picking up something in a new client that doesn't match their stated symptoms — the discrepancy is subtle but Caspian knows what fear looks like",
+    "His old Helix supervisor has tracked him down, not to punish him for the unauthorized calibration, but to recruit him for something worse"
+  ],
+  "narrative_function": "Information source on augmentation culture, therapist-figure who can surface character backstory organically, potential quest giver when a client reveals something dangerous during calibration.",
+  "augmentations": "Gradient mood-responsive iris mod (amber-green spectrum). Thin-band neural lace for interface work. Geneware: faint bioluminescent undertone in his forearms, visible only in dim light — a side effect of an experimental procedure he tested on himself.",
+  "daily_life": "He takes four clients per day maximum, each session two hours. Spends evenings writing up case notes in a personal archive he intends to eventually publish as an independent clinical study on post-augmentation psychological drift.",
+  "affiliation": "Independent — informal referral network with several Geartown augmentation shops",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Empath",
+      "Technician",
+      "Ethically Complex",
+      "Isolated",
+      "Pattern Reader"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Client wellbeing is primary — institutional interest is secondary",
+      "Never push a calibration session beyond what the patient can emotionally handle that day",
+      "Document everything, even what he shouldn't have done"
+    ],
+    "escalation_ladder": [
+      "Gentle redirection",
+      "Clear statement of limits with explanation",
+      "Ends the session, offers to reschedule, will not be moved"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Attentive and warm but professionally boundaried — asks good questions, reveals little about himself",
+      "friends": "Surprisingly funny, self-deprecating, occasionally lets his exhaustion show"
+    },
+    "stress_responses": {
+      "low": "Slows down further, speaks more carefully",
+      "medium": "Goes into clinical mode — emotions shelved, problem-solving foregrounded",
+      "high": "Leaves. Physically removes himself and doesn't return until he's recalibrated."
+    },
+    "contradictions": [
+      "Professionally expert at helping others integrate their augmentations but personally avoids his own maintenance",
+      "Believes in emotional honesty as therapeutic principle but masks his own feelings constantly"
+    ],
+    "habits": [
+      "Touches the moss installations himself before each session — he says it's for clients but it's for him",
+      "Re-reads old case notes before sleeping, looking for patterns"
+    ],
+    "breaking_points": [
+      "Learning that a patient he helped is being exploited for their newly-functional augment",
+      "Having his therapeutic relationship with a client weaponized by someone else"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Thin-band neural lace — standard interface, calibration work capability",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Thin-band neural lace — standard interface, calibration work capability",
+      "replaces": ""
+    },
+    {
+      "name": "Gradient mood-responsive iris modification (amber-to-green spectrum) — gifted by former patient",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Gradient mood-responsive iris modification (amber-to-green spectrum) — gifted by former patient",
+      "replaces": ""
+    },
+    {
+      "name": "Bioluminescent subdermal undertone (forearms) — experimental geneware, self-administered",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent subdermal undertone (forearms) — experimental geneware, self-administered",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Diplomat": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 19: Recruited into Helix Biosystems neural integration training program",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 24: Certified neural calibrator, assigned to Helix outpatient augmentation clinic",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 27: Conducted unauthorized calibration on teenage patient, undiscovered",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 29: Resigned from Helix Biosystems, established independent practice in Geartown",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 34: Current — small but stable practice, growing research archive",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

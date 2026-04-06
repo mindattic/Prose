@@ -1,0 +1,47 @@
+{
+  "id": "019d6143aa37720f961050a5873ba213",
+  "name": "Carrion Defense Works Adaptive Camouflage Skin",
+  "brand_name": "Carrion",
+  "product_name": "Carrion Defense Works Adaptive Camouflage Skin",
+  "type": "technology",
+  "aliases": [
+    "ACS",
+    "Camo Skin",
+    "Chameleon Coat",
+    "Carrion Blend"
+  ],
+  "subcategory": "defense",
+  "description": "A flexible material embedded with chromatophore-like cells — inspired by cephalopod biology — that can change color, pattern, and texture to match surrounding environments in real-time. The ACS uses a network of micro-cameras on the non-visible side of the material to sample the environment and replicate it on the visible surface, creating a form of visual camouflage that adapts continuously to the wearer's surroundings. The material can match complex environments including urban concrete, foliage, interior spaces, and even simulated clothing patterns, making the wearer difficult to detect through visual observation.",
+  "tier_availability": "Tier 3+",
+  "developers": [
+    "CARRION DEFENSE WORKS",
+    "TESSERA INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Artificial chromatophore cell arrays",
+    "Real-time environmental color sampling",
+    "Dynamic texture surface modification"
+  ],
+  "enables": [
+    "Active visual camouflage in any environment",
+    "Urban concealment without terrain-specific patterns",
+    "Visual signature reduction",
+    "Disguise through environmental mimicry"
+  ],
+  "social_impact": "ACS has changed the dynamics of urban surveillance and security — a person wearing adaptive camouflage can walk through populated areas while being nearly invisible to casual observation and significantly harder for automated visual tracking systems to detect. The technology has been adopted by everyone from military operators to corporate spies to street-level criminals who can afford it. Counter-camouflage detection systems using UV illumination and motion analysis have emerged in response, creating an ongoing arms race between concealment and detection.",
+  "story_hooks": [
+    "Security footage from a corporate breach shows a faint, person-shaped shimmer moving through corridors — the intruder was wearing ACS that was good enough for human observers but left artifacts on digital recording.",
+    "A community in the lower tiers has developed a crude version of ACS using bio-printed chromatophore sheets — the camouflage is imperfect but cheap, and an entire neighborhood has become functionally invisible to aerial surveillance."
+  ],
+  "tags": [
+    "defense",
+    "technology",
+    "ai",
+    "corporate",
+    "surveillance",
+    "rain",
+    "clothing",
+    "spire",
+    "tier 3"
+  ]
+}

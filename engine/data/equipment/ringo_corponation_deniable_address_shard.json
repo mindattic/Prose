@@ -1,0 +1,61 @@
+{
+  "id": "019d6143a86871f799d214201e3a1cbc",
+  "name": "Ringo Corponation Deniable Address Shard",
+  "brand_name": "Ringo",
+  "product_name": "Ringo Corponation Deniable Address Shard",
+  "type": "equipment",
+  "aliases": [
+    "Ghost Chip",
+    "The Shard",
+    "Throwaway"
+  ],
+  "category": "comms",
+  "description": "The Deniable Address Shard is a single-use cryptographic identity chip, roughly the size and shape of a broken fingernail, designed to generate a fully authenticated but entirely fictitious network identity that persists for exactly one communication session before the chip's internal logic physically destroys itself through a controlled electrochemical burn. Each Shard is pre-loaded at manufacture with a unique, non-repeating address seed derived from Ringo Corponation's proprietary entropy architecture, guaranteeing that no two Shards ever produce the same identity. The result is a communication session that, to any network observer, appears to originate from a legitimate registered user — one who simply does not exist.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Cryptographic identity generation",
+    "One-time pad address seeding",
+    "Electrochemical self-destruction",
+    "Network authentication spoofing"
+  ],
+  "specifications": {
+    "dimensions": "14mm x 6mm x 1.2mm chip format",
+    "weight": "Less than 1g",
+    "session_duration": "Single session, maximum 4 hours before forced termination",
+    "identity_persistence": "Zero — chip destroys all key material on session end or physical compromise",
+    "authentication_depth": "Passes Tier-2 network identity verification; fails against Tier-4 deep-packet biometric binding",
+    "self_destruction_trigger": "Session end, physical fracture, or tamper detection",
+    "packaging": "Sold in heat-sealed foil strips of 6 units",
+    "residue": "Post-burn chip is inert ceramic; no recoverable data"
+  },
+  "tactical_use": "Operatives use Shards when they need to make contact — with a fixer, a buyer, a target, a handler — without any possibility of that contact being traced back to a persistent identity. The Shard is loaded into any standard comm device via its contact port, used for the duration of the necessary communication, and then discarded. Because the chip physically destroys its own cryptographic material on termination, even a recovered Shard yields nothing actionable. The primary tactical limitation is the single-use nature: operators working extended operations must carry multiple Shards, and their supply chain for resupply becomes a vulnerability in itself. Ringo Corponation distributes them through layered intermediary networks, never directly.",
+  "cultural_context": "The Deniable Address Shard occupies a peculiar legal and cultural position in Meridian 88. Technically prohibited under the Unified Network Identity Accountability Act — a piece of legislation that Ringo Corponation's own lobby arm helped draft, a fact not lost on anyone — the Shards are simultaneously one of Ringo's most profitable black-market revenue streams. Street-level users sometimes call them 'Ringo's little joke.' Among criminal defense attorneys, the Shard has become something of a philosophical touchstone: its existence implies that certain conversations are, by design, meant to be held outside the reach of accountability, and the question of who gets to make that determination is genuinely contested.",
+  "known_users": [
+    "Freelance operatives managing handler contact",
+    "Criminal defense attorneys communicating with clients under surveillance",
+    "Corporate intelligence officers running deniable operations",
+    "Journalists protecting sources in hostile environments",
+    "Anyone being actively hunted who needs to make exactly one call"
+  ],
+  "story_hooks": [
+    "A Shard recovered from a compromised drop is supposed to be inert — but the burn didn't complete. Fragments of the session's routing data survived. It's not enough to reconstruct the conversation, but it's enough to identify the network node the call touched.",
+    "Someone is selling counterfeit Shards that look identical to genuine Ringo units but don't self-destruct — they quietly transmit a copy of every session to an unknown third party.",
+    "A player receives a Shard in the mail with no accompanying message. The implication is clear: someone wants them to use it to make contact, but hasn't told them who to call.",
+    "Ringo Corponation's manufacturing facility for Shard entropy seeding has gone dark — no new legitimate Shards have entered the market in six weeks. The price has quadrupled and the counterfeits are multiplying."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "identity",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "control",
+    "market",
+    "dark",
+    "tier 2"
+  ]
+}

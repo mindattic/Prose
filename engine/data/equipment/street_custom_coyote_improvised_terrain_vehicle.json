@@ -1,0 +1,53 @@
+{
+  "id": "019d6143a86e737794a7eee937e1f90b",
+  "name": "Street Custom 'Coyote' Improvised Terrain Vehicle",
+  "brand_name": "Street",
+  "product_name": "Street Custom 'Coyote' Improvised Terrain Vehicle",
+  "type": "equipment",
+  "aliases": [
+    "Coyote",
+    "Junk Runner",
+    "Scrap Ride",
+    "Tier One Wheels"
+  ],
+  "category": "climbing/mobility",
+  "description": "A lightweight vehicle cobbled from salvaged motorcycle frames, electric motors from industrial equipment, and battery packs pulled from decommissioned drones. The Coyote is the standard transportation of Tier 1 operators — fast enough to outrun foot patrols, small enough to fit through alleys and maintenance corridors, and built from parts that are available anywhere and traceable nowhere. Each Coyote is unique, reflecting its builder's available materials and priorities. Common configurations include three-wheeled trikes, two-wheeled electric motorcycles, and four-wheeled micro-cars barely larger than a go-kart. Performance varies wildly, but the culture surrounding Coyote builds has become a significant element of lower-tier identity.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — unregistered vehicle",
+  "base_technologies": [],
+  "specifications": {
+    "top speed": "40-80 km/h depending on build",
+    "range": "20-60 km per charge",
+    "motor": "Salvaged industrial electric",
+    "battery": "Repurposed drone or vehicle packs",
+    "weight": "50-150 kg",
+    "configuration": "2-4 wheels",
+    "info": "builder's choice",
+    "construction time": "2-5 days with available parts",
+    "reliability": "Variable — breakdowns common"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A Coyote racing circuit has emerged that draws spectators from multiple tiers — the races are dangerous, the vehicles are held together with hope and wire, and the prize money comes from corporate gambling syndicates.",
+    "A fleet of Coyotes has been standardized and distributed to a Tier 1 courier network — the vehicles are too fast for foot pursuit and too small for vehicle pursuit, creating an untouchable delivery system."
+  ],
+  "tags": [
+    "climbingmobility",
+    "equipment",
+    "identity",
+    "ai",
+    "corporate",
+    "money",
+    "alley",
+    "bar",
+    "rain",
+    "vehicle",
+    "motorcycle",
+    "drone",
+    "circuit",
+    "tier 1"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "019d6143a95072059927db5f014b9f10",
+  "type": "place",
+  "name": "The Stockyard",
+  "aliases": [
+    "Eastern Market",
+    "The Yard",
+    "Feedlot"
+  ],
+  "description": "The Stockyard is the food distribution hub for the entire eastern GLM corridor, and it is exactly as romantic as that sounds. The original Eastern Market — a public farmers' market operating since 1891 — has been swallowed by a logistics operation so vast that the charming brick sheds where Detroiters once bought tomatoes on Saturday mornings now serve as administrative offices for IronClad Agrisystems' Great Lakes Distribution Center. The center processes 40 million metric tons of food annually, most of it synthetic protein, hydroponic produce, and nutrient-dense crops engineered by Verdant Systems to grow in the contaminated soils that climate change left behind. Real food — actual meat, actual grain-fed produce, actual anything — passes through a separate facility that serves the Tier 3+ market. The two supply chains share a loading dock and nothing else.\n\nThe district surrounding the distribution center is a 24-hour logistics machine. Autonomous freight vehicles run continuous loops between the Stockyard, the Rouge river port, and distribution hubs across the GLM. Human labor persists in the sorting facilities, where the combination of irregular package sizes, contamination screening, and the occasional live organism shipment defeats current automation. The sorters work twelve-hour shifts in climate-controlled warehouses that are climate-controlled for the food, not the workers. The wage is Φ22 per hour. The turnover rate is 200% annually. IronClad considers this acceptable.\n\nBut the market's ghost persists. On Saturday mornings, in the shadow of the distribution center, an unauthorized farmers' market still operates in the old shed district. Local growers, urban farmers from Mexicantown Libre and Brightmoor, and gray-market food traders set up stalls and sell actual food to actual people. IronClad tolerates it because shutting it down would create PR problems and because the volume is negligible — a few hundred people buying tomatoes doesn't threaten a 40-million-ton operation. The Saturday market is a museum of how food used to work, operating in the loading shadow of how food works now.",
+  "atmosphere": {
+    "sights": [
+      "Autonomous freight vehicles stacked three high on loading platforms, moving in choreographed silence",
+      "The original Eastern Market brick sheds, dwarfed by the IronClad distribution megastructure behind them",
+      "Sorting facility workers in hazmat-adjacent protective gear, visible through warehouse observation windows",
+      "The Saturday market — color, chaos, handwritten signs, actual vegetables — a temporal anomaly",
+      "Refrigeration units the size of city blocks, their condensation creating localized fog banks in winter"
+    ],
+    "sounds": [
+      "The continuous low roar of refrigeration — the Stockyard's baseline frequency, present even in dreams",
+      "Autonomous freight loading sequences — mechanical precision sounds like a percussion ensemble",
+      "Sorting facility alerts — contamination warnings, temperature deviations, routing errors — in rapid mechanical cadence",
+      "Saturday market: human voices haggling, laughing, arguing about the ripeness of a peach",
+      "The 3 AM shift change — 4,000 workers moving through turnstiles, badge scanners clicking like insect mandibles"
+    ],
+    "smells": [
+      "Cold. The dominant smell of the Stockyard is refrigeration — a chemical cold that numbs the sinuses.",
+      "Synthetic protein in bulk — a yeasty, vaguely biological odor that clings to workers' clothing",
+      "Saturday market: actual soil, actual herbs, actual food smells that make the rest of the week feel like a lie",
+      "Spoilage from the waste processing facility on the district's southern edge — the smell of what doesn't make the grade"
+    ],
+    "feel": "Industrial and relentless. The Stockyard never stops. It doesn't have hours or seasons — it has throughput targets. The district feels like the inside of a machine that happens to have neighborhoods attached. Saturday mornings are the exception: for six hours, the ghost of a real market haunts the machine, and for six hours, food feels like food again instead of logistics.",
+    "tags": []
+  },
+  "demographics": "Approximately 28,000 residents, predominantly Tier 1 sorting and logistics workers. High turnover population — many workers stay less than a year before burning out or being replaced. A stable core community of approximately 8,000 has lived here for decades, predating the IronClad acquisition.",
+  "economy": "IronClad Agrisystems' Great Lakes Distribution Center: Φ280 billion annual throughput. Local economy is entirely dependent on distribution center employment. The Saturday market circulates approximately Φ200,000 weekly — a rounding error in IronClad's books, a lifeline for the people who participate.",
+  "power_structure": "IronClad Agrisystems holds operational authority over the distribution center and effectively governs the surrounding blocks through employment leverage. A neighborhood association exists on paper. IronClad's community liaison attends meetings and takes notes that no one reads.",
+  "dangers": [
+    "Food contamination — the sorting facilities catch most problems, but 'most' is not 'all' at 40 million tons",
+    "Worker exploitation — twelve-hour shifts, inadequate protection, and a turnover model that treats humans as consumable",
+    "The waste processing facility — what doesn't make the grade gets processed, and the processing is not gentle on adjacent air quality",
+    "Food chain manipulation — controlling the food supply means controlling everything downstream",
+    "Autonomous freight traffic — the vehicles are programmed to prioritize schedule over pedestrian proximity"
+  ],
+  "opportunities": [
+    "Food supply intelligence — knowing what's moving through the Stockyard means knowing what every district in the GLM is eating",
+    "The Saturday market is an information exchange disguised as a farmers' market — people talk over tomatoes",
+    "Contamination data — the sorting facility rejection logs reveal what's wrong with the food supply before anyone else knows",
+    "The IronClad workforce is large, underpaid, and disgruntled — a recruitment pool for anyone offering something better"
+  ],
+  "story_hooks": [
+    "The sorting facility's contamination logs show a pattern — someone is systematically introducing a compound into the Tier 1 food supply that doesn't trigger standard screening but accumulates over time",
+    "IronClad is negotiating to acquire the Saturday market sheds for warehouse expansion. The market vendors have nowhere else to go.",
+    "A sorting worker finds a shipment labeled as synthetic protein that contains something biological and non-food. The manifest says it came from Lacuna Genomics."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Renaissance Axis",
+      "The Corridor of Mirrors",
+      "Hamtramck Enclave"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "IronClad logistics workers on rotating shifts",
+    "Saturday market vendors and shoppers",
+    "Gray-market food traders",
+    "Supply chain analysts who track what moves through the GLM's stomach"
+  ],
+  "notable_locations": [
+    {
+      "name": "IronClad Great Lakes Distribution Center",
+      "description": "40 million metric tons annually — the machine that feeds the eastern GLM, indifferent to what it's feeding them",
+      "tags": []
+    },
+    {
+      "name": "The Saturday Sheds",
+      "description": "The original Eastern Market brick buildings, where an unauthorized farmers' market operates weekly in the shadow of the megastructure",
+      "tags": []
+    },
+    {
+      "name": "Cold Block Seven",
+      "description": "The Tier 3+ food facility — where actual meat and real produce are processed for people who can afford to eat what food used to be",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 42.3489,
+    "lng": -83.0399,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "ai",
+    "synthetic",
+    "control",
+    "market",
+    "warehouse",
+    "rain",
+    "shadow",
+    "vehicle",
+    "food",
+    "lake"
+  ]
+}

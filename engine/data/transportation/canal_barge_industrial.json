@@ -1,0 +1,37 @@
+{
+  "id": "019d6143aa6275b4ad05d412860ee557",
+  "name": "Canal Barge (Industrial)",
+  "type": "transportation",
+  "aliases": [
+    "Brick Boat",
+    "Canal Hauler",
+    "Slow Load"
+  ],
+  "category": "commercial_ground",
+  "manufacturer": "Various (local shipyards)",
+  "description": "A flat-bottomed cargo barge for the canal network that threads through Meridian 88's older industrial districts. Barges carry bulk materials — construction aggregate, recycling, food supplies — at a fraction of the cost of road transport. They're slow, they block canal traffic, and they're crewed by families who have worked the canals for generations. The canal barge crews are an insular community with their own customs, their own dialect, and their own understanding of the waterways that no outsider shares.",
+  "propulsion": "Electric motor, bow thruster for canal navigation",
+  "speed": "10 km/h",
+  "capacity": "50,000 kg cargo",
+  "range": "Full canal network",
+  "tier_availability": "Commercial/industrial",
+  "cost": "Φ50,000 per barge, crew operates on commission",
+  "autonomy": "Human crew (2-4), no automation",
+  "armament": "None. The barge itself is a blunt instrument if needed.",
+  "common_usage": "Bulk cargo transport via canal, waste removal, construction supply, food distribution.",
+  "story_hooks": [
+    "A canal barge carries a sealed container that the crew is paid double not to open — and the container is warm",
+    "The canal barge families have been mapping water level changes for decades and predict the canals will flood within the year — no one in power is listening"
+  ],
+  "tags": [
+    "commercialground",
+    "transportation",
+    "war",
+    "ai",
+    "elf",
+    "power",
+    "bar",
+    "food",
+    "water"
+  ]
+}

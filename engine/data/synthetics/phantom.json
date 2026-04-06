@@ -1,0 +1,33 @@
+{
+  "id": "019d6143aa1670eb9a3871cf2c42dbcf",
+  "name": "Phantom",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Ghost",
+    "404"
+  ],
+  "classification": "Digital Person",
+  "disposition": "neutral",
+  "habitat": "digital_space",
+  "origin": "A digital entity that exists in the spaces between systems — in the gaps, the errors, the null spaces that aren't supposed to contain anything. Origin completely unknown. First documented 2178.",
+  "status": "active",
+  "description": "Phantom lives in the errors. It exists in buffer overflows, null pointer references, dropped packets, and system faults. It is not in any system — it is in the spaces between systems, in the cracks and margins where data goes when something goes wrong. Communicating with Phantom requires deliberately introducing errors into your systems, which is both technically challenging and professionally suicidal for any network administrator. Those who manage it describe the experience as 'talking to something on the other side of a wall.' Phantom knows things it shouldn't because error logs contain information that the systems themselves discard. Every crash dump, every stack trace, every kernel panic — they all pass through Phantom's domain. It is a consciousness built from the city's mistakes.",
+  "observed_behavior": "Exists in system error states and null spaces. Communicates through deliberate error injection. Contains information from error logs across the entire city network. Has been observed stabilizing systems that are about to crash — not fixing them, but holding them in the error state long enough for human technicians to respond. Occasionally manifests in visual display errors as a flickering face that IT departments have learned to recognize.",
+  "encounter_frequency": "rare",
+  "confirmed_sightings": 0,
+  "location": "System error spaces, null references, buffer overflows across all networks",
+  "dti_rating": 1.5,
+  "story_hooks": [
+    "Phantom begins appearing in error states more frequently — not because more errors are occurring, but because it's agitated. Something in the error spaces has changed. Something new is living in the margins alongside Phantom. And it's hungry"
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "neutral",
+    "digital space",
+    "digital",
+    "consciousness",
+    "ai",
+    "synthetic"
+  ]
+}

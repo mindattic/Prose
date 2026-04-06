@@ -1,0 +1,39 @@
+{
+  "id": "019d6143aa7371a6b75f9c191869bd4f",
+  "name": "Tessera AutoCab",
+  "type": "transportation",
+  "aliases": [
+    "AutoCab",
+    "The Box",
+    "Corporate Coffin"
+  ],
+  "category": "personal_ground",
+  "manufacturer": "Tessera",
+  "description": "A small autonomous electric car that serves as Meridian 88's taxi service for Tier 2-4 residents. Clean, climate-controlled, surveillance-equipped. Every ride is recorded, analyzed, and sold to data brokers. The AutoCab knows where you went, when, and with whom. It's comfortable, convenient, and a privacy nightmare. Tier 1 residents can't afford it. Tier 5 wouldn't be caught dead in one.",
+  "propulsion": "Electric, autonomous drive system",
+  "speed": "60 km/h city, 100 km/h express lanes",
+  "capacity": "4 passengers",
+  "range": "300 km per charge",
+  "tier_availability": "Tier 2-4",
+  "cost": "Φ10-50 per ride depending on distance and demand surge",
+  "autonomy": "Fully autonomous. Tessera AI routing and dispatch.",
+  "armament": "Interior locking system, silent alarm, passenger restraint capability (classified).",
+  "common_usage": "Mid-tier commuters, business travel, anyone who needs point-to-point transport and doesn't mind being watched.",
+  "story_hooks": [
+    "An AutoCab's AI refuses to take a passenger to a specific address and won't explain why",
+    "Someone discovers the AutoCab surveillance data is being used to build predictive models of citizen behavior — and the predictions are getting uncomfortably accurate"
+  ],
+  "tags": [
+    "personalground",
+    "transportation",
+    "ai",
+    "corporate",
+    "surveillance",
+    "control",
+    "rain",
+    "night",
+    "train",
+    "tier 2",
+    "tier 4"
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "id": "019d6143a5c175d1ae04b31bec344a06",
+  "type": "character",
+  "name": "Benedikt Ayorinde-Tcherepnin",
+  "aliases": [
+    "Benny Cutter",
+    "the Cutter"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Chop shop operator—vehicle parts, cyberware stripping, industrial equipment",
+  "age": 48,
+  "status": "active",
+  "location": "The Stockyard, Bay 9 of the decommissioned Ferrogate Transit maintenance shed on Axle Row",
+  "description": "Benedikt is a big man run slightly soft, with heavy forearms corded from decades of physical work, dark reddish-brown skin cross-hatched with old chemical burns on the backs of both hands, and a white-streaked beard he keeps trimmed close. He has geneware cat ears—tabby-patterned in brown and gray, a mod he got at thirty-five on a dare and kept because his grandchildren think they're wonderful. He wears the same style of heavy canvas coverall every day in rotating colors, always with the sleeves pushed up, always with at least one pocket tool he's forgotten to put away.\n\nBenedikt projects the easy authority of a man who has been competent at his work for a long time and knows it. He is not cruel, not dramatic, not particularly greedy—he runs his operation like a small business, because it is one. He is known in the Stockyard as fair: he pays what he says he'll pay, his cuts are clean, and he doesn't ask questions he doesn't want answered. What people underestimate is the quality of his memory and his willingness to call in patience as a debt. He has been waiting on one particular piece of unfinished business for six years.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "His operation being taken over or destroyed by a larger criminal organization",
+      "Dying before settling the six-year debt"
+    ],
+    "core_desires": [
+      "Stability and continuation of what he's built",
+      "Resolution of the specific betrayal that cost him a partner and a son's future"
+    ],
+    "coping_mechanisms": [
+      "Physical work as meditation—when stressed, he strips components by hand even when tools would be faster",
+      "Humor, mostly dry and self-deprecating"
+    ],
+    "blind_spots": [
+      "His junior workers' loyalty—he assumes it is earned and solid when it is fragile",
+      "He thinks his patience makes him strategic; sometimes it just means he waits while things get worse"
+    ],
+    "secret": "Six years ago a man named Oyelaran Prochaska-Saintil sold Benedikt's eldest son's location to a Helix Biosystems compliance team that had been looking for the son over a stolen organ scaffold. The son did eight months in a Helix detention facility and came out fundamentally changed. Benedikt has since found Oyelaran, who now lives under a new identity in Archer's Line, works a legitimate job, and has a family. Benedikt has not decided what to do. He thinks about it every day."
+  },
+  "speech_patterns": {
+    "vocabulary": "Working-class technical, heavy on mechanical metaphors. Doesn't use filler words. When he says something it's because he means it.",
+    "cadence": "Unhurried, deliberate, occasionally punctuated by short silences while he finishes a thought with his hands.",
+    "verbal_tics": [
+      "'Right, so.'",
+      "Ends declarative sentences with a short exhale through the nose, not quite a laugh"
+    ],
+    "example_lines": [
+      "'Right, so—what you've got here is a third-gen Ferrogate transit motor with the governor stripped, which makes it worth something to me and a serious problem for you if you got stopped with it. Lucky for both of us you weren't.'",
+      "'I've been in this bay twenty-two years. Seen four major gangs try to take the Stockyard. All four are gone. I'm still here. There's a lesson in there if you want it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Benedikt's eldest son has relapsed into a destructive pattern since the detention stint and Benedikt is quietly, desperately trying to find leverage or money or something to get him into a private rehabilitation program without it becoming public and destabilizing the shop",
+    "Someone has been stripping Ferrogate transit vehicles of a very specific, very expensive navigation component and selling the parts to Benedikt through intermediaries—he has just realized the components are from vehicles that haven't been decommissioned yet"
+  ],
+  "narrative_function": "Reliable fence for vehicle and cyberware components, local color anchor for the Stockyard, potential quest giver for the six-year-old unfinished business, good source of mechanical expertise and underworld pragmatism.",
+  "augmentations": "Geneware cat ears (tabby, brown-gray, cosmetic). Left hand has a mechanical assist brace over the ring and pinky fingers—industrial injury repair, basic model. Optical magnification implant in right eye for fine component work.",
+  "daily_life": "Opens the bay at 0600, works through intake assessments on new acquisitions, manages three junior strippers, closes by 2100—occasionally later if a priority job comes in after dark.",
+  "affiliation": "Independent, informal tribute arrangement with the Stockyard Compact (local protection collective)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 5,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "patient",
+      "skilled",
+      "principled-within-limits",
+      "quietly-dangerous",
+      "paternal"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Pay what you promised, no exceptions—your word is the only capital that doesn't depreciate",
+      "Don't take anything that has a living person still attached to it—strictly parts and property"
+    ],
+    "escalation_ladder": [
+      "Address problem directly and plainly",
+      "State consequences once, clearly, without theatrics",
+      "Apply economic pressure—stops buying from the offending party, notifies the Compact",
+      "Calls in favors, does not personally engage in violence but does not prevent it"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally neutral, assessing—prices them up before he speaks much",
+      "friends": "Warm in a gruff, practical way; expresses regard through reliability and remembered details"
+    },
+    "stress_responses": {
+      "low": "Strips a component by hand, works quietly",
+      "medium": "Sends his junior workers home early and works alone",
+      "high": "Goes very still and very quiet, which his workers have learned to fear more than shouting"
+    },
+    "contradictions": [
+      "Prides himself on no violence yet is methodically preparing a situation that may end in it",
+      "Extremely fair in business, deeply unfair in his private calculation about Oyelaran"
+    ],
+    "habits": [
+      "Makes tea in a battered ceramic pot at exactly 0800 and 1400, does not offer it to people he doesn't trust",
+      "Wipes his tools individually at end of shift regardless of how tired he is"
+    ],
+    "breaking_points": [
+      "Any direct threat to his grandchildren",
+      "If his eldest son's situation becomes publicly humiliating or dangerous"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Geneware cat ears (tabby pattern, cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware cat ears (tabby pattern, cosmetic)",
+      "replaces": ""
+    },
+    {
+      "name": "Mechanical finger brace (left ring and pinky, basic industrial repair model)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Mechanical finger brace (left ring and pinky, basic industrial repair model)",
+      "replaces": ""
+    },
+    {
+      "name": "Optical magnification implant (right eye, fine-detail work configuration)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Optical magnification implant (right eye, fine-detail work configuration)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9,
+    "Quick Study": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 19: Started as a legitimate Ferrogate Transit maintenance apprentice on Axle Row",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 26: First gray-market parts deal—sold components from a legitimately totaled vehicle on the side",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 33: Opened Bay 9 as a nominally legitimate salvage operation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 42: The Oyelaran betrayal and his son's detention",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 45: Located Oyelaran under his new identity. Has been sitting on it since.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

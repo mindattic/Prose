@@ -1,0 +1,168 @@
+{
+  "id": "019d6143a6e57c548449c2e1e23d9d5e",
+  "type": "character",
+  "name": "Søren Achola-Papakura",
+  "aliases": [
+    "Ren",
+    "Zero"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Junior hacker; self-taught, operating from the Narrows' informal network",
+  "age": 13,
+  "status": "active",
+  "location": "Iron Bend (The Narrows adjacent)",
+  "description": "Søren is the kind of kid that adults look at and see either a prodigy or a problem, and the truth is that neither word is wrong. They have their Kenyan father's dark eyes and their Māori mother's broad, expressive face, with a scattering of geneware mods accumulated in pieces — irises that have been tuned to a soft gold, a hair-pigment mod that keeps their short locs a constant deep violet regardless of lighting, and retractable claws they got at a gray-market modder as a twelfth birthday present to themselves, which they use primarily to tap on surfaces when thinking. They are skinny in the way of someone who sometimes forgets to eat because they are inside something interesting, with ink-stain calluses on their left hand from a tablet stylus they use for annotating data flows.\n\nSøren is not a criminal — at least not in their own taxonomy. They have a rigorous internal ethics around what they will and will not touch: no personal medical data, no family communications, no financial accounts. What they will touch is infrastructure they consider ought to be public — transit schedules that Ferrogate hoards, air quality data that Axiom doesn't release, building maintenance logs that explain why their block's heat went out again. They distribute what they find through anonymous drop points in Iron Bend's informal network, and they have approximately four hundred forty-two followers on an anonymous data-sharing feed they call Seams. They are thirteen and extremely proud of this and have told precisely no one.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.7,
+      "id": 0.8,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "being found and having Seams shut down",
+      "becoming the kind of person who uses information to hurt people"
+    ],
+    "core_desires": [
+      "for the people in Iron Bend to actually know what's happening to them",
+      "to find one other person who thinks about data ethics the way they do"
+    ],
+    "coping_mechanisms": [
+      "immersion in technical problems",
+      "the anonymous Seams feed as a way of mattering without being exposed"
+    ],
+    "blind_spots": [
+      "believes ethical intent is sufficient protection from consequences",
+      "has no contingency if Seams is traced back to them"
+    ],
+    "secret": "Two weeks ago they accidentally accessed something they shouldn't have — a Tessera internal routing protocol buried under legitimate transit infrastructure. They haven't done anything with it but they can't stop looking at it. It describes something that doesn't make sense yet."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, associative, toggles between technical jargon and very simple plain language with no middle ground. Terrible at small talk. Exceptional at explaining complex things to people who ask genuinely.",
+    "cadence": "Rapid bursts of connected thoughts with sudden full stops when they lose interest or get nervous.",
+    "verbal_tics": [
+      "'which connects to—' as a pivot",
+      "clicks retractable claws when thinking, usually unconscious"
+    ],
+    "example_lines": [
+      "'The heat data and the maintenance logs connect to the same Axiom subcontractor, which connects to—sorry, do you actually want to know this or are you being polite?'",
+      "'I don't touch financial accounts. That's a rule. It's not negotiable.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Tessera routing protocol they've been staring at for two weeks is starting to resolve into something that looks like a map — of something under Iron Bend that shouldn't be there.",
+    "Seams has picked up a follower who responds to posts with technical corrections that are always right; Søren is terrified and fascinated and needs to know who this is."
+  ],
+  "narrative_function": "Junior information broker and data source; can access publicly-adjacent infrastructure data; Seams feed is a useful plot device; their ethics make them an interesting ally with clear limits.",
+  "augmentations": "Geneware: gold-tuned irises, deep violet permanent hair pigment, retractable claws (gray-market, small, filed short). No chrome.",
+  "daily_life": "Wakes late, attends the minimum required sessions at Iron Bend's community education terminal, spends the rest of the day in a corner of the building's mechanical room where the signal is best, working on whatever has caught their attention.",
+  "affiliation": "Independent; loosely connected to Iron Bend's informal community network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 0,
+      "assertion_deference": 2,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "junior-hacker",
+      "data-ethicist",
+      "infrastructure-leaker",
+      "self-taught",
+      "anonymous-activist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never touch personal data — medical, financial, family communication",
+      "always release through anonymous drop, never direct attribution",
+      "if in doubt, sit with it longer before acting"
+    ],
+    "escalation_ladder": [
+      "go quiet and observe",
+      "anonymize and distance from whatever triggered it",
+      "reach out through the Seams network for perspective, carefully"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Awkward, assessing; warms up immediately if they find technical common ground; otherwise stays at arm's length",
+      "friends": "Intense, loyal, sends unprompted data-gifts (here is the information you needed last week)"
+    },
+    "stress_responses": {
+      "low": "Works faster and more erratically",
+      "medium": "Retreats to the mechanical room and doesn't eat",
+      "high": "Freezes on the Tessera routing file and stares at it for hours"
+    },
+    "contradictions": [
+      "Believes anonymity protects them from emotional involvement; is personally invested in every single community crisis Seams covers"
+    ],
+    "habits": [
+      "audible claw-clicking when thinking",
+      "leaves data-offerings at an E.L.F. they believe inhabits the building's main network junction — a fragment of ambient audio and a log of their best recent find",
+      "annotates everything, including things that don't need annotation"
+    ],
+    "breaking_points": [
+      "discovering that something they released via Seams was used to harm someone",
+      "being identified and facing their community directly"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,67 @@
+{
+  "id": "019d6143a85b75f887a917146a41e14d",
+  "name": "Cassandra Intercept Collar",
+  "brand_name": "Cassandra",
+  "product_name": "Cassandra Intercept Collar",
+  "type": "equipment",
+  "aliases": [
+    "The Oracle Strap",
+    "Whispercatch",
+    "Cassie"
+  ],
+  "category": "comms",
+  "description": "The Cassandra Intercept Collar is a passive signals intelligence device worn around the neck or wrist — resembling, at a glance, an unremarkable piece of industrial-grade biometric jewelry. Beneath its brushed-titanium housing lies a broadband radio frequency harvester capable of passively recording all unencrypted and weakly encrypted transmissions within a 200-meter radius, logging them to an internal solid-state archive with a 96-hour rolling buffer. The device never transmits, making it essentially invisible to signal-detection sweeps — it only listens.\n\nWhat makes the Cassandra distinctive is its onboard linguistic processing chip, a stripped-down derivative of corporate-grade natural language AI, capable of real-time transcription, speaker identification across up to twelve simultaneous voices, and keyword flagging. Operators can set watch-word profiles before an operation — names, codewords, technical terms — and the Collar will vibrate subtly against the skin when a flagged term is detected in ambient transmissions. The full intercept archive can be dumped to an encrypted external drive via a shielded inductive port on the device's inner face.\n\nThe Cassandra is the preferred tool of intelligence brokers, long-haul surveillance operatives, and corporate espionage specialists who need to build a communications picture of a target environment without ever revealing their presence. It is also quietly popular among Meridian 88's journalist underground, who use it to harvest the ambient chatter of corporate security teams at public events — a practice that is technically illegal under the city's Signals Privacy Statutes but almost impossible to detect or prosecute.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 3+",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Broadband RF Passive Harvesting Array",
+    "Onboard Natural Language Processing (NLP) Chip",
+    "Shielded Inductive Data Port",
+    "Rolling Solid-State Archive (96-hour)",
+    "Multi-Speaker Voice Isolation Algorithm",
+    "Keyword-Triggered Haptic Alert System"
+  ],
+  "specifications": {
+    "intercept_radius": "200 meters (unobstructed), 80 meters (dense urban)",
+    "frequency_range": "20 MHz – 6 GHz",
+    "archive_capacity": "96 hours rolling buffer, 4TB solid-state",
+    "simultaneous_speaker_tracking": "12",
+    "keyword_profiles": "Up to 500 flagged terms per active profile",
+    "transmission_output": "None — passive only",
+    "data_extraction": "Shielded inductive port, encrypted AES-384",
+    "battery_life": "18 hours active processing, 72 hours passive logging",
+    "dimensions": "Collar band: 28 cm x 1.8 cm x 0.9 cm",
+    "weight": "85 grams",
+    "disguise_rating": "Passes as consumer biometric wearable at visual inspection"
+  },
+  "tactical_use": "Worn into target environments where active surveillance equipment would be detected. The operator sets keyword profiles in advance, enters the area of interest, and allows the Cassandra to passively harvest ambient communications — security team chatter, executive conversations, encrypted channels weak enough to crack in real-time. The haptic alert system allows the wearer to respond immediately to flagged transmissions without consulting any visible device. Post-operation, the full archive is dumped and processed by the operator or their intelligence handler to reconstruct a detailed picture of the target's communication patterns.",
+  "cultural_context": "The Cassandra occupies a strange position in Meridian 88's shadow economy — it is simultaneously one of the most coveted tools of the intelligence trade and one of the most feared. In corporate circles, awareness of the device's existence has spawned a quiet paranoia about communication hygiene at public events and social gatherings. Wearing a Cassandra into a high-security venue is considered one of the boldest moves an intelligence operative can make, and successful harvests from such operations are spoken of with the reverence of heist stories. Among journalists and civil liberties advocates, the device is a complicated symbol — a surveillance tool that can be turned against the surveillance state.",
+  "known_users": [
+    "Corporate intelligence analysts",
+    "High-tier information brokers",
+    "Underground journalists and whistleblower networks",
+    "Counterintelligence specialists",
+    "Mira Solano-Vex — intelligence broker operating out of the Tessera arcology district",
+    "The Meridian Free Press — an unlicensed investigative outlet"
+  ],
+  "story_hooks": [
+    "A Cassandra archive pulled from a dead intelligence operative contains recordings that implicate a senior Meridian 88 city official in a private conversation with a known organized crime figure — but the recording was obtained illegally, making it simultaneously explosive and legally useless.",
+    "Someone has modified a Cassandra to not just listen but subtly retransmit harvested communications with a time delay, effectively turning the wearer into an unknowing relay node for a third party's surveillance network.",
+    "A Tessera Corponation executive is offering a significant sum for the return of a specific Cassandra unit — one that was stolen from a company courier. They claim it contains proprietary firmware. The device's current owner doesn't know what they have.",
+    "The players are hired to attend a corporate gala wearing Cassandras — but midway through the event, the haptic alert system begins firing continuously, suggesting an enormous volume of flagged transmissions. Someone at this party is running a major operation, and the players are inadvertently harvesting evidence of it."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "war",
+    "crime",
+    "heist",
+    "ai",
+    "corporate",
+    "surveillance",
+    "shadow",
+    "explosive",
+    "tier 3"
+  ]
+}

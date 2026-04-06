@@ -1,0 +1,63 @@
+{
+  "id": "019d6143a8677b77a8e65714f96877cf",
+  "name": "Palladian Gravemind Relay Hub",
+  "brand_name": "Palladian",
+  "product_name": "Palladian Gravemind Relay Hub",
+  "type": "equipment",
+  "aliases": [
+    "The Ossuary",
+    "Bonebridge",
+    "Palladian Hub"
+  ],
+  "category": "comms",
+  "description": "The Gravemind Relay Hub is a distributed mesh-coordination device roughly the size of a hardcover book, constructed from Palladian Construction's proprietary stress-ceramic housing. It operates by seeding a local area with micro-relay dust — particles thin enough to drift through ventilation systems and settle on surfaces — which collectively form a self-organizing signal lattice. The hub itself acts as the root node, stitching the dust-relays into a coherent network that can support up to forty-eight simultaneous encrypted voice and data channels across a radius of roughly six city blocks.\n\nWhat distinguishes the Gravemind from conventional mesh nodes is its passive topology — the dust-relays require no active power draw, harvesting ambient EM bleed from nearby infrastructure to sustain themselves. This makes the network nearly undetectable by standard sweep equipment, as there is no central transmitter to locate. Traffic is fragmented and distributed across hundreds of micro-nodes before being reconstructed at the receiving end, a process Palladian markets as 'architectural encryption.'\n\nThe hub is favored by fixers and mid-tier syndicate operations that need persistent comms infrastructure in contested urban zones without the risk of a single point of compromise. Construction crews operating in corporate exclusion zones use them to maintain coordination when standard channels are jammed or monitored. Law enforcement occasionally finds decommissioned units months after an operation has concluded, the dust long settled into the walls.",
+  "manufacturer": "PALLADIAN CONSTRUCTION",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Micro-relay dust seeding",
+    "Self-organizing mesh topology",
+    "Ambient EM harvesting",
+    "Fragmented packet distribution",
+    "Stress-ceramic housing"
+  ],
+  "specifications": {
+    "dimensions": "22cm x 14cm x 6cm",
+    "weight": "1.1kg",
+    "relay_dust_capacity": "Approximately 80,000 micro-relay particles per canister",
+    "coverage_radius": "~600m urban (variable by density)",
+    "simultaneous_channels": "48",
+    "channel_encryption": "AES-512 equivalent, fragmented-key architecture",
+    "network_persistence": "72–96 hours post-seeding without hub active",
+    "detection_resistance": "High — no central EM signature above ambient noise floor",
+    "power_source": "Micro-cell battery, 18-hour active operation; passive network persists independently"
+  },
+  "tactical_use": "Operators seed the relay dust through ventilation intake, open windows, or by foot traffic prior to an operation. Once dispersed, the hub is activated from a concealed position to initialize the lattice. Team members connect via standard encrypted handsets without needing line-of-sight or proximity to each other. The hub can be physically removed or destroyed after seeding — the dust network will persist autonomously for days, making post-op signal sweeps ineffective. Used extensively for multi-team operations requiring persistent comms in environments where active transmitters would draw attention.",
+  "cultural_context": "In Meridian 88's underground economy, owning a Gravemind Hub signals a certain level of operational sophistication — it's not the tool of a street runner but of someone who plans three days ahead. Palladian Construction's branding as an infrastructure company lends the device an almost bureaucratic legitimacy; the hardware looks like a contractor's survey unit at a glance. Among fixers, gifting a Gravemind Hub to a trusted associate is considered a significant gesture of partnership, implying you're building something together that outlasts a single job.",
+  "known_users": [
+    "Mid-tier syndicate operations coordinators",
+    "Corporate sabotage contractors",
+    "Independent fixer networks",
+    "Underground labor organizers in corporate exclusion zones",
+    "Meridian 88 PD tactical units (confiscated and repurposed)"
+  ],
+  "story_hooks": [
+    "A Gravemind Hub seeded during a job three months ago is still active — and someone is using its ghost network to route communications the original operators never authorized.",
+    "The players discover relay dust in their safehouse walls, suggesting the location has been used as an unwitting relay node for an unknown operation.",
+    "Palladian Construction is quietly recalling a specific batch of Gravemind Hubs, claiming a firmware defect — but the real reason may be that a back-channel kill-switch was discovered by an independent researcher.",
+    "A dying fixer's last message directs the players to a Gravemind Hub she seeded before her final job — the dust network is the only record of what she found."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "war",
+    "trust",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "market",
+    "tier 2"
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "id": "019d6143a5e875808914f047b5194601",
+  "type": "character",
+  "name": "Daulet Petersen-Bah",
+  "aliases": [
+    "Ion",
+    "The Specialist"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Electronic and physical observation expert — surveillance specialist",
+  "age": 37,
+  "status": "active",
+  "location": "Dockside — Lake Michigan waterfront, smuggler territory",
+  "description": "Daulet Petersen-Bah are lean and angular, all sharp edges and visible tension. At 37, the augmentation scarring around their temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — retractable monofilament whip in left forearm — concealed weapon, devastating in — and they make no effort to hide it.\n\nThey grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. They work as a surveillance specialist out of Dockside, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Daulet Petersen-Bah describe them as a precision instrument — point them at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.53,
+      "ideal": 0.86,
+      "id": 0.98,
+      "shadow": 0.96,
+      "mask": 0.18,
+      "ghost": 0.74
+    },
+    "core_fears": [
+      "Their past catching up — debts, enemies, broken promises",
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "Betrayal by someone they trust — the only currency that matters"
+    ],
+    "core_desires": [
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
+      "To protect the people in their district who can't protect themselves",
+      "A crew worth trusting — people who stay when the shooting starts"
+    ],
+    "coping_mechanisms": [
+      "Connection — finds someone to talk to, even if it's a bartender or a cat",
+      "Planning — responds to chaos by making detailed contingency plans for everything",
+      "Violence — hits something when they can't process emotions, preferably something that deserves it"
+    ],
+    "blind_spots": [
+      "Assumes their skill set is more transferable than it actually is",
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
+      "Assumes the worst in corporate people, missing the rare ones who could be allies"
+    ],
+    "secret": "Daulet Petersen-Bah is slowly going chrome-sick — rejection symptoms are manageable now but getting worse. Has maybe two years before it becomes visible."
+  },
+  "speech_patterns": {
+    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
+    "cadence": "Halting — speaks in fragments, reassembles thoughts in real time.",
+    "verbal_tics": [
+      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
+      "Calls money 'weight' — as in 'that job doesn't carry enough weight'"
+    ],
+    "example_lines": [
+      "\"I've been watching you for three days. You should close your curtains.\"",
+      "\"Information is the only commodity that appreciates with age.\"",
+      "\"Everyone thinks they're careful. Nobody is careful enough.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Daulet Petersen-Bah intercepts intelligence about a threat to their district and must decide between profit and protection",
+    "A dead drop Daulet Petersen-Bah maintains is found and cleaned out — whoever did it now has leverage",
+    "Daulet Petersen-Bah is offered a contract that would clear all their debts — the target is someone they respect"
+  ],
+  "narrative_function": "Daulet Petersen-Bah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Retractable monofilament whip in left forearm — concealed weapon, devastating in close quarters. Neural dampener — blocks external hacking attempts, passive ICE in the brain",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+  "affiliation": "Freelance — available through Circuit fixers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 4
+      },
+      "agility": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 10
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 4
+      },
+      "perception": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 6
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 8
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 8
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 4
+      },
+      "deception": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 6
+      },
+      "empathy": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 4
+      }
+    },
+    "personality": {
+      "aggression": 0.29,
+      "caution": 0.87,
+      "loyalty": 0.74,
+      "greed": 0.25,
+      "empathy": 0.68
+    },
+    "drives": [
+      "money",
+      "power",
+      "loyalty"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 6,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "natural leadership presence",
+      "exceptional close-quarters combat"
+    ],
+    "weaknesses": [
+      "risk-averse to the point of missed opportunities",
+      "inability to delegate — must control everything personally",
+      "old injury that flares under specific conditions"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "surveillance specialist",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Always verifies target identity independently before lethal contracts",
+      "Will work with anyone once. Second time requires vouching from someone trusted."
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+      "Insists they work alone but performs noticeably better in a team"
+    ],
+    "habits": [
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+      "Practices a kata or fighting form every morning regardless of circumstances",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore"
+    ],
+    "breaking_points": [
+      "Losing their primary augmentation — the one that defines their professional identity",
+      "Being forced to choose between a crew member and the mission — and choosing wrong",
+      "Watching someone they trained or mentored die on a job they recommended"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Retractable monofilament whip in left forearm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Retractable monofilament whip in left forearm — concealed weapon, devastating in close quarters",
+      "replaces": ""
+    },
+    {
+      "name": "Neural dampener",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Neural dampener — blocks external hacking attempts, passive ICE in the brain",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9,
+    "Opportunist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

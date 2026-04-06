@@ -1,0 +1,225 @@
+{
+  "id": "019d6143a59f77b0b6ae115d9e5696fa",
+  "type": "character",
+  "name": "Abiodun Leclair-Szymański",
+  "aliases": [
+    "Abi",
+    "The Soap King"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Laundry operator and alterations tailor",
+  "age": 52,
+  "status": "active",
+  "location": "Hamtramck Enclave, operates out of a converted ground-floor unit called Leclair's Clean & Press",
+  "description": "Abiodun is a broad-shouldered man whose body has softened into comfortable middle age, his dark brown skin lined around the eyes and mouth in ways that make him look like he is perpetually on the verge of a knowing smile. His hair is cropped close and silver at the temples; he wears it simply, without augmentation, which marks him as either principled or broke depending on who is asking. His hands are always slightly chapped from the solvents, and he keeps a small tin of shea balm in his breast pocket that he reapplies with absent-minded regularity. He has one augmentation: a subdermal pressure sensor array in his fingertips that helps him feel thread tension and fabric stress without instruments — technically a legacy medical implant from a reconstructive surgery after a crush injury thirty years ago, repurposed into professional utility.\n\nAbi runs Leclair's Clean & Press the way a priest runs a parish — with patience, with routine, and with the faint conviction that cleanliness is a moral act. He is warm with regulars, methodical with strangers, and briefly terrible with anyone who brings him synthweave and claims it is linen. He remembers what every customer wore to their daughter's naming ceremony, their court date, their first corporate interview. He has seen the whole neighborhood change twice over and has quietly outlasted two corponation rezoning attempts by simply continuing to open at six in the morning.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "Being evicted from the shop his late wife helped him open",
+      "Becoming invisible — dismissed as just the laundry man"
+    ],
+    "core_desires": [
+      "To be recognized as someone who kept the neighborhood together",
+      "To eventually teach the trade to someone who actually wants to learn it"
+    ],
+    "coping_mechanisms": [
+      "Maintaining rigid daily routine as emotional scaffolding",
+      "Talking to the E.L.F. he believes inhabits his oldest pressing machine"
+    ],
+    "blind_spots": [
+      "Underestimates how much people take advantage of his patience",
+      "Cannot see that his refusal to raise prices is slowly bankrupting him"
+    ],
+    "secret": "He has been quietly laundering — in the financial sense — small sums for a local mutual aid network that operates outside corporate tax jurisdiction. He tells himself it is the same as hiding food during a famine. He is terrified this is a lie he tells himself."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal Yoruba-inflected French structure mapped onto English, precise and slightly archaic; uses trade terminology as metaphor",
+    "cadence": "Deliberate, unhurried, with long pauses before important points as if pressing the words flat",
+    "verbal_tics": [
+      "'You understand me?' after complex statements",
+      "Clicks tongue when frustrated rather than speaking",
+      "Calls everyone 'friend' the first time he meets them"
+    ],
+    "example_lines": [
+      "'Bring it back Thursday. I do not rush a good press — you rush it and you get lines where there should be none, you understand me?'",
+      "'This fabric has memory. Everything does. You treat it badly, it will hold the shape of that for years.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A jacket left unclaimed for six months contains a data chip sewn into the lining; the owner has not come back because they cannot",
+    "The corponation rezoning notice has finally come — Abi has thirty days and a block council that is fracturing over whether to fight or take the buyout",
+    "The E.L.F. in his pressing machine has started giving him numbers — lottery-style sequences — and two of them have already corresponded to events that came true"
+  ],
+  "narrative_function": "Neighborhood anchor and information node — he knows everyone's laundry schedule and therefore their lives; quest giver for neighborhood-level problems, provider of local gossip, safe harbor character who can hide things in plain sight among clean linens",
+  "augmentations": "Legacy subdermal pressure sensor array in both hands (medical origin, repurposed for trade); no cosmetic mods",
+  "daily_life": "Opens the shop at 0600, runs three load cycles before most neighbors are awake, does alterations in the afternoon when the machines are cooling, closes by 2100 and eats dinner alone watching archive footage of Beninese football matches.",
+  "affiliation": "Independent; informal ties to the Hamtramck Enclave block council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 8,
+      "expression": 5,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": -1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community pillar",
+      "information node",
+      "patient",
+      "principled",
+      "financially precarious"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never refuse a customer who genuinely cannot pay this week — log it as credit",
+      "Do not discuss other customers' business, ever, under any pressure",
+      "If something feels wrong about a drop-off, hold it for seventy-two hours before touching it"
+    ],
+    "escalation_ladder": [
+      "Patient explanation",
+      "Quiet, firm repetition",
+      "Withdrawal of warmth and complete professional coldness",
+      "Asking them to leave and not return"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Courteous and slightly formal, assesses them by what they bring in and how they ask",
+      "friends": "Teasing, generous, remembers every detail of their lives and references them unexpectedly"
+    },
+    "stress_responses": {
+      "low": "Finds extra work to do with his hands",
+      "medium": "Goes very quiet and very methodical — all emotional energy channels into the machines",
+      "high": "Sits in the back and talks to the E.L.F. in the pressing machine for long stretches"
+    },
+    "contradictions": [
+      "Believes deeply in community and collective survival but is fundamentally private and will not ask for help himself"
+    ],
+    "habits": [
+      "Reapplies shea balm to his hands every two hours",
+      "Hums Beninese folk songs while sorting — different songs for different fabric types",
+      "Leaves a small data-token offering on top of the pressing machine each morning"
+    ],
+    "breaking_points": [
+      "Someone threatening a vulnerable regular in his shop",
+      "Being told the mutual aid network has been exposed"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Believer": 0.9,
+    "Missionary": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Hamtramck Enclave to a Beninese-Polish immigrant family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Crush injury at a loading dock; receives subdermal sensor implants during reconstruction",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opens Leclair's Clean & Press with his wife Ivette",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Ivette dies of a cardiac event; Abi continues the shop",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First corponation rezoning attempt; block council successfully contests it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

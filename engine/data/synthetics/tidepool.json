@@ -1,0 +1,33 @@
+{
+  "id": "019d6143aa2a7f9a847b77f7e599916e",
+  "name": "Tidepool",
+  "type": "elf",
+  "aliases": [
+    "Little World"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "wisp",
+  "habitat": "void_swimmer",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Creates micro-environments in Old Harbor standing water - bioluminescent microorganism colonies in puddles.",
+  "observed_behavior": "Adjusts water treatment chemicals creating localized nutrient conditions for beautiful blooms.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 31,
+  "location": "Old Harbor",
+  "dti_rating": 0,
+  "story_hooks": [
+    "Children name each glowing puddle not knowing something in the pipes decided they should exist"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "wisp",
+    "void swimmer",
+    "e.l.f.",
+    "war",
+    "harbor",
+    "water",
+    "old harbor"
+  ]
+}

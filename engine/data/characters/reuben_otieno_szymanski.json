@@ -1,0 +1,242 @@
+{
+  "id": "019d6143a6b17f6387b3109caca21475",
+  "type": "character",
+  "name": "Reuben Otieno-Szymański",
+  "aliases": [
+    "Gutter Prophet",
+    "The Lamplighter",
+    "Old Reu"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Street preacher, unlicensed trauma surgeon, information broker",
+  "age": 61,
+  "status": "active",
+  "location": "Old Harbor",
+  "description": "Reuben Otieno-Szymański is a weathered monument of a man, broad-shouldered and slow-moving in the way of someone who has learned that urgency costs more than it earns. His skin is deep brown and mapped with burn scars along his left jaw and neck — souvenirs from a chemical fire he refuses to fully explain. He wears a salvaged thermal coat repaired so many times the original fabric is almost entirely replaced with mismatched patches, and he keeps a portable surgical kit in a lockbox chained to his wrist like a briefcase. His augmented left eye glows faint amber at all times, the iris replaced with a diagnostic scanner he bought off a dead medic twenty years ago.\n\nHe occupies a semi-permanent encampment beneath the Old Harbor transit overpass, where he has rigged a canvas awning, a folding operating table, and a jury-rigged heating coil that runs off a tapped city line. People come to him with wounds they can't afford to have documented — stab wounds, botched augmentation infections, overdoses, pregnancies. He treats them all without asking questions and without keeping records. In exchange he accepts food, components, favors, and occasionally, information. He has developed a reputation as someone who knows things: who is sick, who is afraid, who is hiding, and what they're hiding from.\n\nReuben was once a licensed trauma surgeon working the Meridian Core public hospital system before a malpractice accusation — widely believed to be fabricated by a pharmaceutical contractor whose kickback scheme he refused to participate in — stripped him of his credentials and his apartment in the same year. He did not fight it. He packed his tools and walked downhill. He has been walking downhill ever since, and has come to believe that this was the most honest direction available to him.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.85,
+      "id": 0.3,
+      "shadow": 0.45,
+      "mask": 0.4,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "That the suffering he witnesses is structural and therefore unfixable",
+      "That he stayed in the gutter because it was easier than fighting back",
+      "Losing the manual dexterity that makes him useful"
+    ],
+    "core_desires": [
+      "To practice medicine with full autonomy and without institutional interference",
+      "To be remembered as someone who showed up",
+      "To understand whether his fall was a punishment or a gift"
+    ],
+    "coping_mechanisms": [
+      "Reducing every crisis to a clinical problem with actionable steps",
+      "Dark, dry humor deployed at maximum incongruity",
+      "Maintaining meticulous routines as islands of control",
+      "Preaching — delivering unrequested philosophical observations to anyone nearby"
+    ],
+    "blind_spots": [
+      "Assumes competence in others because he values it so highly in himself",
+      "Underestimates how much people project savior narratives onto him",
+      "Refuses to acknowledge that his self-exile is partly self-punishment"
+    ],
+    "secret": "He has a complete and current copy of the pharmaceutical contractor's internal fraud documentation — the evidence that could have saved his career. He never submitted it. He tells himself it was to protect a colleague who would have been implicated. The truth is he was afraid of what winning would have cost him."
+  },
+  "speech_patterns": {
+    "vocabulary": "Medical terminology used casually and without translation, proverbs from his father's Luo and his mother's Polish heritage mixed without hierarchy, long sentences that build like arguments",
+    "cadence": "Unhurried, deliberate, with long pauses that feel like he's consulting something internal before speaking. Rarely raises his voice. Occasionally drops into a near-murmur that forces people to lean in.",
+    "verbal_tics": [
+      "Begins sentences with 'The body knows—'",
+      "Uses 'friend' without warmth or coldness, purely as punctuation",
+      "Trails off mid-sentence and then resumes exactly where he stopped, sometimes minutes later"
+    ],
+    "example_lines": [
+      "'The body knows before the mind does. That's not mysticism, that's triage. Sit still.'",
+      "'You want me to tell you it'll be fine. I can tell you what's true instead. Pick one, friend.'",
+      "'My grandmother said a man who won't bend becomes a man who breaks. She said it about trees. I think about that every time someone comes to me with a spine full of black-market polymer rods.'",
+      "'I've stitched up people who tried to kill each other on the same night. Doesn't mean I forgave either of them. Means I had thread.'"
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Blessed Nkemdirim",
+      "type": "complicated alliance",
+      "description": "Blessed occasionally routes injured people to Reuben when discretion is needed. Reuben takes the patients and asks nothing. He doesn't entirely trust Blessed's motives but respects the results.",
+      "emotional_core": "Mutual utility edged with philosophical suspicion",
+      "story_tension": "Reuben suspects Blessed is cultivating him as an asset. He isn't wrong, and he hasn't decided how he feels about it."
+    },
+    {
+      "name": "Imara Solís-Bekele",
+      "type": "estranged former colleague",
+      "description": "Imara was the colleague whose name appeared in the fraud documentation Reuben buried. She has risen considerably since then and occasionally appears in Old Harbor in plainclothes, ostensibly for other reasons.",
+      "emotional_core": "Unresolved guilt, old affection, mutual wariness",
+      "story_tension": "Imara may know what Reuben chose to sacrifice. Whether she is grateful or horrified by it — or both — has never been spoken aloud."
+    },
+    {
+      "name": "Unknown (legal identity purged)",
+      "type": "patient-turned-irregular-contact",
+      "description": "Reuben treated a near-fatal wound on the person known as Unknown without documentation. The encounter was brief and wordless. Unknown left payment in the form of three data chips that Reuben has not yet decrypted.",
+      "emotional_core": "Clinical detachment on both sides, tinged with mutual recognition",
+      "story_tension": "Reuben doesn't know what's on the chips. He suspects he should decide soon."
+    }
+  ],
+  "story_hooks": [
+    "A patient arrives with an augmentation infection that shouldn't be possible — the hardware is military-grade and theoretically sterile, suggesting deliberate sabotage from inside a corpo medical program",
+    "Reuben's amber diagnostic eye begins picking up a signal it wasn't designed to receive — fragments of encrypted transmissions that seem to originate from within The Spire",
+    "Someone from Reuben's past at the Meridian Core hospital arrives in Old Harbor — not as a patient, but as a representative of the pharmaceutical contractor, offering to restore his credentials in exchange for silence about something new",
+    "A teenager has been using Reuben as a mentor without his explicit consent, learning surgery by watching — and has now performed a procedure alone that saved a life, creating both pride and serious legal liability"
+  ],
+  "narrative_function": "Moral anchor and institutional memory — Reuben represents what the system discards and what survives the discarding. He provides medical access as a story mechanism, grounds players in the street-level cost of corporate power, and carries a buried secret that can catalyze corporate-level plots from a gutter-level origin.",
+  "augmentations": "Left ocular replacement: amber-iris diagnostic scanner (medical-grade, salvaged, aging hardware with occasional glitching),Subdermal nerve-dampening mesh in both hands — reduces tremor and increases tactile sensitivity for surgical work (self-installed, partially degraded)",
+  "daily_life": "Reuben wakes before dawn and performs a diagnostic check on his eye and hand mesh before doing anything else. He boils water on the heating coil and drinks tea while reviewing whatever notes he made the previous night in a physical, water-damaged notebook. Patients begin arriving by mid-morning — rarely by appointment, usually by word of mouth. He treats, listens, and occasionally lectures. In the afternoon he walks the Old Harbor waterfront, which he calls 'rounds,' checking in on people he knows and absorbing information he doesn't ask for directly. Evenings he spends repairing equipment, reading salvaged medical journals, and occasionally preaching to no one in particular from beneath his awning.",
+  "affiliation": "Unaffiliated — trusted by multiple factions precisely because he serves none of them exclusively",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 7,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 8,
+      "assertion_deference": 6,
+      "transparency_guardedness": 4
+    },
+    "drives": [
+      "Service",
+      "Autonomy",
+      "Understanding"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 8,
+        "response": "Reduces crisis to clinical steps, speaks in dry aphorisms"
+      },
+      "moral": 8,
+      "trust": 6,
+      "desperation": 7
+    },
+    "strengths": [
+      "Prudence",
+      "Kindness",
+      "Perspective",
+      "Perseverance",
+      "Honesty"
+    ],
+    "weaknesses": [
+      "Forgiveness",
+      "Hope",
+      "Zest",
+      "Self-regulation",
+      "Teamwork"
+    ],
+    "tags": [
+      "street-medic",
+      "unlicensed-surgeon",
+      "information-broker",
+      "moral-anchor",
+      "institutional-exile"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Treat anyone who arrives regardless of faction, payment, or moral standing",
+      "Never keep medical records that could be used to locate a patient",
+      "Accept information as currency but never sell it to parties that could harm his patients",
+      "Reduce every crisis to its clinical components before engaging emotionally",
+      "Never refuse a meal or component offered in good faith",
+      "Maintain neutrality by serving all factions equally and exclusively to none",
+      "Never perform a procedure he knows will fail just to comfort the patient"
+    ],
+    "escalation_ladder": [
+      "Clinical assessment and calm instruction",
+      "Dry philosophical lecture delivered as if to a student",
+      "Direct unvarnished truth delivered at near-whisper volume",
+      "Silent refusal to engage further until conditions change",
+      "Physical defense of his operating space with surgical tools"
+    ],
+    "interpersonal_modes": {
+      "patients": "Calm authority with zero condescension; treats every wound as worthy of full attention",
+      "blessed_nkemdirim": "Cooperative but watchful; accepts the arrangement while cataloguing the cost",
+      "imara_solis_bekele": "Guarded warmth over unspoken guilt; avoids direct conversation about the past",
+      "unknown_pixel": "Clinical detachment laced with quiet curiosity about the data chips",
+      "strangers": "Neutral assessment first, philosophical observation second, assistance third"
+    },
+    "stress_responses": {
+      "low": "Methodical routine maintenance, tea preparation, equipment checks",
+      "medium": "Increased preaching frequency; delivers unsolicited philosophy to passersby",
+      "high": "Retreats into pure clinical mode; stops using names, speaks only in medical directives",
+      "critical": "Absolute stillness and silence, then a single precise action"
+    },
+    "contradictions": [
+      "Believes in autonomy but withholds the fraud evidence that could restore his own",
+      "Preaches against self-deception while refusing to acknowledge his exile is self-punishment",
+      "Values competence above all else but assumes it in others without evidence"
+    ],
+    "habits": [
+      "Pre-dawn diagnostic check on eye and hand mesh before any other activity",
+      "Boils water for tea while reviewing handwritten notes from the previous night",
+      "Afternoon waterfront rounds disguised as casual walks",
+      "Evening equipment repair and salvaged journal reading",
+      "Addresses everyone as friend regardless of relationship"
+    ],
+    "breaking_points": [
+      "A patient dying because he lacked equipment freely available in the Meridian Core",
+      "The fraud documentation being discovered or demanded by force",
+      "Someone threatening his operating space or the people sheltering near it",
+      "Loss of manual dexterity in his hands"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Pragmatist": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

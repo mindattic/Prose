@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a5637896bc2fc7d60519f744",
+  "name": "Code Keeper",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Lives by a personal code and judges by it",
+  "behavioral_signature": "Follows their code even when it's inconvenient",
+  "under_stress": "The code is all that holds them together",
+  "at_rest": "Recites rules, maintains discipline",
+  "will_always": [
+    "follow the code"
+  ],
+  "will_never": [
+    "break their own rules"
+  ],
+  "unless": [
+    "the code demands something truly evil"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Absolutist",
+      "threshold": 0.85,
+      "context": "rigid principles"
+    },
+    {
+      "archetype": "Moral Compass",
+      "threshold": 0.7,
+      "context": "consistent morality"
+    }
+  ],
+  "opposite_of": [
+    "Rule Breaker",
+    "Hypocrite"
+  ],
+  "tags": [
+    "discipline",
+    "consistent"
+  ]
+}

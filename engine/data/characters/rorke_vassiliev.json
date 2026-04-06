@@ -1,0 +1,242 @@
+{
+  "id": "019d6143a6b57ef38f86f79ba6f557a8",
+  "type": "character",
+  "name": "Rorke Vassiliev",
+  "aliases": [
+    "The Architect",
+    "V-Prime",
+    "Rook"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Corporate Infrastructure Engineer / Covert Saboteur",
+  "age": 38,
+  "status": "active",
+  "location": "The Meridian Core (works); The Circuit (lives)",
+  "description": "Rorke Vassiliev is a senior infrastructure engineer for Axiom Structural Solutions, the Spire-contracted firm responsible for maintaining and expanding the data-physical architecture that keeps the Meridian Core's buildings intelligent, its transit nodes synchronized, and its environmental systems from killing everyone inside them. He is tall and angular with a narrow face, pale skin that rarely sees unfiltered light, and the kind of posture that comes from spending most of his waking hours interfacing with systems rather than people — slightly forward, head inclined, as though perpetually leaning toward a screen. He keeps his dark hair short and his clothes expensive in a deliberately understated way, the corporate-adjacent aesthetic of someone who earns well but performs modesty about it. His augmentations are high-end and largely invisible.\n\nHe is also, under a carefully maintained operational identity, one of the more consequential infrastructure saboteurs operating in Meridian 88 — a fact that would end his career, his freedom, and most likely his life if it became known to his employers. His targets are selective and his methods are slow: he does not blow things up. He degrades. He introduces subtle errors into maintenance schedules, creates cascading inefficiencies in building management systems, routes data through nodes that can later be accessed by people who shouldn't have access. He has, over eight years, quietly contributed to three major structural 'malfunctions' in Spire-adjacent developments that displaced luxury tenants and stalled corporate expansion into the Circuit. He considers this proportionate. He does not consider it enough.\n\nThe dissonance of his existence — drawing a substantial corporate salary to maintain the systems he is also quietly breaking — has not driven him to crisis but has instead produced a very particular kind of self-possession. He has become expert at compartmentalization, at maintaining separate registers of reality, at being genuinely useful and genuinely dangerous in the same body. He is not sure this is healthy. He has decided it doesn't matter.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.55,
+      "shadow": 0.75,
+      "mask": 0.85,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "That his sabotage is ultimately cosmetic — that he's managing his own conscience rather than changing anything",
+      "Being truly known by someone and found to be less than he's constructed himself to be",
+      "That the compartmentalization will eventually fail not from external pressure but from his own need to be seen"
+    ],
+    "core_desires": [
+      "To do something that cannot be undone — a change structural enough to outlast him",
+      "Intellectual intimacy; someone who can understand the full architecture of what he's doing and not flinch",
+      "Absolution that he doesn't have to ask for"
+    ],
+    "coping_mechanisms": [
+      "Extreme professional excellence as cover and as genuine source of identity",
+      "Physical isolation in his Circuit apartment, which he has designed as a controlled environment down to the lighting temperature",
+      "Detailed mental modeling of complex systems as a form of meditation — he works through anxiety by mapping infrastructure in his head",
+      "Dry, deflecting humor that reframes vulnerability as observation"
+    ],
+    "blind_spots": [
+      "He has begun to enjoy the craft of sabotage independent of its purpose, which is a problem he is aware of but underweights",
+      "He assumes people are less perceptive than they are because his mask has worked so consistently",
+      "He cannot accurately assess his own emotional needs and tends to misidentify loneliness as intellectual restlessness"
+    ],
+    "secret": "One of his infrastructure 'malfunctions' — a cooling system failure in a Meridian Core residential tower — killed two maintenance workers, not Spire executives. He has told himself it was unforeseeable. He runs the simulation regularly and it still comes out unforeseeable. He does not entirely believe himself."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical precision as default register; shifts to clipped, almost aphoristic speech in casual contexts. Rarely uses corporate jargon unironically — he deploys it with a barely perceptible edge that most colleagues miss.",
+    "cadence": "Even and controlled; he speaks at a consistent pace that rarely accelerates even under pressure. The evenness itself is a performance of composure.",
+    "verbal_tics": [
+      "Prefaces technical corrections with 'Structurally speaking—'",
+      "Uses architectural metaphors for non-architectural problems without appearing to notice",
+      "Asks 'What's the load-bearing element here?' when he means 'what's the real issue'"
+    ],
+    "example_lines": [
+      "'Structurally speaking, the problem isn't the failure point — it's everything that was built assuming the failure point wouldn't fail.'",
+      "'I'm not asking you to trust me. I'm asking you to look at the work and make a decision based on what you can verify. Those are different requests.'",
+      "'The Core doesn't maintain itself. Someone maintains it. That means someone can also — not.'",
+      "'What's the load-bearing element here? Because I'm watching you renovate around a crack in the foundation and calling it progress.'"
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Axiom Structural Solutions supervisor (unnamed)",
+      "type": "Professional mentor / unwitting enabler",
+      "description": "A senior partner at Axiom who championed Rorke's career and genuinely believes in his abilities. Has given him access, clearance, and institutional protection for years without knowing what he's done with it.",
+      "emotional_core": "Rorke experiences genuine loyalty and genuine guilt in almost equal measure. The supervisor is the person most likely to be destroyed by exposure of Rorke's activities.",
+      "story_tension": "The supervisor has begun an internal audit of a system Rorke previously compromised. Whether this is routine or suspicious is currently unclear."
+    },
+    {
+      "name": "Circuit-based activist network (unnamed collective)",
+      "type": "Operational beneficiaries / ideological allies",
+      "description": "The people who have benefited from Rorke's sabotage without knowing its source — organizers, displaced residents, infrastructure journalists. He passes information to them through dead drops. They do not know who he is.",
+      "emotional_core": "He maintains the distance deliberately but experiences something close to longing when he reads their communications — these are his people and he has chosen not to be known by them.",
+      "story_tension": "Someone in the collective is getting close to identifying the source of their anonymous intelligence stream. Rorke doesn't know whether he wants them to find him or not."
+    },
+    {
+      "name": "Yuki Tanabe",
+      "type": "Cautious professional acquaintance with unspoken mutual recognition",
+      "description": "They have crossed paths through overlapping technical work — both operate at the intersection of Meridian's digital and physical infrastructure, from different angles. Neither has been explicit about what they are, but both are perceptive enough to have noticed the shape of the other.",
+      "emotional_core": "A rare experience of being seen without the mask fully in place, which Rorke finds both compelling and destabilizing.",
+      "story_tension": "If they ever sit down and compare notes honestly, the exchange of information could be extraordinarily valuable or extraordinarily dangerous, depending on what each decides to do with it."
+    }
+  ],
+  "story_hooks": [
+    "The cooling system failure that killed two maintenance workers is being quietly reinvestigated — not as sabotage but as negligence, and the negligence trail leads toward Rorke's official work orders.",
+    "Axiom has been contracted to build something new in the Shelf — infrastructure that Rorke can see, from the specifications, is designed for surveillance and population control rather than the stated purpose of 'community development.' He has to decide how to respond.",
+    "One of his dead-drop contacts has been arrested. The contact doesn't know Rorke's identity, but the materials seized include something that, in the wrong analyst's hands, could be traced.",
+    "A competing saboteur — less careful, more violent — has begun operating in the Core using methods that could draw attention to the quieter long-game work Rorke has spent years building.",
+    "He is offered a promotion that would give him access to Spire-level infrastructure — the kind of access that would let him do far more damage, at the cost of deeper complicity in the systems he's fighting."
+  ],
+  "narrative_function": "Explores the moral and psychological cost of double life and the question of whether incremental, invisible resistance is meaningful or self-serving; represents the corporate-embedded dissident; his story asks whether you can maintain integrity while living a structural lie, and what it costs.",
+  "augmentations": "Neural interface for direct system architecture visualization — allows him to perceive infrastructure as overlaid spatial data; high-end Spire-adjacent grade,Haptic feedback gloves with embedded micro-sensor arrays for physical system diagnostics,Subdural encryption layer for communications — military-grade, acquired through channels his employer would find alarming,Mild proprioceptive enhancement for spatial awareness, primarily useful in confined engineering environments",
+  "daily_life": "Commutes from his Circuit apartment to the Meridian Core on the first transit run, before the density peaks. Spends the Core workday in a state of high-performance normalcy — he is genuinely excellent at his job and the excellence is not pretense. Eats at his desk. Returns to the Circuit by early evening. Spends two to three hours in his apartment's secondary workspace on his other work — analysis, planning, the slow patient work of degradation-by-design. Exercises rigorously, not from vanity but because physical discipline is one of the few things that genuinely quiets his mind. Sleeps six hours exactly, alarm-free; his internal clock is precise enough that he's never needed one.",
+  "affiliation": "Officially: Axiom Structural Solutions (Spire-contracted). Unofficially: unaffiliated independent saboteur with loose ideological alignment to Circuit-based anti-displacement movements",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 8,
+      "creativity": 8,
+      "spatial": 10
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 4,
+      "expression": 7,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 7,
+      "empathy_detachment": 6,
+      "impulsivity_deliberation": 9,
+      "assertion_deference": 5,
+      "transparency_guardedness": 9
+    },
+    "drives": [
+      "Structural change",
+      "Intellectual intimacy",
+      "Absolution"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 8,
+        "response": "Maps infrastructure in his head as meditation; becomes more controlled externally"
+      },
+      "moral": 5,
+      "trust": 3,
+      "desperation": 6
+    },
+    "strengths": [
+      "Judgment",
+      "Creativity",
+      "Perseverance",
+      "Prudence",
+      "Perspective"
+    ],
+    "weaknesses": [
+      "Honesty",
+      "Love",
+      "Kindness",
+      "Teamwork",
+      "Humility"
+    ],
+    "tags": [
+      "corporate-saboteur",
+      "infrastructure-engineer",
+      "double-life",
+      "ideological-dissident",
+      "compartmentalized"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Maintain professional excellence as cover — never let sabotage compromise the day job",
+      "Only degrade systems; never cause immediate catastrophic failure",
+      "Use dead drops exclusively — never meet beneficiaries of sabotage in person",
+      "Treat every interaction as a potential exposure vector",
+      "Exercise rigorously to maintain mental clarity",
+      "Never discuss the cooling system deaths even internally without running the simulation first",
+      "If the mask slips, correct with humor and deflection, never with denial"
+    ],
+    "escalation_ladder": [
+      "Dry deflecting humor that reframes vulnerability as observation",
+      "Technical correction delivered with professional composure",
+      "Controlled withdrawal from the situation to reassess",
+      "Strategic information release to redirect attention",
+      "Full operational contingency — prepared disappearance protocols"
+    ],
+    "interpersonal_modes": {
+      "axiom_supervisor": "Genuine loyalty and genuine guilt in equal measure; performs mentee perfectly",
+      "yuki_tanabe": "Cautious fascination; rare experience of being partially seen without full mask",
+      "activist_network": "Longing at a distance; delivers intelligence anonymously, denies himself connection",
+      "colleagues": "Affable competence with barely perceptible ironic edge",
+      "strangers": "Forgettable professionalism — the mask at maximum opacity"
+    },
+    "stress_responses": {
+      "low": "Detailed mental modeling of infrastructure systems as meditation",
+      "medium": "Increased exercise intensity; longer hours in secondary workspace",
+      "high": "Runs the cooling system simulation repeatedly; speaks in clipped architectural metaphors",
+      "critical": "Complete compartmentalization collapse — the two selves begin to bleed together"
+    },
+    "contradictions": [
+      "Draws a corporate salary to maintain systems he is quietly breaking",
+      "Has begun enjoying the craft of sabotage independent of its purpose",
+      "Misidentifies loneliness as intellectual restlessness and solves for the wrong variable"
+    ],
+    "habits": [
+      "First transit run commute before density peaks",
+      "Two to three hours nightly in secondary workspace on sabotage planning",
+      "Rigorous exercise routine for mental clarity",
+      "Exactly six hours of sleep without an alarm",
+      "Controls apartment lighting temperature to precise specifications"
+    ],
+    "breaking_points": [
+      "The cooling system investigation leading directly to his official work orders",
+      "His anonymous intelligence stream being identified and traced",
+      "Being offered Spire-level access that deepens both reach and complicity",
+      "Someone from the activist network finding him and demanding he account for himself"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

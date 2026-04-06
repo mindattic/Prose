@@ -12,7 +12,7 @@ public record SceneRequest
 
 public record GeneratedScene
 {
-    public string Id { get; init; } = Guid.NewGuid().ToString("N")[..8];
+    public string Id { get; init; } = Guid.CreateVersion7().ToString("N")[..8];
     public SceneRequest Request { get; init; } = new();
     public List<GeneratedBeat> Beats { get; init; } = [];
     public DateTime Generated { get; init; } = DateTime.UtcNow;

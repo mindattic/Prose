@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a87e7cbfbe3303207fea158c",
+  "name": "Vespid Dynamics Compound Eye Surveillance Cluster",
+  "brand_name": "Vespid",
+  "product_name": "Vespid Dynamics Compound Eye Surveillance Cluster",
+  "type": "equipment",
+  "aliases": [
+    "Compound Eye",
+    "Bug Eye",
+    "Vespid Watch",
+    "Multi-Cam"
+  ],
+  "category": "surveillance",
+  "description": "A deployable surveillance device consisting of 12 micro-cameras mounted on flexible stalks extending from a central hub, providing 360-degree visual coverage from a single mounting point. Each camera stalk can be independently positioned and focused, and the combined feed creates a composite image with no blind spots. The device adheres to surfaces with a gecko-pad base and draws power from an integrated solar cell, operating indefinitely in lit environments. The Compound Eye's individual cameras are each smaller than a shirt button, making the deployed device easy to overlook despite its multi-stalk profile.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted — authorized surveillance operations",
+  "base_technologies": [],
+  "specifications": {
+    "camera count": "12 independent stalks",
+    "coverage": "360-degree spherical",
+    "resolution": "4K per camera",
+    "info": "composited; 500m range; independently posable",
+    "power source": "Integrated solar cell + 72-hour battery backup",
+    "mounting": "Gecko-pad adhesive base",
+    "transmission": "Encrypted burst transmission",
+    "weight": "0.04 kg",
+    "stalk length": "3 cm each"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A sweep of a Tier 3 apartment building discovered 40+ Compound Eye devices installed in hallways, stairwells, and common areas — someone has been running total surveillance on the building's residents for months.",
+    "A Compound Eye device was found inside a corporate boardroom that had been transmitting to a receiver outside the building — the device had been in place for six weeks without detection."
+  ],
+  "tags": [
+    "surveillance",
+    "equipment",
+    "ai",
+    "corporate",
+    "power",
+    "tier 2"
+  ]
+}

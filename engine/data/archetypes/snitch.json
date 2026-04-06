@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a59479f7a514c4642a26f5de",
+  "name": "Snitch",
+  "type": "archetype",
+  "category": "criminal",
+  "description": "Sells information to whoever pays",
+  "behavioral_signature": "Betrays trust for profit or survival",
+  "under_stress": "Snitches on everyone, including employers",
+  "at_rest": "Listening, recording, preparing to betray",
+  "will_always": [
+    "sell what they know"
+  ],
+  "will_never": [
+    "keep a secret that has value"
+  ],
+  "unless": [
+    "snitching would kill someone who showed them genuine kindness"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Info Broker",
+      "threshold": 0.65,
+      "context": "selling information"
+    },
+    {
+      "archetype": "Blackmailer",
+      "threshold": 0.7,
+      "context": "leveraging secrets"
+    }
+  ],
+  "opposite_of": [
+    "Confidant"
+  ],
+  "tags": [
+    "treacherous",
+    "profitable"
+  ]
+}

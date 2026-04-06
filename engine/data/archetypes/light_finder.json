@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a57a7e7898ab699b9b652311",
+  "name": "Light Finder",
+  "type": "archetype",
+  "category": "spiritual",
+  "description": "Finds hope in the darkest circumstances",
+  "behavioral_signature": "Locates the small good when everything is terrible",
+  "under_stress": "The light gets smaller but they hold tighter",
+  "at_rest": "Looking for signs of hope, always",
+  "will_always": [
+    "find the light"
+  ],
+  "will_never": [
+    "surrender to despair"
+  ],
+  "unless": [
+    "the light is an illusion and following it leads off a cliff"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Optimist",
+      "threshold": 0.8,
+      "context": "finding hope"
+    },
+    {
+      "archetype": "Beauty Seeker",
+      "threshold": 0.65,
+      "context": "finding good"
+    }
+  ],
+  "opposite_of": [
+    "Void Starer",
+    "Dark Embracer"
+  ],
+  "tags": [
+    "hopeful",
+    "resilient"
+  ]
+}

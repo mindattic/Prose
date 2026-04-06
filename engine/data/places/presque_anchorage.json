@@ -1,0 +1,107 @@
+{
+  "id": "019d6143a92d7694a07dd7d6d816bd04",
+  "type": "place",
+  "name": "Presque Anchorage",
+  "aliases": [
+    "Erie PA",
+    "The Anchorage",
+    "Peninsula City"
+  ],
+  "description": "Erie, Pennsylvania was always a port city — defined by Presque Isle, the sandy peninsula that curves into Lake Erie and creates the natural harbor that gave the city its economic reason for existing. In the corridor era, that harbor has become one of the most contested pieces of geography on the lake. Presque Isle itself was designated a restricted sovereign zone in 2154, claimed simultaneously by Cormorant Naval Systems (which wanted it as a forward operating base), the remnant Pennsylvania state government (which wanted to preserve it as a park), and Dredge Sovereign Mining (which discovered that the peninsula's subsurface sediment contained commercially significant mineral deposits). The resulting three-way legal dispute has been in arbitration for forty-six years. In the meantime, all three parties maintain a presence on the peninsula, and none has full control.\n\nThe civilian city of Erie occupies the mainland south of the harbor, a mid-sized industrial-residential zone that has maintained a degree of independence unusual for the corridor. The explanation is geographic: Erie sits between the Meridian 88 corridor's western concentration (Cleveland-Toledo) and its eastern terminus (Buffalo), connected to both by the I-90 highway and Ferrogate rail but far enough from either to avoid full economic integration. The result is a city that functions as a transit point and neutral meeting ground — a place where corponation representatives, independent operators, and excluded-economy brokers can conduct business without being in anyone's sovereign territory.\n\nThe harbor itself is the city's economic heart. Commercial fishing operations — depleted but persistent — share dock space with cargo handling facilities, a small Kelpline waystation, and the independent boat-repair operations that serve the lake's non-corporate maritime traffic. The fishing fleet is a fraction of what it was, but Lake Erie's fish populations have partially recovered from their 20th-century collapse thanks to the unintentional environmental benefits of industrial lakebed disturbance pushing nutrients upward. The fishers sell to the civilian economy, not to the corponations. This is a point of pride that borders on ideology.",
+  "atmosphere": {
+    "sights": [
+      "Presque Isle curving into the lake — its sandy beaches now divided by jurisdictional markers from three competing sovereignties, each maintaining visible installations",
+      "The harbor — a working waterfront where fishing boats, cargo haulers, and the occasional Cormorant patrol vessel share space in uneasy proximity",
+      "The civilian city rising from the harbor in layers of mixed-era architecture — 19th-century commercial buildings alongside Palladian residential blocks",
+      "Ferrogate's Erie transit station — a fortified hub where the I-90 rail corridor pauses before continuing east toward Buffalo",
+      "Lake Erie's horizon line, visible from the harbor without the industrial obstruction that characterizes most of the shore — one of the few places where the lake looks like a lake"
+    ],
+    "sounds": [
+      "Harbor sounds — diesel engines, hull impacts, the creak of dock infrastructure, and fishers calling in a mix of languages",
+      "The Ferrogate transit station — rail activity producing the district's eastern-corridor pulse, trains arriving and departing on schedules that structure the city's rhythm",
+      "Presque Isle — the sound of sand and water, audible from the harbor when the industrial noise pauses, a reminder that the peninsula was a beach before it was a contested zone",
+      "Negotiation — Erie's neutral-ground status means people are always talking, always dealing, and the city's cafes and harbor bars carry a constant murmur of business being conducted",
+      "Cormorant patrol vessels — their engines distinctive, their presence a reminder that the lake's surface belongs to someone even if the city doesn't"
+    ],
+    "smells": [
+      "Fish — fresh catch and processing, the smell that has defined Erie's harbor for three centuries",
+      "Lake water — cleaner here than in the industrial zones, carrying the cold mineral scent of deep freshwater",
+      "Diesel and dock materials — creosote, rope, the particular smell of a working harbor that hasn't been fully automated"
+    ],
+    "feel": "Presque Anchorage feels like a city that has survived by being useful to everyone and owned by no one. The three-way sovereignty dispute on the peninsula has paradoxically protected the mainland by making Erie too legally complicated for any single corponation to absorb. The result is a rare thing in the corridor: a place with genuine autonomy, purchased not through self-sufficiency or resistance but through the strategic exploitation of stalemate. Erie is neutral ground because neutrality is its product.",
+    "tags": []
+  },
+  "demographics": "Approximately 55,000 residents. Mixed population reflecting Erie's transit-point function — established families, transient workers, independent operators, and a significant community of fishers whose families have worked the harbor for generations. Tier 1-2 predominantly, with a small Tier 3 professional class. The population's diversity is economic rather than planned.",
+  "economy": "Transit services, harbor operations, and neutral-ground commerce. Ferrogate rail transit generates the largest revenue stream. The harbor's fishing and cargo operations employ approximately 4,000 workers. Erie's real economic function is as a meeting place — the neutral-ground commerce generated by corponation negotiations, operator contracts, and gray-market brokerage is difficult to quantify but essential to the eastern corridor's functioning.",
+  "power_structure": "No dominant sovereignty. The Presque Isle dispute prevents any single entity from claiming the city. Ferrogate holds transit corridor sovereignty along the rail line. Kelpline maintains waystation authority at the harbor. The Erie Municipal Council — a functioning remnant of the pre-corridor city government — manages civilian affairs with surprising effectiveness, leveraging the sovereignty dispute to maintain autonomous governance.",
+  "dangers": [
+    "Sovereignty dispute escalation — the Presque Isle arbitration has been peaceful for decades, but the peninsula's strategic value increases as the corridor grows, and all three parties have military capability",
+    "Transit vulnerability — Erie's position on the I-90 corridor makes it a chokepoint that Ferrogate could weaponize by restricting service",
+    "Cormorant patrols — the fishing fleet operates under constant surveillance and risks interception if it strays beyond the harbor's recognized fishing zones",
+    "Neutral-ground risk — a city where everyone does business is also a city where everyone's enemies know where to find them",
+    "The peninsula's mineral deposits — if Dredge wins the arbitration, mining operations would fundamentally alter the harbor's ecology and economics"
+  ],
+  "opportunities": [
+    "Neutral ground — Erie's sovereignty stalemate makes it the eastern corridor's most reliable location for cross-faction meetings and negotiations",
+    "Harbor independence — the fishing fleet and boat-repair operations represent one of the few non-corporate maritime economies on the lake",
+    "Transit intelligence — Ferrogate's Erie station processes every shipment moving between Cleveland and Buffalo, and information about that traffic is valuable",
+    "The Presque Isle installations — three competing sovereign entities maintain personnel and equipment on the peninsula, and the overlapping security gaps between them create exploitable access points"
+  ],
+  "story_hooks": [
+    "The Presque Isle arbitration is about to conclude — after forty-six years, a ruling is expected, and every faction in the corridor is positioning for the outcome",
+    "An Erie fisher has pulled something from the lake that none of the three Presque Isle parties want made public — an object that suggests the mineral deposits under the peninsula are not the most valuable thing buried there",
+    "A neutral-ground meeting between two corponation representatives has gone wrong — one is dead, the other is missing, and the Erie Municipal Council is under pressure to resolve it before the situation destabilizes the city's carefully maintained neutrality"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The I-90 Vein — highway corridor connecting to Cleveland (west) and Buffalo (east)",
+      "Lake Erie — harbor access and fishing grounds",
+      "Presque Isle — contested peninsula, three-way sovereignty dispute",
+      "Ferrogate transit corridor — rail connection to both corridor termini"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Transit passengers and cargo operators moving along the I-90 corridor",
+    "Corponation representatives using Erie as neutral meeting ground",
+    "Independent fishers and harbor workers — the city's oldest community",
+    "Operators and fixers who appreciate a city where no one has jurisdiction and everyone has business"
+  ],
+  "notable_locations": [
+    {
+      "name": "Presque Isle",
+      "description": "The contested peninsula — three sovereignties, zero resolution, forty-six years of arbitration, and an answer nobody wants to hear coming",
+      "tags": []
+    },
+    {
+      "name": "The Erie Harbor",
+      "description": "Working waterfront where fishing boats, cargo haulers, and Cormorant patrols share dock space — one of the last non-corporate harbors on the lake",
+      "tags": []
+    },
+    {
+      "name": "Ferrogate Erie Station",
+      "description": "The I-90 corridor's midpoint transit hub — every shipment between Cleveland and Buffalo passes through here",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 42.1292,
+    "lng": -80.0851,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "weapon",
+    "war",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "control",
+    "harbor",
+    "market",
+    "lake"
+  ]
+}

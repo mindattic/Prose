@@ -1,0 +1,97 @@
+{
+  "id": "019d6143a92d79ce9f0077791777e0f5",
+  "type": "place",
+  "name": "Peregrine Deck",
+  "aliases": [
+    "The Deck",
+    "High Peregrine",
+    "The Roost",
+    "Falconplate"
+  ],
+  "description": "Peregrine Deck is a rooftop settlement spanning seventeen contiguous building crowns in the Old Harbor mid-tier zone, connected by a web of tensioned cable bridges, pressurized tube corridors, and open-air market platforms bolted to former HVAC infrastructure. It began as a squatter encampment when a Palladian Group development stalled mid-construction forty years ago, leaving three rooftops capped with unfinished structural plating. Enterprising residents welded the gaps, and the settlement grew outward one rooftop at a time until it became something too large and too useful to evict.\n\nThe Deck operates at approximately forty stories above street level, above most of the smog band, and benefits from genuine lake wind and unfiltered daylight — luxuries that make it more desirable than its Tier 3 paperwork would suggest. A thriving informal economy has grown around this: rooftop cafes with actual views, solar-capture cooperatives, and a well-regarded open-air clinic run by a Helix Biosystems-trained surgeon who left the corporate track under circumstances she declines to specify. The Palladian Group has never formally abandoned its development claim on the underlying structures, which means Peregrine Deck exists in perpetual legal limbo — one board vote away from demolition, and aware of it.",
+  "atmosphere": {
+    "sights": [
+      "Cable bridges sway gently between rooftops, pedestrians gripping the guide rails as lake wind pushes through the open spans.",
+      "Solar capture arrays spread across every flat surface like geometric gardens, their tracking mirrors pivoting slowly to follow the sun.",
+      "The Lake Michigan horizon is visible on clear days — an unbroken grey-blue line that residents treat as a kind of communal landmark.",
+      "Palladian Group survey drones circle at a respectful distance, their camera arms extended, logging everything without ever quite landing."
+    ],
+    "sounds": [
+      "Wind is constant and present here, a low sustained note that underlies every conversation and transaction.",
+      "The creak and tension-ping of cable bridges under foot traffic, harmonic and slightly musical.",
+      "Laughter and argument from the open-air market platforms, voices carrying further than expected in the clean upper air."
+    ],
+    "smells": [
+      "Genuine fresh air above the smog band, carrying lake salt and cold mineral clarity that feels almost medicinal.",
+      "Coffee — real roasted coffee from the Deck's most famous stall, the smell spreading across three rooftops on a good wind.",
+      "Hot solder and polymer insulation from the repair workshops clustered near the western bridge terminals."
+    ],
+    "feel": "Peregrine Deck has the specific energy of a place that knows it is beautiful and knows it might not last. Residents are warm but slightly vigilant — every stranger is assessed for Palladian affiliations before being fully welcomed. The altitude gives everything a quality of remove from the city below, as though the ordinary rules are slightly suspended up here, which they both are and aren't.",
+    "tags": []
+  },
+  "demographics": "Tier 2-3 residents with a meaningful population of downwardly mobile former Tier 1 professionals — architects, medics, engineers — who chose community over corporate track. Significant synthetic personhood activist presence; the Deck's legal ambiguity makes it a natural gathering point for those whose own status is similarly unresolved.",
+  "economy": "Solar energy cooperatives sell surplus power back into the Old Harbor grid at competitive rates. The open-air market hosts specialty food, BCI repair, and fabrication services. The clinic operates on a sliding-scale payment system that somehow stays solvent, to everyone's mild surprise.",
+  "power_structure": "A Residents' Assembly meets weekly and governs by rough consensus, but the clinic's director, Dr. Amara Osei-Bonsu, holds extraordinary informal authority — she has treated nearly every resident and knows things about the community that no one else does.",
+  "dangers": [
+    "Palladian Group's development claim is active and has been assigned to a new acquisitions team known for aggressive timeline compression — eviction could come with as little as seventy-two hours' legal notice.",
+    "The cable bridge connecting Decks 9 and 10 has a stress fracture in its primary tension anchor that the Assembly has been debating how to fund-repair for six months.",
+    "Ferrogate Security does not formally patrol the Deck but occasionally sends contractors to 'assess structural safety,' which is understood to be intelligence gathering for Palladian.",
+    "The altitude and open exposure make Peregrine Deck visible and vulnerable to precision drone surveillance in ways that street-level communities are not."
+  ],
+  "opportunities": [
+    "The Deck's solar cooperative is looking for someone to negotiate a better grid-sale rate with the Old Harbor energy brokers — the current contract was written by someone who didn't understand leverage.",
+    "Dr. Osei-Bonsu has a patient whose BCI implant is transmitting medical data to an unknown third party; she needs someone to trace the signal without alerting whoever is listening.",
+    "The Palladian Group's development files on the underlying buildings contain structural surveys that would also reveal every hidden passage and unlisted room in the seventeen structures below — worth considerable money to the right buyer."
+  ],
+  "story_hooks": [
+    "Palladian Group's new acquisitions lead has offered the Residents' Assembly a buyout figure — generous by any measure — but three Assembly members who were leaning toward acceptance have each quietly reversed position within the last week, and no one will say why. Someone is applying pressure, and the Assembly's leadership wants to know the source before the next vote.",
+    "A former Sterling-Nakamura data architect arrived on the Deck two months ago with no BCI implants — had them surgically removed, which is both expensive and painful — and has been living quietly under a new name. Someone from off the Deck is asking around about a person matching his description, and the community is divided on whether to protect him or find out what he did first.",
+    "The Deck's youngest solar cooperative members have been intercepting a fragmented Diaspora transmission that originates from somewhere within the seventeen buildings below street level — below the Deck, below Old Harbor, somewhere in flooded infrastructure. The signal contains what appears to be a distress call in a language that predates the Diaspora's current architecture."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Lakeshore Corridor",
+      "Old Harbor",
+      "The Nearfield"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Solar cooperative technicians and energy brokers",
+    "Synthetic personhood activists and legal advocates",
+    "Off-track professionals and downwardly mobile Tier 1 expatriates",
+    "Palladian Group surveyors and acquisitions contractors"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.87,
+    "lng": -87.63,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "bci",
+    "ai",
+    "synthetic",
+    "corporate",
+    "contract",
+    "surveillance",
+    "power",
+    "money",
+    "medical",
+    "clinic",
+    "pain",
+    "harbor",
+    "rooftop",
+    "market",
+    "rain",
+    "train",
+    "food",
+    "drone",
+    "energy",
+    "lake",
+    "old harbor"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "019d6143a953762daa26bf550f0d60f2",
+  "type": "place",
+  "name": "The Vestige",
+  "aliases": [
+    "Old Evanston Remnant",
+    "The Museum Quarter",
+    "Ghostrow",
+    "The Kept"
+  ],
+  "description": "A narrow corridor of pre-Meridian architecture preserved — some say imprisoned — within the megacity's northward expansion, the Vestige is a six-block stretch of late 20th and early 22nd century residential and commercial buildings that a coalition of preservation interests, academic institutions, and wealthy nostalgia investors have maintained in a state of deliberate historical stasis. The buildings have been reinforced, weatherproofed, and in some cases entirely reconstructed from archival photographs, but they are kept deliberately free of visible modern infrastructure. Power and data lines run beneath the streets. Climate control is hidden inside original-looking facade elements. The effect is unsettling — a pocket of another era surrounded on all sides by Meridian's towers.",
+  "atmosphere": {
+    "sights": [
+      "intact pre-Meridian storefronts with period-accurate signage",
+      "brick and mortar facades maintained to appear weathered but not deteriorated",
+      "period street lighting casting warm incandescent-style glow",
+      "tourists with recording implants on guided historical experiences",
+      "the jarring vertical wall of modern Meridian architecture at every street's end",
+      "uniformed preservation staff maintaining the illusion of authenticity"
+    ],
+    "sounds": [
+      "deliberately curated ambient audio pumped from hidden speakers",
+      "tour guide narration in multiple languages",
+      "the absence of industrial noise — conspicuously quiet",
+      "wind channeled oddly by the surrounding megastructures",
+      "muffled modern city sounds from just beyond the perimeter"
+    ],
+    "smells": [
+      "engineered 'old city' scent pumped through climate systems",
+      "real brick and aged wood from genuinely old structures",
+      "coffee from the preservation-compliant cafes",
+      "the faint antiseptic of hidden climate control systems"
+    ],
+    "feel": "Profoundly artificial in its authenticity — a place where the past has been taxidermied rather than preserved, and the people who live and work here exist in a performance of history that benefits interests they may not fully understand.",
+    "tags": []
+  },
+  "demographics": "A small permanent resident population of academics, preservation staff, and the extremely wealthy who pay extraordinary sums for 'authentic' addresses. A much larger daily population of tourism workers, students from the attached university annex, and researchers. The buildings' actual heritage community — descendants of the neighborhoods that existed here — are largely absent, priced and curated out.",
+  "economy": "Heritage tourism, academic research grants, luxury residential leasing at rates that exclude essentially everyone, corporate event hosting in 'authentic historical settings,' and a significant underground economy among preservation staff who supplement their incomes by facilitating after-hours access for clients who want the Vestige without the curated experience.",
+  "power_structure": "The Meridian Heritage Conservancy, a nominally nonprofit organization controlled in practice by a board of five investment entities, holds total administrative control. Meridian city government defers entirely to Conservancy decisions within the perimeter. Informal power rests with long-tenured preservation staff who know where every camera blind spot and access tunnel is located.",
+  "dangers": [
+    "Conservancy security that treats unauthorized documentation as intellectual property theft",
+    "the social and legal exposure of whatever is being hidden beneath the authentic-looking streets",
+    "wealthy residents with significant corporate connections and fragile egos",
+    "the Conservancy's aggressive use of historical designation laws to suppress adjacent development — and anyone who threatens that control",
+    "AI-assisted surveillance disguised as period street fixtures"
+  ],
+  "opportunities": [
+    "off-grid meeting spaces in buildings with hidden modern infrastructure but no corporate network presence",
+    "access to genuine pre-Meridian physical archives maintained by the university annex",
+    "preservation staff as sources on what the Conservancy is actually protecting",
+    "the tunnels beneath the Vestige predate Meridian's surveillance infrastructure entirely",
+    "wealthy residents with historical obsessions who can be leveraged or cultivated as patrons"
+  ],
+  "story_hooks": [
+    "A preservation staff member has found something in a sealed sub-basement that doesn't belong to any historical period — and it appears to be recent",
+    "The Conservancy is attempting to have a neighboring district designated as 'historically incompatible' — which would trigger forced demolition — and the residents there need evidence of the process's corruption",
+    "A wealthy Vestige resident has commissioned a private investigator to find out why their 'authentic' home is broadcasting a signal they can't account for",
+    "An academic at the university annex has found that the Conservancy's archive contains deliberate falsifications of pre-Meridian history, and she's missing",
+    "Someone is living in the Vestige illegally, in the spaces between the authentic facades and the real walls, and has been for years"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Pale Mile",
+      "Vantage Meridian Corporate Campus",
+      "The Spire"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "heritage tourists on corporate experience packages",
+    "academics and historical researchers",
+    "extremely wealthy residents and their staff",
+    "Conservancy administrators and security",
+    "corporate clients using the space for events",
+    "preservation staff running after-hours side businesses",
+    "people seeking Meridian's only genuinely surveillance-light spaces"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Alderman's Block",
+      "description": "The most intact and heavily curated section of the Vestige, a full city block maintained to represent a specific month in 2119. Every surface, every storefront, every parked vehicle is period-accurate. It is rented exclusively for corporate immersive experience events and costs more per night than most Meridian residents earn in a year.",
+      "tags": []
+    },
+    {
+      "name": "Linden Annex",
+      "description": "The Meridian University historical research outpost embedded in the Vestige, occupying a converted pre-Meridian library building. Publicly a research facility, it maintains the only physical archive of pre-Meridian municipal records in the corridor — and controls access to them with quiet ferocity.",
+      "tags": []
+    },
+    {
+      "name": "The Gap",
+      "description": "An irregular no-man's-land at the Vestige's southern edge where the preservation boundary meets an unfinished Meridian development project that stalled in litigation. Neither maintained nor demolished, this stretch of partially constructed modern buildings interspersed with unpreserved original structures is the only place in the Vestige where both eras exist simultaneously and honestly.",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.862,
+    "lng": -87.65,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "theft",
+    "ai",
+    "corporate",
+    "surveillance",
+    "control",
+    "power",
+    "wealth",
+    "tunnel"
+  ]
+}

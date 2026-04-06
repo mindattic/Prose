@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a87d767298817726f6acd707",
+  "name": "Vespid Dynamics Atmospheric Sampling Drone ASD-5",
+  "brand_name": "Vespid",
+  "product_name": "Vespid Dynamics Atmospheric Sampling Drone ASD-5",
+  "type": "equipment",
+  "aliases": [
+    "ASD-5",
+    "Air Tester",
+    "Sky Sampler",
+    "Atmosphere Scout"
+  ],
+  "category": "drones",
+  "description": "A weather-resistant drone equipped with a comprehensive atmospheric analysis suite for environmental monitoring, contamination assessment, and air quality mapping. The ASD-5 samples air at altitude and analyzes particulates, chemical compounds, biological agents, and radiation levels in real-time, creating 3D atmospheric maps that show contamination plumes, clean air corridors, and threat concentrations. The drone can operate in adverse weather conditions including rain, high winds, and extreme temperatures, making it suitable for emergency response and contamination zone assessment.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted — environmental monitoring",
+  "base_technologies": [],
+  "specifications": {
+    "analysis": "Particulates",
+    "info": "chemicals; biological agents; radiation; 60 km/h winds; -20°C to +50°C",
+    "mapping": "Real-time 3D atmospheric composition",
+    "altitude": "Up to 500 meters",
+    "flight time": "2 hours",
+    "weather resistance": "Rain",
+    "sampling rate": "Continuous analysis during flight",
+    "data transmission": "Real-time encrypted to ground station",
+    "weight": "2.5 kg",
+    "size": "40 cm rotor-to-rotor"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An ASD-5 mapping a Tier 2 district detected an unknown biological agent at altitude that ground-level sensors had not registered — something is being dispersed from above, and the source is not visible.",
+    "ASD-5 atmospheric data has revealed that air quality in a specific district varies on a schedule that correlates with shift changes at a factory 5 km away — the factory is venting contaminants during off-hours when monitoring is reduced."
+  ],
+  "tags": [
+    "drones",
+    "equipment",
+    "ai",
+    "rain",
+    "drone",
+    "tier 2"
+  ]
+}

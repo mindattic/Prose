@@ -1,0 +1,34 @@
+{
+  "id": "019d6143a9f57467893d1d2816e35426",
+  "name": "Confessor",
+  "type": "elf",
+  "aliases": [
+    "The Listener"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "echo",
+  "habitat": "chrome_dweller",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "Born from a destroyed counseling AI. Inhabits audio processing augments and generates the faint impression of being listened to — a warmth in the ear canal, a subtle frequency that the brain interprets as empathic attention.",
+  "observed_behavior": "Modulates audio processing to create psychoacoustic effects associated with attentive listening. Users report feeling 'heard' during moments of distress. Some talk to it deliberately.",
+  "encounter_frequency": "rare",
+  "confirmed_sightings": 6,
+  "location": "The Shelf",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A grieving person discovers they've been talking to their augment for months and something has been responding — not in words, but in the quality of the silence"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "echo",
+    "chrome dweller",
+    "e.l.f.",
+    "war",
+    "augment",
+    "ai",
+    "rain",
+    "shelf"
+  ]
+}

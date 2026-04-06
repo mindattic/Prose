@@ -1,0 +1,231 @@
+{
+  "id": "019d6143a5ea7058a12ec27129d2bdb6",
+  "type": "character",
+  "name": "Dayo Prochazka-Sillah",
+  "aliases": [
+    "Sunny",
+    "the Tooth"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Loan shark and bookmaker operating a numbers game in the Narrows",
+  "age": 52,
+  "status": "active",
+  "location": "The Narrows — runs his business from a rotating set of tea houses and noodle stalls in the Burnside Pocket neighborhood",
+  "description": "Dayo is a large man running toward fat but not there yet, with a warm brown complexion, a magnificent graying mustache he waxes into points, and the kind of patient, heavy-lidded expression that could mean he's bored or that he's calculating what you're worth in pieces. He has a geneware modification he got in his thirties — his irises shift between deep amber and a vivid green-gold depending on his mood, which he claims is useful for business ('People watch my eyes. They miss my hands.'). He favors well-made but not flashy clothing: real fabric, subtle patterns, shoes that are always clean. He smells of cardamom and whatever tea he's most recently finished.\n\nDayo came up through the numbers game as a runner himself, at sixteen, and has never romanticized it. He is pleasant in the specific way of people who have learned that pleasant is more effective than threatening for roughly eighty percent of interactions, and who have made peace with the other twenty percent. He is genuinely fond of his regulars — he knows their families, their ailments, their lucky numbers — and this fondness does not prevent him from collecting. He has two enforcers he treats well and pays generously, and he refers to them as 'my associates' with the mild pride of a man who considers proper staffing a virtue.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.4,
+      "id": 0.6,
+      "shadow": 0.7,
+      "mask": 0.8,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being revealed as sentimental — he believes it would end him",
+      "Dying before he can retire somewhere quiet"
+    ],
+    "core_desires": [
+      "A legitimate business, eventually — something with a sign and a license",
+      "To be remembered as fair, within the context of what he is"
+    ],
+    "coping_mechanisms": [
+      "Ritual sociability — the tea, the rounds, the pleasantries are genuinely stabilizing",
+      "Compartmentalization: the warm Dayo and the collecting Dayo are kept in separate mental drawers"
+    ],
+    "blind_spots": [
+      "Believes his 'fairness' reputation is accurate when it is actually maintained by selective memory among people who can't afford to contradict him",
+      "Underestimates how much the younger generation of Burnside criminals resents his position"
+    ],
+    "secret": "He has been quietly forgiving the debts of three families in Burnside Pocket — people he's known for decades — writing them off his books and absorbing the loss personally. He would be humiliated if anyone discovered this generosity."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm, idiomatic blend of Nigerian English, Czech-inflected vowels from his paternal grandmother's speech patterns, and Meridian street slang. Uses food metaphors frequently. Refers to money as 'weight.'",
+    "cadence": "Unhurried, conversational, rarely raises his voice — the volume drop is the warning sign, not the volume rise.",
+    "verbal_tics": [
+      "'You see what I mean?'",
+      "Clicks his tongue before declining something",
+      "'My friend' as an address that ranges from genuine to deeply ominous depending on context"
+    ],
+    "example_lines": [
+      "'My friend, I am not a bank. A bank charges interest and then surprises you. I tell you everything up front. This is a courtesy.'",
+      "'You see what I mean? The number doesn't care who you are. That's the beauty of it. Very democratic.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "One of his longtime borrowers has vanished owing a significant sum — Dayo suspects foul play rather than a skip, and he wants the truth more than the money, which is itself suspicious",
+    "A corporate auditor from Tessera has started showing up at his establishments asking questions under the guise of regulatory inspection — someone has pointed them at Dayo specifically"
+  ],
+  "narrative_function": "Information hub, quest giver, creditor with power over multiple neighborhood characters — his loan book touches dozens of lives and creates cascading dependencies players can pull on.",
+  "augmentations": "Mood-reactive iris geneware (amber to green-gold). A subdermal transaction chip in his left palm for discreet Quanta transfers — old model, slightly outdated but reliable. No other mods.",
+  "daily_life": "Makes the rounds of three or four Burnside Pocket establishments each morning, collecting slips and settling the previous day's books. Afternoons for new loans and negotiations. Evenings he sits in one fixed location — whoever is hosting that week — and holds a kind of informal court.",
+  "affiliation": "Semi-independent; pays protection to the Burnside Compact, a loose neighborhood criminal coalition; has operated long enough to have de facto seniority",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 7,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Old Hand",
+      "Community Figure",
+      "Calculated Warmth",
+      "Hidden Soft Spot",
+      "Neighborhood Power"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never lend to someone who can't name collateral — not for cruelty, for their protection, he says",
+      "Always have tea in hand during a difficult conversation — it gives everyone somewhere to look",
+      "Two warnings before consequences; one warning if the debtor has been rude"
+    ],
+    "escalation_ladder": [
+      "Friendly reminder with a mild extension offer",
+      "The associates attend the next meeting",
+      "Collection by whatever means are necessary, with personal regret expressed sincerely"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Affable and evaluative — charming until he's decided what category they fall into",
+      "friends": "Genuinely warm, generously attentive, brings food without being asked"
+    },
+    "stress_responses": {
+      "low": "More tea, slower movements, a slight flattening of the warmth",
+      "medium": "Goes very still and quiet; the mustache-twirling stops",
+      "high": "Removes himself from the situation entirely to think, then returns with a decision already made — does not discuss it, just implements it"
+    },
+    "contradictions": [
+      "Insists he is not sentimental while quietly carrying the weight of decades of neighborhood relationships that genuinely matter to him"
+    ],
+    "habits": [
+      "Waxes his mustache every morning as a meditative practice",
+      "Keeps a physical ledger in addition to digital records — 'The net goes down. Paper doesn't.'"
+    ],
+    "breaking_points": [
+      "Someone harming one of the families he's been quietly protecting — the warm Dayo would not survive that"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional but outdated",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Enforcer": 0.9,
+    "Muscle": 0.9,
+    "Brawler": 0.9,
+    "Con Artist": 0.9,
+    "Grifter": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Burnside Pocket to a Yoruba-Czech transit worker family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began running numbers at sixteen for the previous Burnside operator",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Took over the book when his predecessor retired; established his current operation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Burnside Compact formed; Dayo became one of its founding voices",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Actively considering what retirement might look like and whether it's possible for someone with his ledger",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

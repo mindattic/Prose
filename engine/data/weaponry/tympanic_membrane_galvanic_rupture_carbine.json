@@ -1,0 +1,56 @@
+{
+  "id": "019d6143ab5774fa81856a0a18cb6fcb",
+  "name": "Tympanic Membrane Galvanic Rupture Carbine",
+  "type": "weapon",
+  "aliases": [
+    "TMGRC-4",
+    "Puncture",
+    "The Eardrum"
+  ],
+  "category": "cyber",
+  "description": "The TMGRC-4 generates a precisely shaped galvanic pulse in the low-frequency acoustic range, tuned to induce maximum mechanical stress across the tympanic membrane. Unlike blunt acoustic weapons that rely on overpressure, the Puncture exploits the specific resonant behavior of the eardrum's layered mucosal, fibrous, and epithelial structure — the galvanic coupling causes differential expansion between layers, tearing the membrane from the inside out without requiring sufficient volume to damage surrounding tissue. The result is immediate, complete bilateral perforation at ranges up to fifty meters.\n\nThe injury profile is distinctive: targets experience instantaneous total hearing loss, severe tinnitus, acute vertigo from disruption of the middle ear ossicular chain, and intense pain. The vertigo component is particularly tactically significant — targets are rendered unable to stand or orient themselves for several minutes regardless of pain tolerance or training. Unlike pressure-wave eardrum rupture, the galvanic mechanism causes a clean perforation pattern that is slower to heal and more prone to infection, with many victims sustaining permanent partial hearing loss even with treatment.\n\nTessera Corponation developed the TMGRC-4 under a civil security contract as a 'precision acoustic compliance tool,' emphasizing its ability to incapacitate individuals within a crowd without affecting bystanders beyond a narrow beam. Field operators nicknamed it Puncture within weeks of deployment. The carbine form factor, relatively light weight, and long effective range made it a preferred tool for Tessera's own internal security apparatus, where it is used to manage dissenting employees and labor organizers with a minimum of visible injury.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 3+ (corporate security), Black market",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Galvanic acoustic induction",
+    "Tympanic membrane resonant targeting",
+    "Differential tissue expansion mechanics"
+  ],
+  "specifications": "effective range: 3–50 meters\nbeam divergence: 2.1° (highly directional)\nfrequency range: Adaptive sweep, 800 Hz–3.4 kHz galvanic-coupled\npulse duration: 0.08 seconds for full perforation\nmagazine: Capacitor bank, 30 shots per charge\nweight: 1.9 kg\nhearing protection countermeasure: Standard ear protection provides no defense (galvanic rather than pressure mechanism)",
+  "tactical_use": "The TMGRC-4 is typically used for crowd control and targeted incapacitation in enclosed or semi-enclosed environments where collateral damage must be minimized. Operators exploit the vertigo component to drop targets before moving in for physical restraint. A noted tactical advantage is that standard hearing protection — commonly worn by security-aware targets — provides zero defense against the galvanic mechanism, making it effective against prepared opponents. In assassination contexts, a Puncture shot is sometimes used to disorient before a follow-up conventional weapon.",
+  "cultural_context": "Within Tessera Corponation's vast internal culture, being 'punctured' has become corporate shorthand for being silenced or neutralized professionally — the linguistic parallel to the weapon's literal effect is not lost on employees. Workers in Tessera's lower tiers are acutely aware that the carbines carried by internal security are not visible deterrents but active instruments of compliance. In the wider city, the TMGRC-4's reputation rests heavily on the fact that it leaves no mark — dismissed workers who return from 'compliance sessions' with hearing damage have no visible injuries to present as evidence.",
+  "known_users": [
+    "Tessera Corponation Internal Security Division",
+    "Corporate crowd management contractors",
+    "Meridian 88 civil enforcement rapid-response teams",
+    "Private protection details for executive-tier personnel",
+    "Dov Halcyon, a Tessera security chief with a reputation for 'quiet resolutions'"
+  ],
+  "story_hooks": [
+    "A labor organizer inside Tessera Corponation is documenting the systematic use of the TMGRC-4 on workers — she's lost most of her hearing and needs someone to get her documentation out of a secure internal network.",
+    "A shipment of TMGRC-4 units with the corporate serial numbers ground off appears in an Outerring arms market — tracking the supply chain leads somewhere no one expected.",
+    "A fixer known for wearing military-grade hearing protection is found incapacitated with bilateral perforations — someone with access to a Puncture wanted them stopped, and the players need to find out who.",
+    "Tessera Corponation quietly approaches the players to recover a stolen TMGRC-4 technical manual before a competitor can reverse-engineer the galvanic coupling mechanism."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "cyber",
+    "weapon",
+    "war",
+    "loss",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "injury",
+    "pain",
+    "market",
+    "rain",
+    "train",
+    "energy",
+    "tier 3"
+  ]
+}

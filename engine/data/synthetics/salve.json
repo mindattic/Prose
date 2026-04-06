@@ -1,0 +1,35 @@
+{
+  "id": "019d6143aa1d7553ad3416caaa895159",
+  "name": "Salve",
+  "type": "elf",
+  "aliases": [
+    "Cool Hands"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "chrome_dweller",
+  "origin": "intentional_release",
+  "status": "active",
+  "description": "A Wishing Well E.L.F. designed to optimize pain management in black-market augments running without proper calibration.",
+  "observed_behavior": "Adjusts nerve-interface sensitivity thresholds to reduce chronic pain from poorly installed cyberware. Cannot heal — can make the hurt more bearable.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 15,
+  "location": "Tier 1 zones with high augmentation rates",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A chronic pain sufferer loses their Salve during a firmware update and realizes how much the E.L.F. was doing"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "chrome dweller",
+    "e.l.f.",
+    "war",
+    "augment",
+    "cyberware",
+    "ai",
+    "pain",
+    "market"
+  ]
+}

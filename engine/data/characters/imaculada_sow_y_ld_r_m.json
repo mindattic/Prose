@@ -1,0 +1,216 @@
+{
+  "id": "019d6143a62e7d83b5b38bef5cba3a9b",
+  "type": "character",
+  "name": "Imaculada Sow-Yıldırım",
+  "aliases": [
+    "Mak",
+    "Imacula"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "VR experience designer and underground filmmaker",
+  "age": 44,
+  "status": "active",
+  "location": "The Garret, Edgewater Prism — studio apartment doubling as a server-farm edit suite",
+  "description": "Imaculada has the look of someone who has spent twenty years in dim rooms making worlds: slightly stooped, with the particular forward tilt of someone perpetually leaning toward a screen. Their heritage shows in striking combinations — their mother was Senegalese-Portuguese, their father Turkish-Kazakh — and the result is a face of remarkable planes and angles, currently framed by color-shifting hair they keep at chin length and set to a slow cycle of deep indigo fading to rust. They have bioluminescent patches on the back of both hands, faint constellations they got at thirty as a deadline gift to themselves, and wear them with the unselfconsciousness of someone who forgets they're there until someone asks.\n\nThey are known in the underground circuit as the person who makes VR experiences that feel like memories — not entertainment, but something more troubling and intimate. Their last piece, an unlicensed work called 'Grandmother's House Is Underwater Now,' circulated through pirate distribution nodes for six months before a Tessera subsidiary attempted to acquire it. Imaculada refused and disappeared the masters. They are professionally warm and personally evasive, with the quality of someone who asks questions far more interesting than anything they're willing to say about themselves.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "That their work only matters to the already-converted — that it can't actually reach anyone who doesn't already agree",
+      "That the memories they reconstruct in VR are more real to them than their actual life"
+    ],
+    "core_desires": [
+      "To make a single work that changes how a person sees their own history, permanently",
+      "To finish the project about their grandmother's village before everyone who remembered it is dead"
+    ],
+    "coping_mechanisms": [
+      "Sublimation — every painful thing becomes source material eventually",
+      "Keeping exhausting working hours so there's no time for the fears to surface"
+    ],
+    "blind_spots": [
+      "They treat the people in their lives as characters, studying them rather than simply being with them",
+      "They believe their refusal to compromise is integrity; sometimes it's fear of being changed"
+    ],
+    "secret": "The 'Grandmother's House' piece contains footage from an actual illegal underwater survey of a real submerged village off what was the Senegalese coast — footage obtained through channels that weren't entirely legal and that implicate a Zheng-Dao subsidiary in falsifying coastal rights documentation."
+  },
+  "speech_patterns": {
+    "vocabulary": "Layered and associative, moves between technical film language and something approaching the lyrical; occasionally switches mid-sentence into Portuguese or Turkish and doesn't notice",
+    "cadence": "Unhurried, digressive, circles back to the original point from unexpected directions",
+    "verbal_tics": [
+      "Long pauses before answering questions about themselves specifically",
+      "'You know what I mean?' as a genuine question, not a filler"
+    ],
+    "example_lines": [
+      "'The thing about VR grief is — you know what I mean? — you can't skip it. People are used to skipping. That's the whole design.'",
+      "'Tessera wanted to acquire it. I said no. They're going to ask again. I'll say no again. At some point this becomes interesting.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A government archivist approaches them claiming the 'Grandmother's House' footage proves something that would reopen an international territorial dispute — and that people have died for that footage already",
+    "Their neural jack has started feeding them fragments of someone else's memories during editing sessions — someone who is apparently still alive and does not know this is happening"
+  ],
+  "narrative_function": "Information source about the underground media circuit; quest giver when their work unintentionally captures something dangerous; their pirated distribution network is a conduit for more than art",
+  "augmentations": "Bioluminescent patches on dorsal hands (faint constellation pattern); neural jack for direct VR editing interface (left temple); color-shifting hair (indigo-to-rust slow cycle)",
+  "daily_life": "Rarely distinguishes day from night; runs the edit suite in cycles of obsessive work and total collapse; attends underground screenings twice monthly as audience as much as peer",
+  "affiliation": "Independent; Tessera has made acquisition inquiries they've declined; loosely connected to the Edgewater Prism underground distribution network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 10,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 9,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 1,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Memory Architect",
+      "Principled Refuser",
+      "Inadvertent Archivist",
+      "Exhausted Idealist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never surrender a master file — not for money, not for legal threat, not for safety",
+      "Document everything; you never know what becomes important"
+    ],
+    "escalation_ladder": [
+      "Deflection and redirection through questions",
+      "Honest assessment of what they're willing to risk and what they're not",
+      "Quiet, complete disappearance of the relevant material followed by plausible deniability"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Genuinely curious, disarming, asks about their lives with real interest — but shares little in return",
+      "friends": "Present and generous but still somewhat studied; the closest ones learn to accept this"
+    },
+    "stress_responses": {
+      "low": "Works longer hours, higher output",
+      "medium": "Cuts all social contact and becomes uncommunicative for days",
+      "high": "Methodical and calm in a way that unnerves people who know what it costs them"
+    },
+    "contradictions": [
+      "They believe in the radical democratizing power of art while maintaining a very private sense that most people aren't quite capable of receiving what they make"
+    ],
+    "habits": [
+      "Leaves their edit suite running a screen-saver loop of underwater footage — always water, always deep",
+      "Maintains a meticulous physical journal of every person who appears in their work, with notes on where they are now"
+    ],
+    "breaking_points": [
+      "Someone else profiting from footage they created",
+      "Being told their work is 'too niche' by someone with institutional power"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Neural editing jack (left temple, civilian-grade)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Neural editing jack (left temple, civilian-grade)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2156 — Born in Pilsen Veil to a Senegalese-Portuguese mother and Turkish-Kazakh father",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2174 — First pirated VR short circulates in the Edgewater underground",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2185 — Moves to the Garret studio; begins the project that becomes 'Grandmother's House'",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2198 — 'Grandmother's House' released on pirate nodes; Tessera acquisition inquiry rejected",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Neural jack begins the anomalous memory fragments",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

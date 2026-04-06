@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a85773a28d22dea74054f0cf",
+  "name": "Axiom Systems White Noise Bubble Generator WNB-1",
+  "brand_name": "Axiom",
+  "product_name": "Axiom Systems White Noise Bubble Generator WNB-1",
+  "type": "equipment",
+  "aliases": [
+    "Bubble",
+    "WNB-1",
+    "Silence Dome",
+    "Privacy Field"
+  ],
+  "category": "counter-surveillance",
+  "description": "A portable device that generates a precise white noise field in a 3-meter hemisphere, making audio recording and eavesdropping impossible within the zone. The WNB-1 uses adaptive noise generation — it samples ambient sound in real-time and generates complementary frequencies that render speech unintelligible to any recording device or listener outside the hemisphere. Conversation within the zone is clear and normal; conversation recorded within the zone is pure static. The device is standard equipment for corporate negotiation teams, legal consultations, and anyone who needs a private conversation in a world where every surface might contain a microphone.",
+  "manufacturer": "AXIOM SYSTEMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — commercial privacy device",
+  "base_technologies": [],
+  "specifications": {
+    "effect radius": "3-meter hemisphere",
+    "noise type": "Adaptive complementary frequency generation",
+    "effect": "Speech unintelligible to external listeners/recording",
+    "internal effect": "Normal conversation unaffected",
+    "power": "12-hour battery",
+    "weight": "0.3 kg",
+    "form factor": "Hockey puck sized",
+    "info": "tabletop or pocket; instant on",
+    "activation": "Single button"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A WNB-1 was found to have a firmware vulnerability that allows the noise generation to be inverted — instead of blocking recording, it enhances audio capture, turning the privacy device into a surveillance amplifier.",
+    "A modified WNB-1 has been developed that generates not just white noise but specific spoken words within the recording band — anyone listening hears a different conversation than the one actually happening."
+  ],
+  "tags": [
+    "countersurveillance",
+    "equipment",
+    "war",
+    "ai",
+    "corporate",
+    "surveillance",
+    "tier 2"
+  ]
+}

@@ -33,7 +33,7 @@
                 <div class="d-flex gap-2">
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
                     @if (!isNew) { <ExportButton Mode="entry" RepoName="Ammunition" EntryName="@editing.Name" EntryJson="@System.Text.Json.JsonSerializer.Serialize(editing)" /> }
-                    @if (!isNew && !confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => confirmDelete = true"><i class="bi bi-trash3"></i></button> }
+                    @if (!isNew && !confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => confirmDelete = true"><i class="bi bi-archive"></i></button> }
                     @if (confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => confirmDelete = false">No</button> }
                 </div>
             </div>

@@ -1,0 +1,69 @@
+{
+  "id": "019d6143a85c7a6fb59fb3cea3cce5cf",
+  "name": "Helix Biosystems Pulmonary Resection Bellows",
+  "brand_name": "Helix",
+  "product_name": "Helix Biosystems Pulmonary Resection Bellows",
+  "type": "equipment",
+  "aliases": [
+    "The Deacon",
+    "Iron Lungs",
+    "The Squeezer"
+  ],
+  "category": "medical",
+  "description": "The Pulmonary Resection Bellows is a compact, accordion-framed pneumatic device designed to maintain respiratory function in patients whose pulmonary musculature has been compromised by trauma, toxin exposure, or combat-grade neurotoxic agents. It attaches via a sealed oral-nasal interface and a pair of intercostal anchor clips, mechanically driving inhalation and exhalation cycles calibrated to the patient's blood-oxygen readout through a small embedded biosensor. In field conditions, it can sustain a flatlined respiratory system for up to six hours without recharge.\n\nWhat distinguishes the Bellows from earlier mechanical ventilators is its adaptive rhythm engine — a low-power analogue processor that modulates breath cadence in response to detected movement, ambient noise, and patient heart rate variability. This means a downed operative being carried through a firefight won't asphyxiate due to positional changes or jostling. The device also features a one-way toxin filter membrane rated for most aerosolized chemical agents found in Meridian 88's contested industrial zones.\n\nThe Bellows is standard-issue in Helix Biosystems extraction teams and has found a devoted secondary market among deep-sewer runners and tunnel-breach specialists who work in environments with chronically compromised air quality. Street medics refer to it as 'The Deacon' — something that keeps you breathing when you have no business doing so.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Adaptive pneumatic rhythm engine",
+    "Intercostal anchor clip system",
+    "Blood-oxygen biosensor array",
+    "Aerosolized toxin filter membrane",
+    "Low-draw analogue respiratory processor"
+  ],
+  "specifications": {
+    "weight": "1.4 kg assembled",
+    "dimensions": "22 cm x 14 cm x 9 cm (collapsed)",
+    "battery_life": "6 hours continuous operation",
+    "breath_rate_range": "8–28 cycles per minute",
+    "filter_rating": "Class IV aerosolized agents",
+    "interface": "Sealed oral-nasal mask with intercostal anchor clips (sizes A–D)",
+    "sensor_refresh_rate": "Every 0.4 seconds",
+    "compatible_patients": "Human baseline, most cyberframe configurations with intact thorax"
+  },
+  "tactical_use": "Deployed immediately following chest trauma, drowning events, or neurotoxin exposure that collapses diaphragm function. A medic can attach the Bellows in under forty seconds. Once secured, the patient can be moved, carried, or dragged without interrupting respiratory support. Operators also use it prophylactically before breaching chemically contaminated spaces, running it at low support alongside natural breathing to reduce lung fatigue during prolonged toxic exposure.",
+  "cultural_context": "Among extraction crews and tunnel runners, carrying a Bellows is considered a mark of professional seriousness — it signals that you expect casualties bad enough to need sustained life support in the field, and you're prepared for it. In the poorer outer wards, bootleg Bellows units with degraded filter membranes circulate widely, used by residents living near Ouroboros Energy's poorly sealed exhaust stacks. Helix's licensing requirements are widely resented; unlicensed possession in corporate-controlled zones carries fines that price the device out of reach for those who need it most.",
+  "known_users": [
+    "Helix Biosystems extraction medics",
+    "Tunnel-breach specialists and deep-sewer runners",
+    "Outer ward community medics (bootleg units)",
+    "Chemical warfare response contractors",
+    "Long-haul courier crews transiting contaminated freight corridors"
+  ],
+  "story_hooks": [
+    "A shipment of Bellows units with deliberately degraded filter membranes has been routed to outer ward free clinics — someone is profiting from the failures, and the bodies are starting to pile up.",
+    "A player character wakes up post-operation with a Bellows attached and no memory of how they got there — the device's biosensor log contains encrypted movement data from the last six hours.",
+    "A Helix Biosystems licensing inspector is found dead in a tunnel with a bootleg Bellows still running on her face, keeping her technically alive despite catastrophic brain death — someone wants to delay the official time of death.",
+    "A tunnel runner community has jury-rigged a network of salvaged Bellows units into a crude collective air filtration system for their hab-block — Helix's legal team has arrived to dismantle it."
+  ],
+  "tags": [
+    "medical",
+    "equipment",
+    "combat",
+    "war",
+    "death",
+    "memory",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "clinic",
+    "tunnel",
+    "market",
+    "rain",
+    "energy",
+    "fire",
+    "tier 2"
+  ]
+}

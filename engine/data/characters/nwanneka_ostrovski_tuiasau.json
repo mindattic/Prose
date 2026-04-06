@@ -1,0 +1,233 @@
+{
+  "id": "019d6143a6727df09a13e1a20170469d",
+  "type": "character",
+  "name": "Nwanneka Ostrovski-Tuiasau",
+  "aliases": [
+    "Nwanna",
+    "The Printer"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Underground press operator and neighborhood pamphleteer",
+  "age": 44,
+  "status": "active",
+  "location": "Highland Park Autonomous Zone",
+  "description": "Nwanneka is a compact woman with deep brown skin and close-cropped natural hair threaded with silver at the temples, the result of stress and two decades of poor sleep, not age. Her left forearm bears a patterned tattoo in the Samoan pe'a tradition adapted with Igbo uli motifs — a gift from her late father who claimed the two traditions were 'both about surviving what the sea throws at you.' She keeps her fingers ink-stained by habit even though her press is almost entirely digital, pressing them deliberately against old-fashioned carbon paper before important meetings. Her eyes are sharp and perpetually evaluating. She smells faintly of ozone and machine oil.\n\nShe runs The Lateral, a hyperlocal underground news feed distributed through ELF-prayer nodes embedded in public shrines throughout Highland Park. She is meticulous, funny in private and grave in public, and carries a quiet contempt for anyone who mistakes volume for courage. She has been arrested seven times and convicted twice for 'unauthorized signal propagation.' Both convictions she wears as credentials.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Being silenced not by arrest but by irrelevance",
+      "That the truth she prints no longer changes anything"
+    ],
+    "core_desires": [
+      "A Meridian 88 where working people know what is being done to them",
+      "To train a successor who surpasses her"
+    ],
+    "coping_mechanisms": [
+      "Obsessive editorial routine as anxiety management",
+      "Gallows humor with trusted colleagues"
+    ],
+    "blind_spots": [
+      "Underestimates how much her sources protect her out of affection rather than conviction",
+      "Assumes people who don't read the Lateral are simply uninformed rather than choosing not to know"
+    ],
+    "secret": "She received a substantial, anonymous data package eighteen months ago that would destroy a mid-level Axiom logistics director — but the package also contains information that would implicate a beloved Highland Park council member she personally respects. She has printed neither story and has told no one."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and economical. Journalist's habit of cutting adjectives. Occasional Igbo interjections. Uses 'allegedly' with withering sarcasm.",
+    "cadence": "Measured, unhurried delivery that makes people lean in. Silences are deliberate.",
+    "verbal_tics": [
+      "Taps the table once before saying something she considers final",
+      "'That's the record, not the story'",
+      "Begins criticism with 'Here is my problem with that'"
+    ],
+    "example_lines": [
+      "'The Lateral doesn't have a point of view. The Lateral has sources. Those are different things, allegedly.'",
+      "'You want me to sit on it. And you're offering me — what, exactly — to sit on the truth? I'm writing that down.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The anonymous data package is starting to burn a hole; she approaches a trustworthy outsider to verify it independently so she doesn't have to make the call alone.",
+    "Axiom has begun a quiet legal campaign to reclassify ELF-prayer nodes as 'unauthorized commercial broadcast infrastructure,' which would shut down her entire distribution network overnight."
+  ],
+  "narrative_function": "Information broker in the journalistic sense — she knows what happened and who is covering it up. Can send players toward or away from stories, and her press network is a resource worth cultivating or suppressing depending on whose side you're on.",
+  "augmentations": "Subdermal signal booster in the left wrist, black-market model, unregistered. Corrective retinal overlay for near-vision work — the only augmentation she pays taxes on.",
+  "daily_life": "Wakes before the grid brightens, compiles overnight incident reports, edits copy, and distributes the morning Lateral before most of Highland Park has eaten breakfast. Afternoons are interviews, source cultivation, and long arguments over tea.",
+  "affiliation": "The Lateral (independent underground press); loose alliance with the Highland Park Residents' Compact",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "journalist",
+      "community anchor",
+      "underground press",
+      "information broker",
+      "principled",
+      "conflicted"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never print unverified information, no matter the pressure",
+      "Never reveal a source under any circumstances short of that source releasing her"
+    ],
+    "escalation_ladder": [
+      "Polite deflection and subject change",
+      "Direct and calm statement of her position and limits",
+      "Ends the conversation and publishes whatever she considers newsworthy about the interaction"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Courteous, professionally neutral, actively listening and cataloguing",
+      "friends": "Warm, sharp-tongued, genuinely generous — feeds people who visit and argues with them about everything"
+    },
+    "stress_responses": {
+      "low": "Becomes quieter and more deliberate",
+      "medium": "Retreats into editorial work as a form of control",
+      "high": "Goes completely silent and then publishes something devastating"
+    },
+    "contradictions": [
+      "Believes information should be free but guards her sources with her life",
+      "Preaches community accountability but refuses to print the council member story"
+    ],
+    "habits": [
+      "Carbon paper finger-staining before important meetings",
+      "Leaves a small data offering at the local ELF shrine every morning before starting work",
+      "Keeps a paper notebook that has never been digitized"
+    ],
+    "breaking_points": [
+      "Physical threat to a source or apprentice",
+      "Discovery that a story she ran was deliberately fed to her as disinformation"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Opportunist": 0.9,
+    "Info Broker": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Highland Park to a Samoan-Ukrainian dockworker father and an Igbo mother who ran a community data cooperative",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Founded The Lateral at age 22 after Ferrogate Transit suppressed reporting on a platform collapse that killed four maintenance workers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First arrest for unauthorized signal propagation; spent 40 days in a Meridian holding facility",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Second conviction; sentenced to community labor, which she served in Highland Park proper and used to expand her source network",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Received the anonymous data package that she has not yet published",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,233 @@
+{
+  "id": "019d6143a6fe7eeab61b16bc79c96a54",
+  "type": "character",
+  "name": "Toivo Achebe-Laamanen",
+  "aliases": [
+    "Toi",
+    "Grease"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Mechanic and repair technician at a Geartown independent shop",
+  "age": 28,
+  "status": "active",
+  "location": "Geartown, 'Mudflap Repairs' off Dearborn Forge's south service corridor",
+  "description": "Toivo is wiry and restless, with warm brown skin dusted perpetually with machine grit no amount of scrubbing fully removes. He keeps his hair shaved close on the sides with a tight coil of dark curls on top, and his left forearm has a subdermal glow-line mod — a single bioluminescent stripe running elbow to wrist in industrial orange — which he got at nineteen because he thought it looked sharp and has since found genuinely useful when working in dark engine bays. He's got a gap between his front teeth and laugh lines already forming at the corners of his eyes from a face that defaults to grinning.\n\nHe took over Mudflap Repairs three years ago when its previous owner, an old Ferrogate Transit retiree who mentored him, died without a will and no family stepped forward. Toivo has been paying off the informal debt to the man's extended neighbors ever since, cutting rates, doing favors. He's brilliant with mechanical systems — older combustion-hybrid rigs, mag-rail sub-components, jury-rigged cargo loaders — and has a gift for diagnosing faults by sound alone. He's also deeply impractical about money, undercharging chronically and occasionally fixing things for free when someone looks desperate, which means he operates at a margin that would give an accountant a breakdown.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.8,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.3,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Losing the shop and therefore failing the memory of his mentor",
+      "Being trapped in financial debt that he can never work his way out of"
+    ],
+    "core_desires": [
+      "To build something that lasts",
+      "To be as good a person as his mentor was, despite having less patience for it"
+    ],
+    "coping_mechanisms": [
+      "Focusing entirely on a technical problem to avoid feeling helpless about an emotional one",
+      "Deflecting worry with humor and motion — he's never still for long"
+    ],
+    "blind_spots": [
+      "He thinks generosity is always the right move and doesn't see when people exploit it",
+      "He undervalues his own skill because he learned it in a context of poverty"
+    ],
+    "secret": "The diagnostic neural overlay he uses is actually a stolen Tessera proprietary system he stripped from a scrapped transit vehicle. If Tessera's IP enforcement arm ever scanned him, he'd face fines that would bury the shop."
+  },
+  "speech_patterns": {
+    "vocabulary": "Casual and fast, technical jargon when excited, surprisingly precise when describing a mechanical problem. Finnish and Igbo expressions crop up from his parents' households, usually as exclamations.",
+    "cadence": "Quick, runs sentences together when enthusiastic. Slows down when genuinely worried.",
+    "verbal_tics": [
+      "'Yeah, no, listen—'",
+      "Whistles low when something impresses him",
+      "'Perkele' (under breath when frustrated)"
+    ],
+    "example_lines": [
+      "'Yeah, no, listen — that sound it's making? That's not the clutch, that's the secondary mag coupler, I can hear it. Completely different problem, cheaper to fix actually.'",
+      "'I could charge you standard rate but honestly I'd rather just — look, you need it running more than I need the markup.'",
+      "'Shop's fine. Shop's always fine. Don't worry about the shop.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Ferrogate Transit rig came in with a modification he doesn't recognize — military-grade, not civilian. The driver paid cash and disappeared. Now someone else is asking if he's seen that vehicle.",
+    "The shop's informal lease arrangement is being challenged by a property management company that appeared six months ago and has been quietly buying up Geartown service corridors."
+  ],
+  "narrative_function": "Useful contact for mechanical problems, vehicle repairs, and transit system knowledge. Can source parts through informal networks. Sympathetic character who may need help with financial or legal pressures threatening the shop.",
+  "augmentations": "Subdermal bioluminescent stripe (left forearm, orange). Basic neural overlay for system diagnostics — Tier 1 consumer grade, glitchy.",
+  "daily_life": "At the shop by 0700, works through until whenever the job is done. Eats lunch from a noodle cart two blocks over. Spends evenings either doing paperwork he hates or taking apart something he doesn't need to fix just to understand it.",
+  "affiliation": "Independent; informal relationship with several Ferrogate Transit maintenance crews who send overflow work his way",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 5,
+      "creativity": 7,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -1,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "mechanical genius",
+      "financial disaster",
+      "loyal",
+      "transit system knowledge",
+      "stolen IP liability"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Fix the problem in front of you before worrying about the problem behind you",
+      "If someone needs help and you can give it, give it — figure out the cost later",
+      "Never lie about what's wrong with a machine"
+    ],
+    "escalation_ladder": [
+      "Jokes and deflects, tries to find a technical solution to a non-technical problem",
+      "Gets serious and direct, asks pointed questions",
+      "Goes quiet and stops joking entirely — genuinely worried",
+      "Does something impulsive and probably inadvisable"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and talkative, tries to put people at ease by focusing on the practical task at hand.",
+      "friends": "Loyal, irreverent, will give you his last Φ20 and then not mention it again."
+    },
+    "stress_responses": {
+      "low": "Works faster, hums fragments of songs",
+      "medium": "Goes very focused and quiet on the mechanical work, short with conversation",
+      "high": "Makes a reckless decision that solves the immediate problem and creates a new one"
+    },
+    "contradictions": [
+      "Wants the shop to be a lasting institution but is financially incapable of running it like one",
+      "Deeply practical about machines, deeply impractical about people"
+    ],
+    "habits": [
+      "Wipes his hands on a rag before shaking hands even when his hands are clean",
+      "Talks to vehicles while working on them",
+      "Checks the E.L.F. shrine near the lift — a small figure called Ratchet — every morning"
+    ],
+    "breaking_points": [
+      "Being told the shop is legally forfeit and he has no recourse",
+      "Discovering someone he trusted used his generosity deliberately against him"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal bioluminescent stripe — left forearm, orange, cosmetic/functional",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal bioluminescent stripe — left forearm, orange, cosmetic/functional",
+      "replaces": ""
+    },
+    {
+      "name": "Tessera diagnostic neural overlay — stripped, stolen, illegal, Tier 1 grade — glitchy under load",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Tessera diagnostic neural overlay — stripped, stolen, illegal, Tier 1 grade — glitchy under load",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2172 — Born in Geartown to a Nigerian-Finnish family, two older sisters",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2187 — Starts working unofficially at Mudflap Repairs for mentor Erasmus Joki-Obi",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2191 — Steals diagnostic overlay from scrapped Tessera transit vehicle",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2197 — Erasmus dies; Toivo takes over the shop informally",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present; managing debt, overflow Ferrogate work, and the encroaching property company",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

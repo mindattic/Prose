@@ -1,0 +1,51 @@
+{
+  "id": "019d6143aa38791d8bef47e62f0c4504",
+  "name": "Carrion Defense Works Autonomous Wound Treatment System",
+  "brand_name": "Carrion",
+  "product_name": "Carrion Defense Works Autonomous Wound Treatment System",
+  "type": "technology",
+  "aliases": [
+    "AWTS",
+    "Auto Medic",
+    "Carrion Patch",
+    "Battle Surgeon"
+  ],
+  "subcategory": "medical",
+  "description": "An implantable medical system that automatically detects and treats injuries without conscious intervention. The AWTS consists of a network of subdural sensors that monitor tissue integrity, blood pressure, and chemical markers for injury, connected to micro-reservoirs of hemostatic agents, analgesics, and antibiotics that deploy automatically at wound sites. When the system detects a penetrating wound, it immediately seals the wound channel with hemostatic foam, administers localized pain suppression, and begins antibiotic prophylaxis — all within 2 seconds of injury, before the patient has finished flinching.",
+  "tier_availability": "Tier 3+",
+  "developers": [
+    "CARRION DEFENSE WORKS",
+    "LAZARUS PHARMACEUTICALS"
+  ],
+  "base_technologies": [
+    "Implantable wound detection sensors",
+    "Automated hemostatic deployment",
+    "Subdural medical reservoir networks"
+  ],
+  "enables": [
+    "Sub-2-second autonomous wound treatment",
+    "Unconscious patient injury management",
+    "Continuous battlefield medical support",
+    "Automated hemorrhage control"
+  ],
+  "social_impact": "AWTS has changed the survival calculus of violence — augmented individuals with the system survive injuries that would kill anyone else, creating a durability gap between equipped and unequipped populations. The system has also enabled a reckless combat culture among those who have it, since the immediate consequences of being shot or stabbed are dramatically reduced. Long-term, the system's reservoir depletion is a significant concern — operators who sustain multiple injuries may exhaust their medical supplies without realizing it.",
+  "story_hooks": [
+    "An AWTS-equipped operative sustained twelve gunshot wounds during an engagement and remained operational throughout — they only collapsed when the hemostatic reservoirs ran dry on wound thirteen.",
+    "Someone has developed a weapon specifically designed to overwhelm AWTS by creating dozens of superficial wounds simultaneously, depleting the system's reservoirs before delivering the killing blow."
+  ],
+  "tags": [
+    "medical",
+    "technology",
+    "violence",
+    "combat",
+    "weapon",
+    "gun",
+    "augment",
+    "ai",
+    "control",
+    "injury",
+    "pain",
+    "survival",
+    "tier 3"
+  ]
+}

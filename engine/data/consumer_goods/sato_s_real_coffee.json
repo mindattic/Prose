@@ -1,0 +1,32 @@
+{
+  "id": "019d6143a7877522b762e4efd997dcec",
+  "name": "Sato's Real Coffee",
+  "brand_name": "Sato's",
+  "product_name": "Sato's Real Coffee",
+  "type": "consumer_good",
+  "category": "street_food",
+  "subcategory": "real coffee",
+  "manufacturer": "Sato Premium Imports",
+  "description": "Actual coffee from actual beans grown outside the city. Sold in single-serve sachets that produce one cup of real pour-over. The beans are roasted in small batches in Tier 3.",
+  "flavor_profile": "Rich, complex, with chocolate and berry notes that synthetic coffee cannot replicate — you know it's real immediately",
+  "tier_availability": "Tier 3-5",
+  "price": "Φ15.00",
+  "popularity_rank": 35,
+  "slogan": "You'll know the difference.",
+  "cultural_context": "Real coffee is a luxury that even Tier 3 residents consider a splurge. A sachet of Sato's is a common gift — giving someone real coffee says 'I value you and I have money.' Tier 1-2 residents have mostly never tasted it.",
+  "story_hooks": [
+    "Sato's supply chain passes through three different jurisdictions, each of which takes a cut — a direct trade route would halve the price but powerful middlemen would lose their margins.",
+    "Counterfeit Sato's sachets containing enhanced synth-coffee are circulating — they're good, but they're not real."
+  ],
+  "tags": [
+    "street_food",
+    "real_coffee",
+    "consumer_good",
+    "luxury",
+    "tier_3",
+    "tier_4",
+    "tier_5",
+    "import",
+    "gift"
+  ]
+}

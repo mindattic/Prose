@@ -1,0 +1,101 @@
+{
+  "id": "019d6143a94f7dab8aaafb0181419f94",
+  "type": "place",
+  "name": "The Steelyard",
+  "aliases": [
+    "Armour Square",
+    "The Yard",
+    "Chinatown Gate",
+    "Sox Ground"
+  ],
+  "description": "Armour Square was always small — a compressed district defined by the things pressed against it: the expressway, the railyards, the stadium, Chinatown. When the compression intensified under corporate sovereignty, the Steelyard did not expand. It densified. Every cubic meter of the district is in use. Buildings grow inward and downward, subdivided and sub-subdivided until the original architecture is just a shell containing a honeycomb of activity. The White Sox stadium became a Rictus Entertainment franchise venue — the Rictus Yard — and its footprint dominates the district like a cathedral dominates a medieval village, except the religion here is spectacle and the congregation pays by the minute.\n\nChinatown survived by becoming essential. When the corporate sovereignty treaties disrupted conventional supply chains, the Chinatown merchant networks — which had been operating parallel import systems for decades — became the most reliable logistics infrastructure in the lower South Side. Kelpline Logistics tried to formalize a partnership; the Chinatown Merchant Association accepted the contract and then proceeded to fulfill it on their own terms, using Kelpline's corporate charter as legal cover for a logistics operation that Kelpline's actual managers barely understand. The result is a district within a district: Chinatown Gate, three blocks of dense commercial activity where the signage is in Cantonese and Mandarin, the food is real, the supply chains reach across the Pacific, and the Merchant Association's authority is absolute.\n\nThe Rictus Yard hosts combat sports, drone races, and neural-experience competitions — entertainment engineered for maximum audience engagement, which in practice means maximum violence calibrated to the threshold of what corporate liability insurance will cover. On game days, the Steelyard's population triples as spectators flood in from across M88. The streets become a carnival of food vendors, ticket scalpers, and pickpockets. The Merchant Association tolerates this because the influx of credit funds Chinatown's actual operations. Rictus Entertainment tolerates the Merchant Association because the food and logistics support make the Yard functional. It is a symbiosis built on mutual exploitation, and it works.\n\nBetween the Yard and the Gate, in the compressed residential blocks where the district's permanent population lives, the Steelyard is simply dense — human density, architectural density, density of sound and smell and transaction. Every hallway is a market. Every stairwell is a meeting place. The expressway that once bisected the neighborhood was enclosed and converted into a covered thoroughfare lined with vendor stalls, creating an indoor street that never closes and never sleeps. The Steelyard is not comfortable. It is not quiet. It is not beautiful. But it is alive in a way that the corporate districts above it will never be, because everything here exists because someone needed it to.",
+  "atmosphere": {
+    "sights": [
+      "The Rictus Yard: a stadium wrapped in holographic entertainment signage, pulsing with light on game days",
+      "Chinatown Gate: three blocks of dense commercial architecture, signage in Cantonese and Mandarin, red lanterns and neon competing",
+      "The enclosed expressway thoroughfare: a covered street of vendor stalls stretching the length of the district",
+      "Buildings subdivided into visible honeycombs — windows, balconies, and access points packed into every surface",
+      "Kelpline logistics drones threading between buildings, carrying packages along routes the Merchant Association controls"
+    ],
+    "sounds": [
+      "The Rictus Yard crowd: a wall of sound on game days that vibrates through every structure in the district",
+      "Merchant Association radio traffic in Cantonese, coordinating logistics movements across the district",
+      "Vendor calls in the expressway thoroughfare — overlapping languages, overlapping transactions",
+      "Mahjong tiles clacking in the back rooms of Chinatown Gate tea houses",
+      "The constant hum of density: voices, machinery, cooking, commerce, layered into white noise"
+    ],
+    "smells": [
+      "Chinatown Gate kitchens: ginger, garlic, chili oil, roast duck — real food prepared at volume",
+      "The expressway thoroughfare's accumulated smell of a thousand vendor stalls",
+      "Rictus Yard on game day: sweat, synthetic beer, ozone from the arena's containment fields",
+      "Incense from a dozen temples compressed into three blocks"
+    ],
+    "feel": "Compression as a way of life. The Steelyard feels like being inside a fist — everything pressed together, everything touching, no wasted space, no wasted moment. It is overwhelming and it is honest, a district that has accepted its constraints and filled them completely.",
+    "tags": []
+  },
+  "demographics": "Approximately 15,000 permanent residents in one of M88's smallest districts. Chinese-American community centered in Chinatown Gate (roughly 40%), mixed lower-tier residents in the surrounding blocks. Game-day population surges to 50,000+.",
+  "economy": "Dual economy: Rictus Entertainment's spectacle industry generates massive event-day revenue; the Chinatown Merchant Association's logistics network generates steady trade income that reaches across the Pacific. The expressway thoroughfare's vendor economy fills the gaps. Kelpline Logistics holds the corporate charter but the Merchant Association holds the actual supply chains.",
+  "power_structure": "The Chinatown Merchant Association and Rictus Entertainment share de facto control through mutual dependence. Kelpline Logistics holds nominal jurisdiction but exercises it only through the Merchant Association's cooperation. The permanent residents navigate between these powers through established relationships and long memory.",
+  "dangers": [
+    "Game-day crowd surges in a district not designed for triple population",
+    "Rictus Entertainment's liability thresholds are tested regularly — arena containment failures are not hypothetical",
+    "The Merchant Association's logistics network moves things other than food and merchandise",
+    "Compression-related infrastructure stress — the buildings were not designed for this density",
+    "Territorial disputes between Merchant Association factions occasionally escalate in Chinatown Gate's back alleys"
+  ],
+  "opportunities": [
+    "The Merchant Association's Pacific logistics network can move anything anywhere, for the right price",
+    "Rictus Yard events create cover for operations that would be visible in quieter districts",
+    "The expressway thoroughfare is a marketplace for goods unavailable through corporate channels",
+    "Chinatown Gate's tea houses are preferred meeting spaces for South Side negotiations",
+    "The district's density provides natural surveillance countermeasures — too many people for effective tracking"
+  ],
+  "story_hooks": [
+    "A Kelpline Logistics manager has realized that the Merchant Association has been using their corporate charter to import something that is definitely not merchandise — the shipping containers are shielded and the manifests are fabricated, and the manager needs to decide between reporting it and surviving",
+    "A Rictus Yard fighter has died during a match that was supposed to be non-lethal — the neural-interface logs show the kill command came from outside the arena, and someone in the audience was the weapon",
+    "The Merchant Association is preparing for a succession — the current chair is dying, two factions are positioning, and the logistics network that feeds half the South Side hangs in the balance"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Nearfield",
+      "Bronzeline",
+      "Ashfield",
+      "Meridian Core"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Rictus Entertainment spectators flooding in on game days",
+    "Chinatown Merchant Association members operating logistics and commerce",
+    "Vendor operators in the expressway thoroughfare",
+    "Kelpline Logistics corporate liaisons with limited actual authority",
+    "South Side faction leaders meeting in Chinatown Gate tea houses"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.84,
+    "lng": -87.653,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "violence",
+    "combat",
+    "weapon",
+    "war",
+    "memory",
+    "neural",
+    "ai",
+    "corporate",
+    "contract",
+    "surveillance",
+    "control",
+    "power",
+    "alley",
+    "market",
+    "bar",
+    "food",
+    "drone"
+  ]
+}

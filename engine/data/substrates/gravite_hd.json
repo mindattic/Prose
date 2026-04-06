@@ -1,0 +1,56 @@
+{
+  "id": "019d6143a9db7ed3a03eab43a1c41ef5",
+  "name": "Gravite-HD",
+  "brand_name": "Gravite",
+  "product_name": "Gravite-HD",
+  "type": "substrate",
+  "aliases": [
+    "densemetal",
+    "heavyplate",
+    "tombstone alloy"
+  ],
+  "category": "exotic",
+  "description": "An ultra-dense osmium-rhenium-neutron-analog composite assembled with quantum precision to achieve a bulk density of approximately 48 g/cm³ — nearly double that of osmium and four times that of lead — by filling interstitial lattice space with stabilized heavy-element clusters that would be impossible to maintain under conventional manufacturing conditions. Gravite-HD is used where maximum mass in minimum volume is required: ballistic counterweights, radiation shielding, penetrator munitions, and structural ballast in space-limited environments. Its extreme density also provides passive radiation attenuation superior to any conventional shielding material of equivalent volume.",
+  "properties": [
+    "ultra_high_density",
+    "extreme_mass_per_volume",
+    "radiation_shielding",
+    "high_compressive_strength",
+    "low_thermal_conductivity",
+    "non_corrosive",
+    "brittle_under_tension"
+  ],
+  "developers": [
+    "Crucible Industries"
+  ],
+  "applications": [
+    "kinetic penetrator munitions",
+    "counterweight systems in precision robotics",
+    "spacecraft ballast and attitude control",
+    "radiation vault construction",
+    "seismic isolation mass dampers",
+    "high-security vault door cores",
+    "deadweight anchors for deep-sea installations"
+  ],
+  "tier_availability": "Tier 4-5",
+  "cost": "Φ 95,000 per kg",
+  "story_hooks": [
+    "A Gravite-HD counterweight has gone missing from a Spire construction site — at 48 g/cm³, even a fist-sized piece masses over 25 kilograms, and someone carried it out without triggering any load sensors, which should have been impossible.",
+    "Crucible Industries is marketing Gravite-HD penetrators to both sides of a corporate conflict — the rounds punch through any existing armor at the tiers involved, and the body count is escalating in ways that are starting to attract unwanted regulatory attention.",
+    "A street-level fence is selling what she claims are Gravite-HD fragments from a 'crashed military drone' — the density checks out, but the crystalline structure inside doesn't match any known Crucible Industries production run."
+  ],
+  "tags": [
+    "exotic",
+    "substrate",
+    "ai",
+    "robot",
+    "corporate",
+    "control",
+    "market",
+    "armor",
+    "drone",
+    "spire",
+    "tier 4",
+    "tier 5"
+  ]
+}

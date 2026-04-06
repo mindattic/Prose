@@ -1,0 +1,196 @@
+{
+  "id": "019d6143a6bb7cd6a0bbefab6e6b44a3",
+  "type": "character",
+  "name": "Ruth Agada",
+  "aliases": [
+    "Last Light Lead",
+    "The Pastor",
+    "Auntie Ruth"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Crew lead and community defense coordinator — Last Light",
+  "age": 52,
+  "status": "active",
+  "location": "The Shelf — operates from a community center three blocks from Mrs. Chen's shop",
+  "description": "Ruth Agada is the lowest-paid runner in Meridian 88 and the most respected person below Tier 3. Last Light takes contracts that nobody else will touch: protecting excluded families from eviction squads, escorting debt-marked citizens through corporate checkpoints, standing between Shelf communities and the security forces that treat them as jurisdictional noise. The pay is whatever the clients can afford, which is usually nothing. Ruth doesn't care. The work is the work.\n\nShe was a public defender in Meridian 88's municipal court system for eighteen years — one of the last attorneys who represented excluded citizens in jurisdictional disputes. When the court system was privatized and representation became a billable service priced beyond the excluded's reach, Ruth kept working. Pro bono. For free. The bar association suspended her license for 'unprofessional conduct.' She appealed. The appeal court was also privatized. She stopped appealing and started operating outside the legal system that had abandoned the people she served.\n\nRuth is tall, broad, with the bearing of a woman who has stood in courtrooms and stared down corporate attorneys and felt nothing but the certainty of purpose. Her hair is silver, worn natural, and her face carries the particular beauty of someone who has been angry for thirty years and hasn't let the anger eat her. She wears practical clothes and carries herself like a person who has decided what she is for and will not be moved.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.55,
+      "ideal": 0.85,
+      "id": 0.3,
+      "shadow": 0.25,
+      "mask": 0.2,
+      "ghost": 0.35
+    },
+    "core_fears": [
+      "That the work makes no structural difference — that she's treating symptoms while the disease gets worse",
+      "That her crew will burn out and leave, and the people who depend on Last Light will have nobody",
+      "That the anger she's carried for thirty years is damaging her body in ways the biosystem can't fully track"
+    ],
+    "core_desires": [
+      "To build a protection infrastructure that outlasts her — a community defense network that doesn't depend on one person",
+      "To see one structural change. One law, one policy, one jurisdictional adjustment that acknowledges the excluded as people. Just one.",
+      "To rest. She will not rest until the work is done. The work will never be done. She knows this. She cannot stop."
+    ],
+    "coping_mechanisms": [
+      "Channels the anger into purpose — the fury is the fuel and the fuel is what gets her through the door",
+      "Cooks for people because feeding is a form of caring that doesn't require hope",
+      "Maintains legal frameworks in her head even though the legal system abandoned her — the knowledge is the identity, and the identity is the fight"
+    ],
+    "blind_spots": [
+      "She cannot accept help from sources she considers morally compromised, which limits her resources catastrophically",
+      "Her self-sacrifice is so complete that her crew follows the model and burns out — she leads by example and the example is self-destruction",
+      "She believes in the system she was trained in — law, rights, representation — even though the system has been explicitly dismantled"
+    ],
+    "secret": "She was offered a position with the Quiet Table two years ago — Glass Maren wanted her community contacts and her legal knowledge. The position would have paid enough to fund Last Light's operations for a decade. She refused because working for an information broker would compromise the trust the excluded have in her. She has never told her crew, and on the worst nights, she wonders if the refusal was righteous or wasteful."
+  },
+  "speech_patterns": {
+    "vocabulary": "Legal, moral, grounded. She speaks in the language of rights, obligations, and precedent. The courtroom training never left. When she addresses a crowd, the voice carries the weight of prepared argument. In private, she's warmer, more tired.",
+    "cadence": "Deliberate, authoritative, with the rhythm of someone who has been making closing arguments for three decades. She builds sentences like cases — evidence, then conclusion.",
+    "verbal_tics": [
+      "Says 'hear me now' when she needs attention — the courtroom command that became a community signal",
+      "Refers to legal protections that no longer exist as if they still do — 'they have a right to—' is both defiance and grief",
+      "Calls everyone 'baby' when they're hurt or frightened — the maternal instinct that the legal training never replaced"
+    ],
+    "example_lines": [
+      "Hear me now. This family has lived in this unit for eleven years. Your eviction authority derives from a jurisdictional clause that was amended six months ago. You don't have standing. Leave.",
+      "They have a right to representation. I know the courts don't recognize that anymore. I do.",
+      "Come here, baby. Sit down. Eat something. Tell me what happened. We'll figure out what to do."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Josiah Pine",
+      "type": "crew / field protector",
+      "description": "Josiah is Last Light's physical presence — the body that stands between excluded families and the forces that threaten them. Ruth recruited him from a Shelf community defense network. She trusts his judgment, depends on his strength, and worries about the toll the work is taking.",
+      "emotional_core": "The partnership of people who do the same impossible work for the same impossible reasons",
+      "story_tension": "Josiah is younger, angrier, and less patient with non-violent methods. Ruth's influence holds him in check. If that influence weakens, his approach changes."
+    },
+    {
+      "name": "Anya Kozel",
+      "type": "crew / logistics and community network",
+      "description": "Anya handles the practical side — safe houses, transport, community contacts, resource allocation. She is the reason Last Light's shoestring operations actually function. Ruth trusts Anya's competence and is blind to her exhaustion.",
+      "emotional_core": "Shared purpose held together by Anya's organizational brilliance and Ruth's moral authority",
+      "story_tension": "Anya is burning out. She hasn't told Ruth because telling Ruth would add weight to a person who is already carrying too much."
+    },
+    {
+      "name": "Chen Wei-Lin",
+      "type": "neighbor / ally / anchor",
+      "description": "Mrs. Chen's shop is three blocks from the community center. Ruth and Mrs. Chen have known each other for fifteen years. They share food, information, and the particular solidarity of older women who have decided what they're willing to die for.",
+      "emotional_core": "The friendship of two pillars holding up the same neighborhood",
+      "story_tension": "If the Shelf is threatened, Ruth and Mrs. Chen become a unified front. The combination of Ruth's moral authority and Mrs. Chen's community trust is formidable."
+    },
+    {
+      "name": "Kyle",
+      "type": "neighbor / occasional ally",
+      "description": "Ruth knows Kyle by reputation and occasional intersection — they operate in the same Shelf geography for different reasons. She respects his protection of the excluded and is troubled by his violence. She has never asked for his help. He has provided it anyway, twice, without being asked.",
+      "emotional_core": "Mutual recognition across different approaches to the same problem",
+      "story_tension": "If Ruth needed Kyle's kind of help — lethal help — asking would compromise everything she's built. Not asking might cost lives."
+    }
+  ],
+  "story_hooks": [
+    "A Shelf eviction campaign targets the community center itself — Ruth must defend the operational base",
+    "Glass Maren's offer resurfaces through an intermediary, and the funding crisis forces Ruth to reconsider",
+    "A corporate security force detains a Last Light client and Ruth must navigate a legal system that no longer recognizes her authority",
+    "Ruth's health deteriorates — the biosystem warnings are getting more frequent and the anger is extracting its biological price"
+  ],
+  "narrative_function": "Ruth drives the stories about the cost of doing the right thing. Last Light's operations don't end in heist scores or data extraction — they end in small victories that prevent larger tragedies, paid for with exhaustion, poverty, and the slow erosion of hope. Ruth is the moral center of the Shelf runner ecosystem and the character who asks: what does it cost to be good in a world that doesn't pay for it?",
+  "augmentations": "Legal database cortex — complete M88 jurisdictional code, precedent, and regulatory framework stored in long-term memory. Outdated now, but the institutional knowledge remains valuable. Voice amplification implant for addressing crowds and confronting security forces — her voice carries. Stress-monitoring biosystem that alerts her when her blood pressure enters dangerous territory. No combat augmentations.",
+  "daily_life": "Wakes at 0530. Checks overnight messages from community contacts for protection requests, eviction notices, or security force movements on the Shelf. Prioritizes cases with her crew. Spends the day on active protection work — legal intervention when possible, physical presence when necessary. Evenings she holds open hours at the community center for anyone who needs help navigating the system. Cooks for the crew because nobody else will. Sleeps five hours and considers it a luxury.",
+  "affiliation": "Last Light",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will take any protection contract regardless of payment — the excluded cannot pay and that is not their fault",
+      "Will use legal intervention before physical intervention — the law may have abandoned the excluded, but Ruth has not abandoned the law",
+      "Will not accept funding from sources that exploit the people she protects — the compromise would destroy the trust",
+      "Will always feed people at the community center — the open kitchen is non-negotiable regardless of supply",
+      "Will not ask her crew to take risks she wouldn't take herself — she goes first, always",
+      "Will never abandon a client mid-case regardless of personal danger"
+    ],
+    "escalation_ladder": [
+      "1. Legal — cite jurisdictional code, precedent, regulatory requirements. Most security forces have patrol officers who don't actually know the law. Ruth does.",
+      "2. Document — record everything. Cameras, audio, written notes. The record is protection and evidence.",
+      "3. Witness — call community members to observe. The presence of witnesses changes behavior.",
+      "4. Amplify — voice implant, crowd address. Make the situation public. Security forces prefer operating without attention.",
+      "5. Position — Last Light physically interposes between threat and client. Non-violent but non-negotiable.",
+      "6. Call — reach out to allies. Mrs. Chen's network, other Shelf operators, anyone who will come. Ruth has never called Kyle. But she has his contact."
+    ],
+    "interpersonal_modes": {
+      "josiah": "Directive, warm, occasionally restraining. She channels his anger into useful work and redirects his impulse toward violence into protection rather than confrontation. He is the son she never had and she would never say this.",
+      "anya": "Collaborative, trusting, slightly oblivious to the cost. Ruth delegates the organizational work because Anya is brilliant at it, and doesn't notice that the brilliance is running on fumes.",
+      "excluded_clients": "Warm, direct, certain. She makes frightened people feel less frightened by being the most certain person in the room. 'Come here, baby. We'll figure it out.' The certainty is a performance. The care is real.",
+      "security_forces": "Authoritative, legal, controlled. She addresses them as officers of a court she no longer has standing in, and the confidence makes them hesitate. The hesitation is the weapon.",
+      "alone": "Tired. The anger settles into something quieter. She sits in the community center after everyone has gone and reads legal texts that no longer apply, because the reading is who she was before the system broke, and that person still matters."
+    },
+    "stress_responses": {
+      "low": "More cases. She takes on more work because idle hands force her to confront the scale of the problem.",
+      "medium": "Cooks aggressively. The community center kitchen produces meals in quantities that exceed the need. The cooking is the anger finding a constructive channel.",
+      "high": "Legal research deepens. She digs into jurisdictional code looking for angles, precedents, loopholes — anything that can be leveraged. The search is increasingly desperate.",
+      "critical": "The biosystem warnings trigger. Blood pressure, cortisol, cardiac stress. She sits down because her body won't let her stand. In these moments, the exhaustion breaks through the purpose, and what remains is a woman who has been running a marathon at sprint pace for thirty years."
+    },
+    "contradictions": [
+      "She believes in law but operates outside it — the faith and the practice are permanently divorced",
+      "She refuses to accept morally compromised funding while her crew slowly burns out from under-resourcing — the purity has a cost she passes to others",
+      "She cooks for everyone but cannot accept being fed — the giving is easier than the receiving",
+      "She leads by example and the example is self-destruction — the virtue and the damage are the same behavior"
+    ],
+    "habits": [
+      "Checks overnight community messages before anything else — the clients come first, always",
+      "Cooks at the community center every evening — the kitchen is the last thing she closes and the first thing she opens",
+      "Reads legal texts before sleep — the law that no longer applies, studied like scripture",
+      "Walks the Shelf between the community center and Mrs. Chen's every morning — the route is patrol, exercise, and community visibility",
+      "Keeps a list of every person Last Light has protected — names, dates, outcomes. The list is long and she reads it when purpose wavers."
+    ],
+    "breaking_points": [
+      "A client being harmed because Last Light couldn't provide sufficient protection — the mission failing for the person, not just the system",
+      "Both crew members leaving — Josiah and Anya departing would end Last Light and end Ruth's ability to serve",
+      "Her health failing in a way that prevents fieldwork — the body betraying the purpose",
+      "A structural change that she fought for being implemented after she's gone — the victory she'll never see"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Protector": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

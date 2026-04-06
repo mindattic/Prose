@@ -1,0 +1,38 @@
+{
+  "id": "019d6143aa637dcaa2bf526a5b2549bc",
+  "name": "Cargo Zeppelin Tender",
+  "type": "transportation",
+  "aliases": [
+    "Tender",
+    "Sky Dinghy",
+    "The Remora"
+  ],
+  "category": "commercial_air",
+  "manufacturer": "Ferrogate Transit (Aerostat Division)",
+  "description": "A small VTOL craft that shuttles personnel and small cargo between zeppelins and ground stations. The airship equivalent of a harbor boat — unglamorous, essential, and piloted by crews who spend more time in the air than on the ground. Tenders dock at the ventral port of a zeppelin and can transfer up to 8 passengers or 1,000 kg of priority cargo without the airship needing to descend to a mooring mast. Watching a Tender dock with a moving zeppelin in high winds is one of the most impressive displays of piloting in Meridian 88.",
+  "propulsion": "Tilt-rotor VTOL",
+  "speed": "120 km/h",
+  "capacity": "8 passengers or 1,000 kg cargo",
+  "range": "200 km",
+  "tier_availability": "Commercial airship operations",
+  "cost": "Φ200,000 per unit",
+  "autonomy": "Pilot-operated, AI docking assist",
+  "armament": "None",
+  "common_usage": "Zeppelin crew transfer, priority cargo, passenger embarkation/disembarkation without mooring.",
+  "story_hooks": [
+    "A Tender pilot docks with a cargo zeppelin and finds the crew gone — the airship is on autopilot with no record of where the crew went",
+    "Tender pilots witness things from the air that ground dwellers never see — patterns in the city lights, movements at night, the shape of something in the lake"
+  ],
+  "tags": [
+    "commercialair",
+    "transportation",
+    "tender",
+    "ai",
+    "harbor",
+    "bar",
+    "night",
+    "airship",
+    "zeppelin",
+    "lake"
+  ]
+}

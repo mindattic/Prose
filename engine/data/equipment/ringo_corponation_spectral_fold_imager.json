@@ -1,0 +1,68 @@
+{
+  "id": "019d6143a86a7003b56a6a8a00639217",
+  "name": "Ringo Corponation Spectral Fold Imager",
+  "brand_name": "Ringo",
+  "product_name": "Ringo Corponation Spectral Fold Imager",
+  "type": "equipment",
+  "aliases": [
+    "SFI",
+    "the Accordion",
+    "Fold Eye",
+    "Layer Cam"
+  ],
+  "category": "sensor",
+  "description": "The Spectral Fold Imager is a compact multi-band imaging device that captures and computationally 'unfolds' overlapping electromagnetic frequency layers to produce a single composite image containing data from visible light, near-infrared, short-wave infrared, and low-frequency microwave bands simultaneously. The device achieves this through a folded optical path — a series of micro-prism cascades that split incoming light into its constituent frequency ranges and direct each band to a dedicated sensor strip, all within a chassis roughly the size of a hardcover book. The resulting composite image, rendered on the device's high-contrast display, shows a scene with extraordinary informational density: concealed objects, heat sources, electronic emissions, and structural anomalies all visible in a single frame coded by color channel.\n\nRingo Corponation developed the SFI for their media and surveillance divisions, where the need to capture covert footage in varying light conditions without carrying multiple bulky instruments created a clear market gap. The folded optical path design — Ringo's core innovation — allowed dramatic miniaturization compared to conventional multi-spectral rigs without sacrificing image quality. The device can be operated in 'full composite' mode or narrowed to any single frequency band for targeted analysis. A machine-learning interpretation layer flags anomalies automatically: hidden compartments in walls, warm bodies behind barriers, active electronics in supposedly powered-down equipment.\n\nThe SFI has become something of a signature instrument for a specific type of Meridian 88 operator: the investigative journalist, the corporate intelligence analyst, the high-end infiltrator who needs to see everything a space is hiding before committing to entry. Ringo markets it through their professional imaging division with conspicuous legitimacy, but the device's surveillance capabilities are extensive enough that several districts have moved to restrict its carry without a media or investigative license.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Folded micro-prism cascade optics",
+    "Multi-band simultaneous electromagnetic imaging",
+    "Computational spectral composite rendering",
+    "Machine-learning anomaly flagging",
+    "Near-infrared and short-wave infrared sensor arrays"
+  ],
+  "specifications": {
+    "imaging_bands": "Visible light (380–700nm), near-infrared (700–1400nm), short-wave infrared (1400–3000nm), low-frequency microwave (1–10GHz)",
+    "composite_resolution": "12 megapixel equivalent per band; composite rendered at 24 megapixel",
+    "anomaly_detection": "ML-flagged; categories include concealed mass, thermal signatures, active electronics, structural voids",
+    "optical_zoom": "1x–12x continuous",
+    "wall_penetration_depth": "Up to 180mm standard drywall/plaster; 60mm concrete (microwave band)",
+    "display": "High-contrast 4-inch OLED with band-selection overlay controls",
+    "recording": "Continuous capture at 30fps; 6-hour internal storage",
+    "dimensions": "190mm x 130mm x 55mm",
+    "weight": "620g",
+    "battery_life": "9 hours mixed use",
+    "operating_temperature": "-10°C to 50°C",
+    "licensing_lock": "Requires active Ringo media or investigative license for full microwave-band access"
+  },
+  "tactical_use": "Operators sweep rooms and corridors before entry to identify warm bodies, concealed weapons, or hidden compartments through walls and barriers. Investigators use the SFI to document hidden infrastructure, concealed evidence, or electronic equipment in locations where visible-light documentation would reveal nothing. Infiltrators use it to map a target building's interior layout by imaging through exterior walls from a safe distance. The ML anomaly flagging allows rapid triage of large spaces — the device highlights what needs closer attention so operators don't miss subtle signatures under pressure.",
+  "cultural_context": "The SFI has become culturally associated with a particular archetype in Meridian 88: the person who sees through surfaces, literally and figuratively. Investigative journalists who carry one are both respected and feared — the implication being that nothing you've hidden in your walls or your carefully staged environment is safe from examination. Corporate intelligence runners treat SFI ownership as a baseline professional competency. Among fixers, 'running the accordion' before any new location is considered basic tradecraft hygiene. The licensing requirement for full microwave-band access has created a two-tier market: licensed operators with full capability and unlicensed users with a device that's still powerful but blind to certain frequency ranges.",
+  "known_users": [
+    "Ringo Corponation investigative media teams",
+    "Corporate intelligence analysts and competitive intelligence runners",
+    "Licensed investigative journalists",
+    "High-end infiltrators and extraction specialists",
+    "Municipal building inspection authorities (licensed)",
+    "Private investigators"
+  ],
+  "story_hooks": [
+    "A journalist's SFI footage captures something in a corporate building's walls that wasn't meant to be found — now the footage needs to survive long enough to be published",
+    "A character's SFI begins flagging anomalies in a location that should be structurally empty — something is inside the walls that the building's official plans don't acknowledge",
+    "A stolen SFI surfaces with footage still on its internal storage from a previous user — the footage documents something that multiple parties want recovered or destroyed",
+    "The microwave-band licensing lock has been cracked and unlicensed full-capability units are circulating — Ringo's security division is conducting aggressive operations to recover them and identify the crack's source"
+  ],
+  "tags": [
+    "sensor",
+    "equipment",
+    "weapon",
+    "war",
+    "ai",
+    "corporate",
+    "surveillance",
+    "power",
+    "market",
+    "bar",
+    "tier 2"
+  ]
+}

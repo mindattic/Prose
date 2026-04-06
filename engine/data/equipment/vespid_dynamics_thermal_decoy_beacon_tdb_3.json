@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a8807023b8b489f146683980",
+  "name": "Vespid Dynamics Thermal Decoy Beacon TDB-3",
+  "brand_name": "Vespid",
+  "product_name": "Vespid Dynamics Thermal Decoy Beacon TDB-3",
+  "type": "equipment",
+  "aliases": [
+    "TDB-3",
+    "Heat Fake",
+    "Warm Ghost",
+    "Thermal Lure"
+  ],
+  "category": "counter-surveillance",
+  "description": "A small device that generates a thermal signature mimicking a human body, drawing the attention of thermal imaging systems and heat-seeking autonomous weapons away from real targets. The TDB-3 produces a 37°C heat pattern in a human-shaped profile using embedded heating elements, and can be placed on walls, floors, or furniture to create false targets. The beacon operates for 12 hours on a single charge and can be configured to simulate stationary, walking, or running thermal profiles.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted — tactical deception device",
+  "base_technologies": [],
+  "specifications": {
+    "thermal signature": "37°C human-profile pattern",
+    "profiles": "Stationary",
+    "info": "walking; running simulation",
+    "battery": "12 hours continuous",
+    "weight": "0.15 kg",
+    "size": "15 cm disc",
+    "placement": "Adhesive mounting on any surface",
+    "quantity typically deployed": "4-8 per operation",
+    "effectiveness": "Defeats standard thermal imaging and heat-seeking systems"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A building assault team placed 20 TDB-3 beacons around the target structure — the defending thermal sensors showed 20 approaching hostiles when the actual team was 5 people entering from the one unmonitored approach.",
+    "TDB-3 beacons have been placed throughout a Tier 2 district to overwhelm corporate thermal surveillance with false human signatures — the system is drowning in phantom contacts and real threats are invisible."
+  ],
+  "tags": [
+    "countersurveillance",
+    "equipment",
+    "weapon",
+    "war",
+    "deception",
+    "corporate",
+    "surveillance",
+    "tier 2"
+  ]
+}

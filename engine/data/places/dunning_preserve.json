@@ -1,0 +1,95 @@
+{
+  "id": "019d6143a9177c6582d4c79ab5310c2f",
+  "type": "place",
+  "name": "Dunning Preserve",
+  "aliases": [
+    "Dunning",
+    "The Asylum Grounds",
+    "The Preserve",
+    "The Warded Forest"
+  ],
+  "description": "Before the incorporation, Dunning was known for two things: being far from everything, and the former state mental hospital that had been converted into a forest preserve. The hospital closed in 1970. The ghosts didn't. When the corps carved up the city, Dunning's remote northwest location and its unsettling history made it unattractive for development. Axiom Environmental Services acquired the forest preserve land for carbon credit accounting purposes — trees on paper, value on balance sheets — and the residential blocks around it were left ungoverned. What happened next was either a miracle or a horror, depending on your relationship with the natural world.\n\nThe forest grew back. Not the manicured, corporate-approved green space of the Core. Real forest. Unmanaged, unfiltered, fed by decades of Chicago's buried topsoil and whatever the old hospital had put into the ground. The trees in Dunning Preserve are wrong in ways that botanists from the Core's research divisions have tried and failed to categorize. They grow too fast. Their root systems interface with buried infrastructure in ways that suggest intentionality. In Year 22, a survey team found fungal networks connecting the preserve's trees to decommissioned fiber optic cables, creating what one researcher described as 'a biological internet running on mycelium and dead copper' before her report was classified and she was reassigned to atmospheric monitoring on the lakefront.\n\nThe people who live in and around the Preserve have adapted. The old residential blocks on the perimeter house a community of roughly 12,000 who have developed a symbiotic relationship with the forest that corporate science does not have a framework to explain. They call themselves the Wardens, and their knowledge of the Preserve's ecology is practical, generational, and deliberately undigitized — nothing written down, nothing stored on any network, everything taught person to person. They harvest the forest's pharmaceutical products — compounds that no lab has synthesized, painkillers and nootropics that grow on bark and in root systems — and trade them through the Souk and the Circuit. The Preserve is Dunning's economy, its pharmacy, its religion, and its weapon.\n\nThe old hospital's foundations are still down there, under the roots. The Wardens say the forest grew from it. They say this without metaphor.",
+  "atmosphere": {
+    "sights": [
+      "Canopy so dense it blocks the Meridian haze — actual sky visible in gaps between branches",
+      "Trees growing through and around pre-collapse structures, absorbing brick and steel into living wood",
+      "Bioluminescent fungi along forest paths that pulse in patterns the Wardens can read like signage",
+      "The hospital foundations visible in places — concrete and tile emerging from root systems like bones from skin",
+      "Warden settlements built into the canopy and forest edge, structures that look grown rather than constructed"
+    ],
+    "sounds": [
+      "Wind through real leaves — a sound so rare in Meridian 88 that visitors sometimes cry",
+      "Bird and insect life that exists nowhere else in the Corridor — an ecosystem in a bottle",
+      "The forest's own sounds — creaking, settling, the deep subsonic hum of root systems moving",
+      "Silence that is actually silence, not the corporate simulation of it",
+      "Warden communication — subtle percussive signals against tree trunks that carry through the root network"
+    ],
+    "smells": [
+      "Earth. Real, living soil — the single rarest smell in Meridian 88",
+      "The pharmaceutical compounds — sweet, resinous, faintly metallic, growing on bark and fungus",
+      "Decay and growth simultaneously — the forest recycling itself in real time",
+      "Rain captured by canopy, released slowly — petrichor that lasts for hours"
+    ],
+    "feel": "Sacred. Whether you believe in anything or not, the Preserve triggers something primal — the recognition that this is older than the city, older than the corps, older than the tier system. It feels like standing in the one place that the incorporation couldn't reach. The Wardens say the forest is watching. Spending any time under the canopy, you start to believe them.",
+    "tags": []
+  },
+  "demographics": "Approximately 12,000 Wardens and affiliated residents on the forest perimeter. Untier-ed by choice — the community rejected the tier system in Year 6 and has maintained autonomy through the Preserve's pharmaceutical value and its genuine inaccessibility. Ethnically diverse but culturally unified around the Warden tradition.",
+  "economy": "",
+  "power_structure": "",
+  "dangers": [
+    "The forest itself — navigation without a Warden guide is genuinely dangerous",
+    "Pharmaceutical compounds that are beneficial in correct doses and lethal in incorrect ones",
+    "The root network — Wardens claim it can detect intruders, and evidence supports this",
+    "Corporate extraction attempts — Axiom has sent teams into the Preserve before, and not all returned",
+    "The old hospital foundations — structurally unstable and psychologically disturbing",
+    "Getting lost — GPS does not function reliably under the canopy, and the paths change"
+  ],
+  "opportunities": [
+    "Pharmaceutical compounds unavailable anywhere else — the Preserve's primary trade goods",
+    "Warden knowledge of biological systems that corporate science hasn't cracked",
+    "Complete surveillance invisibility under the canopy",
+    "The hospital foundations may contain pre-collapse records sealed when the institution closed",
+    "Alliance with the Wardens provides access to the most defensible position in the northwest districts"
+  ],
+  "story_hooks": [
+    "Axiom Environmental Services has discovered the mycelium-fiber optic network and wants to weaponize it — the Wardens need help stopping an extraction team",
+    "A pharmaceutical compound from the Preserve is the only treatment for a condition affecting someone Kyle cares about, and the Wardens don't trade with strangers",
+    "The hospital foundations contain patient records from before the closure — records that include the names of people who became very powerful during the incorporation"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Montclare Quiet",
+      "The Portico",
+      "Irkalla"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Wardens who rarely leave and outsiders who rarely enter",
+    "Pharmaceutical traders making carefully negotiated purchases at the forest edge",
+    "Researchers from the Circuit attempting to study the mycelium network",
+    "People seeking to disappear — the Preserve grants asylum on the Wardens' terms"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.948,
+    "lng": -87.749,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "weapon",
+    "war",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "power",
+    "pain",
+    "bar",
+    "chase",
+    "lake",
+    "circuit"
+  ]
+}

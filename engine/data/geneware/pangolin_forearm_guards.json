@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a8ad70c49b6e9ea1346289d5",
+  "name": "Pangolin Forearm Guards",
+  "brand_name": "Pangolin",
+  "product_name": "Pangolin Forearm Guards",
+  "type": "geneware",
+  "aliases": [
+    "Scale Bracers",
+    "Armguard Mod",
+    "Shield Skin"
+  ],
+  "category": "defensive",
+  "target_system": "integumentary/skeletal (forearm keratin scale formation)",
+  "description": "Induces growth of overlapping pangolin-style keratin scales on the outer forearms, from wrist to elbow. The scales are thick, hard, and overlapping — functionally equivalent to natural bracers that protect the forearms from cuts, impacts, and abrasion. The modification is specifically targeted to the forearms rather than full-body coverage, making it cheaper and faster to install while protecting the most commonly raised defensive surface. The scales can be raised and flattened through muscular control — raised, they bristle outward like pinecone armor; flattened, they lie smooth and can be concealed under long sleeves. Crucible Genomics developed the modification as an entry-level defensive package for Shelf residents who can't afford full osteodermal plating.",
+  "source_organism": "Manis pentadactyla (Chinese pangolin)",
+  "manufacturer": "Crucible Genomics",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted",
+  "procedure": "Forearm dermal injection with scale growth retroviral carrier, 2 sessions",
+  "expression_time": "6–10 weeks",
+  "reversibility": "Scale removal leaves textured scarring; regrowth must be gene-suppressed",
+  "side_effects": [
+    "Scales catch on sleeves and tight clothing",
+    "Forearm skin underneath scales becomes pale and sensitive from lack of sun exposure",
+    "Scale maintenance required — dry, cracked scales are painful",
+    "Bristling reflex activates during startle, shredding sleeves"
+  ],
+  "social_perception": "Practical and street-credible. Scale bracers signal someone who expects trouble but can't afford — or doesn't want — full body modification. Common among Shelf laborers, couriers, and anyone who blocks with their forearms regularly.",
+  "story_hooks": [
+    "A scale-bracer user's pangolin scales begin incorporating environmental minerals, growing harder and heavier with each shed-and-regrow cycle — their forearms are becoming genuinely armored, but the weight is becoming a problem",
+    "A forensic team identifies an attacker by scale fragments left at the scene — pangolin scales shed and regrow like fingernails, and each person's scale keratin has a unique protein signature"
+  ],
+  "tags": [
+    "defensive",
+    "geneware",
+    "war",
+    "ai",
+    "elf",
+    "control",
+    "pain",
+    "clothing",
+    "armor",
+    "shelf",
+    "tier 2"
+  ]
+}

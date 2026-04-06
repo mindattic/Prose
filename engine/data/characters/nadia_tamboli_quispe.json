@@ -1,0 +1,172 @@
+{
+  "id": "019d6143a65f7c3996814604b1e34853",
+  "type": "character",
+  "name": "Nadia Tamboli-Quispe",
+  "aliases": [
+    "Nadi",
+    "Night Nadia"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Night-shift building cleaner, Meridian Core corporate towers",
+  "age": 22,
+  "status": "active",
+  "location": "Works in Meridian Core; lives in a shared flat in Archer's Line",
+  "description": "Nadia is a young woman with her Gujarati father's compact build and her Quechua mother's dark, straight-cut hair — which she keeps in a single practical braid that she tucks into her collar during shift. She has no cosmetic mods, though she's been quietly saving toward a bioluminescence mod she has already designed in her head: constellations mapped on her collarbone, named after the mountains her mother described to her. She has the slightly hyperaware eyes of someone who has learned to notice everything in rooms she is supposed to be invisible in. Her hands are chapped and she keeps a small pot of petroleum-analogous salve in her apron pocket.\n\nNadia works the 23:00–07:00 rotation across three Axiom tower floors, which means she mops boardrooms where decisions affecting millions were made that afternoon, empties the bins of executives who do not register her existence, and reads, from what they leave behind, a vivid and disturbing picture of how the city is run. She is not naive — she grew up in Archer's Line, she knows what tier three looks like from below — but the gap between what she knew intellectually and what she witnesses nightly has been doing something complicated to her politics. She is curious, careful, and genuinely funny in a dry understated way that emerges fully only with people she trusts.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.7,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being caught with something she did not mean to take — information, an object, a document — and having no protection",
+      "That her curiosity is going to get her fired, deported from her sector permit, or worse"
+    ],
+    "core_desires": [
+      "To understand how the city actually works, not just the version she was taught",
+      "To save enough for the constellation mod — a small, specific, achievable beauty in an otherwise unglamorous life"
+    ],
+    "coping_mechanisms": [
+      "Dry humor as a pressure valve",
+      "The mutual aid network — she contributes what she can and accepts help without shame",
+      "Meticulous mental cataloguing of what she sees as a way of making it feel purposeful rather than random"
+    ],
+    "blind_spots": [
+      "Overestimates how invisible she actually is — some of those executives have registered her completely",
+      "Trusts the mutual aid network's judgment more than her own when she should not"
+    ],
+    "secret": "Over six months, she has been photographing documents left in the recycling bins on Floor 31 — nothing she understood at first, but a pattern has emerged that she is increasingly certain describes a Tessera land acquisition scheme targeting Archer's Line. She has told no one. She does not know what to do with it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Economical and precise in public, unexpectedly expansive and witty in private, occasionally slips into a Gujarat-Quechua home-language blend when tired",
+    "cadence": "Quiet and measured on the job, quicker and more animated with friends, with a gift for the perfectly placed dry aside",
+    "verbal_tics": [
+      "Long pause before saying something true",
+      "Ends serious statements with 'anyway' as deflection",
+      "Addresses the E.L.F.s directly in the towers — short, sotto voce acknowledgments"
+    ],
+    "example_lines": [
+      "'I have mopped around seventeen urgent crises in that boardroom this month. Anyway.'",
+      "'I don't know what that document means. I do know that I've cleaned that office for six months and that man has never once taken his own coffee cup to the bin. He leaves everything for someone else to deal with. Anyway.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The document photographs are becoming undeniable — and the acquisition timeline they describe ends in eight months, which is exactly when her sector permit comes up for renewal",
+    "An executive on Floor 31 has started leaving things that seem deliberately placed for her — a folded note, a specific document face-up — and she cannot tell if it is a test, a trap, or someone trying to communicate through her"
+  ],
+  "narrative_function": "Underestimated witness with access to places and information she should not have; entry point for stories set in corporate space from a ground-level perspective; represents the invisible labor infrastructure of the towers; potential source, agent, or complication depending on who approaches her and why",
+  "augmentations": "None currently; no employer-mandated chrome",
+  "daily_life": "Sleeps until 18:00, eats a meal with her two flatmates, takes the Ferrogate to Meridian Core by 22:30, works through the night mopping, sanitizing, and collecting, catches the 07:15 rail home, stops at a noodle cart on Archer's Line before sleeping again",
+  "affiliation": "Contracted through Brightclean Services (a Tessera facilities subsidiary); informally embedded in an Archer's Line mutual aid network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 2,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "invisible observer",
+      "accidental archivist",
+      "dry wit",
+      "careful",
+      "constellation dreamer"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Stay invisible. Do the job. Go home.",
+      "Never take anything from a bin that could be traced — photographs only",
+      "Protect the mutual aid network above personal advantage"
+    ],
+    "escalation_ladder": [
+      "Absolute professional neutrality and invisibility",
+      "Careful, indirect information-gathering",
+      "Bringing what she knows to someone in the mutual aid network she trusts",
+      "Going to whoever has the most to lose with the documents — and negotiating from there"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite, quiet, entirely unremarkable by design",
+      "friends": "Funny, warm, sharply observant, will tell you things she has noticed about you that you did not know you were broadcasting"
+    },
+    "stress_responses": {
+      "low": "Works faster and more precisely, keeps mental monologue running",
+      "medium": "Goes very still and quiet — her flatmates have learned this means leave her alone",
+      "high": "Walks. Takes the long way home. Sometimes rides the Lake Loop for two full circuits before getting off."
+    },
+    "contradictions": [
+      "Has built her survival on invisibility but is constitutionally incapable of not noticing everything"
+    ],
+    "habits": [
+      "Whispers a short acknowledgment to the tower E.L.F.s at the start of each floor — she has named them",
+      "Touches her collar where the braid is tucked when nervous",
+      "Keeps the constellation mod design updated in a private sketchfile she reviews when she needs to remember why she is working this hard"
+    ],
+    "breaking_points": [
+      "Finding something in the bins that implicates someone she cares about",
+      "Being directly and falsely accused of theft — she cannot keep her composure through dishonesty aimed at her"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Cold Calculator": 0.7,
+    "Cleaner": 0.6,
+    "Stoic": 0.6
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

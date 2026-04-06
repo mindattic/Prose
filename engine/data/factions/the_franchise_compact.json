@@ -1,0 +1,96 @@
+{
+  "id": "019d6143a890716c8585a7df92931816",
+  "type": "faction",
+  "name": "The Franchise Compact",
+  "aliases": [
+    "The Compacters",
+    "Franchise Boys",
+    "Tier Brokers"
+  ],
+  "motto": "Every citizen is a market. Every market deserves representation.",
+  "description": "The Franchise Compact emerged from the ruins of the 2171 Tiered Citizenship Reform Act, a piece of corporate-drafted legislation that formally codified Meridian 88's population into seven legally distinct citizenship tiers, each with graduated access to infrastructure, legal standing, and neural augmentation licensing. What began as a loose coalition of Tier 4 and Tier 5 administrative workers—people with just enough legal literacy to read what had been done to them—slowly formalized into a political movement with genuine organizational discipline. Its founders were not street agitators but mid-level compliance officers, contract mediators, and decommissioned HR architects from TESSERA CORPONATION and PALLADIAN CONSTRUCTION who understood that the machinery of corporate governance could be turned against itself if you knew which levers to pull.\n\nToday the Compact operates as a registered political action entity under Meridian 88's corporate charter framework—one of the few oppositional movements to have achieved that status without being immediately dissolved or absorbed. They maintain offices in The Shelf and The Circuit, running parallel civic infrastructure: unlicensed legal aid clinics, tiered citizenship audit services, and a shadow bureaucracy that helps Tier 5 and 6 residents formally contest augmentation licensing denials. Their legitimacy is their armor. By operating within the letter of corporate civic law, they make it expensive and publicly awkward for corponations to simply erase them.\n\nWhat distinguishes the Compact from other reform movements is their absolute rejection of revolutionary rhetoric in favor of procedural attrition. They do not want to burn the tier system down—they want to make it function as advertised, which they understand will either produce genuine reform or expose the system's bad faith so completely that its collapse becomes inevitable. They are meticulous, patient, and deeply boring to anyone looking for a fight, which is precisely why they terrify TESSERA's legal division more than any street faction ever has.",
+  "ideology": "The Franchise Compact holds that corporate sovereignty is not inherently illegitimate but that tiered citizenship as currently implemented constitutes fraudulent misrepresentation of the social contract—citizens were enrolled in a system without meaningful disclosure of its terminal conditions. Their politics are neither leftist nor libertarian in any recognizable sense; they are proceduralist. They believe that every system of governance contains the formal mechanisms of its own accountability, and that the failure to use those mechanisms is a failure of civic will, not evidence of their absence. They are deeply suspicious of charisma, martyrdom, and anything that smells like a movement, preferring the language of audits, appeals, and binding arbitration. Their long-term goal is a constitutionally enforceable citizenship floor—a Tier Zero that cannot be legally revoked under any corporate restructuring scenario.",
+  "territory": "Primary offices on The Shelf's administrative corridor near the Meridian 88 civic registry annex. Secondary operations throughout The Circuit's worker-dense residential blocks. Field offices in Old Harbor's port labor district. They maintain a deliberately low physical footprint in The Meridian Core and no presence whatsoever in Vantage Meridian Corporate Campus or The Spire.",
+  "leadership": "Led by a three-person Executive Compact: Odessa Varn, former TESSERA CORPONATION compliance architect and the movement's primary legal strategist; Boniface Selim, a Tier 5 labor mediator who built the Compact's grassroots circuit-level networks; and the figure known only as the Registrar, whose identity is deliberately obscured and who manages the Compact's more legally ambiguous audit operations. Below them, a rotating Council of Delegates elected from geographic and tier-based constituencies meets quarterly in a location announced only 48 hours in advance.",
+  "methods": [
+    "Filing mass citizenship tier-status challenges through corporate arbitration channels to clog TESSERA and ZHENG-DAO BIOELECTRIC's legal infrastructure",
+    "Running unlicensed neural augmentation licensing appeal clinics staffed by former corponation compliance officers",
+    "Systematic FOIA-equivalent document extraction through Meridian 88's corporate transparency statutes",
+    "Recruiting mid-level corponation administrative workers as embedded informants within legitimate employment",
+    "Publishing detailed public audits of tiered citizenship benefit discrepancies in VANTABLACK MEDIA's competitor feeds",
+    "Organizing coordinated mass-enrollment in obscure but legally binding civic participation mechanisms that corponations had assumed were vestigial",
+    "Maintaining encrypted shadow records of citizenship tier manipulation and selective enforcement as leverage"
+  ],
+  "resources": [
+    "A legally registered political action charter under Meridian 88 corporate civic code",
+    "A network of approximately 340 former corponation compliance and HR professionals",
+    "The Shelf administrative office space secured under a 20-year lease that predates the Tiered Reform Act",
+    "A proprietary legal database cross-indexing all known tiered citizenship case precedents",
+    "Significant small-donor funding from Tier 4 and 5 residents across The Circuit and Old Harbor",
+    "Relationships with two sitting Meridian 88 civic arbitrators sympathetic to their methodology",
+    "A secure off-grid document archive maintained at an undisclosed location near Substation Null"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "",
+      "type": "",
+      "description": "The Compact and the Severance Bloc share a constituency but despise each other's methods. They cooperate when forced to by shared crisis and spend the remaining time publicly disagreeing about whether proceduralism or direct action produces durable change. The Bloc thinks the Compact is performing legitimacy for an audience that has already decided to ignore them. The Compact thinks the Bloc keeps burning down the goodwill it takes years to build.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "TESSERA views the Franchise Compact as a more serious long-term threat than most street-level factions precisely because they cannot be disappeared without generating exactly the kind of charter-violation documentation the Compact specializes in producing. TESSERA's legal division maintains a dedicated counter-compact unit and has attempted three times to engineer the Compact's deregistration through technical charter violations, failing each time.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Quorum finds the Compact useful as a pressure valve and occasionally as a source of information about corporate administrative vulnerabilities. The Compact finds the Quorum's motivations opaque and worries about being instrumentalized. They share information on a transactional basis and both parties are careful to deny the relationship exists.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "VANTABLACK covers the Compact extensively because civic proceduralism is genuinely compelling content to Tier 3 and 4 audiences who feel the system's dysfunction but lack vocabulary for it. The Compact uses this coverage strategically while remaining aware that VANTABLACK's editorial interests do not align with theirs and that the coverage can be withdrawn or reframed at any moment.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "LAZARUS has quietly declined to join TESSERA's coalition against the Compact, apparently calculating that a functional citizenship floor would expand their consumer base among currently Tier 6 populations. The Compact is aware of this and has made no public acknowledgment, treating it as a structural coincidence rather than an alliance.",
+      "tags": []
+    }
+  ],
+  "narrative_function": "",
+  "story_hooks": [
+    "The Compact has obtained what appears to be a leaked internal TESSERA document proving that the Tiered Reform Act's language was deliberately engineered to create an irrevocable Tier 7 underclass, but publishing it will expose the source—a mid-level TESSERA compliance officer who is not yet out of the building.",
+    "A Compact citizenship audit has accidentally uncovered evidence that a significant number of Tier 3 residents in The Circuit have been fraudulently downgraded to Tier 5 over the past 18 months, but the pattern points to someone inside the Compact's own delegate council.",
+    "The Registrar's identity has been compromised, and the person who holds that information is auctioning it to multiple interested parties simultaneously—including ARCTURUS DEFENSE SOLUTIONS, whose interest in the Compact's shadow archive is entirely unclear.",
+    "The Compact's 20-year Shelf office lease is about to expire, and PALLADIAN CONSTRUCTION has purchased the building. The legal battle to remain will either become the Compact's greatest public proceduralist victory or expose exactly how far their protections actually extend.",
+    "Odessa Varn has been approached by TESSERA with a genuine offer: a seat on the Tiered Citizenship Reform Advisory Board, which would give her real access and real influence—and would require her to formally dissolve the Compact's charter as a condition of appointment.",
+    "A Tier 6 resident's augmentation licensing appeal, filed through the Compact's clinic, has somehow reached a binding arbitration stage that no previous case has ever achieved. The hearing is in 72 hours and no one is sure if the arbitration framework that got them there is legally sound or an elaborate trap."
+  ],
+  "tags": [
+    "faction",
+    "war",
+    "identity",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "clinic",
+    "harbor",
+    "market",
+    "shadow",
+    "chase",
+    "armor",
+    "shelf",
+    "spire",
+    "circuit",
+    "old harbor"
+  ]
+}

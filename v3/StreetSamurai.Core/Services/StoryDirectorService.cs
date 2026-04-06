@@ -146,7 +146,7 @@ public class StoryDirectorService : IStoryDirectorService
             EnsureBattleBeat(outline);
 
             // Assign project ID and save the checkpoint with outline (before any beats)
-            var projectId = Guid.NewGuid().ToString("N");
+            var projectId = Guid.CreateVersion7().ToString("N");
             story.ProjectId = projectId;
             outlineSvc.Save(projectId, outline);
             SaveCheckpoint(story);
@@ -394,14 +394,14 @@ public class StoryDirectorService : IStoryDirectorService
             storyConstraints, knowledgeConstraints, eventContext, fullOutlineContext, ct);
     }
 
+    private string StoriesDir => paths.StoriesDir;
+
     /// <summary>Save a partial or complete story as a checkpoint to disk.</summary>
     private void SaveCheckpoint(AutonomousStory story)
     {
         try
         {
-            var dir = Path.Combine(paths.DataRoot, "story_blocks");
-            Directory.CreateDirectory(dir);
-            var path = Path.Combine(dir, $"{story.ProjectId}.checkpoint.json");
+            var path = StoryFolderHelper.GetFilePath(StoriesDir, story.ProjectId, "checkpoint.json", story.Title);
             var json = System.Text.Json.JsonSerializer.Serialize(story,
                 new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(path, json);
@@ -415,8 +415,8 @@ public class StoryDirectorService : IStoryDirectorService
     /// <summary>Load a checkpoint from disk.</summary>
     public AutonomousStory? LoadCheckpoint(string projectId)
     {
-        var path = Path.Combine(paths.DataRoot, "story_blocks", $"{projectId}.checkpoint.json");
-        if (!File.Exists(path)) return null;
+        var path = StoryFolderHelper.FindFile(StoriesDir, projectId, "checkpoint.json");
+        if (path == null) return null;
         try
         {
             var json = File.ReadAllText(path);
@@ -432,12 +432,26 @@ public class StoryDirectorService : IStoryDirectorService
     /// <summary>List all available checkpoints (partial and complete stories).</summary>
     public List<AutonomousStory> ListCheckpoints()
     {
-        var dir = Path.Combine(paths.DataRoot, "story_blocks");
+        var dir = StoriesDir;
         if (!Directory.Exists(dir)) return [];
-        return Directory.GetFiles(dir, "*.checkpoint.json")
-            .Select(f => { try { return System.Text.Json.JsonSerializer.Deserialize<AutonomousStory>(File.ReadAllText(f)); } catch (Exception ex) { log.LogWarning(ex, "Failed to deserialize checkpoint {File}", f); return null; } })
+        return Directory.GetDirectories(dir)
+            .Select(d => Path.Combine(d, "checkpoint.json"))
+            .Where(File.Exists)
+            .Select(f => { try { return System.Text.Json.JsonSerializer.Deserialize<AutonomousStory>(File.ReadAllText(f)); } catch { return null; } })
             .Where(s => s != null)
             .ToList()!;
+    }
+
+    /// <summary>Archive a failed story folder to archives/.</summary>
+    public void ArchiveCheckpoint(string projectId)
+    {
+        var folder = StoryFolderHelper.FindFolder(StoriesDir, projectId);
+        if (folder == null) return;
+        var archiveDir = paths.ArchiveDir;
+        Directory.CreateDirectory(archiveDir);
+        var dest = Path.Combine(archiveDir, Path.GetFileName(folder));
+        if (Directory.Exists(dest)) Directory.Delete(dest, true);
+        Directory.Move(folder, dest);
     }
 
     /// <summary>Finalize a partial story — assemble text, set failure reason, save.</summary>
@@ -593,6 +607,7 @@ public class AutonomousStory
 
 public class GeneratedStoryBeat
 {
+    public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     public int BeatIndex { get; set; }
     public string Title { get; set; } = "";
     public string Text { get; set; } = "";

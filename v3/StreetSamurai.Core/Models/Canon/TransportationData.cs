@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Models.Canon;
 
@@ -8,8 +9,9 @@ namespace StreetSamurai.Core.Models.Canon;
 /// ride the L-train. The gap between what's possible and what's affordable is the gap
 /// between tiers.
 /// </summary>
-public class TransportationData
+public class TransportationData : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("type")] public string Type { get; set; } = "transportation";
     [JsonPropertyName("aliases")] public List<string> Aliases { get; set; } = [];

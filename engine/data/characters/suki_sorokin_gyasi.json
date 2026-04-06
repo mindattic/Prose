@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a6e077b180d08587300a58f3",
+  "type": "character",
+  "name": "Suki Sorokin-Gyasi",
+  "aliases": [
+    "Undertaker",
+    "The Machine"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Chemical and biological agent specialist — poisoner",
+  "age": 38,
+  "status": "active",
+  "location": "Crucible Square — open-air market, Tier 1-2 commerce",
+  "description": "Suki Sorokin-Gyasi is compact and densely muscled, built low to the ground like something designed to survive impacts. At 38, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a poisoner out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Suki Sorokin-Gyasi is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.82,
+      "ideal": 0.52,
+      "id": 0.15,
+      "shadow": 0.45,
+      "mask": 0.22,
+      "ghost": 0.83
+    },
+    "core_fears": [
+      "The quiet — silence means something is about to go very wrong",
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Being identified by corporate facial recognition — living off-grid is survival"
+    ],
+    "core_desires": [
+      "To matter to someone for who they are, not what they can do",
+      "Control — over their body, their schedule, their future",
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
+    ],
+    "coping_mechanisms": [
+      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive",
+      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
+      "Ritual — follows the same pre-job routine every time, superstition as structure"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Cannot accept help without interpreting it as leverage",
+      "Overestimates their own abilities in situations outside their specialty"
+    ],
+    "secret": "Suki Sorokin-Gyasi has a terminal condition — geneware degradation — with an estimated five years. They haven't changed their lifestyle. They haven't told anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Ends statements with 'yeah?' — not a question, a dare",
+      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'"
+    ],
+    "example_lines": [
+      "\"Chemistry is just cooking with consequences.\"",
+      "\"The best poison is the one nobody tests for.\"",
+      "\"Patience, precision, and an understanding of human biology. Everything else is optional.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The fixer who handles Suki Sorokin-Gyasi's contracts goes silent — dead, disappeared, or turned",
+    "A crew member from Suki Sorokin-Gyasi's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A corporate black site Suki Sorokin-Gyasi once infiltrated is being reopened, and the people inside know his face"
+  ],
+  "narrative_function": "As a poisoner, Suki Sorokin-Gyasi embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation. Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Freelance — available through Circuit fixers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 7
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 5
+      },
+      "reflexes": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 10
+      },
+      "perception": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 9
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 5
+      },
+      "technical": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 7
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 5
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 8
+      },
+      "empathy": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 4
+      }
+    },
+    "personality": {
+      "aggression": 0.95,
+      "caution": 0.52,
+      "loyalty": 0.13,
+      "greed": 0.96,
+      "empathy": 0.59
+    },
+    "drives": [
+      "loyalty",
+      "knowledge",
+      "survival"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 3,
+      "loyalty_break": 10
+    },
+    "strengths": [
+      "mechanical aptitude — can repair or modify almost anything",
+      "ability to remain calm under fire",
+      "encyclopedic knowledge of Meridian 88 infrastructure"
+    ],
+    "weaknesses": [
+      "substance dependency — functional but fragile",
+      "physical limitation from incomplete augmentation",
+      "inability to delegate — must control everything personally"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "poisoner",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Claims not to care about reputation but monitors what people say about them obsessively",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+    ],
+    "habits": [
+      "Never drinks anything they didn't see poured or open themselves",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle"
+    ],
+    "breaking_points": [
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture",
+      "Losing their primary augmentation — the one that defines their professional identity"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Wired reflexes with adrenaline pump",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+      "replaces": ""
+    },
+    {
+      "name": "Gecko-grip fingertip implants and toe pads",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

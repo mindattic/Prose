@@ -1,0 +1,53 @@
+{
+  "id": "019d6143ab1d7ae6be933df06ef9ea13",
+  "name": "Catalytic Aerosol Mortar CAM-3 'Lungful'",
+  "type": "weapon",
+  "aliases": [
+    "The Breather",
+    "Fogcannon",
+    "Lungful",
+    "CAM-3"
+  ],
+  "category": "explosive",
+  "description": "The CAM-3 operates by firing a compressed canister that ruptures at a programmable altitude, releasing a precisely calibrated aerosol suspension of catalytic oxidizing agents. Upon dispersion, a secondary delayed-ignition charge ignites the cloud, producing a deflagration wave tuned to propagate through enclosed spaces with maximum pressure efficiency. The mortar itself is a stubby, break-action single-shot tube with a digital fuse programmer embedded in the grip — operators dial in burst height, dispersion radius, and ignition delay in seconds.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Catalytic oxidation suspension",
+    "Programmable delayed ignition",
+    "Aerosol pressure amplification"
+  ],
+  "specifications": "weight: 4.1 kg loaded\nlength: 61 cm\neffective range: 40��180 m\nblast radius: 8–14 m depending on enclosure geometry\ncanister capacity: Single shot, break-action reload\nfuse delay range: 0.3–6.0 seconds\ndispersion modes: Point burst, Wide-area fog, Directional fan",
+  "tactical_use": "Primarily deployed for building clearance and tunnel engagements where conventional fragmentation is tactically wasteful. Operators fire a round through a doorway or ventilation shaft, letting the cloud settle before detonation — the pressure wave follows corridors and corners in ways solid explosives cannot. Anti-personnel at close range; anti-materiel in confined server rooms or fabrication floors where the overpressure destroys unshielded electronics.",
+  "cultural_context": "The CAM-3 has a grim reputation in Meridian 88's underground circuits as the weapon of choice for corporate extraction teams conducting 'structural audits' — euphemism for eliminating squatter communities in reclaimed industrial zones. Street gangs fear it disproportionately because it offers no warning and no cover. Owning one marks a person as either deeply connected to military supply chains or deeply dangerous to approach.",
+  "known_users": [
+    "ARCTURUS tier-4 breach specialists",
+    "Corporate extraction contractors",
+    "Black-market arms brokers who don't use what they sell",
+    "Tunnel-network enforcers in the Undercroft districts"
+  ],
+  "story_hooks": [
+    "A CAM-3 canister with a tampered fuse is found in a residential block's HVAC system — the ignition timer is set for the building's peak occupancy hour.",
+    "A runner is hired to retrieve a stolen shipment of CAM-3 canisters; the job goes sideways when they discover the 'client' is the same extraction team that cleared their old neighborhood.",
+    "An ARCTURUS whistleblower claims the CAM-3's aerosol formula was field-tested on civilian populations before military sale — and has the atmospheric sensor logs to prove it."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "war",
+    "gang",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "tunnel",
+    "market",
+    "fire",
+    "circuit",
+    "tier 4"
+  ]
+}

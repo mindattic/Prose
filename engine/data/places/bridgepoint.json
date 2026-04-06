@@ -1,0 +1,97 @@
+{
+  "id": "019d6143a91171ea965b2cbb4a6d3fae",
+  "type": "place",
+  "name": "Bridgepoint",
+  "aliases": [
+    "Bridgeport",
+    "The Ward",
+    "Mayor's Mile",
+    "The Bridge"
+  ],
+  "description": "Bridgepoint is where power learned to walk upright in this city, and the lessons it taught here shaped everything Meridian 88 became. Old Bridgeport produced five mayors of Chicago -- an unbroken chain of Irish-American political machines that controlled the city for the better part of a century. When corporate sovereignty replaced municipal government, the machine didn't die. It adapted. The families that ran Bridgeport's political infrastructure pivoted to corporate liaison roles, security contracting, and the lucrative gray zone between public governance and private authority where real decisions get made. The neighborhood's current power isn't electoral. It's connective. Bridgepoint people know people, and in a city where jurisdiction is fragmented across twenty corponations and a puppet municipal government, knowing the right people is the only currency that spends everywhere.\n\nThe South Branch of the old Chicago River runs along Bridgepoint's eastern edge, engineered now into a controlled industrial channel that feeds the manufacturing zones to the south. The riverfront is the district's economic spine -- a strip of logistics operations, warehousing, and transshipment facilities that move goods between the Meridian Core's commercial networks and the Southwest's industrial base. The work is Tier 2 and Tier 3: not prestigious, but steady, unionized in the old-fashioned sense, and connected to enough supply chains that Bridgepoint workers always know what's moving through the city before the official manifests are filed.\n\nThe neighborhood itself has evolved from exclusively Irish to genuinely diverse, though the power structure hasn't fully caught up. Chinese, Mexican, and Black families have been part of Bridgepoint for generations now, and the commercial strips reflect that layered identity -- dim sum restaurants beside Irish pubs beside taco joints, all of them older than the megacity. But the liaison class, the families who brokered the transition from municipal to corporate governance, remain predominantly Irish-descended and predominantly in charge. It's a neighborhood where everyone eats together and the check always goes to the same table.",
+  "atmosphere": {
+    "sights": [
+      "The South Branch industrial channel, engineered water moving with unnatural precision between concrete banks",
+      "Riverfront logistics operations -- warehouse lights burning around the clock, cargo moving continuously",
+      "Historic taverns with neural-opaque windows and handshake-only entry policies",
+      "Row houses maintained with a pride that borders on territorial, block by block",
+      "The old Bridgeport political murals, preserved and updated -- new faces painted alongside the old mayors",
+      "Union hall buildings repurposed but still recognizable, their architecture heavier than anything built since"
+    ],
+    "sounds": [
+      "Cargo handling along the riverfront -- cranes, loaders, and automated sorting systems in constant motion",
+      "The South Branch current, engineered to flow faster than nature intended, humming against the retaining walls",
+      "Conversations in the liaison-class taverns, kept at a volume that carries exactly to the intended ears",
+      "Church bells from Saint Mary's -- the oldest functioning parish in the Southwest"
+    ],
+    "smells": [
+      "River water -- industrial, mineral, not quite natural",
+      "Tavern smells leaking onto the street: beer, grease, wood smoke from fireplaces that are technically illegal",
+      "Warehouse district diesel and polymer -- the smell of things being moved",
+      "Cooking from the multi-ethnic commercial strips -- a different cuisine every block"
+    ],
+    "feel": "Political. Bridgepoint doesn't feel like a neighborhood -- it feels like an office that happens to have houses. Every conversation has a subtext. Every introduction is an evaluation. Every favor comes with a timestamp and an implied repayment schedule. It's warm if you're inside the network and impenetrable if you're not. The hospitality is real. The accounting is realer.",
+    "tags": []
+  },
+  "demographics": "Approximately 35,000 residents spanning Tier 2 to Tier 3. The ethnic composition has diversified steadily -- Irish, Chinese, Mexican, Black, and Eastern European communities coexist with relatively low friction. The liaison class remains a predominantly Irish-descended network of approximately 200 families who hold disproportionate influence.",
+  "economy": "Riverfront logistics and transshipment form the economic base. The liaison class generates revenue through corporate consulting, security contracting, and jurisdictional mediation. Union-organized labor persists here in forms that have been extinct elsewhere in Meridian for decades.",
+  "power_structure": "The liaison families operate through the Bridgepoint Civic Association, which functions as a shadow government with better intelligence than the official one. Their power derives from relationships with every major corponation and most minor ones -- they are the human infrastructure that makes cross-jurisdictional deals possible.",
+  "dangers": [
+    "Political entanglement -- doing business in Bridgepoint means owing someone, and debts here are remembered generationally",
+    "The liaison class protects its own with a thoroughness that extends to eliminating threats",
+    "Riverfront operations attract corporate security attention during sensitive shipments",
+    "The neighborhood's internal intelligence network means nothing stays secret from the people who run it",
+    "Getting caught in a favor chain that extends further than you can see"
+  ],
+  "opportunities": [
+    "The liaison network can open doors in every corponation's territory -- for a price",
+    "Riverfront logistics access provides intelligence on what's moving through the city",
+    "Bridgepoint's political history includes institutional knowledge about every power transition in the city's history",
+    "Union connections provide a labor network that crosses tier and district boundaries",
+    "The taverns are where off-the-record deals happen -- if you can get through the door"
+  ],
+  "story_hooks": [
+    "The Bridgepoint Civic Association is brokering a deal between two corponations that would redraw jurisdiction lines across the entire Southwest -- and both sides are paying Bridgepoint to negotiate, meaning the neighborhood profits regardless of outcome",
+    "A liaison family's youngest generation is breaking with tradition, leaking internal network communications to the Collective -- and the family's response will test whether Bridgepoint's loyalty is to its principles or its bloodlines",
+    "The South Branch industrial channel is being used to move something that isn't on any manifest, and the logistics workers who noticed it are being offered retirement packages they didn't request"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "McKinley Flats",
+      "New Stockton",
+      "The Shelf",
+      "Garfield Rack"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Liaison-class brokers managing cross-jurisdictional relationships",
+    "Riverfront logistics workers with access to cargo intelligence",
+    "Fixers who use Bridgepoint as neutral ground for multi-party negotiations",
+    "Corporate executives who need things done outside official channels",
+    "Anyone who needs an introduction and can afford the implied cost"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.838,
+    "lng": -87.651,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "loyalty",
+    "secret",
+    "identity",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "debt",
+    "shadow",
+    "fashion"
+  ]
+}

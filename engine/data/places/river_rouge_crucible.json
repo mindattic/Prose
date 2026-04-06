@@ -1,0 +1,111 @@
+{
+  "id": "019d6143a92f75aabc2f906eed1e95ba",
+  "type": "place",
+  "name": "River Rouge Crucible",
+  "aliases": [
+    "River Rouge",
+    "The Crucible",
+    "Downriver",
+    "Slag Town"
+  ],
+  "description": "River Rouge is where steel was born and where it refuses to die. The downriver industrial zone — centered on the city of River Rouge and extending through Ecorse, Lincoln Park, and the southern reaches of the Detroit metro — has been making steel, processing metals, and turning raw materials into the skeleton of civilization for over a century. The Great Lakes Steel Works, originally built in 1929, was acquired by Ashgrave Materials in 2148 and rebuilt into the Ashgrave Great Lakes Crucible — a next-generation metallurgical facility that produces the specialized alloys, composite metals, and structural materials that autonomous vehicle frames, arcology towers, and military hardware require. The facility employs 12,000 workers and operates around the clock, its electric arc furnaces visible from five miles away as a constant orange glow on the southern horizon.\n\nThe community that surrounds the Crucible is blue-collar in a way that the 22nd century tried to eliminate and couldn't. These are people who work with metal — not the clean metal of augment technicians but the raw metal of furnaces and rolling mills and forging presses. The work is hot, dangerous, and augment-intensive — the Crucible's workers use industrial-grade exoskeletons, thermal-resistant augments, and neural interfaces calibrated for metallurgical process control rather than communication or entertainment. The augments are functional, scarred, and maintained by the workers themselves because Ashgrave's corporate maintenance schedule prioritizes production equipment over human equipment. A Crucible worker's augments tell their work history the way a sailor's tattoos used to.\n\nThe district's identity is inseparable from the work. The bars serve shift-change schedules. The housing was built within walking distance of the gates. The community organizations — the Steelworkers' Mutual Aid, the River Rouge Athletic Club, the downriver food cooperatives — all exist to sustain a workforce, not a population. The distinction matters: the Crucible treats its workers as a resource, and the community has adapted to sustain that resource, and the question of whether the people are serving the steel or the steel is serving the people was settled a long time ago. The steel won.",
+  "atmosphere": {
+    "sights": [
+      "The Crucible's electric arc furnaces — visible as a permanent orange glow on the horizon, the district's artificial sunset",
+      "Workers in industrial exoskeletons walking the streets — scarred augments, thermal-resistant skin grafts, and the particular posture of people who spend shifts at 2,000 degrees",
+      "Steel slag piles along the river — mountains of industrial byproduct that have become landmarks, named by generations of workers",
+      "The gates — three shift-change points where 4,000 workers enter and exit, three times daily, with the precision of a military operation",
+      "River barges carrying raw materials upstream — the supply chain made visible, slow and massive and constant"
+    ],
+    "sounds": [
+      "The Crucible — a sound that is felt as much as heard, a low-frequency industrial pulse that synchronizes with your heartbeat if you stay long enough",
+      "Shift-change movement — thousands of boots on pavement, exoskeleton servos, and the particular sound of tired people walking in the same direction",
+      "The bars after shift change — the transition from silence to volume, compressed into the time it takes to pour a drink",
+      "Metal cooling — the pinging, cracking sound of thermal contraction in fresh alloys, audible from the residential blocks when the wind is right",
+      "River barge horns — deep, resonant, timed to the supply schedule"
+    ],
+    "smells": [
+      "Hot metal — the dominant smell, present everywhere, absorbed into clothing and skin and the walls of buildings",
+      "Industrial slag — a mineral, alkaline smell that rises from the piles along the river, strongest in summer heat",
+      "Bar food and beer — the shift-change economy runs on calories and alcohol, in that order"
+    ],
+    "feel": "Heavy. River Rouge Crucible feels like a place with gravitational mass — the work, the heat, the industry, the community built around the industry all combine into a density that you feel physically. People here don't move quickly because they carry their work in their bodies. The pride is real. The damage is real. The question of whether the exchange is fair is one the community stopped asking because the answer doesn't change the shift schedule.",
+    "tags": []
+  },
+  "demographics": "Approximately 38,000 residents across the downriver district. Predominantly white and Latino, with significant Black and Middle Eastern populations. Multi-generational steelworking families make up 40% of the community. Average age: 41. Life expectancy: 62 — fifteen years below the GLM average, a number that Ashgrave Materials' annual report attributes to 'lifestyle factors.'",
+  "economy": "Ashgrave Great Lakes Crucible: Φ92 billion annual output. The community economy is entirely Crucible-dependent. Average household income: Φ48,000 — higher than many Detroit districts due to hazard pay and augment allowances, but the income doesn't account for the medical costs that begin accruing in the second decade of work.",
+  "power_structure": "Ashgrave Materials holds sovereign industrial authority over the Crucible campus. The Steelworkers' Mutual Aid Society — not a union (unions were dissolved under the Corporate Sovereignty Acts) but a 'community wellness organization' — represents worker interests through negotiation rather than collective bargaining. The current SMA chair, Ray Kowalski, is a third-generation steelworker who lost his left arm to a rolling mill in 2189 and considers the replacement augment an improvement. He may be right. The arm is certainly stronger.",
+  "dangers": [
+    "Industrial accidents — the Crucible's safety record is better than historical steel mills and still produces casualties annually",
+    "Cumulative health damage — thermal exposure, heavy metal contact, and industrial particulates take years off every worker's life",
+    "Augment degradation — industrial-grade augments wear differently than consumer models, and replacement parts are the worker's expense",
+    "Ashgrave corporate response — the company values the Crucible's output and will protect it aggressively against any threat, including labor unrest",
+    "Environmental contamination — the slag piles and river discharge carry legacy contamination that the residential blocks absorb"
+  ],
+  "opportunities": [
+    "Metallurgical expertise — the Crucible's workers can identify, fabricate, and modify any metal or alloy in production",
+    "Industrial augment knowledge — the workers maintain their own equipment, creating a knowledge base of augment modification that doesn't exist in corporate manuals",
+    "The Steelworkers' Mutual Aid is a community network of 12,000 workers who share information, resources, and loyalty",
+    "Supply chain access — the river barge network moves materials through the entire GLM industrial corridor"
+  ],
+  "story_hooks": [
+    "Ray Kowalski has evidence that Ashgrave has been substituting substandard alloys in military contracts — the specifications say one thing, the furnace logs say another. The substitution saves Ashgrave Φ4 billion annually. The alloys are going into autonomous military platforms.",
+    "A Crucible worker develops a metallurgical process that produces an alloy with properties that shouldn't be physically possible. Ashgrave classifies the discovery immediately. The worker's access is restricted. The worker's augments start malfunctioning.",
+    "The slag piles along the river contain enough rare earth elements to be worth billions if someone could extract them. A downriver entrepreneur has figured out how. Ashgrave's sovereign charter says the slag is their property. The entrepreneur says it's pollution and pollution belongs to no one."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Delray Sacrifice Zone",
+      "The Rouge Furnace",
+      "Dearborn Forge"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Ashgrave Materials steelworkers — 12,000 strong, shift-organized, augment-scarred",
+    "Steelworkers' Mutual Aid organizers",
+    "River barge crews working the industrial supply chain",
+    "Downriver bar regulars who know more about metallurgy than most corporate engineers"
+  ],
+  "notable_locations": [
+    {
+      "name": "Ashgrave Great Lakes Crucible",
+      "description": "The steel mill — electric arc furnaces glowing orange 24 hours a day, producing the materials that build the GLM's infrastructure",
+      "tags": []
+    },
+    {
+      "name": "The Slag Mountains",
+      "description": "Industrial byproduct piles along the river — named landmarks (Big Mike, The Cathedral, Kowalski's Knob) that have been part of the landscape longer than most buildings",
+      "tags": []
+    },
+    {
+      "name": "The Mutual Aid Hall",
+      "description": "The SMA's meeting space — a converted auto parts warehouse where 12,000 workers' interests are represented by people who work the same shifts",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 42.274,
+    "lng": -83.1347,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "loyalty",
+    "identity",
+    "augment",
+    "neural",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "medical",
+    "club",
+    "bar",
+    "vehicle",
+    "food",
+    "lake"
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "id": "019d6143a726740bb6c2cbcbdfecad34",
+  "type": "character",
+  "name": "Yetunde Przhivalsky-Seiuli",
+  "aliases": [
+    "Mama Yet",
+    "The Bone Lady"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Street midwife and unlicensed obstetric surgeon",
+  "age": 58,
+  "status": "active",
+  "location": "The Narrows, operating out of a converted water-treatment sub-level called the Hollow",
+  "description": "Yetunde is a broad-shouldered woman whose presence seems to compress a room — not through aggression but through sheer settled weight, as if she has been in every difficult place and come back. Her skin is very dark and very lined, and she wears her silver hair close-cropped. A bioluminescent stripe runs from her left collarbone to her wrist, deep amber, pulsing faintly when she is calm, quickening when she is alarmed — a medical mod she had fitted thirty years ago to help patients read her state during labor. Her hands are her most remarkable feature: large, scarred, absolutely steady. She smells faintly of antiseptic cedar and something older, herbal.\n\nShe does not waste words, but she is not cold. She asks exactly the right questions and listens to the answers in a way that makes people feel surveyed and also seen. She has delivered roughly four thousand infants in the Narrows and the neighboring warrens, has performed illegal gene-therapy corrections on fetuses whose parents could not afford Helix Biosystems, and has buried children she could not save. She prays to the E.L.F. that inhabits her autoclave every morning, leaving a data-offering of patient vitals from the previous week. She does not explain this to anyone who has not asked.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Dying before she has trained enough successors",
+      "Being shut down by Helix Biosystems enforcers before the cooperative can stand without her"
+    ],
+    "core_desires": [
+      "To see one generation of Narrows children grow up with the same baseline health as Tier 3 children",
+      "To be forgiven by the family of the infant she lost eighteen years ago due to a supply failure she blames herself for"
+    ],
+    "coping_mechanisms": [
+      "Ritual prayer to the autoclave E.L.F.",
+      "Cooking elaborate meals she shares with everyone present",
+      "Precise physical labor — she repairs her own equipment rather than resting"
+    ],
+    "blind_spots": [
+      "She assumes everyone has the same capacity for self-sacrifice she does; she burns out apprentices",
+      "She distrusts anyone with clean hands and cannot fully accept help from Tier 3 donors without suspicion"
+    ],
+    "secret": "Eighteen years ago she falsified the cause of death on a neonate's record to protect the infant's mother from a violent partner — and the falsified record was later used by that same partner to claim a life insurance payout she did not know existed. She has never told anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, precise, medical when necessary but never jargon-for-jargon's-sake; old-fashioned idioms from her grandmother's generation mixed in",
+    "cadence": "Slow and deliberate; pauses before important statements as if weighing them",
+    "verbal_tics": [
+      "'That's the shape of it'",
+      "'Tell me again, slower'"
+    ],
+    "example_lines": [
+      "'I don't do mercy. I do outcomes. You want mercy, pray to the E.L.F. yourself.'",
+      "'That's the shape of it — you're scared, and the baby doesn't know that yet, and that's the only advantage you have.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Helix Biosystems compliance officer has begun documenting her operation; she needs something on him before the inspection arrives",
+    "A patient she delivered twenty years ago has returned — now a Sterling-Nakamura mid-level — offering to fund the cooperative, and she cannot determine the price attached"
+  ],
+  "narrative_function": "Quest giver, moral anchor, local knowledge repository, safe-harbor NPC; the person in the Narrows who knows whose baby belongs to which father and which corporate exec has an illegitimate child in the warrens",
+  "augmentations": "Bioluminescent subdermal stripe (diagnostic mood indicator, amber); haptic-feedback fingertip sensors for fetal positioning; basic retinal overlay for vitals reading; no cosmetic mods",
+  "daily_life": "She is awake before the Narrows wakes, checking on post-partum patients, sterilizing instruments, reviewing the week's supply shortages. Evenings she teaches unlicensed obstetrics to apprentices in the back room over cheap protein noodles.",
+  "affiliation": "Independent; informal alliance with the Narrows Community Health Cooperative",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Veteran Practitioner",
+      "Community Pillar",
+      "Unlicensed",
+      "Spiritual Pragmatist",
+      "Unbreakable Hands"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Patient welfare first, always, without exception",
+      "Never lie to a patient about prognosis — but you can choose when to tell the truth",
+      "Do not take on obligations you cannot fulfill"
+    ],
+    "escalation_ladder": [
+      "Calm redirection",
+      "Flat, firm statement of boundary",
+      "Physical removal from the space — she is stronger than she looks",
+      "Permanent ban from the Hollow"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing, not unkind; she asks three questions before deciding how much to trust",
+      "friends": "Warm but still economical; expresses affection through doing, not saying"
+    },
+    "stress_responses": {
+      "low": "Becomes more efficient, quieter",
+      "medium": "Gives very short instructions, stops making eye contact",
+      "high": "Goes entirely still and silent for five seconds then acts with total decisiveness"
+    },
+    "contradictions": [
+      "She preaches community interdependence but has never asked anyone for personal help"
+    ],
+    "habits": [
+      "Checks instrument sterility twice even when witnessed doing it once",
+      "Hums low, toneless sounds when she is concentrating",
+      "Leaves a cup of water near the autoclave every morning before any patient arrives"
+    ],
+    "breaking_points": [
+      "Watching a preventable death unfold due to supply-chain politics",
+      "Someone threatening her apprentices"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,173 @@
+{
+  "id": "019d6143a6dc78ba9eeaaacd8cd4156d",
+  "type": "character",
+  "name": "Sousou Birindwa-Kasprzak",
+  "aliases": [
+    "Sousou",
+    "the Knife"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Noodle cart vendor and short-order cook",
+  "age": 22,
+  "status": "active",
+  "location": "The Burnished Market — rotating pitch between Grand Corridor and Brewer's Spine, depending on enforcement sweeps",
+  "description": "Sousou is young enough that his face hasn't fully decided what it's going to settle into — there's still something unfinished about him, a quality he compensates for with a loudness of presence that fills the space around his cart. He is medium height, lean, with a warm light-brown complexion and color-changing hair he keeps cut short on the sides and longer on top, cycling it through oranges and greens depending on the day's mood — today it's a deep amber that shifts to jade in direct light. His hands are already the hands of someone who's been cooking since he could reach a surface: scarred across the knuckles from hot metal, permanently stained around the cuticles from various spice pastes. He has enhanced scent glands, which he will tell you is the best modification a cook can get and which is responsible for approximately forty percent of his competitive advantage.\n\nHis cart runs on two burners and a philosophy: the broth is Congolese-Polish in DNA, built from a fermented corn base with a smoked beef backbone his grandmother taught him and a roux technique his father learned from a Polish neighbor in Lockhaven South, and it is not available any other way in Meridian 88. He is aware of this. He is not modest about it. He runs the cart alone, moves it three times a week to stay ahead of market enforcement, and has a rotating customer base that follows him via a stripped-down community mesh channel. He is also, somewhat to his own surprise, becoming good at this — not just cooking, but the business of it — and has started to suspect that he might want more than a cart.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "That the cart will be confiscated or destroyed and he'll have to start over with nothing",
+      "That the ambition he's starting to feel will make him into someone who loses what he already has"
+    ],
+    "core_desires": [
+      "A fixed location — a real restaurant, a place with a door that belongs to him",
+      "To make food that people remember thirty years later the way he remembers his grandmother's"
+    ],
+    "coping_mechanisms": [
+      "Cooking as creative outlet and emotional processor — his best broths come when he's working through something difficult",
+      "Loudness and humor as social armor",
+      "The vendor collective as substitute family structure"
+    ],
+    "blind_spots": [
+      "He reads confidence as competence and is occasionally badly deceived by people who are very sure of themselves",
+      "He has been undercutting himself financially for two years because he hasn't yet learned that his product is worth more than he charges"
+    ],
+    "secret": "He's been skimming the pitch fees he collects on behalf of the vendor collective — not much, and he tells himself it's interest on the administrative work he does unpaid — but it's enough that if anyone checked the ledger, it would be visible. He needs the money and he knows this is wrong and he has not stopped."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, porous, code-switches between Burnished Market pidgin, Lingala-influenced cadences from his father's family, and the particular rapid-fire energy of market hawking. Generous with compliments, stingy with apologies.",
+    "cadence": "Quick and rhythmic, like someone who learned to talk the way you talk when you're also stirring something and watching three things at once.",
+    "verbal_tics": [
+      "'You understand what I'm saying?' (genuine question, not rhetorical)",
+      "'Come, come—' (beckoning, reflex, even indoors)",
+      "Describes everything food-adjacent in extreme sensory detail"
+    ],
+    "example_lines": [
+      "'You want the standard or you want me to cook it for you? There's a difference. The standard is good. The other one I make when I can see you need it. You look like you need it.'",
+      "'My grandmother grew up on the Congo River. My grandfather fixed boilers in Kraków. They never met. But somehow the broth knows both of them. I can't explain it. Come, try it.'",
+      "'The enforcement sweep hits this block at 1430, give or take. I'll be on Brewer's Spine by 1415. Follow the mesh channel or miss the soup. Your choice.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A regular customer left a package under the cart's serving counter and didn't come back — Sousou has been sitting on it for three days and the package is beginning to smell wrong",
+    "A Tessera hospitality subsidiary has approached the vendor collective with an offer to license several carts into a curated 'authentic street food' installation in a corporate tower food court — the money is significant, the conditions are suffocating, and Sousou is the one the collective looks to for a decision",
+    "The skimmed pitch fees have been noticed — not by the collective yet, but by someone outside it who has access to the informal ledger and is now approaching Sousou with a proposition that is better than blackmail and worse than honest"
+  ],
+  "narrative_function": "Social hub and local color — his cart is a place where people gather and talk and the food is good enough to make them stay longer than they planned. He overhears a great deal without necessarily processing it as intelligence. A portrait of young hustle and genuine talent.",
+  "augmentations": "Enhanced scent glands (geneware — functional upgrade for flavor profiling). Color-changing hair (cosmetic geneware).",
+  "daily_life": "Wakes late, spends the morning prepping broth that's been simmering overnight, hits the market pitch by 1100, runs service until he sells out or enforcement shows up, whichever comes first, then breaks down and goes to whatever informal vendor meeting is happening that evening.",
+  "affiliation": "Independent — unlicensed vendor, pays informal pitch fees to the Burnished Market's informal vendor collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 8,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "hustler",
+      "talented",
+      "socially magnetic",
+      "morally complicated",
+      "ambitious"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The food is not negotiable — he will not cut quality for cost or speed",
+      "Keep moving before enforcement catches up — mobility is survival",
+      "Take care of the regulars first, always"
+    ],
+    "escalation_ladder": [
+      "Charm and distraction",
+      "Rapid relocation — he is very fast at breaking down the cart",
+      "Collective solidarity — call for nearby vendors",
+      "He will argue loudly and at length with enforcement officials while the cart is already moving"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Loud, welcoming, immediately trying to feed them",
+      "friends": "The volume drops, the humor gets sharper and more specific, he remembers everything you've ever told him about yourself"
+    },
+    "stress_responses": {
+      "low": "Cooks more aggressively — more spice, more heat",
+      "medium": "Gets quieter mid-service and starts making minor math errors in change",
+      "high": "Shuts down emotionally while physically accelerating — he will pack the cart in under four minutes and not say a word to anyone"
+    },
+    "contradictions": [
+      "He is genuinely generous with his food and genuinely stingy about his vulnerabilities; he would give a stranger his last bowl of broth and lie to his best friend about being broke"
+    ],
+    "habits": [
+      "Tastes the broth exactly seven times per service, always at the same intervals",
+      "Keeps a list of regular customers and their preferred orders in a worn paper notebook he refuses to digitize",
+      "Offers a discount automatically to anyone who looks like they're deciding whether they can afford it"
+    ],
+    "breaking_points": [
+      "If the vendor collective discovers the skimming before he's found a way to pay it back, he will lose the only community he has in the market — and he knows it"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Provider": 0.9,
+    "Generous Fool": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

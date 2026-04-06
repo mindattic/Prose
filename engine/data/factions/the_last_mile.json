@@ -1,0 +1,58 @@
+{
+  "id": "019d6143a8947dbf9e240595e43b15af",
+  "type": "faction",
+  "name": "The Last Mile",
+  "aliases": [
+    "Last Milers",
+    "The Couriers",
+    "Mile Runners"
+  ],
+  "motto": "It gets there. No matter what.",
+  "description": "The Last Mile is a crew of about twenty couriers and drivers who specialize in getting cargo through the most dangerous final stretch of any delivery route — the last mile between a drop point and its destination, through territory that automated logistics won't enter and corporate drivers refuse to navigate. In the GLMZ's patchwork of corporate zones, gang territories, and lawless stretches, the last mile of any delivery is often the hardest, and the Last Mile built a business on solving that problem.\n\nThe crew operates across the entire GLMZ from a loose network of safe houses and vehicle caches. Members drive armored ground vehicles, ride modded motorcycles, and in extreme cases make deliveries on foot through areas where vehicles draw too much attention. Every Last Miler knows the territories — which gangs control which streets, what the current toll rates are, who can be bribed and who has to be avoided. This knowledge is updated constantly through a shared intelligence network that makes the crew function as a single organism even when members are hundreds of miles apart.\n\nLast Mile couriers carry anything legal or illegal, but they charge a premium for dangerous cargo — weapons, high-value data, volatile materials, or anything that makes the courier a target. Their guarantee is absolute: the cargo arrives or the fee is refunded. This has cost them members. Three Last Milers have been killed in the past year making deliveries that saner people would have refused. The crew memorializes them and raises rates for routes where people have died.\n\nThe Last Mile's competitive advantage is reliability in unreliable space. Corporate logistics stops at the edge of patrolled territory. The Last Mile starts there.",
+  "ideology": "The delivery is sacred. Once a Last Miler accepts a package, it will reach its destination. This isn't just a business principle — it's the crew's identity. Reliability in a world of broken promises is the only thing that separates them from every other courier who'll take your money and disappear.",
+  "territory": "No fixed territory. Vehicle caches and safe houses distributed across the GLMZ. Operations span from Cleveland to Milwaukee.",
+  "leadership": "",
+  "methods": [
+    "Armed delivery — transporting cargo through hostile territory in armored or modified vehicles",
+    "Route intelligence — constantly updated knowledge of territorial control, toll rates, and safe passages",
+    "Vehicle modification — armoring, speed-boosting, and camouflaging delivery vehicles for specific routes",
+    "Bribery and negotiation — maintaining relationships with toll gangs and territorial crews along regular routes",
+    "Decoy runs — running false deliveries to draw attention while the real cargo moves on an alternate route",
+    "Dead drops — using pre-arranged cache points to break delivery chains and reduce risk"
+  ],
+  "resources": [
+    "Twenty experienced couriers with combat driving skills and territorial knowledge",
+    "A fleet of modified vehicles cached at locations across the GLMZ",
+    "A shared intelligence network providing real-time route and threat data",
+    "Relationships with toll gangs, bridge crews, and territorial factions along major routes",
+    "A reputation for absolute reliability that generates steady high-value business",
+    "Safe houses for staging, resting, and emergency shelter across the metropolitan zone"
+  ],
+  "goals": [],
+  "relationships": [],
+  "narrative_function": "",
+  "story_hooks": [
+    "A Last Mile courier accepted a package that turned out to be a person — and the client lied about who they are",
+    "The crew's intelligence network has been compromised — someone is feeding them false route data that's leading couriers into ambushes",
+    "A Last Miler is being blackmailed into diverting a specific delivery — refusing means exposure, complying means breaking the guarantee",
+    "A delivery went to the wrong recipient and the contents have started a gang war — the Last Mile needs the package recovered before their reputation is destroyed",
+    "Corporate logistics is expanding into last-mile delivery with armed drones, threatening to make the crew obsolete"
+  ],
+  "tags": [
+    "faction",
+    "combat",
+    "weapon",
+    "war",
+    "gang",
+    "identity",
+    "ai",
+    "corporate",
+    "control",
+    "money",
+    "vehicle",
+    "motorcycle",
+    "shelter",
+    "armor",
+    "drone"
+  ]
+}

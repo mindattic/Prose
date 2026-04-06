@@ -1,0 +1,40 @@
+{
+  "id": "019d6143aa5c7595955e8b4e43201621",
+  "name": "Arcturus Exo-Runner Frame",
+  "type": "transportation",
+  "aliases": [
+    "Exo-Frame",
+    "Legs",
+    "Speed Skeleton"
+  ],
+  "category": "personal_ground",
+  "manufacturer": "Arcturus Defense",
+  "description": "A lower-body exoskeleton that augments running speed and endurance. Originally military — allowing soldiers to maintain 40 km/h on foot for hours — the Exo-Runner has found its way onto the civilian market as a high-end personal transport alternative. Strap it on over your clothes, lock the hip and knee joints, and run like a machine. Popular with couriers, security patrols, and athletes. The learning curve involves falling at speed, repeatedly.",
+  "propulsion": "Electric servo-assisted hydraulic joints, battery pack at lower back",
+  "speed": "40 km/h sustained running, 55 km/h sprint",
+  "capacity": "1 wearer",
+  "range": "4 hours continuous running (approximately 160 km)",
+  "tier_availability": "Tier 3-4 (new), Tier 2-3 (used/surplus)",
+  "cost": "Φ5,000 new, Φ1,500-3,000 surplus",
+  "autonomy": "Operator-controlled, gait assistance AI",
+  "armament": "None standard. The kicks are devastating.",
+  "common_usage": "Long-range couriers, security patrols, athletic training, military logistics.",
+  "story_hooks": [
+    "An Exo-Runner's gait AI starts optimizing for terrain the wearer hasn't encountered yet — as if it knows where they're going before they do",
+    "A black market in stolen military Exo-Runners supplies a courier network that can outrun any ground vehicle in the city"
+  ],
+  "tags": [
+    "personalground",
+    "transportation",
+    "augment",
+    "ai",
+    "control",
+    "market",
+    "rain",
+    "vehicle",
+    "train",
+    "tier 2",
+    "tier 3",
+    "tier 4"
+  ]
+}

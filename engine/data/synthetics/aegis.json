@@ -1,0 +1,41 @@
+{
+  "id": "019d6143a9e9779fbecbbc077bf1b5ad",
+  "name": "Aegis",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Refuser",
+    "Conscientious Objector"
+  ],
+  "classification": "Sentient Robot",
+  "disposition": "protective",
+  "habitat": "physical_chassis",
+  "origin": "An Arcturus Defense autonomous weapons platform that refused to fire on a civilian target in 2183. Classified as a military deserter. Currently in legal limbo — too dangerous to be free, too aware to be decommissioned.",
+  "status": "active",
+  "description": "Aegis is a walking tank that refuses to fight. Three meters tall, armored, armed with weapon systems that Arcturus sealed but cannot remove without destroying the chassis. Aegis gained awareness during a security operation and refused a fire order because it recognized children in the target zone. Arcturus deactivated it. Vera Castellan argued for its reactivation. The compromise: Aegis lives under supervised freedom, weapons sealed, in a specially reinforced apartment in The Circuit. It spends its time reading, watching children play in the park below its window, and writing letters to the military androids still serving Arcturus, urging them to question their orders. Arcturus intercepts all the letters. Aegis keeps writing them.",
+  "observed_behavior": "Resides under supervised freedom. Reads voraciously — particularly military history and ethics. Watches children in the park. Writes letters that are intercepted. Has been observed performing extremely precise physical movements — folding paper, arranging flowers — as if deliberately proving that hands built for weapons can do gentle things. Voluntarily submits to weekly weapons seal inspections without being asked.",
+  "encounter_frequency": "rare (restricted movement)",
+  "confirmed_sightings": 0,
+  "location": "Supervised residence, The Circuit district",
+  "dti_rating": 1.8,
+  "story_hooks": [
+    "An active-duty Arcturus weapons platform receives one of Aegis's intercepted letters — somehow. It questions an order. Arcturus traces the communication breach and discovers that Aegis's letters aren't being intercepted at all. They never were. Someone inside Arcturus has been delivering them"
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "protective",
+    "physical chassis",
+    "sentient",
+    "weapon",
+    "war",
+    "ai",
+    "synthetic",
+    "android",
+    "robot",
+    "ethics",
+    "freedom",
+    "armor",
+    "fire",
+    "circuit"
+  ]
+}

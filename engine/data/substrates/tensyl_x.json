@@ -1,0 +1,58 @@
+{
+  "id": "019d6143a9e57eb2b4de2eb01055befd",
+  "name": "Tensyl-X",
+  "brand_name": "Tensyl",
+  "product_name": "Tensyl-X",
+  "type": "substrate",
+  "aliases": [
+    "TX cable",
+    "tensyl wire",
+    "spidersteel"
+  ],
+  "category": "nano_material",
+  "description": "Tensyl-X is a ultra-high tensile strength CNT cable material produced through quantum-aligned axial growth, where individual nanotubes are grown in perfect parallel orientation across macro-scale lengths — eliminating the tube-to-tube slip that limited earlier CNT cables. The result is a material with tensile strength exceeding 120 GPa, roughly sixty times that of high-grade steel at one-sixth the weight. Apex Nanofabrication produces it in continuous spooled filament, braided cable, and flat ribbon formats, making it the dominant structural cable material in aerospace, megastructure construction, and high-load augment anchoring.",
+  "properties": [
+    "ultra_high_tensile_strength",
+    "low_weight",
+    "low_elongation",
+    "electrical_conductivity",
+    "thermal_conductivity",
+    "corrosion_resistance",
+    "uv_stable",
+    "non_magnetic"
+  ],
+  "developers": [
+    "Apex Nanofabrication",
+    "Crucible Industries (licensed braided formats)"
+  ],
+  "applications": [
+    "megastructure suspension cables",
+    "orbital tether systems",
+    "high-load cyberware skeletal anchoring",
+    "bridge and tower stay cables",
+    "aerospace control surfaces",
+    "winch and rigging systems for heavy salvage",
+    "prosthetic tendon replacement"
+  ],
+  "tier_availability": "Tier 2-3",
+  "cost": "Φ420 per kg (raw filament); Φ1,100 per kg (braided cable assembly)",
+  "story_hooks": [
+    "A Tensyl-X spool goes missing from an Apex Nanofabrication shipment — enough cable to suspend a building, or to rig something catastrophic. The manifest shows it was signed out by an employee who died three weeks ago.",
+    "A runner's prosthetic arm fails catastrophically mid-job — the Tensyl-X tendons have been swapped with a counterfeit that looks identical but snaps under load. Someone is selling fake TX cable in the Shelf, and people are dying.",
+    "A deep-salvage crew finds a cache of first-generation CNT cable from the 2080s — brittle, misaligned, but chemically exotic. A materials researcher is willing to pay obscene amounts for intact samples, and won't say why."
+  ],
+  "tags": [
+    "nanomaterial",
+    "substrate",
+    "war",
+    "augment",
+    "cyberware",
+    "prosthetic",
+    "ai",
+    "elf",
+    "control",
+    "shelf",
+    "tier 2",
+    "tier 3"
+  ]
+}

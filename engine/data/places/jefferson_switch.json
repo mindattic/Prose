@@ -1,0 +1,97 @@
+{
+  "id": "019d6143a921771faba60a01a4d5f472",
+  "type": "place",
+  "name": "Jefferson Switch",
+  "aliases": [
+    "Jefferson Park",
+    "The Switch",
+    "Transit Central",
+    "The Junction"
+  ],
+  "description": "Jefferson Switch is the place where Meridian's circulatory system comes to the surface. The old Jefferson Park was Chicago's northwest transportation hub — the intersection of the CTA Blue Line and the Metra commuter rail, a transit center that connected the city to its suburbs and the suburbs to the world. When the Corporate Reconstruction replaced public transit with the corporate MeriRail system, Jefferson Park's transit infrastructure was too extensive to rebuild and too useful to abandon. So it was absorbed, upgraded, and expanded into what is now Meridian 88's northwest interchange: Jefferson Switch, the point where maglev lines, legacy rail, freight logistics, and human traffic converge in a permanent state of organized chaos.\n\nThe Switch is not a neighborhood in any traditional sense. It's a machine — a transit machine with 40,000 people living inside it. The old residential blocks around the transit center have been consumed by the infrastructure, their buildings converted to maintenance bays, worker housing, logistics staging areas, and the peculiar commercial ecosystem that grows around any place where large numbers of people wait for things. The transit center itself has expanded vertically — six levels of platforms, concourses, and transfer halls, handling an estimated 200,000 passenger movements per day. Freight traffic moves through sub-levels that the public never sees, automated cargo pods delivering goods from the suburban production zones to Meridian's interior. The whole thing runs on a schedule that Axiom's logistics AI manages with a precision that borders on the beautiful, if you can appreciate the beauty of a system that treats human beings as throughput.\n\nThe Switch's population is defined by transit. Everyone here is going somewhere else — or they were, once, and then the transit center became their life. The permanent residents are transit workers, maintenance crews, logistics handlers, and the service workers who feed and house them. The transient population is everyone else: commuters, travelers, freight brokers, smugglers using the cargo sub-levels, and the untier-ed who discovered that a transit center with 200,000 daily users is the easiest place in Meridian to disappear into a crowd. The Switch has its own internal economy — platform-level food stalls, information brokers who sell schedule data and cargo manifests, mechanics who repair personal transit vehicles in alcoves between the maintenance bays. It's a city within a transit center within a city, and it never stops moving.\n\nFor Kyle, the Switch is infrastructure — a tool, not a destination. Every operator in Meridian knows the Switch's schedule, its blind spots, its maintenance windows. The cargo sub-levels are the northwest's primary smuggling route, used by everyone from Collective data runners to Iron Lotus arms dealers. The platform crowds provide cover for meetings, handoffs, and the kind of conversations that can't happen in quieter places. The Switch doesn't care who you are or what you're carrying. It only cares that you keep moving, because the next train is in four minutes and the platform needs to clear.",
+  "atmosphere": {
+    "sights": [
+      "Six levels of transit platforms stacked vertically, maglev trains arriving and departing in synchronized precision",
+      "Holographic schedule displays in every sightline, updating in real-time with delays, reroutes, and security advisories",
+      "Platform-level food stalls and service kiosks squeezed into every available space between structural supports",
+      "The cargo sub-levels visible through grated floors — automated pods moving in silent, choreographed patterns below",
+      "Crowds — constant, dense, moving. The Switch never empties.",
+      "Transit workers in Axiom-branded uniforms maintaining equipment, changing shifts, eating at platform stalls between trains"
+    ],
+    "sounds": [
+      "Maglev arrival tones — a musical scale that plays through the station, each note corresponding to a different line",
+      "The subsonic rumble of cargo pods in the sub-levels, felt more than heard",
+      "PA announcements in three languages and machine code — schedule updates, security warnings, corporate wellness reminders",
+      "The white noise of 200,000 daily movements — footsteps, conversations, luggage, life",
+      "Train doors closing — a pneumatic hiss that happens every ninety seconds on the main platform"
+    ],
+    "smells": [
+      "Platform food — fried noodles, nutrient wraps, stimulant coffee, all competing for aromatic dominance",
+      "Ozone from the maglev systems, strongest on the upper platforms",
+      "Human density — the Switch smells like people, a lot of people, in a space that manages airflow but can't manage biology",
+      "Lubricant and metal from the maintenance bays, leaking into the concourse levels through inadequate sealing",
+      "Rain — the Switch's upper levels are partially open, and wet weather brings the smell of real air into the transit cocoon"
+    ],
+    "feel": "Kinetic. Jefferson Switch feels like standing inside a clock — every element in motion, every motion serving a purpose, every purpose serving a schedule. It's overwhelming for the first visit and invisible by the tenth. The Switch doesn't invite you to linger. It processes you, routes you, and sends you on your way. For the people who live here, home is the pause between transits — a meal eaten on a platform, a conversation held in a maintenance alcove, sleep taken in shifts in worker housing that vibrates with every passing train.",
+    "tags": []
+  },
+  "demographics": "Approximately 40,000 permanent residents, predominantly transit workers and logistics handlers, Tier 1 and Tier 2. The transient population — 200,000 daily movements — is the most demographically diverse cross-section of Meridian, from Tier 5 executives in private transit pods to untier-ed migrants riding the cargo sub-levels without tickets.",
+  "economy": "Transit operations, freight logistics, platform-level commerce, and the gray-market information and smuggling economy that piggybacks on the cargo infrastructure. Axiom's transit division is the primary employer. The informal economy runs on schedule knowledge, cargo manifest data, and access to the sub-levels.",
+  "power_structure": "Axiom Transit Division manages the infrastructure directly. The Transit Workers Union — one of the few recognized labor organizations in Meridian — holds limited negotiating power through the threat of slowdowns. Platform-level commerce is self-governing. The cargo sub-levels are a jurisdiction gap — nominally Axiom territory, practically no-man's-land.",
+  "dangers": [
+    "Getting caught in the cargo sub-levels without authorization — Axiom's automated security is lethal below platform level",
+    "Crowd crush during peak transit hours — the platforms are overcapacity and safety margins are theoretical",
+    "Pickpockets and data-skimmers working the crowds — the Switch is prime territory for petty predators",
+    "Schedule disruptions — when the system breaks down, 200,000 people are stranded in a space designed for movement, not habitation",
+    "Corporate surveillance — the Switch's security cameras are dense and the facial recognition is current-generation"
+  ],
+  "opportunities": [
+    "Smuggling routes through the cargo sub-levels — the northwest's primary gray-market logistics pipeline",
+    "Information — schedule data, cargo manifests, and passenger movement patterns are all tradeable commodities",
+    "Crowd anonymity — 200,000 daily faces means yours disappears into the noise",
+    "Transit connections — the Switch links northwest Meridian to everywhere else in the corridor",
+    "The Transit Workers Union — one of the few organizations that can pressure Axiom through labor action"
+  ],
+  "story_hooks": [
+    "A cargo pod arrives in the sub-levels with contents that don't match its manifest — something alive, something valuable, something that multiple parties are converging on the Switch to claim",
+    "The Transit Workers Union calls a slowdown that paralyzes northwest Meridian's logistics — behind the labor dispute is a demand that has nothing to do with wages and everything to do with something the workers found in the sub-levels during a maintenance shift",
+    "Kyle uses the Switch for a handoff that goes wrong when the recipient doesn't show. The package is time-sensitive, the platform cameras have his face, and the next train out is in four minutes."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Edison Grid",
+      "Norwood Quiet",
+      "Forest Hollow",
+      "Nordpark Sanctuary"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Transit workers living and working inside the machine they maintain",
+    "Commuters from across northwest Meridian using the Switch as their daily routing point",
+    "Freight brokers and logistics handlers managing the cargo sub-levels",
+    "Smugglers, data runners, and gray-market operators exploiting the transit infrastructure",
+    "The untier-ed — riding without tickets, sleeping in maintenance alcoves, invisible in the crowd"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.97,
+    "lng": -87.76,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "smuggle",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "power",
+    "market",
+    "rain",
+    "vehicle",
+    "train",
+    "food"
+  ]
+}

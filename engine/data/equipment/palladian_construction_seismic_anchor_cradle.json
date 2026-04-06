@@ -1,0 +1,63 @@
+{
+  "id": "019d6143a86670f18e7565ca17d933e8",
+  "name": "Palladian Construction Seismic Anchor Cradle",
+  "brand_name": "Palladian",
+  "product_name": "Palladian Construction Seismic Anchor Cradle",
+  "type": "equipment",
+  "aliases": [
+    "Groundbite",
+    "The Cradle",
+    "Palladian Spike"
+  ],
+  "category": "utility",
+  "description": "The Seismic Anchor Cradle is a deployable structural stabilization platform developed originally for Palladian's deep-excavation teams operating in Meridian 88's subsidence zones. The unit consists of a collapsible titanium-alloy frame with six pneumatically-driven anchor spikes that fire into substrate on command, achieving load-bearing stability on surfaces ranging from loose fill to cracked ferroconcrete within 1.4 seconds. An onboard micro-gyroscope continuously adjusts tension distribution across the spike array to compensate for ground shift, vibration, or active tremor events, making it viable on the city's perpetually unstable eastern industrial shelf.\n\nWhat distinguishes the Cradle from competing anchor systems is its dual-use design philosophy: the same frame that stabilizes heavy construction equipment during drilling operations can be rapidly reconfigured as a personnel rappel anchor, a cable-transit anchor point, or a hard mount for crew-served equipment. The retraction motor is quiet enough to operate without triggering standard construction-site acoustic monitors, a feature that was almost certainly not accidental given how frequently the unit appears outside of legitimate worksites.\n\nAmong construction crews it is unremarkable kit, but the Cradle has developed a second life among urban climbers, extraction teams, and anyone who needs a guaranteed anchor point in structurally compromised environments. The spike-fire sound — a distinctive thump-hiss — is recognizable enough that experienced operators use it as a covert signal in the field.",
+  "manufacturer": "PALLADIAN CONSTRUCTION",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Pneumatic spike deployment",
+    "Micro-gyroscopic load distribution",
+    "Titanium-alloy collapsible framing",
+    "Substrate resonance feedback sensors"
+  ],
+  "specifications": {
+    "weight": "4.2 kg deployed, 2.8 kg packed",
+    "spike_count": "6",
+    "spike_penetration_depth": "Up to 180mm dependent on substrate hardness",
+    "deployment_time": "1.4 seconds full anchor",
+    "retraction_time": "3.1 seconds full retraction",
+    "load_rating": "2,400 kg static, 800 kg dynamic shock load",
+    "power_source": "Integrated 18V solid-state cell, ~200 deploy/retract cycles per charge",
+    "compatible_substrates": "Loose fill, gravel, ferroconcrete, asphalt, soft steel plate",
+    "dimensions_packed": "38cm x 22cm x 12cm"
+  },
+  "tactical_use": "Extraction teams use the Cradle to establish fast rappel points on rooftops and in shaft environments where permanent hardware is absent or has been removed. The spike array can be fired through thin floor paneling from below to create an overhead anchor, a technique favored by infiltrators entering from lower floors. In ambush scenarios, a Cradle deployed across a corridor can serve as a hard-mount for trip-lines or directional equipment. Operators in seismic-active zones rely on it to secure equipment caches against tremor displacement.",
+  "cultural_context": "On legitimate worksites, the Cradle is utterly mundane — every crew lead carries one and they stack in site lockers like spare helmets. Its ubiquity is precisely what makes it useful outside those contexts. Because it is unrestricted and visually associated with construction labor, it passes cursory inspection without comment. In the climbing culture that has grown up around Meridian 88's derelict vertical infrastructure, a worn Palladian Cradle on a rig harness signals experience and pragmatism rather than wealth. Operators who use expensive bespoke anchor hardware are quietly judged.",
+  "known_users": [
+    "Palladian site foremen and excavation crews",
+    "Urban vertical climbers and free-riggers",
+    "Extraction and recovery specialists",
+    "Freelance infiltrators working structural environments",
+    "Municipal utility repair teams"
+  ],
+  "story_hooks": [
+    "A Cradle recovered from a collapsed extraction site has its spike deployment log intact — the firing timestamps place it at three separate restricted locations on the same night a corporate courier disappeared.",
+    "A batch of Cradles shipped to a legitimate construction contract have been modified at the factory level with passive transponders — someone at Palladian is tracking deployment locations across the city.",
+    "An urban climber community has been using a specific Cradle anchor point on the 44th floor of a derelict tower as a dead drop for years; when the building is slated for demolition, they need to retrieve what's been left there before the structure comes down."
+  ],
+  "tags": [
+    "utility",
+    "equipment",
+    "war",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "wealth",
+    "rooftop",
+    "night",
+    "fire",
+    "shelf",
+    "tier 1"
+  ]
+}

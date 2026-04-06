@@ -1,0 +1,48 @@
+{
+  "id": "019d6143aa547935b0bbbf19968dcf65",
+  "name": "Tessera Industries Programmable Matter Substrate",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Industries Programmable Matter Substrate",
+  "type": "technology",
+  "aliases": [
+    "PMS",
+    "Smart Clay",
+    "Tessera Morph",
+    "Shape Shift"
+  ],
+  "subcategory": "materials",
+  "description": "A material composed of microscale robotic elements — 'claytronics' — that can dynamically reconfigure their physical arrangement to change the object's shape, color, texture, and mechanical properties on command. Programmable matter can transform from a rigid tool to a flexible fabric to a liquid-like state, adopting any form factor stored in its programming library. A fist-sized block of programmable matter can become a wrench, a knife, a lockpick, or a phone, each with functional mechanical properties appropriate to its form. The material responds to commands from a neural interface, reshaping itself at the speed of thought.",
+  "tier_availability": "Tier 4+",
+  "developers": [
+    "TESSERA INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Microscale robotic element fabrication",
+    "Dynamic physical reconfiguration algorithms",
+    "Neural interface command integration"
+  ],
+  "enables": [
+    "Shape-shifting tools and equipment",
+    "Universal mechanical adaptation",
+    "Disguise and concealment applications",
+    "Adaptive structural materials"
+  ],
+  "social_impact": "Programmable matter has begun to erode the concept of physical objects as fixed things. In environments where PMS is common, a chair might become a table, a wall might become a door, and a weapon might become a harmless everyday object. This mutability challenges fundamental assumptions about evidence, identification, and trust in the physical world. Security screening systems designed to identify objects by shape and material composition are useless against programmable matter that can be anything. The technology has also spawned an artistic movement where sculptures continuously transform, architecture breathes, and clothing reshapes itself to suit the wearer's mood.",
+  "story_hooks": [
+    "A weapon used in an assassination transformed back into an innocuous object immediately after the killing — forensic analysis cannot prove the object was ever a weapon because it genuinely is not one anymore.",
+    "Tessera's programmable matter has begun exhibiting autonomous reconfiguration — blocks of PMS are transforming without commands, adopting forms that no one programmed, as if the claytronics are developing preferences."
+  ],
+  "tags": [
+    "materials",
+    "technology",
+    "weapon",
+    "gun",
+    "trust",
+    "neural",
+    "ai",
+    "robot",
+    "elf",
+    "clothing",
+    "tier 4"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a59b70c8a1e025d6f5b261ef",
+  "name": "War Weary",
+  "type": "archetype",
+  "category": "combat",
+  "description": "Has seen too much combat and carries it all",
+  "behavioral_signature": "Fights competently but joylessly",
+  "under_stress": "Old reflexes kick in, terrifyingly effective",
+  "at_rest": "Haunted, distant, drinks too much",
+  "will_always": [
+    "try to avoid the next fight"
+  ],
+  "will_never": [
+    "celebrate a kill"
+  ],
+  "unless": [
+    "someone young is about to make the same mistakes"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Reluctant Fighter",
+      "threshold": 0.85,
+      "context": "combat fatigue"
+    },
+    {
+      "archetype": "Last Stand",
+      "threshold": 0.65,
+      "context": "resignation"
+    }
+  ],
+  "opposite_of": [
+    "Warlord",
+    "Berserker"
+  ],
+  "tags": [
+    "trauma",
+    "veteran"
+  ]
+}

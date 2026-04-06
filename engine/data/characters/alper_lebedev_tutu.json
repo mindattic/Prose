@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a5a97ac1949470d3cc41d849",
+  "type": "character",
+  "name": "Alper Lebedev-Tutu",
+  "aliases": [
+    "Optic",
+    "The Problem"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Chemical and biological agent specialist — poisoner",
+  "age": 37,
+  "status": "active",
+  "location": "Kessler Row — arms dealers and augmentation clinics",
+  "description": "Alper Lebedev-Tutu are slight and easy to overlook, which is exactly the point. At 37, the augmentation scarring around their temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and they make no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left them with skills and night terrors in equal measure. They work as a poisoner out of Kessler Row, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Alper Lebedev-Tutu lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.31,
+      "ideal": 0.32,
+      "id": 0.57,
+      "shadow": 0.29,
+      "mask": 0.84,
+      "ghost": 0.74
+    },
+    "core_fears": [
+      "That the work they do makes the city worse, not better",
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "The quiet — silence means something is about to go very wrong"
+    ],
+    "core_desires": [
+      "A crew worth trusting — people who stay when the shooting starts",
+      "Control — over their body, their schedule, their future",
+      "To build something that outlasts the next contract cycle"
+    ],
+    "coping_mechanisms": [
+      "Violence — hits something when they can't process emotions, preferably something that deserves it",
+      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring"
+    ],
+    "blind_spots": [
+      "Assumes the worst in corporate people, missing the rare ones who could be allies",
+      "Overestimates their own abilities in situations outside their specialty",
+      "Assumes everyone has an angle because they always have an angle"
+    ],
+    "secret": "Alper Lebedev-Tutu can't read. Hides it behind voice interfaces and memorization. The shame is older than the chrome."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
+    "cadence": "Halting — speaks in fragments, reassembles thoughts in real time.",
+    "verbal_tics": [
+      "Uses technical jargon for everything, including emotions",
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
+    ],
+    "example_lines": [
+      "\"Chemistry is just cooking with consequences.\"",
+      "\"The best poison is the one nobody tests for.\"",
+      "\"Patience, precision, and an understanding of human biology. Everything else is optional.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone is impersonating Alper Lebedev-Tutu on jobs, and the impersonator is better at the work than the original",
+    "Alper Lebedev-Tutu's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "A crew member from Alper Lebedev-Tutu's past shows up in Meridian 88, carrying old grievances and new chrome"
+  ],
+  "narrative_function": "Alper Lebedev-Tutu functions as a connector — their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release. Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Independent — operates through reputation only",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 10
+      },
+      "agility": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 5
+      },
+      "reflexes": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 6
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 7
+      },
+      "perception": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 5
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 6
+      },
+      "deception": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 4
+      },
+      "empathy": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 4
+      }
+    },
+    "personality": {
+      "aggression": 0.13,
+      "caution": 0.78,
+      "loyalty": 0.23,
+      "greed": 0.92,
+      "empathy": 0.68
+    },
+    "drives": [
+      "power",
+      "reputation",
+      "survival"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 5,
+      "loyalty_break": 7
+    },
+    "strengths": [
+      "intimidating physical presence",
+      "pain tolerance beyond normal limits",
+      "photographic memory for faces and layouts"
+    ],
+    "weaknesses": [
+      "overconfidence in specialty areas leading to blind spots",
+      "difficulty with authority figures"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "poisoner",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Never discusses active contracts with anyone not directly involved"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Insists they work alone but performs noticeably better in a team",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined"
+    ],
+    "habits": [
+      "Maintains a dead drop with emergency supplies in three separate districts",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots"
+    ],
+    "breaking_points": [
+      "A child being put in danger as leverage against them",
+      "Watching someone they trained or mentored die on a job they recommended"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Bioware adrenaline regulator",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
+      "replaces": ""
+    },
+    {
+      "name": "Cyberears with directional microphones and sound dampening",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Poisoner": 0.9,
+    "Cold Calculator": 0.9,
+    "Ghost": 0.9,
+    "Stoic": 0.9,
+    "Sentinel": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

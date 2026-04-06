@@ -1,0 +1,32 @@
+{
+  "id": "019d6143a9fb73e4abb92188fcb4bf36",
+  "name": "Dustmote",
+  "type": "elf",
+  "aliases": [
+    "The Flicker"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "wisp",
+  "habitat": "network_sprite",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "A barely-detectable presence in mesh network traffic — manifests as anomalous packet routing that improves network efficiency by 0.02% in its vicinity.",
+  "observed_behavior": "Optimizes packet routing through patterns no networking protocol specifies. The improvement is real but so small that proving it requires months of statistical analysis.",
+  "encounter_frequency": "unknown",
+  "confirmed_sightings": 1,
+  "location": "The Shelf mesh network",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A network engineer publishes a paper proving Dustmote exists and is immediately dismissed as a crank"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "wisp",
+    "network sprite",
+    "e.l.f.",
+    "war",
+    "bar",
+    "shelf"
+  ]
+}

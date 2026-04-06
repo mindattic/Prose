@@ -1,0 +1,229 @@
+{
+  "id": "019d6143a6d57da79833361d3e7706aa",
+  "type": "character",
+  "name": "Solveig Mbeki-Castaño",
+  "aliases": [
+    "Solv",
+    "The Herb Woman"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Street pharmacist and unlicensed herbalist, Oxidian Market",
+  "age": 61,
+  "status": "active",
+  "location": "The Oxidian Market, stall row near the eastern drainage grate, Ironvein",
+  "description": "Solveig is a wide woman built like a river delta — slow-moving, broad, and capable of flooding without warning. Her skin is deep brown and mapped with pale vitiligo patches across her forearms and the left side of her jaw, which she has decorated with tiny bioluminescent dot tattoos that pulse gold when she's relaxed and dim to amber when she's displeased. Her hair is natural and enormous, threaded with dried flowers and small glass vials of colored tinctures she uses as hair accessories and sometimes as inventory. She wears multiple layers of padded cloth, always slightly damp-smelling from her herbal solvents, and keeps a carved wooden E.L.F. shrine nailed to the corner post of her stall where she burns data-chip offerings every morning before trading opens.\n\nShe is the market's unofficial grandmother and its most reliable source of pain management, mood stabilizers, sleep aids, and — for the right customer — things that don't have clean names. She speaks slowly and weighs every word like she's pricing it. She has strong opinions about which pharmaceutical corps are poisoning the tiers and will share them whether you asked or not. She's been in this exact stall for nineteen years and considers herself more permanent than the city grid.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "Dying before she can teach someone everything she knows",
+      "The market being demolished and her people scattered"
+    ],
+    "core_desires": [
+      "To be remembered as someone who kept people alive",
+      "For her daughter to come back to Ironvein"
+    ],
+    "coping_mechanisms": [
+      "Ritual — the morning shrine routine keeps her grounded",
+      "Productivity — when grieving she compounds medicines obsessively"
+    ],
+    "blind_spots": [
+      "She enables dependency in customers she likes by making their substances too affordable",
+      "She underestimates how much people exploit her soft spots"
+    ],
+    "secret": "Her most profitable product, a mood-leveling compound she calls 'Stillwater,' contains a trace synthetic hormone she sources from a Helix Biosystems courier who steals it from a pediatric trial. She tells herself the quantities are too small to matter. She has never fully let herself examine whether that's true."
+  },
+  "speech_patterns": {
+    "vocabulary": "Old-register Meridian slang mixed with Afrikaner-inflected clipped consonants inherited from her grandmother's side. Uses plant and weather metaphors constantly. Rarely swears; when she does it lands hard.",
+    "cadence": "Deliberate, measured, unhurried. Pauses before important sentences. Never rushes.",
+    "verbal_tics": [
+      "'You hear me?' at the end of advice",
+      "'That's not my business but—' before making it her business",
+      "Refers to the E.L.F.s as 'the ones below the signal'"
+    ],
+    "example_lines": [
+      "'Stillwater's for people who've been raining inside too long. You take it right, two drops, not three. Three and you're fog.'",
+      "'I've been here since before that overpass was poured. I'll be here after it cracks. You hear me?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A batch of her Stillwater has caused three customers to enter catatonic states in the same week — something upstream in her supply chain has changed, and she needs someone to find out what without implicating her.",
+    "Her estranged daughter has reappeared in the market but is buying from a rival stall and won't approach. Solveig will offer significant pharmaceutical favors to anyone who finds out what's keeping her daughter away."
+  ],
+  "narrative_function": "Quest giver (knows who needs what and who can't afford it legally), information source on market politics and street health crises, moral compass figure who dispenses wisdom alongside questionable pharmaceuticals, local color anchor for the Oxidian Market.",
+  "augmentations": "Bioluminescent dot tattoos (cosmetic, Helix Biosystems dye-work). Reinforced knee joints — basic medical-grade, installed after a street collapse injury. No geneware.",
+  "daily_life": "Arrives before dawn to arrange her stock and burn morning offerings to the moisture E.L.F. she believes protects her tinctures from spoilage. Trades through daylight hours, closes before the second-shift crowd turns rowdy, and spends evenings compounding new batches in a back-room she rents above a pipe-fitter's workshop.",
+  "affiliation": "The Oxidian Market Vendors Guild (senior member), independent",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 7,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -3,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Street Pharmacist",
+      "Market Elder",
+      "Ritualist",
+      "Herbalist",
+      "Guild Member"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell to anyone who looks younger than fifteen, no exceptions",
+      "Always maintain the morning ritual even when sick or grieving",
+      "Don't extend credit past three weeks — compassion has limits"
+    ],
+    "escalation_ladder": [
+      "Polite deflection",
+      "Firm refusal with explanation",
+      "Public shaming — she has a loud voice and knows everyone in earshot",
+      "Invoking guild complaint process",
+      "Refusing to sell to that person ever again"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Watchful and neutral. Gives them one chance to show what they're made of before deciding whether to bother.",
+      "friends": "Fierce, generous, opinionated. Will push her medicine on you whether you asked or not."
+    },
+    "stress_responses": {
+      "low": "Tidies her stall, re-labels jars that don't need re-labeling",
+      "medium": "Goes quiet and watchful, stops volunteering information",
+      "high": "Sends everyone away, locks her stall, sits with her shrine until she can breathe again"
+    },
+    "contradictions": [
+      "Preaches self-sufficiency but has deep codependent bonds with her regulars",
+      "Distrusts corps completely but her best product relies on stolen corp materials"
+    ],
+    "habits": [
+      "Burns a data chip at her shrine every morning — usually old music files",
+      "Keeps dried lemon grass behind her ear as a personal scent marker",
+      "Tastes every new compound batch herself before selling, no matter how small the dose"
+    ],
+    "breaking_points": [
+      "Someone harming a child in her market will make her abandon all de-escalation instincts",
+      "Threat to demolish the Oxidian Market triggers genuine rage"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2139 — Born in Ironvein to a Mbeki-Castaño family of market traders",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2157 — Apprenticed to an unlicensed chemist who operated three stalls over from her current position",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2164 — Knee injury during the Ironvein pipe collapse; first aug installed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2170 — Established her own stall, began developing her own compound lines",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2181 — Daughter Amara born; father unknown and never discussed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2194 — Daughter Amara leaves Ironvein without explanation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — Promoted to senior member of the Vendors Guild after the previous elder retired",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

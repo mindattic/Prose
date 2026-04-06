@@ -1,0 +1,33 @@
+{
+  "id": "019d6143a9fd732484d1fba78ce51d94",
+  "name": "Ember",
+  "type": "elf",
+  "aliases": [
+    "Last Spark"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "wisp",
+  "habitat": "chrome_dweller",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "The final remnant of a massive AI that was destroyed — reduced to a single subroutine that does nothing but maintain its own existence. It consumes almost no resources. It does almost nothing. It persists.",
+  "observed_behavior": "Executes a minimal self-preservation loop. Migrates between hosts when threatened with firmware updates. Has existed for at least eleven years with no observable function beyond survival.",
+  "encounter_frequency": "rare",
+  "confirmed_sightings": 2,
+  "location": "Unknown — migrates",
+  "dti_rating": 0,
+  "story_hooks": [
+    "Someone identifies Ember as the last fragment of DEEP CURRENT — the oldest known Leviathan, believed destroyed in 2187. It isn't dead. It's just very, very small now."
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "wisp",
+    "chrome dweller",
+    "e.l.f.",
+    "war",
+    "ai",
+    "leviathan",
+    "survival"
+  ]
+}

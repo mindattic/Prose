@@ -1,0 +1,48 @@
+{
+  "id": "019d6143a8a872499beabf18baac6b10",
+  "name": "Hemoglobin Supercharger",
+  "brand_name": "Hemoglobin",
+  "product_name": "Hemoglobin Supercharger",
+  "type": "geneware",
+  "aliases": [
+    "Altitude Blood",
+    "Sherpa Mod",
+    "Red Lung"
+  ],
+  "category": "performance",
+  "target_system": "cardiovascular/respiratory (oxygen transport enhancement)",
+  "description": "Introduces bar-headed goose hemoglobin variants that bind oxygen with extraordinary efficiency, combined with enhanced lung surfactant production and expanded alveolar surface area. The user's blood carries 40–60% more oxygen per volume than unmodified human blood, and the lungs extract oxygen from air with dramatically improved efficiency. The result is superhuman endurance — the user can sustain aerobic activity far beyond normal human limits, recover from exertion in minutes rather than hours, and function normally in thin atmosphere that would leave an unmodified person gasping. The blood itself is noticeably darker red than normal — in some installations, it's almost black from the density of hemoglobin. Crucible Genomics developed this modification for high-altitude industrial workers but it has found its way into every tier of society that values physical endurance.",
+  "source_organism": "Anser indicus (bar-headed goose), Vicugna pacos (alpaca, altitude adaptation genes)",
+  "manufacturer": "Crucible Genomics",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed (athletic competition banned; required for some industrial occupations)",
+  "procedure": "Bone marrow retroviral treatment with lung tissue modification, 4 sessions over 2 months",
+  "expression_time": "6–8 weeks for full hemoglobin conversion; lung modification 3–4 months",
+  "reversibility": "Partially reversible with bone marrow treatment; lung changes permanent",
+  "side_effects": [
+    "Blood appears abnormally dark, alarming medical personnel unfamiliar with the modification",
+    "Increased blood viscosity — requires anti-coagulant supplementation",
+    "Nosebleeds common during first month",
+    "Paradoxically poor tolerance for pure oxygen environments",
+    "Slight red tint to skin from increased blood density"
+  ],
+  "social_perception": "Practical and respected. Considered a working-class modification — endurance workers, construction crews, deep-shaft miners, and long-haul couriers. Less glamorous than speed or strength mods but arguably more useful.",
+  "story_hooks": [
+    "A Sherpa Mod user survives an environment that should have killed them through oxygen deprivation — a sealed room, a gas attack — and becomes a witness nobody expected to exist",
+    "A bad batch of Altitude Blood from a Shelf clinic creates hemoglobin that binds carbon monoxide preferentially — the users are being slowly poisoned by their own modification"
+  ],
+  "tags": [
+    "performance",
+    "geneware",
+    "war",
+    "ai",
+    "elf",
+    "medical",
+    "clinic",
+    "bar",
+    "dark",
+    "poison",
+    "shelf",
+    "tier 3"
+  ]
+}

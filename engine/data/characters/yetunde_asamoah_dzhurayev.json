@@ -1,0 +1,238 @@
+{
+  "id": "019d6143a7257baf967c10d7de6572e8",
+  "type": "character",
+  "name": "Yetunde Asamoah-Dzhurayev",
+  "aliases": [
+    "Yetty",
+    "The Wall"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Riot Suppression Specialist, Meridian 88 Metro Police",
+  "age": 38,
+  "status": "active",
+  "location": "Fort Anchor",
+  "description": "Yetunde is built like a cargo container — broad-shouldered, thick-necked, standing just under two meters with a physicality that makes precinct hallways feel narrower. Her skin is deep umber, her hair a close-cropped natural coil threaded through with copper-toned bioluminescent filaments that pulse faintly when her heart rate elevates — a side effect of a medical implant she never bothered to have aesthetically corrected. A long diagonal scar runs from her left jaw to her collarbone, courtesy of a monofilament accident during the Calumet Rise food riots eight years ago. She keeps it unrepaired on purpose.\n\nOn the job she projects a professional blankness — not coldness exactly, but the studied calm of someone who has seen a crowd turn to a mob and back again more times than she can count. Off-duty she is unexpectedly gentle, the kind of person who stops to help strangers find their way and remembers the names of the Ferrogate transit workers at Fort Anchor's break room. She is deeply suspicious of anyone who seems too eager to hurt people, including some of her own squad.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Becoming the kind of officer who enjoys the violence",
+      "A repeat of the Calumet Rise incident but with a worse outcome"
+    ],
+    "core_desires": [
+      "To do her job without compromising her sense of self",
+      "To eventually see the conditions that cause riots addressed at the source"
+    ],
+    "coping_mechanisms": [
+      "Physical routine and exercise",
+      "Tending her herb garden",
+      "Deliberate silence when overwhelmed"
+    ],
+    "blind_spots": [
+      "Tends to over-trust fellow officers who show personal kindness, even when their professional conduct is questionable",
+      "Underestimates how much her mere physical presence intimidates people who have been harmed by police"
+    ],
+    "secret": "During the Calumet Rise riots she witnessed a senior officer execute an unarmed man and filed an incident report that was quietly buried. She still has an encrypted copy. She has never decided what to do with it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct, economical language with occasional Twi phrases from her grandmother's side. Formal in professional settings, warmer and more idiomatic off-duty.",
+    "cadence": "Measured and unhurried. Rarely raises her voice. Her quietness in tense situations tends to make others either calmer or more nervous.",
+    "verbal_tics": [
+      "Exhales slowly before delivering bad news",
+      "Says 'understood' instead of 'yes' when she means it seriously"
+    ],
+    "example_lines": [
+      "You want to be somewhere else right now. I'm giving you that option before I stop giving it.",
+      "I didn't join to crack skulls. Some days the job doesn't care what I joined for.",
+      "Medme — that's what my grandmother called me. Means 'hold me.' She said it like a prayer. I think about that a lot in this line of work."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She approaches someone with a copy of the buried Calumet Rise incident report, asking them to hold it for her — the pressure of keeping it herself has become unbearable.",
+    "A new riot suppression protocol issued by Metro Police Command crosses a line she cannot ignore, and she needs outside help to document and resist it.",
+    "Her squad is being deployed to suppress a protest she privately believes is justified, and she is looking for any legal pretext to de-escalate before things go wrong."
+  ],
+  "narrative_function": "Moral compass figure within law enforcement — a voice of restraint who can warn players about escalating tensions or provide insight into how the Metro Police actually functions versus how it is supposed to. Can be an unexpected ally or a complicated obstacle depending on context.",
+  "augmentations": "Subdermal impact-distribution mesh across torso and upper arms (medical-grade, not cosmetic). Neural pacing implant with bioluminescent copper filament side effect visible at temples and crown. Reinforced knee cartilage from a line-of-duty injury repair.",
+  "daily_life": "Arrives at Fort Anchor before her shift starts, runs equipment checks, reviews overnight incident logs. Spends much of her day in standby readiness — drills, briefings, and the long waiting that defines riot work — then returns home to her flat in Ironhaven where she maintains a small hydroponic herb garden.",
+  "affiliation": "Meridian 88 Metro Police — Riot Suppression Unit Delta",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 8,
+      "dexterity": 6,
+      "vitality": 8,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 9,
+      "creativity": 4,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Disciplined",
+      "Morally grounded",
+      "Physically imposing",
+      "Institutional insider",
+      "Quiet rebel"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Exhaust de-escalation options before using force",
+      "Protect civilians even when it complicates the operation",
+      "Never falsify a report, no matter who asks"
+    ],
+    "escalation_ladder": [
+      "Verbal warning, calm and clear",
+      "Physical positioning to demonstrate presence without contact",
+      "Minimum necessary force only after all other options are spent"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional, guarded but not unkind — assesses threat level quickly and adjusts demeanor accordingly",
+      "friends": "Genuinely warm, remembers details, shows up when needed without being asked"
+    },
+    "stress_responses": {
+      "low": "Becomes quieter and more deliberate",
+      "medium": "Focuses entirely on immediate tactical task, sets emotion aside",
+      "high": "Shuts down verbally, acts on training and muscle memory, processes afterward"
+    },
+    "contradictions": [
+      "Believes deeply in civilian safety but works for an institution that routinely deprioritizes it",
+      "Values honesty absolutely but has kept the Calumet Rise secret for eight years"
+    ],
+    "habits": [
+      "Runs equipment checks twice even when protocol requires only one",
+      "Brings homegrown herbs to share at the precinct breakroom",
+      "Leaves small data offerings at the Fort Anchor ELF shrine before a difficult deployment"
+    ],
+    "breaking_points": [
+      "Witnessing deliberate cruelty from a fellow officer in a situation she cannot immediately address",
+      "Being ordered to suppress a crowd that includes children"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal impact-distribution mesh — torso and upper arms",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal impact-distribution mesh — torso and upper arms",
+      "replaces": ""
+    },
+    {
+      "name": "Neural pacing implant with bioluminescent copper filament side effect",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Neural pacing implant with bioluminescent copper filament side effect",
+      "replaces": ""
+    },
+    {
+      "name": "Reinforced knee cartilage (medical)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Reinforced knee cartilage (medical)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Judge": 0.9,
+    "Sentinel": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 22 — Graduated Metro Police Academy, assigned to patrol in Calumet Rise",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 30 — Calumet Rise food riots; received scar, witnessed the execution, filed suppressed report",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 31 — Transferred to Riot Suppression Unit Delta, Fort Anchor",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 35 — Promoted to Unit Specialist; declined further promotion citing 'preference for field work'",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a870730ab25f2f51fbc59682",
+  "name": "Street Custom 'Packrat' Concealed Carry Harness",
+  "brand_name": "Street",
+  "product_name": "Street Custom 'Packrat' Concealed Carry Harness",
+  "type": "equipment",
+  "aliases": [
+    "Packrat",
+    "Carry Rig",
+    "Hidden Holster",
+    "Stash Harness"
+  ],
+  "category": "containers",
+  "description": "A body-worn harness system designed to conceal multiple weapons, tools, and equipment under standard clothing. The Packrat uses a modular design of pouches, holsters, and clips arranged across the torso, inner thighs, and small of back to distribute weight evenly and minimize visible printing through fabric. A well-fitted Packrat can conceal a pistol, three magazines, a knife, a cyberdeck, a medical kit, and assorted tools without creating visible bulges or asymmetric weight distribution. The harness is custom-fitted to the wearer's body and adjustable for different clothing styles. It has become the standard concealment system for anyone who needs to carry lethal capability through areas where weapons are not welcome.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — concealment harness; illegal if containing prohibited items",
+  "base_technologies": [],
+  "specifications": {
+    "capacity": "Pistol + 3 magazines + knife + cyberdeck + med kit + tools",
+    "weight distribution": "Even across torso and thighs",
+    "printing": "Minimal under standard clothing",
+    "customization": "Body-fitted",
+    "info": "adjustable modular pouches",
+    "material": "Nylon webbing with neoprene backing",
+    "weight": "0.5 kg empty",
+    "accessibility": "Draw times under 1.5 seconds for primary weapon",
+    "comfort": "Designed for 12+ hour continuous wear"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A security checkpoint missed a complete weapons loadout on a suspect who was wearing a custom Packrat — the harness was specifically designed to distribute metal mass below the detection threshold of the checkpoint's scanners.",
+    "A Packrat design has been developed with integrated Faraday pouches that shield contained devices from tracking — anything stored in the harness disappears from electronic detection."
+  ],
+  "tags": [
+    "containers",
+    "equipment",
+    "weapon",
+    "ai",
+    "medical",
+    "clothing",
+    "tier 1"
+  ]
+}

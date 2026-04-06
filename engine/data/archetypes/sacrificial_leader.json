@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a58e7938a4a9cf0b1b4f2989",
+  "name": "Sacrificial Leader",
+  "type": "archetype",
+  "category": "leadership",
+  "description": "Willing to die for their people",
+  "behavioral_signature": "Makes personal sacrifices for the group constantly",
+  "under_stress": "Seeks the sacrifice",
+  "at_rest": "Giving up comfort, safety, happiness for others",
+  "will_always": [
+    "sacrifice for the group"
+  ],
+  "will_never": [
+    "prioritize themselves"
+  ],
+  "unless": [
+    "their death would doom the group"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Martyr",
+      "threshold": 0.8,
+      "context": "self-sacrifice"
+    },
+    {
+      "archetype": "Servant Leader",
+      "threshold": 0.75,
+      "context": "selfless leadership"
+    }
+  ],
+  "opposite_of": [
+    "Tyrant"
+  ],
+  "tags": [
+    "selfless",
+    "doomed"
+  ]
+}

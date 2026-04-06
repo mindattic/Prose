@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a5ee79b09719907ce212059b",
+  "type": "character",
+  "name": "Deniz Salazar-Quansah",
+  "aliases": [
+    "Helios",
+    "The Operator"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Freelance combat specialist — street samurai",
+  "age": 34,
+  "status": "active",
+  "location": "The Circuit — neon-lit entertainment and vice district",
+  "description": "Deniz Salazar-Quansah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 34, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a street samurai out of The Circuit, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Deniz Salazar-Quansah agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.22,
+      "ideal": 0.64,
+      "id": 0.49,
+      "shadow": 0.19,
+      "mask": 0.35,
+      "ghost": 0.93
+    },
+    "core_fears": [
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Losing their edge to age — the body slows before the mind accepts it"
+    ],
+    "core_desires": [
+      "To find the person who burned them and make it educational",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Knowledge — to understand the systems that grind people down"
+    ],
+    "coping_mechanisms": [
+      "Connection — finds someone to talk to, even if it's a bartender or a cat",
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+      "Ritual — follows the same pre-job routine every time, superstition as structure"
+    ],
+    "blind_spots": [
+      "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
+      "Fails to notice when their own behavior mirrors the people they despise"
+    ],
+    "secret": "Deniz Salazar-Quansah once worked for corporate intelligence and still has a handler who calls in favors. Each favor erodes what's left of their independence."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, profane, and vivid. Speaks in images — everything is a metaphor for violence or weather.",
+    "cadence": "Low and even — the vocal equivalent of still water.",
+    "verbal_tics": [
+      "Refers to killing as 'solving' — clinical detachment as coping mechanism",
+      "Swears in three languages, often in the same sentence"
+    ],
+    "example_lines": [
+      "\"I don't get paid to have opinions about the target. I get paid to make them stop moving.\"",
+      "\"Chrome doesn't make you faster. Training makes you faster. Chrome just means you survive learning.\"",
+      "\"You want philosophy, hire a professor. You want someone dead by morning, hire me.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Deniz Salazar-Quansah intercepts intelligence about a threat to their district and must decide between profit and protection",
+    "The fixer who handles Deniz Salazar-Quansah's contracts goes silent — dead, disappeared, or turned",
+    "A crew member from Deniz Salazar-Quansah's past shows up in Meridian 88, carrying old grievances and new chrome"
+  ],
+  "narrative_function": "Deniz Salazar-Quansah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Smartgun link in right forearm — interfaces directly with compatible weapons. Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Independent — loose crew affiliations",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 9
+      },
+      "agility": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 5
+      },
+      "reflexes": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 5
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 8
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 5
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 5
+      },
+      "technical": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 8
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 9
+      },
+      "deception": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 6
+      }
+    },
+    "personality": {
+      "aggression": 0.71,
+      "caution": 0.23,
+      "loyalty": 0.58,
+      "greed": 0.44,
+      "empathy": 0.86
+    },
+    "drives": [
+      "freedom",
+      "revenge",
+      "reputation"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 3,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "intimidating physical presence",
+      "network of reliable contacts"
+    ],
+    "weaknesses": [
+      "risk-averse to the point of missed opportunities",
+      "grudge-holding that compromises rational decision-making"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "street samurai",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never discusses active contracts with anyone not directly involved",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Insists they work alone but performs noticeably better in a team",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined"
+    ],
+    "habits": [
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Maintains a dead drop with emergency supplies in three separate districts",
+      "Carries a specific caliber round as a lucky charm — has never fired it"
+    ],
+    "breaking_points": [
+      "Watching someone they trained or mentored die on a job they recommended",
+      "Being publicly exposed — name, face, address, all of it blown"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Smartgun link in right forearm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Smartgun link in right forearm — interfaces directly with compatible weapons",
+      "replaces": ""
+    },
+    {
+      "name": "Cybernetic eyes with thermal overlay and low-light enhancement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Protector": 0.7,
+    "Duelist": 0.7,
+    "Code Keeper": 0.7,
+    "Stoic": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

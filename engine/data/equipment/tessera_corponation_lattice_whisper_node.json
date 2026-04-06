@@ -1,0 +1,61 @@
+{
+  "id": "019d6143a87475408706f8398522e221",
+  "name": "Tessera Corponation Lattice Whisper Node",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Corponation Lattice Whisper Node",
+  "type": "equipment",
+  "aliases": [
+    "Whisper Node",
+    "Breadcrumb",
+    "Tessera Spider"
+  ],
+  "category": "comms",
+  "description": "The Lattice Whisper Node is a self-organizing mesh repeater designed to be deployed in clusters, with each unit autonomously discovering, authenticating, and routing through its nearest neighbors to form a decentralized communication backbone that requires no fixed infrastructure. A single Node is functionally useless; a cluster of five or more creates a resilient, self-healing network that can span several city blocks, reroute around destroyed or jammed units, and sustain encrypted voice and data traffic without any connection to Meridian 88's licensed mesh infrastructure. Each unit is roughly cylindrical, about the size of a thumb, and is designed to be adhered to surfaces — undersides of benches, drainage grates, the backs of signage — where it can draw parasitic power from ambient electromagnetic fields and remain active for weeks without a dedicated power source.\n\nThe Node's defining technical feature is its adaptive routing intelligence. Rather than using fixed relay paths, the cluster continuously recalculates the most signal-efficient route through its members in response to interference, unit loss, or new additions. A Node that is physically destroyed simply drops out of the network's topology within seconds, and surrounding units redistribute the load. New Nodes introduced to an existing cluster are authenticated via a shared lattice key loaded at deployment, after which they are incorporated automatically. This makes the system highly resistant to targeted disruption — eliminating one Node accomplishes almost nothing.\n\nTessera Corponation markets the Lattice Whisper Node to corporate security teams for 'temporary infrastructure deployment in low-coverage operational environments,' and it is genuinely used for this purpose. It is also, with near-equal frequency, used by resistance cells, labor organizers, and underground networks to establish communications infrastructure in districts where the licensed mesh is monitored, degraded, or deliberately throttled by municipal authorities.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Autonomous Mesh Topology",
+    "Parasitic EM Power Harvesting",
+    "Adaptive Lattice Routing",
+    "Distributed Key Authentication"
+  ],
+  "specifications": {
+    "dimensions": "2.1cm diameter x 5.8cm length (per unit)",
+    "weight": "18g per unit",
+    "power_source": "Ambient EM harvesting; optional micro-cell supplement for low-field environments",
+    "minimum_cluster_size": "5 units for stable network formation",
+    "range_per_hop": "Up to 180m in open conditions; 60–90m through dense construction",
+    "network_capacity": "Up to 64 simultaneous authenticated users per 20-node cluster",
+    "self_healing_time": "Unit dropout compensated within 4–9 seconds",
+    "operational_lifespan": "14–21 days continuous on EM harvesting alone"
+  },
+  "tactical_use": "A standard deployment involves seeding 8–12 Nodes across a target area in advance of an operation, typically during a reconnaissance pass. Nodes are placed at irregular intervals and heights to maximize coverage and minimize the chance of a single sweep clearing the entire network. Once active, the cluster provides a private encrypted mesh for the operational team that is entirely independent of monitored infrastructure. The cluster can be extended in real time by introducing additional Nodes, making it possible to 'grow' the network ahead of a moving team. For extraction or exfiltration scenarios, pre-staged Nodes along a route allow continuous communication without relying on any surface that could be monitored.",
+  "cultural_context": "The Lattice Whisper Node occupies a complicated legal position in Meridian 88. Licensed deployment requires registration of the lattice key with the Municipal Spectrum Authority, theoretically giving authorities access to the network's traffic. In practice, the registration process is slow, inconsistently enforced, and trivially circumvented by generating new lattice keys on unlicensed hardware. This gap between legal requirement and enforcement reality has made the Node a foundational tool for everyone from legitimate corporate security teams to the city's most organized underground networks. Labor organizers in particular have adopted the technology extensively, using pre-staged clusters to maintain communication during actions in districts where municipal mesh throttling is used as a tool of crowd management.",
+  "known_users": [
+    "Corporate field security teams",
+    "Resistance cell coordinators",
+    "Labor organizers in throttled districts",
+    "Underground market operators",
+    "Journalists covering live unrest"
+  ],
+  "story_hooks": [
+    "A cluster of Nodes is discovered in a sealed subsection of a Tessera Corponation facility — deployed from the inside, using a lattice key that does not match any registered deployment. Someone inside the company has been running a private network for an unknown period.",
+    "Municipal authorities announce a new detection protocol targeting unregistered Whisper Node clusters, but the announcement itself is transmitted over an unregistered cluster — suggesting the leak came from inside the Spectrum Authority.",
+    "A player's pre-staged cluster goes active and begins routing traffic that was not generated by their team, suggesting either that someone else has the lattice key or that a compromised Node was introduced into their deployment.",
+    "A decommissioned Whisper Node cluster in a demolished district is still active — somehow still harvesting enough power from the rubble to maintain a partial network, and still carrying fragments of encrypted traffic from an operation that ended two years ago."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "war",
+    "loss",
+    "ai",
+    "elf",
+    "corporate",
+    "power",
+    "market",
+    "rain",
+    "tier 2"
+  ]
+}

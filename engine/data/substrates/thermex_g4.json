@@ -1,0 +1,54 @@
+{
+  "id": "019d6143a9e67200ae95e35588612c34",
+  "name": "Thermex-G4",
+  "brand_name": "Thermex",
+  "product_name": "Thermex-G4",
+  "type": "substrate",
+  "aliases": [
+    "G4 layer",
+    "Thermex",
+    "heat skin"
+  ],
+  "category": "composite",
+  "description": "A graphene-based anisotropic thermal management layer engineered by Apex Nanofabrication for precision heat spreading and directional thermal conductivity. Thermex-G4 is manufactured as a thin composite sheet — typically 0.3mm to 1.2mm — with graphene planes aligned to channel heat laterally at rates exceeding copper while remaining thermally resistive in the perpendicular axis. It is bonded to heat-generating components using a nano-adhesive interface that eliminates contact resistance.",
+  "properties": [
+    "anisotropic thermal conductivity",
+    "ultra-low perpendicular conductivity",
+    "electrical conductivity",
+    "low mass",
+    "chemical stability",
+    "high operating temperature ceiling",
+    "conformable bonding surface"
+  ],
+  "developers": [
+    "Apex Nanofabrication",
+    "Tessera Materials"
+  ],
+  "applications": [
+    "processor and compute core cooling in high-density data stacks",
+    "power electronics thermal management",
+    "SNT-interface heat dissipation layers",
+    "aerospace thermal protection liners",
+    "high-cycle weapon system cooling"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ2,800 per m²",
+  "story_hooks": [
+    "Thermex-G4 is going missing from Apex Nanofabrication's supply chain in small enough quantities to avoid automated audit flags — someone is diverting it to build illegal high-power directed energy hardware.",
+    "A Tier 3 technician discovers that inferior thermal paste knockoffs are being sold in Thermex-G4 packaging, causing cascading compute failures across a district's shared infrastructure nodes.",
+    "Military-grade Thermex-G4 variants capable of handling reactor-adjacent heat loads have appeared in civilian markets, suggesting a serious breach in restricted material distribution."
+  ],
+  "tags": [
+    "composite",
+    "substrate",
+    "weapon",
+    "war",
+    "ai",
+    "power",
+    "compute",
+    "market",
+    "energy",
+    "tier 3",
+    "tier 4"
+  ]
+}

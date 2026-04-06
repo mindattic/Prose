@@ -1,0 +1,102 @@
+{
+  "id": "019d6143a8927c7f9f122347617f0739",
+  "type": "faction",
+  "name": "The Hollow Census",
+  "aliases": [
+    "The Uncounted",
+    "Census Ghosts",
+    "Zeroes"
+  ],
+  "motto": "What cannot be measured cannot be owned.",
+  "description": "The Hollow Census emerged from a specific bureaucratic catastrophe in 2181, when TESSERA CORPONATION and PALLADIAN CONSTRUCTION jointly lobbied the Meridian 88 Civic Administration to reclassify approximately 340,000 Shelf residents as 'infrastructural dependents' rather than tiered citizens — stripping them of neural registry numbers, healthcare subsidies, and legal standing in a single administrative stroke. The people affected were not killed, not relocated. They were simply deleted from the ledger. A former TESSERA data compliance officer named Sable Orrin, herself flagged for reclassification after a whistleblower inquiry, began coordinating the uncounted through encrypted dead-drops embedded in public transit firmware. What started as mutual aid and document forgery became something harder and more deliberate.",
+  "ideology": "The Hollow Census holds that personhood under corporate sovereignty is fundamentally a data problem — and therefore a data solution. They reject the premise that tiered citizenship reflects any meaningful human hierarchy; instead they see it as an access control system imposed by entities that benefit from a permanent underclass of unaccountable labor. Their goal is not to overthrow the tier system outright but to make it impossible to enforce — to flood the registry with so many reinstated, forged, and contested identities that corponations cannot reliably distinguish their property from their people. They are pragmatists about this: ideology is the paperwork you file when the system won't let you file anything else.",
+  "territory": "Primarily The Shelf, where their archive nodes are concealed inside decommissioned PALLADIAN CONSTRUCTION utility conduits. Secondary operations in Old Harbor's unregistered housing blocks and a rotating safe-house network in The Laceworks. They maintain a single above-ground liaison office in the Oxidian Market under the cover name 'Meridian Heritage Documentation Services.'",
+  "leadership": "Flat cell structure organized around 'Auditors' — senior members who oversee specific functions such as archival, surgical, legal, and counter-surveillance. No single leader is acknowledged publicly.\n\nundefined: \n\nundefined: \n\nundefined: ",
+  "methods": [
+    "Counter-registry operations: maintaining a shadow database of erased and reclassified individuals with full documentation histories",
+    "Neural ID surgery: scrubbing compromised augmentation signatures and installing compliant replacements that pass corporate biometric scans",
+    "Document fabrication: producing civic papers, tier certificates, and neural registry confirmations indistinguishable from official TESSERA-compliant originals",
+    "The Recount: periodic underground census operations in The Shelf and Old Harbor, results leaked to press and Quorum dissidents",
+    "Legal insurgency: filing nuisance suits, regulatory complaints, and audit triggers against corponations through anonymous proxies",
+    "Firmware dead-drops: embedding encrypted communications in public transit and utility systems throughout The Shelf",
+    "Identity resurrection: full legal reinstatement of erased individuals using a combination of forged documents and exploited bureaucratic loopholes"
+  ],
+  "resources": [
+    "Extensive archive of pre-reclassification civic records dating to 2174",
+    "Neural augmentation surgical suite aboard a mobile freight platform",
+    "A network of sympathetic Meridian Quorum junior administrators who leak regulatory data",
+    "Proprietary software for replicating TESSERA and ZHENG-DAO BIOELECTRIC biometric compliance signatures",
+    "Several decommissioned PALLADIAN CONSTRUCTION utility conduits repurposed as hardened data storage",
+    "A small but reliable funding stream from anonymous donors believed to include at least one Meridian Core law firm"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "",
+      "type": "",
+      "description": "TESSERA is the primary architect of the reclassification policies the Hollow Census exists to fight. The corponation has deployed at least two internal security operations to locate Sable Orrin and seize the archive nodes, both unsuccessful. TESSERA officially denies the Hollow Census exists as an organized entity, classifying their activities as 'isolated data fraud.'",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "Palladian's development contracts in The Shelf depend on a pliable, unregistered labor pool. The Hollow Census's reinstatement operations directly threaten that model by giving workers legal standing to refuse unsafe conditions. Palladian has quietly funded counter-operations through intermediaries.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "A minority bloc within the Quorum actively leaks regulatory data to the Hollow Census and has twice cited Recount figures in formal sessions to embarrass TESSERA-aligned representatives. The majority of the Quorum considers the Census a liability and will not acknowledge them publicly.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "Both factions operate in The Shelf and share a constituency of erased or marginalized residents, but their methods create friction. The Severance Bloc's willingness to use lethal force occasionally burns the legal and diplomatic cover the Hollow Census depends on. They cooperate on specific operations when interests align and avoid each other otherwise.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Hollow Census occasionally purchases raw identity data and transit firmware access from Seam Registry operators. The relationship is purely commercial and both sides prefer it that way.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "ZHENG-DAO's neural compliance architecture is the technical backbone of the tier system's enforcement. The Census's ability to spoof their biometric signatures is an ongoing security embarrassment that ZHENG-DAO has been quietly escalating resources to address.",
+      "tags": []
+    }
+  ],
+  "narrative_function": "",
+  "story_hooks": [
+    "A player receives a forged neural ID from a contact — only to discover it belongs to someone the Hollow Census listed as deceased, and that person is now very much alive and very upset about their identity being in circulation.",
+    "The Hollow Census's next Recount has turned up a statistical anomaly: an entire sub-block of The Shelf appears to have been pre-emptively erased from official records before any reclassification order was filed, suggesting someone inside the Civic Administration is running a future purge the Census hasn't yet identified.",
+    "Prem Vasili's mobile clinic has gone dark. The last signal from his freight hauler placed it somewhere beneath Substation Null. The Census needs someone who isn't in any registry at all to go find out why.",
+    "Oksana Drei has located a genuine procedural loophole in TESSERA's original reclassification filing that would legally invalidate the 2181 action for roughly 80,000 people — but exploiting it requires a physical document stored in the Vantage Meridian Corporate Campus records vault.",
+    "Someone is selling what appears to be Hollow Census surgical protocols to a LAZARUS PHARMACEUTICALS subsidiary, which is using them not to help the unregistered but to create untraceable black-market bodies for organ harvesting."
+  ],
+  "tags": [
+    "faction",
+    "violence",
+    "combat",
+    "weapon",
+    "war",
+    "identity",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "control",
+    "surgery",
+    "clinic",
+    "harbor",
+    "market",
+    "dark",
+    "shadow",
+    "shelf",
+    "old harbor"
+  ]
+}

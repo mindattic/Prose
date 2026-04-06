@@ -1,0 +1,45 @@
+{
+  "id": "019d6143aa387110b5c2c6f3b7b2094c",
+  "name": "Carrion Defense Works Autonomous Forensic Analysis System",
+  "brand_name": "Carrion",
+  "product_name": "Carrion Defense Works Autonomous Forensic Analysis System",
+  "type": "technology",
+  "aliases": [
+    "AFAS",
+    "Crime Bot",
+    "Scene Reader",
+    "Carrion Detective"
+  ],
+  "subcategory": "computing",
+  "description": "An AI-powered forensic analysis system that can process a crime scene autonomously — collecting evidence, analyzing materials, reconstructing events, and generating a preliminary investigation report — without human forensic specialists. The AFAS deploys a suite of sampling drones, spectroscopic scanners, and evidence collection robots that systematically process a scene while an AI core analyzes the data in real-time. The system can process a standard crime scene in 2 hours versus the 8-12 hours required by human forensic teams, and its analysis is free of human cognitive biases.",
+  "tier_availability": "Tier 3+",
+  "developers": [
+    "CARRION DEFENSE WORKS"
+  ],
+  "base_technologies": [
+    "Autonomous evidence collection robotics",
+    "AI forensic pattern analysis",
+    "Real-time crime scene reconstruction"
+  ],
+  "enables": [
+    "Rapid automated crime scene processing",
+    "Bias-free forensic analysis",
+    "Evidence collection in hazardous environments",
+    "Simultaneous multi-scene processing capability"
+  ],
+  "social_impact": "The AFAS has improved forensic processing speed but has raised concerns about the reduction of human judgment in criminal investigation. The AI identifies evidence patterns and reconstructs events based on statistical models, but it cannot exercise the intuition and contextual understanding that experienced human investigators bring. Defense attorneys have successfully challenged AFAS-only investigations by arguing that algorithmic analysis cannot replace human professional judgment.",
+  "story_hooks": [
+    "An AFAS processing a crime scene has identified evidence that contradicts the apparent narrative — the AI's reconstruction shows that the scene was staged, with evidence deliberately placed to create a false sequence of events.",
+    "An AFAS has been compromised to contaminate crime scenes rather than analyze them — the evidence collection drones have been depositing planted evidence at every scene they process."
+  ],
+  "tags": [
+    "computing",
+    "technology",
+    "crime",
+    "ai",
+    "robot",
+    "power",
+    "drone",
+    "tier 3"
+  ]
+}

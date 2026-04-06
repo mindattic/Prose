@@ -1,0 +1,67 @@
+{
+  "id": "019d6143a85d798bba7201ef6f636b3f",
+  "name": "Ironclad Agrisystems Hemostatic Grain Pack",
+  "brand_name": "Ironclad",
+  "product_name": "Ironclad Agrisystems Hemostatic Grain Pack",
+  "type": "equipment",
+  "aliases": [
+    "The Harvest",
+    "Grain Bag",
+    "Field Salt"
+  ],
+  "category": "medical",
+  "description": "The Hemostatic Grain Pack is an agricultural-industrial crossover product that has found its most significant market not in the crop management applications for which it was nominally designed but in the trauma medicine of Meridian 88's outer ring. The Pack consists of a sealed breathable pouch containing three hundred grams of modified zeolite granules — a mineral compound originally developed by Ironclad Agrisystems for soil moisture management in high-yield hydroponic systems. The granules have been functionalized with a hemostatic coating derived from a chitosan-analog compound that Ironclad produces as a byproduct of its fungal protein processing lines. When packed into a wound, the granules absorb blood and interstitial fluid at approximately eight times the rate of unmodified gauze, and the chitosan-analog coating activates the clotting cascade locally, producing rapid hemostatic effect in wounds that would otherwise bleed out before conventional intervention could be applied. The Pack can be removed without granule fragmentation, and the zeolite matrix breaks down to non-toxic residue within seventy-two hours of tissue contact.\n\nIronclad Agrisystems has never formally marketed the Hemostatic Grain Pack as a medical device. Its product documentation describes it as a 'moisture management and substrate stabilization material' with a secondary notation that it has demonstrated hemostatic properties in agricultural injury contexts. This framing is deliberate: it keeps the product outside the medical device regulatory framework that would require clinical trials, manufacturing certification, and Meridian 88's notoriously slow approval process. The result is a product that is cheaper, faster to produce, and more widely available than any licensed hemostatic agent in the city — and that works, by most field accounts, as well or better than products that cost four times as much and require a licensed distributor.\n\nIn the outer ring, the Hemostatic Grain Pack is as common as bandage wrap, sold in hardware stalls and agricultural supply points alongside the other Ironclad products that keep the outer ring's vertical farms and hydroponic blocks running. It has developed a folk medical reputation that far exceeds its official profile — experienced outer-ring medics have refined application techniques, developed protocols for wound packing depth and granule density, and documented complication patterns that Ironclad's own research division has never formally studied. This informal clinical knowledge base, passed between medics without institutional support, is arguably the most sophisticated field medicine literature in the outer ring.",
+  "manufacturer": "IRONCLAD AGRISYSTEMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Functionalized zeolite granule matrix",
+    "Chitosan-analog hemostatic coating",
+    "High-rate interstitial fluid absorption",
+    "Local clotting cascade activation",
+    "Non-fragmentation granule architecture",
+    "Biodegradable zeolite tissue residue breakdown"
+  ],
+  "specifications": {
+    "granule_weight": "300g per pack",
+    "absorption_rate": "Approximately 8x unmodified gauze by volume",
+    "hemostatic_mechanism": "Chitosan-analog clotting cascade activation",
+    "residue_breakdown": "72 hours to non-toxic residue in tissue contact",
+    "removal_profile": "Clean removal without granule fragmentation",
+    "pack_material": "Breathable agricultural-grade sealed pouch",
+    "shelf_life": "4 years sealed / 18 months opened",
+    "cost": "Significantly below licensed hemostatic agent market price",
+    "regulatory_classification": "Agricultural moisture management material (not classified as medical device)",
+    "contraindications": "Not validated for intracranial or intraocular use"
+  },
+  "tactical_use": "Packed directly into penetrating wounds, lacerations, or blast injury cavities where hemorrhage control is required and conventional hemostatic agents are unavailable or cost-prohibitive. The medic opens the pack, pours or presses granules into the wound cavity to depth, and applies external pressure for ninety seconds to allow the chitosan-analog to activate. The granule matrix conforms to wound geometry better than rigid dressings. For deep or irregular wounds, experienced medics use a secondary gauze layer over the granules to prevent surface displacement during transport. Removal is performed by irrigation rather than dry extraction, which loosens the granule matrix from clotted surfaces without reopening the wound. Field protocols for the Pack are not officially documented; they are passed between medics through direct instruction.",
+  "cultural_context": "The Hemostatic Grain Pack is the outer ring's most honest piece of medical equipment: it does not pretend to be anything other than what it is, it costs what people can actually pay, and it is available where people actually are. Its agricultural origin is not concealed — Ironclad's branding is on every pouch — and in the outer ring this is not a source of embarrassment but of a kind of solidarity. The inner ring uses licensed hemostatic agents manufactured in sterile facilities by companies with medical credentials. The outer ring uses grain bags from the same company that makes their hydroponic substrates. This is understood as a fact of geography rather than a scandal, and the informal medical knowledge base that has grown up around the Pack — the folk protocols, the complication patterns, the application refinements — is regarded with genuine pride by the medics who maintain it. The Pack has also become a minor political object: reformers point to it as evidence that Meridian 88's medical regulatory system is failing the outer ring, while Ironclad Agrisystems' lobbying arm quietly ensures that the regulatory gap that allows the product to exist without medical classification remains intact.",
+  "known_users": [
+    "Outer-ring field medics and community responders",
+    "Agricultural workers in outer-ring hydroponic facilities",
+    "Gang-affiliated medical personnel",
+    "Independent fixers operating in outer-ring territory",
+    "Reformist medical advocates using it as a regulatory case study"
+  ],
+  "story_hooks": [
+    "A batch of Hemostatic Grain Packs circulating in the outer ring has a chitosan-analog coating that is behaving differently from the standard formulation — wounds treated with it are closing faster than the documented rate, but several patients have developed localized tissue changes around the wound site that no outer-ring medic has seen before.",
+    "Ironclad Agrisystems' lobbying arm is pushing a new agricultural materials classification that would, as a side effect, bring the Grain Pack under medical device regulation and make it illegal to sell without a medical distributor license. The outer-ring medics who depend on it need someone to find out who is funding the push and why.",
+    "A respected outer-ring medic who maintained the most comprehensive informal protocol documentation for the Grain Pack has disappeared. Her notes — years of field observations that exist nowhere else — are missing with her.",
+    "An inner-ring licensed hemostatic agent manufacturer has quietly purchased a minority stake in Ironclad Agrisystems. The terms of the deal include a provision that Ironclad will reformulate the Grain Pack's chitosan-analog coating. The reformulation will make it less effective. Nobody in the outer ring has been told."
+  ],
+  "tags": [
+    "medical",
+    "equipment",
+    "war",
+    "gang",
+    "ai",
+    "control",
+    "clinic",
+    "injury",
+    "market",
+    "bar",
+    "rain",
+    "chase",
+    "tier 1"
+  ]
+}

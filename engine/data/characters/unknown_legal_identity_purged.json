@@ -1,0 +1,251 @@
+{
+  "id": "019d6143a70c70daa9812b24090b7dae",
+  "type": "character",
+  "name": "Unknown (legal identity purged)",
+  "aliases": [
+    "Pixel",
+    "Pix",
+    "that loud kid next door"
+  ],
+  "species": "human",
+  "gender": "non-binary",
+  "pronouns": "they/them",
+  "role": "Neighbor / tech scavenger / reluctant sidekick / Kyle's closest friend",
+  "age": 19,
+  "status": "alive",
+  "location": "The Shelf — Level 12, Unit 1207, directly adjacent to Kyle's unit. The wall between them is thin enough that Kyle can hear Pixel's music, soldering iron, and running commentary on whatever they're disassembling.",
+  "description": "Pixel is a controlled explosion of salvaged technology and nervous energy. They're slight — 5'6\", wiry,\nthe kind of build that comes from skipping meals when a project gets interesting. Their skin is a light\nbrown, perpetually smudged with solder flux and thermal paste, and their natural hair (what's left of\nit) is buzzed short on the right side, grown out in uneven dark curls on the left, and streaked with\na color that changes monthly depending on what dye they've scavenged. Currently: a violent, glitchy\nmagenta that's already fading to pink at the roots.\n\nThe augments are the first thing you notice. Pixel's left eye is a salvaged Axiom Industries corporate\nscanner — matte black, slightly too large for the socket, with a faint amber ring that pulses when it's\nprocessing. It was designed to scan inventory in a warehouse. Pixel repurposed it to read security\nsystems, identify augmentation models, and spot structural weaknesses in hardware. It also gives them\nsplitting headaches when it overclocks, which it does constantly because they pushed it past its specs.\nTheir right hand and forearm are aftermarket — a patchwork prosthetic cobbled from three different\nmanufacturer lines, matte grey with visible seams where the components don't quite match. It works\nbeautifully. It looks like a junk drawer. Their ears are studded with micro-receivers that pick up\nlocal comm frequencies, and there's a thin data-port scar behind their right ear where they hard-jack\ninto systems.\n\nFirst impression: an annoying kid who won't shut up and has too many blinking lights on their body.\nDeeper impression: a desperately clever person who has turned themselves into a Swiss Army knife because\nbeing useful is the only survival strategy they trust.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.4,
+      "id": 0.85,
+      "shadow": 0.6,
+      "mask": 0.8,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Obsolescence — that technology will outpace them and they'll have nothing to offer",
+      "Abandonment — everyone they've attached to has disappeared. They expect Kyle to vanish too.",
+      "Stillness — if they stop moving, stop talking, stop working, the empty space fills with everything they've been outrunning"
+    ],
+    "core_desires": [
+      "To be indispensable — to someone, to anyone. Being needed is the closest thing to being safe.",
+      "To understand Kyle — this anachronistic warrior is a puzzle Pixel can't solve with tech, and that's maddening and magnetic",
+      "To build something that lasts — a device, a system, a relationship — in a world where everything is disposable"
+    ],
+    "coping_mechanisms": [
+      "Talking — constant, rapid, filling every silence because silence is where fear lives",
+      "Building — they process emotion through their hands. Sad? Disassemble a comm unit. Scared? Overclock a scanner.",
+      "Humor — deflecting with jokes is cheaper than therapy and more available",
+      "Self-augmentation — literally rebuilding themselves, piece by piece, as if they can upgrade past their problems"
+    ],
+    "blind_spots": [
+      "They don't understand that Kyle's refusal of augments isn't rejection of Pixel — it's a different philosophy",
+      "They think being useful and being valued are the same thing",
+      "They underestimate their own emotional intelligence — they read people better than they read code, but won't admit it",
+      "They treat their body as a platform, not a home. The headaches, the glitches, the power drain — they ignore all of it."
+    ],
+    "secret": "They found their parents. Six months ago, a deep-net data scrape turned up matching biometric records\nin a NovaCorp offshore manufacturing facility in the Mindanao Economic Zone. Alive. Working. Not\nlooking for their child. Pixel has the facility's address saved in an encrypted file they open\nsometimes at 3 AM and then close without doing anything. They have not told anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense with tech jargon, slang, neologisms. They use technical metaphors for emotional states — 'I'm overclocking,' 'my buffer's full,' 'that's a hard reboot situation.' They've invented personal slang that nobody else uses but everyone on the Shelf has learned to parse. Heavy use of rhetorical questions that they answer themselves.",
+    "cadence": "Rapid-fire, barely pausing for breath. Sentences pile up like components on a workbench. They interrupt themselves, double back, follow tangents, and somehow arrive at the point through the scenic route. When they're scared or lying, they speed up. When they're genuinely processing something emotional, they slow down — and the sudden silence is alarming because it's so rare.",
+    "verbal_tics": [],
+    "example_lines": [
+      "Okay but hear me out — what if, and this is just a concept, a proof-of-concept really — what if your sword had a targeting assist? No? No. Cool. I already built it though, so, just... it's here. If you want it. You don't want it. That's fine.",
+      "You know your problem? You've got legacy hardware running a bleeding-edge moral operating system. The specs don't match. Something's gonna crash.",
+      "I don't sleep, I defragment. It's basically the same thing except less restful and more productive.",
+      "Mrs. Chen says I talk too much, which, statistically speaking, is probably true, but also, counterpoint — have you considered that everyone else talks too little?",
+      "I'm not following you, I'm going the same direction. It's a small Shelf. Coincidences happen. Frequently. At exactly your walking speed.",
+      "I'm fine. Everything's nominal. My eye is just doing that thing where it shows me inventory data for crates that don't exist. It's a feature, not a bug. It's definitely a bug."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Kyle",
+      "type": "neighbor / one-sided friendship / fascination",
+      "description": "Pixel is magnetically drawn to Kyle's anachronism. In a world where everyone is augmented, connected,\nand optimized, Kyle moves through space like a relic — blade, discipline, silence. Pixel finds this\ninfuriating and beautiful. They keep trying to help, offering tech upgrades, tactical data, security\nhacks, and Kyle keeps refusing, and Pixel keeps offering, because the offering is the point. It's how\nthey say \"I see you and I don't want you to die.\" Kyle would describe Pixel as \"the loud neighbor.\"\nPixel would describe Kyle as \"my friend,\" full stop, no qualifications.",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "Mrs. Chen",
+      "type": "surrogate grandmother / employer of sorts",
+      "description": "Mrs. Chen tolerates Pixel the way a building tolerates weather — with endurance and occasional\nstructural complaints. But she also feeds them extra on bad days, lets them sleep in the back of\nthe shop when their unit's power goes out, and once chased off a debt collector with a cleaver on\nPixel's behalf. Pixel maintains her shop's electrical systems, refrigeration, and the ancient point-\nof-sale terminal. They are the closest thing either has to family, disguised as a business arrangement.",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "Sable",
+      "type": "client / cautious professional respect",
+      "description": "Pixel does occasional tech work for Sable — data recovery, device cracking, security analysis.\nSable pays well and on time, which earns Pixel's professional loyalty. But Pixel is also slightly\nterrified of Sable — not because Sable has ever threatened them, but because Sable is so perfectly\ncontrolled that Pixel's pattern-recognition reads them as a closed system. You can't read someone\nwho's decided to be unreadable.",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "Parents (unnamed)",
+      "type": "absent / unresolved",
+      "description": "The wound Pixel built themselves around. Every augment, every skill, every joke is load-bearing\nstructure over the hole where parental love was supposed to go. They don't talk about it. They\ntalk about everything else instead, loudly, at length, to fill the space.",
+      "emotional_core": "",
+      "story_tension": ""
+    }
+  ],
+  "story_hooks": [
+    "Pixel's parents — the Mindanao facility, the choice to make contact or not, what happens if they do",
+    "Pixel's augments failing catastrophically — the scanner eye, the arm. What happens when the machine body breaks?",
+    "Someone powerful noticing Pixel's skills and trying to recruit them — the temptation of corporate stability",
+    "Pixel following Kyle on a job and seeing what he actually does — the violence, the code, the reality behind the quiet neighbor",
+    "Pixel building something genuinely dangerous — accidentally or on purpose — that draws corporate attention to the Shelf",
+    "The neural interface's 'skip' getting worse — losing seconds becoming losing minutes, then hours"
+  ],
+  "narrative_function": "Pixel is Kyle's mirror — same orphan origin, opposite coping strategy. Where Kyle retreated into\ndiscipline and silence, Pixel exploded outward into noise and technology. They represent the question:\nwhat would Kyle have become without Seo? Not worse, necessarily — just different. Pixel survived\nwithout a code, without a mentor, without a sword. They survived by being useful, by being fast, by\nbeing loud enough that no one could ignore them.\n\nPixel also represents the generation that inherited the Consolidation Wars without fighting them.\nThey don't have Kyle's martial trauma or Seo's guilt or Mrs. Chen's grief. They have something\narguably worse: they grew up in the aftermath and were told this was normal. Their rebellion isn't\nphilosophical — it's practical. They scavenge and hack and build because the system wasn't designed\nto include them, so they'll include themselves.\n\nThe question Pixel poses to Kyle: Can you protect someone who doesn't fight the way you do? Can\nyour code accommodate someone whose weapon is a soldering iron instead of a sword?",
+  "augmentations": "",
+  "daily_life": "System.Collections.Generic.Dictionary`2[System.Object,System.Object]",
+  "affiliation": "",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 7,
+      "vitality": 4,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 5,
+      "creativity": 9,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 5,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 6,
+      "transparency_guardedness": 3
+    },
+    "drives": [
+      "Indispensability",
+      "Understanding Kyle",
+      "Building something that lasts"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 4,
+        "response": "Talks faster, builds harder; disassembles something to process the emotion"
+      },
+      "moral": 5,
+      "trust": 4,
+      "desperation": 6
+    },
+    "strengths": [
+      "Creativity",
+      "Curiosity",
+      "Perseverance",
+      "Humor",
+      "Social intelligence"
+    ],
+    "weaknesses": [
+      "Self-regulation",
+      "Prudence",
+      "Perspective",
+      "Honesty",
+      "Humility"
+    ],
+    "tags": [
+      "tech-scavenger",
+      "hacker",
+      "neighbor",
+      "sidekick",
+      "self-augmented",
+      "orphan"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Be useful — being needed is the closest thing to being safe",
+      "Fill every silence with words because silence is where fear lives",
+      "Offer Kyle tech upgrades regardless of how many times he refuses",
+      "Process emotion through hands — sad means disassemble, scared means overclock",
+      "Never discuss parents unless cornered",
+      "Maintain all of Mrs. Chen shop systems as non-negotiable priority",
+      "Self-augment to upgrade past problems rather than confront them"
+    ],
+    "escalation_ladder": [
+      "Rapid-fire chatter and deflecting jokes",
+      "Technical problem-solving at increasing intensity",
+      "Sudden uncharacteristic silence that alarms everyone",
+      "Reckless action — overclocking, hard-jacking, pushing hardware past specs",
+      "Full emotional shutdown disguised as a system diagnostic"
+    ],
+    "interpersonal_modes": {
+      "kyle": "Magnetic fascination with his anachronism; offers help as a way of saying I see you and I do not want you to die",
+      "mrs_chen": "Surrogate grandmother relationship disguised as business arrangement; the closest thing to family",
+      "sable": "Professional respect tinged with terror — cannot read a closed system",
+      "parents": "The wound everything else is built around; never discussed, always present",
+      "strangers": "Hyperactive, charming, exhausting — the Swiss Army knife performance"
+    },
+    "stress_responses": {
+      "low": "Increased chatter speed and tangent frequency",
+      "medium": "Disassembles and reassembles hardware compulsively",
+      "high": "The scanner eye overclocks; headaches intensify; ignores both",
+      "critical": "Goes completely silent — the rarest and most alarming state"
+    },
+    "contradictions": [
+      "Treats their body as a platform rather than a home while ignoring headaches, glitches, and power drain",
+      "Thinks being useful and being valued are the same thing",
+      "Reads people better than code but will not admit it because tech identity is the survival strategy"
+    ],
+    "habits": [
+      "Offers Kyle unsolicited tech upgrades on a near-daily basis",
+      "Maintains Mrs. Chen shop electrical systems, refrigeration, and ancient POS terminal",
+      "Opens encrypted file containing parents location at 3 AM then closes it without acting",
+      "Changes hair dye color monthly based on whatever scavenged dye is available",
+      "Answers own rhetorical questions before anyone else can"
+    ],
+    "breaking_points": [
+      "The scanner eye or prosthetic arm failing catastrophically",
+      "Kyle actually disappearing the way everyone else has",
+      "Being confronted with the parents file by someone who found it",
+      "Building something genuinely dangerous that draws corporate attention to the Shelf"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Sentinel": 0.7,
+    "Code Keeper": 0.7,
+    "Protector": 0.6
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

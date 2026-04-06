@@ -1,0 +1,67 @@
+{
+  "id": "019d6143a84e74c292073b9d5e449405",
+  "name": "Arcturus Defense Solutions Atmospheric Breach Torch",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions Atmospheric Breach Torch",
+  "type": "equipment",
+  "aliases": [
+    "ABT",
+    "Breach Candle",
+    "The Torch",
+    "Arcturus Cutter"
+  ],
+  "category": "utility",
+  "description": "The Atmospheric Breach Torch is a directed thermal cutting tool designed for forced entry through the reinforced composite and ballistic-grade materials used in corporate security architecture. Unlike conventional plasma cutters, which require an inert gas supply and careful standoff distance management, the ABT is self-oxidizing — it carries its own oxidizer in a solid-fuel rod format and operates across a wide range of atmospheric conditions including vacuum, high-pressure environments, and chemically contaminated air. The cutting head generates a focused 3,400°C jet approximately 4cm in diameter that penetrates most structural materials in seconds rather than minutes.\n\nThe engineering achievement that separates the ABT from earlier breach torches is the adaptive nozzle geometry. Conventional cutting torches produce a fixed flame profile that becomes inefficient as material composition changes — encountering a steel reinforcement bar mid-cut through synthecrete requires a different energy distribution than continuous substrate. The ABT's nozzle adjusts continuously based on optical and thermal feedback from the cut face, maintaining optimal energy density regardless of what the material behind the surface turns out to be. This is critical in Meridian 88's older structures, where decades of renovation have layered incompatible materials in ways that no blueprint accurately reflects.\n\nARCTURUS DEFENSE SOLUTIONS developed the ABT for military breaching teams and sells it under strict licensing to law enforcement and corporate security units. The device is explicitly prohibited for civilian ownership in most of Meridian 88's administered districts. This has not prevented a substantial black market supply, primarily sourced from military surplus channels that ARCTURUS itself is suspected of tolerating because surplus units are production overruns that would otherwise be destroyed. Field-stripped versions with the serial number arrays removed are called Blind Torches.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Self-oxidizing solid-fuel combustion",
+    "Adaptive nozzle geometry",
+    "Optical and thermal cut-face feedback",
+    "High-temperature directed jet formation",
+    "Multi-substrate calibration"
+  ],
+  "specifications": {
+    "dimensions": "55cm length, 12cm diameter at fuel chamber",
+    "weight": "3.8 kg with full fuel rod",
+    "operating_temperature": "3,400°C at cut face",
+    "cut_jet_diameter": "4 cm",
+    "fuel_rod_duration": "90 seconds continuous burn per rod",
+    "rods_per_standard_kit": "4",
+    "penetration_rate": "12mm per second through standard synthecrete, 6mm per second through ballistic composite, 18mm per second through structural steel",
+    "operating_environment": "Atmosphere-independent (self-oxidizing)",
+    "nozzle_adjustment_cycle": "Continuous, 40Hz feedback loop",
+    "standoff_requirement": "0 to 8cm (contact to near-contact operation)"
+  },
+  "tactical_use": "Standard deployment is a three-point cut to remove a door hinge array or create a breach aperture in a wall section. Experienced operators use the ABT to cut through vault doors, security bulkheads, and armored vehicle hulls. The self-oxidizing fuel system makes it the only reliable breach tool in sealed environments like vacuum-rated corporate server rooms and pressurized sub-basement facilities. It is also used to sever cable runs, destroy evidence in hardware form, and — in extremis — as an anti-materiel tool against lightly armored targets. The 90-second rod duration requires operators to plan cuts carefully; running out mid-breach is a known operational failure mode.",
+  "cultural_context": "The ABT's prohibition status makes it a marker of serious criminal or paramilitary intent — carrying one is not the act of someone who wants to maintain deniability. Among professional breach teams, the ABT is treated with the respect of a precision instrument and the wariness of a liability. Blind Torches (serial-stripped units) are preferred on jobs where leaving the tool behind is part of the plan. There is a professional culture around ABT use that emphasizes discipline and preparation — operators who waste fuel rods or make unnecessary cuts are considered amateurs regardless of their other skills.",
+  "known_users": [
+    "ARCTURUS Defense Solutions military breaching units",
+    "Licensed corporate security assault teams",
+    "Black-market acquisition specialists",
+    "Paramilitary extraction teams",
+    "High-end safe-cracking contractors"
+  ],
+  "story_hooks": [
+    "A breach site shows ABT cut marks on a vault that was supposedly opened with the correct access code — someone used the torch after entering legitimately, suggesting they needed to destroy something inside that wasn't supposed to be there.",
+    "A shipment of ABT fuel rods has been routed through a legitimate construction supply chain using falsified Palladian Construction manifests — the players are hired to intercept it before it reaches its destination, but the buyer turns out to be someone unexpected.",
+    "An ARCTURUS whistleblower claims the company has been deliberately overproducing ABTs and routing the surplus to black market channels through a series of shell logistics companies — the players must decide whether to help expose this or exploit it.",
+    "The players are trapped in a sealed facility and the only way out requires breaching a pressure-rated bulkhead — the ABT they have is a Blind Torch with an unknown number of fuel rods remaining, and they won't know until they start cutting."
+  ],
+  "tags": [
+    "utility",
+    "equipment",
+    "war",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "market",
+    "bar",
+    "vehicle",
+    "armor",
+    "energy",
+    "tier 3"
+  ]
+}

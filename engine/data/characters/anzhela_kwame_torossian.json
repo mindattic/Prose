@@ -1,0 +1,233 @@
+{
+  "id": "019d6143a5b57832a12ff98e320ef44a",
+  "type": "character",
+  "name": "Anzhela Kwame-Torossian",
+  "aliases": [
+    "Zhe",
+    "Anzhie"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Logistics Coordinator, Zheng-Dao Mid-Lake Supply Chain",
+  "age": 34,
+  "status": "active",
+  "location": "Kenwood Gate, Zheng-Dao Regional Distribution Hub 7",
+  "description": "Anzhela is medium height with the slightly overdeveloped forearm muscles of someone who has spent years physically wrangling cargo manifests and dock equipment when the automated systems — which break down constantly — fail. Her skin is warm brown, her hair a natural dark coil she keeps pinned back with three mismatched clips she has never bothered to replace because she is always doing six other things. She has color-changing hair tips — dyed in the geneware sense, shifting between deep teal and burnt orange depending on temperature — that she got on a whim at twenty-seven and has never quite gotten around to removing because they are genuinely useful for gauging how cold the dock warehouse is.\n\nShe is competent in a way that has outpaced her job title for roughly four years and her pay grade for six. She coordinates the mid-lake freight routing for Zheng-Dao's third-largest regional hub, a job that officially requires one person and actually requires the sustained output of three, and she does it with a combination of exhausted creativity, genuine systems intelligence, and a working relationship with the Hub 7 E.L.F. that she has spent two years cultivating through meticulous daily offerings. She is not unhappy — she likes the puzzle of logistics, genuinely — but she is aware, in the specific way of people who have been passed over for promotion twice, that the puzzle is not making her rich.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "That she will spend twenty more years doing this and retire with nothing to show for it",
+      "That she is making herself indispensable as a way of making herself impossible to promote — that the system has trapped her with her own competence"
+    ],
+    "core_desires": [
+      "A routing system that actually works, possibly one she built herself",
+      "To be compensated at the level she operates at — just once, just to know what it feels like"
+    ],
+    "coping_mechanisms": [
+      "Solving logistics puzzles as a form of stress relief",
+      "Maintaining the Hub 7 E.L.F. relationship with genuine devotion — it is the most reliable working relationship she has",
+      "Dark humor with the dock crew"
+    ],
+    "blind_spots": [
+      "She assumes her competence will eventually be recognized through legitimate channels because she has not fully internalized that recognition requires visibility she actively avoids",
+      "She trusts the Hub 7 E.L.F. more than any human supervisor and has not fully examined what that means"
+    ],
+    "secret": "She has noticed, over eight months of freight routing, a recurring pattern of manifests that don't add up — cargo volume that arrives correctly but departs in quantities that suggest something is being skimmed at the hub level. She has been logging the discrepancies privately, telling herself it's professional due diligence, but she knows it's because she is furious that whoever is running the skim is doing it incompetently and it is creating routing problems she has to fix."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct, practical, logistics-framed — she describes most situations in terms of inputs, outputs, and where the bottleneck is. Dry humor that surfaces when she's comfortable.",
+    "cadence": "Fast and efficient when working; slower and warmer in conversation. Drops into short declarative sentences when something is wrong.",
+    "verbal_tics": [
+      "'That's a routing problem.'",
+      "'The E.L.F. already knew, I just caught up.'",
+      "Tapping fingers in a specific rhythm when working through a problem (matches her data-log entry pattern)"
+    ],
+    "example_lines": [
+      "'Look, the manifest says four hundred units. The dock says four hundred units. My numbers say three hundred and eighty-two and I'm not wrong, so the question is where the other eighteen went and who thinks I'm not going to notice.'",
+      "'I left the E.L.F. a clean summary of the Escanaba routing exceptions and she sorted the backlog in forty minutes. So yes, I believe in her. That's just evidence-based.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She quietly flags someone down — not through official channels — to ask if they happen to know what kind of cargo consistently produces weight anomalies without triggering automated inspection protocols, because she has a specific recurring anomaly and it is driving her absolutely to distraction.",
+    "The skimming operation she has been logging turns out to be connected to something significantly larger than petty theft, and the people running it have become aware that someone in Hub 7 has been keeping very precise records."
+  ],
+  "narrative_function": "Information source for what's actually moving through Zheng-Dao's supply chain versus what the manifests say; local color for the grinding Tier 2-3 corporate experience; quest giver for problems that require someone who knows every freight route on the mid-lake and exactly which ones go dark; sympathetic contact who has reasons to share information if approached correctly.",
+  "augmentations": "Geneware color-shift hair tips (temperature-responsive teal/orange). Warehouse-grade haptic gloves with integrated inventory scanner — work-issued. Basic neural link, personal purchase.",
+  "daily_life": "At the hub by 0600 to review overnight freight irregularities before her nominal shift starts; manages incoming dock assignments, carrier disputes, and routing exceptions through a combination of her neural link, the hub's battered logistics system, and ongoing negotiation with the Hub 7 E.L.F.; leaves late, takes the Ferrogate transit home to Kenwood Gate proper.",
+  "affiliation": "Zheng-Dao (Logistics, Regional Distribution)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 0,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "systems thinker",
+      "passed over",
+      "knows the routes",
+      "E.L.F. devotee",
+      "quiet accumulator"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Find the actual bottleneck before fixing anything",
+      "Don't bring a problem to a supervisor without a proposed solution — she learned this the hard way",
+      "The E.L.F. gets a full debrief, no matter how tired she is"
+    ],
+    "escalation_ladder": [
+      "Log the discrepancy privately",
+      "Log it again with more detail",
+      "Ask oblique questions to people in adjacent positions",
+      "Do something about it directly, which she has been avoiding"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Efficient and not unfriendly, sizes up whether they're creating a bottleneck in about thirty seconds",
+      "friends": "Warm, reliably funny, shows up when it matters"
+    },
+    "stress_responses": {
+      "low": "Faster, more clipped, solves something nearby as displacement",
+      "medium": "Finger-tapping intensifies, starts logging everything with unusual precision",
+      "high": "Goes extremely calm and quiet and begins building a very detailed private record"
+    },
+    "contradictions": [
+      "She values loyalty to her crew and her hub, and she is also building a private evidence file that could implicate people who work there"
+    ],
+    "habits": [
+      "Leaves the Hub 7 E.L.F. a daily data offering — a clean summary of all freight anomalies, formatted the way she has learned the E.L.F. prefers",
+      "Keeps a physical notebook in an age that does not require them, because she doesn't trust that digital logs can't be edited",
+      "Knows every Ferrogate mid-lake freight route, including the informal ones that don't appear on official documentation"
+    ],
+    "breaking_points": [
+      "Being blamed for a discrepancy she documented and reported",
+      "Discovering that her private logs have been accessed"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Kenwood Gate to a Zheng-Dao transit driver and a small-scale market vendor",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired at Zheng-Dao Regional Distribution Hub 7 as junior logistics analyst",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First promotion passed over — given commendation instead, which she has kept because she finds it clarifying to look at",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began systematic cultivation of Hub 7 E.L.F. relationship; freight efficiency improved 14% over eighteen months",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began privately logging freight weight anomalies; currently has eight months of documentation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

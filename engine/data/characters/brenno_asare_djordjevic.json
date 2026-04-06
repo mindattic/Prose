@@ -1,0 +1,169 @@
+{
+  "id": "019d6143a5cb7ada84dcaec731bfc55a",
+  "type": "character",
+  "name": "Brenno Asare-Djordjevic",
+  "aliases": [
+    "Bren",
+    "The Suit Whisperer"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Tailor and seamstress, Lakeview Neon district",
+  "age": 38,
+  "status": "active",
+  "location": "Lakeview Neon, a narrow second-floor shop above a synth-sake bar called The Peristaltic",
+  "description": "Brenno is lanky and precise, the kind of man who looks slightly annoyed at rest but is actually just concentrating. He has warm-amber skin, dark eyes with geneware irises that shift between deep violet and burnt gold depending on his mood — installed partly for aesthetics, mostly because he wanted to test how clients reacted to them before doing a full commission. His hands are his most important feature: long-fingered, callus-mapped, perpetually holding something — chalk, thread, a measuring tape coiled around two knuckles. He keeps his head shaved and wears a single garnet stud in his left ear that has been there since he was nineteen.\n\nHe works at the seam between tiers: his clients are Tier 2 people who want to look Tier 3, and occasional Tier 3 people who want something that doesn't look corporate-issued. He is perceptive about bodies and what people want their bodies to say, which makes him an accidental confessor — clients will tell him things in the fitting room they'd tell nobody else. He is not a gossip, but he is an archivist. He remembers everything.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.4,
+      "id": 0.6,
+      "shadow": 0.4,
+      "mask": 0.7,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "being seen as merely serviceable — talented enough to be useful, not enough to matter",
+      "losing the use of his hands"
+    ],
+    "core_desires": [
+      "to make something that outlasts him — a piece of work that gets passed down",
+      "to be understood without having to explain himself"
+    ],
+    "coping_mechanisms": [
+      "Retreats into technical problem-solving when emotionally overwhelmed — if he's recutting a seam for the fifth time, something is wrong",
+      "Dry humor as distance-keeping"
+    ],
+    "blind_spots": [
+      "Assumes that understanding someone's surface (their body, their clothing choices) means he understands them — misses emotional subtexts",
+      "Undercharges chronically because he'd rather have a good client than a profitable one"
+    ],
+    "secret": "He has been slowly, carefully reproducing — from memory and old photographs — the entire wardrobe of his grandmother who died in the Irkalla flooding of 2189. He has no plan for what to do with these garments when finished. He thinks maybe he's just trying to make her real again."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and image-rich. Uses clothing and construction metaphors for everything. Intermittent Twi and Serbian phrases, usually terms of endearment or mild curses.",
+    "cadence": "Measured, with long pauses while he thinks. Can be surprisingly cutting when he finally finishes a sentence.",
+    "verbal_tics": [
+      "Starts sentences with 'The thing is—' when he's about to say something actually true",
+      "Refers to difficult people as 'a bad fabric' or 'cheap interfacing'"
+    ],
+    "example_lines": [
+      "'The thing is — you're not a large, you're just being measured by someone who doesn't understand your proportions. They're different things.'",
+      "'She told me everything in the second fitting. Always the second fitting. First time they're nervous. Third time they've decided. Second time — that's when they actually talk.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client left behind a jacket with a hidden pocket containing a sealed data chip — the client hasn't come back to collect it and it's been six weeks. Brenno doesn't know what's on it but he's starting to think he should find out before someone comes looking.",
+    "A corporate procurement agent from Tessera has offered him a contract to make uniforms for a new Lakeview Neon development project — the pay is extraordinary. Accepting it would mean closing his independent commissions for eight months and dressing the people responsible for gentrifying his neighborhood."
+  ],
+  "narrative_function": "Information source — knows the secrets of half the block from fitting-room confessions. Can be a quest-giver related to a client in trouble. His shop is a neutral ground that different types of people pass through.",
+  "augmentations": "Geneware patterned irises (violet-to-gold shift). Micro-stabilizers in both hands (Tier 2 medical, prevents tremor — installed after a nerve injury from a sewing machine accident at 24). Subdermal thimble caps on three fingers of each hand.",
+  "daily_life": "Opens at 10:00, rarely leaves the shop before 22:00. Mornings are admin and cutting; afternoons are fittings; evenings are his real work — the intricate construction he only does when the street noise drops to manageable. Eats from Ogechi's cart three times a week when he can get down there.",
+  "affiliation": "Independent; informal referral network with two other tailors in the Burnished Market",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 0,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "craftsperson",
+      "keeper of secrets",
+      "perceptive",
+      "grief-haunted",
+      "aesthete"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never take a commission from someone whose body language reads as dishonest — he will always be blamed when the relationship sours",
+      "Protect the fitting room's confidentiality as an absolute rule"
+    ],
+    "escalation_ladder": [
+      "Pretends not to have heard the problematic thing",
+      "Redirects to technical discussion of the garment",
+      "States his position in one sentence and goes quiet",
+      "Asks the person to leave and completes their order through a drop-box"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional, slightly formal, uses clothing assessment as a social crutch — he is always doing something with his hands to avoid direct eye contact",
+      "friends": "Unexpectedly warm and funny, will cook for you badly and be offended when you notice, remembers every significant thing you've ever said to him"
+    },
+    "stress_responses": {
+      "low": "Becomes over-particular about irrelevant details. Re-pins things that were already correct.",
+      "medium": "Works through the night. Emerges exhausted and briefly gentle.",
+      "high": "Goes to the roof with the grandmother garments and sits with them in the dark."
+    },
+    "contradictions": [
+      "Claims not to care about beauty for its own sake — only about function and fit — but will spend unpaid hours perfecting something no one will notice"
+    ],
+    "habits": [
+      "Hums Serbian folk songs under his breath while cutting, completely unconsciously",
+      "Checks his hand stabilizers against a fine thread test every morning before opening"
+    ],
+    "breaking_points": [
+      "Anyone touching his grandmother project without permission",
+      "The micro-stabilizers failing — this is a recurring nightmare"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9,
+    "Con Artist": 0.9,
+    "Grifter": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

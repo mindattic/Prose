@@ -1,0 +1,102 @@
+{
+  "id": "019d6143a90e7392b7c94e303db5b2f6",
+  "type": "place",
+  "name": "Bay View Docks",
+  "aliases": [
+    "Bay View",
+    "The Docks",
+    "BV",
+    "South Shore"
+  ],
+  "description": "Bay View was a working-class neighborhood built around a rolling mill, and the rolling mill closed in 1929, and Bay View kept being working class because working-class neighborhoods don't stop being working class just because the work changes. The mill is gone. The lakefront is still here, which in 2200 means Bay View has something valuable: direct water access in a district where the housing is cheap enough for Tier 1-2 residents. This combination — lakefront plus poverty — has made Bay View the Corridor's most active informal port. Not the automated cargo platforms. Not the licensed commercial docks. The kind of port where small boats arrive at odd hours with cargo that doesn't have customs stamps, and the neighbors don't see anything because seeing things is a luxury that requires someone to report to.\n\nThe residential streets still follow the grid laid out in the 1870s, but the houses on them have been modified beyond their original architects' recognition. A typical Bay View home is a 19th-century frame structure with a 21st-century solar skin, a 22nd-century atmospheric processor bolted to the roof, and a basement that serves as either a workshop, a smuggling cache, or both. The yards have been converted to food production — hydroponic racks and protein vats that supplement the residents' nutrient paste rations with something that actually tastes like food. Bay View feeds itself, which is unusual for the lower tiers and provides a degree of independence that the corponations find mildly irritating and the residents find essential.\n\nThe commercial strip along Kinnickinnic Avenue — 'KK' to everyone who lives here — is a dense row of small businesses that have survived every economic transformation since the sovereignty transition: bars that serve actual alcohol (brewed locally, unlicensed, variable quality), repair shops that fix things the manufacturers designed to be replaced, and food stalls that serve the best fish fry in Milwaukee using fish that comes from the lake and requires a degree of courage to eat. KK is where Bay View's social life happens, and the social life of a working-class lakefront neighborhood is loud, communal, and fueled by cheap beer and mutual suspicion of anyone who doesn't live here.\n\nThe lakefront itself is Bay View's defining feature and its most dangerous asset. South Shore Park — what's left of it after the lake level rises of the 2060s — is the staging area for the informal port. Boats come in from the lake at night, dock at improvised piers, offload cargo, and leave before dawn. The cargo is everything: medical supplies too expensive to buy through licensed channels, augment components from the Circuit, food that isn't nutrient paste, and occasionally people. The informal port is not organized by any single entity. It's a community operation, maintained by consensus, defended by collective action, and governed by the understanding that if anyone talks, everyone suffers.",
+  "atmosphere": {
+    "sights": [
+      "Century-old houses wearing 22nd-century technology like ill-fitting armor — solar skins, atmospheric processors, antenna arrays",
+      "KK Avenue at night — neon signs, bar light spilling onto sidewalks, people moving between establishments with the unhurried pace of a neighborhood that owns its time",
+      "Hydroponic racks visible in yards and on rooftops, green growth against grey sky",
+      "The informal port at South Shore — improvised piers, small boats, cargo moving in the dark",
+      "The lake from the bluffs — vast, grey, and alive with the running lights of cargo platforms in the distance"
+    ],
+    "sounds": [
+      "KK Avenue — bar noise, live music from open doors, conversation at the volume of people who don't have to whisper",
+      "Lake waves against the improvised piers — a sound that the port operators use to time their operations",
+      "Atmospheric processors humming on rooftops — the mechanical breathing of houses keeping their occupants alive",
+      "Children and dogs — Bay View has both, which is noteworthy because both require resources that lower-tier districts often can't spare",
+      "The occasional low hum of a boat engine approaching South Shore, running quiet, lights off"
+    ],
+    "smells": [
+      "Brewing — several Bay View residents make beer, and the neighborhood smells like it on fermentation days",
+      "Fish fry from KK Avenue — the smell of tradition, courage, and questionable water quality",
+      "Hydroponic growth — the green, wet smell of plants being grown in spaces never designed for agriculture",
+      "Lake air — cleaner here than at Waukegan, still not clean, carrying the mineral smell of deep water and the chemical undertone of what's in it"
+    ],
+    "feel": "Defiant. Bay View knows what it is and doesn't apologize. The houses are old, the infrastructure is patched, the economy is informal, and the community is real in a way that planned districts can't replicate. People here take care of each other because no one else will, and they've turned that necessity into identity. It's also a neighborhood that will close ranks around its secrets with a speed and completeness that would impress a corponation security division. The informal port is Bay View's lifeline. Threatening it is threatening the community. The community has opinions about that.",
+    "tags": []
+  },
+  "demographics": "Approximately 28,000 residents. Tier 1-2. Historically Polish and white working class, now significantly mixed — Latino, Black, Southeast Asian, and climate displacement communities integrated over decades. Median age: 34. Home ownership rate is unusually high for lower tiers because the houses have been continuously occupied for generations and the jurisdictional gap means no one is collecting on old mortgages.",
+  "economy": "Informal port operations, local food production, small-business service economy along KK Avenue. Some residents commute to Milwaukee's downtown corporate zone or the Zheng-Dao fabrication facilities in Racine. The informal economy is estimated to move Φ40 million annually through Bay View, though no one is keeping records because that's the point.",
+  "power_structure": "No formal authority. The Bay View Neighborhood Association operates as a combination civic organization and mutual defense pact. Key decisions — particularly regarding the informal port — are made by community consensus at meetings held at Corcoran's, a bar on KK that has been serving this function since before the sovereignty transition. The bartender moderates. The bartender has been moderating community meetings for twenty-two years. The bartender does not suffer fools.",
+  "dangers": [
+    "Port exposure — if the informal port is discovered and shut down, Bay View loses its economic independence",
+    "Lake contamination — the fish fry is a tradition, and the fish are not getting healthier",
+    "Community justice — Bay View handles its problems internally, and 'internally' can mean anything from a conversation to a boat ride",
+    "Gentrification — the lakefront location and community character that make Bay View valuable to its residents also make it attractive to developers",
+    "External smuggling operations — Bay View's port is community-run, but outside organizations have noticed and would like a cut"
+  ],
+  "opportunities": [
+    "The informal port — access to goods and transport that bypass the corporate logistics network entirely",
+    "Community trust — Bay View's social cohesion is a resource, and earning it opens doors throughout the southern Milwaukee sprawl",
+    "Food independence — Bay View's hydroponic and protein production is a model that other districts want to replicate",
+    "Lake access — small-boat navigation of Lake Michigan is possible from Bay View, connecting to destinations the maglev doesn't reach"
+  ],
+  "story_hooks": [
+    "A shipment arrived at the informal port that no one ordered — medical-grade neural components, military packaging, no return address. The community is split between selling them and burying them in the lake.",
+    "Axiom Logistics has begun aerial surveillance of the South Shore lakefront, and Bay View's port operations are adapting in real time",
+    "A Bay View resident who's been running the port for fifteen years has been diagnosed with a condition linked to lake water exposure, and the community is facing what that means for their food supply"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Loft (northwest, along lakefront)",
+      "Walker's Point (west)",
+      "Racine Works (south, along lake shore corridor)",
+      "Lake Michigan (east, informal port access)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Bay View residents — a tight-knit community that knows everyone and notices strangers",
+    "KK Avenue regulars — the bar and restaurant crowd that sustains the commercial strip",
+    "Informal port operators — fishers, smugglers, and small-boat captains",
+    "Buyers from surrounding districts who come to Bay View for goods the formal economy doesn't provide"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 42.9969,
+    "lng": -87.8946,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "gun",
+    "smuggle",
+    "trust",
+    "tender",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "poverty",
+    "medical",
+    "bar",
+    "night",
+    "justice",
+    "food",
+    "alcohol",
+    "water",
+    "lake",
+    "circuit"
+  ]
+}

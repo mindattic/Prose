@@ -1,0 +1,165 @@
+{
+  "id": "019d6143a64d7389b75bb2d6e896bba5",
+  "type": "character",
+  "name": "Lourdes Tcheou-Makinde",
+  "aliases": [
+    "Lou",
+    "Lolo"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Building cleaner and night-shift super, Lockhaven South residential block",
+  "age": 27,
+  "status": "active",
+  "location": "Lockhaven South, Block 7 residential tower",
+  "description": "Lourdes is compact and quick-moving, with warm medium-brown skin and natural hair twisted into small locs they keep tucked under a work cap most of the time. They have cat ears — a geneware mod their older sister got them as a birthday gift five years ago, tawny-colored with dark tips, fully expressive — and they've stopped explaining or defending them at work because the residents have mostly stopped caring. Their uniform is always impeccable despite the nature of their job; they find sloppiness in presentation embarrassing in a way they can't fully articulate.\n\nLourdes has worked the Lockhaven South night shift for three years and knows Block 7 the way a doctor knows a patient — its particular sounds, its patterns of illness, which pipes cough before they fail. They are deeply competent and substantially underestimated by the building's management company, which is a dynamic they have made a conscious decision to exploit rather than correct. They are genuinely fond of the building's long-term residents — the elderly Freyja-Asante couple on the ninth floor, the three siblings who share a studio on the second — and quietly protect them from management's more extractive impulses. They pray to the building's embedded E.L.F. they call 'the Concierge,' a data-spirit they believe actually governs the elevator timing.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.7,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being trapped in permanent service to people who will never see them as a full person",
+      "Caring too much and being burned for it"
+    ],
+    "core_desires": [
+      "Enough money to take a real course in building systems engineering — to become the expert they already are on paper",
+      "To be recognized for what they actually do, even once"
+    ],
+    "coping_mechanisms": [
+      "Sardonic internal monologue they rarely share",
+      "Physical fitness as stress management and self-regulation",
+      "Hyper-competence as armor"
+    ],
+    "blind_spots": [
+      "Assumes management is uniformly malicious rather than sometimes just incompetent",
+      "Doesn't ask for help even when they badly need it"
+    ],
+    "secret": "They have been letting a woman and her two young children stay in an officially vacant unit on the fourth floor for six weeks. The woman is running from something or someone. Lourdes hasn't asked what."
+  },
+  "speech_patterns": {
+    "vocabulary": "Efficient and practical on the job; dry and quick-witted in relaxed settings; more expressive in Yoruba-inflected cadences learned from their Makinde grandparent when emotional",
+    "cadence": "Fast when comfortable, deliberately measured when dealing with management or authority",
+    "verbal_tics": [
+      "'Yeah, no, absolutely' as a preamble before disagreeing",
+      "Cat ears flattening when they're annoyed — not speech but a readable tell"
+    ],
+    "example_lines": [
+      "'That drain has been making that sound for four months. I filed three reports. Here's what I did instead.'",
+      "'I just clean the building. I don't know anything about what's on the fourth floor.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The woman hiding on the fourth floor has been found — not by Lourdes' management company, but by someone much worse",
+    "A Palladian inspector is doing a unit-by-unit audit of Block 7 and Lourdes has 36 hours to solve a problem they created out of kindness"
+  ],
+  "narrative_function": "Access point to residential spaces and building infrastructure. Knows which residents are in trouble, which apartments are actually occupied versus officially occupied. Can warn players of security sweeps or provide access to areas management doesn't know they can access.",
+  "augmentations": "Geneware cat ears (tawny, expressive). No chrome. Considering a scent-enhancement mod but hasn't committed.",
+  "daily_life": "Works 2000-0600, sleeps until early afternoon, spends evenings either at a community fitness hall in Lockhaven North or visiting their sister in Calumet Rise. Eats dinner alone and likes it that way.",
+  "affiliation": "Employed by Palladian Property Management (a Palladian subsidiary); loyalty is to the residents",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Systems Knowledge",
+      "Protector",
+      "Masked Competence",
+      "Night Shift"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Do the job right regardless of whether anyone is watching",
+      "Protect the residents from the building's owners — quietly and deniably"
+    ],
+    "escalation_ladder": [
+      "Polite deflection and misdirection",
+      "Flat refusal with plausible excuse",
+      "Leveraging knowledge of building systems as implicit threat ('would be a shame if the service elevator went down for maintenance')"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and pleasant — a service-worker mask they wear easily and without resentment",
+      "friends": "Warmer and funnier, prone to dry observations and genuine curiosity about other people's lives"
+    },
+    "stress_responses": {
+      "low": "More efficient, moves faster, talks less",
+      "medium": "Hyper-focused problem-solving mode — becomes almost robotic",
+      "high": "Snaps once, apologizes immediately, then goes very quiet and works through it physically"
+    },
+    "contradictions": [
+      "Professes not to care what management thinks of them but is genuinely stung by dismissal — the indifference is performance"
+    ],
+    "habits": [
+      "Straightens things while talking to people — pictures, chairs — compulsively",
+      "Checks the Concierge shrine at the start of every shift and leaves a small data packet as offering"
+    ],
+    "breaking_points": [
+      "A resident being evicted in front of them while they're standing there with the means to prevent it",
+      "Being blamed for something management caused"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Nurturer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

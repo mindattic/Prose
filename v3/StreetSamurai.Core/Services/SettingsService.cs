@@ -26,7 +26,7 @@ public class SettingsService : IDisposable
         // Auto-detect canon root if not set or current path has insufficient data
         var engineDir = string.IsNullOrWhiteSpace(data.CanonRootPath)
             ? ""
-            : Path.Combine(data.CanonRootPath, "engine_data");
+            : Path.Combine(data.CanonRootPath, Constants.Folders.Engine);
         var hasData = !string.IsNullOrWhiteSpace(engineDir)
             && Directory.Exists(engineDir)
             && Directory.EnumerateFiles(engineDir, "*.json", SearchOption.AllDirectories).Take(10).Count() >= 10;
@@ -53,7 +53,7 @@ public class SettingsService : IDisposable
 
         foreach (var path in candidates)
         {
-            var candidateDir = Path.Combine(path, "engine_data");
+            var candidateDir = Path.Combine(path, Constants.Folders.Engine);
             if (Directory.Exists(candidateDir) &&
                 Directory.EnumerateFiles(candidateDir, "*.json", SearchOption.AllDirectories).Take(10).Count() >= 10)
                 return path;
@@ -198,7 +198,7 @@ public class SettingsService : IDisposable
     private class SettingsData
     {
         public string ApiKey { get; set; } = "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";
-        public string Model { get; set; } = "claude-sonnet-4-6";
+        public string Model { get; set; } = Constants.Defaults.DefaultModel;
         public string Theme { get; set; } = "dark";
         public string CanonRootPath { get; set; } = @"D:\Projects\MindAttic\StreetSamurai";
         public int MaxTokens { get; set; } = 2048;

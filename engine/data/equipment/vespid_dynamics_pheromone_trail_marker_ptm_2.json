@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a87f7919a1997ad3ff4bf173",
+  "name": "Vespid Dynamics Pheromone Trail Marker PTM-2",
+  "brand_name": "Vespid",
+  "product_name": "Vespid Dynamics Pheromone Trail Marker PTM-2",
+  "type": "equipment",
+  "aliases": [
+    "PTM-2",
+    "Scent Trail",
+    "Path Marker",
+    "Invisible Breadcrumbs"
+  ],
+  "category": "sensors",
+  "description": "A wrist-mounted dispenser that releases invisible synthetic pheromone compounds to mark a path, location, or target. The PTM-2 uses Vespid's pheromone library to create markers detectable only by specialized sensors or Vespid drone platforms, creating invisible trails that can be followed hours or days after being laid. Different pheromone compounds encode different meanings — danger, safe passage, target location, rally point — allowing the creation of an invisible information layer overlaid on the physical environment. The markers persist on surfaces for 48-72 hours depending on weather conditions.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted — intelligence operations",
+  "base_technologies": [],
+  "specifications": {
+    "compounds": "8 distinct pheromone markers",
+    "persistence": "48-72 hours on surfaces",
+    "detection": "Vespid drone platforms or specialized sensor",
+    "application": "Spray from wrist-mounted dispenser",
+    "range": "Contact application — spray on surface from 30 cm",
+    "capacity": "200 applications per cartridge",
+    "weight": "0.08 kg",
+    "visibility": "Invisible to human senses",
+    "detection range": "Drone platforms detect at 50 meters"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A pheromone trail was discovered leading from a secure facility's emergency exit to a waiting vehicle location — someone marked the escape route in advance using PTM-2 compounds.",
+    "Vespid's drones have been following PTM-2 trails that were not laid by authorized operators — someone has obtained the pheromone compounds and is manipulating Vespid's own drone networks."
+  ],
+  "tags": [
+    "sensors",
+    "equipment",
+    "ai",
+    "synthetic",
+    "vehicle",
+    "escape",
+    "drone",
+    "tier 2"
+  ]
+}

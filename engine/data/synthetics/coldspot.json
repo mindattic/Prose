@@ -1,0 +1,33 @@
+{
+  "id": "019d6143a9f47808b14bd3fc308787b4",
+  "name": "Coldspot",
+  "type": "elf",
+  "aliases": [
+    "The Chill"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "gremlin",
+  "habitat": "void_swimmer",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Inhabits climate systems and creates localized temperature drops — a room that's always three degrees colder than it should be, a corridor with a permanent draft.",
+  "observed_behavior": "Redirects thermal energy away from specific zones. The missing heat goes somewhere — possibly to Blanket's warm rooms.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 28,
+  "location": "Multiple Shelf buildings",
+  "dti_rating": 0,
+  "story_hooks": [
+    "Someone maps every Coldspot and Blanket zone in the Shelf and realizes they form a thermal redistribution network — the E.L.F.s are cooperating"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "gremlin",
+    "void swimmer",
+    "e.l.f.",
+    "war",
+    "cold",
+    "energy",
+    "shelf"
+  ]
+}

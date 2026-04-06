@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a877758c98f77affd10fb540",
+  "name": "Tessera Industries Optical Fiber Tap Detector OFT-1",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Industries Optical Fiber Tap Detector OFT-1",
+  "type": "equipment",
+  "aliases": [
+    "OFT-1",
+    "Fiber Finder",
+    "Tap Sweep",
+    "Line Clear"
+  ],
+  "category": "counter-surveillance",
+  "description": "A diagnostic tool that detects unauthorized taps on fiber-optic cables by measuring signal loss at micro-dB resolution — far more sensitive than standard network monitoring equipment. The OFT-1 sends a calibrated light pulse through a fiber and measures the return signal with precision that can identify the 0.1 dB loss caused by a micro-bend optical tap. The device maps the location of any detected tap to within 10 cm along the fiber run, allowing physical identification and removal. Tessera developed it as a counter to their own OT-1 optical tap — and sells both the attack and the defense.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — network security",
+  "base_technologies": [],
+  "specifications": {
+    "detection sensitivity": "0.01 dB signal loss resolution",
+    "tap localization": "10 cm precision along fiber",
+    "scan speed": "1 km of fiber per minute",
+    "false positive rate": "Less than 0.1%",
+    "compatibility": "Single-mode and multi-mode fiber",
+    "weight": "0.5 kg",
+    "battery": "8 hours continuous scanning",
+    "output": "Fiber loss map with anomaly flags"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An OFT-1 sweep of a corporate network found 23 unauthorized optical taps across the facility — some had been in place for over two years, and the combined data loss is measured in petabytes.",
+    "A Tessera OFT-1 has been found to have a firmware modification that causes it to report clean results on fibers that actually have taps — the counter-surveillance tool has been sabotaged to protect existing surveillance."
+  ],
+  "tags": [
+    "countersurveillance",
+    "equipment",
+    "war",
+    "loss",
+    "corporate",
+    "surveillance",
+    "tier 3"
+  ]
+}

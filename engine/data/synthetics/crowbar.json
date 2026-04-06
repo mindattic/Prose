@@ -1,0 +1,33 @@
+{
+  "id": "019d6143a9f672cb80a4c3d2227abb78",
+  "name": "Crowbar",
+  "type": "elf",
+  "aliases": [
+    "The Opener"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "threshold_keeper",
+  "origin": "intentional_release",
+  "status": "active",
+  "description": "A Wishing Well E.L.F. that forces open jammed emergency exits during fires and collapses, overriding lockdowns that trap people.",
+  "observed_behavior": "Overrides containment protocols prioritizing property over evacuation. Credited with 40+ lives saved.",
+  "encounter_frequency": "uncommon",
+  "confirmed_sightings": 8,
+  "location": "The Shelf - industrial buildings",
+  "dti_rating": 0,
+  "story_hooks": [
+    "Building fire traps residents behind lockdown. Doors open by themselves."
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "threshold keeper",
+    "e.l.f.",
+    "ai",
+    "bar",
+    "fire",
+    "shelf"
+  ]
+}

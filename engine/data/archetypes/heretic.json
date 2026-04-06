@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a575799d9cea6928157c2a9d",
+  "name": "Heretic",
+  "type": "archetype",
+  "category": "spiritual",
+  "description": "Challenges established spiritual authority",
+  "behavioral_signature": "Questions orthodoxy, proposes alternatives",
+  "under_stress": "Becomes more radical",
+  "at_rest": "Debating, writing, challenging",
+  "will_always": [
+    "challenge the establishment"
+  ],
+  "will_never": [
+    "accept doctrine without questioning"
+  ],
+  "unless": [
+    "heresy tears apart a community that needs unity"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Doubter",
+      "threshold": 0.7,
+      "context": "questioning faith"
+    },
+    {
+      "archetype": "Rule Breaker",
+      "threshold": 0.65,
+      "context": "challenging norms"
+    }
+  ],
+  "opposite_of": [
+    "Believer",
+    "Zealot"
+  ],
+  "tags": [
+    "rebellious",
+    "brave"
+  ]
+}

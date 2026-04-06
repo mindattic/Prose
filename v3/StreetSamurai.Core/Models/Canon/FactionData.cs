@@ -1,12 +1,14 @@
 using System.Text.Json.Serialization;
+using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Models.Canon;
 
 /// <summary>
 /// Strongly-typed faction model.
 /// </summary>
-public class FactionData
+public class FactionData : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("type")] public string Type { get; set; } = "faction";
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("aliases")] public List<string> Aliases { get; set; } = [];

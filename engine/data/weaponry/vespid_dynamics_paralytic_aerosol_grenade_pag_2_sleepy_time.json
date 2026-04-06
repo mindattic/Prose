@@ -1,0 +1,40 @@
+{
+  "id": "019d6143ab5a7e65a65f848680b3e7d8",
+  "name": "Vespid Dynamics Paralytic Aerosol Grenade PAG-2 'Sleepy Time'",
+  "type": "weapon",
+  "aliases": [
+    "Sleepy Time",
+    "PAG-2",
+    "Nap Gas",
+    "Dreamcatcher"
+  ],
+  "category": "chemical",
+  "description": "A throwable aerosol grenade that disperses Vespid's proprietary fast-acting paralytic compound over a 10-meter radius. The compound targets voluntary motor function while leaving autonomic systems intact — targets remain conscious and breathing but cannot move, speak, or resist for approximately fifteen minutes. The effect onset is 3-5 seconds after inhalation, making the window for donning respiratory protection extremely narrow. Vespid markets it as a humane incapacitation tool, though the psychological effect of being fully conscious but completely paralyzed has been documented as severely traumatic.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — law enforcement and security",
+  "base_technologies": [
+    "Fast-acting paralytic compound synthesis",
+    "Aerosol dispersal optimization",
+    "Motor-selective neural targeting"
+  ],
+  "specifications": "dispersal radius: 10 meters in still air\nonset time: 3-5 seconds after inhalation\neffect duration: 12-18 minutes\naerodynamic delay: 2 seconds after pin pull\nweight: 0.3 kg\ncompound persistence: 45 seconds airborne\ncountermeasure: Respiratory filtration prevents inhalation; no post-exposure antidote",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "PAG-2 grenades have been deployed in a series of robberies targeting augmented individuals — victims are paralyzed while their cyberware is surgically removed.",
+    "A contaminated batch of PAG-2 grenades has hit the market where the autonomic preservation fails in approximately 5% of exposures — meaning some victims stop breathing."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "chemical",
+    "war",
+    "augment",
+    "cyberware",
+    "neural",
+    "ai",
+    "market",
+    "tier 3"
+  ]
+}

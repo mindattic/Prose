@@ -1,0 +1,39 @@
+{
+  "id": "019d6143aa5f7de6a5789992516bf0b6",
+  "name": "Automated Street Sweeper",
+  "type": "transportation",
+  "aliases": [
+    "Sweeper",
+    "The Janitor",
+    "Night Cleaner"
+  ],
+  "category": "commercial_ground",
+  "manufacturer": "Ferrogate Transit (Municipal Division)",
+  "description": "An autonomous street-cleaning vehicle that roams Tier 2-4 districts between midnight and 6 AM. In the higher tiers, they're efficient and invisible. In Tier 2 districts, they're the only municipal service that actually shows up regularly, and residents have developed an odd fondness for them. Each sweeper has been given an unofficial name by the neighborhood it serves. Tier 1 districts don't get sweepers. The streets there are cleaned by rain and resignation.",
+  "propulsion": "Electric, autonomous navigation",
+  "speed": "10 km/h cleaning mode, 30 km/h transit",
+  "capacity": "4,000 kg waste hopper",
+  "range": "8-hour shift cycle",
+  "tier_availability": "Tier 2-4 (never Tier 1)",
+  "cost": "Φ25,000 per unit (municipal contract)",
+  "autonomy": "Fully autonomous, obstacle avoidance, route optimization",
+  "armament": "None. Pressurized water jets for cleaning (creative secondary uses exist).",
+  "common_usage": "Street cleaning, waste collection, urban maintenance.",
+  "story_hooks": [
+    "A street sweeper in a Tier 2 district has been collecting something other than garbage — its waste hopper contains items arranged in deliberate patterns",
+    "When a sweeper is finally assigned to a Tier 1 block as a pilot program, the residents treat it like a celebrity and its removal sparks a protest"
+  ],
+  "tags": [
+    "commercialground",
+    "transportation",
+    "ai",
+    "contract",
+    "rain",
+    "night",
+    "vehicle",
+    "water",
+    "tier 1",
+    "tier 2",
+    "tier 4"
+  ]
+}

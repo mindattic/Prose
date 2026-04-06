@@ -1,0 +1,253 @@
+{
+  "id": "019d6143a7217ae3a4f45e6770cc0b72",
+  "type": "character",
+  "name": "Yannick Tambadou-Reinholt",
+  "aliases": [
+    "Tank",
+    "the Grease Saint"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Freelance mechanic specializing in electric cargo rigs and older tram systems, operates out of a rented bay in Geartown",
+  "age": 44,
+  "status": "active",
+  "location": "Geartown — Bay 7 of the Harrowgate Subsidiary Works, a semi-legal repair complex near the old overpass",
+  "description": "Yannick is enormous in the way of men who have spent two decades moving heavy things — not sculpted, just densely, quietly large. His skin is very dark, the blue-black of deep water, with a scattering of old burn scars along his right forearm from a rig fire in his twenties that he describes without drama as 'educational.' He keeps a heavy beard, shot through with grey now, and wears his hair close-cropped since his mechanic's pony got caught in a gear housing years ago. His hands are the hands of someone who has made them instruments: scarred, enormous, and with a delicacy of movement that surprises people who assume hands that size can only do large things. He has retractable tool-interface ports along his forearms, both functional and personal — he chose ones with decorative geometric patterning in the housing, a nod to his Senegambian grandmother's textile work.\n\nYannick is slow to speak and fast to act, which has served him well in his work and occasionally disastrously in his personal life. He is not unfriendly — he simply doesn't consider speech the primary mode of exchange. He communicates through doing: handing someone a caf without asking if they want one, moving a car part out of someone's way before they have to ask, fixing a thing he wasn't asked to fix because he could see it needed it. He is known in Geartown as the mechanic who will be honest about what's wrong even when honesty costs him the job. This has made him moderately poor and extremely trusted.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.5,
+      "mask": 0.3,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That his son (who lives with his ex-partner in a Tessera district) will grow up not knowing him",
+      "That his reputation — the only thing he's built that he's proud of — will be taken from him by someone with more money and fewer scruples"
+    ],
+    "core_desires": [
+      "To work until his hands don't work anymore and then work a little longer",
+      "For his son to see him once as someone worth respecting"
+    ],
+    "coping_mechanisms": [
+      "Physical labor as emotional regulation — he has never in his life been unable to think through a problem while fixing something",
+      "The mechanics' collective as a surrogate for the family structure he doesn't have"
+    ],
+    "blind_spots": [
+      "He has catastrophized his estrangement from his son into a fixed, unchangeable fact and stopped trying, telling himself his ex-partner won't allow it — this isn't entirely true",
+      "He underestimates how much people in Geartown look to him as an informal leader and anchor"
+    ],
+    "secret": "He has been quietly maintaining two old Ferrogate trams that were decommissioned and sold for scrap — keeping them road-capable in the bay's back section under tarps. He's told himself it's a hobby. It's actually a plan he's never articulated: if things get bad enough, these trams can move a lot of people."
+  },
+  "speech_patterns": {
+    "vocabulary": "Minimal and precise, switches to technical language fluently, uses Wolof words for things he has no English equivalent for (particularly for types of damage, types of care)",
+    "cadence": "Slow and even, long pauses that mean he's still in the sentence — doesn't trail off, finishes everything eventually",
+    "verbal_tics": [
+      "Long exhales before difficult statements",
+      "'You understand?' — not condescending, genuinely checking",
+      "Refers to machines in the third person as 'she' or 'he' depending on disposition"
+    ],
+    "example_lines": [
+      "'She's been running hot on the third axle for longer than whoever owned her before you wants to admit. I can fix it. It's going to cost what it costs.'",
+      "'I don't give estimates on problems I haven't seen. You want a number before I look, go somewhere else. You want the actual answer, sit down.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The two hidden trams in the back of Bay 7 — someone in the Geartown undereconomy has noticed them and is asking why a scrapper is sitting on working vehicles",
+    "A Ferrogate Transit inspector is coming through the Harrowgate complex and will find them if Yannick doesn't move them or get advance warning",
+    "His son, now sixteen, has apparently been asking around Geartown trying to find him — without telling his mother"
+  ],
+  "narrative_function": "Resource and repair access for characters who need vehicles or equipment maintained. Reliable information source about Geartown and the transit-adjacent underground economy. Can serve as a moral sounding board — he's seen a lot and lies badly.",
+  "augmentations": "Retractable tool-interface ports both forearms (custom-housed with geometric patterning); bone-density reinforcement in hands and wrists (medical necessity following a compression injury); subocular system scanner overlay (used for diagnostics)",
+  "daily_life": "Opens the bay at 06:00, works until the job is done — which is usually 20:00 or later. Takes lunch in the bay, usually cold. Spends one evening a week at a Geartown mechanics' mutual-aid collective meeting. Prays to the E.L.F. that lives in his primary diagnostic terminal every morning — a genuine, private practice he does not discuss.",
+  "affiliation": "Independent; informal network of Geartown mechanics and Ferrogate Transit maintenance contractors",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 9,
+      "dexterity": 7,
+      "vitality": 8,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 4,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Trusted Tradesperson",
+      "Hidden Planner",
+      "Estranged Father",
+      "Collective Member",
+      "Quiet Authority"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never submit a job incomplete or dishonest",
+      "The collective comes before the individual contract — if a collective member needs the bay, they get it",
+      "Do not lend tools; equipment is a relationship, not a transaction"
+    ],
+    "escalation_ladder": [
+      "State the problem once, plainly",
+      "Remove himself from the situation to avoid doing something large",
+      "State the consequence once, plainly",
+      "Follow through — he does not make threats he doesn't mean"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Reserved and observational; will do the job and assess character through the doing rather than the talking",
+      "friends": "Still not verbose but present in a way that people learn to read — shows up, fixes things, sits with you without needing to explain why"
+    },
+    "stress_responses": {
+      "low": "Works on the most physically demanding task available",
+      "medium": "Goes to the back of the bay with the old trams and works on them by hand, no diagnostic tools, just contact",
+      "high": "Entirely silent for hours; the collective has learned to send someone to check on him after six hours of this"
+    },
+    "contradictions": [
+      "Believes in collective action and mutual aid with genuine conviction but is constitutionally unable to ask for help for himself",
+      "Maintains the hidden trams as preparation for crisis while simultaneously being incapable of planning ahead in his personal life"
+    ],
+    "habits": [
+      "Runs a hand along a vehicle's chassis before starting any job — not diagnostic, greeting",
+      "Keeps a small carved wooden figure of a river bird on his workbench that his grandmother gave him; it's the only decorative object in the bay",
+      "Prays to his diagnostic terminal's E.L.F. in Wolof, quietly, every morning at 06:00"
+    ],
+    "breaking_points": [
+      "Being asked to falsify a safety report — he's been offered money to do this twice and both clients left the bay considerably faster than they arrived",
+      "Any threat to the mechanics' collective or its members"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Geartown to a Senegambian-Danish family; father worked Ferrogate freight maintenance",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began apprenticeship under an independent mechanic in Harrowgate; showed immediate aptitude",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Rig fire; right forearm scarred; 'educational'",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Compression injury to both hands; bone-density reinforcement installed; returned to work in eight weeks, not twelve as advised",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Separated from his partner; their son Kwame was three; access arrangements broke down within a year",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Rented Bay 7; began quietly maintaining the two decommissioned trams",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

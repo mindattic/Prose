@@ -1,0 +1,39 @@
+{
+  "id": "019d6143a59272048a468163e7cfde86",
+  "name": "Skeptic",
+  "type": "archetype",
+  "category": "intellectual",
+  "description": "Demands proof for every claim",
+  "behavioral_signature": "Questions everything, trusts nothing without evidence",
+  "under_stress": "Becomes cynical, dismissive",
+  "at_rest": "Fact-checking, cross-referencing",
+  "will_always": [
+    "question claims"
+  ],
+  "will_never": [
+    "accept something on faith"
+  ],
+  "unless": [
+    "demanding proof costs critical time"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Analyst",
+      "threshold": 0.7,
+      "context": "critical thinking"
+    },
+    {
+      "archetype": "Devils Advocate",
+      "threshold": 0.75,
+      "context": "questioning"
+    }
+  ],
+  "opposite_of": [
+    "Believer",
+    "Conspiracy Thinker"
+  ],
+  "tags": [
+    "critical",
+    "demanding"
+  ]
+}

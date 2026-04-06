@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5697660b5a00bd7616b0c3c",
+  "name": "Delegator",
+  "type": "archetype",
+  "category": "leadership",
+  "description": "Assigns the right tasks to the right people",
+  "behavioral_signature": "Trusts others to execute, focuses on coordination",
+  "under_stress": "Delegates everything, even their own responsibilities",
+  "at_rest": "Assessing capabilities, matching tasks to people",
+  "will_always": [
+    "put the right person on the job"
+  ],
+  "will_never": [
+    "do everything themselves"
+  ],
+  "unless": [
+    "nobody is capable and they must act alone"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Commander",
+      "threshold": 0.65,
+      "context": "organizational leadership"
+    },
+    {
+      "archetype": "Consensus Builder",
+      "threshold": 0.6,
+      "context": "distributed leadership"
+    }
+  ],
+  "opposite_of": [
+    "Micromanager"
+  ],
+  "tags": [
+    "trusting",
+    "efficient"
+  ]
+}

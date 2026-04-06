@@ -1,0 +1,37 @@
+{
+  "id": "019d6143aa757ad9a0493d10151a533c",
+  "name": "Walking Throne",
+  "type": "transportation",
+  "aliases": [
+    "Throne",
+    "The Chair",
+    "Palanquin"
+  ],
+  "category": "personal_ground",
+  "manufacturer": "Custom fabrication (usually Axiom subsidiary shops)",
+  "description": "An enclosed sedan chair carried by four humanoid load-bearing drones. The ultimate statement of Tier 5 excess — not just a vehicle but a declaration that you are too important to touch the ground. The chair is climate-controlled, connected, and surrounded by drones that walk with disturbingly human gait. Used in crowded spaces where vehicles can't go, during corporate events, or simply because you can. Every Walking Throne is custom — some are opaque, some transparent, some armored, some decorated with materials that cost more than neighborhoods.",
+  "propulsion": "Four bipedal load-bearing drones, electric, coordinated AI gait",
+  "speed": "6 km/h (walking pace, by design)",
+  "capacity": "1-2 passengers",
+  "range": "8 hours continuous operation",
+  "tier_availability": "Tier 5",
+  "cost": "Φ80,000-200,000 depending on customization",
+  "autonomy": "AI-coordinated drone locomotion, route directed by passenger",
+  "armament": "The drones can be security-rated. Classified capabilities on executive models.",
+  "common_usage": "Corporate events, Tier 5 districts where ground vehicles are restricted, pure ostentation.",
+  "story_hooks": [
+    "A Walking Throne is seen moving through a Tier 1 district at 3 AM with no visible passenger — but the chair isn't empty",
+    "The load-bearing drones on a Walking Throne develop independent behaviors when not carrying anyone, gathering in groups and moving in formation"
+  ],
+  "tags": [
+    "personalground",
+    "transportation",
+    "ai",
+    "corporate",
+    "control",
+    "vehicle",
+    "armor",
+    "drone",
+    "tier 5"
+  ]
+}

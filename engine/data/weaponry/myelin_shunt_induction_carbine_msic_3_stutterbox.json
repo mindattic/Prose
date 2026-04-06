@@ -1,0 +1,61 @@
+{
+  "id": "019d6143ab3375c5a8e0835f69f35011",
+  "name": "Myelin Shunt Induction Carbine MSIC-3 'Stutterbox'",
+  "type": "weapon",
+  "aliases": [
+    "Stutterbox",
+    "The Shunt",
+    "Jitter Gun",
+    "MSIC"
+  ],
+  "category": "exotic",
+  "description": "The MSIC-3 operates by projecting a narrow-band oscillating magnetic field tuned precisely to the resonant frequency of myelin sheaths — the insulating protein layers wrapped around peripheral nerve fibers. At sufficient intensity, the field induces rapid localized depolarization cascades along motor neurons, causing involuntary and chaotic muscular contraction. The effect is not pain in the conventional sense but rather a catastrophic loss of motor coherence: targets seize, drop objects, and collapse without any damage to underlying tissue.\n\nWhat distinguishes the Stutterbox from simpler neuromuscular disruptors is its precision calibration system, which uses a passive biometric ranging ping to adjust field frequency on the fly based on estimated target mass and neural density. This allows it to be effective across a wider range of targets — including partially augmented individuals whose peripheral nervous systems remain biological. Heavily cyberized targets with full neural sleeve replacements are largely immune, a limitation that has shaped how the weapon is tactically deployed.\n\nZheng-Dao Bioelectric originally developed the MSIC series as a non-lethal compliance tool for corporate security detachments operating in civilian-dense environments. The 'Stutterbox' nickname emerged from enforcement footage that leaked onto Meridian 88's underground feeds — the stuttering, marionette-like collapse of targets became darkly iconic, and the weapon's reputation for leaving victims humiliated but unharmed made it paradoxically popular with both law enforcement and certain criminal organizations who prefer leverage over corpses.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Oscillating magnetic field projection",
+    "Passive biometric ranging",
+    "Myelin resonance induction"
+  ],
+  "specifications": "effective range: 8–40 meters\npower source: Solid-state capacitor cell, 22 shots per charge\nfield frequency range: 12–38 Hz adaptive\neffect duration: 4–9 seconds post-exposure\nweight: 2.8 kg\nform factor: Compact carbine, collapsible stock\naugmentation vulnerability: Ineffective against targets with >60% peripheral neural replacement",
+  "tactical_use": "Operators use the Stutterbox in crowd control, hostage extraction, and non-lethal detention scenarios where collateral damage or casualties would create political or legal complications. Security teams pair it with conventional sidearms — the MSIC drops a target long enough for physical restraint, while the sidearm handles threats the carbine cannot address. In criminal contexts, it is used to incapacitate couriers, witnesses, or targets who need to be taken alive. Savvy operators prioritize soft targets in mixed groups, using the chaos of a seizure to create openings.",
+  "cultural_context": "The Stutterbox occupies an uncomfortable middle ground in Meridian 88's weapon culture. It is legal enough to be carried by licensed security contractors but stigmatized in street culture as a 'coward's weapon' — something used by people who want control without confrontation. Paradoxically, certain fixers and negotiators carry one openly as a statement of intent: they have no interest in killing you, but they will absolutely put you on the floor. Among the city's augmentation community, the weapon is deeply resented for its implicit targeting of the unaugmented poor, who cannot afford the neural implants that make them immune to it.",
+  "known_users": [
+    "Corporate compliance officers",
+    "Debt collection enforcers",
+    "Private extraction teams",
+    "Street-level fixers who prefer clean work",
+    "Clinic security in low-augmentation districts"
+  ],
+  "story_hooks": [
+    "A leaked Zheng-Dao internal memo suggests the MSIC-3's biometric ranging ping is quietly logging target data — body mass, neural density estimates, location — and transmitting it to an undisclosed corporate server.",
+    "A prominent street activist has been publicly 'stuttered' three times in a month by unmarked security teams. She's hiring someone to find out who's ordering the hits and why she's still alive.",
+    "A shipment of MSIC-3s is moving through the port district with the frequency calibration locked to a specific neural signature — someone is being hunted very specifically.",
+    "An underground clinic is offering a peripheral nerve sleeve modification it claims makes the wearer immune to myelin-band weapons. The procedure has a 30% failure rate that the clinic isn't advertising."
+  ],
+  "ammunition_type": [
+    "Zheng-Dao Type-4 Bioelectric Cell ZD-T4"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "gun",
+    "war",
+    "loss",
+    "augment",
+    "neural",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "debt",
+    "clinic",
+    "pain",
+    "rain",
+    "dark",
+    "train",
+    "tier 2"
+  ]
+}

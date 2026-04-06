@@ -1,0 +1,36 @@
+{
+  "id": "019d6143aa6f7953baeb5f4455d0d93f",
+  "name": "Shelf Rope Bridge Network",
+  "type": "transportation",
+  "aliases": [
+    "Bridge Web",
+    "Swing Path",
+    "The Tangle"
+  ],
+  "category": "personal_ground",
+  "manufacturer": "Community-built — The Shelf residents",
+  "description": "Alongside the ziplines, The Shelf's residents have strung rope-and-plank bridges between buildings at various heights, creating a three-dimensional pedestrian network above street level. The bridges sway in wind, groan under weight, and occasionally fail. But they connect communities that would otherwise require a twenty-minute descent and ascent to reach each other. Children run across them without looking down. Adults grip the rope rails and try not to think about it. The Bridge Network is maintained by an informal guild of residents who consider it sacred infrastructure.",
+  "propulsion": "Human locomotion (walking, running, praying)",
+  "speed": "Walking pace",
+  "capacity": "1-3 persons at a time per span",
+  "range": "Individual spans: 5-50 meters. Network spans the entire Shelf district.",
+  "tier_availability": "Tier 1 (The Shelf)",
+  "cost": "Free. Community maintained.",
+  "autonomy": "Manual. Human balance required.",
+  "armament": "None. Height is deterrent enough.",
+  "common_usage": "Inter-building pedestrian transit, community connectivity, emergency evacuation routes, children terrifying their parents.",
+  "story_hooks": [
+    "The bridge guild discovers that someone has been reinforcing bridges to specific buildings at night — creating a route to somewhere that wasn't connected before",
+    "A bridge fails during a windstorm and the isolated building reveals it was hiding something that required isolation"
+  ],
+  "tags": [
+    "personalground",
+    "transportation",
+    "ai",
+    "elf",
+    "night",
+    "storm",
+    "shelf",
+    "tier 1"
+  ]
+}

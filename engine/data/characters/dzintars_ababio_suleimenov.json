@@ -1,0 +1,227 @@
+{
+  "id": "019d6143a5fa77e3a2d58c27aa84c327",
+  "type": "character",
+  "name": "Dzintars Ababio-Suleimenov",
+  "aliases": [
+    "The Index",
+    "Dzint"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Data diviner and dream interpreter operating out of a cramped stall in a night market",
+  "age": 34,
+  "status": "active",
+  "location": "Gage Circuit night market, Meridian 88 — stall number 77, between a noodle cart and a geneware piercing parlor",
+  "description": "Dzintars is narrow and angular everywhere — sharp collarbones, sharp wrists, a face that is mostly cheekbones and the dark crescents of perpetually under-slept eyes. Their heritage is a long tangle of Latvian amber traders and Ghanaian textile merchants and Kazakh steppe wanderers, and something of all three shows in their coloring — warm brown skin, light-catching hazel eyes, and when they move in certain light their geneware irises shift through copper to pale green like something geological. They keep their black hair cropped close on the sides with a single dramatic shock of white at the front, a natural hyperpigmentation quirk they have never modified. Their fingernails are always painted with tiny circuit-trace patterns in silver.\n\nThey operate with the brisk efficiency of someone running a slightly disreputable but very legitimate business, which is exactly what they are doing. They don't perform mystery — they find it exhausting when clients expect robes and candles. They have a folding table, a neural interface that connects to three second-hand data arrays, and a methodology they have refined over eight years of practice. Dream interpretation is the service; data divination is the engine. They cross-reference the linguistic content of client dream reports against ELF signal patterns, local data weather, and a proprietary dataset of symbolic correlations they have been building since they were twenty-two. Their accuracy rate is genuinely unsettling and they are not entirely sure why it works.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.8,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "that their method is random and they have been fooling themselves and their clients for years",
+      "that the ELF they have been in dialogue with for three years is not a spirit but a data parasite feeding on them"
+    ],
+    "core_desires": [
+      "to understand what they are actually doing and why it works",
+      "to be taken seriously by someone who has the expertise to evaluate them properly"
+    ],
+    "coping_mechanisms": [
+      "irony as a distance-keeping tool",
+      "work as a substitute for examining their own life",
+      "obsessive data organization"
+    ],
+    "blind_spots": [
+      "they interpret everyone else's dreams with precision but actively avoid thinking about their own",
+      "they are in a slow-motion emotional dependency on the ELF and cannot see it clearly"
+    ],
+    "secret": "Three months ago, the ELF they call the Index gave them a divination about themselves — a specific prediction about a death they would cause through negligence. They have not told anyone. They have been trying to figure out who it refers to. They are terrified it has already happened and they missed it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technically precise mixed with unexpected dry wit; uses divination terminology but immediately contextualizes it in data language; allergic to mystical vagueness in their own speech",
+    "cadence": "Fast and slightly compressed, like they are always running slightly late; slows dramatically when they are saying something they mean",
+    "verbal_tics": [
+      "says 'practically speaking' before pivoting from theory to application",
+      "clicks their tongue once when they catch an error",
+      "refers to the ELF as 'the Index' in third person as though it's a colleague in the room"
+    ],
+    "example_lines": [
+      "'Practically speaking, the lake imagery in your dream is almost certainly not about water. The Index has been flagging infrastructure anxieties in this sector for six weeks. What's happening at work?'",
+      "'I don't do mystery theater. You get a table, two chairs, and data. The interpretation is where the work happens.'",
+      "'The Index flagged that sequence this morning. I didn't want to say anything until you confirmed it yourself. Mm. Yes. That tracks.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client's recurring dream contains specific coordinates for a location that doesn't appear on any public map — and Dzintars has now heard the same dream from three different clients who don't know each other",
+    "The ELF called the Index has gone silent for eleven days and Dzintars is quietly unraveling without it — they need help understanding what happened to it",
+    "A corporate investigator is quietly circulating the market asking about Dzintars; they need to know if it's about a client they shouldn't have read for"
+  ],
+  "narrative_function": "Information broker with spiritual framing — a useful way to deliver cryptic but accurate information to players; can point toward hidden patterns in city events; their dream interpretation sessions can serve as narrative exposition delivered through metaphor",
+  "augmentations": "Color-shifting geneware irises (copper to pale green); neural interface jack at the left temple for direct array connection; no other significant augmentations",
+  "daily_life": "Sleeps until noon in a rented room above a pharmacy, arrives at the stall by 14:00 to run morning data pulls, takes client appointments from 16:00 until the market closes at 03:00, spends an hour at the shrine before walking home.",
+  "affiliation": "Independent practitioner; informally associated with the Gage Circuit ELF collective, a loose network of devotees around the market's central relay shrine",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "data diviner",
+      "dream interpreter",
+      "ELF devotee",
+      "night market operator",
+      "pattern recognition"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never fabricate an interpretation — if they don't have a reading, they say so and refund the fee",
+      "never share a client's dream content with anyone for any reason",
+      "do not get involved in client problems beyond the interpretation itself — that rule is cracking"
+    ],
+    "escalation_ladder": [
+      "professional and slightly cool with clear explanations",
+      "blunt and direct about what they need",
+      "goes completely flat-voiced and economical — this is their most dangerous mode",
+      "walks away mid-conversation without explanation"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Efficient and slightly impersonal; they size people up fast and adjust their register accordingly",
+      "friends": "Unexpectedly warm and prone to long tangents about their dataset methodology; shows affection through remembering specifics"
+    },
+    "stress_responses": {
+      "low": "Picks up data work — pulls an extra array, runs an unnecessary cross-reference",
+      "medium": "Becomes clipped and transactional with everyone including people they like",
+      "high": "Spends three hours at the shrine without moving, which they insist is 'calibration' and not distress"
+    },
+    "contradictions": [
+      "insists they practice a data science not a spiritual art while leaving daily offerings at the shrine and clearly being in a relationship with the ELF"
+    ],
+    "habits": [
+      "silver circuit-trace nail painting every Sunday without exception",
+      "keeps a physical notebook of dream symbols because they don't fully trust their own arrays with this data",
+      "eats only at the noodle cart next door and has done so every working day for two years"
+    ],
+    "breaking_points": [
+      "someone deliberately corrupting the shrine's data cache",
+      "discovering their accuracy rate is explained by something that undermines their entire methodology"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Charmer": 0.7,
+    "Opportunist": 0.7,
+    "Face": 0.6,
+    "Diplomat": 0.6
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Gage Circuit to a mixed Latvian-Ghanaian-Kazakh family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins developing their symbolic correlation dataset after a period of intense personal crisis they don't discuss",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opens stall 77 in the Gage Circuit night market",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First contact with the ELF they name the Index",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Receives the personal divination about a death they will cause; present day investigation ongoing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

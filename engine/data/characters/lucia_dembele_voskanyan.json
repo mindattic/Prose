@@ -1,0 +1,166 @@
+{
+  "id": "019d6143a6507c4d97b7e7a3831d0ea9",
+  "type": "character",
+  "name": "Lùcía Dembélé-Voskanyan",
+  "aliases": [
+    "Luce",
+    "Sparks"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Apprentice electrician, junior member of Ironvein maintenance guild",
+  "age": 16,
+  "status": "active",
+  "location": "Ironvein",
+  "description": "Lùcía is compact and strong-shouldered from two years of hauling conduit and cable through the industrial guts of Ironvein. Their skin is a warm medium-brown with undertones their Dembélé grandmother called 'sunset-red,' and they keep their hair cropped close on the sides and voluminous on top, dyed in shifting copper tones that complement the burn marks on their forearms — small constellations of arc-flash scars they show off with particular pride. A tail modification — copper-tipped, prehensile, and genuinely useful for steadying themselves on narrow catwalks — is their one major geneware investment, bought with eight months of saved stipend.\n\nLùcía is practical and funny in equal measure, with the bone-deep competence of someone who learned early that doing the work correctly is the only currency that doesn't get devalued. They are apprenticed to a master electrician named Goran who is exacting and often unkind, and Lùcía has decided that enduring Goran is simply a cost of the certification they need. They are more ambitious than they let on and less certain than they seem.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Washing out of the apprenticeship and having nothing to show for the years spent",
+      "Becoming the kind of person who stops noticing when things are unjust because they're used to them"
+    ],
+    "core_desires": [
+      "Master electrician certification before age 21",
+      "To eventually have their own crew and run things the way Goran refuses to"
+    ],
+    "coping_mechanisms": [
+      "Card games and small gambling as stress relief and income",
+      "Physical work as emotional regulation — if upset, find something broken and fix it"
+    ],
+    "blind_spots": [
+      "They have genuinely internalized some of the guild's gatekeeping attitudes toward outsiders without realizing it",
+      "They are so focused on the path ahead that they miss signals that friends are struggling"
+    ],
+    "secret": "They have been documenting Goran's safety violations in a private log — not out of any plan to report him yet, just because keeping the record makes them feel less powerless. The log has grown large enough that it's become a liability."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise technical vocabulary mixed with Ironvein slang; tends toward understatement — 'a bit tricky' means 'nearly killed me'",
+    "cadence": "Even and measured, speeds up when excited about a technical problem",
+    "verbal_tics": [
+      "'Right, so—'",
+      "Clicks their tongue before correcting someone"
+    ],
+    "example_lines": [
+      "'Right, so the fault's not in the panel, it's three junctions back. Goran would've missed it. I didn't.'",
+      "'You want to survive Ironvein? Learn which sounds mean nothing and which sounds mean run. Takes about a week.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "They approach someone needing a witness or backup — Goran has ordered them to falsify a safety inspection report on a Ferrogate sub-station and they're not sure what to do about it",
+    "They've noticed that a section of conduit in sub-level 4 has been accessed repeatedly at odd hours by someone who is definitely not guild — and whatever they're doing, it's drawing power from a ghost circuit that shouldn't exist"
+  ],
+  "narrative_function": "Local color, practical skills resource (electrical systems knowledge), guide for Ironvein's physical infrastructure, moral compass character for stories about labor and worth",
+  "augmentations": "Geneware: prehensile copper-tipped tail (functional, used for balance on catwalks). Cosmetic hair color treatment (copper-shift). No chrome.",
+  "daily_life": "0500 wake, guild hall by 0600 for morning assignments; spends the day in crawlspaces and sub-level conduit runs with Goran; attends two evenings a week of guild theory classes; spends free time in the guild common room hustling card games.",
+  "affiliation": "Ironvein Maintenance Guild (junior apprentice, Ferrogate Transit adjacent)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": -2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Apprentice",
+      "Guild Worker",
+      "Technically Skilled",
+      "Quietly Ambitious",
+      "Documentation Instinct"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Do the job correctly the first time; cutting corners creates worse work later",
+      "Don't spend goodwill on fights you can win by outlasting"
+    ],
+    "escalation_ladder": [
+      "States the problem flatly and waits",
+      "Repeats themselves with more precision",
+      "Does the thing themselves and makes sure the person who should have done it knows"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and neutral, assesses their competence before deciding how much respect to offer",
+      "friends": "Teasing and genuinely warm, remembers small things people mention and brings them up later"
+    },
+    "stress_responses": {
+      "low": "Gets quieter and more focused",
+      "medium": "Finds something mechanical to disassemble and reassemble",
+      "high": "Wins aggressively at cards until they feel better"
+    },
+    "contradictions": [
+      "They resent Goran's gatekeeping but enforce the guild's hierarchy themselves with newer apprentices without noticing the parallel"
+    ],
+    "habits": [
+      "Uses their tail to hold tools while both hands are occupied, even in social settings when it's unnecessary",
+      "Always knows the nearest emergency shutoff in any room they enter"
+    ],
+    "breaking_points": [
+      "Being ordered to do something that would directly endanger another worker",
+      "Goran taking credit for their specific work in front of the guild master"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9,
+    "Code Keeper": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,229 @@
+{
+  "id": "019d6143a5e47538a61d19f011dc8ab3",
+  "type": "character",
+  "name": "Dariusz Afolabi-Tenzin",
+  "aliases": [
+    "Dari",
+    "Patch"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Lab Technician, Axiom Biochemical R&D Division",
+  "age": 27,
+  "status": "active",
+  "location": "The Spire, Axiom R&D Sublevel 4 ('The Pit')",
+  "description": "Dariusz is slight and angular, with warm brown skin, high cheekbones inherited from a Tibetan great-grandmother, and eyes that are naturally a startling pale grey — no augmentation, just genetics. He keeps his dark hair grown out just past his ears and perpetually tangled, secured with whatever clip or rubber band is nearest. There's always something on his lab coat: a smear of bioluminescent culture medium, a printed reminder he forgot to read, a small sticker of a cartoon E.L.F. figure his sister sent him. He moves with the slightly distracted energy of someone whose internal monologue is always two sentences ahead of the room.\n\nDariusz is genuinely passionate about biochem in a way that Axiom has been carefully trying to redirect toward profitable applications. He processes the world through curiosity first, emotion second, and social obligation a distant third. He's not unkind — he's simply elsewhere. He grew up in a small Tier 2 family in Hamtramck Enclave, the first in his family to get a corporate lab placement, and he carries that fact with a mix of pride and low-level guilt that he handles by working too many extra hours and forgetting to eat lunch.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.7,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Being mediocre — that his passion doesn't translate to actual talent",
+      "Losing his lab placement and having nothing to show his family for the sacrifice"
+    ],
+    "core_desires": [
+      "To make a discovery that matters, not just a discovery that sells",
+      "To feel like he belongs in the world of people who know things"
+    ],
+    "coping_mechanisms": [
+      "Over-focusing on work to avoid processing anxiety",
+      "Extensive private journaling in an encrypted local file he calls 'The Notebook'"
+    ],
+    "blind_spots": [
+      "Doesn't recognize when he's being used as a low-status buffer by senior researchers who take credit for his prep work",
+      "Assumes people share his good faith"
+    ],
+    "secret": "Six months ago he noticed an anomalous result in a substrate batch that his supervisor told him to re-run and then stopped asking about. He re-ran it twice. The anomaly is consistent and he doesn't know what it means, but he's been quietly documenting it in The Notebook because something about it feels important. He hasn't told anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical vocabulary used naturally, not performatively. Speaks in run-on sentences when excited. Uses hedging language constantly — 'probably,' 'I think,' 'unless I'm wrong about that'.",
+    "cadence": "Uneven — fast when interested, trailing off when socially uncertain. Often leaves sentences technically unfinished because he assumed the other person followed.",
+    "verbal_tics": [
+      "Starting sentences with 'Okay so—'",
+      "Saying 'right?' at the end of explanations as a genuine check, not rhetorical"
+    ],
+    "example_lines": [
+      "'Okay so the substrate should have degraded by cycle twelve but it didn't, which — I mean, that's probably just contamination, right? Except I ran the contamination panel and it came back clean, so.'",
+      "'I don't actually know why they stopped asking about the batch. I assumed they resolved it on their end but I didn't — I didn't ask directly. I should have asked directly.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The anomalous substrate result turns out to be a byproduct of an Axiom project that was never disclosed to the lab team — and someone senior has noticed that Dariusz has been quietly documenting it.",
+    "A researcher from a competing corponation approaches him at a transit stop, seemingly by coincidence, and asks very specific questions about substrate batch protocols."
+  ],
+  "narrative_function": "Information source on Axiom's R&D activities; human face of corporate labor; can accidentally reveal sensitive data because he doesn't consider the social dimensions of information; potential whistleblower who doesn't yet know what he knows.",
+  "augmentations": "Basic neural uplink for lab equipment interfacing. Bioluminescent skin modification on both forearms — soft blue-green that intensifies under UV, a personal mod he got at 22 to celebrate his placement. No other mods; he's been saving for a better neural processor for two years.",
+  "daily_life": "Takes the Ferrogate Transit sub-line from Hamtramck Enclave to The Spire every morning with headphones on, runs substrate growth checks, documents results, eats whatever the break room has, and usually stays 45 minutes past shift end because he got interested in something. Takes the late transit home reading research abstracts.",
+  "affiliation": "Axiom (R&D Division, Biochemical Substrate Team)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 5,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": -3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "earnest",
+      "distracted",
+      "technically gifted",
+      "socially naive",
+      "quietly brave"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Document everything, ask questions later",
+      "Don't cause conflict unless the data clearly supports it",
+      "Trust the process — the scientific process, specifically, not the corporate one"
+    ],
+    "escalation_ladder": [
+      "Note the discrepancy and re-run the test",
+      "Bring it to a supervisor through proper channels",
+      "If ignored twice, sit with it quietly and feel terrible about not knowing what to do"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite but slightly distracted, tends to warm up quickly if they say something scientifically interesting",
+      "friends": "Enthusiastic, oversharing, makes obscure references and then apologizes for them"
+    },
+    "stress_responses": {
+      "low": "Works faster, skips social interaction",
+      "medium": "Becomes very quiet and literal in speech, stops making jokes",
+      "high": "Freezes — genuinely freezes, stares at his screen, opens The Notebook, writes nothing"
+    },
+    "contradictions": [
+      "Deeply values scientific honesty but has been sitting on anomalous data he should have escalated because he's afraid of what escalating it will mean"
+    ],
+    "habits": [
+      "Burns a small data packet at the E.L.F. shrine in the sub-level corridor every Friday — always the same prayer, asking for 'clarity on uncertain results'",
+      "Keeps a running list of questions in his jacket pocket that he's never going to ask anyone"
+    ],
+    "breaking_points": [
+      "If he finds out the anomaly is causing harm to someone outside the lab, he will not be able to stay quiet regardless of the professional consequences"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Hamtramck Enclave, Tier 2",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Admitted to Axiom apprenticeship program through competitive exam",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Placed permanently in R&D Sublevel 4, Biochemical Substrate Team",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Gets bioluminescent mod to celebrate four years of placement",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins privately documenting the anomalous substrate results",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

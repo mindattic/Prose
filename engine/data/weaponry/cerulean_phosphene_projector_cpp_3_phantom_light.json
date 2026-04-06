@@ -1,0 +1,55 @@
+{
+  "id": "019d6143ab1f783dac255ec9eecba01a",
+  "name": "Cerulean Phosphene Projector CPP-3 'Phantom Light'",
+  "type": "weapon",
+  "aliases": [
+    "Phantom Light",
+    "The Ghost",
+    "Blueblind"
+  ],
+  "category": "exotic",
+  "description": "The CPP-3 does not attack the eyes. It attacks the visual cortex directly, using a precisely calibrated coherent photonic pulse tuned to penetrate ocular tissue and induce phosphene cascades — false light signals — directly in the brain's visual processing centers. Unlike the Retinal Cascade Emitter which burns the retina, the Phantom Light leaves the physical eye entirely undamaged while flooding the target's visual field with overwhelming blue-white hallucinated light that persists for 40 to 180 seconds depending on exposure duration. The experience is described by survivors as being inside a star.\n\nArcturus Defense Solutions developed the CPP-3 as a less-lethal alternative to blinding munitions for use in hostage situations where collateral optical damage was a legal liability. The photonic pulse frequency required years of calibration — too low and the effect is merely disorienting, too high and permanent cortical damage results. The production variant sits at a frequency that Arcturus' legal team certified as 'non-permanently injurious' based on studies that have since been contested. Prolonged exposure or repeated use within 24 hours carries documented risk of lasting visual processing damage.\n\nThe weapon's most distinctive characteristic is that it functions identically regardless of whether the target's eyes are open, closed, or augmented with standard optical implants. Standard cyberoptic shutters provide no protection — the pulse bypasses the eye entirely. Only full cortical shielding or specialized photonic dampening implants (rare and expensive) offer meaningful resistance. This has made the CPP-3 particularly valuable against augmented targets who believe their cyberoptics make them immune to visual disruption.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Coherent photonic pulse delivery",
+    "Cortical phosphene induction",
+    "Trans-ocular neural stimulation"
+  ],
+  "specifications": "effective range: 2–35 meters\npulse duration: 0.08 seconds (standard) to 2 seconds (sustained)\npower source: Arcturus APack-7 (12 standard pulses)\nweight: 2.7 kg\nlength: 58 cm\ndisorientation duration: 40–180 seconds per standard pulse\ncyberoptic bypass: Confirmed effective against all standard optical implants\nrisk threshold: Permanent damage risk at 3+ pulses within 24-hour window\nhousing: Matte slate polymer with Arcturus tactical grip standard",
+  "tactical_use": "The CPP-3 is used by specialized law enforcement and military units as a primary breach-support weapon — a point operator fires on the defender immediately before breach to create a window of total visual incapacitation. It is particularly valued in environments where cyberoptic-equipped targets are expected, since conventional flash-bang devices are largely ineffective against augmented subjects. Corporate security teams use it for non-lethal detention of high-value targets. The 35-meter range allows standoff engagement before close-quarters entry.",
+  "cultural_context": "The CPP-3 sits in an uncomfortable legal and cultural space — officially restricted rather than prohibited, meaning licensed security contractors can carry it, but its presence in civilian hands triggers immediate law enforcement interest. Among augmented communities there is specific fear and resentment around the weapon, since it specifically negates the protective advantage of expensive cyberoptic work. 'Getting ghosted' has become slang for being hit with a CPP-3, and there is a small underground market for the cortical shielding implants that resist it.",
+  "known_users": [
+    "Arcturus Defense Solutions demonstration teams",
+    "Tier-1 corporate breach units",
+    "Licensed private security contractors (high-end)",
+    "Black market operators who've acquired units through supply chain diversion"
+  ],
+  "story_hooks": [
+    "A series of corporate heists share one signature: security footage shows guards simply stopping and standing still for two minutes before the thieves walk past them — someone has a CPP-3 and knows exactly how to use it.",
+    "A character with expensive cyberoptics gets hit with a CPP-3 and is shaken to discover their augmentations offered no protection whatsoever.",
+    "Arcturus is quietly recalling a batch of CPP-3s with a calibration defect that places the pulse frequency in the permanent-damage range — they haven't announced why.",
+    "An underground clinic is offering 'phantom light immunity' implants of questionable efficacy — someone is making money on fear."
+  ],
+  "ammunition_type": [
+    "Arcturus High-Density Capacitor Cell ADS-HC9"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "heist",
+    "augment",
+    "neural",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "money",
+    "clinic",
+    "market",
+    "rain",
+    "fire",
+    "tier 3"
+  ]
+}

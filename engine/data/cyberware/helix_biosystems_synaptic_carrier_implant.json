@@ -1,0 +1,56 @@
+{
+  "id": "019d6143a7be76c5b14e2aff63b93352",
+  "name": "Helix Biosystems Synaptic Carrier Implant",
+  "brand_name": "Helix",
+  "product_name": "Helix Biosystems Synaptic Carrier Implant",
+  "type": "cyberware",
+  "aliases": [
+    "The Whisper Seed",
+    "Neural Post",
+    "Syncarrier"
+  ],
+  "category": "comms",
+  "body_location": "",
+  "description": "The Synaptic Carrier Implant is a subdermal communications node roughly the size of a grain of rice, embedded at the base of the skull or behind the mastoid bone. It operates by converting encrypted radio-frequency signals into mild bioelectric pulses that the auditory cortex interprets as sound — incoming messages register as a faint interior voice rather than an external noise. Outbound transmission is triggered by subvocalization, with a throat-contact microphone patch completing the circuit. The implant draws power from ambient body heat via a thermoelectric microcell and requires no external charging under normal conditions.\n\nWhat distinguishes the Synaptic Carrier from competing subdermal comm solutions is its use of Helix's proprietary Cortical Masking Protocol, which encodes transmissions in patterns that mimic ordinary neural noise. Even if a signal is intercepted, it is nearly indistinguishable from background bioelectric activity without the specific decryption key burned into the implant at installation. The result is a communications channel that is effectively invisible to most passive surveillance sweeps.\n\nThe implant is widely used by corporate field operatives, undercover law enforcement, and high-end fixers who cannot afford to be caught with visible comms hardware. In the lower districts, black-market versions — often referred to as 'ghost seeds' — circulate with degraded encryption and unstable power regulation, occasionally causing mild auditory hallucinations or persistent tinnitus in users who run them too long.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"dimensions\":\"4mm x 1.5mm cylindrical capsule\",\"weight\":\"0.3g (implanted)\",\"range\":\"Up to 2km line-of-sight; 400m in dense urban environments\",\"encryption\":\"CMP-7 cortical noise masking, 256-bit rolling key\",\"power_source\":\"Thermoelectric microcell, body-heat sustained\",\"battery_life\":\"Indefinite under normal metabolic conditions; degrades in hypothermia\",\"frequency_band\":\"Adaptive hopping, 700MHz–2.4GHz\",\"installation\":\"Requires licensed Helix biosurgical technician or equivalent\"}",
+  "side_effects": [],
+  "cultural_context": "Possession of a legitimately licensed Synaptic Carrier signals serious professional standing — the installation cost alone prices out most street-level operators. Among corporate security divisions, wearing one is a quiet status marker, proof that you work jobs worth hiding. In the Undercroft districts, ghost-seed versions have developed an almost ritualistic reputation: getting one installed in a back-alley clinic is treated as an initiation rite in certain courier collectives, even knowing the hardware is unreliable. There is a persistent urban legend that long-term ghost-seed users eventually stop being able to tell which thoughts are their own and which are incoming transmissions.",
+  "known_users": [
+    "Corporate deep-cover operatives",
+    "High-tier fixers",
+    "Black-site law enforcement handlers",
+    "Undercroft courier collective initiates (ghost-seed variant)",
+    "Corporate executive protection details"
+  ],
+  "story_hooks": [
+    "A fixer discovers their Synaptic Carrier has been broadcasting on a secondary channel they never authorized — someone has been listening to every job for months.",
+    "A ghost-seed user begins receiving transmissions in a language they don't speak, from a frequency that should be dead.",
+    "A licensed installer is found murdered; the only lead is a list of implant serial numbers that includes a prominent city official.",
+    "A team's Synaptic Carriers all go silent simultaneously in a district where they should have full coverage — something is actively suppressing bioelectric-band signals.",
+    "A character is offered a significant sum to donate their implant post-removal to an anonymous buyer — no explanation given."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "comms",
+    "cyberware",
+    "war",
+    "neural",
+    "ai",
+    "corporate",
+    "surveillance",
+    "power",
+    "clinic",
+    "alley",
+    "market",
+    "rain",
+    "circuit",
+    "tier 3"
+  ]
+}

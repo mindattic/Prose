@@ -1,0 +1,170 @@
+{
+  "id": "019d6143a69a741eb7458663ee226a04",
+  "type": "character",
+  "name": "Phúc Nkrumah-Delacosta",
+  "aliases": [
+    "Phúc the Small",
+    "Penny"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "airship drifter, seasonal worker, scavenger-trader",
+  "age": 14,
+  "status": "active",
+  "location": "Manitowoc Drydock, living in and around the maintenance scaffolding of grounded airship hulls",
+  "description": "Phúc is small for fourteen, and he has made his smallness into a professional skill — he can fit into the access shafts of a grounded airship hull that no adult can reach, which is why the drydock workers let him stay on the scaffolding rather than running him off. His hair is black and cut by himself with whatever he can find; currently one side is shorter than the other and he seems unbothered. His skin is a warm medium brown, and he has cat ears — real geneware ones, tawny-furred and independently mobile, which he got from a traveling mod-clinic two years ago using money he still won't explain. He keeps them flat when he wants to seem smaller and unthreatening, which is most of the time.\n\nPhúc has been drifting the airship lanes since his mother's cargo vessel was impounded by Ferrogate Transit for unpaid port fees when he was eleven. He doesn't know where she is now. He cooks this knowledge in a place behind his sternum and does not take it out often. He is extremely competent in all matters relating to airship maintenance, scavenging, and the informal economy of drydock communities, and he has the bright, slightly exhausting energy of a teenager who has learned that being useful is safer than being visible.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.4,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "that his mother doesn't look for him because she found a way to move on without him",
+      "being caught by Meridian 88 social services and put somewhere he can't leave"
+    ],
+    "core_desires": [
+      "to find out where his mother's cargo vessel was impounded to — the specific dock, the specific record",
+      "to eventually have enough technical knowledge to crew a proper airship, not just clean its shafts"
+    ],
+    "coping_mechanisms": [
+      "hypercompetence — being the best at whatever task is in front of him",
+      "performing younger and more naive than he is to lower people's guard",
+      "the cat ears, which he can flatten for comfort like pulling a hood down"
+    ],
+    "blind_spots": [
+      "he has become so good at being useful to adults that he hasn't figured out what he wants when no one needs anything from him",
+      "he trusts Yaza's judgment more than his own and doesn't notice when this is being exploited"
+    ],
+    "secret": "The cat ear geneware money came from selling a memory chip he found in an airship access shaft — a chip containing Ferrogate Transit internal communications about the impoundment policy that grounded his mother's vessel. He doesn't know what was on it. He's never been able to find out. He sold it to a man who paid too much and asked no questions, which Phúc has since understood means the information was extremely valuable to someone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Airship technical vocabulary mixed with drydock slang and Vietnamese endearments he uses absent-mindedly. Code-switches between sounding younger and older depending on who he's talking to.",
+    "cadence": "Fast and bright when comfortable; short declarative sentences when uncertain",
+    "verbal_tics": [
+      "'easy' as an affirmative ('you need the secondary coupling? easy')",
+      "ears flatten visibly when he lies",
+      "laughs before he says things he's worried about"
+    ],
+    "example_lines": [
+      "'Shaft seven's collapsed at the third junction, nobody's been in there since the refit. Easy. I can have your retrieval in twenty minutes if you front me a meal token.'",
+      "'I don't live here, I just know where everything is. Those are different things.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Phúc found a second memory chip in the same airship hull series as the first one — different access shaft, same vessel class. He hasn't sold it yet. He wants to know what's on it first. He needs someone who can read Ferrogate encrypted formats.",
+    "Yaza, the de facto leader of the drydock's child drifter group, has been missing for four days. The other children are scared. Phúc won't admit he's scared. He is asking adults very casual questions about where people go when they disappear from the drydock."
+  ],
+  "narrative_function": "Local color, access and navigation asset (he knows the drydock's hidden geography better than anyone), information source on the drifter child community and airship movement, potential object of protective concern for players",
+  "augmentations": "Geneware cat ears (tawny fur, independently mobile). No other augmentations.",
+  "daily_life": "Phúc spends his mornings doing access-shaft retrievals for drydock workers in exchange for meals and the right to sleep in an empty hull bay; afternoons he trades scavenged airship components at the informal Manitowoc market; evenings he teaches himself to read Ferrogate technical manuals he finds in recycling bins.",
+  "affiliation": "No formal affiliation; informal membership in the drydock's child-drifter network, loosely organized around a fourteen-year-old named Yaza who Phúc respects and would not admit to following",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": -1,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "airship-born",
+      "drydock scavenger",
+      "cat-eared",
+      "self-taught technician",
+      "child drifter"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never let someone know you need something before you know they can be trusted with that information",
+      "Always complete the job — reputation is the only currency that compounds",
+      "'Is this something Yaza would think is stupid?' — genuine internal check"
+    ],
+    "escalation_ladder": [
+      "Appearing younger, less aware, and more confused than he is",
+      "Disappearing into the scaffolding — he knows routes that no adult can follow",
+      "Bringing information to a trusted adult, which he finds humiliating but will do"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally cheerful and competent; presents himself as a simple transactional relationship",
+      "friends": "Punches arms, shares food without being asked, sits close without making it into anything"
+    },
+    "stress_responses": {
+      "low": "Ears flatten; gets busier",
+      "medium": "Takes on additional tasks — cleaning things that don't need cleaning",
+      "high": "Goes into the access shafts alone and doesn't come out until he's ready"
+    },
+    "contradictions": [
+      "Insists he prefers working alone but has carefully constructed a whole community of people he cares about at the drydock"
+    ],
+    "habits": [
+      "Rubs the base of his cat ears when thinking — they generate warmth",
+      "Sleeps with a Ferrogate technical manual under his head (pillow substitute and study material)",
+      "Leaves small scavenged objects at a particular E.L.F. node in shaft three — calls her 'the Shaft Lady'"
+    ],
+    "breaking_points": [
+      "An adult treating the child drifter network as invisible or disposable in his presence",
+      "Any direct question about his mother"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9,
+    "Quick Study": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

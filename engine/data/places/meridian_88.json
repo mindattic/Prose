@@ -1,0 +1,117 @@
+{
+  "id": "019d6143a92773acabfa37c77f9cff8d",
+  "type": "place",
+  "name": "Meridian 88",
+  "aliases": [
+    "M88",
+    "The Corridor",
+    "The Western Shore",
+    "The Spine"
+  ],
+  "description": "Meridian 88 is the official corporate-administrative designation for the continuous urban sprawl covering the entire western shore of Lake Michigan, extending north through Lake Superior's southern coast and into Canadian territory. The name derives from the 88th meridian west, the longitudinal line that roughly bisects the urban mass at its widest point near old Chicago. Nobody who lives here calls it that. To the corps it is Meridian 88, a regulated economic zone. To everyone else it is the Corridor, the Spine, or just the city — singular, because after two centuries of unchecked growth, the distinction between Chicago, Milwaukee, Green Bay, and the Fox Cities dissolved into one continuous concrete nervous system stretching over 500 kilometers from the Indiana border to the Canadian frontier.\n\nThe sprawl is not uniform. The dense urban core — old Chicago, the Shelf, the Spire, the Circuit — is the heart, where 60 million people stack vertically in arcology towers and cling to the sea wall over Lake Michigan. North of the core, the density thins but never stops: Milwaukee's thirteen districts bleed into Sheboygan's industrial lakeshore, which bleeds into the Fox Cities Nexus and its 200 data centers, which bleeds into Green Bay's Lambeau Terminus, which bleeds into the contested Upper Peninsula frontier. Even the spaces between are not empty — they are filled with maglev corridors, troll bridges, ungoverned zones, and the infrastructure arteries that keep 80 million people fed, powered, and surveilled.\n\nThe population is estimated at 80 million registered citizens across all tiers. The excluded and undocumented push the real number past 100 million. Meridian 88 contains hundreds of named districts, neighborhoods, and zones — from the Spire's corporate apex to the Shelf's unlicensed construction jutting over the lake, from the flooded ruins of Old Harbor to the contested mining towns of the Upper Peninsula. Between and beneath them lie the ungoverned corridors — the gaps in jurisdiction where corporate sovereignty ends and nothing replaces it. The western shore of Lake Michigan is not a city that grew. It is a civilization that metastasized.",
+  "atmosphere": {
+    "sights": [
+      "Arcology towers punching through permanent haze layers",
+      "Maglev lines threading between buildings like steel tendons",
+      "Corporate logos projected onto cloud cover — advertising you cannot escape",
+      "Lake Michigan visible from the upper tiers, a grey expanse choked with automated cargo platforms"
+    ],
+    "sounds": [
+      "The low hum of the maglev network — constant, omnipresent",
+      "Drone swarms overhead, navigation pings overlapping into white noise",
+      "Emergency sirens from districts you will never visit",
+      "The silence of the ungoverned corridors, which is not silence at all"
+    ],
+    "smells": [
+      "Ozone from the maglev rails",
+      "Recycled air with chemical undertones in the enclosed tiers",
+      "Lake rot from the flooded lower districts when the wind shifts",
+      "Synth-food vendors and nutrient paste — the smell of 40 million people eating"
+    ],
+    "feel": "A city that was never designed, only accumulated. Every layer built on top of the last, infrastructure decaying beneath the weight of what was added. The higher you go, the cleaner the air. The lower you go, the more honest the people.",
+    "tags": []
+  },
+  "demographics": "80 million registered across all tiers, 100+ million actual when the excluded and undocumented are counted. The densest concentration is the old Chicago core (60 million in the vertical stack), thinning northward through Milwaukee (8 million), the Fox Cities (3 million), and the frontier settlements. Tiered citizenship from Tier 5 (corporate elite) down to Tier 1 (street-level) and the excluded (no tier, no rights, no record). Climate refugees, coastal collapse survivors, and economic migrants from the fallen cities make up roughly 20% of the lower-tier population.",
+  "economy": "Corporate sovereign territories generate 80% of GDP across the entire western shore. The excluded economy — barter, dead drops, analog currency, gray market, troll bridges — sustains the other 40+ million who exist outside corporate systems. The gap between the two economies is not a gap. It is a wall that runs the entire length of the Corridor.",
+  "power_structure": "The Big 20 corponations hold sovereign authority over their respective territories. Municipal government exists as a rubber stamp. Law enforcement is privatized above Tier 2. Below Tier 2, there is no law — only jurisdiction gaps and the people who fill them.",
+  "dangers": [
+    "Corporate jurisdiction boundaries — cross the wrong line and your rights change",
+    "Surveillance saturation in upper tiers, surveillance absence in lower tiers",
+    "Climate infrastructure failure — flooding, heat events, air quality collapses",
+    "The Community Integration Initiative — corporate-funded population management disguised as social services"
+  ],
+  "opportunities": [
+    "The jurisdiction gaps are where freelancers like Kyle operate",
+    "The excluded economy runs on trust and reputation — valuable currencies",
+    "Information flows downward through the tiers faster than the corps can contain it",
+    "Every corponation has enemies, and enemies pay well"
+  ],
+  "story_hooks": [
+    "Meridian 88 is applying for UN Economic Zone redesignation — which would give the Big 20 even more sovereign authority",
+    "The flooded lower districts are slowly being reclaimed by automated construction drones — but who is paying for it and why?",
+    "A second maglev network is being built beneath the existing one. The official explanation does not explain the military-grade shielding."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Spire (corporate apex — upper tiers)",
+      "The Meridian Core (mid-tier commerce and housing)",
+      "The Circuit (tech district and gray market)",
+      "The Shelf (working poor, excluded, Kyle's home)",
+      "Old Harbor (flooded industrial ruins)",
+      "The Threshold (Evanston — northern border of the core)",
+      "Milwaukee Core (northern urban mass)",
+      "Fox Cities Nexus (data center region)",
+      "Lambeau Terminus (northern terminus)",
+      "The Narrows (Mackinac — gateway to UP frontier)",
+      "Canadian border zone (Lake Superior shore)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Everyone — this is the city itself, all 100 million of them"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Spine",
+      "description": "The main maglev artery running the full 500km length of M88 — from the Indiana border through Chicago, Milwaukee, Green Bay, to the Canadian frontier. Four hours end to end at full speed, if the trains are running.",
+      "tags": []
+    },
+    {
+      "name": "Lake Michigan Cargo Platform Array",
+      "description": "Automated shipping platforms visible from any upper-tier window — the economic heartbeat of M88",
+      "tags": []
+    },
+    {
+      "name": "The Ungoverned Corridors",
+      "description": "Jurisdiction gaps between corporate territories — where Kyle learned to survive",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.8781,
+    "lng": -87.6298,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "trust",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "power",
+    "harbor",
+    "market",
+    "bar",
+    "rights",
+    "refugee",
+    "drone",
+    "lake",
+    "shelf",
+    "spire",
+    "circuit",
+    "old harbor"
+  ]
+}

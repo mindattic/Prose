@@ -1,0 +1,64 @@
+{
+  "id": "019d6143ab537da9a58e17ac07778a55",
+  "name": "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+  "type": "weapon",
+  "aliases": [
+    "Kitestring",
+    "The Leash",
+    "Overhead",
+    "Wire Eye"
+  ],
+  "category": "drone",
+  "description": "The TORSD-7 is a high-altitude tethered drone platform designed for persistent area suppression and overwatch. Unlike free-flight drones, the Kitestring operates on a conductive monofilament tether up to 180 meters in length, anchored to a ground station the size of a briefcase. The tether serves dual purposes: it provides continuous power to the drone, eliminating battery constraints, and it carries the electrothermal discharge rail that is the platform's primary weapon system. The drone maintains a stable hover via four counter-rotating ducted fans and positions itself above a target area while the ground station operator designates firing solutions through a handheld interface.\n\nThe weapon system works by charging the tether itself to extreme voltage and then releasing a directed electrothermal burst downward along a secondary projected filament fired from the drone's undercarriage. The projected filament is a ultra-fine conductive thread, weighted and aimed, that drapes across a target or target area. On contact, the ground station completes the circuit and delivers a high-amperage electrothermal pulse through the filament. The effect on unshielded human targets is immediate cardiac and neuromuscular disruption. On vehicles or electronic systems, the pulse induces catastrophic circuit failure.\n\nThe TORSD-7's distinctive silhouette — a hovering shape connected to the ground by a nearly invisible thread — has earned it a reputation for surreal, almost supernatural lethality. Victims and witnesses frequently report not understanding how or from where the strike came. Zheng-Dao Bioelectric developed the platform for infrastructure protection contracts in contested industrial zones, but the design was widely copied and the black market variant, the 'Barefoot,' strips the IFF systems and sells the ground station as a portable backpack unit.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 5+ / Military only / Black market (Barefoot variant)",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Electrothermal discharge rail",
+    "Conductive monofilament tethering",
+    "Neural feedback loops"
+  ],
+  "specifications": "tether length: Up to 180 meters\ntether material: Tungsten-carbon composite monofilament, 0.3mm diameter\ndrone dimensions: 62cm rotor span\ndrone mass: 3.8kg\nground station mass: 4.2kg\noperational altitude: 15–180 meters\ndischarge voltage: 18,000V peak\nprojected filament range: 22 meters lateral from hover position\nrecharge cycle: 4.5 seconds between discharges\nwind tolerance: Operational up to 45 km/h crosswind\nacoustic signature: 61dB at 30 meters",
+  "tactical_use": "Deployed at the perimeter of a defended position to provide persistent overwatch. The ground station operator can designate targets via thermal or optical feed from the drone's sensor package. The near-invisible tether and filament make target identification of the weapon source extremely difficult — most victims are struck before understanding the threat geometry. Used by defensive teams to hold chokepoints, stairwells, and open plazas. The tether's conductive properties also allow the operator to pulse a low-voltage 'warning' discharge through a dropped filament, though field operators rarely use this setting.",
+  "cultural_context": "The Kitestring is associated with paranoia and contested space in Meridian 88. In neighborhoods where territorial disputes are common, residents have developed the habit of looking up before crossing open areas — a behavior the local press has termed 'wirewalker's reflex.' The drone's silence and the nearly invisible nature of the tether have made it a subject of urban legend, with some communities attributing unexplained deaths to 'the leash' without being able to prove the weapon's presence. Corporate zones that deploy TORSD-7 systems do not advertise the fact, and the drones are painted to match sky conditions.",
+  "known_users": [
+    "Zheng-Dao Bioelectric infrastructure security divisions",
+    "High-value corporate site perimeter defense teams",
+    "Well-funded territorial gang operations in the outer industrial zones",
+    "Black market arms dealers offering the 'Barefoot' variant to mid-tier operators",
+    "A known mercenary unit called the Filament Boys, who use the platform as their signature"
+  ],
+  "story_hooks": [
+    "Three bodies have been found in an open plaza with identical cardiac trauma and no visible entry wounds — the local fixer suspects a Kitestring deployment but needs someone to find the ground station anchor point.",
+    "A corporate whistleblower is hiding in a building surrounded by an active TORSD-7 perimeter — the party needs to map the tether geometry before attempting extraction.",
+    "Someone is selling Barefoot variant ground stations out of a transit locker network — the components are traced to a Zheng-Dao Bioelectric assembly plant with an inside source.",
+    "A street kid found what she thought was a fishing line in an alleyway and pulled it — she's in a burn ward now, and her older brother wants the operator's name."
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "war",
+    "gang",
+    "death",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "pain",
+    "alley",
+    "market",
+    "bar",
+    "rain",
+    "vehicle",
+    "hover",
+    "train",
+    "fire",
+    "circuit",
+    "tier 5"
+  ]
+}

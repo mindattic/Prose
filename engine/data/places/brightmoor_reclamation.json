@@ -1,0 +1,106 @@
+{
+  "id": "019d6143a911755aa96a9518f2afbd88",
+  "type": "place",
+  "name": "Brightmoor Reclamation",
+  "aliases": [
+    "Brightmoor",
+    "The Reclamation",
+    "Green Zone",
+    "The Rewild"
+  ],
+  "description": "Brightmoor was Detroit's most abandoned neighborhood. By the 2020s, entire blocks had returned to prairie — houses demolished or collapsed, streets cracking under wild vegetation, the urban grid dissolving into something that looked like nature reclaiming a mistake. By the 2040s, when the rest of Detroit was being carved into corporate sovereign territories, Brightmoor had already been given up on so thoroughly that even the corponations couldn't imagine a use for it. The land was contaminated. The infrastructure was gone. The few hundred remaining residents were classified as 'place-attached excluded' — a bureaucratic designation meaning 'too poor and too stubborn to relocate.'\n\nWhat nobody anticipated was that abandoned urban land in a region experiencing climate-driven agricultural collapse would become the most valuable untapped resource in the GLM. Verdant Systems — the agricultural technology corponation — saw it first. In 2162, Verdant began acquiring Brightmoor parcels for pennies, remediating the soil using proprietary bio-extraction techniques, and converting the former residential blocks into the largest urban agricultural zone in North America. The Brightmoor Reclamation now covers 3,200 acres of vertical hydroponic towers, soil-remediation test plots, and experimental growing operations that produce 8% of the Detroit metro's fresh food supply. The neighborhood that was too broken to save became the farm that feeds the city.\n\nThe remaining residents — approximately 3,000 of them, descendants of the place-attached excluded and newer arrivals who found affordable land adjacent to the agricultural zone — occupy a strip along the Reclamation's eastern edge. Their relationship with Verdant Systems is complicated. Verdant provides employment (1,200 jobs in agricultural operations), infrastructure support (the power grid extension that reaches the residential strip was Verdant-funded), and a purpose that the neighborhood hasn't had in living memory. Verdant also owns the land, controls the water supply, determines what gets grown and what gets distributed, and holds a sovereign agricultural charter that exempts the entire Reclamation from municipal zoning, environmental review, and labor standards. The residents work in the towers. The residents eat what the towers produce. The residents do not own the towers. The feudal parallel is obvious to everyone except Verdant's PR department.",
+  "atmosphere": {
+    "sights": [
+      "Vertical hydroponic towers rising from former residential lots — sixty feet of growing capacity where houses used to stand",
+      "The soil remediation plots — open fields with monitoring equipment where bio-extraction organisms visibly work the contaminated earth",
+      "The residential strip — modest housing along the eastern edge, dwarfed by the agricultural infrastructure",
+      "Autonomous harvesting drones moving through the tower arrays in pollination and collection patterns",
+      "Wild spaces between the developed parcels — Brightmoor's prairie reclamation still visible in the gaps Verdant hasn't reached yet"
+    ],
+    "sounds": [
+      "Hydroponic systems cycling — water movement at agricultural scale, a rushing sound that varies with the growing cycle",
+      "Harvesting drones — their rotors produce a distinctive buzzing that the agricultural workers have learned to read for operational status",
+      "The residential strip: a quiet community of people who wake before dawn because the towers' light cycle starts at 4 AM",
+      "Birds — the Reclamation's ecosystem has attracted species that haven't been seen in urban Detroit in decades",
+      "Wind through the wild spaces — unobstructed by buildings, carrying the smell of growing things across the district"
+    ],
+    "smells": [
+      "Growing plants at scale — a green, humid, chlorophyll-dense smell that permeates everything within a mile of the towers",
+      "Remediated soil — the bio-extraction process produces an earthy, slightly chemical odor during active treatment",
+      "The residential strip's cooking — modest meals prepared from agricultural surplus that Verdant provides as a benefit (and deducts from wages)",
+      "Wild prairie in the undeveloped gaps — native grasses and wildflowers that returned when the city left"
+    ],
+    "feel": "Hopeful and trapped. The Reclamation feels like proof that broken things can be made productive — the soil is cleaner, the food is real, the neighborhood has a future. But the future belongs to Verdant Systems, and the people who live and work here are participants in someone else's agricultural vision, fed by someone else's generosity, housed on someone else's land. It's serfdom with good PR and fresh vegetables.",
+    "tags": []
+  },
+  "demographics": "3,000 permanent residents in the eastern strip. 1,200 agricultural workers (significant overlap with residents). The community is predominantly Black, descended from families who never left Brightmoor even when everyone else did. Average age: 42. The younger generation is split between those committed to the community and those calculating how to leave.",
+  "economy": "Verdant Systems' Brightmoor Agricultural Zone: Φ14 billion in annual food production. The residential community's economy is almost entirely Verdant-dependent — wages, housing credits, food provisions, and infrastructure all flow from the corponation. Independent economic activity is limited to a small market on the residential strip where surplus food is traded.",
+  "power_structure": "Verdant Systems holds sovereign agricultural authority over the entire Reclamation. The residential community is governed by the Brightmoor Residents' Association, led by Marcus Cole, a 55-year-old lifelong resident whose family has been in Brightmoor since the 1950s. Cole negotiates with Verdant on behalf of the residents but holds no formal authority. His leverage is the community's labor and the PR consequences of mistreating the people who make your farm work.",
+  "dangers": [
+    "Verdant dependency — the community cannot survive without the corponation's infrastructure, employment, and food provision",
+    "Soil contamination — the remediation is ongoing, not complete, and the residential strip is adjacent to active treatment zones",
+    "Labor exploitation — agricultural work in the towers is physically demanding and the wages are below Detroit metro average",
+    "Food control — Verdant determines what the community eats by controlling what surplus is provided",
+    "Experimental agriculture — the test plots grow things that aren't fully understood, and the residents live downwind"
+  ],
+  "opportunities": [
+    "Agricultural knowledge — the workers here understand food production at a level that makes them valuable across the GLM",
+    "The wild spaces — the undeveloped gaps between Verdant's parcels are unmonitored and serve as transit corridors",
+    "Soil remediation data — Verdant's contamination data reveals what's in the ground across all of Detroit's industrial zones",
+    "Food as leverage — controlling 8% of the metro's fresh food supply is power, even if Verdant is the one controlling it"
+  ],
+  "story_hooks": [
+    "Marcus Cole discovers that Verdant's experimental test plots are growing a crop engineered to be addictive — a food product designed to create biological dependency in the consumer population. The test data is on Verdant's local servers, in a building that twelve agricultural workers pass through daily.",
+    "The soil remediation in the residential strip is showing anomalous results — the bio-extraction organisms are pulling out compounds that shouldn't be there, suggesting that someone contaminated the soil recently, not historically.",
+    "A Brightmoor teenager has been secretly cultivating a section of wild space using seeds stolen from Verdant's experimental plots. What she's growing is producing yields that Verdant's own towers can't match, and she doesn't understand why."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Eight Mile Divide",
+      "Palmer Circuit",
+      "The Heidelberg Scar"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Verdant Systems agricultural workers",
+    "Brightmoor residents who never left",
+    "Soil scientists and agricultural researchers",
+    "Food supply analysts tracking the GLM's dietary infrastructure"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Towers",
+      "description": "Vertical hydroponic installations — sixty-foot growing columns that produce food where houses used to stand",
+      "tags": []
+    },
+    {
+      "name": "Remediation Field Seven",
+      "description": "The largest active soil treatment plot — where bio-extraction organisms work Detroit's industrial legacy out of the ground",
+      "tags": []
+    },
+    {
+      "name": "Cole's Corner",
+      "description": "The Residents' Association meeting space — a converted garage on the residential strip where Marcus Cole mediates between community needs and corporate reality",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 42.3878,
+    "lng": -83.2507,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "secret",
+    "memory",
+    "ai",
+    "corporate",
+    "control",
+    "power",
+    "market",
+    "food",
+    "water"
+  ]
+}

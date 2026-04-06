@@ -1,0 +1,56 @@
+{
+  "id": "019d6143ab3d779fa8c9e97ea35a6422",
+  "name": "Piezoelectric Synaptic Disruption Gauntlet",
+  "type": "weapon",
+  "aliases": [
+    "PSDG-2",
+    "Stutter",
+    "The Politeness"
+  ],
+  "category": "exotic",
+  "description": "The PSDG-2 is a contact weapon built around a lattice of synthetic piezoelectric crystal arrays embedded in a rigid gauntlet chassis. On impact, the kinetic energy of a strike is harvested and instantaneously converted into a precisely shaped electrical discharge delivered through conductive fingertip contacts. The discharge is not designed to cause cardiac disruption or burns — it is tuned to the frequency band associated with motor cortex signal propagation, creating a transient desynchronization of voluntary muscle control in the struck region. A blow to the shoulder renders the arm temporarily useless. A strike to the base of the skull produces full-body motor collapse for between four and twenty seconds depending on neural density.\n\nThe engineering challenge that Arcturus Defense Solutions spent eleven years solving was achieving consistent piezoelectric output across variable impact force. A glancing blow and a full-force punch needed to produce the same targeted discharge profile, or the weapon's selectivity would be meaningless. The solution was a tiered compression array that buffers excess energy into a capacitor bank and supplements insufficient strikes from reserve, meaning the PSDG-2 delivers identical neurological effect regardless of how hard the operator hits. This made it immediately attractive to operators who lack the physical augmentation typical of close-quarters specialists.\n\nThe nickname 'The Politeness' reflects the weapon's peculiar social niche: it is used extensively by corporate security personnel in environments where lethal force would be legally and reputationally catastrophic. A struck individual appears to simply stumble and fall, with no visible wound. The name 'Stutter' comes from the characteristic involuntary muscle tremor that affects targets in the recovery phase, which experienced observers recognize immediately.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Piezoelectric energy harvesting",
+    "Motor cortex frequency disruption",
+    "Capacitive discharge buffering"
+  ],
+  "specifications": "discharge frequency: Tuned to 40-80 Hz motor signal band\nmotor collapse duration: 4-20 seconds depending on target neurology\ncapacitor reserve: 12 fully buffered strikes before recharge\nrecharge time: 8 minutes passive / 90 seconds via dock\nweight: 1.1 kg\ncoverage: Full hand and wrist to mid-forearm\ncompatibility: Requires neural handshake with operator's dermal interface for activation",
+  "tactical_use": "Primarily used in escort, detention, and close-protection roles. Operators favor it for subduing targets without producing evidence of assault — the neurological disruption leaves no bruising or burns and resolves completely. In combat, it is paired with conventional restraint tools; the gauntlet drops the target, and the operator secures them before motor function returns. Experienced users learn to target specific nerve clusters to achieve selective disruption — a precise strike to the radial nerve cluster disarms without dropping, useful when a standing, cooperative subject is needed.",
+  "cultural_context": "The PSDG-2 occupies an uncomfortable middle ground in Meridian 88's legal landscape. Its license requirements are achievable by corporate security entities but deliberately out of reach for individuals, which means it has become a class marker — a signal that the person wearing it has institutional backing. On the street, it is sometimes called 'the corporate handshake.' Among civil liberties groups, it has become a symbol of plausibly deniable abuse, since victims often cannot prove they were struck. A small counter-culture has emerged around documenting the characteristic recovery tremor on video as evidence.",
+  "known_users": [
+    "Arcturus Defense Solutions executive protection details",
+    "Palladian Construction site security supervisors",
+    "Corporate HR enforcement officers (disputed)",
+    "The detention specialist known as 'Velvet'",
+    "Meridian 88 transit authority plainclothes units"
+  ],
+  "story_hooks": [
+    "A prominent labor organizer is found dead — officially from a fall, but the autopsy shows the neural disruption pattern consistent with a PSDG-2 strike to the brainstem, which should not have been lethal unless the discharge was deliberately overcharged.",
+    "A PSDG-2 surfaces on the black market with its neural handshake still active, locked to the biometric of a corporate security officer who was officially reported dead six months ago.",
+    "An operator is hired to retrieve a witness who was 'questioned' with a PSDG-2 and now has persistent motor disruption — either the weapon was defective or it was used far beyond spec.",
+    "Arcturus Defense Solutions quietly initiates a field recall, citing a 'firmware irregularity' — but the irregularity in question causes the capacitor to discharge into the operator's hand rather than the target."
+  ],
+  "ammunition_type": [
+    "internal_capacitor"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "combat",
+    "war",
+    "augment",
+    "neural",
+    "ai",
+    "synthetic",
+    "corporate",
+    "control",
+    "market",
+    "rain",
+    "train",
+    "energy",
+    "tier 3"
+  ]
+}

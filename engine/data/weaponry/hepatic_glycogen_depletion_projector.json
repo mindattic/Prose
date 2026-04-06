@@ -1,0 +1,63 @@
+{
+  "id": "019d6143ab2d7d69a4b37c32dbe5a812",
+  "name": "Hepatic Glycogen Depletion Projector",
+  "type": "weapon",
+  "aliases": [
+    "HGDP-2",
+    "Bonk",
+    "The Fast"
+  ],
+  "category": "cyber",
+  "description": "The Hepatic Glycogen Depletion Projector uses a focused beam of modulated microwave and near-infrared radiation tuned to the absorption and catalytic disruption frequencies of glycogen phosphorylase — the enzyme responsible for mobilizing stored glucose from the liver. By overwhelming hepatic glycogen phosphorylase activity through thermal and photonic excitation, the weapon forces the complete and near-instantaneous liberation of all hepatic glycogen stores into the bloodstream, followed by rapid enzymatic exhaustion that prevents resynthesis. The result is a catastrophic glucose spike lasting approximately ninety seconds, followed by profound hypoglycemia as reserves are depleted and resynthesis is blocked. The target collapses into a hypoglycemic crisis within four to seven minutes.\n\nThe HGDP-2 is a weapon of delayed effect, which gives it a distinct tactical character. An operator can tag a target and withdraw entirely before the effect manifests. The initial exposure causes no pain, no visible wound, and no immediate behavioral change — the target simply walks away feeling briefly warm. Minutes later, sweating, confusion, and motor failure set in, followed by loss of consciousness. Without immediate glucose intervention, the hypoglycemic crisis can progress to seizure and death within fifteen to twenty minutes. With intervention, the target survives but requires hours of medical support.\n\nThe projector's form factor resembles a standard industrial thermal scanner, providing effective cover in maintenance and technical environments. Ringo Corponation licenses the underlying photonic enzyme excitation technology for legitimate food processing applications, a fact that has been exploited extensively to launder the weapon's supply chain. The HGDP-2 is particularly dangerous to targets with diabetic or metabolic augmentations that suppress normal glucose regulatory responses, as these individuals have reduced capacity to self-correct even partial depletion.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Photonic enzyme catalytic disruption",
+    "Focused microwave hepatic targeting",
+    "Glycogen phosphorylase thermal excitation"
+  ],
+  "specifications": "effective range: 1–12 meters\nexposure duration required: 6–10 seconds for full depletion\nonset of hypoglycemic crisis: 4–7 minutes post-exposure\ncrisis duration without intervention: 15–20 minutes to severe neurological event\nbeam profile: 15cm diameter focused spot at 8 meters\npower source: Compact microwave driver cell, 18 exposures per charge\nweight: 1.4 kg\nform factor: Handheld scanner form factor, 28cm length\ncountermeasure: Subcutaneous glucose reservoir implants, metabolic augmentation with active glucose synthesis",
+  "tactical_use": "Preferred for social engineering operations and infiltration scenarios where the operator must not be identified as having committed a hostile act. An operative can expose a target in a crowded room, at a reception, or in a corridor and be three blocks away when the target collapses. Emergency responders treat the event as a diabetic episode or sudden metabolic crisis, delaying any forensic investigation. The weapon is also used to incapacitate building security or personal protection details without triggering alarm protocols — a guard who collapses from hypoglycemia does not trigger a gunshot sensor.",
+  "cultural_context": "In Meridian 88's corporate espionage scene, the HGDP-2 has earned a reputation as the 'socialite's weapon' — it requires proximity but no confrontation, fits in a jacket pocket, and produces a medical event rather than a crime scene. It is associated with a certain class of operator: elegant, patient, comfortable in formal environments. There is a dark irony in its Ringo Corponation origins — a company whose food processing divisions feed millions of Meridian 88's lower-tier citizens is also providing the technology used to silently incapacitate them. Underground medics in the Outer Ring have begun carrying emergency glucose injectors as standard kit specifically because of the weapon's increasing prevalence.",
+  "known_users": [
+    "Corporate social engineers",
+    "Assassination contractors specializing in deniable operations",
+    "Intelligence operatives",
+    "Rogue Ringo Corponation employees with access to prototype units"
+  ],
+  "story_hooks": [
+    "Three executives from competing corporations collapsed at the same industry gala within forty minutes of each other — officially attributed to a catering contamination incident, but a fixer hired by one family believes a single operator with an HGDP-2 worked the room.",
+    "An Outer Ring underground medic has started keeping a tally of 'diabetic crisis' calls that don't match patient histories — she's identified a geographic pattern and wants to hire someone to investigate before more people die.",
+    "A Ringo Corponation quality control manager discovers that a batch of 'industrial thermal calibrators' shipped to a distributor matches the HGDP-2 spec sheet exactly — and the distributor doesn't exist.",
+    "A fixer is exposed to a sub-threshold HGDP-2 burst as a warning — not enough to incapacitate, just enough to make them sick for a day and leave a forensic trace that says 'we can finish this whenever we want.'"
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "cyber",
+    "weapon",
+    "gun",
+    "war",
+    "crime",
+    "loss",
+    "death",
+    "consciousness",
+    "augment",
+    "ai",
+    "elf",
+    "rogue",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "ubc",
+    "medical",
+    "pain",
+    "market",
+    "dark",
+    "food",
+    "energy"
+  ]
+}

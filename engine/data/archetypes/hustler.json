@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5767bcbae690fbca54dd767",
+  "name": "Hustler",
+  "type": "archetype",
+  "category": "survival",
+  "description": "Works every angle to get ahead",
+  "behavioral_signature": "Always has a deal, a scheme, a play",
+  "under_stress": "Hustles harder, faster, dirtier",
+  "at_rest": "Making calls, cutting deals",
+  "will_always": [
+    "work the angle"
+  ],
+  "will_never": [
+    "let money sit on the table"
+  ],
+  "unless": [
+    "the hustle would destroy a genuine friendship"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Opportunist",
+      "threshold": 0.8,
+      "context": "advantage"
+    },
+    {
+      "archetype": "Fixer",
+      "threshold": 0.7,
+      "context": "deal-making"
+    }
+  ],
+  "opposite_of": [
+    "Generous Fool"
+  ],
+  "tags": [
+    "cunning",
+    "tireless"
+  ]
+}

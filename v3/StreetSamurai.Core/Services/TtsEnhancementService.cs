@@ -84,7 +84,7 @@ public class TtsEnhancementService
     {
         if (rules != null) return rules;
 
-        var rulesPath = Path.Combine(paths.DataRoot, "engine_data", "tts_rules.json");
+        var rulesPath = Path.Combine(paths.EngineDataDir, "tts_rules.json");
         if (!File.Exists(rulesPath)) return null;
 
         try

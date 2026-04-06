@@ -1,0 +1,121 @@
+{
+  "id": "019d6143a94271d0983e672088d541c4",
+  "type": "place",
+  "name": "The Iowa Exclusion Zone",
+  "aliases": [
+    "Iowa",
+    "The Breadbasket",
+    "The Dead State",
+    "Calorie Country",
+    "The IEZ"
+  ],
+  "description": "Iowa is not a state anymore. Iowa is a machine.\n\nSometime in the 2160s, the last human residents were relocated — voluntarily at first, then less so — when Ironclad Agrisystems and three other Big 20 corponations collectively determined that human habitation was incompatible with maximum caloric output per hectare. The math was simple and the math was correct: remove the towns, remove the roads, remove the schools and churches and graveyards and everything that made Iowa a place where people lived, and replace it with 145,000 square kilometers of uninterrupted, GPS-guided, AI-managed, industrial-scale food production. The Iowa Exclusion Zone now produces 40% of Meridian 88's caloric intake. No humans live here. No humans are permitted here. The land belongs to the crops, and the crops belong to the corponations, and the corponations do not share.\n\nThe Iowan Behemoths work the land. Massive autonomous agricultural machines — part tractor, part harvester, part territorial defense platform — the Behemoths are the only permanent residents of the IEZ. They plant, they tend, they harvest, they process. They also kill. Each Behemoth is equipped with anti-personnel systems designed to protect corporate caloric assets from theft, and their definition of theft includes any unauthorized human presence within their operational radius. The Behemoths do not warn. They do not negotiate. They calculate the caloric value of the crop you are standing in, compare it to the cost of the ammunition required to remove you, and if the math favors the crop, the crop wins. It always favors the crop.\n\nAnd yet people go there. They have to. The freedom fighters — the Harvest Runners, the Calorie Raiders, the Gleaner Brigades — cross the border from the GLM's western edge into the IEZ on missions that are half military operation and half grocery run. They go because the Shelf is hungry. They go because Ironclad's licensed food distribution charges Φ40 for a kilogram of grain that costs Φ0.03 to produce. They go because children are malnourished in a world that produces more food per acre than at any point in human history, and the only thing standing between those children and that food is a fence, a law, and a machine the size of a building that will grind you into the soil you're trying to steal from.\n\nThe raids are legendary on the Shelf. Every runner who comes back from Iowa comes back with stories — of Behemoths materializing from cornfields at midnight, of drone swarms descending like locusts in reverse, of the terrible silence of a landscape where nothing lives except the crop and the machine that tends it. Some runners don't come back. Their bodies become fertilizer. Ironclad considers this an acceptable recycling protocol.",
+  "atmosphere": {
+    "sights": [
+      "Endless geometric crop rows stretching to every horizon — no trees, no buildings, no variation, just food production at continental scale",
+      "Behemoths moving through the fields — silhouettes the size of apartment buildings, LED work lights cutting through pre-dawn darkness like searchlights",
+      "Drone swarms rising from charging stations embedded in the soil, forming clouds that darken the sun when a perimeter breach is detected",
+      "The ruins of old Iowa towns — foundations, fragments of Main Streets, church steeples that Ironclad left standing because removing them was not cost-effective",
+      "The border fence — 3 meters of smart-wire that extends the full perimeter of the state, humming with current, monitored by ground-penetrating sensors"
+    ],
+    "sounds": [
+      "The deep mechanical thrumming of Behemoths working — audible from 10 kilometers away, the sound of the earth being used",
+      "Wind through monoculture crop — a uniform rustling that sounds wrong because every plant is genetically identical",
+      "Absolute silence between machine passes — no birds, no insects, no animals. Iowa's ecosystem was sterilized to prevent crop contamination",
+      "The click-whir of anti-personnel turrets tracking movement — the last sound some raiders hear"
+    ],
+    "smells": [
+      "Chemical fertilizer — a sharp, acrid baseline note that saturates everything within 50 kilometers of the border",
+      "Engineered crop — a uniform, vaguely sweet smell that is not quite corn, not quite wheat, not quite anything that existed before Ironclad's geneticists rebuilt agriculture from scratch",
+      "Diesel and ozone — the Behemoths run on hybrid fuel cells and the exhaust smells like the future tastes"
+    ],
+    "feel": "Wrong. Iowa feels profoundly, viscerally wrong — not dangerous in the way the Shelf is dangerous (human danger, comprehensible danger) but wrong in the way a world without people is wrong. The land is alive — the crops grow, the machines move, the system functions — but nothing here has consciousness, nothing has choice, nothing has meaning beyond caloric output. Standing in an Iowa field at night, watching a Behemoth work under LED floods while the stars wheel overhead, is the closest most people will ever come to understanding what the corponations actually want the world to look like.",
+    "tags": []
+  },
+  "demographics": "Zero permanent human population. Approximately 340 Behemoth units, 12,000 aerial drones, and an unknown number of ground-based security systems. Ironclad Agrisystems maintains a skeleton crew of 200 human technicians at three fortified maintenance depots who rotate on 90-day shifts and are contractually prohibited from leaving the depots during their rotation.",
+  "economy": "Produces 40% of Meridian 88's caloric intake — approximately Φ890 billion in annual food value. The cost of production per calorie is the lowest in human history. The retail price per calorie is the highest in human history. The margin between those two numbers is what Ironclad calls shareholder value and what the Shelf calls murder.",
+  "power_structure": "Ironclad Agrisystems holds sole sovereign authority. There is no municipal government, no police force, no judiciary. The Behemoths are the law. Ironclad's board of directors — none of whom have ever visited Iowa — make all decisions regarding the IEZ from their offices in the Spire.",
+  "dangers": [
+    "Behemoths — autonomous agricultural machines with anti-personnel systems. They weigh 400 tons, move at 60 km/h, and do not distinguish between raiders and lost hikers",
+    "Drone swarms — thousands of aerial units that deploy within seconds of a perimeter breach. They carry chemical deterrents, tracking beacons, and in some configurations, lethal payloads",
+    "Smart-wire border fence — electrified, sensor-equipped, and monitored 24/7. Crossing it announces your presence to every Behemoth within 100 kilometers",
+    "Chemical exposure — the soil is saturated with proprietary fertilizers and pesticides. Prolonged exposure without protective equipment causes neural damage, organ failure, and a condition the raiders call 'Iowa Lung'",
+    "GPS denial — Ironclad jams all unauthorized navigation systems within the IEZ. If you enter Iowa, you navigate by stars or you don't navigate at all",
+    "No rescue — if you are injured inside the IEZ, no one is coming. There are no hospitals, no emergency services, no communications infrastructure. The nearest help is on the other side of the border fence."
+  ],
+  "opportunities": [
+    "Food — the single most valuable commodity in a world where corporate pricing makes nutrition a luxury. A successful Iowa raid can feed a Shelf block for a month",
+    "Behemoth salvage — damaged or disabled Behemoths contain military-grade components worth fortunes on the Circuit's black market",
+    "Intelligence — the IEZ's security systems contain Ironclad corporate data that fixers and the Collective would pay handsomely for",
+    "Reputation — an Iowa raid survivor is respected everywhere below Tier 3. It is the hardest job a runner can take."
+  ],
+  "story_hooks": [
+    "A Gleaner Brigade is assembling for the biggest Iowa raid in a decade — they need an operator to handle the Behemoth that guards the target silo",
+    "A disabled Behemoth has been spotted 2 kilometers inside the border fence. Its cargo hold contains enough grain to feed the Shelf for six months. The question is whether Ironclad disabled it as bait.",
+    "One of Ironclad's maintenance technicians wants out. They have data on the Behemoth command frequencies — information that could change the balance of power on every future raid. But extraction from a fortified depot inside the IEZ is a suicide mission.",
+    "Someone is reprogramming Behemoths. Three units have stopped patrolling and started leaving crop bundles at the border fence at night. Ironclad does not know who is doing this. The Shelf does not care — they are eating."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The western edge of Meridian 88 — the border towns where raiders stage",
+      "The Fox Cities Nexus (northeast — data connections to Ironclad's command network)",
+      "The Dead Zones (north — ungoverned territory between Iowa and the GLM)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Nobody. That is the point.",
+    "Harvest Runners — raiders who cross the border to steal food for the excluded",
+    "Gleaner Brigades — organized resistance groups that conduct military-scale food raids",
+    "Ironclad maintenance technicians — 200 humans on 90-day locked rotations",
+    "Behemoths — the only permanent residents, if you can call a 400-ton autonomous tractor a resident"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Border Fence",
+      "description": "3 meters of smart-wire running the full perimeter of the former state. The first and last obstacle for every raid.",
+      "tags": []
+    },
+    {
+      "name": "Silo 7",
+      "description": "The nearest major grain storage facility to the GLM border. The most-raided target in the IEZ. Ironclad has fortified it three times. Raiders have breached it three times.",
+      "tags": []
+    },
+    {
+      "name": "The Boneyard",
+      "description": "A stretch of border where disabled Behemoths have been left to rust. Raiders use it as cover for border crossings. Some of the Behemoths may not be as disabled as they look.",
+      "tags": []
+    },
+    {
+      "name": "Des Moines Crater",
+      "description": "What remains of the state capital. Ironclad leveled it in 2171 to make room for Crop Grid 14. The foundations are still visible from the air. Nobody goes there.",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 42.0308,
+    "lng": -93.6319,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "theft",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "market",
+    "rain",
+    "night",
+    "freedom",
+    "food",
+    "drone",
+    "shelf",
+    "spire",
+    "circuit"
+  ]
+}

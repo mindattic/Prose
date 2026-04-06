@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Models.Canon;
 
@@ -9,8 +10,9 @@ namespace StreetSamurai.Core.Models.Canon;
 /// to radical body modification (tails, antlers, gills, cat ears). If it changes your genes,
 /// it's geneware.
 /// </summary>
-public class GenewareData
+public class GenewareData : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("brand_name")] public string BrandName { get; set; } = "";
     [JsonPropertyName("product_name")] public string ProductName { get; set; } = "";

@@ -1,0 +1,170 @@
+{
+  "id": "019d6143a5c87652bbc70abb2ba9330b",
+  "type": "character",
+  "name": "Bogumił Adjoa-Qarabağlı",
+  "aliases": [
+    "The Scrivener",
+    "Bogo"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "stateless person, itinerant document-writer, community letter-scribe",
+  "age": 67,
+  "status": "active",
+  "location": "Grand Crossing Gate — maintains a small folding table near the transit registry office, moves inside Kenosha Crossing when weather turns",
+  "description": "Bogumił is a tall man running to stoop, with the scholar's habit of hunching over whatever he is reading. He is entirely bald, his scalp tattooed with dense blocks of tiny script in four languages — a practice he began decades ago to preserve documents he had no other way to store. His skin is a warm medium brown, deeply lined, his hands enormous and precise with long, ink-stained fingers that have never had augmentations because he insists it would affect his sense of pressure when writing. He wears a many-pocketed coat he has modified over thirty years and carries a hard-sided case containing twelve different inks, eight nib types, and two manual printing stamps.\n\nBogumił was a mid-level bureaucratic administrator for a municipal authority that no longer exists — dissolved into a Tessera subsidiary sixteen years ago, its records wiped in the transition. He was among the thousands of employees whose legal identity existed only in that municipal database. He has spent sixteen years as a stateless person, surviving by doing what he has always done: writing. He drafts petitions, translates documents, writes letters for refugees who cannot write in the official Meridian script, and produces the kind of careful, formatted paperwork that makes authorities treat stateless people as less invisible. He is bitterly funny about his situation, philosophically resigned, and practically indispensable to the people around him.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.6,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "That what he writes will not outlast him",
+      "That the bitterness will eventually consume the usefulness"
+    ],
+    "core_desires": [
+      "Recognition — he does not need much, just acknowledgment that the work matters",
+      "To find the Tessera official who authorized the database wipe and understand if it was malice or mere negligence"
+    ],
+    "coping_mechanisms": [
+      "Bitter humor deployed as armor",
+      "The physicality of writing — ink, paper, pressure — as sensory grounding",
+      "Keeping meticulous records of everyone he has helped, in a code only he knows"
+    ],
+    "blind_spots": [
+      "His pride in his skill makes him condescending to people who solve problems less elegantly",
+      "Cannot see that some of his clients are beginning to depend on him in ways that exceed document services"
+    ],
+    "secret": "Among the scalp tattoos are not only preserved documents but a complete record of the Tessera subsidiary merger — internal communications he copied before the database was wiped. He has never fully understood what he has or whether it matters. He is afraid to look too closely."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal register, administrator's language, slips into elaborate syntactic structures, occasional scalding wit in very plain words",
+    "cadence": "Measured, with long subordinate clauses; speeds up only when angry",
+    "verbal_tics": [
+      "'Kindly note that —'",
+      "'The relevant fact is —'"
+    ],
+    "example_lines": [
+      "'Kindly note that this form requires three signatures, two of which you do not have, from an authority which no longer exists. I have drafted a petition that works around all three problems. My fee is Φ4.'",
+      "'The relevant fact is that you are a person. The system's failure to record this is an administrative error, not a metaphysical one. Now sit down and tell me your name.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He has realized that one of the documents recorded in his scalp tattoos is something Tessera would commit violence to recover — and he has just helped a client whose name appeared in it",
+    "A young woman has brought him a document to translate that, if genuine, would restore the legal identities of thousands of people erased in the municipal collapse — but it may also be an elaborate forgery"
+  ],
+  "narrative_function": "Gateway to the paperwork and legal reality of statelessness; can provide historical knowledge about the pre-Tessera municipal structures; his clients are a cross-section of transit-hub society; source of pathos and dark comedy about bureaucratic dehumanization.",
+  "augmentations": "None. The scalp tattoos are conventional ink, applied by hand.",
+  "daily_life": "Sets up his folding table by the registry office at mid-morning, takes a queue of clients needing documents drafted or letters written, breaks for a meal he eats while reading, returns until the light goes.",
+  "affiliation": "Stateless; serves the transit-hub communities at Grand Crossing Gate and Kenosha Crossing informally",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 7,
+      "vitality": 4,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "stateless",
+      "scrivener",
+      "Tessera-victim",
+      "community-service",
+      "institutional-memory"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The document must be accurate — he will not falsify",
+      "He will not charge more than people can pay, but he will not work for free (dignity requires transaction)"
+    ],
+    "escalation_ladder": [
+      "Formal, precise disagreement",
+      "Pointed questions that expose the flaw in the other person's position",
+      "Silence and deliberate withdrawal of assistance",
+      "A written statement of grievance, delivered in person, that he keeps a copy of"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formal, efficient, not unkind but not warm — professional until trust is established",
+      "friends": "Surprisingly gentle; remembers everything; sends people away with small accurate pieces of hope he has found for them"
+    },
+    "stress_responses": {
+      "low": "More formal, more precise",
+      "medium": "Stops making jokes entirely, becomes very direct",
+      "high": "Writes — produces documents, records, letters, as if paperwork can hold back disaster"
+    },
+    "contradictions": [
+      "Believes deeply in the power of official systems while being personally destroyed by one"
+    ],
+    "habits": [
+      "Touches the scalp tattoos when recalling something — running a fingertip over a section of text",
+      "Drinks the same tea every morning from a dented flask he treats like a sacred object",
+      "Leaves a blank sheet of paper at E.L.F. shrines, folded into a square — 'for whatever needs recording'"
+    ],
+    "breaking_points": [
+      "Being asked to falsify a document",
+      "Evidence that Tessera deliberately targeted the database wipe at specific people"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Cockroach": 0.9,
+    "Survivor Ethics": 0.9,
+    "Phoenix": 0.9,
+    "Fear-Driven": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

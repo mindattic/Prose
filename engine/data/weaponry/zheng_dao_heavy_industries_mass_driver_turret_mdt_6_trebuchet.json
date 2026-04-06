@@ -1,0 +1,44 @@
+{
+  "id": "019d6143ab5e73e49535b18088903542",
+  "name": "Zheng-Dao Heavy Industries Mass Driver Turret MDT-6 'Trebuchet'",
+  "type": "weapon",
+  "aliases": [
+    "Trebuchet",
+    "MDT-6",
+    "Mass Driver",
+    "The Hurler"
+  ],
+  "category": "heavy",
+  "description": "A vehicle-mounted electromagnetic mass driver that accelerates 5 kg projectiles to hypersonic velocity, functioning as a modern artillery piece with no chemical propellant. The MDT-6 uses a 20-stage linear electromagnetic accelerator mounted on a tracked vehicle chassis, capable of hurling dense metal projectiles up to 15 kilometers with GPS-guided precision. The impact of a 5 kg tungsten slug at Mach 7 produces a crater equivalent to a 500 kg bomb without any explosive — pure kinetic energy transfer. Zheng-Dao developed the MDT-6 for long-range fire support, and its ability to deliver devastating strikes with no explosive signature makes it difficult for counterbattery systems to detect and return fire on.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 5",
+  "legality": "Military restricted — strategic weapons authorization",
+  "base_technologies": [
+    "Linear electromagnetic mass acceleration",
+    "Hypersonic projectile guidance",
+    "Vehicle-mounted fusion power generation"
+  ],
+  "specifications": "projectile mass: 5 kg tungsten\nmuzzle velocity: Mach 7 (approximately 2,400 m/s)\nmaximum range: 15 kilometers\naccelerator stages: 20-stage linear electromagnetic\nrate of fire: 1 round per 20 seconds\nmagazine: 12 rounds in autoloader\nmount: Tracked vehicle chassis\nweight: 18,000 kg complete system\npower source: Onboard fusion generator",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An unexplained crater in Tier 3 has been attributed to a gas explosion, but the impact pattern is consistent with a mass driver strike — someone used strategic artillery inside the city.",
+    "A Zheng-Dao MDT-6 was disabled during transit and the vehicle crew was found dead with no visible wounds — the weapon was not stolen, but the fire control software was accessed."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "heavy",
+    "weapon",
+    "war",
+    "ai",
+    "control",
+    "power",
+    "vehicle",
+    "mass driver",
+    "explosive",
+    "energy",
+    "fire",
+    "tier 5"
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "id": "019d6143a69f7aad963baad6bd0844f6",
+  "type": "character",
+  "name": "Priscila Nkansa-Volkov",
+  "aliases": [
+    "Prissy",
+    "The Widow"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Corporate Security Guard, Axiom Security Division — Executive Campus Protection",
+  "age": 27,
+  "status": "active",
+  "location": "Grosse Pointe Enclosure, Meridian 88",
+  "description": "Priscila is lean and angular with the kind of posture that suggests it's a weapon. She has her father's Ghanaian cheekbones and her mother's Siberian coloring — a pale complexion with warm undertones, dark hair she wears in a severe center-parted braid. Her eyes are factory-standard brown but her irises have been upgraded to tactical amber, which gives her peripheral dark-vision in the Enclosure's manicured shadow gardens and makes her look, in the right light, faintly predatory. A small cat tail — rust-colored, kinetic geneware she got on a dare at twenty-two and has come to love — flicks at her hip when she's irritated, which is often, and it has ruined more than one effort to seem professionally impassive.\n\nShe works the Grosse Pointe Enclosure's inner residential ring, which means she guards the homes of Axiom executives who regard her as furniture that breathes. She is very good at her job and she resents it in a specific, contained way — the way you resent a language you're fluent in that doesn't belong to you. She has a blistering private contempt for the people she protects and an equally fierce professionalism that won't let her do the job badly regardless. She's been offered an investigator track twice and declined both times, though she couldn't explain why to anyone's satisfaction, including her own.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.4,
+      "id": 0.7,
+      "shadow": 0.6,
+      "mask": 0.8,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Becoming invisible — being genuinely mistaken for furniture",
+      "That her competence is permanently in service of people who deserve it less than she does"
+    ],
+    "core_desires": [
+      "To be seen as a person by someone inside the Enclosure",
+      "To find out whether she's actually loyal to Axiom or just to the paycheck"
+    ],
+    "coping_mechanisms": [
+      "Physical discipline — fighting and training as self-ownership",
+      "Biting humor shared only with the two colleagues she trusts"
+    ],
+    "blind_spots": [
+      "Her mask of professionalism has become so good she's lost track of what she'd do if she didn't have to be professional"
+    ],
+    "secret": "She has memorized the security rotation vulnerabilities for the inner ring's north garden — not because she's planning to exploit them, but because the knowledge feels like power over the place, and she needs that. An Axiom competitor contacted her eight months ago with a job offer. She hasn't said no yet."
+  },
+  "speech_patterns": {
+    "vocabulary": "Crisp and corporate on the job. Off-duty: sharp, fast, laced with Akan proverbs her father taught her that she uses as knives.",
+    "cadence": "Controlled on-shift. Off-shift she speaks quickly, like she's been holding it in.",
+    "verbal_tics": [
+      "The tail flick is a tell — anger, surprise, contempt",
+      "Says 'noted' when she means something more complicated",
+      "Slight pause before addressing executive-tier residents — the half-second cost of performing deference"
+    ],
+    "example_lines": [
+      "'Your access code is valid. Have a pleasant evening.' [Tail flick.]",
+      "'My father used to say: the axe forgets, but the tree remembers. I think about that a lot, out here.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The competitor who approached her — a mid-tier Palladian operative — has sweetened the offer to include information about what Axiom actually moves through the Enclosure's private loading bay. She's going to make a decision within the month.",
+    "An executive she despises has gone missing from the Enclosure with no breach recorded — meaning someone got in and out clean, which means either the rotation vulnerability she knows about isn't as secret as she thought, or it was an inside job."
+  ],
+  "narrative_function": "Access and obstacle — she controls who gets into the Enclosure and under what conditions; potential insider contact who knows the layout, schedules, and vulnerabilities of Axiom's most guarded residential space; character study in class resentment sublimated into excellence.",
+  "augmentations": "Tactical amber irises with peripheral low-light enhancement; subdermal comms relay (Axiom-encrypted); light subdermal armor plating along forearms and sternum (Axiom-standard executive protection package); rust-colored cat tail geneware (cosmetic).",
+  "daily_life": "Eight-hour rotating shifts patrolling the inner residential ring of the Grosse Pointe Enclosure; she catalogues every anomaly in the shift log with an exactness her supervisors find excessive; spends off-hours at a Copperhead sparring gym where nobody knows her employer.",
+  "affiliation": "Axiom Security Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 8,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 5,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 0,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": 2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Corporate Security",
+      "Class Resentment",
+      "Highly Competent",
+      "Double Agent Potential",
+      "Geneware (tail)"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never let them see the contempt — professionalism is self-respect, not submission",
+      "Know every exit before you commit to any position"
+    ],
+    "escalation_ladder": [
+      "Cold professional authority — the voice that doesn't need to be loud",
+      "Physical interposition and louder warning",
+      "Immediate authorized force — she is trained and she doesn't hesitate"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing. Neutral. Gives nothing.",
+      "friends": "Startlingly warm, funny, loyal past the point of wisdom"
+    },
+    "stress_responses": {
+      "low": "Goes quiet, tail absolutely still — suppression",
+      "medium": "Hyper-focused on procedure, tail lashing",
+      "high": "Decisive, cold, efficient — she functions better in crisis than in resentment"
+    },
+    "contradictions": [
+      "She's contemptuous of authority while being exceptional at enforcing it"
+    ],
+    "habits": [
+      "Walks the north garden perimeter on break whether she's assigned to it or not",
+      "Leaves a single blue flower at the Enclosure's E.L.F. node every week — the gardening staff thinks it's a resident"
+    ],
+    "breaking_points": [
+      "Being addressed as 'the security' in the third person while present in the room"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Tactical amber irises — peripheral low-light enhancement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Tactical amber irises — peripheral low-light enhancement",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal comms relay — Axiom-encrypted channel",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal comms relay — Axiom-encrypted channel",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal forearm and sternum armor plating — Axiom executive protection standard",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal forearm and sternum armor plating — Axiom executive protection standard",
+      "replaces": ""
+    },
+    {
+      "name": "Rust-colored kinetic cat tail — cosmetic geneware",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Rust-colored kinetic cat tail — cosmetic geneware",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Sentinel": 0.6
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 19: Hired as perimeter patrol, outer Axiom campus",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 22: Promoted to executive protection track after incident response commendation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 24: First investigator track offer — declined",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 25: Assigned to Grosse Pointe Enclosure inner ring",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 26: Second investigator track offer — declined; Palladian contact made",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 27: Currently holding the Palladian offer open",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab217a48a8e14b99eeae7eeb",
+  "name": "Counter-Personnel Loiter Munition CPLM-7 'Patience'",
+  "type": "weapon",
+  "aliases": [
+    "The Halo",
+    "Waiting Room",
+    "Lazy Eye",
+    "Circle Drone"
+  ],
+  "category": "drone",
+  "description": "The CPLM-7 is a fixed-wing loitering munition designed for extended area interdiction. Launched from a pneumatic tube canister or hand-thrown, it deploys a 1.4-meter carbon-composite delta wing and enters a silent, engine-off glide pattern over a designated kill zone, periodically reigniting its whisper-turbine to maintain altitude and orbit. The drone carries a shaped-charge warhead with a downward-facing fragmentation sleeve optimized for personnel targets rather than armor—a design choice that reflects its primary use case: denying movement through open urban terrain. It orbits silently at 80–120 meters, waiting.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Military only (licensed variant); Tier 5+ black market (autonomous mode unlocked)",
+  "legality": "Prohibited for civilian use; Military Licensed — autonomous mode requires Theater Weapons Authorization",
+  "base_technologies": [
+    "Neural feedback loop target discrimination",
+    "Whisper-turbine low-acoustic propulsion",
+    "Downward-oriented shaped fragmentation charge"
+  ],
+  "specifications": "wingspan: 1.4 meters (deployed), 380mm (canister-stored, folded)\nmass: 2.1 kg\nwarhead: Shaped charge with 180-degree downward fragmentation sleeve, lethal radius 8m, casualty radius 22m\nloiter endurance: Up to 6.5 hours\noperational altitude: 80–120 meters\nacoustic signature: Less than 24 dB at operational altitude\ntarget discrimination: Neural feedback loop, adaptive environmental baseline\nconfirmation window: 4 seconds (operator-confirm mode); 0 seconds (autonomous mode, restricted)\nlaunch method: Pneumatic tube canister (standard) or hand-throw (emergency deployment)\nself-destruct: Triggered on battery depletion or operator command; failsafe detonation if tampered",
+  "tactical_use": "Deployed to hold corridors, deny extraction routes, or protect static positions without committing personnel. Corporate logistics convoys operating in contested districts use CPLM-7 units to sanitize parallel approach routes during transit windows. Extraction teams plant them as rear-guard measures before breaching an objective, ensuring pursuit is interrupted. The 4-second confirmation window creates a tactical rhythm that experienced operators learn to exploit—engaging a target, forcing them into the kill zone, then confirming strike. Counter-measures include acoustic detection arrays, high-altitude EMP bursts, and the crude but effective tactic of triggering the drone's strike early using a thermal decoy.",
+  "cultural_context": "In the districts surrounding Meridian 88's logistics spine—particularly the Overpass Corridor and the Dry Docks—the CPLM-7 has become associated with corporate territorial enforcement during labor disputes and unauthorized market activity. Several widely-documented incidents involving Patience units deployed over informal markets have made the drone a potent symbol of corporate violence against civilian economic life. The phrase 'patience is a weapon' has been adopted by labor organizer collectives as an ironic slogan, and stenciled silhouettes of the delta-wing profile appear frequently as graffiti in affected districts.",
+  "known_users": [
+    "ARCTURUS DEFENSE SOLUTIONS contracted security operations",
+    "Meridian 88 military garrison (authorized theater use)",
+    "High-tier corporate logistics protection details",
+    "Black-market arms brokers (autonomous-mode units, limited supply)",
+    "Insurgent cells operating in the Dry Docks (captured or purchased units)"
+  ],
+  "story_hooks": [
+    "Three CPLM-7 units in autonomous mode have been deployed over a six-block residential area in the Overpass Corridor. No one knows who deployed them or why. The units are still active. Getting residents out means moving through the kill zones.",
+    "An ARCTURUS internal memo, leaked to a street journalist, reveals that a CPLM-7 deployment during the Dry Docks labor action was authorized by a mid-level logistics manager, not military command. The manager has since disappeared. The journalist needs protection.",
+    "A player character is offered a decommissioned CPLM-7—battery dead, warhead supposedly inert—as payment for a job. Subsequent inspection suggests the warhead is not inert. Someone is trying to get rid of it without handling it themselves.",
+    "A Patience unit has been loitering over a specific rooftop in the Kowloon Stack for 11 days without striking. The rooftop is empty. Someone is keeping it aloft deliberately. Why?"
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "violence",
+    "war",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "power",
+    "rooftop",
+    "market",
+    "rain",
+    "chase",
+    "armor",
+    "tier 5"
+  ]
+}

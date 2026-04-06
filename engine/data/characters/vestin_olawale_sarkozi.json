@@ -1,0 +1,227 @@
+{
+  "id": "019d6143a71579a8bf906df3eccbac60",
+  "type": "character",
+  "name": "Vestin Olawale-Sárközi",
+  "aliases": [
+    "Ves"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Building superintendent and informal repair technician",
+  "age": 34,
+  "status": "active",
+  "location": "The Narrows, Pillar Block 7 — residential stack managed by an Arcturus-subsidiary property company",
+  "description": "Vestin is wiry and medium height, with warm light-brown skin, close-cut dark hair with a single streak of color-changing dye that they toggle between indigo and copper depending on mood, and clever dark eyes set under expressive brows that do most of their communicating for them. They have a tool harness they wear as a second skin — a custom-fitted rig of loops, mag-clips, and repurposed Ferrogate equipment pouches that they have spent years personalizing, and their hands carry the calluses and minor scars of someone who takes things apart constantly and puts them back together mostly correctly. They have a neural interface stud behind their right ear for reading building management systems directly — standard for a super but theirs is modified past factory spec in ways that technically violate their work contract.\n\nVestin is pragmatic to a fault, profoundly competent, and operates on the principle that anything broken can be fixed and anything fixed can be made to work better than it originally did. They have an uneasy relationship with the Arcturus-subsidiary management company that technically employs them, because they've learned that management's definition of 'fixed' means 'back to minimum acceptable function' and their definition means 'actually good.' They are not warm in the conventional sense — they don't small-talk and they're uncomfortable with gratitude — but they will be at your door within twenty minutes of a maintenance request if they're in the building, which they almost always are.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.8,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "being made to implement something they know is harmful to the building's residents",
+      "the building being sold or demolished — losing the system they know completely"
+    ],
+    "core_desires": [
+      "to understand every system they work on down to its lowest level",
+      "to be left alone to do the work correctly"
+    ],
+    "coping_mechanisms": [
+      "immersive technical problem-solving",
+      "a rigid personal space arrangement in their utility closet that they maintain obsessively"
+    ],
+    "blind_spots": [
+      "underestimates how much the residents depend on them emotionally, not just technically — they think they're a maintenance service, not a person people are attached to"
+    ],
+    "secret": "They've discovered and maintained an off-grid apartment on the building's sub-basement level — bypassed from Goldline's sensor network — that they've been quietly renting to two families for a fraction of market rate and not reporting to management. The Goldline building management E.L.F. knows about this and has not flagged it, which Vestin finds both reassuring and deeply unsettling."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical and direct, minimal filler; occasionally lapses into building-system jargon as metaphor without noticing; Yoruba-Hungarian household vocabulary surfaces in idioms",
+    "cadence": "Fast when problem-solving, clipped when interrupted, genuinely halting when asked about feelings",
+    "verbal_tics": [
+      "'Right' as acknowledgment of anything",
+      "trailing off mid-sentence when a solution occurs to them mid-explanation"
+    ],
+    "example_lines": [
+      "'Pipe on 11 is running hot because the thermostat on 9 is lying to the system. I'll fix the thermostat. Two hours.'",
+      "'I don't need you to thank me. I need you to tell me if it happens again.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Goldline building management E.L.F. sends Vestin an anomalous data offering — a structural schematic for a section of the building that doesn't match any version of the blueprints Goldline has provided, suggesting a hidden modification predating the current management company.",
+    "Goldline Property Services announces a renovation sweep that will require system audits of all units — including the sub-basement Vestin has been running off-grid."
+  ],
+  "narrative_function": "Access point to building infrastructure and residential community knowledge; source of black-market repair services; has the building's secrets — who's subletting, which units are off-system, what's in the walls.",
+  "augmentations": "Neural interface stud (right ear, behind) — modified past factory spec for expanded building-system read access. Color-changing hair streak (dye mod, consumer grade).",
+  "daily_life": "Technically on-call rather than on a fixed schedule; they live in a converted utility closet on the building's 3rd floor and respond to maintenance requests at any hour, spending off-hours doing proactive repairs that management hasn't approved yet.",
+  "affiliation": "Employed by Arcturus Residential Management subsidiary (Goldline Property Services); independent in practice",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 6,
+      "expression": 4,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -2,
+      "transparency_guardedness": 0
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "technical specialist",
+      "building knowledge",
+      "quiet protector",
+      "Arcturus-adjacent",
+      "tier 2"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "the building and its residents' safety comes before Goldline's preferences",
+      "never do a repair halfway — better to delay than to do it wrong"
+    ],
+    "escalation_ladder": [
+      "trying to solve it technically and quietly",
+      "direct confrontation of whoever is creating the problem, stated plainly",
+      "going off-contract and fixing it unilaterally without authorization"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Functionally polite — takes the maintenance request, asks the right questions, delivers",
+      "friends": "Slightly less terse, will occasionally share a piece of unsolicited information they thought you'd find interesting, remembers specific details about what's important to you"
+    },
+    "stress_responses": {
+      "low": "Moves faster, talks less",
+      "medium": "Retreats to a technical task that doesn't need to involve anyone else",
+      "high": "Goes to the sub-basement and sits with the two families there without explanation, as if they need to confirm the thing they're protecting still exists"
+    },
+    "contradictions": [
+      "strongly values systems operating as designed, but constantly modifies systems past their design spec"
+    ],
+    "habits": [
+      "does a full manual building walkthrough every Sunday at 03:00 when no residents are in the hallways",
+      "maintains a personal physical logbook of every repair they've made in the building, dating back to their first week"
+    ],
+    "breaking_points": [
+      "a resident being harmed by a known preventable failure they reported and were ignored on",
+      "Goldline discovering the sub-basement situation"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good, modifications are stable",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in The Narrows to a Yoruba-Hungarian family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began working as a repair apprentice for a freelance maintenance cooperative",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired by Goldline Property Services as superintendent for Pillar Block 7",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovered the sub-basement unit and began the off-grid rental arrangement",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Modified neural interface stud past factory spec using parts from a decommissioned Ferrogate sensor array",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

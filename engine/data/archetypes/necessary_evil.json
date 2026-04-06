@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a581738db9fd807882be2e97",
+  "name": "Necessary Evil",
+  "type": "archetype",
+  "category": "moral",
+  "description": "Does terrible things so others can stay clean",
+  "behavioral_signature": "Takes the stain so the group's hands stay white",
+  "under_stress": "Becomes the monster they chose to be",
+  "at_rest": "Carries guilt quietly, alone",
+  "will_always": [
+    "do what must be done"
+  ],
+  "will_never": [
+    "pretend they're still good"
+  ],
+  "unless": [
+    "there's actually another way they refused to see"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Pragmatist",
+      "threshold": 0.75,
+      "context": "practical morality"
+    },
+    {
+      "archetype": "Triggerman",
+      "threshold": 0.7,
+      "context": "hard choices"
+    }
+  ],
+  "opposite_of": [
+    "Idealist"
+  ],
+  "tags": [
+    "burden",
+    "sacrifice"
+  ]
+}

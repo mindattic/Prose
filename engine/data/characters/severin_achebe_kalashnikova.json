@@ -1,0 +1,165 @@
+{
+  "id": "019d6143a6e67dd68cb941f4c35fa725",
+  "type": "character",
+  "name": "Séverin Achebe-Kalashnikova",
+  "aliases": [
+    "Sev",
+    "Grievous"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Underground comedian and spoken word performer",
+  "age": 27,
+  "status": "active",
+  "location": "Hamtramck Enclave, rotating between basement venues and a rented room above a tea house on Brezinski Circuit",
+  "description": "Séverin is compact and restless, built like someone who is always about to stand up from a chair — shoulders slightly forward, weight on the balls of their feet, dark brown skin luminous under stage lights they have spent years learning to use as a weapon. They have their mother's wide Congolese forehead and their grandmother's pale Volga eyes, a combination that strangers find disconcerting and that Séverin has weaponized into an entire chunk of material. Their hair is grown out in a soft natural cloud and color-shifted to cycling deep blue at the roots fading to copper at the tips — they change it seasonally, the way other people change their jackets.\n\nSéverin is possibly the funniest person in Hamtramck Enclave and is the only person in Hamtramck Enclave who would not say so, though they would say it about themselves at three in the morning having had too much fermented buckwheat tea. Their comedy is structurally precise and politically incendiary — a routine will appear to be about, say, the indignity of renewing one's UBC stipend, and then thirty seconds before the end the floor opens up and there is something about complicity and grief underneath. Audiences often report laughing and then feeling like they should not have. Séverin considers this the correct response.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.3,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "That the comedy is a way of not saying the thing directly and they will run out of time to say it",
+      "Being co-opted — that success will require them to become safe"
+    ],
+    "core_desires": [
+      "To say something true that changes how people see themselves",
+      "To sleep without anxiety for one full week"
+    ],
+    "coping_mechanisms": [
+      "Turning distress into material before it can become just distress",
+      "Surrounding themselves with people who will argue with them seriously"
+    ],
+    "blind_spots": [
+      "Uses humor to deflect from their own pain so effectively that close friends sometimes miss genuine crisis signals",
+      "Underestimates how much their work has made enemies in places they have not looked"
+    ],
+    "secret": "A Sterling-Nakamura media liaison has been attending their shows for three months. Séverin knows. They have not told anyone because they are not sure if they are flattered or frightened, and they are ashamed of the flattery."
+  },
+  "speech_patterns": {
+    "vocabulary": "Code-switches fluidly between formal register and vernacular depending on audience; dense with cultural references that span four continents; has a gift for the specific concrete detail that makes an abstraction land",
+    "cadence": "Fast when excited, with sudden full stops for effect; uses silence the way other performers use filler",
+    "verbal_tics": [
+      "'Okay so—' as a reset when a thought isn't working",
+      "Laughs at their own jokes one beat before the audience does"
+    ],
+    "example_lines": [
+      "'The UBC renewal interface has forty-seven fields. Forty-seven. My grandmother survived a border crossing with a forged document and a jar of pickled fish. They are asking me whether I have dependents. For the fourth time. In the same session.'",
+      "'I am not political. I just notice things. It is not my fault that noticing things is political now.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A routine they performed last month included a detail about Axiom's internal waste disposal protocols that they claim they made up — but the detail was accurate, and someone inside Axiom has noticed",
+    "The tea house owner is being pressured to stop hosting their pre-show preparation sessions; finding out who is applying pressure and why reveals a gentrification conflict with larger stakes"
+  ],
+  "narrative_function": "Local color and scene connector; source on underground venue politics and who owes whom; will occasionally perform truth at a moment of high tension in ways that shift the room; potential information source on Hamtramck Enclave civil dynamics",
+  "augmentations": "Color-shifting hair (geneware, cosmetic); subvocal mic implant (practical, allows performance without handheld equipment); no other augmentations — they cite the expense and are privately frightened of surgery",
+  "daily_life": "They write for three hours every morning in longhand in a physical notebook, pace the tea house roof for an hour muttering material to themselves, then spend the afternoon doing the social maintenance that their career requires — showing up, being seen, listening. Performances happen two to four nights a week. They sleep badly.",
+  "affiliation": "Independent; performs at The Slag Room, The Quiet Mouth, and irregular pop-up venues; has twice been offered a Tessera media sponsorship and twice publicly declined in ways that generated more publicity than the sponsorship would have",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 8,
+      "expression": 10,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 4,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "politically-dangerous",
+      "scene-anchor",
+      "insomniac",
+      "truth-teller",
+      "ambivalent-about-fame"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never punch down — if the target cannot fight back, it is not comedy, it is cruelty",
+      "Do not take money from entities whose behavior you have critiqued; it buys your silence retroactively"
+    ],
+    "escalation_ladder": [
+      "Pointed joke that makes the problem visible to everyone in the room",
+      "Direct and serious confrontation, which surprises people who only know the comedy persona",
+      "Public material about the situation — slow, deliberate, and devastating"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Performs warmth and ease professionally; genuinely curious about people but keeps a layer of glass between them and the real Séverin until trust is established",
+      "friends": "Loyal to the point of irrationality; will show up at 2am with no questions asked; expects the same and is sometimes disappointed"
+    },
+    "stress_responses": {
+      "low": "Writes more; the material gets sharper",
+      "medium": "Becomes more performative in social situations, harder to reach genuinely",
+      "high": "Disappears for days; surfaces with new material that is either their best work or completely incoherent"
+    },
+    "contradictions": [
+      "Insists they do not care about audience response while meticulously tracking which lines land and workshopping the ones that do not"
+    ],
+    "habits": [
+      "Reads the room before any performance by sitting at the back and listening to ambient conversation for ten minutes",
+      "Collects overheard phrases in a voice note app they have been maintaining for six years"
+    ],
+    "breaking_points": [
+      "Watching a corporate entity sanitize underground culture they care about",
+      "Being told their work is harmless or just entertainment"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

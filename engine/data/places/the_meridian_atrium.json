@@ -1,0 +1,108 @@
+{
+  "id": "019d6143a94676e6b3334e853f8805f3",
+  "type": "place",
+  "name": "The Meridian Atrium",
+  "aliases": [
+    "The Atrium",
+    "The Glass Nave",
+    "Axiom Central",
+    "The Vault"
+  ],
+  "description": "The Meridian Atrium is one of the most recognized interior spaces in Meridian 88 — a vast multi-story enclosed arcade running through the base of three connected Spire-adjacent towers in the northern Meridian Core, its roof a continuous vaulted structure of photovoltaic glass that diffuses Lake Michigan daylight into the commercial and transit spaces below in a quality of illumination that architects have studied and advertisers have spent decades trying to replicate. Originally developed by Axiom Industries as a prestige retail and corporate hospitality complex, the Atrium has evolved over fifty years into something more complex and more interesting than its corporate origins intended.\n\nThe lower three levels are genuinely public in a way that few Spire-adjacent spaces are — the transit connections that run through the Atrium's basement made it legally difficult to restrict access by tier, and a series of court decisions in the 2170s codified that public infrastructure easements apply to the full ground-level space. The result is a daily collision between Meridian 88's economic extremes: Tier 4 and 5 professionals moving between corporate towers brush past Tier 1 and 2 visitors who have come for the transit connections, the heated space in winter, and the secondary market economy that has grown up in the Atrium's lower corridors despite Axiom's periodic attempts to clear it.\n\nThe upper levels are a different world. Axiom Industries occupies floors seven through twenty of the central tower, and the hospitality and retail spaces from floors four through six serve an almost exclusively upper-tier clientele — curated experiences, high-end food and fashion, BCI-integrated environments that scan and adjust to recognized premium users while treating unrecognized visitors with a cold and slightly hostile automated neutrality. The transition between lower and upper levels is one of the most compressed socioeconomic gradients in Meridian 88, navigable in a single elevator ride that takes forty-five seconds and crosses a distance that most people never travel in their lives.\n\nThe Atrium is also one of the most heavily surveilled spaces in the city. Axiom runs its own security and sensor network, Ferrogate Security holds the transit-level contract, and at least three corponations are known to run passive intelligence collection through the BCI infrastructure that blankets the space. The light is beautiful. The watching never stops.",
+  "atmosphere": {
+    "sights": [
+      "Diffused lake daylight through the vaulted photovoltaic glass ceiling, shifting from blue-white to amber as weather moves over the lake",
+      "The sharp visual break between the lower transit corridors — crowded, improvised market stalls, worn surfaces — and the sterile curated precision of the upper retail levels",
+      "Axiom Industries corporate art installations on the mid-level atrium walls: monumental abstract forms in polished metal that reflect and distort the figures moving below",
+      "BCI advertising projections calibrated by user tier — premium users see one set of targeted content, unregistered users see a different, less personalized layer, and the two sets of images sometimes overlap in strange ways in the same physical space",
+      "Ferrogate Security officers in standard patrol configuration on the transit level, their presence dense enough to communicate control without quite crossing into overt intimidation"
+    ],
+    "sounds": [
+      "The acoustic peculiarity of the vaulted glass ceiling, which reflects sound in ways that create the sensation of being slightly followed by your own voice",
+      "The transit level's constant baseline of movement — feet, wheels, announcements — contained and amplified by the enclosing architecture",
+      "Corporate audio environments from the upper-level retail spaces bleeding down through the vertical space as a kind of abstract musical presence",
+      "The Atrium's own climate control system, a barely perceptible HVAC undertone that becomes noticeable when it stops"
+    ],
+    "smells": [
+      "The processed cleanliness of corporate-managed air — filtered, temperature-adjusted, carrying a signature scent that Axiom has trademarked and deploys throughout their managed spaces",
+      "Food from the transit-level vendors and informal stalls: strong, specific, culturally varied, cutting through the managed air like a rebuke",
+      "The faint ozone of BCI scanning and projection infrastructure, present just below conscious detection threshold"
+    ],
+    "feel": "The Atrium is a space that wants to be experienced as aspiration and functions as a mirror. The light is genuinely beautiful — it's not a trick, the architecture actually does something remarkable with the lake sky — and the beauty is genuine enough that it irritates, because it belongs to a space that is also a tool of visible hierarchy. The art makes you feel small in a way that is probably intentional. The security makes you feel watched in a way that is definitely intentional.\n\nIn the lower corridors, despite everything, there is genuine life — the informal market, the transit community's daily rhythms, the accidental social mixing that the legal structure forces on a space designed for separation. This is probably not what Axiom intended, and it is probably the most interesting thing about the place.",
+    "tags": []
+  },
+  "demographics": "Transit level: cross-section of Meridian 88 demographics weighted toward tiers 2-3, with significant tier 1 presence in the informal market zones. Mid-level commercial: tiers 3-4. Upper corporate and hospitality: tiers 4-5. The enforced vertical segregation creates a demographic profile that changes completely depending on which level you're standing on.",
+  "economy": "Axiom Industries' flagship commercial property generates substantial upper-tier retail and hospitality revenue. The informal lower-level market is economically significant to the surrounding district and politically tolerated because clearing it completely would require confronting the transit easement legal question in a way Axiom currently prefers to avoid. The space is also economically significant as an intelligence collection environment — multiple corponations operate passive BCI data-harvesting operations through the Atrium's network.",
+  "power_structure": "Axiom Industries is the formal authority in all non-transit spaces. Ferrogate Security holds the transit contract. The transit easement creates a legally contested zone in the lower corridors where neither fully controls the situation. The informal market operates in this gap, collectively and without formal organization.",
+  "dangers": [
+    "Pervasive multi-party surveillance — BCI data collected here is processed by at least four distinct intelligence operations with different interests",
+    "The tier gradient creates predictable confrontational flashpoints, particularly at the transition between lower and upper levels",
+    "Axiom's periodic market clearance operations, which occur without warning and with Ferrogate Security support",
+    "The informal market's position as a cash and goods transit point makes it a target for organized theft and extortion",
+    "Meeting anyone sensitive here is almost certainly a compromised operation — the assumption should be that the conversation is recorded"
+  ],
+  "opportunities": [
+    "The collision of economic extremes creates information environments — overheard conversations, unguarded moments of cross-tier interaction — that are genuinely valuable to the right observers",
+    "The informal market's transit-point position makes it one of the fastest information distribution networks in the Meridian Core",
+    "The legal ambiguity around the transit easement creates ongoing opportunities for advocacy organizations to challenge Axiom's authority in ways that generate precedent",
+    "The corporate hospitality levels provide access, for those who can navigate the tier screening, to upper-level decision-makers in informal settings"
+  ],
+  "story_hooks": [
+    "A Sterling-Nakamura intelligence analyst has gone missing from the Meridian Atrium during what should have been a routine dead-drop operation. Her BCI last pinged at the mid-level transition zone, and then simply stopped — not the signal pattern of a hardware failure, but the specific signature of a military-grade BCI suppression event. Three other corponations had intelligence operations running in the Atrium at the same time. Someone knew she would be there, and the suppression equipment required to blank a BCI that completely is not commercially available. The question is whether this is corporate espionage, something worse, or whether the analyst staged her own disappearance.",
+    "The informal lower market has been slowly incorporating a new trader who arrived three months ago selling vintage pre-Diaspora data storage media. The prices are wrong — too low for the genuine article, if genuine the articles are — and the trader seems less interested in selling than in extended conversations with specific types of buyers. Several regular market vendors have noticed. The trader's BCI profile doesn't match any registered identity in the Diaspora. Someone needs to find out what they're actually doing here, and whether the media contains what it appears to contain or something else entirely.",
+    "Axiom Industries has scheduled a major architectural renovation of the Atrium's lower levels, framed as a 'community improvement initiative' but structured in a way that would effectively eliminate the informal market by removing the spatial conditions that sustain it. The transit easement legal question would be tested in a new way. A coalition of market vendors, transit workers, and civil rights organizations is planning a response, and they need someone with access to both the lower market community and the upper-level corporate decision-making environment to find the leverage point that makes Axiom reconsider before the demolition permits are filed."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Meridian Core",
+      "The Spire",
+      "The Nearfield",
+      "The Renaissance Axis"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Axiom Industries corporate employees and their business contacts",
+    "Upper-tier retail and hospitality consumers from the Spire and adjacent corporate zones",
+    "Transit commuters passing through the lower-level connections",
+    "Informal market vendors and their customers from the surrounding mid-tier districts",
+    "Intelligence operatives from multiple corponations conducting passive collection operations"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Nave Market",
+      "description": "The informal lower-level market that occupies the transit easement zone — approximately 200 vendors in constantly shifting configuration selling food, salvage goods, information, and services that range from mundane to carefully unspecified.",
+      "tags": []
+    },
+    {
+      "name": "The Axiom Hospitality Floor",
+      "description": "Sixth and seventh floor tier-screened hospitality environment, accessible by invitation or recognized premium BCI profile, where Axiom hosts client entertainment and where significant informal corporate decision-making occurs over expensive food and drink.",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.886,
+    "lng": -87.632,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "war",
+    "theft",
+    "identity",
+    "bci",
+    "ai",
+    "corporate",
+    "contract",
+    "surveillance",
+    "control",
+    "market",
+    "cold",
+    "rights",
+    "food",
+    "fashion",
+    "lake",
+    "spire"
+  ]
+}

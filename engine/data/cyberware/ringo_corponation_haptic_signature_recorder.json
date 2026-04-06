@@ -1,0 +1,55 @@
+{
+  "id": "019d6143a7c376169c73f7db4e9815d3",
+  "name": "Ringo Corponation Haptic Signature Recorder",
+  "brand_name": "Ringo",
+  "product_name": "Ringo Corponation Haptic Signature Recorder",
+  "type": "cyberware",
+  "aliases": [
+    "The Fingersmith",
+    "Ghost Touch",
+    "The Impression"
+  ],
+  "category": "augmentation",
+  "body_location": "",
+  "description": "The Haptic Signature Recorder is a dense array of sub-dermal tactile sensors embedded in the palmar surface and fingertips, connected to a dedicated neural co-processor lodged in the thenar eminence of the dominant hand. The system captures tactile interactions — pressure distribution, texture topology, thermal gradient, micro-vibration frequency — at a resolution approximately 40 times finer than unaugmented human touch, and encodes them as compressed haptic signatures that can be stored, retrieved, and replayed through the same sensor array. A user can record the precise tactile experience of a lock mechanism under their fingers, a keypad's resistance pattern, a handshake, a document's paper stock — and replay that signature later with enough fidelity to reproduce the original interaction with millimeter precision.\n\nRingo's design philosophy here is rooted in the company's core business: information capture and reproduction. The Recorder was initially developed for the high-end forgery and authentication market — a trained user could record the tactile signature of a genuine document, seal, or physical credential and use that recording as a reference standard for detecting counterfeits. The same capability, inevitably, also enables the creation of counterfeits with a physical authenticity that visual inspection cannot catch. Ringo has positioned the device carefully in the licensed authentication market while maintaining deliberate ignorance of the device's parallel applications, a posture that has attracted regulatory scrutiny without producing meaningful restriction.\n\nThe Recorder's secondary market is dominated by safecrakers, credential forgers, and social engineers who use its replay function to reproduce handshake pressure patterns, biometric grip signatures, or physical access sequences with a consistency no human hand could achieve unaided. Among legitimate users, surgeons have adopted it for procedural memory — recording the precise tactile experience of a correctly performed technique and using the replay to calibrate subsequent procedures. Musicians and craftspeople use it as a kind of somatic notation system, preserving the exact physical knowledge of a performance or a perfectly executed cut.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"sensor_resolution\":\"40x unaugmented human tactile resolution\",\"capture_parameters\":\"Pressure distribution, texture topology, thermal gradient (±0.1°C), micro-vibration (5Hz–2kHz)\",\"storage_capacity\":\"Approximately 4,000 distinct haptic signatures in onboard memory\",\"replay_fidelity\":\"Within 2% of recorded signature on standard validation testing\",\"replay_latency\":\"12ms from recall to actuation\",\"installation_location\":\"Dominant hand — palmar surface, fingertips, thenar eminence\",\"installation_time\":\"8–10 hours surgical, 4-week neural integration\",\"interface\":\"Neural handshake; compatible with Ringo Corponation Synaptic Overlay Codec for expanded storage\"}",
+  "side_effects": [],
+  "cultural_context": "The Fingersmith tag is both affectionate and accurate — the augment carries a strong association with a particular kind of skilled criminal artistry, the tradition of the physical manipulator who works through touch rather than force. In certain underground communities, possessing a Recorder is a credential in itself, a signal of serious professional intent. Among legitimate craftspeople and surgeons, the device carries a quieter prestige, the mark of someone who takes physical skill seriously enough to archive it. Ringo's careful legal positioning means the device exists in a grey zone that makes it simultaneously licensed and broadly understood to be used for things the license doesn't cover.",
+  "known_users": [
+    "High-end forgers and credential counterfeiters",
+    "Physical security penetration specialists",
+    "Safecracking operatives",
+    "Surgical practitioners (procedural memory applications)",
+    "Master craftspeople and luthiers",
+    "Social engineers and confidence operators"
+  ],
+  "story_hooks": [
+    "A player character with the Recorder installed realizes they have an archived haptic signature they don't remember recording — a lock pattern for a door they've never opened. Someone has been using their hand.",
+    "A forger approaches the party with a problem: a physical credential they've been contracted to duplicate has a tactile anti-counterfeit layer they've never encountered before — a texture that changes based on the reader's own pressure application. They need someone with a Recorder to get close enough to the original to capture it under controlled conditions.",
+    "Ringo Corponation's authentication division is offering a bounty for Recorders that contain stored haptic signatures of a specific grip pattern — the handshake of someone who has recently died under suspicious circumstances. The company says it's for estate verification. The bounty amount suggests otherwise."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "augmentation",
+    "cyberware",
+    "war",
+    "memory",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "contract",
+    "control",
+    "market",
+    "rain",
+    "train",
+    "tier 2"
+  ]
+}

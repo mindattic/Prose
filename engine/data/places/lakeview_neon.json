@@ -1,0 +1,112 @@
+{
+  "id": "019d6143a9237f39af5fc8fa31497a6f",
+  "type": "place",
+  "name": "Lakeview Neon",
+  "aliases": [
+    "Lake View",
+    "The Neon",
+    "Wrigley Ruins",
+    "The Strip"
+  ],
+  "description": "Lakeview Neon is what happens when a party district outlives the civilization that threw the party. Old Lake View — Wrigleyville's bars, Boystown's clubs, the dense commercial corridors of Belmont and Clark — was Chicago's nightlife engine, a district purpose-built for drinking, dancing, and the particular kind of self-invention that happens after midnight. When the corporations restructured the city, Lakeview's entertainment infrastructure was too extensive to demolish and too low-tier to gentrify into corporate hospitality. So it was left to fend for itself, and fending for itself meant doing what it had always done: selling people a good time, by whatever means the current era demanded.\n\nWrigley Field — that beautiful, doomed cathedral of baseball — stands at the district's heart, its ivy-covered walls now supporting a vertical market that climbs the old bleacher structure six stories high. The field itself has been converted to a fight arena, augmented combat matches replacing the baseball that nobody plays anymore. The marquee still reads WRIGLEY FIELD but the letters are neon now, flickering in sequences that correspond to the evening's match schedule. The surrounding blocks of sports bars have evolved into augment-entertainment parlors where customers rent neural hookups to experience the fights from the combatants' perspective — every punch felt, every injury simulated at dialed-down intensity. The technology is unlicensed and occasionally dangerous. The crowds don't care.\n\nBoystown's legacy persists in Lakeview Neon's most distinctive feature: it remains Meridian's queer district, though the meaning of that word has expanded in a city where body modification is ubiquitous and identity is as customizable as an augment loadout. The clubs along Halsted — rebuilt, renamed, but occupying the same addresses — cater to a clientele that uses the full spectrum of neural and physical modification as self-expression. Gender, species presentation, sensory configuration — everything is on the menu. The pride flags have been replaced by holographic identity markers that shift and adapt in real-time, broadcasting the wearer's chosen self to anyone with augmented perception. It's beautiful and overwhelming and occasionally incomprehensible to outsiders, which is exactly the point.\n\nThe danger of Lakeview Neon is proportional to its pleasures. The entertainment economy runs on stimulants, neural narcotics, and experience chips that blur the line between recreation and addiction. The augmented combat scene attracts the kind of money that attracts the kind of people who make that money, and the jurisdiction gap means disputes are settled by whoever has the bigger crew or the faster reflexes. The Iron Lotus has deep roots here — the fight arena is one of their primary revenue streams, and the surrounding entertainment economy pays tribute whether it wants to or not. But the Neon keeps drawing people in, because it offers something the rest of Meridian can't: permission to be someone else for a night, in a place where being someone else is the whole point.",
+  "atmosphere": {
+    "sights": [
+      "Wrigley Field's neon-lit facade, the old ivy replaced by bioluminescent climbing plants that pulse with the crowd's energy",
+      "Holographic identity markers floating above club patrons on Halsted, shifting in real-time kaleidoscope displays",
+      "The vertical market climbing the old bleacher structure, six stories of stalls lit by competing neon signs",
+      "Augment-entertainment parlors with neural hookup chairs visible through street-level windows, patrons twitching in synchronized combat experience",
+      "Street-level body modification artists working in open-air studios, chrome and color and light",
+      "Fight arena crowds spilling into the surrounding streets between bouts, adrenaline-flushed and spending freely"
+    ],
+    "sounds": [
+      "The roar of the Wrigley arena crowd — twenty thousand people reacting to augmented combat in real-time",
+      "Club music from Halsted — bass frequencies tuned to interface with neural implants, creating involuntary dance responses",
+      "The buzz of body modification tools from the street-level studios",
+      "Barkers outside entertainment parlors, promising experiences that are probably illegal and definitely memorable",
+      "The particular silence that falls between arena bouts — twenty thousand people holding their breath at once"
+    ],
+    "smells": [
+      "Stimulant vapor from the clubs — sweet, chemical, designed to be inhaled",
+      "Grilled meat from the vertical market — real and synthetic, sold side by side",
+      "Neural hookup gel — a clinical, slightly metallic scent that clings to the entertainment parlor doorways",
+      "Sweat and adrenaline from the arena crowds, a primal smell that cuts through everything",
+      "The ozone tang of active body modification equipment"
+    ],
+    "feel": "Hungry. Lakeview Neon wants something from you — your money, your attention, your inhibitions. It's a district designed to consume and be consumed, a feedback loop of pleasure and commerce that runs all night and sleeps until noon. There's genuine joy here, genuine community among the regulars and the queer residents who've made this their home. There's also genuine danger, the kind that wears a friendly face and offers you one more round.",
+    "tags": []
+  },
+  "demographics": "Approximately 30,000 residents with a nightly transient population that can double that number. The permanent population is young, diverse in identity and augmentation, and predominantly Tier 1-2. Lakeview Neon has the highest concentration of body-modified and non-standard-identity residents in Meridian. The queer community forms the cultural backbone.",
+  "economy": "Entertainment — augmented combat, neural experience parlors, clubs, bars, street-level body modification, and the stimulant trade. The Wrigley arena is the economic anchor. Iron Lotus takes a cut of most major transactions. The legal and illegal economies are indistinguishable by design.",
+  "power_structure": "The Iron Lotus controls the arena and extracts tribute from the entertainment corridor. The Halsted Collective — a queer community organization — governs the club district with a mix of consensus and muscle. Corporate presence is limited to talent scouts and market researchers who observe but don't interfere. An uneasy equilibrium maintained by mutual profit.",
+  "dangers": [
+    "Iron Lotus enforcement — cross them and the entertainment district becomes very unfriendly",
+    "Neural narcotic addiction — the experience parlors are designed for repeat customers",
+    "Augmented combat injuries — spectators connected via neural hookup can suffer sympathetic damage",
+    "Stimulant overdose — the district's chemical economy has no quality control",
+    "Identity theft — in a district where identity is fluid, stealing someone's augmented persona is big business",
+    "Getting marked — the Iron Lotus fight scouts recruit unwilling combatants from the desperate and the indebted"
+  ],
+  "opportunities": [
+    "Combat contracts — the Wrigley arena pays well and the fights are (theoretically) non-lethal",
+    "The body modification scene — cutting-edge identity technology developed by the queer community",
+    "Entertainment industry connections — performers, promoters, and experience-chip producers who work the Neon circuit",
+    "Iron Lotus contacts — doing business in the Neon means meeting people who know people",
+    "The Halsted Collective's trust network — once you're accepted, the community protects its own fiercely"
+  ],
+  "story_hooks": [
+    "A Wrigley arena combatant dies during a match that was supposed to be non-lethal — the neural hookup audience felt the death in real-time, and some of them haven't recovered. Someone modified the arena's safety limiters, and the question is whether it was sabotage or a product test.",
+    "The Halsted Collective discovers that someone is cloning augmented identities from club patrons — stealing not just data but entire constructed selves, selling them on the black market as ready-made personas for people who want to disappear into someone else's life",
+    "Kyle is hired to extract someone from an Iron Lotus fight contract — a kid who signed up voluntarily but didn't understand what 'exclusive representation' means in the Neon"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Upturn",
+      "Lincoln Spear",
+      "North Branch Commons",
+      "Lake Michigan shore zones"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Entertainment seekers from across Meridian willing to travel for the Neon's offerings",
+    "Augmented combat fans and bettors filling the Wrigley arena nightly",
+    "The queer community maintaining Halsted's legacy as a space of radical self-expression",
+    "Iron Lotus operators managing the district's tribute economy",
+    "Body modification artists and identity technologists pushing the boundaries of what a person can be"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.943,
+    "lng": -87.653,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "combat",
+    "theft",
+    "trust",
+    "death",
+    "identity",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "money",
+    "debt",
+    "injury",
+    "market",
+    "club",
+    "bar",
+    "neon",
+    "night",
+    "desperate",
+    "drink",
+    "stimulant",
+    "lake",
+    "circuit"
+  ]
+}

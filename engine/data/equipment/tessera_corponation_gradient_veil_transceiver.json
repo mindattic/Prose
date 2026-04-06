@@ -1,0 +1,66 @@
+{
+  "id": "019d6143a8737651b9705e58ba74b75a",
+  "name": "Tessera Corponation Gradient Veil Transceiver",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Corponation Gradient Veil Transceiver",
+  "type": "equipment",
+  "aliases": [
+    "The Veil",
+    "Gradient Box",
+    "Smear Radio"
+  ],
+  "category": "comms",
+  "description": "The Gradient Veil Transceiver is a palm-sized communications device built around Tessera's Spectral Smear Engine — a hardware-level signal processor that distributes a single transmission across dozens of simultaneous frequency bands at varying power levels, creating what appears on any monitoring sweep as uniform low-level atmospheric noise rather than a coherent broadcast. The receiving unit uses the same Spectral Smear key to reassemble the dispersed signal in real time, producing clean audio output. Without the matching key, the transmission is acoustically and mathematically indistinguishable from interference.\n\nThe device is built into a matte-black chassis roughly the size of a cigarette case, with a recessed dial for manual key cycling and a single flush-mounted speaker grille. It pairs with a standard throat mic or a dedicated lapel pickup. The Gradient Veil operates entirely in hardware — there is no software stack to exploit, no firmware to patch, and no network handshake to intercept. Tessera designed it specifically for environments where digital encryption is considered a liability because it can be cracked, spoofed, or exploited through software vulnerabilities.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Spectral Smear Engine (hardware-level)",
+    "Multi-band simultaneous frequency distribution",
+    "Analog key cycling mechanism",
+    "Atmospheric noise profile mimicry",
+    "Hardwired signal reassembly array"
+  ],
+  "specifications": {
+    "dimensions": "95mm x 55mm x 12mm",
+    "weight": "180g",
+    "range": "Up to 8km in open terrain; 1.5km in dense urban canyons",
+    "encryption": "Spectral Smear hardware key, 64-band distribution",
+    "power_source": "Rechargeable solid-state cell, micro-USB-C compatible",
+    "battery_life": "18 hours continuous transmission",
+    "frequency_bands": "Simultaneous distribution across 64 bands, 300MHz–5.8GHz",
+    "key_pairs": "Factory-paired in sets of 2; additional units can be keyed by Tessera technicians only"
+  },
+  "tactical_use": "The Gradient Veil is favored in hostile electronic environments where opposing forces are running active signal-hunting equipment. Because it produces no distinct transmission spike on any single frequency, it defeats most directional RF detection arrays. Field teams use paired units for two-person secure communication, or run a three-unit cell where one device acts as a relay anchor. The hardware-only architecture means it functions normally inside software-defined radio jamming fields that would disable conventional encrypted comms. Its primary limitation is range — in a city full of signal-absorbing megastructures, 1.5km is often barely enough.",
+  "cultural_context": "The Gradient Veil has a reputation for being the tool of professionals who do not trust software. Veteran mercenaries and old-school operatives swear by it precisely because it cannot be hacked remotely — you have to physically take it apart to compromise it. There is a small but devoted subculture of communications specialists who collect and maintain Gradient Veil units from different production runs, treating them as reliable instruments the way a carpenter prizes a particular hand tool. Corporate security divisions use them for internal affairs investigations, specifically because the devices leave no digital audit trail.",
+  "known_users": [
+    "Veteran mercenary teams",
+    "Corporate internal affairs investigators",
+    "Anti-surveillance journalists",
+    "Mid-tier criminal organizations with technical discipline",
+    "Retired military operators"
+  ],
+  "story_hooks": [
+    "A pair of Gradient Veil units surfaces at a crime scene — both factory-paired, meaning whoever used them bought them together. Tracing the purchase could crack a long-cold case.",
+    "Someone is broadcasting on a Spectral Smear pattern that exactly matches a Tessera key that was supposed to have been destroyed three years ago.",
+    "A character receives a Gradient Veil in the mail with no return address, already keyed to an unknown partner unit that is actively broadcasting.",
+    "Tessera announces a voluntary recall of a specific production run, citing 'unspecified hardware irregularities' — owners who comply receive a replacement; owners who refuse start having accidents.",
+    "A collector's cache of early-production Gradient Veil units is discovered in a condemned building, all keyed to the same frequency cluster — what network did they belong to?"
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "war",
+    "crime",
+    "trust",
+    "ai",
+    "corporate",
+    "surveillance",
+    "power",
+    "ubc",
+    "bar",
+    "cold",
+    "chase",
+    "tier 2"
+  ]
+}

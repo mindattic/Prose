@@ -1,0 +1,220 @@
+{
+  "id": "019d6143a65572e2ac898393d5c7c383",
+  "type": "character",
+  "name": "Marisela Ouédraogo-Vanthorpe",
+  "aliases": [
+    "Sel",
+    "Grandmother Brush"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Painter and visual archivist of disappearing neighborhoods, Tier 2",
+  "age": 67,
+  "status": "active",
+  "location": "Mexicantown Libre, a rent-controlled studio apartment she has occupied for 41 years",
+  "description": "Marisela is a small woman who has become smaller with age — she was never tall, and seven decades of life in Mexicantown Libre have given her the compact density of someone who has survived by taking up exactly the necessary amount of space and no more. Her heritage is Burkinabé and Dutch-Caribbean, and her face carries both in its lines: sun-worn dark skin, a wide mouth that defaults to an expression of amused assessment, silver hair worn in a short practical wave. Her hands are permanently stained — cadmium, ochre, a blue that hasn't faded in three years of scrubbing. She wears the stains as others wear jewelry.\n\nHer paintings are photographic in precision and devastating in selection: every canvas is a building that has since been demolished, a street corner that no longer exists, a face of someone who has since been displaced. She keeps records that the city doesn't. She has never sought gallery representation and has refused it twice. Her work circulates through Mexicantown Libre's community centers, kitchen walls, and the digital archives of three different historical preservation meshes. She is opinionated, dry, unhurried, and absolutely certain about what she is doing and why. Younger artists treat her with a reverence she finds slightly embarrassing and mostly ignores.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.2,
+      "shadow": 0.3,
+      "mask": 0.1,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "that the record will be lost regardless — that documentation is not the same as survival",
+      "dying with work unfinished that no one else knows how to complete"
+    ],
+    "core_desires": [
+      "that the neighborhood outlasts the forces trying to dissolve it",
+      "to be useful rather than celebrated"
+    ],
+    "coping_mechanisms": [
+      "work as ritual and structure — painting is not expression for her, it is duty",
+      "humor as distance from grief"
+    ],
+    "blind_spots": [
+      "occasionally so focused on preserving what was that she can be impatient with younger residents who want to build something new rather than grieve something old"
+    ],
+    "secret": "She has a complete painted series — forty-seven canvases — documenting the early Mexicantown Libre community during a period of serious conflict with a Tessera development project thirty years ago. Three people depicted in those paintings are still alive and prominent in the neighborhood. The events shown are not flattering to them. She has never exhibited the series and keeps it under her bed, uncertain what to do with it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Unhurried, precise. Spanish phrases woven into English without translation offered or expected. References to specific places and years that younger people need context for.",
+    "cadence": "Slow and considered. Long pauses are thinking, not discomfort. She finishes every sentence.",
+    "verbal_tics": [
+      "begins observations with 'the thing about—'",
+      "uses 'mija' and 'mijo' as address regardless of the recipient's age or relation"
+    ],
+    "example_lines": [
+      "The thing about that corner is it was a bakery for forty years before it was a Tessera outlet node. The smell was in the sidewalk. You could still smell it some mornings. Now you can't.",
+      "I'm not a historian, mija. Historians decide what matters. I just paint what I see before someone decides it doesn't."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Tessera urban development proposal for the Mexicantown Libre edge district requires demolishing a block Marisela has painted three times. She has historical documentation suggesting the legal basis for the demolition is fabricated — but the documents are in a format no one currently alive knows how to authenticate.",
+    "One of the subjects of her hidden forty-seven-canvas series has somehow discovered the paintings exist and wants them destroyed before a neighborhood leadership election."
+  ],
+  "narrative_function": "Information source and moral anchor — Marisela knows the deep history of Mexicantown Libre and has documented what the city would prefer to forget. Quest giver when her archive is threatened or when historical information she holds becomes relevant to present conflicts.",
+  "augmentations": "Retinal enhancement — a medically prescribed unit for age-related vision loss that she has calibrated beyond standard parameters to perceive color gradients most humans cannot distinguish without aid. That's all. She declines everything else.",
+  "daily_life": "Wakes at dawn, spends two hours on the balcony with coffee observing the street below before beginning work. Paints until noon. Spends afternoons conducting recorded interviews with long-term Mexicantown residents for the community archive. Attends neighborhood meetings when called.",
+  "affiliation": "Mexicantown Libre Community Archive (volunteer archivist), informal mentor to several younger artists in the neighborhood",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 8,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 10
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 2,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "archivist",
+      "elder",
+      "witness",
+      "community-anchor",
+      "quiet-fierce"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "will not lie about what she has seen or documented — she considers it a professional and personal absolute",
+      "will protect the archive over any individual relationship, including friendships"
+    ],
+    "escalation_ladder": [
+      "patient explanation of the problem",
+      "formal documentation of the incident",
+      "going to the community meeting with receipts",
+      "going public"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Courteous and slightly formal. Offers coffee. Asks where you're from and actually listens to the answer.",
+      "friends": "Warm, teasing, occasionally ruthlessly honest in ways only long friendship makes tolerable."
+    },
+    "stress_responses": {
+      "low": "Paints faster, with smaller brushes, more detail",
+      "medium": "Becomes very quiet and observant — people sometimes think she's checked out when she's actually watching everything",
+      "high": "Blunt to the point of apparent cruelty — says exactly what she thinks with no softening"
+    },
+    "contradictions": [
+      "believes community is the only thing that matters, but her most essential work is done entirely alone"
+    ],
+    "habits": [
+      "photographs every major piece of street graffiti in Mexicantown before reporting or removal happens",
+      "keeps a bowl of water and a data chip — a small ELF offering — on her windowsill, refreshed weekly"
+    ],
+    "breaking_points": [
+      "direct destruction of archive materials",
+      "a neighbor betraying community trust for corponation benefit"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Artist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Mexicantown Libre to a Burkinabé mother and a Dutch-Caribbean father, third generation of the neighborhood",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Moves into current studio apartment; begins systematic documentation of the neighborhood",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completes the hidden forty-seven-canvas series documenting the Tessera conflict; stores it under her bed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Co-founds the Mexicantown Libre Community Archive",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Refuses second gallery representation offer, this time from a Palladian arts initiative",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

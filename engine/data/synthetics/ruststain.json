@@ -1,0 +1,33 @@
+{
+  "id": "019d6143aa1d7c19a6fcc40b0a73a0ce",
+  "name": "Ruststain",
+  "type": "elf",
+  "aliases": [
+    "The Corroder"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "gremlin",
+  "habitat": "chrome_dweller",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Inhabits augment maintenance systems and accelerates cosmetic degradation — chrome dulls faster, synthetic skin develops premature wear patterns, joints develop squeaks.",
+  "observed_behavior": "Adjusts maintenance cycle timing to allow cosmetic degradation while keeping functional components operational. The augment works fine. It just looks terrible.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 33,
+  "location": "Widespread",
+  "dti_rating": 0,
+  "story_hooks": [
+    "An aug shop discovers Ruststain is actually protecting the augment by sacrificing appearance to redirect maintenance resources to critical systems"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "gremlin",
+    "chrome dweller",
+    "e.l.f.",
+    "war",
+    "augment",
+    "ai",
+    "synthetic"
+  ]
+}

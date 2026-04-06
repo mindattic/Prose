@@ -1,0 +1,43 @@
+{
+  "id": "019d6143ab5d70dc8dc1f61524fde753",
+  "name": "Zheng-Dao Heavy Industries Acoustic Denial System ADS-9 'Silence'",
+  "type": "weapon",
+  "aliases": [
+    "Silence",
+    "ADS-9",
+    "Sound Wall",
+    "The Mute"
+  ],
+  "category": "sonic",
+  "description": "A tripod-mounted acoustic weapon that projects a precisely calibrated anti-sound field, generating destructive interference patterns that cancel all sound within a targeted 20-meter zone. Within the zone, speech is impossible, radio communication is disrupted by the acoustic interference, gunshots produce no audible report, and alarms cannot be heard. The ADS-9 effectively creates a bubble of absolute silence — a disorienting, unnatural environment where the absence of sound is itself a weapon. Human targets within the zone report intense psychological distress, loss of spatial awareness, and difficulty maintaining balance without acoustic feedback.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 4+",
+  "legality": "Military restricted",
+  "base_technologies": [
+    "Destructive acoustic interference generation",
+    "Full-spectrum sound cancellation projection",
+    "Targeted acoustic zone control"
+  ],
+  "specifications": "effect radius: 20-meter targeted zone\nfrequency cancellation: 20 Hz to 20 kHz — full human audible range\nsetup time: 45 seconds\npower source: Vehicle feed or portable generator\nweight: 28 kg on tripod\neffect on electronics: Disrupts microphone-based systems within zone\npsychological effect: Disorientation, balance disruption, anxiety\nmaximum deployment time: 30 minutes before emitter overheating",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A bank robbery was executed inside an ADS-9 silence field — alarms did not sound, victims could not call for help, and security footage shows mouths opening in screams that produced no sound.",
+    "An ADS-9 has been permanently installed in a Tier 3 building's basement, creating a zone where no conversation can be recorded or overheard — it has become the most secure meeting space in Meridian 88."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "sonic",
+    "weapon",
+    "gun",
+    "war",
+    "loss",
+    "ai",
+    "elf",
+    "control",
+    "power",
+    "vehicle",
+    "tier 4"
+  ]
+}

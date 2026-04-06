@@ -1,0 +1,230 @@
+{
+  "id": "019d6143a60271dc928a6bd8dc7a8d28",
+  "type": "character",
+  "name": "Emeka Johansson-Orozco",
+  "aliases": [
+    "Meka the Mouth",
+    "Broker"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Compute broker — sells black-market processing time, stolen AI cycles, and illegally acquired data storage capacity",
+  "age": 44,
+  "status": "active",
+  "location": "The Undertow, based at a food stall called Overflow that serves as his public face",
+  "description": "Emeka is a tall, loud man with the kind of physical presence that makes rooms recalibrate. He has Nigerian-Swedish coloring that surprises people — warm brown skin, hazel eyes, red-tinged hair he keeps cut tight to his skull — and a Mexican grandmother's round face that he inherited completely. He has cat ears in amber-gold, a geneware mod from a decade ago that he got on a dare and has never bothered to reverse because they've become part of his brand. They fold back when he's irritated, which is useful shorthand. He wears bright colors, talks constantly, sells the best grilled cassava flatbreads in the Undertow district as a genuine secondary passion.\n\nThe food stall is real. The food is good. It is also where Emeka sells access to computing resources that don't belong to him — processing cycles skimmed from corporate server farms via distributed exploit packages, storage space in dead zones of Axiom's infrastructure, raw bandwidth siphoned from Ferrogate Transit's reserve systems. He doesn't understand the technical work at a deep level — he has a partner for that, a woman he will never name — but he understands value, he understands clients, and he can talk anyone into a package deal that somehow always benefits him more than it should. He is genuinely funny. This is his most dangerous quality.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.4,
+      "id": 0.8,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Silence — he associates quiet with powerlessness and has since childhood",
+      "That his technical partner will leave and he'll have nothing to sell"
+    ],
+    "core_desires": [
+      "To be the person everyone needs, the irreplaceable node in every network",
+      "Comfort and pleasure — genuinely — good food, good sound, good company"
+    ],
+    "coping_mechanisms": [
+      "Humor as total defense system",
+      "Expansion — always adding clients, always making new connections, disperses anxiety into motion"
+    ],
+    "blind_spots": [
+      "His loudness and visibility are security risks he intellectually acknowledges and emotionally ignores",
+      "His dependence on his technical partner is a vulnerability he has never prepared for"
+    ],
+    "secret": "His technical partner is his younger brother, Chidi, who has severe agoraphobia and hasn't left their shared apartment in two years. Emeka has told everyone she's a mysterious woman to protect Chidi's privacy and because 'my little brother who doesn't go outside' didn't sound like a powerful criminal asset. Chidi is, in fact, extraordinarily gifted. Emeka is terrified that Chidi's condition is getting worse."
+  },
+  "speech_patterns": {
+    "vocabulary": "Expansive, colorful, heavily code-switched between Igbo phrases, Swedish-inflected sentence structure, and Undertow street pidgin. Uses food metaphors constantly.",
+    "cadence": "Fast with big dramatic pauses for effect — he knows he's performing and does it consciously",
+    "verbal_tics": [
+      "'Ah, ah—' as an opener for anything surprising",
+      "Refers to compute resources as food ('a good portion,' 'fat bandwidth,' 'lean storage')",
+      "'My friend' for everyone including people he's about to shortchange"
+    ],
+    "example_lines": [
+      "'My friend, you want Axiom server time? I have Axiom server time like I have cassava — more than you need, better than you deserve, and priced according to how much you want it, not how much it cost me.'",
+      "'Ah, ah — you think I didn't hear about that? I heard about it before it happened. The Undertow has ears, and some of them are mine.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Tessera security sweep is getting close to the exploit package his brother maintains — if they trace it, Chidi is implicated, and Emeka will do almost anything to prevent that",
+    "He has accidentally sold the same block of processing time to two clients who are hostile to each other and now needs to quietly resolve the collision before both of them trace it back to him"
+  ],
+  "narrative_function": "Service provider, comic relief with genuine menace underneath, information source — he hears everything that happens in the Undertow and trades in data as casually as flatbread.",
+  "augmentations": "Amber-gold cat ears (geneware, cosmetic). Vocal amplifier — throat implant that gives him better projection and the ability to modulate tone precisely. He calls it his 'good microphone.'",
+  "daily_life": "Up at five to prep the stall, open by seven, cooks and sells until two, uses the lunch rush as cover for drop-offs and pickups, afternoons are client meetings disguised as stall prep, evenings are for his technical partner and planning.",
+  "affiliation": "Loosely affiliated with a technical underground called The Spill; has clients across multiple tiers including, he claims, a mid-level Tessera administrator he will never name",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 9,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 4,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "compute broker",
+      "street merchant",
+      "connector",
+      "performer",
+      "fiercely protective"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Keep the stall running no matter what — it's his alibi and his legitimacy",
+      "Never give a client another client's name, ever",
+      "Chidi's safety comes before any deal"
+    ],
+    "escalation_ladder": [
+      "Jokes and redirects",
+      "Becomes abruptly serious — the ears fold back and the humor drains",
+      "Calls in a favor from the Spill — muscle and technical disruption simultaneously",
+      "Disappears the stall and relocates with two days' notice"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm, immediately selling — offers food before conversation, reads them while they eat",
+      "friends": "Genuinely loyal but constitutionally unable to be vulnerable; shows care through action and food rather than words"
+    },
+    "stress_responses": {
+      "low": "Louder, more jokes",
+      "medium": "Starts cooking — physical activity to process",
+      "high": "Calls his brother; if Chidi doesn't answer, Emeka becomes someone else entirely"
+    },
+    "contradictions": [
+      "Presents as someone who needs nothing and nobody while being completely dependent on his brother",
+      "Sells privacy to clients while making himself maximally visible as a professional strategy"
+    ],
+    "habits": [
+      "Tastes everything he cooks twice — once for quality, once for nerves",
+      "Leaves an offering at the Overflow E.L.F. shrine every morning before opening — a thimble of palm oil and a chip of his own processing time"
+    ],
+    "breaking_points": [
+      "Any threat to Chidi triggers a total personality shift — the humor vanishes and he becomes methodical and dangerous",
+      "Public exposure of the family connection"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Vocal amplifier — throat implant, precision tone modulation",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Vocal amplifier — throat implant, precision tone modulation",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Networker": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2156 — Born in the Undertow; father a Nigerian-Swedish engineer who lost his Tessera position in a restructure",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2174 — Opened first food stall; discovered the black market when he needed off-books compute power to run his stall's inventory system",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2179 — Chidi's agoraphobia became severe; Emeka restructured his operation to work around it and with it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2185 — Joined the Spill's loose network",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2193 — Moved Overflow to current location; business doubled",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — Tessera exploit package showing new signs of detection; current tension rising",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

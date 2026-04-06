@@ -1,0 +1,164 @@
+{
+  "id": "019d6143a6dc75bd8d48e81c55b00ac2",
+  "type": "character",
+  "name": "Sorrel Acheampong-Tuveri",
+  "aliases": [
+    "Pip"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Truant message runner, Tier 1",
+  "age": 9,
+  "status": "active",
+  "location": "Blackpipe Corridor",
+  "description": "Sorrel is small even for nine, with the wiry toughness of a child raised on rationed calories and open air. Her skin is a deep warm brown, her hair a wild halo of tight curls she keeps stuffed under a salvaged Ferrogate Transit cap three sizes too large. She has a cosmetic mod she didn't choose — a faint bioluminescent ring around each iris, blue-green, that her mother installed before disappearing, supposedly to help her be seen in the dark tunnels under Blackpipe. She has not decided whether she loves it or hates it.\n\nSorrel runs messages for anyone who pays her two Φ or more per delivery: small-time vendors, people who distrust the comm-net, the occasional ELF-shrine keeper who needs physical tokens carried between altars. She is deeply superstitious and leaves pinches of copper filings at every E.L.F. junction box she passes, convinced this is why she has never been caught. Her emotional range is vast but controlled — she laughs easily and cries silently. She is fiercely loyal to the three other children she sleeps near in a maintenance alcove off Corridor 7, and would walk into a burning block for any of them.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.5,
+      "id": 0.8,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "being alone permanently",
+      "losing the three kids she considers family"
+    ],
+    "core_desires": [
+      "to find her mother or at least know what happened",
+      "to have a door that locks from the inside"
+    ],
+    "coping_mechanisms": [
+      "ritualistic ELF offerings",
+      "counting money repeatedly to feel grounded"
+    ],
+    "blind_spots": [
+      "assumes adults who are kind to her have an angle — misses genuine offers of help"
+    ],
+    "secret": "She knows exactly who took her mother — a mid-level Ferrogate Transit enforcer named Osei-something. She saw the badge number. She has said nothing to anyone because she does not know what to do with that information and is afraid that knowing is already dangerous."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped and functional, corridor-slang heavy, occasional Twi loanwords picked up from the shrine-keeper",
+    "cadence": "Fast when nervous, surprisingly deliberate when she's asking for something",
+    "verbal_tics": [
+      "starts sentences with 'Right so—'",
+      "says 'the Lights keep you' as goodbye"
+    ],
+    "example_lines": [
+      "Right so — two phi, I get it there before the strips go amber, you don't ask what's in it. That's the deal.",
+      "The Lights kept me through the Sump flood so I figure I owe them something back. You got copper filings? Even shavings?"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She delivers a message and the recipient is dead when she arrives — now someone thinks she saw something",
+    "The badge number she memorized matches a Ferrogate official who has just been promoted and is visiting Blackpipe for an inspection"
+  ],
+  "narrative_function": "Local color and information vector — Sorrel has seen and overheard nearly everything that moves through Blackpipe Corridor. She can be a quest-giver by proxy, a warning system, or a way to introduce the neighborhood's texture.",
+  "augmentations": "Bioluminescent irises (cosmetic, installed by parent). No other mods.",
+  "daily_life": "Wakes before the overhead strips cycle to morning-white, eats whatever the shrine-keeper Adaeze leaves out, then runs circuits through Blackpipe picking up and delivering messages until dark-cycle when she returns to the alcove and counts her Quanta.",
+  "affiliation": "Independent; loosely tolerated by the Blackpipe vendor collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 5,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 7,
+      "expression": 4,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "street-smart",
+      "superstitious",
+      "loyal",
+      "observant",
+      "survivor"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "always complete the job — reputation is her only currency",
+      "never open a sealed message no matter how tempting"
+    ],
+    "escalation_ladder": [
+      "politely declines suspicious requests",
+      "runs if pressed",
+      "screams names of nearby vendors if cornered — she knows everyone"
+    ],
+    "interpersonal_modes": {
+      "strangers": "watchful and transactional, assesses threat within seconds",
+      "friends": "physically affectionate, shares food without being asked"
+    },
+    "stress_responses": {
+      "low": "hums tunelessly",
+      "medium": "fingers the cap brim repeatedly",
+      "high": "goes completely silent and still"
+    },
+    "contradictions": [
+      "fiercely independent but desperately needs the three alcove kids to be nearby to sleep"
+    ],
+    "habits": [
+      "leaves copper filings at every junction box",
+      "checks exit routes the moment she enters any space"
+    ],
+    "breaking_points": [
+      "harm to one of her three alcove companions"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "People Pleaser": 0.9,
+    "Generous Fool": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

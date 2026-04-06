@@ -1,0 +1,234 @@
+{
+  "id": "019d6143a68a7102939d8e558ff5c1dc",
+  "type": "character",
+  "name": "Osvaldo Fynn-Ochieng",
+  "aliases": [
+    "Ozzy",
+    "Checkpoint Charlie (behind his back)"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Checkpoint Operator, Ferrogate Transit Security",
+  "age": 47,
+  "status": "active",
+  "location": "Kessler Interchange",
+  "description": "Osvaldo has worked the Kessler Interchange checkpoint for nine years and has acquired the particular stillness of someone who has watched approximately four million people pass through a turnstile. He is mid-height, slightly soft around the middle now, with a wide face, copper-brown skin, and deep-set eyes that are always doing something his expression isn't. His hair has gone silver at the temples and he keeps it very neat. His only augmentation is a Ferrogate-standard wrist scanner and a cochlear comms implant he secretly uses to listen to Sahel jazz during slow shifts.\n\nHe is the most knowledgeable person in three square kilometers about who comes through Kessler, when, and carrying what kind of energy. He has developed a taxonomy of commuters so refined it borders on a private philosophy. He is not corrupt in the transactional sense, but he operates with a pragmatic looseness — he lets things pass that he shouldn't, delays things that deserve delaying, and keeps a mental ledger of favors that he never cashes in aggressively but never forgets. He maintains a running ELF shrine on his terminal — an elaborate layered altar to the Kessler ELF he calls 'the Conductor' — and considers this entirely professional, not personal.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.3,
+      "id": 0.6,
+      "shadow": 0.55,
+      "mask": 0.35,
+      "ghost": 0.65
+    },
+    "core_fears": [
+      "Becoming entirely invisible — not just overlooked but genuinely unseen",
+      "That his careful accumulated knowledge means nothing in the end"
+    ],
+    "core_desires": [
+      "To matter to the fabric of this place even in an unacknowledged way",
+      "Comfortable retirement in a quieter district — he knows exactly which one and exactly how many Quanta away it is"
+    ],
+    "coping_mechanisms": [
+      "Ordering his mental world through taxonomies and categories",
+      "The ELF shrine practice — provides ritual and meaning",
+      "The jazz in his ear — his private space no one can enter"
+    ],
+    "blind_spots": [
+      "He has romanticized his own neutrality — he is not as uninvested as he believes",
+      "He has let genuinely dangerous cargo pass because the person carrying it was polite and well-dressed"
+    ],
+    "secret": "For six years he has been quietly logging every Ferrogate cargo irregularity he notices into an encrypted personal file. He has no plan for the file. He doesn't know if he's building leverage, writing history, or just trying to prove he was paying attention."
+  },
+  "speech_patterns": {
+    "vocabulary": "Measured, slightly formal — a self-educated man who reads widely. Occasional West African Portuguese loan-words from his mother's family. Refers to regular commuters by observed characteristic rather than name: 'the woman with the green case,' 'the boy who runs.'",
+    "cadence": "Unhurried. He has learned that most conversations resolve themselves if you just wait long enough.",
+    "verbal_tics": [
+      "'Mind your step' as a multipurpose phrase that can mean anything",
+      "Quiet humming when he's deciding something",
+      "Addresses the ELF shrine briefly before major decisions: 'Conductor, your thought?'"
+    ],
+    "example_lines": [
+      "'Kessler sees everyone eventually. You'd be surprised what eventually means.'",
+      "'Mind your step. I say that to everyone, and I mean it differently each time.'",
+      "'I'm not going to stop you. I'm going to note that I saw you, and I'm going to keep noting things. That's all.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "His encrypted cargo log contains records of what might be systematic organ trafficking through Ferrogate — he's been waiting nine years for someone worth giving it to.",
+    "A commuter he's watched for three years didn't come through today, or yesterday, or the day before — and Osvaldo can't explain why this feels wrong, only that it does."
+  ],
+  "narrative_function": "Information hub — he has seen everything and everyone who passes through Kessler. Neutral broker of passage. Can be bribed with the right social approach (not money — he wants to be respected). Gate for plot movement both literally and figuratively.",
+  "augmentations": "Ferrogate-issue wrist scanner (biometric and cargo ID). Cochlear comms implant. No cosmetic mods.",
+  "daily_life": "Six-day shifts, 0600-1800, manning the Kessler Interchange secondary checkpoint. He brings his own lunch in a battered thermal container, tends his ELF shrine at shift start, and makes a point of learning the names of regular commuters who look like they need to be seen.",
+  "affiliation": "Ferrogate Transit Security",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "information-hub",
+      "pragmatic",
+      "ELF-devout",
+      "long-memory",
+      "gray-ethics"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Do not let anything through that will cause visible, immediate harm — everything else is gray",
+      "Never give information for free — always for respect, reciprocity, or the right reason",
+      "Maintain the shrine. Always maintain the shrine."
+    ],
+    "escalation_ladder": [
+      "Passive observation and logging",
+      "Verbal delay — bureaucratic slowdown without explanation",
+      "Flagging for secondary review (buying time)",
+      "Actual alert — reserved for the genuinely alarming"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally neutral, slightly cool — reads them hard for the first thirty seconds then files them",
+      "friends": "Warm, dry-humored, unexpectedly generous with time and attention"
+    },
+    "stress_responses": {
+      "low": "Goes more formal and precise",
+      "medium": "Falls back on procedure as a shield while thinking fast",
+      "high": "Becomes very still and very quiet in a way that unnerves people who know him"
+    },
+    "contradictions": [
+      "Prizes being seen and known while being professionally invisible",
+      "Keeps meticulous records of wrongdoing without any plan to use them"
+    ],
+    "habits": [
+      "Data offering to Kessler ELF shrine every morning (a packet of anonymized commuter flow data — 'the Conductor appreciates patterns')",
+      "Thermal lunch container, same meal rotation every week",
+      "Memorizes the route irregularities of three to five commuters as a personal exercise"
+    ],
+    "breaking_points": [
+      "Being directly lied to by a superior about something he has documented proof of",
+      "A regular commuter getting hurt by something he could have flagged"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Ferrogate wrist scanner (biometric + cargo ID)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ferrogate wrist scanner (biometric + cargo ID)",
+      "replaces": ""
+    },
+    {
+      "name": "Cochlear comms implant (Ferrogate standard, jazz-modded)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Cochlear comms implant (Ferrogate standard, jazz-modded)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Charmer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2153: Born, Grainfort district, to a Kenyan-Portuguese father and a Ghanaian-Finnish mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2175: Joined Ferrogate Transit Security after a decade of dock work at Bay View",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2191: Assigned permanently to Kessler Interchange after a restructure",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2194: Began his private cargo irregularity log",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200: Present — nine years at Kessler, silver temples, waiting for something he can't name",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

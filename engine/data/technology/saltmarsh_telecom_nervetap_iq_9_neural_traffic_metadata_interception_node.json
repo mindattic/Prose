@@ -1,0 +1,56 @@
+{
+  "id": "019d6143aa4d762d96bb0ce81c5aa365",
+  "name": "Saltmarsh Telecom NerveTap IQ-9 Neural Traffic Metadata Interception Node",
+  "brand_name": "Saltmarsh",
+  "product_name": "Saltmarsh Telecom NerveTap IQ-9 Neural Traffic Metadata Interception Node",
+  "type": "technology",
+  "aliases": [
+    "The Sniffer",
+    "IQ-Tap",
+    "Nerve Hook",
+    "Signal Ghost"
+  ],
+  "subcategory": "surveillance",
+  "description": "The NerveTap IQ-9 is a passive neural-traffic interception system installed within Saltmarsh Telecom's urban mesh relay infrastructure — the same tower and repeater network that carries encrypted neural augmentation traffic between implants and cloud processing services. The IQ-9 hardware module does not decrypt intercepted transmissions; instead, it captures and logs the metadata envelope of every neural data packet passing through its relay node: transmission timing, packet size distributions, handshake signatures, signal modulation fingerprints, and the unique hardware identifiers of transmitting implants. Saltmarsh's analytics backend correlates this metadata stream to construct behavioral and social graphs without ever accessing protected communication content, sidestepping the Meridian 88 Neural Privacy Compact's content-protection provisions.",
+  "tier_availability": "Infrastructure-level (passive; affects all neural augmentation users regardless of tier)",
+  "developers": [
+    "SALTMARSH TELECOM",
+    "CINDERBLOCK AI"
+  ],
+  "base_technologies": [
+    "mesh relay telecommunications infrastructure",
+    "metadata analytics",
+    "electromagnetic emissions fingerprinting",
+    "neural implant communication protocols",
+    "Zheng-Dao Bioelectric SynapseWeave NX-6 Cortical Mesh Implant"
+  ],
+  "enables": [
+    "unregistered implant detection and tracking",
+    "social network mapping from neural traffic patterns",
+    "covert identification of augmented individuals in crowds",
+    "corporate counterintelligence targeting",
+    "black-market implant interdiction operations"
+  ],
+  "social_impact": "The NerveTap IQ-9 has effectively ended the practical anonymity of neural augmentation in Meridian 88, including for citizens who invested heavily in unregistered or black-market implants believing they were operating outside the surveillance grid. The revelation that metadata — not content — is sufficient to identify, locate, and profile augmented individuals has produced a crisis of trust in neural technology itself, with some communities in lower tiers deliberately avoiding augmentation upgrades or using older, less efficient implants that generate less distinctive transmission signatures. For corporate security apparatus, the IQ-9 represents a comprehensive map of the city's augmented population that exists entirely outside legal challenge.",
+  "story_hooks": [
+    "A crew member's black-market implant has been flagged as a ghost signature by the IQ-9 network — someone is using the Saltmarsh feed to track them, and they need to either go dark or find a way to alter their electromagnetic fingerprint",
+    "A Saltmarsh engineer is selling raw IQ-9 metadata pulls for specific geographic zones — the data would expose which corporate operatives were present at a location during a critical incident",
+    "Someone has discovered that the IQ-9 network has a ghost signature that has been active for three years with no corresponding registered identity — an augmented individual who exists nowhere in any corporate database",
+    "A civil rights organization wants to prove the IQ-9 network exists and is being used for targeting — they need someone to physically retrieve a NerveTap module from a relay tower for forensic analysis"
+  ],
+  "tags": [
+    "surveillance",
+    "technology",
+    "war",
+    "trust",
+    "identity",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "market",
+    "dark",
+    "rights"
+  ]
+}

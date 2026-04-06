@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a8587fe1bbcb4605fae885cf",
+  "name": "Carrion Defense Works Chemical Hazard Oversuit CHO-4",
+  "brand_name": "Carrion",
+  "product_name": "Carrion Defense Works Chemical Hazard Oversuit CHO-4",
+  "type": "equipment",
+  "aliases": [
+    "CHO-4",
+    "Hazard Suit",
+    "Chem Suit",
+    "Carrion Skin"
+  ],
+  "category": "armor",
+  "description": "A full-body protective suit providing Level A chemical, biological, and radiological protection through a multi-layer barrier system with integrated self-contained breathing apparatus. The CHO-4 uses a laminate of chemical-resistant polymer, activated carbon fabric, and vapor-barrier membrane to create an impenetrable barrier against liquid, vapor, and particulate hazards. The suit includes 4 hours of breathing air, communication systems, and a heads-up display showing environmental threat data from integrated sensors. Carrion designed it for their own CBRN operations teams but sells it through their defense catalog.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted — safety equipment",
+  "base_technologies": [],
+  "specifications": {
+    "protection level": "EPA Level A — full CBRN encapsulation",
+    "layers": "Chemical polymer + activated carbon + vapor barrier",
+    "breathing": "Self-contained",
+    "info": "4-hour air supply; biological; radiation detection",
+    "communications": "Integrated encrypted radio",
+    "HUD": "Environmental threat data display",
+    "sensors": "Chemical",
+    "weight": "12 kg with air supply",
+    "mobility": "Reduced — approximately 60% of normal movement",
+    "operation time": "4 hours per air bottle"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A team wearing CHO-4 suits entered a contaminated zone and their suits' sensors detected a compound not in any hazard database — the unknown agent was penetrating the activated carbon layer, a protection failure that should be impossible.",
+    "CHO-4 suits have been stolen and modified for use in robberies — the full-body coverage and breathing apparatus make the wearer immune to tear gas and chemical deterrents while providing complete visual anonymity."
+  ],
+  "tags": [
+    "armor",
+    "equipment",
+    "ai",
+    "elf",
+    "bar",
+    "tier 2"
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "id": "019d6143a6a27c6ebadbfc5de936dbd4",
+  "type": "character",
+  "name": "Prospero Antwi-Cvetković",
+  "aliases": [
+    "Pros",
+    "The Patch Man"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Street pharmacist — dermal patches, suppressants, unlicensed mood modulators",
+  "age": 34,
+  "status": "active",
+  "location": "The Narrows, Blackpipe Corridor",
+  "description": "Prospero is lean and angular in a way that reads as either elegant or hungry depending on the light, with the kind of stillness that makes people lower their voices around him without knowing why. His skin carries a faint bioluminescent undertone — a geneware mod he got at seventeen that pulses a dim blue-green along his jaw and collarbones when his heart rate elevates, which he has learned to suppress well enough that most people only see it in his periphery and aren't sure they saw it at all. He dresses in layers of muted, practical fabric — the kind that has many pockets and no logos — and his hands are always clean despite everything.\n\nHe is not warm in the way Zawadi is warm, but he is precise and reliable in a way that passes for kindness in the Narrows. He remembers every client's medical history from a single conversation, recommends nothing he hasn't personally vetted, and will refuse a sale if he thinks someone is in the wrong place in their head for what they're asking for. This costs him money regularly and he accepts it. He has a kind of professional ethics that has no formal name and would embarrass him if someone pointed it out.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Selling something that kills someone he was responsible for",
+      "Being seen as just another corner dealer — losing the distinction he has built in his own head"
+    ],
+    "core_desires": [
+      "To operate with integrity in a system that makes integrity structurally impossible",
+      "To eventually get out — somewhere quieter, with a garden"
+    ],
+    "coping_mechanisms": [
+      "Rigorous product-testing rituals as a form of moral absolution",
+      "Emotional distance maintained through professionalism"
+    ],
+    "blind_spots": [
+      "His pride in his own ethics blinds him to how much he still enables dependency",
+      "Underestimates how much the Ironthread collective is monitoring his operation for expansion"
+    ],
+    "secret": "Three years ago he mixed a bad suppressant batch that put a teenager into a dissociative episode for six days. The kid recovered. Prospero has never told anyone. He adjusted his entire sourcing chain afterward and hasn't had an incident since, but the memory drives every refusal he makes."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and clinical without being cold — uses pharmaceutical terminology naturally but explains it if needed. Minimal slang.",
+    "cadence": "Measured, unhurried, low volume — people lean in to hear him",
+    "verbal_tics": [
+      "long pauses before refusals",
+      "says 'specifically' a lot",
+      "addresses people as 'friend' without warmth — it's just how he begins"
+    ],
+    "example_lines": [
+      "Friend, what you're describing specifically tells me this isn't what you need right now. Come back Thursday.",
+      "I test everything. That's not a sales pitch. I just need you to understand that about me before we talk numbers."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A counterfeit version of his product — marked with his personal seal — is circulating and people are getting hurt; he wants the source found and stopped before it comes back to him",
+    "A client he refused service to last week was found dead — not from drugs, from something else entirely — and he is quietly trying to understand why",
+    "The Ironthread collective is pressuring him to start carrying a new compound he knows is genuinely dangerous; he is running out of ways to say no"
+  ],
+  "narrative_function": "Information source (knows what substances are circulating and who is using what), potential vendor of useful chemical items to players, moral complication — he's doing something illegal but with genuine care. Can be a quest giver if a bad batch is moving through his territory and he wants it found before it kills someone.",
+  "augmentations": "Bioluminescent skin (jaw and collarbones, blue-green, geneware). Subdermal chemical analyzer in his left wrist — lets him test product purity by pressing it against a surface. Neural memory tag — a basic implant that flags and timestamps specific sensory moments for later recall, used to remember client profiles.",
+  "daily_life": "Runs a circuit of three spots in the Narrows between noon and 0200, moving on a schedule his regulars know and newcomers have to earn. Spends mornings sourcing and testing product, keeps a coded ledger in an air-gapped personal device.",
+  "affiliation": "Independent; pays protection to the Blackpipe Corridor's dominant crew, the Ironthread collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -1,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "street pharmacist",
+      "careful operator",
+      "bioluminescent",
+      "ethical criminal",
+      "Blackpipe"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell to someone in active crisis — refer them somewhere, give them water, watch them for a few minutes first",
+      "Test every batch personally before it moves"
+    ],
+    "escalation_ladder": [
+      "Quiet, firm refusal with an offered alternative",
+      "Restates position once, flatly, with no apology",
+      "Walks away — he does not threaten, he simply stops being present"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally cautious — assesses threat and need simultaneously before engaging at all",
+      "friends": "Warmer in tiny increments; shows care through remembering specific details about someone's life"
+    },
+    "stress_responses": {
+      "low": "Becomes more precise in speech, slows down",
+      "medium": "Goes quiet and watchful, hands go to pockets",
+      "high": "Leaves. Just leaves. Comes back when it's over."
+    },
+    "contradictions": [
+      "Deeply ethical but operates entirely outside legal medicine, which he rationalizes without ever fully resolving"
+    ],
+    "habits": [
+      "Wipes down his work surface before and after every transaction",
+      "Checks his subdermal analyzer obsessively even on familiar product",
+      "Never eats while working"
+    ],
+    "breaking_points": [
+      "Someone dying from his product — regardless of fault",
+      "Being publicly associated with the Ironthread collective as one of their people"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Provider": 0.9,
+    "Nurturer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Got bioluminescent geneware mod at 17 from a Narrows gene parlor",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began operating independently after two years as a runner for a larger dealer",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Bad suppressant batch caused a teenager's six-day dissociative episode; restructured entire supply chain afterward",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Ironthread collective began pressuring him to carry new high-risk compound",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

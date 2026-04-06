@@ -1,0 +1,42 @@
+{
+  "id": "019d6143ab4871ecb6d9edd6c67df8e7",
+  "name": "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
+  "type": "weapon",
+  "aliases": [
+    "Mercy",
+    "Tranq Gun",
+    "Animal Control",
+    "Sleeper"
+  ],
+  "category": "improvised",
+  "description": "A commercially available veterinary tranquilizer rifle modified for anti-personnel use by loading darts with human-dosed sedatives instead of animal compounds. The weapon fires pneumatic darts capable of delivering a fast-acting sedative that renders a human-sized target unconscious within 30-60 seconds depending on body mass and augmentation level. The tranquilizer rifle is legally available for purchase in most jurisdictions as an animal control tool, making acquisition trivially easy. The sedative compounds are sourced from veterinary supply or synthesized from commercially available precursors.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal as veterinary tool — illegal with human-dosed loads",
+  "base_technologies": [
+    "Pneumatic dart delivery",
+    "Sedative compound dosing",
+    "Modified veterinary equipment"
+  ],
+  "specifications": "propulsion: Compressed CO2, 90 m/s\nrange: 10-50 meters\nsedative: Modified veterinary compound, human-dosed\nonset: 30-60 seconds\neffect duration: 2-4 hours depending on dose\nmagazine: 5 darts\nweight: 3.2 kg\nacoustic signature: 45 dB",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A series of abductions in Tier 2 all involve victims who remember nothing between a sharp sting and waking up hours later in an unfamiliar location — the dart wounds are consistent with modified veterinary equipment.",
+    "A street medic has been using Mercy darts as an improvised anesthetic for field surgery in Tier 1 — the dosing is imprecise and dangerous, but the alternative is operating on conscious patients."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "improvised",
+    "weapon",
+    "gun",
+    "augment",
+    "ai",
+    "control",
+    "surgery",
+    "chase",
+    "fire",
+    "tier 1"
+  ]
+}

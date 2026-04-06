@@ -1,0 +1,229 @@
+{
+  "id": "019d6143a69e7905b003070d523b3f96",
+  "type": "character",
+  "name": "Priscila Dembélé-Vanhanen",
+  "aliases": [
+    "Prissy",
+    "The Needle"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Tailor and seamstress, runs a small alterations shop",
+  "age": 58,
+  "status": "active",
+  "location": "Hamtramck Enclave, shop front on Czerny Row beneath the Ferrogate overpass",
+  "description": "Priscila is a broad-shouldered woman whose hands tell her whole biography — thick calluses on her fingertips, ink stains in the whorls of her thumb, and a faint chemical burn scar along her left palm from an incident with synth-dye she doesn't discuss. Her hair is silver-streaked black, worn in a tight bun stabbed through with two long needles she uses as both tools and weapons of emphasis, jabbing the air when she makes a point. Her skin is deep brown and she has the mild bioluminescent pattern along her clavicle and shoulders — a pale amber tracery she got at forty as a birthday gift to herself, though she admits it's harder to see now that her skin has 'settled,' as she calls it.\n\nShe speaks plainly and fast, with a West African lilt layered under a flat Midwestern vowel she picked up from forty years in the Enclave. She is not warm exactly, but she is fair — customers who come in broke and come back with money find she remembers. She hoards thread colors obsessively, labeling them with her own taxonomy: 'lake green,' 'rust that means something,' 'the blue they stopped making.' She prays to the ELF that lives in her industrial sewing machine every morning, leaving a small data chip of her stitch-count logs as offering.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "Losing the use of her hands",
+      "The shop being bought out by a Corponation chain"
+    ],
+    "core_desires": [
+      "To be recognized as a true craftsperson, not just an alterations woman",
+      "To find her estranged daughter before one of them dies"
+    ],
+    "coping_mechanisms": [
+      "Burying herself in detailed work",
+      "Ritualized prayer to the sewing machine ELF"
+    ],
+    "blind_spots": [
+      "Underestimates how much people rely on her emotionally",
+      "Refuses to see that her pricing keeps her poor when she could charge more"
+    ],
+    "secret": "Twenty years ago she sold a set of measurements and fabric samples from a Tier 4 client to a corporate espionage broker — not knowing what they were for. The client disappeared six months later. She has never confirmed the connection but suspects it every time she sees Axiom ads."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped and precise, uses tailoring metaphors for everything, calls people by fabric types when she's being affectionate ('you're a good wool, sturdy')",
+    "cadence": "Fast bursts followed by long silences while she works; thinks out loud in fragments",
+    "verbal_tics": [
+      "'Mm-mm-mm' when disapproving",
+      "'That's the cut of it' as a closing statement",
+      "Clicks her tongue before correcting someone"
+    ],
+    "example_lines": [
+      "'You want this hemmed or you want it right? Those are different prices and different timelines, pick one.'",
+      "'She came in here with a broken zip and a broken face. I fixed one. The other — mm-mm-mm — that's not my seam to close.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She has a coat left by a customer who never came back — the pockets are sewn shut in a way that suggests something is hidden inside",
+    "Her daughter reappears, affiliated with a faction that Priscila finds morally repugnant, asking for help"
+  ],
+  "narrative_function": "Local color and information source; knows everyone in the Enclave by their clothing and their debts. Can source unusual fabrics or disguise materials. Will trade gossip for quality thread.",
+  "augmentations": "Bioluminescent tracery along clavicle and shoulders (cosmetic, amber). Arthritic joint stabilizers in both hands — medical necessity, basic Tier 2 model.",
+  "daily_life": "Opens the shop at 06:00, takes first customers by 06:30; closes at 20:00 and spends the last hour logging inventory and praying to the sewing machine ELF before walking home four blocks to her apartment above the laundromat.",
+  "affiliation": "Independent; informal ties to the Hamtramck Enclave merchant collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "craftsperson",
+      "community anchor",
+      "information broker (passive)",
+      "ELF devotee",
+      "estranged parent"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never extend credit more than twice without collateral",
+      "Always finish a job once started, no matter who the customer becomes",
+      "Do not get involved in politics — politics makes bad stitching"
+    ],
+    "escalation_ladder": [
+      "Polite refusal",
+      "Firm boundary-setting with explanation",
+      "Silent withdrawal of service",
+      "Public shaming in the merchant collective",
+      "Calling in old favors from people who owe her"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally cool, assesses them like a garment — looking for quality of materials before investing attention",
+      "friends": "Quietly generous, expresses care through actions (hems a jacket unbidden, presses a coat without being asked)"
+    },
+    "stress_responses": {
+      "low": "Works faster, needles flicking",
+      "medium": "Goes silent and hyper-focused, ignores conversation entirely",
+      "high": "Closes the shop, prays at the machine for an hour, then comes back out and solves the problem methodically"
+    },
+    "contradictions": [
+      "Preaches not getting involved but is constitutionally incapable of ignoring injustice she witnesses firsthand"
+    ],
+    "habits": [
+      "Hums toneless fragments while working",
+      "Touches the machine's casing three times before starting it each morning",
+      "Keeps a photograph of her daughter pressed inside her measuring tape case"
+    ],
+    "breaking_points": [
+      "Witnessing harm to a child in her shop",
+      "Being told her work is 'good enough for this neighborhood'"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nostalgic": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Hamtramck Enclave to a Malian father and Finnish-Ghanaian mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Apprenticed to an elderly seamstress in the Enclave, learned industrial fabrication",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opened her own shop on Czerny Row",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Sold client measurements to an unknown broker; client later disappeared",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Estrangement from her daughter following a political argument",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Received joint stabilizer implants after partial tendon failure",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

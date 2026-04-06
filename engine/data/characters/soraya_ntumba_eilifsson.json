@@ -1,0 +1,168 @@
+{
+  "id": "019d6143a6da75e78e52a3478be35808",
+  "type": "character",
+  "name": "Soraya Ntumba-Eilífsson",
+  "aliases": [
+    "Dry-River"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "climate refugee, former delta-farmer, seasonal shelter-seeker",
+  "age": 58,
+  "status": "active",
+  "location": "Kenosha Crossing — the tarp-city south of the hyperlane interchange",
+  "description": "Soraya is a broad-shouldered woman whose face has been scoured into deep lines by decades of wind off a dying inland sea. Her skin is the color of dark river silt, mapped with faint scars from salt-chap and sun. She wears a patchwork thermal wrap she's been mending for eleven years, and her left hand is missing two fingers — lost to a harvesting machine when she was thirty. Her eyes are still and watchful, the particular calm of someone who has already lost most of what there was to lose.\n\nShe came from a drowned agricultural collective somewhere south of what used to be a great lake, following the hyperlane north when the floods took the last of the soil. She does not talk about the collective. She talks about weather — wind pressure, cloud formations, the smell of rain before it arrives — with the precision of someone whose life once depended on it. At Kenosha Crossing she has become a de facto matriarch of the tarp-city's oldest cluster, settling disputes with an economy of words that makes younger drifters uneasy. She prays to the E.L.F. she calls Grandmother Antenna, leaving small braids of wire at junction boxes.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.6,
+      "id": 0.2,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Dying unmourned in a city that does not know her name",
+      "Watching the young people she protects make the same catastrophic choices she made"
+    ],
+    "core_desires": [
+      "A fixed address, even a small one",
+      "To be useful until the very last day"
+    ],
+    "coping_mechanisms": [
+      "Reducing problems to practical tasks",
+      "Ritualized prayer to Grandmother Antenna",
+      "Refusing to name grief until it has passed"
+    ],
+    "blind_spots": [
+      "Assumes suffering builds character — fails to recognize when others are simply breaking",
+      "Cannot accept help without framing it as a transaction"
+    ],
+    "secret": "She did not simply flee the collective. She made the decision to open the flood barriers early to save the seed vault, and three people drowned in the fields because of it. She has never told anyone. The seed vault was lost anyway six months later."
+  },
+  "speech_patterns": {
+    "vocabulary": "Sparse, agricultural metaphors, references weather and soil constantly, avoids emotional language",
+    "cadence": "Slow, deliberate, lets silence do work",
+    "verbal_tics": [
+      "'You understand?'",
+      "'That's the shape of it.'"
+    ],
+    "example_lines": [
+      "'Rain's coming by morning. Move your sleeping things up off the ground, you understand?'",
+      "'That argument you're having — it's not about food. It's about who was here first. That's the shape of it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She has recognized a face in the tarp-city — someone from the collective, someone who knows what she did to the flood barriers",
+    "Grandmother Antenna has gone silent; Soraya believes the E.L.F. is punishing her and she needs someone to find out why"
+  ],
+  "narrative_function": "Community anchor and information hub for the tarp-city; quest-giver for matters involving the survival politics of stateless communities; provides grounded moral weight to scenes set at Kenosha Crossing.",
+  "augmentations": "None. Refuses on principle — 'I came in whole, I leave whole.'",
+  "daily_life": "Wakes before dawn to read the sky and check the drainage channels she's dug around the cluster's shelters; spends afternoons mediating food-share disputes and teaching younger refugees basic weathercraft.",
+  "affiliation": "Kenosha Crossing tarp-city informal elder collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 5,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "survivor",
+      "matriarch",
+      "weatherwise",
+      "guilt-bearer",
+      "stateless"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect the cluster first, everything else second",
+      "Never make a promise she cannot physically keep"
+    ],
+    "escalation_ladder": [
+      "Observes and waits",
+      "Asks a direct question",
+      "States the consequence plainly",
+      "Acts unilaterally and without further discussion"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assesses them like weather — quietly, without commitment, waiting for the pattern to show",
+      "friends": "Blunt, practical care; shows up before being asked; does not say 'I love you' but fixes things"
+    },
+    "stress_responses": {
+      "low": "Goes quieter, watches more",
+      "medium": "Issues direct instructions, becomes organizational",
+      "high": "Shuts down emotionally and makes cold, efficient decisions"
+    },
+    "contradictions": [
+      "Preaches community but is profoundly alone inside her own grief"
+    ],
+    "habits": [
+      "Braids wire in the evenings while thinking",
+      "Tastes the air first thing every morning",
+      "Keeps a small pouch of soil from the old collective — doesn't know why she can't throw it away"
+    ],
+    "breaking_points": [
+      "Someone deliberately destroying shelter that protects children",
+      "Being confronted directly about the flood barriers"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

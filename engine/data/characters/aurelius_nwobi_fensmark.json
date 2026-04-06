@@ -1,0 +1,244 @@
+{
+  "id": "019d6143a5b97449b961f6af4beac28f",
+  "type": "character",
+  "name": "Aurelius Nwobi-Fensmark",
+  "aliases": [
+    "Dr. Nwobi",
+    "the Resurrectionist"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Data archaeologist and computational historian recovering lost pre-Collapse datasets",
+  "age": 58,
+  "status": "active",
+  "location": "The Circuit, Deepwell Station sublevel archive",
+  "description": "Aurelius is a tall, rangy man who looks like he was built for a climate that no longer exists — long-limbed, always slightly cold, wearing layered synthetic wool even in heated archive rooms. His hair is silver-white and kept in neat locs that he pins up while working; his dark skin shows the fine grid of an old subdermal data-lattice across the backs of both hands, installed in his thirties and only partially removed when it became obsolete. The residual chrome lines have faded to a faint blue-silver tracery he now considers part of his appearance. He has the slow, deliberate movements of someone who has spent decades in environments where sudden gestures cause data loss.\n\nHe is professionally famous in a narrow field and almost unknown outside it. His specialty — recovering and contextualizing fragmentary datasets from the pre-Collapse decades — requires equal parts computer forensics, historical linguistics, and patience that most researchers lack. He is gentle, deeply unhurried, and possessed of an almost geological sense of time. He finds other people's urgency faintly amusing. He is also quietly wrestling with the realization that one of the major datasets he recovered and published may have been deliberately corrupted before he found it — and his published interpretations therefore wrong.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.6,
+      "mask": 0.3,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "that his life's work is built on corrupted data — that history as he understands it is a fabrication",
+      "professional erasure; being quietly uncited until he disappears"
+    ],
+    "core_desires": [
+      "to recover something genuinely true from the wreckage of the past",
+      "to be proven right about his methods even if wrong about his conclusions"
+    ],
+    "coping_mechanisms": [
+      "retreats into technical work as meditation",
+      "makes dry, self-deprecating jokes about obsolescence"
+    ],
+    "blind_spots": [
+      "assumes good faith in original data collection; has never fully internalized that some records were created to deceive from the start",
+      "emotionally avoidant — frames personal crises as methodological problems"
+    ],
+    "secret": "He discovered eighteen months ago that a key dataset in his most-cited paper was almost certainly seeded with false records by Zheng-Dao before he recovered it. He has not retracted the paper. He tells himself he is 'still investigating' but mostly he is afraid."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, formal, occasionally archaic — uses words from pre-Collapse technical documents so often they've become part of his natural speech",
+    "cadence": "Very slow, thoughtful pauses; never rushes; full sentences always",
+    "verbal_tics": [
+      "'As the record shows...' (even in casual conversation)",
+      "Long pauses before answering, during which he appears to be consulting something internal"
+    ],
+    "example_lines": [
+      "'As the record shows, most of what we call history is a best-fit interpretation of surviving noise. I find that comforting, not troubling.'",
+      "'The dataset does not lie. But someone may have arranged for it to tell a particular kind of truth.'",
+      "'I have been sitting with this fragment for four years. I am not in a hurry. The data isn't going anywhere.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He has located a partial dataset that seems to document a pre-Collapse agreement between what would become the Axiom corponation and city governance structures — if authenticated, it would be explosive",
+    "The Zheng-Dao contract he quietly accepted has now escalated: they want him to certify a recovered dataset as authentic; he believes it is not",
+    "A former student has gone to the press with allegations that his famous recovered history is deliberately falsified — and Aurelius cannot fully defend himself without revealing what he knows",
+    "He's found a data artifact that contains an active E.L.F. of enormous age — it responds to interaction, seems to remember the Collapse, and he doesn't know what to do with it"
+  ],
+  "narrative_function": "Information source on pre-Collapse history, hidden data recoveries, and institutional secrets buried in old records; can surface inconvenient truths; quest giver for archive-related investigations; represents the long view of time in a city obsessed with the present.",
+  "augmentations": "Residual subdermal data-lattice tracery (hands and forearms, defunct but visible). Ocular overlay with high-magnification mode for reading degraded media. Mild neural clock synchronization implant for precise timestamp logging.",
+  "daily_life": "Arrives at Deepwell Station before most staff, works in near-silence for six to eight hours in the archive sublevels, surfaces for a single large meal, then teaches one evening seminar two nights a week.",
+  "affiliation": "University Spine — Department of Computational History; contracted occasionally to Zheng-Dao R&D for proprietary archive recoveries",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "archive specialist",
+      "methodically cautious",
+      "quietly haunted",
+      "pre-Collapse expert",
+      "slow burn crisis"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "verify before asserting — always",
+      "never destroy a source even if it contradicts you",
+      "the long view: ask what this looks like in fifty years before acting"
+    ],
+    "escalation_ladder": [
+      "seeks more data before responding",
+      "consults a trusted colleague off the record",
+      "drafts a formal response and sits on it for a week",
+      "acts — usually quietly, in writing"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Courteous, slightly remote, asks unexpected questions about what they know",
+      "friends": "Warm in an unhurried way; remembers everything you've ever told him"
+    },
+    "stress_responses": {
+      "low": "Works later, eats less, barely notices",
+      "medium": "Becomes more formal in speech; withdraws from social contact",
+      "high": "Stops sleeping properly; begins writing exhaustive private notes as if building a legal defense"
+    },
+    "contradictions": [
+      "Believes in radical transparency in historical scholarship but has been hiding his own potential error for eighteen months",
+      "Treats urgency in others as noise but is capable of intense private panic"
+    ],
+    "habits": [
+      "Leaves data offerings at a small E.L.F. shrine he keeps at his workstation",
+      "Reads his own published papers aloud to himself when uncertain, looking for cracks"
+    ],
+    "breaking_points": [
+      "Being asked to certify something false for institutional benefit",
+      "Watching a corrupted history become official record because he stayed silent"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Deepwell Station district, parents both transit workers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Published first major data recovery: fragmentary climate records from 2050s, widely cited",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Accepted first Zheng-Dao contract; considered it a compromise he has never fully made peace with",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Published the paper that would become his landmark work — the Meridian Pre-Incorporation Records study",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovered the probable Zheng-Dao data seeding in his landmark dataset; has not yet retracted",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

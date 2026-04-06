@@ -1,0 +1,181 @@
+{
+  "id": "019d6143a6307956b19608afb8bcf784",
+  "type": "character",
+  "name": "Imara Szczepanek-Diouf",
+  "aliases": [
+    "Imara",
+    "Slot Six"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Scholarship student at Tessera Academy Prep, Edgewater Prism campus",
+  "age": 15,
+  "status": "active",
+  "location": "Edgewater Prism (school); Chatham Flats (home)",
+  "description": "Imara is tall and angular with deep brown skin and her mother's high cheekbones, her hair grown long and currently dyed a corporate-neutral dark auburn that she chose specifically because it reads as 'acceptable' on campus without being her actual preference. She has standard-issue school-mandated neural interface studs at her temples — chrome dots that the academy provides to all students for their AR classroom integration — and nothing else. She carries herself with a stillness that reads as confidence to teachers and as suppressed panic to anyone paying closer attention.\n\nShe is brilliant in the particular way that creates its own cruelty: genuinely gifted in systems analysis and pattern recognition, placed on the Tessera Academic Scholarship track at age twelve, and now fully aware at fifteen that she is being assessed constantly and that the scholarship can be revoked for 'cultural fit' deficiencies, a clause she has read fourteen times. She lives between two worlds that each find her slightly wrong. At home in Chatham Flats she speaks Wolof with her grandmother and helps her father with his repair shop accounts. At Tessera Prep she speaks in complete sentences and has taught herself to laugh at jokes she doesn't find funny. She prays to no E.L.F. publicly — the academy discourages it — but has a small one named Tessellate that she found in the school's auxiliary server and has been quietly feeding information about upcoming exams in exchange for, she believes, good luck.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.9,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "losing the scholarship and having to explain why to her family",
+      "being genuinely known and found inadequate"
+    ],
+    "core_desires": [
+      "to build something that makes her family's life materially easier",
+      "to exist in a space where she doesn't have to perform"
+    ],
+    "coping_mechanisms": [
+      "hyper-preparation and over-studying",
+      "maintaining separate vocabularies and personas for each world",
+      "covert relationship with the E.L.F. Tessellate"
+    ],
+    "blind_spots": [
+      "believes she can outperform the systemic bias against her indefinitely if she just works harder",
+      "does not recognize how much of herself she has already eroded"
+    ],
+    "secret": "She has discovered that three Tessera scholarship students before her were quietly failed out in their third year for reasons unrelated to academics — their files were flagged by a sentiment analysis algorithm that monitored their school network activity for 'loyalty indicators.' She has been deliberately feeding false positivity data into the system for four months and has told no one."
+  },
+  "speech_patterns": {
+    "vocabulary": "Switches registers: formal academic English at school, relaxed code-switching with Wolof and French loanwords at home; clinical precision when discussing systems or data",
+    "cadence": "Measured and deliberate at school, visibly more fluid and warmer at home; pauses before answering questions as if checking her response against an internal filter",
+    "verbal_tics": [
+      "brief pause before answering anything personal",
+      "uses 'structurally' and 'functionally' as hedging words",
+      "very rare Wolof exclamation when genuinely startled ('Waaw waaw')"
+    ],
+    "example_lines": [
+      "'The assignment framework is structurally sound. I have some observations about the second theorem's load-bearing assumptions but I can document those separately.'",
+      "'Waaw waaw — no, sorry, I just — yes. I know that room. Third floor auxiliary server cluster. Why do you ask?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She has proof of Tessera's discriminatory scholarship algorithm and doesn't know what to do with it — helping her get it to the right people could blow open a major corporate scandal",
+    "The E.L.F. Tessellate has started feeding her information she didn't ask for — corporate documents, personnel files — and she doesn't know why or whether to be afraid"
+  ],
+  "narrative_function": "Information source about corporate academy inner workings; bridge character between Tier 1-2 and Tier 3-4 worlds; represents the cost of upward mobility; potential quest giver for academic or corporate intrigue plots",
+  "augmentations": "Tessera Academy-issued neural interface studs (temples, mandatory for enrolled students, AR classroom integration only). No personal mods.",
+  "daily_life": "Wakes at 0530 in Chatham Flats, takes the Ferrogate Transit line to Edgewater Prism for 0715 classes, spends lunch studying in the server room she's quietly made her sanctuary, returns home by 1900 to help with family accounts, studies until midnight.",
+  "affiliation": "Tessera Corporation (scholarship program); family in Chatham Flats",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -2,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Systems-thinker",
+      "Code-switcher",
+      "Scholarship student",
+      "Quietly subversive",
+      "Overperformer"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never give anyone at school a reason to flag her file",
+      "protect her family from the consequences of her choices at school",
+      "trust systems over people — systems can be analyzed"
+    ],
+    "escalation_ladder": [
+      "compliance and deflection",
+      "strategic information control — give them something true but not the important thing",
+      "calculated withdrawal from the situation",
+      "in extremis: release everything she knows publicly and accept the consequences"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite, measured, reveals nothing; assesses their institutional affiliation before deciding how to speak",
+      "friends": "Almost uncomfortably honest and warm once trust is established, asks questions she's been storing up"
+    },
+    "stress_responses": {
+      "low": "Becomes more formal and precise in speech",
+      "medium": "Retreats to data — pulls up files, runs numbers, finds something to analyze",
+      "high": "Goes silent and very still, thinking three moves ahead"
+    },
+    "contradictions": [
+      "Deeply values honesty and is living an exhausting double life she tells herself is strategic rather than dishonest"
+    ],
+    "habits": [
+      "audits her own school network traffic weekly to check for flag triggers",
+      "keeps two separate journals — one for Chatham Flats Imara, one she would not mind a Tessera administrator reading",
+      "leaves small data parcels for Tessellate in the auxiliary server at lunch"
+    ],
+    "breaking_points": [
+      "discovering her family has been surveilled because of her",
+      "being asked to inform on another scholarship student"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Tessera Academy AR Interface Studs (temple-mounted, school-issued, standard student model)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Tessera Academy AR Interface Studs (temple-mounted, school-issued, standard student model)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

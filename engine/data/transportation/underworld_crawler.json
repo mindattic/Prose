@@ -1,0 +1,37 @@
+{
+  "id": "019d6143aa74700eba300d8fc59be695",
+  "name": "Underworld Crawler",
+  "type": "transportation",
+  "aliases": [
+    "Bug",
+    "Cave Runner",
+    "The Roach"
+  ],
+  "category": "underground",
+  "manufacturer": "Improvised/modified from various industrial platforms",
+  "description": "A low-clearance tracked vehicle designed for Underworld traversal. Built from modified construction equipment or purpose-fabricated by Underworld communities, Crawlers handle the uneven terrain, tight passages, and zero-visibility conditions of the deep tunnels. Sealed cabin with air filtration, external lights powerful enough to illuminate caverns, and tracks that grip wet stone. Operating a Crawler in the Underworld is equal parts driving and spelunking. The machines accumulate damage — scratches, dents, strange residues — that tell the story of everywhere they've been.",
+  "propulsion": "Electric tracked drive, sealed battery systems",
+  "speed": "20 km/h on smooth tunnel floor, 5 km/h in rough passages",
+  "capacity": "4 crew + equipment",
+  "range": "12 hours continuous operation",
+  "tier_availability": "Underworld communities, licensed explorers, Arcturus expeditions",
+  "cost": "Φ15,000-30,000 depending on condition and provenance",
+  "autonomy": "Manual operation, terrain mapping AI optional",
+  "armament": "External lights (can be blinding), reinforced hull, ram plate. What operators carry personally varies.",
+  "common_usage": "Underworld exploration, deep community transit, resource extraction, Arcturus-contracted expeditions.",
+  "story_hooks": [
+    "A Crawler returns from a deep expedition with its hull covered in marks that look like something was trying to peel it open",
+    "The terrain mapping AI on a Crawler starts identifying biological signatures in the tunnel walls"
+  ],
+  "tags": [
+    "underground",
+    "transportation",
+    "ai",
+    "contract",
+    "power",
+    "underworld",
+    "tunnel",
+    "rain",
+    "vehicle"
+  ]
+}

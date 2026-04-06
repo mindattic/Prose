@@ -1,0 +1,235 @@
+{
+  "id": "019d6143a63a717d91b1352a6dd544fc",
+  "type": "character",
+  "name": "Jin-seo Park",
+  "aliases": [
+    "Splicer",
+    "Doc Splice",
+    "Jin"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Lower Dock Crew tech specialist — Prologue survivor. Lost both wrists.",
+  "age": 28,
+  "status": "active",
+  "location": "The Shelf — lower loading docks",
+  "description": "Jin-seo Park was a biomedical engineering student at Meridian Technical before the tuition hikes priced him out. He was eighteen months from a degree that would have put him in a Helix BioSystems lab. Instead he ended up maintaining chrome for dock workers who couldn't afford licensed technicians. The crew found him. Or he found the crew. The distinction blurred the way it always does in the Shelf.\n\nKyle severed both his wrists at the chrome joints with two precise cuts. He now has mismatched replacement hands: the left is a delicate surgical model (too small, meant for a woman's frame), the right is a heavy industrial gripper (too large, meant for cargo work). Together they make him look like a crab having an identity crisis. He calls them Lefty and The Situation.\n\nJin-seo is the most intelligent member of the crew and the only one who understood immediately what Kyle was: not a man fighting seven, but a system processing seven inputs simultaneously. He has been diagramming Kyle's fighting patterns from memory. He does not want revenge. He wants to understand Kyle's hardware. He has a younger sister, Minji, who is sixteen and still at Meridian Technical on a partial scholarship. He sends her half his cut. She thinks he works in legitimate tech repair.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.3,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Minji finding out what he actually does",
+      "His new hands never calibrating properly",
+      "Marcus's ego getting them all killed"
+    ],
+    "core_desires": [
+      "To scan Kyle's augments",
+      "To finish his degree somehow",
+      "To get Minji through school"
+    ],
+    "coping_mechanisms": [
+      "Tinkers constantly with the mismatched hands",
+      "Diagrams fighting patterns — analysis is how he processes trauma",
+      "Teaches Minji remotely, pretending it's professional development"
+    ],
+    "blind_spots": [
+      "Assumes understanding something gives you power over it — Kyle is not a system to be reverse-engineered"
+    ],
+    "secret": "He has already started selling information to Sable about the crew's operations. The money goes to Minji's tuition."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical jargon mixed with crew slang. Precise when describing hardware. The engineering student surfaces when he forgets to hide it.",
+    "cadence": "Fast. Overlapping thoughts. The kind of person who starts a second sentence before finishing the first.",
+    "verbal_tics": [
+      "Holds up the wrong hand when making a point",
+      "Says 'theoretically' before things that are definitely going to happen"
+    ],
+    "example_lines": [
+      "Theoretically, if we encounter him again, I'd recommend being in a different postal code.",
+      "Minji asked why my hands don't match. I told her it's an ergonomic choice. She said 'that's the dumbest thing you've ever said' and she's not wrong."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Minji Park",
+      "type": "sister",
+      "description": "Sixteen, Meridian Technical student, brilliant, does not know about the crew. Jin-seo's entire motivation.",
+      "emotional_core": "Protective love that requires constant lying",
+      "story_tension": "If Minji's scholarship falls through, Jin-seo becomes desperate. Desperate Jin-seo is useful to people like Sable."
+    },
+    {
+      "name": "Sable",
+      "type": "information buyer",
+      "description": "Jin-seo sells crew intelligence to Sable. Small transactions. Growing frequency.",
+      "emotional_core": "Pragmatic betrayal",
+      "story_tension": "He's a bridge character — the crew's leak."
+    },
+    {
+      "name": "Marcus Bellamy",
+      "type": "boss / liability",
+      "description": "Follows orders but has started hedging. Sees where Marcus is heading.",
+      "emotional_core": "Diminishing loyalty",
+      "story_tension": "Jin-seo will leave the crew. The question is whether Marcus lets him."
+    }
+  ],
+  "story_hooks": [
+    "Selling info to Sable creates a direct link between crew and story's main plot",
+    "His diagrams of Kyle's fighting style could end up in the wrong hands",
+    "Minji is a ticking clock — if her scholarship fails, Jin-seo escalates",
+    "Closest thing to a sympathetic defector"
+  ],
+  "narrative_function": "The smart one in a crew of idiots. His growing awareness that Torque is leading them into a wall creates an exit ramp for the crew subplot. Also: the funniest hands in the Shelf.",
+  "augmentations": "Left: surgical precision hand (Helix medical surplus). Right: industrial gripper (dock salvage). Both poorly calibrated.",
+  "daily_life": "Crew tech work. Calibrating his hands. Drawing diagrams. Selling information.",
+  "affiliation": "Lower Dock Crew (wavering)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 5,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 3
+    },
+    "personality": {
+      "openness_conviction": 7,
+      "empathy_detachment": 5,
+      "impulsivity_deliberation": 6,
+      "assertion_deference": 4,
+      "transparency_guardedness": 6
+    },
+    "drives": [
+      "Protect Minji",
+      "Understand Kyle's hardware",
+      "Escape"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 5,
+        "response": "Talks faster, overlapping thoughts, tinkers compulsively with his hands"
+      },
+      "moral": 4,
+      "trust": 4,
+      "desperation": 7
+    },
+    "strengths": [
+      "Curiosity",
+      "Love of Learning",
+      "Creativity",
+      "Perspective",
+      "Perseverance"
+    ],
+    "weaknesses": [
+      "Integrity",
+      "Loyalty",
+      "Honesty",
+      "Prudence",
+      "Teamwork"
+    ],
+    "tags": [
+      "tech-specialist",
+      "informant",
+      "engineer",
+      "traitor",
+      "protective-brother",
+      "mismatched-hands"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Minji's tuition comes first — everything else is secondary",
+      "Sell information to Sable in small enough pieces to stay deniable",
+      "Never let Marcus see the diagrams of Kyle's fighting patterns",
+      "Analyze every threat as a system — find the inputs and outputs",
+      "Maintain the cover story for Minji at all costs",
+      "If the crew is going down, get out before it pulls you under",
+      "Never tell anyone about the Sable transactions"
+    ],
+    "escalation_ladder": [
+      "Deflects with humor — holds up the wrong hand",
+      "Goes quiet, starts tinkering with hand calibration",
+      "Sells more information to Sable — increases frequency",
+      "Actively plans crew exit",
+      "Burns bridges — gives Sable everything"
+    ],
+    "interpersonal_modes": {
+      "Minji": "Protective lies wrapped in genuine love — pretends his work is legitimate",
+      "Marcus": "Surface compliance masking growing contempt",
+      "Sable": "Transactional — keeps it clean, keeps it deniable",
+      "Kyle": "Fascinated terror — wants to scan him, not fight him"
+    },
+    "stress_responses": {
+      "low": "Talks faster, sentences overlap, engineering jargon increases",
+      "medium": "Tinkers obsessively with hand calibration — the left one especially",
+      "high": "Goes silent, starts diagramming — analysis replaces feeling",
+      "critical": "Contacts Sable with whatever he has — survival mode"
+    },
+    "contradictions": [
+      "Betrays the crew to protect his sister — pragmatic love expressed through pragmatic betrayal",
+      "Wants to understand Kyle's hardware without grasping that Kyle is not a system to be reverse-engineered",
+      "The smartest person in the crew using that intelligence to slowly dismantle it"
+    ],
+    "habits": [
+      "Holds up the wrong hand when making a point",
+      "Says 'theoretically' before certain outcomes",
+      "Tinkers with hand calibration during downtime",
+      "Diagrams fighting patterns from memory",
+      "Teaches Minji remotely, framing it as professional development"
+    ],
+    "breaking_points": [
+      "Minji's scholarship falling through",
+      "Marcus discovering the Sable transactions",
+      "Kyle finding his diagrams",
+      "Minji learning what he actually does for a living"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

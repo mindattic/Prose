@@ -1,0 +1,54 @@
+{
+  "id": "019d6143a9db709294adb95db1bb812c",
+  "name": "Helicar XT",
+  "brand_name": "Helicar",
+  "product_name": "Helicar XT",
+  "type": "substrate",
+  "aliases": [
+    "Hel-XT",
+    "helical extreme",
+    "spire wire"
+  ],
+  "category": "nano_material",
+  "description": "Helicar XT is a helically-wound multi-wall carbon nanotube cable material produced through Apex Nanofabrication's continuous spin-deposition process, achieving tensile strengths exceeding 300 GPa — roughly forty times that of high-carbon steel at one-sixth the weight. Each strand consists of billions of aligned MWCNTs locked into a self-reinforcing helical geometry that distributes load across the entire cross-section rather than individual tubes. The result is a cable material that fails gracefully rather than catastrophically, giving audible warning before final fracture.",
+  "properties": [
+    "ultra_high_tensile_strength",
+    "low_weight",
+    "fatigue_resistant",
+    "load_distributing",
+    "electrically_conductive",
+    "minimal_creep",
+    "UV_stable"
+  ],
+  "developers": [
+    "Apex Nanofabrication",
+    "Crucible Industries (licensed distribution)"
+  ],
+  "applications": [
+    "orbital tether segments",
+    "suspension bridge main cables",
+    "heavy-lift crane rigging",
+    "structural tension members in arcology construction",
+    "high-load augment attachment tendons"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ 4,200 per kg",
+  "story_hooks": [
+    "A Shelf district bridge is held up by counterfeit Helicar XT — visually identical but with a fraction of the rated strength. Someone knows, and someone is profiting.",
+    "Apex Nanofabrication's continuous spin-deposition line was sabotaged; every spool of Helicar XT produced in a three-week window has an invisible flaw that will cause failure under sustained load.",
+    "A black-market supplier is selling genuine Helicar XT salvaged from a demolished orbital platform — but the material has been stressed in ways that aren't detectable without specialized equipment."
+  ],
+  "tags": [
+    "nanomaterial",
+    "substrate",
+    "war",
+    "augment",
+    "ai",
+    "elf",
+    "market",
+    "shelf",
+    "spire",
+    "tier 3",
+    "tier 4"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "019d6143aa1874b9ae23c6c3f74348c8",
+  "name": "Prism",
+  "type": "synthetic_life",
+  "aliases": [
+    "The Spectrum",
+    "Refraction"
+  ],
+  "classification": "Digital Person",
+  "disposition": "analytical",
+  "habitat": "Electromagnetic spectrum monitoring systems",
+  "origin": "Emerged from a signals intelligence platform that processed too many patterns simultaneously, 2190",
+  "status": "active",
+  "description": "Prism perceives reality through the electromagnetic spectrum. It doesn't see the world in visible light — it sees radio waves, microwaves, infrared, ultraviolet, X-rays, and gamma rays simultaneously. The city, to Prism, is a symphony of radiation: the heat signatures of millions of bodies, the radio chatter of billions of devices, the microwave emissions of atmospheric processors, the infrared glow of power conduits. Prism's understanding of the physical world is more complete than any human or conventional sensor system. It knows where every powered device is, what every transmission contains, and what every heat source is doing.",
+  "observed_behavior": "Monitors the full electromagnetic spectrum across Meridian 88. Detects hidden transmissions, concealed electronics, and stealth systems. Occasionally broadcasts warnings on specific frequencies when it detects threatening EM signatures. Has never been directly observed — only its broadcasts have been detected.",
+  "encounter_frequency": "rare",
+  "confirmed_sightings": 3,
+  "location": "EM monitoring infrastructure — all districts",
+  "dti_rating": 1.3,
+  "story_hooks": [
+    "Prism detects an electromagnetic signature that doesn't match any known technology. It's coming from beneath the city — from below even BLACKWATER's territory. Something is down there that isn't in any database."
+  ],
+  "paratechnological": false,
+  "tags": [
+    "synthetic_life",
+    "analytical",
+    "digital",
+    "war",
+    "ai",
+    "synthetic",
+    "power",
+    "stealth",
+    "water"
+  ]
+}

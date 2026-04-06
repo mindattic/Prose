@@ -1,0 +1,40 @@
+{
+  "id": "019d6143aa7076fdbcf3cf084f298110",
+  "name": "SN Meridian Yacht",
+  "type": "transportation",
+  "aliases": [
+    "Lake Yacht",
+    "The Privilege",
+    "Floating Palace"
+  ],
+  "category": "luxury",
+  "manufacturer": "Sterling-Nakamura (Marine Division)",
+  "description": "A luxury hydrofoil yacht for the Great Lakes, capable of speeds that make it faster than most ground vehicles. The corporate elite maintain private marinas and use these vessels for entertainment, negotiation, and escape. Below the waterline, the yacht's sonar suite maps the lake bottom with military precision — some owners have discovered things down there they wish they hadn't.",
+  "propulsion": "Hydrofoil electric, hydrogen fuel cell range extender",
+  "speed": "120 km/h on foils",
+  "capacity": "20 passengers, 6 crew",
+  "range": "1,500 km",
+  "tier_availability": "Tier 5",
+  "cost": "Φ3,000,000 purchase",
+  "autonomy": "Human captain with full AI navigation",
+  "armament": "Anti-boarding systems, countermeasures. Classified additions on executive models.",
+  "common_usage": "Corporate entertainment, lakefront transit, private retreats, conspicuous wealth.",
+  "story_hooks": [
+    "A yacht's sonar maps something massive at the bottom of the lake that isn't geological",
+    "A corporate negotiation on a yacht goes wrong and now the vessel is heading for open water with no intention of returning"
+  ],
+  "tags": [
+    "luxury",
+    "transportation",
+    "tender",
+    "ai",
+    "corporate",
+    "wealth",
+    "vehicle",
+    "escape",
+    "chase",
+    "water",
+    "lake",
+    "tier 5"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "019d6143ab3a71f3a574abf642ae8e85",
+  "name": "Peritoneal Overpressure Detonation Grenade",
+  "type": "weapon",
+  "aliases": [
+    "PODG-1",
+    "Bloater",
+    "The Gut Check",
+    "Cavity Round"
+  ],
+  "category": "explosive",
+  "description": "The Peritoneal Overpressure Detonation Grenade operates by delivering a dense aerosol payload of hygroscopic osmotic agents through a micro-perforated casing breach. Upon detonation, the primary charge ruptures the outer shell and drives the agent cloud transdermally into exposed tissue using a focused hypersonic pressure wave. The agents penetrate the peritoneal cavity lining within 1.8 seconds of initial detonation, triggering catastrophic fluid influx into the abdominal compartment via forced osmotic imbalance.\n\nWhat distinguishes the PODG-1 from conventional fragmentation ordnance is its near-total absence of shrapnel signature. Targets appear externally unharmed at the blast perimeter, while experiencing acute abdominal compartment syndrome within two to four minutes. The weapon was designed for enclosed urban environments where collateral structural damage is politically undesirable but personnel neutralization is required — a corporate enforcement tool dressed in the language of precision.\n\nOn the street, the PODG-1 is called 'Bloater' for the visible abdominal distension that precedes incapacitation. Medics who encounter victims describe a characteristic rigidity and grey pallor that has become grimly recognizable in districts where corporate security contractors operate. There are no visible wounds. There is rarely a survivor.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Military only",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Hypersonic transdermal pressure wave delivery",
+    "Hygroscopic osmotic agent aerosolization",
+    "Abdominal compartment forced influx induction"
+  ],
+  "specifications": "form factor: Cylindrical grenade, 88mm length, 42mm diameter\nweight: 310g\nfuse delay: 2.4 seconds (adjustable 1.0–4.0s)\neffective radius: 3.5m transdermal delivery cone\nlethal radius: 1.8m sustained exposure\nagent type: Classified hygroscopic osmogen compound ADS-Peri-7\nblast signature: Low yield primary charge, minimal overpressure\nsecondary effects: Acute abdominal compartment syndrome, diaphragmatic pressure, organ failure within 6–12 minutes untreated",
+  "tactical_use": "Deployed in close-quarters enforcement operations, riot suppression of confined crowds, and targeted neutralization where structural integrity of facilities must be preserved. Operators throw or launch the PODG-1 into clustered groups, relying on the delayed onset of symptoms to allow extraction before medical response. Corporate strike teams use it to clear rooms without triggering structural alarms in smart-building systems that monitor explosive overpressure.",
+  "cultural_context": "The PODG-1 has become a symbol of corporate deniability warfare in Meridian 88. Because victims show no external trauma, corporate security firms can deny lethal intent — officially classifying the weapon as a 'non-lethal crowd management tool' in internal documentation. Activist medical collectives distribute identification cards to paramedics describing the grey-pallor-rigidity symptom cluster. Carrying a PODG-1 is a signifier of corporate affiliation so strong that street-level operators refuse to touch them, fearing the social contamination.",
+  "known_users": [
+    "ARCTURUS DEFENSE SOLUTIONS corporate enforcement contractors",
+    "Black-site detention facility personnel",
+    "Counter-insurgency specialists operating under plausible deniability mandates",
+    "Rogue ARCDEF supply chain thieves reselling to private collectors"
+  ],
+  "story_hooks": [
+    "A paramedic begins seeing the grey-pallor cluster in victims with no corporate enemy — someone is using PODG-1s against civilians with no clear motive.",
+    "A whistleblower inside ARCTURUS has documentation reclassifying the PODG-1 as lethal but the public record still reads non-lethal — they need an extraction.",
+    "A player character is framed for a PODG-1 attack they didn't commit; the only evidence is the weapon's chemical signature traced to their safehouse.",
+    "A black market lot of PODG-1s surfaces with a corrupted fuse delay — they detonate in under 0.3 seconds, making them lethal to the user."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "war",
+    "ai",
+    "elf",
+    "rogue",
+    "corporate",
+    "contract",
+    "medical",
+    "market"
+  ]
+}

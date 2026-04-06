@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a8857b008950b391f4bfe6f3",
+  "name": "Zheng-Dao Heavy Industries Gecko Ascender GA-4",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Heavy Industries Gecko Ascender GA-4",
+  "type": "equipment",
+  "aliases": [
+    "Gecko",
+    "GA-4",
+    "Spider Gloves",
+    "Wall Walker"
+  ],
+  "category": "climbing/mobility",
+  "description": "A set of gloves and boots incorporating van der Waals force adhesion pads that allow the wearer to climb vertical surfaces and traverse ceilings like a gecko. Each pad contains millions of synthetic setae — microscopic hair-like structures that create molecular adhesion to any smooth surface. The GA-4 supports loads up to 150 kg (wearer plus equipment), and engagement/disengagement is controlled by a peeling motion that breaks the adhesion contact angle. The system works on glass, metal, concrete, and most polymers, but struggles with rough, porous, or wet surfaces where the setae cannot achieve full contact.",
+  "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — industrial and authorized security",
+  "base_technologies": [],
+  "specifications": {
+    "load capacity": "150 kg",
+    "adhesion type": "Van der Waals force synthetic setae",
+    "compatible surfaces": "Smooth glass",
+    "info": "metal; concrete; polymer; porous; or wet surfaces; full hand/foot contact; 0.8 kg per pair (boots)",
+    "incompatible surfaces": "Rough",
+    "engagement": "Flat press",
+    "disengagement": "Peeling motion at 30-degree angle",
+    "weight": "0.6 kg per pair (gloves)",
+    "power": "None — passive mechanical adhesion"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A break-in on the 40th floor of a sealed building with no roof access left investigators baffled until adhesion residue from GA-4 setae was found on the exterior glass — someone climbed 40 stories on the outside.",
+    "A modified GA-4 with enhanced setae density has been developed that works on wet surfaces — the manufacturer is unknown and the modification technique exceeds published material science capabilities."
+  ],
+  "tags": [
+    "climbingmobility",
+    "equipment",
+    "love",
+    "ai",
+    "synthetic",
+    "control",
+    "tier 2"
+  ]
+}

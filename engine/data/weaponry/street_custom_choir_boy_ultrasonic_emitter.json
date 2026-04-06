@@ -1,0 +1,40 @@
+{
+  "id": "019d6143ab4577d1a871a1686e22505a",
+  "name": "Street Custom 'Choir Boy' Ultrasonic Emitter",
+  "type": "weapon",
+  "aliases": [
+    "Choir Boy",
+    "Screamer",
+    "Ear Splitter",
+    "The Singer"
+  ],
+  "category": "sonic",
+  "description": "A handheld ultrasonic weapon cobbled from salvaged industrial cleaning equipment and a focusing horn fashioned from sheet metal. The Choir Boy emits a concentrated beam of ultrasonic energy at frequencies between 20-40 kHz, causing intense pain, disorientation, and at close range, tissue damage to soft organs. The name comes from the high-pitched whine the device produces at the edge of human hearing — a sound operators describe as angelic right before it becomes agonizing. Build quality varies from surprisingly sophisticated to genuinely dangerous to the user.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — improvised weapon",
+  "base_technologies": [
+    "Ultrasonic frequency focusing",
+    "Improvised acoustic amplification"
+  ],
+  "specifications": "frequency: 20-40 kHz variable\npower output: 140-160 dB depending on build\neffective range: 3-15 meters directional\npower source: Salvaged industrial battery packs\nweight: 1.2-2.5 kg\noperation time: 30-90 seconds continuous before overheating",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A wave of Choir Boy attacks in Tier 1 has left dozens with permanent hearing damage — someone is distributing pre-built units for free along with target lists.",
+    "A modified Choir Boy has been tuned to interfere with a specific frequency used by Diaspora neural interfaces, causing temporary disconnection — for some users, that disconnection is psychologically devastating."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "sonic",
+    "weapon",
+    "neural",
+    "ai",
+    "power",
+    "pain",
+    "fashion",
+    "energy",
+    "tier 1"
+  ]
+}

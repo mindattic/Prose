@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Models.Canon;
 
@@ -7,8 +8,9 @@ namespace StreetSamurai.Core.Models.Canon;
 /// The vocabulary of the GLM is a living document — each tier, faction,
 /// and district has its own dialect. Shelf Cant is different from Spire Speak.
 /// </summary>
-public class VocabularyEntry
+public class VocabularyEntry : ICanonEntity
 {
+    [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("term")] public string Term { get; set; } = "";
     [JsonPropertyName("definition")] public string Definition { get; set; } = "";
     [JsonPropertyName("origin")] public string Origin { get; set; } = "";

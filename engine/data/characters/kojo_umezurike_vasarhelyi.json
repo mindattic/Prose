@@ -1,0 +1,192 @@
+{
+  "id": "019d6143a64479b09032a9ab3f8e6bcf",
+  "type": "character",
+  "name": "Kojo Umezurike-Vásárhelyi",
+  "aliases": [
+    "Catch",
+    "K-catch"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Numbers runner and bookmaker's courier for the Stockyard gambling networks",
+  "age": 19,
+  "status": "active",
+  "location": "The Stockyard — runs routes between the Geartown transit hub and the southern Stockyard processing yards",
+  "description": "Kojo Umezurike-Vásárhelyi is nineteen years old and built like someone whose body is still negotiating its final dimensions — tall, a little loose in the joints, with the nervous energy of a person who has never in his life sat still for more than ten minutes voluntarily. His skin is a warm medium brown and he has geneware cat ears in a tawny orange that he got at sixteen with three months of saved courier income — they swivel when he's startled or excited, which is often. His hair is close-cropped on the sides and grows in a short natural taper on top. He moves through the Stockyard with the casual speed of someone who grew up learning which streets flow and which ones snag.\n\nKojo is sharp, quick, and has not yet fully processed that the work he does is dangerous. He has the operational competence of someone who's been running numbers since he was fourteen and the emotional development of someone who has never left a ten-block radius of the Stockyard in his life. He is loyal to his bookmaker — a woman named Dzintars Mbaya-Ferenczi who he calls 'the Operator' — with the uncomplicated devotion of a kid who needed a job and got one. He is also, quietly, very good at math, and has begun to understand the numbers he carries in ways that make Dzintars both pleased and slightly watchful.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Losing Dzintars's trust — she's the closest thing to a mentor he's had",
+      "Being caught by Ferrogate Transit security on a hot delivery"
+    ],
+    "core_desires": [
+      "To be genuinely good at something people respect",
+      "To eventually run his own book — he thinks about this constantly"
+    ],
+    "coping_mechanisms": [
+      "Movement — he is physically uncomfortable when forced to be stationary",
+      "Humor, deflection, making everything into a joke before it can become something serious"
+    ],
+    "blind_spots": [
+      "He does not understand how disposable runners are to the people above him in the chain — Dzintars genuinely likes him, but 'like' has limits"
+    ],
+    "secret": "He has been quietly memorizing and mentally retaining the betting patterns he runs — not skimming, not yet, but building a mental model of the operation that he hasn't decided what to do with yet"
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense Stockyard slang, fast, with a tendency to math-speak when excited — drops into talking about probability and odds as naturally as weather",
+    "cadence": "Fast, skipping, sentences often incomplete because he assumes you're keeping up. Slows dramatically when he's scared or serious, which makes the contrast alarming.",
+    "verbal_tics": [
+      "'Catch that?' at the end of explanations",
+      "Clicking his tongue when calculating something mentally",
+      "Starting sentences with 'Okay so —' regardless of whether anything has been established"
+    ],
+    "example_lines": [
+      "'Okay so the split on the north yard fights is running 60-40 against Marcellus right now which is wrong, catch that? It's wrong. He's got a busted left shoulder, the odds should be 75 at minimum, someone's juicing the line and I want to know who.'",
+      "'I run fast. That's the whole thing. Everything else is just math and fast.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He's noticed a pattern in the bets he's been running — someone is consistently winning in ways that shouldn't be statistically possible, and he's trying to decide if he should tell Dzintars or figure out who it is first",
+    "He witnessed something on a route he wasn't supposed to be on and now the something has people looking for witnesses"
+  ],
+  "narrative_function": "Local color and street-level information source — he knows everything happening in his ten-block world in extraordinary detail. Can function as a reluctant errand-boy for characters who need someone who knows the Stockyard's rhythms. His emerging numerical sophistication is a ticking clock.",
+  "augmentations": "Geneware cat ears (tawny orange, cosmetic). A basic reflex-assist implant in his legs that marginally improves his running speed and stumble-recovery — he got this at cost from a Shallowgrave dealer and it's not quite calibrated right, giving him an occasional slight hitch in his left stride.",
+  "daily_life": "He picks up his route sheets from a drop location at 0700, runs collection and delivery circuits through the Stockyard and into Geartown until 1800, returns to report to Dzintars, and spends evenings at a youth gambling den called the Back Tooth where he is technically working (observing, listening) but mostly just playing.",
+  "affiliation": "Works for Dzintars Mbaya-Ferenczi's independent bookmaking operation — loosely affiliated with the Stockyard Compact, a loose protection arrangement between the area's mid-level criminal operations",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 6,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 1,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Street Smart",
+      "Numerically Gifted",
+      "Loyally Naive",
+      "Physically Restless",
+      "Geneware Cat Ears"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never open the envelopes — this is the first rule and he has kept it",
+      "If followed, take three route changes and then abort to a safe location",
+      "Protect the route sheets above everything including himself"
+    ],
+    "escalation_ladder": [
+      "Increase pace and take alternate route",
+      "Drop to a foot-traffic dense area and go still",
+      "Abort the delivery and contact Dzintars",
+      "Run — genuinely, just run"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Fast-talking, slightly performative, using speed and humor to prevent anyone from getting a read on him",
+      "friends": "Warmer, more honest, still fast but willing to slow down — rare"
+    },
+    "stress_responses": {
+      "low": "Gets faster and funnier",
+      "medium": "Gets quiet suddenly, which people who know him understand as an alarm",
+      "high": "Pure movement — his body solves the problem while his brain catches up"
+    },
+    "contradictions": [
+      "Wants to run his own operation someday but has never seriously considered what that would cost him",
+      "Is building knowledge about the operation that could get him killed if anyone noticed"
+    ],
+    "habits": [
+      "Taps his fingers against his thigh in betting-odds patterns when bored",
+      "Cat ears betray his emotional state regardless of his facial expression",
+      "Eats the same flatbread-and-paste from the same Stockyard vendor every morning at precisely 0650"
+    ],
+    "breaking_points": [
+      "Dzintars being hurt because of something he did",
+      "Being asked to carry something that isn't numbers — he understands that crossing that line changes what he is"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Geneware cat ears — tawny orange, cosmetic (swivel-capable)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware cat ears — tawny orange, cosmetic (swivel-capable)",
+      "replaces": ""
+    },
+    {
+      "name": "Reflex-assist leg implant — third-party manufacture, improperly calibrated, gives slight left-stride hitch",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Reflex-assist leg implant — third-party manufacture, improperly calibrated, gives slight left-stride hitch",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Cockroach": 0.9,
+    "Safety First": 0.9,
+    "Improviser": 0.9,
+    "Lone Wolf": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

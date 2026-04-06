@@ -1,0 +1,59 @@
+{
+  "id": "019d6143aa497e07b733545f86d47ab1",
+  "name": "Ouroboros Energy PiezoCore LD-5 Pedestrian Kinetic Harvesting Grid",
+  "brand_name": "Ouroboros",
+  "product_name": "Ouroboros Energy PiezoCore LD-5 Pedestrian Kinetic Harvesting Grid",
+  "type": "technology",
+  "aliases": [
+    "Footprint Grid",
+    "Stomper Tiles",
+    "LD-5",
+    "Pressure Plate"
+  ],
+  "subcategory": "energy",
+  "description": "The PiezoCore LD-5 is a modular sub-pavement energy harvesting system deployed in high-foot-traffic urban zones throughout Meridian 88. Each tile unit — measuring 60cm x 60cm and 4cm deep — contains a stacked array of lead-free barium titanate piezoelectric transducers encased in impact-resistant polymer composite. Foot pressure, vehicle roll-over, and even ambient vibration from nearby transit infrastructure compress the transducer stacks, generating micro-bursts of alternating current that are rectified, phase-synchronized, and fed into localized micro-grid conduits embedded in the substrate layer. A single high-traffic block in the Garnet District can sustain a continuous output of 8–14 kW under peak pedestrian load, sufficient to power adjacent street lighting, vending kiosks, and low-draw surveillance nodes without drawing from the main municipal grid.\n\nWhat distinguishes the LD-5 from earlier piezoelectric installations is its Adaptive Load Balancing Controller (ALBC), a Cinderblock AI-licensed embedded firmware that dynamically reroutes current between tiles based on real-time pressure mapping. This prevents hotspot degradation — a critical failure mode in previous-generation grids — and extends tile service life to an estimated 12 years under standard urban conditions. Tiles are color-coded by output health status and can be swapped individually without disrupting adjacent units, making maintenance viable even in Meridian 88's perpetually congested commercial corridors.\n\nThe LD-5 is predominantly installed by Palladian Construction under Ouroboros Energy licensing agreements in Tier 2 and Tier 3 commercial zones, transit hubs, and arcology concourses. In lower-tier districts, independent operators sometimes purchase surplus tile units through Kelpline Logistics secondary markets, installing ad-hoc grids beneath street markets or corridor squats — feeding power to unauthorized tap networks that exist entirely outside Ouroboros's billing infrastructure.",
+  "tier_availability": "Tier 2+ (black market assemblies in Tier 4)",
+  "developers": [
+    "OUROBOROS ENERGY",
+    "CINDERBLOCK AI",
+    "PALLADIAN CONSTRUCTION"
+  ],
+  "base_technologies": [
+    "Piezoelectric transduction",
+    "Embedded micro-grid conduit systems",
+    "Adaptive load balancing firmware",
+    "Urban substrate integration"
+  ],
+  "enables": [
+    "Off-grid micro-district power networks",
+    "Unauthorized tap infrastructure",
+    "Autonomous street-level IoT sensor arrays",
+    "Reduced municipal grid dependency in commercial zones"
+  ],
+  "social_impact": "The PiezoCore LD-5 has quietly restructured urban power politics at the street level. In sanctioned zones, the grid represents a passive revenue stream for Ouroboros Energy — citizens and foot traffic literally power corporate infrastructure without compensation or awareness. In unsanctioned districts, salvaged LD-5 tiles have become foundational to autonomous community power networks, enabling entire black-market corridors to operate lighting, data nodes, and medical equipment off the books. Ouroboros periodically dispatches retrieval crews to reclaim unauthorized installations, framing it as intellectual property enforcement — a practice that has generated significant hostility in lower-tier neighborhoods where the tiles represent the only reliable power source.",
+  "story_hooks": [
+    "A Kelpline logistics runner discovers a shipment manifest for LD-5 surplus tiles routed to a Tier 4 district — quantities far exceeding any legitimate installation, suggesting someone is building an autonomous power grid large enough to run a hidden facility",
+    "Cinderblock AI's ALBC firmware has begun aggregating anonymized pressure-pattern data across all LD-5 installations, creating a city-wide pedestrian movement map — a surveillance asset Ouroboros hasn't disclosed to municipal authorities or its own customers",
+    "A community organizer in the Rust Margin is murdered days after successfully wiring a salvaged LD-5 grid to power a free medical clinic — and the tiles are still running when investigators arrive",
+    "The ALBC firmware in a Garnet District installation begins exhibiting anomalous behavior — rerouting harvested current in patterns that don't correspond to any load demand, as if the grid is communicating something"
+  ],
+  "tags": [
+    "energy",
+    "technology",
+    "gun",
+    "war",
+    "ai",
+    "corporate",
+    "surveillance",
+    "control",
+    "power",
+    "medical",
+    "clinic",
+    "market",
+    "bar",
+    "vehicle",
+    "chase",
+    "tier 2",
+    "tier 4"
+  ]
+}

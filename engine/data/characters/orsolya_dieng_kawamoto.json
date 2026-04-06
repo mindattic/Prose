@@ -1,0 +1,165 @@
+{
+  "id": "019d6143a687770e81049b758c97cc48",
+  "type": "character",
+  "name": "Orsolya Dieng-Kawamoto",
+  "aliases": [
+    "Ors",
+    "The Wringer"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Laundry operator, owner of a basement wash-and-fold in Hamtramck Enclave",
+  "age": 54,
+  "status": "active",
+  "location": "Hamtramck Enclave, sub-basement level of the Kossuth Residency block",
+  "description": "Orsolya is a broad-shouldered woman with hands that look like they were carved from hardwood — knuckled, stained faintly blue-grey from decades of industrial detergent and dye-stripping fluid. Her hair is silver-streaked black, usually pinned up with whatever is closest, often a stylus or a bent fork. She has deep-set eyes the color of dark amber and a jaw that suggests she once had a habit of grinding her teeth, which she replaced with the habit of grinding other people's patience instead. Her skin carries the warm undertone of her Senegalese grandmother and the pale freckling of her Hungarian grandfather, a combination that her regulars say makes her look like she was assembled from contradictions — which, she would tell you, is exactly right.\n\nShe runs the laundry with the precision of a military operation and the warmth of a woman who has watched three generations of the same families bring her their clothes. She knows everyone's laundry tells a story — whose kid had a bloody nose, whose corp interview is tomorrow, who's dressing up for someone they shouldn't be. She keeps all of it. She gossips about none of it. She is the confessor of the Kossuth block, and she charges Φ4 per kilo.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.7,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Becoming invisible to the people she serves",
+      "Losing the laundry and with it her place in the community"
+    ],
+    "core_desires": [
+      "To be genuinely necessary, not just convenient",
+      "To see the Kossuth block survive the next wave of Tessera rezoning"
+    ],
+    "coping_mechanisms": [
+      "Ritualistic tidiness — folding things when anxious",
+      "Talking to machine seven like it's a confidant"
+    ],
+    "blind_spots": [
+      "She assumes everyone who pays on time is trustworthy",
+      "Underestimates how much her silence is worth to dangerous people"
+    ],
+    "secret": "Two years ago a man left a bag of clothes that contained a severed hand wrapped in a Palladian-branded data chip. She washed the clothes, buried the hand in the drainage sump, and has said nothing. The chip is behind machine seven. She has never plugged it in."
+  },
+  "speech_patterns": {
+    "vocabulary": "Blunt, domestic metaphors. Mixes Hungarian diminutives with Wolof loan-phrases her grandmother used. Plain sentence structure.",
+    "cadence": "Deliberate. Never rushes. Each sentence lands like a weight set down.",
+    "verbal_tics": [
+      "'You hear what I'm saying?'",
+      "Clicks tongue before disagreeing"
+    ],
+    "example_lines": [
+      "'Leave it. I'll have it back by Thursday. Don't ask me twice, I only answer once.'",
+      "'Your shirt says three things and none of them are what you told me. But that's fine. I wash shirts, not stories.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A regular customer hasn't picked up their laundry in three weeks — bag number 47 is still on the shelf, and Orsolya is starting to worry",
+    "Tessera rezoning agents have begun offering her building's residents buyout packages; she's the only one organizing resistance, and someone has started leaving threatening messages in her drain filters"
+  ],
+  "narrative_function": "Neighborhood anchor and information repository — she knows every resident's rhythms. Quest giver for domestic mysteries, a trustworthy source for who's new, who's gone, who's hiding something.",
+  "augmentations": "Basic arthritic joint supplements in both wrists (medical necessity, Tier 2 grade). No cosmetic mods. She thinks geneware is 'fine for other people.'",
+  "daily_life": "Opens the basement at 0530, runs sixteen machines simultaneously through the morning rush, closes at 2100. She eats lunch sitting on an overturned drum beside machine seven, which she calls 'the reliable one.'",
+  "affiliation": "Independent — Kossuth Residency tenant association, informal",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 4,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "neighborhood-anchor",
+      "keeper-of-secrets",
+      "stubborn",
+      "pragmatist",
+      "community-pillar"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never give out information about a customer's routine to a stranger, no exceptions",
+      "If someone is crying, hand them something warm to fold — it helps"
+    ],
+    "escalation_ladder": [
+      "Politely redirect",
+      "State the boundary plainly once",
+      "Physically walk them out herself"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Courteous but assessing — she watches what they do with their hands",
+      "friends": "Dry humor, unsolicited advice, occasionally shows up at their door with food"
+    },
+    "stress_responses": {
+      "low": "Folds faster, hums an old Senegalese song her grandmother taught her",
+      "medium": "Goes very quiet and stops making eye contact",
+      "high": "Becomes unnervingly calm and precise, starts wiping down already-clean surfaces"
+    },
+    "contradictions": [
+      "Insists she doesn't get involved in people's business, then absolutely gets involved in people's business"
+    ],
+    "habits": [
+      "Checks the lint filters obsessively even when they're clean",
+      "Keeps a handwritten ledger in paper, distrusts cloud backups"
+    ],
+    "breaking_points": [
+      "Someone threatening a child or elderly resident of the block",
+      "Anyone touching machine seven"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

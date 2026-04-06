@@ -1,0 +1,241 @@
+{
+  "id": "019d6143a6e27473b7dacf121b976369",
+  "type": "character",
+  "name": "Svetlana Boateng-Quiñonez",
+  "aliases": [
+    "Sveta",
+    "The Axe"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Executive Vice President, Logistics & Supply Chain — Ferrogate Transit",
+  "age": 55,
+  "status": "active",
+  "location": "Lincoln Fortress, Ferrogate Transit Executive Tower — 34th floor",
+  "description": "Svetlana Boateng-Quiñonez is a heavyset, silver-haired woman who moves through Lincoln Fortress like weather — unhurried, pervasive, and capable of causing significant structural damage. Her skin is a warm light brown, heavily lined in ways she has never bothered to smooth, and she wears her age with the deliberate comfort of someone who learned long ago that looking powerful is less useful than being powerful. She has no cosmetic augmentations. Her one visible modification is a retractile data-port behind her right ear, elegant and old — installed in 2171 and never upgraded because it works. She dresses in Ferrogate corporate grey with red piping, always exactly regulation, always somehow implying that the regulations were written with her in mind.\n\nSveta earned her nickname honestly — she has restructured three divisions, eliminated two redundant subsidiary contracts worth a combined Φ40 million annually, and once remotely rerouted an entire shipment corridor mid-transit to prevent a competitor from intercepting Ferrogate cargo, all in the same fiscal quarter. She is not a cruel executive but she is a ruthlessly efficient one, and she draws a very clean line between what she considers professional and what she considers personal. On the professional side, she is demanding, decisive, and fair in a way that feels almost aggressive. On the personal side — which almost no one at Ferrogate has ever seen — she is funny, nostalgic, and occasionally wrecked by things she won't talk about.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.55,
+      "ideal": 0.6,
+      "id": 0.4,
+      "shadow": 0.65,
+      "mask": 0.7,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Losing control of systems she is responsible for — not for personal reasons, but because she has seen what that costs the people those systems serve",
+      "Being remembered as someone who built something hollow"
+    ],
+    "core_desires": [
+      "To leave Ferrogate's infrastructure genuinely better than she found it",
+      "To be known by one person, completely, without having to perform competence"
+    ],
+    "coping_mechanisms": [
+      "Control — maintaining it, extending it, refining it as a substitute for emotional processing",
+      "Walking the infrastructure — physical movement through the systems she manages",
+      "A private monthly ritual at a small ELF-shrine in Ferrogate's oldest transit hub, which she has maintained for twenty years"
+    ],
+    "blind_spots": [
+      "She genuinely does not see how her efficiency has translated into human cost at the bottom of the org chart — she measures outcomes, not the texture of the suffering behind them",
+      "She has mistaken emotional self-sufficiency for emotional health for so long she can no longer tell the difference"
+    ],
+    "secret": "Ferrogate's northern corridor expansion — a project she championed and considers her defining achievement — was built on a land-use agreement that she knows displaced a Highland Park Autonomous Zone community. She didn't falsify anything. She simply chose not to look too closely at the human geography reports before signing. The project succeeded. She still knows where those people went."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse, precise, and institutional. Never wastes words. Uses logistics and infrastructure metaphors for everything including human relationships. Spanish and Russian phrases emerge only in private or under significant stress.",
+    "cadence": "Slow and deliberate in public meetings — every word placed. In private, considerably faster. Long silences that are not awkward; they are evaluative.",
+    "verbal_tics": [
+      "Refers to problems as 'inefficiencies' regardless of their human content",
+      "A habit of stating conclusions before explanations, then filling in the reasoning if pressed",
+      "'That's already decided' as a conversational door-close"
+    ],
+    "example_lines": [
+      "'I don't need you to agree with me. I need you to understand what happens if this corridor goes dark for six hours. Then decide.'",
+      "'I've been walking these hubs for thirty years. The transit doesn't lie. People lie. The system tells you exactly what it is.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She quietly approaches someone to investigate a series of cargo anomalies in the northern corridor — but only once she's confirmed they have no connection to Ferrogate's internal audit apparatus. She doesn't want this found officially.",
+    "A junior Ferrogate employee who was flagging safety concerns about aging infrastructure in the southern hubs has suddenly been quietly transferred. Sveta's name is on the transfer order, but someone who knows her work says it doesn't look like her signature move.",
+    "She has the transit access codes to move something — or someone — across the entire Meridian 88 infrastructure undetected. The question is what she'd need in exchange, and whether her price is payable."
+  ],
+  "narrative_function": "High-tier quest giver with genuinely complex motivations; antagonist who isn't wrong; source of macro-level information about Ferrogate's operations and Meridian 88's transit infrastructure; gatekeeper to resources that players might desperately need.",
+  "augmentations": "Retractile data-port (behind right ear, installed 2171). Subdermal cardiac monitor with automatic emergency alert — required by Ferrogate for all Tier 5 executives over 50. No cosmetic modifications.",
+  "daily_life": "In her office by 06:00, has reviewed overnight logistics reports before most of her staff have eaten breakfast. Conducts three standing meetings before noon. Takes lunch in her office twice a week; uses the other three days to walk the lower transit hubs personally — she believes executives who don't see their actual infrastructure are executives making bad decisions.",
+  "affiliation": "Ferrogate Transit (Tier 5)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 4,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "executive",
+      "systemic-thinker",
+      "ethically-compromised",
+      "powerful",
+      "privately-haunted"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Identify the actual variable, not the apparent one",
+      "Never make a decision under time pressure that could wait twelve hours",
+      "Always know the second-order consequences before the first-order ones"
+    ],
+    "escalation_ladder": [
+      "Quiet internal redirection — adjusting variables without confrontation",
+      "Direct statement of the problem and her preferred solution, delivered once",
+      "Structural intervention — reorganize the system until the problem can no longer persist"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing, professionally courteous, gives very little away. Asks one or two questions that seem simple and are not.",
+      "friends": "Almost unrecognizable from her professional persona — dry, occasionally self-mocking, genuinely curious about the lives of people she trusts. Still doesn't talk about herself much."
+    },
+    "stress_responses": {
+      "low": "Becomes more precise and economical. Fewer words, faster decisions.",
+      "medium": "Starts walking — physically moves through infrastructure she controls. Reasserts direct management over things she normally delegates.",
+      "high": "Goes completely cold and purely transactional. Briefly becomes the most dangerous version of herself. Has, historically, done things she later regrets in this state."
+    },
+    "contradictions": [
+      "She believes deeply in the social value of functional infrastructure and genuinely cares about the people who depend on it, but has made every decision that caused harm to those same people through the logic of efficiency"
+    ],
+    "habits": [
+      "Walks a different section of Ferrogate's hub network every Tuesday and Thursday, usually alone",
+      "Keeps a handwritten ledger of every major decision she's made and its downstream outcomes, updated monthly",
+      "Maintains the ELF-shrine at Transit Hub 7-South with fresh data offerings, always in person"
+    ],
+    "breaking_points": [
+      "If she were confronted with direct evidence — faces, names, testimony — of the harm her northern corridor displacement caused, in a context where denial was impossible, she would have a genuine crisis of her constructed self-image"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.7,
+    "People Pleaser": 0.7,
+    "Commander": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in New Windsor / Novaya Windsorka, Ghanaian-Russian-Mexican family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined Ferrogate Transit as junior logistics coordinator",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Data-port installation; promoted to regional logistics manager",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Championed and signed off on northern corridor expansion — Highland Park displacement occurs",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Promoted to Executive Vice President, Logistics & Supply Chain",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current: managing northern corridor anomalies in private, maintaining the ELF-shrine she has never discussed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

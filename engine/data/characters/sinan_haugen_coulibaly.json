@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a6cd71629bc1979ec563c030",
+  "type": "character",
+  "name": "Sinan Haugen-Coulibaly",
+  "aliases": [
+    "Ablaze",
+    "The Specialist"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Information trader and intelligence analyst — broker",
+  "age": 65,
+  "status": "active",
+  "location": "The Shelf — lower district tenements near the old lakeshore",
+  "description": "Sinan Haugen-Coulibaly is lean and angular, all sharp edges and visible tension. At 65, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a broker out of The Shelf, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nSinan Haugen-Coulibaly has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.97,
+      "ideal": 0.12,
+      "id": 0.89,
+      "shadow": 1,
+      "mask": 0.66,
+      "ghost": 0.41
+    },
+    "core_fears": [
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
+      "That they're fundamentally alone and connection is just a vulnerability",
+      "Losing their edge to age — the body slows before the mind accepts it"
+    ],
+    "core_desires": [
+      "To find the person who burned them and make it educational",
+      "To prove everyone who dismissed them catastrophically wrong",
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
+    ],
+    "coping_mechanisms": [
+      "Maintains weapons obsessively — cleaning guns is meditation",
+      "Humor — deflects everything serious with jokes until the joke becomes the personality",
+      "Overwork — takes every contract offered because idleness invites thinking"
+    ],
+    "blind_spots": [
+      "Assumes their skill set is more transferable than it actually is",
+      "Assumes the worst in corporate people, missing the rare ones who could be allies",
+      "Cannot accept help without interpreting it as leverage"
+    ],
+    "secret": "Sinan Haugen-Coulibaly is terrified of deep net diving but has built their reputation on it. Uses black-market AI to handle the heavy lifting while taking credit."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, profane, and vivid. Speaks in images — everything is a metaphor for violence or weather.",
+    "cadence": "Conversational and disarming — sounds like a neighbor until the content registers.",
+    "verbal_tics": [
+      "Ends statements with 'yeah?' — not a question, a dare",
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
+    ],
+    "example_lines": [
+      "\"I don't sell information. I sell certainty. Different product, different price.\"",
+      "\"Everything has a value. Most people underestimate what they know.\"",
+      "\"My sources are confidential. My prices are not.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The fixer who handles Sinan Haugen-Coulibaly's contracts goes silent — dead, disappeared, or turned",
+    "A dead drop Sinan Haugen-Coulibaly maintains is found and cleaned out — whoever did it now has leverage",
+    "A corporate black site Sinan Haugen-Coulibaly once infiltrated is being reopened, and the people inside know her face"
+  ],
+  "narrative_function": "Sinan Haugen-Coulibaly represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release. Retractable monofilament whip in left forearm — concealed weapon, devastating in close quarters",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Independent — Narrows-based operations",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 4
+      },
+      "agility": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 7
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 6
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 5
+      },
+      "perception": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 5
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 8
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 4
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 6
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 10
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 5
+      }
+    },
+    "personality": {
+      "aggression": 0.3,
+      "caution": 0.5,
+      "loyalty": 0.22,
+      "greed": 0.79,
+      "empathy": 0.51
+    },
+    "drives": [
+      "power",
+      "justice",
+      "protection"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 8,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "network of reliable contacts",
+      "exceptional close-quarters combat"
+    ],
+    "weaknesses": [
+      "substance dependency — functional but fragile",
+      "emotional volatility under extreme stress",
+      "old injury that flares under specific conditions"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "broker",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Always has an exit route planned before agreeing to any meeting",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Never discusses active contracts with anyone not directly involved"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Insists they work alone but performs noticeably better in a team",
+      "Values loyalty intensely but has betrayed someone in the past to survive",
+      "Advocates caution to others but takes insane risks personally — double standard they can't see"
+    ],
+    "habits": [
+      "Never drinks anything they didn't see poured or open themselves",
+      "Practices a kata or fighting form every morning regardless of circumstances",
+      "Eats the same meal before every job — superstition masquerading as preference"
+    ],
+    "breaking_points": [
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
+      "Watching someone they trained or mentored die on a job they recommended"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Bioware adrenaline regulator",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
+      "replaces": ""
+    },
+    {
+      "name": "Retractable monofilament whip in left forearm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Retractable monofilament whip in left forearm — concealed weapon, devastating in close quarters",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.7,
+    "Opportunist": 0.6,
+    "Info Broker": 0.6
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

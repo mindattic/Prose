@@ -1,0 +1,170 @@
+{
+  "id": "019d6143a60a7ffea9838a6ecd0c601a",
+  "type": "character",
+  "name": "Ezekias Mbonimpa-Torgilsson",
+  "aliases": [
+    "Zeke",
+    "Old Splice"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Retired Ferrogate Transit line worker and former union shop steward",
+  "age": 71,
+  "status": "active",
+  "location": "The Shelf — Apartment 4-Foxtrot, above the Deepline Transit node on Kamm's Landing spur",
+  "description": "Ezekias is a tall man who has lost some of his height to the years, still broad through the chest, with a jaw like a shelf bracket and deep-set eyes the color of old teak. His left arm from the elbow down is a working-class prosthetic, dull grey titanium alloy with knuckles worn smooth — a replacement for the arm he lost to a coupling accident on the Ferrogate Menomonee extension in 2171. He never upgraded it because, as he puts it, a fancy arm would mean they'd won something. A Ferrogate ID badge from 2168 hangs from his keychain by habit though it expired decades ago. His face carries the kind of weathering that comes from thirty years on elevated rail platforms in Lake Michigan wind.\n\nHe is gregarious and loud and immediately likable, the sort of man who fills a room by breathing in it, who remembers the names of everyone's children and the coffee order of every regular at his building's shared kitchen. But beneath the bonhomie is a man who spent twenty years fighting a company that considered him a maintenance expense, and he has never quite stopped being angry about it. He channels the anger into Tenants' Council meetings and into mentoring younger workers, but it is always there, warm and patient.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.6,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "That the next generation won't fight for themselves and will just accept whatever the corponations offer",
+      "That the arm he lost meant nothing in the end"
+    ],
+    "core_desires": [
+      "To see the Tenants' Council win something real before he dies",
+      "To be remembered as someone who stood his ground"
+    ],
+    "coping_mechanisms": [
+      "Social connection and humor as armor",
+      "Keeping busy with council work to avoid sitting with grief"
+    ],
+    "blind_spots": [
+      "Assumes collective action always works if people just try hard enough",
+      "Underestimates how much his stubbornness alienates potential allies"
+    ],
+    "secret": "During the 2178 Menomonee Strike he accepted a secret side payment from a Tessera labor consultant who wanted Ferrogate destabilized for corporate reasons — he used the money to keep the strike fund solvent for six more weeks, which won the workers their safety settlement, but the money was dirty and he has never admitted where it came from. Two workers lost their jobs when Ferrogate suspected an informant and he has always feared they blamed the wrong person."
+  },
+  "speech_patterns": {
+    "vocabulary": "Working-class vernacular; union meeting procedural language mixed into casual conversation; Burundian Swahili and Icelandic loanwords from his grandparents' generation",
+    "cadence": "Loud and rhythmic, like a man used to talking over machinery; pauses for effect rather than uncertainty",
+    "verbal_tics": [
+      "'Point of order—'",
+      "'I'll tell you exactly what happened'",
+      "Knocking knuckles of his prosthetic on tables when making a point"
+    ],
+    "example_lines": [
+      "'Point of order — Ferrogate has been telling us the pension adjustment is temporary since before you were born, so let's not pretend we're surprised.'",
+      "'You want to know what the strike was like? It was cold. That's what no one puts in the histories. Just absolutely freezing, standing on the Menomonee platform for six weeks.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Ferrogate Transit is attempting to reclassify his pension tier, which would cut his monthly stipend by Φ40 — he needs help navigating the appeal process and suspects the reclassification is being done to a list of former union leaders specifically",
+    "He discovers that one of the young Tenants' Council members has been reporting their meeting agendas to building management and must decide how to handle it without destroying the council"
+  ],
+  "narrative_function": "Labor history source; connector who knows everyone in Kamm's Landing and most of the Shelf; can mobilize tenant resistance or community action; potential quest giver for disputes with Ferrogate or building management corponation proxies",
+  "augmentations": "Left forearm prosthetic (titanium, basic-grade, worn); nicotine scrubber implant (inactive, he started again anyway); old joint-pain management mesh in both knees",
+  "daily_life": "Mornings he makes coffee for whoever wanders into the shared kitchen and reads the overnight transit bulletins out of habit; afternoons he runs Tenants' Council business, argues with building management, and plays card games called Quanta-Flush with three other retirees in the Shelf common room.",
+  "affiliation": "Kamm's Landing Tenants' Council (treasurer); Ferrogate Retired Workers Mutual (pension advocacy); formerly Ferrogate Transit labor union, shop steward for Menomonee Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 5
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 4,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 4,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "labor organizer",
+      "community anchor",
+      "Corporate Wars adjacent",
+      "pension dependent",
+      "loud and warm"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always vote with the group even when you disagree — then fight it out in the next meeting",
+      "Never cross a picket line for any reason",
+      "Give younger people room to lead even when they're doing it wrong"
+    ],
+    "escalation_ladder": [
+      "Friendly conversation and information gathering",
+      "Formal complaint via council process",
+      "Public meeting and community pressure",
+      "Work stoppage or rent strike coordination",
+      "Personal confrontation, loud and documented"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and inclusive, assesses their politics within five minutes",
+      "friends": "Treats them like family, which means he will also argue with them at volume"
+    },
+    "stress_responses": {
+      "low": "Makes more coffee, talks more",
+      "medium": "Calls an emergency council meeting",
+      "high": "Goes quiet for about an hour, then comes back with a plan that is slightly too aggressive"
+    },
+    "contradictions": [
+      "Preaches collective transparency while holding a secret that defined the most important moment of his career"
+    ],
+    "habits": [
+      "Carries the expired Ferrogate badge everywhere",
+      "Leaves a small offering of a transit token at the building's E.L.F. shrine every Monday — a practice from the old Deepline workers"
+    ],
+    "breaking_points": [
+      "Watching someone be evicted without a fight; being told the union was wrong to strike"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

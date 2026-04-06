@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a6fb714abba8644d2538dc76",
+  "type": "character",
+  "name": "Tiare Sjostrom-Kwarteng",
+  "aliases": [
+    "Moth",
+    "The Professional"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Aerial extraction and rapid transit pilot — getaway pilot",
+  "age": 33,
+  "status": "active",
+  "location": "Crucible Square — open-air market, Tier 1-2 commerce",
+  "description": "Tiare Sjostrom-Kwarteng are athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 33, they have soft features that belie the chrome underneath — people underestimate them once, usually only once. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and they make no effort to hide it.\n\nThey came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see them surpass them. They work as a getaway pilot out of Crucible Square, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Tiare Sjostrom-Kwarteng lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.73,
+      "ideal": 0.67,
+      "id": 0.81,
+      "shadow": 0.63,
+      "mask": 0.67,
+      "ghost": 0.91
+    },
+    "core_fears": [
+      "Dying alone in some alley and nobody noticing for weeks",
+      "Betrayal by someone they trust — the only currency that matters",
+      "Losing control of their own body to a hacker or malfunctioning cyberware"
+    ],
+    "core_desires": [
+      "To find the person who burned them and make it educational",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Control — over their body, their schedule, their future"
+    ],
+    "coping_mechanisms": [
+      "Exercises compulsively — the body must be ready, always",
+      "Ritual — follows the same pre-job routine every time, superstition as structure",
+      "Maintains weapons obsessively — cleaning guns is meditation"
+    ],
+    "blind_spots": [
+      "Fails to notice when their own behavior mirrors the people they despise",
+      "Cannot distinguish between caution and cowardice in themselves or others",
+      "Assumes the worst in corporate people, missing the rare ones who could be allies"
+    ],
+    "secret": "Tiare Sjostrom-Kwarteng witnessed a massacre during a corporate dispute and has evidence stored in a dead drop. Publishing it would expose powerful people. Keeping it is leverage and liability."
+  },
+  "speech_patterns": {
+    "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
+    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
+    "verbal_tics": [
+      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
+      "Calls money 'weight' — as in 'that job doesn't carry enough weight'"
+    ],
+    "example_lines": [
+      "\"Vertical extraction in thirty seconds. Don't be late.\"",
+      "\"I fly things that aren't supposed to fly in places they aren't supposed to go.\"",
+      "\"Airspace regulations are for people who file flight plans. I don't file flight plans.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Tiare Sjostrom-Kwarteng intercepts intelligence about a threat to their district and must decide between profit and protection",
+    "A crew member from Tiare Sjostrom-Kwarteng's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "Tiare Sjostrom-Kwarteng's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
+  ],
+  "narrative_function": "As a getaway pilot, Tiare Sjostrom-Kwarteng embodies the tension between independence and isolation. They are a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Subdermal weapon mount — pop-out blade in each forearm. Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
+  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+  "affiliation": "Semi-independent — has standing arrangements with several crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 8
+      },
+      "agility": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 5
+      },
+      "reflexes": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 7
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 5
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 10
+      },
+      "willpower": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 4
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 7
+      },
+      "intimidation": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 7
+      },
+      "deception": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 7
+      },
+      "empathy": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 5
+      }
+    },
+    "personality": {
+      "aggression": 0.27,
+      "caution": 0.46,
+      "loyalty": 0.83,
+      "greed": 0.26,
+      "empathy": 0.97
+    },
+    "drives": [
+      "revenge",
+      "justice",
+      "survival"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 7,
+      "loyalty_break": 10
+    },
+    "strengths": [
+      "strategic thinking under pressure",
+      "natural leadership presence"
+    ],
+    "weaknesses": [
+      "risk-averse to the point of missed opportunities",
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "old injury that flares under specific conditions"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "getaway pilot",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Never discusses active contracts with anyone not directly involved",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Will not take contracts against children or families — the line is hard and non-negotiable"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Presents as emotionless professional but is deeply affected by collateral damage"
+    ],
+    "habits": [
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Checks exits within 10 seconds of entering any room",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Maintains a dead drop with emergency supplies in three separate districts"
+    ],
+    "breaking_points": [
+      "Learning that a job they completed resulted in mass casualties they weren't told about",
+      "Watching someone they trained or mentored die on a job they recommended"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal weapon mount",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Subdermal weapon mount — pop-out blade in each forearm",
+      "replaces": ""
+    },
+    {
+      "name": "Synthetic blood with oxygen-carrying nanites",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Improviser": 0.9,
+    "Risk Taker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

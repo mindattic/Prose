@@ -1,0 +1,48 @@
+{
+  "id": "019d6143a86d7502bc94e4b95780e590",
+  "name": "Sterling-Nakamura Holographic Business Card HBC-1",
+  "brand_name": "Sterling",
+  "product_name": "Sterling-Nakamura Holographic Business Card HBC-1",
+  "type": "equipment",
+  "aliases": [
+    "HBC-1",
+    "Holo Card",
+    "Smart Card",
+    "Sterling Card"
+  ],
+  "category": "tools",
+  "description": "A credit-card-sized device that projects a small holographic display containing the owner's identity information, professional credentials, and an encrypted contact protocol. The HBC-1 is Sterling-Nakamura's standard-issue networking tool for corporate personnel — when two HBC-1 cards are brought within 5 cm of each other, they exchange encrypted identity packets and establish a secure communication channel between the owners' Diaspora profiles. The holographic display can be customized with corporate branding, animated logos, and interactive elements. What makes the HBC-1 notable in security circles is that its exchange protocol has been exploited to deliver malware payloads — a handshake with a modified HBC-1 can inject code directly into the recipient's Diaspora profile.",
+  "manufacturer": "STERLING-NAKAMURA",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted — commercial product",
+  "base_technologies": [],
+  "specifications": {
+    "display": "Holographic projection",
+    "info": "5x3 cm",
+    "data exchange": "Encrypted NFC at 5 cm range",
+    "communication channel": "Establishes secure Diaspora link",
+    "data capacity": "Identity packet + credential verification",
+    "battery": "6-month standby",
+    "weight": "0.01 kg",
+    "form factor": "Standard credit card dimensions",
+    "customization": "Corporate branding and animated elements"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A weaponized HBC-1 was used to deliver a Diaspora profile exploit during a networking event — every person who exchanged cards with the attacker had their secure communications compromised.",
+    "A collection of HBC-1 cards found at a crime scene contains encrypted data packets that, when assembled in sequence, form a complete intelligence dossier on a corporate target."
+  ],
+  "tags": [
+    "tools",
+    "equipment",
+    "weapon",
+    "war",
+    "crime",
+    "identity",
+    "ai",
+    "corporate",
+    "tier 2"
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "id": "019d6143a68d7483bc839808ec8e07f3",
+  "type": "character",
+  "name": "Ottoline Dembélé-Vásárhelyi",
+  "aliases": [
+    "Otti",
+    "The Spice Ghost"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Food stall operator and unlicensed street pharmacist",
+  "age": 58,
+  "status": "active",
+  "location": "The Alban Souk, Ironvein",
+  "description": "Ottoline is a broad-shouldered woman with deep umber skin mapped in pale vitiligo patches across her neck and hands, which she has leaned into with bioluminescent dye injections that make the pale patches glow faint amber in low light. Her silver-threaded locs are pinned up under a faded yellow wrap, and she wears three mismatched earrings in her left ear — one a tiny copper spoon, one a data-chip casing, one a dried seed pod she claims came from her grandmother's garden in Bamako. She smells permanently of fenugreek, chili oil, and something chemical underneath that doesn't belong in a kitchen.\n\nOttoline has operated her stall — officially a Sahelian-Hungarian fusion breakfast stand — for nineteen years in the same corner of the Alban Souk. She is the kind of woman who knows every vendor by name and every vendor's trouble. Her warmth is genuine but calibrated: she gives freely, but she tracks every gift. Her real side business, the pharmaceutical one, she conducts with the same domestic warmth — 'Just a little something for the pain, yes? Eat first.'",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.6,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Losing the stall — the only thing still hers",
+      "Becoming someone her dead daughter would not recognize"
+    ],
+    "core_desires": [
+      "To matter to the people around her",
+      "To die having done more good than harm"
+    ],
+    "coping_mechanisms": [
+      "Feeding people as an act of emotional control",
+      "Cataloguing debts and favors to feel secure"
+    ],
+    "blind_spots": [
+      "Believes her pharmaceutical work is harm reduction, not harm creation",
+      "Underestimates how much people fear her quiet power"
+    ],
+    "secret": "The compound she sells as a 'sleep aid' has a secondary effect she discovered accidentally — at low doses it suppresses the emotional overlay of certain neural augmentations, giving corp-wired workers a few hours of unmonitored feeling. She does not fully understand what she's selling, only that people come back desperate for more."
+  },
+  "speech_patterns": {
+    "vocabulary": "A warm blend of West African French cadences, Hungarian diminutives picked up from her late husband's family, and Souk pidgin. Uses food metaphors constantly.",
+    "cadence": "Unhurried, melodic, with long pauses before important things.",
+    "verbal_tics": [
+      "'Sit, sit first'",
+      "'You look thin'",
+      "Clicks her tongue twice before disagreeing with someone"
+    ],
+    "example_lines": [
+      "'You want information? Fine, fine — but you eat something first, you look like a wire with skin on it.'",
+      "'I don't sell trouble. I sell relief. The trouble was already there, yes? I just make it quieter for a little while.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A regular customer — a Tessera mid-tier worker — has stopped coming for their usual order. Ottoline is worried and will pay someone discreetly to find out why.",
+    "The Sable Crew wants her to start cutting her compound with a cheaper synthetic. She refuses. This is becoming dangerous."
+  ],
+  "narrative_function": "Quest giver, information broker, local moral anchor, street pharmacy access point. She knows everyone in Ironvein and remembers everything. Players seeking intel about the Souk or the neighborhood will find her invaluable — if they eat something first.",
+  "augmentations": "Bioluminescent dye in vitiligo patches (cosmetic). Arthritic joint suppressors in both wrists — functional necessity. Scent glands lightly enhanced to help her identify compounds by smell.",
+  "daily_life": "Up before dawn to source ingredients from the Souk's back-channel suppliers, she has her first customers by 06:00 and the pharmaceutical window opens after 10:00, handled through 'special orders' wrapped in wax paper alongside the food. She closes at dusk and spends evenings updating her mental ledger of who owes her what.",
+  "affiliation": "Independent; pays protection to the Oxidian Market vendors guild and a loose arrangement with the Ironvein Sable Crew",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -2,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "street pharmacist",
+      "information hub",
+      "maternal archetype",
+      "Souk elder",
+      "covert chemist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Feed someone before asking anything of them",
+      "Never sell to anyone who looks under twenty",
+      "Always know the nearest exit"
+    ],
+    "escalation_ladder": [
+      "Warm deflection and subject change",
+      "Pointed silence and a look that communicates everything",
+      "A quiet word to the Sable Crew",
+      "Disappears from the stall for several days — a known signal that something is wrong"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately maternal, offering food, reading them like an ingredient list",
+      "friends": "Deep loyalty, will give more than is wise, tracks favors obsessively"
+    },
+    "stress_responses": {
+      "low": "Cooks more elaborate dishes, hums to herself",
+      "medium": "Becomes very quiet and very precise in her movements",
+      "high": "Removes her earrings one by one, which regulars know means trouble is close"
+    },
+    "contradictions": [
+      "Fiercely anti-corporate in her politics but accepts corporate scrip without complaint",
+      "Claims she doesn't get attached — is visibly, deeply attached to dozens of people"
+    ],
+    "habits": [
+      "Tastes every batch of her compounds before selling them",
+      "Keeps a small data-tile behind her stall with her daughter's voice recorded on it — plays it at closing time"
+    ],
+    "breaking_points": [
+      "Harm coming to someone young who trusted her",
+      "Being made to choose between the stall and a person she loves"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Ironvein district to a Malian father and a Hungarian-Malian mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Lost her daughter Adama to a contaminated batch from a rival street pharmacist — began her own pharmaceutical work to 'do it right'",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Married Zoltán Vásárhelyi, a scrap merchant; widowed 2195",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opened the food stall after losing her warehouse job in a Tessera restructuring",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

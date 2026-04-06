@@ -1,0 +1,71 @@
+{
+  "id": "019d6143a85c71f3932b78ea63cd8502",
+  "name": "Helix Biosystems Olfactory Gradient Probe",
+  "brand_name": "Helix",
+  "product_name": "Helix Biosystems Olfactory Gradient Probe",
+  "type": "equipment",
+  "aliases": [
+    "OGP",
+    "the Bloodhound",
+    "Smell Stick",
+    "Gradient Wand"
+  ],
+  "category": "sensor",
+  "description": "The Olfactory Gradient Probe is a handheld chemical plume detection and source-location instrument that uses an array of 2,400 synthetic chemoreceptor filaments to identify, classify, and triangulate the origin point of airborne chemical signatures. Unlike conventional gas detectors that simply alert to the presence of a substance, the OGP maps concentration gradients across space — effectively 'smelling' which direction a scent is getting stronger — and uses that gradient data to compute a vector toward the emission source. The chemoreceptor array is modeled on vertebrate olfactory epithelium but operates at a sensitivity roughly 80 times greater than baseline human olfaction, capable of detecting compounds at parts-per-trillion concentrations.\n\nHelix Biosystems engineered the OGP originally for pharmaceutical contamination tracing in clean-room environments, but the probe's utility in field applications became rapidly apparent. The device can identify over 14,000 indexed chemical signatures including explosives precursors, specific pharmaceutical compounds, biological markers associated with stress responses (adrenaline metabolites, cortisol derivatives present in sweat), and the proprietary chemical tracers used by several major corporations to mark restricted personnel and assets. A rolling update subscription keeps the chemical index current. The probe's interface presents gradient data as a directional compass overlay with confidence percentages, and can log a full chemical environment profile for later forensic analysis.\n\nThe OGP occupies an uncomfortable legal space in Meridian 88. Its capacity to detect stress-chemistry signatures means it can effectively identify frightened or nervous individuals in a crowd — a capability that law enforcement, corporate interrogators, and bounty hunters find enormously attractive and civil liberties advocates find deeply troubling. Helix markets it carefully as an 'industrial and forensic instrument,' but its presence in less scrupulous hands is an open secret.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Synthetic chemoreceptor filament arrays",
+    "Chemical plume gradient mapping",
+    "Concentration vector triangulation",
+    "Biological stress-marker detection",
+    "Indexed chemical signature library (subscription-updated)"
+  ],
+  "specifications": {
+    "chemoreceptor_count": "2,400 synthetic filaments",
+    "detection_sensitivity": "Parts-per-trillion for indexed compounds",
+    "chemical_index_size": "14,000+ indexed signatures (base); subscription expands coverage",
+    "detection_range": "Active sampling to 15m; gradient source triangulation to 60m in still air",
+    "triangulation_accuracy": "±3 degrees bearing, ±8m distance at 60m range",
+    "biological_markers": "Adrenaline metabolites, cortisol derivatives, fear-sweat compound profiles",
+    "corporate_tracer_database": "47 known corporate tracer compounds (current subscription)",
+    "interface": "Directional compass overlay with confidence percentage, chemical ID readout",
+    "logging": "Full chemical environment profile capture for forensic export",
+    "dimensions": "280mm x 45mm x 35mm (wand form factor)",
+    "weight": "340g",
+    "battery_life": "18 hours continuous operation",
+    "operating_conditions": "0°C to 45°C; humidity 10–95% non-condensing"
+  },
+  "tactical_use": "Operators use the OGP to sweep rooms for hidden individuals using stress-chemistry signatures before entry, trace the path of a target through a space by following adrenaline-metabolite trails, and detect concealed explosives or contraband by identifying precursor compounds. Bounty hunters use it to locate hiding targets in complex environments. Corporate security teams use it to identify unauthorized personnel carrying proprietary chemical tracers. Forensic investigators use it to reconstruct who was present in a space and their approximate physiological state during an incident.",
+  "cultural_context": "The OGP has generated significant cultural anxiety in Meridian 88's lower districts, where residents fear corporate security teams sweeping public spaces for stress markers — effectively scanning crowds for anyone nervous enough to be flagged as suspicious. 'Running hot' has become street slang for displaying stress chemistry that would register on a Bloodhound scan. Some underground pharmacies sell compounds that temporarily suppress adrenaline metabolite production, marketed euphemistically as 'calm supplements.' The device is both a serious professional instrument and a symbol of invasive surveillance overreach depending entirely on who's holding it.",
+  "known_users": [
+    "Helix Biosystems internal security and R&D compliance teams",
+    "Corporate forensic investigation units",
+    "Licensed bounty hunters and skip-tracers",
+    "Meridian 88 narcotics enforcement (licensed units)",
+    "High-end private investigators",
+    "Underground counter-surveillance consultants (to understand what clients face)"
+  ],
+  "story_hooks": [
+    "A character discovers their safe house has been swept by an OGP — whoever did it now has a full chemical profile of everyone who was present, including stress states during specific moments",
+    "A street pharmacist is selling 'calm supplements' that actually suppress OGP-detectable markers — corporate security wants to know who's supplying counter-measure drugs to the population",
+    "An OGP sweep at a corporate gala identifies a specific attendee as carrying a proprietary tracer belonging to a rival corporation — but the attendee claims never to have worked for that corp",
+    "A character needs to move through a corporate facility where OGP sweeps are conducted — they have 18 minutes to find a route before the device's battery logs are transmitted to security central"
+  ],
+  "tags": [
+    "sensor",
+    "equipment",
+    "war",
+    "secret",
+    "ai",
+    "synthetic",
+    "corporate",
+    "surveillance",
+    "compute",
+    "market",
+    "drug",
+    "explosive",
+    "tier 2"
+  ]
+}

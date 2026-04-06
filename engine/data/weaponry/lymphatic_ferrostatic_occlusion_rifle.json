@@ -1,0 +1,60 @@
+{
+  "id": "019d6143ab317643abe51627804d311b",
+  "name": "Lymphatic Ferrostatic Occlusion Rifle",
+  "type": "weapon",
+  "aliases": [
+    "LFOR-3",
+    "Swellmaker",
+    "Stonewood"
+  ],
+  "category": "cyber",
+  "description": "The LFOR-3 delivers a payload of magnetically responsive ferrofluid nanoparticles via a pressurized aerosol bolt that disperses on skin contact and penetrates subcutaneously through follicular and sweat gland channels. Once embedded in the subcutaneous tissue, an external magnetic pulse from the rifle's secondary emitter aligns and compacts the particles within lymphatic capillaries, causing immediate mechanical occlusion. The resulting blockage triggers rapid localized lymphedema — extreme fluid accumulation in the affected limb or region.\n\nThe swelling is not merely cosmetic. Within minutes, the pressure in occluded tissue exceeds compartment syndrome thresholds, causing excruciating pain, loss of motor function, and if untreated, tissue necrosis. The weapon can be tuned to affect a single limb or, with a wider dispersal bolt, to seed multiple lymphatic regions simultaneously. Unlike many exotic weapons in its class, the LFOR-3 is deliberately designed for survivability — the manufacturer positions it as a 'non-lethal incapacitation system' — though death from secondary infection or untreated compartment syndrome is common in populations without access to quality medical care.\n\nHelix Biosystems developed the ferrostatic occlusion mechanism from research into targeted lymphatic drug delivery. The weaponized application was funded through a subsidiary with deliberately obscured corporate parentage. The rifle is now quietly distributed to private security firms as a 'humane deterrent,' with Helix maintaining that adverse outcomes are the result of inadequate post-exposure medical response rather than the weapon itself.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Tier 3+ (private security license), Black market",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Ferrofluid subcutaneous delivery",
+    "External magnetic pulse alignment",
+    "Lymphatic mechanical occlusion"
+  ],
+  "specifications": "effective range: 5–35 meters\nbolt type: Pressurized aerosol dispersal, contact-detonated\nparticle payload: 0.4 mL ferrofluid suspension per bolt\nmagnetic pulse range: Up to 20 meters post-dispersal\nmagazine capacity: 12 bolts\nonset time: Swelling visible within 90 seconds, incapacitation within 4–7 minutes\nweight: 2.6 kg loaded\nreversal: Magnetic dispersal wand (sold separately, Helix Biosystems)",
+  "tactical_use": "Corporate security teams deploy the LFOR-3 for crowd incapacitation at entry control points, targeting the legs to drop subjects without lethal force. In coercive interrogation contexts, operators target the hands and face to maximize distress. The magnetic dispersal wand — which reverses the occlusion — is used as a bargaining tool during detentions. Skilled operators can target specific limbs with the narrow-cone bolt to selectively incapacitate without affecting mobility entirely.",
+  "cultural_context": "Stonewood has become notorious in Meridian 88's poorer districts, where private security firms use it liberally at corporate-owned transit hubs and housing estates. The term 'got stoned' refers to being shot by the LFOR-3, and the distinctive puffy, hard-skinned appearance of untreated lymphedema victims — those who couldn't afford or access the dispersal wand — is visible enough on the streets that it has become a marker of class victimhood. Helix Biosystems' ongoing PR positioning of the weapon as 'humane' is a source of bitter public satire.",
+  "known_users": [
+    "Palladian Construction private security (estate enforcement)",
+    "Corporate transit hub enforcement contractors",
+    "Kidnap-and-ransom specialists",
+    "Outerring detention facility staff",
+    "Mira Osei, a bounty hunter who prefers live captures"
+  ],
+  "story_hooks": [
+    "A district health worker is documenting an epidemic of untreated lymphedema cases in a corporate housing estate �� she needs help getting the evidence out before Helix Biosystems' lawyers bury it.",
+    "A stolen shipment of dispersal wands is being held ransom by a gang who understand exactly what leverage they have over people who've been shot with Stonewood.",
+    "A player character is hit with the LFOR-3 during a routine job gone wrong and has hours to find a dispersal wand before permanent tissue damage sets in.",
+    "Helix Biosystems is quietly developing a version with a delayed magnetic trigger — meaning victims can be shot and not know it until they're far from the scene."
+  ],
+  "ammunition_type": [
+    "Universal Ferrofluid Suspension Cartridge UFC-40",
+    "energy_cell"
+  ],
+  "tags": [
+    "cyber",
+    "weapon",
+    "gang",
+    "loss",
+    "death",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "ubc",
+    "medical",
+    "pain",
+    "market",
+    "bar",
+    "drug",
+    "energy",
+    "tier 3"
+  ]
+}

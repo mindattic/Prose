@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a5d77904b3ad696d1e2221e6",
+  "type": "character",
+  "name": "Cem Watanabe-Amponsah",
+  "aliases": [
+    "Talon",
+    "The Asset"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Long-range precision fire specialist — sniper",
+  "age": 54,
+  "status": "active",
+  "location": "The Spires — mid-level corporate residential towers",
+  "description": "Cem Watanabe-Amponsah are athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 54, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and they make no effort to hide it.\n\nThey grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. They work as a sniper out of The Spires, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nCem Watanabe-Amponsah have built a reputation on reliability rather than flash — they show up, they deliver, they collect.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.25,
+      "ideal": 0.8,
+      "id": 0.64,
+      "shadow": 0.16,
+      "mask": 0.37,
+      "ghost": 0.49
+    },
+    "core_fears": [
+      "That the work they do makes the city worse, not better",
+      "Dying alone in some alley and nobody noticing for weeks",
+      "Betrayal by someone they trust — the only currency that matters"
+    ],
+    "core_desires": [
+      "To build something that outlasts the next contract cycle",
+      "A crew worth trusting — people who stay when the shooting starts",
+      "The perfect run — one job so clean it becomes legend"
+    ],
+    "coping_mechanisms": [
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Compartmentalization — work feelings and personal feelings exist in separate boxes",
+      "Overwork — takes every contract offered because idleness invites thinking"
+    ],
+    "blind_spots": [
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
+      "Believes their trauma makes them special instead of recognizing it as damage to manage",
+      "Assumes everyone has an angle because they always have an angle"
+    ],
+    "secret": "Cem Watanabe-Amponsah has a child in another city, being raised by someone else. Sends Φ2,000 monthly under an alias. Has never visited."
+  },
+  "speech_patterns": {
+    "vocabulary": "Shelf street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
+    "cadence": "Halting — speaks in fragments, reassembles thoughts in real time.",
+    "verbal_tics": [
+      "Repeats the last thing someone said back to them before responding — processing or intimidation",
+      "Calls everyone 'friend' — the warmth varies from genuine to threatening"
+    ],
+    "example_lines": [
+      "\"Patience is the weapon. The rifle is just the delivery system.\"",
+      "\"At this distance, the target is already dead. They just don't know it yet.\"",
+      "\"One shot, one outcome. Everything else is theater.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A crew member from Cem Watanabe-Amponsah's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A dead drop Cem Watanabe-Amponsah maintains is found and cleaned out — whoever did it now has leverage",
+    "Cem Watanabe-Amponsah discovers a job they completed last year was a setup for something much larger and much worse"
+  ],
+  "narrative_function": "As a sniper, Cem Watanabe-Amponsah embodies the tension between independence and isolation. They are a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Pain editor — dampens pain signals, allows function through injuries that would incapacitate. Retractable monofilament whip in left forearm — concealed weapon, devastating in close quarters",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Independent — Lattice territory specialist",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 8
+      },
+      "agility": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 8
+      },
+      "reflexes": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 4
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 5
+      },
+      "perception": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 8
+      },
+      "willpower": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 10
+      },
+      "technical": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 9
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 8
+      },
+      "deception": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 5
+      },
+      "empathy": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 9
+      }
+    },
+    "personality": {
+      "aggression": 0.95,
+      "caution": 0.79,
+      "loyalty": 0.49,
+      "greed": 0.45,
+      "empathy": 0.37
+    },
+    "drives": [
+      "loyalty",
+      "money",
+      "justice"
+    ],
+    "thresholds": {
+      "pain": 5,
+      "stress": 3,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "mechanical aptitude — can repair or modify almost anything",
+      "multilingual — speaks 4+ languages fluently"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "trust issues that limit crew effectiveness",
+      "substance dependency — functional but fragile"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "sniper",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always has an exit route planned before agreeing to any meeting",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Values loyalty intensely but has betrayed someone in the past to survive",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior"
+    ],
+    "habits": [
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots"
+    ],
+    "breaking_points": [
+      "Losing their primary augmentation — the one that defines their professional identity",
+      "Discovering their employer deliberately sent them into a death trap"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Pain editor",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Pain editor — dampens pain signals, allows function through injuries that would incapacitate",
+      "replaces": ""
+    },
+    {
+      "name": "Retractable monofilament whip in left forearm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Retractable monofilament whip in left forearm — concealed weapon, devastating in close quarters",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Sniper Mind": 0.9,
+    "Ghost": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

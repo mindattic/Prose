@@ -1,0 +1,92 @@
+{
+  "id": "019d6143a927724ba576185a80843da9",
+  "type": "place",
+  "name": "Menomonee Gulch",
+  "aliases": [
+    "Menomonee Valley",
+    "The Gulch",
+    "The Valley",
+    "Ironworks"
+  ],
+  "description": "The Menomonee Valley was an industrial corridor when the word 'industrial' still meant something a city was proud of. Rail yards, tanneries, meatpacking plants, and the heavy manufacturing that made Milwaukee's economy run for a century and a half filled the valley floor from river to river. The industry left. The contamination stayed. The valley floor is a Superfund site that has been 'under remediation' since the early 22nd century, which in practice means the most dangerous chemicals have been contained, the moderately dangerous chemicals have been capped, and the mildly dangerous chemicals have been reclassified as 'background levels' by adjusting the definition of background.\n\nWhat fills the valley now is heavy fabrication — the kind of manufacturing that requires space, tolerates contamination, and doesn't care about aesthetics. Menomonee Gulch is where Milwaukee builds things: structural components for arcology construction, replacement parts for the maglev network, armored vehicle bodies for Ringo and Sentinel North, and the massive atmospheric processing units that keep the Corridor's upper tiers breathable. The work is loud, dirty, and essential. The corporations that operate here — a mix of Axiom subsidiaries, independent contractors, and gray-market fabricators — chose the valley because the land was cheap, the environmental regulations were pre-compromised, and the labor pool in surrounding districts is large and desperate.\n\nThe valley floor is not residential. Nobody lives on a Superfund site voluntarily. The workforce — approximately 25,000 people — commutes from Walker's Landing, Bay View, the South Side, and Sherman Heights, descending into the valley on foot, by transit, and via the improvised cable cars that some enterprising engineer rigged between the valley rim and the factory floors. The commute is the valley's defining social experience: thousands of workers descending and ascending the valley walls twice daily, a human tide flowing into and out of a industrial canyon that glows at night with furnace light and welding arcs.\n\nThe rail infrastructure remains — the valley's original purpose as a rail hub has been adapted for the maglev era, and a freight interchange connects the Gulch's fabrication output to the Corridor's distribution network. The interchange is also, inevitably, a point of vulnerability: a chokepoint where the physical goods that keep M88 functioning are concentrated, sorted, and routed. Anyone who wanted to disrupt the Corridor's material supply chain would start here. Several someones have thought about this. The security presence reflects it.",
+  "atmosphere": {
+    "sights": [
+      "The valley from the rim — a sunken industrial canyon, factory buildings filling the floor, furnace glow and fabrication light reflecting off the permanent haze",
+      "Workers descending the valley walls at shift change — streams of people on footpaths, stairways, and cable cars, backlit by the industry below",
+      "Heavy fabrication visible through open factory bays — massive components being welded, pressed, and assembled at a scale that dwarfs the humans doing it",
+      "The freight interchange — maglev containers being sorted by automated cranes, a mechanical ballet of enormous objects moving with programmed precision",
+      "Contamination markers along the valley floor — yellow hazard posts indicating zones where the remediation hasn't reached and the soil will kill you slowly"
+    ],
+    "sounds": [
+      "Heavy fabrication — the percussion of industrial manufacturing: presses, welders, grinders, and the deep thrum of furnaces that runs twenty-four hours",
+      "The freight interchange — maglev containers coupling and uncoupling, automated cranes announcing their movements with navigation tones",
+      "Shift change — 25,000 people moving simultaneously, their footsteps, conversations, and transit vehicles creating a twice-daily human thunderstorm",
+      "Cable car mechanics — the creak and hum of the improvised valley-rim transit system, designed by someone brilliant and maintained by someone brave",
+      "Warning sirens — contamination alerts, equipment malfunctions, and the occasional actual emergency, all using the same alarm tone because nobody updated the system"
+    ],
+    "smells": [
+      "Metal — hot, worked, and cooling, the smell of fabrication at industrial scale",
+      "Contaminated soil — a chemical bitterness that rises from the valley floor when the ground is disturbed, which is constantly",
+      "Furnace exhaust — particulate and heat, filtered by atmospheric processors that reduce the output to 'acceptable' levels",
+      "River water from both the Menomonee and the drainage channels that carry the valley's runoff — a smell that combines industrial chemistry with biological decay"
+    ],
+    "feel": "Massive, loud, and grimly productive. The Gulch makes things the Corridor needs and does it in conditions the Corridor prefers not to think about. The workers who descend into the valley every day carry the knowledge that the infrastructure supporting millions of comfortable lives above them is built in a contaminated canyon by people who can't afford to live anywhere cleaner. This knowledge does not make them bitter. It makes them precise. The work is dangerous. Doing it badly is more dangerous. The Gulch produces the Corridor's best welders, fabricators, and structural engineers, trained not by institutions but by the daily requirement of not dying.",
+    "tags": []
+  },
+  "demographics": "No permanent residential population — the valley floor is an industrial zone. Workforce of approximately 25,000 commuting from surrounding districts. Workers are predominantly Tier 1-2, drawn from Walker's Landing, Bay View, the South Side, and Sherman Heights. Demographic profile reflects those communities: majority Latino and Black, with significant Southeast Asian and displacement populations.",
+  "economy": "Heavy fabrication and manufacturing: Φ12 billion in annual output. Structural components, maglev parts, armored vehicles, atmospheric processors. Freight interchange operations. The gray-market fabricators in the valley's less monitored sections produce custom components for clients who value discretion. The workforce earns more than comparable Tier 1-2 employment because the work is harder and the environment is genuinely dangerous — hazard pay is one of the few labor standards that market forces actually enforce.",
+  "power_structure": "The valley's major operators — Axiom Fabrication (largest), Sentinel Industrial, and four independent firms — coordinate through the Menomonee Valley Industrial Consortium, which manages shared infrastructure, security, and the ongoing contamination management that everyone pretends is remediation. The freight interchange is jointly operated by Axiom Logistics and the Milwaukee Administrative Zone's transit authority. Gray-market fabricators in the eastern valley operate outside the consortium's oversight by mutual agreement.",
+  "dangers": [
+    "Contamination — the Superfund designation exists for a reason, and 'remediation' is an ongoing process that has not yet made the valley floor safe for extended human presence",
+    "Industrial accidents — heavy fabrication kills approximately forty workers per year in the Gulch, a number the consortium considers 'within acceptable parameters'",
+    "The commute — descending and ascending the valley walls on improvised infrastructure in all weather conditions is itself a safety hazard",
+    "Security — the freight interchange's strategic importance means the security presence is substantial and the security personnel are authorized for lethal response",
+    "Gray-market operations — the eastern valley's unsanctioned fabricators serve clients who sometimes have competing interests, and the competition can become physical"
+  ],
+  "opportunities": [
+    "Fabrication capacity — the Gulch can build almost anything, and the gray-market section will build it without questions",
+    "Freight interchange access — the chokepoint for M88's material supply chain passes through the Gulch, and access to it is access to the Corridor's physical infrastructure",
+    "Worker networks — 25,000 people who commute from across Milwaukee's working-class districts create an information network that spans the southern sprawl",
+    "Contamination data — the valley's environmental monitoring systems track chemical levels in real time, and that data has forensic applications"
+  ],
+  "story_hooks": [
+    "The freight interchange has been routing containers to a destination that doesn't appear on the official network map — a spur line that leads into the valley's most contaminated zone, where no facility is supposed to operate",
+    "A group of Gulch workers has been exposed to a contaminant that doesn't match the valley's known chemical profile — something new is in the soil, and it didn't get there by accident",
+    "The improvised cable car system has been sabotaged twice in a month, and the pattern suggests someone is trying to control which workers can access the valley — and when"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Walker's Landing (east)",
+      "The South Side (south, along valley rim)",
+      "Sherman Heights (north, along valley rim)",
+      "Brewer's Spine (northeast)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "The 25,000-person industrial workforce — commuting daily from surrounding districts",
+    "Freight interchange operators and logistics personnel",
+    "Gray-market fabrication clients — people who need things built without documentation",
+    "Environmental monitoring teams — the skeleton crew that tracks the valley's contamination levels and files reports that nobody reads"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 43.02,
+    "lng": -87.935,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "ai",
+    "elf",
+    "contract",
+    "control",
+    "alley",
+    "market",
+    "night",
+    "vehicle",
+    "desperate",
+    "armor"
+  ]
+}

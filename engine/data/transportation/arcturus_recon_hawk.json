@@ -1,0 +1,36 @@
+{
+  "id": "019d6143aa5e7cc68d0b1de2b4412257",
+  "name": "Arcturus Recon Hawk",
+  "type": "transportation",
+  "aliases": [
+    "Hawk",
+    "Scout Bird",
+    "Fast Eye"
+  ],
+  "category": "military_security",
+  "manufacturer": "Arcturus Defense",
+  "description": "A high-speed reconnaissance drone capable of crossing the entire city in minutes. Unlike the surveillance-focused Shadow or patrol-focused Sentinel, the Recon Hawk is built for speed — a dart-shaped airframe with folding wings that can be launched from a handheld tube and recovered by net or cable catch. They carry optical and signal-intelligence packages and transmit in real-time. During security operations, Hawks are the first thing in the air and the last thing you want to see overhead.",
+  "propulsion": "Electric ducted fan, tube-launched with booster",
+  "speed": "300 km/h",
+  "capacity": "Sensor payload only",
+  "range": "80 km round trip",
+  "tier_availability": "Military/corporate security",
+  "cost": "Φ8,000 per unit",
+  "autonomy": "Fully autonomous, waypoint navigation, return-to-base",
+  "armament": "None. Observation only.",
+  "common_usage": "Rapid reconnaissance, target tracking, search operations, aerial mapping during incidents.",
+  "story_hooks": [
+    "A Recon Hawk's footage reveals something in the no-fly zone above the old power plant that shouldn't be there — and someone deletes the footage within minutes",
+    "Stolen Recon Hawks are being used by freelancers to scout jobs, giving them an intelligence advantage that corporate security can't explain"
+  ],
+  "tags": [
+    "militarysecurity",
+    "transportation",
+    "ai",
+    "corporate",
+    "surveillance",
+    "power",
+    "shadow",
+    "drone"
+  ]
+}

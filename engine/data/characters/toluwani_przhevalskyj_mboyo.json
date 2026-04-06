@@ -1,0 +1,243 @@
+{
+  "id": "019d6143a70076e5a7e0a82e31b34e32",
+  "type": "character",
+  "name": "Toluwani Przhevalskyj-Mboyo",
+  "aliases": [
+    "Toll",
+    "Mama Toll"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "protection racket enforcer and neighborhood fixer",
+  "age": 51,
+  "status": "active",
+  "location": "South Deering Sump, specifically the Boilerplate Quarter commercial strip",
+  "description": "Toluwani is a large woman who moves with the deliberate economy of someone who learned long ago that size is information and waste is weakness. Her skin is very dark, mapped with a network of old scar tissue on the left forearm that she has never had repaired — she calls it the ledger, because each one corresponds to a lesson, and she is still learning. Her hair is thick and natural, shot through with silver she refuses to cover, worn pulled back for work and loose at home. Her eyes are unmodded warm brown and miss nothing. She has retractable ceramic-composite knuckle caps, practical rather than decorative, and a torso subdermal weave that she describes as 'just common sense at my age.'\n\nShe has worked the Boilerplate Quarter for twenty-three years, first as a runner, then as muscle, then as the person who decides how the Quarter works. She is not precisely in charge of a gang — she is more the load-bearing wall of an informal security arrangement that has kept the Sump's legitimate small businesses from being absorbed by three different Stockyard-adjacent syndicates. She collects her fees, handles disputes, and occasionally applies physical remediation to problems that require it. The shopkeepers mostly think of her the way people think of weather — a constant, sometimes destructive, ultimately just a feature of the environment. A few of them genuinely love her.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.3,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "The Quarter losing coherence — everyone for themselves",
+      "Dying before she's arranged a successor who won't be worse than her"
+    ],
+    "core_desires": [
+      "Stability — not comfort, just stable ground under people's feet",
+      "To be honest with herself about what she is"
+    ],
+    "coping_mechanisms": [
+      "Focuses on immediate concrete problems rather than systemic guilt",
+      "The community shrine — regular ritual gives structure to moral unease"
+    ],
+    "blind_spots": [
+      "Does not see that her fees have increased 30% in five years and are now genuinely burdensome to the smaller stalls",
+      "Believes her successors are ready; they are not"
+    ],
+    "secret": "Fifteen years ago she broke both hands of a young man who'd been skimming — standard remediation. He lost use of his left hand permanently. She found out recently that he is now a Palladian Corporation systems tech with a family in Calumet Rise, doing fine. She does not know whether this makes what she did better or worse and she thinks about it constantly. She has donated anonymously to the Boilerplate Quarter children's learning center every month for fifteen years in a sum that exactly matches what she calculated that young man's wages would have been in a better economy."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct, vernacular, Yoruba-inflected rhythm under the Meridian 88 slang. Economical — says the necessary thing.",
+    "cadence": "Unhurried, even when the subject is urgent. Pauses for emphasis rather than to gather thoughts.",
+    "verbal_tics": [
+      "Calls people 'friend' neutrally — means nothing and everything",
+      "'You hear me?' at the end of important statements",
+      "Refers to her work as 'keeping the piece'"
+    ],
+    "example_lines": [
+      "'I'm not here because I want to be. I'm here because somebody has to be, and it turned out to be me. That's the whole story.'",
+      "'You're new to the strip. That's fine. Here's the arrangement. Φ90 a month, the strip stays clean, your problem becomes my problem. You hear me?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Stockyard syndicate has sent a new representative to renegotiate the non-aggression arrangement — upward, significantly — and Toluwani needs leverage or allies she doesn't currently have.",
+    "One of the shopkeepers she protects has been running a secondary illegal operation she doesn't know about, and the blowback is about to arrive on the strip in a way that implicates her."
+  ],
+  "narrative_function": "Power broker for the South Deering Sump area, potential quest giver or obstacle depending on context, information source on local criminal geography, example of how protection rackets function as informal governance.",
+  "augmentations": "Retractable ceramic-composite knuckle caps. Subdermal torso impact-weave. Hearing augment — high-frequency sensitivity, good for detecting people around corners.",
+  "daily_life": "Walks the strip every morning at 07:00 and 19:00, collects weekly fees on Fridays, mediates commercial disputes Tuesday afternoons, spends Sunday evenings at the Boilerplate Quarter community E.L.F. shrine.",
+  "affiliation": "Independent, with decades-old non-aggression arrangements with Stockyard criminal networks",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Veteran",
+      "Pragmatic-Moral",
+      "Load-Bearing",
+      "Quietly Guilty",
+      "Respected"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Handle it at the lowest necessary level — don't escalate problems if they can be resolved small",
+      "Never make an example of someone who can't absorb the message",
+      "Protect the strip first; personal grievances are secondary"
+    ],
+    "escalation_ladder": [
+      "Conversation — explains the situation clearly, offers resolution",
+      "Second conversation, with someone else present as witness",
+      "Demonstration of consequences: property, not people, first",
+      "Physical remediation — calibrated, never fatal if avoidable"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Watchful and neutral — assesses purpose before warmth, but not cold",
+      "friends": "Steady, reliable, shows up without being asked, remembers names of children"
+    },
+    "stress_responses": {
+      "low": "Gets quieter, more observational",
+      "medium": "Delegates all non-essential tasks, focuses",
+      "high": "Moves — physical activity, walking the strip, hands working — cannot sit still under high stress"
+    },
+    "contradictions": [
+      "Speaks about honesty and fair dealing while running a protection racket; genuinely cannot reconcile these and doesn't try"
+    ],
+    "habits": [
+      "Sunday evening offerings at the community E.L.F. shrine — always data records of conflicts resolved peacefully that week",
+      "Keeps a written list of people she's hurt and their current known status",
+      "Eats the same breakfast every day from the Tofah Stall, has for twenty years"
+    ],
+    "breaking_points": [
+      "If a child on the strip is harmed — immediate and total escalation",
+      "If someone tries to use the shrine E.L.F. against her community"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Retractable ceramic-composite knuckle caps (both hands)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Retractable ceramic-composite knuckle caps (both hands)",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal torso impact-weave (medium grade, 10-year-old install)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal torso impact-weave (medium grade, 10-year-old install)",
+      "replaces": ""
+    },
+    {
+      "name": "High-frequency hearing augment (both ears)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "High-frequency hearing augment (both ears)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Opportunist": 0.9,
+    "Pragmatist": 0.9,
+    "Enforcer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2149 — Born in South Deering Sump, Yoruba-Ukrainian-Congolese family heritage",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2165 — First work as runner for Boilerplate Quarter arrangement",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2177 — Became primary enforcer after her predecessor retired injured",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2184 — Negotiated non-aggression arrangement with three Stockyard syndicates",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2185 — Incident with the young man, later identified as the turning point in her self-understanding",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

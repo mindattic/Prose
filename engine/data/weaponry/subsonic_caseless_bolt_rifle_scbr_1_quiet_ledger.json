@@ -1,0 +1,59 @@
+{
+  "id": "019d6143ab4e7da289137fbe7e6494be",
+  "name": "Subsonic Caseless Bolt Rifle SCBR-1 'Quiet Ledger'",
+  "type": "weapon",
+  "aliases": [
+    "Quiet Ledger",
+    "The Accountant",
+    "SCBR",
+    "Whisper Bolt",
+    "Ledger"
+  ],
+  "category": "firearm",
+  "description": "The SCBR-1 fires a 12.7mm caseless subsonic round using a precision-engineered linear combustion chamber that burns propellant so completely and at such controlled pressure that the muzzle report is reduced to approximately 118 dB without any suppressor — well below the threshold of conventional recognition as a gunshot. Combined with an integrated wet suppressor that uses a sealed liquid baffle system, the total acoustic signature drops to 94 dB: audible at close range but indistinguishable at distance from mechanical noise, HVAC systems, or street clutter. The caseless ammunition eliminates ejection noise entirely, and the manually-operated rotary bolt produces only the soft mechanical click of cycling. At 200 meters in an urban environment, the weapon is functionally silent.\n\nThe SCBR-1 was developed by RINGO CORPONATION's advanced projects division under a research contract originally framed around 'acoustic security assessment tools' — a designation that allowed the project to proceed without triggering weapons development review boards. The weapon's 12.7mm subsonic round was engineered specifically to maintain terminal effectiveness despite reduced velocity: the projectile uses a dense tungsten core with a controlled-deformation polymer jacket that produces consistent expansion at subsonic speeds, maintaining wound ballistics comparable to a standard supersonic 7.62mm round. The trade-off is range — effective precision fire is limited to approximately 300 meters, beyond which the heavy subsonic projectile drops steeply.\n\nThe weapon's name comes from its role in RINGO CORPONATION's internal mythology as the instrument of quiet corporate accounting — the settling of debts that cannot be settled openly. It is a precision rifle in the traditional sense, manually cycled, requiring a shooter who understands patience and positioning. The wet suppressor requires replacement of the liquid baffle cartridge every 30 shots, and the caseless ammunition is proprietary to RINGO's supply chain, meaning operators must maintain a relationship with RINGO's logistics network to stay armed.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Caseless combustion propulsion",
+    "Liquid baffle acoustic suppression",
+    "Controlled-deformation subsonic projectile engineering"
+  ],
+  "specifications": "caliber: 12.7x55mm subsonic caseless\nfeed system: 5-round internal box magazine, top-load stripper clip\naction: Manual rotary bolt\nmuzzle velocity: 310 m/s\neffective range: 300m (precision), 500m (area fire)\nacoustic signature: 118 dB unsuppressed, 94 dB with integrated wet suppressor\nwet suppressor service interval: 30 shots per baffle cartridge replacement\nweight: 4.4 kg with suppressor and empty magazine\ndimensions: 940mm (deployed), 680mm (folded stock)\nammunition source: RINGO CORPONATION proprietary supply only",
+  "tactical_use": "The SCBR-1 is a dedicated precision assassination and long-range interdiction weapon used in urban environments where conventional suppressed fire would still be acoustically detectable. Operators use it from elevated positions — rooftops, upper-floor windows, parking structures — at ranges of 150 to 300 meters against single high-value targets. The manual bolt action requires the operator to be unhurried and certain, as follow-up shots take 2-3 seconds. Most engagements involve one or two rounds. The weapon's proprietary ammunition supply chain creates a natural operational security footprint: anyone using a SCBR-1 is necessarily connected to RINGO CORPONATION's logistics network, which means RINGO always knows when one of their rifles has been used.",
+  "cultural_context": "In Meridian 88, the 'Quiet Ledger' is understood as RINGO CORPONATION's signature. When a high-profile figure dies from what forensics eventually identifies as a 12.7mm subsonic caseless round, the city's professional class understands immediately: RINGO has called in an account. The weapon's proprietary ammunition is a deliberate strategic choice — it makes the SCBR-1 an instrument of traceable corporate power rather than deniable street violence. RINGO does not deny this. The implicit message is that if you know the weapon exists, you know who sent it. Among the city's mid-tier power brokers, receiving intelligence that a SCBR-1 has been acquired by someone in your circle is a clear warning that a debt or a threat has reached the point of terminal resolution.",
+  "known_users": [
+    "RINGO CORPONATION sanctioned elimination teams",
+    "Senior fixers operating under RINGO contracts",
+    "Former RINGO operatives who retained their weapons (unauthorized)",
+    "Rival corporate intelligence units (captured units, ammunition supply limited)",
+    "High-end independent assassins with RINGO supply chain access"
+  ],
+  "story_hooks": [
+    "A SCBR-1 round is recovered from an assassination scene, but RINGO CORPONATION claims no sanctioned operation was active — either someone is lying at the executive level or a rogue operative has gone off-ledger",
+    "The proprietary ammunition supply chain has been compromised: someone is manufacturing counterfeit RINGO caseless rounds, and the first time a fake round fails in a SCBR-1, the resulting misfire will kill the shooter — who may be a player character",
+    "An operator who used a SCBR-1 on a RINGO contract has realized that the weapon's ammunition trail means RINGO can tie them to every job they've ever done — and they want out before that leverage becomes a threat",
+    "A journalist has connected three unsolved 'accidental deaths' across the city through ballistic evidence suggesting the same 12.7mm subsonic caseless round — publishing the story means accusing RINGO CORPONATION of murder, and RINGO has already noticed the investigation"
+  ],
+  "ammunition_type": [
+    "12.7x55mm Subsonic Caseless Round SCR-127"
+  ],
+  "tags": [
+    "firearm",
+    "weapon",
+    "violence",
+    "gun",
+    "war",
+    "death",
+    "ai",
+    "rogue",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "debt",
+    "rooftop",
+    "market",
+    "fire"
+  ]
+}

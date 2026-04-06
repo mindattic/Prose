@@ -1,0 +1,59 @@
+{
+  "id": "019d6143ab2e71869ac6ad9f7731c810",
+  "name": "Hydrostatic Pressure Lance HPL-1 'Deepwater'",
+  "type": "weapon",
+  "aliases": [
+    "Deepwater",
+    "The Column",
+    "Wet Spike"
+  ],
+  "category": "exotic",
+  "description": "The HPL-1 generates a coherent column of hydrodynamic pressure using a resonant fluid compression chamber fed by an onboard micro-reservoir of dense hydraulic fluid. The weapon does not project fluid outward — instead, it generates a standing wave of hydrostatic pressure in the air column between the emitter and the target, exploiting the body's own fluid content as the transmission medium. When the wave reaches a water-dense target (biological tissue, hydraulic systems, fluid-cooled electronics), it couples with the target's internal fluid and induces explosive hydrostatic overpressure within enclosed spaces: sinuses, joint capsules, the chambers of the heart, fluid-cooled cybernetic housings.\n\nPalladian Construction originally developed the HPL-1's core technology for non-explosive demolition of water-saturated geological formations — the same hydrostatic coupling effect that destroys joint capsules works equally well on saturated rock strata and underwater structural elements. The weaponized variant was engineered by a Palladian subsidiary that was subsequently dissolved, with the technology licensed to a series of shell companies before eventually reaching street manufacture. The weapon's industrial origins are visible in its form factor: it looks like a construction tool, heavy and utilitarian, with none of the ergonomic refinement of purpose-built weapons.\n\nAgainst unaugmented biological targets, the HPL-1 produces a spectrum of effects depending on range and power: at distance, joint pain and disorientation from sinus overpressure; at medium range, ruptured eardrums and hemorrhaging from sinus cavities; at close range, cardiac arrhythmia from heart chamber pressure spikes and potential joint dislocation as capsular fluid flashes to expanded state. Against fluid-cooled cybernetic systems, the weapon is catastrophically effective — it can detonate cooling jackets and pressure housings without any visible external impact.",
+  "manufacturer": "PALLADIAN CONSTRUCTION",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Hydrostatic pressure wave generation",
+    "Resonant fluid compression",
+    "Hydrodynamic coupling"
+  ],
+  "specifications": "effective range: Contact to 25 meters\nfluid reservoir: 400ml dense hydraulic fluid (onboard, replaceable canister)\npower source: Palladian P-Cell Industrial Grade (8 full-power discharges)\nweight: 6.8 kg\nlength: 89 cm\nform factor: Industrial demolition tool housing (Palladian PD-Series chassis)\nanti-cybernetic efficacy: Highly effective against fluid-cooled systems and hydraulic augmentations\npower settings: Low / Medium / High / Overdrive (Overdrive voids all implied warranties)\ncooling requirement: 30-second passive cool between High/Overdrive shots",
+  "tactical_use": "The HPL-1 is favored in environments where heavily augmented opponents are expected, particularly those with fluid-cooled combat chassis or hydraulic limb augmentations. Operators engaging corporate security with high-end cybernetics use it specifically to detonate cooling systems and disable augmented limbs without requiring the target to be physically struck. At lower power settings it is used as a crowd-control tool in flooded or high-humidity environments where the coupling effect is amplified. The weapon's industrial appearance has been exploited for concealed carry in construction and infrastructure contexts.",
+  "cultural_context": "The HPL-1 is associated with the industrial underground — construction workers who've crossed the wrong contractors, infrastructure saboteurs, and the specific flavor of anti-corporate violence that emerges from physically demanding labor sectors. Palladian's corporate logo is still faintly visible on most units despite attempts to grind it off, and this has become a symbol of a certain political identity: the idea that the tools of construction can be turned against the people who own them. Heavily augmented fixers specifically fear the HPL-1 in a way they don't fear most weapons.",
+  "known_users": [
+    "Infrastructure sabotage crews",
+    "Anti-augmentation extremist cells",
+    "Construction sector organized crime enforcers",
+    "Specialized anti-cybernetic bounty hunters"
+  ],
+  "story_hooks": [
+    "A rash of high-end augmentation failures across the city all share the same internal damage pattern — someone is hunting specific cyberware models with a HPL-1 and a grudge.",
+    "Palladian Construction quietly wants to know which subsidiary licensed the HPL-1 technology and to whom — the paper trail was deliberately destroyed.",
+    "A character with fluid-cooled augmentations starts receiving anonymous threats referencing 'Deepwater' — someone knows exactly what their implants are vulnerable to.",
+    "A construction crew has been using HPL-1s to demolish a building that city records show was never approved for demolition — someone wants whatever is inside gone very quickly."
+  ],
+  "ammunition_type": [
+    "Compressed Hydraulic Fluid Canister CHF-400",
+    "Ouroboros OE-Heavy Power Cell OE-H7"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "violence",
+    "combat",
+    "war",
+    "crime",
+    "identity",
+    "augment",
+    "cyberware",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "pain",
+    "market",
+    "explosive",
+    "water"
+  ]
+}

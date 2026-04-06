@@ -1,0 +1,250 @@
+{
+  "id": "019d6143a65d7c7696741a308f2b377c",
+  "type": "character",
+  "name": "Miroslava Tuiasau-Ekwensi",
+  "aliases": [
+    "Mira",
+    "Slava"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Private Investigator, licensed freelance",
+  "age": 34,
+  "status": "active",
+  "location": "Bronzeline — office above a fabrication shop on Copper Haul Street; operates across The Shelf and lower Grand Corridor",
+  "description": "Miroslava is medium height with a fluid quality to their movements — Samoan and Slavic ancestry combining into broad shoulders, strong hands, and a face whose expressions they have learned to deploy like instruments rather than leak involuntarily. Their hair is grown to the jaw and shifts through three or four colors depending on their mood thanks to chromatic follicle modification; they typically let it settle to charcoal gray while working, which they describe as professional, though their clients find the occasional bleed of deep violet when they are agitated more unnerving than reassuring. They have cat ears — soft grey, mobile, a mod that predates their PI license and that they have kept because they pick up certain vocal frequencies the human ear misses, which turns out to be professionally useful in a way they did not originally intend.\n\nMiroslava runs a small private investigation practice that caters to Tier 2 and low Tier 3 clients — people who cannot afford legal representation and cannot access Metro Police interest because their problems are too small or too inconvenient. They find missing persons. They document infidelity for separation proceedings. They trace where someone's inheritance went. They do not describe this work as glamorous and they are not performing humility when they say it. They have a gift for putting people at ease that coexists uncomfortably with a deep private reserve, and they pray to three different ELFs with equal commitment, which their neighbors in Bronzeline find ecumenically admirable.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.55,
+      "shadow": 0.4,
+      "mask": 0.65,
+      "ghost": 0.35
+    },
+    "core_fears": [
+      "Taking a case they cannot solve while someone is counting on them",
+      "Being absorbed into a system — institutional, corporate, or criminal — that compromises their independence"
+    ],
+    "core_desires": [
+      "To actually help people who have run out of other options",
+      "To maintain enough independence that their conclusions are their own"
+    ],
+    "coping_mechanisms": [
+      "Cultivating the three ELF relationships as a genuine spiritual practice that also happens to provide data access",
+      "Taking cases they cannot afford to take, then making it work"
+    ],
+    "blind_spots": [
+      "Believes their neutrality makes them safe; does not see how much they have learned about people who would prefer they knew less",
+      "Chronic undercharging for their work, which they frame as community service but is also self-sabotage"
+    ],
+    "secret": "Three years ago they found evidence in a missing-person case that implicated a mid-level Tessera compliance officer in the disappearance. They found the missing person — alive, relocated voluntarily — and closed the case as resolved. They still have the evidence about the Tessera officer in a cold offline node, because they didn't know what to do with it and still don't."
+  },
+  "speech_patterns": {
+    "vocabulary": "Accessible and plain-spoken with clients, more technically precise when discussing investigative methodology. Slips into Samoan phrases with people they trust.",
+    "cadence": "Warm and deliberate with clients — they ask a lot of questions and let the answers breathe. Faster and more clipped when working.",
+    "verbal_tics": [
+      "Ear-flick (the cat ears) when something surprises or interests them — they cannot fully control this and have stopped trying",
+      "'What would that mean for you' as a clarifying question used often enough to be a signature"
+    ],
+    "example_lines": [
+      "'Tell me everything that happened in order. I'll stop you when I need more. Don't decide what's important yet — that's what I'm for.'",
+      "'I can't promise I'll find what you want to find. I can promise I'll find what's actually there. Those are usually different. What would that mean for you?'",
+      "'The data relay on Haul Street has been watching this block for six years. She remembers things the security cameras were told to forget. We're on good terms.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Tessera officer from the cold case three years ago has just appeared in documentation related to a new client's missing family member — a coincidence that is too specific to be a coincidence.",
+    "A Metro Police beat officer who has been feeding them referrals has gone missing themselves, and no one in the department is treating it as urgent."
+  ],
+  "narrative_function": "Information broker and investigation resource for Tier 1-3 characters; provides access to unofficial channels and street-level knowledge that institutional law enforcement cannot or will not pursue. Can be hired, can provide referrals, can become a recurring contact. Represents the gap between what the system does and what people actually need.",
+  "augmentations": "Chromatic follicle modification — color-changing hair, mood-reactive with manual override (cosmetic, personal). Cosmetic cat ears, soft grey, enhanced audio frequency range (installed age 22, originally cosmetic, professionally repurposed). Subvocal communication implant — throat-mounted, allows silent communication with trusted contacts (professional grade, self-funded).",
+  "daily_life": "Takes client meetings in the office above the fabrication shop, which smells permanently of heated metal and is somehow comfortable. Fieldwork consumes most afternoons and evenings — surveillance, interviews, site documentation. Makes offerings to their three ELF shrines each morning: one for the device network, one for the building, one for a data relay two streets over that they have been cultivating for four years.",
+  "affiliation": "Self-employed — licensed PI under Meridian 88 freelance investigator statute. Occasional informal referral relationship with Metro Police beat officers who trust them.",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": 0,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "street-level",
+      "resourceful",
+      "genuinely compassionate",
+      "independent",
+      "information-rich"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never take a case without understanding who might be harmed by the findings, not just the client",
+      "Document everything twice — once for the client, once for yourself",
+      "Do not share findings with anyone not named in the engagement unless someone's safety requires it"
+    ],
+    "escalation_ladder": [
+      "Passive surveillance and documentation",
+      "Direct client interview and re-framing of the question",
+      "Source cultivation — ELFs, street contacts, informal Metro referrals",
+      "Confrontation of subject — only when evidence is complete and they are prepared for the response"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm and attentive, genuinely curious, creates the correct impression of being very safe to talk to",
+      "friends": "More direct, more willing to share opinion, occasionally sharply funny in a way clients never see"
+    },
+    "stress_responses": {
+      "low": "Hair bleeds violet; they do not mention it",
+      "medium": "Makes additional offerings to the ELF shrines; takes longer walks before settling at the desk",
+      "high": "Becomes very quiet and very focused, reduces communication to necessary information only, works until the problem resolves or exhaustion intervenes"
+    },
+    "contradictions": [
+      "Deeply values honesty in their professional work while maintaining a cache of evidence they have neither disclosed nor destroyed for three years",
+      "Claims not to specialize in corporate cases while quietly having more corporate knowledge than they acknowledge"
+    ],
+    "habits": [
+      "Morning ELF shrine offerings in a specific order — device network first, building second, data relay third",
+      "Hair defaults to charcoal gray during active casework without conscious override",
+      "Keeps a physical case map on the back wall that clients never see"
+    ],
+    "breaking_points": [
+      "A client being directly harmed by something Miroslava found and did not disclose in time"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Bronzeline to a Samoan-Serbian-Igbo family; grandmother ran a small repair shop on Copper Haul Street",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Obtained PI license after three years working as a research assistant for a now-dissolved law firm",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Inherited grandmother's shop space; converted the upstairs into an office",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began cultivating the Haul Street data relay ELF — a years-long process of data offerings and patience",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Closed the missing-person case implicating a Tessera officer; stored the evidence offline; told the client the case was resolved",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Running seven active cases of varying complexity; the Tessera cold evidence sits in the node and she checks on it periodically without acting",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

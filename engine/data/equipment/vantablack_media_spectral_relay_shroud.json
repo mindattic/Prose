@@ -1,0 +1,63 @@
+{
+  "id": "019d6143a87c754d986d255b90e98ca8",
+  "name": "Vantablack Media Spectral Relay Shroud",
+  "brand_name": "Vantablack",
+  "product_name": "Vantablack Media Spectral Relay Shroud",
+  "type": "equipment",
+  "aliases": [
+    "The Confessor",
+    "Ghost Tongue",
+    "Null Mouth"
+  ],
+  "category": "comms",
+  "description": "The Spectral Relay Shroud is a wearable signal architecture layered into a thin, flexible garment worn beneath street clothing — typically a vest or collar insert. It operates by fragmenting outgoing transmissions into thousands of microsecond-duration bursts, scattering them across seventeen discrete frequency bands simultaneously before reassembling them at the receiving end via a paired Vantablack decoder unit. The result is a signal profile that, to conventional intercept equipment, resembles nothing more coherent than ambient electromagnetic noise — radio ghost-chatter from old infrastructure, the static hiss of decaying city grid components.\n\nWhat distinguishes the Shroud from competing signal-scatter systems is Vantablack's proprietary Chromatic Masking Layer, a passive analog component woven into the garment's lining that mimics the EM signature of the wearer's immediate environment. Near a power relay, the Shroud bleeds into the relay's hum. Near a corporate tower, it replicates the tower's passive emissions. This environmental mimicry is not digital — it cannot be patched out or remotely disabled — making the Shroud uniquely resilient against software-based spectrum sweeps.\n\nThe Shroud is a tool of journalists, fixers, and mid-tier syndicate coordinators who need persistent, low-detectability communication over extended operational periods rather than brief tactical bursts. Vantablack markets it obliquely through front distributors, framing it as 'signal privacy apparel' for executives concerned about corporate espionage — a fiction that provides useful legal cover while the product finds its true market in Meridian 88's lower precincts.",
+  "manufacturer": "VANTABLACK MEDIA",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Frequency-hopping spread spectrum",
+    "Chromatic EM environmental mimicry",
+    "Analog passive masking weave",
+    "Microsecond burst fragmentation",
+    "Paired decoder handshake protocol"
+  ],
+  "specifications": {
+    "active_range": "Up to 4.2 km direct; up to 18 km via mesh relay node",
+    "frequency_bands": "17 simultaneous, dynamically assigned",
+    "burst_duration": "0.003–0.09 seconds per fragment",
+    "power_source": "Body-heat thermocouple array, 72-hour reserve cell backup",
+    "pairing_capacity": "Up to 6 decoder units",
+    "weight": "340g (vest insert form factor)",
+    "wash_cycles_rated": "200",
+    "EM_mimicry_update_rate": "Every 8 seconds passive scan"
+  },
+  "tactical_use": "The Shroud is favored for long-duration operations where the operator must communicate repeatedly without establishing a detectable transmission pattern. Couriers use it to confirm drops without breaking stride. Field journalists use it to file dispatches from inside corporate exclusion zones. Because it requires no active device to hold or manipulate, it allows the user to appear entirely off-comms to visual surveillance while maintaining a live channel. Its primary limitation is latency — the reassembly process introduces a 1.2–2.8 second delay, making it unsuitable for real-time tactical coordination under fire.",
+  "cultural_context": "In Meridian 88's information underclass — the fixers, the stringers, the mid-level syndicate workers who can't afford full ghost implants — the Shroud occupies a particular cultural niche as a symbol of professional seriousness. Wearing one signals that you've moved past burner handsets and disposable mesh nodes, that you operate at a level where persistent, deniable communication is a necessity rather than a luxury. Among investigative journalists in particular, owning a Shroud is a quiet credential, passed between colleagues like a reference. Vantablack's own employees are rumored to use them internally when communicating outside sanctioned channels — a detail the company neither confirms nor denies.",
+  "known_users": [
+    "Independent investigative journalists",
+    "Mid-tier syndicate logistics coordinators",
+    "Corporate whistleblowers",
+    "Fixer networks operating in signal-dense precincts",
+    "Courier guild senior members"
+  ],
+  "story_hooks": [
+    "A Shroud surfaces on a dead body — its paired decoder unit is still active and receiving, meaning someone is waiting for a transmission that will never come.",
+    "A player's Shroud begins mimicking a frequency profile that doesn't match any known local infrastructure — something is broadcasting nearby that shouldn't exist.",
+    "Vantablack quietly recalls a specific production batch of Shrouds, offering generous compensation and no questions. The batch numbers correspond to units distributed to a particular journalist collective six months before their silence.",
+    "A contact insists on meeting only via Shroud-channel, claiming that face-to-face or standard comms are already compromised — but the players have no way to verify whether the paranoia is justified or a setup.",
+    "The Chromatic Masking Layer on a black-market Shroud has been modified to mimic a specific corporate tower's EM signature — meaning any transmission through it will appear, to interceptors, to originate from inside that tower."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "war",
+    "ai",
+    "corporate",
+    "surveillance",
+    "power",
+    "market",
+    "clothing",
+    "fire",
+    "tier 2"
+  ]
+}

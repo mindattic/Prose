@@ -1,0 +1,1272 @@
+2026-04-05 08:42:34AM [INF] StreetSamurai MAUI host started
+2026-04-05 08:44:14AM [INF] StreetSamurai MAUI host started
+2026-04-05 08:56:05AM [INF] StreetSamurai MAUI host started
+2026-04-05 08:58:57AM [INF] StreetSamurai MAUI host started
+2026-04-05 08:59:29AM [INF] Export complete: mode=all, path=D:\Projects\MindAttic\StreetSamurai\exports\index.htm
+2026-04-05 09:02:44AM [INF] StreetSamurai MAUI host started
+2026-04-05 09:02:58AM [INF] Export complete: mode=all, path=D:\Projects\MindAttic\StreetSamurai\exports\index.htm
+2026-04-05 10:39:57AM [INF] StreetSamurai MAUI host started
+2026-04-05 11:16:18AM [INF] StreetSamurai MAUI host started
+2026-04-05 11:33:03AM [INF] StreetSamurai MAUI host started
+2026-04-05 11:53:24AM [INF] StreetSamurai MAUI host started
+2026-04-05 12:02:36PM [INF] StreetSamurai MAUI host started
+2026-04-05 12:04:15PM [INF] Export complete: mode=all, path=D:\Projects\MindAttic\StreetSamurai\exports\index.htm
+2026-04-05 12:05:25PM [INF] StreetSamurai MAUI host started
+2026-04-05 12:10:39PM [INF] StreetSamurai MAUI host started
+2026-04-05 12:14:31PM [INF] StreetSamurai MAUI host started
+2026-04-05 12:18:28PM [INF] StreetSamurai MAUI host started
+2026-04-05 01:56:41PM [INF] StreetSamurai MAUI host started
+2026-04-05 01:57:55PM [INF] StreetSamurai MAUI host started
+2026-04-05 02:10:40PM [INF] StreetSamurai MAUI host started
+2026-04-05 02:15:16PM [INF] Export complete: mode=all, path=D:\Projects\MindAttic\StreetSamurai\exports\index.htm
+2026-04-05 02:20:22PM [INF] StreetSamurai MAUI host started
+2026-04-05 02:25:16PM [INF] StreetSamurai MAUI host started
+2026-04-05 03:48:53PM [INF] StreetSamurai MAUI host started
+2026-04-05 03:51:20PM [INF] StreetSamurai MAUI host started
+2026-04-05 03:52:33PM [DBG] Saving story project 62c99649a7fe482f9e06493253911792 to D:\Projects\MindAttic\StreetSamurai\story_blocks\62c99649a7fe482f9e06493253911792.json
+2026-04-05 03:52:37PM [INF] === SurpriseMeAsync: Starting autonomous story generation ===
+2026-04-05 03:52:37PM [INF] Phase 1 complete: protagonist=Tenzin Ahlstrom-Quartey, cast=[Tenzin Ahlstrom-Quartey, Aminatou Ferreira-Chakraborti, The Pit Boss]
+2026-04-05 03:52:37PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 03:52:37PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=2048, temp=0.6, systemLen=20273, userLen=31
+2026-04-05 03:52:38PM [ERR] Claude API error: 401 Unauthorized — {"type":"error","error":{"type":"authentication_error","message":"invalid x-api-key"},"request_id":"req_011CZmHcS4wBFtKWQ58pYBWN"}
+2026-04-05 03:52:38PM [WRN] Claude HTTP error (attempt 1/3) — retrying in 3000ms
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.ClaudeService.GenerateAsync(String system, String user, Double temperature, Int32 maxTokens, String model, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ClaudeService.cs:line 86
+2026-04-05 03:52:41PM [ERR] Claude API error: 401 Unauthorized — {"type":"error","error":{"type":"authentication_error","message":"invalid x-api-key"},"request_id":"req_011CZmHcfkCvQwTuxnrwNA9s"}
+2026-04-05 03:52:41PM [WRN] Claude HTTP error (attempt 2/3) — retrying in 6000ms
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.ClaudeService.GenerateAsync(String system, String user, Double temperature, Int32 maxTokens, String model, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ClaudeService.cs:line 86
+2026-04-05 03:52:47PM [ERR] Claude API error: 401 Unauthorized — {"type":"error","error":{"type":"authentication_error","message":"invalid x-api-key"},"request_id":"req_011CZmHd7iQKXRMxX6JTL7tV"}
+2026-04-05 03:52:47PM [ERR] Claude HTTP request failed after 3 attempts: model=claude-sonnet-4-6
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.ClaudeService.GenerateAsync(String system, String user, Double temperature, Int32 maxTokens, String model, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ClaudeService.cs:line 86
+2026-04-05 03:52:47PM [ERR] LlmRouter: generation failed via provider=claude
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.ClaudeService.GenerateAsync(String system, String user, Double temperature, Int32 maxTokens, String model, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ClaudeService.cs:line 86
+   at StreetSamurai.Core.Services.LlmRouter.GenerateAsync(String system, String user, Double temperature, Int32 maxTokens, String model, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\LlmRouter.cs:line 39
+2026-04-05 03:52:47PM [ERR] Agenda generation failed for characters=[Tenzin Ahlstrom-Quartey, Aminatou Ferreira-Chakraborti, The Pit Boss]
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.ClaudeService.GenerateAsync(String system, String user, Double temperature, Int32 maxTokens, String model, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ClaudeService.cs:line 86
+   at StreetSamurai.Core.Services.LlmRouter.GenerateAsync(String system, String user, Double temperature, Int32 maxTokens, String model, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\LlmRouter.cs:line 39
+   at StreetSamurai.Core.Services.AgendaEngine.GenerateAgendasAsync(List`1 characterNames, StoryState storyState, String recentEvents, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\AgendaEngine.cs:line 83
+2026-04-05 03:52:47PM [INF] Phase 2 complete: 0 premises generated
+2026-04-05 03:52:47PM [INF] Generating outline: premise=333chars, characters=[Tenzin Ahlstrom-Quartey, Aminatou Ferreira-Chakraborti, The Pit Boss], location=The I-75 Spine, targetBeats=8
+2026-04-05 03:52:47PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 03:52:47PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=8192, temp=0.8, systemLen=28794, userLen=439
+2026-04-05 03:52:47PM [ERR] Claude API error: 401 Unauthorized — {"type":"error","error":{"type":"authentication_error","message":"invalid x-api-key"},"request_id":"req_011CZmHd8NqaAMZfWynEkaWQ"}
+2026-04-05 03:52:47PM [WRN] Claude HTTP error (attempt 1/3) — retrying in 3000ms
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.ClaudeService.GenerateAsync(String system, String user, Double temperature, Int32 maxTokens, String model, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ClaudeService.cs:line 86
+2026-04-05 03:52:50PM [ERR] Claude API error: 401 Unauthorized — {"type":"error","error":{"type":"authentication_error","message":"invalid x-api-key"},"request_id":"req_011CZmHdMrD5wDKoR46pdteQ"}
+2026-04-05 03:52:50PM [WRN] Claude HTTP error (attempt 2/3) — retrying in 6000ms
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.ClaudeService.GenerateAsync(String system, String user, Double temperature, Int32 maxTokens, String model, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ClaudeService.cs:line 86
+2026-04-05 03:52:56PM [ERR] Claude API error: 401 Unauthorized — {"type":"error","error":{"type":"authentication_error","message":"invalid x-api-key"},"request_id":"req_011CZmHdoxM4ov7MUsGLaHX3"}
+2026-04-05 03:52:56PM [ERR] Claude HTTP request failed after 3 attempts: model=claude-sonnet-4-6
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.ClaudeService.GenerateAsync(String system, String user, Double temperature, Int32 maxTokens, String model, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ClaudeService.cs:line 86
+2026-04-05 03:52:56PM [ERR] LlmRouter: generation failed via provider=claude
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.ClaudeService.GenerateAsync(String system, String user, Double temperature, Int32 maxTokens, String model, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ClaudeService.cs:line 86
+   at StreetSamurai.Core.Services.LlmRouter.GenerateAsync(String system, String user, Double temperature, Int32 maxTokens, String model, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\LlmRouter.cs:line 39
+2026-04-05 03:52:56PM [ERR] Outline generation LLM call failed for characters=[Tenzin Ahlstrom-Quartey, Aminatou Ferreira-Chakraborti, The Pit Boss]
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at StreetSamurai.Core.Services.ClaudeService.GenerateAsync(String system, String user, Double temperature, Int32 maxTokens, String model, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ClaudeService.cs:line 86
+   at StreetSamurai.Core.Services.LlmRouter.GenerateAsync(String system, String user, Double temperature, Int32 maxTokens, String model, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\LlmRouter.cs:line 39
+   at StreetSamurai.Core.Services.OutlineService.GenerateOutlineAsync(String premise, List`1 characters, String location, Int32 targetBeats, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\OutlineService.cs:line 84
+2026-04-05 03:52:56PM [INF] Phase 4 complete: outline title=Outline generation failed, acts=0
+2026-04-05 03:52:56PM [INF] Outline checkpoint saved: 388c082311aa4b66acdc2c2ae630f215
+2026-04-05 03:52:56PM [INF] === Story complete: title=Outline generation failed, protagonist=Tenzin Ahlstrom-Quartey, beats=0, chars=0 ===
+2026-04-05 03:52:56PM [DBG] Saving story project 40fba98e1f454590ba711ef8bf50210f to D:\Projects\MindAttic\StreetSamurai\story_blocks\40fba98e1f454590ba711ef8bf50210f.json
+2026-04-05 05:57:55PM [INF] StreetSamurai MAUI host started
+2026-04-05 06:03:57PM [INF] StreetSamurai MAUI host started
+2026-04-05 06:05:44PM [INF] StreetSamurai MAUI host started
+2026-04-05 06:08:10PM [INF] StreetSamurai MAUI host started
+2026-04-05 06:13:15PM [INF] StreetSamurai MAUI host started
+2026-04-05 06:14:13PM [INF] StreetSamurai MAUI host started
+2026-04-05 06:15:42PM [INF] StreetSamurai MAUI host started
+2026-04-05 06:15:57PM [INF] StreetSamurai MAUI host started
+2026-04-05 06:18:12PM [INF] StreetSamurai MAUI host started
+2026-04-05 06:20:56PM [INF] StreetSamurai MAUI host started
+2026-04-05 06:21:32PM [INF] StreetSamurai Blazor host started
+2026-04-05 06:21:32PM [ERR] Hosting failed to start
+System.InvalidOperationException: Dynamic port binding is not supported when binding to localhost. You must either bind to 127.0.0.1:0 or [::1]:0, or both.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions..ctor(Int32 port)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.ParseAddress(String address, Boolean& https)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-04-05 06:21:32PM [FTL] Application terminated unexpectedly
+System.InvalidOperationException: Dynamic port binding is not supported when binding to localhost. You must either bind to 127.0.0.1:0 or [::1]:0, or both.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions..ctor(Int32 port)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.ParseAddress(String address, Boolean& https)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Blazor\Program.cs:line 61
+2026-04-05 06:25:04PM [INF] StreetSamurai MAUI host started
+2026-04-05 06:30:28PM [INF] StreetSamurai MAUI host started
+2026-04-05 06:50:10PM [INF] StreetSamurai MAUI host started
+2026-04-05 06:54:48PM [INF] StreetSamurai MAUI host started
+2026-04-05 06:57:00PM [INF] StreetSamurai MAUI host started
+2026-04-05 06:58:07PM [INF] StreetSamurai MAUI host started
+2026-04-05 06:59:51PM [INF] StreetSamurai MAUI host started
+2026-04-05 07:00:57PM [INF] StreetSamurai MAUI host started
+2026-04-05 07:02:51PM [INF] StreetSamurai MAUI host started
+2026-04-05 07:05:23PM [DBG] Saving story project 40fba98e1f454590ba711ef8bf50210f to D:\Projects\MindAttic\StreetSamurai\story_blocks\40fba98e1f454590ba711ef8bf50210f.json
+2026-04-05 07:07:15PM [INF] StreetSamurai MAUI host started
+2026-04-05 07:13:29PM [INF] StreetSamurai MAUI host started
+2026-04-05 07:14:55PM [INF] StreetSamurai MAUI host started
+2026-04-05 07:16:31PM [INF] StreetSamurai MAUI host started
+2026-04-05 07:21:02PM [INF] StreetSamurai MAUI host started
+2026-04-05 07:21:51PM [INF] StreetSamurai MAUI host started
+2026-04-05 07:36:55PM [INF] StreetSamurai MAUI host started
+2026-04-05 07:37:53PM [INF] StreetSamurai MAUI host started
+2026-04-05 07:43:49PM [INF] Export complete: mode=all, path=D:\Projects\MindAttic\StreetSamurai\exports\index.htm
+2026-04-05 07:48:49PM [INF] === SurpriseMeAsync: Starting autonomous story generation ===
+2026-04-05 07:48:49PM [INF] Phase 1 complete: protagonist=Ambrosia Kiptoo-Čavić, cast=[Ambrosia Kiptoo-Čavić, Orsolya Nkemelu-Draghici, Rorke Vassiliev]
+2026-04-05 07:48:49PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 07:48:49PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=2048, temp=0.6, systemLen=16908, userLen=31
+2026-04-05 07:49:19PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=4933
+2026-04-05 07:49:19PM [INF] Generated 3 character agendas
+2026-04-05 07:49:19PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 07:49:19PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=2048, temp=0.7, systemLen=930, userLen=2578
+2026-04-05 07:50:05PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=8697
+2026-04-05 07:50:05PM [ERR] Conflict discovery failed
+System.Text.Json.JsonException: Expected end of string, but instead reached end of data. Path: $[3] | LineNumber: 55 | BytePositionInLine: 19.
+ ---> System.Text.Json.JsonReaderException: Expected end of string, but instead reached end of data. LineNumber: 55 | BytePositionInLine: 19.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.AgendaEngine.FindConflictsAsync(List`1 agendas, CancellationToken ct)
+2026-04-05 07:50:05PM [INF] Phase 2 complete: 0 premises generated
+2026-04-05 07:50:05PM [INF] Generating outline: premise=331chars, characters=[Ambrosia Kiptoo-Čavić, Orsolya Nkemelu-Draghici, Rorke Vassiliev], location=The I-90 Vein, targetBeats=8
+2026-04-05 07:50:05PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 07:50:05PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=8192, temp=0.8, systemLen=26646, userLen=433
+2026-04-05 07:52:05PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=23696
+2026-04-05 07:52:05PM [DBG] Outline LLM response received: 23696 chars
+2026-04-05 07:52:05PM [INF] Outline generated: title=The Cartography of Uncharted Interfaces, acts=3, beats=8
+2026-04-05 07:52:05PM [INF] Phase 4 complete: outline title=The Cartography of Uncharted Interfaces, acts=3
+2026-04-05 07:52:05PM [INF] Outline checkpoint saved: 4553f4c6da5c4fe0acf572da970ca16b
+2026-04-05 07:52:05PM [ERR] Beat 0 failed permanently — saving partial story (0/8)
+System.ArgumentException: An item with the same key has already been added. Key: Dreamer
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at System.Linq.Enumerable.SpanToDictionary[TSource,TKey](ReadOnlySpan`1 source, Func`2 keySelector, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey](IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer)
+   at StreetSamurai.Core.Services.BehaviorPredictionService.PredictArchetypeInfluences(CharacterData character, Int32 tension, String beatGoal)
+   at StreetSamurai.Core.Services.BehaviorPredictionService.PredictBehavior(String characterName, String projectId, String sceneLocation, List`1 otherCharactersPresent, String beatGoal, Int32 tensionLevel)
+   at StreetSamurai.Core.Services.BehaviorPredictionService.<>c__DisplayClass7_0.<BuildBehaviorContext>b__0(String name)
+   at System.Linq.Enumerable.ListSelectIterator`2.MoveNext()
+   at System.Linq.Enumerable.IEnumerableWhereIterator`1.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at StreetSamurai.Core.Services.BehaviorPredictionService.BuildBehaviorContext(String projectId, List`1 charactersInScene, String sceneLocation, String beatGoal, Int32 tensionLevel)
+   at StreetSamurai.Core.Services.StoryDirectorService.GenerateSingleBeat(AutonomousStory story, StoryOutline outline, OutlineBeat beat, ValueTuple`2 cast, String location, List`1 allText, String projectId, CancellationToken ct)
+   at StreetSamurai.Core.Services.StoryDirectorService.WritBeatsWithResilience(AutonomousStory story, StoryOutline outline, ValueTuple`2 cast, String location, CancellationToken ct)
+2026-04-05 07:52:05PM [WRN] Partial story saved: 4553f4c6da5c4fe0acf572da970ca16b, 0 beats, reason=Beat 1 failed: An item with the same key has already been added. Key: Dreamer
+2026-04-05 08:56:31PM [INF] StreetSamurai MAUI host started
+2026-04-05 08:56:59PM [INF] === ResumeStoryAsync: Resuming story 4553f4c6da5c4fe0acf572da970ca16b from beat 0 ===
+2026-04-05 08:56:59PM [INF] GenerateOpeningAsync: characters=[Ambrosia Kiptoo-Čavić], location=Aurochs Medical Complex, neural calibration ward, late shift, premise=Ambrosia finishes a late calibration shift at Aurochs, arranges her instruments ...
+2026-04-05 08:56:59PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 08:56:59PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=2048, temp=0.5, systemLen=14830, userLen=879
+2026-04-05 08:57:21PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3285
+2026-04-05 08:57:21PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 08:57:21PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=50, temp=0.9, systemLen=102, userLen=3443
+2026-04-05 08:57:22PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=19
+2026-04-05 08:57:22PM [INF] Opening generated: title=Ghost Ward, No Door, facet=ghost, textLen=3285
+2026-04-05 08:57:22PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 08:57:22PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=1024, temp=0.1, systemLen=1041, userLen=3295
+2026-04-05 08:57:34PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=2411
+2026-04-05 08:57:34PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 08:57:34PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=1024, temp=0.1, systemLen=850, userLen=3285
+2026-04-05 08:57:49PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3742
+2026-04-05 08:57:49PM [WRN] Event extraction failed for project=4553f4c6da5c4fe0acf572da970ca16b, beat=0
+System.Text.Json.JsonException: Expected end of string, but instead reached end of data. Path: $[6].tags[4] | LineNumber: 69 | BytePositionInLine: 93.
+ ---> System.Text.Json.JsonReaderException: Expected end of string, but instead reached end of data. LineNumber: 69 | BytePositionInLine: 93.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.EventLogService.ExtractAndLogAsync(String projectId, String newText, Int32 beatIndex, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EventLogService.cs:line 74
+2026-04-05 08:57:49PM [INF] Beat 1/8 saved: The File She Keeps Returning To
+2026-04-05 08:57:49PM [INF] ContinueAsync: paragraphs=1, characters=[Ambrosia Kiptoo-Čavić, Orsolya Nkemelu-Draghici], location=Aurochs referral system / Orsolya's alterations shop, the Enclave
+2026-04-05 08:57:49PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 08:57:49PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=2048, temp=0.9, systemLen=281889, userLen=5106
+2026-04-05 08:58:12PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3012
+2026-04-05 08:58:12PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 08:58:12PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=1024, temp=0.1, systemLen=1041, userLen=3022
+2026-04-05 08:58:28PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3818
+2026-04-05 08:58:28PM [WRN] State extraction failed for project=4553f4c6da5c4fe0acf572da970ca16b
+System.Text.Json.JsonException: Expected end of string, but instead reached end of data. Path: $.reader_learned[10] | LineNumber: 73 | BytePositionInLine: 40.
+ ---> System.Text.Json.JsonReaderException: Expected end of string, but instead reached end of data. LineNumber: 73 | BytePositionInLine: 40.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.StoryStateService.UpdateFromTextAsync(String projectId, String newText, String fullStorySoFar, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\StoryStateService.cs:line 113
+2026-04-05 08:58:28PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 08:58:28PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=1024, temp=0.1, systemLen=850, userLen=3012
+2026-04-05 08:58:43PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3426
+2026-04-05 08:58:43PM [INF] Beat 2/8 saved: The Contract From Nowhere
+2026-04-05 08:58:43PM [INF] ContinueAsync: paragraphs=2, characters=[Ambrosia Kiptoo-Čavić], location=I-90 Vein, decommissioned Ferrogate relay station near the lakeshore strip
+2026-04-05 08:58:44PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 08:58:44PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=2048, temp=0.9, systemLen=348531, userLen=7221
+2026-04-05 08:59:13PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=4158
+2026-04-05 08:59:13PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 08:59:13PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=1024, temp=0.1, systemLen=1041, userLen=4168
+2026-04-05 08:59:29PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3608
+2026-04-05 08:59:29PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 08:59:29PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=1024, temp=0.1, systemLen=850, userLen=4158
+2026-04-05 08:59:45PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3520
+2026-04-05 08:59:45PM [INF] Beat 3/8 saved: The Patient at the End of the Vein
+2026-04-05 08:59:45PM [INF] ContinueAsync: paragraphs=3, characters=[Ambrosia Kiptoo-Čavić, Rorke Vassiliev], location=I-90 Vein, decommissioned Ferrogate relay station
+2026-04-05 08:59:45PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 08:59:45PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=2048, temp=0.5, systemLen=447447, userLen=12470
+2026-04-05 09:00:14PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3397
+2026-04-05 09:00:14PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:00:14PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=1024, temp=0.1, systemLen=1041, userLen=3407
+2026-04-05 09:00:29PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3327
+2026-04-05 09:00:29PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:00:29PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=1024, temp=0.1, systemLen=850, userLen=3397
+2026-04-05 09:00:42PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3607
+2026-04-05 09:00:42PM [WRN] Event extraction failed for project=4553f4c6da5c4fe0acf572da970ca16b, beat=3
+System.Text.Json.JsonException: Expected end of string, but instead reached end of data. Path: $[7].summary | LineNumber: 73 | BytePositionInLine: 165.
+ ---> System.Text.Json.JsonReaderException: Expected end of string, but instead reached end of data. LineNumber: 73 | BytePositionInLine: 165.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.EventLogService.ExtractAndLogAsync(String projectId, String newText, Int32 beatIndex, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EventLogService.cs:line 74
+2026-04-05 09:00:42PM [INF] Beat 4/8 saved: The Man Who Maintains Things
+2026-04-05 09:00:42PM [INF] ContinueAsync: paragraphs=4, characters=[Ambrosia Kiptoo-Čavić, Rorke Vassiliev], location=I-90 Vein, collapsing relay station, lakeshore strip
+2026-04-05 09:00:43PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:00:43PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=2048, temp=0.9, systemLen=457665, userLen=16402
+2026-04-05 09:01:13PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=4096
+2026-04-05 09:01:13PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:01:13PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=1024, temp=0.1, systemLen=1041, userLen=4106
+2026-04-05 09:01:28PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3066
+2026-04-05 09:01:28PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:01:28PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=1024, temp=0.1, systemLen=850, userLen=4096
+2026-04-05 09:01:43PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3513
+2026-04-05 09:01:43PM [WRN] Event extraction failed for project=4553f4c6da5c4fe0acf572da970ca16b, beat=4
+System.Text.Json.JsonException: Expected start of a property name or value, but instead reached end of data. Path: $[8] | LineNumber: 80 | BytePositionInLine: 3.
+ ---> System.Text.Json.JsonReaderException: Expected start of a property name or value, but instead reached end of data. LineNumber: 80 | BytePositionInLine: 3.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.EventLogService.ExtractAndLogAsync(String projectId, String newText, Int32 beatIndex, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EventLogService.cs:line 74
+2026-04-05 09:01:43PM [INF] Beat 5/8 saved: Rail Hounds
+2026-04-05 09:01:43PM [INF] ContinueAsync: paragraphs=5, characters=[Ambrosia Kiptoo-Čavić, Orsolya Nkemelu-Draghici, Rorke Vassiliev], location=Orsolya's alterations shop, the Enclave
+2026-04-05 09:01:44PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:01:44PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=2048, temp=0.5, systemLen=486396, userLen=20329
+2026-04-05 09:02:09PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3099
+2026-04-05 09:02:09PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:02:09PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=1024, temp=0.1, systemLen=1041, userLen=3109
+2026-04-05 09:02:24PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3329
+2026-04-05 09:02:24PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:02:24PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=1024, temp=0.1, systemLen=850, userLen=3099
+2026-04-05 09:02:38PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3408
+2026-04-05 09:02:38PM [WRN] Event extraction failed for project=4553f4c6da5c4fe0acf572da970ca16b, beat=5
+System.Text.Json.JsonException: Expected end of string, but instead reached end of data. Path: $[6].tags[3] | LineNumber: 69 | BytePositionInLine: 44.
+ ---> System.Text.Json.JsonReaderException: Expected end of string, but instead reached end of data. LineNumber: 69 | BytePositionInLine: 44.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.EventLogService.ExtractAndLogAsync(String projectId, String newText, Int32 beatIndex, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EventLogService.cs:line 74
+2026-04-05 09:02:38PM [INF] Beat 6/8 saved: What the Coat Has Been Through
+2026-04-05 09:02:38PM [INF] ContinueAsync: paragraphs=6, characters=[Ambrosia Kiptoo-Čavić, Orsolya Nkemelu-Draghici, Rorke Vassiliev], location=Orsolya's alterations shop, the Enclave, early morning
+2026-04-05 09:02:39PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:02:39PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=2048, temp=0.5, systemLen=508346, userLen=23492
+2026-04-05 09:03:07PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3801
+2026-04-05 09:03:07PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:03:07PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=1024, temp=0.1, systemLen=1041, userLen=3811
+2026-04-05 09:03:21PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3424
+2026-04-05 09:03:21PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:03:21PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=1024, temp=0.1, systemLen=850, userLen=3801
+2026-04-05 09:03:38PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3630
+2026-04-05 09:03:38PM [WRN] Event extraction failed for project=4553f4c6da5c4fe0acf572da970ca16b, beat=6
+System.Text.Json.JsonException: Expected end of string, but instead reached end of data. Path: $[7] | LineNumber: 73 | BytePositionInLine: 12.
+ ---> System.Text.Json.JsonReaderException: Expected end of string, but instead reached end of data. LineNumber: 73 | BytePositionInLine: 12.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeString()
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.EventLogService.ExtractAndLogAsync(String projectId, String newText, Int32 beatIndex, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EventLogService.cs:line 74
+2026-04-05 09:03:38PM [INF] Beat 7/8 saved: The Simulation He Runs
+2026-04-05 09:03:38PM [INF] ContinueAsync: paragraphs=7, characters=[Ambrosia Kiptoo-Čavić, Orsolya Nkemelu-Draghici, Rorke Vassiliev], location=Orsolya's alterations shop / I-90 Vein maglev / Aurochs Medical Complex
+2026-04-05 09:03:38PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:03:38PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=2048, temp=0.7, systemLen=527258, userLen=27638
+2026-04-05 09:04:17PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=5269
+2026-04-05 09:04:17PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:04:17PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=1024, temp=0.1, systemLen=1041, userLen=5279
+2026-04-05 09:04:35PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=4074
+2026-04-05 09:04:35PM [WRN] State extraction failed for project=4553f4c6da5c4fe0acf572da970ca16b
+System.Text.Json.JsonException: Expected start of a property name or value, but instead reached end of data. Path: $.reader_learned[8] | LineNumber: 69 | BytePositionInLine: 79.
+ ---> System.Text.Json.JsonReaderException: Expected start of a property name or value, but instead reached end of data. LineNumber: 69 | BytePositionInLine: 79.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.StoryStateService.UpdateFromTextAsync(String projectId, String newText, String fullStorySoFar, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\StoryStateService.cs:line 113
+2026-04-05 09:04:35PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:04:35PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=1024, temp=0.1, systemLen=850, userLen=5269
+2026-04-05 09:04:53PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=3865
+2026-04-05 09:04:53PM [WRN] Event extraction failed for project=4553f4c6da5c4fe0acf572da970ca16b, beat=7
+System.Text.Json.JsonException: Expected end of string, but instead reached end of data. Path: $[6] | LineNumber: 68 | BytePositionInLine: 21.
+ ---> System.Text.Json.JsonReaderException: Expected end of string, but instead reached end of data. LineNumber: 68 | BytePositionInLine: 21.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeString()
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.EventLogService.ExtractAndLogAsync(String projectId, String newText, Int32 beatIndex, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EventLogService.cs:line 74
+2026-04-05 09:04:53PM [INF] Beat 8/8 saved: The Chart She Files
+2026-04-05 09:04:53PM [INF] === Story complete: title=The Cartography of Uncharted Interfaces, protagonist=Ambrosia Kiptoo-Čavić, beats=8, chars=30166 ===
+2026-04-05 09:04:53PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:04:53PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:04:53PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:05:16PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:05:16PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:05:16PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:05:16PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=4096, temp=0.2, systemLen=1815, userLen=36126
+2026-04-05 09:06:26PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=15676
+2026-04-05 09:06:27PM [WRN] Entity extraction failed — LLM returned malformed JSON
+System.Text.Json.JsonException: Expected end of string, but instead reached end of data. Path: $.entities[28].description | LineNumber: 287 | BytePositionInLine: 119.
+ ---> System.Text.Json.JsonReaderException: Expected end of string, but instead reached end of data. LineNumber: 287 | BytePositionInLine: 119.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.EntityExtractionService.ParseExtraction(String response) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EntityExtractionService.cs:line 229
+2026-04-05 09:11:35PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:11:35PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:11:40PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:11:40PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:11:42PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:11:42PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:11:47PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:11:47PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:11:51PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:11:51PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:11:51PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:11:51PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=4096, temp=0.2, systemLen=1815, userLen=36118
+2026-04-05 09:13:05PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=15960
+2026-04-05 09:13:05PM [WRN] Entity extraction failed — LLM returned malformed JSON
+System.Text.Json.JsonException: Expected start of a property name or value, but instead reached end of data. Path: $.entities[26].properties.psychological_function | LineNumber: 289 | BytePositionInLine: 70.
+ ---> System.Text.Json.JsonReaderException: Expected start of a property name or value, but instead reached end of data. LineNumber: 289 | BytePositionInLine: 70.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.JsonDictionaryConverter`3.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TDictionary& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.EntityExtractionService.ParseExtraction(String response) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EntityExtractionService.cs:line 229
+2026-04-05 09:15:00PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:15:00PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:15:21PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:15:21PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:17:35PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:17:35PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:17:37PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:17:37PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:17:47PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:17:47PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:17:54PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:17:54PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:18:11PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:18:11PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:18:11PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:18:11PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=4096, temp=0.2, systemLen=1815, userLen=36064
+2026-04-05 09:19:25PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=16037
+2026-04-05 09:19:25PM [WRN] Entity extraction failed — LLM returned malformed JSON
+System.Text.Json.JsonException: Expected end of string, but instead reached end of data. Path: $.entities[26].properties.infrastructure | LineNumber: 266 | BytePositionInLine: 49.
+ ---> System.Text.Json.JsonReaderException: Expected end of string, but instead reached end of data. LineNumber: 266 | BytePositionInLine: 49.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.JsonDictionaryConverter`3.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TDictionary& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.EntityExtractionService.ParseExtraction(String response) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EntityExtractionService.cs:line 229
+2026-04-05 09:19:54PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:19:54PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:23:40PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:23:40PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:23:44PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:23:44PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:24:16PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:24:16PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:24:26PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:24:26PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:24:40PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:24:41PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:24:43PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:24:44PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:24:48PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:24:51PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:24:53PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:25:49PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:25:55PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:25:56PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:25:56PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:25:57PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:25:58PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:25:58PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:25:59PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:25:59PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:26:00PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:26:50PM [INF] StreetSamurai MAUI host started
+2026-04-05 09:26:54PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:27:01PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:27:03PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:27:44PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:27:44PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:27:45PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:27:45PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:27:45PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:27:45PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=4096, temp=0.2, systemLen=1815, userLen=33106
+2026-04-05 09:28:23PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:28:58PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=15485
+2026-04-05 09:28:58PM [WRN] Entity extraction failed — LLM returned malformed JSON
+System.Text.Json.JsonException: Expected end of string, but instead reached end of data. Path: $.entities[27].description | LineNumber: 281 | BytePositionInLine: 101.
+ ---> System.Text.Json.JsonReaderException: Expected end of string, but instead reached end of data. LineNumber: 281 | BytePositionInLine: 101.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.EntityExtractionService.ParseExtraction(String response) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EntityExtractionService.cs:line 229
+2026-04-05 09:29:46PM [INF] StreetSamurai MAUI host started
+2026-04-05 09:29:49PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:29:56PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:29:56PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:29:57PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:30:20PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:30:20PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:30:27PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:30:27PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:30:31PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:30:31PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:30:34PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:30:34PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:30:41PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:30:41PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:31:22PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:31:22PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:31:26PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:31:26PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:32:23PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:32:23PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:36:25PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:36:25PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:36:29PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:36:29PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:36:47PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:36:47PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:36:52PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:36:52PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:37:04PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:37:04PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:37:06PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:37:06PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:37:11PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:37:11PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:37:17PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:37:17PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:37:25PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:37:25PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:37:29PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:37:29PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:37:39PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:37:39PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:37:45PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:37:45PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:37:50PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:37:50PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:37:57PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:37:57PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:38:01PM [DBG] Saving story project a905b2ca2e17472f837bbe44dac8ddd6 to D:\Projects\MindAttic\StreetSamurai\story_blocks\a905b2ca2e17472f837bbe44dac8ddd6.json
+2026-04-05 09:38:01PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 09:38:01PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:38:01PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=4096, temp=0.2, systemLen=1815, userLen=33002
+2026-04-05 09:39:15PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=16055
+2026-04-05 09:39:15PM [WRN] Entity extraction failed — LLM returned malformed JSON
+System.Text.Json.JsonException: Expected end of string, but instead reached end of data. Path: $.entities[25].description | LineNumber: 274 | BytePositionInLine: 101.
+ ---> System.Text.Json.JsonReaderException: Expected end of string, but instead reached end of data. LineNumber: 274 | BytePositionInLine: 101.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.EntityExtractionService.ParseExtraction(String response) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\EntityExtractionService.cs:line 229
+2026-04-05 09:50:47PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 09:50:47PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=2048, temp=0.1, systemLen=525295, userLen=27168
+2026-04-05 09:51:26PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=7022
+2026-04-05 11:54:27PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 11:54:28PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 11:54:29PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 11:54:44PM [INF] StreetSamurai MAUI host started
+2026-04-05 11:54:48PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 11:54:55PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 11:55:00PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-05 11:55:00PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=2048, temp=0.1, systemLen=525295, userLen=27194
+2026-04-05 11:55:50PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=8091
+2026-04-05 11:55:50PM [WRN] Validation canon check failed, returning empty results
+System.Text.Json.JsonException: Expected end of string, but instead reached end of data. Path: $[3].description | LineNumber: 44 | BytePositionInLine: 407.
+ ---> System.Text.Json.JsonReaderException: Expected end of string, but instead reached end of data. LineNumber: 44 | BytePositionInLine: 407.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.ValidationService.ValidateDeepAsync(String generatedText, String worldContext, CancellationToken ct) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\ValidationService.cs:line 140
+2026-04-05 11:55:58PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 11:55:59PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 11:56:00PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 11:56:26PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 11:56:35PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89
+2026-04-05 11:56:39PM [WRN] Failed to load story project from D:\Projects\MindAttic\StreetSamurai\story_blocks\4553f4c6da5c4fe0acf572da970ca16b.events.json
+System.Text.Json.JsonException: The JSON value could not be converted to StreetSamurai.Core.Models.StoryProject. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonStoryBlockRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonStoryBlockRepository.cs:line 89

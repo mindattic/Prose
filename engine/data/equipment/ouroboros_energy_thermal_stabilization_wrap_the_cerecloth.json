@@ -1,0 +1,72 @@
+{
+  "id": "019d6143a8637128969a95264fc0b533",
+  "name": "Ouroboros Energy Thermal Stabilization Wrap — 'The Cerecloth'",
+  "brand_name": "Ouroboros",
+  "product_name": "Ouroboros Energy Thermal Stabilization Wrap — 'The Cerecloth'",
+  "type": "equipment",
+  "aliases": [
+    "The Cerecloth",
+    "Heat Wrap",
+    "The Winding Sheet",
+    "Thermal Bandage"
+  ],
+  "category": "medical",
+  "description": "The Thermal Stabilization Wrap is a medical device developed by Ouroboros Energy's applied materials division, originally as a byproduct of their thermal regulation research for industrial energy workers operating in extreme temperature environments. The Wrap is a 2-meter by 0.8-meter flexible sheet constructed from Ouroboros's proprietary phase-change thermal composite — a material that absorbs or releases heat in response to temperature differential, actively working to bring whatever it is in contact with toward a target temperature range of 36°C to 37.5°C. It requires no external power source; the phase-change chemistry is self-sustaining for approximately four hours before the thermal reservoir is exhausted, at which point the sheet can be reset by exposure to a heat source above 60°C for three minutes.\n\nThe Cerecloth's medical application is hypothermia and hyperthermia management in field conditions, as well as burn wound covering — the sheet's temperature regulation prevents the additional tissue damage caused by air exposure and temperature fluctuation in burn injuries. A secondary application has emerged in the field: wrapping hemorrhagic shock casualties, where the thermal stabilization helps counteract the dangerous heat loss that accompanies significant blood loss. Ouroboros did not design the wrap for this use and does not market it for hemorrhagic shock, but field medics across Meridian 88 have documented it extensively, and the company has quietly noted the application without comment.\n\nThe name 'Cerecloth' is a direct reference to the waxed cloth traditionally used to wrap corpses — a name medics adopted with the characteristic dark humor of their profession, but one that also reflects the wrap's visual quality: matte, slightly iridescent, and conforming closely to whatever it covers. Carrying one is considered practical rather than morbid in most of Meridian 88's outer districts, where temperature extremes in unregulated infrastructure zones make hypothermia a genuine field hazard.",
+  "manufacturer": "OUROBOROS ENERGY",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Phase-change thermal composite material",
+    "Passive self-sustaining thermal regulation chemistry",
+    "No-power thermal reservoir system",
+    "Thermal reset protocol (heat exposure)",
+    "Burn wound barrier application"
+  ],
+  "specifications": {
+    "material": "Ouroboros phase-change thermal composite",
+    "dimensions": "2m x 0.8m",
+    "target_temperature_range": "36°C–37.5°C",
+    "active_duration": "Approximately 4 hours per charge",
+    "reset_requirement": "Exposure to heat source above 60°C for 3 minutes",
+    "power_requirement": "None",
+    "weight": "340g",
+    "applications": "Hypothermia management, hyperthermia management, burn wound covering, hemorrhagic shock thermal support (field-documented, not manufacturer-approved)",
+    "reuse": "Reusable (reset protocol required between patients for hygiene and thermal reservoir)",
+    "surface_properties": "Matte, conforming, slightly iridescent; antimicrobial surface coating (HB-Surface-1, licensed from Helix Biosystems)"
+  },
+  "tactical_use": "The Cerecloth is deployed by wrapping a casualty presenting with hypothermia, severe burns, or hemorrhagic shock to stabilize core temperature and protect damaged tissue from environmental exposure. In field conditions, the wrap's passive operation is its primary advantage: once applied, it requires no monitoring or adjustment for four hours, freeing the medic to address other casualties or other injuries. In environments with access to vehicle exhaust, industrial heat sources, or fire, medics carry multiple wraps and rotate them through reset cycles to maintain continuous coverage. The wrap is also used as a barrier layer under other dressings for burn wounds, reducing the frequency of dressing changes required.",
+  "cultural_context": "The Cerecloth is one of the few pieces of medical equipment in Meridian 88 that crosses all social strata without significant friction. Its unrestricted status, low cost, and lack of licensing requirement mean it is available everywhere — in outer-district stalls, corporate first-aid caches, and field medic kits alike. It originated in industrial applications, and in Ouroboros Energy's labor camps and refinery zones it is standard-issue equipment for workers operating near thermal extremes. The irony that a piece of industrial labor equipment became one of the most accessible medical tools in the city is not lost on Meridian 88's residents. The Cerecloth has also developed a secondary cultural use: in communities that perform traditional funerary rites, the phrase 'laying on the Cerecloth' has become a euphemism for preparing someone for death when survival is no longer possible — the wrap's original industrial purpose and its field medical use colliding in the city's dark vernacular.",
+  "known_users": [
+    "Ouroboros Energy industrial workers and site medics",
+    "Outer-district street medics and surgeons",
+    "All tiers of corporate medical staff (as supplementary equipment)",
+    "Disaster response and emergency teams",
+    "Extraction and recovery specialists",
+    "Anyone operating in Meridian 88's unregulated infrastructure zones"
+  ],
+  "story_hooks": [
+    "A shipment of Cerecloth wraps has been found to have a contaminated antimicrobial coating — the Helix-licensed HB-Surface-1 batch was adulterated with a compound that causes delayed contact dermatitis, and the wraps are in distribution across three districts.",
+    "Ouroboros Energy is sitting on field medic documentation suggesting the Cerecloth is effective for hemorrhagic shock thermal support — documentation that, if published, would require them to seek medical device reclassification and licensing, which they are quietly suppressing.",
+    "A body is found wrapped in a Cerecloth in an Ouroboros Energy facility zone. The wrap is still active, still warm, which means the body was placed recently. The facility is supposed to be unmanned.",
+    "A character is given a Cerecloth by an Ouroboros field worker before a dangerous job in a thermal zone — and later discovers it was used as a passive tracking device, the phase-change chemistry modified to emit a low-frequency thermal signature."
+  ],
+  "tags": [
+    "medical",
+    "equipment",
+    "war",
+    "loss",
+    "death",
+    "ai",
+    "elf",
+    "corporate",
+    "power",
+    "market",
+    "bar",
+    "dark",
+    "vehicle",
+    "survival",
+    "energy",
+    "fire",
+    "tier 1"
+  ]
+}

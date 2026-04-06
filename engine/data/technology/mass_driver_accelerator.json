@@ -1,0 +1,55 @@
+{
+  "id": "019d6143aa4674f3806ee168d5997731",
+  "name": "Mass Driver Accelerator",
+  "brand_name": "Mass",
+  "product_name": "Mass Driver Accelerator",
+  "type": "technology",
+  "aliases": [
+    "Railgun Launcher",
+    "The Sling",
+    "Mag-Launch Tube",
+    "The Cannon"
+  ],
+  "subcategory": "transportation",
+  "description": "A 3-5 kilometer electromagnetic linear accelerator that launches pressurized transit pods to suborbital velocity (Mach 6-12) using sequential magnetic pulses through superconducting coils. The pod rides a magnetic sled with zero physical contact — no friction, no fuel, only electromagnetism. Passengers experience 3.2g for 8 seconds during acceleration. The technology replaced conventional air travel for intercontinental point-to-point transit. 847 accelerators are deployed worldwide as of 2200, with the largest hub being the Meridian 88 Apex Complex (4 tubes, 40,000 passengers/day).",
+  "tier_availability": "Tier 3-5 (passenger), universal (cargo). Passenger tickets cost Φ800-2,400 depending on distance. Cargo pods cost Φ12/metric ton.",
+  "developers": [
+    "Ferrogate Transit (Advanced Propulsion Division)",
+    "Palladian Construction (tube infrastructure)",
+    "Sterling-Nakamura (superconductor coil fabrication)"
+  ],
+  "base_technologies": [
+    "superconducting electromagnetic coils",
+    "magnetic levitation sled systems",
+    "ablative thermal shielding",
+    "suborbital trajectory computation",
+    "pressurized transit pod design"
+  ],
+  "enables": [
+    "14-minute intercontinental passenger transit",
+    "replacement of conventional air freight",
+    "cargo delivery at Φ12/ton transcontinental",
+    "corporate real-time global workforce deployment"
+  ],
+  "social_impact": "Created a two-tier transit system: hyperlanes for the masses (Φ15, 45 minutes), mass drivers for the wealthy (Φ800, 7 minutes). The same two points connected by both — the experience determined entirely by ability to pay. Cargo mass drivers democratized global freight, making intercontinental shipping cheaper than surface transport.",
+  "story_hooks": [
+    "A mass driver pod goes off-trajectory mid-flight — is it a malfunction, sabotage, or something in the pod that shouldn't be there?",
+    "A Tier 1 character rides a mass driver for the first time on someone else's Quanta — the 14 minutes between worlds"
+  ],
+  "tags": [
+    "transportation",
+    "technology",
+    "gun",
+    "ai",
+    "corporate",
+    "quanta",
+    "wealth",
+    "mass driver",
+    "hyperlane",
+    "tier 1",
+    "tier 2",
+    "tier 3",
+    "tier 4",
+    "tier 5"
+  ]
+}

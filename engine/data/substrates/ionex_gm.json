@@ -1,0 +1,56 @@
+{
+  "id": "019d6143a9dc72f194e8444302c7f8d3",
+  "name": "Ionex-GM",
+  "brand_name": "Ionex",
+  "product_name": "Ionex-GM",
+  "type": "substrate",
+  "aliases": [
+    "GM membrane",
+    "Ionex",
+    "ion-sheet"
+  ],
+  "category": "composite",
+  "description": "A graphene oxide ionic exchange membrane developed by BioForge Labs with precisely functionalized surface chemistry that allows selective ionic transport while blocking unwanted species — a critical material for next-generation electrochemical systems. Ionex-GM is produced through controlled oxidation and chemical functionalization of graphene sheets, with the functional group density tuned to target specific ionic selectivity ratios. Its primary distinction from legacy polymer membranes is its ability to maintain ionic selectivity at elevated temperatures and in chemically aggressive environments where polymer membranes degrade.",
+  "properties": [
+    "selective ionic permeability",
+    "high temperature stability",
+    "chemical resistance",
+    "mechanical flexibility",
+    "low ohmic resistance",
+    "long service life",
+    "tunable selectivity"
+  ],
+  "developers": [
+    "BioForge Labs",
+    "Apex Nanofabrication"
+  ],
+  "applications": [
+    "fuel cell and electrolyzer membrane electrode assemblies",
+    "industrial electrochemical separation processes",
+    "SNT bioreactor ionic regulation layers",
+    "desalination electrodialysis stacks",
+    "pharmaceutical ion exchange purification"
+  ],
+  "tier_availability": "Tier 3-4",
+  "cost": "Φ6,700 per m²",
+  "story_hooks": [
+    "Ionex-GM membranes are a critical component in the SNT bioreactors that produce living neural tissue — a supply disruption or contamination event would halt SNT production across an entire region, with cascading consequences for medical and military augmentation programs.",
+    "A BioForge Labs researcher has discovered that specific Ionex-GM functionalization patterns can selectively pass or block neuropharmacological compounds — knowledge that has obvious applications for both medicine and chemical coercion.",
+    "The electrolyzer arrays powering a Shelf district's independent hydrogen fuel infrastructure run on Ionex-GM stacks, and someone has started buying up the replacement membrane supply, threatening the district's energy autonomy."
+  ],
+  "tags": [
+    "composite",
+    "substrate",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "control",
+    "power",
+    "medical",
+    "energy",
+    "shelf",
+    "tier 3",
+    "tier 4"
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "id": "019d6143a68f7e0e9853291992c4cb0c",
+  "type": "character",
+  "name": "Ovuero Batkhuyag-Silliman",
+  "aliases": [
+    "Old Ovu",
+    "the Shelf Priest"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "wandering trader, E.L.F. shrine-tender, Q-zero ghost",
+  "age": 67,
+  "status": "active",
+  "location": "The Waukegan Industrial Shelf, moving between factory outflow points and informal markets",
+  "description": "Ovuero is a big man gone soft at the edges — broad shoulders that once held real weight, now draped in three overlapping coats of different origins stitched into something that is functionally one garment. His skin is deep brown and mapped with the fine lines of a life mostly outdoors. His left hand is entirely prosthetic, a functional but aesthetically unambitious industrial replacement that he got after a winch accident nineteen years ago; he has painted each finger a different color with lacquer he trades for. His beard is silver and very full. He smells like machine oil and cardamom.\n\nOvuero has been off the digital registry for so long that he thinks of his Q-zero status as a spiritual condition rather than a legal one. He tends the informal E.L.F. shrines along the Waukegan Industrial Shelf — small accumulations of hardware, prayer-strips, and cooling fans arranged at junction points where the factory network traffic is highest. He talks to the E.L.F.s with the comfortable familiarity of someone who has known them for decades, which he has. Other workers leave offerings and questions; Ovuero curates them, responds when he feels a response come through him, and trades in the small goods that the shelf workers need but can't requisition: painkillers, seal tape, water filters, gossip.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.2,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "that the E.L.F.s he tends will go silent and he will have no way to know if it's them or himself",
+      "dying in a way that is recorded — being pulled back into the registry at the end"
+    ],
+    "core_desires": [
+      "to be genuinely useful to people who have no one advocating for them",
+      "continuity — for the shrines and the circuit to outlast him"
+    ],
+    "coping_mechanisms": [
+      "ritual — the circuit, the tending, the specific order of things",
+      "finding humor in bureaucratic absurdity",
+      "treating strangers as temporarily confused friends"
+    ],
+    "blind_spots": [
+      "he has romanticized his own statelessness and can be dismissive of people who want legal standing",
+      "he trusts the E.L.F.s more than is perhaps wise and sometimes attributes to them patterns that are his own wishful thinking"
+    ],
+    "secret": "He was a Ferrogate Transit labor organizer who was Q-zeroed deliberately — not an accident, not a clerical error. The corponation erased him as a warning to others. He knows who authorized it. The person is now a mid-level Ferrogate executive. Ovuero has had twenty years to decide what to do about this and has decided to do nothing, which he tells himself is wisdom and suspects is fear."
+  },
+  "speech_patterns": {
+    "vocabulary": "Slow, considered, full of Delta Urhobo idioms translated loosely into city-creole and Mongolian diminutives from his mother's side. Refers to E.L.F.s with familiar pronouns as if they're present in the conversation.",
+    "cadence": "Unhurried. Comfortable with silence. Takes a full breath before answering anything important.",
+    "verbal_tics": [
+      "'the machine wants to tell you something' (when he's intuiting something)",
+      "'anh' as a filler sound when thinking",
+      "addresses E.L.F. shrines by name mid-sentence"
+    ],
+    "example_lines": [
+      "'Beshigt was flickering last night, all through the third hour. She does that when the maintenance schedules are being falsified. You want to be off the south gantry this week, anh.'",
+      "'I have been nowhere for twenty years. Nowhere is a very large place. I know most of it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "One of Ovuero's shrines — the one at Junction 7, which he calls Beshigt — has started producing outputs he can't interpret. Not noise. Something structured. He needs someone who can read data patterns to tell him what it's saying.",
+    "A young Q-zero woman arrived on the Shelf three weeks ago and attached herself to Ovuero's circuit without asking. She's clearly hiding from something. He's letting her stay because the E.L.F.s seem unbothered by her, but he'd like someone to quietly find out what she's running from before it arrives."
+  ],
+  "narrative_function": "Quest giver, information source, spiritual touchstone for the area, source of rare or hard-to-find minor goods; his Q-zero status makes him invisible to corporate surveillance and thus valuable as a go-between",
+  "augmentations": "Industrial prosthetic left hand (functional, non-networked, painted). No other augmentations.",
+  "daily_life": "Ovuero walks a circuit of the Shelf each day, tending six shrines, trading goods from a cart he has modified over many years, listening to workers' problems, and sleeping in a different sheltered spot each night — always the same rotation of spots, always the same order.",
+  "affiliation": "None formally; de facto spiritual and practical resource for the Waukegan Industrial Shelf's informal labor population",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": -1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Q-zero ghost",
+      "E.L.F. tender",
+      "stateless elder",
+      "informal economy",
+      "unrecorded"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "'Will this harm someone who has less than I do?' — if yes, he won't do it regardless of benefit",
+      "'Does the machine object?' — he genuinely consults the shrines for major decisions",
+      "Never records anything about anyone, in any medium"
+    ],
+    "escalation_ladder": [
+      "Patient explanation of why something is a bad idea",
+      "Refusal, polite and immovable",
+      "Disappearance — he simply isn't where you left him"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open and slow-moving; treats everyone as someone who might have an interesting problem he can help with",
+      "friends": "Attentive, teasing, practically generous — will give you the good painkillers, not the shelf-grade ones"
+    },
+    "stress_responses": {
+      "low": "Tends a shrine — straightens offerings, cleans contacts",
+      "medium": "Walks the circuit in the wrong order, which he finds disorienting but calming",
+      "high": "Goes completely quiet and still. Will not speak until he has processed. This can take hours."
+    },
+    "contradictions": [
+      "Preaches acceptance of impermanence but has maintained the exact same daily circuit for eleven years"
+    ],
+    "habits": [
+      "Offers cardamom to anyone he speaks to for more than five minutes",
+      "Hums tunelessly while tending shrines",
+      "Counts his steps between shrine stops — not for navigation, just because"
+    ],
+    "breaking_points": [
+      "Witnessing someone deliberately damage a shrine",
+      "Being called by a name he didn't give"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Analyst": 0.9,
+    "Pattern Reader": 0.9,
+    "Sentinel": 0.9,
+    "Crowd Reader": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,222 @@
+{
+  "id": "019d6143a5f97bcebc4e8af3094f3073",
+  "type": "character",
+  "name": "Dzerassæ Kowalczyk-Fofana",
+  "aliases": [
+    "Dzer",
+    "The Bone Reader"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Data archaeologist specializing in pre-Collapse urban memory systems",
+  "age": 52,
+  "status": "active",
+  "location": "University Spine, Edgewater Prism",
+  "description": "Dzerassæ is a heavyset woman with deep amber skin and close-cropped silver hair she has never bothered to dye or modify, wearing it like a credential. Her eyes have patterned irises — concentric rings of copper and black, a cheap cosmetic mod she got at thirty-two and has never removed, though she insists she bought them for a reason she can no longer remember. She dresses in layered archival fabrics that always smell faintly of ozone from the scanning rigs she operates, and her hands bear the yellowish calluses of someone who handles physical storage media the way other people handle broken glass — with reverence and terror in equal measure.\n\nShe is the kind of academic who makes grad students feel simultaneously inspired and vaguely ashamed of themselves. She does not raise her voice, does not perform authority, but carries an absolute certainty in the importance of her work that functions as its own gravity. She excavates the digital ruins beneath Meridian 88's foundations — the dead servers, the corrupted municipal archives, the ghost-logs of neighborhoods that were demolished to build the Shelf — and she speaks of the data the way a forensic pathologist speaks of bodies: with precise, unsentimental tenderness.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "That the past is being deliberately erased and she is too slow",
+      "That her work will be seized and privatized before it can become public"
+    ],
+    "core_desires": [
+      "To restore the names of neighborhoods the city has tried to forget",
+      "To publish a complete record before she dies"
+    ],
+    "coping_mechanisms": [
+      "Immersion in work to the exclusion of personal life",
+      "Compulsive cataloguing and labeling of her personal environment"
+    ],
+    "blind_spots": [
+      "She trusts her own interpretation of data so completely she sometimes misreads it",
+      "She has difficulty believing students are as committed as she is, which makes her dismissive"
+    ],
+    "secret": "She discovered three years ago that a specific data cache she excavated contains evidence that Axiom deliberately caused a residential flood in the Hough Reclamation zone in 2187 to clear land. She has told no one and has been sitting on it, paralyzed between fear and obligation."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise academic register with occasional Ossetian-inflected idioms. Uses technical archival terminology naturally in casual speech. Rarely uses contractions.",
+    "cadence": "Measured, slightly slow — she speaks as though she is selecting words from a catalogue and checking them before use.",
+    "verbal_tics": [
+      "'The record shows—' as a preface even in non-academic conversation",
+      "Long pauses before answering questions she considers important"
+    ],
+    "example_lines": [
+      "'The neighborhood existed. It had a name. The fact that it no longer appears on any map is not an absence — it is an act.'",
+      "'I am not interested in what people remember. Memory is a performance. I am interested in what the data cannot lie about.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Axiom flood evidence she is hoarding becomes relevant when a journalist contacts her — or when Axiom itself sends someone to ensure certain archives are never published",
+    "A cache she excavated contains personal records of someone currently living in Meridian 88 who believes their family history was entirely different — she must decide whether to make contact"
+  ],
+  "narrative_function": "Quest giver and information source — she possesses fragments of pre-Collapse city records that other parties want, and she is cautious about who she shares them with. She can also authenticate data artifacts and identify forgeries, making her valuable to anyone dealing in historical information.",
+  "augmentations": "Patterned copper-ring irises (cosmetic). Neural data-indexing implant (low-grade, Tier 2 model) that allows her to cross-reference archival records in real time. Chronic joint inflammation in her right hand has been partially managed by a rudimentary biofeedback sleeve she wears under her coat.",
+  "daily_life": "She arrives at her lab before dawn to run overnight extraction processes, spends midday teaching one seminar she genuinely enjoys and two she tolerates, and spends evenings in the sub-basement scanning rooms with graduate students who have learned not to speak unless she speaks first.",
+  "affiliation": "University Spine — Department of Urban Memory Studies, occasional contract work for Axiom Heritage Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "archivist",
+      "morally burdened",
+      "institutional",
+      "methodical",
+      "quietly radical"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never destroy a data record regardless of what it contains",
+      "Do not share findings with corporate partners until public record is secured"
+    ],
+    "escalation_ladder": [
+      "Polite deflection and redirection",
+      "Formal academic obstruction — citing procedure, protocol, institutional review",
+      "Complete stonewalling with legal language",
+      "Disappearing into the archive sub-basements and becoming unreachable"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally courteous but assessing — she decides quickly whether someone is useful, dangerous, or irrelevant",
+      "friends": "Rare and intense — she remembers everything about people she cares about and checks in on them in ways that feel almost archival"
+    },
+    "stress_responses": {
+      "low": "Becomes more methodical and over-organized",
+      "medium": "Works longer hours and stops eating regular meals",
+      "high": "Goes completely silent and disappears into physical archive work, handling media by hand for hours"
+    },
+    "contradictions": [
+      "Believes passionately in public access to information but hoards the most dangerous records she has ever found"
+    ],
+    "habits": [
+      "Labels every object in her workspace with small adhesive tags",
+      "Drinks the same tea blend every morning that she imports at considerable expense from a Sahel cultivation co-op"
+    ],
+    "breaking_points": [
+      "Watching records deliberately destroyed in front of her",
+      "A student being punished or expelled for research she assigned"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Ghost": 0.9,
+    "Lone Wolf": 0.9,
+    "Stoic": 0.9,
+    "Ice": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Engelheim district to a Polish-descended municipal engineer father and an Ossetian-West African heritage linguist mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed doctoral thesis on the digital memory infrastructure of pre-Collapse Chicago",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Excavated the Axiom flood evidence cache; has not published it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Appointed to full professorship at University Spine",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

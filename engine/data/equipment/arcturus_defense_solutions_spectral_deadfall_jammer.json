@@ -1,0 +1,67 @@
+{
+  "id": "019d6143a85271d8b767876c46ec0cdd",
+  "name": "Arcturus Defense Solutions Spectral Deadfall Jammer",
+  "brand_name": "Arcturus",
+  "product_name": "Arcturus Defense Solutions Spectral Deadfall Jammer",
+  "type": "equipment",
+  "aliases": [
+    "Deadfall",
+    "The Curtain",
+    "ADS-SDJ"
+  ],
+  "category": "comms",
+  "description": "The Spectral Deadfall Jammer is a high-output, selectively configurable signal suppression device designed to deny communications across a defined geographic radius while preserving operator-specified frequency bands for friendly use. Unlike crude broadband jammers that silence everything indiscriminately, the Deadfall uses a continuously updated suppression profile to null targeted frequency ranges while maintaining open corridors for pre-configured channels. The result is a communications blackout that affects every party in the affected zone except those who know which narrow corridors remain open — a tactical asymmetry that gives the operator's team a significant advantage in any scenario where communication is critical.\n\nThe device is physically ruggedized to Arcturus's military-grade specifications: a matte-grey rectangular unit roughly the size of a hardback book, with recessed antenna arrays on three sides and a sealed control interface that can be operated with gloves. Deployment takes approximately forty seconds from power-on to full operational suppression, with the suppression profile configurable either in advance via the companion planning software or in the field through the tactile control interface. The Deadfall can be programmed to pulse — cycling suppression on and off at irregular intervals to prevent targets from timing a transmission window — or to ramp up gradually, creating a 'soft' communications degradation that may not be immediately identified as jamming.\n\nThe Spectral Deadfall Jammer is officially restricted to licensed security contractors, military units, and certified law enforcement organizations. It is, nonetheless, a fixture of the Meridian 88 black market, where it commands a significant premium. Its primary non-authorized users are high-end extraction teams, corporate espionage operatives, and — with uncomfortable regularity — groups planning coordinated violence who need to ensure that targets cannot call for help.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Selective Frequency Nulling",
+    "Dynamic Suppression Profile Management",
+    "Friendly Channel Preservation",
+    "Pulse-Mode Jamming"
+  ],
+  "specifications": {
+    "dimensions": "28cm x 19cm x 7cm",
+    "weight": "1.4kg",
+    "power_source": "Removable high-density power cell; 4-hour continuous operation at full output",
+    "suppression_radius": "Up to 340m in open terrain; 80–150m in dense urban construction",
+    "frequency_coverage": "400MHz – 6GHz suppressible range",
+    "preserved_channels": "Up to 8 operator-defined frequency corridors",
+    "deployment_time": "38–45 seconds to full operational suppression",
+    "pulse_mode": "Configurable irregular cycling, minimum 3-second suppression intervals",
+    "detection_signature": "Moderate — generates detectable RF noise floor elevation within 600m"
+  },
+  "tactical_use": "Standard deployment involves placing the Deadfall at a central point within the operational area before action commences, with the operator's team already configured to communicate on the preserved corridors. The jammer's moderate detection signature means that extended use in a fixed location risks triangulation, so experienced operators either keep operations short or use multiple units deployed sequentially to shift the apparent jamming source. Pulse mode is favored in scenarios where the goal is to create confusion rather than complete silence — targets attempting to transmit during suppression windows will experience intermittent success, which is often more disorienting than a clean blackout. The Deadfall is frequently paired with Tessera Corponation mesh equipment to ensure operator communications remain robust within the suppressed zone.",
+  "cultural_context": "The Spectral Deadfall Jammer is one of the few pieces of equipment in Meridian 88 that carries genuine moral weight in the city's underground culture. Its legitimate applications are understood and grudgingly accepted — corporate security teams use it during sensitive extractions, and licensed contractors deploy it for crowd management operations that most residents already resent. Its illegitimate applications are darker and less easy to rationalize away. The device has been found at the scenes of enough targeted killings and coordinated assaults that carrying one without obvious legitimate context marks an operator as someone willing to work at a certain level of violence. Among fixers and runners, taking a contract that requires a Deadfall is understood to be a statement about the kind of work you are willing to do.",
+  "known_users": [
+    "Licensed corporate security extraction teams",
+    "Black-market contractors",
+    "High-end corporate espionage operatives",
+    "Law enforcement tactical units (authorized)",
+    "Organized crime coordination cells"
+  ],
+  "story_hooks": [
+    "A Deadfall activates in a residential block during a municipal election event, silencing emergency services for eleven minutes during which three people die in an unrelated medical emergency — the device is recovered but its operator is never identified.",
+    "An Arcturus Defense Solutions internal audit reveals that three Spectral Deadfall Jammers were signed out for a licensed contractor operation six months ago and never returned — and the contractor no longer exists as a registered entity.",
+    "A player's team deploys a Deadfall only to discover that someone else has already activated one in the same zone, on a different suppression profile — two jammers fighting each other, creating unpredictable frequency behavior that neither operator can fully control.",
+    "A city councilor pushing for stricter jammer regulations is found to have a Deadfall registered to a shell company with ties to her office, raising questions about what communications she has been suppressing and why."
+  ],
+  "tags": [
+    "comms",
+    "equipment",
+    "violence",
+    "war",
+    "crime",
+    "love",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "medical",
+    "market",
+    "dark",
+    "moral",
+    "tier 3"
+  ]
+}

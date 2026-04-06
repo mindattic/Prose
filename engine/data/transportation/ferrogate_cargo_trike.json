@@ -1,0 +1,36 @@
+{
+  "id": "019d6143aa64725ea19563f9bafb93d1",
+  "name": "Ferrogate Cargo Trike",
+  "type": "transportation",
+  "aliases": [
+    "Workhorse",
+    "Three-Wheeler",
+    "The Mule"
+  ],
+  "category": "personal_ground",
+  "manufacturer": "Ferrogate Transit (civilian division)",
+  "description": "A three-wheeled electric cargo vehicle ubiquitous in Tier 1-3 commercial districts. Open cab, flatbed rear, rated for 500 kg of cargo. They're the backbone of small-scale commerce in Meridian 88 — every street vendor, repair shop, and small business owner either has one or wishes they did. Reliable, ugly, and nearly indestructible. Ferrogate's only product that people actually like.",
+  "propulsion": "Single electric motor, solid-state battery",
+  "speed": "40 km/h top speed",
+  "capacity": "1 driver + 500 kg cargo",
+  "range": "60 km loaded, 90 km empty",
+  "tier_availability": "Tier 1-3",
+  "cost": "Φ1,200 new, Φ400-800 used",
+  "autonomy": "Manual only",
+  "armament": "None. Cargo tie-downs can be repurposed creatively.",
+  "common_usage": "Small business deliveries, market vendors, repair technicians, general hauling.",
+  "story_hooks": [
+    "A cargo trike driver has been unknowingly hauling smuggled goods hidden in their battery compartment",
+    "The Ferrogate Cargo Trike racing league is the most wholesome thing in Meridian 88 and everyone protects it"
+  ],
+  "tags": [
+    "personalground",
+    "transportation",
+    "smuggle",
+    "ai",
+    "market",
+    "vehicle",
+    "tier 1",
+    "tier 3"
+  ]
+}

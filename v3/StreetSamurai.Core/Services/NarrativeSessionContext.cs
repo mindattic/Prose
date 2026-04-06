@@ -1,3 +1,5 @@
+using System.Globalization;
+using System.Text;
 using StreetSamurai.Core.Models.Graph;
 
 namespace StreetSamurai.Core.Services;
@@ -141,6 +143,7 @@ public class NarrativeSessionContext
 
         var newlyLoaded = new List<string>();
         var textLower = narrativeText.ToLowerInvariant();
+        var textNorm = StripDiacritics(textLower);
 
         // Check all known graph nodes for mentions in the text
         foreach (var node in graph.AllNodes())
@@ -148,8 +151,21 @@ public class NarrativeSessionContext
             // Already resolved — skip
             if (resolvedIds.Contains(node.Id)) continue;
 
-            // Check name match
-            if (textLower.Contains(node.Name.ToLowerInvariant()))
+            var nameLower = node.Name.ToLowerInvariant();
+            var nameNorm = StripDiacritics(nameLower);
+
+            // Full name match (with diacritic normalization)
+            if (textLower.Contains(nameLower) || textNorm.Contains(nameNorm))
+            {
+                primaryIds.Add(node.Id);
+                Resolve(node.Id);
+                newlyLoaded.Add(node.Name);
+                continue;
+            }
+
+            // Partial name match — first name or surname (3+ chars)
+            var nameParts = nameLower.Split([' ', '-'], StringSplitOptions.RemoveEmptyEntries);
+            if (nameParts.Any(part => part.Length >= 3 && (textLower.Contains(part) || textNorm.Contains(StripDiacritics(part)))))
             {
                 primaryIds.Add(node.Id);
                 Resolve(node.Id);
@@ -161,7 +177,8 @@ public class NarrativeSessionContext
             if (node.Properties.TryGetValue("aliases", out var aliases))
             {
                 var aliasList = aliases.Split(',', StringSplitOptions.TrimEntries);
-                if (aliasList.Any(a => a.Length > 2 && textLower.Contains(a.ToLowerInvariant())))
+                if (aliasList.Any(a => a.Length > 2 &&
+                    (textLower.Contains(a.ToLowerInvariant()) || textNorm.Contains(StripDiacritics(a.ToLowerInvariant())))))
                 {
                     primaryIds.Add(node.Id);
                     Resolve(node.Id);
@@ -171,6 +188,19 @@ public class NarrativeSessionContext
         }
 
         return newlyLoaded;
+    }
+
+    /// <summary>Remove diacritics: Čavić → Cavic, São → Sao, etc.</summary>
+    private static string StripDiacritics(string text)
+    {
+        var normalized = text.Normalize(NormalizationForm.FormD);
+        var sb = new StringBuilder(normalized.Length);
+        foreach (var c in normalized)
+        {
+            if (CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark)
+                sb.Append(c);
+        }
+        return sb.ToString().Normalize(NormalizationForm.FormC);
     }
 
     /// <summary>

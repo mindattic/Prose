@@ -1,0 +1,43 @@
+{
+  "id": "019d6143ab477e688b1ccb7213d965c1",
+  "name": "Street Custom 'Judas Cradle' Electrified Knuckle Frame",
+  "type": "weapon",
+  "aliases": [
+    "Judas Cradle",
+    "Sparknuckles",
+    "Zap Hands",
+    "Judas"
+  ],
+  "category": "melee",
+  "description": "A set of articulated steel knuckle guards wired to a concealed capacitor pack worn at the wrist, delivering a high-voltage discharge on impact. The design originated in bare-knuckle fighting circuits in Tier 1 where augmented fighters needed an equalizer against opponents with reinforced skeletal systems. The discharge is enough to override pain suppression firmware in most commercial-grade cyberware, forcing augmented opponents to feel every hit. Build quality varies wildly — some are precision-machined, others are scrap metal and electrical tape.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — concealed electrified weapon",
+  "base_technologies": [
+    "Capacitor discharge on impact",
+    "Pain suppression firmware override"
+  ],
+  "specifications": "discharge voltage: 800-2,000V depending on build\ncapacitor recharge: 3-5 seconds between strikes\nweight: 0.3-0.6 kg per hand\npower source: Wrist-mounted lithium capacitor, 40-60 strikes per charge\nconstruction: Ranges from machined titanium to salvage steel",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A fighting circuit promoter has started requiring Judas Cradles for all competitors — the resulting injuries are drawing attention from people who profit from the fighters staying healthy.",
+    "A new variant is circulating that delivers a data-injection payload along with the shock — it's not just hurting people, it's hacking their cyberware on contact."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "melee",
+    "weapon",
+    "war",
+    "augment",
+    "cyberware",
+    "ai",
+    "power",
+    "pain",
+    "bar",
+    "hacking",
+    "circuit",
+    "tier 1"
+  ]
+}

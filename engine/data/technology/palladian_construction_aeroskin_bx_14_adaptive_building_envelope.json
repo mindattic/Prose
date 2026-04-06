@@ -1,0 +1,56 @@
+{
+  "id": "019d6143aa4b710f8a6ed8e1e05ad1a4",
+  "name": "Palladian Construction AeroSkin BX-14 Adaptive Building Envelope",
+  "brand_name": "Palladian",
+  "product_name": "Palladian Construction AeroSkin BX-14 Adaptive Building Envelope",
+  "type": "technology",
+  "aliases": [
+    "the Skin",
+    "BX-Shell",
+    "Palladian Wrap",
+    "SmartFace"
+  ],
+  "subcategory": "environmental",
+  "description": "The AeroSkin BX-14 is a modular facade system applied to existing or new structures in Meridian 88, consisting of interlocking polymer-ceramic panels embedded with piezoelectric microactuators, electrochromic glazing layers, and a distributed sensor mesh. Each panel independently adjusts its opacity, thermal emissivity, and micro-ventilation apertures in response to real-time atmospheric data fed through Saltmarsh Telecom's urban sensor grid. The system effectively turns any building surface into a breathing, reactive membrane — shunting heat loads during summer inversions, capturing condensation moisture during lake-effect fog events, and hardening against the acid particulate storms that roll off the industrial northern zones two to three times per year.\n\nWhat distinguishes the BX-14 from earlier adaptive facades is its distributed Cinderblock AI sub-node architecture: each panel cluster of roughly forty units hosts a localized inference chip that makes micro-decisions without round-tripping to a central server, reducing response latency to under 80 milliseconds. The panels also harvest low-grade kinetic and thermal differential energy, feeding trickle power back into the building's grid — typically enough to offset 4–9% of common-area lighting load. Palladian markets the system as a retrofit solution, and installation crews can panel a mid-rise tower in under a week using magnetic locking rail systems.\n\nThe BX-14 is standard issue on any Tier 2 or above corporate residential tower constructed or refurbished after 2181. Below that, residents deal with raw concrete, crumbling legacy insulation, and whatever improvised vapor barriers the informal market provides. Street-level installers in the lower districts have begun harvesting decommissioned BX-12 panels from demolition sites and rigging bootleg arrays on hab-block exteriors, with mixed results — the Cinderblock sub-nodes require licensed firmware to cooperate, and unlicensed panels tend to develop erratic opacity cycling that locals call 'the Blink.'",
+  "tier_availability": "Tier 2+",
+  "developers": [
+    "PALLADIAN CONSTRUCTION",
+    "CINDERBLOCK AI",
+    "SALTMARSH TELECOM"
+  ],
+  "base_technologies": [
+    "electrochromic polymer glazing",
+    "piezoelectric microactuator arrays",
+    "distributed edge inference architecture",
+    "atmospheric particulate sensing"
+  ],
+  "enables": [
+    "passive building-scale climate regulation",
+    "condensation water harvesting systems",
+    "facade-integrated emergency blackout shielding",
+    "distributed urban thermal mapping"
+  ],
+  "social_impact": "The AeroSkin BX-14 has created a visible and literal boundary between tiered neighborhoods — Tier 2+ towers shimmer and shift with responsive surfaces while lower-tier blocks blister in summer heat or ice over in lake-wind winters. The thermal comfort gap has been quantified by underground health collectives as contributing to a 23% higher incidence of heat-stress hospitalization in uncoated districts. Palladian's leasing model means buildings never truly own the system — a missed maintenance payment triggers remote lockout, reverting panels to fixed-open ventilation mode, which during an acid storm event can cause significant interior contamination.",
+  "story_hooks": [
+    "A building in a Tier 3 district has been running unlicensed BX-12 salvage panels for two years — but the Cinderblock sub-nodes have been quietly logging occupancy patterns and selling the data to an unknown buyer through a firmware backdoor",
+    "During a major acid storm, a Palladian maintenance lockout cascades across six towers in the same payment cluster, leaving thousands exposed — someone triggered the lockout deliberately",
+    "A Palladian installation crew discovers that a corporate tower they are retrofitting already has a hidden layer beneath the existing facade — an older system with no manufacturer markings",
+    "A freelance engineer claims to have cracked the BX-14 firmware and is selling open-source panel nodes in the Undercroft markets, but the panels are behaving in ways she never programmed"
+  ],
+  "tags": [
+    "environmental",
+    "technology",
+    "gun",
+    "war",
+    "ai",
+    "corporate",
+    "power",
+    "market",
+    "bar",
+    "storm",
+    "energy",
+    "water",
+    "lake",
+    "tier 2"
+  ]
+}

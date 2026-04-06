@@ -1,0 +1,55 @@
+{
+  "id": "019d6143ab267d5f8bc91d2f898bc31f",
+  "name": "Electromagnetic Pulse Grenade EPG-5 'Deadstop'",
+  "type": "weapon",
+  "aliases": [
+    "Deadstop",
+    "EPG-5",
+    "The Silencer",
+    "Flatline"
+  ],
+  "category": "explosive",
+  "description": "The EPG-5 is a precision electromagnetic pulse device built around a flux compression generator — a one-shot coil system that converts the energy of a compact explosive charge into a directed electromagnetic burst. Unlike broad-spectrum EMP devices, the Deadstop uses a tunable frequency array to target specific electromagnetic signatures, allowing operators to selectively disable cybernetic implants, vehicle electronics, or communications infrastructure while leaving other systems functional. The tuning dial has five preset modes and one manual override requiring a RINGO CORPONATION technician key.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Military only",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Flux compression generation",
+    "Tunable electromagnetic pulse architecture",
+    "Neural feedback loops"
+  ],
+  "specifications": "weight: 0.9 kg\ndiameter: 11 cm\npulse radius: 12 m standard, 6 m in directional mode\nfrequency modes: Cybernetic neural implants, Vehicle electronics, Communications arrays, Drone guidance systems, Broad-spectrum (all electronics)\ndetonation delay: 2.5 seconds pull-pin\nreuse: Single use — flux coil destroyed on detonation\noperator protection: Requires Faraday-lined gloves — unprotected operators within 3 m risk implant damage",
+  "tactical_use": "Standard deployment in anti-cyborg operations and vehicle interdiction. Military breach teams use the Deadstop to drop heavily augmented targets before entering — the cybernetic implant mode selectively crashes neural-linked weapons systems, optical overlays, and subdermal armor actuators without triggering cardiac implants, which would constitute a prohibited kill method under Meridian 88 corporate warfare accords. The manual override mode that removes this restriction is why the weapon is classified.",
+  "cultural_context": "The EPG-5 occupies an uncomfortable legal grey zone in Meridian 88 — its selective modes are technically compliant with corporate warfare protocols, but the existence of the manual override is an open secret that RINGO CORPONATION refuses to acknowledge. Heavily augmented citizens fear the Deadstop the way unaugmented people fear bullets: it is specifically designed to make their body a liability. Black market units with the technician key already installed command extraordinary prices.",
+  "known_users": [
+    "RINGO CORPONATION military divisions",
+    "Corporate special operations teams",
+    "Anti-augmentation extremist groups (black market units)",
+    "Law enforcement elite tactical units (licensed, restricted modes only)"
+  ],
+  "story_hooks": [
+    "A RINGO technician key surfaces at a street market — whoever sold it either stole it or is dead, and RINGO's internal security is moving to recover it by any means necessary.",
+    "A runner with extensive cybernetic augmentation is hired for a job, only to discover the client's building was just swept with an EPG-5 on broad-spectrum mode — their implants are dead and they're deep inside hostile territory.",
+    "An anti-augmentation cell has acquired twelve EPG-5 units with manual overrides and is planning coordinated detonations across the city's most densely augmented districts during a public festival."
+  ],
+  "ammunition_type": [
+    "self_contained_charge"
+  ],
+  "tags": [
+    "explosive",
+    "weapon",
+    "war",
+    "secret",
+    "love",
+    "augment",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "market",
+    "vehicle",
+    "armor",
+    "drone",
+    "energy"
+  ]
+}

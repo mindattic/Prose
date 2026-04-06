@@ -1,0 +1,72 @@
+{
+  "id": "019d6143a85f797ab399fd0a6b871719",
+  "name": "Lazarus Pharmaceuticals Coagulant Bloom Injector — 'The Bridesmaid'",
+  "brand_name": "Lazarus",
+  "product_name": "Lazarus Pharmaceuticals Coagulant Bloom Injector — 'The Bridesmaid'",
+  "type": "equipment",
+  "aliases": [
+    "The Bridesmaid",
+    "Bloom",
+    "The White Dress",
+    "Clotter"
+  ],
+  "category": "medical",
+  "description": "The Coagulant Bloom Injector is a single-use autoinjector loaded with a proprietary Lazarus compound designated LP-Heme-7, a synthetic fibrinogen catalyst suspended in a thermally-reactive polymer gel. Upon injection into or adjacent to a wound site, the compound undergoes rapid phase-change, expanding into a semi-rigid foam matrix that mechanically occludes hemorrhaging tissue while simultaneously triggering accelerated platelet aggregation. The entire process takes between four and nine seconds depending on wound depth and vascular involvement, with the foam matrix remaining stable for six to twelve hours before enzymatic breakdown begins.\n\nWhat distinguishes the Bridesmaid from older field coagulants is its dual-action delivery: a hollow-bore needle deposits the compound deep into cavity wounds while a secondary ring-port floods the surface simultaneously, addressing both internal bleed and external seepage in a single press. The injector casing is constructed from recycled Palladian impact-polymer, matte white with a red grip band — the color scheme that gave it its street name, worn at the threshold between life and death like a bride at the altar. Medics note that the foam sets with a faint organic smell, somewhere between blood and antiseptic, which combat personnel describe as unmistakably associated with survival.\n\nThe Bridesmaid is ubiquitous in low-tier field medicine across Meridian 88's outer districts. Street surgeons carry them in bundles of six. Corporate security medics carry them as backup to more sophisticated trauma systems. It is the piece of equipment most commonly pressed into the hands of someone who has never used medical gear before and told simply: find the hole, press the button. Its simplicity is its legacy.",
+  "manufacturer": "LAZARUS PHARMACEUTICALS",
+  "tier_availability": "Tier 1+",
+  "legality": "Unrestricted",
+  "base_technologies": [
+    "Synthetic fibrinogen catalysis",
+    "Thermally-reactive polymer gel",
+    "Dual-bore autoinjector delivery",
+    "Enzymatic time-release breakdown",
+    "Phase-change foam matrix"
+  ],
+  "specifications": {
+    "compound": "LP-Heme-7 synthetic fibrinogen catalyst",
+    "delivery_mechanism": "Dual-bore autoinjector (deep-cavity needle + surface ring-port)",
+    "activation_time": "4–9 seconds post-injection",
+    "matrix_stability_window": "6–12 hours",
+    "uses_per_unit": "Single-use",
+    "casing_material": "Recycled Palladian impact-polymer",
+    "dimensions": "14cm x 3cm cylindrical",
+    "weight": "87g",
+    "temperature_range": "Stable from -10°C to 48°C",
+    "contraindications": "Incompatible with Helix Biosystems Hematic Sentinel Array — consult field manual"
+  },
+  "tactical_use": "The Bridesmaid is deployed immediately upon identifying a hemorrhaging wound in a field context where surgical intervention is unavailable. The medic or even an untrained bystander locates the primary bleed site, positions the injector tip perpendicular to the wound, and depresses the grip trigger. No calibration or diagnostic step is required. In combat situations, it buys the window necessary to extract a casualty to a more capable medical station. Experienced medics use multiple units on complex wounds, staging injections across bleed sites in priority order. It is not a cure — it is a pause.",
+  "cultural_context": "In the outer districts where Lazarus Pharmaceuticals dominates the medical supply chain, the Bridesmaid occupies a near-mythological status as the object that keeps people alive long enough to matter. Its white casing and red grip are immediately recognizable, and carrying one is considered basic civic responsibility in high-violence neighborhoods — the equivalent of knowing how to apply pressure. Among street surgeons and fixers it is a commodity of goodwill: leaving one behind after a job, or pressing one into someone's hands before a dangerous run, is a gesture that carries genuine weight. The name 'Bridesmaid' has been adopted as slang for anyone who keeps others alive without getting credit.",
+  "known_users": [
+    "Street surgeons and unlicensed medics",
+    "Corporate security medics (as backup)",
+    "Fixers operating in outer-district contracts",
+    "Gang medics",
+    "Disaster response volunteers",
+    "Anyone who has been in a firefight more than once"
+  ],
+  "story_hooks": [
+    "A batch of counterfeit Bridesmaids has entered circulation in the Sallow Ward — the compound sets correctly but begins dissolving at 90 minutes instead of 6 hours, and people are dying hours after being stabilized.",
+    "A Lazarus Pharmaceuticals internal memo suggests LP-Heme-7 contains a passive biomarker that flags treated individuals in corporate medical databases — someone is selling that data.",
+    "A street surgeon running a free clinic in the outer districts has run completely dry of Bridesmaids and is asking a crew to do a supply run that Lazarus will not sanction.",
+    "A character finds a Bridesmaid in the pocket of a corpse — the injector has been used but the body shows no wound. What was it used on?"
+  ],
+  "tags": [
+    "medical",
+    "equipment",
+    "violence",
+    "combat",
+    "war",
+    "gang",
+    "death",
+    "ai",
+    "synthetic",
+    "corporate",
+    "contract",
+    "clinic",
+    "rain",
+    "train",
+    "survival",
+    "fire",
+    "tier 1"
+  ]
+}

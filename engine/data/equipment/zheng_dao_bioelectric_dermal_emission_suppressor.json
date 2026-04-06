@@ -1,0 +1,67 @@
+{
+  "id": "019d6143a8827e74ac8d704f8d7b2b9c",
+  "name": "Zheng-Dao Bioelectric Dermal Emission Suppressor",
+  "brand_name": "Zheng",
+  "product_name": "Zheng-Dao Bioelectric Dermal Emission Suppressor",
+  "type": "equipment",
+  "aliases": [
+    "The Shroud Skin",
+    "Cold Wrap",
+    "The Embalmer's Glove"
+  ],
+  "category": "stealth",
+  "description": "The Dermal Emission Suppressor is a full-body compression underlayer embedded with a dense mesh of bioelectric regulation nodes developed from Zheng-Dao's research into autonomic system intervention. The underlayer interfaces non-invasively with the wearer's skin surface, monitoring galvanic response, localized surface temperature, and sweat gland activity across the body in real time. Using this data, the nodes apply targeted micro-current stimulation and localized thermoelectric cooling to suppress the involuntary physiological signals that thermal imaging, biometric stress sensors, and galvanic scan systems rely upon to detect and profile human presence.\n\nThe Suppressor's primary function is thermal: it maintains the wearer's skin surface temperature within 0.3 degrees of ambient environment temperature by dynamically redistributing body heat through a network of thermoelectric channels that terminate at a heat-sink collar worn at the back of the neck. This collar expels accumulated heat as a diffuse low-temperature plume rather than a concentrated body-shaped signature, dramatically reducing the wearer's profile on thermal imaging systems. A secondary function targets galvanic and stress-response suppression — the bioelectric nodes modulate skin conductivity to flatten the stress-response spikes that biometric scanners at corporate checkpoints use to flag persons of interest regardless of their visual identity.\n\nZheng-Dao markets a civilian variant of the underlying thermoelectric technology as a medical garment for patients with autonomic dysregulation disorders, which provides a plausible cover story for possession. The full Suppressor, however, exceeds medical specifications significantly and requires calibration to the wearer's specific bioelectric baseline — a process that takes approximately two hours and leaves a calibration record in Zheng-Dao's service network that cautious buyers pay considerable sums to have expunged.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Bioelectric Regulation Node Mesh",
+    "Thermoelectric Heat Redistribution",
+    "Galvanic Response Suppression",
+    "Autonomic Micro-Current Stimulation",
+    "Heat-Sink Collar Dispersal System"
+  ],
+  "specifications": {
+    "thermal_suppression": "Maintains skin surface within ±0.3°C of ambient; effective against thermal imaging up to Tier 4 military-grade systems",
+    "heat_sink_capacity": "Maximum sustained heat dispersal: 180W; operational limit degrades in environments above 38°C ambient",
+    "galvanic_suppression": "Reduces stress-response galvanic spike by 89% as measured by standard checkpoint biometric systems",
+    "calibration_time": "1.8 hours for full bioelectric baseline mapping",
+    "power_source": "Passive thermoelectric harvest from body heat; supplemental micro-cell for node stimulation, 24-hour capacity",
+    "weight": "1.4 kg (full underlayer plus collar)",
+    "medical_cover_variant": "Zheng-Dao Autonomic Comfort Layer — publicly registered, available Tier 1+"
+  },
+  "tactical_use": "Essential for any operation requiring passage through environments with thermal surveillance — automated perimeter systems, drone overwatch, or facilities using thermal imaging as a primary detection layer. Equally valuable at biometric checkpoints where galvanic stress-response analysis is used to flag individuals regardless of forged visual credentials. The heat-sink collar requires the wearer to keep the back of the neck clear and unobstructed; operatives in close-quarters environments must be careful not to let the collar contact walls or other surfaces, which can transfer a detectable heat signature. Performance degrades significantly in high-ambient-temperature environments, making the Suppressor poorly suited to outdoor operations in hot climates.",
+  "cultural_context": "The Suppressor occupies an uncomfortable legal space — technically licensed rather than prohibited, on the basis that Zheng-Dao's lobbying successfully framed it as a medical adjacent device. This means possession alone is not grounds for detention, but use in the vicinity of a security incident dramatically changes the legal calculus. Corporate security personnel are trained to recognize the heat-sink collar as a specific indicator, leading to an aftermarket in collar cosmetic covers that make it resemble standard medical or environmental neck bracing. Within the operative community, the Suppressor has a reputation as the mark of someone who plans ahead — acquiring and calibrating one requires patience and resources that impulsive operators rarely possess.",
+  "known_users": [
+    "Corporate infiltration specialists",
+    "High-value couriers moving through thermal surveillance corridors",
+    "Patients with genuine autonomic disorders (civilian variant)",
+    "Dae-Sung Lim — former Zheng-Dao calibration technician turned independent contractor",
+    "Extraction teams operating in facilities with automated thermal perimeter systems"
+  ],
+  "story_hooks": [
+    "A calibration record that was supposed to be expunged wasn't — someone at Zheng-Dao kept a copy, and now the operative's bioelectric baseline is being used to identify them at scenes they were never supposed to be connected to.",
+    "A job requires passing through a thermal-monitored zone in a 42°C industrial environment — the Suppressor will fail halfway through, and the team needs an alternative plan for the second half of the route.",
+    "A body is found in a thermal-blind zone with a Suppressor still active on the corpse — whoever killed them knew the body wouldn't register on the facility's thermal sweep for hours, buying time to escape.",
+    "Zheng-Dao quietly recalls a batch of Suppressors citing a 'calibration firmware issue' — operatives who ignore the recall notice start experiencing involuntary muscle contractions during high-stress situations at unpredictable intervals."
+  ],
+  "tags": [
+    "stealth",
+    "equipment",
+    "war",
+    "love",
+    "identity",
+    "ai",
+    "corporate",
+    "contract",
+    "surveillance",
+    "medical",
+    "market",
+    "rain",
+    "cold",
+    "train",
+    "escape",
+    "drone",
+    "tier 3"
+  ]
+}

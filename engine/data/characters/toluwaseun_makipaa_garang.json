@@ -1,0 +1,225 @@
+{
+  "id": "019d6143a70077b797d948ecd8179152",
+  "type": "character",
+  "name": "Toluwaseun Mäkipää-Garang",
+  "aliases": [
+    "Tolu",
+    "Mallet"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Protection racket enforcer for the Copperhead Tithe, a neighborhood gang in Copperhead",
+  "age": 24,
+  "status": "active",
+  "location": "Copperhead — lives in a shared flat on Suture Alley, works the six-block Tithe territory on foot",
+  "description": "Tolu is built like someone who grew up doing physical labor and never stopped — broad through the chest and shoulders, with hands that look one size too large for his frame. His skin is a warm dark brown, and he has geneware cat ears in matte black that he got at eighteen as a coming-of-age gift to himself, which he is genuinely fond of and keeps very clean. His natural hair grows out in a loose high shape and he never seems to cut it, just lets it accumulate. He has a chipped front tooth he's never fixed because he thinks it makes him look less approachable, which is professionally useful.\n\nTolu is not a cruel person by disposition, which creates a quiet friction with his job. He is the guy who knocks on doors and explains, very politely, why the Tithe expects its weekly contribution from every business on the six blocks. He is also the guy who comes back if the contribution doesn't arrive. He is aware that most of the people he collects from are roughly his own tier — working families, small operators, people trying to get by — and he manages this awareness by telling himself the Tithe actually does provide something: protection from the worse gangs further down the Shelf. He is not sure he believes this anymore.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "becoming genuinely indifferent to hurting people",
+      "his younger cousins ending up doing the exact thing he's doing"
+    ],
+    "core_desires": [
+      "to get enough saved to open the fighting gym himself — a legitimate one",
+      "to be respected rather than feared"
+    ],
+    "coping_mechanisms": [
+      "physical exercise as emotional processing",
+      "maintaining a strict internal code about what he will and won't do"
+    ],
+    "blind_spots": [
+      "the line he's drawn about 'acceptable' enforcement is already further than he originally placed it",
+      "genuinely believes the Tithe's protection narrative despite evidence to the contrary"
+    ],
+    "secret": "He deliberately let a family skip three payments last year because the mother was sick and he told his boss the door was always locked. He's been covering that gap from his own collections ever since and is running short."
+  },
+  "speech_patterns": {
+    "vocabulary": "Casual and direct; neighborhood slang; drops technical words occasionally that reveal he reads more than he lets on",
+    "cadence": "Unhurried, slightly too relaxed for the situations he's usually in — a deliberate affect",
+    "verbal_tics": [
+      "'You hear me?'",
+      "uses 'brother' and 'sister' regardless of the person's gender"
+    ],
+    "example_lines": [
+      "'Nobody wants trouble here. I know you know that. So let's just sort this out and I'll be out of your way.'",
+      "'Look, I'm not the system, right? I'm just the guy standing in front of you. Let's talk about the system later.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He approaches someone for help covering the missing payment discrepancy before his boss runs the quarterly audit in two weeks",
+    "A new gang moving into Copperhead has started targeting Tithe-protected businesses anyway — Tolu is quietly furious and looking for information on who's backing them"
+  ],
+  "narrative_function": "Street-level antagonist or reluctant ally; humanizes the protection racket as a system rather than a cartoon villainy; can be a source of local territorial intelligence; potential character who could be flipped or who quits at a breaking point",
+  "augmentations": "Geneware cat ears (matte black, cosmetic); subdermal impact plating along knuckles and forearms (practical, tier 1 — he got them cheap and they show at the skin surface as faint ridges)",
+  "daily_life": "Does collections Tuesday through Saturday on a rotating schedule; spends Sundays at a local fighting gym where he spars for free with kids from the neighborhood; Monday is his only real day off.",
+  "affiliation": "Copperhead Tithe gang; answers to a mid-level called Efrat Sundiata-Horváth",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 8,
+      "dexterity": 7,
+      "vitality": 7,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 5,
+      "willpower": 6,
+      "creativity": 4,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 0,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": 2,
+      "transparency_guardedness": 0
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "enforcer",
+      "reluctant criminal",
+      "community figure",
+      "physical",
+      "moral compass under strain"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never hit first if words might work",
+      "Don't touch kids, ever, for any reason — hard limit"
+    ],
+    "escalation_ladder": [
+      "Friendly knock and conversation",
+      "Second visit, less friendly, explicit about consequences",
+      "Property damage, precisely calibrated",
+      "Physical enforcement — minimum necessary force only",
+      "Refuses to escalate further; reports inability to collect and accepts the professional consequences"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally calm and slightly too still — reads as controlled threat",
+      "friends": "Loud, laughing, physically demonstrative — completely different person"
+    },
+    "stress_responses": {
+      "low": "Cat ears flatten slightly (he's not always aware of this)",
+      "medium": "Breathing slows and he starts tracking exits",
+      "high": "Completely silent; moves with deliberate economy"
+    },
+    "contradictions": [
+      "Genuinely gentle with children and the old people on his route while being the instrument of a system that makes their lives harder"
+    ],
+    "habits": [
+      "Brings food when visiting a family he knows is struggling — leaves it outside before knocking",
+      "Keeps a small notebook of everyone on his route's names and personal details (to personalize, not to threaten)",
+      "Prays to the Fist-That-Holds E.L.F. before difficult collection days"
+    ],
+    "breaking_points": [
+      "Being ordered to hurt someone he considers genuinely innocent",
+      "One of his cousins showing up as a Tithe recruit"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "1",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "1",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Enforcer": 0.9,
+    "Muscle": 0.9,
+    "Judge": 0.7,
+    "Sentinel": 0.7,
+    "Code Keeper": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Copperhead; Yoruba-Finnish-South Sudanese heritage",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Got the cat ears; started training at the neighborhood gym",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined the Copperhead Tithe at eighteen after losing his factory apprenticeship to an automation upgrade",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began covering payments for the sick family on his route; financial strain begins",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

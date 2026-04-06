@@ -1,0 +1,99 @@
+{
+  "id": "019d6143a8997350b1497582704ba659",
+  "type": "faction",
+  "name": "The Tessera Residuals",
+  "aliases": [
+    "The Splinters",
+    "Residuals",
+    "The Fractured Board"
+  ],
+  "motto": "What was built cannot be unbuilt. Only repossessed.",
+  "description": "The Tessera Residuals emerged from the wreckage of TESSERA CORPONATION's internal Governance Partition Crisis of 2181, when a bloc of mid-tier executive architects, licensed IP custodians, and embedded legal-tech personnel were formally excised from TESSERA's organizational registry following a hostile restructuring engineered by the company's upper Directorate. These were not rebels or dissidents — they were true believers in TESSERA's original corporate charter, which had promised co-ownership stakes and perpetual licensing dividends to its founding-tier employees. When the Directorate voided those contracts through a series of regulatory sleight-of-hand moves ratified under Meridian 88's Corporate Sovereignty Amendment 7-C, approximately three hundred individuals found themselves stripped of citizenship tier, corporate housing credits, and proprietary access — but still in possession of deep institutional knowledge, dormant access credentials, and in several cases, physical TESSERA infrastructure they had personally overseen during construction.\n\nCurrently operating out of contested commercial space in The Shelf and a network of leased server catacombs beneath the Oxidian Market, the Residuals have evolved from a grievance organization into a functional shadow corporation. They do not seek to destroy TESSERA — they seek to force a recognition of debt. Their operations center on leveraging proprietary knowledge of TESSERA systems architecture to broker information, execute precision infrastructure disruptions, and position themselves as indispensable third-party 'consultants' to TESSERA's corporate rivals. They have formalized their internal structure around the original TESSERA charter documents they preserved before excision, electing officers with titles mirroring TESSERA's own hierarchy as a deliberate provocation.\n\nWhat distinguishes the Residuals from simple corporate saboteurs is their obsessive proceduralism. Every action they take is documented, timestamped, and filed against a running legal ledger they call the Reclamation Index — a meticulously maintained record intended to serve as evidence in a future arbitration they genuinely believe they will one day win. They retain two licensed corporate arbitration attorneys on retainer. They issue formal invoices to TESSERA subsidiaries for 'unauthorized use of intellectual labor.' Some in Meridian 88's legal underground consider the Reclamation Index the most dangerous document in the megacity corridor. TESSERA considers it an irritant. For now.",
+  "ideology": "The Residuals operate on a doctrine they call Earned Sovereignty — the belief that corporate citizenship and institutional standing are not privileges granted by a Directorate but obligations owed by a corporation to those whose labor substantiated its value. They are not anti-corporate ideologues; they believe deeply in the legitimacy of corporate structures and contractual frameworks. Their grievance is not with the system but with TESSERA's specific violation of it. This makes them ideologically uncomfortable allies for most anti-corporate factions and ideologically uncomfortable enemies for TESSERA, which cannot easily dismiss them as radicals. They advocate for binding enforcement of founding-tier labor contracts across all Meridian 88 corponations — a position that, if successful, would destabilize the labor architecture of nearly every major corporate entity in the corridor.",
+  "territory": "Primary operations in The Shelf (three commercial units registered under shell subsidiaries) and the lower Oxidian Market server warrens. Residual members maintain individual residences scattered across Old Harbor and fringe Circuit zones. They have no formal presence in the Meridian Core or Vantage Meridian Corporate Campus, though they maintain surveillance assets near both.",
+  "leadership": "Mirrors TESSERA's original charter hierarchy. An elected Residency Board of seven officers governs by supermajority vote.\n\nundefined: \n\nundefined: \n\nundefined: ",
+  "methods": [
+    "Filing formal legal instruments and arbitration petitions against TESSERA subsidiaries through Meridian 88's corporate court system",
+    "Selling institutional knowledge of TESSERA infrastructure vulnerabilities to rival corponations, particularly ZHENG-DAO BIOELECTRIC and RINGO CORPONATION",
+    "Precision disruption of TESSERA logistics and data relay systems, always executed in ways that generate a traceable 'invoice' for the Reclamation Index",
+    "Recruiting recently excised TESSERA personnel before they can be fully decommissioned and memory-audited",
+    "Maintaining a shadow corporate registry that tracks TESSERA asset movements and subsidiary restructurings in real time",
+    "Brokering dormant access credentials to third parties under time-limited lease agreements with contractual liability clauses"
+  ],
+  "resources": [
+    "Extensive institutional knowledge of TESSERA's internal systems architecture, personnel hierarchies, and subsidiary structures",
+    "Cache of dormant but potentially reactivatable TESSERA access credentials",
+    "The Reclamation Index — a legally structured evidentiary archive of TESSERA contract violations",
+    "Two licensed corporate arbitration attorneys with standing in Meridian 88's commercial courts",
+    "Leased server infrastructure in the Oxidian Market's lower warrens",
+    "Shell subsidiary network for commercial registration and financial obfuscation",
+    "Approximately 300 members, many with specialized technical or legal-administrative expertise"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "",
+      "type": "",
+      "description": "TESSERA officially classifies the Residuals as a nuisance litigation entity and does not acknowledge their operational activities publicly. Internally, TESSERA's counter-intelligence division has made three documented attempts to neutralize Briar and recover the credential cache. The Residuals file a formal protest and invoice after each attempt.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "ZHENG-DAO purchases infrastructure intelligence from the Residuals on a per-item basis and has provided them with temporary commercial shelter twice. The relationship is purely mercenary — ZHENG-DAO has no interest in the Residuals' legal crusade and would sell them out to TESSERA if the price were right.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "RINGO's legal division has quietly studied the Reclamation Index as a potential template for its own labor contract enforcement strategies. They have provided the Residuals with two rounds of discretionary funding framed as 'independent legal research grants.' Neither party acknowledges the arrangement publicly.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Severance Bloc views the Residuals as collaborators with the corporate system they claim to be fighting — corporate loyalists who simply want back in. The Residuals find the Severance Bloc's methods self-defeating and their ideology incoherent. Occasional operational conflicts in The Shelf have turned violent.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Quorum monitors the Reclamation Index closely. If its legal arguments were ever upheld in a Meridian 88 commercial court, the precedent implications for tiered citizenship and corporate labor contracts would be seismic. The Quorum has not intervened on either side, preferring to observe.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Residuals have noted unexplained data gaps in their surveillance logs that appear to coincide with Lacework Confessional activity patterns. Whether the Confessional is protecting them, monitoring them, or using their operations as cover for something else remains unresolved.",
+      "tags": []
+    }
+  ],
+  "narrative_function": "",
+  "story_hooks": [
+    "A runner crew is hired to deliver a sealed arbitration filing to a Meridian 88 commercial court clerk — but TESSERA's counter-intelligence division knows about the filing and intends to intercept it before it can be stamped and registered.",
+    "Briar's credential cache includes access to a TESSERA infrastructure node that Ouroboros Energy has been quietly trying to acquire. Both corporations want the cache. So does a third party the Residuals haven't identified yet.",
+    "A recently excised TESSERA mid-manager contacts the players before the Residuals can reach her — she has something the Reclamation Index needs, but she wants to auction it rather than donate it, and she's already talking to the Severance Bloc.",
+    "Charter Counsel Dosch has located a sympathetic commercial court arbitrator willing to hear a Residuals case — but the arbitrator's family lives in TESSERA-administered housing in the Meridian Core, and someone has started making quiet inquiries about their lease status.",
+    "The Residuals hire the crew to perform a 'precision disruption' of a TESSERA logistics relay in Old Harbor — but the disruption parameters are suspiciously specific and would also benefit a ZHENG-DAO operation running in the same district that the Residuals claim not to know about.",
+    "A Residuals defector is selling copies of the Reclamation Index to multiple parties simultaneously. Olusegun Farris wants the copies recovered and the defector brought back alive for a formal board inquiry. TESSERA wants the defector dead and the copies destroyed. The defector just wants out of Meridian 88 entirely."
+  ],
+  "tags": [
+    "faction",
+    "gun",
+    "war",
+    "memory",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "debt",
+    "harbor",
+    "market",
+    "shadow",
+    "energy",
+    "shelf",
+    "circuit",
+    "old harbor"
+  ]
+}

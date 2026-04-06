@@ -1,0 +1,59 @@
+{
+  "id": "019d6143a9da7669a20f43699ed81a52",
+  "name": "Ferroncite-AD",
+  "brand_name": "Ferroncite",
+  "product_name": "Ferroncite-AD",
+  "type": "substrate",
+  "aliases": [
+    "mag-ceram",
+    "AD plate",
+    "ferrite hard"
+  ],
+  "category": "ceramic",
+  "description": "A barium hexaferrite ceramic composite engineered for simultaneous structural and electromagnetic shielding performance, providing ballistic protection comparable to alumina plate armor while absorbing radar and microwave frequencies across a broad spectrum tuned during manufacture. The ferrite grain orientation is controlled through magnetic-field-assisted sintering, allowing the electromagnetic absorption spectrum to be customized to specific threat frequencies — a feature that has made Ferroncite-AD essential for stealth-capable military platforms. Crucible Industries produces the base material, while Tessera Materials handles the spectrum-customization sintering for classified military clients.",
+  "properties": [
+    "ballistic_resistance",
+    "broadband_EM_absorption",
+    "spectrum_tunable",
+    "magnetic",
+    "heavy_weight",
+    "thermally_stable",
+    "radar_transparent_to_selected_frequencies"
+  ],
+  "developers": [
+    "Crucible Industries",
+    "Tessera Materials"
+  ],
+  "applications": [
+    "stealth aircraft and drone fuselage panels",
+    "military communications facility hardened walls",
+    "Faraday-shielded server vaults",
+    "anti-drone weapon platform housings",
+    "electronic warfare vehicle armor",
+    "hardened EMP-resistant enclosures"
+  ],
+  "tier_availability": "Military only",
+  "cost": "Φ 7,400 per kg",
+  "story_hooks": [
+    "A panel of Ferroncite-AD with a classified absorption spectrum has surfaced in a Tier 2 salvage market — whoever sold it had access to a military platform, and multiple intelligence agencies are quietly converging on the seller.",
+    "A corporate security team has illegally installed Ferroncite-AD panels in a private facility, making it effectively invisible to surveillance drones — the permit violations are the least of the legal problems if this becomes public.",
+    "A character discovers that a specific batch of Ferroncite-AD has been tuned to absorb the exact frequency used by emergency rescue beacons — anyone trapped inside a structure lined with it cannot call for help."
+  ],
+  "tags": [
+    "ceramic",
+    "substrate",
+    "weapon",
+    "war",
+    "ai",
+    "corporate",
+    "surveillance",
+    "control",
+    "market",
+    "bar",
+    "rain",
+    "vehicle",
+    "armor",
+    "stealth",
+    "drone"
+  ]
+}

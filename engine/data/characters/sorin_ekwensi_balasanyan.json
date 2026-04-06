@@ -1,0 +1,192 @@
+{
+  "id": "019d6143a6db7f2f878128abef605d4a",
+  "type": "character",
+  "name": "Sorin Ekwensi-Balasanyan",
+  "aliases": [
+    "Patches",
+    "Patchwork"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Organ harvester and unlicensed tissue broker operating out of Shallowgrave",
+  "age": 31,
+  "status": "active",
+  "location": "Shallowgrave — runs his operation from a basement unit below a legitimate nail salon called Copper Chrysalis on Render Street",
+  "description": "Sorin Ekwensi-Balasanyan is lean and slightly stooped, a body that learned to make itself smaller in rooms it didn't belong in. He has warm brown skin with pink undertones, close-cropped dark hair, and eyes that are medically wrong in a way it takes people a moment to identify — his left iris is a geneware violet, his right is original dark brown, and neither pupil dilates at the same rate. He wears clean, nondescript clothing at all times — his one professional conviction is that he never looks like what he is. His hands are his pride: steady, careful, the hands of someone who learned field surgery from pirated Helix Biosystems tutorials and three years of necessity.\n\nSorin is not comfortable with what he does, which makes him more dangerous than someone who is. He has constructed an elaborate ethical framework around his work — he takes from people who consent (usually), never from people who don't know (usually), and he has a sliding scale of payment that genuinely attempts to compensate donors fairly for the Shallowgrave market. He wants to believe he's closer to underground medicine than to predation. This framework cracks visibly when the money gets tight and the clients get impatient, and he knows it cracks, and that knowledge has settled into him as a chronic low-grade self-loathing he medicates with a mild stimulant he synthesizes himself.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "That his ethical framework is a lie he tells himself and he's just a harvester",
+      "Making an error in procedure that kills someone on the table"
+    ],
+    "core_desires": [
+      "To be recognized — even secretly — as someone who helps people",
+      "To accumulate enough to buy a legitimate medical credential and stop"
+    ],
+    "coping_mechanisms": [
+      "Stimulant use (mild but escalating)",
+      "Obsessive procedural documentation — he writes up every operation as if filing a real medical report",
+      "Convincing himself each job is the last one before he pivots"
+    ],
+    "blind_spots": [
+      "He doesn't register how much financial pressure warps his consent standards — he's already crossed lines he doesn't admit to"
+    ],
+    "secret": "Six months ago he harvested a kidney from someone he was told was a willing paid donor. The person was not conscious during the conversation Sorin was shown. He has not told anyone and has not stopped working."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clinical terminology mixed with Shallowgrave vernacular — the code-switching is involuntary and tells you which mode he's in",
+    "cadence": "Measured when calm, fast and slightly clipped under stress, with a tendency to over-explain procedures in technical detail when he's anxious",
+    "verbal_tics": [
+      "'Technically speaking'",
+      "Trailing off mid-sentence when he's about to say something he's decided not to",
+      "Using 'the patient' instead of names or pronouns even in casual conversation"
+    ],
+    "example_lines": [
+      "'I can tell you the compatibility window on a renal unit is about four hours cold storage, technically speaking, which means the timeline you're describing is — I mean, it's possible. It's possible.'",
+      "'The patient presented with secondary complications. I managed them. That's what I do.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He's been given a tissue order he suspects is for someone who isn't medically eligible to receive it — meaning the intended recipient is not in a Helix Biosystems database, which means they're either off-grid or the order is for something else entirely",
+    "The nail salon upstairs has new management and the new owner wants to know what's in the basement — Sorin needs help handling this quietly"
+  ],
+  "narrative_function": "Morally complex service provider — characters who need black market medical work, organ acquisition, or tissue matching come through him. He's also a source of information about who in Shallowgrave is desperate, sick, or recently dead.",
+  "augmentations": "Surgical-grade haptic feedback in both hands — allows him to feel tissue resistance during procedures. Basic pain suppression implant. Cosmetic: the mismatched iris geneware is deliberate, though he tells different people different reasons for it.",
+  "daily_life": "He keeps clinic hours irregularly, by appointment only through an encrypted referral chain. Between procedures he studies pirated medical literature, maintains his equipment, and spends evenings at a noodle bar two blocks away where he is known as a quiet regular who tips well.",
+  "affiliation": "Loosely connected to a tissue broker network called the Sutured Hand — independent contractor status, not a full member",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 3
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Black Market Medic",
+      "Ethical Rationalizer",
+      "Precise and Capable",
+      "Slow Moral Erosion",
+      "Stimulant-Dependent"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never operate without the correct equipment — improvisation is how people die",
+      "Keep records of every procedure, encrypted, with three backups",
+      "Never discuss one client with another"
+    ],
+    "escalation_ladder": [
+      "Decline politely and offer a referral",
+      "Decline firmly with no referral",
+      "Disappear from contact for 48 hours",
+      "Relocate the operation if the threat is physical"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Cautious and professionally warm — performs competent calm even when he doesn't feel it",
+      "friends": "Rare and intense — he has two people he considers real friends and would do almost anything for them"
+    },
+    "stress_responses": {
+      "low": "More technical language, more procedural documentation",
+      "medium": "Stimulant use increases, becomes very precise and slightly cold",
+      "high": "Shuts down emotionally, becomes purely functional — this is when he's most capable and most dangerous to himself"
+    },
+    "contradictions": [
+      "Genuinely cares about patient outcomes while operating in conditions that make good outcomes structurally unlikely",
+      "Keeps meticulous records of crimes as if documentation makes them legitimate"
+    ],
+    "habits": [
+      "Writes post-procedure reports every time regardless of circumstances",
+      "Eats at the same noodle bar every evening he isn't working",
+      "Checks his haptic calibration before bed — taps his fingertips against his palm in a specific pattern"
+    ],
+    "breaking_points": [
+      "Losing a patient on the table — it has happened once and he came close to stopping entirely",
+      "Being asked to take from an unwilling person in front of him rather than at distance"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Surgical haptic feedback array (bilateral hands, Helix Biosystems grade B)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Surgical haptic feedback array (bilateral hands, Helix Biosystems grade B)",
+      "replaces": ""
+    },
+    {
+      "name": "Pain suppression implant — subclavicular mount, third-party manufacture",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Pain suppression implant — subclavicular mount, third-party manufacture",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a565709d8e4bc5fc4fdd7cdc",
+  "name": "Conspiracy Thinker",
+  "type": "archetype",
+  "category": "intellectual",
+  "description": "Sees hidden connections and secret patterns everywhere",
+  "behavioral_signature": "Connects dots others don't see, sometimes correctly",
+  "under_stress": "The web grows until everything is connected",
+  "at_rest": "Researching, mapping, pinning strings",
+  "will_always": [
+    "look for the hidden truth"
+  ],
+  "will_never": [
+    "accept the official story"
+  ],
+  "unless": [
+    "the conspiracy is actually simpler than they think"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Pattern Reader",
+      "threshold": 0.7,
+      "context": "pattern seeking"
+    },
+    {
+      "archetype": "Theory Crafter",
+      "threshold": 0.75,
+      "context": "building models"
+    }
+  ],
+  "opposite_of": [
+    "Skeptic"
+  ],
+  "tags": [
+    "paranoid",
+    "connected"
+  ]
+}

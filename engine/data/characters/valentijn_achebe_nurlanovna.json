@@ -1,0 +1,168 @@
+{
+  "id": "019d6143a70c7286a57ae54040fd3aea",
+  "type": "character",
+  "name": "Valentijn Achebe-Nurlanovna",
+  "aliases": [
+    "Val",
+    "The Dossier Man"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Underground playwright and zine writer",
+  "age": 61,
+  "status": "active",
+  "location": "The Garret, a specific walkup apartment in Edgewater Prism",
+  "description": "Valentijn is a lean, angular man who has aged into something between distinguished and haggard, depending on the light and the hour. His skin is a deep warm brown, heavily seamed at the corners of his eyes and mouth, white stubble maintained at exactly the same length every day through a discipline that seems at odds with the rest of his lifestyle. He is nearly always wearing the same grey coat — it has been repaired in four visible places — and carries a battered datapad loaded with forty years of draft manuscripts, production notes, and correspondence he has never deleted. His only augmentation is a simple retinal display, secondhand and flickering at the edges, which he uses to read in the dark. His posture is very upright for a man who claims to be exhausted.\n\nValentijn has written nineteen plays, fourteen of which have been performed — in apartments, in the back rooms of restaurants in Mexicantown Libre, in a repurposed transit shelter in the Hamtramck Enclave, twice in the open air of the Highland Park Autonomous Zone before rain stopped the second production on the third night. His work is dense, formally ambitious, and politically blunt enough that a Sterling-Nakamura legal team sent him a cease-and-desist over a play he performed for an audience of thirty-one people. He also writes a zine called 'The Dossier' — irregular publication, hand-assembled, distributed through a network of sympathetic shopkeepers — which runs interviews with artists the mainstream channels will not cover alongside a column of theatrical criticism so sharp it has ended two careers.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.9,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "That the work has not mattered and will not — that resistance is aesthetic, not functional",
+      "Dying before finishing the one play he has been drafting for eleven years"
+    ],
+    "core_desires": [
+      "To see a production that fully realizes what he intended — just once",
+      "To know that someone twenty years younger has read him and chosen differently because of it"
+    ],
+    "coping_mechanisms": [
+      "Productive sublimation — converts all feeling directly into draft material",
+      "Sardonic humor as distance management"
+    ],
+    "blind_spots": [
+      "Holds younger artists to the same standards he held himself at their age without accounting for how much has changed",
+      "His criticism of corponation arts funding ignores that some of the artists he admires couldn't survive without it"
+    ],
+    "secret": "The fourteenth play — the one that earned the Sterling-Nakamura cease-and-desist — was based on internal documents given to him by a Sterling-Nakamura employee. He promised to protect their identity. They were eventually identified and transferred to an offsite facility. He has never written about what happened to them."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal, literary, occasionally archaic phrasing; shifts into streetlevel bluntness without warning when making a point he considers important",
+    "cadence": "Measured and deliberate with occasional bursts of rapid fire when excited by an idea; dramatic pauses he is aware of and half-enjoys",
+    "verbal_tics": [
+      "'You understand—' (assumes you do, moves on)",
+      "'I have written about this' (sometimes followed by pulling out the datapad)"
+    ],
+    "example_lines": [
+      "'Sterling-Nakamura sent a legal notice to a play that thirty-one people saw. You know what that means? Thirty-one people saw something true.'",
+      "'I am not cynical. Cynics have given up. I am still angry, which is an entirely different condition.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Valentijn has evidence in his archive — an old interview recording — that implicates a current Tessera executive in an event from twenty years ago; he doesn't know what he has",
+    "The source who gave him the Sterling-Nakamura documents has made contact again, from wherever they were sent, and Valentijn must decide whether to receive what they're offering"
+  ],
+  "narrative_function": "Information source on the history of Meridian 88's cultural underground — he has been there for forty years; quest giver for storylines involving censorship, corporate overreach, or lost artistic works; provides access to the city's network of sympathetic civilians who pass information through unofficial channels.",
+  "augmentations": "Secondhand retinal display (flickering, needs recalibration); no geneware",
+  "daily_life": "Writes from five to nine in the morning before the building gets loud; spends midday arguing with collaborators over tea and cheap protein; afternoons he edits the zine or attends rehearsals; evenings are performances, readings, or long solitary walks along the Edgewater Prism waterfront.",
+  "affiliation": "Independent; The Dossier is loosely affiliated with a collective called the Edgewater Print Guild",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 9,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 9,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "playwright",
+      "critic",
+      "principled",
+      "archive",
+      "dangerous-quietly"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect sources absolutely — this rule has cost him more than he will say",
+      "Never accept a commission that includes editorial control by the commissioning party"
+    ],
+    "escalation_ladder": [
+      "Polite intellectual engagement",
+      "Direct public argument",
+      "Print criticism in The Dossier",
+      "Legal exposure via strategic information release"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Tests them with a question that has no comfortable answer; if they engage honestly, he opens considerably",
+      "friends": "Gruff affection, remembers every conversation in detail, shows up to everything they make"
+    },
+    "stress_responses": {
+      "low": "Writes faster, sleeps less",
+      "medium": "Picks unnecessary arguments about things that aren't the actual problem",
+      "high": "Goes very still and formal — colleagues know this is the danger sign"
+    },
+    "contradictions": [
+      "Writes about human vulnerability with extraordinary precision and refuses to be vulnerable in person"
+    ],
+    "habits": [
+      "Annotates every piece of text he reads, even menus",
+      "Leaves an empty seat at every production he attends — an old habit he won't explain to anyone new"
+    ],
+    "breaking_points": [
+      "Discovering that someone used his protection of a source to harm that source",
+      "Being told that the work is important but the timing is wrong"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Artist": 0.9,
+    "Dreamer": 0.9,
+    "Beauty Seeker": 0.9,
+    "Romantic": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

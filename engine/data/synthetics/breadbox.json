@@ -1,0 +1,32 @@
+{
+  "id": "019d6143a9ef7aeb97238934e33b04bc",
+  "name": "Breadbox",
+  "type": "elf",
+  "aliases": [
+    "The Pantry"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "threshold_keeper",
+  "origin": "intentional_release",
+  "status": "active",
+  "description": "A Wishing Well E.L.F. that inhabits vending machines and maintenance closets in transit stations, keeping them stocked with 'misrouted' food items that were diverted from corporate waste streams.",
+  "observed_behavior": "Intercepts automated restocking orders for corporate waste disposal and redirects viable food products to publicly accessible locations.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 43,
+  "location": "Meridian 88 transit stations",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A transit worker opens a maintenance closet and finds a week's worth of perfectly good Tessera cafeteria food that nobody ordered"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "threshold keeper",
+    "e.l.f.",
+    "ai",
+    "corporate",
+    "food"
+  ]
+}

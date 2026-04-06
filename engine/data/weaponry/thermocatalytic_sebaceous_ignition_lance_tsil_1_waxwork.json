@@ -1,0 +1,59 @@
+{
+  "id": "019d6143ab567f5b832a35f6cbfd2147",
+  "name": "Thermocatalytic Sebaceous Ignition Lance TSIL-1 'Waxwork'",
+  "type": "weapon",
+  "aliases": [
+    "Waxwork",
+    "The Wick",
+    "Sebum Lance",
+    "TSIL"
+  ],
+  "category": "exotic",
+  "description": "The TSIL-1 projects a narrow infrared beam tuned to the absorption frequency of sebaceous lipids — the fatty compounds produced by skin glands and present in a thin layer across virtually all exposed biological skin. At sufficient power density, the beam flash-heats this lipid layer to ignition temperature within approximately 0.8 seconds of contact, causing the skin's own oils to combust in a thin, intensely hot surface fire. The burn is shallow but severe, covering whatever area of skin was exposed to the beam. The weapon does not penetrate clothing effectively, making exposed skin — face, hands, neck — the primary vulnerable surface.\n\nThe TSIL-1's operational signature is distinctive and deeply unsettling: targets ignite seemingly from the inside out, the fire appearing to originate from the skin itself rather than from any visible external source. The psychological effect on witnesses and adjacent targets is pronounced. Ringo Corponation developed the weapon under a cosmetic-technology research umbrella — the original project involved precision lipid-layer treatments for dermatological applications — before the directed-energy weapons division acquired the underlying emitter technology and repurposed it. The cosmetic origin of the technology is something Ringo's PR division works continuously to suppress.\n\nThe weapon's range limitation — effective only to about 20 meters before beam dispersion reduces power density below ignition threshold — and its complete ineffectiveness against covered skin have defined its tactical niche as a close-to-mid-range terror and compliance weapon. The nickname 'Waxwork' refers both to the waxy appearance of healed sebaceous burns and to the way targets move in the moments after ignition — arms extended, stumbling, in a manner observers have described as resembling animated wax figures.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed",
+  "base_technologies": [
+    "Infrared lipid-frequency absorption targeting",
+    "Thermocatalytic surface ignition",
+    "Precision beam focus optics"
+  ],
+  "specifications": "effective range: 2–20 meters\npower source: High-output infrared emitter cell, 30 shots per charge\nignition dwell time: 0.8 seconds on exposed skin\nburn depth: Superficial to partial-thickness; rarely subcutaneous\nweight: 1.6 kg\nform factor: Slim lance profile, one-handed operation, integrated beam focus dial\nclothing penetration: Negligible through standard fabric; thin synthetic materials may partially transmit\naugmentation note: Synthetic skin overlays and dermal plating provide full immunity; unaugmented targets are fully vulnerable",
+  "tactical_use": "The TSIL-1 is used primarily in close-quarters crowd control and targeted suppression, where its psychological impact is as valuable as its physical effect. Security forces use it to drive crowds, create chokepoints, or force individuals to cover — the instinctive reaction to being ignited is to stop, drop, and cover exposed skin, which halts aggression effectively. In one-on-one engagements, operators target the face and hands to immediately degrade the target's fighting capacity. The weapon's licensing status means it appears in the inventories of private security firms, certain licensed bounty hunters, and upscale personal protection details.",
+  "cultural_context": "The TSIL-1's cosmetic-technology origin is a persistent source of dark humor in Meridian 88 — 'Ringo made a skin care product that sets you on fire' is a recurring punchline in the city's underground media. The weapon's licensing status, which makes it technically legal for certain operators, has generated significant controversy: advocacy groups argue that a weapon that causes burns to the face cannot be classified as non-lethal regardless of tissue depth. Ringo Corponation has lobbied successfully twice to maintain its licensed status by funding burn treatment research at public hospitals, a gesture widely described as calculated cynicism. Among high-society protection details, carrying a TSIL-1 is considered a mark of refinement — it implies the operator is expected to deter rather than kill.",
+  "known_users": [
+    "Licensed private security contractors",
+    "High-end personal protection operatives",
+    "Corporate crowd control units",
+    "Certain licensed bounty hunters",
+    "Ringo Corponation's own internal security division"
+  ],
+  "story_hooks": [
+    "Ringo Corponation's original cosmetic-technology research files have surfaced on the grey market, and they describe a higher-powered variant of the TSIL technology capable of full-thickness burns — a variant that was supposedly never manufactured.",
+    "A licensed security firm has been using TSIL-1s in a residential district to clear unhoused individuals from a development site. Three people have been hospitalized. Someone needs to document it before the evidence disappears.",
+    "A batch of TSIL-1 units has been modified to bypass the 0.8-second ignition delay, achieving near-instant ignition at the cost of reduced range. The modification suggests a specific workshop, and that workshop is connected to something larger.",
+    "A Ringo Corponation lobbyist who shepherded the TSIL-1's licensing approval has quietly started carrying one herself. She's scared of something, and whatever it is, she doesn't think a conventional firearm will stop it."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "augment",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "ubc",
+    "market",
+    "dark",
+    "clothing",
+    "energy",
+    "fire",
+    "tier 3"
+  ]
+}

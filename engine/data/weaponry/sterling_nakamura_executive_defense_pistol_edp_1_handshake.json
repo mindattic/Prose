@@ -1,0 +1,40 @@
+{
+  "id": "019d6143ab437048a0871710f2644549",
+  "name": "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+  "type": "weapon",
+  "aliases": [
+    "Handshake",
+    "EDP-1",
+    "Boardroom Gun",
+    "Sterling Compact"
+  ],
+  "category": "pistol",
+  "description": "An ultra-compact ceramic pistol designed to pass through standard security scanning systems undetected. The EDP-1 is constructed entirely from non-metallic materials — ceramic barrel, polymer frame, carbon-fiber internals — and fires caseless ceramic-tipped rounds that are similarly invisible to metal detectors. The weapon holds 4 rounds, has an effective range of 10 meters, and is designed to be concealed within a briefcase, jacket lining, or even a prosthetic limb compartment. Sterling-Nakamura issues it to senior executives as a last-resort personal defense weapon, though its obvious utility as an assassination tool in secured environments has made it the most sought-after concealable weapon in Meridian 88.",
+  "manufacturer": "STERLING-NAKAMURA",
+  "tier_availability": "Tier 5",
+  "legality": "Issued — Sterling-Nakamura executive staff only",
+  "base_technologies": [
+    "Non-metallic weapons fabrication",
+    "Ceramic barrel engineering",
+    "Scan-defeating material composition"
+  ],
+  "specifications": "caliber: 5mm caseless ceramic-tipped\nmagazine: 4 rounds\neffective range: 3-10 meters\nconstruction: 100% non-metallic — ceramic, polymer, carbon fiber\ndetectability: Passes standard metal detection and basic material scanning\nweight: 0.18 kg\nform factor: Credit card width, 12 cm length\nbarrel life: 20 rounds before ceramic degradation",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A diplomat was shot dead in a Tier 4 secured conference room that had passed full security screening — the only weapon that could have entered is an EDP-1, narrowing the suspect pool to people with Sterling-Nakamura executive access.",
+    "A 3D printing schematic for an EDP-1 replica has been uploaded to the open net — the replicas are fragile and inaccurate, but they pass the same security scans."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "pistol",
+    "weapon",
+    "gun",
+    "prosthetic",
+    "market",
+    "bar",
+    "fire",
+    "tier 5"
+  ]
+}

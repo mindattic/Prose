@@ -1,0 +1,40 @@
+{
+  "id": "019d6143ab597a0b9daeafa2e678e5f2",
+  "name": "Vespid Dynamics Neural Feedback Dart NFD-2 'Scream'",
+  "type": "weapon",
+  "aliases": [
+    "Scream",
+    "NFD-2",
+    "Pain Dart",
+    "Feedback Shot"
+  ],
+  "category": "exotic",
+  "description": "A pneumatic dart weapon that delivers a neural interface exploit payload on penetration, hijacking the target's pain processing and amplifying all sensory input to maximum intensity. The victim experiences every sensation — light, sound, touch, temperature — as agonizing pain for approximately 2 minutes. The dart carries a micro-transmitter that injects the exploit through the wound channel into any nearby neural interface hardware. Against unaugmented targets, the dart is merely a sharp object. Against augmented targets, it is a precision agony weapon.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited — neural warfare weapon",
+  "base_technologies": [
+    "Neural interface exploit delivery",
+    "Pain pathway amplification",
+    "Pneumatic precision dart systems"
+  ],
+  "specifications": "propulsion: Pneumatic, 140 m/s\nrange: 5-30 meters\npayload: Neural interface pain amplification exploit\neffect duration: 2 minutes\neffect: All sensory input registered as maximum pain\nmagazine: 4 darts\nweight: 1.2 kg\nacoustic signature: 32 dB",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An NFD-2 dart was used during an interrogation — the 2-minute pain cycle broke the subject's resistance permanently, and they now experience phantom pain episodes triggered by any strong sensation.",
+    "Modified NFD-2 darts have appeared that deliver a pleasure amplification exploit instead of pain — the resulting euphoria is so intense that victims become addicted to being shot."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "exotic",
+    "weapon",
+    "war",
+    "augment",
+    "neural",
+    "ai",
+    "pain",
+    "tier 4"
+  ]
+}

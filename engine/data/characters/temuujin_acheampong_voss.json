@@ -1,0 +1,201 @@
+{
+  "id": "019d6143a6ef70058cb2ed6425cdad71",
+  "type": "character",
+  "name": "Temuujin Acheampong-Voss",
+  "aliases": [
+    "Tem",
+    "Old Tem"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Ferrogate Transit tram operator, Line 7 (Geartown to Grand Corridor)",
+  "age": 61,
+  "status": "active",
+  "location": "Deepwell Station, Line 7 depot — he lives in Ironvein, three stops from the yard",
+  "description": "Temuujin has the compact, settled body of a man who has been sitting in the same cab for twenty-three years and has made peace with it. His skin is a weathered medium-dark brown, his face broad and deeply lined around the eyes from squinting at track ahead. His hair went silver at forty and he kept it in a low fade for years before recently giving up and shaving it entirely. He has patterned irises — a geneware mod he got at thirty as a birthday present to himself, amber with a dark geometric tessellation — that he now considers his most valuable possession and would not remove under any circumstances.\n\nTem is the unofficial institutional memory of Line 7. He has operated this route through two infrastructure collapses, a Ferrogate labor action that lasted eleven days, and the Great Reroute of 2194 that added four stations and three years to his retirement date. He knows every rattle, every delay pattern, every ghost the line carries — and he believes in the ghosts. He maintains careful devotion to the E.L.F. of the Line 7 Depot, whom he calls Switchman, and credits Switchman with getting him home safe for two decades. He is not sentimental about most things but is ferociously sentimental about the tram.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Ferrogate phasing out human operators entirely in the next contract cycle",
+      "dying at his post in a way that delays the line"
+    ],
+    "core_desires": [
+      "to operate Line 7 until he chooses to stop, on his terms",
+      "for someone to actually understand what this route means to the people who depend on it"
+    ],
+    "coping_mechanisms": [
+      "ritual and routine as armor",
+      "dark humor about Ferrogate management",
+      "treating the tram as a living thing deserving of care"
+    ],
+    "blind_spots": [
+      "has become so identified with the job that he can't imagine retirement isn't failure",
+      "dismisses younger operators' concerns as inexperience when sometimes they're right"
+    ],
+    "secret": "In the 2194 labor action, Tem was the one who crossed the picket line on day eight — not for money, but because an elderly woman had a medical appointment and no other transport. The union never found out it was him. He has never told anyone and considers it either the most or least moral thing he's ever done, depending on the day."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal Ferrogate operational language mixed with Ironvein working-class vernacular, Mongolian-Akan creole expressions when emotional",
+    "cadence": "Even and measured, like a tram schedule — precise, predictable, never early never late",
+    "verbal_tics": [
+      "'The line doesn't care about your reasons'",
+      "announces stops even in normal conversation",
+      "uses 'we' to mean himself and the tram"
+    ],
+    "example_lines": [
+      "'Next stop, your problem. Mind the gap, it's a big one.'",
+      "'Switchman's been quiet this week. Quiet like before the 2191 collapse, not quiet like everything's fine. I know the difference.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Something is using Line 7's tunnels at night — not a person, or not only a person — and Tem has seen it through the cab window twice in a month",
+    "Ferrogate's new automated operator system is being piloted on Line 7 first, and Tem is being asked to sign off on training documentation that would make his own position redundant"
+  ],
+  "narrative_function": "Mobile information source spanning two very different parts of the city, represents labor and institutional knowledge, potential witness to anything that happens on or near Line 7, offers passage and connectivity as a narrative resource.",
+  "augmentations": "Patterned iris geneware (amber with geometric tessellation). Cochlear dampener implant (occupational hearing protection, standard Ferrogate issue). Arthritic knee brace, mechanical.",
+  "daily_life": "Reports to depot at 0530 for first run. Makes seven round trips between Geartown and Grand Corridor. Stops at the Switchman altar in the depot break room to leave a data coin before and after his shift. Home by 1800.",
+  "affiliation": "Ferrogate Transit, Line 7 — senior operator",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 4,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Institutional Memory",
+      "Labor",
+      "Spiritual",
+      "Reliable",
+      "Quietly Conflicted"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "the passengers on the tram are his responsibility from boarding to exit, period",
+      "he will not bend Ferrogate safety rules, but he will absolutely ignore scheduling rules if a passenger needs more time"
+    ],
+    "escalation_ladder": [
+      "calm, firm announcement",
+      "stopping the tram",
+      "physically intervening if someone is in danger",
+      "calling it in to dispatch as a last resort he resents using"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional neutrality with a low warmth baseline — he nods, he notes, he remembers faces by stop",
+      "friends": "Loyal and consistent, expresses affection through showing up exactly when expected"
+    },
+    "stress_responses": {
+      "low": "More formal, crisper announcements",
+      "medium": "Falls back entirely on protocol",
+      "high": "Goes very quiet and makes decisions by himself, does not ask for help"
+    },
+    "contradictions": [
+      "deeply believes in collective labor solidarity but crossed a picket line once and has never reconciled it",
+      "says the tram is just a machine and then prays to its E.L.F. twice a day"
+    ],
+    "habits": [
+      "leaving a data coin for Switchman before every shift",
+      "checking door seals manually even though sensors do it automatically",
+      "knowing regular passengers' destinations before they sit down"
+    ],
+    "breaking_points": [
+      "a passenger being hurt on his line due to Ferrogate's cost-cutting",
+      "being forced out before he's ready"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Patterned iris geneware — amber with dark geometric tessellation",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Patterned iris geneware — amber with dark geometric tessellation",
+      "replaces": ""
+    },
+    {
+      "name": "Cochlear dampener — occupational, Ferrogate-issued",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Cochlear dampener — occupational, Ferrogate-issued",
+      "replaces": ""
+    },
+    {
+      "name": "Mechanical knee brace — left knee",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Mechanical knee brace — left knee",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

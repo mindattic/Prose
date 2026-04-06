@@ -1,0 +1,95 @@
+{
+  "id": "019d6143a8967e8ca900653daf6ccaa9",
+  "type": "faction",
+  "name": "The Reciprocal Index",
+  "aliases": [
+    "The Index",
+    "Index Brokers",
+    "Reciprocals"
+  ],
+  "motto": "A debt recorded is a debt preserved.",
+  "description": "The Reciprocal Index began not as a criminal enterprise but as an administrative one. Twelve years ago, a small firm called Hedral Compliance Services operated legally in the Meridian Core, providing third-party contract verification for mid-tier corporate employees navigating the notoriously labyrinthine augmentation licensing agreements required by TESSERA CORPONATION, HELIX BIOSYSTEMS, and ZHENG-DAO BIOELECTRIC. When RINGO CORPONATION acquired Hedral's parent company in a hostile restructuring and dissolved the compliance division, the firm's senior archivist — a woman known professionally as Dace Orrin — walked out with twelve years of proprietary contract records, licensing exception files, and what she would later describe as 'a complete map of who owed what to whom and had paid neither.' She spent the next two years quietly verifying which debts, favors, and legal exposures were still live. Then she began brokering them.\n\nThe Reciprocal Index is, at its core, a market for obligation. They do not primarily move physical goods — they move leverage. Their inventory consists of documented corporate debts, suppressed licensing violations, informal agreements between mid-level executives that were never meant to be recorded, regulatory exceptions that were granted in exchange for considerations that cannot be publicly acknowledged, and the identities of the people who brokered those arrangements. They acquire this material through a combination of Orrin's original archive, ongoing relationships with disaffected corporate administrators, and a small but skilled team of document retrievalists who operate across the Circuit and the Meridian Core. What they sell — to corporations, to private citizens, to other factions — is the ability to make a specific problem someone else's problem instead.\n\nThe Index is not violent and is genuinely uncomfortable with violence, which distinguishes them sharply from most organizations operating at their tier of influence. They have no enforcers, no standing threat of physical harm. Their leverage is purely informational, which means it depends entirely on the credibility of their archive and the reliability of their discretion. They have spent considerable effort building a reputation for honoring the terms of every transaction — including, notably, never reselling material they have already sold. This makes them trusted in a context where trust is nearly impossible to establish, and that trust is the most valuable thing they own.",
+  "ideology": "The Reciprocal Index operates on the conviction that corporate power in Meridian 88 is sustained not by force but by the selective enforcement of recorded obligation — and that the unrecorded obligations, the ones that exist in the space between contracts, are where actual power resides. Orrin articulates the Index's philosophy as 'archival equity': the belief that information about obligation should be as liquid and transferable as the obligations themselves, and that the current system's suppression of that information is itself a form of theft from everyone who cannot afford a compliance attorney. Whether this constitutes a genuine political stance or sophisticated rationalization for a profitable enterprise is a question the Index's members debate internally and never resolve.",
+  "territory": "The Index maintains no fixed headquarters. Their operational center is a rotating series of leased administrative spaces in the Meridian Core and the upper Circuit, chosen for proximity to corporate filing infrastructure and changed monthly. Orrin herself is rarely in the same location twice. Their document retrievalists operate primarily in the Circuit and have limited but established access to lower-tier Vantage Meridian Corporate Campus administrative systems.",
+  "leadership": "Dace Orrin serves as sole executive director and final arbiter of all major transactions — a deliberate consolidation of authority that she justifies as necessary for maintaining consistent discretion standards. Beneath her, the Index operates through three functional cells: Archive (two senior analysts who maintain and verify the document holdings), Acquisition (four retrievalists who gather new material), and Mediation (three brokers who handle client-facing negotiations). Cell members know their own cell and Orrin; cross-cell knowledge is limited by design.",
+  "methods": [
+    "Acquisition and verification of suppressed corporate obligation records, licensing exceptions, and informal executive agreements",
+    "Brokered sale of documented leverage to clients seeking resolution of specific corporate or legal exposures",
+    "Rotating administrative premises in the Meridian Core and Circuit to prevent fixed-location surveillance",
+    "Strict cell-compartmentalization of internal knowledge to limit exposure from any single compromise",
+    "Maintenance of a public reputation for transactional integrity, including a documented policy of never reselling already-sold material",
+    "Relationships with disaffected corporate administrators who provide ongoing access to new documentation",
+    "Document retrievalists operating against Circuit and Vantage Meridian Corporate Campus administrative systems",
+    "Deliberate avoidance of physical coercion to preserve the Index's identity as an information-only operation"
+  ],
+  "resources": [
+    "Twelve years of proprietary corporate compliance records originating from Hedral Compliance Services",
+    "Ongoing archive of acquired suppressed corporate obligation documents spanning TESSERA CORPONATION, HELIX BIOSYSTEMS, ZHENG-DAO BIOELECTRIC, and RINGO CORPONATION",
+    "Network of disaffected corporate administrators providing document access across the Meridian Core",
+    "Skilled document retrievalists with established access to Circuit and lower Vantage Meridian administrative systems",
+    "Organizational reputation for transactional integrity functioning as a non-material but highly valuable asset",
+    "Rotating leased administrative infrastructure in the Meridian Core and Circuit",
+    "Liquid capital from brokerage fees sufficient to sustain operations without external investment"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "",
+      "type": "",
+      "description": "Both organizations deal in information that institutions would prefer suppressed, but their methods and clientele diverge significantly. The Index has purchased material from Cartesian Fold operatives on at least three occasions and found the provenance clean. There is mutual awareness and a shared interest in not becoming each other's subjects.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "TESSERA's augmentation licensing infrastructure generates more suppressible obligation material than any other entity in Meridian 88, making them both the Index's richest archive source and, paradoxically, occasional clients when TESSERA mid-tier executives need leverage against internal rivals. Orrin considers this the Index's most clarifying relationship: the same institution generating the problem and paying for its management.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "The Quorum has purchased Index material twice for use in internal governance disputes and has referred clients once. Neither organization discusses the relationship openly. The Index is cautious about the Quorum's institutional reach; the Quorum is cautious about the Index knowing what it knows.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "Orrin has identified what she believes are Pale Inheritance proxies attempting to acquire Index material through intermediaries on four separate occasions over the past year. The specific documents they sought share no obvious pattern, which she finds more alarming than a clear pattern would be. She has begun maintaining a separate restricted archive of those specific files.",
+      "tags": []
+    },
+    {
+      "name": "",
+      "type": "",
+      "description": "Null Sermons has twice attempted to frame the Index's work as a form of liberation theology for the over-contracted. Orrin finds this characterization actively harmful to the Index's operational credibility and has declined all association. The Index does not want to be a movement. Movements attract the wrong kind of attention.",
+      "tags": []
+    }
+  ],
+  "narrative_function": "",
+  "story_hooks": [
+    "A document in the Index's archive — one of Orrin's original Hedral files — contains a licensing exception that, properly interpreted, would void a foundational augmentation patent held by HELIX BIOSYSTEMS. Three parties have independently approached the Index to buy it. Orrin has refused all three and will not say why.",
+    "One of the Index's document retrievalists has gone quiet after a job in the lower Vantage Meridian Corporate Campus administrative system, and the material they were acquiring has not surfaced anywhere — not with the Index, not on the open market.",
+    "A client who purchased leverage from the Index six months ago is now dead, and the obligation document they purchased has reappeared in circulation, which violates the Index's core operational guarantee. Orrin needs to know how before the breach becomes public knowledge.",
+    "The Pale Inheritance proxy pattern has finally resolved into something legible: every document they sought involves the same RINGO CORPONATION restructuring that dissolved Hedral Compliance Services — the event that created the Index itself.",
+    "A ZHENG-DAO BIOELECTRIC mid-tier administrator is offering the Index access to a complete internal augmentation registry exception file in exchange for relocation assistance the Index is not equipped to provide — and is suggesting the Bilge Covenant as a potential partner, a relationship Orrin has never established and is uncertain she wants.",
+    "Someone has begun distributing accurate but incomplete excerpts from Index archive documents through Substation Null's physical posting infrastructure — accurate enough to be damaging, incomplete enough to be unverifiable, and formatted in a way that suggests intimate knowledge of how the Index organizes its holdings."
+  ],
+  "tags": [
+    "faction",
+    "violence",
+    "gun",
+    "theft",
+    "trust",
+    "identity",
+    "augment",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "power",
+    "debt",
+    "market",
+    "chase",
+    "circuit"
+  ]
+}

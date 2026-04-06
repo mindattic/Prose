@@ -1,0 +1,273 @@
+{
+  "id": "019d6143a6cf7ee9b438b2173f3c8126",
+  "type": "character",
+  "name": "Sinan Vasquez-Chatterjee",
+  "aliases": [
+    "Vortex",
+    "The Machine"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Cross-district contraband specialist — smuggler",
+  "age": 32,
+  "status": "active",
+  "location": "Dockside — Lake Michigan waterfront, smuggler territory",
+  "description": "Sinan Vasquez-Chatterjee is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 32, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a smuggler out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nSinan Vasquez-Chatterjee has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.36,
+      "ideal": 0.56,
+      "id": 0.95,
+      "shadow": 0.7,
+      "mask": 0.6,
+      "ghost": 0.23
+    },
+    "core_fears": [
+      "That they're fundamentally alone and connection is just a vulnerability",
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Being identified by corporate facial recognition — living off-grid is survival"
+    ],
+    "core_desires": [
+      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Control — over their body, their schedule, their future",
+      "Stability — a place to sleep that's the same place two nights running"
+    ],
+    "coping_mechanisms": [
+      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive",
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else",
+      "Exercises compulsively — the body must be ready, always"
+    ],
+    "blind_spots": [
+      "Trusts technology more than people — machines don't betray",
+      "Cannot distinguish between caution and cowardice in themselves or others",
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments"
+    ],
+    "secret": "Sinan Vasquez-Chatterjee betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in Meridian 88 knows this."
+  },
+  "speech_patterns": {
+    "vocabulary": "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
+    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
+    "verbal_tics": [
+      "Ends statements with 'yeah?' — not a question, a dare",
+      "Hums tunelessly when planning — the team has learned to wait for the humming to stop"
+    ],
+    "example_lines": [
+      "\"Contraband is just cargo that hasn't been properly introduced to the right people.\"",
+      "\"Every border is a suggestion. Every checkpoint is a negotiation.\"",
+      "\"I move things from where they are to where they need to be. The legality is your problem.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A dead drop Sinan Vasquez-Chatterjee maintains is found and cleaned out — whoever did it now has leverage",
+    "Sinan Vasquez-Chatterjee discovers a job they completed last year was a setup for something much larger and much worse",
+    "A crew member from Sinan Vasquez-Chatterjee's past shows up in Meridian 88, carrying old grievances and new chrome"
+  ],
+  "narrative_function": "Sinan Vasquez-Chatterjee functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs. Pain editor — dampens pain signals, allows function through injuries that would incapacitate",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Freelance — available through Circuit fixers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 4
+      },
+      "agility": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 7
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 9
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 4
+      },
+      "perception": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 7
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 9
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 10
+      },
+      "intimidation": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 7
+      },
+      "deception": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 4
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 10
+      }
+    },
+    "personality": {
+      "aggression": 0.26,
+      "caution": 0.72,
+      "loyalty": 0.5,
+      "greed": 0.86,
+      "empathy": 0.45
+    },
+    "drives": [
+      "protection",
+      "survival",
+      "money"
+    ],
+    "thresholds": {
+      "pain": 5,
+      "stress": 5,
+      "loyalty_break": 6
+    },
+    "strengths": [
+      "strategic thinking under pressure",
+      "exceptional close-quarters combat"
+    ],
+    "weaknesses": [
+      "emotional volatility under extreme stress",
+      "poor impulse control in specific triggers",
+      "difficulty with authority figures"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "smuggler",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always verifies target identity independently before lethal contracts",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will not betray a client who paid in full, regardless of better offers"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Preaches independence but is desperate for approval from people they respect"
+    ],
+    "habits": [
+      "Checks exits within 10 seconds of entering any room",
+      "Never drinks anything they didn't see poured or open themselves",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Maintains a dead drop with emergency supplies in three separate districts"
+    ],
+    "breaking_points": [
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
+      "Running out of options — no contacts, no money, no safe house, no way out"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Synthetic muscle fiber replacement in legs",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+      "replaces": ""
+    },
+    {
+      "name": "Pain editor",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Pain editor — dampens pain signals, allows function through injuries that would incapacitate",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Smuggler": 0.7,
+    "Risk Taker": 0.7,
+    "Improviser": 0.7,
+    "Cockroach": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

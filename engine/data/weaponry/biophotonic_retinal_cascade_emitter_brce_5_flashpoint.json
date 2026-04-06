@@ -1,0 +1,60 @@
+{
+  "id": "019d6143ab1a79afa600384c3dec02a9",
+  "name": "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+  "type": "weapon",
+  "aliases": [
+    "Flashpoint",
+    "The Burner",
+    "Blindside",
+    "Whiteout"
+  ],
+  "category": "energy",
+  "description": "The BRCE-5 emits a precisely modulated biophotonic pulse engineered to overwhelm and permanently damage the photoreceptor layer of the human retina. Unlike crude flash-blindness devices, the BRCE-5's pulse is spectrally tuned to the peak sensitivity of rod and cone cells and delivered in a cascading frequency sweep that prevents the eye's natural protective blink response from reducing exposure. The result is irreversible photoreceptor bleaching across the full visual field — complete, permanent blindness — achieved in a single 0.04-second discharge. The weapon was developed by Ringo Corponation's tactical optics division as a non-lethal alternative to lethal force in high-density civilian environments.",
+  "manufacturer": "RINGO CORPONATION",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Biophotonic retinal cascade induction",
+    "Spectral photoreceptor resonance tuning",
+    "Anti-blink reflex pulse sequencing"
+  ],
+  "specifications": "length: 41 cm\nweight: 1.9 kg\npower source: Ringo OptiCell RC-3 (compact photonic capacitor)\neffective range: 2–90 m (cone-focused); 90–200 m (wide-field dispersion mode)\npulse duration: 0.04 seconds\nspectral range: 420–680 nm cascading sweep\nshots per cell: 45\nmodes: Single-target focus, crowd dispersion (30-degree arc)\nsafety system: Operator retinal shield (integrated visor required)",
+  "tactical_use": "Security and riot-control units use the BRCE-5 in crowd dispersion and individual incapacitation roles. In focus mode, it blinds a single target at range with surgical precision; in dispersion mode, it sweeps a 30-degree arc, blinding everyone within line of sight who lacks protective eyewear. Operators are required to wear Ringo-certified retinal shields, and friendly-fire from dispersion mode is a significant concern in mixed unit operations. Experienced operators use the weapon to blind point-of-contact targets immediately before a physical assault team closes distance. The BRCE-5 is also deployed to neutralize drone operators and augmented-reality-dependent combatants whose optical implants amplify incoming light.",
+  "cultural_context": "The BRCE-5 sits in a legally ambiguous position in Meridian 88 — classified as a 'non-lethal incapacitation device,' its permanent blinding effect means victims require lifelong medical support or expensive ocular implant surgery that most cannot afford. Human rights organizations operating in Meridian 88 have lobbied to reclassify it as a prohibited weapon, pointing out that for the majority of the population, permanent blindness is functionally equivalent to a death sentence in terms of economic survival. Ringo Corponation aggressively contests this classification, and the weapon remains on restricted sale to licensed security contractors. In poorer districts, 'getting Flashpointed' has become slang for any situation where you're rendered permanently helpless by someone with institutional power.",
+  "known_users": [
+    "Ringo Corponation corporate security forces",
+    "Municipal riot control units (licensed)",
+    "Private security contractor 'Clearview Solutions'",
+    "Freelance security operative 'Mira Solano'",
+    "Underground resistance cells (captured units used against corporate security)"
+  ],
+  "story_hooks": [
+    "A Ringo Corponation executive is found dead — cause of death listed as an accident, but a witness reports seeing a BRCE-5 flash before the fall. Someone used a 'non-lethal' weapon to blind a target at the top of a stairwell.",
+    "A human rights advocate hires the party to obtain internal Ringo Corponation documents proving the company knew about the BRCE-5's permanent blinding effects before marketing it as 'reversible' — the documents are in a secured server farm guarded by Clearview Solutions operators carrying the very weapon in question.",
+    "A community in the Fen District is organizing against a corporation using BRCE-5 crowd control — the party must decide whether to help them acquire protective eyewear, help them obtain their own BRCE-5 units, or broker a confrontation with the security contractor.",
+    "A player character's contact goes silent after reporting that municipal riot control used BRCE-5 dispersion mode on a protest — when the party finds them, they're permanently blind and terrified, clutching evidence of something that explains why the protest was shut down so violently."
+  ],
+  "ammunition_type": [
+    "Ringo Corponation R-Cell Type-9 RC-9"
+  ],
+  "tags": [
+    "energy",
+    "weapon",
+    "combat",
+    "death",
+    "augment",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "power",
+    "medical",
+    "surgery",
+    "market",
+    "rights",
+    "survival",
+    "drone",
+    "fire",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "id": "019d6143a67376f4bfb9a931dde778ab",
+  "type": "character",
+  "name": "Obafemi Szczepański-Qarabağli",
+  "aliases": [
+    "Femi Q",
+    "The Mouth"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Stand-up comedian and underground spoken word performer, Tier 1",
+  "age": 24,
+  "status": "active",
+  "location": "Pilsen Veil, rotating between a shared squat above a protein noodle stall and whatever venue will have him",
+  "description": "Femi Q is lean and restless, built like someone who burns through calories via nervous energy rather than exercise. His Yoruba-Polish-Azerbaijani ancestry gives him a face of striking contradictions — high Slavic cheekbones, the warm brown skin and broad nose of his father's Lagos line, and his Azerbaijani grandmother's dramatically hooded eyes that he's chosen to highlight with geneware iris mods that shift through patterns of concentric gold rings when he's performing. His hair is kept very short on the sides and erupts into a soft irregular cloud on top, usually unwashed. He dresses in layers of secondhand everything — three collars, mismatched sleeves — that somehow cohere into something that reads as intentional.\n\nHe is one of the fastest talkers in Pilsen Veil and possibly the most dangerous, because he deploys his speed to bury the sharpest observations inside barrages of absurdity before anyone can quite register they've been cut. He performs at whatever unlicensed venue will book him — back rooms, open drain channels with an audience of forty, once the cargo bay of a stationary Ferrogate car. His material cycles obsessively through class anxiety, the theater of corponation loyalty, and the specific humiliations of being young and broke in a city that sells young and broke as aesthetic. He is genuinely funny. He is also genuinely angry, and the seam between the two is where his best work lives.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.6,
+      "id": 0.8,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "becoming unfunny — which he understands as becoming comfortable",
+      "being absorbed into something corporate and losing the thing that makes him sharp"
+    ],
+    "core_desires": [
+      "to be heard by the people he's actually talking to, not a curated audience",
+      "financial stability without the cost of self-censorship"
+    ],
+    "coping_mechanisms": [
+      "turning every painful experience into material within 48 hours",
+      "deflecting personal questions with jokes until the person gives up"
+    ],
+    "blind_spots": [
+      "uses humor as armor so reflexively that he sometimes wounds people he cares about and genuinely doesn't notice until much later"
+    ],
+    "secret": "A Ringo talent scout offered him a legitimate contract six months ago — a small comedy streaming platform, decent money, creative approval clauses. He turned it down and told no one. He is not entirely sure why, and the uncertainty terrifies him."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rapid-fire, code-switches fluidly between street Pilsen slang, fragments of Yoruba honorifics used ironically, and unexpectedly precise vocabulary when making a specific point. Uses corporate jargon as mockery.",
+    "cadence": "Extremely fast baseline, punctuated by sudden total stops for effect. The pauses are the punchlines.",
+    "verbal_tics": [
+      "says 'stay with me' when he's about to pivot unexpectedly",
+      "laughs at his own jokes exactly once, silently, before delivering them — a tell he's unaware of"
+    ],
+    "example_lines": [
+      "My landlord — stay with me — my landlord told me the mold in the bathroom is 'a natural texture feature.' Sir. Sir, that is a biome. I am paying Φ40 a month to cohabitate with an ecosystem.",
+      "They want your struggle to be aesthetic. Struggling is fine, suffering is fine, just please be suffering in an interesting way with good bone structure."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A bit from his last set — specifically a very accurate joke about Ringo's internal security culture — has been clipped and is circulating in places that suggest someone with access was in the audience. Now someone is very quietly trying to find out who Femi Q is.",
+    "The venue that has been his most reliable booking — a back room operated by a woman named Seun — has gone dark. No message. Femi goes looking and finds something that isn't funny at all."
+  ],
+  "narrative_function": "Local color and social barometer — Femi's material reflects the current tensions and grievances of Pilsen Veil's underclass with high accuracy. Useful as an information source about neighborhood mood and underground venue networks. Can be a quest giver when his material inadvertently gets him into trouble.",
+  "augmentations": "Geneware iris mod (concentric gold ring pattern, activates under performance adrenaline). Subdermal rhythm implant in right forearm — a secondhand unit meant for musicians that he uses to feel his own heartbeat amplified during sets.",
+  "daily_life": "Wakes late, spends mornings writing material in a battered voice-recorder journal he refuses to upgrade. Afternoons are spent doing odd delivery work through a gig platform to cover food costs. Performs most nights if booked, or haunts other performers' sets if not.",
+  "affiliation": "No formal affiliation; loosely connected to the Pilsen Veil underground comedy circuit",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 5,
+      "creativity": 9,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 6,
+      "expression": 10,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "performer",
+      "class-conscious",
+      "fast-talking",
+      "vulnerable",
+      "underground"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "will not punch down — class, appearance, poverty are off-limits as targets, institutions and power are always valid",
+      "will try to joke his way out of any situation at least once before escalating"
+    ],
+    "escalation_ladder": [
+      "joke that is also a warning",
+      "direct statement of the problem without humor",
+      "leaving",
+      "if exit is blocked: unexpectedly loud and specific about exactly what is happening and who is doing it"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and performing — the charm is real but it's also armor deployed before assessment is complete.",
+      "friends": "Quieter, surprisingly attentive listener, will occasionally say something devastatingly true about you that you didn't ask for."
+    },
+    "stress_responses": {
+      "low": "Produces material at double his normal rate",
+      "medium": "Becomes brittle — the jokes sharpen into cruelty he doesn't fully intend",
+      "high": "Goes completely silent. Disappears for days. Does not explain."
+    },
+    "contradictions": [
+      "performs rage at comfort and stability while quietly, desperately wanting both"
+    ],
+    "habits": [
+      "stress-eats specific cheap fried food from a stall on Pilsen's edge he's been eating since childhood",
+      "rewatches recordings of his own sets at 3am and winces through them alone"
+    ],
+    "breaking_points": [
+      "someone in power using his material against a person he cares about",
+      "being publicly accused of being a corporate plant"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "fair",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "poor",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Pilsen Veil to a Polish-Azerbaijani mother and a Yoruba father who worked Ferrogate maintenance",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First open-mic performance at age 15, was booed for the first three minutes and brought the room back by minute five",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Material about Axiom's worker classification algorithms goes viral in local mesh networks; receives first threat, ignores it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Turns down Ringo streaming contract; tells no one",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

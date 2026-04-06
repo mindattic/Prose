@@ -1,0 +1,99 @@
+{
+  "id": "019d6143a6167c149f96b65f48fadadc",
+  "type": "character",
+  "name": "Filomena Nzinga-Halvorsen",
+  "aliases": [
+    "Red Pen"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Fixer - Journalist-connected",
+  "age": 34,
+  "status": "active",
+  "location": "The Circuit",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "The Wire",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9,
+    "Opportunist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

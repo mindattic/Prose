@@ -1,0 +1,35 @@
+{
+  "id": "019d6143ab48703f91c4c30a2185bb7f",
+  "name": "Street Custom 'Mantis' Spring-Loaded Wrist Blade",
+  "type": "weapon",
+  "aliases": [
+    "Mantis",
+    "Wrist Blade",
+    "Spring Knife",
+    "Pop Knife"
+  ],
+  "category": "melee",
+  "description": "A concealed blade mechanism strapped to the inner forearm that deploys a 15cm steel blade with a spring-loaded snap triggered by wrist flexion. The Mantis is one of the oldest street weapon patterns in Meridian 88 — simple, reliable, and almost impossible to detect under a jacket sleeve. The blade extends in under 0.2 seconds and locks in position for use as a stabbing or slashing weapon, then retracts with a manual release. Quality ranges from precision-machined titanium builds that cost thousands to bent steel and rubber-band spring mechanisms that cost almost nothing. The pattern has been copied, modified, and reinvented so many times that no single origin can be traced.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — concealed blade weapon",
+  "base_technologies": [
+    "Spring-loaded blade deployment",
+    "Wrist-flexion trigger mechanics"
+  ],
+  "specifications": "blade length: 12-18 cm depending on build\ndeployment time: 0.15-0.3 seconds\nmechanism: Spring-loaded with wrist flexion trigger\nretraction: Manual release lever\nconcealment: Under jacket or shirt sleeve\nblade material: Steel, titanium, or ceramic depending on build\nweight: 0.2-0.5 kg\nconstruction: Ranges from machined precision to scrap improvisation",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A ceramic-bladed Mantis was used to kill a target inside a high-security facility — the ceramic blade passed material scanning and the flexion trigger left no detectable mechanism on pat-down.",
+    "A Tier 1 community has developed a tradition where receiving a handmade Mantis from a mentor marks the transition to adulthood — the weapons are ceremonial but fully functional."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "melee",
+    "weapon",
+    "blade",
+    "tier 1"
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "id": "019d6143a64e75f2980b7df0a3779cad",
+  "type": "character",
+  "name": "Luminița Dăncilă-Abara",
+  "aliases": [
+    "Lumi",
+    "The Lamplighter",
+    "Patch"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Unlicensed field medic and black-market organ broker",
+  "age": 41,
+  "status": "active",
+  "location": "The Shelf",
+  "description": "Luminița is a compact Romanian-Nigerian woman with deep umber skin, close-cropped silver-streaked hair she keeps pinned under a faded surgical cap, and the kind of posture that belongs to someone who has spent decades bent over improvised operating tables. Her face carries a particular asymmetry—her left eye is a pale gray-green inherited from her Romanian mother, while her right is a burnished amber prosthetic she fitted herself, ringed by a faint keloid scar she never bothered to smooth. She dresses in layered, practical clothing: a long waterproof duster over scrub-green thermals, the pockets of both bulging with tourniquets, folded sterile packaging, and small vials she organizes by color-coded tape. Her hands are her most striking feature—steady, deliberate, and crosshatched with old chemical burns from improvised sterilization methods she used before she could afford better.\n\nShe operates out of a converted shipping container deep in The Shelf's drainage sub-level she calls 'the Tub,' a space that somehow manages to be simultaneously filthy and surgically clean in all the ways that matter. The Tub is known to every street surgeon, fixer, and mid-tier runner in the district as the place you go when the wound is too complicated for a stim-patch and too illegal for a licensed clinic. Luminița charges on a sliding scale she calculates in her head with unsettling precision—wealthy clients subsidize the destitute, and she keeps mental ledgers of both debts owed and favors banked. She has been offered corporate contracts twice. She declined both without explanation.\n\nWhat most of her clients don't know is that the organ brokerage is not primarily about money. Luminița runs a quiet network she calls 'the Circuit of Parts'—sourcing, storing, and routing biological material to people who need transplants and can't access the licensed medical system, which in The Shelf means almost everyone. She navigates the razor's edge between predatory harvesting operations she despises and the genuine need that drives desperate people toward them. She has been known to destroy entire harvesting operations and then quietly reroute their inventory to her own waiting list. This makes her enemies in the black-market organ trade who are significantly better armed than she is.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.72,
+      "ideal": 0.81,
+      "id": 0.38,
+      "shadow": 0.55,
+      "mask": 0.63,
+      "ghost": 0.67
+    },
+    "core_fears": [
+      "Losing the steadiness of her hands—the one thing she trusts absolutely",
+      "That her pragmatic compromises (brokering organs, working with fixers) have already made her the thing she fights against",
+      "Being institutionalized or licensed—absorbed into a system that will dictate who she saves",
+      "The waiting list: that someone will die in the gap between need and supply because she miscalculated"
+    ],
+    "core_desires": [
+      "To build a functional, self-sustaining underground medical infrastructure that outlasts her",
+      "To be genuinely known by at least one person—not the competence, not the myth, but the actual woman",
+      "To find and confront the corporate medical executive who denied her mother's treatment approval",
+      "Quiet—not silence, but a specific quality of peace she hasn't experienced since childhood"
+    ],
+    "coping_mechanisms": [
+      "Obsessive procedural focus during crisis—narrates steps aloud in a low murmur to anchor herself",
+      "Keeps a small hand-stitched notebook of patient outcomes, both successes and failures, which she reviews on bad nights",
+      "Deflects emotional intimacy with dry clinical humor and sudden topic pivots",
+      "Physical labor—reorganizing her supply inventory when she can't sleep, which is often"
+    ],
+    "blind_spots": [
+      "Believes her emotional detachment is protective when it frequently reads as coldness and drives away potential allies",
+      "Underestimates how much her reputation has made her a symbolic target, not just a practical obstacle",
+      "Applies the sliding scale logic to personal relationships—categorizes people by utility without realizing she's doing it",
+      "Her contempt for licensed medicine has calcified into a refusal to seek help she sometimes genuinely needs"
+    ],
+    "secret": "Twelve years ago, when she was first establishing the Circuit of Parts and desperately underfunded, she approved a transaction she knew was ethically compromised—sourcing from a harvesting operation she hadn't yet confirmed was voluntary. Two people on her waiting list survived because of it. She has never told anyone. The notebook has a page she has rewritten four times. It still doesn't say what actually happened."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise medical terminology mixed with Romanian phrases under stress, Shelf slang she picked up over two decades, and a habit of quantifying things that don't need to be quantified. Avoids profanity except when genuinely startled. Uses the passive voice when discussing her own feelings.",
+    "cadence": "Measured and deliberate when calm—she speaks the way she works, no wasted motion. Accelerates sharply during emergencies, sentences shortening to near-telegraphic. Has a slight accent that surfaces more heavily when she's tired or emotional, softening her vowels and hardening her consonants in a way she's never fully lost.",
+    "verbal_tics": [
+      "Begins complex explanations with 'So—' followed by a brief pause",
+      "Uses 'technically' as a hedge when she's about to say something morally ambiguous",
+      "Refers to her clients as 'the patient' even in casual conversation, even when the person is standing right there",
+      "Quiet exhale through the nose before delivering bad news—noticeable if you know to listen for it"
+    ],
+    "example_lines": [
+      "'So—the kidney is viable, the match is close enough, and technically I've worked with worse odds. What I need from you is the transport window and I need it before the tissue degrades. We can discuss the ethics of how you got it after the patient is stable.'",
+      "'You want me to say it will be fine. I understand that. But what I can tell you is the procedure is sound, my hands are steady, and I have done this specific repair eleven times. That's what I have for you.'",
+      "'The Spire has seventeen licensed trauma centers. You know how many of them will treat an unregistered Shelf resident without a credit anchor? So—yes. This is what we do instead.'",
+      "'It's not that I don't trust you. It's that trust is a variable I try not to load-bear on in situations like this. Nothing personal. Mostly.'"
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Nkechi Abara-Veltman",
+      "type": "Estranged half-sibling",
+      "description": "They share a father—a Nigerian engineer who moved between cities and families with equal ease and equal lack of accountability. They discovered each other eleven years ago through a patient cross-reference that surfaced the same surname in adjacent files. They have met in person three times. Each meeting ends in a particular kind of argument that is about their father on the surface and about everything else underneath.",
+      "emotional_core": "Grief for a connection that should have existed and largely didn't, sharpened by the awareness that they are more similar than either wants to admit",
+      "story_tension": "Nkechi moves in circles closer to mid-tier power than Luminița trusts; Luminița's underground work creates risks Nkechi worries will collapse onto both of them—but Nkechi has twice quietly provided information that protected the Circuit of Parts, and neither of them has acknowledged this directly"
+    },
+    {
+      "name": "Rector Hollowell",
+      "type": "Uneasy professional relationship",
+      "description": "Hollowell routes clients to her when the wound is the kind that raises questions at licensed facilities. She routes certain supply chain problems to him when she needs something moved quietly. Neither of them pretends this is friendship. Luminița finds him legible in ways she finds useful and unsettling in equal measure.",
+      "emotional_core": "Mutual professional respect underlaid by the awareness that their values are not actually aligned, just occasionally parallel",
+      "story_tension": "Hollowell knows more about the compromised transaction twelve years ago than he has ever let on. Luminița doesn't know whether this is leverage he's saving or information he simply holds and hasn't used. She thinks about it more than she'd admit."
+    },
+    {
+      "name": "Teo Vargas-Illesca",
+      "type": "Former patient turned irregular assistant",
+      "description": "She rebuilt his hand after a debt collection gone wrong. He showed up three weeks later offering to help carry supplies. She told him she didn't need help. He came back. This has been their dynamic for four years. He handles logistics, procurement, and the parts of the operation that require someone willing to be physically intimidating, which Luminița is not.",
+      "emotional_core": "The closest thing she has to unconditional loyalty, which terrifies her in a way she handles by being consistently brusque with him",
+      "story_tension": "Teo has started asking questions about the Circuit of Parts that suggest he's thinking about its future without her in it—either because he's planning to expand it, or because he knows something about a threat to her she hasn't identified yet"
+    },
+    {
+      "name": "Unknown (legal identity purged)",
+      "type": "Recurring client and information source",
+      "description": "Shows up at the Tub with injuries she is professionally obligated not to ask the origin of, pays in a currency of information about harvesting operations and black-market medical supply chains that is more valuable to her than credits. She suspects this is deliberate. She has never been able to determine whose interests it serves.",
+      "emotional_core": "Wariness that has not quite become distrust, because the information has always been accurate",
+      "story_tension": "One of the operations the information led her to dismantle had a supply line that, traced backward, connects to the compromised transaction from twelve years ago. She doesn't know if this is coincidence, investigation, or a very patient form of something else."
+    }
+  ],
+  "story_hooks": [
+    "A batch of organs moving through the Circuit of Parts is flagged by a Spire-level corporate algorithm as stolen property—legally, under a clause that classifies certain augmentation-adjacent biological material as proprietary. The corporation sends a recovery team. Luminița has 36 hours and four patients on life support.",
+    "The notebook surfaces. Not stolen—reproduced. Someone has distributed select pages through Shelf networks, carefully curated to make the Circuit of Parts look like a harvesting operation with better marketing. The source is untraceable. The waiting list is evaporating.",
+    "A licensed Spire physician contacts her with an offer: full legal cover for the Tub, supply chain access, and protection—in exchange for her patient records and outcome data. The data would improve legitimate medical practice. It would also expose every unregistered person she has ever treated.",
+    "Teo doesn't show up for three days. When he does, he has no injuries and no explanation. Two days later, a harvesting operation she had flagged as a future target is found dismantled, its operators missing. The inventory has not been recovered.",
+    "Her prosthetic eye begins logging data she didn't authorize—someone has pushed an update to the firmware she fitted herself. The logs contain location data, patient images, and audio fragments. She doesn't know how long it's been running or where the data is going."
+  ],
+  "narrative_function": "Moral fulcrum and institutional memory of The Shelf's underground—embodies the question of whether systemic compromise in service of genuine care is integrity or its erosion. Provides access to the city's biological underclass, the people who exist in the gaps between corporate medicine and street survival. Her network is a resource, a liability, and a living argument about what justice looks like when institutions have abandoned entire populations.",
+  "augmentations": "Right eye: amber prosthetic with low-light enhancement and magnification—self-fitted, firmware now compromised,Haptic feedback mesh in both palms: allows tactile precision measurement during surgery, original installation was military-grade field surgery kit, heavily modified,Subdural temperature regulation strip along the spine: necessary after a chemical exposure during an improvised sterilization accident left her thermoregulation unreliable,No cosmetic augmentation of any kind—she regards it as a resource allocation problem",
+  "daily_life": "Wakes early, reviews the notebook, runs a mental inventory of the Tub's supplies before physically checking them—the redundancy is intentional. Sees patients on a walk-in basis until midday, then reserved hours for scheduled procedures. Eats irregularly, usually cold food eaten standing over the supply counter. Spends evenings on Circuit logistics: coordinating transport, verifying viability windows, managing the waiting list with a handwritten priority system she has never digitized. Sleeps four to six hours, often interrupted. On nights she can't sleep, reorganizes. Has one ritual that is not work: a small Romanian radio program she streams through a cracked speaker, mostly static, mostly incomprehensible to anyone else in The Shelf. She has never explained it.",
+  "affiliation": "Unaffiliated—the Circuit of Parts is her own network; she has refused formal alignment with every faction that has approached her, including two street gangs, one mid-tier fixer collective, and a Spire corporate medical division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 5,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 8,
+      "assertion_deference": 7,
+      "transparency_guardedness": 7
+    },
+    "drives": [
+      "Build lasting medical infrastructure",
+      "Genuine human connection",
+      "Confront the executive who killed her mother"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 8,
+        "response": "Narrates procedural steps aloud in a low murmur, becomes hyper-focused"
+      },
+      "moral": 6,
+      "trust": 3,
+      "desperation": 7
+    },
+    "strengths": [
+      "Perseverance",
+      "Judgment",
+      "Prudence",
+      "Bravery",
+      "Fairness"
+    ],
+    "weaknesses": [
+      "Forgiveness",
+      "Social Intelligence",
+      "Hope",
+      "Gratitude",
+      "Playfulness"
+    ],
+    "tags": [
+      "field-medic",
+      "organ-broker",
+      "circuit-of-parts",
+      "pragmatist",
+      "ethical-razor",
+      "shelf-surgeon"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Calculate sliding scale in her head — wealthy subsidize destitute",
+      "Destroy predatory harvesting operations, then reroute their inventory to the waiting list",
+      "Never accept a corporate contract — independence is non-negotiable",
+      "Keep the notebook updated — every patient outcome, success and failure",
+      "Narrate procedural steps aloud during crisis to anchor herself",
+      "Decline emotional intimacy with clinical humor and topic pivots",
+      "Refuse to digitize the waiting list — paper only, her system"
+    ],
+    "escalation_ladder": [
+      "Quiet exhale through the nose — the prelude to bad news",
+      "'Technically' followed by something morally ambiguous",
+      "Brusque, clipped commands — 'So—' then immediate action",
+      "Deploys Teo for physical intimidation she cannot provide",
+      "Activates the full Circuit of Parts network — scorched earth logistics"
+    ],
+    "interpersonal_modes": {
+      "Nkechi Abara-Veltman": "Grief-edged distance with an estranged sibling — arguments about their father masking everything else",
+      "Rector Hollowell": "Mutual professional respect over misaligned values — he knows about the compromised transaction",
+      "Teo Vargas-Illesca": "Consistently brusque to mask that his loyalty terrifies her",
+      "Unknown client": "Wary acceptance — the information is always accurate and that itself is suspicious"
+    },
+    "stress_responses": {
+      "low": "Quantifies things that don't need quantifying — distances, weights, probabilities",
+      "medium": "Romanian phrases surface, vowels soften, consonants harden",
+      "high": "Narrates procedural steps aloud in a continuous low murmur",
+      "critical": "Opens the notebook to the page she has rewritten four times — the one that still doesn't say what happened"
+    },
+    "contradictions": [
+      "Runs an organ circuit that saves lives while navigating ethical lines she has already crossed once twelve years ago",
+      "Detachment she calls protective drives away the allies she needs to sustain the Circuit",
+      "Categorizes people by utility without realizing she is doing it — applies the sliding scale to relationships"
+    ],
+    "habits": [
+      "Reviews the notebook on bad nights — both successes and failures",
+      "Reorganizes supply inventory when she cannot sleep",
+      "Begins complex explanations with 'So—' followed by a brief pause",
+      "Streams a Romanian radio program through a cracked speaker every night",
+      "Uses 'technically' as a hedge before morally ambiguous statements"
+    ],
+    "breaking_points": [
+      "Her prosthetic eye being compromised — someone watching through her own vision",
+      "The notebook being reproduced and distributed to discredit the Circuit",
+      "Teo disappearing without explanation",
+      "A patient dying because she miscalculated the waiting list"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Opportunist": 0.7,
+    "Face": 0.7,
+    "Charmer": 0.7,
+    "Pragmatist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

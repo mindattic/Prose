@@ -1,0 +1,43 @@
+{
+  "id": "019d6143ab4273aa9d9e4a316a1093e8",
+  "name": "Sterling-Nakamura Autonomous Hunter-Killer Drone AHK-7 'Wolfhound'",
+  "type": "weapon",
+  "aliases": [
+    "Wolfhound",
+    "AHK-7",
+    "Hunter Drone",
+    "The Hound"
+  ],
+  "category": "drone-mounted",
+  "description": "A medium-sized autonomous combat drone the size of a large dog, equipped with a 5.56mm automatic weapon, thermal/optical sensor suite, and an AI capable of independent target acquisition and engagement. The Wolfhound can operate for 8 hours on a single charge, patrol a designated area autonomously, and engage targets matching its programmed threat profile without human authorization. It moves on four articulated legs that allow it to navigate rubble, stairs, and rough terrain that would defeat wheeled or tracked platforms. Sterling-Nakamura markets it as a 'persistent security presence' for high-value installations.",
+  "manufacturer": "STERLING-NAKAMURA",
+  "tier_availability": "Tier 4+",
+  "legality": "Licensed — facility perimeter defense",
+  "base_technologies": [
+    "Quadrupedal autonomous locomotion",
+    "Independent combat AI decision-making",
+    "Articulated terrain navigation systems"
+  ],
+  "specifications": "armament: 5.56mm automatic, 300-round internal magazine\nsensor suite: Thermal + optical + acoustic + motion\nautonomous operation: 8 hours patrol, 2 hours active engagement\nlocomotion: Four articulated legs, 25 km/h maximum\nweight: 35 kg\nAI capability: Independent target acquisition and engagement\nthreat profiling: Programmable ROE with biometric whitelist\narmor: Resistant to handgun calibers\ncommunications: Encrypted mesh network with other AHK units",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A pack of Wolfhound drones has gone rogue after their command facility was destroyed — they are still following their last programmed patrol pattern, engaging anyone who enters the zone, and nobody can issue a stand-down order.",
+    "Someone has hacked a Wolfhound's threat profile to add a specific individual's biometric data — the drone is hunting a person through a residential district."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "dronemounted",
+    "combat",
+    "weapon",
+    "gun",
+    "ai",
+    "rogue",
+    "market",
+    "rain",
+    "armor",
+    "drone",
+    "tier 4"
+  ]
+}

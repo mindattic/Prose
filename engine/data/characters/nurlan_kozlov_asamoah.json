@@ -1,0 +1,273 @@
+{
+  "id": "019d6143a6707429bb7b311ac410b337",
+  "type": "character",
+  "name": "Nurlan Kozlov-Asamoah",
+  "aliases": [
+    "Umbra",
+    "The Operator"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Long-range precision fire specialist — sniper",
+  "age": 38,
+  "status": "active",
+  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub",
+  "description": "Nurlan Kozlov-Asamoah is average height but with a presence that fills more space than the body accounts for. At 38, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Nurlan Kozlov-Asamoah plans to keep it that way. She works as a sniper out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nNurlan Kozlov-Asamoah is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.21,
+      "ideal": 0.79,
+      "id": 0.27,
+      "shadow": 0.91,
+      "mask": 0.81,
+      "ghost": 0.93
+    },
+    "core_fears": [
+      "Being captured alive — death is preferable to corporate interrogation",
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom"
+    ],
+    "core_desires": [
+      "To protect the people in their district who can't protect themselves",
+      "A crew worth trusting — people who stay when the shooting starts",
+      "To find the person who burned them and make it educational"
+    ],
+    "coping_mechanisms": [
+      "Violence — hits something when they can't process emotions, preferably something that deserves it",
+      "Ritual — follows the same pre-job routine every time, superstition as structure",
+      "Denial — nothing is wrong, everything is fine, they are fine, shut up"
+    ],
+    "blind_spots": [
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
+      "Cannot accept help without interpreting it as leverage",
+      "Assumes everyone has an angle because they always have an angle"
+    ],
+    "secret": "Nurlan Kozlov-Asamoah killed someone who didn't deserve it on a job three years ago and has never told anyone. The face appears in dreams weekly."
+  },
+  "speech_patterns": {
+    "vocabulary": "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
+    "cadence": "Flowing and unhurried — talks like someone who has never been interrupted and doesn't expect to be.",
+    "verbal_tics": [
+      "Uses technical jargon for everything, including emotions",
+      "Swears in three languages, often in the same sentence"
+    ],
+    "example_lines": [
+      "\"Patience is the weapon. The rifle is just the delivery system.\"",
+      "\"At this distance, the target is already dead. They just don't know it yet.\"",
+      "\"One shot, one outcome. Everything else is theater.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Tier 4 executive offers Nurlan Kozlov-Asamoah a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "A dead drop Nurlan Kozlov-Asamoah maintains is found and cleaned out — whoever did it now has leverage",
+    "Nurlan Kozlov-Asamoah's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
+  ],
+  "narrative_function": "Nurlan Kozlov-Asamoah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Pain editor — dampens pain signals, allows function through injuries that would incapacitate. Reflex boosters wired into spinal column — shaves reaction time by 40ms",
+  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+  "affiliation": "Independent — loose crew affiliations",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 6
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 4
+      },
+      "reflexes": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 4
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 5
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 8
+      },
+      "technical": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 7
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 10
+      },
+      "deception": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 8
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 10
+      }
+    },
+    "personality": {
+      "aggression": 0.1,
+      "caution": 0.85,
+      "loyalty": 0.2,
+      "greed": 0.87,
+      "empathy": 0.38
+    },
+    "drives": [
+      "loyalty",
+      "power",
+      "reputation"
+    ],
+    "thresholds": {
+      "pain": 4,
+      "stress": 8,
+      "loyalty_break": 7
+    },
+    "strengths": [
+      "multilingual — speaks 4+ languages fluently",
+      "physical endurance"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "chronic insomnia affecting long-term performance",
+      "risk-averse to the point of missed opportunities"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "sniper",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Always has an exit route planned before agreeing to any meeting",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Never discusses active contracts with anyone not directly involved",
+      "Will work with anyone once. Second time requires vouching from someone trusted."
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior",
+      "Insists they work alone but performs noticeably better in a team"
+    ],
+    "habits": [
+      "Talks to their gear — names weapons, thanks tools, treats equipment as companions",
+      "Checks exits within 10 seconds of entering any room",
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space"
+    ],
+    "breaking_points": [
+      "Discovering their employer deliberately sent them into a death trap",
+      "Being forced to choose between a crew member and the mission — and choosing wrong",
+      "Losing their primary augmentation — the one that defines their professional identity"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Pain editor",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Pain editor — dampens pain signals, allows function through injuries that would incapacitate",
+      "replaces": ""
+    },
+    {
+      "name": "Reflex boosters wired into spinal column",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Reflex boosters wired into spinal column — shaves reaction time by 40ms",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Sniper Mind": 0.7,
+    "Ghost": 0.7,
+    "Analyst": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

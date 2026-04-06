@@ -5,7 +5,7 @@ namespace StreetSamurai.Core.Services;
 
 /// <summary>
 /// Renders story markdown to HTML with custom extensions:
-///   - Facet tags: [WOUND], [IDEAL], etc → colored badges
+///   - Facet tags: [WOUND], [IDEAL], etc → stripped (legacy format, inner thoughts are now italicized prose)
 ///   - Entity refs: {{Sable}} or {{entity:sable|Sable}} → clickable spans that fire JS
 ///   - ElevenLabs tags: {pause:500}, {emotion:whisper} → visual indicators in Rich, stripped in Print
 ///   - Chapter breaks: ====== → styled dividers
@@ -23,13 +23,8 @@ public partial class MarkdownService
 
         var html = Markdown.ToHtml(markdown, pipeline);
 
-        // Facet tags → colored badges
-        html = FacetTagRegex().Replace(html, match =>
-        {
-            var facet = match.Groups[1].Value.ToUpperInvariant();
-            var color = GetFacetColor(facet);
-            return $"<span class=\"facet-tag\" style=\"color:{color};font-weight:bold;\">[{facet}]</span>";
-        });
+        // Facet tags → strip brackets (legacy format — inner thoughts are now italicized prose)
+        html = FacetTagRegex().Replace(html, "");
 
         // Entity refs: {{entity:id|Display Name}} or {{Display Name}}
         html = EntityRefFullRegex().Replace(html, match =>

@@ -1,0 +1,172 @@
+{
+  "id": "019d6143a72f7f3a9974f2e32d5b6ed8",
+  "type": "character",
+  "name": "Ysolde Fofana-Krebsbach",
+  "aliases": [
+    "Moth"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Neon artist and light sculptor",
+  "age": 29,
+  "status": "active",
+  "location": "Lakeview Neon, workshop above a defunct surge-relay station",
+  "description": "Ysolde is lean and angular, with bioluminescent ink tattooed in asymmetric moth-wing patterns across their collarbones and outer arms — an advertisement and a love letter to their own work. Their hair is cropped close on one side and falls in thick, silver-dyed locks on the other, often pinned back with a scavenged neon tube stub they carry for luck. Their eyes have patterned irises in concentric rings of amber and pale green, cheap mods bought secondhand when they were nineteen. There's a restless precision about them: they'll measure a space by eye without thinking, tilt their head at a light source the way a bird clocks distance.\n\nYsolde talks too fast when excited and barely at all when hurt, which most people misread as aloofness. They came up through street installation work — unlicensed, unsigned, frequently scrubbed by Ferrogate Transit enforcement — and still view any commission from a corponation as a moral compromise even as they quietly covet the stability. Their art obsesses over threshold spaces: the edges of things, where neon bleeds into dark, where the city's light hits water and becomes something that doesn't belong to either.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Becoming commercially palatable at the cost of meaning",
+      "Being erased — work, presence, name — as if they never existed"
+    ],
+    "core_desires": [
+      "To make something permanent in a city designed to forget",
+      "To be seen clearly, without the mythology others project onto Moth"
+    ],
+    "coping_mechanisms": [
+      "Staying in motion — always a new project, a new installation — so there's no stillness for grief to fill",
+      "Ritualizing work: leaves data-offerings to the E.L.F. they believe inhabits the old relay station, asking for clean current"
+    ],
+    "blind_spots": [
+      "Cannot recognize when their refusal of commercial work is self-sabotage versus principle",
+      "Assumes people who like their street work and people who like their gallery work are fundamentally different and doesn't trust either"
+    ],
+    "secret": "Three of the most celebrated unlicensed Lakeview Neon installations attributed to Moth were actually collaborations with a friend who died in a surge accident — Ysolde has never credited them and is eaten alive by it"
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical precision mixed with spatial metaphor; uses light and threshold as near-universal metaphors; occasionally slips into Fula words inherited from a grandparent they never met",
+    "cadence": "Fast and overlapping when animated; drops to flat monosyllables under stress",
+    "verbal_tics": [
+      "'Right at the edge of—' (trails off, gestures)",
+      "'That's not the same thing'",
+      "Clicks tongue when something is wrong about a space"
+    ],
+    "example_lines": [
+      "'The tube's not the art. The shadow the tube makes — that's the art. Anyone can sell you a tube.'",
+      "'I don't do commissions where they tell me what it means. I'll tell you what it costs. You tell me where the wall is. That's the whole conversation.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Ferrogate Transit E.L.F. has begun mimicking Moth's installation patterns in the relay grid — lighting up tunnels in sequences that mirror their work — and Ysolde doesn't know if it's tribute, mockery, or a message",
+    "The dead collaborator's family has found documentation suggesting their relative's contribution to Moth's famous pieces, and someone is about to go public"
+  ],
+  "narrative_function": "Local color and information node — knows Lakeview Neon's hidden spaces intimately; can be a quest giver for retrieving salvage from restricted zones or documenting art before it's erased; represents the tension between artistic integrity and financial survival",
+  "augmentations": "Patterned irises (concentric amber/pale green, secondhand mod); bioluminescent moth-wing tattoos across chest and arms (cosmetic geneware ink); subdermal haptic grid on fingertips for precise electrical work",
+  "daily_life": "Ysolde spends mornings salvaging burnt-out neon tubes and plasma conduits from Ferrogate Transit's maintenance dump; afternoons are for commissions and studio work; late nights for unlicensed public installations they document and post to the underground mesh before enforcers arrive.",
+  "affiliation": "Independent; loosely affiliated with the Candela Collective, an informal network of light artists in Lakeview Neon",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 9,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "artist",
+      "salvager",
+      "night-worker",
+      "grief-carrier",
+      "threshold-thinker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never accept a commission that requires a corponation logo visible in the work",
+      "Always document the work before installing — if it gets scrubbed, the documentation survives",
+      "Don't ask for help until the situation is genuinely unmanageable"
+    ],
+    "escalation_ladder": [
+      "Withdraw and go quiet",
+      "Redirect with work — start a new project as displacement",
+      "Become bluntly honest in a way that damages relationships",
+      "Disappear for days without contact"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Watchful and brief; answers questions with questions; warms slowly if the stranger asks about the work rather than the mythology",
+      "friends": "Surprisingly tender and funny; remembers small details about people's lives with accuracy; still struggles to ask for what they need emotionally"
+    },
+    "stress_responses": {
+      "low": "Gets meticulous — cleans and reorganizes the workshop obsessively",
+      "medium": "Picks a fight about aesthetics with someone who doesn't deserve it",
+      "high": "Goes dark — offline, door locked, works through the night until the crisis passes or they collapse"
+    },
+    "contradictions": [
+      "Insists art must be public and accessible but guards their creative process with ferocious privacy",
+      "Performs indifference to recognition while anonymously checking how many times their installations are documented before removal"
+    ],
+    "habits": [
+      "Leaves a small burnt tube end at the base of every finished public installation as a signature only they'd recognize",
+      "Eats the same breakfast every day — fried plantain and black coffee — as a grounding ritual before creative work",
+      "Talks to the relay station E.L.F. before starting a project, even when they feel foolish doing it"
+    ],
+    "breaking_points": [
+      "Someone claiming credit for work that isn't theirs in front of Ysolde directly",
+      "Being told their unlicensed work is 'vandalism' by someone whose opinion they respect"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Artist": 0.9,
+    "Dreamer": 0.9,
+    "Beauty Seeker": 0.9,
+    "Romantic": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

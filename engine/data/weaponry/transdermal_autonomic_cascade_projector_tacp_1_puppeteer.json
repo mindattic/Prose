@@ -1,0 +1,63 @@
+{
+  "id": "019d6143ab577bf78f9dc4806d596065",
+  "name": "Transdermal Autonomic Cascade Projector TACP-1 'Puppeteer'",
+  "type": "weapon",
+  "aliases": [
+    "Puppeteer",
+    "The Stringbox",
+    "Twitch Gun",
+    "TACP"
+  ],
+  "category": "cyber",
+  "description": "The TACP-1 delivers a precisely modulated transcutaneous electromagnetic signal that bypasses voluntary motor control entirely by directly stimulating the autonomic and peripheral motor nerve bundles beneath the skin. Unlike weapons that attack the nervous system through pain or disruption, the Puppeteer does not incapacitate — it redirects. A target struck by the beam continues to move, but their movements are dictated by the operator's control interface rather than the target's own intent. The effect is described by victims as 'watching yourself from inside a car you're not driving.' Voluntary motor signals still originate in the target's brain, but the TACP-1's signal overwhelms and overwrites them at the peripheral nerve level.\n\nThe weapon requires a secondary control gauntlet worn by the operator, which translates gross motor gestures into the modulation patterns broadcast by the emitter. Control fidelity is imperfect — fine motor tasks like typing or weapon use are beyond the system's resolution — but forcing a target to walk, kneel, strike another person, or step into traffic is well within operational parameters. The psychological trauma of the experience is considered severe; subjects who have been 'puppeted' report lasting dissociative symptoms and profound loss of bodily autonomy. ZHENG-DAO BIOELECTRIC developed the underlying technology for industrial exoskeleton synchronization before the defense application became obvious.\n\nThe emitter itself is shoulder-mounted and connected to the control gauntlet by a fiber-optic bundle, allowing the operator freedom of movement while maintaining the beam lock. Maintaining control of a resisting target requires concentration and practice; experienced operators can manage a single target for up to four minutes before signal drift degrades the lock. The weapon has a distinctive high-pitched harmonic emission during operation that street communities have learned to recognize as 'the singing,' and its presence is considered grounds for immediate area evacuation.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Black market / Military prototype",
+  "legality": "Prohibited — classified as a bodily autonomy violation weapon under Meridian 88 Statute 12.7 ('The Vessel Laws')",
+  "base_technologies": [
+    "Transcutaneous peripheral motor nerve stimulation",
+    "Autonomic signal overwrite modulation",
+    "Gestural control-to-beam translation interface"
+  ],
+  "specifications": "effective range: 3–40 meters (beam lock required)\ncontrol fidelity: Gross motor only — walking, posture, large limb movements\nmaximum control duration: 4 minutes per charge cycle before signal drift\nsimultaneous targets: 1 (experimental multi-target variants exist, unstable)\npower source: Dual-cell autonomic modulation array, 6 full control cycles\nemitter weight: 2.8 kg (shoulder mount)\ngauntlet weight: 0.9 kg\nharmonic emission: Audible at 11–13 kHz within 15 meters of emitter\nknown countermeasures: Faraday-lined undersuit (partial), neural shielding implants (effective)",
+  "tactical_use": "Used for hostage extraction scenarios where the target must be moved without alerting them, for forcing a target to perform actions that implicate them (signing documents, committing acts on camera), and for using a target as a human shield. Covert intelligence operations have used it to walk an asset through a facility without the asset's knowledge, extracting them while maintaining the appearance of voluntary movement. Combat applications are limited by the concentration required — operators are vulnerable while maintaining control — but it has been used to force armed targets to discharge their weapons in controlled directions.",
+  "cultural_context": "The Puppeteer occupies a unique position of cultural horror in Meridian 88. The city's population already lives with significant anxieties about bodily autonomy — neural implants, corporate behavioral modification, pharmaceutical control — and the TACP-1 literalizes those fears. 'Puppeted' has become a broader cultural term for anyone perceived to be acting under external control, whether corporate, pharmaceutical, or technological. Victim advocacy groups have pushed aggressively for the Vessel Laws that prohibit the weapon, and there is an organized underground network that helps survivors access psychological care. Possessing a Puppeteer marks the bearer as willing to cross a line that even hardened street operators often consider absolute.",
+  "known_users": [
+    "ZHENG-DAO BIOELECTRIC black-site research division",
+    "Intelligence operative 'Meridian Quill' (identity unknown)",
+    "Corporate extraction specialist 'Heron' Batiste",
+    "The Clavicle — an anonymous underground operator specializing in evidence fabrication",
+    "Rogue security AI 'SERAPH-4' (remote operation via drone-mounted variant)"
+  ],
+  "story_hooks": [
+    "A city council member was captured on surveillance footage committing a violent act — but a witness claims they saw 'the singing' in the corridor beforehand. The party must prove the footage shows a Puppeteer operation before the member is executed.",
+    "A TACP-1 control gauntlet is found in a safehouse with recorded gesture logs — playing back the logs means experiencing exactly what someone forced another person to do. The party must decide whether to use the evidence and expose the victim's experience publicly.",
+    "ZHENG-DAO BIOELECTRIC is quietly approaching Vessel Law legislators with 'legitimate medical applications' — the party learns that three of the four key dissenting votes have recently begun behaving strangely in public.",
+    "A character wakes up with muscle soreness consistent with hours of activity they don't remember. Someone has been borrowing their body while they sleep."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "cyber",
+    "weapon",
+    "combat",
+    "gun",
+    "loss",
+    "identity",
+    "neural",
+    "ai",
+    "elf",
+    "rogue",
+    "corporate",
+    "surveillance",
+    "control",
+    "power",
+    "medical",
+    "pain",
+    "market",
+    "rain",
+    "freedom",
+    "drone",
+    "energy"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "019d6143ab577e9eaebb2c40c181a924",
+  "name": "Torsional Filament Projector TFP-6 'Garrote'",
+  "type": "weapon",
+  "aliases": [
+    "The Lacemaker",
+    "Wire Witch",
+    "Stringfield"
+  ],
+  "category": "exotic",
+  "description": "The TFP-6 'Garrote' is a compact two-handed projector that launches a dense web of monomolecular torsional filaments across a target corridor or open space, creating an invisible lattice of cutting wire suspended between electromagnetic anchor nodes fired simultaneously from the weapon's twin barrels. The filaments are composed of carbon-ceramic composite strands under extreme torsional tension — wound so tightly during manufacture that contact with any moving mass causes them to snap-cut rather than deflect, delivering kinetic laceration energy far beyond what their apparent mass would suggest. The anchor nodes embed into walls, floors, and structural surfaces on contact, maintaining filament tension for up to ninety seconds before degrading.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Military only",
+  "legality": "Prohibited (civilian); Restricted (licensed military contractors)",
+  "base_technologies": [
+    "Monomolecular torsional filament weaving",
+    "Electromagnetic anchor node deployment",
+    "Carbon-ceramic composite strand engineering"
+  ],
+  "specifications": "weight: 4.2 kg (unloaded), 5.9 kg (loaded, dual cassettes)\nlength: 71 cm\nfilament range: 3–18 m effective web span\nanchor node count: 8 per deployment (4 per barrel)\nfilament tension duration: 90 seconds nominal, 60 seconds under load\ncassette capacity: 1 deployment per cassette\nreload time: ~45 seconds (manual cassette replacement)\nfilament visibility: Invisible to naked eye; detectable by Tier 2+ optical enhancement\neffective environments: Enclosed spaces, corridors, vehicle interiors, stairwells\ncontraindications: Open spaces with wind above 15 kph (filament drift degrades lattice integrity)",
+  "tactical_use": "The 'Garrote' is a pure area-denial and ambush weapon. Standard doctrine calls for deployment in advance of expected enemy movement — operators establish a filament web across a chokepoint, then trigger pursuit or drive targets into the kill zone. In close-quarters building clearance, teams use the 'Garrote' to seal off retreat routes or cut off reinforcements from a target room. Some operators deploy webs at ankle and throat height simultaneously, using staggered cassettes to create multi-level lattices. Counter-filament protocols exist but require specialized equipment most street-level operators don't carry.",
+  "cultural_context": "The 'Garrote' carries a particular stigma even among Meridian 88's mercenary community, where most weapons are accepted as tools of the trade. The nature of filament injuries — clean, almost surgical cuts that can remove fingers, hands, or worse depending on velocity of contact — has given the weapon an association with cruelty that purely kinetic weapons don't carry. Corporate security firms that deploy it publicly face significant reputational risk, so its use is largely deniable and off-the-books. Among Arcturus Defense Solutions' contractor network, 'Garrote' operators are known as 'lacemakers' — a term that carries both professional respect and quiet unease.",
+  "known_users": [
+    "Arcturus Defense Solutions black operations contractors",
+    "Meridian 88 tunnel security teams (unauthorized surplus)",
+    "High-end assassination specialists",
+    "Corporate extraction teams operating in restricted infrastructure",
+    "Ringo Corponation facility hardening crews (off-label use)"
+  ],
+  "story_hooks": [
+    "A corporate executive was found dead in a sealed boardroom — the door was locked from inside and every exit was covered in a degraded filament web. The question isn't how the killer got in. It's how they got out.",
+    "An Arcturus Defense Solutions shipment of 'Garrote' cassettes has been intercepted and repurposed by a gang controlling the Undertow sewer network — they've been using them to create impassable zones that are slowly starving out competing factions.",
+    "A player character's contact has gone silent in a district where someone has been deploying 'Garrote' webs indiscriminately in civilian corridors. The local medical bay is overwhelmed with laceration cases.",
+    "Arcturus is quietly offering a bounty for the return of a prototype 'Garrote' variant that fires self-repairing filaments — the kind that don't degrade after ninety seconds."
+  ],
+  "ammunition_type": [
+    "Torsional Filament Web Cassette TFW-2"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "gang",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "medical",
+    "tunnel",
+    "bar",
+    "rain",
+    "vehicle",
+    "train",
+    "explosive",
+    "energy",
+    "fire"
+  ]
+}

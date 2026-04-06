@@ -1,0 +1,44 @@
+{
+  "id": "019d6143a8587d55a8390ec91d1861d0",
+  "name": "Carrion Defense Works NBC Threat Assessment Kit NTAK-2",
+  "brand_name": "Carrion",
+  "product_name": "Carrion Defense Works NBC Threat Assessment Kit NTAK-2",
+  "type": "equipment",
+  "aliases": [
+    "NTAK-2",
+    "Hazard Kit",
+    "NBC Scanner",
+    "Threat Box"
+  ],
+  "category": "survival",
+  "description": "A portable nuclear, biological, and chemical threat assessment system contained in a hardened case the size of a large lunchbox. The NTAK-2 includes a radiation dosimeter, biological agent sampler with rapid gene-sequencing chip, chemical compound mass spectrometer, and an AI analysis module that cross-references detected threats against Carrion's comprehensive threat database. The system can identify a biological agent, assess radiation exposure levels, or categorize an unknown chemical compound in under 90 seconds. Carrion issues the NTAK-2 to their field teams and sells it to corporate emergency response units.",
+  "manufacturer": "CARRION DEFENSE WORKS",
+  "tier_availability": "Tier 2+",
+  "legality": "Unrestricted — safety equipment",
+  "base_technologies": [],
+  "specifications": {
+    "radiation detection": "Alpha",
+    "info": "beta; gamma; neutron; 90-second identification; 4; 000+ compound database; surface swab; and liquid",
+    "biological sampling": "Rapid gene-sequencing",
+    "chemical analysis": "Mass spectrometry",
+    "AI analysis": "Threat assessment and countermeasure recommendation",
+    "analysis time": "Under 90 seconds for most threats",
+    "weight": "3.8 kg in hardened case",
+    "sampling": "Atmospheric",
+    "battery": "100 analyses per charge"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An NTAK-2 deployed at a public event detected a biological agent that does not exist in any database — the AI flagged it as engineered but could not identify its function, and the concentration is increasing.",
+    "Carrion's threat database updates are being delayed for non-Carrion customers, meaning corporate response teams are operating with outdated threat data while Carrion's own teams have current information."
+  ],
+  "tags": [
+    "survival",
+    "equipment",
+    "ai",
+    "corporate",
+    "tier 2"
+  ]
+}

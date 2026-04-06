@@ -1,0 +1,168 @@
+{
+  "id": "019d6143a6567022a26e7b297cd6b7f6",
+  "type": "character",
+  "name": "Matteo Osei-Drăghici",
+  "aliases": [
+    "Mat",
+    "Grease"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Auto and drone mechanic, Geartown independent bay",
+  "age": 28,
+  "status": "active",
+  "location": "Geartown, Bay 14 of the Rusted Meridian self-service garage complex on Spindle Row",
+  "description": "Matteo is lean and angular, with the kind of wiry upper-body strength that comes from torquing bolts rather than lifting weights. His skin is a warm medium brown and his hair is a close-cropped natural that he bleeds into bioluminescent blue at the tips — a cheap geneware dye job he redoes every two months, currently fading to a greenish teal at the ends. He has a Palladian corporate tattoo on his left forearm that he has partially covered with an amateur geometric overlay — the original mark of a three-year apprenticeship contract he bought out early at significant personal cost. His hands are perpetually stained and he has stopped being embarrassed about it.\n\nHe is intensely focused when working and almost incoherent when not, as if the part of his brain that manages conversation runs on whatever processing power the mechanical problem in front of him does not require. He is not unkind — genuinely not — but he will trail off mid-sentence if a sound from an engine catches his attention. He has strong opinions about Ferrogate Transit's maintenance culture that he will share with anyone who stands still long enough.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.4,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Being trapped in another corporate contract",
+      "Building something he is proud of and having it taken from him"
+    ],
+    "core_desires": [
+      "To finish the hauler cab restoration and drive it out of Geartown under his own power",
+      "To be known as the best independent mechanic on Spindle Row"
+    ],
+    "coping_mechanisms": [
+      "Immersion in mechanical problems to avoid thinking about anything else",
+      "Deflects emotional conversations with technical tangents"
+    ],
+    "blind_spots": [
+      "Does not notice when people are asking for connection rather than information",
+      "Underestimates how much his Palladian past makes certain clients nervous"
+    ],
+    "secret": "The buyout of his Palladian contract was not funded by his own savings. A woman named Vesna who ran a chop operation in Geartown paid his debt in exchange for two years of off-books work modifying vehicles she did not explain the purpose of. He never asked. He finished the two years, she disappeared, and he has not thought carefully about what those vehicles were used for."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical-heavy, precise when talking about machines, vague and trailing when talking about people or feelings. Occasional Romanian phrases inherited from his Drăghici grandmother.",
+    "cadence": "Bursts of fast, detailed explanation followed by long pauses when he loses the thread.",
+    "verbal_tics": [
+      "says 'so, basically' before any explanation that is not actually basic",
+      "trails off with '...yeah' when he has lost interest in his own sentence"
+    ],
+    "example_lines": [
+      "So, basically your motivator coupling is shearing because whoever installed it cross-threaded the mount, which is a Palladian-certified mistake, which, yeah.",
+      "I can have it done by — actually wait, listen to that. You hear that? That's a bearing. That's — sorry, what were you asking."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He recognizes a vehicle brought in for routine work as one of the units he modified for Vesna — and the client's story about where they got it does not add up.",
+    "His Bay 14 lease is up for renewal and the Rusted Meridian complex has been quietly bought by a Palladian subsidiary — which means his former employer is now his landlord.",
+    "The hauler cab restoration has revealed a hidden compartment behind the original dash that contains something sealed in a Zheng-Dao evidence bag."
+  ],
+  "narrative_function": "Technical resource and repair contact. A way into Geartown's informal economy. His partial Palladian history can complicate or enable stories involving that corponation.",
+  "augmentations": "Bioluminescent hair-tip geneware (teal, fading). Palladian-branded haptic feedback glove on his right hand — leftover from the apprenticeship, still works, he refuses to remove it on principle. Basic retinal overlay for schematic reading (no network, air-gapped).",
+  "daily_life": "Arrives at Bay 14 by 08:00, takes whatever walk-in work the board lists, eats lunch inside the bay over whatever he is currently dismantling, and runs his own project — restoring a 2180s Ferrogate cargo hauler cab — during evening hours when paying work is done.",
+  "affiliation": "Independent (formerly Palladian apprentice program)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 4,
+      "expression": 4,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 1,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "technical expert",
+      "Geartown local",
+      "Palladian history",
+      "socially distracted",
+      "honest dealer"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not knowingly work on anything with active Palladian tracking firmware — checks first, every time",
+      "Quotes fair price, does not haggle down, will haggle up if you argue with his diagnosis",
+      "Does not work on weapons systems, period"
+    ],
+    "escalation_ladder": [
+      "Ignores social friction and keeps working",
+      "Gives a flat 'not interested' with no elaboration",
+      "Puts down tools and gives full attention to the problem, which is rare and signals seriousness",
+      "Asks the person to leave the bay"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Distracted but not unwelcoming — will answer questions while continuing to work",
+      "friends": "Remembers details about their vehicles with unnerving precision, occasionally forgets their birthdays"
+    },
+    "stress_responses": {
+      "low": "Talks faster and more technically",
+      "medium": "Goes silent and works with visible intensity",
+      "high": "Makes a decision quickly and acts on it, skipping the part where he explains it to anyone"
+    },
+    "contradictions": [
+      "Values independence fiercely but does not examine how his two years for Vesna compromised it"
+    ],
+    "habits": [
+      "Wipes his hands on a rag before touching anything he considers finished or beautiful",
+      "Keeps a small ELF icon cable-tied to the hauler cab's steering column — doesn't pray, just leaves it there"
+    ],
+    "breaking_points": [
+      "Learning what those vehicles were actually used for",
+      "Palladian making a move that threatens his bay"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

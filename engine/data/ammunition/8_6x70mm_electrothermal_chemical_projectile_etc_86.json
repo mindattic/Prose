@@ -1,0 +1,52 @@
+{
+  "id": "019d6143a55677c9b88d5dbe57ea66bc",
+  "name": "8.6x70mm Electrothermal Chemical Projectile ETC-86",
+  "type": "ammunition",
+  "aliases": [
+    "Flashpoint round",
+    "ETC-86",
+    "Lightning bolt",
+    "Plasma cartridge"
+  ],
+  "category": "caseless",
+  "caliber": "8.6x70mm",
+  "description": "The ETC-86 is a high-velocity anti-materiel projectile designed for the ETCC-5 'Flashpoint' electrothermal chemical carbine, representing the most advanced conventional-caliber ammunition in regular military procurement. Unlike traditional cartridges that rely on chemical propellant ignition, the ETC-86 uses a liquid propellant that is ignited and plasma-boosted by the weapon's integrated capacitor bank. The result is a muzzle velocity of 1,850 m/s — roughly twice that of conventional rifle ammunition — with corresponding increases in kinetic energy and armor penetration.\n\nThe projectile itself is a tungsten-alloy penetrator in a discarding sabot, optimized for defeating hardened targets at extended range. The liquid propellant is contained in a sealed cartridge that integrates with the weapon's propellant injection system — the capacitor bank generates a plasma arc that flash-vaporizes the propellant, producing chamber pressures approximately three times higher than conventional ammunition. This extreme pressure is managed by the ETCC-5's reinforced chamber and controlled-erosion barrel liner, both of which have limited service lives that make the weapon expensive to maintain.\n\nThe 10-round box magazine includes an integrated 40mL liquid propellant cartridge that feeds the injection system. Changing magazines also changes propellant supply, which simplifies field logistics but means the entire magazine assembly is a relatively expensive consumable. Empty magazines can be refilled at armorer stations with compatible propellant, but the precision tolerances of the injection system mean that third-party propellant formulations frequently cause misfires or, in worst cases, chamber detonations.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Military only",
+  "legality": "Prohibited — civilian possession",
+  "specifications": "weight_per_round: 18.4g (projectile + sabot)\nmuzzle_velocity: 1,850 m/s\npenetration_rating: Defeats Class V armor at 400m, light vehicle plating at 800m\neffective_against: Armored personnel, light vehicles, reinforced positions, synthetic combatants\ncountermeasures: Reactive armor, active defense systems, heavy vehicle composite plating",
+  "compatible_weapons": [
+    "Electrothermal Chemical Carbine ETCC-5 'Flashpoint'"
+  ],
+  "variants": [
+    "ETC-86 Standard (tungsten penetrator, general anti-materiel)",
+    "ETC-86 HEAT (shaped-charge warhead, anti-vehicle optimization)",
+    "ETC-86 Frangible (breaks up on hard backstop, reduced collateral in urban environments)",
+    "ETC-86 Tracer (visible-spectrum phosphor trail, compromises concealment)"
+  ],
+  "cultural_context": "The ETC-86 is military ordnance in the purest sense — it does not circulate on the civilian market in any legal capacity, and its presence on the black market is rare enough to function as a signal of institutional-grade procurement. Street operators who encounter ETC-86 ammunition treat it as evidence that they are dealing with military or high-tier corporate opposition rather than criminal competition. The round's distinctive plasma-flash muzzle signature is visible even in daylight, which means firing an ETCC-5 announces your position and your equipment tier simultaneously. Among military operators, the ETC-86 is respected but not beloved — the magazine cost, the propellant logistics, and the weapon's maintenance requirements make it a specialist tool rather than a general-purpose solution.",
+  "story_hooks": [
+    "A crate of ETC-86 ammunition was intercepted at a civilian shipping terminal, mislabeled as industrial chemical feedstock — the shipping manifest traces back to a logistics company with no military contracts, and the recipient address is a residential apartment in the mid-districts.",
+    "A Zheng-Dao propellant chemist has gone missing along with the formulation data for the ETC-86's liquid propellant — three separate parties are searching for her, and at least one of them wants the formula to manufacture compatible ammunition for a weapon system that doesn't officially exist yet."
+  ],
+  "tags": [
+    "caseless",
+    "ammunition",
+    "combat",
+    "weapon",
+    "war",
+    "love",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "market",
+    "bar",
+    "vehicle",
+    "armor",
+    "energy",
+    "fire"
+  ]
+}

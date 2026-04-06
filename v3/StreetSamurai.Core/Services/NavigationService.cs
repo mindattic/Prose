@@ -166,7 +166,8 @@ public class NavigationService
     /// </summary>
     public List<string> FindRoute(string fromName, string toName)
     {
-        var all = places.GetAll().Where(p => p.Coordinates.Lat != 0).ToDictionary(p => p.Name);
+        var all = places.GetAll().Where(p => p.Coordinates.Lat != 0)
+            .GroupBy(p => p.Name).ToDictionary(g => g.Key, g => g.First());
         if (!all.ContainsKey(fromName) || !all.ContainsKey(toName)) return [];
 
         var target = all[toName];
@@ -223,7 +224,7 @@ public class NavigationService
         if (route.Count == 1) return $"You're already at {fromName}.";
 
         var totalDist = 0.0;
-        var all = places.GetAll().ToDictionary(p => p.Name);
+        var all = places.GetAll().GroupBy(p => p.Name).ToDictionary(g => g.Key, g => g.First());
 
         var steps = new List<string>();
         for (int i = 0; i < route.Count - 1; i++)

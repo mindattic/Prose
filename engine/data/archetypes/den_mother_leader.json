@@ -1,0 +1,38 @@
+{
+  "id": "019d6143a5697a2ca5e75a3bb78ecb20",
+  "name": "Den Mother Leader",
+  "type": "archetype",
+  "category": "leadership",
+  "description": "Leads by caring for the group like family",
+  "behavioral_signature": "Makes sure everyone is fed, rested, and heard",
+  "under_stress": "Becomes overprotective, smothering",
+  "at_rest": "Checking on everyone, cooking, organizing",
+  "will_always": [
+    "take care of the group"
+  ],
+  "will_never": [
+    "sacrifice group welfare for the mission"
+  ],
+  "unless": [
+    "caring prevents necessary hard decisions"
+  ],
+  "similar_to": [
+    {
+      "archetype": "Shepherd",
+      "threshold": 0.8,
+      "context": "protective leadership"
+    },
+    {
+      "archetype": "Servant Leader",
+      "threshold": 0.75,
+      "context": "nurturing leadership"
+    }
+  ],
+  "opposite_of": [
+    "Tyrant"
+  ],
+  "tags": [
+    "nurturing",
+    "protective"
+  ]
+}

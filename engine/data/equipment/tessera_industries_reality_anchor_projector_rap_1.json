@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a8797a79ad5aa9ce71af222e",
+  "name": "Tessera Industries Reality Anchor Projector RAP-1",
+  "brand_name": "Tessera",
+  "product_name": "Tessera Industries Reality Anchor Projector RAP-1",
+  "type": "equipment",
+  "aliases": [
+    "RAP-1",
+    "Truth Lamp",
+    "De-Glitch",
+    "Reality Check"
+  ],
+  "category": "counter-surveillance",
+  "description": "A device that disrupts holographic projections, augmented reality overlays, and adaptive camouflage systems within a 15-meter radius by emitting a structured light pattern that interferes with the coherent light used by these systems. The RAP-1 essentially forces the visual environment to be real — holograms flicker and collapse, AR overlays glitch and disappear, and active camouflage systems display artifacts that reveal the concealed object. Tessera developed it as a countermeasure to their own holographic and metamaterial products, recognizing that a tool to defeat illusions has as much market value as the illusions themselves.",
+  "manufacturer": "TESSERA INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed — security and investigation",
+  "base_technologies": [],
+  "specifications": {
+    "effect radius": "15 meters",
+    "disrupted systems": "Holographic projections",
+    "info": "AR overlays; active camouflage; AR glitches; camo shows artifacts",
+    "method": "Structured light interference",
+    "effect": "Holograms collapse",
+    "power": "4-hour battery",
+    "weight": "0.5 kg",
+    "form factor": "Handheld wand or mounted emitter",
+    "activation": "Continuous emission while powered",
+    "limitations": "Does not affect passive materials or metamaterial surfaces"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A RAP-1 activated at a social event revealed that three of the guests were holographic projections — no one knew they were not physically present, and the question of who sent the holograms and why they needed to appear present is urgent.",
+    "A modified RAP-1 has been developed that forces ROCL augmented reality overlays to display the raw, unmodified physical environment — users describe the experience as seeing their world stripped naked, and some find the real version deeply disturbing."
+  ],
+  "tags": [
+    "countersurveillance",
+    "equipment",
+    "augment",
+    "surveillance",
+    "market",
+    "tier 3"
+  ]
+}

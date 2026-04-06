@@ -1,0 +1,52 @@
+{
+  "id": "019d6143a556737490f3d32000f273f3",
+  "name": "9.5mm Frangible Thermobaric Micro-Canister FTM-95",
+  "type": "ammunition",
+  "aliases": [
+    "Hollowpoint round",
+    "FTM-95",
+    "Burn round",
+    "Pressure slug"
+  ],
+  "category": "ballistic",
+  "caliber": "9.5mm",
+  "description": "The FTM-95 is a frangible hollow-body projectile containing a binary thermobaric micro-canister, designed for the TPIR-1 'Hollowpoint' rifle. The round functions as a conventional ballistic projectile during flight, but on soft-tissue impact, the frangible body shatters and the internal membrane separating two thermobaric reactants ruptures. The resulting reaction — a rapid exothermic expansion consuming available oxygen — occurs inside the wound channel, producing a localized thermobaric event within the target's body.\n\nThe binary reactant system is elegantly simple: two stable compounds separated by a pressure-sensitive membrane that ruptures specifically under the deformation stresses of soft-tissue impact. Hard-surface impacts — hitting walls, armor plate, or bone at an oblique angle — produce insufficient membrane stress and the round acts as a conventional frangible projectile. This material-selective activation means the FTM-95 is specifically an anti-personnel round that reserves its thermobaric effect for soft-tissue targets, which is precisely what earned it its classification under the Anti-Atrocity Statutes.\n\nThe reaction delay of 38-42 milliseconds post-membrane rupture means the thermobaric event occurs after the projectile fragments have dispersed into the wound channel, maximizing the internal surface area exposed to the reaction. The effect is a localized pressure wave and thermal event inside the body that produces catastrophic tissue disruption far beyond what the round's 9.5mm caliber would suggest. The 15-round thermally regulated magazine maintains ammunition temperature between 4 and 22 degrees Celsius, as the binary reactants become unstable above this range — a design constraint that makes the FTM-95 unsuitable for sustained operations in hot environments without supplemental magazine cooling.",
+  "manufacturer": "OUROBOROS ENERGY",
+  "tier_availability": "Military only / Black market (premium pricing)",
+  "legality": "Prohibited — classified as unlawful wound-enhancement device",
+  "specifications": "weight_per_round: 14.8g\nmuzzle_velocity: 820 m/s\npenetration_rating: Standard ballistic performance pre-activation, thermobaric effect is internal\neffective_against: Soft-tissue biological targets, devastating against unarmored personnel\ncountermeasures: Hard armor (prevents activation), oblique impacts, temperature disruption of magazine (above 22C degrades reliability)",
+  "compatible_weapons": [
+    "Thermobaric Pressure Injection Rifle TPIR-1 'Hollowpoint'"
+  ],
+  "variants": [
+    "FTM-95 Standard (binary thermobaric, full effect)",
+    "FTM-95 Reduced (lower reactant load, reduced thermobaric effect, marginally less prohibited)",
+    "FTM-95 Incendiary (modified reactants prioritize thermal over pressure, external fire risk)",
+    "FTM-95 Inert (no reactant payload, functions as conventional frangible, training use)"
+  ],
+  "cultural_context": "The FTM-95 is one of the most morally condemned ammunition types in Meridian 88 — its classification under the Anti-Atrocity Statutes places it in the same legal category as chemical weapons and area-denial biologics. The round's effect on human tissue is so disproportionate to its caliber that forensic pathologists initially misidentified early FTM-95 deaths as explosive device injuries rather than gunshot wounds. Among military operators, the round is acknowledged as effective but carries a stigma — units known to deploy TPIR-1 platforms are informally avoided by other military personnel. On the black market, FTM-95 rounds command prices ten to twenty times their manufacturing cost, a premium that reflects both scarcity and the kind of buyer who seeks them out.",
+  "story_hooks": [
+    "A medical examiner has flagged a series of deaths where the internal tissue damage is wildly inconsistent with the external wound profiles — the victims appear to have been shot with small-caliber rounds but have internal injuries consistent with explosive fragmentation, and the examiner needs a weapons consultant who can identify the ammunition.",
+    "An Ouroboros Energy whistleblower has documentation that the FTM-95's binary reactant system was originally developed for industrial demolition applications and was weaponized without safety review — the reactants have a shelf-life degradation pathway that makes stored rounds increasingly unstable, and there are thousands of aging FTM-95s in military arsenals."
+  ],
+  "tags": [
+    "ballistic",
+    "ammunition",
+    "weapon",
+    "gun",
+    "death",
+    "ai",
+    "elf",
+    "medical",
+    "market",
+    "bar",
+    "rain",
+    "moral",
+    "train",
+    "armor",
+    "explosive",
+    "energy",
+    "fire",
+    "shelf"
+  ]
+}

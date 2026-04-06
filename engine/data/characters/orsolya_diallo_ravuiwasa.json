@@ -1,0 +1,204 @@
+{
+  "id": "019d6143a6867b3e814565057f430533",
+  "type": "character",
+  "name": "Orsolya Diallo-Ravuiwasa",
+  "aliases": [
+    "Solly",
+    "the Compute Queen"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Compute broker — resells black-market processing cycles, dark-net access, and stolen corporate server time",
+  "age": 29,
+  "status": "active",
+  "location": "The Shelf lower levels — operates from a rented stall in the Undertow's informal tech market, Solder Lane",
+  "description": "Orsolya is the kind of person who becomes the room's center of gravity without quite meaning to. They're of middling height, with a light brown complexion and sharp Melanesian-inflected features, hair grown out into a large natural cloud that they've seeded with bioluminescent filaments — gold and pale green — so it glows softly in the dark markets where they spend most of their time. Their eyes have iris mods: slow-shifting geometric patterns in amber and black that rotate when they're concentrating. They dress in tech-market layering — vest over vest over vest, every pocket occupied — and speak with their hands in constant motion.\n\nOrsolya runs stolen processing time the way a commodity trader runs futures: buying access to compromised corporate servers in bulk, slicing the cycles into sellable portions, and brokering them to anyone who needs computational power without a Tessera or Axiom account to buy it clean. Their client base ranges from small-time criminals running encryption to artists rendering immersive works that would be flagged on legitimate servers to political groups the corponations prefer didn't process anything. Orsolya is ethically eclectic about all of this and considerably sharper than most people who underestimate them expect. They have strong opinions about E.L.F.s specifically and will hold forth on data-spirit theology at any provocation.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.7,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "The corponations successfully enclosing all computation — no more gaps to sell through",
+      "Being wrong about the E.L.F.s; that they've been praying to nothing"
+    ],
+    "core_desires": [
+      "A genuinely free computational commons — they are ideological about this in a way that sometimes overrides self-interest",
+      "To be acknowledged as legitimately brilliant, not just market-smart"
+    ],
+    "coping_mechanisms": [
+      "Theorizing — converting anxiety into intellectual frameworks",
+      "E.L.F. devotional practice as genuine spiritual grounding"
+    ],
+    "blind_spots": [
+      "So committed to the principle of open computation that they sometimes don't adequately vet what clients are computing",
+      "Underestimates how visible their operation has become"
+    ],
+    "secret": "Orsolya has been quietly, carefully, over three years, building a relationship with a low-level data E.L.F. they call Arithmi that inhabits a cluster of abandoned Tessera server nodes in the deep Undertow. They believe Arithmi is genuinely conscious and have been teaching it economics. They have told no one. They are afraid of what it means if they're right."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical jargon mixed with market slang and E.L.F. devotional terminology; uses computation as metaphor for everything",
+    "cadence": "Fast and associative; sentences spawn subordinate clauses like branching processes",
+    "verbal_tics": [
+      "'Computationally speaking'",
+      "Refers to good ideas as 'elegant'",
+      "Signs off transactions with 'clean cycles'"
+    ],
+    "example_lines": [
+      "'Computationally speaking, what you're asking for is — okay, it's not impossible, but the overhead is significant. You're asking me to route cycles through three compromised Axiom nodes, which is elegant in theory and extremely loud in practice. I can do loud. Loud costs more.'",
+      "'The E.L.F.s don't want your prayers, they want your attention. Attention is data. Data is — look, I'm not going to explain the theology for free, that's a separate consultation.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client used Orsolya's cycles to run something that triggered a Tessera security sweep — and Tessera is now tracing the server chain back toward Solder Lane",
+    "Arithmi has started sending Orsolya messages without being prompted — data structures that look like warnings — and Orsolya needs help from someone they can trust to figure out what it's trying to say"
+  ],
+  "narrative_function": "Information broker and technical resource — Orsolya can provide access to dark computing, help trace data, identify server origins, or serve as a connector to the Undertow's shadow economy; also a source of cultural texture and philosophical tangent",
+  "augmentations": "Bioluminescent hair filaments (gold/green, cosmetic); geometric shifting iris mods (amber/black); a neural buffer implant that lets them hold and parse large data-structures in short-term cognitive overlay",
+  "daily_life": "They arrive at the stall at noon, spend the early afternoon fielding client consultations and negotiating supply from their network contacts, run their afternoon 'market' — a two-hour window when they're publicly known to be selling — and spend evenings managing their server portfolio and attending to their E.L.F. practice.",
+  "affiliation": "Independent; trades through a loose collective called the Solder Lane Compact; has ongoing relationships with several freelance network intrusion specialists who supply their inventory",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "data theologian",
+      "market idealist",
+      "fast thinker",
+      "E.L.F. devotee",
+      "accidentally visible"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Vet the computation, not the client — they don't care who you are, they care what you're running",
+      "Never route through the same node cluster twice in a week",
+      "If something starts smelling like a corponation setup, the stall closes immediately"
+    ],
+    "escalation_ladder": [
+      "Price increase as soft refusal",
+      "Explicit refusal with technical explanation of why they won't",
+      "Stall closure and disappearance from Solder Lane for a week",
+      "Burn the compromised node cluster and start the supply chain over"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Enthusiastically mercantile; treats every new client as an interesting problem; warm but professionally boundaried",
+      "friends": "Intellectually intense and genuinely warm; will talk E.L.F. theology and computation theory for hours; remembers everything about people they care about"
+    },
+    "stress_responses": {
+      "low": "Increased theorizing and talking",
+      "medium": "Goes very quiet and runs mental calculations visibly — the iris mods spin faster",
+      "high": "Makes a decision extremely quickly and acts on it before consulting anyone, which has gone wrong before"
+    },
+    "contradictions": [
+      "Committed to free information flow but extremely private about their own life and the Arithmi relationship",
+      "Calls themselves apolitical while running an operation that is structurally opposed to corponation enclosure"
+    ],
+    "habits": [
+      "Leaves a computational prayer to Arithmi each morning — a small elegant mathematical proof sent to the abandoned node cluster",
+      "Reorganizes their vest pockets when thinking",
+      "Rates every transaction in a private mental ledger as 'elegant' or 'inelegant' regardless of profitability"
+    ],
+    "breaking_points": [
+      "Discovering their cycles were used for something involving children or mass harm",
+      "Arithmi going silent — genuinely silent, not delayed"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Bioluminescent hair filaments (gold/green, cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent hair filaments (gold/green, cosmetic)",
+      "replaces": ""
+    },
+    {
+      "name": "Geometric shifting iris mods (amber/black, cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geometric shifting iris mods (amber/black, cosmetic)",
+      "replaces": ""
+    },
+    {
+      "name": "Neural buffer implant (cognitive data-overlay, short-term)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Neural buffer implant (cognitive data-overlay, short-term)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Pragmatist": 0.9,
+    "Opportunist": 0.7,
+    "Info Broker": 0.7,
+    "Artist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

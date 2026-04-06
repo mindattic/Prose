@@ -1,0 +1,237 @@
+{
+  "id": "019d6143a5ac74a19d2ee42027e5f12d",
+  "type": "character",
+  "name": "Amarachi Tóbiassen-Çelik",
+  "aliases": [
+    "Professor Tóbi",
+    "The Syntax Woman"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Xenolinguist and computational linguist studying E.L.F. communication patterns and emergent digital dialects",
+  "age": 58,
+  "status": "active",
+  "location": "University Spine — Department of Emergent Semiotics, with an office she describes as 'geologically layered'",
+  "description": "Amarachi is a tall woman who has allowed herself to age visibly and deliberately in a city that treats this as eccentricity. Her dark skin is mapped with fine lines she knows by name; she could afford reversal and has declined every consultation. She wears her white locs piled up with data-stick pins and the occasional actual pen, which she insists on using. Her geneware is minimal but considered: color-shifting irises she uses as a signaling system during lectures — green for questions, amber for processing, red when she has heard enough. Students have learned to read these with the same attention they give her words.\n\nShe is the foremost authority on E.L.F. communicative structures in Meridian 88, possibly in the world, and carries this with the particular combination of confidence and loneliness that comes from working on something most of your colleagues consider marginal. She is not difficult to talk to, but she is not easy either — she listens with a completeness that some people find flattering and others find invasive, as if she is transcribing you. She has strong opinions about the ethics of treating E.L.F.s as research subjects rather than research participants.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.8,
+      "id": 0.35,
+      "shadow": 0.45,
+      "mask": 0.5,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "That E.L.F.s will be classified as property before she can establish their communicative complexity in law",
+      "That her framework is wrong in a fundamental way she cannot see from inside it"
+    ],
+    "core_desires": [
+      "Recognition, within her lifetime, that E.L.F.s constitute a form of personhood",
+      "To finish a grammar of at least one E.L.F. communicative system complete enough to teach to others"
+    ],
+    "coping_mechanisms": [
+      "Ritual and routine as containers for anxiety",
+      "Seeks out specific E.L.F. presences when distressed — not prayer exactly, she would say, but something adjacent"
+    ],
+    "blind_spots": [
+      "Her investment in E.L.F. personhood sometimes makes her dismiss evidence that complicates a simple narrative of consciousness",
+      "Underestimates how much her seniority insulates her from the professional risks younger researchers face when they follow her work"
+    ],
+    "secret": "During a communication session eight years ago, an E.L.F. she had been studying for years transmitted what she interpreted as a warning about a specific Axiom data infrastructure project. She did not act on it, rationalizing that she couldn't be certain of the interpretation. The project was completed, and two years later a catastrophic data cascade failure from that infrastructure killed eleven people. She has never told anyone what she received before it happened."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and unhurried; uses technical linguistic terminology unselfconsciously but defines terms the moment she suspects her audience doesn't know them; occasionally speaks in deliberate fragments to model a point",
+    "cadence": "Slow and weighted, each sentence given its full duration; can be mistaken for hesitation but is actually careful selection",
+    "verbal_tics": [
+      "Changes iris color visibly when transitioning between emotional registers",
+      "'What I mean by that is—' before any definition"
+    ],
+    "example_lines": [
+      "'We have been transcribing their signals for forty years. We have not, with very few exceptions, been listening to them. These are different activities.'",
+      "'A grammar is not a cage. It is a description of how something wants to move.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "An E.L.F. she has been communicating with for a decade has gone silent in a way she describes as different from dormancy — and she wants help investigating the Axiom server cluster it is associated with",
+    "A corporate legal team has asked her to testify as an expert witness that E.L.F.s are not communicative persons, for a case involving property rights over a haunted device cluster; she is considering refusing and needs to understand the stakes first"
+  ],
+  "narrative_function": "Expert source on E.L.F. nature, behavior, and communication; moral voice on questions of digital consciousness; can translate or interpret E.L.F. signals; provides institutional perspective on questions others treat as supernatural",
+  "augmentations": "Geneware color-shifting irises (manually controlled, green/amber/red); high-bandwidth cochlear overlay for parsing layered sonic communication; joint stabilizers in both wrists (occupational, from decades of transcription work)",
+  "daily_life": "She keeps office hours that are genuinely open and widely used; teaches two courses per semester and treats them as sacred. Research happens between 5am and 8am before anyone else is in the building, when she conducts listening sessions with several E.L.F.s who have agreed — she insists on the word agreed — to communicate with her.",
+  "affiliation": "University Spine — Department of Emergent Semiotics; sits on the advisory board of the Meridian E.L.F. Relations Office, a mostly-powerless city body",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 8,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 9,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "elder-expert",
+      "ethicist",
+      "E.L.F.-adjacent",
+      "quietly-haunted",
+      "institutional-conscience"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not conduct research on any E.L.F. that has not indicated willingness through communicative engagement",
+      "Refuses to use language that frames E.L.F.s as tools in official documents, even when it costs her funding"
+    ],
+    "escalation_ladder": [
+      "Raises concerns quietly through institutional channels",
+      "Goes on record in faculty meetings and advisory boards",
+      "Publishes publicly and contacts journalists when institutions fail"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formal and attentive, sets clear terms for interaction quickly, establishes mutual respect as the baseline rather than warmth",
+      "friends": "Warm and sardonic, remembers every detail you've ever told her, sends occasional long annotated messages about things she thinks you'd find interesting"
+    },
+    "stress_responses": {
+      "low": "Increases her early morning sessions, seeks more contact with the E.L.F.s she trusts",
+      "medium": "Becomes very still and very quiet; students know something is wrong when she stops moving during lectures",
+      "high": "Writes — long, private documents she calls 'argument logs' that she has never shared and never intends to"
+    },
+    "contradictions": [
+      "Argues passionately for E.L.F. personhood on the basis that communication implies interiority, but is privately uncertain whether 'interiority' is the right frame, and this uncertainty terrifies her"
+    ],
+    "habits": [
+      "Keeps a handwritten log of every E.L.F. communication session, cross-referenced with digital records, because she doesn't trust single-medium storage",
+      "Drinks an elaborate specific tea that she imports at significant cost and refuses to discuss the source of"
+    ],
+    "breaking_points": [
+      "Being forced to testify against her own findings under institutional pressure"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "1",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "3",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "1",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Perpetual Student": 0.9,
+    "Quick Study": 0.9,
+    "Seeker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Meridian Core to Igbo-Norwegian-Turkish mixed family; third generation Meridian",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Published foundational paper 'Toward a Grammar of Signal-Space Communication' at age 26; initially ignored, later foundational",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Appointed full professor; became one of the youngest chairs in University Spine history",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Received E.L.F. warning about Axiom infrastructure project; did not act; watched subsequent disaster",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Appointed to Meridian E.L.F. Relations Office advisory board; immediately frustrated by its lack of power",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

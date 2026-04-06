@@ -1,0 +1,56 @@
+{
+  "id": "019d6143aa4475d29d235c72f0971e82",
+  "name": "Lazarus Pharmaceuticals HemaForge RX-7 Synthetic Blood Suspension",
+  "brand_name": "Lazarus",
+  "product_name": "Lazarus Pharmaceuticals HemaForge RX-7 Synthetic Blood Suspension",
+  "type": "technology",
+  "aliases": [
+    "RedFlood",
+    "FakeBlood",
+    "Lazarus Juice",
+    "RX-7"
+  ],
+  "subcategory": "medical",
+  "description": "HemaForge RX-7 is a perfluorocarbon-hemoglobin hybrid suspension manufactured by Lazarus Pharmaceuticals that functions as a universal synthetic blood substitute capable of oxygen transport, clotting factor delivery, and immune modulation simultaneously. Unlike earlier-generation blood substitutes, the RX-7 formulation incorporates programmable nano-encapsulated clotting agents that activate via localized pH sensors, allowing the suspension to behave as normal plasma in undamaged vascular tissue while aggressively coagulating at wound sites. The suspension is shelf-stable for 18 months without refrigeration and compatible with all known human blood types, making it the logistical backbone of battlefield medicine, black-market trauma care, and corporate emergency response units throughout Meridian 88.\n\nWhat distinguishes the RX-7 from competitors is its secondary 'metabolic bridge' function — the suspension carries a proprietary micro-nutrient payload that sustains cellular viability in oxygen-deprived tissue for up to 40 minutes post-administration, buying critical time for surgical intervention. Helix Biosystems attempted to challenge Lazarus's patent on the pH-triggered encapsulation mechanism in 2181 and lost, cementing Lazarus's monopoly on this specific approach. The product comes in 500ml pressure-sealed ampules designed for single-handed field deployment, and in bulk 10-liter reservoir bags for clinical settings.\n\nOn the street, RX-7 is frequently diverted from Kelpline Logistics shipments destined for Tier 1 trauma centers and resold to unlicensed ripperdocs and underground combat arenas. Counterfeit versions lacking the genuine nano-encapsulation matrix circulate widely in Tier 4 and 5 districts, causing fatal clotting cascades when administered — a known problem Lazarus Pharmaceuticals has been accused of deliberately under-addressing to protect legitimate sales channels.",
+  "tier_availability": "Tier 2+",
+  "developers": [
+    "LAZARUS PHARMACEUTICALS",
+    "KELPLINE LOGISTICS"
+  ],
+  "base_technologies": [
+    "Perfluorocarbon oxygen carrier chemistry",
+    "pH-responsive nano-encapsulation",
+    "Synthetic hemoglobin conjugation",
+    "Micro-nutrient suspension matrix"
+  ],
+  "enables": [
+    "Extended surgical window protocols",
+    "Universal field transfusion without blood typing",
+    "Synthetic circulatory system integration",
+    "Black-market trauma stabilization networks"
+  ],
+  "social_impact": "HemaForge RX-7 has fundamentally altered the calculus of violence in Meridian 88 — knowing that synthetic blood is available (for a price) has emboldened corporate security forces to engage in more aggressive tactical operations, confident that casualties can be stabilized quickly. In lower tiers, access to genuine RX-7 versus dangerous counterfeits has become a stark marker of socioeconomic survival: those who can verify authenticity live, those who cannot risk fatal coagulopathy, creating a grim secondary market in RX-7 authentication scanners and Lazarus-authorized dispensary access codes.",
+  "story_hooks": [
+    "A Kelpline logistics driver approaches the party with information about a systematic RX-7 diversion operation running through a Tier 3 distribution hub — someone very highly placed is involved",
+    "A ripperdoc in Tier 5 has been administering what she believes is genuine RX-7 but her patients keep dying of clotting events; she needs someone to trace her supply chain",
+    "Lazarus Pharmaceuticals internal documents suggest the company has known about a fatal batch interaction between RX-7 and a common neural augmentation coolant for two years and suppressed it",
+    "An underground combat arena operator wants the party to steal a shipment of RX-7 to keep fighters alive longer — for profit, not mercy"
+  ],
+  "tags": [
+    "medical",
+    "technology",
+    "violence",
+    "combat",
+    "augment",
+    "neural",
+    "ai",
+    "synthetic",
+    "elf",
+    "corporate",
+    "clinic",
+    "market",
+    "survival",
+    "shelf",
+    "tier 2"
+  ]
+}

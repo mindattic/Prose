@@ -1,0 +1,58 @@
+{
+  "id": "019d6143a906771cba69006e231d50ea",
+  "name": "Omnipex",
+  "type": "pharmaceutical",
+  "aliases": [
+    "Omni",
+    "the Wall",
+    "Brickdose"
+  ],
+  "category": "combat_stimulant",
+  "subcategory": "pain_suppressor",
+  "manufacturer": "Novafold Pharmaceuticals",
+  "description": "Omnipex is a broad-spectrum nociceptive blocker that operates through synthetic endorphin amplification and mu-opioid receptor saturation, engineered specifically to preserve motor function and cognitive clarity while eliminating pain signal transmission. Unlike older battlefield opioids, it does not induce euphoria or sedation — users describe the sensation as feeling invulnerable without feeling high. Novafold developed it under a military contract that was later declassified, allowing restricted civilian sale.",
+  "method_of_use": "dermal_patch",
+  "effects": [
+    "Near-total suppression of acute pain signals",
+    "Preservation of full motor coordination",
+    "Mild elevation of physical endurance",
+    "Psychological sense of physical invulnerability",
+    "Continued combat function through injuries that would otherwise incapacitate"
+  ],
+  "side_effects": [
+    "Inability to detect damage accumulation — users frequently worsen injuries fatally",
+    "Post-dose hyperalgesia: all suppressed pain returns simultaneously at cessation",
+    "Risk of continuing to operate on a broken limb until structural collapse",
+    "Nausea and disorientation during comedown",
+    "Long-term use degrades natural pain response permanently"
+  ],
+  "duration": "45-60 minutes",
+  "addiction_risk": "high",
+  "tier_availability": "Tier 2-3",
+  "legality": "restricted",
+  "street_price": "Φ 220 per patch",
+  "cultural_context": "Omnipex is the drug that separates experienced runners from amateurs — veterans know its danger is not addiction but overconfidence. The Shelf calls it 'the Wall' because users become walls: they absorb damage and keep moving until they drop dead from wounds they didn't know were killing them. Combat medics in M88 are trained to watch for the blank expression of someone running on Omnipex, knowing that when the patch comes off, the screaming will start.",
+  "story_hooks": [
+    "A runner completes an op, pulls the Omnipex patch, and discovers injuries severe enough that they should not have survived — something else kept them functional, and they don't know what.",
+    "Novafold's restricted licensing is being challenged by a Shelf advocacy group that argues combat laborers need pain suppression for dangerous work — Novafold is funding the opposition to their own bill to maintain premium pricing.",
+    "A fixer is found dead, having apparently bled out from a wound she must have known about — her Omnipex patch is missing from the scene."
+  ],
+  "tags": [
+    "combatstimulant",
+    "painsuppressor",
+    "pharmaceutical",
+    "combat",
+    "ai",
+    "synthetic",
+    "elf",
+    "contract",
+    "pain",
+    "rain",
+    "train",
+    "drug",
+    "stimulant",
+    "shelf",
+    "tier 2",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "019d6143aa6e7ff7838ea27fc8544594",
+  "name": "Ringo Swarm Delivery Network",
+  "type": "transportation",
+  "aliases": [
+    "The Swarm",
+    "Ringo Bugs",
+    "Ant Line"
+  ],
+  "category": "commercial_ground",
+  "manufacturer": "Ringo",
+  "description": "Not a vehicle but a system — hundreds of small ground-crawling delivery robots the size of shoeboxes that move packages through Tier 1-2 streets. They travel in lines along pre-mapped routes, carrying small items — medicine, food packets, data chips — to destinations that aerial drones won't service. They're slow, they're vulnerable to theft, and they make a distinctive clicking sound as they navigate curbs and stairs. The clicking of the Swarm at 4 AM is the heartbeat of Tier 1 commerce.",
+  "propulsion": "Six-wheeled electric, stair-climbing capable",
+  "speed": "8 km/h",
+  "capacity": "2 kg per unit",
+  "range": "15 km per unit, relay-chain for longer distances",
+  "tier_availability": "Tier 1-2",
+  "cost": "Φ200 per unit (Ringo fleet). Delivery rates: Φ0.50-2 per package.",
+  "autonomy": "Fully autonomous, swarm routing, collision avoidance",
+  "armament": "GPS tracker, anti-tamper alert. Some units have been observed delivering a mild shock on unauthorized handling.",
+  "common_usage": "Last-mile delivery in areas too dangerous or narrow for drones, pharmacy deliveries, micro-commerce.",
+  "story_hooks": [
+    "Ringo Swarm units have been deviating from routes to gather at a specific location each night before dispersing — no one at Ringo authorized this behavior",
+    "Someone teaches Shelf children how to reprogram Swarm units and an entire neighborhood's delivery network is rerouted to feed the hungry"
+  ],
+  "tags": [
+    "commercialground",
+    "transportation",
+    "war",
+    "theft",
+    "ai",
+    "robot",
+    "elf",
+    "night",
+    "vehicle",
+    "food",
+    "drone",
+    "shelf",
+    "tier 1",
+    "tier 2"
+  ]
+}

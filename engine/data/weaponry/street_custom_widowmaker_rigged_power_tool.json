@@ -1,0 +1,39 @@
+{
+  "id": "019d6143ab4b7efba498af61aee3d771",
+  "name": "Street Custom 'Widowmaker' Rigged Power Tool",
+  "type": "weapon",
+  "aliases": [
+    "Widowmaker",
+    "Kill Saw",
+    "Murder Drill",
+    "Construction Special"
+  ],
+  "category": "improvised",
+  "description": "Any standard power tool — circular saw, angle grinder, reciprocating saw, drill — modified for use as a weapon by removing safety guards, locking the trigger in the on position, and in some cases extending the blade or bit for reach. Widowmakers are the weapons of people who cannot afford weapons but have access to a job site. The most common variant is an angle grinder with the guard removed and a cutting disc replaced with a diamond blade, capable of cutting through body armor and bone with equal efficiency. The psychological impact of an attacker running at you with a screaming power tool is significant — it is loud, sprays sparks, and communicates a level of commitment that discourages engagement.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited when modified — modified power tool as weapon",
+  "base_technologies": [
+    "Power tool modification for combat",
+    "Safety bypass engineering"
+  ],
+  "specifications": "tool type: Variable — angle grinder, circular saw, reciprocating saw, drill\nblade/bit: Standard industrial, often upgraded to diamond or carbide\npower source: Tool's original battery or corded\nweight: 1.5-5 kg depending on tool\nmodification: Guard removal, trigger lock, extended blade\neffective range: Arm's reach\nnoise: 85-110 dB — extremely loud",
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A construction crew moonlighting as enforcers uses Widowmakers exclusively — their attacks look like workplace accidents and the weapons are their legitimate work tools.",
+    "A Tier 1 gladiatorial event features Widowmaker combat — fighters armed with modified power tools in a steel cage, and the audience is placing bets through corporate gambling networks."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "improvised",
+    "combat",
+    "weapon",
+    "blade",
+    "corporate",
+    "power",
+    "armor",
+    "tier 1"
+  ]
+}

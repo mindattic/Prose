@@ -1,0 +1,54 @@
+{
+  "id": "019d6143ab2079ba9212517e590fa013",
+  "name": "Corneal Piezoelectric Delamination Pistol",
+  "type": "weapon",
+  "aliases": [
+    "CPDP-1",
+    "Milkscreen",
+    "The Cataract"
+  ],
+  "category": "cyber",
+  "description": "The CPDP-1 operates by projecting a tightly focused piezoelectric pulse tuned to the resonant frequency of corneal collagen lamellae. Upon contact with the eye, the pulse induces rapid micro-shear between successive corneal layers, causing progressive delamination from the epithelium down through the Bowman's layer. The effect manifests within seconds as a spreading opaque whitening across the target's visual field — irreversible without immediate surgical intervention.\n\nWhat distinguishes the Milkscreen from simple blinding agents is its surgical precision and deniability. Unlike chemical or laser-based ocular weapons, it leaves no detectable residue and produces no visible beam. Victims frequently cannot identify the moment of attack, reporting only a sudden 'fogging' before full opacity sets in. The pistol format makes it concealable and deployable at conversational range, ideal for close-quarters operations where discretion is paramount.\n\nZheng-Dao Bioelectric originally developed the CPDP-1 as a non-lethal compliance tool for detention facilities, marketing it as a 'temporary visual suppressor.' Field use quickly revealed the 'temporary' designation to be aspirational. Most victims require full corneal transplant to recover usable vision, and in Meridian 88's tiered healthcare economy, that procedure is well beyond the means of most citizens.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 4+",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Piezoelectric disruption",
+    "Focused laminar resonance delivery"
+  ],
+  "specifications": "effective range: 0.5–4 meters\npulse frequency: 18.4 kHz (tuned to corneal collagen)\ncharge per shot: 0.7 mJ\nbattery capacity: 22 shots per cell\ndimensions: 14 cm length, 180g\ntargeting: Passive IR ocular lock, manual override available\nhousing: Matte polymer, passes most passive scanners",
+  "tactical_use": "Deployed almost exclusively in close-range social infiltration scenarios — boardrooms, clubs, transit corridors. Operators typically fire once and withdraw, allowing the weapon's delayed onset to create distance between themselves and the incapacitation event. Effective for eliminating witness capacity without fatalities. Some interrogators use it as a coercive instrument, firing one shot and threatening the second.",
+  "cultural_context": "The Milkscreen has acquired a particular dread in Meridian 88's underworld because it is a weapon of humiliation as much as harm. Being 'screened' carries social stigma — it implies the victim was close enough to their attacker to be touched, that they were trusted into proximity. Corporate fixer circles use 'got their eyes done' as slang for a professional embarrassment. Street medics who can perform corneal grafts charge extortionate rates in districts where the weapon circulates.",
+  "known_users": [
+    "Corporate extraction specialists",
+    "Close-protection counter-operatives",
+    "Detention facility black-site staff",
+    "High-end assassins preferring non-fatal contracts",
+    "Sable Rhen, a fixer known for leaving targets 'half-finished'"
+  ],
+  "story_hooks": [
+    "A witness to a high-profile corporate murder is found blind in a transit pod — no one in the carriage admits to seeing anything, and the weapon leaves no forensic trace.",
+    "A black-market corneal surgeon starts receiving death threats after becoming the only affordable option for Milkscreen victims in the Outerring districts.",
+    "A player character is hired to retrieve a stolen CPDP-1 prototype that fires a wider-dispersion pulse — potentially capable of blinding everyone in a standard office room.",
+    "A Zheng-Dao Bioelectric compliance officer is quietly selling decommissioned units through a shell distributor; someone wants proof, someone else wants the officer silenced."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "cyber",
+    "weapon",
+    "trust",
+    "death",
+    "ai",
+    "corporate",
+    "contract",
+    "underworld",
+    "market",
+    "club",
+    "bar",
+    "energy",
+    "fire",
+    "tier 4"
+  ]
+}

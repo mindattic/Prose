@@ -1,0 +1,45 @@
+{
+  "id": "019d6143a558797cbda7782a384afa27",
+  "name": "Ferroelectric Ceramic Microbead Charge FEC-8",
+  "type": "ammunition",
+  "aliases": [
+    "Gravel charge",
+    "FEC-8",
+    "Ceramic scatter",
+    "Shard pack"
+  ],
+  "category": "exotic",
+  "caliber": "8-charge ferroelectric scatter",
+  "description": "The FEC-8 is a pre-loaded charge for the FESA-2 'Gravel' ferroelectric shatter sidearm, containing approximately 400 ceramic-metallic composite microbeads per charge in a ferroelectric capacitor-driven magazine. When fired, the weapon's integrated ferroelectric capacitor generates a pulse that simultaneously propels and electrically charges the microbeads, which emerge as a cloud of electrostatically active ceramic fragments that deliver both kinetic impact and electrical discharge on contact.\n\nThe microbeads are manufactured from a piezoelectric ceramic composite that retains electrical charge for several seconds after the ferroelectric pulse, meaning each bead continues to deliver micro-shocks after embedding in tissue or clothing. The cumulative effect of 400 charged microbeads impacting a target at close range produces an overwhelming sensory experience — the kinetic impacts are individually minor but collectively devastating, while the electrical charges disrupt motor function and cause involuntary muscle contraction across the entire contact area.\n\nThe magazine holds 8 charges and is integral to the weapon — field replacement is not intended, and the weapon is designed as a carry-and-use platform rather than a sustained-fire tool. When the 8 charges are expended, the magazine must be replaced at an armorer's bench, a process that requires approximately 10 minutes and specialized tools. This design philosophy reflects the FESA-2's intended role as a concealed close-quarters weapon for situations where a single engagement is expected.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "specifications": "beads_per_charge: ~400\ncharges_per_magazine: 8\nbead_composition: Piezoelectric ceramic-metallic composite\ncharge_retention: 3-5 seconds post-firing\neffective_range: Lethal 0-6m, suppression 6-14m\nreload: Armorer bench, ~10 minutes\nweight_per_magazine: 280g (loaded)",
+  "compatible_weapons": [
+    "Ferroelectric Shatter Sidearm FESA-2 'Gravel'"
+  ],
+  "variants": [
+    "FEC-8 Standard (ferroelectric ceramic, dual kinetic/electrical effect)",
+    "FEC-8 Kinetic (uncharged beads, impact only, reduced lethality)",
+    "FEC-8 Extended Charge (enhanced ferroelectric retention, 8-10 second charge persistence)",
+    "FEC-8 Incendiary (thermite-reactive bead coating, ignites on piezoelectric discharge)"
+  ],
+  "cultural_context": "The FEC-8 charge embodies the philosophy of its parent weapon — a concealed, close-quarters tool designed for a single violent encounter. The non-reloadable magazine design means operators treat each loaded FESA-2 as having a finite number of uses before requiring professional servicing, which creates a distinctive operational mindset. You do not spray and pray with a Gravel — you carry it as insurance, and when you use it, every charge counts. Among Meridian 88's intelligence and security professionals, the FESA-2 loaded with FEC-8 charges is a favored backup weapon precisely because it requires no maintenance until you need an armorer, and by then the job is done or it isn't.",
+  "story_hooks": [
+    "An armorer who services FESA-2 weapons has noticed that the same serial number has been brought in for magazine replacement three times in two months — the weapon's owner is burning through FEC-8 charges at a rate that implies regular close-quarters combat, and the armorer is wondering who is fighting that many people at point-blank range.",
+    "A modified FEC-8 Incendiary charge has caused an uncontrolled fire in a residential building — the thermite-reactive coating was improperly formulated, and instead of controlled micro-burns on target, the beads ignited furnishings and structural materials."
+  ],
+  "tags": [
+    "exotic",
+    "ammunition",
+    "combat",
+    "weapon",
+    "ai",
+    "contract",
+    "control",
+    "clothing",
+    "armor",
+    "fire",
+    "tier 3"
+  ]
+}

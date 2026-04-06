@@ -1,0 +1,99 @@
+{
+  "id": "019d6143a927795e9e407c13b0809907",
+  "type": "place",
+  "name": "Meridian Core",
+  "aliases": [
+    "The Loop",
+    "The Core",
+    "Downtown",
+    "Central Grid"
+  ],
+  "description": "The Loop was Chicago's heart — the elevated train tracks that gave it its name literally drew a circle around the city's center of gravity. When Meridian 88 consumed Chicago, the Loop did not disappear. It calcified. Every iconic building was preserved, retrofitted, and repurposed, because the corporations understood something about architecture that most people learn about scars: the old structures lend legitimacy to whatever you build on top of them. The Meridian Core is the administrative and commercial center of the megacity, and it wears old Chicago's bones like a suit.\n\nMillennium Park became the Tessera Public Commons — a corporate-branded open space where Tier 3 and above residents are permitted to experience curated nature. The Bean still stands, but it has been augmented with a neural-interface layer that transforms its reflections into personalized advertising. Cloud Gate now shows you what you want to buy. The Art Institute was absorbed into Vellichor Institute's cultural holdings, its collections digitized and access-gated behind subscription tiers. The original paintings hang in climate-controlled vaults; what the public sees are holographic reproductions so perfect that the distinction between real and copy has become a philosophical question nobody with a subscription is motivated to answer.\n\nThe theater district survived by becoming essential to corporate culture. Every major corponation maintains a box at the Tessera Civic Opera, and attendance at the right performances is a Tier 4 and 5 social obligation. The shows themselves are extraordinary — neural-enhanced performances that blur the line between audience and stage, immersive experiences that make old-world theater feel like cave paintings. But the real performance is in the lobbies, where corporate diplomacy happens between acts, where mergers are negotiated over champagne, where the audience watches each other more carefully than they watch the stage.\n\nBeneath the Core's polished surface, the original Loop infrastructure persists — the pedway system, the freight tunnels, the sub-basements of buildings that predate the corporations by a century. This understructure is technically maintained by Palladian Construction but practically ungoverned, a shadow network that connects every major building in the Core through passages that do not appear on any corporate map. Building maintenance workers, delivery runners, and the occasional freelancer navigate this sublevel grid, moving beneath the most surveilled district in Meridian 88 in near-total invisibility. The Core's great secret is that it is hollow — a gleaming shell built over a darkness that nobody with power wants to look at too closely.\n\nThe el tracks still run, though the trains are maglev now and the route has been extended into a three-dimensional transit web. But the original loop — that iron circle — remains, preserved as a historical monument that also happens to be the most heavily surveilled perimeter in the city. Crossing the Core's boundary triggers seventeen different corporate identification systems simultaneously. Everyone who enters is known. Everyone who leaves is tracked. And everyone who lives below, in the freight tunnels and pedway corridors, exists in the one place the surveillance cannot reach: directly underneath it.",
+  "atmosphere": {
+    "sights": [
+      "Preserved Chicago architecture retrofitted with corporate branding — the skyline as corporate resume",
+      "Cloud Gate reflecting personalized neural-interface advertisements back at every viewer",
+      "The Tessera Civic Opera's holographic marquee cycling through performance schedules visible from the lakefront",
+      "The el tracks — original iron preserved alongside maglev additions, old and new running parallel",
+      "Tier-gated public spaces: green areas and plazas accessible only to those with the right designation",
+      "Below: freight tunnel corridors lit by maintenance lighting, original early-1900s brickwork still visible"
+    ],
+    "sounds": [
+      "The hum of seventeen overlapping surveillance systems creating a subsonic drone unique to the Core",
+      "Maglev trains on the el loop — a cleaner sound than the old trains but still rhythmic, still Chicago",
+      "Corporate announcement systems in competing frequencies, each branded to its territory",
+      "Below: echoing footsteps in the freight tunnels, dripping water, the distant rumble of the trains above",
+      "Theater district applause bleeding through opera house walls on performance nights"
+    ],
+    "smells": [
+      "Filtered air — the Core's atmospheric processing is the best in M88, and it smells like nothing",
+      "Corporate perfume: branded scent signatures pumped into building lobbies as olfactory branding",
+      "Below: damp brick, old concrete, the mineral smell of the freight tunnels' century-old infrastructure",
+      "River water from the Chicago River, still present, still faintly chemical"
+    ],
+    "feel": "Power wearing a cultural mask. The Core feels like standing inside a machine that has been designed to look like a city. Everything is beautiful, everything is accessible if you have the right tier, and everything is watching you. Below, in the tunnels, the feeling inverts — you are invisible, you are free, and the ceiling is someone else's floor.",
+    "tags": []
+  },
+  "demographics": "Surface population is predominantly Tier 3-5 corporate workers and residents. Below-surface population is uncounted — maintenance workers, delivery runners, untier-ed individuals living in the freight tunnel network. The Core's official population is 45,000; its actual population is estimated at 70,000.",
+  "economy": "The formal economy of Meridian 88 is headquartered here. Banking, corporate administration, entertainment, and high-end retail occupy the surface. The sublevel economy is service-based — maintenance, delivery, and the discreet movement of things that cannot travel through surveilled corridors.",
+  "power_structure": "Tessera Corponation holds primary jurisdiction through ownership of the Commons and the Opera. Vellichor Institute controls cultural assets. Palladian Construction maintains infrastructure including the sublevel network. Ferrogate Transit operates the el system. Power is formally shared through the Core Administrative Council; in practice, Tessera's vote counts twice.",
+  "dangers": [
+    "Total surveillance saturation — seventeen corporate ID systems track every surface-level movement",
+    "Tier-gating: entering a space above your tier designation triggers security response",
+    "Corporate diplomatic incidents in the theater district can escalate to jurisdictional conflicts",
+    "The sublevel freight tunnels are structurally unsound in several sections",
+    "Vellichor Institute's cultural access controls extend to information — knowing the wrong art history is suspicious"
+  ],
+  "opportunities": [
+    "The sublevel tunnel network provides invisible transit beneath the most secured district in M88",
+    "Corporate intelligence gathered in theater district lobbies is worth fortunes to the right buyers",
+    "Maintenance worker credentials grant access to every building in the Core",
+    "Vellichor's digitized art collection contains files that are not art — the archive has been used as a data vault",
+    "The seventeen surveillance systems occasionally conflict, creating brief windows of invisibility at their boundaries"
+  ],
+  "story_hooks": [
+    "A maintenance worker has discovered a sealed section of the freight tunnels that predates the original city — the architecture inside does not match any known construction period, and the door was locked from the inside",
+    "Vellichor Institute is auctioning a piece from the Art Institute's original collection — the first time a physical original has been offered in decades — and three corponations are willing to kill for it, because the painting's frame contains something that is not art",
+    "The Core Administrative Council is voting on a proposal to extend surveillance into the sublevel network — someone is lobbying hard for it, and the maintenance worker community is preparing to resist"
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Garret",
+      "Pilsen Veil",
+      "The Nearfield",
+      "The Burnline"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Corporate executives and Tier 4-5 residents conducting business and diplomacy",
+    "Cultural tourists accessing Tessera Commons and Vellichor exhibitions",
+    "Sublevel maintenance workers and delivery runners navigating the freight tunnel network",
+    "Theater patrons attending neural-enhanced performances at the Civic Opera",
+    "Freelancers using the tunnel network to move through the Core invisibly"
+  ],
+  "notable_locations": [],
+  "coordinates": {
+    "lat": 41.882,
+    "lng": -87.629,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "secret",
+    "augment",
+    "neural",
+    "ai",
+    "corporate",
+    "surveillance",
+    "control",
+    "power",
+    "pain",
+    "tunnel",
+    "rain",
+    "dark",
+    "shadow",
+    "train"
+  ]
+}

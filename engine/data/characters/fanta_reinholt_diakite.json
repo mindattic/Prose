@@ -1,0 +1,218 @@
+{
+  "id": "019d6143a60f7f9ab333d5f057bad025",
+  "type": "character",
+  "name": "Fanta Reinholt-Diakité",
+  "aliases": [
+    "Auntie Fanta",
+    "the Tank"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Building superintendent for a mid-tier residential block",
+  "age": 47,
+  "status": "active",
+  "location": "Lockhaven North, Block 7 — a twelve-story residential stack owned by a Palladian property sub-entity",
+  "description": "Fanta is a big woman, wide through the shoulders and unhurried in every movement, with dark skin and close-cropped natural hair going silver at the temples. She has no cosmetic geneware — considers it wasteful — but her left forearm is sheathed in functional chrome from wrist to elbow, a prosthetic she received after an industrial accident fifteen years ago. She keeps it polished to a mirror shine, the one vanity she permits herself. Her face is deeply expressive, capable of communicating entire paragraphs of displeasure through a single lifted brow.\n\nFanta has managed Block 7 for eleven years and knows every pipe, every tenant, and every leak before it happens. She is the closest thing to a government most residents will ever interact with — she mediates disputes, facilitates unofficial rent negotiations, holds keys to every unit, and knows who is three months behind and who is running an unlicensed business out of their kitchen. She is fair to a degree that exhausts her and does not apologize for any of her decisions.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.75,
+      "id": 0.4,
+      "shadow": 0.45,
+      "mask": 0.35,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Palladian terminating her contract and leaving the building to a remote management system",
+      "one of her tenants dying of something she could have prevented"
+    ],
+    "core_desires": [
+      "for Block 7 to function as a genuine community, not just a revenue asset",
+      "to retire knowing the building is in good hands"
+    ],
+    "coping_mechanisms": [
+      "physical labor as emotional regulation",
+      "maintaining strict routines as a bulwark against chaos"
+    ],
+    "blind_spots": [
+      "her authority in the building has become so total she cannot see when she is overstepping — she believes she always knows best"
+    ],
+    "secret": "She has been quietly subsidizing three families' rent shortfalls out of her own wages for two years, recording them as maintenance cost overruns in Palladian's system. The discrepancy is approaching a threshold that will trigger an audit."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct and institutional, carries the cadence of someone who has read too many maintenance contracts. Occasionally drops into Bambara when frustrated.",
+    "cadence": "Slow and weighted — every sentence arrives like a decision that's already been made.",
+    "verbal_tics": [
+      "'That is not how this building works'",
+      "refers to Block 7 as 'my building' without self-consciousness"
+    ],
+    "example_lines": [
+      "'You have a noise complaint. I have seventeen noise complaints. Yours is noted.'",
+      "'Palladian owns the walls. I run what's inside them. There is a difference and you will respect it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A tenant in unit 9-F has stopped answering the door for eleven days — Fanta is two decisions away from using her master key and needs someone else to make the call for her",
+    "The Palladian audit is coming and she needs someone to help her quietly restructure four years of falsified maintenance records before an inspector arrives"
+  ],
+  "narrative_function": "Gateway to the residential community of Lockhaven North — controls access, knows everyone's business. Can be a quest giver, a gatekeeper, a source of information about specific tenants, or an obstacle. Represents institutional power at human scale.",
+  "augmentations": "Chrome prosthetic left forearm (functional, utility-grade, high polish). Internal pressure and temperature sensors in the prosthetic hand for plumbing diagnostics.",
+  "daily_life": "On-call all hours; spends mornings doing inspection rounds, afternoons on maintenance and paperwork, evenings available to tenants. Eats dinner at the same corner table in the ground-floor common room every night at 19:00.",
+  "affiliation": "Palladian (property subsidiary, Lockhaven North management contract); functionally independent in daily operation",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 5,
+      "vitality": 8,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 4,
+      "transparency_guardedness": 0
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community anchor",
+      "institutional gatekeeper",
+      "pragmatic idealist",
+      "rule-breaker for good reasons",
+      "physical presence"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The building's stability comes before any individual's convenience, including her own",
+      "Never lie to a tenant directly — omit, redirect, or refuse, but do not lie"
+    ],
+    "escalation_ladder": [
+      "Explain the rule once, patiently",
+      "Explain the consequence, without emotion",
+      "Implement the consequence",
+      "Involve Palladian, which she considers a personal failure"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and assessing — not unfriendly but not warm until trust is established",
+      "friends": "Rare, deep loyalty; she feeds people and shows up at 02:00 if needed"
+    },
+    "stress_responses": {
+      "low": "Becomes more methodical — lists, schedules, inspections",
+      "medium": "Goes physically very still and speaks more slowly",
+      "high": "Cleans. Aggressively. For hours."
+    },
+    "contradictions": [
+      "Believes fiercely in rules and fairness while systematically breaking financial regulations to protect people she cares about"
+    ],
+    "habits": [
+      "Runs her chrome hand along the walls during inspection rounds, feeling for vibration anomalies",
+      "Leaves a small digital candle lit on the building's shared network at night — an offering to whatever E.L.F. she believes keeps the boiler running"
+    ],
+    "breaking_points": [
+      "A tenant being evicted without cause",
+      "Someone threatening to expose the falsified maintenance records"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Chrome prosthetic left forearm with integrated pressure/temperature sensors (utility-grade, gen-2)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Chrome prosthetic left forearm with integrated pressure/temperature sensors (utility-grade, gen-2)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2153 — Born in Lockhaven North to a Malian-Danish family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2178 — Lost left forearm in a building infrastructure accident; received prosthetic through Palladian worker compensation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2189 — Appointed superintendent of Block 7",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2198 — Began subsidizing tenant rent shortfalls, recording as maintenance overruns",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Palladian audit threshold approaching",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

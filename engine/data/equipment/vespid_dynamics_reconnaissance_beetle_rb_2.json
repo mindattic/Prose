@@ -1,0 +1,47 @@
+{
+  "id": "019d6143a87f79babee9af3a35603e15",
+  "name": "Vespid Dynamics Reconnaissance Beetle RB-2",
+  "brand_name": "Vespid",
+  "product_name": "Vespid Dynamics Reconnaissance Beetle RB-2",
+  "type": "equipment",
+  "aliases": [
+    "Recon Beetle",
+    "RB-2",
+    "Bug Scout",
+    "Crawler"
+  ],
+  "category": "drones",
+  "description": "A ground-based surveillance micro-drone the size and shape of a large beetle that navigates terrain autonomously, recording audio and video while being virtually indistinguishable from a real insect at casual observation. The RB-2 moves on six articulated legs that mimic insect locomotion, can climb walls, squeeze through gaps as small as 2 cm, and operates for 48 hours on a single charge. Its shell is colored and textured to match local insect populations, and it generates realistic insect movement patterns when stationary to avoid detection. The drone transmits compressed data bursts on a schedule to minimize RF signature.",
+  "manufacturer": "VESPID DYNAMICS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted — authorized surveillance",
+  "base_technologies": [],
+  "specifications": {
+    "size": "4 cm length",
+    "info": "insect profile; wall climbing capable; 200m range",
+    "locomotion": "6 articulated legs",
+    "gap clearance": "2 cm minimum opening",
+    "battery life": "48 hours active",
+    "transmission": "Scheduled compressed burst",
+    "sensors": "HD camera + directional microphone",
+    "speed": "5 cm/sec maximum",
+    "autonomous navigation": "Terrain mapping + obstacle avoidance"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A sweep of a sensitive facility found 14 RB-2 drones operating simultaneously in different rooms — someone has been running comprehensive ground-level surveillance for weeks.",
+    "An RB-2 was crushed by a target who noticed unusual insect behavior — the drone's data cache was intact and contained audio of conversations that implicate multiple corporate officers."
+  ],
+  "tags": [
+    "drones",
+    "equipment",
+    "ai",
+    "corporate",
+    "surveillance",
+    "rain",
+    "drone",
+    "tier 2"
+  ]
+}

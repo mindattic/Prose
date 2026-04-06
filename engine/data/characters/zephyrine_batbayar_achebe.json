@@ -1,0 +1,170 @@
+{
+  "id": "019d6143a7347860b0ac5c841c67b69f",
+  "type": "character",
+  "name": "Zephyrine Batbayar-Achebe",
+  "aliases": [
+    "Zeph",
+    "Zero-Z"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Q-zero ghost — stateless person with no digital identity",
+  "age": 24,
+  "status": "active",
+  "location": "Shifting — currently sheltering in the drainage underbelly of Grand Crossing Gate",
+  "description": "Zephyrine exists in a strange category of person: alive but officially absent. Their biometric signature was purged from the city's dataweave three years ago during an administrative error that Axiom's records division declined to reverse because doing so would have required admitting the error existed. They have no Quanta account, no transit pass, no ration allocation, no UBC stipend — nothing. Every scanner they walk past registers a blank. They have adapted to this with a kind of furious ingenuity that reads, from the outside, as almost cheerful.\n\nThey are slender and quick, with a shaved head except for a single forelock dyed an uneven rust-orange. Their skin is dark brown and marked with small geometric stick-and-poke tattoos they did themselves — coordinates, symbols, small records of places they have been. They dress in layers chosen specifically for their lack of reflective surfaces, nothing that catches light or scanner arrays. Their bioluminescent geneware is subtle: a faint blue-green tracery along their collarbones that only shows in full darkness, a cosmetic mod done years ago when they still had an identity to attach it to. They smile easily and the smile never reaches the careful calculation in their eyes.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Permanent erasure — that they will die and no record of their existence will remain",
+      "That the cheerfulness is becoming real and they are losing their anger, which is the only thing that has kept them fighting"
+    ],
+    "core_desires": [
+      "To reclaim their digital identity — or to build a new one so robust it cannot be taken",
+      "To be known by someone who matters"
+    ],
+    "coping_mechanisms": [
+      "Humor as deflection",
+      "Obsessive documentation of their own existence through physical means — the stick-and-poke tattoos, notebooks",
+      "Cultivating a very specific list of people who know their real name"
+    ],
+    "blind_spots": [
+      "Trusts other Q-zeros uncritically because shared suffering feels like shared values",
+      "Underestimates how visible their adaptations make them to trained observers"
+    ],
+    "secret": "The administrative error that erased them was not an error. They discovered something they were not supposed to see in an Axiom data cache — a list of names and a project designation they do not understand. They have never told anyone because they do not know if the knowledge is dangerous enough to get them killed."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quick and colloquial, heavy with Q-zero slang and the creole of Grand Crossing Gate. Uses 'ghost' as both noun and verb.",
+    "cadence": "Fast, overlapping — talks as if always slightly ahead of the conversation",
+    "verbal_tics": [
+      "'Officially?' (rhetorical, meaning: in reality)",
+      "'I don't exist, remember?'",
+      "Clicks tongue when irritated"
+    ],
+    "example_lines": [
+      "'Officially I'm not standing here, so officially this conversation isn't happening, which means you can say whatever you want to me with no legal consequence. That's the fun part of being a ghost.'",
+      "'Every time I mark my skin it's proof. You understand? Physical proof. They can't wipe leather.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "They approach the players because they need someone with a legal identity to access a specific location — and they have something valuable to trade in exchange.",
+    "The project designation they saw in the Axiom cache three years ago has started appearing on graffiti in the tunnels under Grand Crossing Gate, and they do not know what it means or who is writing it."
+  ],
+  "narrative_function": "Provides access to the city's invisible underclass — the people who have fallen through the system entirely. Can navigate spaces that require no digital trace. Source of information about underground economies and Q-zero networks. Potential ally or object of concern.",
+  "augmentations": "Bioluminescent geneware (collarbones, faint blue-green, only visible in darkness). No cyberware — cyberware requires registration.",
+  "daily_life": "Spends mornings scavenging or running small errands for market vendors who pay in physical goods rather than quanta transfers; afternoons are for the Q-zero community — helping newcomers understand how to survive without a digital footprint.",
+  "affiliation": "No formal affiliation; loose community of Q-zeros at Grand Crossing Gate",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 3,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Q-zero",
+      "stateless",
+      "survivor",
+      "information-hoarder",
+      "community anchor"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never give a real name to someone they met that day",
+      "Always have two exit routes from any space",
+      "Do not accept charity from corponation-affiliated individuals, even indirect charity"
+    ],
+    "escalation_ladder": [
+      "Deflect with humor",
+      "Introduce deliberate misinformation",
+      "Ghost — simply vanish from the situation",
+      "If physically cornered, make as much noise as possible and appeal to bystanders"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Bright and quick and charming, offering just enough to seem trustworthy while revealing nothing real",
+      "friends": "Intensely loyal, tends toward oversharing as if catching up for all the anonymity, remembers everything"
+    },
+    "stress_responses": {
+      "low": "Jokes increase in frequency and sharpness",
+      "medium": "Goes very quiet and still, which is jarring given their usual energy",
+      "high": "Runs — physically, immediately, no explanation"
+    },
+    "contradictions": [
+      "Desperately wants to be known and remembered while having systematically made themselves invisible"
+    ],
+    "habits": [
+      "Adds a new tattoo mark on the inside of their wrist each time they survive something they did not expect to",
+      "Carries a water-damaged physical notebook and writes in it every night",
+      "Counts exits before doing anything else in a new space"
+    ],
+    "breaking_points": [
+      "Being called by the wrong name or wrong pronouns deliberately",
+      "Watching someone else get administratively erased"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

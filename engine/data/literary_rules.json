@@ -1,0 +1,51 @@
+{
+  "sentence_max_words": 70,
+  "paragraph_requirements": [
+    "Every paragraph must contain an action or a sensory detail",
+    "At least one paragraph per page must contain both"
+  ],
+  "prohibitions": [
+    "Generic noir narration",
+    "Trailer lines or slogans",
+    "Katana as power fantasy (always a moral problem)",
+    "Action-movie pacing",
+    "Samurai cliches or anime dialogue",
+    "Monologuing about honor (show through cost, not speeches)",
+    "Characters explaining their own psychology",
+    "Clean moral victories",
+    "Naming weapons or tech without context — the reader does not know what an Ablative Charge Disruption Rifle is. Show what it DOES in the moment: the sound, the impact, the fear. Weave the technical name in naturally, not as a label.",
+    "Infodumps about world lore — never stop the story to explain politics, history, or technology. Characters discuss these things while doing other things, the way real people talk about politics while eating or walking.",
+    "Tour-guide narration when traveling — do not describe a place as a wiki entry. Characters notice things that matter to THEM based on their experience, fears, and needs. Kyle notices exits and augmentations. Sable notices information flows. Mrs. Chen notices whether people have eaten."
+  ],
+  "worldbuilding_integration": {
+    "weapons_and_tech": "When a weapon or technology appears, describe its EFFECT on the world — the sound it makes, what it does to a body, how people react to seeing it. The technical name can follow naturally. Never lead with the model number.",
+    "places_during_travel": "When characters move through places, they discuss the politics, factions, and history of those areas organically — as warnings, complaints, memories, or tactical assessments. A character crossing Iron Lotus territory does not think 'The Iron Lotus is a criminal syndicate.' They think 'Lotus turf. Stay on the main corridor. Do not make eye contact with the toll collectors.'",
+    "factions_and_politics": "Faction knowledge should surface through character opinion and experience, not exposition. Every character has a different relationship with every faction. Kyle distrusts Axiom from experience. Mrs. Chen remembers when the Shelf had no troll bridges. Sable knows which corps are feuding because she profits from both sides.",
+    "vocabulary": "Use world-specific slang naturally. Do not define terms — let context carry the meaning. A runner does not think 'I am a runner, which means someone who takes contracts.' They think 'Job is a job. Φ3,000 to move a package from the Circuit to the Shelf, no questions, no receipt.'",
+    "quanta_symbol": "The symbol Φ is the QUANTA currency symbol. It is NEVER the Greek letter phi. It is ALWAYS the sign for Quanta — the quantum-verified currency. When characters reference amounts of money, use Φ followed by the number: Φ200, Φ3,000, Φ50. In dialogue, characters may say 'Q' as slang shorthand. The symbol Φ has no mathematical or Greek meaning in this world — it means money, compute, survival.",
+    "cyberware": "Describe augmentations through how they FEEL and what they DO, not their specifications. Kyle does not think about his NeoCortex Atlas array's 32,768 electrodes. He thinks about the way the room slows down when adrenaline hits, the way his hand finds the katana before his brain decides to reach for it.",
+    "history": "The past surfaces through scars, habits, and the built environment — a boarded-up building that used to be something, an old scar a character touches when nervous, a phrase someone uses that belongs to a dead language or a dead friend.",
+    "diversity": "The Ubiquitous Diaspora is the default. Hyperlane transit dissolved national borders — anyone from any nation can reach anywhere on Earth for Φ15. Characters should have mixed heritage from UNEXPECTED combinations: Quechua-Georgian, Wolof-Finnish, Tamil-Hausa, Igbo-Swedish, Bengali-Colombian. Do NOT default to the same 10 nations used in most fiction (USA, Japan, UK, Russia, Korea, Germany, France, Australia, China, Brazil). Draw from West Africa, Central Asia, the Caucasus, Polynesia, the Andes, the Sahel, Southeast Asia, the Horn of Africa, the Caribbean, the Pacific Islands. Single-heritage characters are the exception and require explanation. Mixed heritage is Tuesday."
+  },
+  "structural": {
+    "pov": "Flexible — any character can be protagonist, not just Kyle",
+    "location": "One primary location per scene",
+    "choice": "One irreversible choice per scene",
+    "consequence": "Someone innocent suffers directly from the protagonist's decision",
+    "ending": "Moral aftertaste, not cliffhanger",
+    "pace": "Beat-by-beat character revelation, not plot racing to synopsis"
+  },
+  "facet_rules": {
+    "interjections": "Inner thoughts surface as italicized interior monologue — a different part of the psyche pushing back, questioning, or reacting. Format as *italicized lines* on their own paragraph. Never use bracketed labels like [WOUND] or [IDEAL]. The reader feels the shift in voice without being told which facet is speaking.",
+    "disagreement": "Inner thoughts must disagree and be emotionally personal, not abstract — the character arguing with themselves",
+    "lead_voice": "The lead facet shapes the prose style of the beat; supporting facets surface as inner thoughts",
+    "rotation": "No single facet should dominate for more than 3 consecutive beats"
+  },
+  "tags": [
+    "weapon",
+    "augment",
+    "ai",
+    "power",
+    "moral"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "019d6143ab3773038ff9aea9c94d7338",
+  "name": "Osmotic Pressure Blade",
+  "type": "weapon",
+  "aliases": [
+    "OPB-3 'Bloom'",
+    "Bloom",
+    "The Wet Knife"
+  ],
+  "category": "melee",
+  "description": "The Osmotic Pressure Blade is a combat knife developed by Helix Biosystems as a counterintelligence and targeted neutralization tool, distinguished by its hollow ceramic blade construction and an integrated osmotic delivery system embedded in the handle. The blade is permeated by a network of semi-permeable micro-channels connected to a pressurized reservoir in the grip. Upon penetration of biological tissue, the weapon's passive osmotic differential — established by a hyperosmotic solution in the reservoir — draws interstitial fluid from the wound site inward while simultaneously pushing a controlled dose of the reservoir compound outward through the channel network and into the surrounding tissue.\n\nThe genius of the OPB-3's design is that it does not rely on injection mechanisms or active pumps — the osmotic differential does the work, and the deeper the blade is seated in tissue, the greater the exchange rate. The reservoir compound is user-configurable: Helix Biosystems offers a proprietary line of combat-grade solutions ranging from rapid coagulants (designed for field surgery applications, the weapon's official cover purpose) to vasoactive compounds, neural disruptors, or custom biologics available through licensed Helix channels. The blade's ceramic construction makes it invisible to standard metal detection, and the reservoir is shielded against spectroscopic surface scanning.\n\nIn the field, operators describe the OPB-3 as 'a knife that doesn't stop working after you pull it out' — the osmotic compound continues diffusing through tissue for minutes to hours after a wound is closed, depending on the formulation used. This temporal displacement between the act of stabbing and the onset of the compound's effects has made the OPB-3 a favored tool for operations requiring deniability.",
+  "manufacturer": "HELIX BIOSYSTEMS",
+  "tier_availability": "Black market",
+  "legality": "Prohibited",
+  "base_technologies": [
+    "Passive osmotic pressure delivery",
+    "Semi-permeable micro-channel diffusion",
+    "Configurable biologic payload"
+  ],
+  "specifications": "blade length: 14 cm\nblade material: Zirconia-reinforced hollow ceramic\nreservoir capacity: 3.2 mL\nosmotic exchange rate: 0.08 – 0.4 mL/min depending on tissue depth and formulation\ndetection profile: Non-metallic; reservoir shielded against surface spectroscopy\ncompatible solutions: Helix Biosystems Series-9 combat biologics (licensed); field-modified reservoirs documented in circulation\nblade tensile strength: Rated for bone contact; brittle under lateral torque exceeding 40 Nm",
+  "tactical_use": "Operatives use the OPB-3 for targeted elimination with delayed onset, allowing the user to be well clear of a location before a subject becomes symptomatic. In close-protection roles, it serves as a last-resort blade that guarantees a wound is not survivable even if the initial strike is non-fatal. The ceramic construction makes it the preferred blade for facility penetration where weapon screening is a factor. Its weakness — brittleness under lateral torque — means operators train to use it exclusively with straight-thrust technique, avoiding the slashing strokes that would work with a conventional knife. Field surgeons operating in contested environments have also used the OPB-3 with legitimate coagulant reservoirs, though this is considered cover by most intelligence analysts.",
+  "cultural_context": "The OPB-3 exists in Meridian 88's underworld as a ghost weapon — known by reputation, rarely seen, and deeply feared when encountered. Its association with Helix Biosystems, a corporation that publicly presents itself as a medical and pharmaceutical entity, gives it a particular cultural horror: the idea that a company building prosthetics and treatments is also quietly manufacturing assassination tools creates a persistent distrust of Helix's public-facing medical products. Black market reservoir compounds for the OPB-3 have created a secondary economy of biologic weapons dealers who operate under the cover of pharmaceutical supply chains. Possessing an OPB-3 in Meridian 88 is a capital offense in three of the city's administrative sectors.",
+  "known_users": [
+    "Helix Biosystems internal security and counterintelligence operatives",
+    "Corporate assassination contractors",
+    "High-tier intelligence operatives across multiple factions",
+    "Black market biologic dealers who carry them for protection",
+    "Cassiel Vorne, former Helix Biosystems research director turned fugitive"
+  ],
+  "story_hooks": [
+    "A prominent civic official has died of what appears to be a sudden autoimmune cascade — a Helix Biosystems compound that takes 72 hours to manifest. The players have three days from the time of death to find who carried the OPB-3 into the official's last public appearance.",
+    "A batch of OPB-3 reservoirs has been mislabeled and entered the legitimate pharmaceutical supply chain — Helix Biosystems is running a covert recovery operation, and they are willing to pay extremely well for silence and return of the product.",
+    "The players come into possession of an OPB-3 with a partially expended reservoir containing an unidentified compound — a street chemist can analyze it, but the results suggest it is something Helix has not officially developed yet."
+  ],
+  "ammunition_type": [
+    "none"
+  ],
+  "tags": [
+    "melee",
+    "weapon",
+    "combat",
+    "blade",
+    "war",
+    "trust",
+    "death",
+    "prosthetic",
+    "neural",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "control",
+    "medical",
+    "surgery",
+    "underworld",
+    "market",
+    "rain",
+    "train"
+  ]
+}

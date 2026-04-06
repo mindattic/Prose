@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a87175dcbd9dc84dd5ecc5f8",
+  "name": "Street Custom 'Rooftop Express' Zipline Deployment Kit",
+  "brand_name": "Street",
+  "product_name": "Street Custom 'Rooftop Express' Zipline Deployment Kit",
+  "type": "equipment",
+  "aliases": [
+    "Rooftop Express",
+    "Zip Kit",
+    "Line Runner",
+    "Sky Bridge"
+  ],
+  "category": "climbing/mobility",
+  "description": "A portable zipline system consisting of a high-strength cable, pneumatic anchor launcher, and friction-brake trolley that enables rapid transit between buildings across open gaps. The kit fires a cable anchor to a target point up to 100 meters away, tensions the cable with an integrated winch, and provides a trolley handle with variable-friction brake for speed control during the crossing. The system is designed for one-way transit — ascending ziplines are possible but require motorized trolleys that add weight and complexity. Street operators use it for rapid building-to-building movement, escape routes, and tactical repositioning in urban environments.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal as equipment — illegal when used for unauthorized building access",
+  "base_technologies": [],
+  "specifications": {
+    "cable length": "100 meters high-strength braided steel",
+    "anchor launch": "Pneumatic",
+    "info": "accurate to 1-meter at 50 meters; anchor is expendable",
+    "cable strength": "500 kg rated",
+    "trolley": "Friction-brake speed control",
+    "maximum load": "120 kg rider + equipment",
+    "setup time": "90 seconds from anchor launch to crossing",
+    "weight": "3.5 kg total kit",
+    "reusability": "Cable and trolley reusable"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "A series of Tier 2 rooftop burglaries are connected by zipline anchor marks on building parapets — someone is running a route across the skyline, hitting targets along a planned path.",
+    "An emergency evacuation from a burning building was facilitated by a Rooftop Express kit — the operator ziplined 40 people to an adjacent building before fire services arrived."
+  ],
+  "tags": [
+    "climbingmobility",
+    "equipment",
+    "control",
+    "rooftop",
+    "escape",
+    "fire",
+    "tier 1"
+  ]
+}

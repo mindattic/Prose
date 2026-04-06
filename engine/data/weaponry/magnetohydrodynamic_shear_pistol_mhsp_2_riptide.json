@@ -1,0 +1,59 @@
+{
+  "id": "019d6143ab327999a2554795ff7e6c95",
+  "name": "Magnetohydrodynamic Shear Pistol MHSP-2 'Riptide'",
+  "type": "weapon",
+  "aliases": [
+    "Riptide",
+    "The Puller",
+    "Tide Gun",
+    "Mag-Shear"
+  ],
+  "category": "energy",
+  "description": "The MHSP-2 generates a directed magnetohydrodynamic field that interacts violently with the conductive saline content of biological tissue. When the field engages a target, it induces opposing directional currents through fluid-dense regions — primarily muscle bellies, joint capsules, and organ tissue — creating a shearing force that tears tissue longitudinally without penetrating the skin. The effect is functionally similar to a severe internal strain injury distributed across a limb or torso segment in under a tenth of a second.",
+  "manufacturer": "ZHENG-DAO BIOELECTRIC",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Magnetohydrodynamic field projection",
+    "Saline conductivity exploitation",
+    "Directed ionic shear induction"
+  ],
+  "specifications": "length: 29 cm\nweight: 1.6 kg\npower source: Zheng-Dao ZD-Flux cell (compact MHD)\neffective range: 4–35 m\nfield aperture: Variable, 15–40 cm diameter at target\ndischarge rate: Semi-automatic, 0.8 second recycle\nshots per cell: 34\nhousing: Polymer-ceramic composite, field-isolated grip",
+  "tactical_use": "The MHSP-2 is a compliance and incapacitation weapon when operated at standard settings, capable of dropping a target by destroying muscular cohesion in a limb without lethal injury. At maximum aperture compression, operators can concentrate the shear field to rupture deep connective tissue and cause joint dislocation. Security teams use it for non-lethal extraction of high-value targets where physical integrity matters. Closed-field operators — bodyguards, detention specialists — carry it as a primary sidearm in environments where projectile weapons are scannable but energy sidearms require higher licensing.",
+  "cultural_context": "Zheng-Dao Bioelectric markets the MHSP-2 openly to licensed security contractors as a 'humane restraint solution,' and its presence on a guard's hip is a status signal — it says the carrier works for someone who wants live captives, not corpses. In Meridian 88's debt-collection economy, MHSP-2 operators are called 'pullers' — a term that has drifted from the weapon's physics to a professional designation. The weapon is also common in underground fighting arenas where promoters want dramatic incapacitations rather than deaths.",
+  "known_users": [
+    "Zheng-Dao Bioelectric internal security",
+    "Licensed debt recovery specialists ('Pullers')",
+    "Underground fight-ring enforcers",
+    "Bounty hunter 'Sable Voss'",
+    "Corporate kidnapping specialist 'The Notary'"
+  ],
+  "story_hooks": [
+    "A series of kidnappings in the financial district share a signature — victims are found with characteristic internal shear injuries but no external marks, suggesting MHSP-2 use by a highly organized extraction team.",
+    "A licensed 'puller' approaches the party for help: their MHSP-2 was remotely bricked mid-contract by Zheng-Dao, stranding them in a hostile situation — and now they want to know why the manufacturer killed their weapon.",
+    "An underground fight promoter is running MHSP-2-equipped enforcers to rig bouts, and a fighter who survived an 'accidental' incapacitation wants justice.",
+    "Zheng-Dao Bioelectric is quietly recalling a batch of MHSP-2 units with a firmware anomaly that causes the shear field to invert — instead of pulling tissue apart, it compresses it catastrophically."
+  ],
+  "ammunition_type": [
+    "Universal Ferrofluid Suspension Cartridge UFC-40",
+    "Zheng-Dao Type-4 Bioelectric Cell ZD-T4"
+  ],
+  "tags": [
+    "energy",
+    "weapon",
+    "gun",
+    "war",
+    "death",
+    "ai",
+    "corporate",
+    "contract",
+    "power",
+    "debt",
+    "injury",
+    "market",
+    "rain",
+    "justice",
+    "train",
+    "tier 3"
+  ]
+}

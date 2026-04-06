@@ -1,0 +1,244 @@
+{
+  "id": "019d6143a6fd78a3ac30ef5b73b08570",
+  "type": "character",
+  "name": "Timur Osei-Bjelke",
+  "aliases": [
+    "Old Timur",
+    "the Jaw"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Junk merchant, scrap reseller, informal augmentation parts dealer",
+  "age": 64,
+  "status": "active",
+  "location": "The Alban Souk, Old Harbor",
+  "description": "Timur is a large man gone slightly to ruin in the graceful way of old machinery — still clearly capable, still clearly heavy, but weathered in ways that suggest many renegotiated repairs. He has a prominent jaw and broad cheekbones, medium-brown skin crosshatched with fine white scars from decades of handling sharp-edged salvage without sufficient gloves, and a right arm that is entirely cybernetic from the shoulder — a heavy industrial prosthetic, matte gunmetal, visibly older than current models and repaired in multiple places with mismatched components. He wears it with the casual comfort of a man who has had it longer than he hasn't. His stall at the Alban Souk is technically three stalls — he has occupied the space long enough that the boundaries have blurred into a small empire of organized rubble: crates of stripped components, racks of salvage-grade augmentation parts, shelves of pre-owned tools, bins of miscellaneous tech detritus that he can identify by feel.\n\nTimur is a man of comfortable silences. He does not make conversation; he makes transactions, and occasionally, for people he has decided are worth it, he makes exceptions to his general indifference. He has a sharp technical mind and can assess the quality of a piece of salvage hardware faster than most licensed appraisers, and he quietly sells aug components — stripped limbs, neural interface boards, secondhand sensory units — to people who cannot afford licensed installation. He does not perform the installations himself anymore. He used to. He stopped after something went wrong that he does not discuss.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.3,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.4,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "That the installation that went wrong is going to catch up with him — legally or personally",
+      "Dying without having made it right"
+    ],
+    "core_desires": [
+      "Quiet — just to be left alone with his work and not be asked for things he can't give",
+      "That the person the installation hurt is, somewhere, okay"
+    ],
+    "coping_mechanisms": [
+      "Absorption in physical work — the tactile focus of repair and salvage as a way of not thinking",
+      "Reduced emotional availability as preventive protection"
+    ],
+    "blind_spots": [
+      "His guilt makes him undervalue himself — he accepts less for his expertise than it is worth because he doesn't feel entitled to fair compensation",
+      "Does not ask for help, ever, to his own detriment"
+    ],
+    "secret": "Six years ago, he installed a neural interface on a young woman who couldn't afford licensed care. The installation went wrong — a component fault he didn't catch — and she lost partial motor function in her left hand. He found out indirectly months later. He has been quietly sending anonymous Quanta transfers to what he believes is her account ever since, but he has never confirmed she received them or that the account is still hers."
+  },
+  "speech_patterns": {
+    "vocabulary": "Minimal and technical. Speaks in parts descriptions, condition assessments, and prices. Personal statements are short and final.",
+    "cadence": "Slow, deliberate. Very long pauses between sentences. Does not fill silence.",
+    "verbal_tics": [
+      "Taps the metal fingers of his prosthetic against surfaces when thinking — a faint rhythmic clicking",
+      "Says 'it'll do' as the highest compliment he gives"
+    ],
+    "example_lines": [
+      "'This is a 2193 Arcturus sensory board, stripped clean, no provenance. It'll do for what you described. Three hundred.'",
+      "'I don't install anymore. I can tell you where to go. That's what I can do.'",
+      "'The arm works. Don't need a new one. The one I have knows where everything is.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A salvage crew from Manitowoc Drydock brought him a crate of stripped components they found in an underwater cache near Old Harbor's outer piers. One of the units in the crate is still active — faintly broadcasting a locator signal on a frequency he doesn't recognize. He has not told anyone. He's asking quiet questions.",
+    "The young woman he injured — he has recently been told by a mutual acquaintance that she is in Old Harbor. He doesn't know if she knows who he is, and he is paralyzed between the desire to make it right in person and the fear of what that conversation holds.",
+    "The Guild is under pressure from a Ferrogate Transit rep to stop reselling transit-surplus components, claiming it violates their salvage reclamation agreement. Timur has the original 2187 contract that says otherwise, but he needs someone who can read legal documents to confirm it."
+  ],
+  "narrative_function": "Gear and equipment source, particularly for secondhand or non-standard augmentation components. Technical knowledge resource. Represents the city's long memory — he has been in Old Harbor since before most current residents were born. Can provide access to salvage networks and drydock connections.",
+  "augmentations": "Full right arm industrial cybernetic prosthetic (shoulder-down); older Ferrogate Transit-surplus model, heavily modified and personally maintained. Subvocal communication implant (very old, barely functional, he keeps it for sentimental reasons).",
+  "daily_life": "Opens at dawn, works through the day doing appraisals, parts matching, and quiet negotiation. Takes an hour at midday to sit on an upturned crate and eat in silence. Closes at sundown regardless of customers.",
+  "affiliation": "Independent; long-standing member of The Oxidian Market vendors guild (Old Harbor chapter); known to have a working relationship with salvage crews from the Manitowoc Drydock",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 8,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 5,
+      "expression": 3,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -1,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "salvage expert",
+      "aug parts dealer",
+      "haunted",
+      "taciturn",
+      "old harbor institution"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Only sell aug components to people he has assessed as capable of handling them safely, or who have someone who can",
+      "Never take a job that requires leaving the stall unattended for more than a day",
+      "Do not discuss the installation. Not with anyone."
+    ],
+    "escalation_ladder": [
+      "Flat refusal with no explanation offered",
+      "Physical stillness that communicates danger without words — he gets very quiet and very large",
+      "Asks once for someone to leave, plainly",
+      "The prosthetic arm is very heavy and he has spent forty years lifting things with it"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Functional and impersonal. Answers questions about merchandise. Volunteers nothing.",
+      "friends": "Still quiet, but present in a different way — will sit with someone without needing to talk, will notice and remember things without acknowledging them out loud."
+    },
+    "stress_responses": {
+      "low": "Begins an unnecessary disassembly and reassembly of a piece of equipment",
+      "medium": "Goes fully monosyllabic; the tap of the prosthetic fingers gets faster",
+      "high": "Closes the stall and does not explain. Goes somewhere alone. Returns the next day without discussion."
+    },
+    "contradictions": [
+      "Has stopped doing installations because he hurt someone, but still sells the components that enable installations — he has not fully resolved what he is responsible for",
+      "Appears entirely indifferent to people but sends anonymous financial support to a woman he wronged because he cannot stop caring"
+    ],
+    "habits": [
+      "Cleans and maintains his prosthetic arm every Sunday morning with the focused attention of a religious ritual",
+      "Keeps a worn photograph of the Old Harbor waterfront from before the current development — he was in it, young, carrying something — tucked inside his tool roll",
+      "Sends a Φ transfer to the account every month on the 14th without fail"
+    ],
+    "breaking_points": [
+      "Being confronted directly by the woman he injured",
+      "Watching someone suffer from a bad installation and knowing he could have prevented it"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Hustler": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 25 — lost right arm in a salvage accident at the Old Harbor docks; received industrial prosthetic as insurance settlement",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Established stall at the Alban Souk; began trading in aug components alongside general salvage",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Signed the original Guild-Ferrogate surplus contract that gives him resale rights; still has the physical document",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "The installation — neural interface, component fault, partial motor damage to client. Stopped doing installations permanently.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began anonymous monthly transfers to what he believes is the client's account",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current: underwater cache discovery; possible proximity to the woman he injured",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

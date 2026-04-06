@@ -1,0 +1,66 @@
+{
+  "id": "019d6143a87977c89867fabc0ca9a87d",
+  "name": "Vantablack Media Chromatic Null Shroud",
+  "brand_name": "Vantablack",
+  "product_name": "Vantablack Media Chromatic Null Shroud",
+  "type": "equipment",
+  "aliases": [
+    "The Blanksheet",
+    "Null Drape",
+    "Chromashroud"
+  ],
+  "category": "stealth",
+  "description": "The Chromatic Null Shroud is a full-body garment woven from Vantablack Media's proprietary photon-harvesting microfiber, capable of absorbing up to 99.96% of incident visible light across a 180-degree arc. Embedded within the weave are micro-actuated chromophore cells that sample ambient light from the environment and dynamically redistribute it across the garment's surface, rendering the wearer as a near-perfect visual void that blends into low-light backgrounds rather than standing out as a silhouette.\n\nWhat distinguishes the Chromatic Null Shroud from simpler blackout garments is its passive operation mode — it requires no power cell during static concealment, drawing only trace current from body heat via integrated thermoelectric strips. Active dynamic blending, used during slow movement, consumes roughly 0.4W and can be sustained for six hours on a standard micro-cell. The garment's outer layer is also treated with a radar-diffusing aerogel coating that scatters millimeter-wave sensor returns, making it effective against automated perimeter systems.\n\nOriginally developed for Vantablack Media's deep-cover documentary crews operating in contested corporate zones, the Shroud quickly found a secondary market among infiltrators, black-bag operatives, and high-end couriers. Its civilian framing as 'broadcast equipment' has kept it in a regulatory gray zone for years, and Vantablack Media has made no apparent effort to close that loophole.",
+  "manufacturer": "VANTABLACK MEDIA",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Photon-harvesting microfiber weave",
+    "Dynamic chromophore cell arrays",
+    "Thermoelectric passive power recovery",
+    "Millimeter-wave aerogel diffusion coating",
+    "Ambient light sampling optics"
+  ],
+  "specifications": {
+    "visible_light_absorption": "99.96% (static), 97.2% (slow movement)",
+    "radar_cross_section_reduction": "~68% against 24–77 GHz bands",
+    "active_power_draw": "0.4W (dynamic mode)",
+    "passive_power_draw": "0W (static mode, thermoelectric sustain)",
+    "battery_life_active": "6 hours (standard micro-cell)",
+    "weight": "1.1 kg",
+    "form_factor": "Full-body hooded garment, collapses to 0.4L compression pouch",
+    "thermal_bleed": "Minimal — no active suppression, upper body heat still visible to IR",
+    "wash_cycles_rated": "200 before chromophore degradation"
+  },
+  "tactical_use": "Best deployed in low-light or no-light environments where visual concealment is the primary concern. Users typically pair it with a separate thermal dampener, as the Shroud offers no IR suppression. Effective for slow crawls through monitored corridors, static observation posts, and close-approach surveillance. The compression pouch form factor means it can be worn under a conventional jacket and deployed quickly in the field.",
+  "cultural_context": "In Meridian 88's underground circles, owning a Chromatic Null Shroud is a marker of professional seriousness — it signals that the wearer operates at a level where off-the-shelf dark clothing no longer suffices. Vantablack Media's branding gives it a veneer of journalistic legitimacy that mid-tier operatives exploit shamelessly at checkpoints. Among corporate security analysts, the phrase 'they were wearing the Shroud' has become shorthand for 'we have no visual record of the subject.'",
+  "known_users": [
+    "Deep-cover documentary fixers",
+    "Corporate extraction specialists",
+    "High-end courier networks (the Silkline collective)",
+    "Freelance infiltrators working Tier 2 contracts",
+    "Vantablack Media field crews in contested broadcast zones"
+  ],
+  "story_hooks": [
+    "A Chromatic Null Shroud surfaces on the black market still containing trace DNA from a missing Vantablack Media journalist — someone wants it recovered before forensics teams find it.",
+    "A rash of corporate espionage incidents all share one detail: security footage shows nothing. The investigating team must determine whether a Shroud was involved or if something far more sophisticated is at work.",
+    "Vantablack Media issues a quiet recall on a specific batch of Shrouds, citing 'chromophore degradation.' Operatives who've used those units start receiving unmarked messages suggesting the garments were also collecting biometric data.",
+    "A player needs to acquire a Shroud quickly but the only available unit belongs to a Vantablack Media crew currently embedded in a hostile zone — negotiation, theft, or trade required."
+  ],
+  "tags": [
+    "stealth",
+    "equipment",
+    "theft",
+    "ai",
+    "elf",
+    "corporate",
+    "contract",
+    "surveillance",
+    "power",
+    "market",
+    "dark",
+    "clothing",
+    "shelf",
+    "tier 2"
+  ]
+}

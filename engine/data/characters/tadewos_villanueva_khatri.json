@@ -1,0 +1,237 @@
+{
+  "id": "019d6143a6e870b7be2af7b3c7120c71",
+  "type": "character",
+  "name": "Tadewos Villanueva-Khatri",
+  "aliases": [
+    "Teacher Tade",
+    "The Chalk Man"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Retired schoolteacher raising two grandchildren on a diminished pension",
+  "age": 67,
+  "status": "active",
+  "location": "Montclare Quiet, Terrace Row Housing Unit 14",
+  "description": "Tadewos Villanueva-Khatri is a slender, slightly stooped man who still dresses as though he is going to stand in front of a classroom — collared shirt, pressed, one color of ink on his pocket, chalk residue on his left hand even though he hasn't taught in four years, because he cannot stop teaching things to whoever is nearby. His hair is gone except for a precise white beard he maintains with what his grandchildren call 'weird dedication.' He has cat ears — a geneware choice from his mid-forties, the soft grey kind with slight tabby markings, that he got because his students loved them and he never had them reversed. They fold slightly when he is embarrassed, which he finds mortifying because it cannot be hidden.\n\nHe is raising Amara, 9, and Deshi, 12, his daughter Priya's children, since Priya's disappearance into a Helix Biosystems labor contract three years ago that has not produced reliable contact in eighteen months. He does not use the word 'disappeared' in front of the children. He is calm about it in public and wakes at 3 AM about it in private. His pension from the Meridian 88 Municipal Education Authority does not cover three people adequately, and he has begun supplementing it by tutoring neighborhood children for small fees, which the MEA has quietly informed him may technically violate his pension terms. He is currently ignoring this letter.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.7,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That Priya is dead and he will have to eventually tell the children",
+      "That he will run out of money before the children are independent and there will be no safety net"
+    ],
+    "core_desires": [
+      "To find Priya — or at least to know",
+      "For Amara and Deshi to have an education that opens doors his generation's didn't"
+    ],
+    "coping_mechanisms": [
+      "Teaching as a way of imposing order and meaning on an uncontrollable situation",
+      "Maintaining routine with almost religious precision — it protects the children and anchors him"
+    ],
+    "blind_spots": [
+      "Channels so much energy into functional stability that he has stopped processing his own grief; it is accumulating",
+      "Overestimates the children's resilience; Deshi in particular is struggling in ways he hasn't recognized"
+    ],
+    "secret": "He knows more about why Priya entered the Helix Biosystems contract than he has admitted to anyone. She was running from a debt — his debt, an old medical expense from his cardiac treatment that she took on without telling him. The contract was a way out. He found the paperwork six months ago and has not told the children or sought help because the guilt is immobilizing."
+  },
+  "speech_patterns": {
+    "vocabulary": "Educator's vocabulary — clear, precise, pitched for comprehension; shifts register seamlessly for different audiences; Amharic and Punjabi surface in emotional moments",
+    "cadence": "Patient and unhurried with a slight tendency to structure things in three points, like a lesson plan",
+    "verbal_tics": [
+      "'Now. Let's think about this carefully.'",
+      "'That's a good question — it's a better question than you know'"
+    ],
+    "example_lines": [
+      "'The MEA says my tutoring violates pension terms. The MEA also cut the neighborhood school's staff by a third. I'm choosing which rule to follow.'",
+      "'Deshi asked me yesterday if Mama is coming back. I said I didn't know. That's the truest thing I've said in months and it was the hardest.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Deshi has begun skipping school and spending time near the Helix Biosystems transit hub, apparently trying to find information about his mother — Tadewos doesn't know yet",
+    "The MEA letter about pension violations is escalating; a compliance officer has made an appointment to visit the unit",
+    "He has found, in Priya's old messages, a name — a Helix middle-manager who signed her contract — who lives in Montclare Quiet and shops at the same market Tadewos uses every week"
+  ],
+  "narrative_function": "Human face of pension inadequacy and family disruption from corponation labor contracts; source of neighborhood knowledge and connections; represents civic institution failure; quest-giver for storylines involving missing persons and corponation labor practices",
+  "augmentations": "Cat ears, grey tabby geneware (cosmetic, from mid-forties, functional — fold emotionally); reading glasses (physical, deliberately non-augmented)",
+  "daily_life": "Gets the grandchildren to the local school by 0730, returns to tutor morning students until noon, shops for the cheapest adequate groceries in the Montclare market, picks the children up, helps with homework until 2000, reads until midnight with the lamp low so as not to waste power allocation.",
+  "affiliation": "Meridian 88 Municipal Education Authority (retired); Montclare Quiet Parents and Elders Network; informal tutoring network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 8,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "caregiver",
+      "retired teacher",
+      "pension-precarious",
+      "missing child",
+      "hidden guilt"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The children's stability comes before everything else, always",
+      "Will not lie to the children but will delay truth until he has a plan for what comes after it",
+      "Will accept help only when refusing it harms the grandchildren rather than just himself"
+    ],
+    "escalation_ladder": [
+      "Patient explanation and appeal to reason",
+      "Formal, polite written communication",
+      "Community network mobilization — he knows everyone in Montclare Quiet",
+      "Absolute immovable refusal, stated calmly, not repeated"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm and attentive, quickly shifts into teacher mode — asks questions, assesses, finds the thing he can offer",
+      "friends": "Deeply loyal and practical; remembers every detail about their lives; expresses love through showing up reliably"
+    },
+    "stress_responses": {
+      "low": "Ears fold slightly; he starts organizing something nearby — papers, plates, shelves",
+      "medium": "Becomes extremely measured and formal, as though delivering a difficult lesson",
+      "high": "Goes somewhere private and cries, then returns completely composed and does not reference it"
+    },
+    "contradictions": [
+      "Teaches honesty as a core value while maintaining a significant silence about the debt that sent Priya away"
+    ],
+    "habits": [
+      "Chalk residue on left hand from teaching with a physical board he bought for home tutoring",
+      "Reading the children a page of something — anything — before bed, regardless of how tired he is",
+      "Checking Helix Biosystems public contract registries every Sunday morning"
+    ],
+    "breaking_points": [
+      "Deshi being hurt or getting into serious trouble as a consequence of searching for Priya — would force Tadewos to tell the full truth about the debt"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "healthy",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Mentor": 0.9,
+    "Quick Study": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Montclare Quiet to an Ethiopian-Punjabi-Spanish heritage family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began teaching at Montclare Municipal Primary School",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Cardiac incident; Priya takes on his medical debt without his knowledge",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Priya enters Helix Biosystems labor contract",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Contact with Priya becomes infrequent then stops",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Retired; began raising Amara and Deshi full-time",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Found Priya's debt paperwork; MEA pension compliance letter received",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": []
+}

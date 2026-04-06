@@ -1,0 +1,59 @@
+{
+  "id": "019d6143ab3870cd85a37bc5d845884b",
+  "name": "Oxidative Plasma Breath Lance OPBL-1 'Vestment'",
+  "type": "weapon",
+  "aliases": [
+    "Vestment",
+    "The Cope",
+    "Robe",
+    "Priest's Breath",
+    "Burncloth"
+  ],
+  "category": "exotic",
+  "description": "The Oxidative Plasma Breath Lance generates a sustained stream of superheated oxidative plasma through a catalytic compression nozzle, but its defining characteristic is the delivery geometry: rather than a focused jet, the OPBL-1 produces a wide, flat, billowing emission — roughly 1.4 meters wide at three meters range — that operators describe as resembling a thrown cloak or a priest's vestment caught in wind. TESSERA CORPONATION's original design brief called for a weapon capable of simultaneous full-torso surface contact, and the Vestment delivers exactly that, enveloping a target in plasma rather than puncturing them with it.\n\nThe oxidative component is key to the weapon's particular lethality. Standard plasma weapons inflict thermal damage; the OPBL-1 additionally saturates the plasma stream with a high-oxygen reactive medium, accelerating combustion on contact with organic materials and causing secondary ignition in clothing, hair, and exposed tissue layers. The effect on armored targets is more nuanced — the flat emission wraps around armor edges, finding gaps at joints and seals, which makes it disproportionately effective against targets whose frontal coverage is strong but whose lateral and rear seals are imperfect. TESSERA markets this as 'coverage-adaptive thermal application.'\n\nThe OPBL-1 is a two-handed platform, roughly the dimensions of a combat shotgun, with a distinctive flat-mouthed nozzle resembling a wide letterbox slot. It is slow between emissions — the catalytic chamber requires 4 seconds to re-pressurize — and operators are trained to treat each emission as a decisive action rather than suppressing fire. The weapon's cultural weight comes almost entirely from its visual signature: the billowing plasma 'vestment' is unmistakable at range and has become one of Meridian 88's most recognized weapon silhouettes.",
+  "manufacturer": "TESSERA CORPONATION",
+  "tier_availability": "Military only",
+  "legality": "Prohibited — unlicensed possession carries mandatory custodial sentence under Meridian 88 Municipal Code 44-C",
+  "base_technologies": [
+    "Catalytic plasma compression",
+    "Oxidative reactive medium injection",
+    "Flat-aperture emission geometry"
+  ],
+  "specifications": "effective range: 1–9 meters optimal; degraded beyond 12 meters\nemission width: 1.4 meters at 3 meters range; 2.8 meters at 9 meters range\nemission duration: 1.8 seconds per charge\ncharges per canister: 6\nre-pressurization time: 4 seconds between emissions\nweight: 4.2 kg loaded\narmor interaction: Wraps armor edges; highly effective against jointed or segmented protection",
+  "tactical_use": "Used by military and paramilitary breach teams for room clearance where multiple targets are expected in close proximity. The wide emission eliminates the need for precise target tracking in chaotic close-quarters environments. Counter-insurgency operations have deployed it for crowd suppression — a use that remains deeply controversial and is technically outside its licensing parameters. Operators often use it as a second weapon after a primary has disrupted a room, delivering the Vestment into a disordered space.",
+  "cultural_context": "The Vestment has acquired a grim religious iconography in Meridian 88. Its use during the Sector 9 clearance operations — now referred to obliquely as 'the vestings' by those who lived through them — left a generation of residents with a visceral reaction to its visual signature. Street murals depicting figures consumed in wide flame are a recurring motif in former Sector 9 neighborhoods. TESSERA CORPONATION does not publicly acknowledge the weapon's use in those operations. Militia groups who oppose TESSERA have adopted the vestment silhouette as an accusatory symbol.",
+  "known_users": [
+    "TESSERA CORPONATION internal security forces",
+    "Meridian 88 Municipal Military (restricted deployment)",
+    "Black-market buyers from ex-military backgrounds",
+    "Sector 9 resistance groups (one confirmed stolen unit)",
+    "Corporate warfare contractors operating in denied areas"
+  ],
+  "story_hooks": [
+    "A TESSERA internal memo surfaces suggesting the OPBL-1 was used in Sector 9 under a classified operations order — someone with access to that memo is selling it, and both TESSERA and the resistance want to find them first.",
+    "A stolen Vestment appears in a civilian murder scene. The killing doesn't fit any known criminal pattern. Whoever used it knew exactly what they were doing — and apparently didn't care about the forensic signature.",
+    "A former TESSERA breach team operator is living quietly in a peripheral district. They left the company after Sector 9. Someone has just slid a photograph of the vestings under their door with a note: 'We know you were there. We know you used it. We need you to testify.'",
+    "A new unlicensed Vestment variant is circulating — someone has modified the nozzle geometry to produce a narrower, focused stream. TESSERA wants the modification studied before it reaches the wrong hands."
+  ],
+  "ammunition_type": [
+    "Aerosol Chemical Payload Canister ACP-35",
+    "energy_cell"
+  ],
+  "tags": [
+    "exotic",
+    "weapon",
+    "combat",
+    "gun",
+    "war",
+    "ai",
+    "corporate",
+    "contract",
+    "market",
+    "rain",
+    "train",
+    "clothing",
+    "armor",
+    "energy",
+    "fire"
+  ]
+}

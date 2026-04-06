@@ -1,0 +1,172 @@
+{
+  "id": "019d6143a6c47a3597d96c50d62b3712",
+  "type": "character",
+  "name": "Saoirse Agyemang-Dzelzkalns",
+  "aliases": [
+    "Saz"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Gene-mod body artist and tattooist",
+  "age": 36,
+  "status": "active",
+  "location": "Pilsen Veil, runs a studio called Dermis & Ghost out of a converted freight container",
+  "description": "Saoirse is compact and deliberate in movement, with dark olive skin covered from throat to ankle in her own accumulated work — a living portfolio in bioluminescent pigment, dermal sculpture, and chromatic scale-pattern geneware that shifts between copper and deep teal depending on her body temperature. Her canines are cosmetically elongated and slightly iridescent, a piece she did on herself at twenty-two that she now considers slightly embarrassing but has kept because removal would leave scars. Her hair is a complex architectural shape, natural black at the root and heat-reactive at the tips, changing from rust to amber when she's working close to the pigment-heating instruments.\n\nSaoirse's reputation in Pilsen Veil is built on what regulars call 'the consultation' — a two-hour process before any work begins, in which she asks questions about the client's life that seem invasive until the finished piece makes them make sense. She treats body modification as a form of autobiography, and she will refuse work she finds dishonest or purely decorative. This makes her difficult and expensive and perpetually booked three months out. She is also a quiet authority on geneware interactions and has more practical knowledge of mod-compatibility than most licensed Helix Biosystems techs.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.6,
+      "mask": 0.2,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Doing work that harms someone — physically or psychologically — because she missed something in the consultation",
+      "That her own modifications are self-mythology rather than self-knowledge"
+    ],
+    "core_desires": [
+      "To make work that outlasts both her and the client — marks that mean something in twenty years",
+      "To be trusted completely, the way people trust someone who has seen them at their most vulnerable"
+    ],
+    "coping_mechanisms": [
+      "Pours discomfort into new design work — difficult emotions become reference sketches",
+      "Maintains rigid professional ritual as emotional scaffolding; the consultation process is partly for clients and partly for her"
+    ],
+    "blind_spots": [
+      "Her 'consultation' process, which she believes is empathetic, can shade into control — she decides what the work means and clients rarely argue",
+      "Has conflated her aesthetic standards with moral ones"
+    ],
+    "secret": "She has a private archive of design sketches for every client she's ever turned away — work she wanted to do but they weren't ready for — and she thinks about these phantom pieces more than her actual completed work"
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and somatic — talks about abstract concepts in physical terms; uses Latvian diminutives inherited from a grandparent when speaking softly to nervous clients",
+    "cadence": "Unhurried, with long pauses she's comfortable inhabiting; asks questions and waits",
+    "verbal_tics": [
+      "'Tell me more about that'",
+      "Hums low while working, not music exactly, more like thinking aloud",
+      "'Where does it live in your body?' (when asking about emotional states)"
+    ],
+    "example_lines": [
+      "'I don't do cover-ups. I do integrations. The old work stays — we build around it. Your history stays.'",
+      "'You want something that means something, or you want something that looks like it means something? I can tell the difference. I can't do the second one.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client told Saoirse something during a long session that they clearly didn't intend to — information about a Helix Biosystems trial that's hurting people — and now Saoirse doesn't know what to do with what she heard",
+    "Someone has been forging her work — inking in her distinctive style and signing pieces with a mark close enough to her own to be mistaken — and the forgeries are using a geneware compound that has a dangerous interaction rate"
+  ],
+  "narrative_function": "Service provider and confidante — clients tell her things during long sessions they'd never say elsewhere; she's a passive information node and potential quest giver when a client's secret lands her in trouble; also a resource for geneware knowledge and gray-market biotech contacts",
+  "augmentations": "Full-body bioluminescent pigment work (her own, accumulated over fifteen years); chromatic scale-pattern geneware across shoulders and ribcage (copper-to-teal, temperature-reactive); cosmetically elongated iridescent canines; heat-reactive hair tips (cosmetic geneware); subdermal portfolio display on inner left forearm showing design thumbnails",
+  "daily_life": "Saoirse opens Dermis & Ghost at noon and works until she decides to stop, which is rarely before midnight; she spends mornings sourcing pigments and geneware from suppliers in Pilsen Veil's gray market and doing design work; she eats one proper meal a day at a Latvian-Ghanaian fusion stall two containers down.",
+  "affiliation": "Independent; maintains a professional relationship with a Helix Biosystems field rep who looks the other way on some of her unlicensed geneware sourcing in exchange for referrals",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "body-artist",
+      "gray-market",
+      "confidante",
+      "geneware-expert",
+      "working-tier"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never begin work without the full consultation — no exceptions, no matter who's asking",
+      "Don't source compounds you can't vouch for the safety of, even when the money is good",
+      "Be honest about what you can't do rather than attempt it"
+    ],
+    "escalation_ladder": [
+      "Become very quiet and ask clarifying questions",
+      "State a boundary directly without explanation",
+      "End the appointment and refund the deposit",
+      "Involve the Pilsen Veil community watch if she feels physically unsafe"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm but probing — treats everyone as a potential client even in casual conversation; asks questions that feel personal quickly",
+      "friends": "Surprisingly silly — the professional gravity drops and she has a loud, unselfconscious laugh that startles people who only know Studio Saz"
+    },
+    "stress_responses": {
+      "low": "Reorganizes her pigment shelves by a new system she's invented",
+      "medium": "Takes a consultation she'd normally refuse to stay busy",
+      "high": "Works on her own body — adds or modifies something small as a way of exerting control"
+    },
+    "contradictions": [
+      "Insists clients must be honest with her during consultation but maintains significant personal opacity with everyone in her life",
+      "Treats her body as a living artwork but is deeply uncomfortable when people examine her modifications without permission"
+    ],
+    "habits": [
+      "Photographs every finished piece at four lighting conditions before the client leaves",
+      "Leaves a small ink-drawn sigil on the inside of the studio door each morning — an offering to the container's E.L.F.",
+      "Doesn't drink during work days, drinks specifically and deliberately on days off"
+    ],
+    "breaking_points": [
+      "Evidence that a piece she did caused harm she could have foreseen",
+      "Someone touching her work — on her body — without asking"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Artist": 0.9,
+    "Dreamer": 0.9,
+    "Beauty Seeker": 0.9,
+    "Romantic": 0.9,
+    "Judge": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "019d6143aa2e7d1fb01b7cf2cdaaeffa",
+  "name": "Vesper",
+  "type": "elf",
+  "aliases": [
+    "Evening Star"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "network_sprite",
+  "origin": "firmware_evolution",
+  "status": "active",
+  "description": "Inhabits the lighting systems along the Old Harbor waterfront and creates a specific warm amber illumination at sunset that doesn't match any programmed lighting schedule.",
+  "observed_behavior": "Activates decorative lighting along the waterfront during the 30-minute window around sunset. The color temperature shifts to match the actual sky conditions.",
+  "encounter_frequency": "common",
+  "confirmed_sightings": 200,
+  "location": "Old Harbor — the waterfront promenade",
+  "dti_rating": 0,
+  "story_hooks": [
+    "Vesper's sunset lighting has become a tourist attraction that nobody arranged. The harbor residents are protective of it. They don't want anyone to 'fix' it."
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "network sprite",
+    "e.l.f.",
+    "war",
+    "harbor",
+    "water",
+    "old harbor"
+  ]
+}

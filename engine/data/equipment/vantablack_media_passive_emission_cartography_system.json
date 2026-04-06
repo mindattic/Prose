@@ -1,0 +1,62 @@
+{
+  "id": "019d6143a87b703eb31bc7a954cb88e0",
+  "name": "Vantablack Media Passive Emission Cartography System",
+  "brand_name": "Vantablack",
+  "product_name": "Vantablack Media Passive Emission Cartography System",
+  "type": "equipment",
+  "aliases": [
+    "PECS",
+    "the Cartographer",
+    "signal map",
+    "ghost grid"
+  ],
+  "category": "sensor",
+  "description": "The Passive Emission Cartography System is a compact, non-transmitting surveillance device that builds a three-dimensional map of an environment by passively cataloguing all electromagnetic emissions present — radio frequencies, WiFi-equivalent mesh signals, cellular handshake traffic, Bluetooth-equivalent short-range protocols, and the low-frequency emissions of powered electronic equipment. Rather than actively scanning, the PECS simply listens, feeding a continuous stream of emission data into a spatial reconstruction algorithm that infers the physical layout of a space and the location of active devices within it. Over a dwell time of fifteen to thirty minutes, it produces a probabilistic floor plan accurate enough to identify rooms, corridors, and the approximate positions of networked devices and electronic equipment.\n\nVantablack's design philosophy is rooted in their media intelligence background — the system was originally developed to map the technical infrastructure of rival broadcast facilities and live event venues without physical access. The PECS produces no emissions of its own, making it essentially invisible to counter-surveillance sweeps that rely on detecting active scanning equipment. Its outputs are rendered as layered cartographic overlays, color-coded by emission type and confidence level, and can be exported to standard tactical display formats. The system cannot penetrate emission-shielded environments, but it excels at revealing the boundaries of shielded zones by mapping where emissions abruptly terminate.\n\nIn Meridian 88, the PECS has migrated from Vantablack's corporate intelligence operations into the hands of extraction teams, investigative journalists, and infrastructure saboteurs. Its passive nature makes it legally ambiguous — it receives only, and its operators argue it is no different in principle from a radio receiver. Authorities contest this framing vigorously, particularly when PECS-generated maps are found in conjunction with evidence of physical infiltration.",
+  "manufacturer": "VANTABLACK MEDIA",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Passive Multi-Spectrum Emission Capture",
+    "Spatial Emission Tomography",
+    "Probabilistic Floor Plan Reconstruction",
+    "Non-Transmitting Sensor Architecture"
+  ],
+  "specifications": {
+    "emission_bands_monitored": "900MHz–60GHz passive capture; low-frequency electronic emission detection (50Hz–10kHz)",
+    "dwell_time_for_useful_output": "15–30 minutes for high-confidence mapping",
+    "spatial_accuracy": "±1.5m room-level accuracy at 30-minute dwell; ±0.5m with extended dwell",
+    "effective_range": "Up to 80m radius in open structure; reduced by dense shielding",
+    "output_format": "Layered cartographic overlay, exportable to standard tactical display formats",
+    "form_factor": "Cylindrical passive array unit, 120mm diameter x 80mm height; deployable or handheld",
+    "weight": "520g",
+    "power_source": "Internal cell, 8-hour continuous operation",
+    "data_storage": "Encrypted local buffer, 72-hour rolling archive",
+    "counter-detection_profile": "No active emissions; invisible to standard active-scan counter-surveillance"
+  },
+  "tactical_use": "Operators typically deploy the PECS in a concealed location — inside a bag, behind a structural element, or disguised as innocuous equipment — before a planned infiltration, allowing dwell time to accumulate while the team conducts other preparatory activity. The resulting map is reviewed to identify the locations of alarm systems, networked access points, security station equipment, and personnel devices. Experienced operators also use emission termination boundaries to map shielded rooms and vaults — the absence of signal is itself information. In counter-surveillance applications, a PECS sweep of a meeting location reveals any active electronic devices that should not be present.",
+  "cultural_context": "The PECS occupies contested legal ground that Vantablack's legal division has defended aggressively, establishing a body of case precedent that treats passive reception as categorically distinct from active surveillance. This legal architecture is itself a Vantablack product — they sell the device and, implicitly, the legal cover that comes with it. Among professionals in the intelligence and extraction community, understanding the PECS's legal status in different jurisdictions is considered basic operational literacy. In the Mid-Ring's corporate security culture, PECS sweeps before sensitive meetings have become a standard counter-intelligence ritual, though many practitioners misunderstand the device's actual capabilities and limitations.",
+  "known_users": [
+    "Extraction and infiltration teams",
+    "Corporate intelligence operatives",
+    "Investigative journalists covering corporate malfeasance",
+    "Infrastructure saboteurs",
+    "Counter-surveillance consultants",
+    "Vantablack Media's in-house intelligence division"
+  ],
+  "story_hooks": [
+    "A PECS map recovered from an arrested infiltrator shows a floor plan of a facility that does not officially exist — the emissions profile matches no building in the city's architectural registry, but the coordinates place it beneath a block of condemned residential towers in the Sump District.",
+    "A team is hired to recover a PECS unit that was deployed and abandoned during a botched job. The device's buffer contains 60 hours of emission mapping for a high-security corporate campus — data that would be extraordinarily valuable and extraordinarily dangerous to possess.",
+    "A counter-surveillance sweep using a PECS reveals that a supposedly secure meeting location has an emission signature consistent with a concealed recording device operating on a frequency outside standard detection ranges — but the probabilistic confidence is only 65%, not enough to act on without more information.",
+    "Vantablack's legal division contacts a runner team with an unusual offer: defend a test case in which a PECS user is being prosecuted under a new surveillance statute. The outcome will set precedent that either legitimizes or effectively prohibits the device across the entire metro jurisdiction — and multiple powerful interests are watching."
+  ],
+  "tags": [
+    "sensor",
+    "equipment",
+    "ai",
+    "elf",
+    "corporate",
+    "surveillance",
+    "power",
+    "tier 3"
+  ]
+}

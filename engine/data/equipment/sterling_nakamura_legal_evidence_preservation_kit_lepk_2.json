@@ -1,0 +1,44 @@
+{
+  "id": "019d6143a86d73239c56f228cba42eb0",
+  "name": "Sterling-Nakamura Legal Evidence Preservation Kit LEPK-2",
+  "brand_name": "Sterling",
+  "product_name": "Sterling-Nakamura Legal Evidence Preservation Kit LEPK-2",
+  "type": "equipment",
+  "aliases": [
+    "LEPK-2",
+    "Evidence Box",
+    "Sterling Preserve",
+    "Chain Kit"
+  ],
+  "category": "tools",
+  "description": "A forensic evidence collection and preservation kit designed to maintain an unbroken chain of custody from crime scene to courtroom. The LEPK-2 includes tamper-evident collection bags with embedded blockchain verification chips, a portable evidence scanner that photographs and catalogs items with cryptographic timestamps, sterile collection tools, and a sealed transport case with environmental monitoring. Every action taken with the kit is logged to Sterling-Nakamura's Blockchain Governance Protocol, creating an immutable record that cannot be challenged in court.",
+  "manufacturer": "STERLING-NAKAMURA",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — law enforcement and legal professionals",
+  "base_technologies": [],
+  "specifications": {
+    "collection bags": "50x tamper-evident with blockchain chips",
+    "scanner": "Photograph + catalog + cryptographic timestamp",
+    "tools": "Sterile tweezers",
+    "info": "swabs; scrapers; measurement",
+    "transport": "Sealed case with environmental monitoring",
+    "chain of custody": "Immutable blockchain logging",
+    "weight": "4 kg complete kit",
+    "verification": "Any BGP node can verify evidence integrity"
+  },
+  "tactical_use": "",
+  "cultural_context": "",
+  "known_users": [],
+  "story_hooks": [
+    "An LEPK-2's blockchain log revealed that evidence was accessed outside the documented chain of custody — someone with physical access tampered with the evidence and the kit recorded it.",
+    "A defense attorney has challenged the LEPK-2 system itself, arguing that blockchain-verified evidence creates an illusion of infallibility that prejudices juries against legitimate challenges."
+  ],
+  "tags": [
+    "tools",
+    "equipment",
+    "crime",
+    "ai",
+    "elf",
+    "tier 2"
+  ]
+}

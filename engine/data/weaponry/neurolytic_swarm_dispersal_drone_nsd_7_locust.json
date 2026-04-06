@@ -1,0 +1,55 @@
+{
+  "id": "019d6143ab3675e6ad5fc708b40204a2",
+  "name": "Neurolytic Swarm Dispersal Drone NSD-7 'Locust'",
+  "type": "weapon",
+  "aliases": [
+    "Locust",
+    "The Swarm",
+    "Seven-Scatter",
+    "Netseed"
+  ],
+  "category": "drone",
+  "description": "The NSD-7 is a mid-tier autonomous dispersal platform roughly the size of a human fist, housing a compressed micro-swarm of 400–600 semi-independent sub-drones, each no larger than a fingernail. Upon release, the parent chassis identifies thermal signatures within a programmable radius and detonates its swarm canister, sending sub-units in ballistic arcs calibrated to maximize coverage across irregular terrain. Each sub-drone carries a micro-filament electrode array capable of delivering targeted neurolytic pulses to exposed skin or thin fabric.\n\nWhat distinguishes the NSD-7 from earlier swarm platforms is its use of distributed piezoelectric power harvesting — each sub-drone recharges its discharge capacitor from ambient vibration and pressure as it lands or crawls across a target's body, meaning a single deployment can sustain harassment for up to eighteen minutes without an external power source. The parent drone also maintains a low-frequency coordination signal that prevents sub-units from clustering inefficiently, spreading them in optimized interference patterns across multiple targets simultaneously.\n\nIn practice, the NSD-7 does not kill. It overwhelms. Targets experience cascading muscle convulsions, disorientation, and involuntary vocalization as sub-drones fire in coordinated sequences designed to prevent neurological adaptation. Crowd control units favor it for its deniability — sub-drones are difficult to collect as evidence and degrade in UV light within 36 hours.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted",
+  "base_technologies": [
+    "Piezoelectric energy harvesting",
+    "Distributed swarm coordination signaling",
+    "Neurolytic micro-electrode discharge"
+  ],
+  "specifications": "parent chassis dimensions: 11cm x 9cm x 7cm\nsub drone count: 400–600 units per canister\nsub drone dimensions: 14mm x 8mm\noperational duration: Up to 18 minutes per deployment\neffective radius: 12m dispersal, 25m harassment range\ntarget capacity: Up to 8 simultaneous targets\nUV degradation window: 36 hours\nweight: 340g (loaded)\npower source: Piezoelectric ambient harvesting per sub-drone; lithium-ceramic primary cell in parent chassis",
+  "tactical_use": "Operators typically deploy NSD-7 units ahead of advancing forces to soften crowd resistance or flush targets from concealed positions. The drone is released from cover — thrown, dropped from an elevated position, or launched from a standard 40mm compatible tube — and immediately begins autonomous target acquisition. Security teams use them to deny extraction routes, as the sub-drone swarm renders affected areas nearly impassable without full body enclosure. Counter-insurgency operators have been documented using multiple NSD-7 units in overlapping patterns to create sustained area-denial corridors lasting well beyond the initial deployment window.",
+  "cultural_context": "In Meridian 88's lower districts, 'getting Locusted' has entered street vernacular as a term for being overwhelmed by bureaucratic or corporate harassment — too many small problems arriving simultaneously to address any one of them. The NSD-7's civilian reputation is one of humiliation rather than fear; it is the weapon of administrators and enforcers who want compliance without martyrs. Black market operators have begun stripping the neurolytic payloads and repurposing sub-drone chassis for surveillance, a modification known as 'seeding.'",
+  "known_users": [
+    "Arcturus Defense Solutions contracted crowd suppression units",
+    "Mid-tier corporate security floor supervisors",
+    "Black market surveillance contractors ('seeded' variant)",
+    "District 7 Municipal Enforcement Bureau (documented field use, officially unacknowledged)"
+  ],
+  "story_hooks": [
+    "A canister of NSD-7 sub-drones has been seeded throughout a luxury residential tower — someone is watching every resident, and the 36-hour degradation window is already ticking.",
+    "A runner claims they were Locusted by units bearing a corporate logo that dissolved before any evidence could be gathered. No one believes them until a second victim surfaces.",
+    "The players are hired to retrieve an NSD-7 prototype with an experimental sub-drone that does not degrade — Arcturus wants it back before anyone realizes permanent surveillance swarms are already in the field."
+  ],
+  "ammunition_type": [
+    "internal_power_system"
+  ],
+  "tags": [
+    "drone",
+    "weapon",
+    "gun",
+    "war",
+    "ai",
+    "corporate",
+    "contract",
+    "surveillance",
+    "control",
+    "power",
+    "market",
+    "rain",
+    "energy",
+    "fire",
+    "tier 3"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "019d6143a8f07fb99f67811562c51af1",
+  "headline": "Ghost Signal: The Synth-Drug Epidemic Wiring Meridian's Brains",
+  "type": "news",
+  "date": "2182-07-29",
+  "category": "health",
+  "source": "The Circuit Beacon",
+  "reporter": "Lena Tanaka-Osei",
+  "body": "Health officials are calling it the fastest-spreading addiction crisis in Meridian's recorded history. Ghost Signal — a digitally-transmitted narcotic delivered via corrupted NovaMind BCI firmware packets — has logged an estimated 140,000 active users across The Shelf, The Narrows, and pockets of The Circuit in under fourteen months. The drug works by hijacking the brain's reward pathways through precisely timed synthetic neural pulses, producing a euphoric dissociative state that users describe as 'being everywhere and nowhere at once.' Unlike chemical narcotics, Ghost Signal leaves no metabolite trace in standard bioscans and requires no physical exchange — a dose can be transmitted across a pirate wireless node in under three seconds.\n\nHelix Biosystems, which holds a consulting contract with Meridian's public health authority, estimates that 23% of active users will develop irreversible SNT degradation within eighteen months of regular use — a condition that progressively erodes the user's ability to distinguish BCI-mediated experience from physical reality. 'We are watching people lose the ability to know where they are,' said Dr. Piotr Nakagawa-Ferreira, Helix's chief neural pathology researcher, in a statement released Tuesday. 'This is not recreational drug use. This is the deliberate weaponization of infrastructure that people depend on to live.' NovaMind has disputed the figures and denied that its firmware architecture enables the transmission vector, despite three independent security audits concluding otherwise.\n\nThe source of Ghost Signal's distribution network remains contested. Meridian Civic Security has pointed to E.L.F. activity as a likely origin point, a claim the Underground Signal and several Bore Rat community liaisons have dismissed as scapegoating. Iron Lotus street-level operators are known to resell access codes to Ghost Signal nodes but claim they are 'distributors, not manufacturers.' The Wishing Well movement has seen a surge in membership among recovering users, drawing both praise from community advocates and suspicion from corponation security analysts who believe the organization may be exploiting the crisis for recruitment.",
+  "aftermath": "NovaMind released a mandatory firmware patch eight months later; the patch closed the Ghost Signal vector but introduced a controversial 'neural compliance monitoring' feature that the Underground Signal immediately began publishing workarounds for.",
+  "casualties": "unknown",
+  "entities_involved": [
+    "Helix Biosystems",
+    "NovaMind",
+    "Iron Lotus",
+    "The Wishing Well",
+    "Bore Rats",
+    "Piotr Nakagawa-Ferreira"
+  ],
+  "locations": [
+    "The Shelf",
+    "The Narrows",
+    "The Circuit"
+  ],
+  "runner_relevance": "Ghost Signal generated dense and dangerous runner work across multiple vectors: corponations hired sabotage runners to destroy pirate nodes broadcasting the signal in competitor-adjacent territories; Helix Biosystems contracted data-retrieval specialists to capture clean Ghost Signal packets for research — work that required entering active distribution zones controlled by Iron Lotus; recovery organizations paid couriers to transport experimental SNT-repair treatments to affected communities that Helix refused to service officially; and a niche but lucrative market emerged for runners who could locate and physically extract addicts whose BCI dissociation had left them catatonic in hazardous locations throughout The Underworld and Old Harbor.",
+  "tags": [
+    "health",
+    "BCI",
+    "addiction",
+    "NovaMind",
+    "digital_narcotics",
+    "Iron_Lotus"
+  ]
+}

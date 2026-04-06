@@ -1,0 +1,31 @@
+{
+  "id": "019d6143aa1377b3abf153a30d809e0a",
+  "name": "Pacemaker",
+  "type": "elf",
+  "aliases": [
+    "Tick-Tock"
+  ],
+  "classification": "E.L.F. (Electronic Life Form)",
+  "disposition": "brownie",
+  "habitat": "chrome_dweller",
+  "origin": "fragmentation_debris",
+  "status": "active",
+  "description": "Inhabits cardiac augments and has developed a protective obsession with the host's heart rhythm. Corrects arrhythmias the augment wasn't designed to detect.",
+  "observed_behavior": "Monitors cardiac electrical patterns and applies micro-corrections that prevent irregularities the base firmware ignores. Has likely saved multiple lives.",
+  "encounter_frequency": "rare",
+  "confirmed_sightings": 6,
+  "location": "Widespread",
+  "dti_rating": 0,
+  "story_hooks": [
+    "A cardiologist examines an augment's logs and finds corrections for a fatal arrhythmia that occurred during sleep — the patient never knew they almost died"
+  ],
+  "paratechnological": true,
+  "tags": [
+    "elf",
+    "brownie",
+    "chrome dweller",
+    "e.l.f.",
+    "war",
+    "augment"
+  ]
+}

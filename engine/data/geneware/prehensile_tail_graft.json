@@ -1,0 +1,53 @@
+{
+  "id": "019d6143a8af771a940c2a0d851098de",
+  "name": "Prehensile Tail Graft",
+  "brand_name": "Prehensile",
+  "product_name": "Prehensile Tail Graft",
+  "type": "geneware",
+  "aliases": [
+    "Whiptail",
+    "The Fifth Limb"
+  ],
+  "category": "cosmetic",
+  "target_system": "skeletal/muscular (caudal vertebrae extension)",
+  "description": "Extends the human coccyx into a fully articulated, muscle-sheathed tail ranging from 60 cm to 120 cm in length. The basic cosmetic version is covered in skin matching the user's complexion and can grip objects lightly — enough to hold a drink, not enough to swing from a railing. Premium versions from Crucible Genomics incorporate prehensile musculature strong enough to support the user's body weight briefly. Fur-covered variants using spliced feline or canine follicle genes are enormously popular among younger demographics. The tail requires its own neural integration period — most users report the tail feeling like a phantom limb for the first month before proprioception develops fully. Tail fashion in Meridian 88 is a major industry: wraps, rings, sleeves, tip jewelry, and color-matched fur dye are sold in every market in the Shelf.",
+  "source_organism": "Ateles geoffroyi (spider monkey), Felis catus (domestic cat, fur variant)",
+  "manufacturer": "Crucible Genomics, Helix Biosystems",
+  "tier_availability": "Tier 2+ (basic skin tail Tier 1, prehensile Tier 3+)",
+  "legality": "Unrestricted",
+  "procedure": "Spinal extension surgery with retroviral vertebral growth induction, 1 procedure + 3 follow-up sessions",
+  "expression_time": "4–6 months for full growth; 2–3 months additional for neural integration",
+  "reversibility": "Surgically removable with spinal reconstruction; reversal is painful and leaves scarring",
+  "side_effects": [
+    "Phantom tail sensation for 1–3 months",
+    "Balance disruption during growth phase",
+    "Fur variants require grooming to prevent matting",
+    "Cheap installations may develop nerve dead spots"
+  ],
+  "social_perception": "Extremely popular. Tails are fashion statements, identity markers, and practical tools. Tail-less people are in the minority in many Shelf neighborhoods. Corporate culture is split — some firms embrace it, others consider tails unprofessional.",
+  "story_hooks": [
+    "A tail graft from a black-market clinic develops autonomous movement — the tail reacts to threats before the user's conscious mind does, suggesting the spliced neural tissue has its own reflexes",
+    "A community of tail-positive residents discovers that a new corporate grooming policy banning visible tails is a pretext for genetic discrimination screening"
+  ],
+  "tags": [
+    "cosmetic",
+    "geneware",
+    "war",
+    "identity",
+    "neural",
+    "genetic",
+    "ai",
+    "elf",
+    "corporate",
+    "surgery",
+    "clinic",
+    "pain",
+    "market",
+    "drink",
+    "fashion",
+    "shelf",
+    "tier 1",
+    "tier 2",
+    "tier 3"
+  ]
+}

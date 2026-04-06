@@ -1,0 +1,46 @@
+{
+  "id": "019d6143a8ab74c8a77c655b8d0d54e3",
+  "name": "Myostatin Knockout Enhancement",
+  "brand_name": "Myostatin",
+  "product_name": "Myostatin Knockout Enhancement",
+  "type": "geneware",
+  "aliases": [
+    "Bull Gene",
+    "Brickhouse",
+    "Heavy Mod"
+  ],
+  "category": "performance",
+  "target_system": "muscular (skeletal muscle hypertrophy)",
+  "description": "Suppresses the myostatin gene that limits muscle growth, combined with enhanced myofibril density genes from Belgian Blue cattle. The result is significantly increased muscle mass and strength without proportional exercise — the muscles grow dense and powerful as a baseline state. Users gain 30–60% above their natural strength ceiling. The modification is visible — myostatin-knockout individuals are noticeably more muscular than even dedicated athletes, with a distinctive heavy, rounded musculature rather than the lean definition of natural bodybuilding. The effect is systemic and cannot be targeted to specific muscle groups. Helix Biosystems' version includes tendon reinforcement genes to prevent the connective tissue damage that would otherwise result from muscles stronger than the skeleton can safely handle. Street versions frequently skip the tendon package, leading to a condition called 'snap syndrome' — catastrophic tendon failure during exertion.",
+  "source_organism": "Bos taurus (Belgian Blue cattle, myostatin-null variant)",
+  "manufacturer": "Helix Biosystems, Crucible Genomics",
+  "tier_availability": "Tier 3+",
+  "legality": "Licensed (athletic competition banned; employment screening required for physical labor)",
+  "procedure": "Systemic retroviral injection with myostatin suppression and myofibril enhancement, 4 sessions over 2 months",
+  "expression_time": "3–6 months for full muscle development",
+  "reversibility": "Partially reversible with myostatin re-expression therapy; muscle mass decreases over 6–12 months but never returns to baseline",
+  "side_effects": [
+    "Dramatically increased caloric requirements (4,000–6,000 cal/day maintenance)",
+    "Joint stress from increased muscle mass",
+    "Reduced flexibility without dedicated stretching regimen",
+    "Street versions: tendon failure risk ('snap syndrome')",
+    "Cardiac stress from supporting increased muscle mass"
+  ],
+  "social_perception": "Common in physical labor, security, and military occupations. Socially associated with working-class strength rather than elite modification. In the Shelf, Bull Gene users are valued for physical labor and feared as fighters.",
+  "story_hooks": [
+    "A wave of snap syndrome cases in the Narrows is traced to a single street clinic using counterfeit tendon reinforcement — the myostatin knockout works, but the tendons are unmodified, turning every user into a ticking time bomb",
+    "A myostatin-knockout laborer discovers their muscles are still growing years after they should have stabilized — the retroviral payload is still active and accelerating"
+  ],
+  "tags": [
+    "performance",
+    "geneware",
+    "war",
+    "ai",
+    "elf",
+    "power",
+    "clinic",
+    "shelf",
+    "narrows",
+    "tier 3"
+  ]
+}

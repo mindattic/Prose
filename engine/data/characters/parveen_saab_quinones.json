@@ -1,0 +1,242 @@
+{
+  "id": "019d6143a6927021925144be502ff579",
+  "type": "character",
+  "name": "Parveen Saab-Quiñones",
+  "aliases": [
+    "Pari",
+    "The Hinge",
+    "Nobody's Girl"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Freelance augmentation courier, black-market parts runner, occasional thief",
+  "age": 24,
+  "status": "active",
+  "location": "The Circuit",
+  "description": "Parveen Saab-Quiñones is small, fast, and professionally forgettable. Half Pakistani, half Guatemalan, she has the unremarkable face of someone who has practiced having one — neither memorable nor ugly, with dark eyes that track everything and give back nothing. She moves through The Circuit's layered commercial warrens with the comfort of someone who memorized the geometry before she could read. Her augmentations are practical and hidden: subdermal cargo space, a reflex-assist system, a passive signal-scrubber that makes her biometric signature fuzzy at distance. She dresses in whichever layer of the Circuit's aesthetic is currently least conspicuous and changes it frequently.\n\nParveen runs augmentation components — legal, gray, and black — between suppliers, surgeons, and end users who can't or won't use registered channels. She is not a fixer in the grand sense; she doesn't build networks or broker relationships. She moves things from one point to another with speed and discretion and she does not ask what they are for. This is her professional ethic and also her primary psychological defense. She has been doing this since she was sixteen, when she started small as a favor to a neighbor and discovered she was very good at it and that very good at it paid. She has never been caught in a way that left a record.\n\nShe lives alone in a Circuit mid-level unit she rents under a secondary identity, keeps her living space nearly empty, and has a relationship with permanence that could charitably be described as avoidant. She has acquaintances across three districts and close friends in none of them. She is not unhappy, exactly. She is efficient. She is fast. She is twenty-four years old and has been running since she was a child and has not yet had to decide whether she is running toward something or away from it, because she has not yet stopped long enough to check.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.35,
+      "id": 0.65,
+      "shadow": 0.4,
+      "mask": 0.75,
+      "ghost": 0.55
+    },
+    "core_fears": [
+      "Being known well enough to be predictable — and therefore catchable",
+      "That her parents' disappearance when she was twelve was not random",
+      "Caring about an outcome enough that failing it would mean something"
+    ],
+    "core_desires": [
+      "Enough money and enough distance to be genuinely free — though she couldn't define what she'd do with freedom",
+      "To understand what happened to her parents without having to stop moving to find out",
+      "To be seen clearly by someone and have them stay anyway"
+    ],
+    "coping_mechanisms": [
+      "Momentum — keeping in motion as an existential strategy",
+      "Strict professional ethics as a substitute for personal ones: she doesn't ask what she's carrying, but she has rules about who she'll carry for",
+      "Humor that deflects before connection can form",
+      "Cataloguing exits in every space she enters"
+    ],
+    "blind_spots": [
+      "Mistakes not knowing things for not being responsible for them",
+      "Cannot recognize when someone is offering genuine connection versus professional use",
+      "Has a blind spot for anyone who reminds her of her mother — she will do things for them she would refuse for anyone else"
+    ],
+    "secret": "She has been carrying the same sealed data chip for eight months, entrusted to her by a dying man in a Circuit alley who said her mother's name before he lost consciousness. She hasn't opened it. She hasn't delivered it anywhere. She doesn't know if this is because she's afraid of what it contains or because holding it is the closest she's been to her mother in twelve years."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, efficient, Circuit vernacular mixed with technical augmentation terminology she absorbed through proximity; code-switches easily between registers depending on who she's talking to",
+    "cadence": "Fast in professional mode — sentences that contain exactly what's needed and nothing else. Slows down noticeably when something actually interests her, which she would deny.",
+    "verbal_tics": [
+      "Says 'Sure' to mean a range of things from agreement to skepticism to 'this conversation is over'",
+      "Refers to herself in the third person when discussing her professional reputation ('Pari doesn't do that')",
+      "Laughs at things that aren't jokes, precisely and briefly, as a deflection mechanism"
+    ],
+    "example_lines": [
+      "'I don't know what's in it. That's not a line, that's the service. You pay for the not-knowing same as you pay for the speed.'",
+      "'Pari doesn't run organs. Pari doesn't run anything that was inside a person recently. Everything else is a conversation.'",
+      "'Sure.' [pause] 'No, I mean — sure. In the sense that I heard what you said and I'm going to think about something else now.'",
+      "'I've been in this building four times this week and none of you have clocked me once. I'm not saying that to brag. I'm saying it so you understand what you're buying.'"
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Orvyn Specht",
+      "type": "regular client, uneasy familiarity",
+      "description": "Orvyn uses Parveen for components he can't requisition through legitimate channels. Their arrangement is professional and has been consistent for two years. He occasionally tries to talk to her like a person. She occasionally lets him.",
+      "emotional_core": "Comfort mistaken for trust on his side; utility mistaken for indifference on hers",
+      "story_tension": "Orvyn recently asked her to carry something and wouldn't tell her the destination until she accepted. She said no. He hasn't explained why the destination had to be secret. She hasn't stopped thinking about it."
+    },
+    {
+      "name": "Zinnia Achterberg-Nwosu",
+      "type": "occasional work overlap, mutual wariness",
+      "description": "Their operations intersect at the Circuit's mid-level black market without quite competing. They have an informal non-aggression understanding that neither has formalized.",
+      "emotional_core": "Respect structured as caution",
+      "story_tension": "Zinnia has been asking Circuit contacts about the dying man in Parveen's alley story. Parveen doesn't know this yet."
+    },
+    {
+      "name": "Unknown (legal identity purged)",
+      "type": "one-time contact, persistent echo",
+      "description": "Parveen ran a package for Unknown once, early in her career, before she had any idea who they were. She was paid triple. The package was the size of a thumb drive. She thinks about it more than she thinks about most jobs.",
+      "emotional_core": "Professional admiration mixed with retroactive unease",
+      "story_tension": "Unknown may know something about Parveen's parents. Parveen has no way to ask and no way to know if this is true or paranoia."
+    }
+  ],
+  "story_hooks": [
+    "The chip she's been carrying for eight months activates spontaneously — not opening, but broadcasting a short-range ping that someone in the Circuit just responded to",
+    "A client she's carried for repeatedly is found dead in a way that exactly mirrors a route she ran last week, and the investigating party has her secondary identity's transit logs",
+    "Someone is running a competing courier operation through the Circuit using routes that Parveen has never told anyone — which means either she's been followed with extraordinary skill, or someone who knows her is talking",
+    "A woman in The Shelf recognizes Parveen on sight, calls her by her mother's name, and runs before Parveen can respond"
+  ],
+  "narrative_function": "Street-level mobility and information conduit — Parveen moves through multiple district tiers and social strata without fully belonging to any of them, making her a natural connector of plot threads that wouldn't otherwise touch. Her sealed chip is a portable mystery that can be opened at a dramatically appropriate moment. Her parentage arc provides a personal stake that can be entangled with any faction's larger history.",
+  "augmentations": "Subdermal cargo cavity: forearm and torso panels, thermally shielded, scanner-resistant lining (self-maintained, installed by a trusted Circuit surgeon),Reflex-assist neural bundle: reduces reaction latency, heightens spatial awareness (gray-market, slightly above street-grade),Passive biometric scatter field: low-power signal that introduces noise into proximity scanners, making biometric reads at range unreliable (boutique Circuit black-market, expensive for her tier)",
+  "daily_life": "Parveen doesn't have a fixed schedule — she has a fixed rhythm. She wakes early, checks her messages through two relay filters, and maps her day's runs against the Circuit's current security rotation, which she tracks obsessively. She picks up packages in the morning, runs them in windows between patrol shifts, eats street food at different stalls each day, and checks in with her relay contacts in the afternoon. Evenings she spends in her near-empty apartment cleaning her augmentations, reviewing what she's moved and for whom, and occasionally taking the chip out of its shielded case to hold it without opening it. She sleeps lightly and wakes at small sounds. She has a plant. It is the only thing in the apartment she hasn't figured out how to make portable.",
+  "affiliation": "Unaffiliated — deliberately and carefully so; trusted runner for multiple Circuit factions without allegiance to any",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 6,
+      "creativity": 5,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 4,
+      "expression": 5,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 7,
+      "assertion_deference": 6,
+      "transparency_guardedness": 8
+    },
+    "drives": [
+      "Freedom through speed and distance",
+      "Learn what happened to her parents",
+      "Be seen and have someone stay"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 5,
+        "response": "Moves faster, catalogues exits, speech becomes clipped to minimum"
+      },
+      "moral": 4,
+      "trust": 3,
+      "desperation": 6
+    },
+    "strengths": [
+      "Prudence",
+      "Self-Regulation",
+      "Perseverance",
+      "Bravery",
+      "Industry"
+    ],
+    "weaknesses": [
+      "Love",
+      "Kindness",
+      "Honesty",
+      "Hope",
+      "Gratitude"
+    ],
+    "tags": [
+      "courier",
+      "parts-runner",
+      "avoidant",
+      "fast",
+      "forgettable-by-design",
+      "sealed-chip",
+      "circuit-operative"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never ask what she is carrying — the not-knowing is the service",
+      "Never run organs or anything recently inside a person",
+      "Map security rotations obsessively before every run",
+      "Change visual presentation frequently — least conspicuous aesthetic",
+      "Keep the sealed data chip but never open it",
+      "Maintain strict rules about who she will carry for — professional ethics as substitute for personal ones",
+      "Catalogue exits in every space immediately upon entry"
+    ],
+    "escalation_ladder": [
+      "'Sure.' — ambiguous, could mean anything from agreement to dismissal",
+      "Refers to herself in third person — 'Pari doesn't do that'",
+      "Brief, precise laugh at something that is not a joke — deflection",
+      "Goes silent, runs the geometry of exits in her head",
+      "Drops the job and vanishes — speed is the final answer"
+    ],
+    "interpersonal_modes": {
+      "Orvyn Specht": "Professional arrangement she occasionally lets become almost personal",
+      "Zinnia Achterberg-Nwosu": "Mutual wariness structured as respect — non-aggression pact unspoken",
+      "Unknown": "Retroactive unease mixed with professional admiration — one job, triple pay, haunting",
+      "anyone resembling her mother": "Blind spot — will do things for them she would refuse anyone else"
+    },
+    "stress_responses": {
+      "low": "Speech becomes maximally efficient — nothing extra",
+      "medium": "Security rotation tracking becomes obsessive, routes rechecked",
+      "high": "Keeps moving — momentum as existential strategy, stillness is danger",
+      "critical": "Takes the chip out of its shielded case and holds it without opening it"
+    },
+    "contradictions": [
+      "Mistakes not knowing what she carries for not being responsible for the consequences",
+      "Wants to be seen clearly by someone — has built her entire life around being invisible",
+      "Has been carrying her mother's only remaining connection for eight months and cannot bring herself to open or deliver it"
+    ],
+    "habits": [
+      "Checks messages through two relay filters every morning",
+      "Maps the day's runs against current security rotation",
+      "Eats street food at different stalls each day — never the same one twice in a row",
+      "Cleans augmentations every evening in the near-empty apartment",
+      "Takes the chip out at night to hold it — never opens it"
+    ],
+    "breaking_points": [
+      "The sealed chip activating and broadcasting a signal",
+      "A client found dead mirroring a route she ran",
+      "Someone running her routes without her knowledge",
+      "A woman calling her by her mother's name and running"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Opportunist": 0.9,
+    "Networker": 0.7,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": []
+}

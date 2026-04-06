@@ -1,0 +1,50 @@
+{
+  "id": "019d6143a8a07d3ab68d27dcd275ccd2",
+  "name": "Cephalopod Skin Camouflage",
+  "brand_name": "Cephalopod",
+  "product_name": "Cephalopod Skin Camouflage",
+  "type": "geneware",
+  "aliases": [
+    "Camo Skin",
+    "Invisible Ink",
+    "Octopus Cloak"
+  ],
+  "category": "performance",
+  "target_system": "integumentary (active camouflage chromatophore array)",
+  "description": "An advanced evolution of the basic chromatophore modification that introduces cephalopod-grade active camouflage — the ability to match surrounding colors, patterns, and textures in real time. The skin doesn't become invisible; it becomes a high-fidelity reproduction of whatever is behind the user when viewed from the front. The effect is imperfect — movement disrupts the pattern matching, edges shimmer, and rapid environmental changes outpace the chromatophore response time. Standing still against a consistent background, a skilled camo-skin user is nearly undetectable to the naked eye. Moving, they're a shimmering distortion — visible if you're looking, easy to miss if you're not. Lacuna Genomics' installation covers the full body including face and scalp (hair must be removed or modified). The modification requires conscious effort to activate and maintain — the user must concentrate on 'blending,' and fatigue, pain, or distraction breaks the pattern.",
+  "source_organism": "Octopus cyanea (day octopus), Sepia officinalis (common cuttlefish, rapid pattern-matching variant)",
+  "manufacturer": "Lacuna Genomics",
+  "tier_availability": "Tier 5 (military-grade restricted)",
+  "legality": "Restricted (classified as concealment technology)",
+  "procedure": "Full-body dermal modification with chromatophore and light-sensor integration, 12 sessions over 6 months",
+  "expression_time": "6–12 months; effective camouflage requires 3–6 months of conscious control training",
+  "reversibility": "Partially reversible; skin never returns to fully normal pigmentation",
+  "side_effects": [
+    "Skin becomes slightly translucent at rest — blood vessels and muscle movement visible beneath",
+    "Camouflage breaks during emotional distress — the skin erupts in uncontrolled color patterns",
+    "Chronic skin sensitivity from dense chromatophore installation",
+    "Body hair incompatible — must be permanently removed for full effect",
+    "Psychological dependency on invisibility — users become anxious when visible"
+  ],
+  "social_perception": "Feared and regulated. Camo-skin users are treated like people carrying concealed weapons — technically legal (if licensed), but everyone is nervous around them. The military applications are obvious. In civilian life, the modification marks the user as someone who values not being seen.",
+  "story_hooks": [
+    "A camo-skin user discovers they can no longer turn the camouflage off — their skin has locked into permanent pattern-matching mode, and they're fading from visible existence",
+    "An unlicensed camo-skin user is hunted through the Shelf by Axiom security — the chase forces them through environments that alternately help and betray their camouflage, from cluttered markets to empty corridors"
+  ],
+  "tags": [
+    "performance",
+    "geneware",
+    "weapon",
+    "war",
+    "ai",
+    "elf",
+    "control",
+    "pain",
+    "market",
+    "rain",
+    "train",
+    "chase",
+    "shelf",
+    "tier 5"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "019d6143a7c0727bbadbe27080fdcb94",
+  "name": "Lazarus Pharmaceuticals Mnemonic Tide Reservoir",
+  "brand_name": "Lazarus",
+  "product_name": "Lazarus Pharmaceuticals Mnemonic Tide Reservoir",
+  "type": "cyberware",
+  "aliases": [
+    "The Cistern",
+    "Tide Tank",
+    "Lazarus Flask"
+  ],
+  "category": "implant",
+  "body_location": "",
+  "description": "The Mnemonic Tide Reservoir is a subdermal pharmacological implant seated beneath the mastoid process, housing a pressurized micro-reservoir of Lazarus Pharmaceuticals' proprietary neurostabilizer compound, colloquially called 'Tide.' The device autonomously monitors electrochemical stress markers in the cerebrospinal fluid and releases calibrated microdoses in response to detected trauma spikes, cognitive overload, or chemical dependency withdrawal. A secondary manual-release nodule behind the ear allows the user to trigger a larger bolus dose on demand, producing a sustained period of heightened executive clarity and emotional blunting.\n\nWhat distinguishes the Reservoir from competing pharmacological implants is its adaptive titration algorithm — the device learns the user's neurochemical baseline over a 30-day calibration period and adjusts its release thresholds accordingly, minimizing both under-dosing and the fugue states associated with oversaturation. The reservoir cartridge holds roughly 90 days of standard use and can be refilled through a licensed Lazarus Pharmaceuticals clinic or, more commonly, through black-market refill kits of variable and sometimes dangerous quality.\n\nThe Tide Reservoir is ubiquitous among high-stress corporate professionals, field medics, and combat veterans managing chronic trauma. It carries a bifurcated social meaning: in corporate towers it signals a person who takes their cognitive performance seriously, a mark of ambition; in the outer districts it marks someone who has been through enough that they needed the city's most sophisticated chemical crutch to keep functioning.",
+  "manufacturer": "LAZARUS PHARMACEUTICALS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed",
+  "installation_requirements": "",
+  "rejection_risk": "",
+  "maintenance": "",
+  "specifications": "{\"reservoir_capacity\":\"90-day standard supply at baseline dosing\",\"implant_site\":\"Subdermal, posterior mastoid process\",\"calibration_period\":\"30 days adaptive baseline mapping\",\"manual_trigger\":\"Tactile nodule, posterior auricular surface\",\"refill_cycle\":\"Clinic extraction-and-reload or field refill kit (unlicensed)\",\"compound_classification\":\"Class-II Neuroregulatory, Schedule Controlled\",\"monitoring_array\":\"Passive CSF electrochemical sensor mesh, 14-point\",\"dimensions\":\"22mm x 11mm x 8mm capsule\"}",
+  "side_effects": [],
+  "cultural_context": "Known on the street as 'running on Tide,' the Reservoir occupies an uncomfortable cultural space in Meridian 88. Corporate HR divisions officially discourage it while quietly ensuring their high-value employees have licensed access. In the outer districts, counterfeit refill cartridges containing diluted or misformulated compound have caused several high-profile overdose clusters, earning the implant a second nickname: 'the leash.' There is a growing underground movement of Reservoir users who have had the devices surgically removed and meet in community spaces to relearn unmedicated emotional regulation.",
+  "known_users": [
+    "Corporate crisis negotiators",
+    "Veteran combat operatives managing PTSD",
+    "Field trauma medics",
+    "High-frequency trading analysts",
+    "Investigative journalists embedded in conflict zones",
+    "Sable Voss, fixer and former ADS intelligence contractor"
+  ],
+  "story_hooks": [
+    "A black-market refill cartridge batch has been deliberately contaminated — someone is targeting a specific population of Reservoir users, and the pattern of victims suggests a coordinated hit rather than negligence.",
+    "A corporate executive's Reservoir has been remotely hacked to suppress its releases entirely during a high-stakes merger negotiation, leaving them in a destabilized chemical state at the worst possible moment.",
+    "A player character's 90-day supply runs out in the field, and the nearest licensed Lazarus clinic is in hostile territory — the unlicensed refill kits available locally have a known 1-in-8 chance of catastrophic misdose.",
+    "Lazarus Pharmaceuticals is quietly lobbying to reclassify the Tide compound as Tier 1 unrestricted, flooding the market — a rival pharmaceutical corp hires the crew to find and leak internal safety data that would kill the reclassification."
+  ],
+  "street_price": "",
+  "licensed_price": "",
+  "tags": [
+    "implant",
+    "cyberware",
+    "combat",
+    "war",
+    "ai",
+    "corporate",
+    "contract",
+    "control",
+    "clinic",
+    "market",
+    "tier 2"
+  ]
+}
