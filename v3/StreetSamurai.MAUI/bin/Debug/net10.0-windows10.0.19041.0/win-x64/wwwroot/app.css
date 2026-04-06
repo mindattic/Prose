@@ -65,7 +65,7 @@ html, body {
     min-height: 100vh;
     background-color: #0d1117;
 }
-.app-container { background-color: #0d1117; min-height: 100vh; }
+.app-container { background-color: #0d1117; min-height: 100vh; padding-top: env(safe-area-inset-top, 32px); }
 .sidebar { background-color: #161b22 !important; border-right: 1px solid #30363d; }
 .sidebar .nav-link:hover { background-color: #21262d; border-radius: 4px; }
 .sidebar .nav-link.active { color: #dc3545 !important; background-color: #21262d; border-radius: 4px; }
@@ -241,7 +241,7 @@ h1:focus {
 .dict-layout {
     display: flex;
     gap: 0;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 190px);
 }
 .dict-nav {
     width: 180px;

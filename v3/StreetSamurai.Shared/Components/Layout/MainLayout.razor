@@ -8,7 +8,7 @@
 <div class="app-shell">
     <div class="app-container d-flex">
         <NavMenu />
-        <main class="flex-grow-1" style="padding: 10px;">
+        <main class="flex-grow-1" style="padding: 10px; margin-top: var(--titlebar-offset); min-width: 0; overflow-x: hidden; overflow-y: auto; max-height: calc(100vh - var(--titlebar-offset));">
             <div class="container-fluid">
                 @Body
             </div>

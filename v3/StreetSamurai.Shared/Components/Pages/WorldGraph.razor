@@ -4,6 +4,7 @@
 @implements IDisposable
 
 
+<h4 class="text-danger mb-3">World Graph</h4>
 <div class="row g-2">
     @* ── Left: Filters + Node List ─────────────────────── *@
     <div class="col-md-3">
@@ -43,7 +44,7 @@
         </div>
 
         @* ── Node list (click to add to graph) ─────────── *@
-        <div class="card bg-dark text-light border-secondary" style="max-height: calc(100vh - 150px); overflow-y: auto;">
+        <div class="card bg-dark text-light border-secondary" style="max-height: calc(100vh - var(--titlebar-offset) - var(--gutter) - 80px); overflow-y: auto;">
             <div class="card-header text-muted py-1 small">Click to explore (@filteredNodes.Count)</div>
             <div class="list-group list-group-flush">
                 @foreach (var node in filteredNodes.Take(100))
@@ -65,7 +66,7 @@
     <div class="col-md-9">
         @* ── D3 Canvas ────────────────────────────────────── *@
         <div id="graphCanvas" class="border border-secondary rounded mb-2"
-             style="width: 100%; height: calc(100vh - 150px); background: #111;"></div>
+             style="width: 100%; height: calc(100vh - var(--titlebar-offset) - var(--gutter) - 80px); background: #111;"></div>
 
         @* ── Selected Node Detail + Nearby Linkable Nodes ── *@
         @if (selectedNode != null)

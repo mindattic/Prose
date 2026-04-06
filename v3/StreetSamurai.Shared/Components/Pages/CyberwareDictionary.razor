@@ -5,22 +5,23 @@
 @inject IJSRuntime JS
 @inject WorldGraphService Graph
 
+<h4 class="text-danger mb-3">Cyberware</h4>
 <div class="dict-layout">
     <div class="dict-list">
         <div class="card bg-dark text-light border-secondary mb-2 card-body">
             <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
                    placeholder="Filter..." @bind="filter" @bind:event="oninput" />
             <div class="d-flex gap-2">
-            <ExportButton Mode="repo" ExtraStyle="flex:1;" RepoName="Cyberware" GetRepoEntries="GetExportEntries" />
-            <button class="btn btn-sm btn-outline-danger flex-fill" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
+            <ExportButton Mode="repo" ExtraStyle="width:calc(50% - 5px);" RepoName="Cyberware" GetRepoEntries="GetExportEntries" />
+            <button class="btn btn-sm btn-outline-danger" style="width:calc(50% - 5px)" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
             </div>
         </div>
         <div class="dict-items">
             @foreach (var c in FilteredItems)
             {
                 <div class="list-item text-light @(editing?.Name == c.Name ? "active" : "")" @onclick="() => Edit(c)">
-                    <div class="fw-bold small">@(string.IsNullOrEmpty(c.ProductName) ? c.Name : c.ProductName)</div>
-                    <div class="text-muted" style="font-size: 0.7rem;">@c.BrandName @(string.IsNullOrEmpty(c.Category) ? "" : $"· {c.Category}")</div>
+                    <div class="fw-bold small">@c.Name</div>
+                    <div class="text-muted" style="font-size: 0.7rem;">@c.Category</div>
                 </div>
             }
         </div>

@@ -22,11 +22,11 @@
 @inject WorldGraphService GraphSvc
 @inject NavigationManager Nav
 
-<nav class="sidebar bg-dark text-light p-3 pb-5" style="width: fit-content; min-width: 240px; white-space: nowrap; flex-shrink: 0;">
+<nav class="sidebar bg-dark text-light p-3 pb-5" style="width: fit-content; min-width: 240px; white-space: nowrap; flex-shrink: 0; margin-top: var(--titlebar-offset);">
     <div class="mb-4">
-        <h5 class="text-danger fw-bold">Street Samurai</h5>
-        <small class="text-muted">Canon Engine v3</small>
+        <h4 class="text-danger mb-0">Street Samurai</h4>
     </div>
+    <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">Canon Engine</li>
 
     <ul class="nav flex-column">
         <li class="nav-item">
@@ -35,7 +35,7 @@
             </NavLink>
         </li>
 
-        <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">Story Engine</li>
+        <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">Narrative</li>
         <li class="nav-item">
             <NavLink class="nav-link text-light" href="stories">
                 <i class="bi bi-journal-text"></i> Stories
