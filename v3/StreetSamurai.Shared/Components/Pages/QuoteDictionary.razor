@@ -3,22 +3,23 @@
 @inject QuoteRepository Repo
 @inject NavigationManager Nav
 
+<h4 class="text-danger mb-3">Quotes</h4>
 <div class="dict-layout">
     <div class="dict-list">
         <div class="card bg-dark text-light border-secondary mb-2 card-body">
             <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
                    placeholder="Filter..." @bind="filter" @bind:event="oninput" />
             <div class="d-flex gap-2">
-            <ExportButton Mode="repo" ExtraStyle="flex:1;" RepoName="Quotes" GetRepoEntries="GetExportEntries" />
-            <button class="btn btn-sm btn-outline-danger flex-fill" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
+            <ExportButton Mode="repo" ExtraStyle="width:calc(50% - 5px);" RepoName="Quotes" GetRepoEntries="GetExportEntries" />
+            <button class="btn btn-sm btn-outline-danger" style="width:calc(50% - 5px)" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
             </div>
         </div>
         <div class="dict-items">
             @foreach (var q in FilteredItems)
             {
                 <div class="list-item text-light @(editing?.Quote == q.Quote ? "active" : "")" @onclick="() => Edit(q)">
-                    <div class="fw-bold small fst-italic" style="max-width:220px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">@q.Quote</div>
-                    <div class="text-muted" style="font-size: 0.7rem;">@(string.IsNullOrEmpty(q.Attribution) ? "Anonymous" : q.Attribution)</div>
+                    <div class="fw-bold small">@(q.Quote.Length > 50 ? q.Quote[..50] + "..." : q.Quote)</div>
+                    <div class="text-muted" style="font-size: 0.7rem;">@q.Category</div>
                 </div>
             }
         </div>

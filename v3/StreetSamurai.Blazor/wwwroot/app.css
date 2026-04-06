@@ -1,5 +1,6 @@
 :root {
     --gutter: 10px;
+    --titlebar-offset: 64px;
     --bs-gutter-x: 10px;
     --bs-gutter-y: 10px;
 }
@@ -241,7 +242,7 @@ h1:focus {
 .dict-layout {
     display: flex;
     gap: 0;
-    height: calc(100vh - 150px);
+    height: calc(100vh - var(--titlebar-offset) - var(--gutter) - 80px);
 }
 .dict-nav {
     width: 180px;

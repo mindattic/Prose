@@ -7,14 +7,15 @@
 @inject IJSRuntime JS
 @inject WorldGraphService Graph
 
+<h4 class="text-danger mb-3">Places</h4>
 <div class="dict-layout">
     <div class="dict-list">
         <div class="card bg-dark text-light border-secondary mb-2 card-body">
             <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
                    placeholder="Filter places..." @bind="filter" @bind:event="oninput" />
             <div class="d-flex gap-2">
-            <ExportButton Mode="repo" ExtraStyle="flex:1;" RepoName="Places" GetRepoEntries="GetExportEntries" />
-            <button class="btn btn-sm btn-outline-danger flex-fill" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
+            <ExportButton Mode="repo" ExtraStyle="width:calc(50% - 5px);" RepoName="Places" GetRepoEntries="GetExportEntries" />
+            <button class="btn btn-sm btn-outline-danger" style="width:calc(50% - 5px)" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
             </div>
         </div>
         <div class="dict-items">
@@ -22,10 +23,7 @@
             {
                 <div class="list-item text-light @(editing?.Name == d.Name ? "active" : "")" @onclick="() => Edit(d)">
                     <div class="fw-bold small">@d.Name</div>
-                    @if (d.Coordinates.Lat != 0)
-                    {
-                        <div class="text-muted" style="font-size: 0.6rem;">@d.Coordinates.Lat.ToString("F3"), @d.Coordinates.Lng.ToString("F3")</div>
-                    }
+                    <div class="text-muted" style="font-size: 0.7rem;">@d.Type</div>
                 </div>
             }
         </div>
